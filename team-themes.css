@@ -1,0 +1,310 @@
+/* 4DK — TEAM-SPECIFIC NBA ARTICLE THEMES
+   Only loaded on selected feature articles by script.js.
+*/
+
+/* Shared editorial treatment */
+body.theme-miami,
+body.theme-milwaukee,
+body.theme-clippers{
+  color:#f4f4f4;
+}
+
+body.theme-miami .article-top,
+body.theme-milwaukee .article-top,
+body.theme-clippers .article-top{
+  background:#090a0b;
+}
+
+body.theme-miami .article-hero,
+body.theme-milwaukee .article-hero,
+body.theme-clippers .article-hero{
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+body.theme-miami .article-hero h1,
+body.theme-milwaukee .article-hero h1,
+body.theme-clippers .article-hero h1{
+  color:#fff;
+  text-shadow:0 8px 30px rgba(0,0,0,.28);
+}
+
+body.theme-miami .article-hero .deck,
+body.theme-milwaukee .article-hero .deck,
+body.theme-clippers .article-hero .deck{
+  color:#d8dde1;
+}
+
+body.theme-miami .article-hero .meta,
+body.theme-milwaukee .article-hero .meta,
+body.theme-clippers .article-hero .meta{
+  color:#aeb8bf;
+}
+
+body.theme-miami .article-hero .meta a,
+body.theme-milwaukee .article-hero .meta a{
+  color:#fff;
+}
+
+body.theme-miami .article-story,
+body.theme-milwaukee .article-story,
+body.theme-clippers .article-story{
+  padding:34px 36px 42px;
+  box-shadow:0 20px 48px rgba(0,0,0,.25);
+}
+
+body.theme-miami .article-story p,
+body.theme-milwaukee .article-story p,
+body.theme-clippers .article-story p{
+  color:#eef1f3;
+}
+
+body.theme-miami .article-story strong,
+body.theme-milwaukee .article-story strong,
+body.theme-clippers .article-story strong{
+  color:#fff;
+}
+
+body.theme-miami .article-cover,
+body.theme-milwaukee .article-cover,
+body.theme-clippers .article-cover{
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 22px 55px rgba(0,0,0,.32);
+}
+
+body.theme-miami .article-cover:before,
+body.theme-milwaukee .article-cover:before,
+body.theme-clippers .article-cover:before{
+  display:none!important;
+}
+
+
+/* MIAMI HEAT — black / deep red / white */
+body.theme-miami{
+  --team:#98002e;
+  --heat-gold:#f9a01b;
+  background:
+    radial-gradient(circle at 84% 8%,rgba(249,160,27,.10),transparent 24%),
+    radial-gradient(circle at 12% 35%,rgba(152,0,46,.25),transparent 36%),
+    linear-gradient(180deg,#0b0b0d 0%,#17080d 42%,#09090b 100%);
+}
+
+body.theme-miami .article-top{border-bottom:3px solid var(--team)}
+body.theme-miami .article-back:hover{color:var(--heat-gold)}
+
+body.theme-miami .article-hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(249,160,27,.08),transparent 25%),
+    linear-gradient(180deg,rgba(52,5,19,.82),rgba(10,10,12,.95));
+}
+
+body.theme-miami .article-hero .kicker,
+body.theme-miami .article-side strong{
+  color:var(--heat-gold);
+}
+
+body.theme-miami .article-side{color:#c7bdc1}
+
+body.theme-miami .article-story{
+  background:linear-gradient(180deg,rgba(53,10,24,.97),rgba(22,8,13,.99));
+  border-top:4px solid var(--team);
+  border-left:1px solid rgba(255,255,255,.08);
+  border-right:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+body.theme-miami .drop:first-letter{color:var(--heat-gold)}
+
+body.theme-miami .pull{
+  color:#fff;
+  border-top:4px solid var(--heat-gold);
+  border-bottom:1px solid rgba(255,255,255,.16);
+  background:linear-gradient(90deg,rgba(152,0,46,.40),rgba(152,0,46,.08));
+  padding:24px 18px;
+}
+
+body.theme-miami .note{
+  background:#f2e7e9;
+  color:#211317;
+  border-left:4px solid var(--team);
+}
+
+body.theme-miami .note strong{color:#211317}
+
+
+/* MILWAUKEE BUCKS — forest green / cream */
+body.theme-milwaukee{
+  --bucks-green:#00471b;
+  --bucks-cream:#eee1c6;
+  background:
+    radial-gradient(circle at 82% 9%,rgba(238,225,198,.08),transparent 25%),
+    radial-gradient(circle at 8% 34%,rgba(0,71,27,.35),transparent 38%),
+    linear-gradient(180deg,#07140c 0%,#0b2515 43%,#07120b 100%);
+}
+
+body.theme-milwaukee .article-top{border-bottom:3px solid var(--bucks-cream)}
+body.theme-milwaukee .article-back:hover{color:var(--bucks-cream)}
+
+body.theme-milwaukee .article-hero{
+  background:
+    radial-gradient(circle at 86% 13%,rgba(238,225,198,.07),transparent 26%),
+    linear-gradient(180deg,rgba(10,47,25,.84),rgba(6,18,11,.96));
+}
+
+body.theme-milwaukee .article-hero .kicker,
+body.theme-milwaukee .article-side strong{
+  color:var(--bucks-cream);
+}
+
+body.theme-milwaukee .article-side{color:#c7c2b6}
+
+body.theme-milwaukee .article-story{
+  background:linear-gradient(180deg,rgba(14,53,29,.98),rgba(7,29,16,.99));
+  border-top:4px solid var(--bucks-cream);
+  border-left:1px solid rgba(238,225,198,.10);
+  border-right:1px solid rgba(238,225,198,.10);
+  border-bottom:1px solid rgba(238,225,198,.10);
+}
+
+body.theme-milwaukee .drop:first-letter{color:var(--bucks-cream)}
+
+body.theme-milwaukee .pull{
+  color:#fff;
+  border-top:4px solid var(--bucks-cream);
+  border-bottom:1px solid rgba(238,225,198,.18);
+  background:linear-gradient(90deg,rgba(0,71,27,.62),rgba(0,71,27,.10));
+  padding:24px 18px;
+}
+
+body.theme-milwaukee .note{
+  background:var(--bucks-cream);
+  color:#173021;
+  border-left:4px solid var(--bucks-green);
+}
+
+body.theme-milwaukee .note strong{color:#173021}
+
+body.theme-milwaukee .timeline{
+  border-top-color:var(--bucks-cream);
+}
+
+body.theme-milwaukee .event .year{
+  color:var(--bucks-cream);
+}
+
+/* Turn the old text cover into the existing 4DK Milwaukee artwork */
+body.theme-milwaukee .article-cover{
+  height:auto!important;
+  aspect-ratio:16/9;
+  background:url('milwaukee-feature.png') center/cover no-repeat!important;
+}
+
+body.theme-milwaukee .article-cover .words{
+  display:none!important;
+}
+
+
+/* LA CLIPPERS — black / red / silver */
+body.theme-clippers{
+  --clip-red:#c8102e;
+  --clip-silver:#bec0c2;
+  background:
+    radial-gradient(circle at 84% 8%,rgba(200,16,46,.15),transparent 24%),
+    radial-gradient(circle at 8% 36%,rgba(190,192,194,.08),transparent 34%),
+    linear-gradient(180deg,#090a0c 0%,#15171b 43%,#08090b 100%);
+}
+
+body.theme-clippers .article-top{border-bottom:3px solid var(--clip-red)}
+body.theme-clippers .article-back:hover{color:var(--clip-silver)}
+
+body.theme-clippers .article-hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(200,16,46,.10),transparent 26%),
+    linear-gradient(180deg,rgba(30,31,36,.89),rgba(8,9,11,.97));
+}
+
+body.theme-clippers .article-hero .kicker,
+body.theme-clippers .article-side strong{
+  color:#ef435c;
+}
+
+body.theme-clippers .article-side{color:#c5c7ca}
+
+body.theme-clippers .article-story{
+  background:linear-gradient(180deg,rgba(31,33,38,.98),rgba(16,17,20,.99));
+  border-top:4px solid var(--clip-red);
+  border-left:1px solid rgba(190,192,194,.10);
+  border-right:1px solid rgba(190,192,194,.10);
+  border-bottom:1px solid rgba(190,192,194,.10);
+}
+
+body.theme-clippers .article-story h2{color:#fff}
+body.theme-clippers .drop:first-letter{color:#ef435c}
+
+body.theme-clippers .pull{
+  color:#fff;
+  border-top:4px solid var(--clip-red);
+  border-bottom:1px solid rgba(190,192,194,.18);
+  background:linear-gradient(90deg,rgba(200,16,46,.30),rgba(255,255,255,.03));
+  padding:24px 18px;
+}
+
+body.theme-clippers .note{
+  background:#e4e5e6;
+  color:#18191b;
+  border-left:4px solid var(--clip-red);
+}
+
+body.theme-clippers .note strong{color:#18191b}
+body.theme-clippers .timeline{border-top-color:var(--clip-red)}
+body.theme-clippers .event .year{color:#ef435c}
+
+/* Turn the old text cover into the existing 4DK Clippers artwork */
+body.theme-clippers .article-cover{
+  height:auto!important;
+  aspect-ratio:16/9;
+  background:url('kawhi-clippers-feature.png') center/cover no-repeat!important;
+}
+
+body.theme-clippers .article-cover .words{
+  display:none!important;
+}
+
+
+/* MINNESOTA — keep the custom Wolves page, only add tiny mobile polish */
+body.theme-minnesota .article-hero h1{
+  text-wrap:balance;
+}
+
+@media(max-width:900px){
+  body.theme-miami .article-grid,
+  body.theme-milwaukee .article-grid,
+  body.theme-clippers .article-grid{
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+
+@media(max-width:620px){
+  body.theme-miami .article-hero,
+  body.theme-milwaukee .article-hero,
+  body.theme-clippers .article-hero{
+    padding-top:54px;
+  }
+
+  body.theme-miami .article-story,
+  body.theme-milwaukee .article-story,
+  body.theme-clippers .article-story{
+    padding:24px 20px 30px;
+  }
+
+  body.theme-miami .article-cover,
+  body.theme-milwaukee .article-cover,
+  body.theme-clippers .article-cover{
+    margin-top:28px;
+  }
+
+  body.theme-minnesota .article-hero h1{
+    line-height:.92;
+  }
+}
