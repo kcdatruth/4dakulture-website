@@ -1,0 +1,207 @@
+/* 4DK HOME — BACKGROUND DETAIL
+   Adds layered sports / music / magazine texture without changing the layout.
+*/
+
+body.home-page{
+  background:
+    radial-gradient(circle at 91% 11%,rgba(232,69,46,.10),transparent 19rem),
+    radial-gradient(circle at 7% 50%,rgba(17,17,17,.045),transparent 23rem),
+    repeating-linear-gradient(0deg,rgba(17,17,17,.018) 0 1px,transparent 1px 5px),
+    #f4f1e9;
+}
+
+/* Keep the sticky navigation fully solid over the richer page background. */
+.home-page .masthead{
+  background:#f4f1e9;
+  box-shadow:0 8px 24px rgba(17,17,17,.04);
+}
+
+/* Ticker gets a little more editorial depth. */
+.home-page .ticker{
+  background:
+    linear-gradient(90deg,rgba(232,69,46,.07),transparent 25%,transparent 75%,rgba(17,17,17,.035)),
+    #ebe6db;
+}
+
+/* HERO BACKDROP — subtle magazine grid, red glow and giant 4DK watermark */
+.home-page .hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 92% 15%,rgba(232,69,46,.14),transparent 22rem),
+    linear-gradient(115deg,rgba(17,17,17,.035),transparent 33%),
+    #f4f1e9;
+}
+
+.home-page .hero:before{
+  content:"4DK";
+  position:absolute;
+  right:-44px;
+  top:-58px;
+  font-size:clamp(170px,28vw,380px);
+  line-height:.8;
+  font-weight:1000;
+  letter-spacing:-.10em;
+  color:#111;
+  opacity:.025;
+  pointer-events:none;
+}
+
+.home-page .hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.22;
+  background-image:
+    linear-gradient(rgba(17,17,17,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(17,17,17,.08) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(90deg,transparent 0%,#000 58%,#000 100%);
+}
+
+.home-page .hero .shell{
+  position:relative;
+  z-index:1;
+}
+
+/* Make the main cover card feel more like an actual magazine lead image. */
+.home-page .hero-art{
+  box-shadow:0 24px 55px rgba(17,17,17,.18);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.home-page .hero-art:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(255,255,255,.08),transparent 11rem),
+    repeating-linear-gradient(135deg,transparent 0 18px,rgba(255,255,255,.018) 18px 19px);
+}
+
+.home-page .hero-art > div{
+  position:relative;
+  z-index:2;
+}
+
+/* THE LEAD — faint basketball-court geometry in the page background */
+.home-page .hero + .section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 88% 50%,transparent 0 115px,rgba(232,69,46,.055) 116px 118px,transparent 119px 162px,rgba(17,17,17,.035) 163px 165px,transparent 166px),
+    linear-gradient(90deg,transparent 49.85%,rgba(17,17,17,.025) 50%,transparent 50.15%),
+    rgba(255,253,248,.44);
+}
+
+.home-page .hero + .section:before{
+  content:"THE LEAD";
+  position:absolute;
+  left:-18px;
+  bottom:-25px;
+  font-size:clamp(82px,14vw,190px);
+  line-height:.8;
+  font-weight:1000;
+  letter-spacing:-.08em;
+  color:#111;
+  opacity:.025;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+.home-page .hero + .section .shell{
+  position:relative;
+  z-index:1;
+}
+
+/* ACROSS 4DK — vinyl-record / culture texture on the right side */
+.home-page .hero + .section + .section{
+  position:relative;
+  overflow:hidden;
+  background:
+    repeating-radial-gradient(circle at 88% 48%,transparent 0 16px,rgba(17,17,17,.022) 17px 18px,transparent 19px 30px),
+    linear-gradient(115deg,rgba(232,69,46,.045),transparent 35%),
+    #f1ede3;
+}
+
+.home-page .hero + .section + .section:before{
+  content:"SPORTS  •  HIP-HOP  •  CULTURE";
+  position:absolute;
+  right:-110px;
+  top:28px;
+  transform:rotate(90deg);
+  transform-origin:center;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.24em;
+  color:#111;
+  opacity:.16;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+.home-page .hero + .section + .section .shell{
+  position:relative;
+  z-index:1;
+}
+
+/* Small red editorial rule that ties the background treatment to the 4DK brand. */
+.home-page main{
+  position:relative;
+}
+
+.home-page main:before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background:linear-gradient(180deg,#e8452e 0 13%,transparent 13% 65%,rgba(232,69,46,.28) 65% 100%);
+  pointer-events:none;
+}
+
+/* Make cards float slightly off the textured background. */
+.home-page .feature-card,
+.home-page .story .art,
+.home-page .callout{
+  box-shadow:0 12px 30px rgba(17,17,17,.07);
+}
+
+/* Mobile: keep the details visible but quieter so the page stays clean. */
+@media(max-width:620px){
+  body.home-page{
+    background:
+      radial-gradient(circle at 95% 10%,rgba(232,69,46,.09),transparent 15rem),
+      repeating-linear-gradient(0deg,rgba(17,17,17,.015) 0 1px,transparent 1px 6px),
+      #f4f1e9;
+  }
+
+  .home-page .hero:before{
+    right:-18px;
+    top:-12px;
+    font-size:150px;
+    opacity:.022;
+  }
+
+  .home-page .hero:after{
+    background-size:32px 32px;
+    opacity:.12;
+  }
+
+  .home-page .hero + .section:before{
+    font-size:90px;
+    bottom:-4px;
+  }
+
+  .home-page .hero + .section + .section:before{
+    display:none;
+  }
+
+  .home-page main:before{
+    width:3px;
+  }
+}

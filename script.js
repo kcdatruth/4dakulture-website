@@ -3,8 +3,6 @@ menuBtn?.addEventListener('click',()=>{const open=mobileNav.classList.toggle('op
 mobileNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileNav.classList.remove('open')));
 
 // 4DK team-specific article styling.
-// This keeps the regular site look everywhere else and loads team colors only
-// on the selected single-team NBA features.
 const pageKey=location.pathname.replace(/^\/+|\/+$/g,'').replace(/\.html$/,'');
 const teamThemes={
   'minnesota-offseason-winner':'theme-minnesota',
@@ -20,5 +18,17 @@ if(teamClass){
     themeLink.rel='stylesheet';
     themeLink.href='team-themes.css';
     document.head.appendChild(themeLink);
+  }
+}
+
+// 4DK home-page background treatment.
+const isHome=pageKey===''||pageKey==='index';
+if(isHome){
+  document.body.classList.add('home-page');
+  if(!document.querySelector('link[href="home.css"]')){
+    const homeLink=document.createElement('link');
+    homeLink.rel='stylesheet';
+    homeLink.href='home.css';
+    document.head.appendChild(homeLink);
   }
 }
