@@ -1,0 +1,129 @@
+
+/* 4DK TEAM THEME — MINNESOTA TIMBERWOLVES */
+body.minnesota-theme{
+  --min-navy:#0b1f33;
+  --min-blue:#1f5f8b;
+  --min-green:#78be20;
+  --min-ice:#d8e3ea;
+  --min-ink:#f6f8fa;
+  background:
+    radial-gradient(circle at 85% 9%,rgba(120,190,32,.10),transparent 25%),
+    radial-gradient(circle at 8% 33%,rgba(31,95,139,.20),transparent 34%),
+    linear-gradient(180deg,#081521 0%,#0b1f33 38%,#07131e 100%);
+  color:var(--min-ink);
+}
+
+.minnesota-theme .article-top{
+  background:#07131e;
+  border-bottom:3px solid var(--min-green);
+}
+.minnesota-theme .article-brand{color:#fff}
+.minnesota-theme .article-back{color:var(--min-ice)}
+.minnesota-theme .article-back:hover{color:var(--min-green)}
+
+.minnesota-theme .article-hero{
+  background:
+    linear-gradient(180deg,rgba(15,45,70,.75),rgba(8,21,33,.92)),
+    radial-gradient(circle at 82% 20%,rgba(120,190,32,.12),transparent 28%);
+  border-bottom:1px solid rgba(216,227,234,.18);
+}
+.minnesota-theme .article-hero .kicker{
+  color:var(--min-green);
+}
+.minnesota-theme .article-hero h1{
+  color:#fff;
+  text-shadow:0 8px 30px rgba(0,0,0,.28);
+}
+.minnesota-theme .article-hero .deck{
+  color:#d4dee5;
+}
+.minnesota-theme .article-hero .meta{
+  color:#9eb0bc;
+}
+.minnesota-theme .article-hero .meta a{
+  color:#fff;
+}
+
+.minnesota-theme .article-cover.minnesota-cover{
+  height:auto;
+  margin-top:34px;
+  overflow:hidden;
+  border:1px solid rgba(216,227,234,.20);
+  box-shadow:0 22px 55px rgba(0,0,0,.32);
+  background:#07131e;
+}
+.minnesota-theme .article-cover.minnesota-cover:before{display:none}
+.minnesota-theme .article-cover.minnesota-cover img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.minnesota-theme .article-grid{
+  position:relative;
+  align-items:start;
+}
+.minnesota-theme .article-side{
+  color:#aebdc7;
+}
+.minnesota-theme .article-side strong{
+  color:var(--min-green);
+}
+
+.minnesota-theme .article-story{
+  color:#eef3f6;
+  background:
+    linear-gradient(180deg,rgba(17,48,72,.96),rgba(8,27,43,.98));
+  padding:34px 36px 42px;
+  border-top:4px solid var(--min-green);
+  border-left:1px solid rgba(216,227,234,.10);
+  border-right:1px solid rgba(216,227,234,.10);
+  border-bottom:1px solid rgba(216,227,234,.10);
+  box-shadow:0 20px 48px rgba(0,0,0,.25);
+}
+.minnesota-theme .article-story p{
+  color:#eef3f6;
+}
+.minnesota-theme .article-story strong{
+  color:#fff;
+}
+.minnesota-theme .drop:first-letter{
+  color:var(--min-green);
+}
+.minnesota-theme .pull{
+  color:#fff;
+  border-top:4px solid var(--min-green);
+  border-bottom:1px solid rgba(216,227,234,.20);
+  background:linear-gradient(90deg,rgba(31,95,139,.35),rgba(31,95,139,.08));
+  padding:24px 18px;
+}
+.minnesota-theme .note{
+  background:#dbe6ec;
+  color:#1b2c39;
+  border-left:4px solid var(--min-green);
+}
+.minnesota-theme .note strong{
+  color:#0b1f33;
+}
+
+.minnesota-theme .footer{
+  border-top:1px solid rgba(216,227,234,.15);
+}
+
+@media(max-width:900px){
+  .minnesota-theme .article-grid{
+    padding-left:16px;
+    padding-right:16px;
+  }
+}
+@media(max-width:620px){
+  .minnesota-theme .article-hero{
+    padding-top:44px;
+  }
+  .minnesota-theme .article-story{
+    padding:24px 20px 30px;
+  }
+  .minnesota-theme .article-cover.minnesota-cover{
+    margin-top:28px;
+  }
+}
