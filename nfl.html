@@ -13,6 +13,7 @@
 <meta name="theme-color" content="#080b09">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="nfl.css">
+<link rel="stylesheet" href="scores.css">
 </head>
 <body class="nfl-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -48,6 +49,21 @@
     <a href="about.html">About</a>
   </nav>
 </header>
+
+
+<div class="score-ticker" data-score-ticker aria-label="Live sports scores">
+  <div class="score-ticker-label">
+    <span class="score-live-dot" aria-hidden="true"></span>
+    <strong>4DK LIVE</strong>
+  </div>
+  <div class="score-ticker-viewport">
+    <div class="score-ticker-track" data-score-track>
+      <span class="score-ticker-message">Loading live scores…</span>
+    </div>
+  </div>
+  <button class="score-ticker-refresh" type="button" data-score-refresh aria-label="Refresh scores">↻</button>
+  <span class="sr-only" data-score-live-region aria-live="polite"></span>
+</div>
 
 <div class="nfl-ticker">
   <div class="shell nfl-ticker-track">
@@ -247,5 +263,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="scores.js"></script>
 </body>
 </html>

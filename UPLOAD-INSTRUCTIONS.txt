@@ -1,0 +1,37 @@
+4DK LIVE SCORE TICKER
+
+Upload these files to the ROOT of:
+kcdatruth/4dakulture-website
+
+REPLACE:
+- index.html
+- nba.html
+- nfl.html
+- wrangler.jsonc
+
+ADD:
+- scores.css
+- scores.js
+- worker.js
+- .assetsignore
+
+Suggested commit message:
+Add 4DK live sports score ticker
+
+WHAT IT DOES
+- Adds a 4DK LIVE score ticker to the homepage, NBA page and NFL page
+- Supports NFL, NBA, MLB, NHL, WNBA and college football
+- Shows live scores first, then today's upcoming/final games
+- Refreshes every 30 seconds
+- Visitors see game times in their own local timezone
+- Uses a same-origin Cloudflare Worker endpoint at /api/scores
+- No API key is required for this V1
+
+IMPORTANT
+This V1 uses ESPN's publicly reachable but undocumented scoreboard feed.
+That makes it useful for a lightweight launch, but ESPN can change the feed
+without notice. For a commercial/high-traffic production site, a licensed
+sports-data provider is the safer long-term option.
+
+The .assetsignore file is recommended so Worker/config source files are not
+published as ordinary static assets.
