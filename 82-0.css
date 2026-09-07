@@ -1,0 +1,73 @@
+/* 4DK 82–0 CHALLENGE */
+.challenge-page{background:#0c0b0a;color:#f2eee6}
+.challenge-page .masthead{background:#0b0a09;color:#fff;border-color:#27221e}
+.challenge-page .topline{background:#16120f;color:#c8bfb5}
+.challenge-page .brand-mark{background:#e8442f}
+.challenge-page .nav a:hover{color:#e8442f}
+.challenge-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 82% 12%,rgba(232,68,47,.25),transparent 20rem),repeating-linear-gradient(90deg,transparent 0 86px,rgba(255,255,255,.035) 87px 88px),linear-gradient(135deg,#14100d,#090807 68%);border-bottom:1px solid #44382f}
+.challenge-hero:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(242,238,230,.12)}
+.challenge-hero:after{content:"";position:absolute;left:50%;top:50%;width:280px;height:280px;transform:translate(-50%,-50%);border:2px solid rgba(242,238,230,.10);border-radius:50%}
+.challenge-hero-grid{min-height:440px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative;z-index:2}
+.challenge-kicker{font-size:11px;font-weight:1000;letter-spacing:.16em;color:#e8442f}
+.challenge-hero h1{margin:10px 0 16px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(76px,12vw,150px);line-height:.72;letter-spacing:-.035em;color:#f7f1e8}
+.challenge-hero h1 span{color:#e8442f}
+.challenge-hero p{max-width:620px;margin:0;font-size:20px;line-height:1.35;color:#cfc5bb}
+.challenge-rules{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.challenge-rules b{border:1px solid #51463e;background:#17130f;padding:8px 11px;font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+.challenge-ball{justify-self:center;width:min(300px,70vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(90deg,transparent 49.2%,#28120a 49.5% 50.5%,transparent 50.8%),linear-gradient(25deg,transparent 48.9%,#28120a 49.2% 50.8%,transparent 51.1%),linear-gradient(-25deg,transparent 48.9%,#28120a 49.2% 50.8%,transparent 51.1%),#c95227;border:6px solid #2a140d;box-shadow:0 25px 70px rgba(0,0,0,.45)}
+.challenge-ball span{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:72px;color:#f7e9da;transform:rotate(-8deg)}
+.challenge-game{padding-top:38px;padding-bottom:60px}
+.challenge-toolbar{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:1px solid #4a4038;padding-bottom:16px}
+.challenge-step-label{display:block;color:#e8442f;font-size:10px;font-weight:1000;letter-spacing:.15em}
+.challenge-progress{margin-top:5px;color:#b9afa5;font-family:Georgia,serif;font-size:18px}
+.challenge-reset,.challenge-share{border:1px solid #66584d;background:transparent;color:#f4ede6;padding:10px 14px;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.challenge-reset:hover,.challenge-share:hover{background:#e8442f;border-color:#e8442f;color:#fff}
+.lineup{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:22px 0 36px}
+.lineup-slot{min-height:86px;padding:13px;border:1px solid #42382f;background:#14110e;display:flex;flex-direction:column;justify-content:space-between}
+.lineup-slot span{font-size:10px;font-weight:1000;letter-spacing:.14em;color:#e8442f}
+.lineup-slot strong{font-size:15px;line-height:1.1}
+.lineup-slot.filled{border-color:#82604c;background:linear-gradient(135deg,#1e1712,#10100e)}
+.lineup-slot.active{outline:2px solid #e8442f;outline-offset:2px}
+.round-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:14px}
+.round-head span{font-size:10px;font-weight:1000;letter-spacing:.14em;color:#a89b90}
+.round-head h2{margin:0;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:42px;line-height:.9}
+.player-options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.player-card{position:relative;overflow:hidden;min-height:285px;border:1px solid #4b4037;background:#15110e;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:transform .16s ease,border-color .16s ease;color:#f2eee6;text-align:left}
+.player-card:hover{transform:translateY(-3px);border-color:#e8442f}
+.player-card:before{content:attr(data-initials);position:absolute;right:-8px;top:-18px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:150px;line-height:1;color:#fff;opacity:.035}
+.player-card .player-pos{position:absolute;left:16px;top:16px;font-size:10px;font-weight:1000;letter-spacing:.13em;color:#e8442f}
+.player-card h3{margin:0;font-size:29px;line-height:.95;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.player-card .player-era{margin-top:7px;color:#958a80;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.player-ratings{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:17px;border-top:1px solid #3f362f;padding-top:10px}
+.player-ratings span{font-size:8px;color:#8e837a;letter-spacing:.06em}
+.player-ratings b{display:block;margin-top:3px;color:#eee7e0;font-size:12px}
+.verdict{margin-top:38px;border:1px solid #6f5546;background:linear-gradient(145deg,#19120e,#0f0e0c);padding:25px}
+.verdict-top{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.verdict h2{margin:4px 0 0;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(46px,7vw,76px);line-height:.88}
+.verdict-score{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#e8442f}
+.verdict-score span{font-size:66px;line-height:.8}
+.verdict-score small{font-size:14px}
+.verdict p{color:#c8bdb4;font-size:17px;max-width:760px;line-height:1.45}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#41362f;border:1px solid #41362f;margin:22px 0}
+.metric-grid div{background:#0d0c0b;padding:13px}
+.metric-grid span{display:block;font-size:8px;color:#857a72;letter-spacing:.09em}
+.metric-grid b{display:block;margin-top:4px;font-size:22px}
+.game-note{margin-top:24px;padding:14px;border-left:3px solid #e8442f;color:#998f86;font-size:12px;line-height:1.45;background:#11100e}
+.game-note strong{color:#d5ccc4}
+.challenge-promo{background:#0f0d0b!important;color:#f3ede7}
+.challenge-promo-inner{position:relative;overflow:hidden;display:grid;grid-template-columns:180px 1fr 240px;gap:26px;align-items:center;min-height:280px;padding:28px;border:1px solid #493c33;background:linear-gradient(135deg,#17110d,#0b0b0a 66%)}
+.challenge-scoremark{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;line-height:.7}
+.challenge-scoremark span{display:block;font-size:115px;color:#e8442f}
+.challenge-scoremark b{display:block;font-size:63px;color:#f3ede7}
+.challenge-promo-copy .eyebrow{color:#e8442f}
+.challenge-promo-copy h2{margin:5px 0 9px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:46px;line-height:.9}
+.challenge-promo-copy p{margin:0 0 18px;max-width:650px;color:#bdb4ac;line-height:1.4}
+.challenge-promo-copy .button{background:#e8442f;color:#fff;border-color:#e8442f}
+.challenge-court{position:relative;width:220px;height:220px;border:2px solid rgba(255,255,255,.15);border-radius:50%;justify-self:end}
+.challenge-court:before,.challenge-court:after{content:"";position:absolute;background:rgba(255,255,255,.13)}
+.challenge-court:before{width:2px;height:220px;left:109px;top:0}
+.challenge-court:after{height:2px;width:220px;left:0;top:109px}
+.challenge-court i{position:absolute;width:13px;height:13px;border-radius:50%;background:#e8442f;box-shadow:0 0 0 4px rgba(232,68,47,.1)}
+.challenge-court i:nth-child(1){left:45px;top:54px}.challenge-court i:nth-child(2){right:45px;top:54px}.challenge-court i:nth-child(3){left:103px;top:98px}.challenge-court i:nth-child(4){left:58px;bottom:40px}.challenge-court i:nth-child(5){right:58px;bottom:40px}
+@media(max-width:850px){.challenge-hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:50px;padding-bottom:50px}.challenge-ball{display:none}.challenge-hero:before,.challenge-hero:after{opacity:.5}.challenge-promo-inner{grid-template-columns:120px 1fr}.challenge-court{display:none}.challenge-scoremark span{font-size:86px}.challenge-scoremark b{font-size:48px}}
+@media(max-width:620px){.challenge-hero h1{font-size:80px}.challenge-hero p{font-size:16px}.lineup{grid-template-columns:1fr 1fr}.lineup-slot:last-child{grid-column:1/-1}.player-options{grid-template-columns:1fr}.player-card{min-height:220px}.round-head{display:block}.round-head h2{margin-top:5px;font-size:36px}.verdict-top{display:block}.verdict-score{margin-top:15px}.metric-grid{grid-template-columns:1fr 1fr}.challenge-promo-inner{grid-template-columns:1fr;padding:22px}.challenge-scoremark{display:flex;align-items:end;gap:8px}.challenge-scoremark span{font-size:70px}.challenge-scoremark b{font-size:40px}.challenge-promo-copy h2{font-size:39px}}
