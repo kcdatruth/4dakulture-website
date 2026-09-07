@@ -273,3 +273,29 @@
   .redzone-grid div{border-bottom:1px solid #2c2c2c}
   .nfl-card-art{height:180px}
 }
+
+
+/* Browns-specific Shedeur card */
+.nfl-label.browns{
+  background:#ff5a1f;
+  border-color:#ff5a1f;
+  color:#21150d;
+}
+.nfl-mini-card.shedeur{
+  border-color:#ff5a1f;
+  background:
+    radial-gradient(circle at 86% 18%,rgba(255,90,31,.10),transparent 34%),
+    linear-gradient(180deg,#2b160d,#1a0e08);
+}
+.nfl-mini-card.shedeur .mini-icon{
+  color:#ffcab3;
+  opacity:.22;
+}
+.mini-team-note{
+  margin:-2px 0 12px;
+  color:#d7b29c;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
