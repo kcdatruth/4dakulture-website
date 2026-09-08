@@ -1,11 +1,15 @@
 
 const SPORTS = [
-  { league: 'NFL', path: 'football/nfl' },
-  { league: 'NBA', path: 'basketball/nba' },
-  { league: 'MLB', path: 'baseball/mlb' },
-  { league: 'NHL', path: 'hockey/nhl' },
-  { league: 'WNBA', path: 'basketball/wnba' },
-  { league: 'NCAAF', path: 'football/college-football' }
+  { league: 'NFL', path: 'football/nfl', limit: 8 },
+  { league: 'NBA', path: 'basketball/nba', limit: 8 },
+  { league: 'MLB', path: 'baseball/mlb', limit: 8 },
+  { league: 'NHL', path: 'hockey/nhl', limit: 8 },
+  { league: 'WNBA', path: 'basketball/wnba', limit: 6 },
+
+  // College sports
+  { league: 'NCAAF', path: 'football/college-football', limit: 10 },
+  { league: 'NCAAM', path: 'basketball/mens-college-basketball', limit: 12 },
+  { league: 'NCAAW', path: 'basketball/womens-college-basketball', limit: 8 }
 ];
 
 function easternDateKey(date = new Date()){
@@ -35,6 +39,32 @@ function scoreValue(competitor){
   return String(score);
 }
 
+function liveStatusText(league, status, competitionStatus, type){
+  const period = status.period || competitionStatus?.period;
+  const clock = status.displayClock || competitionStatus?.displayClock || '';
+
+  if(period && clock){
+    if(['NFL','NCAAF','NBA','WNBA'].includes(league)){
+      return `Q${period} ${clock}`;
+    }
+
+    if(league === 'NHL'){
+      return `P${period} ${clock}`;
+    }
+
+    if(['NCAAM','NCAAW'].includes(league)){
+      let segment = '';
+      if(period === 1) segment = '1H';
+      else if(period === 2) segment = '2H';
+      else if(period === 3) segment = 'OT';
+      else segment = `OT${period - 2}`;
+      return `${segment} ${clock}`;
+    }
+  }
+
+  return type.shortDetail || type.detail || 'LIVE';
+}
+
 function normalizeEvent(event, league, todayKey){
   const competition = event?.competitions?.[0];
   if(!competition) return null;
@@ -55,10 +85,7 @@ function normalizeEvent(event, league, todayKey){
 
   let statusText = '';
   if(state === 'in'){
-    const period = status.period || competition.status?.period;
-    const clock = status.displayClock || competition.status?.displayClock || '';
-    if(period && clock) statusText = `Q${period} ${clock}`;
-    else statusText = type.shortDetail || type.detail || 'LIVE';
+    statusText = liveStatusText(league, status, competition.status, type);
   }else if(state === 'post'){
     statusText = 'FINAL';
   }
@@ -82,24 +109,29 @@ function normalizeEvent(event, league, todayKey){
   };
 }
 
-async function fetchLeague({league, path}, todayKey){
-  const url = `https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard`;
-  const response = await fetch(url, {
-    headers: {'Accept':'application/json'},
-    cf: { cacheTtl: 15, cacheEverything: true }
-  });
-  if(!response.ok) throw new Error(`${league} upstream ${response.status}`);
-  const data = await response.json();
-  return (data.events || [])
-    .map(event => normalizeEvent(event, league, todayKey))
-    .filter(Boolean);
-}
-
 function sortGames(a,b){
   const rank = {in:0, pre:1, post:2};
   const stateDiff = (rank[a.state] ?? 9) - (rank[b.state] ?? 9);
   if(stateDiff) return stateDiff;
   return new Date(a.startTime || 0) - new Date(b.startTime || 0);
+}
+
+async function fetchLeague({league, path, limit = 30}, todayKey){
+  const url = `https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard`;
+  const response = await fetch(url, {
+    headers: {'Accept':'application/json'},
+    cf: { cacheTtl: 15, cacheEverything: true }
+  });
+
+  if(!response.ok) throw new Error(`${league} upstream ${response.status}`);
+
+  const data = await response.json();
+
+  return (data.events || [])
+    .map(event => normalizeEvent(event, league, todayKey))
+    .filter(Boolean)
+    .sort(sortGames)
+    .slice(0, limit);
 }
 
 export default {
@@ -117,7 +149,7 @@ export default {
         .filter(result => result.status === 'fulfilled')
         .flatMap(result => result.value)
         .sort(sortGames)
-        .slice(0, 30);
+        .slice(0, 40);
 
       return Response.json({
         updatedAt: new Date().toISOString(),
