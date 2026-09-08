@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="nfl.css">
 <link rel="stylesheet" href="scores.css">
+<link rel="stylesheet" href="nfl-picks.css">
 </head>
 <body class="nfl-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -102,6 +103,7 @@
   <a href="#season-board">NFL Awards</a>
   <a href="#season-board">Rookies</a>
   <a href="#redzone">4DK Red Zone</a>
+  <a href="#pickem">Weekly Pick’em</a>
 </nav>
 
 <section class="nfl-feature shell" id="featured">
@@ -241,6 +243,42 @@
   </div>
 </section>
 
+
+<section class="nfl-pickem" id="pickem">
+  <div class="shell">
+    <div class="pickem-top">
+      <div>
+        <span class="pickem-eyebrow">4DK WEEKLY PICK’EM</span>
+        <h2>WHO YOU GOT?</h2>
+        <p>Pick every winner on this week’s NFL slate. Your card saves automatically on this device.</p>
+      </div>
+      <div class="pickem-scoreboard">
+        <span data-pickem-week>THIS WEEK</span>
+        <strong><b data-pickem-count>0</b>/<b data-pickem-total>0</b></strong>
+        <small>PICKS LOCK AT KICKOFF</small>
+      </div>
+    </div>
+
+    <div class="pickem-status" data-pickem-status aria-live="polite">
+      Loading this week’s matchups…
+    </div>
+
+    <div class="pickem-games" data-pickem-games></div>
+
+    <div class="pickem-footer">
+      <div>
+        <strong>YOUR 4DK CARD</strong>
+        <span data-pickem-summary>Make your picks. Change them anytime before kickoff.</span>
+      </div>
+      <button type="button" class="pickem-clear" data-pickem-clear>Clear My Picks</button>
+    </div>
+
+    <p class="pickem-note">
+      4DK Weekly Pick’em is for fan predictions and conversation — no wagering.
+    </p>
+  </div>
+</section>
+
 <section class="nfl-endzone">
   <div class="shell">
     <div class="playbook-xos">× ○ × ○ &nbsp;&nbsp; ↗ &nbsp;&nbsp; ○ × ○ ×</div>
@@ -264,5 +302,6 @@
 
 <script src="script.js"></script>
 <script src="scores.js"></script>
+<script src="nfl-picks.js"></script>
 </body>
 </html>

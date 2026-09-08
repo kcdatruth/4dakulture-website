@@ -1,0 +1,282 @@
+/* =========================================================
+   4DK NFL — WEEKLY PICK'EM
+   ========================================================= */
+
+.nfl-pickem{
+  position:relative;
+  overflow:hidden;
+  padding:56px 0 60px;
+  border-top:1px solid #35463a;
+  border-bottom:1px solid #35463a;
+  background:
+    radial-gradient(circle at 88% 8%,rgba(230,50,47,.15),transparent 19rem),
+    repeating-linear-gradient(90deg,transparent 0 94px,rgba(255,255,255,.025) 95px 96px,transparent 97px 190px),
+    linear-gradient(#07120b,#040805);
+}
+.nfl-pickem:before{
+  content:"PICK 'EM";
+  position:absolute;
+  right:-14px;
+  top:-35px;
+  color:#fff;
+  opacity:.025;
+  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  font-size:210px;
+  line-height:1;
+  pointer-events:none;
+}
+.pickem-top{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1fr 190px;
+  gap:28px;
+  align-items:end;
+  margin-bottom:22px;
+}
+.pickem-eyebrow{
+  display:block;
+  color:#e6322f;
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.15em;
+}
+.pickem-top h2{
+  margin:4px 0 7px;
+  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  font-size:62px;
+  line-height:.83;
+}
+.pickem-top p{
+  margin:0;
+  max-width:650px;
+  color:#aeb8b0;
+  font-size:13px;
+}
+.pickem-scoreboard{
+  padding:14px;
+  border:1px solid #5c685f;
+  background:rgba(0,0,0,.48);
+  text-align:center;
+}
+.pickem-scoreboard span,
+.pickem-scoreboard small{
+  display:block;
+  color:#98a198;
+  font-size:7px;
+  font-weight:1000;
+  letter-spacing:.12em;
+}
+.pickem-scoreboard strong{
+  display:block;
+  margin:5px 0;
+  color:#fff;
+  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  font-size:42px;
+  line-height:.9;
+}
+.pickem-scoreboard b{font-weight:inherit}
+
+.pickem-status{
+  position:relative;
+  z-index:2;
+  margin-bottom:14px;
+  padding:11px 13px;
+  border-left:4px solid #e6322f;
+  background:#0b110d;
+  color:#9da69f;
+  font-size:10px;
+  font-weight:800;
+}
+.pickem-status:empty{display:none}
+
+.pickem-games{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:11px;
+}
+.pickem-game{
+  overflow:hidden;
+  border:1px solid #465249;
+  background:#090d0a;
+}
+.pickem-game-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 13px;
+  border-bottom:1px solid #303c33;
+  color:#818c83;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.pickem-game-head .live{
+  color:#ff5d56;
+}
+.pickem-game-head .final{
+  color:#d2b76f;
+}
+.pickem-matchup{
+  display:grid;
+  grid-template-columns:1fr 42px 1fr;
+  align-items:stretch;
+}
+.pickem-team{
+  min-width:0;
+  min-height:132px;
+  padding:15px 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  border:0;
+  background:transparent;
+  color:#e9ece8;
+  font:inherit;
+  cursor:pointer;
+  transition:background .16s ease,border-color .16s ease;
+}
+.pickem-team:hover{
+  background:#101a13;
+}
+.pickem-team:focus-visible{
+  outline:2px solid #fff;
+  outline-offset:-4px;
+}
+.pickem-team.selected{
+  background:
+    radial-gradient(circle at 50% 15%,rgba(230,50,47,.20),transparent 6rem),
+    #142017;
+  box-shadow:inset 0 -4px 0 #e6322f;
+}
+.pickem-team.locked{
+  cursor:default;
+  opacity:.82;
+}
+.pickem-team.winner{
+  box-shadow:inset 0 -4px 0 #d7b24b;
+}
+.pickem-team.correct{
+  background:#142017;
+}
+.pickem-team.wrong{
+  opacity:.48;
+}
+.pickem-abbr{
+  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  font-size:43px;
+  line-height:.86;
+  letter-spacing:.01em;
+}
+.pickem-name{
+  max-width:150px;
+  color:#9fa8a1;
+  font-size:8px;
+  font-weight:900;
+  text-align:center;
+  text-transform:uppercase;
+  line-height:1.2;
+}
+.pickem-score{
+  min-height:14px;
+  color:#fff;
+  font-size:15px;
+  font-weight:1000;
+}
+.pickem-vs{
+  display:grid;
+  place-items:center;
+  border-left:1px solid #303c33;
+  border-right:1px solid #303c33;
+  color:#6c766f;
+  font-size:8px;
+  font-weight:1000;
+}
+.pickem-result{
+  min-height:31px;
+  padding:8px 12px;
+  border-top:1px solid #303c33;
+  color:#888f89;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  text-align:center;
+}
+.pickem-result.correct{color:#8ecb91}
+.pickem-result.wrong{color:#e67872}
+
+.pickem-footer{
+  position:relative;
+  z-index:2;
+  margin-top:16px;
+  padding:15px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  align-items:center;
+  border-top:4px solid #e6322f;
+  border-bottom:1px solid #354038;
+}
+.pickem-footer strong{
+  display:block;
+  color:#fff;
+  font-size:10px;
+  letter-spacing:.09em;
+}
+.pickem-footer span{
+  display:block;
+  margin-top:3px;
+  color:#929a94;
+  font-size:9px;
+}
+.pickem-clear{
+  flex:0 0 auto;
+  min-height:44px;
+  padding:10px 13px;
+  border:1px solid #57635a;
+  background:transparent;
+  color:#c7cdc8;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.pickem-clear:hover{border-color:#e6322f;color:#fff}
+.pickem-note{
+  margin:10px 0 0;
+  color:#606b63;
+  font-size:8px;
+  text-align:center;
+}
+
+@media(max-width:760px){
+  .pickem-top{
+    grid-template-columns:1fr;
+  }
+  .pickem-scoreboard{
+    width:150px;
+    text-align:left;
+  }
+  .pickem-games{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:480px){
+  .nfl-pickem{padding:44px 0 48px}
+  .pickem-top h2{font-size:51px}
+  .pickem-team{min-height:115px;padding:13px 8px}
+  .pickem-abbr{font-size:38px}
+  .pickem-name{font-size:7px}
+  .pickem-footer{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .pickem-clear{width:100%}
+}
