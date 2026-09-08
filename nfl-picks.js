@@ -186,18 +186,112 @@
     render();
   });
 
+
+  function normalizeESPNEvent(event){
+    const competition = event?.competitions?.[0];
+    if(!competition) return null;
+
+    const competitors = competition.competitors || [];
+    const home = competitors.find(c => c.homeAway === 'home') || competitors[0];
+    const away = competitors.find(c => c.homeAway === 'away') || competitors[1];
+    if(!home || !away) return null;
+
+    const status = event.status || competition.status || {};
+    const type = status.type || {};
+    const state = type.state || (type.completed ? 'post' : 'pre');
+
+    const scoreValue = competitor => {
+      const score = competitor?.score;
+      if(score == null) return '';
+      if(typeof score === 'object') return score.displayValue ?? score.value ?? '';
+      return String(score);
+    };
+
+    let statusText = '';
+    if(state === 'post') statusText = 'FINAL';
+    else if(state === 'in'){
+      const period = status.period || competition.status?.period;
+      const clock = status.displayClock || competition.status?.displayClock || '';
+      statusText = period && clock ? `Q${period} ${clock}` : (type.shortDetail || type.detail || 'LIVE');
+    }else{
+      statusText = type.shortDetail || type.detail || 'Scheduled';
+    }
+
+    return {
+      id: String(event.id || ''),
+      season: event.season?.year || new Date().getFullYear(),
+      week: event.week?.number || null,
+      state,
+      statusText,
+      startTime: event.date || competition.date || '',
+      away: {
+        id: String(away.team?.id || away.id || ''),
+        abbr: away.team?.abbreviation || away.team?.shortDisplayName || 'AWAY',
+        name: away.team?.displayName || away.team?.shortDisplayName || 'Away',
+        score: scoreValue(away)
+      },
+      home: {
+        id: String(home.team?.id || home.id || ''),
+        abbr: home.team?.abbreviation || home.team?.shortDisplayName || 'HOME',
+        name: home.team?.displayName || home.team?.shortDisplayName || 'Home',
+        score: scoreValue(home)
+      }
+    };
+  }
+
+  async function loadDirectFromESPN(){
+    const endpoint = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
+    const response = await fetch(endpoint, {cache:'no-store', mode:'cors'});
+    if(!response.ok) throw new Error(`ESPN HTTP ${response.status}`);
+
+    const data = await response.json();
+    const allGames = (data.events || [])
+      .map(normalizeESPNEvent)
+      .filter(Boolean)
+      .sort((a,b) => new Date(a.startTime || 0) - new Date(b.startTime || 0));
+
+    const counts = new Map();
+    allGames.forEach(game => {
+      if(game.week != null) counts.set(game.week,(counts.get(game.week)||0)+1);
+    });
+
+    const week = [...counts.entries()].sort((a,b) => b[1]-a[1])[0]?.[0] ?? allGames[0]?.week ?? null;
+    const games = week == null ? allGames : allGames.filter(game => game.week === week);
+
+    return {
+      updatedAt: new Date().toISOString(),
+      season: games[0]?.season || allGames[0]?.season || new Date().getFullYear(),
+      week,
+      games
+    };
+  }
+
   async function load(){
+    statusEl.textContent = 'Loading this week’s matchups…';
+
     try{
       const response = await fetch('/api/nfl-pickem', {cache:'no-store'});
-      if(!response.ok) throw new Error(`HTTP ${response.status}`);
-      payload = await response.json();
-      loadPicks();
-      render();
-    }catch(error){
-      console.error('4DK Pickem:', error);
-      statusEl.textContent = 'Weekly Pick’em is temporarily unavailable. Try again shortly.';
-      gamesEl.innerHTML = '';
+      if(!response.ok) throw new Error(`4DK API HTTP ${response.status}`);
+
+      const apiPayload = await response.json();
+      if(!apiPayload?.games?.length) throw new Error('4DK API returned no games');
+
+      payload = apiPayload;
+    }catch(workerError){
+      console.warn('4DK Pickem Worker fallback:', workerError);
+
+      try{
+        payload = await loadDirectFromESPN();
+      }catch(espnError){
+        console.error('4DK Pickem ESPN fallback:', espnError);
+        statusEl.textContent = 'Weekly Pick’em is temporarily unavailable. Try again shortly.';
+        gamesEl.innerHTML = '';
+        return;
+      }
     }
+
+    loadPicks();
+    render();
   }
 
   load();
