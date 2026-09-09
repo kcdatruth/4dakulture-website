@@ -1,15 +1,14 @@
-
 const SPORTS = [
-  { league: 'NFL', path: 'football/nfl', limit: 8 },
-  { league: 'NBA', path: 'basketball/nba', limit: 8 },
-  { league: 'MLB', path: 'baseball/mlb', limit: 8 },
-  { league: 'NHL', path: 'hockey/nhl', limit: 8 },
-  { league: 'WNBA', path: 'basketball/wnba', limit: 6 },
+  { league: 'NFL', path: 'football/nfl', limit: 16 },
+  { league: 'NBA', path: 'basketball/nba', limit: 16 },
+  { league: 'MLB', path: 'baseball/mlb', limit: 20 },
+  { league: 'NHL', path: 'hockey/nhl', limit: 16 },
+  { league: 'WNBA', path: 'basketball/wnba', limit: 12 },
 
   // College sports
-  { league: 'NCAAF', path: 'football/college-football', limit: 10 },
-  { league: 'NCAAM', path: 'basketball/mens-college-basketball', limit: 12 },
-  { league: 'NCAAW', path: 'basketball/womens-college-basketball', limit: 8 }
+  { league: 'NCAAF', path: 'football/college-football', limit: 20 },
+  { league: 'NCAAM', path: 'basketball/mens-college-basketball', limit: 24 },
+  { league: 'NCAAW', path: 'basketball/womens-college-basketball', limit: 20 }
 ];
 
 function easternDateKey(date = new Date()){
@@ -23,6 +22,14 @@ function easternDateKey(date = new Date()){
   const map = {};
   for(const p of parts) map[p.type] = p.value;
   return `${map.year}-${map.month}-${map.day}`;
+}
+
+function validDateKey(value=''){
+  return /^\d{4}-\d{2}-\d{2}$/.test(value);
+}
+
+function espnDateKey(dayKey){
+  return String(dayKey || '').replaceAll('-','');
 }
 
 function eventDateKey(iso){
@@ -65,7 +72,7 @@ function liveStatusText(league, status, competitionStatus, type){
   return type.shortDetail || type.detail || 'LIVE';
 }
 
-function normalizeEvent(event, league, todayKey){
+function normalizeEvent(event, league, dayKey){
   const competition = event?.competitions?.[0];
   if(!competition) return null;
 
@@ -80,8 +87,8 @@ function normalizeEvent(event, league, todayKey){
   const state = type.state || (type.completed ? 'post' : 'pre');
   const startTime = event.date || competition.date || '';
 
-  // Keep live games no matter what. Otherwise keep only today's games.
-  if(state !== 'in' && eventDateKey(startTime) !== todayKey) return null;
+  // Keep live games no matter what. Otherwise keep only the requested calendar day.
+  if(state !== 'in' && eventDateKey(startTime) !== dayKey) return null;
 
   let statusText = '';
   if(state === 'in'){
@@ -110,14 +117,22 @@ function normalizeEvent(event, league, todayKey){
 }
 
 function sortGames(a,b){
+  // Homepage order: LIVE first, then today's upcoming games, then today's finals.
   const rank = {in:0, pre:1, post:2};
   const stateDiff = (rank[a.state] ?? 9) - (rank[b.state] ?? 9);
   if(stateDiff) return stateDiff;
   return new Date(a.startTime || 0) - new Date(b.startTime || 0);
 }
 
-async function fetchLeague({league, path, limit = 30}, todayKey){
-  const url = `https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard`;
+async function fetchLeague({league, path, limit = 30}, dayKey){
+  const date = espnDateKey(dayKey);
+
+  // Explicit date query is the important change:
+  // it asks ESPN for the full slate for the requested day instead of relying
+  // on the scoreboard endpoint's default date/window.
+  const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard`;
+  const url = `${endpoint}?dates=${encodeURIComponent(date)}&limit=100`;
+
   const response = await fetch(url, {
     headers: {'Accept':'application/json'},
     cf: { cacheTtl: 15, cacheEverything: true }
@@ -128,12 +143,11 @@ async function fetchLeague({league, path, limit = 30}, todayKey){
   const data = await response.json();
 
   return (data.events || [])
-    .map(event => normalizeEvent(event, league, todayKey))
+    .map(event => normalizeEvent(event, league, dayKey))
     .filter(Boolean)
     .sort(sortGames)
     .slice(0, limit);
 }
-
 
 function normalizePickemEvent(event){
   const competition = event?.competitions?.[0];
@@ -206,11 +220,9 @@ async function fetchNFLPickem(){
   };
 }
 
-
 export default {
   async fetch(request, env){
     const url = new URL(request.url);
-
 
     if(url.pathname === '/api/nfl-pickem'){
       try{
@@ -230,20 +242,35 @@ export default {
     }
 
     if(url.pathname === '/api/scores'){
-      const todayKey = easternDateKey();
+      const requestedDate = url.searchParams.get('date') || '';
+      const dayKey = validDateKey(requestedDate) ? requestedDate : easternDateKey();
 
       const results = await Promise.allSettled(
-        SPORTS.map(sport => fetchLeague(sport, todayKey))
+        SPORTS.map(sport => fetchLeague(sport, dayKey))
       );
 
-      const games = results
-        .filter(result => result.status === 'fulfilled')
+      const fulfilled = results.filter(result => result.status === 'fulfilled');
+      const failed = results.filter(result => result.status === 'rejected');
+
+      // If every upstream scoreboard failed, tell the browser this is a feed problem
+      // instead of incorrectly saying there are no games.
+      if(fulfilled.length === 0){
+        return Response.json({
+          error:'4DK Live score feeds are temporarily unavailable',
+          date:dayKey,
+          games:[]
+        },{status:503});
+      }
+
+      const games = fulfilled
         .flatMap(result => result.value)
         .sort(sortGames)
-        .slice(0, 40);
+        .slice(0, 80);
 
       return Response.json({
         updatedAt: new Date().toISOString(),
+        date: dayKey,
+        partial: failed.length > 0,
         games
       }, {
         headers: {
