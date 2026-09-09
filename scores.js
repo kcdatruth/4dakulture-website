@@ -92,15 +92,20 @@
     const rank = {in:0, pre:1, post:2};
     const diff = (rank[a.state] ?? 9) - (rank[b.state] ?? 9);
     if(diff) return diff;
-    return new Date(a.startTime || 0) - new Date(b.startTime || 0);
+
+    const timeDiff = new Date(a.startTime || 0) - new Date(b.startTime || 0);
+    if(timeDiff) return timeDiff;
+
+    return String(a.league).localeCompare(String(b.league));
   }
 
-  async function browserFallback(){
+  async function browserAllGames(){
     const date = compactDate(localDateKey());
 
     const settled = await Promise.allSettled(
       SPORTS.map(async sport => {
-        const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${sport.path}/scoreboard?dates=${date}&limit=100`;
+        // High limit so college slates are not chopped at 80/100 games.
+        const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${sport.path}/scoreboard?dates=${date}&limit=500`;
         const res = await fetch(endpoint, {cache:'no-store'});
         if(!res.ok) throw new Error(`${sport.league} ${res.status}`);
         const data = await res.json();
@@ -113,8 +118,42 @@
     return settled
       .filter(r => r.status === 'fulfilled')
       .flatMap(r => r.value)
-      .sort(sortGames)
-      .slice(0,80);
+      .sort(sortGames);
+  }
+
+  function gameKey(game){
+    if(game?.id) return `${game.league}:${game.id}`;
+    return [
+      game?.league || '',
+      game?.away?.abbr || '',
+      game?.home?.abbr || '',
+      game?.startTime || ''
+    ].join(':');
+  }
+
+  function mergeGames(...lists){
+    const merged = new Map();
+
+    lists.flat().forEach(game => {
+      if(!game) return;
+      const key = gameKey(game);
+      const prev = merged.get(key);
+
+      // Prefer whichever copy has a live/final state or actual score data.
+      if(!prev){
+        merged.set(key, game);
+        return;
+      }
+
+      const prevScore = (prev.away?.score !== '' || prev.home?.score !== '');
+      const nextScore = (game.away?.score !== '' || game.home?.score !== '');
+      const prevWeight = (prev.state === 'in' ? 3 : prev.state === 'post' ? 2 : 1) + (prevScore ? 1 : 0);
+      const nextWeight = (game.state === 'in' ? 3 : game.state === 'post' ? 2 : 1) + (nextScore ? 1 : 0);
+
+      if(nextWeight >= prevWeight) merged.set(key, game);
+    });
+
+    return [...merged.values()].sort(sortGames);
   }
 
   function formatStatus(game){
@@ -126,7 +165,9 @@
   function renderGame(game){
     const awayScore = game.away?.score ?? '';
     const homeScore = game.home?.score ?? '';
-    const hasScore = awayScore !== '' || homeScore !== '';
+
+    // Scheduled games should read cleanly as TEAM @ TEAM • TIME, not 0–0.
+    const hasScore = game.state !== 'pre' && (awayScore !== '' || homeScore !== '');
 
     return `
       <div class="score-game ${game.state === 'in' ? 'live' : ''}">
@@ -154,44 +195,57 @@
     const html = games.map(renderGame).join('');
     track.innerHTML = html + html;
 
-    const duration = Math.max(30, Math.min(120, games.length * 5));
-    root.style.setProperty('--score-duration', `${duration}s`);
+    // Keep a consistent readable scroll speed no matter how many games are on the slate.
+    requestAnimationFrame(() => {
+      const halfWidth = Math.max(1, track.scrollWidth / 2);
+      const pixelsPerSecond = 62;
+      const duration = Math.max(32, halfWidth / pixelsPerSecond);
+      root.style.setProperty('--score-duration', `${duration.toFixed(1)}s`);
+      root.classList.add('is-ready');
+    });
 
-    requestAnimationFrame(() => root.classList.add('is-ready'));
     liveRegion.textContent = `${games.length} games in today's 4DK Live ticker.`;
   }
 
   async function loadScores(){
     refreshBtn.disabled = true;
 
+    let primaryGames = [];
+    let directGames = [];
+    let primaryWorked = false;
+    let directWorked = false;
+
     try{
       const date = localDateKey();
-
-      // Primary: your Cloudflare Worker.
       const res = await fetch(`/api/scores?date=${encodeURIComponent(date)}`, {cache:'no-store'});
-
       if(res.ok){
         const data = await res.json();
-        setTicker(data.games || []);
-        return;
+        primaryGames = Array.isArray(data.games) ? data.games : [];
+        primaryWorked = true;
       }
-
-      // Fallback: if the Worker feed fails, fetch today's scoreboards directly.
-      const fallbackGames = await browserFallback();
-      setTicker(fallbackGames);
-
     }catch(err){
-      console.warn('4DK score ticker primary feed failed:', err);
+      console.warn('4DK score ticker Worker feed failed:', err);
+    }
 
-      try{
-        const fallbackGames = await browserFallback();
-        setTicker(fallbackGames);
-      }catch(fallbackErr){
-        console.warn('4DK score ticker fallback failed:', fallbackErr);
-        root.classList.remove('is-ready','has-live');
-        track.innerHTML = '<span class="score-ticker-message">Live scores are temporarily unavailable.</span>';
-        liveRegion.textContent = 'Live scores are temporarily unavailable.';
+    // Always ask the league scoreboards too. This fills in games the Worker may cap.
+    try{
+      directGames = await browserAllGames();
+      directWorked = true;
+    }catch(err){
+      console.warn('4DK direct scoreboard feed failed:', err);
+    }
+
+    try{
+      if(primaryWorked || directWorked){
+        setTicker(mergeGames(primaryGames, directGames));
+      }else{
+        throw new Error('All score feeds failed');
       }
+    }catch(err){
+      console.warn('4DK score ticker failed:', err);
+      root.classList.remove('is-ready','has-live');
+      track.innerHTML = '<span class="score-ticker-message">Live scores are temporarily unavailable.</span>';
+      liveRegion.textContent = 'Live scores are temporarily unavailable.';
     }finally{
       refreshBtn.disabled = false;
     }
@@ -200,6 +254,7 @@
   refreshBtn.addEventListener('click', loadScores);
   loadScores();
 
+  // Live score refresh every 30 seconds.
   timer = setInterval(loadScores, 30000);
 
   window.addEventListener('pagehide', () => {
