@@ -462,3 +462,16 @@
     line-height:1.35;
   }
 }
+
+/* 4DK About mobile footer — two-column section links */
+@media(max-width:620px){
+  .about-page .footer-grid > div:nth-child(2) .footer-links{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:18px;
+    row-gap:8px;
+  }
+
+  .about-page .footer-grid > div:nth-child(2) .footer-links a{
+    display:block;
+  }
+}
