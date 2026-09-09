@@ -57,3 +57,9 @@
   .rank-entry.top-five{margin:10px -8px;padding:38px 8px}.rank-entry.top-five .entry-no{font-size:4.2rem}.rank-entry.top-five .entry-copy h2{font-size:2.2rem}
   .tier-break{margin-top:52px}
 }
+
+/* Keep the light article masthead readable on the dark-themed ranking page */
+.final-rank-page .masthead,
+.final-rank-page .mobile-nav{
+  color:#111;
+}
