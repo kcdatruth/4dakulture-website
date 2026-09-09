@@ -174,3 +174,17 @@ if(!document.querySelector('script[src="4dk-revamp.js"]')){
   revampScript.defer=true;
   document.body.appendChild(revampScript);
 }
+
+// 4DK article header / author / share treatment.
+if(!document.querySelector('link[href="4dk-article-tools.css"]')){
+  const articleToolsStyles=document.createElement('link');
+  articleToolsStyles.rel='stylesheet';
+  articleToolsStyles.href='4dk-article-tools.css';
+  document.head.appendChild(articleToolsStyles);
+}
+if(!document.querySelector('script[src="4dk-article-tools.js"]')){
+  const articleToolsScript=document.createElement('script');
+  articleToolsScript.src='4dk-article-tools.js';
+  articleToolsScript.defer=true;
+  document.body.appendChild(articleToolsScript);
+}

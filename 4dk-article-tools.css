@@ -1,0 +1,215 @@
+/* 4DK ARTICLE HEADER / AUTHOR / SHARE TREATMENT */
+
+.article-tools{
+  position:relative;
+  z-index:8;
+  background:#f3eee4;
+  color:#111;
+  border-top:1px solid rgba(17,17,17,.14);
+  border-bottom:1px solid rgba(17,17,17,.18);
+  box-shadow:0 10px 30px rgba(17,17,17,.05);
+}
+.article-tools-inner{
+  min-height:92px;
+  display:grid;
+  grid-template-columns:minmax(220px,1fr) auto minmax(260px,1fr);
+  align-items:center;
+  gap:22px;
+  padding-top:14px;
+  padding-bottom:14px;
+}
+
+.article-author-card{
+  min-width:0;
+  display:grid;
+  grid-template-columns:48px minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+}
+.article-author-mark{
+  width:48px;height:48px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  border:4px solid #e8452e;
+  font:1000 12px/1 Arial,sans-serif;
+  letter-spacing:-.03em;
+}
+.article-author-copy{min-width:0;display:block}
+.article-author-copy small{
+  display:block;
+  color:#817a71;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.article-author-copy strong{
+  display:block;
+  margin-top:2px;
+  font-size:15px;
+  line-height:1.05;
+  font-weight:1000;
+}
+.article-author-copy em{
+  display:block;
+  margin-top:3px;
+  color:#6f6961;
+  font-size:9px;
+  font-style:normal;
+  font-weight:800;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+.article-author-arrow{
+  color:#e8452e;
+  font-size:18px;
+  font-weight:1000;
+}
+
+.article-meta-dock{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:0;
+  min-height:42px;
+  padding:0 12px;
+  border-left:1px solid #d4cdc1;
+  border-right:1px solid #d4cdc1;
+}
+.article-meta-dock a,
+.article-meta-dock span{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:0 10px;
+  color:#625d56;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.article-meta-dock a{
+  color:#e8452e;
+}
+.article-meta-dock span+span,
+.article-meta-dock a+span{
+  border-left:1px solid #cfc7bb;
+}
+
+.article-share-actions{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:7px;
+}
+.article-share-btn{
+  min-height:38px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #1b1b1b;
+  background:#111;
+  color:#fff!important;
+  padding:0 12px;
+  cursor:pointer;
+  font:1000 9px/1 Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  text-decoration:none!important;
+}
+.article-share-btn:hover,
+.article-share-btn:focus{
+  background:#e8452e;
+  border-color:#e8452e;
+}
+.article-share-btn.is-copied{
+  background:#e8452e;
+  border-color:#e8452e;
+}
+
+/* Keep the utility dock consistent even on dark ranking pages. */
+.final-rank-page .article-tools{
+  background:#f3eee4;
+  color:#111;
+}
+.final-rank-page .article-tools a{
+  color:inherit;
+}
+
+/* Older feature pages use a slim black article header. Give it the same visual weight. */
+.article-top{
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.article-top .article-brand{
+  letter-spacing:-.04em;
+}
+.article-top .article-back{
+  opacity:.82;
+}
+
+@media(max-width:900px){
+  .article-tools-inner{
+    grid-template-columns:1fr auto;
+    gap:10px 14px;
+  }
+  .article-meta-dock{
+    grid-column:1/-1;
+    grid-row:2;
+    justify-content:flex-start;
+    padding:7px 0 0;
+    border:0;
+    border-top:1px solid #d8d0c5;
+  }
+  .article-meta-dock a,
+  .article-meta-dock span{
+    padding-left:0;
+    padding-right:10px;
+  }
+  .article-meta-dock span+span,
+  .article-meta-dock a+span{
+    border-left:0;
+    margin-left:0;
+  }
+}
+
+@media(max-width:560px){
+  .article-tools-inner{
+    min-height:0;
+    grid-template-columns:1fr;
+    gap:11px;
+    padding-top:13px;
+    padding-bottom:13px;
+  }
+  .article-author-card{
+    grid-template-columns:42px minmax(0,1fr) auto;
+  }
+  .article-author-mark{
+    width:42px;height:42px;
+    border-width:3px;
+    font-size:10px;
+  }
+  .article-author-copy strong{font-size:14px}
+  .article-share-actions{
+    justify-content:flex-start;
+    width:100%;
+  }
+  .article-share-btn{
+    flex:1;
+    min-height:40px;
+  }
+  .article-meta-dock{
+    grid-column:auto;
+    grid-row:auto;
+    order:3;
+    gap:4px 0;
+  }
+  .article-meta-dock a,
+  .article-meta-dock span{
+    min-height:22px;
+    padding-right:9px;
+    font-size:7px;
+  }
+}
