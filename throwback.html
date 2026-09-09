@@ -17,19 +17,12 @@
 <style>
 .blueprint-feature-art{
   padding:0 !important;
-  min-height:440px;
+  min-height:0;
   background:#111 !important;
   position:relative;
   overflow:hidden;
 }
-.blueprint-feature-art img{
-  width:100%;
-  height:100%;
-  min-height:440px;
-  display:block;
-  object-fit:cover;
-  object-position:center;
-}
+.blueprint-feature-art img{width:100%;height:auto;min-height:0;display:block;object-fit:contain;object-position:center;background:#111}
 .blueprint-feature-art:after{
   content:"25 YEARS LATER";
   position:absolute;
@@ -42,11 +35,7 @@
   font-weight:1000;
   letter-spacing:.12em;
 }
-@media(max-width:760px){
-  .blueprint-feature-art,
-  .blueprint-feature-art img{min-height:0}
-  .blueprint-feature-art img{aspect-ratio:1/1}
-}
+@media(max-width:760px){.blueprint-feature-art,.blueprint-feature-art img{min-height:0}}
 </style>
 </head>
 
