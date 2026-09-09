@@ -21,12 +21,9 @@
 .classic-rule{margin-top:34px;border-top:4px solid #d8432d;border-bottom:1px solid #393431;padding:13px 0;display:flex;justify-content:space-between;gap:20px;color:#8d837b;font-size:8px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
 .classic-next{padding:55px 0;background:#eee8dc;color:#171513}
 .classic-next-card{display:grid;grid-template-columns:.7fr 1.3fr;border:1px solid #c4baad;background:#f7f1e7}
-.classic-next-art{min-height:390px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#1d1715,#38231d 65%,#111);color:#fff;position:relative;overflow:hidden}
-.classic-next-art:after{content:'25';position:absolute;right:-4px;top:-30px;font:220px/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#fff;opacity:.05}
-.classic-next-art span,.classic-next-art strong,.classic-next-art small{position:relative;z-index:2}
-.classic-next-art span{color:#e15238;font-size:8px;font-weight:1000;letter-spacing:.12em}
-.classic-next-art strong{margin:8px 0;font:70px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
-.classic-next-art small{color:#a99e95;font-size:8px;font-weight:1000;letter-spacing:.1em}
+.classic-next-art{padding:0;background:#111;position:relative;overflow:hidden}
+.classic-next-art img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+.classic-next-art:after{content:"25 YEARS";position:absolute;right:12px;bottom:12px;padding:7px 9px;background:rgba(17,16,15,.82);color:#eee8dc;font-size:7px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
 .classic-next-copy{padding:36px;display:flex;flex-direction:column;justify-content:center}
 .classic-next-copy span{color:#d8432d;font-size:8px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase}
 .classic-next-copy h2{margin:8px 0 10px;font:700 43px/1 Georgia,serif}
@@ -52,8 +49,8 @@
 .album-card.featured p{color:#a99e95}
 .album-status{margin-top:18px;padding-top:12px;border-top:1px solid #cfc4b6;color:#d8432d;font-size:8px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
 .album-card.featured .album-status{border-color:#393431}
-@media(max-width:850px){.classic-next-card,.classic-format-grid{grid-template-columns:1fr}.album-grid{grid-template-columns:repeat(2,1fr)}.classic-library-head{align-items:start;flex-direction:column}.classic-next-art{min-height:320px}}
-@media(max-width:560px){.album-grid,.format-list{grid-template-columns:1fr}.classic-hero{padding-top:48px}.classic-rule{align-items:flex-start;flex-direction:column}.classic-next-copy{padding:25px}.classic-next-art strong{font-size:58px}}
+@media(max-width:850px){.classic-next-card,.classic-format-grid{grid-template-columns:1fr}.album-grid{grid-template-columns:repeat(2,1fr)}.classic-library-head{align-items:start;flex-direction:column}.classic-next-art{min-height:0}}
+@media(max-width:560px){.album-grid,.format-list{grid-template-columns:1fr}.classic-hero{padding-top:48px}.classic-rule{align-items:flex-start;flex-direction:column}.classic-next-copy{padding:25px}}
 </style>
 </head>
 <body class="throwback-page classic-albums-page">
@@ -118,9 +115,7 @@
   <div class="shell">
     <div class="classic-next-card">
       <div class="classic-next-art">
-        <span>NEXT REVIEW • 2001</span>
-        <strong>THE<br>BLUEPRINT</strong>
-        <small>JAY-Z • 25 YEARS LATER</small>
+        <img src="blueprint-cover.jpg" alt="Jay-Z The Blueprint album cover">
       </div>
       <div class="classic-next-copy">
         <span>Publishing Friday • September 11, 2026</span>
