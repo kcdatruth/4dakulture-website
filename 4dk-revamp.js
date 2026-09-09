@@ -106,6 +106,12 @@
         </div>`;
       hero.after(latest);
 
+      // Keep the X promo, but move it below the lead story + Latest rail.
+      const xFollow=[...document.querySelectorAll('body > section')].find(
+        s=>s.textContent.includes('FOLLOW 4 DA KULTURE')
+      );
+      if(xFollow) latest.after(xFollow);
+
       const across=[...main.querySelectorAll('section')].find(s=>s.querySelector('.split'));
       const franchise=document.createElement('section');
       franchise.className='signature-franchises';
