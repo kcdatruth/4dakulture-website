@@ -1,88 +1,55 @@
-/* 4DK NBA — FULL SEASON PREVIEW FEATURE */
+/* 4DK NBA — 2026–27 SEASON PREVIEW FEATURE GRAPHIC */
+
 .nba-season-feature{
   padding:30px 0;
   background:#0e0f12;
   border-top:1px solid #292a2e;
   border-bottom:1px solid #292a2e;
 }
+
 .nba-season-feature-inner{
-  min-height:350px;
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
+  position:relative;
+  display:block;
+  width:100%;
+  aspect-ratio:4 / 3;
+  min-height:0;
   overflow:hidden;
   color:#fff;
   text-decoration:none;
   border:1px solid #32343a;
   background:
-    radial-gradient(circle at 82% 20%,rgba(232,69,46,.28),transparent 18rem),
-    linear-gradient(135deg,#14151a,#090a0c);
+    #080a0d
+    url("nba-season-preview-2026-27-feature.png")
+    center / contain
+    no-repeat;
   box-shadow:0 24px 55px rgba(0,0,0,.24);
+  transition:transform .18s ease, box-shadow .18s ease;
 }
-.season-feature-copy{
-  padding:34px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+
+.nba-season-feature-inner:hover{
+  transform:translateY(-2px);
+  box-shadow:0 28px 62px rgba(0,0,0,.34);
 }
-.season-feature-copy h2{
-  margin:8px 0 14px;
-  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
-  font-size:68px;
-  line-height:.80;
-  letter-spacing:-.01em;
+
+/*
+  The headline, player collage, team/story cards and 4DK branding
+  are already built into the feature artwork, so the older text-only
+  panel content is hidden while remaining in the HTML for structure.
+*/
+.nba-season-feature-inner .season-feature-copy,
+.nba-season-feature-inner .season-feature-board{
+  display:none;
 }
-.season-feature-copy p{
-  max-width:600px;
-  margin:0 0 20px;
-  color:#bcb6af;
-  font:14px/1.45 Georgia,serif;
-}
-.season-feature-copy b{
-  color:#ff6849;
-  font-size:9px;
-  letter-spacing:.11em;
-}
-.season-feature-board{
-  position:relative;
-  padding:30px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;
-  border-left:1px solid #32343a;
-  background:
-    repeating-linear-gradient(0deg,transparent 0 30px,rgba(255,255,255,.04) 31px 32px),
-    linear-gradient(145deg,#1c1e24,#0d0e11);
-}
-.season-feature-board span{
-  color:#ff6849;
-  font-size:8px;
-  font-weight:1000;
-  letter-spacing:.14em;
-}
-.season-feature-board strong{
-  margin:7px 0;
-  font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
-  font-size:34px;
-  line-height:.9;
-}
-.season-feature-board em{
-  color:#77726c;
-  font:normal 1000 11px/1 Arial,sans-serif;
-}
-.season-feature-board small{
-  margin-top:22px;
-  padding-top:13px;
-  width:100%;
-  border-top:1px solid #393a3f;
-  color:#ddd6ce;
-  font-size:8px;
-  font-weight:1000;
-  letter-spacing:.10em;
-}
+
 @media(max-width:760px){
-  .nba-season-feature-inner{grid-template-columns:1fr}
-  .season-feature-copy{padding:24px}
-  .season-feature-copy h2{font-size:52px}
-  .season-feature-board{min-height:230px;border-left:0;border-top:1px solid #32343a}
+  .nba-season-feature{
+    padding:18px 0;
+  }
+
+  .nba-season-feature-inner{
+    width:100%;
+    aspect-ratio:4 / 3;
+    background-size:contain;
+    background-position:center;
+  }
 }
