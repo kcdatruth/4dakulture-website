@@ -441,3 +441,24 @@
     padding-bottom:24px;
   }
 }
+
+/* 4DK About mobile coverage lanes — tighter cards */
+@media(max-width:620px){
+  .about-lane-grid{
+    gap:8px;
+  }
+
+  .about-lane-card{
+    min-height:92px;
+    padding:12px 14px;
+  }
+
+  .about-lane-card strong{
+    font-size:27px;
+  }
+
+  .about-lane-card span{
+    font-size:10px;
+    line-height:1.35;
+  }
+}
