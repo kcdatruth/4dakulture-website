@@ -260,4 +260,90 @@
       </div>`;
     footer.parentNode.insertBefore(section,footer);
   }
+
+  // 4DK secondary brand mark in the sitewide footer.
+  const footerEl=document.querySelector('footer.footer');
+  if(footerEl && !footerEl.querySelector('.footer-alt-brand')){
+    if(!document.getElementById('footerAltBrandStyles')){
+      const st=document.createElement('style');
+      st.id='footerAltBrandStyles';
+      st.textContent=`
+        .footer .footer-alt-brand{
+          display:flex;
+          align-items:center;
+          gap:16px;
+          margin:0 0 18px;
+        }
+        .footer .footer-alt-brand a{
+          display:block;
+          flex:0 0 auto;
+          width:68px;
+          height:68px;
+          border-radius:50%;
+          overflow:hidden;
+          border:1px solid rgba(255,255,255,.14);
+          box-shadow:0 10px 26px rgba(0,0,0,.22);
+          background:#050505;
+        }
+        .footer .footer-alt-brand img{
+          width:100%;
+          height:100%;
+          object-fit:cover;
+          display:block;
+        }
+        .footer .footer-alt-brand-copy{
+          min-width:0;
+        }
+        .footer .footer-alt-brand-copy strong{
+          display:block;
+          color:#fff;
+          font-size:15px;
+          line-height:1.1;
+          letter-spacing:.06em;
+          text-transform:uppercase;
+        }
+        .footer .footer-alt-brand-copy span{
+          display:block;
+          margin-top:5px;
+          color:#aaa39a;
+          font-size:10px;
+          line-height:1.45;
+          max-width:250px;
+        }
+        @media(max-width:700px){
+          .footer .footer-alt-brand{
+            gap:13px;
+            margin-bottom:16px;
+          }
+          .footer .footer-alt-brand a{
+            width:58px;
+            height:58px;
+          }
+          .footer .footer-alt-brand-copy strong{
+            font-size:13px;
+          }
+          .footer .footer-alt-brand-copy span{
+            font-size:9px;
+          }
+        }
+      `;
+      document.head.appendChild(st);
+    }
+
+    const firstCol=footerEl.querySelector('.footer-grid > div') || footerEl.querySelector('.shell > div');
+    if(firstCol){
+      const brand=document.createElement('div');
+      brand.className='footer-alt-brand';
+      brand.innerHTML=`
+        <a href="index.html" aria-label="4 Da Kulture home">
+          <img src="4dk-footer-logo.png" alt="4DK alternate logo">
+        </a>
+        <div class="footer-alt-brand-copy">
+          <strong>4 Da Kulture</strong>
+          <span>Built for the conversations fans actually have.</span>
+        </div>`;
+      firstCol.prepend(brand);
+    }
+  }
+
 })();
