@@ -90,3 +90,40 @@
   .home-page .signature-franchise-grid{grid-template-columns:1fr}
   .home-page .signature-franchise-head{align-items:start;flex-direction:column}
 }
+
+/* 4DK mobile Latest rail — tighter cards, same content */
+@media(max-width:520px){
+  .home-page .latest-4dk-inner{
+    padding-top:18px;
+    padding-bottom:20px;
+  }
+  .home-page .latest-4dk-head{
+    margin-bottom:10px;
+    gap:12px;
+  }
+  .home-page .latest-4dk-head h2{
+    font-size:22px;
+  }
+  .home-page .latest-4dk-head span{
+    font-size:9px;
+    line-height:1.35;
+  }
+  .home-page .latest-4dk-grid{
+    gap:8px;
+  }
+  .home-page .latest-4dk-card{
+    min-height:108px;
+    padding:13px 14px;
+  }
+  .home-page .latest-4dk-card strong{
+    margin:7px 0;
+    font-size:18px;
+    line-height:1.04;
+  }
+  .home-page .latest-4dk-card small{
+    font-size:8px;
+  }
+  .home-page .latest-4dk-card span{
+    font-size:9px;
+  }
+}
