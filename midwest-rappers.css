@@ -1,0 +1,39 @@
+
+.midwest-rank-page{background:#0e0e0e;color:#f3efe7}
+.midwest-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 20%,rgba(243,168,35,.18),transparent 30%),linear-gradient(135deg,#0c0c0c 0%,#171717 48%,#21170b 100%);border-bottom:1px solid #5b4319}
+.midwest-grid{position:absolute;inset:0;opacity:.14;background-image:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);background-size:34px 34px;transform:skewY(-3deg) scale(1.1)}
+.midwest-hero-inner{position:relative;padding:76px 0 34px}
+.midwest-kicker{font-weight:900;letter-spacing:.18em;font-size:13px;color:#e6b54b;margin-bottom:18px}
+.big-26{position:absolute;right:4%;top:5px;font-weight:1000;font-size:clamp(130px,27vw,310px);line-height:.8;color:rgba(255,255,255,.045);letter-spacing:-.08em}
+.region-stamp{position:absolute;right:5%;top:44px;border:2px solid #e6b54b;color:#e6b54b;padding:10px 13px;font-size:12px;font-weight:900;letter-spacing:.13em;line-height:1.25;transform:rotate(4deg)}
+.midwest-hero h1{position:relative;margin:0;max-width:900px;font-size:clamp(44px,8vw,96px);line-height:.9;letter-spacing:-.055em;color:#fff}
+.midwest-hero h1 em{font-style:normal;color:#e6b54b}
+.midwest-deck{max-width:780px;font-size:clamp(19px,2.5vw,27px);line-height:1.35;color:#d7d1c7;margin:24px 0 18px}
+.midwest-byline{font-size:14px;color:#aaa}.midwest-byline a,.author-signoff a{color:#e6b54b}
+.city-strip{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.16)}
+.city-strip span{font-size:11px;font-weight:900;letter-spacing:.13em;color:#bfb7aa}
+.midwest-article{max-width:980px;padding-top:42px;padding-bottom:54px}
+.midwest-intro{font-size:18px;line-height:1.75;color:#dfd9cf}.midwest-intro p{max-width:800px}
+.midwest-rule{margin:32px 0;padding:24px;border-left:5px solid #e6b54b;background:#171717}
+.midwest-rule span{display:block;font-size:12px;font-weight:1000;letter-spacing:.18em;color:#e6b54b;margin-bottom:8px}
+.midwest-rule p{margin:0;font-size:17px;line-height:1.65}
+.midwest-rule.debate{margin-top:40px;border:1px solid #6e531e;border-left:6px solid #e6b54b;background:linear-gradient(135deg,#171717,#20170b)}
+.rank-entry{display:grid;grid-template-columns:92px 1fr;gap:22px;padding:34px 0;border-top:1px solid #302d28}
+.entry-no{font-size:56px;font-weight:1000;line-height:1;color:#e6b54b;letter-spacing:-.05em}
+.rank-entry h2{font-size:clamp(30px,5vw,48px);margin:0 0 10px;color:#fff;letter-spacing:-.03em}
+.rank-entry p{font-size:17px;line-height:1.7;color:#d8d1c6;margin:0 0 10px}.rank-entry em{color:#fff}
+.tier-break{margin:38px 0 0;padding:22px 0;border-top:3px solid #e6b54b;border-bottom:1px solid #6b531f;display:flex;justify-content:space-between;gap:16px;align-items:end}
+.tier-break span{font-size:13px;font-weight:1000;letter-spacing:.18em;color:#e6b54b}.tier-break strong{font-size:30px;color:#fff}.tier-break.five{border-top-width:6px}
+.top-ten .entry-no,.top-five .entry-no{color:#f4c75f}.runner-up{background:linear-gradient(90deg,rgba(230,181,75,.06),transparent)}
+.champion{margin-top:10px;padding-left:18px;padding-right:18px;background:linear-gradient(135deg,#1b1307,#121212);border:1px solid #7a5b1b}
+.champ-tag{display:inline-block;background:#e6b54b;color:#111;font-weight:1000;font-size:12px;letter-spacing:.15em;padding:8px 10px;margin-bottom:10px}
+.midwest-outro{margin-top:36px;padding:44px 0 22px;border-top:4px solid #e6b54b;text-align:center}
+.midwest-outro p{color:#c7bda9}.midwest-outro h2{font-size:clamp(34px,6vw,62px);line-height:1;margin:16px auto 24px;max-width:900px;color:#fff}
+.midwest-outro h2 em{font-style:normal;color:#e6b54b}.author-signoff{font-size:14px;color:#aaa}
+.rank-back{background:#171717;border-top:1px solid #332b1d;border-bottom:1px solid #332b1d}
+.rank-back .shell{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+.rank-back a{color:#e6b54b;text-decoration:none;font-weight:800}
+@media(max-width:700px){
+.midwest-hero-inner{padding-top:58px}.region-stamp{position:relative;right:auto;top:auto;display:inline-block;margin-bottom:18px;transform:rotate(2deg)}
+.big-26{right:-4%;top:8px;font-size:165px}.rank-entry{grid-template-columns:62px 1fr;gap:14px}.entry-no{font-size:42px}
+.tier-break{align-items:start;flex-direction:column}.tier-break strong{font-size:24px}.midwest-rule{padding:18px}}
