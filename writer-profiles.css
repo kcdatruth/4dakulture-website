@@ -333,3 +333,40 @@
     line-height:1.35;
   }
 }
+
+/* 4DK mobile Selected Work — tighter cards, same design */
+@media(max-width:760px){
+  .writer-work{
+    padding-top:40px;
+    padding-bottom:44px;
+  }
+
+  .writer-section-head{
+    margin-bottom:18px;
+    gap:12px;
+  }
+
+  .writer-grid{
+    gap:10px;
+  }
+
+  .writer-card{
+    min-height:158px;
+    padding:16px 18px;
+  }
+
+  .writer-card h3{
+    margin:10px 0 8px;
+    font-size:clamp(25px,8vw,34px);
+    line-height:1.01;
+  }
+
+  .writer-card p{
+    font-size:11px;
+    line-height:1.45;
+  }
+
+  .writer-card b{
+    margin-top:16px;
+  }
+}
