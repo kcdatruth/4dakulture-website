@@ -49,6 +49,13 @@
 .album-card.featured p{color:#a99e95}
 .album-status{margin-top:18px;padding-top:12px;border-top:1px solid #cfc4b6;color:#d8432d;font-size:8px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
 .album-card.featured .album-status{border-color:#393431}
+.album-card.with-cover{padding:0;overflow:hidden}
+.album-card.with-cover .album-card-image{display:block;background:#111;border-bottom:1px solid #c5baac}
+.album-card.with-cover .album-card-image img{display:block;width:100%;height:auto}
+.album-card.with-cover .album-card-body{padding:18px 20px 20px}
+.album-card.with-cover h3{margin-top:6px}
+.album-card.with-cover .album-status{margin:16px 20px 0;padding-top:12px;padding-bottom:18px}
+@media(max-width:560px){.album-card.with-cover .album-card-body{padding:16px 16px 18px}.album-card.with-cover .album-status{margin:14px 16px 0;padding-bottom:16px}}
 @media(max-width:850px){.classic-next-card,.classic-format-grid{grid-template-columns:1fr}.album-grid{grid-template-columns:repeat(2,1fr)}.classic-library-head{align-items:start;flex-direction:column}.classic-next-art{min-height:0}}
 @media(max-width:560px){.album-grid,.format-list{grid-template-columns:1fr}.classic-hero{padding-top:48px}.classic-rule{align-items:flex-start;flex-direction:column}.classic-next-copy{padding:25px}}
 </style>
@@ -162,7 +169,17 @@
 
     <div class="album-grid">
       <article class="album-card featured"><div><div class="album-no">01</div><small>Jay-Z • 2001</small><h3>The Blueprint</h3><p>The 25th-anniversary review launches the series.</p></div><div class="album-status">Next up • Sep. 11</div></article>
-      <article class="album-card"><div><div class="album-no">02</div><small>Dr. Dre • 1999</small><h3>2001</h3><p>Dre's cinematic return and a new chapter in West Coast production.</p></div><div class="album-status">Review queued</div></article>
+      <article class="album-card with-cover">
+        <div class="album-card-image">
+          <img src="dr-dre-2001-feature.png" alt="4 Da Kulture Classic Albums Revisited graphic for Dr. Dre's 2001">
+        </div>
+        <div class="album-card-body">
+          <small>Dr. Dre • 1999</small>
+          <h3>2001</h3>
+          <p>Dre's cinematic return and a new chapter in West Coast production.</p>
+        </div>
+        <div class="album-status">Review queued</div>
+      </article>
       <article class="album-card"><div><div class="album-no">03</div><small>2Pac • 1996</small><h3>All Eyez on Me</h3><p>A double album built like a takeover.</p></div><div class="album-status">Review queued</div></article>
       <article class="album-card"><div><div class="album-no">04</div><small>2Pac • 1995</small><h3>Me Against the World</h3><p>Pac at his most reflective, paranoid and personal.</p></div><div class="album-status">Review queued</div></article>
       <article class="album-card"><div><div class="album-no">05</div><small>Lil Wayne • 2005</small><h3>Tha Carter II</h3><p>The album that helped turn Wayne's run into something different.</p></div><div class="album-status">Review queued</div></article>
