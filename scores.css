@@ -173,3 +173,50 @@
   .score-ticker-viewport::-webkit-scrollbar{display:none}
   .score-ticker.has-live .score-live-dot{animation:none}
 }
+
+/* =========================================================
+   4DK 2026–27 MVP BOARD — CUSTOM EDITORIAL GRAPHIC
+   Scoped only to the NBA season-preview page.
+   ========================================================= */
+
+body.season-preview-page #mvp .mvp-head{
+  display:none !important;
+}
+
+body.season-preview-page #mvp .mvp-board{
+  position:relative !important;
+  display:block !important;
+  width:100% !important;
+  max-width:1100px !important;
+  aspect-ratio:1198 / 1313 !important;
+  min-height:0 !important;
+  margin:0 auto 30px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  border:0 !important;
+  background:
+    #efe9df
+    url("nba-mvp-board-feature.png")
+    center / contain
+    no-repeat !important;
+  box-shadow:0 22px 55px rgba(20,18,16,.16);
+}
+
+body.season-preview-page #mvp .mvp-board > div{
+  display:none !important;
+}
+
+@media(max-width:680px){
+  body.season-preview-page #mvp{
+    padding-top:30px !important;
+  }
+
+  body.season-preview-page #mvp .mvp-board{
+    width:100% !important;
+    max-width:100% !important;
+    aspect-ratio:1198 / 1313 !important;
+    margin:0 auto 22px !important;
+    background-size:contain !important;
+    box-shadow:0 14px 34px rgba(20,18,16,.13);
+  }
+}
