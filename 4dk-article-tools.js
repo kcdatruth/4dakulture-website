@@ -16,7 +16,9 @@
   const section=sectionMap.find(x=>x.test.test(path)) || {label:'4 DA KULTURE',url:'index.html'};
 
   const authorAnchor=[
-    ...document.querySelectorAll('.byline a[href*="kcdatruth"],.meta a[href*="kcdatruth"],a[href$="210west.html"]')
+    ...document.querySelectorAll(
+      '.byline a[href*="kcdatruth"],.meta a[href*="kcdatruth"],.byline a[href*="210west"],.meta a[href*="210west"]'
+    )
   ][0];
 
   let author='Kcdatruth';
