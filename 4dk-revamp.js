@@ -8,6 +8,7 @@
   try{
     if(typeof siteSearchIndex!=='undefined'){
       const extras=[
+        {title:'The 50 Best NBA Players Entering 2026–27',type:'4DK NBA Ranking',url:'top-50-nba-players-2026-27.html',desc:'Wemby, SGA, Luka, Jokić and Brunson lead the 4DK Top 50 entering 2026–27',terms:'top 50 nba players 2026 27 wemby sga luka jokic brunson ranking basketball'},
         {title:'The 26 Best Rappers of 2000–2026',type:'4DK Ranking',url:'top-26-rappers-2000-2026.html',desc:'Wayne, Kendrick, Nas, Jay and Drake lead the final 4DK ranking',terms:'top 26 rappers overall wayne kendrick nas jay drake ranking'},
         {title:'The 26 Best Midwest Rappers of 2000–2026',type:'4DK Ranking',url:'top-26-midwest-rappers-2000-2026.html',desc:'The final regional list: Chicago, Detroit, St. Louis and beyond',terms:'midwest rappers kanye common gibbs eminem lupe'},
         {title:'The 26 Best East Coast Rappers of 2000–2026',type:'4DK Ranking',url:'top-26-east-coast-rappers-2000-2026.html',desc:'Nas, Jadakiss, Jay-Z and the East Coast field',terms:'east coast rappers nas jada jay 50 nicki'},
@@ -139,6 +140,73 @@
         s.innerHTML='<span class="dot">●</span> Final Top 26 rappers live now';
         ticker.prepend(s);
       }
+    }
+  }
+
+  // NBA front-page flagship: 4DK Top 50 players entering 2026–27.
+  if(rk==='nba' && !document.querySelector('.nba-top50-feature')){
+    if(!document.getElementById('nbaTop50FeatureStyles')){
+      const st=document.createElement('style');
+      st.id='nbaTop50FeatureStyles';
+      st.textContent=`
+        .nba-top50-feature{position:relative;overflow:hidden;background:#0b0b0e;color:#fff;border-top:1px solid #29272d;border-bottom:1px solid #29272d;padding:42px 0}
+        .nba-top50-feature:before{content:'50';position:absolute;right:-22px;top:-76px;font:900 300px/.8 Georgia,serif;letter-spacing:-.09em;color:#fff;opacity:.035;pointer-events:none}
+        .nba-top50-feature:after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 82% 25%,rgba(157,25,29,.35),transparent 28rem),linear-gradient(110deg,transparent 0 58%,rgba(157,25,29,.08) 58% 100%);pointer-events:none}
+        .nba-top50-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:stretch;border:1px solid #3a373e;background:linear-gradient(135deg,#17161b,#0b0b0e 70%);box-shadow:0 22px 55px rgba(0,0,0,.22)}
+        .nba-top50-copy{padding:34px 34px 30px;display:flex;flex-direction:column;justify-content:center}
+        .nba-top50-kicker{font-size:9px;font-weight:1000;letter-spacing:.16em;color:#ef7666;text-transform:uppercase}
+        .nba-top50-copy h2{margin:10px 0 14px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(54px,7vw,92px);line-height:.78;letter-spacing:-.02em;text-transform:uppercase}
+        .nba-top50-copy h2 em{display:block;color:#d8b0aa;font:italic 400 .68em/1 Georgia,serif;letter-spacing:-.04em;margin-top:8px}
+        .nba-top50-copy p{max-width:680px;margin:0;color:#c8c0b8;font:16px/1.45 Georgia,serif}
+        .nba-top50-btn{align-self:flex-start;margin-top:22px;padding:11px 14px;background:#9d191d;color:#fff!important;text-decoration:none;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+        .nba-top50-board{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:30px;border-left:1px solid #37343b;background:repeating-linear-gradient(90deg,transparent 0 44px,rgba(255,255,255,.025) 45px 46px),radial-gradient(circle at 50% 50%,transparent 0 76px,rgba(255,255,255,.07) 77px 79px,transparent 80px)}
+        .nba-top50-board:before{content:'4DK';position:absolute;right:-8px;bottom:-20px;font:1000 100px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#fff;opacity:.035}
+        .nba-top50-board>span{font-size:8px;font-weight:1000;letter-spacing:.16em;color:#d7b56d;text-transform:uppercase;margin-bottom:14px}
+        .nba-top50-five{display:grid;gap:7px}
+        .nba-top50-five div{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:center;padding:9px 10px;border:1px solid #34323a;background:rgba(255,255,255,.025)}
+        .nba-top50-five b{font:900 22px/1 Georgia,serif;color:#8d8080}
+        .nba-top50-five strong{font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+        .nba-top50-five div:first-child{background:#9d191d;border-color:#9d191d}
+        .nba-top50-five div:first-child b{color:#fff}
+        @media(max-width:760px){
+          .nba-top50-feature{padding:28px 0}
+          .nba-top50-feature:before{font-size:210px;top:-40px;right:-14px}
+          .nba-top50-inner{grid-template-columns:1fr}
+          .nba-top50-copy{padding:27px 22px 24px}
+          .nba-top50-copy h2{font-size:58px}
+          .nba-top50-board{border-left:0;border-top:1px solid #37343b;padding:22px}
+          .nba-top50-five{grid-template-columns:1fr}
+        }
+      `;
+      document.head.appendChild(st);
+    }
+
+    const hero=document.querySelector('.nba-hero');
+    if(hero){
+      const feature=document.createElement('section');
+      feature.className='nba-top50-feature';
+      feature.innerHTML=`
+        <div class="shell">
+          <div class="nba-top50-inner">
+            <div class="nba-top50-copy">
+              <span class="nba-top50-kicker">4DK Signature Ranking • 2026–27</span>
+              <h2>THE 50 BEST<br>NBA PLAYERS <em>RIGHT NOW.</em></h2>
+              <p>Not a career ranking. Not a legacy list. More than 65 names went into the pool — then we cut it down one by one. Wemby gets the crown entering 2026–27.</p>
+              <a class="nba-top50-btn" href="top-50-nba-players-2026-27.html">READ THE FULL TOP 50 →</a>
+            </div>
+            <aside class="nba-top50-board" aria-label="4DK Top 5 NBA players entering 2026–27">
+              <span>THE FINAL FIVE</span>
+              <div class="nba-top50-five">
+                <div><b>1</b><strong>Victor Wembanyama</strong></div>
+                <div><b>2</b><strong>Shai Gilgeous-Alexander</strong></div>
+                <div><b>3</b><strong>Luka Dončić</strong></div>
+                <div><b>4</b><strong>Nikola Jokić</strong></div>
+                <div><b>5</b><strong>Jalen Brunson</strong></div>
+              </div>
+            </aside>
+          </div>
+        </div>`;
+      hero.after(feature);
     }
   }
 
