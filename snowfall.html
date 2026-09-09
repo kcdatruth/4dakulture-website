@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Snowfall Files | 4DK Screen</title>
+<meta name="description" content="The Snowfall Files is 4DK's permanent hub for Snowfall retrospectives, The Drop episode coverage, character debates and the Los Angeles culture behind the universe.">
+<link rel="canonical" href="https://4dakulturemedia.com/snowfall.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Snowfall Files | 4DK Screen">
+<meta property="og:description" content="From Franklin Saint's rise and fall to The Drop and the rise of West Coast rap — the Snowfall universe through a 4DK lens.">
+<meta property="og:url" content="https://4dakulturemedia.com/snowfall.html">
+<meta name="theme-color" content="#120d0a">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="movies.css">
+<style>
+:root{
+  --sf-black:#120d0a;
+  --sf-brown:#2a1710;
+  --sf-rust:#a83e26;
+  --sf-red:#d8492f;
+  --sf-cream:#efe5d5;
+  --sf-gold:#ba8a4b;
+  --sf-muted:#a99b8d;
+}
+.snowfall-page{background:var(--sf-black);color:var(--sf-cream)}
+.snowfall-topline{background:#080605}
+.snowfall-topline strong{color:var(--sf-red)}
+.snowfall-masthead{background:rgba(239,229,213,.98)}
+.snowfall-masthead .brand,.snowfall-masthead .nav a,.snowfall-masthead .menu-btn{color:#17110e}
+.snowfall-masthead .brand-mark{background:var(--sf-red)}
+.snowfall-masthead .mobile-nav{background:var(--sf-cream)}
+.sf-hero{
+  position:relative;overflow:hidden;padding:72px 0 52px;
+  background:
+    linear-gradient(90deg,rgba(8,5,4,.98),rgba(18,10,7,.89) 55%,rgba(41,20,13,.78)),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.018) 0 1px,transparent 1px 5px);
+}
+.sf-hero:after{
+  content:"LOS ANGELES • 1980s → 1990s";
+  position:absolute;right:-28px;bottom:34px;transform:rotate(-90deg);
+  color:rgba(255,255,255,.07);font:900 15px/1 Arial,sans-serif;letter-spacing:.22em;
+}
+.sf-kicker{display:block;color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}
+.sf-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:end}
+.sf-hero h1{margin:10px 0 14px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(72px,10vw,138px);line-height:.75;letter-spacing:-.02em;text-transform:uppercase}
+.sf-hero-copy p{max-width:660px;margin:0;color:#c0b2a5;font:18px/1.55 Georgia,'Times New Roman',serif}
+.sf-era-card{border:1px solid #493026;background:linear-gradient(160deg,#26140f,#120d0a);padding:26px;box-shadow:0 28px 60px rgba(0,0,0,.32)}
+.sf-era-card span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.12em}
+.sf-era-card strong{display:block;margin:8px 0 12px;font:58px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.sf-era-card p{margin:0;color:#9f9185;font-size:12px;line-height:1.5}
+.sf-nav{background:var(--sf-cream);border-bottom:1px solid #cbbfae}
+.sf-nav .shell{display:flex;gap:9px;overflow:auto;padding-top:11px;padding-bottom:11px;white-space:nowrap}
+.sf-nav a{padding:9px 13px;border-radius:999px;background:#17110e;color:#f6eee3;font-size:8px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase}
+.sf-nav a:first-child{background:var(--sf-red)}
+.sf-section{padding:62px 0;border-bottom:1px solid #392820}
+.sf-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.sf-head h2{margin:6px 0 0;font:62px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
+.sf-head>p{max-width:385px;margin:0;color:#9d8e82;font-size:11px;line-height:1.5}
+.sf-original{background:var(--sf-cream);color:#17110e}
+.sf-original .sf-head>p{color:#71665d}
+.sf-lead{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid #c3b6a4;background:#f6eee2}
+.sf-lead-art{min-height:400px;padding:25px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 74% 20%,rgba(216,73,47,.22),transparent 12rem),linear-gradient(150deg,#18100d,#3a2018);color:#fff;position:relative;overflow:hidden}
+.sf-lead-art:before{content:"SAINT";position:absolute;right:-10px;top:8px;color:rgba(255,255,255,.045);font:150px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;transform:rotate(-6deg)}
+.sf-lead-art span,.sf-lead-art strong,.sf-lead-art small{position:relative;z-index:2}
+.sf-lead-art span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.12em}
+.sf-lead-art strong{margin:8px 0;font:64px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.sf-lead-art small{color:#a99b90;font-size:8px;font-weight:1000;letter-spacing:.09em}
+.sf-lead-copy{padding:34px;display:flex;flex-direction:column;justify-content:center}
+.sf-lead-copy span{color:var(--sf-rust);font-size:8px;font-weight:1000;letter-spacing:.12em}
+.sf-lead-copy h3{margin:8px 0 11px;font:700 40px/1 Georgia,serif}
+.sf-lead-copy p{margin:0;color:#6d635b;font-size:13px;line-height:1.55}
+.sf-lead-copy b{margin-top:18px;color:var(--sf-rust);font-size:8px;letter-spacing:.1em}
+.sf-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.sf-card{min-height:245px;padding:20px;border:1px solid #c7baaa;background:#f4ecdf;display:flex;flex-direction:column;justify-content:flex-end}
+.sf-card.dark{border-color:#49332a;background:#18110e;color:#eee4d6}
+.sf-card span{color:var(--sf-rust);font-size:8px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+.sf-card h3{margin:8px 0 7px;font:700 28px/1 Georgia,serif}
+.sf-card p{margin:0;color:#74685f;font-size:11px;line-height:1.45}
+.sf-card.dark p{color:#a8998d}
+.sf-drop{background:radial-gradient(circle at 85% 10%,rgba(216,73,47,.14),transparent 22rem),#100b09}
+.drop-lead{display:grid;grid-template-columns:.85fr 1.15fr;gap:1px;background:#463027;border:1px solid #463027}
+.drop-art,.drop-copy{background:#17100d;padding:28px}
+.drop-art{min-height:410px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55)),linear-gradient(145deg,#54281d,#17100d 70%)}
+.drop-art span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.12em}
+.drop-art strong{margin:8px 0;font:70px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.drop-art small{color:#9c8c81;font-size:8px;font-weight:1000;letter-spacing:.1em}
+.drop-copy{display:flex;flex-direction:column;justify-content:center}
+.drop-copy span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.13em}
+.drop-copy h3{margin:8px 0 12px;font:700 40px/1 Georgia,serif}
+.drop-copy p{margin:0 0 12px;color:#ae9f92;font-size:13px;line-height:1.55}
+.drop-copy b{margin-top:8px;color:#e7daca;font-size:9px;letter-spacing:.08em}
+.weekly-format{margin-top:15px;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#3d2b24;border:1px solid #3d2b24}
+.weekly-format div{min-height:130px;padding:15px;background:#17100d;display:flex;flex-direction:column;justify-content:flex-end}
+.weekly-format span{color:var(--sf-red);font:34px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.weekly-format strong{margin-top:8px;font-size:9px;line-height:1.2;letter-spacing:.04em}
+.sf-culture{background:#21150f}
+.culture-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.culture-grid article{min-height:260px;padding:19px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid #4a3025;background:linear-gradient(160deg,#2e1c14,#120d0a)}
+.culture-grid span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.11em}
+.culture-grid h3{margin:8px 0 6px;font:700 26px/1 Georgia,serif}
+.culture-grid p{margin:0;color:#9e8f82;font-size:11px;line-height:1.45}
+.sf-board{background:#e9dfd0;color:#17110e}
+.board-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.board-card{padding:22px;border:1px solid #c3b5a4;background:#f6eee2}
+.board-card span{color:var(--sf-rust);font-size:8px;font-weight:1000;letter-spacing:.12em}
+.board-card h3{margin:8px 0 7px;font:700 30px/1 Georgia,serif}
+.board-card p{margin:0;color:#70655c;font-size:11px;line-height:1.45}
+.board-card b{display:block;margin-top:15px;color:var(--sf-rust);font-size:8px;letter-spacing:.1em}
+@media(max-width:880px){
+  .sf-hero-grid,.sf-lead,.drop-lead{grid-template-columns:1fr}
+  .sf-card-grid{grid-template-columns:1fr 1fr}
+  .culture-grid{grid-template-columns:1fr 1fr}
+  .weekly-format{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .sf-hero{padding-top:48px}.sf-head{align-items:start;flex-direction:column}
+  .sf-card-grid,.culture-grid,.board-grid{grid-template-columns:1fr}
+  .weekly-format{grid-template-columns:1fr}
+  .sf-lead-art,.drop-art{min-height:310px}
+}
+</style>
+</head>
+
+<body class="screen-page snowfall-page">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topline snowfall-topline">
+  <div class="shell">
+    <span><strong>4DK</strong> TV • Los Angeles • Culture</span>
+    <span>The story didn't end with Franklin Saint.</span>
+  </div>
+</div>
+
+<header class="masthead snowfall-masthead">
+  <div class="shell masthead-inner">
+    <nav class="nav">
+      <a href="nba.html">NBA</a>
+      <a href="nfl.html">NFL</a>
+      <a class="active" href="movies.html">TV & Movies</a>
+    </nav>
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">4</span> DA KULTURE
+    </a>
+
+    <nav class="nav right">
+      <a href="throwback.html">Throwback</a>
+      <a href="hiphop.html">Hip-Hop</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="nba.html">NBA</a>
+    <a href="nfl.html">NFL</a>
+    <a href="movies.html">TV & Movies</a>
+    <a href="snowfall.html">The Snowfall Files</a>
+    <a href="throwback.html">Throwback</a>
+    <a href="hiphop.html">Hip-Hop</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="sf-hero">
+  <div class="shell sf-hero-grid">
+    <div class="sf-hero-copy">
+      <span class="sf-kicker">4DK SCREEN • ORIGINAL COLUMN</span>
+      <h1>THE<br>SNOWFALL<br>FILES.</h1>
+      <p>From Franklin Saint's empire to Wanda and Leon entering a new decade — revisiting the choices, characters, episodes, music and Los Angeles culture that built the Snowfall universe.</p>
+    </div>
+
+    <div class="sf-era-card">
+      <span>THE WORLD MOVES FORWARD</span>
+      <strong>1980s<br>→ 1990s</strong>
+      <p>The original series traced the crack era. The new saga moves into early-'90s Los Angeles, where survival, reinvention and the rise of West Coast rap collide.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="sf-nav" aria-label="Snowfall Files sections">
+  <div class="shell">
+    <a href="#original">Original Series</a>
+    <a href="#drop">The Drop</a>
+    <a href="#culture">L.A. & The Culture</a>
+    <a href="#board">Story Board</a>
+  </div>
+</nav>
+
+<section class="sf-section sf-original" id="original">
+  <div class="shell">
+    <div class="sf-head">
+      <div>
+        <span class="sf-kicker">THE ORIGINAL SERIES</span>
+        <h2>THE EMPIRE.<br>THE COST.</h2>
+      </div>
+      <p>Six seasons worth revisiting: Franklin's rise and fall, the Saint family, Teddy, Leon, Wanda, Jerome, Louie and every decision that changed the board.</p>
+    </div>
+
+    <article class="sf-lead">
+      <div class="sf-lead-art">
+        <span>FIRST RETROSPECTIVE</span>
+        <strong>FRANKLIN<br>SAINT</strong>
+        <small>THE RISE • THE POWER • THE FALL</small>
+      </div>
+      <div class="sf-lead-copy">
+        <span>READY TO BUILD</span>
+        <h3>How Franklin Saint Built — and Lost — an Empire</h3>
+        <p>A full-series look at ambition, control, family and the choices that turned Franklin from a young businessman into one of television's most complicated antiheroes.</p>
+        <b>YOUR TAKE BECOMES THE ARTICLE →</b>
+      </div>
+    </article>
+
+    <div class="sf-card-grid">
+      <article class="sf-card">
+        <span>CHARACTER FILE</span>
+        <h3>Leon Simmons</h3>
+        <p>From soldier to survivor: the growth that made Leon one of the show's emotional anchors.</p>
+      </article>
+      <article class="sf-card">
+        <span>CHARACTER FILE</span>
+        <h3>Jerome & Louie</h3>
+        <p>Family, ambition and the fracture that changed everything inside the Saint organization.</p>
+      </article>
+      <article class="sf-card">
+        <span>THE RANKING</span>
+        <h3>Every Snowfall Season</h3>
+        <p>Six seasons. One ranking. Peak, weakest stretch, best finale and most rewatchable year.</p>
+      </article>
+      <article class="sf-card">
+        <span>THE DEBATE</span>
+        <h3>When Did Franklin Lose?</h3>
+        <p>Was there one point of no return — or was the ending built into the climb from the beginning?</p>
+      </article>
+      <article class="sf-card">
+        <span>SCENE FILE</span>
+        <h3>The Moments We Still Talk About</h3>
+        <p>The confrontations, betrayals, deaths and quiet scenes that defined the original run.</p>
+      </article>
+      <article class="sf-card">
+        <span>LEGACY</span>
+        <h3>Where Snowfall Ranks</h3>
+        <p>Its place among the defining Black crime dramas and prestige television of its era.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sf-section sf-drop" id="drop">
+  <div class="shell">
+    <div class="sf-head">
+      <div>
+        <span class="sf-kicker">NOW RUNNING</span>
+        <h2>THE DROP:<br>A SNOWFALL SAGA</h2>
+      </div>
+      <p>Wanda and Leon move into '90s Los Angeles as the fallout of the crack era overlaps with an exploding West Coast rap scene.</p>
+    </div>
+
+    <div class="drop-lead">
+      <div class="drop-art">
+        <span>SEASON 1 • WEEKLY COVERAGE</span>
+        <strong>THE<br>DROP</strong>
+        <small>WANDA • LEON • MUSIC • L.A.</small>
+      </div>
+      <div class="drop-copy">
+        <span>THE NEW ERA</span>
+        <h3>Can the Snowfall Universe Build Something New?</h3>
+        <p>The new saga doesn't simply repeat Franklin's story. Wanda is chasing an opening in L.A.'s rap scene while Leon is trying to build a life outside the streets.</p>
+        <p>That gives 4DK two angles every week: whether the story works as television, and how well it captures the culture surrounding early-'90s West Coast music.</p>
+        <b>EPISODE REVIEWS • CONNECTIONS • PREDICTIONS</b>
+      </div>
+    </div>
+
+    <div class="weekly-format">
+      <div><span>01</span><strong>EPISODE SCORE</strong></div>
+      <div><span>02</span><strong>MVP OF THE WEEK</strong></div>
+      <div><span>03</span><strong>BEST SCENE</strong></div>
+      <div><span>04</span><strong>SNOWFALL CALLBACK</strong></div>
+      <div><span>05</span><strong>WHAT HAPPENS NEXT?</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="sf-section sf-culture" id="culture">
+  <div class="shell">
+    <div class="sf-head">
+      <div>
+        <span class="sf-kicker">BEYOND THE PLOT</span>
+        <h2>L.A. &<br>THE CULTURE.</h2>
+      </div>
+      <p>The Snowfall world is also a doorway into Los Angeles history, neighborhood identity and the music that reshaped the city.</p>
+    </div>
+
+    <div class="culture-grid">
+      <article>
+        <span>MUSIC</span>
+        <h3>The Rise of West Coast Rap</h3>
+        <p>How the new saga's early-'90s setting creates a bridge from street politics to the music business.</p>
+      </article>
+      <article>
+        <span>LOS ANGELES</span>
+        <h3>The City Is a Character</h3>
+        <p>Neighborhoods, style, language and the changing feel of L.A. across two decades.</p>
+      </article>
+      <article>
+        <span>SOUNDTRACK FILE</span>
+        <h3>Every Song That Matters</h3>
+        <p>A running music column for needle drops, era choices and records worth adding to the playlist.</p>
+      </article>
+      <article>
+        <span>CROSSOVER</span>
+        <h3>TV × Hip-Hop</h3>
+        <p>Selected Snowfall Files stories can live in both 4DK Screen and Hip-Hop when the culture overlaps.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sf-section sf-board" id="board">
+  <div class="shell">
+    <div class="sf-head">
+      <div>
+        <span class="sf-kicker">THE EDITORIAL BOARD</span>
+        <h2>FIRST STORIES<br>TO BUILD.</h2>
+      </div>
+      <p>These are prompts for your takes — not finished opinions. We build each story around what you actually think.</p>
+    </div>
+
+    <div class="board-grid">
+      <article class="board-card">
+        <span>ORIGINAL SERIES</span>
+        <h3>Franklin Saint: Rise, Power & Fall</h3>
+        <p>Was his ending inevitable, and when did he stop being somebody you could root for?</p>
+        <b>READY FOR YOUR TAKE →</b>
+      </article>
+      <article class="board-card">
+        <span>THE DROP</span>
+        <h3>Season 1 Episode Reviews</h3>
+        <p>A weekly column using the same five-part 4DK format after each new episode.</p>
+        <b>WEEKLY →</b>
+      </article>
+      <article class="board-card">
+        <span>RANKINGS</span>
+        <h3>Top 15 Snowfall Characters</h3>
+        <p>Impact, performance, writing, memorable moments and how much they changed the story.</p>
+        <b>RUN THE LIST →</b>
+      </article>
+      <article class="board-card">
+        <span>DEBATE</span>
+        <h3>Snowfall's Best Season</h3>
+        <p>Peak Franklin? Peak family drama? Peak Teddy? We can settle it season by season.</p>
+        <b>LET'S ARGUE IT →</b>
+      </article>
+      <article class="board-card">
+        <span>CULTURE</span>
+        <h3>From the Dope Game to the Rap Game</h3>
+        <p>How The Drop moves the universe into a new kind of power struggle in early-'90s Los Angeles.</p>
+        <b>DEEP DIVE →</b>
+      </article>
+      <article class="board-card">
+        <span>SOUNDTRACK</span>
+        <h3>The Music of the Snowfall Universe</h3>
+        <p>Records, scenes and soundtrack choices from the original show through the new saga.</p>
+        <b>BUILD THE PLAYLIST →</b>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">4 DA KULTURE</div>
+        <p>Independent coverage and conversation at the intersection of sports, music, movies, television and culture.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <div class="footer-links">
+          <a href="nba.html">NBA</a>
+          <a href="nfl.html">NFL</a>
+          <a href="movies.html">TV & Movies</a>
+          <a href="snowfall.html">The Snowfall Files</a>
+          <a href="throwback.html">Throwback</a>
+          <a href="hiphop.html">Hip-Hop</a>
+        </div>
+      </div>
+      <div>
+        <h4>4DK</h4>
+        <div class="footer-links">
+          <a href="magazine.html">Magazine</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="kcdatruth.html">Kcdatruth</a>
+          <a href="210west.html">210West</a>
+        </div>
+      </div>
+    </div>
+    <div class="fine">© 2026 4 Da Kulture. All original writing and commentary belong to their credited authors.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
