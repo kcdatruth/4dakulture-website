@@ -303,3 +303,33 @@
   .writer-about-grid{grid-template-columns:1fr}
   .writer-cta-inner{align-items:flex-start;flex-direction:column}
 }
+
+/* Writer profile mobile hero polish */
+@media(max-width:760px){
+  /* Keep the profile hero from sliding under the sticky masthead on phones. */
+  .writer-page .masthead{
+    position:relative;
+    top:auto;
+  }
+
+  .writer-hero-inner{
+    padding-top:28px;
+  }
+
+  .writer-kicker{
+    margin-bottom:2px;
+    font-size:9px;
+    letter-spacing:.12em;
+  }
+
+  .writer-hero h1{
+    font-size:clamp(42px,12vw,60px);
+    line-height:.92;
+  }
+
+  .writer-title{
+    margin-top:10px;
+    font-size:10px;
+    line-height:1.35;
+  }
+}
