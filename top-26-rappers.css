@@ -1,0 +1,59 @@
+
+:root{
+  --ink:#0a0a0a;--paper:#f1eadc;--red:#d7182a;--gold:#cda55b;--cream:#f8f1e4;
+  --muted:#a79f94;--line:rgba(255,255,255,.14)
+}
+.final-rank-page{background:var(--ink);color:var(--cream)}
+.final-hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:
+  radial-gradient(circle at 78% 25%,rgba(215,24,42,.22),transparent 28%),
+  radial-gradient(circle at 18% 78%,rgba(205,165,91,.12),transparent 28%),
+  linear-gradient(135deg,#070707 0%,#141414 52%,#080808 100%)}
+.hero-grid-lines{position:absolute;inset:0;opacity:.15;background-image:
+  linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+  background-size:34px 34px;transform:skewY(-3deg) scale(1.1)}
+.final-hero-inner{position:relative;min-height:620px;padding-top:84px;padding-bottom:60px}
+.final-kicker{font-size:.78rem;letter-spacing:.22em;font-weight:800;color:var(--gold);text-transform:uppercase}
+.hero-number{position:absolute;right:3%;top:-58px;font-size:24rem;line-height:1;font-weight:1000;letter-spacing:-.08em;color:rgba(255,255,255,.035);font-family:Arial Black,Impact,sans-serif}
+.era-stamp{position:absolute;right:4%;top:92px;border:2px solid var(--red);color:var(--cream);font-weight:900;letter-spacing:.14em;padding:14px 18px;text-align:center;transform:rotate(5deg)}
+.final-hero h1{position:relative;max-width:950px;margin:28px 0 20px;font-family:Georgia,serif;font-size:clamp(3rem,8vw,7.7rem);line-height:.88;letter-spacing:-.055em;text-transform:uppercase}
+.final-hero h1 em{color:var(--red);font-style:normal}
+.hero-deck{max-width:690px;font-size:clamp(1.2rem,2.5vw,1.8rem);font-family:Georgia,serif;color:#d8d0c5}
+.byline{margin-top:26px;font-size:.88rem;color:#b8b0a6}.byline a{color:var(--cream);font-weight:800}
+.region-strip{display:flex;flex-wrap:wrap;gap:0;margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.region-strip span{padding:12px 20px 12px 0;margin-right:20px;font-size:.72rem;letter-spacing:.18em;font-weight:900;color:#ddd4c7}
+.final-article{max-width:980px;padding-top:72px;padding-bottom:90px}
+.intro{max-width:780px;margin:0 auto 54px;font-family:Georgia,serif;font-size:1.18rem;line-height:1.8;color:#ddd5c9}
+.intro p{margin:0 0 1.35rem}.intro strong{color:#fff}
+.rule-box{margin:34px 0;padding:25px 28px;border-left:4px solid var(--red);background:#141414;font-family:Arial,sans-serif}
+.rule-box span{display:block;margin-bottom:8px;color:var(--gold);font-size:.74rem;font-weight:900;letter-spacing:.2em}
+.rule-box p{margin:0;font-size:1rem;line-height:1.65;color:#d8d0c5}
+.tier-break{display:flex;justify-content:space-between;align-items:end;margin:70px 0 20px;padding:0 0 14px;border-bottom:3px solid var(--red)}
+.tier-break span{font-size:.8rem;letter-spacing:.18em;font-weight:900;color:var(--gold)}.tier-break strong{font-size:clamp(1.6rem,5vw,3.7rem);line-height:1}
+.honorable-break{border-bottom-color:#6f6252}
+.rank-entry{display:grid;grid-template-columns:120px 1fr;gap:26px;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.11)}
+.entry-no{font-family:Arial Black,Impact,sans-serif;font-size:4.6rem;line-height:.82;color:#333;letter-spacing:-.08em}
+.entry-copy h2{margin:0 0 11px;font-family:Georgia,serif;font-size:2.15rem;letter-spacing:-.03em}
+.entry-copy p{margin:0;font-family:Georgia,serif;font-size:1.08rem;line-height:1.75;color:#cfc7bb}
+.rank-entry.honorable .entry-no{font-size:3.35rem;color:#645c51}.rank-entry.honorable .entry-copy h2{font-size:1.7rem}
+.rank-entry.top-ten{padding:46px 0}.rank-entry.top-ten .entry-no{color:var(--gold);font-size:5.6rem}.rank-entry.top-ten .entry-copy h2{font-size:2.65rem}
+.rank-entry.top-five{margin:16px -24px;padding:54px 24px;background:linear-gradient(90deg,rgba(215,24,42,.09),transparent);border-top:1px solid rgba(215,24,42,.26)}
+.rank-entry.top-five .entry-no{color:var(--red);font-size:6.5rem}.rank-entry.top-five .entry-copy h2{font-size:3rem}
+.rank-entry.champion{position:relative;margin-top:38px;padding-top:70px;padding-bottom:70px;background:
+  radial-gradient(circle at 12% 50%,rgba(205,165,91,.19),transparent 35%),
+  linear-gradient(90deg,rgba(215,24,42,.14),rgba(255,255,255,.02))}
+.rank-entry.champion:before{content:"4DK #1";position:absolute;top:20px;left:24px;color:var(--gold);font-weight:900;letter-spacing:.22em;font-size:.78rem}
+.closing{max-width:780px;margin:90px auto 0;padding-top:42px;border-top:1px solid var(--line);font-family:Georgia,serif;font-size:1.18rem;line-height:1.75;color:#ddd5c9}
+.closing h2{font-size:clamp(2rem,5vw,4.5rem);line-height:.95;color:#fff;margin:35px 0 22px;letter-spacing:-.045em}
+.signature{font-family:Arial,sans-serif;font-weight:900;color:var(--gold)}
+@media(max-width:760px){
+  .final-hero-inner{min-height:560px;padding-top:60px}
+  .hero-number{font-size:13rem;right:-5%;top:35px}.era-stamp{top:55px;right:5%;font-size:.66rem;padding:10px 12px}
+  .final-hero h1{margin-top:90px}.region-strip span{padding:10px 12px 10px 0;margin-right:12px}
+  .final-article{padding-left:18px;padding-right:18px;padding-top:48px}
+  .rank-entry{grid-template-columns:72px 1fr;gap:18px;padding:28px 0}
+  .entry-no{font-size:3rem}.entry-copy h2{font-size:1.7rem}.entry-copy p{font-size:1rem;line-height:1.65}
+  .rank-entry.top-ten .entry-no{font-size:3.8rem}.rank-entry.top-ten .entry-copy h2{font-size:2rem}
+  .rank-entry.top-five{margin:10px -8px;padding:38px 8px}.rank-entry.top-five .entry-no{font-size:4.2rem}.rank-entry.top-five .entry-copy h2{font-size:2.2rem}
+  .tier-break{margin-top:52px}
+}
