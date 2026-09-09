@@ -160,3 +160,17 @@ siteSearchInput?.addEventListener('keydown',e=>{
     siteSearchInput.blur();
   }
 });
+
+// 4DK Phase 1 revamp: homepage front cover, mobile navigation, and article discovery.
+if(!document.querySelector('link[href="4dk-revamp.css"]')){
+  const revampStyles=document.createElement('link');
+  revampStyles.rel='stylesheet';
+  revampStyles.href='4dk-revamp.css';
+  document.head.appendChild(revampStyles);
+}
+if(!document.querySelector('script[src="4dk-revamp.js"]')){
+  const revampScript=document.createElement('script');
+  revampScript.src='4dk-revamp.js';
+  revampScript.defer=true;
+  document.body.appendChild(revampScript);
+}
