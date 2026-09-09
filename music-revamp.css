@@ -450,3 +450,13 @@
     min-height:145px;
   }
 }
+
+/* 4DK Music masthead contrast fix */
+.music-front-page .menu-btn{
+  color:#fff !important;
+}
+
+.music-front-page .menu-btn:hover,
+.music-front-page .menu-btn:focus{
+  color:var(--music-gold) !important;
+}
