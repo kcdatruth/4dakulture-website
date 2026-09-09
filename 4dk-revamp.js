@@ -310,6 +310,10 @@
           line-height:1.45;
           max-width:250px;
         }
+        .footer .footer-alt-brand + p{
+          margin-top:0;
+          max-width:430px;
+        }
         @media(max-width:700px){
           .footer .footer-alt-brand{
             gap:13px;
@@ -343,6 +347,24 @@
           <span>Built for the conversations fans actually have.</span>
         </div>`;
       firstCol.prepend(brand);
+
+      // Remove the old duplicate footer wordmark directly underneath the new logo lockup.
+      firstCol.querySelector('.footer-brand')?.remove();
+    }
+
+    // Add Kcdatruth to the 4DK footer links without disturbing the existing links.
+    const footerGroups=[...footerEl.querySelectorAll('.footer-grid > div')];
+    const fourDKGroup=footerGroups.find(group=>
+      group.querySelector('h4')?.textContent.trim().toUpperCase()==='4DK'
+    );
+    const fourDKLinks=fourDKGroup?.querySelector('.footer-links');
+    if(fourDKLinks && !fourDKLinks.querySelector('a[href="kcdatruth.html"]')){
+      const authorLink=document.createElement('a');
+      authorLink.href='kcdatruth.html';
+      authorLink.textContent='Kcdatruth';
+      const westLink=fourDKLinks.querySelector('a[href="210west.html"]');
+      if(westLink)fourDKLinks.insertBefore(authorLink,westLink);
+      else fourDKLinks.appendChild(authorLink);
     }
   }
 
