@@ -37,3 +37,29 @@
 .midwest-hero-inner{padding-top:58px}.region-stamp{position:relative;right:auto;top:auto;display:inline-block;margin-bottom:18px;transform:rotate(2deg)}
 .big-26{right:-4%;top:8px;font-size:165px}.rank-entry{grid-template-columns:62px 1fr;gap:14px}.entry-no{font-size:42px}
 .tier-break{align-items:start;flex-direction:column}.tier-break strong{font-size:24px}.midwest-rule{padding:18px}}
+
+
+/* Midwest article masthead contrast fix */
+.midwest-rank-page .masthead{
+  background:#101012;
+  color:#fff;
+  border-color:#2a292d;
+}
+.midwest-rank-page .masthead .brand{
+  color:#fff;
+}
+.midwest-rank-page .masthead .nav a,
+.midwest-rank-page .masthead .mobile-nav a{
+  color:#fff;
+}
+.midwest-rank-page .masthead .menu-btn{
+  color:#fff;
+}
+.midwest-rank-page .masthead .brand-mark{
+  background:#ef4b37;
+  color:#fff;
+}
+.midwest-rank-page .mobile-nav{
+  background:#101012;
+  border-color:#2a292d;
+}
