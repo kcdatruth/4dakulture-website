@@ -10,9 +10,9 @@
   box-shadow:0 10px 30px rgba(17,17,17,.05);
 }
 .article-tools-inner{
-  min-height:92px;
+  min-height:100px;
   display:grid;
-  grid-template-columns:minmax(220px,1fr) auto minmax(260px,1fr);
+  grid-template-columns:minmax(210px,.85fr) auto minmax(360px,1.35fr);
   align-items:center;
   gap:22px;
   padding-top:14px;
@@ -91,63 +91,116 @@
   letter-spacing:.10em;
   text-transform:uppercase;
 }
-.article-meta-dock a{
-  color:#e8452e;
-}
+.article-meta-dock a{color:#e8452e}
 .article-meta-dock span+span,
-.article-meta-dock a+span{
-  border-left:1px solid #cfc7bb;
-}
+.article-meta-dock a+span{border-left:1px solid #cfc7bb}
 
-.article-share-actions{
+/* Intentional 4DK share dock */
+.article-share-block{
+  min-width:0;
+  display:grid;
+  gap:7px;
+  justify-items:end;
+}
+.article-share-label{
   display:flex;
-  justify-content:flex-end;
   align-items:center;
   gap:7px;
+  color:#716a62;
+  font:1000 7px/1 Arial,sans-serif;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.article-share-label:before{
+  content:"";
+  width:22px;
+  height:2px;
+  background:#e8452e;
+}
+.article-share-actions{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:stretch;
+  gap:6px;
 }
 .article-share-btn{
-  min-height:38px;
+  min-height:42px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  border:1px solid #1b1b1b;
+  gap:7px;
+  border:1px solid #171717;
   background:#111;
   color:#fff!important;
-  padding:0 12px;
+  padding:0 10px;
   cursor:pointer;
-  font:1000 9px/1 Arial,sans-serif;
-  letter-spacing:.08em;
+  font:1000 8px/1 Arial,sans-serif;
+  letter-spacing:.075em;
   text-transform:uppercase;
   text-decoration:none!important;
+  transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease;
 }
 .article-share-btn:hover,
-.article-share-btn:focus{
+.article-share-btn:focus-visible{
+  transform:translateY(-2px);
   background:#e8452e;
   border-color:#e8452e;
+  outline:none;
 }
+.article-share-btn:active{transform:translateY(0)}
 .article-share-btn.is-copied{
   background:#e8452e;
   border-color:#e8452e;
 }
+.share-icon{
+  width:18px;
+  height:18px;
+  display:grid;
+  place-items:center;
+  flex:0 0 18px;
+}
+.share-icon svg{
+  width:17px;
+  height:17px;
+  display:block;
+  fill:currentColor;
+}
+.share-x-glyph{
+  font-size:17px;
+  line-height:1;
+  font-weight:900;
+}
+.share-text{white-space:nowrap}
+.share-x{min-width:48px}
+.share-facebook .share-text,
+.share-whatsapp .share-text{font-size:7px}
 
 /* Keep the utility dock consistent even on dark ranking pages. */
 .final-rank-page .article-tools{
   background:#f3eee4;
   color:#111;
 }
-.final-rank-page .article-tools a{
-  color:inherit;
-}
+.final-rank-page .article-tools a{color:inherit}
 
 /* Older feature pages use a slim black article header. Give it the same visual weight. */
-.article-top{
-  border-bottom:1px solid rgba(255,255,255,.12);
-}
-.article-top .article-brand{
-  letter-spacing:-.04em;
-}
-.article-top .article-back{
-  opacity:.82;
+.article-top{border-bottom:1px solid rgba(255,255,255,.12)}
+.article-top .article-brand{letter-spacing:-.04em}
+.article-top .article-back{opacity:.82}
+
+@media(max-width:1080px){
+  .article-tools-inner{
+    grid-template-columns:minmax(210px,1fr) auto;
+    gap:12px 18px;
+  }
+  .article-share-block{
+    grid-column:1/-1;
+    width:100%;
+    justify-items:start;
+    padding-top:10px;
+    border-top:1px solid #d8d0c5;
+  }
+  .article-share-actions{justify-content:flex-start}
 }
 
 @media(max-width:900px){
@@ -157,7 +210,6 @@
   }
   .article-meta-dock{
     grid-column:1/-1;
-    grid-row:2;
     justify-content:flex-start;
     padding:7px 0 0;
     border:0;
@@ -173,6 +225,25 @@
     border-left:0;
     margin-left:0;
   }
+  .article-share-block{
+    grid-column:1/-1;
+    padding-top:10px;
+  }
+}
+
+@media(max-width:680px){
+  .article-share-actions{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:5px;
+  }
+  .article-share-btn{
+    min-width:0;
+    padding:0 6px;
+    gap:5px;
+  }
+  .share-facebook .share-text,
+  .share-whatsapp .share-text{display:none}
 }
 
 @media(max-width:560px){
@@ -192,19 +263,15 @@
     font-size:10px;
   }
   .article-author-copy strong{font-size:14px}
-  .article-share-actions{
-    justify-content:flex-start;
-    width:100%;
-  }
-  .article-share-btn{
-    flex:1;
-    min-height:40px;
-  }
   .article-meta-dock{
     grid-column:auto;
-    grid-row:auto;
-    order:3;
+    order:2;
     gap:4px 0;
+  }
+  .article-share-block{
+    grid-column:auto;
+    order:3;
+    width:100%;
   }
   .article-meta-dock a,
   .article-meta-dock span{
@@ -212,4 +279,24 @@
     padding-right:9px;
     font-size:7px;
   }
+  .article-share-label{font-size:6px}
+  .article-share-actions{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    width:100%;
+  }
+  .article-share-btn{
+    min-height:44px;
+    padding:0 5px;
+    font-size:7px;
+    letter-spacing:.04em;
+  }
+  .share-text{font-size:7px}
+  .share-facebook .share-text,
+  .share-whatsapp .share-text{display:none}
+}
+
+@media(max-width:390px){
+  .article-share-btn{gap:3px}
+  .share-icon{width:17px;height:17px;flex-basis:17px}
+  .share-text{font-size:6px}
 }
