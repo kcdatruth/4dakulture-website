@@ -26,7 +26,9 @@
     try{
       let id=localStorage.getItem(visitorKey);
       if(!id){
-        id=(crypto.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`).replace(/[^a-zA-Z0-9_-]/g,'').slice(0,64);
+        id=(crypto.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`)
+          .replace(/[^a-zA-Z0-9_-]/g,'')
+          .slice(0,64);
         localStorage.setItem(visitorKey,id);
       }
       return id;
@@ -51,11 +53,12 @@
   section.setAttribute('aria-label','Reader reactions');
   section.innerHTML=`
     <div class="reader-reactions-inner">
-      <div class="reaction-heading">
-        <span>4DK READERS</span>
-        <h2>HOW DID THIS ONE HIT?</h2>
-        <p>Tap one. See how the culture is reacting.</p>
+      <div class="reaction-copy">
+        <span class="reaction-kicker">4DK READER PULSE</span>
+        <h2>WHAT'D YOU THINK?</h2>
+        <p>One tap. Let the culture know where you stand.</p>
       </div>
+
       <div class="reaction-grid" role="group" aria-label="Choose a reaction">
         ${reactionTypes.map(item=>`
           <button class="reaction-btn" type="button" data-reaction="${item.key}" aria-pressed="false">
@@ -65,19 +68,23 @@
           </button>
         `).join('')}
       </div>
-      <div class="reaction-status" aria-live="polite">Loading reader reactions…</div>
+
+      <div class="reaction-status" aria-live="polite">Loading reader pulse…</div>
     </div>
   `;
 
   const storyRoot=
     document.querySelector('.article-story') ||
     document.querySelector('.final-article') ||
-    document.querySelector('main article');
+    document.querySelector('.story-body') ||
+    document.querySelector('.article-body');
 
-  if(storyRoot && storyRoot.parentElement){
+  const main=document.querySelector('main');
+
+  if(storyRoot && storyRoot.parentElement && !storyRoot.closest('.annual-coverlines,.team-question-grid,.story-grid,.card-grid')){
     storyRoot.insertAdjacentElement('afterend',section);
-  }else{
-    document.querySelector('main')?.appendChild(section);
+  }else if(main){
+    main.appendChild(section);
   }
 
   const status=section.querySelector('.reaction-status');
@@ -101,27 +108,31 @@
   async function load(){
     setSelected(savedReaction());
     try{
-      const response=await fetch(`/api/reactions?article=${encodeURIComponent(article)}`,{headers:{Accept:'application/json'}});
+      const response=await fetch(`/api/reactions?article=${encodeURIComponent(article)}`,{
+        headers:{Accept:'application/json'}
+      });
       const data=await response.json().catch(()=>({}));
       if(!response.ok) throw new Error(data.error || 'Reader reactions unavailable');
+
       renderCounts(data.counts);
       status.textContent=data.setup===false
-        ? 'Reader reactions are ready visually — storage still needs its Cloudflare binding.'
-        : 'Pick your reaction.';
+        ? 'Reader pulse is ready visually — storage still needs its Cloudflare binding.'
+        : 'Tap a reaction.';
     }catch{
-      status.textContent='Pick your reaction.';
+      status.textContent='Tap a reaction.';
     }
   }
 
   async function vote(next){
     const previous=savedReaction();
+
     if(previous===next){
       status.textContent='You already picked that one 💯';
       return;
     }
 
     buttons.forEach(btn=>btn.disabled=true);
-    status.textContent='Locking in your reaction…';
+    status.textContent='Locking it in…';
 
     try{
       const response=await fetch('/api/reactions',{
@@ -140,7 +151,7 @@
       saveReaction(next);
       setSelected(next);
       renderCounts(data.counts);
-      status.textContent=previous ? 'Reaction updated 💯' : 'Reaction locked in 💯';
+      status.textContent=previous ? 'Reaction updated 💯' : 'Locked in 💯';
     }catch(error){
       status.textContent=error.message || 'Could not save that reaction. Try again.';
       status.classList.add('is-error');
