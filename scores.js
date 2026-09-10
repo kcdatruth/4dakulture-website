@@ -104,7 +104,6 @@
 
     const settled = await Promise.allSettled(
       SPORTS.map(async sport => {
-        // High limit so college slates are not chopped at 80/100 games.
         const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${sport.path}/scoreboard?dates=${date}&limit=500`;
         const res = await fetch(endpoint, {cache:'no-store'});
         if(!res.ok) throw new Error(`${sport.league} ${res.status}`);
@@ -139,7 +138,6 @@
       const key = gameKey(game);
       const prev = merged.get(key);
 
-      // Prefer whichever copy has a live/final state or actual score data.
       if(!prev){
         merged.set(key, game);
         return;
@@ -165,8 +163,6 @@
   function renderGame(game){
     const awayScore = game.away?.score ?? '';
     const homeScore = game.home?.score ?? '';
-
-    // Scheduled games should read cleanly as TEAM @ TEAM • TIME, not 0–0.
     const hasScore = game.state !== 'pre' && (awayScore !== '' || homeScore !== '');
 
     return `
@@ -195,7 +191,6 @@
     const html = games.map(renderGame).join('');
     track.innerHTML = html + html;
 
-    // Keep a consistent readable scroll speed no matter how many games are on the slate.
     requestAnimationFrame(() => {
       const halfWidth = Math.max(1, track.scrollWidth / 2);
       const pixelsPerSecond = 62;
@@ -227,7 +222,6 @@
       console.warn('4DK score ticker Worker feed failed:', err);
     }
 
-    // Always ask the league scoreboards too. This fills in games the Worker may cap.
     try{
       directGames = await browserAllGames();
       directWorked = true;
@@ -254,10 +248,132 @@
   refreshBtn.addEventListener('click', loadScores);
   loadScores();
 
-  // Live score refresh every 30 seconds.
   timer = setInterval(loadScores, 30000);
 
   window.addEventListener('pagehide', () => {
     if(timer) clearInterval(timer);
   }, {once:true});
+})();
+
+/* ==========================================================
+   4DK — NBA/NFL TEAMS & ROSTERS ENTRY POINTS
+   Both nba.html and nfl.html already load scores.js, so this
+   safely wires the roster hubs into the main league pages.
+   ========================================================== */
+(() => {
+  const page = location.pathname.split('/').pop().toLowerCase();
+  const isNBA = page === 'nba.html' || page === 'nba';
+  const isNFL = page === 'nfl.html' || page === 'nfl';
+  if(!isNBA && !isNFL) return;
+
+  if(!document.getElementById('rosterEntryStyles')){
+    const style = document.createElement('style');
+    style.id = 'rosterEntryStyles';
+    style.textContent = `
+      .roster-entry-strip{
+        position:relative;overflow:hidden;
+        border-top:1px solid rgba(255,255,255,.13);
+        border-bottom:1px solid rgba(255,255,255,.13);
+        background:#090d10;color:#fff
+      }
+      .roster-entry-strip:after{
+        content:'ROSTERS';position:absolute;right:-12px;top:-18px;
+        font:1000 clamp(70px,14vw,180px)/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+        letter-spacing:-.06em;color:#fff;opacity:.035;pointer-events:none
+      }
+      .roster-entry-inner{
+        position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:24px 20px;
+        display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center
+      }
+      .roster-entry-copy small{
+        display:block;margin-bottom:5px;font-size:9px;font-weight:1000;letter-spacing:.15em;
+        text-transform:uppercase;color:var(--roster-entry-accent,#ef3937)
+      }
+      .roster-entry-copy strong{
+        display:block;font:1000 clamp(27px,4vw,43px)/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+        text-transform:uppercase;letter-spacing:-.02em
+      }
+      .roster-entry-copy p{margin:7px 0 0;color:#aeb7bd;font-size:13px;line-height:1.4}
+      .roster-entry-btn{
+        display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;
+        background:var(--roster-entry-accent,#ef3937);border:1px solid var(--roster-entry-accent,#ef3937);
+        color:#fff!important;text-decoration:none!important;font-size:10px;font-weight:1000;
+        letter-spacing:.11em;text-transform:uppercase;white-space:nowrap
+      }
+      .roster-entry-btn:hover{filter:brightness(1.08)}
+      .nba-roster-entry{--roster-entry-accent:#ef6130;background:
+        radial-gradient(circle at 82% 35%,rgba(239,97,48,.16),transparent 21rem),#0b0b0d}
+      .nfl-roster-entry{--roster-entry-accent:#3e86c4;background:
+        radial-gradient(circle at 82% 35%,rgba(62,134,196,.18),transparent 21rem),#080e13}
+      @media(max-width:650px){
+        .roster-entry-inner{grid-template-columns:1fr;padding-top:20px;padding-bottom:20px;gap:14px}
+        .roster-entry-btn{width:100%}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  if(isNBA){
+    const heroNav = document.querySelector('.nba-hero-nav');
+    if(heroNav && !heroNav.querySelector('a[href="nba-rosters.html"]')){
+      const link = document.createElement('a');
+      link.href = 'nba-rosters.html';
+      link.textContent = 'Teams & Rosters';
+      heroNav.appendChild(link);
+    }
+
+    const pulse = document.querySelector('.nba-pulse');
+    if(pulse && !document.querySelector('.nba-roster-entry')){
+      const section = document.createElement('section');
+      section.className = 'roster-entry-strip nba-roster-entry';
+      section.innerHTML = `
+        <div class="roster-entry-inner">
+          <div class="roster-entry-copy">
+            <small>4DK NBA • Live Team Database</small>
+            <strong>30 Teams. Current Rosters.</strong>
+            <p>Player photos, jersey numbers, positions, measurements, experience and live roster status.</p>
+          </div>
+          <a class="roster-entry-btn" href="nba-rosters.html">Explore NBA Teams & Rosters →</a>
+        </div>`;
+      pulse.after(section);
+    }
+  }
+
+  if(isNFL){
+    const nav = document.querySelector('.nfl-v2-nav');
+    if(nav && !nav.querySelector('a[href="nfl-rosters.html"]')){
+      const link = document.createElement('a');
+      link.href = 'nfl-rosters.html';
+      link.textContent = 'Teams & Rosters';
+      nav.appendChild(link);
+    }
+
+    const mainNav = document.querySelector('.nfl-v2-nav');
+    if(mainNav && !document.querySelector('.nfl-roster-entry')){
+      const section = document.createElement('section');
+      section.className = 'roster-entry-strip nfl-roster-entry';
+      section.innerHTML = `
+        <div class="roster-entry-inner">
+          <div class="roster-entry-copy">
+            <small>4DK NFL • Live Team Database</small>
+            <strong>32 Teams. One Roster Hub.</strong>
+            <p>Current rosters with offense, defense and special teams filters plus player status information.</p>
+          </div>
+          <a class="roster-entry-btn" href="nfl-rosters.html">Explore NFL Teams & Rosters →</a>
+        </div>`;
+      mainNav.after(section);
+    }
+
+    const board = document.querySelector('.nfl-v2-board');
+    const boardFoot = board?.querySelector('.nfl-v2-board-foot');
+    if(board && boardFoot && !board.querySelector('a[href="nfl-rosters.html"]')){
+      const row = document.createElement('a');
+      row.className = 'nfl-v2-board-row live';
+      row.href = 'nfl-rosters.html';
+      row.innerHTML = `
+        <div><small>LIVE DATABASE</small><b>TEAMS & ROSTERS</b></div>
+        <span>32 TEAMS →</span>`;
+      board.insertBefore(row, boardFoot);
+    }
+  }
 })();
