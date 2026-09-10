@@ -1,0 +1,8 @@
+/* 4DK NFL home — AFC Preview feature */
+.nfl-page .nfl-feature .nfl-read{display:inline-block;text-decoration:none;border-bottom:2px solid var(--nfl-red);padding-bottom:3px;color:#fff}
+.nfl-page .nfl-feature .nfl-read:hover{color:#f06d69}
+.nfl-page .afc-preview-art{background:radial-gradient(circle at 72% 24%,rgba(255,255,255,.14),transparent 7rem),linear-gradient(135deg,#081a2b,#0a0f0b 52%,#321010)}
+.nfl-page .afc-preview-art:before{content:"AFC";position:absolute;right:-14px;top:22px;font:1000 220px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#fff;opacity:.07;letter-spacing:-.08em}
+.nfl-page .afc-preview-art:after{content:"26";position:absolute;left:28px;bottom:-22px;font:1000 210px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#e6322f;opacity:.18}
+.nfl-page .afc-art-copy{position:absolute;right:28px;bottom:28px;z-index:2;text-align:right}
+.nfl-page .afc-art-copy b{display:block;font:1000 48px/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:.01em}.nfl-page .afc-art-copy span{display:block;margin-top:10px;font-size:10px;font-weight:1000;letter-spacing:.12em;color:#d6ddd8}.nfl-page .afc-art-seeds{position:absolute;left:26px;top:26px;z-index:2;display:grid;gap:5px}.nfl-page .afc-art-seeds i{font-style:normal;font-size:10px;font-weight:1000;letter-spacing:.08em;color:#c9d1cb}.nfl-page .afc-art-seeds i strong{display:inline-grid;place-items:center;width:20px;height:20px;margin-right:7px;background:#e6322f;color:#fff}
