@@ -1,0 +1,163 @@
+/* 4DK LIVE ROSTER HUB */
+:root{
+  --roster-bg:#050708;
+  --roster-panel:#0b1013;
+  --roster-panel-2:#11181d;
+  --roster-line:#28323a;
+  --roster-text:#f4f6f7;
+  --roster-muted:#9ea9b1;
+  --roster-red:#ef3634;
+  --roster-blue:#3e86c4;
+}
+*{box-sizing:border-box}
+body.roster-page{margin:0;background:var(--roster-bg);color:var(--roster-text);font-family:Arial,Helvetica,sans-serif}
+body.roster-page a{color:inherit}
+.roster-shell{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.roster-top{
+  position:sticky;top:0;z-index:20;background:rgba(4,7,9,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--roster-line)
+}
+.roster-top .roster-shell{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.roster-brand{font-size:24px;font-weight:1000;letter-spacing:-.04em;text-decoration:none}
+.roster-brand b{color:var(--roster-red)}
+.roster-back{font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;color:#c7ced3}
+.roster-hero{
+  position:relative;overflow:hidden;border-bottom:1px solid var(--roster-line);
+  background:
+    radial-gradient(circle at 80% 15%,var(--league-glow),transparent 26rem),
+    linear-gradient(135deg,#081017,#040708 70%)
+}
+.roster-hero:before{
+  content:attr(data-league-word);position:absolute;right:-20px;bottom:-30px;color:#fff;opacity:.035;
+  font:1000 clamp(130px,27vw,360px)/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  letter-spacing:-.08em
+}
+.roster-page.nba-roster-page{--league:#f06d2f;--league-glow:rgba(240,109,47,.19)}
+.roster-page.nfl-roster-page{--league:#3e86c4;--league-glow:rgba(62,134,196,.20)}
+.roster-hero-inner{position:relative;z-index:1;padding:58px 0 48px}
+.roster-kicker{font-size:11px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;color:var(--league)}
+.roster-hero h1{
+  max-width:850px;margin:10px 0 14px;font:1000 clamp(54px,8vw,98px)/.86 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  text-transform:uppercase;letter-spacing:-.035em
+}
+.roster-hero p{max-width:760px;margin:0;color:#d4dade;font-size:18px;line-height:1.55}
+.roster-live-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center}
+.roster-live-badge{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid #35424b;background:#091014;
+  padding:9px 12px;font-size:10px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase
+}
+.roster-live-badge i{width:8px;height:8px;border-radius:50%;background:#35d472;box-shadow:0 0 14px rgba(53,212,114,.75)}
+.roster-switch{display:flex;gap:8px}
+.roster-switch a{
+  padding:9px 12px;border:1px solid #35424b;text-decoration:none;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase
+}
+.roster-switch a.active{background:var(--league);border-color:var(--league);color:#fff}
+
+.roster-team-browser{padding:42px 0 50px}
+.roster-browser-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}
+.roster-browser-head h2{margin:6px 0 0;font:1000 44px/.92 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
+.roster-search{
+  width:min(360px,100%);height:44px;border:1px solid #34414a;background:#0b1115;color:#fff;
+  padding:0 14px;font-size:14px;border-radius:0;outline:none
+}
+.roster-search:focus{border-color:var(--league)}
+.roster-status{padding:18px;border:1px solid var(--roster-line);background:#0b1013;color:#b7c0c6;font-size:13px}
+.roster-teams-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.roster-team-card{
+  appearance:none;width:100%;border:1px solid #33404a;background:
+    linear-gradient(135deg,color-mix(in srgb,var(--team) 20%,#0a1014),#081014 58%);
+  color:#fff;min-height:92px;padding:14px;display:grid;grid-template-columns:52px 1fr 20px;gap:12px;align-items:center;
+  text-align:left;cursor:pointer;transition:transform .18s ease,border-color .18s ease
+}
+.roster-team-card:hover{transform:translateY(-2px);border-color:var(--team-alt)}
+.roster-team-logo{width:50px;height:50px;display:grid;place-items:center}
+.roster-team-logo img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 5px 8px rgba(0,0,0,.35))}
+.roster-team-logo b{font-size:12px}
+.roster-team-copy{min-width:0;display:block}
+.roster-team-copy small{display:block;color:var(--team-alt);font-size:10px;font-weight:1000;letter-spacing:.11em}
+.roster-team-copy strong{display:block;margin-top:5px;font-size:14px;line-height:1.15}
+.roster-team-arrow{color:#89959e;font-size:18px}
+
+.roster-detail{scroll-margin-top:74px;border-top:1px solid var(--roster-line);background:#070b0e;padding:0 0 60px}
+.roster-detail[hidden]{display:none}
+.roster-detail-hero{
+  position:relative;overflow:hidden;border-bottom:1px solid var(--roster-line);
+  background:
+    radial-gradient(circle at 80% 30%,color-mix(in srgb,var(--team) 35%,transparent),transparent 24rem),
+    linear-gradient(135deg,#0b1217,#06090b)
+}
+.roster-detail-hero:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:var(--team)}
+.roster-detail-inner{padding:30px 0;display:grid;grid-template-columns:94px 1fr auto;gap:20px;align-items:center}
+.roster-detail-logo{width:88px;height:88px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.4))}
+.roster-detail-copy small{font-size:10px;letter-spacing:.14em;font-weight:1000;color:var(--team-alt,#bbc4cc)}
+.roster-detail-copy h2{margin:5px 0 6px;font:1000 clamp(36px,6vw,62px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
+.roster-detail-copy p{margin:0;color:#aab5bd;font-size:12px;line-height:1.5}
+.roster-detail-count{text-align:right}
+.roster-detail-count strong{display:block;font:1000 32px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.roster-detail-count span{display:block;margin-top:5px;color:#8d99a1;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.roster-back-teams{
+  margin-top:18px;border:1px solid #3a4750;background:#0a1014;color:#fff;padding:9px 12px;
+  font-size:10px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase;cursor:pointer
+}
+
+.roster-filter-wrap{padding:18px 0;border-bottom:1px solid var(--roster-line)}
+.roster-filters{display:flex;gap:8px;overflow:auto}
+.roster-filters button{
+  flex:0 0 auto;border:1px solid #37434c;background:#0b1115;color:#c7d0d6;padding:8px 12px;
+  font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;cursor:pointer
+}
+.roster-filters button.active{background:var(--team);border-color:var(--team);color:#fff}
+.roster-players{padding-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.roster-player{display:grid;grid-template-columns:128px 1fr;min-height:164px;border:1px solid #313d46;background:#0a1014;overflow:hidden}
+.player-photo{position:relative;background:linear-gradient(180deg,#151d22,#0b1013);display:grid;place-items:end center}
+.player-photo img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.player-no-photo{align-self:center;font:1000 38px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#53606a}
+.player-number{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.78);padding:5px 7px;font-size:11px;font-weight:1000}
+.player-main{padding:15px;min-width:0}
+.player-title{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.player-title small{display:block;color:var(--team,#a7b0b7);font-size:10px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.player-title h3{margin:4px 0 0;font-size:21px;line-height:1.05}
+.player-status{flex:0 0 auto;border:1px solid #3c4850;padding:5px 6px;font-size:9px;font-weight:900;text-transform:uppercase;color:#aeb8bf}
+.player-alert{display:inline-block;margin-top:9px;padding:5px 7px;background:#391112;color:#ff9a99;font-size:9px;font-weight:1000;letter-spacing:.05em}
+.player-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}
+.player-facts span{min-width:0;color:#d5dadd;font-size:11px;line-height:1.25}
+.player-facts b{display:block;margin-bottom:2px;color:#7f8b94;font-size:8px;letter-spacing:.08em;text-transform:uppercase}
+.player-profile{display:inline-block;margin-top:11px;color:#cdd5da;font-size:10px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.roster-empty{grid-column:1/-1;padding:24px;border:1px dashed #39454e;color:#9da8af;text-align:center}
+.roster-note{padding:24px 0 0;color:#7f8b94;font-size:10px;line-height:1.6}
+
+.roster-footer{border-top:1px solid var(--roster-line);padding:28px 0 40px;color:#7f8a92;font-size:11px}
+.roster-footer .roster-shell{display:flex;justify-content:space-between;gap:20px}
+
+@media(max-width:980px){
+  .roster-teams-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .roster-players{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .roster-shell{width:min(100% - 28px,1180px)}
+  .roster-top .roster-shell{height:58px}
+  .roster-brand{font-size:20px}
+  .roster-back{font-size:9px}
+  .roster-hero-inner{padding:38px 0 34px}
+  .roster-hero h1{font-size:54px}
+  .roster-hero p{font-size:16px}
+  .roster-browser-head{display:block}
+  .roster-search{margin-top:14px;width:100%}
+  .roster-teams-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .roster-team-card{grid-template-columns:44px 1fr 14px;min-height:82px;padding:10px;gap:8px}
+  .roster-team-logo{width:42px;height:42px}
+  .roster-team-copy strong{font-size:12px}
+  .roster-detail-inner{grid-template-columns:68px 1fr;gap:14px}
+  .roster-detail-logo{width:64px;height:64px}
+  .roster-detail-count{grid-column:1/-1;text-align:left;display:flex;align-items:center;gap:8px}
+  .roster-detail-count strong{font-size:22px}
+  .roster-detail-count span{margin:0}
+  .roster-player{grid-template-columns:100px 1fr}
+  .player-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .roster-footer .roster-shell{display:block}
+  .roster-footer span{display:block;margin-top:6px}
+}
+@media(max-width:390px){
+  .roster-hero h1{font-size:48px}
+  .roster-teams-grid{grid-template-columns:1fr}
+}

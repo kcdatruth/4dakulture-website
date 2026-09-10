@@ -11,6 +11,11 @@ const SPORTS = [
   { league: 'NCAAW', path: 'basketball/womens-college-basketball', limit: 20 }
 ];
 
+const ROSTER_LEAGUES = {
+  nfl: { key:'nfl', label:'NFL', sport:'football', league:'nfl' },
+  nba: { key:'nba', label:'NBA', sport:'basketball', league:'nba' }
+};
+
 function easternDateKey(date = new Date()){
   const parts = new Intl.DateTimeFormat('en-US',{
     timeZone:'America/New_York',
@@ -87,7 +92,6 @@ function normalizeEvent(event, league, dayKey){
   const state = type.state || (type.completed ? 'post' : 'pre');
   const startTime = event.date || competition.date || '';
 
-  // Keep live games no matter what. Otherwise keep only the requested calendar day.
   if(state !== 'in' && eventDateKey(startTime) !== dayKey) return null;
 
   let statusText = '';
@@ -117,7 +121,6 @@ function normalizeEvent(event, league, dayKey){
 }
 
 function sortGames(a,b){
-  // Homepage order: LIVE first, then today's upcoming games, then today's finals.
   const rank = {in:0, pre:1, post:2};
   const stateDiff = (rank[a.state] ?? 9) - (rank[b.state] ?? 9);
   if(stateDiff) return stateDiff;
@@ -126,10 +129,6 @@ function sortGames(a,b){
 
 async function fetchLeague({league, path, limit = 30}, dayKey){
   const date = espnDateKey(dayKey);
-
-  // Explicit date query is the important change:
-  // it asks ESPN for the full slate for the requested day instead of relying
-  // on the scoreboard endpoint's default date/window.
   const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard`;
   const url = `${endpoint}?dates=${encodeURIComponent(date)}&limit=100`;
 
@@ -220,6 +219,186 @@ async function fetchNFLPickem(){
   };
 }
 
+/* ---------------- 4DK LIVE ROSTER API ---------------- */
+
+function rosterLeague(value=''){
+  return ROSTER_LEAGUES[String(value).toLowerCase()] || null;
+}
+
+function cleanHex(value, fallback='20252f'){
+  const raw = String(value || '').replace('#','').trim();
+  return /^[0-9a-f]{6}$/i.test(raw) ? raw : fallback;
+}
+
+function pickLogo(team){
+  const logos = Array.isArray(team?.logos) ? team.logos : [];
+  const preferred = logos.find(l => Array.isArray(l.rel) && l.rel.includes('default'));
+  return preferred?.href || logos[0]?.href || '';
+}
+
+function normalizeTeam(raw){
+  const team = raw?.team || raw || {};
+  return {
+    id: String(team.id || ''),
+    abbreviation: team.abbreviation || '',
+    displayName: team.displayName || team.name || '',
+    shortDisplayName: team.shortDisplayName || team.nickname || team.name || '',
+    location: team.location || '',
+    nickname: team.nickname || team.name || '',
+    slug: team.slug || '',
+    color: cleanHex(team.color),
+    alternateColor: cleanHex(team.alternateColor, 'd7dce2'),
+    logo: pickLogo(team)
+  };
+}
+
+async function fetchJson(url, ttl=900){
+  const response = await fetch(url, {
+    headers:{'Accept':'application/json'},
+    cf:{cacheTtl:ttl, cacheEverything:true}
+  });
+  if(!response.ok) throw new Error(`Upstream ${response.status}`);
+  return response.json();
+}
+
+async function fetchTeamsRosterHub(config){
+  const url = `https://site.api.espn.com/apis/site/v2/sports/${config.sport}/${config.league}/teams?limit=100`;
+  const data = await fetchJson(url, 3600);
+  const league = data?.sports?.[0]?.leagues?.[0];
+  const entries = Array.isArray(league?.teams) ? league.teams : [];
+  const teams = entries
+    .map(normalizeTeam)
+    .filter(team => team.id && team.displayName)
+    .sort((a,b) => a.displayName.localeCompare(b.displayName));
+
+  return {
+    league: config.label,
+    season: league?.season || null,
+    count: teams.length,
+    teams
+  };
+}
+
+function rosterCoach(data){
+  const coaches = Array.isArray(data?.coach)
+    ? data.coach
+    : (data?.coach ? [data.coach] : []);
+
+  const coach = coaches[0];
+  if(!coach) return '';
+  return coach.displayName
+    || [coach.firstName,coach.lastName].filter(Boolean).join(' ')
+    || coach.name
+    || '';
+}
+
+function injuryText(injuries){
+  if(!Array.isArray(injuries) || !injuries.length) return '';
+  const injury = injuries[0] || {};
+  return injury.status
+    || injury.type?.description
+    || injury.type?.name
+    || injury.details?.type
+    || injury.details?.detail
+    || injury.shortComment
+    || injury.longComment
+    || 'Injury listed';
+}
+
+function birthPlaceText(place){
+  if(!place) return '';
+  return [place.city, place.state, place.country].filter(Boolean).join(', ');
+}
+
+function salaryForSeason(athlete, seasonYear){
+  const direct = athlete?.contract?.salary;
+  if(Number.isFinite(direct)) return direct;
+
+  const contracts = Array.isArray(athlete?.contracts) ? athlete.contracts : [];
+  const current = contracts.find(c => Number(c?.season?.year) === Number(seasonYear))
+    || contracts[0];
+  return Number.isFinite(current?.salary) ? current.salary : null;
+}
+
+function playerLink(athlete){
+  const links = Array.isArray(athlete?.links) ? athlete.links : [];
+  const card = links.find(link => Array.isArray(link.rel) && link.rel.includes('playercard'));
+  return card?.href || links.find(link => /^https?:\/\//.test(link?.href || ''))?.href || '';
+}
+
+function normalizePlayer(athlete, group, seasonYear){
+  const status = athlete?.status?.name
+    || athlete?.status?.type
+    || athlete?.status?.abbreviation
+    || 'Active';
+
+  return {
+    id: String(athlete?.id || ''),
+    name: athlete?.displayName || athlete?.fullName || athlete?.shortName || 'Player',
+    shortName: athlete?.shortName || '',
+    jersey: athlete?.jersey || '',
+    position: athlete?.position?.abbreviation || athlete?.position?.displayName || group || '',
+    positionName: athlete?.position?.displayName || athlete?.position?.name || group || '',
+    group: group || athlete?.position?.displayName || 'Roster',
+    age: athlete?.age ?? null,
+    height: athlete?.displayHeight || '',
+    weight: athlete?.displayWeight || '',
+    experience: athlete?.experience?.years ?? null,
+    college: athlete?.college?.name || athlete?.college?.shortName || '',
+    birthPlace: birthPlaceText(athlete?.birthPlace),
+    headshot: athlete?.headshot?.href || '',
+    status,
+    injury: injuryText(athlete?.injuries),
+    salary: salaryForSeason(athlete, seasonYear),
+    profile: playerLink(athlete)
+  };
+}
+
+function flattenRoster(data){
+  const seasonYear = data?.season?.year || new Date().getFullYear();
+  const athletes = Array.isArray(data?.athletes) ? data.athletes : [];
+  const players = [];
+
+  for(const entry of athletes){
+    if(Array.isArray(entry?.items)){
+      const group = entry.position || entry.displayName || entry.name || 'Roster';
+      for(const athlete of entry.items){
+        players.push(normalizePlayer(athlete, group, seasonYear));
+      }
+    }else{
+      players.push(normalizePlayer(
+        entry,
+        entry?.position?.displayName || entry?.position?.name || 'Roster',
+        seasonYear
+      ));
+    }
+  }
+
+  return players.filter(player => player.id || player.name !== 'Player');
+}
+
+async function fetchRoster(config, teamId){
+  if(!/^[a-z0-9_-]{1,16}$/i.test(teamId || '')) throw new Error('Invalid team');
+
+  const base = `https://site.api.espn.com/apis/site/v2/sports/${config.sport}/${config.league}/teams/${encodeURIComponent(teamId)}`;
+  const [roster, detail] = await Promise.all([
+    fetchJson(`${base}/roster`, 900),
+    fetchJson(base, 1800)
+  ]);
+
+  const team = normalizeTeam(detail?.team || roster?.team || {});
+  const players = flattenRoster(roster);
+
+  return {
+    league: config.label,
+    season: roster?.season || null,
+    team,
+    coach: rosterCoach(roster),
+    count: players.length,
+    players
+  };
+}
+
 export default {
   async fetch(request, env){
     const url = new URL(request.url);
@@ -241,6 +420,51 @@ export default {
       }
     }
 
+    if(url.pathname === '/api/teams'){
+      const config = rosterLeague(url.searchParams.get('league'));
+      if(!config){
+        return Response.json({error:'Use league=nba or league=nfl'}, {status:400});
+      }
+
+      try{
+        const payload = await fetchTeamsRosterHub(config);
+        return Response.json({
+          updatedAt:new Date().toISOString(),
+          ...payload
+        },{
+          headers:{'Cache-Control':'public, max-age=1800, s-maxage=3600'}
+        });
+      }catch(error){
+        return Response.json({
+          error:`${config.label} teams are temporarily unavailable`,
+          teams:[]
+        },{status:503});
+      }
+    }
+
+    if(url.pathname === '/api/roster'){
+      const config = rosterLeague(url.searchParams.get('league'));
+      const teamId = url.searchParams.get('team') || '';
+      if(!config || !teamId){
+        return Response.json({error:'Use league=nba|nfl and a team id'}, {status:400});
+      }
+
+      try{
+        const payload = await fetchRoster(config, teamId);
+        return Response.json({
+          updatedAt:new Date().toISOString(),
+          ...payload
+        },{
+          headers:{'Cache-Control':'public, max-age=300, s-maxage=900'}
+        });
+      }catch(error){
+        return Response.json({
+          error:`${config.label} roster is temporarily unavailable`,
+          players:[]
+        },{status:503});
+      }
+    }
+
     if(url.pathname === '/api/scores'){
       const requestedDate = url.searchParams.get('date') || '';
       const dayKey = validDateKey(requestedDate) ? requestedDate : easternDateKey();
@@ -252,8 +476,6 @@ export default {
       const fulfilled = results.filter(result => result.status === 'fulfilled');
       const failed = results.filter(result => result.status === 'rejected');
 
-      // If every upstream scoreboard failed, tell the browser this is a feed problem
-      // instead of incorrectly saying there are no games.
       if(fulfilled.length === 0){
         return Response.json({
           error:'4DK Live score feeds are temporarily unavailable',

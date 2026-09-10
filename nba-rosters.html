@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NBA Teams & Rosters | 4 Da Kulture</title>
+<meta name="description" content="Live NBA team rosters, player information and team pages from 4 Da Kulture.">
+<meta name="theme-color" content="#050708">
+<link rel="stylesheet" href="rosters.css">
+</head>
+<body class="roster-page nba-roster-page">
+<header class="roster-top">
+  <div class="roster-shell">
+    <a class="roster-brand" href="index.html"><b>4</b> DA KULTURE</a>
+    <a class="roster-back" href="nba.html">← Back to NBA</a>
+  </div>
+</header>
+
+<main data-roster-app data-league="nba">
+  <section class="roster-hero" data-league-word="NBA">
+    <div class="roster-shell roster-hero-inner">
+      <div class="roster-kicker">4DK NBA • LIVE TEAM DATABASE</div>
+      <h1>NBA Teams<br>&amp; Rosters.</h1>
+      <p>Every team in one place. Pick a logo to load the current roster, player photos, jersey numbers, positions, measurements, experience, college and status information.</p>
+      <div class="roster-live-row">
+        <span class="roster-live-badge"><i></i> Live roster feed • 2026–27</span>
+        <div class="roster-switch">
+          <a class="active" href="nba-rosters.html">NBA</a>
+          <a href="nfl-rosters.html">NFL Rosters</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roster-team-browser">
+    <div class="roster-shell">
+      <div class="roster-browser-head">
+        <div>
+          <div class="roster-kicker">ALL NBA TEAMS</div>
+          <h2>Choose A Team.</h2>
+        </div>
+        <input class="roster-search" type="search" placeholder="Search team or city…" autocomplete="off" data-team-search>
+      </div>
+      <div class="roster-status" data-teams-status>Loading teams…</div>
+      <div class="roster-teams-grid" data-teams-grid></div>
+    </div>
+  </section>
+
+  <section class="roster-detail" data-roster-view hidden>
+    <div class="roster-detail-hero">
+      <div class="roster-shell roster-detail-inner">
+        <img class="roster-detail-logo" data-team-logo alt="">
+        <div class="roster-detail-copy">
+          <small>4DK NBA ROSTER</small>
+          <h2 data-team-name>Team</h2>
+          <p data-team-meta>Current roster, player details and status information.</p>
+          <button class="roster-back-teams" type="button" data-back-teams>← All NBA Teams</button>
+        </div>
+        <div class="roster-detail-count">
+          <strong data-team-count></strong>
+          <span data-update-text></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="roster-filter-wrap">
+      <div class="roster-shell">
+        <div class="roster-filters" data-roster-filters></div>
+      </div>
+    </div>
+
+    <div class="roster-shell">
+      <div class="roster-status" data-roster-status>Loading roster…</div>
+      <div class="roster-players" data-roster-players></div>
+      <p class="roster-note">Roster information updates from the live league data feed. Transactions, injury designations and preseason roster moves can change throughout the day.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="roster-footer">
+  <div class="roster-shell">
+    <strong>4 DA KULTURE • NBA</strong>
+    <span>Teams • Rosters • Players • 2026</span>
+  </div>
+</footer>
+<script src="rosters.js"></script>
+</body>
+</html>
