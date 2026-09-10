@@ -57,6 +57,7 @@
 .sf-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
 .sf-head h2{margin:6px 0 0;font:62px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
 .sf-head>p{max-width:385px;margin:0;color:#9d8e82;font-size:11px;line-height:1.5}
+
 .sf-original{background:var(--sf-cream);color:#17110e}
 .sf-original .sf-head>p{color:#71665d}
 .sf-lead{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid #c3b6a4;background:#f6eee2}
@@ -73,51 +74,89 @@
 .sf-lead-copy b{margin-top:18px;color:var(--sf-rust);font-size:8px;letter-spacing:.1em}
 .sf-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
 .sf-card{min-height:245px;padding:20px;border:1px solid #c7baaa;background:#f4ecdf;display:flex;flex-direction:column;justify-content:flex-end}
-.sf-card.dark{border-color:#49332a;background:#18110e;color:#eee4d6}
 .sf-card span{color:var(--sf-rust);font-size:8px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
 .sf-card h3{margin:8px 0 7px;font:700 28px/1 Georgia,serif}
 .sf-card p{margin:0;color:#74685f;font-size:11px;line-height:1.45}
-.sf-card.dark p{color:#a8998d}
+
+/* THE DROP — EPISODE 1 IS NOW THE FEATURE */
 .sf-drop{background:radial-gradient(circle at 85% 10%,rgba(216,73,47,.14),transparent 22rem),#100b09}
-.drop-lead{display:grid;grid-template-columns:.85fr 1.15fr;gap:1px;background:#463027;border:1px solid #463027}
-.drop-art,.drop-copy{background:#17100d;padding:28px}
-.drop-art{min-height:410px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55)),linear-gradient(145deg,#54281d,#17100d 70%)}
+.drop-feature{
+  display:grid;grid-template-columns:.9fr 1.1fr;gap:1px;
+  background:#563228;border:1px solid #563228;text-decoration:none;color:inherit;
+  box-shadow:0 26px 60px rgba(0,0,0,.18);
+}
+.drop-feature:hover .drop-read{transform:translateX(5px)}
+.drop-art{
+  min-height:470px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;
+  background:
+    radial-gradient(circle at 70% 18%,rgba(224,176,78,.18),transparent 10rem),
+    linear-gradient(180deg,transparent,rgba(0,0,0,.58)),
+    linear-gradient(145deg,#62291d,#17100d 72%);
+  position:relative;overflow:hidden
+}
+.drop-art:before{
+  content:"01";position:absolute;right:-8px;top:-10px;
+  color:rgba(255,255,255,.055);font:190px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif
+}
+.drop-art:after{
+  content:"90s";position:absolute;left:22px;top:24px;color:rgba(255,255,255,.055);
+  font:90px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;transform:rotate(-7deg)
+}
+.drop-art span,.drop-art strong,.drop-art small{position:relative;z-index:2}
 .drop-art span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.12em}
 .drop-art strong{margin:8px 0;font:70px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
-.drop-art small{color:#9c8c81;font-size:8px;font-weight:1000;letter-spacing:.1em}
-.drop-copy{display:flex;flex-direction:column;justify-content:center}
-.drop-copy span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.13em}
-.drop-copy h3{margin:8px 0 12px;font:700 40px/1 Georgia,serif}
-.drop-copy p{margin:0 0 12px;color:#ae9f92;font-size:13px;line-height:1.55}
-.drop-copy b{margin-top:8px;color:#e7daca;font-size:9px;letter-spacing:.08em}
+.drop-art small{color:#b3a095;font-size:8px;font-weight:1000;letter-spacing:.1em}
+.drop-copy{background:#17100d;padding:34px;display:flex;flex-direction:column;justify-content:center}
+.drop-copy .drop-live{display:inline-flex;align-self:flex-start;gap:7px;align-items:center;margin-bottom:13px;padding:7px 9px;border:1px solid #6c3c30;color:#f2ded2;font-size:7px;font-weight:1000;letter-spacing:.12em}
+.drop-live i{width:7px;height:7px;border-radius:50%;background:#42da7f;box-shadow:0 0 12px rgba(66,218,127,.6)}
+.drop-copy>span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.13em}
+.drop-copy h3{margin:8px 0 14px;font:700 42px/.98 Georgia,serif}
+.drop-copy p{margin:0 0 14px;color:#b3a397;font-size:13px;line-height:1.58}
+.drop-music-note{margin:4px 0 17px;padding:13px 14px;border-left:4px solid var(--sf-gold);background:#211711;color:#e2c188;font-size:10px;font-weight:900;line-height:1.4}
+.drop-read{
+  display:inline-flex;align-self:flex-start;margin-top:5px;padding:12px 14px;
+  background:var(--sf-red);color:#fff;font-size:8px;font-weight:1000;letter-spacing:.11em;
+  transition:.2s ease
+}
 .weekly-format{margin-top:15px;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#3d2b24;border:1px solid #3d2b24}
-.weekly-format div{min-height:130px;padding:15px;background:#17100d;display:flex;flex-direction:column;justify-content:flex-end}
+.weekly-format a,.weekly-format div{min-height:130px;padding:15px;background:#17100d;display:flex;flex-direction:column;justify-content:flex-end;color:inherit;text-decoration:none}
+.weekly-format a:first-child{background:#2c1711}
 .weekly-format span{color:var(--sf-red);font:34px/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
 .weekly-format strong{margin-top:8px;font-size:9px;line-height:1.2;letter-spacing:.04em}
+.weekly-format small{margin-top:5px;color:#8f8177;font-size:7px;letter-spacing:.08em}
+
 .sf-culture{background:#21150f}
 .culture-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .culture-grid article{min-height:260px;padding:19px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid #4a3025;background:linear-gradient(160deg,#2e1c14,#120d0a)}
 .culture-grid span{color:var(--sf-red);font-size:8px;font-weight:1000;letter-spacing:.11em}
 .culture-grid h3{margin:8px 0 6px;font:700 26px/1 Georgia,serif}
 .culture-grid p{margin:0;color:#9e8f82;font-size:11px;line-height:1.45}
+
 .sf-board{background:#e9dfd0;color:#17110e}
+.sf-board .sf-head>p{color:#71665d}
 .board-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .board-card{padding:22px;border:1px solid #c3b5a4;background:#f6eee2}
+.board-card.featured{border-top:5px solid var(--sf-rust)}
 .board-card span{color:var(--sf-rust);font-size:8px;font-weight:1000;letter-spacing:.12em}
 .board-card h3{margin:8px 0 7px;font:700 30px/1 Georgia,serif}
 .board-card p{margin:0;color:#70655c;font-size:11px;line-height:1.45}
 .board-card b{display:block;margin-top:15px;color:var(--sf-rust);font-size:8px;letter-spacing:.1em}
+.board-card a{color:inherit;text-decoration:none}
+
 @media(max-width:880px){
-  .sf-hero-grid,.sf-lead,.drop-lead{grid-template-columns:1fr}
+  .sf-hero-grid,.sf-lead,.drop-feature{grid-template-columns:1fr}
   .sf-card-grid{grid-template-columns:1fr 1fr}
   .culture-grid{grid-template-columns:1fr 1fr}
   .weekly-format{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
-  .sf-hero{padding-top:48px}.sf-head{align-items:start;flex-direction:column}
+  .sf-hero{padding-top:48px}
+  .sf-head{align-items:start;flex-direction:column}
   .sf-card-grid,.culture-grid,.board-grid{grid-template-columns:1fr}
   .weekly-format{grid-template-columns:1fr}
-  .sf-lead-art,.drop-art{min-height:310px}
+  .sf-lead-art,.drop-art{min-height:330px}
+  .drop-copy{padding:25px 22px}
+  .drop-copy h3{font-size:34px}
 }
 </style>
 </head>
@@ -140,9 +179,7 @@
       <a class="active" href="movies.html">TV & Movies</a>
     </nav>
 
-    <a class="brand" href="index.html">
-      <span class="brand-mark">4</span> DA KULTURE
-    </a>
+    <a class="brand" href="index.html"><span class="brand-mark">4</span> DA KULTURE</a>
 
     <nav class="nav right">
       <a href="throwback.html">Throwback</a>
@@ -217,36 +254,12 @@
     </article>
 
     <div class="sf-card-grid">
-      <article class="sf-card">
-        <span>CHARACTER FILE</span>
-        <h3>Leon Simmons</h3>
-        <p>From soldier to survivor: the growth that made Leon one of the show's emotional anchors.</p>
-      </article>
-      <article class="sf-card">
-        <span>CHARACTER FILE</span>
-        <h3>Jerome & Louie</h3>
-        <p>Family, ambition and the fracture that changed everything inside the Saint organization.</p>
-      </article>
-      <article class="sf-card">
-        <span>THE RANKING</span>
-        <h3>Every Snowfall Season</h3>
-        <p>Six seasons. One ranking. Peak, weakest stretch, best finale and most rewatchable year.</p>
-      </article>
-      <article class="sf-card">
-        <span>THE DEBATE</span>
-        <h3>When Did Franklin Lose?</h3>
-        <p>Was there one point of no return — or was the ending built into the climb from the beginning?</p>
-      </article>
-      <article class="sf-card">
-        <span>SCENE FILE</span>
-        <h3>The Moments We Still Talk About</h3>
-        <p>The confrontations, betrayals, deaths and quiet scenes that defined the original run.</p>
-      </article>
-      <article class="sf-card">
-        <span>LEGACY</span>
-        <h3>Where Snowfall Ranks</h3>
-        <p>Its place among the defining Black crime dramas and prestige television of its era.</p>
-      </article>
+      <article class="sf-card"><span>CHARACTER FILE</span><h3>Leon Simmons</h3><p>From soldier to survivor: the growth that made Leon one of the show's emotional anchors.</p></article>
+      <article class="sf-card"><span>CHARACTER FILE</span><h3>Jerome & Louie</h3><p>Family, ambition and the fracture that changed everything inside the Saint organization.</p></article>
+      <article class="sf-card"><span>THE RANKING</span><h3>Every Snowfall Season</h3><p>Six seasons. One ranking. Peak, weakest stretch, best finale and most rewatchable year.</p></article>
+      <article class="sf-card"><span>THE DEBATE</span><h3>When Did Franklin Lose?</h3><p>Was there one point of no return — or was the ending built into the climb from the beginning?</p></article>
+      <article class="sf-card"><span>SCENE FILE</span><h3>The Moments We Still Talk About</h3><p>The confrontations, betrayals, deaths and quiet scenes that defined the original run.</p></article>
+      <article class="sf-card"><span>LEGACY</span><h3>Where Snowfall Ranks</h3><p>Its place among the defining Black crime dramas and prestige television of its era.</p></article>
     </div>
   </div>
 </section>
@@ -255,33 +268,36 @@
   <div class="shell">
     <div class="sf-head">
       <div>
-        <span class="sf-kicker">NOW RUNNING</span>
+        <span class="sf-kicker">NOW RUNNING • WEEKLY 4DK COVERAGE</span>
         <h2>THE DROP:<br>A SNOWFALL SAGA</h2>
       </div>
-      <p>Wanda and Leon move into '90s Los Angeles as the fallout of the crack era overlaps with an exploding West Coast rap scene.</p>
+      <p>The universe enters the '90s — and Episode 1 gives 4DK plenty to talk about already.</p>
     </div>
 
-    <div class="drop-lead">
+    <a class="drop-feature" href="the-drop-episode-1-review.html">
       <div class="drop-art">
-        <span>SEASON 1 • WEEKLY COVERAGE</span>
+        <span>EPISODE 1 • 4DK REVIEW</span>
         <strong>THE<br>DROP</strong>
-        <small>WANDA • LEON • MUSIC • L.A.</small>
+        <small>WANDA • LAMAR • ARTILLERY • MUSIC • L.A.</small>
       </div>
+
       <div class="drop-copy">
+        <div class="drop-live"><i></i> NEW REVIEW • LIVE</div>
         <span>THE NEW ERA</span>
-        <h3>Can the Snowfall Universe Build Something New?</h3>
-        <p>The new saga doesn't simply repeat Franklin's story. Wanda is chasing an opening in L.A.'s rap scene while Leon is trying to build a life outside the streets.</p>
-        <p>That gives 4DK two angles every week: whether the story works as television, and how well it captures the culture surrounding early-'90s West Coast music.</p>
-        <b>EPISODE REVIEWS • CONNECTIONS • PREDICTIONS</b>
+        <h3>The Drop Doesn't Feel Like Snowfall — And That's the Point</h3>
+        <p>Episode 1 brings the universe into the '90s, gives Wanda room to grow, introduces Lamar as somebody to watch and immediately establishes a different rhythm from the original series.</p>
+        <p>By the 20-minute mark, Kcdatruth was already locked in. By the time Artillery came out flowing in the final scene, the show had completely sold him on coming back for Episode 2.</p>
+        <div class="drop-music-note">♫ SOUNDTRACK CHECK — The music is already one of the premiere's biggest strengths, including the genius use of “m.A.A.d city” during the bus-stop chase.</div>
+        <span class="drop-read">READ THE FULL EPISODE 1 REVIEW →</span>
       </div>
-    </div>
+    </a>
 
     <div class="weekly-format">
-      <div><span>01</span><strong>EPISODE SCORE</strong></div>
-      <div><span>02</span><strong>MVP OF THE WEEK</strong></div>
-      <div><span>03</span><strong>BEST SCENE</strong></div>
-      <div><span>04</span><strong>SNOWFALL CALLBACK</strong></div>
-      <div><span>05</span><strong>WHAT HAPPENS NEXT?</strong></div>
+      <a href="the-drop-episode-1-review.html"><span>01</span><strong>EPISODE 1 REVIEW</strong><small>LOCKED IN • READ NOW →</small></a>
+      <div><span>02</span><strong>MVP OF THE WEEK</strong><small>WANDA + LAMAR</small></div>
+      <div><span>03</span><strong>BEST SCENE</strong><small>BUS-STOP CHASE</small></div>
+      <div><span>04</span><strong>SOUNDTRACK</strong><small>MUSIC IS A CHARACTER</small></div>
+      <div><span>05</span><strong>WHAT HAPPENS NEXT?</strong><small>EPISODE 2</small></div>
     </div>
   </div>
 </section>
@@ -297,26 +313,10 @@
     </div>
 
     <div class="culture-grid">
-      <article>
-        <span>MUSIC</span>
-        <h3>The Rise of West Coast Rap</h3>
-        <p>How the new saga's early-'90s setting creates a bridge from street politics to the music business.</p>
-      </article>
-      <article>
-        <span>LOS ANGELES</span>
-        <h3>The City Is a Character</h3>
-        <p>Neighborhoods, style, language and the changing feel of L.A. across two decades.</p>
-      </article>
-      <article>
-        <span>SOUNDTRACK FILE</span>
-        <h3>Every Song That Matters</h3>
-        <p>A running music column for needle drops, era choices and records worth adding to the playlist.</p>
-      </article>
-      <article>
-        <span>CROSSOVER</span>
-        <h3>TV × Hip-Hop</h3>
-        <p>Selected Snowfall Files stories can live in both 4DK Screen and Hip-Hop when the culture overlaps.</p>
-      </article>
+      <article><span>MUSIC</span><h3>The Rise of West Coast Rap</h3><p>How the new saga's early-'90s setting creates a bridge from street politics to the music business.</p></article>
+      <article><span>LOS ANGELES</span><h3>The City Is a Character</h3><p>Neighborhoods, style, language and the changing feel of L.A. across two decades.</p></article>
+      <article><span>SOUNDTRACK FILE</span><h3>Every Song That Matters</h3><p>A running music column for needle drops, era choices and records worth adding to the playlist.</p></article>
+      <article><span>CROSSOVER</span><h3>TV × Hip-Hop</h3><p>Selected Snowfall Files stories can live in both 4DK Screen and Hip-Hop when the culture overlaps.</p></article>
     </div>
   </div>
 </section>
@@ -326,48 +326,27 @@
     <div class="sf-head">
       <div>
         <span class="sf-kicker">THE EDITORIAL BOARD</span>
-        <h2>FIRST STORIES<br>TO BUILD.</h2>
+        <h2>STORIES<br>TO BUILD.</h2>
       </div>
-      <p>These are prompts for your takes — not finished opinions. We build each story around what you actually think.</p>
+      <p>The Drop is now officially part of the weekly 4DK Screen rotation alongside original-series retrospectives, rankings and culture pieces.</p>
     </div>
 
     <div class="board-grid">
-      <article class="board-card">
-        <span>ORIGINAL SERIES</span>
-        <h3>Franklin Saint: Rise, Power & Fall</h3>
-        <p>Was his ending inevitable, and when did he stop being somebody you could root for?</p>
-        <b>READY FOR YOUR TAKE →</b>
+      <article class="board-card"><span>ORIGINAL SERIES</span><h3>Franklin Saint: Rise, Power & Fall</h3><p>Was his ending inevitable, and when did he stop being somebody you could root for?</p><b>READY FOR YOUR TAKE →</b></article>
+
+      <article class="board-card featured">
+        <a href="the-drop-episode-1-review.html">
+          <span>THE DROP • PUBLISHED</span>
+          <h3>Episode 1: Locked In</h3>
+          <p>The '90s arrive, Wanda gets another chapter, Lamar stands out and the soundtrack immediately becomes part of the story.</p>
+          <b>READ EPISODE 1 →</b>
+        </a>
       </article>
-      <article class="board-card">
-        <span>THE DROP</span>
-        <h3>Season 1 Episode Reviews</h3>
-        <p>A weekly column using the same five-part 4DK format after each new episode.</p>
-        <b>WEEKLY →</b>
-      </article>
-      <article class="board-card">
-        <span>RANKINGS</span>
-        <h3>Top 15 Snowfall Characters</h3>
-        <p>Impact, performance, writing, memorable moments and how much they changed the story.</p>
-        <b>RUN THE LIST →</b>
-      </article>
-      <article class="board-card">
-        <span>DEBATE</span>
-        <h3>Snowfall's Best Season</h3>
-        <p>Peak Franklin? Peak family drama? Peak Teddy? We can settle it season by season.</p>
-        <b>LET'S ARGUE IT →</b>
-      </article>
-      <article class="board-card">
-        <span>CULTURE</span>
-        <h3>From the Dope Game to the Rap Game</h3>
-        <p>How The Drop moves the universe into a new kind of power struggle in early-'90s Los Angeles.</p>
-        <b>DEEP DIVE →</b>
-      </article>
-      <article class="board-card">
-        <span>SOUNDTRACK</span>
-        <h3>The Music of the Snowfall Universe</h3>
-        <p>Records, scenes and soundtrack choices from the original show through the new saga.</p>
-        <b>BUILD THE PLAYLIST →</b>
-      </article>
+
+      <article class="board-card"><span>RANKINGS</span><h3>Top 15 Snowfall Characters</h3><p>Impact, performance, writing, memorable moments and how much they changed the story.</p><b>RUN THE LIST →</b></article>
+      <article class="board-card"><span>DEBATE</span><h3>Snowfall's Best Season</h3><p>Peak Franklin? Peak family drama? Peak Teddy? We can settle it season by season.</p><b>LET'S ARGUE IT →</b></article>
+      <article class="board-card"><span>CULTURE</span><h3>From the Dope Game to the Rap Game</h3><p>How The Drop moves the universe into a new kind of power struggle in early-'90s Los Angeles.</p><b>DEEP DIVE →</b></article>
+      <article class="board-card"><span>SOUNDTRACK</span><h3>The Music of the Snowfall Universe</h3><p>Records, scenes and soundtrack choices from the original show through the new saga.</p><b>BUILD THE PLAYLIST →</b></article>
     </div>
   </div>
 </section>
@@ -376,31 +355,9 @@
 <footer class="footer">
   <div class="shell">
     <div class="footer-grid">
-      <div>
-        <div class="footer-brand">4 DA KULTURE</div>
-        <p>Independent coverage and conversation at the intersection of sports, music, movies, television and culture.</p>
-      </div>
-      <div>
-        <h4>Sections</h4>
-        <div class="footer-links">
-          <a href="nba.html">NBA</a>
-          <a href="nfl.html">NFL</a>
-          <a href="movies.html">TV & Movies</a>
-          <a href="snowfall.html">The Snowfall Files</a>
-          <a href="throwback.html">Throwback</a>
-          <a href="hiphop.html">Hip-Hop</a>
-        </div>
-      </div>
-      <div>
-        <h4>4DK</h4>
-        <div class="footer-links">
-          <a href="magazine.html">Magazine</a>
-          <a href="podcast.html">Podcast</a>
-          <a href="about.html">About</a>
-          <a href="kcdatruth.html">Kcdatruth</a>
-          <a href="210west.html">210West</a>
-        </div>
-      </div>
+      <div><div class="footer-brand">4 DA KULTURE</div><p>Independent coverage and conversation at the intersection of sports, music, movies, television and culture.</p></div>
+      <div><h4>Sections</h4><div class="footer-links"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="movies.html">TV & Movies</a><a href="snowfall.html">The Snowfall Files</a><a href="throwback.html">Throwback</a><a href="hiphop.html">Hip-Hop</a></div></div>
+      <div><h4>4DK</h4><div class="footer-links"><a href="magazine.html">Magazine</a><a href="podcast.html">Podcast</a><a href="about.html">About</a><a href="kcdatruth.html">Kcdatruth</a><a href="210west.html">210West</a></div></div>
     </div>
     <div class="fine">© 2026 4 Da Kulture. All original writing and commentary belong to their credited authors.</div>
   </div>
