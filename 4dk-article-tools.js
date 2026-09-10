@@ -139,4 +139,18 @@
       setTimeout(()=>copyBtn.textContent='COPY LINK',1600);
     }
   });
+
+  // 4DK Reader Reactions
+  if(!document.querySelector('link[href="4dk-reactions.css"]')){
+    const reactionStyles=document.createElement('link');
+    reactionStyles.rel='stylesheet';
+    reactionStyles.href='4dk-reactions.css';
+    document.head.appendChild(reactionStyles);
+  }
+  if(!document.querySelector('script[src="4dk-reactions.js"]')){
+    const reactionScript=document.createElement('script');
+    reactionScript.src='4dk-reactions.js';
+    reactionScript.defer=true;
+    document.body.appendChild(reactionScript);
+  }
 })();

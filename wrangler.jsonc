@@ -1,6 +1,6 @@
 {
   "name": "4dakulture-magazine",
-  "main": "worker.js",
+  "main": "reactions-worker.js",
   "compatibility_date": "2026-09-07",
   "assets": {
     "directory": ".",
@@ -9,5 +9,10 @@
       "/api/*"
     ],
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "REACTIONS"
+    }
+  ]
 }
