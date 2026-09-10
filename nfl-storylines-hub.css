@@ -1,0 +1,130 @@
+/* 4DK NFL Storylines hub */
+.storyline-hub{padding:42px 20px 12px!important}
+.storyline-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}
+.storyline-head h2{
+  margin:8px 0 0;
+  font:1000 clamp(34px,4.8vw,62px)/.92 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  letter-spacing:-.03em;text-transform:uppercase;color:#f3f5f6
+}
+.storyline-all{
+  flex:0 0 auto;padding:10px 14px;border:1px solid rgba(255,255,255,.18);
+  text-decoration:none;font-size:11px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase;
+  color:#d8e0e7;border-radius:999px
+}
+.storyline-all:hover{background:rgba(255,255,255,.06)}
+
+.storyline-layout{display:grid;grid-template-columns:1.12fr .88fr;gap:16px}
+.storyline-side{display:grid;gap:16px}
+.storyline-mini-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:16px}
+
+.story-card{
+  position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  background:#0a1117;padding:22px;min-height:180px;
+  box-shadow:0 18px 34px rgba(0,0,0,.20)
+}
+.story-card:before{
+  content:"";position:absolute;inset:auto 0 0 0;height:4px;background:var(--accent,#e83431)
+}
+.story-card:after{
+  content:attr(data-code);position:absolute;right:14px;bottom:8px;
+  font:1000 clamp(56px,9vw,132px)/.86 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  opacity:.06;letter-spacing:-.06em
+}
+.story-card.lead{min-height:360px;padding:28px}
+.story-card.lead h3{font-size:72px;line-height:.86;max-width:630px}
+.story-card.mini{min-height:165px;padding:18px}
+.story-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.story-teamline{display:flex;align-items:center;gap:10px;min-width:0}
+.story-teamline span:last-child{
+  font-size:13px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#f3f6f8
+}
+.team-logo{
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:1000;letter-spacing:.05em;
+  border:1px solid rgba(255,255,255,.22);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)
+}
+.story-status{
+  flex:0 0 auto;padding:7px 9px;border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;font-size:10px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase;color:#d5dde3
+}
+.story-card h3{
+  margin:14px 0 10px;
+  font:1000 clamp(28px,4.3vw,46px)/.93 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  letter-spacing:-.02em;text-transform:uppercase;color:#ffffff
+}
+.story-card p{max-width:720px;margin:0;color:#d0d7dd;font-size:16px;line-height:1.52}
+.story-card a{
+  display:inline-block;margin-top:18px;text-decoration:none;font-size:12px;font-weight:1000;
+  letter-spacing:.08em;text-transform:uppercase;color:#fff
+}
+.story-card a:hover{opacity:.85}
+
+/* team themes */
+.rams{--accent:#ffd100;background:
+  radial-gradient(circle at 82% 16%,rgba(255,209,0,.18),transparent 18rem),
+  linear-gradient(145deg,#06244c,#08111a 66%)}
+.rams:after{content:"LAR";color:#ffd100}
+.team-logo.lar{background:#003594;color:#ffd100}
+
+.chiefs{--accent:#e31837;background:
+  radial-gradient(circle at 80% 18%,rgba(227,24,55,.18),transparent 14rem),
+  linear-gradient(145deg,#2d0b10,#0a1117 64%)}
+.chiefs:after{content:"KC";color:#e31837}
+.team-logo.kc{background:#ffffff;color:#e31837}
+
+.niners{--accent:#b3995d;background:
+  radial-gradient(circle at 82% 18%,rgba(179,153,93,.22),transparent 14rem),
+  linear-gradient(145deg,#32070b,#0a1117 64%)}
+.niners:after{content:"SF";color:#b3995d}
+.team-logo.sf{background:#aa0000;color:#d7b877}
+
+.bears{--accent:#f78320;background:
+  radial-gradient(circle at 82% 12%,rgba(247,131,32,.18),transparent 12rem),
+  linear-gradient(145deg,#091b30,#0a1117 64%)}
+.bears:after{content:"CHI";color:#f78320}
+.team-logo.chi{background:#0b162a;color:#f78320}
+
+.panthers{--accent:#0085ca;background:
+  radial-gradient(circle at 82% 18%,rgba(0,133,202,.18),transparent 12rem),
+  linear-gradient(145deg,#07131d,#0a1117 64%)}
+.panthers:after{content:"CAR";color:#0085ca}
+.team-logo.car{background:#101820;color:#0085ca}
+
+.seahawks{--accent:#69be28;background:
+  radial-gradient(circle at 82% 18%,rgba(105,190,40,.18),transparent 12rem),
+  linear-gradient(145deg,#102a40,#0a1117 64%)}
+.seahawks:after{content:"SEA";color:#69be28}
+.team-logo.sea{background:#002244;color:#69be28}
+
+.raiders{--accent:#a5acaf;background:
+  radial-gradient(circle at 82% 18%,rgba(165,172,175,.17),transparent 12rem),
+  linear-gradient(145deg,#1a1a1a,#0a1117 64%)}
+.raiders:after{content:"LV";color:#a5acaf}
+.team-logo.lv{background:#000;color:#c7cacc}
+
+.commanders{--accent:#ffb612;background:
+  radial-gradient(circle at 82% 18%,rgba(255,182,18,.18),transparent 12rem),
+  linear-gradient(145deg,#3d1418,#0a1117 64%)}
+.commanders:after{content:"WSH";color:#ffb612}
+.team-logo.was{background:#5a1414;color:#ffb612}
+
+@media(max-width:1100px){
+  .storyline-mini-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:850px){
+  .storyline-layout{grid-template-columns:1fr}
+  .story-card.lead{min-height:300px}
+  .storyline-mini-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+  .storyline-hub{padding-top:34px!important}
+  .storyline-head{display:block}
+  .storyline-all{display:inline-block;margin-top:12px}
+  .story-card.lead{padding:22px;min-height:255px}
+  .story-card.lead h3{font-size:50px}
+  .story-card p{font-size:15px}
+  .storyline-mini-grid{grid-template-columns:1fr}
+  .story-card.mini{min-height:145px}
+  .story-teamline span:last-child{font-size:12px}
+  .story-status{font-size:9px}
+}
