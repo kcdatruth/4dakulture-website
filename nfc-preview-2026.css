@@ -25,4 +25,63 @@
 .nfc-playoffs{padding:48px 0;border-top:1px solid #2e3b46}.nfc-playoff-grid{display:grid;grid-template-columns:1fr .72fr;gap:20px}.nfc-seeds{border:1px solid #56636e;background:#081018}.nfc-seeds .row{display:grid;grid-template-columns:38px 1fr auto;gap:10px;padding:13px 14px;border-top:1px solid #2c3842;align-items:center}.nfc-seeds .row:first-child{border-top:0}.nfc-seeds .seedno{width:28px;height:28px;display:grid;place-items:center;background:#315f92;font-weight:1000}.nfc-seeds strong{font-size:15px}.nfc-seeds span:last-child{font-size:12px;color:#adb8c0;font-weight:800}.nfc-first-out{margin-top:12px;padding:13px 14px;border:1px dashed #5d6974;color:#c9d1d7;font-size:13px}.nfc-big-take{min-height:100%;display:flex;flex-direction:column;justify-content:center;padding:28px;border:1px solid #5b6873;background:radial-gradient(circle at 80% 20%,rgba(216,169,71,.13),transparent 12rem),#091018}.nfc-big-take small{font-size:10px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#dbb663}.nfc-big-take strong{margin-top:8px;font:1000 45px/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}.nfc-big-take p{color:#bbc5cc;line-height:1.5}
 .nfc-close{padding:52px 0;border-top:1px solid #2e3b46}.nfc-close p{max-width:900px;font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.65;color:#dfe5e9}.nfc-sources{margin-top:34px;padding:16px;border:1px solid #3f4c57;background:#081018;color:#9faab2;font-size:11px;line-height:1.6}.nfc-sources strong{color:#d8dfe4}.nfc-footer{border-top:1px solid #2e3b46;background:#020407;padding:28px 0;color:#8d99a3}.nfc-footer .shell{display:flex;justify-content:space-between;gap:20px;font-size:11px}
 @media(max-width:880px){.nfc-hero-inner{grid-template-columns:1fr}.nfc-seedbox{max-width:520px}.nfc-standings-grid{grid-template-columns:repeat(2,1fr)}.nfc-playoff-grid{grid-template-columns:1fr}}
-@media(max-width:650px){.nfc-hero-inner{padding-top:38px}.nfc-hero h1{font-size:58px}.nfc-deck{font-size:17px}.nfc-team-grid{grid-template-columns:1fr}.nfc-div-head{display:block}.nfc-div-records{margin-top:8px}.nfc-div-head h2,.nfc-board h2,.nfc-playoffs h2,.nfc-close h2{font-size:39px}.nfc-standings-grid{grid-template-columns:1fr}.nfc-intro p,.nfc-close p{font-size:18px}.nfc-footer .shell{display:block}.nfc-footer .shell span{display:block;margin-top:6px}}
+@media(max-width:650px){
+  .nfc-article-top .shell{min-height:52px}
+  .nfc-brand{font-size:20px}
+  .nfc-back{font-size:10px}
+
+  .nfc-hero-inner{
+    padding-top:30px;
+    padding-bottom:32px;
+    gap:24px;
+  }
+
+  .nfc-kicker{
+    font-size:10px;
+    letter-spacing:.14em;
+  }
+
+  .nfc-hero h1{
+    margin:8px 0 12px;
+    max-width:100%;
+    font-size:50px;
+    line-height:.86;
+    letter-spacing:-.045em;
+    text-wrap:balance;
+  }
+
+  .nfc-deck{
+    max-width:100%;
+    font-size:16px;
+    line-height:1.38;
+  }
+
+  .nfc-meta{
+    margin-top:14px;
+    font-size:11px;
+    line-height:1.35;
+  }
+
+  .nfc-seedbox{
+    margin-top:0;
+    box-shadow:0 14px 34px rgba(0,0,0,.22);
+  }
+
+  .nfc-seedbox-head{padding:9px 11px;font-size:10px}
+  .nfc-seed{padding:8px 11px}
+  .nfc-seed b{font-size:14px}
+
+  .nfc-team-grid{grid-template-columns:1fr}
+  .nfc-div-head{display:block}
+  .nfc-div-records{margin-top:8px}
+  .nfc-div-head h2,.nfc-board h2,.nfc-playoffs h2,.nfc-close h2{font-size:39px}
+  .nfc-standings-grid{grid-template-columns:1fr}
+  .nfc-intro p,.nfc-close p{font-size:18px}
+  .nfc-footer .shell{display:block}
+  .nfc-footer .shell span{display:block;margin-top:6px}
+}
+
+@media(max-width:390px){
+  .nfc-hero h1{font-size:47px}
+  .nfc-deck{font-size:15.5px}
+}
