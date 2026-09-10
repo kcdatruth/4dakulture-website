@@ -69,3 +69,183 @@
 .afc-footer{border-top:1px solid #2e3a32;background:#020403;padding:28px 0;color:#8d9891}.afc-footer .shell{display:flex;justify-content:space-between;gap:20px;font-size:11px}
 @media(max-width:880px){.afc-hero-inner{grid-template-columns:1fr}.afc-seedbox{max-width:520px}.afc-standings-grid{grid-template-columns:repeat(2,1fr)}.afc-playoff-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.afc-hero-inner{padding-top:38px}.afc-hero h1{font-size:58px}.afc-deck{font-size:17px}.afc-team-grid{grid-template-columns:1fr}.afc-div-head{display:block}.afc-div-records{margin-top:8px}.afc-div-head h2,.afc-board h2,.afc-playoffs h2,.afc-close h2{font-size:39px}.afc-standings-grid{grid-template-columns:1fr}.afc-intro p,.afc-close p{font-size:18px}.afc-footer .shell{display:block}.afc-footer .shell span{display:block;margin-top:6px}}
+
+/* 4DK NFL — REAL TEAM LOGOS PATCH
+   Paste this at the VERY BOTTOM of:
+   1) afc-preview-2026.css
+   2) nfc-preview-2026.css
+   3) nfl-storylines-hub.css
+
+   It adds actual team logo artwork beside every AFC/NFC team name
+   and replaces the storyline abbreviation badges with real logos.
+*/
+
+/* ---------- Shared preview logo treatment ---------- */
+.afc-team-label,
+.nfc-team-label{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  min-height:38px;
+}
+
+.afc-team-label::before,
+.nfc-team-label::before{
+  content:"";
+  flex:0 0 38px;
+  width:38px;
+  height:38px;
+  display:block;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  filter:drop-shadow(0 4px 7px rgba(0,0,0,.32));
+}
+
+/* ---------- AFC WEST ---------- */
+.afc-division.west .afc-team:nth-child(1) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/den.png");
+}
+.afc-division.west .afc-team:nth-child(2) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/kc.png");
+}
+.afc-division.west .afc-team:nth-child(3) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/lac.png");
+}
+.afc-division.west .afc-team:nth-child(4) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/lv.png");
+}
+
+/* ---------- AFC EAST ---------- */
+.afc-division.east .afc-team:nth-child(1) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/buf.png");
+}
+.afc-division.east .afc-team:nth-child(2) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/ne.png");
+}
+.afc-division.east .afc-team:nth-child(3) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/mia.png");
+}
+.afc-division.east .afc-team:nth-child(4) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png");
+}
+
+/* ---------- AFC NORTH ---------- */
+.afc-division.north .afc-team:nth-child(1) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/cin.png");
+}
+.afc-division.north .afc-team:nth-child(2) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/bal.png");
+}
+.afc-division.north .afc-team:nth-child(3) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/pit.png");
+}
+.afc-division.north .afc-team:nth-child(4) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/cle.png");
+}
+
+/* ---------- AFC SOUTH ---------- */
+.afc-division.south .afc-team:nth-child(1) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/hou.png");
+}
+.afc-division.south .afc-team:nth-child(2) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/jax.png");
+}
+.afc-division.south .afc-team:nth-child(3) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/ind.png");
+}
+.afc-division.south .afc-team:nth-child(4) .afc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/ten.png");
+}
+
+/* ---------- NFC EAST ---------- */
+.nfc-division.east .nfc-team:nth-child(1) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/phi.png");
+}
+.nfc-division.east .nfc-team:nth-child(2) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/dal.png");
+}
+.nfc-division.east .nfc-team:nth-child(3) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png");
+}
+.nfc-division.east .nfc-team:nth-child(4) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/was.png");
+}
+
+/* ---------- NFC NORTH ---------- */
+.nfc-division.north .nfc-team:nth-child(1) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/det.png");
+}
+.nfc-division.north .nfc-team:nth-child(2) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/chi.png");
+}
+.nfc-division.north .nfc-team:nth-child(3) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/gb.png");
+}
+.nfc-division.north .nfc-team:nth-child(4) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/min.png");
+}
+
+/* ---------- NFC SOUTH ---------- */
+.nfc-division.south .nfc-team:nth-child(1) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/car.png");
+}
+.nfc-division.south .nfc-team:nth-child(2) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/tb.png");
+}
+.nfc-division.south .nfc-team:nth-child(3) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/atl.png");
+}
+.nfc-division.south .nfc-team:nth-child(4) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/no.png");
+}
+
+/* ---------- NFC WEST ---------- */
+.nfc-division.west .nfc-team:nth-child(1) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/lar.png");
+}
+.nfc-division.west .nfc-team:nth-child(2) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/sf.png");
+}
+.nfc-division.west .nfc-team:nth-child(3) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/sea.png");
+}
+.nfc-division.west .nfc-team:nth-child(4) .nfc-team-label::before{
+  background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/ari.png");
+}
+
+/* ---------- Storyline cards: replace text circles with actual logos ---------- */
+.storyline-hub .team-logo{
+  font-size:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background-color:transparent !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:contain !important;
+  width:44px !important;
+  height:44px !important;
+  filter:drop-shadow(0 4px 7px rgba(0,0,0,.32));
+}
+
+.storyline-hub .team-logo.lar{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/lar.png") !important}
+.storyline-hub .team-logo.kc{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/kc.png") !important}
+.storyline-hub .team-logo.sf{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/sf.png") !important}
+.storyline-hub .team-logo.chi{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/chi.png") !important}
+.storyline-hub .team-logo.car{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/car.png") !important}
+.storyline-hub .team-logo.sea{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/sea.png") !important}
+.storyline-hub .team-logo.lv{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/lv.png") !important}
+.storyline-hub .team-logo.was{background-image:url("https://a.espncdn.com/i/teamlogos/nfl/500/was.png") !important}
+
+@media(max-width:650px){
+  .afc-team-label::before,
+  .nfc-team-label::before{
+    flex-basis:34px;
+    width:34px;
+    height:34px;
+  }
+  .storyline-hub .team-logo{
+    width:38px !important;
+    height:38px !important;
+  }
+}
