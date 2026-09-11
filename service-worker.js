@@ -1,12 +1,13 @@
-const CACHE_NAME = '4dk-pwa-v1';
+const CACHE_NAME = '4dk-pwa-v2';
 const APP_SHELL = [
-  './',
-  './index.html',
-  './offline.html',
-  './app.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png'
+  '/',
+  '/index.html',
+  '/offline.html',
+  '/app.webmanifest',
+  '/4dk-icon-192.png',
+  '/4dk-icon-512.png',
+  '/4dk-icon-maskable-512.png',
+  '/apple-touch-icon.png'
 ];
 
 self.addEventListener('install', event => {
@@ -41,7 +42,7 @@ self.addEventListener('fetch', event => {
           caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
           return response;
         })
-        .catch(async () => (await caches.match(request)) || caches.match('./offline.html'))
+        .catch(async () => (await caches.match(request)) || caches.match('/offline.html'))
     );
     return;
   }
