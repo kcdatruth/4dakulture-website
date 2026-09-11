@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="nfl-picks.css">
 <link rel="stylesheet" href="nfl-revamp.css">
 <link rel="stylesheet" href="nfl-storylines-hub.css">
+<link rel="stylesheet" href="nfl-scoreboard.css">
 </head>
 <body class="nfl-page nfl-revamp-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -120,6 +121,7 @@
 </section>
 
 <nav class="nfl-v2-nav shell" aria-label="NFL page sections">
+  <a href="#scoreboard">Scores</a>
   <a class="active" href="#storylines">Storylines</a>
   <a href="afc-preview-2026.html">AFC Preview</a>
   <a href="nfc-preview-2026.html">NFC Preview</a>
@@ -127,6 +129,33 @@
   <a href="#redzone">Red Zone</a>
   <a href="#pickem">Pick’em</a>
 </nav>
+
+<section class="nfl-scoreboard" id="scoreboard" data-nfl-scoreboard aria-label="NFL scoreboard">
+  <div class="shell">
+    <div class="nfl-scoreboard-head">
+      <div>
+        <span class="nfl-scoreboard-kicker"><i></i> 4DK NFL SCOREBOARD</span>
+        <h2 data-scoreboard-week>THIS WEEK</h2>
+        <p>Live scores, finals and the full weekly slate.</p>
+      </div>
+
+      <div class="nfl-scoreboard-meta">
+        <span data-scoreboard-updated>UPDATING…</span>
+        <button type="button" data-scoreboard-refresh aria-label="Refresh NFL scoreboard">↻ REFRESH</button>
+      </div>
+    </div>
+
+    <div class="nfl-scoreboard-filters" role="group" aria-label="Filter NFL games">
+      <button class="active" type="button" data-scoreboard-filter="all">ALL <b data-filter-count="all">0</b></button>
+      <button type="button" data-scoreboard-filter="in">LIVE <b data-filter-count="in">0</b></button>
+      <button type="button" data-scoreboard-filter="post">FINAL <b data-filter-count="post">0</b></button>
+      <button type="button" data-scoreboard-filter="pre">UPCOMING <b data-filter-count="pre">0</b></button>
+    </div>
+
+    <div class="nfl-scoreboard-status" data-scoreboard-status aria-live="polite">Loading this week’s NFL games…</div>
+    <div class="nfl-scoreboard-grid" data-scoreboard-games></div>
+  </div>
+</section>
 
 <section class="storyline-hub shell" id="storylines">
   <div class="storyline-head">
@@ -359,6 +388,7 @@
 
 <script src="script.js"></script>
 <script src="scores.js"></script>
+<script src="nfl-scoreboard.js"></script>
 <script src="nfl-picks.js"></script>
 </body>
 </html>
