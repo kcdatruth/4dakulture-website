@@ -143,40 +143,147 @@
     }
   }
 
+  function normalizeESPNEvent(event){
+    const competition=event?.competitions?.[0];
+    if(!competition) return null;
+
+    const competitors=competition.competitors || [];
+    const home=competitors.find(c=>c.homeAway==='home') || competitors[0];
+    const away=competitors.find(c=>c.homeAway==='away') || competitors[1];
+    if(!home || !away) return null;
+
+    const status=event.status || competition.status || {};
+    const type=status.type || {};
+    const state=type.state || (type.completed ? 'post' : 'pre');
+
+    const scoreValue=competitor=>{
+      const value=competitor?.score;
+      if(value==null) return '';
+      if(typeof value==='object') return value.displayValue ?? value.value ?? '';
+      return String(value);
+    };
+
+    let detail='';
+    if(state==='post'){
+      detail='FINAL';
+    }else if(state==='in'){
+      const period=status.period || competition.status?.period;
+      const clock=status.displayClock || competition.status?.displayClock || '';
+      detail=period && clock ? `Q${period} ${clock}` : (type.shortDetail || type.detail || 'LIVE');
+    }else{
+      detail=type.shortDetail || type.detail || 'Scheduled';
+    }
+
+    return {
+      id:String(event.id || ''),
+      season:event.season?.year || new Date().getFullYear(),
+      week:event.week?.number || null,
+      state,
+      statusText:detail,
+      startTime:event.date || competition.date || '',
+      away:{
+        id:String(away.team?.id || away.id || ''),
+        abbr:away.team?.abbreviation || away.team?.shortDisplayName || 'AWAY',
+        name:away.team?.displayName || away.team?.shortDisplayName || 'Away',
+        score:scoreValue(away)
+      },
+      home:{
+        id:String(home.team?.id || home.id || ''),
+        abbr:home.team?.abbreviation || home.team?.shortDisplayName || 'HOME',
+        name:home.team?.displayName || home.team?.shortDisplayName || 'Home',
+        score:scoreValue(home)
+      }
+    };
+  }
+
+  async function loadDirectFromESPN(){
+    const endpoint='https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
+    const response=await fetch(`${endpoint}?limit=100&_=${Date.now()}`,{
+      cache:'no-store',
+      mode:'cors',
+      headers:{'Accept':'application/json'}
+    });
+
+    if(!response.ok) throw new Error(`ESPN NFL feed HTTP ${response.status}`);
+
+    const data=await response.json();
+    const allGames=(data.events || [])
+      .map(normalizeESPNEvent)
+      .filter(Boolean)
+      .sort((a,b)=>new Date(a.startTime || 0)-new Date(b.startTime || 0));
+
+    if(!allGames.length) throw new Error('ESPN returned no NFL games');
+
+    const counts=new Map();
+    allGames.forEach(game=>{
+      if(game.week!=null) counts.set(game.week,(counts.get(game.week)||0)+1);
+    });
+
+    const week=[...counts.entries()].sort((a,b)=>b[1]-a[1])[0]?.[0]
+      ?? allGames[0]?.week
+      ?? null;
+
+    const games=week==null ? allGames : allGames.filter(game=>game.week===week);
+
+    return {
+      updatedAt:new Date().toISOString(),
+      season:games[0]?.season || allGames[0]?.season || new Date().getFullYear(),
+      week,
+      games,
+      source:'espn-fallback'
+    };
+  }
+
   async function load(){
     if(loading) return;
     loading=true;
     refreshBtn?.classList.add('loading');
     statusEl.textContent='Updating NFL scoreboard…';
 
+    let data=null;
+    let usedFallback=false;
+
     try{
       const response=await fetch(`/api/nfl-pickem?t=${Date.now()}`,{cache:'no-store'});
       if(!response.ok) throw new Error(`4DK NFL feed HTTP ${response.status}`);
 
-      const data=await response.json();
-      if(!Array.isArray(data?.games)) throw new Error('Invalid NFL scoreboard response');
-
-      payload=data;
-      render();
-
-      const stamp=new Date(data.updatedAt || Date.now());
-      updatedEl.textContent=`UPDATED ${new Intl.DateTimeFormat(undefined,{
-        hour:'numeric',minute:'2-digit'
-      }).format(stamp)}`;
-    }catch(error){
-      console.error('4DK NFL scoreboard:',error);
-      if(!payload){
-        gamesEl.innerHTML=`
-          <div class="nfl-scoreboard-empty">
-            <strong>SCOREBOARD TEMPORARILY UNAVAILABLE.</strong>
-            <span>Try refresh in a moment.</span>
-          </div>`;
+      data=await response.json();
+      if(!Array.isArray(data?.games) || !data.games.length){
+        throw new Error('4DK NFL feed returned no games');
       }
-      statusEl.textContent='Could not refresh the scoreboard. Existing scores will stay on screen.';
-    }finally{
-      loading=false;
-      refreshBtn?.classList.remove('loading');
+    }catch(workerError){
+      console.warn('4DK NFL scoreboard Worker fallback:',workerError);
+
+      try{
+        data=await loadDirectFromESPN();
+        usedFallback=true;
+      }catch(espnError){
+        console.error('4DK NFL scoreboard ESPN fallback:',espnError);
+
+        if(!payload){
+          gamesEl.innerHTML=`
+            <div class="nfl-scoreboard-empty">
+              <strong>SCOREBOARD TEMPORARILY UNAVAILABLE.</strong>
+              <span>Try refresh in a moment.</span>
+            </div>`;
+        }
+        statusEl.textContent='Could not refresh the scoreboard. Existing scores will stay on screen.';
+        loading=false;
+        refreshBtn?.classList.remove('loading');
+        return;
+      }
     }
+
+    payload=data;
+    render();
+
+    const stamp=new Date(data.updatedAt || Date.now());
+    updatedEl.textContent=`UPDATED ${new Intl.DateTimeFormat(undefined,{
+      hour:'numeric',minute:'2-digit'
+    }).format(stamp)}${usedFallback ? ' • LIVE FEED' : ''}`;
+
+    loading=false;
+    refreshBtn?.classList.remove('loading');
   }
 
   filters.forEach(btn=>{
