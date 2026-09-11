@@ -58,6 +58,7 @@
       <a href="/magazine.html">Magazine <span>›</span></a>
       <a href="/classic-albums.html">Classic Albums <span>›</span></a>
       <a href="/podcast.html">Podcast <span>›</span></a>
+      <button type="button" class="fourdk-push-control" data-fourdk-push-control>Notifications <span data-fourdk-push-state>Set up ›</span></button>
       <a href="/about.html">About 4DK <span>›</span></a>
     </div>`;
 
@@ -83,6 +84,34 @@
   backdrop.addEventListener('click', closeMore);
   closeButton?.addEventListener('click', closeMore);
   document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMore(); });
+
+
+
+  const pushControl = sheet.querySelector('[data-fourdk-push-control]');
+  const pushState = sheet.querySelector('[data-fourdk-push-state]');
+  const renderPushState = (state = window.FourDKPush?.status?.() || {}) => {
+    if (!pushState) return;
+    if (state.permission === 'denied') pushState.textContent = 'Blocked ›';
+    else if (state.optedIn) pushState.textContent = 'On ✓';
+    else if (state.ready) pushState.textContent = 'Off ›';
+    else pushState.textContent = 'Set up ›';
+  };
+  renderPushState();
+  window.addEventListener('fourdk:push-status', event => renderPushState(event.detail || {}));
+  pushControl?.addEventListener('click', async () => {
+    if (!window.FourDKPush) {
+      pushState.textContent = 'Loading…';
+      setTimeout(() => renderPushState(), 1200);
+      return;
+    }
+    const state = window.FourDKPush.status();
+    if (state.optedIn) {
+      await window.FourDKPush.turnOff();
+    } else {
+      await window.FourDKPush.request();
+    }
+    renderPushState();
+  });
 
   // Make taps on same-site links feel app-like and close the sheet immediately.
   sheet.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMore));

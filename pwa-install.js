@@ -76,3 +76,13 @@
     document.getElementById('fourdkInstallApp')?.remove();
   });
 })();
+
+// 4DK push notifications: initialize OneSignal on the installed app/home page.
+(() => {
+  if (document.querySelector('script[data-fourdk-push]')) return;
+  const script = document.createElement('script');
+  script.src = '/4dk-push.js';
+  script.defer = true;
+  script.dataset.fourdkPush = '1';
+  document.head.appendChild(script);
+})();

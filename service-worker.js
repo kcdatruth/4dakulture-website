@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v3-appnav';
+const CACHE_NAME = '4dk-pwa-v4-push';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ const APP_SHELL = [
   '/pwa-install.js',
   '/app-nav.css',
   '/app-nav.js',
+  '/4dk-push.js',
+  '/OneSignalSDKWorker.js',
   '/4dk-icon-192.png',
   '/4dk-icon-512.png',
   '/4dk-icon-maskable-512.png',
@@ -29,14 +31,28 @@ self.addEventListener('activate', event => {
   );
 });
 
-function injectAppNav(html) {
-  if (html.includes('/app-nav.js') || html.includes('fourdk-app-nav')) return html;
-  const css = '<link rel="stylesheet" href="/app-nav.css" data-fourdk-appnav="1">';
-  const js = '<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>';
-  if (html.includes('</head>')) html = html.replace('</head>', `${css}\n</head>`);
-  else html = css + html;
-  if (html.includes('</body>')) html = html.replace('</body>', `${js}\n</body>`);
-  else html += js;
+function injectAppFeatures(html) {
+  const addHead = [];
+  const addBody = [];
+  if (!html.includes('/app-nav.css')) {
+    addHead.push('<link rel="stylesheet" href="/app-nav.css" data-fourdk-appnav="1">');
+  }
+  if (!html.includes('/4dk-push.js')) {
+    addHead.push('<script defer src="/4dk-push.js" data-fourdk-push="1"></script>');
+  }
+  if (!html.includes('/app-nav.js') && !html.includes('fourdk-app-nav')) {
+    addBody.push('<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>');
+  }
+  if (addHead.length) {
+    const payload = addHead.join('\n');
+    if (html.includes('</head>')) html = html.replace('</head>', `${payload}\n</head>`);
+    else html = payload + html;
+  }
+  if (addBody.length) {
+    const payload = addBody.join('\n');
+    if (html.includes('</body>')) html = html.replace('</body>', `${payload}\n</body>`);
+    else html += payload;
+  }
   return html;
 }
 
@@ -52,7 +68,7 @@ async function navigationResponse(request) {
       return response;
     }
 
-    const html = injectAppNav(await response.text());
+    const html = injectAppFeatures(await response.text());
     const headers = new Headers(response.headers);
     headers.delete('content-length');
     headers.delete('content-encoding');
@@ -68,7 +84,7 @@ async function navigationResponse(request) {
     if (cached) {
       const type = cached.headers.get('content-type') || '';
       if (type.includes('text/html')) {
-        const html = injectAppNav(await cached.text());
+        const html = injectAppFeatures(await cached.text());
         const headers = new Headers(cached.headers);
         headers.delete('content-length');
         headers.delete('content-encoding');

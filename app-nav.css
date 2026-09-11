@@ -157,7 +157,8 @@ html.fourdk-more-open .fourdk-more-sheet{transform:none;opacity:1;pointer-events
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:8px;
 }
-.fourdk-more-grid a{
+.fourdk-more-grid a,
+.fourdk-more-grid button{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -172,8 +173,11 @@ html.fourdk-more-open .fourdk-more-sheet{transform:none;opacity:1;pointer-events
   font-weight:900;
   letter-spacing:.025em;
 }
-.fourdk-more-grid a span{color:#73737a;font-size:18px}
-.fourdk-more-grid a:active{transform:scale(.985)}
+.fourdk-more-grid a span,
+.fourdk-more-grid button span{color:#73737a;font-size:18px}
+.fourdk-more-grid a:active,
+.fourdk-more-grid button:active{transform:scale(.985)}
+.fourdk-more-grid button{appearance:none;text-align:left;cursor:pointer;font-family:inherit}
 
 @media (min-width:769px) and (display-mode:browser){
   .fourdk-app-nav,.fourdk-more-sheet,.fourdk-more-backdrop{display:none!important}
