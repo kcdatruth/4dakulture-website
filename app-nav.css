@@ -1,0 +1,185 @@
+/* 4 Da Kulture installed-app bottom navigation */
+:root{
+  --fourdk-appnav-h:68px;
+  --fourdk-appnav-bg:rgba(13,13,14,.96);
+  --fourdk-appnav-line:rgba(255,255,255,.10);
+  --fourdk-appnav-muted:#9c9ca2;
+  --fourdk-appnav-text:#f6f3ec;
+  --fourdk-appnav-accent:#e8452e;
+}
+
+html.fourdk-app-mode body{
+  padding-bottom:calc(var(--fourdk-appnav-h) + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+.fourdk-app-nav,
+.fourdk-more-sheet,
+.fourdk-more-backdrop{
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.fourdk-app-nav{
+  position:fixed;
+  z-index:2147483000;
+  left:0;
+  right:0;
+  bottom:0;
+  height:calc(var(--fourdk-appnav-h) + env(safe-area-inset-bottom, 0px));
+  padding:0 8px env(safe-area-inset-bottom, 0px);
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  align-items:stretch;
+  background:var(--fourdk-appnav-bg);
+  border-top:1px solid var(--fourdk-appnav-line);
+  box-shadow:0 -12px 34px rgba(0,0,0,.28);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+
+.fourdk-app-nav a,
+.fourdk-app-nav button{
+  -webkit-tap-highlight-color:transparent;
+  appearance:none;
+  border:0;
+  background:transparent;
+  color:var(--fourdk-appnav-muted);
+  text-decoration:none;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  padding:7px 2px 5px;
+  cursor:pointer;
+  font:800 10px/1 Arial,Helvetica,sans-serif;
+  letter-spacing:.025em;
+}
+
+.fourdk-app-nav svg{
+  width:22px;
+  height:22px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.fourdk-app-nav .fourdk-ball{
+  font-size:20px;
+  line-height:22px;
+  filter:grayscale(1);
+  opacity:.92;
+}
+
+.fourdk-app-nav a.active,
+.fourdk-app-nav button.active{
+  color:var(--fourdk-appnav-text);
+}
+
+.fourdk-app-nav a.active::before,
+.fourdk-app-nav button.active::before{
+  content:"";
+  position:absolute;
+  top:0;
+  width:30px;
+  height:3px;
+  border-radius:0 0 5px 5px;
+  background:var(--fourdk-appnav-accent);
+}
+
+.fourdk-app-nav a,
+.fourdk-app-nav button{position:relative}
+.fourdk-app-nav a.active .fourdk-ball{filter:none;opacity:1}
+.fourdk-app-nav a.active svg,
+.fourdk-app-nav button.active svg{stroke:var(--fourdk-appnav-accent)}
+
+.fourdk-more-backdrop{
+  position:fixed;
+  z-index:2147483001;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s ease;
+}
+
+.fourdk-more-sheet{
+  position:fixed;
+  z-index:2147483002;
+  left:10px;
+  right:10px;
+  bottom:calc(var(--fourdk-appnav-h) + env(safe-area-inset-bottom, 0px) + 8px);
+  max-width:560px;
+  margin:0 auto;
+  padding:10px 10px 12px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:22px;
+  background:#151516;
+  color:#f5f2ea;
+  box-shadow:0 26px 70px rgba(0,0,0,.5);
+  transform:translateY(20px) scale(.98);
+  opacity:0;
+  pointer-events:none;
+  transition:transform .2s ease,opacity .2s ease;
+}
+
+html.fourdk-more-open .fourdk-more-backdrop{opacity:1;pointer-events:auto}
+html.fourdk-more-open .fourdk-more-sheet{transform:none;opacity:1;pointer-events:auto}
+
+.fourdk-more-handle{
+  width:42px;
+  height:4px;
+  margin:2px auto 10px;
+  border-radius:99px;
+  background:#3a3a3d;
+}
+
+.fourdk-more-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:3px 5px 10px;
+}
+.fourdk-more-brand{display:flex;align-items:center;gap:9px;min-width:0}
+.fourdk-more-brand img{width:34px;height:34px;border-radius:9px;object-fit:cover}
+.fourdk-more-brand strong{font-size:14px;letter-spacing:.02em}
+.fourdk-more-brand span{display:block;color:#85858b;font-size:9px;margin-top:2px;letter-spacing:.08em;text-transform:uppercase}
+.fourdk-more-close{
+  width:34px;height:34px;border:1px solid #343438;border-radius:50%;
+  background:#202023;color:#fff;font-size:20px;line-height:1;cursor:pointer;
+}
+
+.fourdk-more-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+}
+.fourdk-more-grid a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:54px;
+  padding:0 14px;
+  border:1px solid #2e2e32;
+  border-radius:14px;
+  background:#1d1d20;
+  color:#f3f0e9;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.025em;
+}
+.fourdk-more-grid a span{color:#73737a;font-size:18px}
+.fourdk-more-grid a:active{transform:scale(.985)}
+
+@media (min-width:769px) and (display-mode:browser){
+  .fourdk-app-nav,.fourdk-more-sheet,.fourdk-more-backdrop{display:none!important}
+}
+
+@media (max-width:360px){
+  .fourdk-app-nav a,.fourdk-app-nav button{font-size:9px}
+  .fourdk-more-grid{grid-template-columns:1fr}
+}

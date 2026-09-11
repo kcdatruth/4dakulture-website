@@ -10,7 +10,35 @@
   let deferredPrompt = null;
 
   function alreadyStandalone() {
-    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    return window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true ||
+      document.referrer.startsWith('android-app://');
+  }
+
+  // The service worker injects these on all HTML pages. Loading them here too
+  // guarantees the home screen gets the app nav immediately after an update.
+  function ensureAppNav() {
+    if (!alreadyStandalone()) return;
+    if (!document.querySelector('link[data-fourdk-appnav]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/app-nav.css';
+      link.dataset.fourdkAppnav = '1';
+      document.head.appendChild(link);
+    }
+    if (!document.querySelector('script[data-fourdk-appnav]')) {
+      const script = document.createElement('script');
+      script.src = '/app-nav.js';
+      script.defer = true;
+      script.dataset.fourdkAppnav = '1';
+      document.head.appendChild(script);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ensureAppNav, { once:true });
+  } else {
+    ensureAppNav();
   }
 
   function makeInstallButton() {
