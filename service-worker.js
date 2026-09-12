@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v4-push';
+const CACHE_NAME = '4dk-pwa-v5-power-rankings';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -9,6 +9,7 @@ const APP_SHELL = [
   '/app-nav.js',
   '/4dk-push.js',
   '/OneSignalSDKWorker.js',
+  '/power-rankings.js',
   '/4dk-icon-192.png',
   '/4dk-icon-512.png',
   '/4dk-icon-maskable-512.png',
@@ -39,6 +40,9 @@ function injectAppFeatures(html) {
   }
   if (!html.includes('/4dk-push.js')) {
     addHead.push('<script defer src="/4dk-push.js" data-fourdk-push="1"></script>');
+  }
+  if (!html.includes('/power-rankings.js')) {
+    addHead.push('<script defer src="/power-rankings.js" data-fourdk-power-rankings="1"></script>');
   }
   if (!html.includes('/app-nav.js') && !html.includes('fourdk-app-nav')) {
     addBody.push('<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>');
@@ -106,6 +110,22 @@ self.addEventListener('fetch', event => {
 
   if (request.mode === 'navigate') {
     event.respondWith(navigationResponse(request));
+    return;
+  }
+
+  // Weekly rankings should always grab the newest board first.
+  if (url.pathname === '/power-rankings.js') {
+    event.respondWith(
+      fetch(request, {cache:'no-store'})
+        .then(response => {
+          if (response && response.status === 200 && response.type === 'basic') {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
     return;
   }
 
