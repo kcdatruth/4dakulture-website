@@ -296,3 +296,42 @@
 
   load();
 })();
+
+/* 4DK 17–0 Challenge discoverability layer — added without replacing nfl.html */
+(() => {
+  const href = '17-0.html';
+
+  const board = document.querySelector('.nfl-v2-board');
+  if(board && !board.querySelector('[data-17-0-link]')){
+    const row = document.createElement('a');
+    row.className = 'nfl-v2-board-row live';
+    row.href = href;
+    row.dataset['17-0-link'] = '1';
+    row.innerHTML = '<div><small>4DK INTERACTIVE</small><b>17–0 CHALLENGE</b></div><span>PLAY →</span>';
+    const foot = board.querySelector('.nfl-v2-board-foot');
+    board.insertBefore(row, foot || null);
+  }
+
+  const nav = document.querySelector('.nfl-v2-nav');
+  if(nav && !nav.querySelector('a[href="17-0.html"]')){
+    const link = document.createElement('a');
+    link.href = href;
+    link.textContent = '17–0 Challenge';
+    nav.appendChild(link);
+  }
+
+  const grid = document.querySelector('#season-board .board-grid');
+  if(grid && !grid.querySelector('[data-17-0-card]')){
+    const card = document.createElement('article');
+    card.className = 'nfl-mini-card lombardi';
+    card.dataset['17-0-card'] = '1';
+    card.innerHTML = `
+      <span class="nfl-label">4DK Interactive</span>
+      <div class="mini-icon">17–0</div>
+      <h3>THE 17–0 CHALLENGE</h3>
+      <p>Build a prime-season all-time NFL roster across offense and defense, then see if the fit is good enough to survive a perfect season.</p>
+      <a class="nfl-coming" href="${href}">Play the challenge →</a>
+    `;
+    grid.prepend(card);
+  }
+})();

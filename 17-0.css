@@ -137,3 +137,10 @@
  .perfect-hero h1{font-size:54px}
  .perfect-rules{grid-template-columns:1fr}
 }
+
+/* 4DK mobile polish — keeps the 17–0 title clear of the masthead */
+@media(max-width:620px){
+  .perfect-hero-grid{
+    padding-top:64px;
+  }
+}
