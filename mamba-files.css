@@ -1,0 +1,482 @@
+
+/* =========================================================
+   4DK — THE MAMBA FILES
+   Purple / gold archival treatment for Kobe Bryant coverage.
+   ========================================================= */
+:root{
+  --mamba-black:#08070a;
+  --mamba-ink:#100c16;
+  --mamba-purple:#552583;
+  --mamba-purple2:#2c143f;
+  --mamba-gold:#fdb927;
+  --mamba-cream:#f4efe6;
+  --mamba-muted:#b9afbf;
+  --mamba-line:rgba(253,185,39,.28);
+}
+
+.mamba-page{
+  background:var(--mamba-black);
+  color:var(--mamba-cream);
+}
+.mamba-page .masthead{
+  background:#08070a;
+  border-color:rgba(253,185,39,.18);
+}
+.mamba-page .brand-mark{background:var(--mamba-purple)}
+.mamba-page .nav a:hover{color:var(--mamba-gold)}
+
+.mamba-hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 20%,rgba(85,37,131,.42),transparent 30rem),
+    linear-gradient(135deg,#0a070d 0%,#160b20 60%,#09080b 100%);
+  border-bottom:1px solid var(--mamba-line);
+}
+.mamba-hero:before{
+  content:"24";
+  position:absolute;
+  right:-2vw;
+  top:-4vw;
+  font:1000 clamp(220px,40vw,560px)/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:#fff;
+  opacity:.025;
+  pointer-events:none;
+}
+.mamba-hero:after{
+  content:"8";
+  position:absolute;
+  left:-2vw;
+  bottom:-7vw;
+  font:1000 clamp(170px,32vw,420px)/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:var(--mamba-gold);
+  opacity:.035;
+  pointer-events:none;
+}
+.mamba-hero-grid{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:46px;
+  align-items:center;
+  position:relative;
+  z-index:1;
+}
+.mamba-kicker{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  font-size:10px;
+  font-weight:1000;
+  letter-spacing:.18em;
+  color:var(--mamba-gold);
+}
+.mamba-kicker:before{
+  content:"";
+  width:26px;
+  height:2px;
+  background:var(--mamba-gold);
+}
+.mamba-hero h1{
+  margin:14px 0 18px;
+  font:1000 clamp(72px,11vw,148px)/.76 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
+}
+.mamba-hero h1 em{
+  display:block;
+  font-style:normal;
+  color:var(--mamba-gold);
+}
+.mamba-deck{
+  max-width:720px;
+  margin:0;
+  color:#d2cad6;
+  font-size:19px;
+  line-height:1.55;
+}
+.mamba-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:22px;
+}
+.mamba-meta span{
+  border:1px solid rgba(253,185,39,.28);
+  background:rgba(8,7,10,.55);
+  padding:9px 11px;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.11em;
+}
+
+.mamba-jersey{
+  width:min(360px,76vw);
+  aspect-ratio:.8;
+  justify-self:center;
+  position:relative;
+  border:2px solid rgba(253,185,39,.45);
+  background:
+    linear-gradient(90deg,transparent 49%,rgba(253,185,39,.08) 50%,transparent 51%),
+    linear-gradient(160deg,#6b38a0,#35164f 70%);
+  clip-path:polygon(17% 0,36% 8%,64% 8%,83% 0,100% 20%,86% 33%,82% 100%,18% 100%,14% 33%,0 20%);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+}
+.mamba-jersey:before{
+  content:"BRYANT";
+  position:absolute;
+  left:0;right:0;
+  top:24%;
+  text-align:center;
+  font:900 24px/1 Arial,sans-serif;
+  letter-spacing:.12em;
+  color:#fff;
+}
+.mamba-jersey:after{
+  content:"24";
+  position:absolute;
+  inset:34% 0 auto 0;
+  text-align:center;
+  font:1000 120px/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:var(--mamba-gold);
+  text-shadow:0 3px 0 #fff;
+}
+.mamba-jersey .eight{
+  position:absolute;
+  left:24px;
+  bottom:28px;
+  font:1000 44px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:#fff;
+  opacity:.25;
+}
+.mamba-jersey .twentyfour{
+  position:absolute;
+  right:24px;
+  bottom:28px;
+  font:1000 44px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:var(--mamba-gold);
+  opacity:.5;
+}
+
+.mamba-intro{
+  padding:46px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.mamba-intro-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:42px;
+  align-items:start;
+}
+.mamba-intro h2{
+  margin:8px 0 0;
+  font:1000 clamp(42px,6vw,78px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-intro p{
+  margin:0 0 14px;
+  color:#bbb2c0;
+  font-size:16px;
+  line-height:1.7;
+}
+.mamba-pull{
+  margin-top:20px;
+  border-left:4px solid var(--mamba-gold);
+  padding:15px 18px;
+  background:rgba(85,37,131,.12);
+  font:700 18px/1.45 Georgia,serif;
+  color:#f1eadf;
+}
+
+.mamba-section{
+  padding:58px 0;
+}
+.mamba-section-head{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:24px;
+}
+.mamba-section-head small{
+  display:block;
+  color:var(--mamba-gold);
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.17em;
+}
+.mamba-section-head h2{
+  margin:7px 0 0;
+  font:1000 clamp(42px,7vw,82px)/.84 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  letter-spacing:-.03em;
+}
+.mamba-section-head p{
+  max-width:470px;
+  margin:0;
+  color:#9f96a6;
+  font-size:13px;
+  line-height:1.55;
+}
+
+.mamba-feature-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:14px;
+}
+.mamba-feature{
+  min-height:370px;
+  border:1px solid var(--mamba-line);
+  background:linear-gradient(145deg,#150d1d,#09080b);
+  padding:28px;
+  position:relative;
+  overflow:hidden;
+  color:inherit;
+  text-decoration:none;
+}
+.mamba-feature:hover{border-color:var(--mamba-gold)}
+.mamba-feature:after{
+  content:attr(data-code);
+  position:absolute;
+  right:-8px;
+  bottom:-35px;
+  font:1000 180px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:#fff;
+  opacity:.035;
+}
+.mamba-feature.lead{
+  background:
+    radial-gradient(circle at 82% 30%,rgba(253,185,39,.12),transparent 16rem),
+    linear-gradient(140deg,#2d143f,#100b14 68%);
+}
+.mamba-feature .tag{
+  color:var(--mamba-gold);
+  font-size:9px;
+  font-weight:1000;
+  letter-spacing:.14em;
+}
+.mamba-feature h3{
+  max-width:650px;
+  margin:74px 0 12px;
+  font:1000 clamp(37px,5.5vw,66px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-feature p{
+  max-width:600px;
+  color:#bfb5c5;
+  font-size:14px;
+  line-height:1.6;
+}
+.mamba-feature b{
+  display:inline-block;
+  margin-top:14px;
+  color:#fff;
+  font-size:10px;
+  letter-spacing:.11em;
+}
+
+.mamba-four{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.mamba-card{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  border:1px solid rgba(255,255,255,.1);
+  background:#0d0a10;
+  padding:22px;
+  position:relative;
+  overflow:hidden;
+  color:inherit;
+  text-decoration:none;
+}
+.mamba-card:hover{border-color:var(--mamba-gold)}
+.mamba-card:before{
+  content:attr(data-year);
+  position:absolute;
+  left:18px;
+  top:8px;
+  font:1000 82px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:var(--mamba-gold);
+  opacity:.12;
+}
+.mamba-card small{
+  color:var(--mamba-gold);
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.13em;
+}
+.mamba-card h3{
+  margin:7px 0 8px;
+  font:1000 33px/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-card p{
+  margin:0;
+  color:#aaa1af;
+  font-size:12px;
+  line-height:1.55;
+}
+
+.mamba-timeline{
+  background:#0c090e;
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.mamba-timeline-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+}
+.mamba-era{
+  min-height:180px;
+  padding:20px 16px;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+.mamba-era:last-child{border-right:0}
+.mamba-era span{
+  color:var(--mamba-gold);
+  font:1000 30px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-era strong{
+  display:block;
+  margin-top:30px;
+  font-size:11px;
+  line-height:1.35;
+}
+.mamba-era small{
+  display:block;
+  margin-top:6px;
+  color:#827989;
+  font-size:8px;
+  line-height:1.4;
+}
+
+.mamba-question{
+  padding:58px 0;
+  background:linear-gradient(135deg,#2c143f,#100b14);
+}
+.mamba-question-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  align-items:center;
+}
+.mamba-question h2{
+  margin:0;
+  font:1000 clamp(54px,9vw,112px)/.76 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-question h2 span{color:var(--mamba-gold)}
+.mamba-question-copy{
+  border-left:4px solid var(--mamba-gold);
+  padding-left:22px;
+}
+.mamba-question-copy strong{
+  display:block;
+  font-size:22px;
+  margin-bottom:10px;
+}
+.mamba-question-copy p{
+  color:#c7bdcc;
+  line-height:1.6;
+}
+.mamba-button{
+  display:inline-block;
+  margin-top:13px;
+  border:1px solid var(--mamba-gold);
+  padding:11px 14px;
+  color:#fff;
+  text-decoration:none;
+  font-size:10px;
+  font-weight:1000;
+  letter-spacing:.1em;
+}
+.mamba-button:hover{background:var(--mamba-gold);color:#160b20}
+
+.mamba-memory{
+  padding:34px 0;
+  text-align:center;
+  color:#918697;
+  font-size:11px;
+  letter-spacing:.08em;
+}
+.mamba-memory strong{color:var(--mamba-gold)}
+
+@media(max-width:900px){
+  .mamba-hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:54px;padding-bottom:54px}
+  .mamba-jersey{display:none}
+  .mamba-feature-grid{grid-template-columns:1fr}
+  .mamba-timeline-grid{grid-template-columns:repeat(3,1fr)}
+  .mamba-era:nth-child(3){border-right:0}
+  .mamba-intro-grid,.mamba-question-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .mamba-hero-grid{padding-top:38px;padding-bottom:42px}
+  .mamba-hero h1{font-size:clamp(60px,19vw,78px)}
+  .mamba-deck{font-size:15px}
+  .mamba-meta{display:grid;grid-template-columns:1fr 1fr}
+  .mamba-meta span{text-align:center}
+  .mamba-intro{padding:34px 0}
+  .mamba-intro-grid{gap:20px}
+  .mamba-section{padding:40px 0}
+  .mamba-section-head{display:block}
+  .mamba-section-head p{margin-top:12px}
+  .mamba-four{grid-template-columns:1fr}
+  .mamba-feature{min-height:320px;padding:22px}
+  .mamba-feature h3{margin-top:64px}
+  .mamba-card{min-height:270px}
+  .mamba-timeline-grid{grid-template-columns:1fr 1fr}
+  .mamba-era:nth-child(3){border-right:1px solid rgba(255,255,255,.08)}
+  .mamba-era:nth-child(even){border-right:0}
+  .mamba-question h2{font-size:64px}
+}
+
+/* ---- Teaser injected on throwback.html ---- */
+.mamba-files-teaser{
+  background:linear-gradient(135deg,#120b18,#08070a 72%);
+  color:#f4efe6;
+  border-top:1px solid rgba(253,185,39,.22);
+  border-bottom:1px solid rgba(253,185,39,.22);
+  padding:56px 0;
+  position:relative;
+  overflow:hidden;
+}
+.mamba-files-teaser:after{
+  content:"24";
+  position:absolute;
+  right:-20px;
+  top:-34px;
+  font:1000 240px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+  color:#fff;
+  opacity:.025;
+}
+.mamba-files-teaser .mft-head{
+  position:relative;z-index:1;
+  display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:22px;
+}
+.mamba-files-teaser .mft-kicker{
+  display:block;color:var(--mamba-gold);font-size:9px;font-weight:1000;letter-spacing:.16em;
+}
+.mamba-files-teaser h2{
+  margin:6px 0 0;
+  font:1000 clamp(48px,8vw,92px)/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.mamba-files-teaser .mft-head p{
+  max-width:470px;margin:0;color:#a99ead;font-size:13px;line-height:1.55;
+}
+.mft-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;position:relative;z-index:1}
+.mft-card{
+  min-height:220px;border:1px solid rgba(255,255,255,.1);background:#0e0a11;padding:18px;
+  text-decoration:none;color:inherit;display:flex;flex-direction:column;justify-content:flex-end
+}
+.mft-card:hover{border-color:var(--mamba-gold)}
+.mft-card span{color:var(--mamba-gold);font-size:8px;font-weight:1000;letter-spacing:.11em}
+.mft-card b{margin:7px 0 5px;font:1000 25px/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.mft-card small{color:#938a98;font-size:9px;line-height:1.4}
+.mft-enter{display:inline-block;margin-top:20px;position:relative;z-index:1;color:#fff;text-decoration:none;font-size:10px;font-weight:1000;letter-spacing:.12em}
+.mft-enter span{color:var(--mamba-gold)}
+@media(max-width:760px){
+  .mamba-files-teaser{padding:40px 0}
+  .mamba-files-teaser .mft-head{display:block}
+  .mamba-files-teaser .mft-head p{margin-top:12px}
+  .mft-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:430px){.mft-grid{grid-template-columns:1fr}}

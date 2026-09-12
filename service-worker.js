@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v6-nfl-interactive';
+const CACHE_NAME = '4dk-pwa-v7-mamba-files';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -13,6 +13,9 @@ const APP_SHELL = [
   '/nfl-picks.js',
   '/17-0.css',
   '/17-0.js',
+  '/mamba-files.js',
+  '/mamba-files.css',
+  '/mamba-files.html',
   '/4dk-icon-192.png',
   '/4dk-icon-512.png',
   '/4dk-icon-maskable-512.png',
@@ -47,6 +50,9 @@ function injectAppFeatures(html) {
   }
   if (!html.includes('/power-rankings.js')) {
     addHead.push('<script defer src="/power-rankings.js" data-fourdk-power-rankings="1"></script>');
+  }
+  if (!html.includes('/mamba-files.js')) {
+    addHead.push('<script defer src="/mamba-files.js" data-fourdk-mamba-files="1"></script>');
   }
   if (!html.includes('/app-nav.js') && !html.includes('fourdk-app-nav')) {
     addBody.push('<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>');
@@ -132,19 +138,20 @@ self.addEventListener('fetch', event => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.startsWith('/api/')) return; // Keep live scores/data fresh.
+  if (url.pathname.startsWith('/api/')) return;
 
   if (request.mode === 'navigate') {
     event.respondWith(navigationResponse(request));
     return;
   }
 
-  // These files change frequently and should never be stuck on an older cached copy.
   if (
     url.pathname === '/power-rankings.js' ||
     url.pathname === '/nfl-picks.js' ||
     url.pathname === '/17-0.css' ||
-    url.pathname === '/17-0.js'
+    url.pathname === '/17-0.js' ||
+    url.pathname === '/mamba-files.js' ||
+    url.pathname === '/mamba-files.css'
   ) {
     event.respondWith(networkFirstAsset(request));
     return;
