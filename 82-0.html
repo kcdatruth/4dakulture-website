@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>4DK 82–0 Challenge | 4 Da Kulture</title>
-<meta name="description" content="Build an all-time NBA starting five in the 4DK 82–0 Challenge. Five positions, three choices each, no do-overs.">
+<meta name="description" content="Build an all-time NBA starting five using prime-season versions of legends, then see whether the fit, defense, spacing and star power can threaten 82–0.">
 <link rel="canonical" href="https://4dakulturemedia.com/82-0.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="4DK 82–0 Challenge">
-<meta property="og:description" content="Can you draft a starting five good enough to go 82–0?">
+<meta property="og:description" content="Prime seasons. Five positions. Three choices each. Can you build a team good enough to threaten 82–0?">
 <meta property="og:url" content="https://4dakulturemedia.com/82-0.html">
 <meta name="theme-color" content="#111111">
 <link rel="stylesheet" href="styles.css">
@@ -22,14 +22,21 @@
 <section class="challenge-hero">
   <div class="shell challenge-hero-grid">
     <div>
-      <span class="challenge-kicker">4DK INTERACTIVE • ALL-TIME EDITION</span>
+      <span class="challenge-kicker">4DK INTERACTIVE • PRIME-SEASON EDITION</span>
       <h1><span>82</span>–0<br>CHALLENGE</h1>
-      <p>Can you build a starting five that survives an entire NBA season without taking an L?</p>
-      <div class="challenge-rules"><b>5 positions.</b><b>3 choices per round.</b><b>No do-overs.</b></div>
+      <p>Now you are drafting the best version of each legend. Star power matters — but spacing, defense, playmaking and lineup fit can make or break the perfect season.</p>
+      <div class="challenge-rules"><b>5 positions.</b><b>3 choices per round.</b><b>Prime versions.</b><b>Fit matters.</b></div>
     </div>
     <div class="challenge-ball" aria-hidden="true"><span>82–0</span></div>
   </div>
 </section>
+
+<section class="challenge-upgrade shell" aria-label="How the upgraded challenge works">
+  <div class="upgrade-card"><span>01</span><b>PRIME SEASONS</b><p>2006 Kobe. 2016 Steph. 2000 Shaq. You are choosing a specific peak version, not a whole career.</p></div>
+  <div class="upgrade-card"><span>02</span><b>FIVE RATINGS</b><p>Scoring, playmaking, defense, spacing and a new FIT score all matter in the final formula.</p></div>
+  <div class="upgrade-card"><span>03</span><b>TEAM DNA</b><p>Your final screen now tells you what your squad does best, where the weakness is and the projected 82-game record.</p></div>
+</section>
+
 <section class="challenge-game shell">
   <div class="challenge-toolbar">
     <div>
@@ -38,33 +45,45 @@
     </div>
     <button class="challenge-reset" id="resetGame" type="button">Restart</button>
   </div>
+
   <div class="lineup" id="lineup">
-    <div class="lineup-slot" data-position="PG"><span>PG</span><strong>—</strong></div>
-    <div class="lineup-slot" data-position="SG"><span>SG</span><strong>—</strong></div>
-    <div class="lineup-slot" data-position="SF"><span>SF</span><strong>—</strong></div>
-    <div class="lineup-slot" data-position="PF"><span>PF</span><strong>—</strong></div>
-    <div class="lineup-slot" data-position="C"><span>C</span><strong>—</strong></div>
+    <div class="lineup-slot" data-position="PG"><span>PG</span><strong>—</strong><small></small></div>
+    <div class="lineup-slot" data-position="SG"><span>SG</span><strong>—</strong><small></small></div>
+    <div class="lineup-slot" data-position="SF"><span>SF</span><strong>—</strong><small></small></div>
+    <div class="lineup-slot" data-position="PF"><span>PF</span><strong>—</strong><small></small></div>
+    <div class="lineup-slot" data-position="C"><span>C</span><strong>—</strong><small></small></div>
   </div>
+
   <div class="round-head">
     <span id="roundPosition">POINT GUARD</span>
     <h2>WHO YOU TAKING?</h2>
   </div>
   <div class="player-options" id="playerOptions"></div>
+
   <section class="verdict" id="verdict" hidden>
     <div class="verdict-top">
       <div><span class="challenge-step-label">4DK VERDICT</span><h2 id="verdictTitle">82–0 THREAT</h2></div>
       <div class="verdict-score"><span id="teamScore">0</span><small>/100</small></div>
     </div>
     <p id="verdictCopy"></p>
+
+    <div class="record-strip">
+      <div><span>PROJECTED RECORD</span><strong id="projectedRecord">—</strong></div>
+      <div><span>TEAM IDENTITY</span><strong id="teamIdentity">—</strong></div>
+      <div><span>BIGGEST QUESTION</span><strong id="teamWarning">—</strong></div>
+    </div>
+
     <div class="metric-grid">
       <div><span>SCORING</span><b id="metricScoring">0</b></div>
       <div><span>PLAYMAKING</span><b id="metricPassing">0</b></div>
       <div><span>DEFENSE</span><b id="metricDefense">0</b></div>
       <div><span>SPACING</span><b id="metricSpacing">0</b></div>
+      <div class="fit-metric"><span>FIT</span><b id="metricFit">0</b></div>
     </div>
     <button class="challenge-share" id="shareTeam" type="button">Copy My 82–0 Team</button>
   </section>
-  <div class="game-note"><strong>How the 4DK score works:</strong> this is a fan game, not an official historical ranking. Each legend has game-only ratings for scoring, playmaking, defense and spacing, and your five-man fit produces the final verdict.</div>
+
+  <div class="game-note"><strong>How the 4DK score works:</strong> this is a fan game, not an official historical ranking. Each player is represented by a prime-season version with game-only ratings. The final score rewards talent and two-way dominance, but it also rewards lineups that can actually play together.</div>
 </section>
 </main>
 <footer class="footer"><div class="shell"><div class="footer-grid"><div><div class="footer-brand">4 DA KULTURE</div><p>Independent coverage and conversation at the intersection of sports, hip-hop and culture.</p></div><div><h4>Sections</h4><div class="footer-links"><a href="nba.html">NBA</a><a href="magazine.html">Magazine</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a></div></div><div><h4>4DK</h4><div class="footer-links"><a href="about.html">About</a><a href="kcdatruth.html">Kcdatruth</a><a href="210west.html">210West</a></div></div></div><div class="fine">© 2026 4 Da Kulture.</div></div></footer>
