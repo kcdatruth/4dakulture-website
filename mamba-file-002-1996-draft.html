@@ -15,6 +15,92 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="mamba-files.css">
 <link rel="stylesheet" href="mamba-file-002.css">
+
+<style>
+/* FILE 002 MOBILE CLEANUP — honors + historical ranking */
+.draft96-clean-stats{
+  display:grid;
+  gap:10px;
+  margin:22px 0 14px;
+}
+.draft96-clean-stat{
+  display:grid;
+  grid-template-columns:58px 1fr;
+  gap:16px;
+  align-items:center;
+  padding:16px 18px;
+  border:1px solid rgba(253,185,39,.28);
+  background:linear-gradient(135deg,rgba(85,37,131,.16),rgba(13,10,16,.96));
+}
+.draft96-clean-stat>b{
+  color:#fdb927;
+  font:1000 40px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.draft96-clean-stat strong{
+  display:block;
+  color:#f4efe6;
+  font:900 13px/1.2 Arial,sans-serif;
+  letter-spacing:.06em;
+}
+.draft96-clean-stat small{
+  display:block;
+  margin-top:6px;
+  color:#a99fad;
+  font:12px/1.45 Arial,sans-serif;
+}
+.draft96-clean-note{
+  margin:10px 0 42px!important;
+  color:#8c828f!important;
+  font:italic 12px/1.55 Georgia,serif!important;
+}
+.draft96-clean-rank{
+  margin:24px 0 28px;
+  padding:18px;
+  border:1px solid rgba(253,185,39,.28);
+  background:#0d0a10;
+}
+.draft96-clean-rank>span{
+  display:block;
+  margin-bottom:10px;
+  color:#fdb927;
+  font:900 10px/1.3 Arial,sans-serif;
+  letter-spacing:.12em;
+}
+.draft96-clean-rank-row{
+  display:grid;
+  grid-template-columns:34px 68px 1fr;
+  gap:12px;
+  align-items:center;
+  padding:14px 4px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.draft96-clean-rank-row.active{
+  background:linear-gradient(90deg,rgba(85,37,131,.22),transparent);
+}
+.draft96-clean-rank-row b{
+  color:#fdb927;
+  font:1000 26px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+}
+.draft96-clean-rank-row strong{
+  color:#f4efe6;
+  font:900 14px/1.2 Arial,sans-serif;
+}
+.draft96-clean-rank-row small{
+  color:#aaa0ae;
+  font:12px/1.4 Arial,sans-serif;
+}
+@media(max-width:620px){
+  .draft96-clean-stat{grid-template-columns:48px 1fr;padding:14px}
+  .draft96-clean-stat>b{font-size:34px}
+  .draft96-clean-rank{padding:14px}
+  .draft96-clean-rank-row{grid-template-columns:28px 58px 1fr;gap:9px}
+  .draft96-clean-rank-row b{font-size:24px}
+  .draft96-clean-rank-row strong{font-size:13px}
+  .draft96-clean-rank-row small{font-size:11px}
+  .draft96-copy h2:nth-of-type(13){margin-top:52px}
+}
+</style>
+
 </head>
 <body class="mamba-page draft96-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -170,14 +256,29 @@
       <h2><span>12.</span> HALL OF FAME + ALL-STAR SCOREBOARD.</h2>
       <p>If we count only players actually drafted in 1996, the class produced <strong>10 All-Stars</strong> and four Hall of Famers: Iverson, Ray Allen, Kobe and Nash. If we evaluate the entire 1996 entry class and include undrafted Ben Wallace, the totals become <strong>11 All-Stars and five Hall of Famers</strong>.</p>
 
-      <div class="draft96-legacy-grid">
-        <div><b>5</b><span>HALL OF FAMERS*</span><small>Iverson • Ray • Kobe • Nash • Ben Wallace</small></div>
-        <div><b>11</b><span>ALL-STARS*</span><small>10 drafted + undrafted Ben Wallace</small></div>
-        <div><b>3</b><span>MVP WINNERS</span><small>Iverson • Nash • Kobe</small></div>
-        <div><b>2</b><span>DPOY WINNERS</span><small>Camby • Ben Wallace</small></div>
-        <div><b>11</b><span>NBA CHAMPIONS*</span><small>Across the broader 1996 class</small></div>
+      <div class="draft96-clean-stats">
+        <div class="draft96-clean-stat">
+          <b>5</b>
+          <div><strong>HALL OF FAMERS</strong><small>Iverson • Ray Allen • Kobe Bryant • Steve Nash • Ben Wallace</small></div>
+        </div>
+        <div class="draft96-clean-stat">
+          <b>11</b>
+          <div><strong>ALL-STARS</strong><small>10 drafted players + undrafted Ben Wallace</small></div>
+        </div>
+        <div class="draft96-clean-stat">
+          <b>3</b>
+          <div><strong>MVP WINNERS</strong><small>Iverson • Nash • Kobe</small></div>
+        </div>
+        <div class="draft96-clean-stat">
+          <b>2</b>
+          <div><strong>DEFENSIVE PLAYERS OF THE YEAR</strong><small>Marcus Camby • Ben Wallace</small></div>
+        </div>
+        <div class="draft96-clean-stat">
+          <b>11</b>
+          <div><strong>NBA CHAMPIONS</strong><small>Across the broader 1996 class</small></div>
+        </div>
       </div>
-      <p class="draft96-footnote">*Broader class totals include undrafted Ben Wallace, who entered the NBA in 1996.</p>
+      <p class="draft96-clean-note">Broader class totals include undrafted Ben Wallace, who entered the NBA in 1996.</p>
 
       <h2><span>13.</span> THE FULL 4DK FIRST-ROUND RE-DRAFT.</h2>
       <p>This time we are doing the whole thing: 29 first-round slots, not just a Top 10. We are drafting with full career hindsight and allowing every 1996-eligible player into the pool, including undrafted players. The criteria: peak, longevity, winning, awards, portability and how much value the player gave you over an NBA career.</p>
@@ -221,11 +322,17 @@
       <p>There are three classes that belong at the front of this conversation: <strong>1984, 1996 and 2003</strong>. The 1984 class has the strongest top-end case with Michael Jordan, Hakeem Olajuwon, Charles Barkley and John Stockton. The 2003 class has LeBron James, Dwyane Wade, Carmelo Anthony and Chris Bosh.</p>
       <p>What makes 1996 different is the depth. Kobe, Iverson, Nash and Ray are already a ridiculous top four. Then you still have Ben Wallace, Jermaine O’Neal, Peja, Marbury, Camby, Shareef, Antoine Walker, Big Z and Fisher. You can get into the teens before the class stops producing players who had genuinely important NBA careers.</p>
 
-      <div class="draft96-rank">
+      <div class="draft96-clean-rank">
         <span>4DK HISTORICAL DRAFT-CLASS RANKING</span>
-        <div><b>1</b><strong>1984</strong><small>Best top-end collection ever.</small></div>
-        <div class="active"><b>2</b><strong>1996</strong><small>Best blend of superstar peak, depth and cultural impact.</small></div>
-        <div><b>3</b><strong>2003</strong><small>Historic top four, slightly less depth than ’96.</small></div>
+        <div class="draft96-clean-rank-row">
+          <b>1</b><strong>1984</strong><small>Best top-end collection ever.</small>
+        </div>
+        <div class="draft96-clean-rank-row active">
+          <b>2</b><strong>1996</strong><small>Best blend of superstar peak, depth and cultural impact.</small>
+        </div>
+        <div class="draft96-clean-rank-row">
+          <b>3</b><strong>2003</strong><small>Historic top four, slightly less depth than ’96.</small>
+        </div>
       </div>
 
       <p>So 30 years later, 4DK has 1996 at <strong>No. 2 all-time</strong>. It has a legitimate argument for No. 1 if depth matters more to you than the unmatched top end of 1984. What is no longer debatable is whether the class belongs in that tier. It does.</p>
