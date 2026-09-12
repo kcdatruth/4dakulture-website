@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v5-power-rankings';
+const CACHE_NAME = '4dk-pwa-v6-nfl-interactive';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -10,6 +10,9 @@ const APP_SHELL = [
   '/4dk-push.js',
   '/OneSignalSDKWorker.js',
   '/power-rankings.js',
+  '/nfl-picks.js',
+  '/17-0.css',
+  '/17-0.js',
   '/4dk-icon-192.png',
   '/4dk-icon-512.png',
   '/4dk-icon-maskable-512.png',
@@ -35,6 +38,7 @@ self.addEventListener('activate', event => {
 function injectAppFeatures(html) {
   const addHead = [];
   const addBody = [];
+
   if (!html.includes('/app-nav.css')) {
     addHead.push('<link rel="stylesheet" href="/app-nav.css" data-fourdk-appnav="1">');
   }
@@ -47,22 +51,25 @@ function injectAppFeatures(html) {
   if (!html.includes('/app-nav.js') && !html.includes('fourdk-app-nav')) {
     addBody.push('<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>');
   }
+
   if (addHead.length) {
     const payload = addHead.join('\n');
     if (html.includes('</head>')) html = html.replace('</head>', `${payload}\n</head>`);
     else html = payload + html;
   }
+
   if (addBody.length) {
     const payload = addBody.join('\n');
     if (html.includes('</body>')) html = html.replace('</body>', `${payload}\n</body>`);
     else html += payload;
   }
+
   return html;
 }
 
 async function navigationResponse(request) {
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, {cache:'no-store'});
     if (!response || !response.ok) return response;
 
     const type = response.headers.get('content-type') || '';
@@ -76,11 +83,13 @@ async function navigationResponse(request) {
     const headers = new Headers(response.headers);
     headers.delete('content-length');
     headers.delete('content-encoding');
+
     const transformed = new Response(html, {
       status: response.status,
       statusText: response.statusText,
       headers
     });
+
     caches.open(CACHE_NAME).then(cache => cache.put(request, transformed.clone()));
     return transformed;
   } catch (error) {
@@ -92,11 +101,28 @@ async function navigationResponse(request) {
         const headers = new Headers(cached.headers);
         headers.delete('content-length');
         headers.delete('content-encoding');
-        return new Response(html, {status:cached.status,statusText:cached.statusText,headers});
+        return new Response(html, {
+          status: cached.status,
+          statusText: cached.statusText,
+          headers
+        });
       }
       return cached;
     }
     return caches.match('/offline.html');
+  }
+}
+
+async function networkFirstAsset(request) {
+  try {
+    const response = await fetch(request, {cache:'no-store'});
+    if (response && response.status === 200 && response.type === 'basic') {
+      const copy = response.clone();
+      caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+    }
+    return response;
+  } catch (error) {
+    return caches.match(request);
   }
 }
 
@@ -113,19 +139,14 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Weekly rankings should always grab the newest board first.
-  if (url.pathname === '/power-rankings.js') {
-    event.respondWith(
-      fetch(request, {cache:'no-store'})
-        .then(response => {
-          if (response && response.status === 200 && response.type === 'basic') {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
-          }
-          return response;
-        })
-        .catch(() => caches.match(request))
-    );
+  // These files change frequently and should never be stuck on an older cached copy.
+  if (
+    url.pathname === '/power-rankings.js' ||
+    url.pathname === '/nfl-picks.js' ||
+    url.pathname === '/17-0.css' ||
+    url.pathname === '/17-0.js'
+  ) {
+    event.respondWith(networkFirstAsset(request));
     return;
   }
 
@@ -138,6 +159,7 @@ self.addEventListener('fetch', event => {
         }
         return response;
       }).catch(() => cached);
+
       return cached || network;
     })
   );
