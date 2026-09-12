@@ -139,3 +139,42 @@
   .rewind-screen-feature .rewind-mini-art,.rewind-throwback-feature .rewind-archive-art{min-height:285px}
   .rewind-screen-feature .rewind-mini-copy,.rewind-throwback-feature .rewind-archive-copy{padding:25px 21px}
 }
+
+/* LOCKED 4DK REWIND MENACE HERO */
+.rewind-poster-art.rewind-poster-image{
+  min-height:0;
+  padding:0;
+  background:#0a0908;
+  display:block;
+}
+.rewind-poster-art.rewind-poster-image:before,
+.rewind-poster-art.rewind-poster-image:after{
+  content:none;
+}
+.rewind-poster-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:590px;
+  object-fit:cover;
+  object-position:center top;
+}
+.rewind-screen-feature .rewind-mini-art,
+.rewind-throwback-feature .rewind-archive-art{
+  background:
+    linear-gradient(rgba(0,0,0,.14),rgba(0,0,0,.52)),
+    url('/menace-ii-society-4dk-rewind.png') center 28% / cover no-repeat;
+}
+.rewind-screen-feature .rewind-mini-art:after{
+  content:none;
+}
+.rewind-throwback-feature .rewind-archive-art:before{
+  content:none;
+}
+@media(max-width:760px){
+  .rewind-poster-image img{
+    min-height:0;
+    height:auto;
+    object-fit:contain;
+  }
+}

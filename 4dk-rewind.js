@@ -30,9 +30,8 @@
       section.innerHTML = `
         <div class="shell">
           <div class="rewind-mini-grid">
-            <div class="rewind-mini-art">
+            <div class="rewind-mini-art" aria-label="Menace II Society 4DK Rewind artwork">
               <span>4DK REWIND • FILM 001 • 1993</span>
-              <strong>MENACE<br>II<br>SOCIETY</strong>
               <small>33 YEARS LATER</small>
             </div>
             <div class="rewind-mini-copy">
@@ -70,9 +69,8 @@
       section.innerHTML = `
         <div class="shell">
           <div class="rewind-archive-card">
-            <div class="rewind-archive-art">
+            <div class="rewind-archive-art" aria-label="Menace II Society 4DK Rewind artwork">
               <span>4DK REWIND • FIRST FILM</span>
-              <strong>MENACE<br>II<br>SOCIETY</strong>
               <small>1993 → 2026 • 33 YEARS LATER</small>
             </div>
             <div class="rewind-archive-copy">
