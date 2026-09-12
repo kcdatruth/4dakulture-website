@@ -1,0 +1,139 @@
+/* 4DK 17–0 CHALLENGE */
+:root{--p-red:#ef3c32;--p-cream:#f4eee5;--p-brown:#5a2d19;--p-line:#423a34;--p-bg:#090b0a}
+*{box-sizing:border-box}
+.perfect-page{background:var(--p-bg);color:var(--p-cream);overflow-x:hidden}
+.perfect-page .masthead{background:#070908;color:#fff;border-color:#262a27}
+.perfect-page .topline{background:#15120f;color:#c9c0b7}
+.perfect-page .brand-mark{background:var(--p-red)}
+.perfect-page .nav a:hover{color:var(--p-red)}
+
+.perfect-hero{position:relative;overflow:hidden;background:
+ radial-gradient(circle at 82% 18%,rgba(239,60,50,.2),transparent 23rem),
+ repeating-linear-gradient(90deg,transparent 0 92px,rgba(255,255,255,.028) 93px 94px),
+ linear-gradient(135deg,#15110e,#070908 72%);border-bottom:1px solid #45382f}
+.perfect-hero:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(255,255,255,.06)}
+.perfect-hero:after{content:"";position:absolute;left:50%;top:50%;width:410px;height:220px;transform:translate(-50%,-50%);border:2px solid rgba(255,255,255,.06);border-radius:50%}
+.perfect-hero-grid{min-height:560px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;position:relative;z-index:2}
+.perfect-kicker{font-size:11px;font-weight:1000;letter-spacing:.16em;color:var(--p-red)}
+.perfect-hero h1{margin:12px 0 20px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(82px,12vw,158px);line-height:.72;letter-spacing:-.035em;color:#f8f2e9}
+.perfect-hero h1 span{color:var(--p-red)}
+.perfect-hero p{max-width:730px;margin:0;font-size:20px;line-height:1.45;color:#cfc5bb}
+.perfect-rules{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.perfect-rules b{border:1px solid #51463e;background:#17130f;padding:10px 12px;font-size:10px;letter-spacing:.08em}
+.pool-stamp{margin-top:15px;font-size:9px;font-weight:900;letter-spacing:.13em;color:#968b82}
+
+.football{justify-self:center;width:min(330px,72vw);height:220px;border-radius:55% 45% 55% 45%/50% 50% 50% 50%;transform:rotate(-12deg);display:grid;place-items:center;position:relative;background:
+ linear-gradient(90deg,transparent 49%,#efe4d5 49% 51%,transparent 51%),
+ repeating-linear-gradient(0deg,transparent 0 19px,rgba(255,255,255,.04) 20px 21px),
+ #7b3b20;border:6px solid #2b160d;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.football:before{content:"";position:absolute;width:85px;height:8px;border-top:4px solid #efe4d5;border-bottom:4px solid #efe4d5;transform:rotate(90deg)}
+.football span{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:58px;color:#f8eee2;transform:rotate(12deg);margin-top:72px}
+
+.perfect-explainer{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#403730;padding-top:1px;padding-bottom:1px}
+.perfect-explainer article{background:#11100e;padding:20px;min-height:150px}
+.perfect-explainer span{display:block;color:var(--p-red);font-size:10px;font-weight:1000;letter-spacing:.15em}
+.perfect-explainer b{display:block;margin-top:8px;font-size:14px;letter-spacing:.05em}
+.perfect-explainer p{margin:8px 0 0;color:#9e938a;font-size:12px;line-height:1.5}
+
+.perfect-game{padding-top:38px;padding-bottom:64px}
+.perfect-toolbar{display:flex;justify-content:space-between;align-items:end;gap:18px;border-bottom:1px solid #4a4038;padding-bottom:16px}
+.perfect-step-label{display:block;color:var(--p-red);font-size:10px;font-weight:1000;letter-spacing:.15em}
+.perfect-progress{margin-top:5px;color:#b9afa5;font-family:Georgia,serif;font-size:18px}
+.perfect-reset,.perfect-share{border:1px solid #66584d;background:transparent;color:#f4ede6;padding:11px 15px;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.perfect-reset:hover,.perfect-share:hover{background:var(--p-red);border-color:var(--p-red);color:#fff}
+
+.unit-label{display:flex;justify-content:space-between;align-items:center;margin:25px 0 10px;padding-bottom:8px;border-bottom:1px solid #322d29}
+.unit-label span{font-size:11px;font-weight:1000;letter-spacing:.15em;color:#ddd3c8}
+.unit-label small{font-size:8px;color:#7f766f;letter-spacing:.11em}
+.defense-label{margin-top:16px}
+
+.roster-grid{display:grid;gap:8px}
+.offense-grid{grid-template-columns:repeat(6,1fr)}
+.defense-grid{grid-template-columns:repeat(4,1fr)}
+.roster-slot{min-height:100px;padding:12px;border:1px solid #42382f;background:#14110e;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.roster-slot span{font-size:9px;font-weight:1000;letter-spacing:.12em;color:var(--p-red)}
+.roster-slot strong{font-size:13px;line-height:1.1;overflow-wrap:anywhere}
+.roster-slot small{font-size:7px;color:#847970;letter-spacing:.04em;text-transform:uppercase}
+.roster-slot.filled{border-color:#84604c;background:linear-gradient(135deg,#1f1712,#10100e)}
+.roster-slot.active{outline:2px solid var(--p-red);outline-offset:2px}
+
+.round-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:38px 0 14px}
+.round-head span{font-size:10px;font-weight:1000;letter-spacing:.14em;color:#a89b90}
+.round-head h2{margin:0;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:44px;line-height:.9}
+
+.player-options{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.player-card{position:relative;overflow:hidden;min-height:345px;border:1px solid #4b4037;background:#15110e;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:transform .16s ease,border-color .16s ease;color:#f2eee6;text-align:left}
+.player-card:hover{transform:translateY(-3px);border-color:var(--p-red)}
+.player-card:before{content:attr(data-initials);position:absolute;right:-10px;top:-20px;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:150px;line-height:1;color:#fff;opacity:.035}
+.player-pos{position:absolute;left:16px;top:16px;font-size:10px;font-weight:1000;letter-spacing:.13em;color:var(--p-red)}
+.prime-pill{position:absolute;right:14px;top:14px;border:1px solid #5b493c;background:#211711;padding:5px 7px;color:#d7b596;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+.player-card h3{margin:0;font-size:29px;line-height:.95;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif}
+.player-era{margin-top:7px;color:#958a80;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.player-role{margin-top:9px;color:#d8cfc7;font-size:11px;line-height:1.35}
+.player-ratings{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:17px;border-top:1px solid #3f362f;padding-top:10px}
+.player-ratings span{font-size:6.5px;color:#8e837a;letter-spacing:.03em}
+.player-ratings b{display:block;margin-top:3px;color:#eee7e0;font-size:12px}
+.player-ratings .fit b{color:#efa681}
+
+.verdict{margin-top:40px;border:1px solid #6f5546;background:linear-gradient(145deg,#19120e,#0f0e0c);padding:26px}
+.verdict-top{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.verdict h2{margin:4px 0 0;font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:clamp(46px,7vw,76px);line-height:.88}
+.verdict-score{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:var(--p-red)}
+.verdict-score span{font-size:68px;line-height:.8}
+.verdict-score small{font-size:14px}
+.verdict p{color:#c8bdb4;font-size:17px;max-width:830px;line-height:1.45}
+
+.record-strip{display:grid;grid-template-columns:.7fr 1fr 1.3fr;gap:1px;background:#493a31;border:1px solid #493a31;margin:22px 0}
+.record-strip div{background:#17120f;padding:15px}
+.record-strip span{display:block;color:#8f8278;font-size:8px;font-weight:900;letter-spacing:.1em}
+.record-strip strong{display:block;margin-top:7px;font-size:15px;line-height:1.2}
+.record-strip div:first-child strong{font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:30px;color:var(--p-red)}
+
+.metric-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:#41362f;border:1px solid #41362f;margin:22px 0}
+.metric-grid div{background:#0d0c0b;padding:13px}
+.metric-grid span{display:block;font-size:7px;color:#857a72;letter-spacing:.07em}
+.metric-grid b{display:block;margin-top:4px;font-size:21px}
+.metric-grid .fit-metric b{color:var(--p-red)}
+
+.game-note{margin-top:24px;padding:14px;border-left:3px solid var(--p-red);color:#998f86;font-size:12px;line-height:1.5;background:#11100e}
+.game-note strong{color:#d5ccc4}
+
+@media(max-width:900px){
+ .perfect-hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:50px;padding-bottom:50px}
+ .football{display:none}
+ .perfect-hero:before,.perfect-hero:after{opacity:.5}
+ .perfect-explainer{grid-template-columns:1fr}
+ .offense-grid{grid-template-columns:repeat(3,1fr)}
+ .record-strip{grid-template-columns:1fr 1fr}
+ .record-strip div:last-child{grid-column:1/-1}
+ .metric-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:620px){
+ .perfect-hero-grid{padding-top:34px;padding-bottom:40px;min-width:0}
+ .perfect-kicker{font-size:9px;line-height:1.35;letter-spacing:.12em}
+ .perfect-hero h1{font-size:clamp(58px,17vw,70px);line-height:.78;letter-spacing:-.02em;margin:8px 0 18px;max-width:100%}
+ .perfect-hero p{font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+ .perfect-rules{display:grid;grid-template-columns:1fr 1fr;width:100%}
+ .perfect-rules b{text-align:center;font-size:8.5px;line-height:1.25;padding:9px 7px}
+ .pool-stamp{font-size:8px;line-height:1.45}
+ .perfect-toolbar{align-items:center}
+ .perfect-progress{font-size:15px}
+ .perfect-reset{padding:9px 10px}
+ .offense-grid,.defense-grid{grid-template-columns:1fr 1fr}
+ .roster-slot{min-height:88px}
+ .round-head{display:block;margin-top:30px}
+ .round-head h2{margin-top:5px;font-size:36px}
+ .player-options{grid-template-columns:1fr}
+ .player-card{min-height:280px}
+ .player-ratings span{font-size:7px}
+ .verdict-top{display:block}
+ .verdict-score{margin-top:15px}
+ .record-strip{grid-template-columns:1fr}
+ .record-strip div:last-child{grid-column:auto}
+ .metric-grid{grid-template-columns:1fr 1fr}
+ .metric-grid .fit-metric{grid-column:1/-1}
+}
+@media(max-width:390px){
+ .perfect-hero h1{font-size:54px}
+ .perfect-rules{grid-template-columns:1fr}
+}

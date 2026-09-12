@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4DK 17–0 Challenge | 4 Da Kulture</title>
+<meta name="description" content="Build a prime-season all-time NFL roster in the 4DK 17–0 Challenge. Ten roster spots, three choices each, offense and defense, no do-overs.">
+<link rel="canonical" href="https://4dakulturemedia.com/17-0.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="4DK 17–0 Challenge">
+<meta property="og:description" content="Prime seasons. Ten roster spots. Three choices each. Can your all-time squad finish 17–0?">
+<meta property="og:url" content="https://4dakulturemedia.com/17-0.html">
+<meta name="theme-color" content="#090b0a">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="17-0.css">
+</head>
+<body class="perfect-page">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topline perfect-topline">
+  <div class="shell"><span><strong>4DK</strong> FOOTBALL • INTERACTIVE</span><span>BUILD THE PERFECT SEASON.</span></div>
+</div>
+
+<header class="masthead perfect-masthead">
+  <div class="shell masthead-inner">
+    <nav class="nav"><a href="nba.html">NBA</a><a class="active" href="nfl.html">NFL</a><a href="magazine.html">Magazine</a></nav>
+    <a class="brand" href="index.html"><span class="brand-mark">4</span> DA KULTURE</a>
+    <nav class="nav right"><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav"><a href="nba.html">NBA</a><a class="active" href="nfl.html">NFL</a><a href="magazine.html">Magazine</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
+</header>
+
+<main id="main">
+<section class="perfect-hero">
+  <div class="shell perfect-hero-grid">
+    <div>
+      <span class="perfect-kicker">4DK INTERACTIVE • ALL-TIME PRIME EDITION</span>
+      <h1><span>17</span>–0<br>CHALLENGE</h1>
+      <p>Build an all-time NFL squad from prime-season versions of legends. Ten roster spots. Three choices every round. Your offense, protection, front seven, coverage and overall fit decide whether you can survive a perfect 17-game season.</p>
+      <div class="perfect-rules"><b>10 ROSTER SPOTS.</b><b>3 CHOICES PER ROUND.</b><b>PRIME VERSIONS.</b><b>BOTH SIDES OF THE BALL.</b></div>
+      <div class="pool-stamp">162 PRIME-SEASON CARDS • DIFFERENT ERAS • DIFFERENT TEAMS</div>
+    </div>
+    <div class="football" aria-hidden="true"><span>17–0</span></div>
+  </div>
+</section>
+
+<section class="perfect-explainer shell">
+  <article><span>01</span><b>BUILD THE OFFENSE</b><p>QB, RB, two receivers, tight end and one offensive-line anchor.</p></article>
+  <article><span>02</span><b>BUILD THE DEFENSE</b><p>Pass rusher, linebacker, corner and safety. Stars alone will not carry a bad fit.</p></article>
+  <article><span>03</span><b>GET THE VERDICT</b><p>4DK grades offense, explosiveness, protection, front seven, coverage and fit — then projects your record.</p></article>
+</section>
+
+<section class="perfect-game shell">
+  <div class="perfect-toolbar">
+    <div><span class="perfect-step-label">YOUR ALL-TIME ROSTER</span><div class="perfect-progress" id="progressText">Pick your quarterback.</div></div>
+    <button class="perfect-reset" id="resetGame" type="button">Restart</button>
+  </div>
+
+  <div class="unit-label"><span>OFFENSE</span><small>6 PICKS</small></div>
+  <div class="roster-grid offense-grid">
+    <div class="roster-slot" data-position="QB"><span>QB</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="RB"><span>RB</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="WR1"><span>WR1</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="WR2"><span>WR2</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="TE"><span>TE</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="OL"><span>OL</span><strong>—</strong><small></small></div>
+  </div>
+
+  <div class="unit-label defense-label"><span>DEFENSE</span><small>4 PICKS</small></div>
+  <div class="roster-grid defense-grid">
+    <div class="roster-slot" data-position="PR"><span>EDGE/DL</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="LB"><span>LB</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="CB"><span>CB</span><strong>—</strong><small></small></div>
+    <div class="roster-slot" data-position="S"><span>S</span><strong>—</strong><small></small></div>
+  </div>
+
+  <div class="round-head">
+    <span id="roundPosition">QUARTERBACK</span>
+    <h2>WHO YOU TAKING?</h2>
+  </div>
+
+  <div class="player-options" id="playerOptions"></div>
+
+  <section class="verdict" id="verdict" hidden>
+    <div class="verdict-top">
+      <div><span class="perfect-step-label">4DK VERDICT</span><h2 id="verdictTitle">17–0 THREAT</h2></div>
+      <div class="verdict-score"><span id="teamScore">0</span><small>/100</small></div>
+    </div>
+    <p id="verdictCopy"></p>
+
+    <div class="record-strip">
+      <div><span>PROJECTED RECORD</span><strong id="projectedRecord">—</strong></div>
+      <div><span>TEAM IDENTITY</span><strong id="teamIdentity">—</strong></div>
+      <div><span>BIGGEST QUESTION</span><strong id="teamWarning">—</strong></div>
+    </div>
+
+    <div class="metric-grid">
+      <div><span>OFFENSE</span><b id="metricOffense">0</b></div>
+      <div><span>EXPLOSIVENESS</span><b id="metricExplosive">0</b></div>
+      <div><span>PROTECTION</span><b id="metricProtection">0</b></div>
+      <div><span>FRONT SEVEN</span><b id="metricFront">0</b></div>
+      <div><span>COVERAGE</span><b id="metricCoverage">0</b></div>
+      <div class="fit-metric"><span>FIT</span><b id="metricFit">0</b></div>
+    </div>
+
+    <button class="perfect-share" id="shareTeam" type="button">Share My 17–0 Team</button>
+  </section>
+
+  <div class="game-note"><strong>How the 4DK score works:</strong> this is a fan game, not an official historical ranking. Every card represents a specific prime season and uses game-only editorial ratings. Older-era legends are translated into the same 17-game challenge so the fun is about talent, role and fit — not schedule length.</div>
+</section>
+</main>
+
+<footer class="footer"><div class="shell"><div class="footer-grid">
+  <div><div class="footer-brand">4 DA KULTURE</div><p>Independent coverage and conversation at the intersection of sports, hip-hop and culture.</p></div>
+  <div><h4>Sections</h4><div class="footer-links"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="magazine.html">Magazine</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a></div></div>
+  <div><h4>4DK</h4><div class="footer-links"><a href="about.html">About</a><a href="kcdatruth.html">Kcdatruth</a><a href="210west.html">210West</a></div></div>
+</div><div class="fine">© 2026 4 Da Kulture.</div></div></footer>
+
+<script src="script.js"></script>
+<script src="17-0.js"></script>
+</body>
+</html>
