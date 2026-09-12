@@ -13,6 +13,76 @@
 <meta name="theme-color" content="#111111">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="82-0.css">
+<style>
+.challenge-page{overflow-x:hidden}
+.challenge-hero-grid,.challenge-hero-grid>div{min-width:0;max-width:100%}
+.challenge-hero h1{max-width:100%}
+.challenge-hero p{max-width:100%}
+.challenge-rules{max-width:100%}
+.upgrade-card span{margin-bottom:8px}
+.upgrade-card b{margin-top:0}
+
+@media(max-width:620px){
+  .challenge-hero-grid{padding-top:34px;padding-bottom:38px}
+  .challenge-kicker{font-size:9px;line-height:1.35;letter-spacing:.12em}
+  .challenge-hero h1{
+    font-size:clamp(56px,17vw,68px);
+    line-height:.78;
+    letter-spacing:-.02em;
+    margin-top:8px;
+    margin-bottom:18px;
+  }
+  .challenge-hero p{
+    font-size:15px;
+    line-height:1.5;
+    overflow-wrap:anywhere;
+  }
+  .challenge-rules{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    width:100%;
+  }
+  .challenge-rules b{
+    min-width:0;
+    width:auto;
+    padding:9px 8px;
+    text-align:center;
+    font-size:9px;
+    line-height:1.25;
+    white-space:normal;
+  }
+  .challenge-upgrade{
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0;
+  }
+  .upgrade-card{
+    min-width:0;
+    padding:20px 18px;
+  }
+  .upgrade-card span{
+    display:block;
+    margin-bottom:7px;
+    font-size:9px;
+  }
+  .upgrade-card b{
+    display:block;
+    margin:0 0 8px;
+    font-size:14px;
+  }
+  .upgrade-card p{
+    margin:0;
+    font-size:12px;
+    line-height:1.55;
+  }
+}
+
+@media(max-width:390px){
+  .challenge-hero h1{font-size:54px}
+  .challenge-rules{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body class="challenge-page">
 <a class="skip" href="#main">Skip to content</a>
