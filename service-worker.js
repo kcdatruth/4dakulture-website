@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v7-mamba-files';
+const CACHE_NAME = '4dk-pwa-v8-social-follow';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -16,6 +16,7 @@ const APP_SHELL = [
   '/mamba-files.js',
   '/mamba-files.css',
   '/mamba-files.html',
+  '/social-follow.css',
   '/4dk-icon-192.png',
   '/4dk-icon-512.png',
   '/4dk-icon-maskable-512.png',
@@ -53,6 +54,9 @@ function injectAppFeatures(html) {
   }
   if (!html.includes('/mamba-files.js')) {
     addHead.push('<script defer src="/mamba-files.js" data-fourdk-mamba-files="1"></script>');
+  }
+  if (!html.includes('/social-follow.css')) {
+    addHead.push('<link rel="stylesheet" href="/social-follow.css" data-fourdk-social-follow="1">');
   }
   if (!html.includes('/app-nav.js') && !html.includes('fourdk-app-nav')) {
     addBody.push('<script defer src="/app-nav.js" data-fourdk-appnav="1"></script>');
@@ -151,7 +155,8 @@ self.addEventListener('fetch', event => {
     url.pathname === '/17-0.css' ||
     url.pathname === '/17-0.js' ||
     url.pathname === '/mamba-files.js' ||
-    url.pathname === '/mamba-files.css'
+    url.pathname === '/mamba-files.css' ||
+    url.pathname === '/social-follow.css'
   ) {
     event.respondWith(networkFirstAsset(request));
     return;

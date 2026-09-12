@@ -1,0 +1,141 @@
+
+/* 4DK Social Follow Spotlight
+   Targets ONLY the existing homepage "FOLLOW 4 DA KULTURE" promo.
+   No article, section, navigation, or layout content is changed.
+*/
+
+section[style*="border-left:5px solid #ef4b37"]{
+  position:relative !important;
+  overflow:hidden !important;
+  max-width:1200px !important;
+  margin:24px auto !important;
+  padding:24px 26px !important;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(239,75,55,.24),transparent 250px),
+    linear-gradient(135deg,#171717 0%,#0c0c0c 62%,#16100f 100%) !important;
+  border:1px solid rgba(255,255,255,.13) !important;
+  border-left:6px solid #ef4b37 !important;
+  border-radius:12px !important;
+  box-shadow:
+    0 18px 44px rgba(0,0,0,.28),
+    0 0 0 1px rgba(239,75,55,.08) inset !important;
+}
+
+section[style*="border-left:5px solid #ef4b37"]::before{
+  content:"𝕏";
+  position:absolute;
+  right:34px;
+  top:50%;
+  transform:translateY(-50%);
+  font:900 118px/1 Arial,sans-serif;
+  color:#fff;
+  opacity:.035;
+  pointer-events:none;
+}
+
+section[style*="border-left:5px solid #ef4b37"]::after{
+  content:"STAY LOCKED IN";
+  position:absolute;
+  right:22px;
+  top:14px;
+  color:#ef4b37;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.18em;
+  pointer-events:none;
+}
+
+section[style*="border-left:5px solid #ef4b37"] > div{
+  position:relative;
+  z-index:2;
+  gap:22px !important;
+}
+
+section[style*="border-left:5px solid #ef4b37"] strong{
+  display:block;
+  font-size:clamp(22px,3vw,32px) !important;
+  line-height:1 !important;
+  letter-spacing:-.02em !important;
+  color:#fff !important;
+  text-transform:uppercase;
+}
+
+section[style*="border-left:5px solid #ef4b37"] > div > div > div:first-of-type{
+  margin-top:9px !important;
+  color:#bfbfbf !important;
+  font-size:13px !important;
+  line-height:1.45 !important;
+}
+
+section[style*="border-left:5px solid #ef4b37"] > div > div > div:last-of-type{
+  display:inline-block !important;
+  margin-top:10px !important;
+  padding:6px 10px !important;
+  background:rgba(255,255,255,.07) !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  border-radius:999px !important;
+  color:#fff !important;
+  font-size:12px !important;
+  letter-spacing:.04em !important;
+}
+
+section[style*="border-left:5px solid #ef4b37"] > div > a{
+  position:relative;
+  z-index:3;
+  min-width:150px;
+  text-align:center;
+  padding:15px 22px !important;
+  background:#ef4b37 !important;
+  border:1px solid #ff7564 !important;
+  border-radius:8px !important;
+  color:#fff !important;
+  font-size:12px !important;
+  font-weight:1000 !important;
+  letter-spacing:.08em !important;
+  box-shadow:0 10px 26px rgba(239,75,55,.28) !important;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease !important;
+}
+
+section[style*="border-left:5px solid #ef4b37"] > div > a:hover,
+section[style*="border-left:5px solid #ef4b37"] > div > a:focus-visible{
+  transform:translateY(-2px);
+  background:#ff5a45 !important;
+  box-shadow:0 14px 30px rgba(239,75,55,.38) !important;
+}
+
+@media(max-width:760px){
+  section[style*="border-left:5px solid #ef4b37"]{
+    margin:18px 14px !important;
+    padding:22px 20px 20px !important;
+    border-radius:10px !important;
+  }
+
+  section[style*="border-left:5px solid #ef4b37"]::before{
+    right:-4px;
+    top:38px;
+    transform:none;
+    font-size:92px;
+  }
+
+  section[style*="border-left:5px solid #ef4b37"]::after{
+    right:16px;
+    top:12px;
+  }
+
+  section[style*="border-left:5px solid #ef4b37"] > div{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    align-items:start !important;
+  }
+
+  section[style*="border-left:5px solid #ef4b37"] strong{
+    max-width:82%;
+    font-size:26px !important;
+  }
+
+  section[style*="border-left:5px solid #ef4b37"] > div > a{
+    width:100% !important;
+    box-sizing:border-box !important;
+    padding:15px 18px !important;
+  }
+}
