@@ -55,8 +55,25 @@ body.bs-page{background:#17110d;color:#efe2c9}
 .bs-verdict{padding:60px 0;background:#17110d;color:#eee2cc}.bs-verdict-inner{max-width:900px;margin:auto}.bs-verdict h2{margin:7px 0 12px;font:1000 68px/.84 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}.bs-verdict p{font:18px/1.75 Georgia,serif;color:#cbb7a3}.bs-classic{margin:36px 0;padding:24px;border:1px solid #6a4932;background:#2b1b12;text-align:center}.bs-classic strong{display:block;font:1000 clamp(40px,8vw,86px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase;color:#e7c18e}.bs-classic span{display:block;margin-top:9px;color:#b99a79;font-size:9px;letter-spacing:.14em;text-transform:uppercase}
 .bs-rip{margin-top:44px;padding-top:28px;border-top:1px solid #5b402e;text-align:center}.bs-rip small{display:block;color:#aa9078;font-size:8px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase}.bs-rip h3{margin:9px 0 8px;font:700 30px/1.05 Georgia,serif}.bs-rip p{max-width:700px;margin:0 auto;color:#bba590;font-size:15px}.bs-rip .years{margin-top:13px;color:#d7b37e;font-size:10px;font-weight:1000;letter-spacing:.15em}
 .bs-source-note{margin-top:35px;color:#806e5f;font-size:10px;line-height:1.5}.bs-source-note a{color:#a35a38}
-@media(max-width:900px){.bs-hero-grid,.bs-listen-grid,.bs-layout,.bs-report-grid{grid-template-columns:1fr}.bs-cover{max-width:450px}.bs-rail{position:static}.bs-file-grid{grid-template-columns:repeat(2,1fr)}.bs-file-grid div{border-bottom:1px solid #cbb99d}.bs-head{grid-template-columns:1fr}}
-@media(max-width:600px){.bs-hero{padding-top:38px}.bs-hero h1{font-size:54px}.bs-song-grid,.bs-credit-grid,.bs-ratings{grid-template-columns:1fr}.bs-file-grid{grid-template-columns:1fr}.bs-file-grid div{border-right:0}.bs-prose p{font-size:17px}.bs-head h2,.bs-report h2,.bs-verdict h2{font-size:48px}.bs-pull{font-size:25px}.bs-section,.bs-standouts,.bs-report,.bs-verdict{padding:44px 0}}
+.bs-track-review{padding:58px 0;background:#130d09;color:#efe2c9;border-top:1px solid #4b3323;border-bottom:1px solid #4b3323}
+.bs-track-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end;margin-bottom:24px}
+.bs-track-head span{color:#d69b5a;font-size:8px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase}
+.bs-track-head h2{margin:6px 0 0;font:1000 60px/.84 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
+.bs-track-head p{margin:0;color:#bba48d;line-height:1.6}
+.bs-track-list{border:1px solid #4f3524;background:#24170f}
+.bs-track-row{display:grid;grid-template-columns:46px minmax(0,1fr) 72px;gap:18px;align-items:start;padding:20px;border-bottom:1px solid #4f3524}
+.bs-track-row:last-child{border-bottom:0}
+.bs-track-row>b{font:1000 28px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#c9874d}
+.bs-track-row span{display:block;font:700 20px/1.05 Georgia,serif;color:#fff}
+.bs-track-row small{display:block;margin-top:5px;color:#9e846d;font-size:8px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.bs-track-row p{margin:8px 0 0;color:#bba590;font-size:13px;line-height:1.55}
+.bs-track-row>strong{justify-self:end;font:1000 26px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#f0c189}
+.bs-track-row.elite{background:linear-gradient(90deg,rgba(168,87,49,.12),transparent 72%)}
+.bs-track-row.elite>strong{color:#ffd59a}
+.bs-track-note{margin-top:16px;color:#9f8975;font-size:11px;line-height:1.5}
+
+@media(max-width:900px){.bs-hero-grid,.bs-listen-grid,.bs-layout,.bs-report-grid{grid-template-columns:1fr}.bs-track-head{grid-template-columns:1fr}.bs-cover{max-width:450px}.bs-rail{position:static}.bs-file-grid{grid-template-columns:repeat(2,1fr)}.bs-file-grid div{border-bottom:1px solid #cbb99d}.bs-head{grid-template-columns:1fr}}
+@media(max-width:600px){.bs-hero{padding-top:38px}.bs-track-row{grid-template-columns:34px minmax(0,1fr) 58px;gap:12px;padding:16px}.bs-track-row span{font-size:18px}.bs-track-row p{font-size:12px}.bs-track-head h2{font-size:48px}.bs-hero h1{font-size:54px}.bs-song-grid,.bs-credit-grid,.bs-ratings{grid-template-columns:1fr}.bs-file-grid{grid-template-columns:1fr}.bs-file-grid div{border-right:0}.bs-prose p{font-size:17px}.bs-head h2,.bs-report h2,.bs-verdict h2{font-size:48px}.bs-pull{font-size:25px}.bs-section,.bs-standouts,.bs-report,.bs-verdict{padding:44px 0}}
 </style>
 </head>
 <body class="throwback-page bs-page">
@@ -126,6 +143,28 @@ body.bs-page{background:#17110d;color:#efe2c9}
 <div class="bs-song"><em>DETAIL TO CATCH</em><h3>Me and Those Dreamin' Eyes of Mine</h3><p>Already a smooth record, then the jazzy outro adds another layer of musicianship.</p></div>
 <div class="bs-song"><em>THE REMAKE</em><h3>Cruisin'</h3><p>D'Angelo takes the Smokey Robinson and Marvin Tarplin classic and makes it fit naturally inside his own album. Still a banger.</p></div>
 </div></div></section>
+
+<section class="bs-track-review">
+  <div class="shell">
+    <div class="bs-track-head">
+      <div><span>01 / TRACK BY TRACK</span><h2>10 TRACKS.<br>NO MISSES.</h2></div>
+      <p>The same 4DK treatment we gave <em>The Blueprint</em> and <em>2001</em>: every song gets a score based on the production, writing, replay value and everything we broke down in the review.</p>
+    </div>
+    <div class="bs-track-list">
+      <div class="bs-track-row elite"><b>01</b><div><span>BROWN SUGAR</span><small>Best song • Mission statement</small><p>The perfect opener. Hip-hop swing, soul vocals, clever double meaning and the record that captures the entire identity of the album.</p></div><strong>10</strong></div>
+      <div class="bs-track-row elite"><b>02</b><div><span>ALRIGHT</span><small>Track 2 gem • Production standout</small><p>One of the album's most unique grooves. The beat still sounds like its own thing decades later, and D'Angelo rides it without getting in the way of the pocket.</p></div><strong>9.8</strong></div>
+      <div class="bs-track-row elite"><b>03</b><div><span>JONZ IN MY BONZ</span><small>Hidden gem</small><p>A slept-on cut with a warm, funky groove. This is the kind of deep record that makes the no-skips argument easy.</p></div><strong>9.6</strong></div>
+      <div class="bs-track-row elite"><b>04</b><div><span>ME AND THOSE DREAMIN' EYES OF MINE</span><small>Jazz detail • Slow-jam pocket</small><p>Smooth all the way through, with that jazzy ending adding another layer of musicianship and replay value.</p></div><strong>9.6</strong></div>
+      <div class="bs-track-row elite"><b>05</b><div><span>SHIT, DAMN, MOTHERFUCKER</span><small>Sequence + story</small><p>Dark, hypnotic and creative. The production almost tells the story with him, and the groove makes the whole record hit harder.</p></div><strong>9.7</strong></div>
+      <div class="bs-track-row"><b>06</b><div><span>SMOOTH</span><small>Laid-back banger</small><p>Exactly what the title says. Relaxed, warm and understated, but still strong enough to keep the album's momentum intact.</p></div><strong>9.4</strong></div>
+      <div class="bs-track-row"><b>07</b><div><span>CRUISIN'</span><small>Smokey Robinson remake</small><p>A remake that still feels at home inside D'Angelo's world. He doesn't just cover the song — he bends it toward the album's own sound.</p></div><strong>9.4</strong></div>
+      <div class="bs-track-row"><b>08</b><div><span>WHEN WE GET BY</span><small>Deep-cut consistency</small><p>One of the less-discussed records in the review, but it still fits the front-to-back vibe and never breaks the album's cohesion.</p></div><strong>9.1</strong></div>
+      <div class="bs-track-row elite"><b>09</b><div><span>LADY</span><small>Biggest song • Timeless record</small><p>The universal one. Weddings, cookouts, kickbacks, slow-jam playlists — the songwriting and groove make it work anywhere.</p></div><strong>9.9</strong></div>
+      <div class="bs-track-row"><b>10</b><div><span>HIGHER</span><small>Album closer</small><p>A soulful finish that keeps the album's identity intact through the last track. Strong closer, just a shade below the very best records here.</p></div><strong>9.0</strong></div>
+    </div>
+    <p class="bs-track-note"><strong>Track-by-track average: 9.55/10.</strong> That lines up almost perfectly with the official 4DK album rating of 9.5/10 — elite highs, no weak song and no skip anywhere on the board.</p>
+  </div>
+</section>
 <section class="bs-section bs-story"><div class="shell bs-layout"><aside class="bs-rail"><span>WHY IT LASTS</span><strong>EVERY SONG IS A VIBE.</strong><p>This is not a classic carried by three famous singles. The entire album holds together.</p></aside><div class="bs-prose">
 <h2>NO SKIPS.</h2>
 <p>That is one of the biggest reasons the album deserves the classic label. You can put it on and let it run. The production changes enough to keep the record interesting, but the mood and musical identity never fall apart.</p>
