@@ -37,8 +37,8 @@
             </div>
             <div class="rewind-mini-copy">
               <span class="rewind-mini-kicker">NEW 4DK SCREEN FRANCHISE • COMING SOON</span>
-              <h2>Menace II Society:<br><em>More Than a Hood Classic</em></h2>
-              <p>4DK Rewind goes back to the movies and shows that became part of the culture — the performances, soundtracks, themes, scenes and legacy, without giving anything a nostalgia pass. Menace II Society will be the first full feature.</p>
+              <h2>Menace II Society:<br><em>An AUTHENTIC Hood Classic</em></h2>
+              <p>Menace II Society will be the first full 4DK Rewind feature.</p>
               <div class="rewind-mini-actions">
                 <a href="4dk-rewind.html">ENTER 4DK REWIND →</a>
                 <span>FULL REVIEW / TRIBUTE IN DEVELOPMENT</span>
@@ -77,7 +77,7 @@
             </div>
             <div class="rewind-archive-copy">
               <span>SCREEN × THROWBACK • COMING SOON</span>
-              <h2>More Than a<br><em>Hood Classic.</em></h2>
+              <h2>An AUTHENTIC<br><em>Hood Classic.</em></h2>
               <p>The first 4DK Rewind will revisit Menace II Society through the performances, soundtrack, atmosphere, ending, cultural impact and the question that matters 33 years later: why does it still hit?</p>
               <a class="rewind-archive-enter" href="4dk-rewind.html">ENTER 4DK REWIND →</a>
             </div>
