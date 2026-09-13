@@ -23,11 +23,12 @@
 .nfl-sunday-feature{background:#0a0d0b;color:#fff;border-top:1px solid #253129;border-bottom:1px solid #253129;padding:28px 0}
 .nfl-sunday-feature-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:stretch}
 .nfl-sunday-feature-main{position:relative;overflow:hidden;border:1px solid #28342d;background:linear-gradient(135deg,#111712 0%,#0a0d0b 58%,#171109 100%);padding:28px;min-height:260px}
-.nfl-sunday-feature-main:after{content:'WEEK 1';position:absolute;right:-8px;bottom:-30px;font:1000 92px/1 Arial,sans-serif;color:rgba(255,255,255,.035);letter-spacing:-.08em}
+.nfl-sunday-feature-main:after{content:'WEEK 1';position:absolute;right:-8px;bottom:-30px;font:1000 92px/1 Arial,sans-serif;color:rgba(255,255,255,.035);letter-spacing:-.08em;pointer-events:none;z-index:0}
+.nfl-sunday-feature-main>*{position:relative;z-index:1}
 .nfl-sunday-feature-kicker{display:block;color:#ef4b37;font-size:11px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
 .nfl-sunday-feature h2{margin:0 0 12px;font:1000 clamp(34px,5vw,62px)/.95 Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;max-width:760px}
 .nfl-sunday-feature-main p{margin:0;color:#c7ccc8;max-width:720px;font-size:16px;line-height:1.55}
-.nfl-sunday-feature-btn{display:inline-block;margin-top:20px;background:#ef4b37;color:#fff;padding:12px 16px;font-size:12px;font-weight:1000;letter-spacing:.06em;text-transform:uppercase}
+.nfl-sunday-feature-btn{display:inline-block;position:relative;z-index:2;pointer-events:auto;margin-top:20px;background:#ef4b37;color:#fff;padding:12px 16px;font-size:12px;font-weight:1000;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;touch-action:manipulation}
 .nfl-sunday-feature-side{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .nfl-sunday-feature-side div{border:1px solid #2a342e;background:#101411;padding:16px;display:flex;flex-direction:column;justify-content:space-between;min-height:120px}
 .nfl-sunday-feature-side small{color:#8f9892;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
