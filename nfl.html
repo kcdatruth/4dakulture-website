@@ -27,19 +27,22 @@
 .mvp-head p{margin:0;color:#aaa89f;max-width:700px;font-size:14px;line-height:1.5}
 .mvp-stamp{flex:none;border:1px solid #30362f;padding:10px 12px;text-align:right;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#b9b7ae}
 .mvp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.mvp-card{display:grid;grid-template-columns:58px 1fr auto;gap:14px;align-items:center;background:#111511;border:1px solid #242a24;padding:15px 16px;min-width:0}
-.mvp-rank{font-size:32px;font-weight:1000;line-height:1;color:#f7f3e9;letter-spacing:-.05em}
+.mvp-card{display:grid;grid-template-columns:58px 92px minmax(0,1fr);gap:16px;align-items:center;background:#111511;border:1px solid #242a24;padding:15px 16px;min-width:0}
+.mvp-rank{font-size:32px;font-weight:1000;line-height:1;color:#f7f3e9;letter-spacing:-.05em;text-align:center}
+.mvp-photo{width:92px;height:92px;border-radius:12px;overflow:hidden;border:1px solid #313831;background:#161a17;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.mvp-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .mvp-card h3{margin:0 0 3px;font-size:17px;line-height:1.05;text-transform:uppercase}
 .mvp-meta{font-size:10px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#ff6b45}
 .mvp-note{margin-top:6px;color:#b9b8b1;font-size:12px;line-height:1.38}
-.mvp-move{font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#d8d5cb;white-space:nowrap}
+.mvp-move{display:block;margin-top:14px;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#d8d5cb;white-space:nowrap}
 .mvp-move.hot{color:#ff6b45}.mvp-move.up{color:#78d897}.mvp-move.down{color:#ff8f7b}
 .mvp-hm{margin-top:18px;border-top:1px solid #2a302a;padding-top:18px;display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
 .mvp-hm strong{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#ff5a36}
 .mvp-hm-list{display:flex;gap:8px;flex-wrap:wrap}
 .mvp-hm-list span{border:1px solid #343a34;background:#0d100e;padding:8px 10px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}
 .mvp-foot{margin-top:15px;color:#7f827c;font-size:11px;line-height:1.45}
-@media (max-width:760px){.mvp-head{align-items:flex-start;flex-direction:column}.mvp-stamp{text-align:left}.mvp-grid{grid-template-columns:1fr}.mvp-card{grid-template-columns:48px 1fr}.mvp-move{grid-column:2}.mvp-rank{font-size:28px}}
+@media (max-width:920px){.mvp-grid{grid-template-columns:1fr}}
+@media (max-width:760px){.mvp-head{align-items:flex-start;flex-direction:column}.mvp-stamp{text-align:left}.mvp-card{grid-template-columns:48px 74px minmax(0,1fr);gap:14px;align-items:start}.mvp-photo{width:74px;height:74px;border-radius:10px}.mvp-rank{font-size:28px;padding-top:16px}}
 </style>
 </head>
 <body class="nfl-page nfl-revamp-page">
@@ -193,16 +196,16 @@
     </div>
 
     <div class="mvp-grid">
-      <article class="mvp-card"><div class="mvp-rank">1</div><div><div class="mvp-meta">QB • BUFFALO BILLS</div><h3>Josh Allen</h3><div class="mvp-note">The early standard. Buffalo should stay in the AFC race, and Allen has the complete MVP profile.</div></div><span class="mvp-move">HOLD</span></article>
-      <article class="mvp-card"><div class="mvp-rank">2</div><div><div class="mvp-meta">QB • CINCINNATI BENGALS</div><h3>Joe Burrow</h3><div class="mvp-note">If Cincinnati wins big and Burrow stays healthy, the production and narrative are both there.</div></div><span class="mvp-move">HOLD</span></article>
-      <article class="mvp-card"><div class="mvp-rank">3</div><div><div class="mvp-meta">QB • BALTIMORE RAVENS</div><h3>Lamar Jackson</h3><div class="mvp-note">Already a two-time MVP and still one of the league's most dangerous week-to-week forces.</div></div><span class="mvp-move">HOLD</span></article>
-      <article class="mvp-card"><div class="mvp-rank">4</div><div><div class="mvp-meta">QB • SAN FRANCISCO 49ERS</div><h3>Brock Purdy</h3><div class="mvp-note">Three touchdowns in San Francisco's 27–7 Week 1 win over the Rams gives him the biggest early jump.</div></div><span class="mvp-move up">▲ RISING</span></article>
-      <article class="mvp-card"><div class="mvp-rank">5</div><div><div class="mvp-meta">RB • ATLANTA FALCONS</div><h3>Bijan Robinson</h3><div class="mvp-note">A 2,000-scrimmage-yard type season on a winning Atlanta team would create a real non-QB case.</div></div><span class="mvp-move hot">🔥 WATCH</span></article>
-      <article class="mvp-card"><div class="mvp-rank">6</div><div><div class="mvp-meta">QB • KANSAS CITY CHIEFS</div><h3>Patrick Mahomes</h3><div class="mvp-note">The comeback storyline is already built. A major Chiefs rebound would push Mahomes right back into the race.</div></div><span class="mvp-move">HOLD</span></article>
-      <article class="mvp-card"><div class="mvp-rank">7</div><div><div class="mvp-meta">QB • CHICAGO BEARS</div><h3>Caleb Williams</h3><div class="mvp-note">After Chicago's jump last season, Year 3 is his chance to enter the true superstar tier.</div></div><span class="mvp-move">HOLD</span></article>
-      <article class="mvp-card"><div class="mvp-rank">8</div><div><div class="mvp-meta">RB • DETROIT LIONS</div><h3>Jahmyr Gibbs</h3><div class="mvp-note">One of football's most explosive weapons. The touchdown total and Detroit's record can keep him in the mix.</div></div><span class="mvp-move hot">⚡ WATCH</span></article>
-      <article class="mvp-card"><div class="mvp-rank">9</div><div><div class="mvp-meta">QB • LOS ANGELES RAMS</div><h3>Matthew Stafford</h3><div class="mvp-note">The reigning MVP stays in for now, but the rough opener against San Francisco knocks him down the board.</div></div><span class="mvp-move down">▼ FALLING</span></article>
-      <article class="mvp-card"><div class="mvp-rank">10</div><div><div class="mvp-meta">RB • SAN FRANCISCO 49ERS</div><h3>Christian McCaffrey</h3><div class="mvp-note">When healthy, CMC remains one of the few non-QBs capable of building a serious MVP résumé.</div></div><span class="mvp-move hot">🔥 WATCH</span></article>
+      <article class="mvp-card"><div class="mvp-rank">1</div><div class="mvp-photo"><img src="mvp-headshots/josh-allen.png" alt="Josh Allen portrait"></div><div><div class="mvp-meta">QB • BUFFALO BILLS</div><h3>Josh Allen</h3><div class="mvp-note">The early standard. Buffalo should stay in the AFC race, and Allen has the complete MVP profile.</div><span class="mvp-move">HOLD</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">2</div><div class="mvp-photo"><img src="mvp-headshots/joe-burrow.png" alt="Joe Burrow portrait"></div><div><div class="mvp-meta">QB • CINCINNATI BENGALS</div><h3>Joe Burrow</h3><div class="mvp-note">If Cincinnati wins big and Burrow stays healthy, the production and narrative are both there.</div><span class="mvp-move">HOLD</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">3</div><div class="mvp-photo"><img src="mvp-headshots/lamar-jackson.png" alt="Lamar Jackson portrait"></div><div><div class="mvp-meta">QB • BALTIMORE RAVENS</div><h3>Lamar Jackson</h3><div class="mvp-note">Already a two-time MVP and still one of the league's most dangerous week-to-week forces.</div><span class="mvp-move">HOLD</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">4</div><div class="mvp-photo"><img src="mvp-headshots/brock-purdy.png" alt="Brock Purdy portrait"></div><div><div class="mvp-meta">QB • SAN FRANCISCO 49ERS</div><h3>Brock Purdy</h3><div class="mvp-note">Three touchdowns in San Francisco's 27–7 Week 1 win over the Rams gives him the biggest early jump.</div><span class="mvp-move up">▲ RISING</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">5</div><div class="mvp-photo"><img src="mvp-headshots/bijan-robinson.png" alt="Bijan Robinson portrait"></div><div><div class="mvp-meta">RB • ATLANTA FALCONS</div><h3>Bijan Robinson</h3><div class="mvp-note">A 2,000-scrimmage-yard type season on a winning Atlanta team would create a real non-QB case.</div><span class="mvp-move hot">🔥 WATCH</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">6</div><div class="mvp-photo"><img src="mvp-headshots/patrick-mahomes.png" alt="Patrick Mahomes portrait"></div><div><div class="mvp-meta">QB • KANSAS CITY CHIEFS</div><h3>Patrick Mahomes</h3><div class="mvp-note">The comeback storyline is already built. A major Chiefs rebound would push Mahomes right back into the race.</div><span class="mvp-move">HOLD</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">7</div><div class="mvp-photo"><img src="mvp-headshots/caleb-williams.png" alt="Caleb Williams portrait"></div><div><div class="mvp-meta">QB • CHICAGO BEARS</div><h3>Caleb Williams</h3><div class="mvp-note">After Chicago's jump last season, Year 3 is his chance to enter the true superstar tier.</div><span class="mvp-move">HOLD</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">8</div><div class="mvp-photo"><img src="mvp-headshots/jahmyr-gibbs.png" alt="Jahmyr Gibbs portrait"></div><div><div class="mvp-meta">RB • DETROIT LIONS</div><h3>Jahmyr Gibbs</h3><div class="mvp-note">One of football's most explosive weapons. The touchdown total and Detroit's record can keep him in the mix.</div><span class="mvp-move hot">⚡ WATCH</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">9</div><div class="mvp-photo"><img src="mvp-headshots/matthew-stafford.png" alt="Matthew Stafford portrait"></div><div><div class="mvp-meta">QB • LOS ANGELES RAMS</div><h3>Matthew Stafford</h3><div class="mvp-note">The reigning MVP stays in for now, but the rough opener against San Francisco knocks him down the board.</div><span class="mvp-move down">▼ FALLING</span></div></article>
+      <article class="mvp-card"><div class="mvp-rank">10</div><div class="mvp-photo"><img src="mvp-headshots/christian-mccaffrey.png" alt="Christian McCaffrey portrait"></div><div><div class="mvp-meta">RB • SAN FRANCISCO 49ERS</div><h3>Christian McCaffrey</h3><div class="mvp-note">When healthy, CMC remains one of the few non-QBs capable of building a serious MVP résumé.</div><span class="mvp-move hot">🔥 WATCH</span></div></article>
     </div>
 
     <div class="mvp-hm">
