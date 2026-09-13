@@ -18,6 +18,23 @@
 <link rel="stylesheet" href="nfl-revamp.css">
 <link rel="stylesheet" href="nfl-storylines-hub.css">
 <link rel="stylesheet" href="nfl-scoreboard.css">
+
+<style id="fourdk-sunday-preview-feature-styles">
+.nfl-sunday-feature{background:#0a0d0b;color:#fff;border-top:1px solid #253129;border-bottom:1px solid #253129;padding:28px 0}
+.nfl-sunday-feature-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:stretch}
+.nfl-sunday-feature-main{position:relative;overflow:hidden;border:1px solid #28342d;background:linear-gradient(135deg,#111712 0%,#0a0d0b 58%,#171109 100%);padding:28px;min-height:260px}
+.nfl-sunday-feature-main:after{content:'WEEK 1';position:absolute;right:-8px;bottom:-30px;font:1000 92px/1 Arial,sans-serif;color:rgba(255,255,255,.035);letter-spacing:-.08em}
+.nfl-sunday-feature-kicker{display:block;color:#ef4b37;font-size:11px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.nfl-sunday-feature h2{margin:0 0 12px;font:1000 clamp(34px,5vw,62px)/.95 Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;max-width:760px}
+.nfl-sunday-feature-main p{margin:0;color:#c7ccc8;max-width:720px;font-size:16px;line-height:1.55}
+.nfl-sunday-feature-btn{display:inline-block;margin-top:20px;background:#ef4b37;color:#fff;padding:12px 16px;font-size:12px;font-weight:1000;letter-spacing:.06em;text-transform:uppercase}
+.nfl-sunday-feature-side{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.nfl-sunday-feature-side div{border:1px solid #2a342e;background:#101411;padding:16px;display:flex;flex-direction:column;justify-content:space-between;min-height:120px}
+.nfl-sunday-feature-side small{color:#8f9892;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.nfl-sunday-feature-side strong{font-size:18px;line-height:1.05;margin-top:12px}
+@media(max-width:780px){.nfl-sunday-feature-grid{grid-template-columns:1fr}.nfl-sunday-feature-side{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.nfl-sunday-feature{padding:18px 0}.nfl-sunday-feature-main{padding:22px;min-height:0}.nfl-sunday-feature-side{grid-template-columns:1fr 1fr}.nfl-sunday-feature-side div{min-height:105px;padding:13px}.nfl-sunday-feature-side strong{font-size:15px}}
+</style>
 </head>
 <body class="nfl-page nfl-revamp-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -72,6 +89,7 @@
   <div class="shell nfl-ticker-track">
     <span><b>●</b> AFC Preview is live</span>
     <span><b>●</b> NFC Preview is live</span>
+    <span><b>●</b> Sunday Week 1 Preview LIVE</span>
     <span><b>●</b> Weekly Pick’em</span>
     <span><b>●</b> Rams: Super Bowl or bust?</span>
     <span><b>●</b> Raiders QB watch</span>
@@ -107,6 +125,10 @@
         <div><small>FEATURE</small><b>NFC PREVIEW</b></div>
         <span>LIVE →</span>
       </a>
+      <a class="nfl-v2-board-row live" href="nfl-week-1-sunday-preview-2026.html">
+        <div><small>WEEK 1</small><b>SUNDAY PREVIEW</b></div>
+        <span>READ →</span>
+      </a>
       <a class="nfl-v2-board-row" href="#pickem">
         <div><small>WEEKLY</small><b>4DK PICK’EM</b></div>
         <span>PICK NOW →</span>
@@ -122,6 +144,7 @@
 
 <nav class="nfl-v2-nav shell" aria-label="NFL page sections">
   <a href="#scoreboard">Scores</a>
+  <a href="nfl-week-1-sunday-preview-2026.html">Sunday Preview</a>
   <a class="active" href="#storylines">Storylines</a>
   <a href="afc-preview-2026.html">AFC Preview</a>
   <a href="nfc-preview-2026.html">NFC Preview</a>
@@ -129,6 +152,24 @@
   <a href="#redzone">Red Zone</a>
   <a href="#pickem">Pick’em</a>
 </nav>
+
+
+<section class="nfl-sunday-feature" aria-label="Week 1 Sunday NFL preview">
+  <div class="shell nfl-sunday-feature-grid">
+    <div class="nfl-sunday-feature-main">
+      <span class="nfl-sunday-feature-kicker">4DK NFL • SUNDAY, SEPTEMBER 13</span>
+      <h2>13 Games. One Full Sunday.</h2>
+      <p>Buffalo–Houston headlines the early window. Green Bay–Minnesota and Washington–Philadelphia own the late slate. Dallas–New York closes the night. Here’s the 4DK watch guide for every Sunday Week 1 matchup.</p>
+      <a class="nfl-sunday-feature-btn" href="nfl-week-1-sunday-preview-2026.html">Read the Sunday Preview →</a>
+    </div>
+    <div class="nfl-sunday-feature-side">
+      <div><small>Game of the Day</small><strong>BUF @ HOU</strong></div>
+      <div><small>Division Heat</small><strong>GB @ MIN</strong></div>
+      <div><small>NFC East</small><strong>WAS @ PHI</strong></div>
+      <div><small>Sunday Night</small><strong>DAL @ NYG</strong></div>
+    </div>
+  </div>
+</section>
 
 <section class="nfl-scoreboard" id="scoreboard" data-nfl-scoreboard aria-label="NFL scoreboard">
   <div class="shell">
