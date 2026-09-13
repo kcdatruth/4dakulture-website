@@ -27,6 +27,7 @@
   }[ch]));
 
   injectLiveStyles();
+  ensureWeekOneRecaps();
   const liveCenter=ensureLiveCenter();
   const alertEl=liveCenter.querySelector('[data-live-score-alert]');
   const feedEl=liveCenter.querySelector('[data-live-score-feed]');
@@ -75,6 +76,24 @@
       .nfl-scoring-row b{color:#f0b84d;font-size:7px;letter-spacing:.06em;text-transform:uppercase}.nfl-scoring-row span{color:#c8ceca;font-size:8px;line-height:1.4}.nfl-scoring-row em{color:#fff;font:1000 9px/1 Arial,sans-serif;font-style:normal;white-space:nowrap}
       .nfl-card-score-flash{animation:fourdkCardFlash 1.2s ease-out}
       @keyframes fourdkCardFlash{0%{box-shadow:inset 0 0 0 2px #e6b24a,0 0 34px rgba(230,178,74,.35)}100%{box-shadow:inherit}}
+      .nfl-week1-recaps{padding:28px 0 30px;background:#0b0e0c;color:#f4f4ef;border-bottom:1px solid #27302a}
+      .nfl-week1-recaps-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:14px}
+      .nfl-week1-recaps-head small{display:block;color:#ef4b37;font:1000 9px/1 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+      .nfl-week1-recaps-head h2{margin:0;font:1000 clamp(28px,4vw,45px)/.95 Arial,sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+      .nfl-week1-recaps-head>a{color:#dce1dd;font:1000 8px/1 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #59635d;padding-bottom:4px}
+      .nfl-week1-recaps-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+      .nfl-recap-card{position:relative;overflow:hidden;display:block;text-decoration:none;color:inherit;border:1px solid #2b3530;background:linear-gradient(135deg,#121713,#0c100d 70%);padding:18px;min-height:190px}
+      .nfl-recap-card:hover,.nfl-recap-card:focus-visible{border-color:#59665d;transform:translateY(-1px)}
+      .nfl-recap-card:after{content:'FINAL';position:absolute;right:-5px;bottom:-12px;font:1000 58px/1 Arial,sans-serif;letter-spacing:-.06em;color:rgba(255,255,255,.025);pointer-events:none}
+      .nfl-recap-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#7f8882;font:1000 8px/1 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+      .nfl-recap-score{color:#fff;border:1px solid #3b4540;padding:6px 8px;background:#111612}
+      .nfl-recap-teams{display:flex;align-items:center;gap:9px;margin:15px 0 12px}
+      .nfl-recap-teams img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
+      .nfl-recap-teams span{color:#d6b15a;font:1000 9px/1 Arial,sans-serif;letter-spacing:.1em}
+      .nfl-recap-card h3{position:relative;z-index:1;margin:0 0 8px;font:1000 24px/.98 Arial,sans-serif;letter-spacing:-.035em;text-transform:uppercase}
+      .nfl-recap-card p{position:relative;z-index:1;margin:0;color:#aeb7b0;font-size:11px;line-height:1.55}
+      .nfl-recap-cta{position:relative;z-index:1;display:inline-block;margin-top:14px;color:#fff;font:1000 8px/1 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+      @media(max-width:680px){.nfl-week1-recaps-head{align-items:flex-start;flex-direction:column}.nfl-week1-recaps-grid{grid-template-columns:1fr}.nfl-recap-card{min-height:0}}
       @media(max-width:520px){
         .nfl-live-center{margin-bottom:10px}.nfl-live-score-feed{padding:8px}.nfl-live-feed-item{flex-basis:84vw}
         .nfl-score-detail{padding:10px}.nfl-player-leaders{grid-template-columns:1fr}.nfl-team-stats{gap:6px 8px}
@@ -82,6 +101,50 @@
       }
     `;
     document.head.appendChild(style);
+  }
+
+  function ensureWeekOneRecaps(){
+    if(document.querySelector('[data-week1-recaps]')) return;
+    const scoreboard=root;
+    const section=document.createElement('section');
+    section.className='nfl-week1-recaps';
+    section.dataset.week1Recaps='';
+    section.setAttribute('aria-label','Week 1 opening game recaps');
+    section.innerHTML=`
+      <div class="shell">
+        <div class="nfl-week1-recaps-head">
+          <div>
+            <small>4DK NFL • WEEK 1 RECAPS</small>
+            <h2>The Opening Two.</h2>
+          </div>
+          <a href="nfl-week-1-opening-recap-2026.html">Read the full opening recap →</a>
+        </div>
+        <div class="nfl-week1-recaps-grid">
+          <a class="nfl-recap-card" href="nfl-week-1-opening-recap-2026.html">
+            <div class="nfl-recap-meta"><span>WEDNESDAY • RING NIGHT</span><b class="nfl-recap-score">SEA 13 • NE 10</b></div>
+            <div class="nfl-recap-teams">
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/ne.png" alt="New England Patriots logo">
+              <span>@</span>
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/sea.png" alt="Seattle Seahawks logo">
+            </div>
+            <h3>Seattle Survives Ring Night</h3>
+            <p>Darnold goes down. Drew Lock answers. Seattle erases a 10-point deficit while Drake Maye’s fourth quarter collapses with three straight interceptions.</p>
+            <span class="nfl-recap-cta">Darnold • Lock • Maye • Seattle outlook →</span>
+          </a>
+          <a class="nfl-recap-card" href="nfl-week-1-opening-recap-2026.html">
+            <div class="nfl-recap-meta"><span>THURSDAY • MELBOURNE</span><b class="nfl-recap-score">SF 27 • LAR 7</b></div>
+            <div class="nfl-recap-teams">
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/sf.png" alt="San Francisco 49ers logo">
+              <span>@</span>
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/lar.png" alt="Los Angeles Rams logo">
+            </div>
+            <h3>49ers Send a Message</h3>
+            <p>Purdy throws three touchdowns, McCaffrey runs efficiently, Deebo and Mike Evans make immediate impact, and the 49ers defense overwhelms Stafford and the Rams.</p>
+            <span class="nfl-recap-cta">Purdy • CMC • Deebo • Evans • dominant defense →</span>
+          </a>
+        </div>
+      </div>`;
+    scoreboard.parentNode?.insertBefore(section,scoreboard);
   }
 
   function ensureLiveCenter(){
