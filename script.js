@@ -74,10 +74,10 @@ if(pageKey==='nba'){
       durenStyle.textContent=`
         .nba-story-art.duren-contract{
           position:relative;overflow:hidden;
-          background:
-            radial-gradient(circle at 82% 18%,rgba(200,16,46,.58),transparent 28%),
-            radial-gradient(circle at 12% 86%,rgba(29,66,138,.72),transparent 38%),
-            linear-gradient(145deg,#101b2b 0%,#080d14 72%);
+          background-image:url('jalen-duren-contract-gamble-feature.png');
+          background-size:cover;
+          background-position:center;
+          background-repeat:no-repeat;
         }
         .nba-story-art.duren-contract:before{
           content:'$190M';position:absolute;right:-8px;bottom:-18px;
@@ -85,6 +85,15 @@ if(pageKey==='nba'){
           letter-spacing:-.08em;color:rgba(255,255,255,.07);
           pointer-events:none;
         }
+
+        .nba-story-art.duren-contract > .nba-story-label,
+        .nba-story-art.duren-contract > .duren-chip,
+        .nba-story-art.duren-contract > strong,
+        .nba-story-art.duren-contract > small,
+        .nba-story-art.duren-contract > .nba-story-overlay{
+          display:none !important;
+        }
+
         .nba-story-art.duren-contract .duren-chip{
           position:absolute;right:14px;top:14px;z-index:2;
           border:1px solid rgba(255,255,255,.24);padding:7px 9px;
