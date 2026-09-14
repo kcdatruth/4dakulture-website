@@ -129,7 +129,9 @@
     .pr-row:hover{background:rgba(255,255,255,.025)}
     .pr-rank{font:1000 31px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#fff}
     .pr-team{display:flex;align-items:center;gap:12px;min-width:0}
-    .pr-badge{width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;border-radius:50%;background:#161d24;border:1px solid rgba(255,255,255,.14);font-size:10px;font-weight:1000;letter-spacing:.04em;color:#fff}
+    .pr-badge{width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;border-radius:50%;background:#161d24;border:1px solid rgba(255,255,255,.14);font-size:10px;font-weight:1000;letter-spacing:.04em;color:#fff;position:relative;overflow:hidden}
+    .pr-badge .pr-badge-fallback{position:relative;z-index:1}
+    .pr-badge img{position:absolute;z-index:2;inset:5px;width:32px;height:32px;object-fit:contain;display:block}
     .pr-team b{display:block;font-size:14px;line-height:1.15}
     .pr-team small{display:block;margin-top:4px;color:#7f8a94;font-size:9px;text-transform:uppercase;letter-spacing:.08em}
     .pr-meta{font-size:10px;font-weight:900;color:var(--pr-accent2);text-transform:uppercase;letter-spacing:.06em}
@@ -150,6 +152,21 @@
     }
   `;
   document.head.appendChild(style);
+
+  const nflLogoCode = {
+    ARI:'ari',ATL:'atl',BAL:'bal',BUF:'buf',CAR:'car',CHI:'chi',CIN:'cin',CLE:'cle',
+    DAL:'dal',DEN:'den',DET:'det',GB:'gb',HOU:'hou',IND:'ind',JAX:'jax',KC:'kc',
+    LV:'lv',LAC:'lac',LAR:'lar',MIA:'mia',MIN:'min',NE:'ne',NO:'no',NYG:'nyg',
+    NYJ:'nyj',PHI:'phi',PIT:'pit',SEA:'sea',SF:'sf',TB:'tb',TEN:'ten',WAS:'wsh',WSH:'wsh'
+  };
+
+  function teamBadge(team){
+    const abbr=String(team?.abbr||'').toUpperCase();
+    if(league!=='nfl') return `<span class="pr-badge">${esc(abbr)}</span>`;
+    const code=nflLogoCode[abbr]||abbr.toLowerCase();
+    const src=`https://a.espncdn.com/i/teamlogos/nfl/500/${encodeURIComponent(code)}.png`;
+    return `<span class="pr-badge" aria-label="${esc(team.team)} logo"><span class="pr-badge-fallback">${esc(abbr)}</span><img src="${src}" alt="" loading="lazy" decoding="async"></span>`;
+  }
 
   function movement(team, rank){
     if(team.prev == null) return {text:'BASE', cls:''};
@@ -182,7 +199,7 @@
           const rank=i+1, move=movement(t,rank);
           return `<article class="pr-row ${i>=10?'pr-extra':''}">
             <div class="pr-rank">${rank}</div>
-            <div class="pr-team"><span class="pr-badge">${esc(t.abbr)}</span><span><b>${esc(t.team)}</b><small>${league.toUpperCase()} POWER BOARD</small></span></div>
+            <div class="pr-team">${teamBadge(t)}<span><b>${esc(t.team)}</b><small>${league.toUpperCase()} POWER BOARD</small></span></div>
             <div class="pr-meta">${esc(t.meta)}</div>
             <div class="pr-note">${esc(t.note)}</div>
             <div class="pr-move ${move.cls}">${move.text}</div>
