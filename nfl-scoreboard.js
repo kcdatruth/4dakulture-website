@@ -150,11 +150,56 @@
     statusEl.textContent='Updating NFL scoreboard…';
 
     try{
-      const response=await fetch(`/api/nfl-pickem?t=${Date.now()}`,{cache:'no-store'});
-      if(!response.ok) throw new Error(`4DK NFL feed HTTP ${response.status}`);
+      let data=null;
+      let primaryError=null;
 
-      const data=await response.json();
-      if(!Array.isArray(data?.games)) throw new Error('Invalid NFL scoreboard response');
+      try{
+        const response=await fetch(`/api/nfl-pickem?t=${Date.now()}`,{cache:'no-store'});
+        if(!response.ok) throw new Error(`4DK NFL feed HTTP ${response.status}`);
+        const candidate=await response.json();
+        if(!Array.isArray(candidate?.games)) throw new Error('Invalid 4DK NFL scoreboard response');
+        data=candidate;
+      }catch(error){
+        primaryError=error;
+        console.warn('4DK NFL primary feed failed, using ESPN fallback:',error);
+      }
+
+      if(!data){
+        const espnUrl='https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=100';
+        const response=await fetch(`${espnUrl}&t=${Date.now()}`,{cache:'no-store'});
+        if(!response.ok) throw new Error(`ESPN NFL feed HTTP ${response.status}`);
+        const espn=await response.json();
+        const events=Array.isArray(espn?.events) ? espn.events : [];
+        if(!events.length) throw primaryError || new Error('No NFL games returned');
+
+        const games=events.map(event=>{
+          const comp=event?.competitions?.[0] || {};
+          const competitors=Array.isArray(comp.competitors) ? comp.competitors : [];
+          const away=competitors.find(c=>c.homeAway==='away') || competitors[0] || {};
+          const home=competitors.find(c=>c.homeAway==='home') || competitors[1] || {};
+          const state=event?.status?.type?.state || comp?.status?.type?.state || 'pre';
+          const statusText=event?.status?.type?.shortDetail || event?.status?.type?.detail || comp?.status?.type?.shortDetail || '';
+          const mapTeam=c=>({
+            abbr:c?.team?.abbreviation || c?.team?.shortDisplayName || '',
+            name:c?.team?.displayName || c?.team?.shortDisplayName || c?.team?.name || '',
+            score:c?.score ?? ''
+          });
+          return {
+            id:event?.id || '',
+            state,
+            statusText,
+            startTime:event?.date || comp?.date || '',
+            away:mapTeam(away),
+            home:mapTeam(home)
+          };
+        });
+
+        data={
+          week:espn?.week?.number || '',
+          updatedAt:new Date().toISOString(),
+          games
+        };
+      }
 
       payload=data;
       render();
