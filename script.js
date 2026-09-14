@@ -379,3 +379,131 @@ if(!document.querySelector('script[src="4dk-article-tools.js"]')){
     }
   }
 })();
+// 4DK NFL MVP Watch — Week 1 Monday update (pre-MNF).
+// Add-only runtime refresh: preserves the NFL page, scoreboard, recaps, rankings and all other sections.
+(() => {
+  if(pageKey !== 'nfl') return;
+
+  const watch = document.querySelector('#mvp-watch');
+  if(!watch || watch.dataset.week1MondayUpdate === 'true') return;
+
+  // Preserve the existing embedded portraits for returning players.
+  const existingImages = {};
+  watch.querySelectorAll('.mvp-card').forEach(card => {
+    const name = card.querySelector('h3')?.textContent?.trim();
+    const src = card.querySelector('.mvp-photo img')?.getAttribute('src');
+    if(name && src) existingImages[name] = src;
+  });
+
+  const board = [
+    {
+      rank: 1, name: 'Josh Allen',
+      meta: 'QB • BUF • 334 PASS YDS • 4 TOTAL TD',
+      note: 'The early leader stays on top. Four total touchdowns and a late go-ahead strike in Buffalo’s 36–31 road win over Houston gave Allen the strongest complete MVP statement of Week 1.',
+      move: 'HOLD • EARLY LEADER', cls: 'hot'
+    },
+    {
+      rank: 2, name: 'Lamar Jackson',
+      meta: 'QB • BAL • 324 PASS YDS • 40 RUSH YDS • 2 TOTAL TD',
+      note: 'Baltimore rolled 41–23 and Lamar was efficient, explosive and turnover-free. The Ravens already look like an offense capable of keeping him in the race all season.',
+      move: '▲ 1 • RISING', cls: 'up'
+    },
+    {
+      rank: 3, name: 'Caleb Williams',
+      meta: 'QB • CHI • 334 TOTAL YDS • 4 TOTAL TD',
+      note: 'Chicago dropped 59 points and Caleb accounted for four touchdowns. That kind of Year 3 leap is exactly what could turn him from breakout candidate into a real MVP threat.',
+      move: '▲ 4 • BIG RISE', cls: 'up'
+    },
+    {
+      rank: 4, name: 'Brock Purdy',
+      meta: 'QB • SF • 205 PASS YDS • 3 TD',
+      note: 'Three touchdown passes and a 27–7 statement win over the Rams keep Purdy near the top. San Francisco looked organized, physical and ready to win right now.',
+      move: 'HOLD • STRONG START', cls: 'hot'
+    },
+    {
+      rank: 5, name: 'Jahmyr Gibbs',
+      meta: 'RB • DET • 156 RUSH YDS • 2 TD',
+      note: 'Gibbs carried Detroit’s offense with 156 rushing yards and two scores in an overtime win. For a non-QB to stay this high, he needs monster weeks — and Week 1 qualified.',
+      move: '▲ 3 • RISING', cls: 'up'
+    },
+    {
+      rank: 6, name: 'Patrick Mahomes',
+      meta: 'QB • KC • MNF VS DEN',
+      note: 'No movement yet. Mahomes gets his first chance tonight to begin the Chiefs comeback story against Denver, so his spot remains provisional until Monday Night Football is finished.',
+      move: 'HOLD • MNF PENDING', cls: ''
+    },
+    {
+      rank: 7, name: 'Trevor Lawrence',
+      meta: 'QB • JAX • 245 PASS YDS • 4 TD • 0 INT',
+      note: 'New to the board after a nearly flawless opener. Four touchdowns, no interceptions and a 34–10 win put Lawrence directly into the early conversation.',
+      move: 'NEW • 🔥 WATCH', cls: 'hot',
+      image: 'https://a.espncdn.com/i/headshots/nfl/players/full/4360310.png'
+    },
+    {
+      rank: 8, name: 'Derrick Henry',
+      meta: 'RB • BAL • 144 RUSH YDS • 3 TD',
+      note: 'Henry enters after bulldozing Indianapolis for 144 yards and three touchdowns. Lamar may drive Baltimore’s MVP case, but Henry deserves his own place on the board after that opener.',
+      move: 'NEW • 🔥 WATCH', cls: 'hot',
+      image: 'https://a.espncdn.com/i/headshots/nfl/players/full/3043078.png'
+    },
+    {
+      rank: 9, name: 'Joe Burrow',
+      meta: 'QB • CIN • 254 PASS YDS • 1 TD • 1 INT',
+      note: 'Cincinnati got the win, but the defense and four Tampa Bay turnovers shaped the game more than Burrow did. He stays in the ten on talent and ceiling, but Week 1 drops him hard.',
+      move: '▼ 7 • FALLING', cls: 'down'
+    },
+    {
+      rank: 10, name: 'Bijan Robinson',
+      meta: 'RB • ATL • 173 SCRIMMAGE YDS • 1 REC TD',
+      note: 'The individual production was still elite — 173 yards from scrimmage — but Atlanta lost 20–13. For a running back MVP case, team success has to match the numbers.',
+      move: '▼ 5 • WATCH', cls: 'down'
+    }
+  ];
+
+  const headCopy = watch.querySelector('.mvp-head p');
+  if(headCopy){
+    headCopy.textContent = 'Monday update after the Week 1 Sunday slate. Patrick Mahomes still plays tonight, so this is the 4DK board heading into Monday Night Football.';
+  }
+
+  const stamp = watch.querySelector('.mvp-stamp');
+  if(stamp) stamp.innerHTML = 'WEEK 1 • MONDAY<br>SEPT. 14, 2026';
+
+  const grid = watch.querySelector('.mvp-grid');
+  if(grid){
+    grid.innerHTML = board.map(p => {
+      const img = p.image || existingImages[p.name] || '';
+      return `
+        <article class="mvp-card">
+          <div class="mvp-rank">${p.rank}</div>
+          <div class="mvp-photo">
+            ${img ? `<img src="${img}" alt="${p.name}" loading="lazy">` : ''}
+          </div>
+          <div>
+            <h3>${p.name}</h3>
+            <div class="mvp-meta">${p.meta}</div>
+            <div class="mvp-note">${p.note}</div>
+            <span class="mvp-move ${p.cls}">${p.move}</span>
+          </div>
+        </article>`;
+    }).join('');
+  }
+
+  const hm = watch.querySelector('.mvp-hm-list');
+  if(hm){
+    hm.innerHTML = [
+      'Christian McCaffrey',
+      'D’Andre Swift',
+      'C.J. Stroud',
+      'Zay Flowers',
+      'Bryce Young',
+      'Puka Nacua'
+    ].map(name => `<span>${name}</span>`).join('');
+  }
+
+  const foot = watch.querySelector('.mvp-foot');
+  if(foot){
+    foot.textContent = 'Monday movement is based on Week 1 performance plus the preseason baseline. OUT this update: Matthew Stafford and Christian McCaffrey. Next update: after Broncos–Chiefs on Monday Night Football.';
+  }
+
+  watch.dataset.week1MondayUpdate = 'true';
+})();
