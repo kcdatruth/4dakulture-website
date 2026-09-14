@@ -538,3 +538,80 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once:true});
   else install();
 })();
+
+/* 4DK THIS WEEK HUB — additive only; preserves scoreboard + all existing sections */
+(() => {
+  const install = () => {
+    if (document.querySelector('#this-week-4dk-nfl')) return;
+    const scoreboard = document.querySelector('[data-nfl-scoreboard]');
+    if (!scoreboard) return;
+
+    if (!document.querySelector('#fourdk-this-week-style')) {
+      const style = document.createElement('style');
+      style.id = 'fourdk-this-week-style';
+      style.textContent = `
+        .fourdk-this-week{padding:28px 0 30px;background:#0a0d0b;color:#f7f4ed;border-bottom:1px solid #252c27}
+        .fourdk-this-week-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:15px}
+        .fourdk-this-week-kicker{display:block;color:#ef493c;font:1000 9px/1 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:7px}
+        .fourdk-this-week h2{margin:0;font:1000 clamp(30px,5vw,47px)/.93 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+        .fourdk-this-week-head p{margin:0;color:#8f9690;font-size:11px;line-height:1.5;max-width:520px;text-align:right}
+        .fourdk-this-week-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+        .fourdk-week-card{position:relative;min-height:142px;border:1px solid #2d3530;background:linear-gradient(145deg,#121713,#0d110e);padding:15px;text-decoration:none;color:#f7f4ed;overflow:hidden}
+        .fourdk-week-card:hover,.fourdk-week-card:focus-visible{border-color:#ef493c;transform:translateY(-1px)}
+        .fourdk-week-card:after{content:attr(data-day);position:absolute;right:-3px;bottom:-13px;color:rgba(255,255,255,.025);font:1000 55px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em}
+        .fourdk-week-card small{display:block;color:#ef493c;font:1000 8px/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+        .fourdk-week-card strong{position:relative;z-index:1;display:block;font:1000 20px/.98 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase;letter-spacing:-.025em}
+        .fourdk-week-card span{position:relative;z-index:1;display:block;margin-top:8px;color:#9ca39d;font-size:10px;line-height:1.4}
+        .fourdk-week-card b{position:absolute;z-index:2;left:15px;bottom:13px;color:#f7f4ed;font:1000 8px/1 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+        .fourdk-week-card.monday{border-top:3px solid #d6a94b}.fourdk-week-card.monday small{color:#d6a94b}
+        .fourdk-week-card.tuesday{border-top:3px solid #3f82c4}.fourdk-week-card.tuesday small{color:#65a8e8}
+        .fourdk-week-card.mvp{border-top:3px solid #7fcf95}.fourdk-week-card.mvp small{color:#7fcf95}
+        .fourdk-week-card.sunday{border-top:3px solid #ef493c}
+        @media(max-width:860px){.fourdk-this-week-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fourdk-this-week-head{align-items:flex-start;flex-direction:column}.fourdk-this-week-head p{text-align:left}}
+        @media(max-width:520px){.fourdk-this-week{padding:25px 0}.fourdk-this-week-grid{grid-template-columns:1fr 1fr;gap:7px}.fourdk-week-card{min-height:150px;padding:13px}.fourdk-week-card strong{font-size:18px}.fourdk-week-card b{left:13px;bottom:12px}}
+      `;
+      document.head.appendChild(style);
+    }
+
+    const section = document.createElement('section');
+    section.id = 'this-week-4dk-nfl';
+    section.className = 'fourdk-this-week';
+    section.setAttribute('aria-label','This week on 4 Da Kulture NFL');
+    section.innerHTML = `
+      <div class="shell">
+        <div class="fourdk-this-week-head">
+          <div><span class="fourdk-this-week-kicker">4DK NFL • WEEKLY RHYTHM</span><h2>THIS WEEK ON 4DK NFL.</h2></div>
+          <p>Sunday recap. Monday-night spotlight. Tuesday movement. Every week, all season — without losing the season-long coverage already on the page.</p>
+        </div>
+        <div class="fourdk-this-week-grid">
+          <a class="fourdk-week-card sunday" data-day="SUN" href="nfl-sunday-recap-week1.html">
+            <small>SUNDAY • FINAL</small><strong>Sunday NFL Recap</strong><span>All 13 Sunday games, biggest performances and what Week 1 told us.</span><b>READ WEEK 1 →</b>
+          </a>
+          <a class="fourdk-week-card monday" data-day="MON" href="#scoreboard">
+            <small>MONDAY • TONIGHT</small><strong>Monday Night Football</strong><span>Denver at Kansas City. Full 4DK headline recap goes live after the final.</span><b>GAME CENTER →</b>
+          </a>
+          <a class="fourdk-week-card tuesday" data-day="TUE" href="#power-rankings">
+            <small>TUESDAY • REFRESH</small><strong>Power Rankings</strong><span>All 32 teams move after the complete Week 1 slate.</span><b>OPEN BOARD →</b>
+          </a>
+          <a class="fourdk-week-card mvp" data-day="MVP" href="#mvp-watch">
+            <small>TUESDAY • REFRESH</small><strong>Top 10 MVP Watch</strong><span>Rank, production and momentum after Monday Night Football.</span><b>OPEN MVP WATCH →</b>
+          </a>
+        </div>
+      </div>`;
+
+    /* Put the new hub directly after the scoreboard. Existing recap sections remain below it. */
+    scoreboard.insertAdjacentElement('afterend', section);
+
+    const nav = document.querySelector('.nfl-v2-nav');
+    if (nav && !nav.querySelector('a[href="#this-week-4dk-nfl"]')) {
+      const link=document.createElement('a');
+      link.href='#this-week-4dk-nfl';
+      link.textContent='This Week';
+      const scores=nav.querySelector('a[href="#scoreboard"]');
+      if(scores) scores.insertAdjacentElement('afterend',link); else nav.prepend(link);
+    }
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',install,{once:true});
+  else install();
+})();
+

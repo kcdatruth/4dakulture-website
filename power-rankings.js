@@ -165,7 +165,7 @@
     if(league!=='nfl') return `<span class="pr-badge">${esc(abbr)}</span>`;
     const code=nflLogoCode[abbr]||abbr.toLowerCase();
     const src=`https://a.espncdn.com/i/teamlogos/nfl/500/${encodeURIComponent(code)}.png`;
-    return `<span class="pr-badge" aria-label="${esc(team.team)} logo"><span class="pr-badge-fallback">${esc(abbr)}</span><img src="${src}" alt="" loading="lazy" decoding="async"></span>`;
+    return `<span class="pr-badge" aria-label="${esc(team.team)} logo"><span class="pr-badge-fallback">${esc(abbr)}</span><img src="${src}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'"></span>`;
   }
 
   function movement(team, rank){
