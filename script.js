@@ -251,3 +251,131 @@ if(!document.querySelector('script[src="4dk-article-tools.js"]')){
   articleToolsScript.defer=true;
   document.body.appendChild(articleToolsScript);
 }
+
+// The Answer Files — add-only discovery cards for Home, NBA and Throwback.
+(() => {
+  const answerUrl='the-answer-files.html';
+
+  if(!document.getElementById('fourdk-answer-files-wiring-styles')){
+    const style=document.createElement('style');
+    style.id='fourdk-answer-files-wiring-styles';
+    style.textContent=`
+      .answer-files-home-card{border-top-color:#d52b36!important;position:relative;overflow:hidden}
+      .answer-files-home-card:after{content:'3';position:absolute;right:-5px;bottom:-28px;font:900 110px/.9 Georgia,serif;color:rgba(23,52,103,.07);pointer-events:none}
+      .answer-files-home-card .answer-detail-line{display:block!important;color:#9b1d29!important;font-size:9px!important;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-top:2px!important}
+
+      .answer-files-throwback-card{display:grid;grid-template-columns:.8fr 1.2fr;margin-top:24px;border:1px solid #2a2926;background:#0b0d12;color:#f7f2ea;text-decoration:none;overflow:hidden;box-shadow:0 20px 45px rgba(0,0,0,.14)}
+      .answer-files-throwback-mark{min-height:280px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 78% 22%,rgba(42,82,154,.38),transparent 44%),linear-gradient(145deg,#161b26,#07080c 68%);border-right:1px solid #292d35;position:relative;overflow:hidden}
+      .answer-files-throwback-mark:after{content:'3';position:absolute;right:-10px;bottom:-36px;font:1000 190px/.8 Georgia,serif;color:rgba(255,255,255,.045)}
+      .answer-files-throwback-mark small{font-size:10px;font-weight:900;letter-spacing:.16em;color:#ef6973;text-transform:uppercase;position:relative;z-index:2}
+      .answer-files-throwback-mark strong{font:900 clamp(42px,7vw,72px)/.82 Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;position:relative;z-index:2}
+      .answer-files-throwback-mark span{font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#9ab7ee;position:relative;z-index:2}
+      .answer-files-throwback-copy{padding:30px;display:flex;flex-direction:column;justify-content:center}
+      .answer-files-throwback-copy>span{font-size:10px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:#ef6973}
+      .answer-files-throwback-copy h3{margin:8px 0 12px;font:700 clamp(28px,4vw,45px)/.95 Georgia,serif;letter-spacing:-.035em}
+      .answer-files-throwback-copy p{margin:0 0 17px;color:#beb9b2;line-height:1.55}
+      .answer-files-detail-chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:17px}
+      .answer-files-detail-chips i{font-style:normal;border:1px solid #343843;padding:7px 9px;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#dcd7cf}
+      .answer-files-throwback-copy b{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#fff}
+
+      .answer-files-nba-section{padding:42px 0;background:#090b10;color:#fff;border-top:1px solid #292d35;border-bottom:1px solid #292d35;position:relative;overflow:hidden}
+      .answer-files-nba-section:after{content:'ANSWER';position:absolute;right:-15px;bottom:-30px;font:1000 clamp(76px,13vw,180px)/.8 Arial,sans-serif;letter-spacing:-.07em;color:rgba(255,255,255,.025);pointer-events:none}
+      .answer-files-nba-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:1px;background:#2c3038;border:1px solid #2c3038}
+      .answer-files-nba-copy,.answer-files-nba-index{background:#0d1016;padding:30px}
+      .answer-files-nba-kicker{font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#ef6973}
+      .answer-files-nba-copy h2{margin:9px 0 12px;font:900 clamp(44px,7vw,78px)/.82 Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase}
+      .answer-files-nba-copy h2 em{display:block;color:#9ab7ee;font:italic 500 .48em/1 Georgia,serif;letter-spacing:-.03em;margin-top:10px;text-transform:none}
+      .answer-files-nba-copy p{margin:0;color:#c4c0ba;max-width:700px;line-height:1.55}
+      .answer-files-nba-copy a{display:inline-block;margin-top:19px;background:#b7222d;color:#fff;text-decoration:none;padding:11px 14px;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+      .answer-files-nba-index>span{font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#9ab7ee}
+      .answer-files-nba-index-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:13px}
+      .answer-files-nba-index-grid div{border:1px solid #2c3038;background:#10141c;padding:11px}
+      .answer-files-nba-index-grid b{display:block;color:#ef6973;font:900 14px/1 Georgia,serif;margin-bottom:4px}
+      .answer-files-nba-index-grid small{font-size:9px;line-height:1.3;letter-spacing:.05em;text-transform:uppercase;color:#d5d1c9}
+
+      @media(max-width:760px){
+        .answer-files-throwback-card,.answer-files-nba-inner{grid-template-columns:1fr}
+        .answer-files-throwback-mark{min-height:220px;border-right:0;border-bottom:1px solid #292d35}
+        .answer-files-throwback-copy,.answer-files-nba-copy,.answer-files-nba-index{padding:22px}
+        .answer-files-nba-index-grid{grid-template-columns:1fr}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  try{
+    if(typeof siteSearchIndex!=='undefined' && !siteSearchIndex.some(i=>i.url===answerUrl)){
+      siteSearchIndex.push({title:'The Answer Files',type:'NBA Legends Archive',url:answerUrl,desc:'The full Allen Iverson archive from Georgetown to the Hall of Fame',terms:'allen iverson ai answer files georgetown 1996 draft 2001 mvp sixers philly denver culture hall fame'});
+    }
+  }catch(e){}
+
+  if(isHome){
+    const grid=document.querySelector('.home-franchise-grid');
+    if(grid && !grid.querySelector('[data-answer-files-home]')){
+      const card=document.createElement('a');
+      card.className='home-franchise answer-files-home-card';
+      card.href=answerUrl;
+      card.dataset.answerFilesHome='';
+      card.innerHTML=`<small>BASKETBALL HISTORY</small><strong>The Answer Files</strong><span>Allen Iverson’s game, style, cultural weight and the full story from Georgetown to the Hall of Fame.</span><span class="answer-detail-line">Georgetown • 1996 Draft • 2001 MVP • Culture • Denver • Legacy</span><b>Open files →</b>`;
+      const mamba=grid.querySelector('a[href="mamba-files.html"]');
+      if(mamba)mamba.after(card); else grid.prepend(card);
+    }
+  }
+
+  if(pageKey==='throwback'){
+    const section=document.querySelector('#nba-flashback');
+    const shell=section?.querySelector('.shell');
+    const storyGrid=section?.querySelector('.archive-story-grid');
+    if(shell && !shell.querySelector('[data-answer-files-throwback]')){
+      const card=document.createElement('a');
+      card.className='answer-files-throwback-card';
+      card.href=answerUrl;
+      card.dataset.answerFilesThrowback='';
+      card.innerHTML=`
+        <div class="answer-files-throwback-mark">
+          <small>NBA LEGENDS ARCHIVE</small>
+          <strong>THE<br>ANSWER<br>FILES</strong>
+          <span>ALLEN IVERSON • #3 • CULTURE</span>
+        </div>
+        <div class="answer-files-throwback-copy">
+          <span>10 FILES • FULL CAREER ARCHIVE</span>
+          <h3>He Changed the Game. Then He Changed the Culture.</h3>
+          <p>From Georgetown and the legendary 1996 Draft to the Jordan crossover, Larry Brown, the 2001 MVP run, Philadelphia, Denver and the Hall of Fame.</p>
+          <div class="answer-files-detail-chips"><i>Georgetown</i><i>1996 Draft</i><i>Rookie AI</i><i>2001 MVP</i><i>Philly</i><i>Culture</i><i>Denver</i><i>Legacy</i></div>
+          <b>ENTER THE ANSWER FILES →</b>
+        </div>`;
+      if(storyGrid)storyGrid.after(card); else shell.appendChild(card);
+    }
+  }
+
+  if(pageKey==='nba'){
+    const latest=document.querySelector('.nba-latest');
+    if(latest && !document.querySelector('[data-answer-files-nba]')){
+      const section=document.createElement('section');
+      section.className='answer-files-nba-section';
+      section.dataset.answerFilesNba='';
+      section.innerHTML=`
+        <div class="shell">
+          <div class="answer-files-nba-inner">
+            <div class="answer-files-nba-copy">
+              <span class="answer-files-nba-kicker">4DK NBA • LEGENDS ARCHIVE</span>
+              <h2>THE ANSWER FILES <em>Allen Iverson • Basketball • Culture • Legacy</em></h2>
+              <p>A permanent 4DK archive built to cover every part of Allen Iverson’s story — the college rise, the No. 1 pick, rookie electricity, Larry Brown, the 2001 masterpiece, Philadelphia, Denver, cultural impact and where The Answer belongs all time.</p>
+              <a href="${answerUrl}">EXPLORE THE FULL ARCHIVE →</a>
+            </div>
+            <aside class="answer-files-nba-index">
+              <span>THE FILE INDEX</span>
+              <div class="answer-files-nba-index-grid">
+                <div><b>001</b><small>Georgetown</small></div><div><b>002</b><small>1996 Draft</small></div>
+                <div><b>003</b><small>Rookie AI</small></div><div><b>004</b><small>Larry Brown</small></div>
+                <div><b>005</b><small>2001 MVP + Finals</small></div><div><b>006</b><small>Sixers Legacy</small></div>
+                <div><b>007</b><small>Cultural Impact</small></div><div><b>008</b><small>Denver + Melo</small></div>
+                <div><b>009</b><small>Hall of Fame</small></div><div><b>010</b><small>All-Time Verdict</small></div>
+              </div>
+            </aside>
+          </div>
+        </div>`;
+      latest.after(section);
+    }
+  }
+})();
