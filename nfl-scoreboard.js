@@ -615,3 +615,139 @@
   else install();
 })();
 
+/* 4DK RED ZONE ELEVATION — additive only; preserves every existing Red Zone block */
+(() => {
+  const install = () => {
+    const redzone = document.querySelector('#redzone, .nfl-redzone');
+    if (!redzone || redzone.dataset.fourdkElevated === 'true') return;
+    redzone.dataset.fourdkElevated = 'true';
+
+    if (!document.getElementById('fourdk-redzone-elevation-style')) {
+      const style = document.createElement('style');
+      style.id = 'fourdk-redzone-elevation-style';
+      style.textContent = `
+        .nfl-redzone{position:relative;overflow:hidden}
+        .nfl-redzone:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 100% 0,rgba(232,69,46,.08),transparent 33rem)}
+        .nfl-redzone>.shell{position:relative;z-index:1}
+        .fourdk-rz-now{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:18px 0 14px;border:1px solid #353535;border-left:4px solid #ef3d32;background:#0e0e0e;padding:10px 12px}
+        .fourdk-rz-now strong{display:flex;align-items:center;gap:8px;color:#f7f5ee;font:1000 9px/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+        .fourdk-rz-now strong i{width:7px;height:7px;border-radius:50%;background:#ef3d32;box-shadow:0 0 0 4px rgba(239,61,50,.12);animation:fourdkRzPulse 1.4s infinite}
+        .fourdk-rz-now span{color:#858585;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;text-align:right}
+        @keyframes fourdkRzPulse{50%{opacity:.35}}
+        .fourdk-rz-feature{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:16px;align-items:center;margin:0 0 18px;border:1px solid #343434;background:linear-gradient(125deg,#151515,#0b0b0b);padding:16px;text-decoration:none;color:#f7f5ee}
+        .fourdk-rz-feature:hover,.fourdk-rz-feature:focus-visible{border-color:#ef3d32}
+        .fourdk-rz-feature-mark{display:grid;place-items:center;min-height:76px;border-right:1px solid #333;padding-right:14px;text-align:center}
+        .fourdk-rz-feature-mark small{display:block;color:#ef3d32;font-size:8px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+        .fourdk-rz-feature-mark strong{display:block;margin-top:5px;font:1000 29px/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#fff}
+        .fourdk-rz-feature-copy small{display:block;color:#8c8c8c;font-size:8px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+        .fourdk-rz-feature-copy h3{margin:5px 0 7px;font:1000 clamp(21px,3vw,31px)/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.025em;text-transform:uppercase}
+        .fourdk-rz-feature-copy p{margin:0;color:#aaa;font-size:11px;line-height:1.45}
+        .fourdk-rz-feature-read{color:#ef5549;font-size:9px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+        .redzone-grid>div{position:relative}
+        .fourdk-rz-status{display:inline-flex;margin:7px 0 0;border:1px solid #3a3a3a;background:#131313;padding:4px 6px;color:#ef5549;font-size:7px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+        .fourdk-rz-links{display:grid;gap:0;margin-top:12px;border-top:1px solid #303030}
+        .fourdk-rz-links a{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:start;padding:9px 0;border-bottom:1px solid #292929;color:#cfcfc9;text-decoration:none;font-size:10px;line-height:1.35}
+        .fourdk-rz-links a:hover,.fourdk-rz-links a:focus-visible{color:#fff}
+        .fourdk-rz-links a i{width:5px;height:5px;border-radius:50%;background:#ef3d32;margin-top:4px}
+        .fourdk-rz-links a b{font-size:8px;color:#6f6f6f;white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
+        .fourdk-rz-links a:hover b{color:#ef5549}
+        .fourdk-rz-source-note{margin:13px 0 0;color:#666;font-size:8px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+        @media(max-width:720px){
+          .fourdk-rz-now{align-items:flex-start;flex-direction:column}.fourdk-rz-now span{text-align:left}
+          .fourdk-rz-feature{grid-template-columns:72px minmax(0,1fr);gap:12px}.fourdk-rz-feature-read{grid-column:2}
+          .fourdk-rz-feature-mark{padding-right:10px}.fourdk-rz-feature-mark strong{font-size:24px}
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const brand = redzone.querySelector('.redzone-brand');
+    const grid = redzone.querySelector('.redzone-grid');
+    if (!grid) return;
+
+    const now = document.createElement('div');
+    now.className = 'fourdk-rz-now';
+    now.innerHTML = `<strong><i></i> RED ZONE NOW</strong><span>WEEK 1 • UPDATED AFTER SUNDAY NIGHT FOOTBALL</span>`;
+
+    const feature = document.createElement('a');
+    feature.className = 'fourdk-rz-feature';
+    feature.href = 'nfl-sunday-recap-week1.html';
+    feature.setAttribute('aria-label','Read the Week 1 Sunday NFL recap');
+    feature.innerHTML = `
+      <div class="fourdk-rz-feature-mark"><div><small>FINAL</small><strong>59–37</strong></div></div>
+      <div class="fourdk-rz-feature-copy"><small>FEATURED NOW • GAME DAY</small><h3>CHICAGO OPENS THE SEASON WITH 59.</h3><p>The Bears light up Carolina in one of Week 1's loudest statements. The full Sunday slate, reaction and what carries into next week is in the 4DK recap.</p></div>
+      <span class="fourdk-rz-feature-read">READ WEEK 1 →</span>`;
+
+    if (brand) {
+      brand.insertAdjacentElement('afterend', now);
+      now.insertAdjacentElement('afterend', feature);
+    } else {
+      grid.insertAdjacentElement('beforebegin', feature);
+      feature.insertAdjacentElement('beforebegin', now);
+    }
+
+    const groups = {
+      'GAME DAY': {
+        status: 'FINAL • UPDATED',
+        items: [
+          ['Bears 59, Panthers 37 — Chicago makes the first huge statement of Sunday.','nfl-sunday-recap-week1.html','RECAP'],
+          ['Ravens 41, Colts 23 — Baltimore starts fast behind Lamar and Derrick Henry.','nfl-sunday-recap-week1.html','RECAP'],
+          ['Giants 28, Cowboys 20 — New York closes Sunday night with an NFC East win.','nfl-sunday-recap-week1.html','SNF']
+        ]
+      },
+      'INJURY REPORT': {
+        status: 'WATCH • UPDATED',
+        items: [
+          ['Kyler Murray exits Minnesota’s opener with a concussion.','nfl-sunday-recap-week1.html','WATCH'],
+          ['Malik Nabers returns for the Giants after last season’s ACL injury.','nfl-sunday-recap-week1.html','ACTIVE'],
+          ['Week 1 availability continues to shape depth charts across the league.','#scoreboard','TRACK']
+        ]
+      },
+      'ROSTER MOVES': {
+        status: 'DEPTH CHART • WATCH',
+        items: [
+          ['Vegas opens the Kirk Cousins era 1–0 while Fernando Mendoza waits behind him.','afc-preview-2026.html#west','RAIDERS'],
+          ['The Rams’ all-in roster remains one of the season’s biggest pressure stories.','nfc-preview-2026.html#west','RAMS'],
+          ['New Orleans reshuffles its Week 1 depth chart around early-season injuries.','nfl-sunday-recap-week1.html','SAINTS']
+        ]
+      },
+      'AROUND THE LEAGUE': {
+        status: '4DK QUICK HITS',
+        items: [
+          ['Raiders 27, Dolphins 13 — Las Vegas gets a clean opening statement.','nfl-sunday-recap-week1.html','AFC'],
+          ['Eagles 24, Commanders 22 — the NFC East starts with immediate pressure.','nfl-sunday-recap-week1.html','NFC'],
+          ['Lions 31, Saints 30 OT — Detroit survives one of Sunday’s tightest finishes.','nfl-sunday-recap-week1.html','OT']
+        ]
+      }
+    };
+
+    [...grid.children].forEach(card => {
+      const heading = card.querySelector('b, strong');
+      if (!heading) return;
+      const key = heading.textContent.trim().toUpperCase();
+      const data = groups[key];
+      if (!data || card.querySelector('.fourdk-rz-links')) return;
+
+      const status = document.createElement('span');
+      status.className = 'fourdk-rz-status';
+      status.textContent = data.status;
+      card.appendChild(status);
+
+      const links = document.createElement('div');
+      links.className = 'fourdk-rz-links';
+      links.innerHTML = data.items.map(([text,href,tag]) =>
+        `<a href="${href}"><i aria-hidden="true"></i><span>${text}</span><b>${tag} →</b></a>`
+      ).join('');
+      card.appendChild(links);
+    });
+
+    const sourceNote = document.createElement('div');
+    sourceNote.className = 'fourdk-rz-source-note';
+    sourceNote.textContent = '4DK RED ZONE • HEADLINES REFRESH THROUGHOUT THE WEEK';
+    grid.insertAdjacentElement('afterend', sourceNote);
+  };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once:true});
+  else install();
+})();
+
