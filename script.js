@@ -64,6 +64,59 @@ if(footerSectionLinks){
   addNavLink(footerSectionLinks,'throwback.html','Throwback');
 }
 
+// Jalen Duren contract feature — inject into Latest From 4DK NBA without removing existing stories.
+if(pageKey==='nba'){
+  const storyGrid=document.querySelector('.nba-story-grid');
+  if(storyGrid && !storyGrid.querySelector('[data-duren-contract-card]')){
+    if(!document.getElementById('fourdk-duren-card-styles')){
+      const durenStyle=document.createElement('style');
+      durenStyle.id='fourdk-duren-card-styles';
+      durenStyle.textContent=`
+        .nba-story-art.duren-contract{
+          position:relative;overflow:hidden;
+          background:
+            radial-gradient(circle at 82% 18%,rgba(200,16,46,.58),transparent 28%),
+            radial-gradient(circle at 12% 86%,rgba(29,66,138,.72),transparent 38%),
+            linear-gradient(145deg,#101b2b 0%,#080d14 72%);
+        }
+        .nba-story-art.duren-contract:before{
+          content:'$190M';position:absolute;right:-8px;bottom:-18px;
+          font:1000 clamp(54px,8vw,92px)/.9 Arial,sans-serif;
+          letter-spacing:-.08em;color:rgba(255,255,255,.07);
+          pointer-events:none;
+        }
+        .nba-story-art.duren-contract .duren-chip{
+          position:absolute;right:14px;top:14px;z-index:2;
+          border:1px solid rgba(255,255,255,.24);padding:7px 9px;
+          color:#fff;font:1000 8px/1 Arial,sans-serif;
+          letter-spacing:.1em;text-transform:uppercase;background:rgba(5,9,15,.55);
+        }
+        .nba-story-art.duren-contract strong{position:relative;z-index:2}
+        .nba-story-art.duren-contract small{position:relative;z-index:2}
+      `;
+      document.head.appendChild(durenStyle);
+    }
+
+    const card=document.createElement('article');
+    card.className='nba-story-card';
+    card.dataset.durenContractCard='';
+    card.innerHTML=`
+      <a class="nba-story-art duren-contract" href="jalen-duren-contract-gamble-2026.html">
+        <span class="nba-story-overlay"></span>
+        <span class="nba-story-label">CONTRACT WATCH</span>
+        <span class="duren-chip">DETROIT • 2026</span>
+        <strong>THE $190M<br>GAMBLE.</strong>
+        <small>DUREN • DETROIT • PROVE IT</small>
+      </a>
+      <div class="nba-story-copy">
+        <h3><a href="jalen-duren-contract-gamble-2026.html">The Jalen Duren Contract Gamble: How Much Has He Really Earned?</a></h3>
+        <p>Detroit should hold firm at $190M — while giving Duren every chance to prove he is worth more.</p>
+        <div class="meta">By Kcdatruth • September 2026</div>
+      </div>`;
+    storyGrid.prepend(card);
+  }
+}
+
 // 4DK homepage search.
 const siteSearch=document.getElementById('siteSearch');
 const siteSearchInput=document.getElementById('siteSearchInput');
@@ -78,6 +131,7 @@ const siteSearchIndex=[
   {title:'4DK Rotation',type:'Music',url:'hiphop.html',desc:'Playable playlists, hip-hop commentary and the Music Desk',terms:'hip hop music spotify playlists rotation'},
   {title:'4 Da Kulture Podcast',type:'Podcast',url:'podcast.html',desc:'Kcdatruth and 210West on sports, hip-hop and culture',terms:'podcast kcdatruth 210west'},
   {title:'2026–27 NBA Season Preview: Nobody Feels Inevitable',type:'NBA Preview',url:'nba-season-preview-2026-27.html',desc:'East, West, MVP, awards and the OKC-in-7 Finals prediction',terms:'nba preview season nobody inevitable okc philly luka wemby'},
+  {title:'The Jalen Duren Contract Gamble',type:'NBA Contract Watch',url:'jalen-duren-contract-gamble-2026.html',desc:'Why Detroit should hold at $190M while Duren proves he is worth more',terms:'jalen duren detroit pistons contract 190 million 200 max sacramento cade'},
   {title:'Russell Westbrook Was Never Supposed to Be This Great',type:'NBA Legacy',url:'russell-westbrook-debate.html',desc:'From UCLA afterthought to MVP and triple-double king',terms:'russ westbrook okc thunder mvp triple double'},
   {title:'The Party’s Over: Milwaukee’s Fall From Grace',type:'NBA Feature',url:'milwaukee-fall-from-grace.html',desc:'The end of Milwaukee’s championship era',terms:'milwaukee bucks giannis dame rebuild'},
   {title:'Winner: Giannis Antetokounmpo',type:'NBA Feature',url:'giannis-miami-offseason-winner.html',desc:'Giannis in Miami and the pressure of a new era',terms:'giannis heat miami offseason'},
