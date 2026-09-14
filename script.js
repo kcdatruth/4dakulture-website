@@ -507,3 +507,114 @@ if(!document.querySelector('script[src="4dk-article-tools.js"]')){
 
   watch.dataset.week1MondayUpdate = 'true';
 })();
+
+// 4DK NFL Rookie Watch — Week 1 Monday board.
+// Add-only feature inserted directly after MVP Watch. No existing NFL content is removed.
+(() => {
+  if(pageKey !== 'nfl') return;
+  if(document.querySelector('#rookie-watch')) return;
+
+  const rookies = [{"rank": 1, "name": "Josiah Trotter", "team": "TB", "pos": "LB", "stats": "1 SACK • 38-YD PICK-SIX", "note": "A dream NFL debut. Trotter got home for a sack and took a Joe Burrow interception 38 yards to the house. Immediate Defensive Rookie of the Year energy.", "tag": "🔥 EARLY LEADER", "tagClass": "hot", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4870998.png"}, {"rank": 2, "name": "Dillon Thieneman", "team": "CHI", "pos": "S", "stats": "10 TKL • 8 SOLO • 1 PD", "note": "The No. 25 pick stepped right in and produced. Ten tackles, eight solo and a pass breakup in Chicago’s explosive Week 1 win made him one of the cleanest rookie debuts on the board.", "tag": "📈 STOCK UP", "tagClass": "up", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4954445.png"}, {"rank": 3, "name": "Caleb Downs", "team": "DAL", "pos": "S", "stats": "8 TKL • 1 SACK • 1 FF", "note": "Dallas lost, but Downs looked NFL-ready immediately. Eight tackles, a sack and a forced fumble showed the range and impact that made him a premium draft pick.", "tag": "🔥 IMPACT", "tagClass": "hot", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4870706.png"}, {"rank": 4, "name": "Treydan Stukes", "team": "LV", "pos": "S", "stats": "1 INT • 1 PBU", "note": "Stukes won a starting job and rewarded Vegas immediately with an interception and a pass breakup in the Raiders’ 27–13 win. That is how you announce yourself.", "tag": "📈 STOCK UP", "tagClass": "up", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4697757.png"}, {"rank": 5, "name": "David Bailey", "team": "NYJ", "pos": "EDGE", "stats": "1 SACK • 6 PRESSURES • 4 TKL", "note": "The No. 2 pick flashed exactly why the Jets invested so heavily in him. First NFL sack, steady pressure and real disruption off the edge in a convincing opening win.", "tag": "🔥 DROY WATCH", "tagClass": "hot", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4685248.png"}, {"rank": 6, "name": "Denzel Boston", "team": "CLE", "pos": "WR", "stats": "2 REC • 59 YDS • 1 TD", "note": "Cleveland struggled, but Boston did not disappear with the rest of the offense. His 46-yard touchdown was one of the Browns’ few explosive plays and put his vertical talent on display.", "tag": "📈 FLASHED", "tagClass": "up", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4832800.png"}, {"rank": 7, "name": "Kenyon Sadiq", "team": "NYJ", "pos": "TE", "stats": "1 REC TD • FIRST NFL SCORE", "note": "Sadiq’s first big NFL moment came fast: a touchdown in his debut. The box score was modest, but the Jets already showed they are comfortable featuring him near the goal line.", "tag": "👀 ROLE WATCH", "tagClass": "", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/5083315.png"}, {"rank": 8, "name": "Sonny Styles", "team": "WAS", "pos": "LB", "stats": "1 SACK • ACTIVE VS PHI", "note": "Styles made his presence felt against Philadelphia, including a sack and several physical stops. The athleticism is translating and Washington already trusts him in meaningful snaps.", "tag": "📈 TRENDING", "tagClass": "up", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/5081807.png"}, {"rank": 9, "name": "KC Concepcion", "team": "CLE", "pos": "WR", "stats": "58 SCRIMMAGE YDS", "note": "Four catches, 43 receiving yards and another 15 on the ground showed Cleveland wants the ball in his hands. The fumble keeps him lower, but the usage is already encouraging.", "tag": "👀 USAGE WATCH", "tagClass": "", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4870653.png"}, {"rank": 10, "name": "Jeremiyah Love", "team": "ARI", "pos": "RB", "stats": "1 TD • SCORED ON 3RD NFL CARRY", "note": "The workload was limited, but the explosiveness was immediate. Love found the end zone on just his third NFL carry and gave Arizona another reason to expand his role.", "tag": "⚡ BIG-PLAY WATCH", "tagClass": "hot", "image": "https://a.espncdn.com/i/headshots/college-football/players/full/4870808.png"}];
+  const honorable = ["Omar Cooper Jr. • NYJ", "Eli Raridon • NE", "Mike Washington Jr. • LV", "Mansoor Delane • KC • MNF", "Peter Woods • KC • MNF"];
+
+  if(!document.getElementById('fourdk-rookie-watch-styles')) {
+    const style = document.createElement('style');
+    style.id = 'fourdk-rookie-watch-styles';
+    style.textContent = `
+      .rookie-watch{background:#0a0d0b;color:#f6f2e8;border-bottom:1px solid #202620;padding:44px 0 48px;position:relative;overflow:hidden}
+      .rookie-watch:after{content:'ROOKIES';position:absolute;right:-16px;bottom:-34px;font:1000 clamp(84px,14vw,190px)/.8 Arial,sans-serif;letter-spacing:-.07em;color:rgba(255,255,255,.022);pointer-events:none}
+      .rookie-head{position:relative;z-index:2;display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:22px}
+      .rookie-kicker{font-size:11px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#ff5a36}
+      .rookie-head h2{margin:5px 0 7px;font-size:clamp(34px,6vw,58px);line-height:.92;letter-spacing:-.045em;text-transform:uppercase}
+      .rookie-head p{margin:0;color:#aaa89f;max-width:720px;font-size:14px;line-height:1.5}
+      .rookie-stamp{flex:none;border:1px solid #30362f;padding:10px 12px;text-align:right;font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#b9b7ae}
+      .rookie-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .rookie-card{display:grid;grid-template-columns:58px 92px minmax(0,1fr);gap:16px;align-items:center;background:#111511;border:1px solid #242a24;padding:15px 16px;min-width:0}
+      .rookie-rank{font-size:32px;font-weight:1000;line-height:1;color:#f7f3e9;letter-spacing:-.05em;text-align:center}
+      .rookie-photo{width:92px;height:92px;border-radius:12px;overflow:hidden;border:1px solid #313831;background:linear-gradient(145deg,#1d251f,#0e120f);box-shadow:0 10px 26px rgba(0,0,0,.28);position:relative;display:grid;place-items:center}
+      .rookie-photo span{position:absolute;inset:auto 0 9px;text-align:center;font:1000 22px/1 Arial,sans-serif;color:rgba(255,255,255,.12);letter-spacing:-.05em}
+      .rookie-photo img{display:block;width:100%;height:100%;object-fit:cover;position:relative;z-index:2}
+      .rookie-card h3{margin:0 0 3px;font-size:17px;line-height:1.05;text-transform:uppercase}
+      .rookie-meta{font-size:10px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:#ff6b45}
+      .rookie-note{margin-top:6px;color:#b9b8b1;font-size:12px;line-height:1.38}
+      .rookie-tag{display:block;margin-top:14px;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#d8d5cb;white-space:nowrap}
+      .rookie-tag.hot{color:#ff6b45} .rookie-tag.up{color:#78d897}
+      .rookie-hm{position:relative;z-index:2;margin-top:18px;border-top:1px solid #2a302a;padding-top:18px;display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+      .rookie-hm strong{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#ff5a36}
+      .rookie-hm-list{display:flex;gap:8px;flex-wrap:wrap}
+      .rookie-hm-list span{border:1px solid #343a34;background:#0d100e;padding:8px 10px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}
+      .rookie-foot{position:relative;z-index:2;margin-top:15px;color:#7f827c;font-size:11px;line-height:1.45}
+      @media(max-width:920px){.rookie-grid{grid-template-columns:1fr}}
+      @media(max-width:760px){
+        .rookie-head{align-items:flex-start;flex-direction:column}
+        .rookie-stamp{text-align:left}
+        .rookie-card{grid-template-columns:48px 74px minmax(0,1fr);gap:14px;align-items:start}
+        .rookie-photo{width:74px;height:74px;border-radius:10px}
+        .rookie-rank{font-size:28px;padding-top:16px}
+        .rookie-note{font-size:11.5px}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const section = document.createElement('section');
+  section.className = 'rookie-watch';
+  section.id = 'rookie-watch';
+  section.setAttribute('aria-label','4 Da Kulture NFL Rookie Watch');
+  section.innerHTML = `
+    <div class="shell">
+      <div class="rookie-head">
+        <div>
+          <span class="rookie-kicker">4DK WEEKLY NFL FEATURE</span>
+          <h2>TOP 10 ROOKIE WATCH</h2>
+          <p>Week 1 impact board after Sunday’s games. Production matters, but so do role, winning impact and what the film says about who can sustain it.</p>
+        </div>
+        <div class="rookie-stamp">WEEK 1 • MONDAY<br>SEPT. 14, 2026</div>
+      </div>
+
+      <div class="rookie-grid">
+        ${rookies.map(p => {
+          const initials = p.name.split(' ').map(x => x[0]).join('').slice(0,2);
+          return `
+            <article class="rookie-card">
+              <div class="rookie-rank">${p.rank}</div>
+              <div class="rookie-photo">
+                <span>${initials}</span>
+                <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.remove()">
+              </div>
+              <div>
+                <h3>${p.name}</h3>
+                <div class="rookie-meta">${p.pos} • ${p.team} • ${p.stats}</div>
+                <div class="rookie-note">${p.note}</div>
+                <span class="rookie-tag ${p.tagClass}">${p.tag}</span>
+              </div>
+            </article>`;
+        }).join('')}
+      </div>
+
+      <div class="rookie-hm">
+        <strong>5 Honorable Mentions</strong>
+        <div class="rookie-hm-list">
+          ${honorable.map(name => `<span>${name}</span>`).join('')}
+        </div>
+      </div>
+
+      <div class="rookie-foot">4DK Rookie Watch updates weekly. Chiefs rookies Mansoor Delane and Peter Woods remain eligible to move into the Top 10 after Monday Night Football.</div>
+    </div>`;
+
+  const mvp = document.querySelector('#mvp-watch');
+  if(mvp) mvp.after(section);
+  else {
+    const scoreboard = document.querySelector('#scoreboard');
+    if(scoreboard) scoreboard.after(section);
+    else document.querySelector('main')?.appendChild(section);
+  }
+
+  const nflNav = document.querySelector('.nfl-v2-nav');
+  if(nflNav && !nflNav.querySelector('a[href="#rookie-watch"]')) {
+    const link = document.createElement('a');
+    link.href = '#rookie-watch';
+    link.textContent = 'Rookie Watch';
+    nflNav.appendChild(link);
+  }
+})();
