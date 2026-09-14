@@ -55,6 +55,18 @@ body{margin:0;background:#090d12;color:var(--text);font-family:Arial,Helvetica,s
 @media(max-width:900px){.article-grid{grid-template-columns:1fr}.sidebar{position:static;grid-template-columns:1fr 1fr}.money-strip{grid-template-columns:1fr 1fr}.money-box:nth-child(2){border-right:0}.money-box:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:650px){.contract-hero{padding:44px 0 36px}.contract-hero h1{font-size:44px}.article-deck{font-size:16px}.money-strip,.three-paths,.sidebar{grid-template-columns:1fr}.money-box{border-right:0;border-bottom:1px solid var(--line)}.money-box:last-child{border-bottom:0}.article-shell{padding-left:18px;padding-right:18px}.article-copy .lede{font-size:18px}}
 </style>
+
+<style id="duren-header-fix">
+/* Keep 4DK masthead readable on the light header used by this article. */
+.masthead .brand,
+.masthead .brand:visited{
+  color:#111 !important;
+}
+.masthead .brand-mark{
+  color:#fff !important;
+}
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
