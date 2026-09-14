@@ -111,3 +111,15 @@
   .mf3-copy p{font-size:17px}
   .mf3-peak,.mf3-role-grid,.mf3-side{grid-template-columns:1fr}
 }
+
+
+.mf3-photo{margin:30px 0 34px;border:1px solid rgba(253,185,39,.2);background:#0b0810;overflow:hidden}
+.mf3-photo img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover}
+.mf3-photo figcaption{padding:12px 14px 14px;color:#9f95a3;font-size:10px;font-weight:800;line-height:1.5;letter-spacing:.045em;text-transform:uppercase;border-top:1px solid rgba(255,255,255,.08)}
+.mf3-hero-art{margin:30px 0 8px;border-color:rgba(253,185,39,.38);box-shadow:0 20px 55px rgba(0,0,0,.28)}
+.mf3-hero-art img{aspect-ratio:16/9;object-fit:cover;max-height:none}
+@media(max-width:700px){
+  .mf3-photo{margin:24px 0 28px}
+  .mf3-photo img{max-height:520px}
+  .mf3-hero-art img{max-height:none}
+}
