@@ -1,0 +1,59 @@
+/* THE KING FILES — 4DK */
+:root{--king-red:#8f1624;--king-gold:#d7ad55;--king-purple:#4b326f;--king-ink:#09090b;--king-panel:#121216;--king-line:#2b2930;--king-paper:#f5efe2;--king-muted:#aaa4a0}
+*{box-sizing:border-box}
+.king-files-page{background:#09090b;color:#f6f0e4}
+.king-topline{background:#070708;color:#c7beb1;border-bottom:1px solid #28262c}
+.king-topline strong{color:var(--king-gold)}
+.king-masthead{background:#0d0d0f;color:#fff;border-bottom:1px solid #2a282e}
+.king-masthead .brand,.king-masthead .nav a{color:#fff}
+.king-masthead .brand-mark{background:var(--king-red)}
+.king-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 16%,rgba(215,173,85,.17),transparent 18rem),radial-gradient(circle at 18% 70%,rgba(143,22,36,.24),transparent 25rem),linear-gradient(145deg,#171218 0%,#09090b 74%);border-bottom:1px solid var(--king-line)}
+.king-hero:after{content:'23';position:absolute;right:-18px;bottom:-50px;font:1000 clamp(180px,32vw,430px)/.78 Arial Black,Impact,sans-serif;color:#fff;opacity:.025;letter-spacing:-.09em;pointer-events:none}
+.king-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:end;padding:62px 0 54px}
+.king-status{display:flex;align-items:center;gap:9px;margin-bottom:22px;color:#d6d0c8;font-size:9px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+.king-status-dot{width:8px;height:8px;border-radius:50%;background:#e8452e;box-shadow:0 0 0 5px rgba(232,69,46,.10)}
+.king-kicker,.king-section-kicker{color:var(--king-gold);font-size:10px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}
+.king-hero h1{margin:8px 0 18px;font:1000 clamp(76px,13vw,166px)/.70 Arial Black,Impact,sans-serif;letter-spacing:-.065em;text-transform:uppercase}
+.king-hero h1 em{font-style:normal;color:var(--king-gold)}
+.king-deck{max-width:800px;margin:0;color:#c8c2ba;font:clamp(17px,2.2vw,23px)/1.48 Georgia,serif}
+.king-hero-meta{display:flex;flex-wrap:wrap;gap:8px 15px;margin-top:22px;color:#8f8b87;font-size:9px;font-weight:900;letter-spacing:.10em;text-transform:uppercase}
+.king-docket{position:relative;border-top:4px solid var(--king-gold);border-left:1px solid #353139;border-right:1px solid #353139;border-bottom:1px solid #353139;background:rgba(14,14,17,.84);padding:25px}
+.king-docket small{color:var(--king-gold);font-size:9px;font-weight:1000;letter-spacing:.13em}
+.king-docket h2{margin:10px 0 12px;font:1000 clamp(30px,4vw,48px)/.9 Arial Black,Impact,sans-serif;letter-spacing:-.04em}
+.king-docket p{margin:0;color:#aaa4a0;font-size:13px;line-height:1.58}
+.king-docket-stamp{margin-top:24px;border:1px solid #403b43;padding:13px;color:#8f8a86;font-size:9px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+.king-docket-stamp b{display:block;margin-top:4px;color:#e8452e;font-size:19px}
+.king-manifesto{padding:42px 0;background:#efe8dc;color:#111;border-bottom:1px solid #d3cabd}
+.king-manifesto-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:40px}
+.king-manifesto h2,.king-section-head h2,.king-coming h2{margin:8px 0 0;font:1000 clamp(38px,6vw,68px)/.88 Arial Black,Impact,sans-serif;letter-spacing:-.05em;text-transform:uppercase}
+.king-manifesto-copy p{margin:0 0 14px;color:#5f5a54;font:16px/1.65 Georgia,serif}
+.king-roadmap{padding:48px 0 54px;background:#0c0c0f}
+.king-section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.king-section-head p{max-width:460px;margin:0;color:#8d8985;font-size:12px}
+.king-files-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.king-file-card{display:grid;grid-template-columns:90px 1fr;gap:18px;min-height:205px;padding:20px;border:1px solid #2b2930;background:linear-gradient(145deg,#151519,#0d0d10)}
+.king-file-number{font:1000 36px/1 Arial Black,Impact,sans-serif;color:#3f3a42;letter-spacing:-.05em}
+.king-file-card small{color:var(--king-gold);font-size:9px;font-weight:1000;letter-spacing:.13em}
+.king-file-card h3{margin:7px 0 8px;font:1000 28px/.95 Arial Black,Impact,sans-serif;letter-spacing:-.035em}
+.king-file-card p{margin:0;color:#a8a39e;font-size:12px;line-height:1.5}
+.king-file-card span{display:block;margin-top:15px;color:#6f6a6f;font-size:9px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+.king-file-card.lead{grid-column:1/-1;grid-template-columns:130px 1fr;background:radial-gradient(circle at 82% 17%,rgba(143,22,36,.22),transparent 16rem),linear-gradient(145deg,#18141a,#0b0b0e);border-color:#49343b}
+.king-file-card.lead .king-file-number{color:#8f1624;font-size:54px}
+.king-file-card.special{border-top:4px solid var(--king-purple)}
+.king-file-card.final{grid-column:1/-1;border-top:4px solid var(--king-gold);background:radial-gradient(circle at 86% 22%,rgba(215,173,85,.13),transparent 17rem),#111114}
+.king-file-card.final .king-file-number{color:var(--king-gold);font-size:22px}
+.king-file-card.final h3{font-size:clamp(34px,5vw,58px)}
+.king-file-card.final span{color:var(--king-gold)}
+.king-rules{padding:38px 0;background:#efe8dc;color:#111;border-top:1px solid #d1c8ba;border-bottom:1px solid #d1c8ba}
+.king-rules-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.king-rule{padding:20px;border-top:4px solid #111;background:#f8f2e8}
+.king-rule b{font:1000 34px/1 Arial Black,Impact,sans-serif;color:#bbb1a4}
+.king-rule span{display:block;margin:9px 0 7px;font-size:12px;font-weight:1000;letter-spacing:.09em}
+.king-rule p{margin:0;color:#665f57;font-size:12px;line-height:1.5}
+.king-coming{padding:52px 0;background:radial-gradient(circle at 80% 15%,rgba(75,50,111,.18),transparent 18rem),linear-gradient(145deg,#111014,#08080a);text-align:center}
+.king-coming p{max-width:760px;margin:16px auto 0;color:#aaa4a0;font:16px/1.6 Georgia,serif}
+.king-coming-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:24px}
+.king-coming-actions a{padding:11px 14px;border:1px solid #36343a;color:#fff;text-decoration:none;font-size:9px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase}
+.king-coming-actions a:hover{border-color:var(--king-gold);color:var(--king-gold)}
+@media(max-width:860px){.king-hero-grid,.king-manifesto-grid{grid-template-columns:1fr}.king-docket{max-width:650px}.king-rules-grid{grid-template-columns:1fr}.king-files-grid{grid-template-columns:1fr}.king-file-card.lead,.king-file-card.final{grid-column:auto}}
+@media(max-width:560px){.king-hero-grid{padding:42px 0 38px}.king-hero h1{font-size:76px}.king-section-head{align-items:flex-start;flex-direction:column}.king-file-card,.king-file-card.lead{grid-template-columns:1fr;gap:9px;min-height:auto}.king-file-number{font-size:28px}.king-file-card.lead .king-file-number{font-size:40px}.king-manifesto,.king-roadmap,.king-coming{padding-top:34px;padding-bottom:38px}}
