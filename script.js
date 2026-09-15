@@ -618,3 +618,173 @@ if(!document.querySelector('script[src="4dk-article-tools.js"]')){
     nflNav.appendChild(link);
   }
 })();
+
+// 4DK Week 1 MNF Headline + post-Week 1 NFL Power Rankings.
+// Add-only update. Preserves every existing section and feature.
+(() => {
+  const mnfUrl = 'nfl-mnf-recap-week1.html';
+
+  try {
+    if(typeof siteSearchIndex !== 'undefined' && !siteSearchIndex.some(i => i.url === mnfUrl)) {
+      siteSearchIndex.push({
+        title:'The King Is Back: Chiefs Dominate Denver on Monday Night',
+        type:'NFL • MNF Headline',
+        url:mnfUrl,
+        desc:'Mahomes returns, Kenneth Walker erupts and Kansas City humbles Denver 31–10.',
+        terms:'chiefs broncos mahomes kenneth walker monday night football mnf week 1 recap denver kansas city'
+      });
+    }
+  } catch(e) {}
+
+  if(pageKey !== 'nfl') return;
+
+  // --- Monday Night Football headline card ---
+  if(!document.getElementById('fourdk-mnf-week1-styles')) {
+    const style = document.createElement('style');
+    style.id = 'fourdk-mnf-week1-styles';
+    style.textContent = `
+      .fourdk-mnf-headline{padding:38px 0;background:#070a08;color:#f7f2e8;border-top:1px solid #252c27;border-bottom:1px solid #252c27;position:relative;overflow:hidden}
+      .fourdk-mnf-headline:after{content:'31–10';position:absolute;right:-18px;bottom:-36px;font:1000 clamp(88px,15vw,190px)/.8 Arial,sans-serif;letter-spacing:-.08em;color:rgba(255,255,255,.025);pointer-events:none}
+      .mnf-headline-card{position:relative;z-index:2;display:grid;grid-template-columns:.78fr 1.22fr;border:1px solid #303832;background:linear-gradient(145deg,#111611,#090c0a);text-decoration:none;color:inherit;overflow:hidden}
+      .mnf-score-panel{min-height:310px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 20% 15%,rgba(227,24,55,.19),transparent 42%),radial-gradient(circle at 85% 82%,rgba(251,79,20,.14),transparent 38%),#0c100d;border-right:1px solid #303832}
+      .mnf-score-panel small{font:1000 10px/1 Arial,sans-serif;letter-spacing:.16em;color:#ff654b;text-transform:uppercase}
+      .mnf-teams{display:flex;align-items:center;justify-content:center;gap:18px}
+      .mnf-teams img{width:78px;height:78px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.38))}
+      .mnf-final{text-align:center}
+      .mnf-final strong{display:block;font:1000 clamp(54px,8vw,82px)/.9 Arial,sans-serif;letter-spacing:-.07em}
+      .mnf-final span{font:900 9px/1 Arial,sans-serif;letter-spacing:.14em;color:#9ba29d;text-transform:uppercase}
+      .mnf-copy{padding:30px;display:flex;flex-direction:column;justify-content:center}
+      .mnf-copy>span{font:1000 10px/1 Arial,sans-serif;letter-spacing:.14em;color:#ff654b;text-transform:uppercase}
+      .mnf-copy h2{margin:9px 0 12px;font:1000 clamp(38px,6vw,67px)/.86 Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase}
+      .mnf-copy h2 em{color:#ffcf54;font-style:normal}
+      .mnf-copy p{margin:0;color:#b7beb8;font-size:14px;line-height:1.58;max-width:760px}
+      .mnf-takeaways{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}
+      .mnf-takeaways i{font-style:normal;border:1px solid #3a433d;padding:7px 9px;color:#e9ece8;font:900 9px/1 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+      .mnf-copy b{font:1000 10px/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+      @media(max-width:760px){.mnf-headline-card{grid-template-columns:1fr}.mnf-score-panel{min-height:230px;border-right:0;border-bottom:1px solid #303832}.mnf-copy{padding:23px}.mnf-teams img{width:64px;height:64px}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  if(!document.querySelector('[data-mnf-week1-headline]')) {
+    const section = document.createElement('section');
+    section.className = 'fourdk-mnf-headline';
+    section.id = 'mnf-headline';
+    section.dataset.mnfWeek1Headline = '';
+    section.innerHTML = `
+      <div class="shell">
+        <a class="mnf-headline-card" href="${mnfUrl}">
+          <div class="mnf-score-panel">
+            <small>4DK NFL • MONDAY NIGHT HEADLINE</small>
+            <div class="mnf-teams">
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/den.png" alt="Denver Broncos logo">
+              <span style="font-weight:1000;color:#6f7771">@</span>
+              <img src="https://a.espncdn.com/i/teamlogos/nfl/500/kc.png" alt="Kansas City Chiefs logo">
+            </div>
+            <div class="mnf-final"><strong>31–10</strong><span>FINAL • ARROWHEAD</span></div>
+          </div>
+          <div class="mnf-copy">
+            <span>WEEK 1 • SEPTEMBER 14, 2026</span>
+            <h2>THE KING<br>IS <em>BACK.</em></h2>
+            <p>Mahomes returned from major knee surgery, Kenneth Walker ran through Denver, Kansas City controlled both lines and the Broncos’ vaunted defense got humbled in a 21-point statement.</p>
+            <div class="mnf-takeaways"><i>Mahomes Returns</i><i>Walker: 173 Rush Yards</i><i>392–176 Yard Edge</i><i>Denver Reality Check</i></div>
+            <b>READ THE FULL 4DK MNF BREAKDOWN →</b>
+          </div>
+        </a>
+      </div>`;
+    const rookie = document.querySelector('#rookie-watch');
+    const mvp = document.querySelector('#mvp-watch');
+    const anchor = rookie || mvp || document.querySelector('#scoreboard');
+    if(anchor) anchor.after(section);
+  }
+
+  const nflNav = document.querySelector('.nfl-v2-nav');
+  if(nflNav && !nflNav.querySelector('a[href="#mnf-headline"]')) {
+    const a = document.createElement('a');
+    a.href = '#mnf-headline';
+    a.textContent = 'MNF Recap';
+    const rookieLink = nflNav.querySelector('a[href="#rookie-watch"]');
+    if(rookieLink) rookieLink.after(a); else nflNav.appendChild(a);
+  }
+
+  // --- Post-Week 1 power rankings refresh ---
+  const week1Rankings = [{"team": "Kansas City Chiefs", "abbr": "KC", "prev": 4, "meta": "1–0 • W 31–10 vs DEN", "note": "Mahomes is back, Kenneth Walker changed the offense, and Kansas City just flattened the preseason AFC favorite. The revenge season opens at No. 1."}, {"team": "Buffalo Bills", "abbr": "BUF", "prev": 5, "meta": "1–0 • W 36–31 at HOU", "note": "Josh Allen delivered four total touchdowns and the late winning strike. Buffalo looked like a team that still expects to play deep into January."}, {"team": "San Francisco 49ers", "abbr": "SF", "prev": 7, "meta": "1–0 • W 27–7 vs LAR", "note": "The most complete NFC statement of Week 1. Purdy threw three touchdowns and the defense made a loaded Rams offense look ordinary."}, {"team": "Baltimore Ravens", "abbr": "BAL", "prev": 13, "meta": "1–0 • W 41–23 at IND", "note": "Lamar was explosive and efficient, Derrick Henry scored three times and Baltimore put up 506 yards. That looked like a contender."}, {"team": "Chicago Bears", "abbr": "CHI", "prev": 8, "meta": "1–0 • W 59–37 at CAR", "note": "Fifty-nine points changes the conversation immediately. Caleb Williams accounted for four touchdowns and Chicago’s offensive ceiling looks real."}, {"team": "Philadelphia Eagles", "abbr": "PHI", "prev": 9, "meta": "1–0 • W 24–22 vs WAS", "note": "Not dominant, but Philadelphia survived a division fight and remains one of the league’s most complete rosters."}, {"team": "Detroit Lions", "abbr": "DET", "prev": 3, "meta": "1–0 • W 31–30 OT vs NO", "note": "Detroit escaped, and Jahmyr Gibbs was excellent. The Lions remain dangerous, but Week 1 was much shakier than the preseason No. 3 slot suggested."}, {"team": "Cincinnati Bengals", "abbr": "CIN", "prev": 10, "meta": "1–0 • W 33–27 vs TB", "note": "The Bengals took advantage of Tampa Bay mistakes and got the win. Good start, but the offense was not yet at full Burrow-level force."}, {"team": "Seattle Seahawks", "abbr": "SEA", "prev": 6, "meta": "1–0 • W 13–10 vs NE", "note": "The champs found a way on ring night. It was ugly and costly, but surviving still matters while Seattle settles into its new season."}, {"team": "Jacksonville Jaguars", "abbr": "JAX", "prev": 15, "meta": "1–0 • W 34–10 vs CLE", "note": "Trevor Lawrence threw four touchdowns without a pick and Jacksonville handled business from start to finish. One of Week 1’s cleanest wins."}, {"team": "Houston Texans", "abbr": "HOU", "prev": 11, "meta": "0–1 • L 31–36 vs BUF", "note": "Houston lost, but pushed Buffalo to the final seconds. The Texans stay high because the performance still looked like playoff-level football."}, {"team": "Minnesota Vikings", "abbr": "MIN", "prev": 26, "meta": "1–0 • W 39–22 vs GB", "note": "The biggest upward mover. Minnesota’s offense exploded against a division rival and immediately made the preseason projection look too low."}, {"team": "Denver Broncos", "abbr": "DEN", "prev": 2, "meta": "0–1 • L 10–31 at KC", "note": "The defense that entered the year with elite expectations was pushed around for 392 yards. Denver is still talented, but the Week 1 reality check was severe."}, {"team": "Los Angeles Rams", "abbr": "LAR", "prev": 1, "meta": "0–1 • L 7–27 vs SF", "note": "The preseason No. 1 got humbled by San Francisco. Too much talent to bury, but a 20-point loss forces a major correction."}, {"team": "New York Giants", "abbr": "NYG", "prev": 20, "meta": "1–0 • W 28–20 vs DAL", "note": "Jaxson Dart looked comfortable, Malik Nabers is back and the John Harbaugh era opened with a division win. The Giants feel different."}, {"team": "Las Vegas Raiders", "abbr": "LV", "prev": 27, "meta": "1–0 • W 27–13 vs MIA", "note": "Vegas was more physical and more composed than Miami. The Raiders already look better than the six-win preseason baseline."}, {"team": "Pittsburgh Steelers", "abbr": "PIT", "prev": 18, "meta": "1–0 • W 20–13 vs ATL", "note": "The formula worked: functional offense, defense making the biggest play. Pittsburgh does not need pretty if the defense controls games."}, {"team": "Arizona Cardinals", "abbr": "ARI", "prev": 32, "meta": "1–0 • W 26–14 at LAC", "note": "From No. 32 to a road win over the Chargers. Arizona earned a real jump without pretending one game erases every preseason question."}, {"team": "Tampa Bay Buccaneers", "abbr": "TB", "prev": 22, "meta": "0–1 • L 27–33 at CIN", "note": "Four lost fumbles were fatal, but Tampa still stayed within one score. The Bucs are better than the record, if they stop beating themselves."}, {"team": "Washington Commanders", "abbr": "WAS", "prev": 23, "meta": "0–1 • L 22–24 at PHI", "note": "Washington went into Philadelphia and nearly stole it. A loss, but not the kind that makes us lower the long-term ceiling much."}, {"team": "New England Patriots", "abbr": "NE", "prev": 12, "meta": "0–1 • L 10–13 at SEA", "note": "New England had a chance on ring night and let it slip. The defense traveled, but the offense needs more before this looks like another Super Bowl-level team."}, {"team": "Green Bay Packers", "abbr": "GB", "prev": 21, "meta": "0–1 • L 22–39 at MIN", "note": "Giving up 39 to Minnesota is a rough way to start a division race. The Packers still have upside, but Week 1 exposed real defensive problems."}, {"team": "New Orleans Saints", "abbr": "NO", "prev": 28, "meta": "0–1 • L 30–31 OT at DET", "note": "Tyler Shough threw for 410 yards and New Orleans nearly stole one in Detroit. The Saints move up even in defeat because that offense showed life."}, {"team": "Los Angeles Chargers", "abbr": "LAC", "prev": 17, "meta": "0–1 • L 14–26 vs ARI", "note": "A home loss to the preseason No. 32 team is a bad opener. The Chargers have too much talent to panic, but they have to earn their way back up."}, {"team": "Dallas Cowboys", "abbr": "DAL", "prev": 16, "meta": "0–1 • L 20–28 at NYG", "note": "Another slow start and a division loss. Dallas has enough talent to recover, but right now the Cowboys look more middle-of-the-pack than contender."}, {"team": "New York Jets", "abbr": "NYJ", "prev": 30, "meta": "1–0 • W 23–10 at TEN", "note": "The Jets controlled Tennessee and their young defense showed teeth. It is only one win, but the floor already looks higher than expected."}, {"team": "Carolina Panthers", "abbr": "CAR", "prev": 14, "meta": "0–1 • L 37–59 vs CHI", "note": "Bryce Young made plays, but giving up 59 points destroys the preseason sleeper hype for now. Carolina has to prove it can stop somebody."}, {"team": "Atlanta Falcons", "abbr": "ATL", "prev": 24, "meta": "0–1 • L 13–20 at PIT", "note": "Bijan produced, but the passing game and turnovers held the offense back. Atlanta needs more than one great weapon to climb."}, {"team": "Indianapolis Colts", "abbr": "IND", "prev": 19, "meta": "0–1 • L 23–41 vs BAL", "note": "Jonathan Taylor ran well, but Baltimore controlled the game. Indianapolis already looks like a team that will live or die with quarterback play."}, {"team": "Miami Dolphins", "abbr": "MIA", "prev": 25, "meta": "0–1 • L 13–27 at LV", "note": "The new quarterback chapter opened with a flat road performance. Miami has speed, but the offense did not look connected."}, {"team": "Tennessee Titans", "abbr": "TEN", "prev": 29, "meta": "0–1 • L 10–23 vs NYJ", "note": "The development season looked exactly like a development season. Tennessee needs more offensive answers around its young core."}, {"team": "Cleveland Browns", "abbr": "CLE", "prev": 31, "meta": "0–1 • L 10–34 at JAX", "note": "Jacksonville dominated them, the offense never found rhythm and the quarterback conversation is already getting louder. Bottom of the board for now."}];
+  const logoCodes = {
+    ARI:'ari',ATL:'atl',BAL:'bal',BUF:'buf',CAR:'car',CHI:'chi',CIN:'cin',CLE:'cle',
+    DAL:'dal',DEN:'den',DET:'det',GB:'gb',HOU:'hou',IND:'ind',JAX:'jax',KC:'kc',
+    LV:'lv',LAC:'lac',LAR:'lar',MIA:'mia',MIN:'min',NE:'ne',NO:'no',NYG:'nyg',
+    NYJ:'nyj',PHI:'phi',PIT:'pit',SEA:'sea',SF:'sf',TB:'tb',TEN:'ten',WAS:'wsh'
+  };
+
+  const escPR = (v='') => String(v).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+
+  function movePR(team, rank) {
+    const delta = team.prev - rank;
+    if(delta > 0) return {text:`↑ ${delta}`, cls:'up'};
+    if(delta < 0) return {text:`↓ ${Math.abs(delta)}`, cls:'down'};
+    return {text:'—', cls:''};
+  }
+
+  function badgePR(team) {
+    const code = logoCodes[team.abbr] || team.abbr.toLowerCase();
+    return `<span class="pr-badge" aria-label="${escPR(team.team)} logo"><span class="pr-badge-fallback">${escPR(team.abbr)}</span><img src="https://a.espncdn.com/i/teamlogos/nfl/500/${code}.png" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'"></span>`;
+  }
+
+  function applyWeek1PowerRankings() {
+    const section = document.querySelector('#power-rankings.fourdk-power-rankings.nfl');
+    if(!section) return false;
+    if(section.dataset.week1Final === 'true') return true;
+
+    const deck = section.querySelector('.pr-deck');
+    if(deck) deck.textContent = 'Week 1 is complete. Kansas City takes over No. 1 after dominating Denver, while San Francisco, Baltimore and Chicago make major early statements. One week matters — but roster strength and championship ceiling still keep us from overreacting.';
+
+    const stampStrong = section.querySelector('.pr-stamp strong');
+    const stampDate = section.querySelector('.pr-stamp span');
+    if(stampStrong) stampStrong.textContent = 'POST-WEEK 1';
+    if(stampDate) stampDate.textContent = 'UPDATED SEPTEMBER 14, 2026';
+
+    const top3 = section.querySelector('.pr-top3');
+    if(top3) {
+      top3.innerHTML = week1Rankings.slice(0,3).map((t,i) =>
+        `<article class="pr-podium" data-rank="${i+1}"><small>#${i+1} • ${escPR(t.abbr)}</small><b>${escPR(t.team)}</b><span>${escPR(t.note)}</span></article>`
+      ).join('');
+    }
+
+    const board = section.querySelector('[data-pr-board]');
+    if(board) {
+      board.classList.remove('expanded');
+      board.innerHTML = week1Rankings.map((t,i) => {
+        const rank = i + 1;
+        const move = movePR(t, rank);
+        return `<article class="pr-row ${i>=10?'pr-extra':''}">
+          <div class="pr-rank">${rank}</div>
+          <div class="pr-team">${badgePR(t)}<span><b>${escPR(t.team)}</b><small>NFL POWER BOARD</small></span></div>
+          <div class="pr-meta">${escPR(t.meta)}</div>
+          <div class="pr-note">${escPR(t.note)}</div>
+          <div class="pr-move ${move.cls}">${move.text}</div>
+        </article>`;
+      }).join('');
+    }
+
+    const toggle = section.querySelector('[data-pr-toggle]');
+    if(toggle) toggle.textContent = 'SHOW ALL 32 TEAMS ↓';
+
+    const bottom = section.querySelector('.pr-note-bottom');
+    if(bottom) bottom.textContent = '4DK power rankings are opinion-based. Week 1 results now count, but matchup quality, injuries, roster strength, form and championship ceiling still matter. Movement shown versus the preseason baseline.';
+
+    section.dataset.week1Final = 'true';
+    return true;
+  }
+
+  function queuePowerRefresh() {
+    if(applyWeek1PowerRankings()) return;
+    let tries = 0;
+    const timer = setInterval(() => {
+      tries++;
+      if(applyWeek1PowerRankings() || tries >= 30) clearInterval(timer);
+    }, 150);
+  }
+
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', queuePowerRefresh, {once:true});
+  else queuePowerRefresh();
+})();
