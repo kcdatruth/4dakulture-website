@@ -136,8 +136,24 @@ const allAlbums = flattenAlbums();
    Mixtapes/unavailable projects keep a custom 4DK fallback tile.
    --------------------------------------------------------- */
 const artworkCollectionOverrides = {
-  'Snoop Dogg||Doggystyle': 1676306182
+  'Snoop Dogg||Doggystyle': 1676306182,
+  '2Pac||Me Against the World': 446002567,
+  'A Tribe Called Quest||Midnight Marauders': 265670545,
+  'Tha Dogg Pound||Dogg Food': 1676264771,
+  'Scarface||The Diary': 700447040,
+  'Clipse||Hell Hath No Fury': 204865737,
+  'UGK||Ridin’ Dirty': 268522887,
+  'Lil Wayne||Da Drought 3': 1829406765,
+  'Lil Wayne||No Ceilings': 1528649764,
+  'ScHoolboy Q||Habits & Contradictions': 495258117,
+  'Dom Kennedy||From the Westside with Love II': 446922317,
+  'Big K.R.I.T.||K.R.I.T. Wuz Here': 1512869186
 };
+
+const artworkForceFallback = new Set([
+  'Lil Wayne||Dedication 2',
+  'Dom Kennedy||Yellow Album'
+]);
 
 const artworkCache = new Map();
 const artworkPending = new Map();
@@ -202,6 +218,11 @@ function scoreArtworkResult(result, album) {
 function requestAlbumArtwork(album) {
   const key = artworkKey(album);
 
+  if (artworkForceFallback.has(key)) {
+    artworkCache.set(key, '');
+    return Promise.resolve('');
+  }
+
   if (artworkCache.has(key)) {
     return Promise.resolve(artworkCache.get(key));
   }
@@ -243,7 +264,7 @@ function requestAlbumArtwork(album) {
         .sort((a, b) => b.score - a.score);
 
       const best = ranked[0];
-      const safeMatch = best && best.score >= 35 ? upgradeArtworkUrl(best.item.artworkUrl100) : '';
+      const safeMatch = best && best.score >= 70 ? upgradeArtworkUrl(best.item.artworkUrl100) : '';
       finish(safeMatch);
     };
 
