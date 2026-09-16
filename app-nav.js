@@ -442,3 +442,256 @@
   setTimeout(apply, 1000);
   setTimeout(apply, 2200);
 })();
+
+
+/* ==========================================================
+   THE VICK FILES — 4DK DISCOVERY WIRING
+   Add-only integration for NFL, Throwback, Search and App More.
+   Existing content is preserved.
+   ========================================================== */
+(() => {
+  const vickUrl = 'vick-files.html';
+  const file001Url = 'vick-file-001-virginia-tech.html';
+  const path = (location.pathname || '/').toLowerCase();
+  const isNFL = path.endsWith('/nfl.html');
+  const isThrowback = path.endsWith('/throwback.html');
+  const isVickPage = path.includes('/vick-files') || path.includes('/vick-file-');
+
+  const addStyles = () => {
+    if (document.getElementById('fourdk-vick-files-wiring-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'fourdk-vick-files-wiring-styles';
+    style.textContent = `
+      .vick-files-nfl-promo{
+        position:relative;overflow:hidden;
+        padding:38px 0;
+        background:
+          radial-gradient(circle at 84% 18%,rgba(217,107,43,.18),transparent 17rem),
+          radial-gradient(circle at 12% 78%,rgba(178,31,45,.22),transparent 20rem),
+          repeating-linear-gradient(90deg,transparent 0 76px,rgba(255,255,255,.025) 77px 78px),
+          linear-gradient(145deg,#141816,#080a09 74%);
+        color:#fff;
+        border-top:1px solid #2c332e;
+        border-bottom:1px solid #2c332e
+      }
+      .vick-files-nfl-promo:after{
+        content:'7';
+        position:absolute;right:-18px;bottom:-58px;
+        font:1000 clamp(180px,28vw,390px)/.8 Arial Black,Impact,sans-serif;
+        color:#fff;opacity:.035;letter-spacing:-.08em;pointer-events:none
+      }
+      .vick-files-nfl-inner{
+        position:relative;z-index:2;
+        display:grid;
+        grid-template-columns:minmax(0,1.25fr) minmax(240px,.75fr);
+        gap:28px;align-items:end;
+        padding:26px;
+        border:1px solid #343b36;
+        background:rgba(9,12,10,.82);
+        color:#fff;text-decoration:none
+      }
+      .vick-files-nfl-copy small,
+      .vick-files-nfl-side small{
+        display:block;color:#ef624d;
+        font-size:9px;font-weight:1000;
+        letter-spacing:.15em;text-transform:uppercase
+      }
+      .vick-files-nfl-copy h2{
+        margin:9px 0 10px;
+        font:1000 clamp(47px,7vw,84px)/.81 Arial Black,Impact,sans-serif;
+        letter-spacing:-.055em;text-transform:uppercase
+      }
+      .vick-files-nfl-copy h2 em{
+        font-style:normal;color:#fff;
+        -webkit-text-stroke:1px #d96b2b
+      }
+      .vick-files-nfl-copy p{
+        max-width:760px;margin:0;color:#b9beb9;
+        font:15px/1.5 Georgia,'Times New Roman',serif
+      }
+      .vick-files-nfl-cta{
+        display:inline-block;margin-top:18px;
+        padding:11px 14px;
+        background:#b21f2d;color:#fff;
+        font-size:9px;font-weight:1000;
+        letter-spacing:.1em;text-transform:uppercase
+      }
+      .vick-files-nfl-side{
+        border-top:3px solid #d96b2b;
+        padding-top:15px
+      }
+      .vick-files-nfl-side strong{
+        display:block;margin:8px 0;
+        font:1000 31px/.9 Arial Black,Impact,sans-serif;
+        text-transform:uppercase
+      }
+      .vick-files-nfl-side span{
+        color:#919891;font-size:11px;line-height:1.45
+      }
+
+      .king-player-archives-grid.vick-files-added{
+        grid-template-columns:repeat(4,1fr)!important
+      }
+      .king-player-archive-card.vick{
+        border-top:4px solid #d96b2b!important;
+        background:
+          radial-gradient(circle at 82% 16%,rgba(217,107,43,.25),transparent 10rem),
+          radial-gradient(circle at 20% 84%,rgba(178,31,45,.18),transparent 10rem),
+          #101411!important
+      }
+      .king-player-archive-card.vick:after{content:'7'!important}
+      .king-player-archive-card.vick small{color:#ef7b55!important}
+
+      @media(max-width:760px){
+        .vick-files-nfl-promo{padding:28px 0}
+        .vick-files-nfl-inner{grid-template-columns:1fr;padding:20px}
+        .vick-files-nfl-copy h2{font-size:55px}
+        .king-player-archives-grid.vick-files-added{
+          display:flex!important;
+          overflow-x:auto;
+          scroll-snap-type:x mandatory;
+          gap:9px!important
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  };
+
+  const addToSearch = () => {
+    try {
+      if (typeof siteSearchIndex === 'undefined') return;
+
+      if (!siteSearchIndex.some(item => item.url === vickUrl)) {
+        siteSearchIndex.push({
+          title:'The Vick Files',
+          type:'4DK NFL Archive',
+          url:vickUrl,
+          desc:'Michael Vick from Virginia Tech to Atlanta, Philadelphia, the comeback and the final legacy debate.',
+          terms:'michael vick vick files virginia tech hokies atlanta falcons philadelphia eagles number 7 nfl football archive madden'
+        });
+      }
+
+      if (!siteSearchIndex.some(item => item.url === file001Url)) {
+        siteSearchIndex.push({
+          title:'Vick Files 001 — Virginia Tech',
+          type:'4DK Football History',
+          url:file001Url,
+          desc:'Before the NFL knew what was coming: Vick’s 1999 redshirt-freshman rise, Heisman run and national championship stage.',
+          terms:'michael vick virginia tech 1999 heisman sugar bowl florida state file 001 hokies'
+        });
+      }
+    } catch (e) {}
+  };
+
+  const wireAppMore = () => {
+    const grid = document.querySelector('.fourdk-more-grid');
+    if (!grid || grid.querySelector('[data-vick-files-more]')) return;
+
+    const link = document.createElement('a');
+    link.href = '/vick-files.html';
+    link.dataset.vickFilesMore = '';
+    link.innerHTML = 'The Vick Files <span>›</span>';
+
+    const king = grid.querySelector('a[href="/king-files.html"]');
+    const podcast = grid.querySelector('a[href="/podcast.html"]');
+
+    if (king) king.after(link);
+    else if (podcast) grid.insertBefore(link, podcast);
+    else grid.appendChild(link);
+  };
+
+  const setVickAppTab = () => {
+    if (!isVickPage) return;
+    const nav = document.querySelector('.fourdk-app-nav');
+    if (!nav) return;
+
+    nav.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+    nav.querySelector('[data-fourdk-tab="nfl"]')?.classList.add('active');
+  };
+
+  const wireNFL = () => {
+    if (!isNFL) return;
+
+    const quickNav = document.querySelector('.nfl-v2-nav');
+    if (quickNav && !quickNav.querySelector('[data-vick-files-nfl-nav]')) {
+      const navLink = document.createElement('a');
+      navLink.href = vickUrl;
+      navLink.dataset.vickFilesNflNav = '';
+      navLink.textContent = 'Vick Files';
+      quickNav.appendChild(navLink);
+    }
+
+    if (document.querySelector('.vick-files-nfl-promo')) return;
+
+    const mvp = document.querySelector('#mvp-watch');
+    const scoreboard = document.querySelector('#scoreboard');
+    const target = mvp || scoreboard;
+    if (!target) return;
+
+    const promo = document.createElement('section');
+    promo.className = 'vick-files-nfl-promo';
+    promo.setAttribute('aria-label','The Vick Files');
+    promo.innerHTML = `
+      <div class="shell">
+        <a class="vick-files-nfl-inner" href="${vickUrl}">
+          <div class="vick-files-nfl-copy">
+            <small>4DK NFL HISTORY • NEW ARCHIVE</small>
+            <h2>THE <em>VICK</em> FILES.</h2>
+            <p>Virginia Tech. Atlanta. Lambeau. Madden. The lost years. Philadelphia. The comeback. The legacy. Michael Vick's full football story now has a permanent home inside 4DK.</p>
+            <span class="vick-files-nfl-cta">ENTER THE ARCHIVE →</span>
+          </div>
+          <aside class="vick-files-nfl-side">
+            <small>FILE 001 • NOW OPEN</small>
+            <strong>BEFORE THE NFL<br>KNEW WHAT<br>WAS COMING.</strong>
+            <span>Redshirt freshman. Heisman finalist. National championship stage. The Virginia Tech beginning.</span>
+          </aside>
+        </a>
+      </div>`;
+
+    if (mvp) mvp.parentNode.insertBefore(promo, mvp);
+    else scoreboard.after(promo);
+  };
+
+  const wireThrowback = () => {
+    if (!isThrowback) return;
+
+    const grid = document.querySelector('.king-player-archives-grid');
+    if (!grid) return;
+
+    if (!grid.querySelector('[data-vick-files-archive]')) {
+      const card = document.createElement('a');
+      card.className = 'king-player-archive-card vick';
+      card.href = vickUrl;
+      card.dataset.vickFilesArchive = '';
+      card.innerHTML = `
+        <small>NFL HISTORY • FILE 001 OPEN</small>
+        <strong>THE VICK FILES</strong>
+        <span>Michael Vick from Virginia Tech to Atlanta, Philadelphia, reinvention and the final legacy argument.</span>
+        <b>OPEN THE FILES →</b>`;
+      grid.appendChild(card);
+    }
+
+    grid.classList.add('vick-files-added');
+  };
+
+  const apply = () => {
+    addStyles();
+    addToSearch();
+    wireAppMore();
+    setVickAppTab();
+    wireNFL();
+    wireThrowback();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', apply, {once:true});
+  } else {
+    apply();
+  }
+
+  // 4DK's existing archive and app blocks can be injected after page load.
+  // Safe repeat passes make the Vick wiring land without duplicates.
+  setTimeout(apply, 300);
+  setTimeout(apply, 1000);
+  setTimeout(apply, 2200);
+})();
