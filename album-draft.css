@@ -450,3 +450,278 @@ button {
   .tier-header { padding: 16px 14px; }
   .budget-box .value { font-size: 1.12rem; }
 }
+
+
+/* =========================================================
+   4DK ALBUM DRAFT — MOBILE POLISH
+   Keeps the game/rules intact while getting users to the
+   budget dashboard and draft board faster on phones.
+   ========================================================= */
+@media (max-width: 640px) {
+  body {
+    background: radial-gradient(circle at top, #181824 0%, var(--bg) 42%);
+  }
+
+  .page-shell {
+    width: calc(100% - 12px);
+    padding-top: 8px;
+    padding-bottom: 88px;
+  }
+
+  .hero {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .hero-copy {
+    padding: 16px 14px 14px;
+    border-radius: 15px;
+  }
+
+  .eyebrow {
+    margin-bottom: 5px;
+    font-size: .66rem;
+    letter-spacing: .12em;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 10.5vw, 2.55rem);
+    line-height: .96;
+    letter-spacing: -.035em;
+  }
+
+  .hero h2 {
+    margin: 4px 0 10px;
+    font-size: 1.05rem;
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    margin-bottom: 11px;
+    font-size: .89rem;
+    line-height: 1.48;
+  }
+
+  .rule-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+
+  .rule-chips span {
+    padding: 8px 9px;
+    font-size: .76rem;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .rule-chips span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* The challenge prompt is useful on desktop, but redundant
+     on mobile where the goal is to reach the draft immediately. */
+  .hero-side {
+    display: none;
+  }
+
+  .sticky-dashboard {
+    top: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .budget-box {
+    min-width: 0;
+    padding: 8px 7px;
+    border-radius: 11px;
+    text-align: center;
+  }
+
+  .budget-box .label {
+    margin-bottom: 3px;
+    font-size: .55rem;
+    line-height: 1.15;
+    letter-spacing: .06em;
+  }
+
+  .budget-box .value {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .dashboard-actions {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .secondary-btn,
+  .ghost-btn {
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: .75rem;
+  }
+
+  .draft-board-section > .section-heading {
+    margin: 4px 2px 8px;
+    gap: 2px;
+  }
+
+  .section-heading h3 {
+    font-size: 1.38rem;
+  }
+
+  .section-kicker {
+    margin-bottom: 4px;
+    font-size: .64rem;
+  }
+
+  .section-note,
+  .validation-message {
+    font-size: .76rem;
+    line-height: 1.35;
+  }
+
+  .my-lineup {
+    padding: 12px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .my-lineup .section-heading {
+    margin-bottom: 8px;
+  }
+
+  /* Five picks stay visible as a compact horizontal strip instead
+     of becoming five full-width cards before the album tiers. */
+  .draft-slots {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 3px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .draft-slots::-webkit-scrollbar {
+    display: none;
+  }
+
+  .draft-slot {
+    flex: 0 0 138px;
+    min-height: 104px;
+    padding: 9px;
+    border-radius: 12px;
+    scroll-snap-align: start;
+  }
+
+  .slot-index {
+    margin-bottom: 5px;
+    font-size: .62rem;
+  }
+
+  .slot-title {
+    font-size: .82rem;
+    line-height: 1.2;
+  }
+
+  .slot-artist,
+  .slot-meta {
+    margin-top: 4px;
+    font-size: .68rem;
+    line-height: 1.2;
+  }
+
+  .slot-price {
+    margin-top: 5px;
+    font-size: .8rem;
+  }
+
+  .tiers-container {
+    gap: 9px;
+  }
+
+  .tier-block {
+    border-radius: 14px;
+  }
+
+  .tier-header {
+    padding: 11px 10px;
+    gap: 8px;
+  }
+
+  .tier-title-wrap {
+    gap: 9px;
+  }
+
+  .tier-price-badge {
+    width: 42px;
+    height: 42px;
+    font-size: .9rem;
+  }
+
+  .tier-header h4 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+  }
+
+  .tier-sub {
+    font-size: .68rem;
+  }
+
+  .tier-toggle {
+    font-size: .72rem;
+  }
+
+  .tier-content {
+    padding: 0 9px 9px;
+  }
+
+  .album-grid {
+    gap: 8px;
+  }
+
+  .album-card {
+    min-height: 0;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 13px;
+  }
+
+  .album-title {
+    font-size: .92rem;
+  }
+
+  .album-artist {
+    font-size: .79rem;
+  }
+
+  .album-tags {
+    gap: 5px;
+  }
+
+  .album-tag {
+    padding: 4px 7px;
+    font-size: .64rem;
+  }
+
+  .album-price {
+    font-size: 1rem;
+  }
+
+  .select-btn {
+    padding: 8px 11px;
+    border-radius: 10px;
+    font-size: .74rem;
+  }
+
+  .results-panel {
+    padding: 12px 10px;
+    margin-top: 10px;
+  }
+}
