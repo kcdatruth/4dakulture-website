@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4DK Album Draft — All-Time Hip-Hop Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="album-draft.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">4 Da Kulture Interactive</p>
+        <h1>4DK Album Draft</h1>
+        <h2>All-Time Hip-Hop Edition</h2>
+        <p class="hero-text">
+          You get <strong>$15</strong>. Draft <strong>5 projects</strong>. Build the ultimate hip-hop collection.
+          Solo albums, group albums and classic mixtapes all count. No more than <strong>2 projects per artist</strong>.
+        </p>
+        <div class="rule-chips">
+          <span>$15 Budget</span>
+          <span>5 Picks</span>
+          <span>75 Total Options</span>
+          <span>2-Project Artist Limit</span>
+          <span>East • West • South • Midwest</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-card">
+          <p class="hero-card-label">4DK Challenge</p>
+          <ul>
+            <li>Can you build a classic-heavy team without blowing the budget?</li>
+            <li>Can you find steals in the $1 and $2 tiers?</li>
+            <li>Can you balance bars, replay value and influence?</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="sticky-dashboard" id="dashboard">
+      <div class="budget-box">
+        <span class="label">Budget Remaining</span>
+        <span class="value" id="budget-remaining">$15</span>
+      </div>
+      <div class="budget-box">
+        <span class="label">Drafted</span>
+        <span class="value" id="draft-count">0 / 5</span>
+      </div>
+      <div class="budget-box">
+        <span class="label">Spent</span>
+        <span class="value" id="budget-spent">$0</span>
+      </div>
+      <div class="dashboard-actions">
+        <button id="random-draft-btn" class="secondary-btn">Random Draft</button>
+        <button id="reset-btn" class="ghost-btn">Reset</button>
+      </div>
+    </section>
+
+    <section class="draft-board-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Build Your Collection</p>
+          <h3>Draft Board</h3>
+        </div>
+        <p class="section-note">Tap any project to add it. Tap it again to remove it.</p>
+      </div>
+
+      <section class="my-lineup">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Your Picks</p>
+            <h3>My 4DK Collection</h3>
+          </div>
+          <div id="validation-message" class="validation-message">Draft 5 projects to grade your collection.</div>
+        </div>
+        <div class="draft-slots" id="draft-slots"></div>
+      </section>
+
+      <div id="tiers-container" class="tiers-container"></div>
+    </section>
+
+    <section class="results-panel" id="results-panel">
+      <div class="section-heading compact">
+        <div>
+          <p class="section-kicker">4DK Breakdown</p>
+          <h3>Collection Grade</h3>
+        </div>
+        <div class="results-grade-wrap">
+          <span class="overall-grade-label">Overall</span>
+          <span class="overall-grade" id="overall-grade">—</span>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <div class="metric-card">
+          <div class="metric-top"><span>Bars</span><strong id="bars-score">—</strong></div>
+          <div class="meter"><span id="bars-fill"></span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-top"><span>Production</span><strong id="production-score">—</strong></div>
+          <div class="meter"><span id="production-fill"></span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-top"><span>Replay</span><strong id="replay-score">—</strong></div>
+          <div class="meter"><span id="replay-fill"></span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-top"><span>Influence</span><strong id="influence-score">—</strong></div>
+          <div class="meter"><span id="influence-fill"></span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-top"><span>Diversity</span><strong id="diversity-score">—</strong></div>
+          <div class="meter"><span id="diversity-fill"></span></div>
+        </div>
+        <div class="metric-card emphasis">
+          <div class="metric-top"><span>Spent</span><strong id="results-spent">—</strong></div>
+          <p id="results-summary" class="results-summary">Complete your 5 picks to unlock the 4DK grading report.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="album-draft.js"></script>
+</body>
+</html>
