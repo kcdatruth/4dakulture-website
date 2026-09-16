@@ -135,6 +135,22 @@ const allAlbums = flattenAlbums();
    Pulls matching cover art from Apple's public iTunes catalog.
    Mixtapes/unavailable projects keep a custom 4DK fallback tile.
    --------------------------------------------------------- */
+const artworkDirectOverrides = {
+  '2Pac||Me Against the World': 'https://i.audiomack.com/2pac/54d22084f9.webp',
+  'A Tribe Called Quest||Midnight Marauders': 'https://a2.cdn.hhv.de/items/images/generated/475x475/00095/95146/1-a-tribe-called-quest-midnight-marauders.webp',
+  'Scarface||The Diary': 'https://thesource.com/wp-content/uploads/2021/10/tumblr_pgs1nsWP0o1t1yehoo1_1280.jpg',
+  'Tha Dogg Pound||Dogg Food': 'https://lastfm.freetls.fastly.net/i/u/500x500/cccd2c2ed4061e8a61db5fc48dd41c93.jpg',
+  'Clipse||Hell Hath No Fury': 'https://is1-ssl.mzstatic.com/image/thumb/Features/9b/dd/61/dj.avjfsbkd.jpg/800x800cc.jpg',
+  'UGK||Ridin’ Dirty': 'https://i5.walmartimages.com/seo/Ugk-Ridin-Dirty-Music-Performance-CD_ffe04279-08e5-42d5-b4fe-8cb0689b1eb7.a6a0b4f4851ee2f75b5ed589d4fa4793.jpeg',
+  'Lil Wayne||Da Drought 3': 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/34/62/58/34625830-2cb0-1a48-ca6f-bc16fe52fd96/cover_4062851179539.jpg/3880x3880bb.webp',
+  'Lil Wayne||Dedication 2': 'https://i.scdn.co/image/f2dea34c442e3ca8dd247f81561d1762028beee0',
+  'Lil Wayne||No Ceilings': 'https://www.newburycomics.com/cdn/shop/products/Lil_Wayne-No_Ceilings_CD-2465889_grande.jpg?v=1606328609',
+  'ScHoolboy Q||Habits & Contradictions': 'https://resources.tidal.com/images/69ba7f1a/9b0d/4e67/a30b/20c6815e751a/1280x1280.jpg',
+  'Dom Kennedy||Yellow Album': 'https://i1.sndcdn.com/artworks-000025445883-ts1xmu-t1080x1080.jpg',
+  'Dom Kennedy||From the Westside with Love II': 'https://opmopm.us/cdn/shop/files/WESTSIDEII_vinylSIGWhitefront_55faf935-44c5-4d95-98a6-1fbc3327f1e0_1080x.jpg?v=1776406211',
+  'Big K.R.I.T.||K.R.I.T. Wuz Here': 'https://i.scdn.co/image/ab67616d0000b2735fbffbe16de76124134ddd96'
+};
+
 const artworkCollectionOverrides = {
   'Snoop Dogg||Doggystyle': 1676306182,
   '2Pac||Me Against the World': 446002567,
@@ -150,10 +166,7 @@ const artworkCollectionOverrides = {
   'Big K.R.I.T.||K.R.I.T. Wuz Here': 1512869186
 };
 
-const artworkForceFallback = new Set([
-  'Lil Wayne||Dedication 2',
-  'Dom Kennedy||Yellow Album'
-]);
+const artworkForceFallback = new Set([]);
 
 const artworkCache = new Map();
 const artworkPending = new Map();
@@ -217,6 +230,11 @@ function scoreArtworkResult(result, album) {
 
 function requestAlbumArtwork(album) {
   const key = artworkKey(album);
+
+  if (artworkDirectOverrides[key]) {
+    artworkCache.set(key, artworkDirectOverrides[key]);
+    return Promise.resolve(artworkDirectOverrides[key]);
+  }
 
   if (artworkForceFallback.has(key)) {
     artworkCache.set(key, '');
