@@ -1,4 +1,3 @@
-
 (() => {
   const route = location.pathname.replace(/^\/+|\/+$/g,'').replace(/\.html$/,'');
   const home = route === '' || route === 'index';
@@ -136,7 +135,7 @@
       <div class="shell">
         <div class="home-v2-section-head">
           <div><span class="home-v2-desk-kicker">4DK INTERACTIVE</span><h2>BUILD IT. DEFEND IT.</h2></div>
-          <p>Two signature roster games, one place. Basketball perfection or football perfection — pick your challenge.</p>
+          <p>Three signature games, one place. Build the roster, chase perfection or spend $15 on the ultimate hip-hop collection.</p>
         </div>
         <div class="home-v2-interactive-grid">
           <a class="home-v2-game basketball" href="82-0.html">
@@ -153,9 +152,66 @@
             <p>Build a prime-season all-time roster across offense and defense and see if your squad can survive perfection.</p>
             <b>PLAY THE 17–0 CHALLENGE →</b>
           </a>
+          <a class="home-v2-game album-draft" href="album-draft.html">
+            <span class="big">$15</span>
+            <small>MUSIC • INTERACTIVE</small>
+            <h3>DRAFT YOUR<br>5-ALBUM COLLECTION.</h3>
+            <p>Seventy-five all-time hip-hop projects. Five picks. Fifteen dollars. No more than two projects from one artist.</p>
+            <b>PLAY THE ALBUM DRAFT →</b>
+          </a>
         </div>
       </div>`;
     sports.after(section);
+  }
+
+  function wireAlbumDraftDiscovery(){
+    if(!document.getElementById('fourdk-album-draft-discovery-style')){
+      const style = document.createElement('style');
+      style.id = 'fourdk-album-draft-discovery-style';
+      style.textContent = `
+        body.home-page .home-v2-interactive-grid{
+          grid-template-columns:repeat(3,minmax(0,1fr))!important;
+        }
+        body.home-page .home-v2-game.album-draft{
+          background:
+            radial-gradient(circle at 80% 18%,rgba(212,169,62,.42),transparent 10rem),
+            linear-gradient(145deg,#1d1710,#0d0d0f 62%);
+          border-color:#5c4a24;
+        }
+        body.home-page .home-v2-game.album-draft .big{color:#d8b35f}
+        .home-franchise-grid .album-draft-franchise{border-top-color:#d8b35f!important}
+        @media(max-width:980px){
+          body.home-page .home-v2-interactive-grid{grid-template-columns:1fr 1fr!important}
+          body.home-page .home-v2-game.album-draft{grid-column:1/-1}
+          .home-franchise-grid .album-draft-franchise{grid-column:auto!important}
+        }
+        @media(max-width:620px){
+          body.home-page .home-v2-interactive-grid{grid-template-columns:1fr!important}
+          body.home-page .home-v2-game.album-draft{grid-column:auto}
+        }`;
+      document.head.appendChild(style);
+    }
+
+    const franchiseGrid = document.querySelector('.home-franchise-grid');
+    if(franchiseGrid && !franchiseGrid.querySelector('a[href="album-draft.html"]')){
+      const card = document.createElement('a');
+      card.className = 'home-franchise album-draft-franchise';
+      card.href = 'album-draft.html';
+      card.innerHTML = `<small>INTERACTIVE • MUSIC</small><strong>4DK Album Draft</strong><span>$15. Five projects. Build the ultimate all-time hip-hop collection.</span><b>Draft five →</b>`;
+      franchiseGrid.appendChild(card);
+    }
+
+    try{
+      if(typeof siteSearchIndex !== 'undefined' && !siteSearchIndex.some(item => item.url === 'album-draft.html')){
+        siteSearchIndex.push({
+          title:'4DK Album Draft — All-Time Hip-Hop Edition',
+          type:'Interactive',
+          url:'album-draft.html',
+          desc:'Spend $15 to draft five all-time hip-hop albums and mixtapes from a 75-project board',
+          terms:'interactive album draft music hip hop game all time albums mixtapes 15 dollars five picks east west south midwest'
+        });
+      }
+    }catch(e){}
   }
 
   function markVault(){
@@ -215,6 +271,7 @@
     buildJump();
     buildSports();
     buildInteractive();
+    wireAlbumDraftDiscovery();
     markVault();
     buildStudio();
     updateTicker();
