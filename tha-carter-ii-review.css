@@ -76,3 +76,15 @@
 .c2-final p{margin:20px 0 0;font-size:10px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:850px){.c2-hero-copy,.c2-story-grid,.c2-score-grid{grid-template-columns:1fr}.c2-rail{position:static}.c2-file-grid{grid-template-columns:repeat(2,1fr)}.c2-file-grid div{border-bottom:1px solid #2b2929}.c2-producer-grid{grid-template-columns:repeat(2,1fr)}.c2-section-head{align-items:start;flex-direction:column}}
 @media(max-width:560px){.c2-hero-media{padding:18px 12px 0}.c2-hero-copy{padding:26px 18px 34px}.c2-hero h1{font-size:58px}.c2-score strong{font-size:62px}.c2-story,.c2-production,.c2-track-review,.c2-scorecard{padding:44px 0}.c2-story-grid{gap:26px}.c2-prose p{font-size:17px}.c2-era,.c2-producer-grid{grid-template-columns:1fr}.c2-track{grid-template-columns:34px 1fr 54px;gap:10px}.c2-track>b{font-size:26px}.c2-track>strong{font-size:21px}.c2-section-head h2{font-size:52px}.c2-file-grid{grid-template-columns:1fr 1fr}.c2-file-grid div{padding:14px}}
+
+
+/* LISTEN WHILE YOU READ */
+.c2-listen{padding:48px 0;background:#151515;color:#f2ede5;border-top:1px solid #2d2b29;border-bottom:1px solid #2d2b29}
+.c2-listen-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:center}
+.c2-listen-copy h2{margin:8px 0 12px;font:72px/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase;letter-spacing:-.02em}
+.c2-listen-copy p{max-width:520px;margin:0;color:#b8afa7;font:16px/1.55 Georgia,'Times New Roman',serif}
+.c2-listen-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px;color:#d9d0c7;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+.c2-listen-meta i{color:#cf322c;font-style:normal}
+.c2-listen-player{min-width:0}
+.c2-listen-player iframe{display:block;width:100%;border:0;background:#111}
+@media(max-width:760px){.c2-listen{padding:30px 0}.c2-listen-grid{grid-template-columns:1fr;gap:22px}.c2-listen-copy h2{font-size:52px}.c2-listen-player iframe{height:420px}}
