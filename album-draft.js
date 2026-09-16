@@ -135,6 +135,10 @@ const allAlbums = flattenAlbums();
    Pulls matching cover art from Apple's public iTunes catalog.
    Mixtapes/unavailable projects keep a custom 4DK fallback tile.
    --------------------------------------------------------- */
+const artworkCollectionOverrides = {
+  'Snoop Dogg||Doggystyle': 1676306182
+};
+
 const artworkCache = new Map();
 const artworkPending = new Map();
 const artworkTargets = new WeakMap();
@@ -221,8 +225,18 @@ function requestAlbumArtwork(album) {
       resolve(url);
     };
 
+    const overrideId = artworkCollectionOverrides[key];
+
     window[callbackName] = payload => {
       const results = Array.isArray(payload?.results) ? payload.results : [];
+
+      if (overrideId) {
+        const exact = results.find(item => item && item.artworkUrl100 && Number(item.collectionId) === Number(overrideId))
+          || results.find(item => item && item.artworkUrl100);
+        finish(exact ? upgradeArtworkUrl(exact.artworkUrl100) : '');
+        return;
+      }
+
       const ranked = results
         .filter(item => item && item.artworkUrl100)
         .map(item => ({ item, score: scoreArtworkResult(item, album) }))
@@ -234,8 +248,12 @@ function requestAlbumArtwork(album) {
     };
 
     script.onerror = () => finish('');
-    const query = encodeURIComponent(`${album.artist} ${album.title}`);
-    script.src = `https://itunes.apple.com/search?term=${query}&entity=album&limit=8&country=US&callback=${callbackName}`;
+    if (overrideId) {
+      script.src = `https://itunes.apple.com/lookup?id=${overrideId}&country=US&callback=${callbackName}`;
+    } else {
+      const query = encodeURIComponent(`${album.artist} ${album.title}`);
+      script.src = `https://itunes.apple.com/search?term=${query}&entity=album&limit=8&country=US&callback=${callbackName}`;
+    }
     script.async = true;
     document.body.appendChild(script);
 
