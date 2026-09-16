@@ -725,3 +725,162 @@ button {
     margin-top: 10px;
   }
 }
+
+
+/* =========================================================
+   4DK ALBUM DRAFT — COVER ART UPDATE
+   Official catalog artwork is loaded when available; custom
+   4DK art remains underneath as the fallback for mixtapes.
+   ========================================================= */
+.album-card {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 14px;
+}
+
+.album-card-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.album-cover-wrap,
+.slot-cover-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  background: #121218;
+  border: 1px solid rgba(255,255,255,.09);
+  box-shadow: 0 8px 20px rgba(0,0,0,.24);
+}
+
+.album-cover-wrap {
+  align-self: start;
+  width: 104px;
+}
+
+.album-cover-fallback,
+.album-cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.album-cover-image {
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .22s ease;
+}
+
+.album-cover-wrap.has-art .album-cover-image,
+.slot-cover-wrap.has-art .album-cover-image {
+  opacity: 1;
+}
+
+.album-cover-fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9px;
+  background:
+    linear-gradient(145deg, rgba(212,169,62,.28), rgba(214,66,66,.08)),
+    #18181f;
+}
+
+.album-cover-fallback span {
+  font-size: 1.65rem;
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -.06em;
+  color: #fff;
+}
+
+.album-cover-fallback small {
+  font-size: .46rem;
+  line-height: 1.2;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.72);
+  font-weight: 800;
+}
+
+.album-cover-fallback.region-west {
+  background:
+    linear-gradient(145deg, rgba(154,55,46,.48), rgba(212,169,62,.08)),
+    #18181f;
+}
+.album-cover-fallback.region-south {
+  background:
+    linear-gradient(145deg, rgba(122,91,31,.5), rgba(214,66,66,.09)),
+    #18181f;
+}
+.album-cover-fallback.region-east {
+  background:
+    linear-gradient(145deg, rgba(63,72,103,.5), rgba(212,169,62,.08)),
+    #18181f;
+}
+.album-cover-fallback.region-midwest {
+  background:
+    linear-gradient(145deg, rgba(78,75,96,.52), rgba(212,169,62,.09)),
+    #18181f;
+}
+
+.slot-cover-wrap {
+  width: 64px;
+  flex: 0 0 64px;
+  margin-bottom: 7px;
+}
+
+.slot-cover-wrap .album-cover-fallback {
+  padding: 6px;
+}
+
+.slot-cover-wrap .album-cover-fallback span {
+  font-size: 1rem;
+}
+
+.slot-cover-wrap .album-cover-fallback small {
+  font-size: .36rem;
+}
+
+@media (max-width: 640px) {
+  .album-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 10px;
+    min-height: 112px;
+  }
+
+  .album-cover-wrap {
+    width: 88px;
+  }
+
+  .album-cover-fallback {
+    padding: 7px;
+  }
+
+  .album-cover-fallback span {
+    font-size: 1.25rem;
+  }
+
+  .album-card-main {
+    gap: 7px;
+  }
+
+  .album-card .album-tags {
+    gap: 4px;
+  }
+
+  .album-card .album-footer {
+    margin-top: auto;
+  }
+
+  .slot-cover-wrap {
+    width: 48px;
+    flex-basis: 48px;
+    margin-bottom: 4px;
+  }
+}

@@ -129,6 +129,170 @@ function flattenAlbums() {
 
 const allAlbums = flattenAlbums();
 
+
+/* ---------------------------------------------------------
+   Album artwork
+   Pulls matching cover art from Apple's public iTunes catalog.
+   Mixtapes/unavailable projects keep a custom 4DK fallback tile.
+   --------------------------------------------------------- */
+const artworkCache = new Map();
+const artworkPending = new Map();
+const artworkTargets = new WeakMap();
+let artworkRequestSeq = 0;
+
+function artworkKey(album) {
+  return `${album.artist}||${album.title}`;
+}
+
+function normalizeArtworkText(value = '') {
+  return value
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[’'“”"()[\]{}:;,.!?…+\-_/]/g, ' ')
+    .replace(/\b(deluxe|remastered|expanded|anniversary|explicit|version|edition)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function coverMonogram(title) {
+  const words = normalizeArtworkText(title)
+    .split(' ')
+    .filter(word => word && !['the', 'a', 'an', 'of', 'and', 'to'].includes(word));
+  if (!words.length) return '4K';
+  if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+  return `${words[0][0]}${words[1][0]}`.toUpperCase();
+}
+
+function regionClass(region) {
+  return `region-${String(region).toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+}
+
+function upgradeArtworkUrl(url) {
+  if (!url) return '';
+  return url
+    .replace(/\/\d+x\d+bb\./, '/500x500bb.')
+    .replace(/\/\d+x\d+-\d+bb\./, '/500x500-999bb.');
+}
+
+function scoreArtworkResult(result, album) {
+  const wantedTitle = normalizeArtworkText(album.title);
+  const wantedArtist = normalizeArtworkText(album.artist);
+  const gotTitle = normalizeArtworkText(result.collectionName || '');
+  const gotArtist = normalizeArtworkText(result.artistName || '');
+  let score = 0;
+
+  if (gotTitle === wantedTitle) score += 80;
+  else if (gotTitle.includes(wantedTitle) || wantedTitle.includes(gotTitle)) score += 40;
+
+  if (gotArtist === wantedArtist) score += 60;
+  else {
+    const wantedParts = wantedArtist.split(' ').filter(Boolean);
+    const artistHits = wantedParts.filter(part => gotArtist.includes(part)).length;
+    score += artistHits * 8;
+  }
+
+  if ((result.collectionType || '').toLowerCase() === 'album') score += 5;
+  return score;
+}
+
+function requestAlbumArtwork(album) {
+  const key = artworkKey(album);
+
+  if (artworkCache.has(key)) {
+    return Promise.resolve(artworkCache.get(key));
+  }
+  if (artworkPending.has(key)) {
+    return artworkPending.get(key);
+  }
+
+  const promise = new Promise(resolve => {
+    const callbackName = `fourdkAlbumArt_${Date.now()}_${artworkRequestSeq++}`;
+    const script = document.createElement('script');
+    let finished = false;
+
+    const finish = (url = '') => {
+      if (finished) return;
+      finished = true;
+      clearTimeout(timer);
+      try { delete window[callbackName]; } catch (_) { window[callbackName] = undefined; }
+      script.remove();
+      artworkCache.set(key, url);
+      artworkPending.delete(key);
+      resolve(url);
+    };
+
+    window[callbackName] = payload => {
+      const results = Array.isArray(payload?.results) ? payload.results : [];
+      const ranked = results
+        .filter(item => item && item.artworkUrl100)
+        .map(item => ({ item, score: scoreArtworkResult(item, album) }))
+        .sort((a, b) => b.score - a.score);
+
+      const best = ranked[0];
+      const safeMatch = best && best.score >= 35 ? upgradeArtworkUrl(best.item.artworkUrl100) : '';
+      finish(safeMatch);
+    };
+
+    script.onerror = () => finish('');
+    const query = encodeURIComponent(`${album.artist} ${album.title}`);
+    script.src = `https://itunes.apple.com/search?term=${query}&entity=album&limit=8&country=US&callback=${callbackName}`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    const timer = setTimeout(() => finish(''), 9000);
+  });
+
+  artworkPending.set(key, promise);
+  return promise;
+}
+
+function loadArtworkTarget(target, album) {
+  if (!target || target.dataset.artLoaded === '1') return;
+  target.dataset.artLoaded = '1';
+
+  requestAlbumArtwork(album).then(url => {
+    if (!url || !target.isConnected) return;
+    const img = target.querySelector('img');
+    if (!img) return;
+
+    img.onload = () => target.classList.add('has-art');
+    img.onerror = () => {
+      img.removeAttribute('src');
+      target.classList.remove('has-art');
+    };
+    img.src = url;
+  });
+}
+
+const artworkObserver = 'IntersectionObserver' in window
+  ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const album = artworkTargets.get(entry.target);
+        artworkObserver.unobserve(entry.target);
+        if (album) loadArtworkTarget(entry.target, album);
+      });
+    }, { rootMargin: '240px 0px' })
+  : null;
+
+function observeArtwork(target, album) {
+  if (!target) return;
+  artworkTargets.set(target, album);
+  if (artworkObserver) artworkObserver.observe(target);
+  else loadArtworkTarget(target, album);
+}
+
+function coverFallbackMarkup(album) {
+  return `
+    <div class="album-cover-fallback ${regionClass(album.region)}">
+      <span>${coverMonogram(album.title)}</span>
+      <small>4DK • ${album.type.toUpperCase()}</small>
+    </div>
+    <img class="album-cover-image" alt="${album.title} by ${album.artist} cover art" loading="lazy" decoding="async">
+  `;
+}
+
+
 function artistCount(key) {
   return selectedAlbums.filter(album => album.key === key).length;
 }
@@ -156,22 +320,29 @@ function createAlbumCard(album) {
   if (selected) card.classList.add('selected');
 
   card.innerHTML = `
-    <div>
-      <h5 class="album-title">${album.title}</h5>
-      <p class="album-artist">${album.artist}</p>
+    <div class="album-cover-wrap">
+      ${coverFallbackMarkup(album)}
     </div>
-    <div class="album-tags">
-      <span class="album-tag">${album.region}</span>
-      <span class="album-tag">${album.type}</span>
-      <span class="album-tag">${album.era}</span>
-    </div>
-    <div class="album-footer">
-      <span class="album-price">$${album.price}</span>
-      <button class="select-btn ${selected ? 'selected' : ''}" data-id="${album.id}">
-        ${selected ? 'Remove' : 'Draft'}
-      </button>
+    <div class="album-card-main">
+      <div>
+        <h5 class="album-title">${album.title}</h5>
+        <p class="album-artist">${album.artist}</p>
+      </div>
+      <div class="album-tags">
+        <span class="album-tag">${album.region}</span>
+        <span class="album-tag">${album.type}</span>
+        <span class="album-tag">${album.era}</span>
+      </div>
+      <div class="album-footer">
+        <span class="album-price">$${album.price}</span>
+        <button class="select-btn ${selected ? 'selected' : ''}" data-id="${album.id}">
+          ${selected ? 'Remove' : 'Draft'}
+        </button>
+      </div>
     </div>
   `;
+
+  observeArtwork(card.querySelector('.album-cover-wrap'), album);
 
   const button = card.querySelector('button');
   button.addEventListener('click', () => handleSelection(album.id));
@@ -228,12 +399,16 @@ function renderDraftSlots() {
 
     if (album) {
       slot.innerHTML = `
+        <div class="slot-cover-wrap">
+          ${coverFallbackMarkup(album)}
+        </div>
         <div class="slot-index">Pick ${i + 1}</div>
         <div class="slot-title">${album.title}</div>
         <div class="slot-artist">${album.artist}</div>
         <div class="slot-meta">${album.region} • ${album.type} • ${album.era}</div>
         <div class="slot-price">$${album.price}</div>
       `;
+      observeArtwork(slot.querySelector('.slot-cover-wrap'), album);
     } else {
       slot.innerHTML = `
         <div class="slot-index">Pick ${i + 1}</div>
