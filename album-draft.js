@@ -153,17 +153,42 @@ const artworkDirectOverrides = {
 
 const artworkCollectionOverrides = {
   'Snoop Dogg||Doggystyle': 1676306182,
+  'Jay-Z||Reasonable Doubt': 1475948310,
+  'Public Enemy||It Takes a Nation of Millions to Hold Us Back': 1440837788,
+  'Wu-Tang Clan||Enter the Wu-Tang (36 Chambers)': 1746566237,
+  'Eminem||The Marshall Mathers LP': 1440906504,
+  'Kanye West||My Beautiful Dark Twisted Fantasy': 1443160553,
+
   '2Pac||Me Against the World': 446002567,
+  'Dr. Dre||2001': 1440782221,
+  'A Tribe Called Quest||The Low End Theory': 278911460,
   'A Tribe Called Quest||Midnight Marauders': 265670545,
-  'Tha Dogg Pound||Dogg Food': 1676264771,
+  'GZA||Liquid Swords': 1440835438,
+  'Ghostface Killah||Supreme Clientele': 190401592,
+  'T.I.||Trap Muzik': 1258978320,
   'Scarface||The Diary': 700447040,
+  'The Game||The Documentary': 1440799117,
+
+  'Tha Dogg Pound||Dogg Food': 1676264771,
+  'Nipsey Hussle||Victory Lap': 1316706552,
+  'Lil Wayne||Da Drought 3': 1829406765,
+  'Lil Wayne||Tha Carter': 1440745644,
   'Clipse||Hell Hath No Fury': 204865737,
   'UGK||Ridin’ Dirty': 268522887,
-  'Lil Wayne||Da Drought 3': 1829406765,
+  'Outkast||ATLiens': 263570527,
+  'Mobb Deep||The Infamous': 255342338,
+  'Fugees||The Score': 1054461239,
+  'Lupe Fiasco||Food & Liquor': 189225199,
+
   'Lil Wayne||No Ceilings': 1528649764,
   'ScHoolboy Q||Habits & Contradictions': 495258117,
-  'Dom Kennedy||From the Westside with Love II': 446922317,
-  'Big K.R.I.T.||K.R.I.T. Wuz Here': 1512869186
+
+  'Big K.R.I.T.||K.R.I.T. Wuz Here': 1512869186,
+  'Big K.R.I.T.||Return of 4Eva': 1582021156,
+  'Wiz Khalifa||Kush & Orange Juice': 1843955570,
+  'J. Cole||Friday Night Lights': 1782159762,
+  'J. Cole||The Warm Up': 1781303075,
+  'Dom Kennedy||From the Westside with Love II': 446922317
 };
 
 const artworkForceFallback = new Set([]);
