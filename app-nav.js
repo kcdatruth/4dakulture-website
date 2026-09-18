@@ -991,3 +991,243 @@
   setTimeout(apply, 1800);
   setTimeout(apply, 3200);
 })();
+
+
+
+/* ==========================================================
+   THE ME7O FILES — 4DK DISCOVERY WIRING
+   Add-only integration for NBA, Throwback, Search and App More.
+   Existing content is preserved.
+   ========================================================== */
+(() => {
+  const me7oUrl = 'me7o-files.html';
+  const path = (location.pathname || '/').toLowerCase();
+  const isNBA = path.endsWith('/nba.html');
+  const isThrowback = path.endsWith('/throwback.html');
+  const isMe7oPage = path.includes('/me7o-files') || path.includes('/me7o-file-');
+
+  const addStyles = () => {
+    if (document.getElementById('fourdk-me7o-files-wiring-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'fourdk-me7o-files-wiring-styles';
+    style.textContent = `
+      .me7o-files-nba-promo{
+        position:relative;overflow:hidden;
+        padding:34px 0;
+        background:
+          radial-gradient(circle at 84% 16%,rgba(35,101,196,.20),transparent 18rem),
+          radial-gradient(circle at 14% 82%,rgba(232,108,36,.20),transparent 18rem),
+          linear-gradient(145deg,#15151a,#09090b 72%);
+        color:#fff;
+        border-top:1px solid #303038;
+        border-bottom:1px solid #303038
+      }
+      .me7o-files-nba-promo:after{
+        content:'7';
+        position:absolute;right:-18px;bottom:-52px;
+        font:1000 clamp(160px,25vw,330px)/.8 Arial Black,Impact,sans-serif;
+        color:#fff;opacity:.028;letter-spacing:-.08em;pointer-events:none
+      }
+      .me7o-files-nba-inner{
+        position:relative;z-index:2;
+        display:grid;grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);
+        gap:24px;align-items:center;
+        padding:22px;border:1px solid #34343b;
+        background:rgba(10,10,13,.78);
+        color:#fff;text-decoration:none
+      }
+      .me7o-files-nba-copy small{
+        display:block;color:#ff7a42;
+        font-size:9px;font-weight:1000;
+        letter-spacing:.14em;text-transform:uppercase
+      }
+      .me7o-files-nba-copy h2{
+        margin:8px 0 9px;
+        font:1000 clamp(44px,6vw,76px)/.82 Arial Black,Impact,sans-serif;
+        letter-spacing:-.055em;text-transform:uppercase
+      }
+      .me7o-files-nba-copy h2 em{font-style:normal;color:#2f73ce}
+      .me7o-files-nba-copy p{
+        margin:0;max-width:760px;color:#b6b0ac;
+        font:14px/1.5 Georgia,'Times New Roman',serif
+      }
+      .me7o-files-nba-cta{
+        display:inline-block;margin-top:16px;padding:10px 13px;
+        background:#e86c24;color:#fff;
+        font-size:9px;font-weight:1000;
+        letter-spacing:.09em;text-transform:uppercase
+      }
+      .me7o-files-nba-art{
+        position:relative;overflow:hidden;
+        min-height:210px;border:1px solid #3a3940;background:#0d0d10
+      }
+      .me7o-files-nba-art img{
+        display:block;width:100%;height:100%;object-fit:cover
+      }
+      .me7o-files-nba-art span{
+        position:absolute;left:10px;bottom:10px;
+        padding:7px 9px;background:rgba(8,8,10,.86);
+        color:#fff;font-size:8px;font-weight:1000;
+        letter-spacing:.09em;text-transform:uppercase
+      }
+
+      .king-player-archives-grid.me7o-files-added{
+        grid-template-columns:repeat(5,1fr)!important
+      }
+      .king-player-archive-card.me7o{
+        border-top:4px solid #e86c24!important;
+        background:
+          radial-gradient(circle at 82% 16%,rgba(35,101,196,.27),transparent 10rem),
+          radial-gradient(circle at 18% 84%,rgba(232,108,36,.20),transparent 10rem),
+          #121217!important
+      }
+      .king-player-archive-card.me7o:after{content:'7'!important}
+      .king-player-archive-card.me7o small{color:#ff7a42!important}
+
+      @media(max-width:980px){
+        .king-player-archives-grid.me7o-files-added{
+          grid-template-columns:repeat(3,1fr)!important
+        }
+      }
+      @media(max-width:760px){
+        .me7o-files-nba-promo{padding:28px 0}
+        .me7o-files-nba-inner{grid-template-columns:1fr;padding:18px}
+        .me7o-files-nba-copy h2{font-size:52px}
+        .me7o-files-nba-art{min-height:190px}
+        .king-player-archives-grid.me7o-files-added{
+          display:flex!important;
+          overflow-x:auto;
+          scroll-snap-type:x mandatory;
+          gap:9px!important
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  };
+
+  const addToSearch = () => {
+    try {
+      if (typeof siteSearchIndex !== 'undefined' &&
+          !siteSearchIndex.some(item => item.url === me7oUrl)) {
+        siteSearchIndex.push({
+          title:"The ME7O Files: Carmelo's Way",
+          type:'4DK Basketball Archive',
+          url:me7oUrl,
+          desc:"Carmelo Anthony from Oak Hill and Syracuse through Denver, New York, Team USA and the full legacy conversation.",
+          terms:'carmelo anthony melo me7o files syracuse denver nuggets new york knicks team usa olympics basketball archive throwback'
+        });
+      }
+    } catch (e) {}
+  };
+
+  const wireAppMore = () => {
+    const grid = document.querySelector('.fourdk-more-grid');
+    if (!grid || grid.querySelector('[data-me7o-files-more]')) return;
+
+    const link = document.createElement('a');
+    link.href = '/me7o-files.html';
+    link.dataset.me7oFilesMore = '';
+    link.innerHTML = 'The ME7O Files <span>›</span>';
+
+    const king = grid.querySelector('a[href="/king-files.html"]');
+    const vick = grid.querySelector('[data-vick-files-more],a[href="/vick-files.html"]');
+
+    if (vick) vick.after(link);
+    else if (king) king.after(link);
+    else grid.appendChild(link);
+  };
+
+  const setMe7oAppTab = () => {
+    if (!isMe7oPage) return;
+    const nav = document.querySelector('.fourdk-app-nav');
+    if (!nav) return;
+
+    nav.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+    nav.querySelector('[data-fourdk-tab="nba"]')?.classList.add('active');
+  };
+
+  const wireNBA = () => {
+    if (!isNBA) return;
+
+    const heroNav = document.querySelector('.nba-hero-nav');
+    if (heroNav && !heroNav.querySelector('[data-me7o-files-nav]')) {
+      const link = document.createElement('a');
+      link.href = me7oUrl;
+      link.dataset.me7oFilesNav = '';
+      link.textContent = 'ME7O Files';
+      heroNav.appendChild(link);
+    }
+
+    if (document.querySelector('.me7o-files-nba-promo')) return;
+
+    const kingPromo = document.querySelector('.king-files-nba-promo');
+    const pulse = document.querySelector('.nba-pulse');
+    const season = document.querySelector('.nba-season-feature');
+    const target = kingPromo || pulse || season;
+    if (!target) return;
+
+    const promo = document.createElement('section');
+    promo.className = 'me7o-files-nba-promo';
+    promo.setAttribute('aria-label','The ME7O Files');
+    promo.innerHTML = `
+      <div class="shell">
+        <a class="me7o-files-nba-inner" href="${me7oUrl}">
+          <div class="me7o-files-nba-copy">
+            <small>4DK BASKETBALL HISTORY • NEW ARCHIVE</small>
+            <h2>THE <em>ME7O</em> FILES.</h2>
+            <p>Oak Hill. Syracuse. Denver. New York. Team USA. The scoring, the style, the pressure, the criticism and the respect — all in one permanent Carmelo Anthony archive.</p>
+            <span class="me7o-files-nba-cta">ENTER CARMELO'S WAY →</span>
+          </div>
+          <div class="me7o-files-nba-art">
+            <img src="me7o-cover-legacy.png" alt="The ME7O Files: Carmelo's Way">
+            <span>FILE 001 • SYRACUSE • IN DEVELOPMENT</span>
+          </div>
+        </a>
+      </div>`;
+
+    target.after(promo);
+  };
+
+  const wireThrowback = () => {
+    if (!isThrowback) return;
+
+    const grid = document.querySelector('.king-player-archives-grid');
+    if (!grid) return;
+
+    if (!grid.querySelector('[data-me7o-files-archive]')) {
+      const card = document.createElement('a');
+      card.className = 'king-player-archive-card me7o';
+      card.href = me7oUrl;
+      card.dataset.me7oFilesArchive = '';
+      card.innerHTML = `
+        <small>BASKETBALL HISTORY • FILE 001 IN DEVELOPMENT</small>
+        <strong>THE ME7O FILES</strong>
+        <span>Carmelo's Way — Syracuse, Denver, New York, Team USA and the full legacy conversation.</span>
+        <b>OPEN THE FILES →</b>`;
+      grid.appendChild(card);
+    }
+
+    grid.classList.add('me7o-files-added');
+  };
+
+  const apply = () => {
+    addStyles();
+    addToSearch();
+    wireAppMore();
+    setMe7oAppTab();
+    wireNBA();
+    wireThrowback();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', apply, {once:true});
+  } else {
+    apply();
+  }
+
+  // Existing 4DK archive blocks are injected dynamically.
+  // Repeat safely so ME7O lands after those blocks appear.
+  setTimeout(apply, 300);
+  setTimeout(apply, 1000);
+  setTimeout(apply, 2200);
+})();
