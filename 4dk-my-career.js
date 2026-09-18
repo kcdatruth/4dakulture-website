@@ -653,10 +653,10 @@
     court.innerHTML=`<div class="mc-realtime-wrap ${state.settings.camera==='Angled'?'camera-angled':''}" id="realtimeWrap">
       <div class="mc-realtime-stage" id="realtimeStage">
         <canvas id="courtCanvas" width="940" height="500" aria-label="Playable 5 on 5 basketball court"></canvas>
-        <div class="mc-control-hud" id="controlHud"></div>
         <div class="mc-engine-status" id="engineStatus">TIP-OFF</div>
-        <div class="mc-shot-meter" id="shotMeter"><div class="mc-shot-meter-fill" id="shotMeterFill"></div><div class="mc-shot-meter-mark"></div></div>
       </div>
+      <div class="mc-control-hud" id="controlHud"></div>
+      <div class="mc-shot-meter" id="shotMeter"><div class="mc-shot-meter-fill" id="shotMeterFill"></div><div class="mc-shot-meter-mark"></div></div>
     </div>`;
 
     panel.querySelector('.mc-engine-toolbar')?.remove();
@@ -676,7 +676,7 @@
 
     $('decisionLabel').textContent='REAL-TIME 5-ON-5';
     $('decisionTitle').textContent='CONTROL YOUR PLAYER.';
-    $('actionButtons').innerHTML='<div class="mc-engine-actions" id="engineActions"></div><div class="mc-engine-mini" id="engineMini"></div><p class="mc-engine-help">Joystick: drag the left stick. Tap: tap open court to move. On desktop, WASD / arrow keys also work.</p>';
+    $('actionButtons').innerHTML='<div class="mc-engine-mini" id="engineMini"></div><p class="mc-engine-help">The live action buttons now float on the court. Joystick: drag the left stick. Tap: tap open court to move. On desktop, WASD / arrow keys also work.</p>';
 
     const canvas=$('courtCanvas'),ctx=canvas.getContext('2d');
     const wrap=$('realtimeWrap'),stage=$('realtimeStage'),hud=$('controlHud');
@@ -774,11 +774,15 @@
       }else{
         const hint=document.createElement('div');hint.className='mc-tap-hint';hint.textContent='TAP COURT TO MOVE';hud.appendChild(hint);
       }
+      const pad=document.createElement('div');
+      pad.className='mc-action-pad';
+      pad.id='engineHudActions';
+      hud.appendChild(pad);
       renderActionButtons();
     }
 
     function renderActionButtons(){
-      const box=$('engineActions');if(!box)return;
+      const box=$('engineHudActions');if(!box)return;
       const offense=possession===userTeam;
       let buttons=[];
       if(offense&&user.hasBall){
@@ -788,7 +792,8 @@
       }else{
         buttons=[['steal','STEAL','Reach or jump the lane','defense'],['contest','CONTEST','Hands up / challenge shot','defense'],['switch','SWITCH','Trade defensive assignments','defense'],['rebound','CRASH GLASS','Attack the defensive board','defense']];
       }
-      box.innerHTML=buttons.map(x=>`<button type="button" class="mc-engine-action ${x[3]}" data-engine-action="${x[0]}"><strong>${x[1]}</strong><small>${x[2]}</small></button>`).join('');
+      box.dataset.side=offense?'offense':'defense';
+      box.innerHTML=buttons.map((x,i)=>`<button type="button" class="mc-hud-action ${x[3]} ${i===0?'main':''}" data-engine-action="${x[0]}" aria-label="${x[1]}"><strong>${x[1]}</strong><small>${x[2]}</small></button>`).join('');
       box.querySelectorAll('[data-engine-action]').forEach(b=>{
         const a=b.dataset.engineAction;
         if(a==='shoot'){

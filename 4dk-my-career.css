@@ -189,3 +189,63 @@ body.mc-court-fullscreen{overflow:hidden}
   .mc-game-shell.realtime-active .game-player-card{padding:12px}.mc-game-shell.realtime-active .mc-engine-card{padding:12px}
   .mc-game-shell.realtime-active .play-by-play{height:92px;font-size:8px}
 }
+
+/* =============================================================
+   4DK MY CAREER V2.1 — MOBILE COURT HUD
+   Keeps movement + live action controls on the court at once.
+   ============================================================= */
+.mc-action-pad{
+  position:absolute;right:14px;bottom:14px;z-index:24;
+  display:grid;grid-template-columns:repeat(2,68px);gap:8px;
+  pointer-events:auto;touch-action:none;
+}
+.mc-hud-action{
+  width:68px;height:68px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.32);
+  background:rgba(9,14,20,.88);color:#fff;
+  box-shadow:0 5px 18px rgba(0,0,0,.42),inset 0 0 0 1px rgba(255,255,255,.04);
+  padding:5px;text-align:center;font-weight:1000;letter-spacing:.03em;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  -webkit-tap-highlight-color:transparent;touch-action:none;user-select:none;
+}
+.mc-hud-action strong{display:block;font-size:8px;line-height:1.02}
+.mc-hud-action small{display:none}
+.mc-hud-action.primary{background:rgba(179,29,43,.94);border-color:#ff6472}
+.mc-hud-action.defense{background:rgba(18,40,59,.94);border-color:#71b7ef}
+.mc-hud-action.main{transform:scale(1.06)}
+.mc-hud-action:active{transform:scale(.94)}
+.mc-hud-action.main:active{transform:scale(.99)}
+.mc-action-pad[data-side="offense"]{filter:drop-shadow(0 0 8px rgba(233,49,66,.10))}
+.mc-action-pad[data-side="defense"]{filter:drop-shadow(0 0 8px rgba(100,170,230,.12))}
+
+/* HUD is outside the angled court transform so controls stay flat/readable. */
+.mc-realtime-wrap>.mc-control-hud{position:absolute;inset:0;pointer-events:none;z-index:22}
+.mc-realtime-wrap>.mc-shot-meter{z-index:26}
+
+@media(max-width:620px){
+  .mc-action-pad{right:9px;bottom:9px;grid-template-columns:repeat(2,58px);gap:6px}
+  .mc-hud-action{width:58px;height:58px;border-width:1px;padding:4px}
+  .mc-hud-action strong{font-size:7px}
+  .mc-shot-meter{bottom:112px;width:46%;height:12px}
+  .mc-tap-hint{left:9px;bottom:9px;max-width:92px;padding:7px 8px;font-size:6px}
+  .mc-engine-help{margin-top:6px}
+}
+
+@media(max-width:420px){
+  .mc-action-pad{grid-template-columns:repeat(2,54px);gap:5px}
+  .mc-hud-action{width:54px;height:54px}
+  .mc-hud-action strong{font-size:6.5px}
+  .mc-shot-meter{bottom:104px}
+}
+
+.mc-realtime-wrap:fullscreen .mc-action-pad{
+  right:max(18px,env(safe-area-inset-right));
+  bottom:max(18px,env(safe-area-inset-bottom));
+  grid-template-columns:repeat(2,74px);gap:10px;
+}
+.mc-realtime-wrap:fullscreen .mc-hud-action{width:74px;height:74px}
+.mc-realtime-wrap:fullscreen .mc-joystick{
+  left:max(18px,env(safe-area-inset-left));
+  bottom:max(18px,env(safe-area-inset-bottom));
+}
+.mc-realtime-wrap:fullscreen .mc-shot-meter{bottom:max(116px,calc(env(safe-area-inset-bottom) + 104px))}
