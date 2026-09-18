@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>4DK MY CAREER | Senior Year Beta</title>
+<meta name="description" content="Create a player, choose any real high school, play a senior season, build recruiting stars and earn real college offers in the first playable 4DK MY CAREER beta.">
+<link rel="canonical" href="https://4dakulturemedia.com/4dk-my-career.html">
+<meta name="theme-color" content="#07090c">
+<link rel="stylesheet" href="4dk-my-career.css">
+</head>
+<body>
+<a class="skip" href="#game">Skip to game</a>
+
+<header class="mc-top">
+  <a class="mc-brand" href="nba.html"><span>4</span> DA KULTURE</a>
+  <div class="mc-top-center">BASKETBALL • INTERACTIVE</div>
+  <button id="resetCareerTop" class="mc-ghost small" type="button">RESET</button>
+</header>
+
+<main id="game" class="mc-app">
+  <section id="welcomeScreen" class="mc-screen active">
+    <div class="mc-hero">
+      <div class="mc-hero-copy">
+        <span class="mc-kicker">4DK BASKETBALL • PLAYABLE BETA V1</span>
+        <h1>4DK<br><em>MY CAREER</em></h1>
+        <p>Senior year starts now. Build your player, choose any real high school, play the games, climb the recruiting board and earn your college offers.</p>
+        <div class="mc-hero-actions">
+          <button id="newCareerBtn" class="mc-primary" type="button">START NEW CAREER</button>
+          <button id="continueCareerBtn" class="mc-secondary" type="button">CONTINUE CAREER</button>
+        </div>
+        <div class="mc-beta-note">V1 covers the full high-school senior season through Commitment Day. College, transfer portal, NIL, agents, Draft Combine and the NBA career are the next chapters.</div>
+      </div>
+      <div class="mc-hero-board">
+        <div class="mc-board-head"><span>ROAD TO THE LEAGUE</span><b>SENIOR YEAR</b></div>
+        <div class="mc-road">
+          <div class="on"><span>01</span><strong>HIGH SCHOOL</strong><small>PLAYABLE NOW</small></div>
+          <div><span>02</span><strong>COLLEGE</strong><small>COMING NEXT</small></div>
+          <div><span>03</span><strong>DRAFT</strong><small>COMING NEXT</small></div>
+          <div><span>04</span><strong>NBA</strong><small>COMING NEXT</small></div>
+          <div><span>05</span><strong>LEGACY</strong><small>COMING NEXT</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="builderScreen" class="mc-screen">
+    <div class="mc-shell">
+      <div class="mc-screen-head">
+        <div><span class="mc-kicker">CREATE YOUR PLAYER</span><h2>BUILD THE PROSPECT.</h2></div>
+        <span class="mc-step">STEP 1 / 3</span>
+      </div>
+
+      <form id="playerForm" class="mc-builder">
+        <div class="mc-card">
+          <h3>IDENTITY</h3>
+          <label>Player Name<input id="playerName" required maxlength="28" placeholder="Your player name"></label>
+          <div class="mc-two">
+            <label>Jersey #<input id="jersey" type="number" min="0" max="99" value="3"></label>
+            <label>Hand<select id="hand"><option>Right</option><option>Left</option></select></label>
+          </div>
+        </div>
+
+        <div class="mc-card">
+          <h3>POSITION + BODY</h3>
+          <label>Position
+            <select id="position">
+              <option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option><option>Point Forward</option>
+            </select>
+          </label>
+          <div class="mc-two">
+            <label>Height<select id="height"></select></label>
+            <label>Weight<select id="weight"></select></label>
+          </div>
+          <label>Wingspan<select id="wingspan"></select></label>
+        </div>
+
+        <div class="mc-card">
+          <h3>ARCHETYPE</h3>
+          <label>Build
+            <select id="archetype"></select>
+          </label>
+          <div id="buildPreview" class="mc-build-preview"></div>
+        </div>
+
+        <div class="mc-card school-card">
+          <h3>HIGH SCHOOL</h3>
+          <p class="mc-help">Type any real high school. The suggestions are examples only — custom entries are accepted.</p>
+          <label>School Name
+            <input id="school" list="schoolList" required placeholder="John Muir High School">
+            <datalist id="schoolList">
+              <option value="John Muir High School">
+              <option value="Pasadena High School">
+              <option value="Sierra Canyon School">
+              <option value="Mater Dei High School">
+              <option value="Harvard-Westlake School">
+              <option value="Long Beach Poly High School">
+              <option value="Centennial High School (Corona)">
+              <option value="Bishop Gorman High School">
+              <option value="Duncanville High School">
+              <option value="Oak Hill Academy">
+              <option value="Montverde Academy">
+              <option value="IMG Academy">
+            </datalist>
+          </label>
+          <div class="mc-two">
+            <label>City<input id="schoolCity" placeholder="Pasadena"></label>
+            <label>State<input id="schoolState" maxlength="20" placeholder="CA"></label>
+          </div>
+          <div class="mc-class">CLASS: <b>SENIOR</b></div>
+        </div>
+
+        <button class="mc-primary wide" type="submit">LOCK PLAYER →</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="settingsScreen" class="mc-screen">
+    <div class="mc-shell narrow">
+      <div class="mc-screen-head">
+        <div><span class="mc-kicker">CAREER SETTINGS</span><h2>HOW DO YOU WANNA HOOP?</h2></div>
+        <span class="mc-step">STEP 2 / 3</span>
+      </div>
+
+      <div class="mc-settings-grid">
+        <div class="mc-card">
+          <h3>DIFFICULTY</h3>
+          <div id="difficultyChoices" class="mc-choice-stack">
+            <button data-value="Rookie" type="button">ROOKIE<small>More forgiving windows</small></button>
+            <button data-value="Pro" type="button">PRO<small>Balanced starting point</small></button>
+            <button data-value="All-Star" class="selected" type="button">ALL-STAR<small>Smarter defense, tighter reads</small></button>
+            <button data-value="Superstar" type="button">SUPERSTAR<small>Mistakes get punished</small></button>
+            <button data-value="Hall of Fame" type="button">HALL OF FAME<small>Nothing comes easy</small></button>
+          </div>
+        </div>
+
+        <div class="mc-card">
+          <h3>HIGH SCHOOL QUARTERS</h3>
+          <div id="quarterChoices" class="mc-chip-row">
+            <button data-value="5" type="button">5 MIN</button>
+            <button data-value="6" type="button">6 MIN</button>
+            <button data-value="8" class="selected" type="button">8 MIN</button>
+            <button data-value="10" type="button">10 MIN</button>
+            <button data-value="12" type="button">12 MIN</button>
+          </div>
+          <p class="mc-help">NBA will use the same 5 / 6 / 8 / 10 / 12-minute options later. College will use 10 or 20-minute halves.</p>
+        </div>
+
+        <div class="mc-card">
+          <h3>DEFAULT GAME MODE</h3>
+          <div id="modeChoices" class="mc-choice-stack">
+            <button data-value="Full Game" class="selected" type="button">PLAY FULL GAME<small>Possession-by-possession decisions</small></button>
+            <button data-value="Key Moments" type="button">KEY MOMENTS<small>Sim ahead, then take over late</small></button>
+            <button data-value="Sim" type="button">SIM GAME<small>Let ratings + matchup decide it</small></button>
+          </div>
+          <p class="mc-help">You can change the mode before every game.</p>
+        </div>
+      </div>
+
+      <button id="finishSetupBtn" class="mc-primary wide" type="button">BEGIN SENIOR YEAR →</button>
+    </div>
+  </section>
+
+  <section id="hubScreen" class="mc-screen">
+    <div class="mc-hub-top">
+      <div>
+        <span class="mc-kicker">4DK MY CAREER • SENIOR YEAR</span>
+        <h2 id="hubName">PLAYER</h2>
+        <p id="hubSchool"></p>
+      </div>
+      <div class="mc-ovr"><span>OVR</span><b id="hubOvr">70</b></div>
+    </div>
+
+    <nav class="mc-tabs">
+      <button class="active" data-tab="careerTab" type="button">CAREER</button>
+      <button data-tab="playerTab" type="button">MY PLAYER</button>
+      <button data-tab="recruitingTab" type="button">RECRUITING</button>
+      <button data-tab="upgradeTab" type="button">ATTRIBUTES</button>
+      <button data-tab="statsTab" type="button">STATS</button>
+    </nav>
+
+    <div class="mc-hub-body">
+      <section id="careerTab" class="mc-tab active">
+        <div class="mc-hub-grid">
+          <div class="mc-main-column">
+            <div class="mc-card next-game">
+              <span class="mc-kicker">NEXT GAME</span>
+              <div class="next-match">
+                <div><small id="nextGameNo">GAME 1</small><h3 id="nextOpponent">OPPONENT</h3><p id="nextGameTag"></p></div>
+                <div class="opp-rating"><span>OPP</span><b id="oppStrength">78</b></div>
+              </div>
+
+              <div class="mc-mode-select">
+                <span>PLAY MODE</span>
+                <button data-game-mode="Full Game" class="selected" type="button">FULL GAME</button>
+                <button data-game-mode="Key Moments" type="button">KEY MOMENTS</button>
+                <button data-game-mode="Sim" type="button">SIM</button>
+              </div>
+              <button id="playNextBtn" class="mc-primary wide" type="button">PLAY NEXT GAME →</button>
+            </div>
+
+            <div class="mc-card">
+              <div class="mc-card-head"><h3>SENIOR SCHEDULE</h3><span id="recordText">0–0</span></div>
+              <div id="scheduleList" class="mc-schedule"></div>
+            </div>
+          </div>
+
+          <aside class="mc-side-column">
+            <div class="mc-card recruit-card">
+              <span class="mc-kicker">RECRUITING STATUS</span>
+              <div id="starDisplay" class="stars">★★☆☆☆</div>
+              <h3 id="prospectLabel">2-STAR PROSPECT</h3>
+              <div class="rank-row"><span>NATIONAL</span><b id="nationalRank">#420</b></div>
+              <div class="rank-row"><span>STATE</span><b id="stateRank">#88</b></div>
+              <div class="rank-row"><span>HYPE</span><b id="hypeText">22</b></div>
+            </div>
+
+            <div class="mc-card">
+              <span class="mc-kicker">KULTURE POINTS</span>
+              <div class="kp-number" id="kpText">0 KP</div>
+              <p class="mc-help">Earn KP through production, winning and smart decisions. Spend it on attributes.</p>
+            </div>
+
+            <div class="mc-card">
+              <span class="mc-kicker">LATEST OFFERS</span>
+              <div id="offerMini" class="offer-mini"><span>No offers yet. Go hoop.</span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="playerTab" class="mc-tab">
+        <div class="mc-card">
+          <div id="playerProfile" class="mc-player-profile"></div>
+        </div>
+      </section>
+
+      <section id="recruitingTab" class="mc-tab">
+        <div class="mc-card">
+          <div class="mc-card-head"><h3>RECRUITING BOARD</h3><span id="recruitingStatus">BUILD YOUR NAME</span></div>
+          <div id="offerList" class="offer-list"></div>
+        </div>
+      </section>
+
+      <section id="upgradeTab" class="mc-tab">
+        <div class="mc-card">
+          <div class="mc-card-head"><h3>ATTRIBUTES</h3><span id="upgradeKP">0 KP</span></div>
+          <p class="mc-help">Each +1 costs more as the rating climbs. Build your player your way.</p>
+          <div id="attributeList" class="attribute-list"></div>
+        </div>
+      </section>
+
+      <section id="statsTab" class="mc-tab">
+        <div class="mc-card">
+          <div class="mc-card-head"><h3>SENIOR YEAR STATS</h3><span id="gamesPlayedText">0 GP</span></div>
+          <div id="seasonStats" class="season-stats"></div>
+          <div id="gameLog" class="game-log"></div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section id="gameScreen" class="mc-screen">
+    <div class="mc-game-shell">
+      <div class="mc-scoreboard">
+        <div class="team-side"><small id="userSchoolShort">YOUR SCHOOL</small><b id="userScore">0</b></div>
+        <div class="game-clock"><span id="quarterText">Q1</span><strong id="clockText">8:00</strong><small id="modeText">FULL GAME</small></div>
+        <div class="team-side right"><small id="oppSchoolShort">OPPONENT</small><b id="oppScore">0</b></div>
+      </div>
+
+      <div class="mc-game-layout">
+        <div class="mc-court-panel">
+          <div class="court">
+            <div class="court-center"><span>4DK</span></div>
+            <div id="courtStatus" class="court-status">TIP-OFF</div>
+          </div>
+          <div id="playByPlay" class="play-by-play"></div>
+        </div>
+
+        <aside class="mc-game-controls">
+          <div class="mc-card game-player-card">
+            <div class="game-player-top"><div><small id="gamePlayerPos">PG</small><h3 id="gamePlayerName">PLAYER</h3></div><div><span>STAMINA</span><b id="staminaText">100</b></div></div>
+            <div id="liveStatLine" class="live-stat-line"></div>
+          </div>
+
+          <div class="mc-card">
+            <span class="mc-kicker" id="decisionLabel">OFFENSIVE POSSESSION</span>
+            <h3 id="decisionTitle">MAKE YOUR READ.</h3>
+            <div id="actionButtons" class="action-buttons"></div>
+          </div>
+
+          <button id="simRestBtn" class="mc-secondary wide" type="button">SIM REST OF GAME</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="postgameScreen" class="mc-screen">
+    <div class="mc-shell narrow">
+      <div class="mc-screen-head">
+        <div><span class="mc-kicker">FINAL</span><h2 id="postHeadline">GAME COMPLETE.</h2></div>
+        <div class="post-grade" id="postGrade">B+</div>
+      </div>
+      <div class="post-score">
+        <div><small id="postUserSchool">SCHOOL</small><b id="postUserScore">0</b></div>
+        <span>FINAL</span>
+        <div><small id="postOppSchool">OPP</small><b id="postOppScore">0</b></div>
+      </div>
+      <div id="postStatLine" class="post-stat-line"></div>
+      <div class="mc-post-grid">
+        <div class="mc-card"><span class="mc-kicker">RECRUITING IMPACT</span><h3 id="postRecruiting">STOCK HELD</h3><p id="postRecruitingDetail"></p></div>
+        <div class="mc-card"><span class="mc-kicker">REWARDS</span><h3 id="postKP">+100 KP</h3><p id="postRewardDetail"></p></div>
+      </div>
+      <div id="newOffers" class="new-offers"></div>
+      <button id="returnHubBtn" class="mc-primary wide" type="button">CONTINUE SENIOR YEAR →</button>
+    </div>
+  </section>
+
+  <section id="commitmentScreen" class="mc-screen">
+    <div class="commit-wrap">
+      <span class="mc-kicker">SENIOR YEAR COMPLETE</span>
+      <h2>COMMITMENT<br><em>DAY.</em></h2>
+      <p id="commitIntro">You put the work in. Now choose where the next chapter begins.</p>
+      <div id="commitOffers" class="commit-offers"></div>
+      <div id="committedResult" class="committed-result"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="mc-footer"><a href="nba.html">← 4DK NBA</a><span>4DK MY CAREER • BETA V1</span></footer>
+
+<script src="4dk-my-career.js"></script>
+<script src="app-nav.js"></script>
+</body>
+</html>
