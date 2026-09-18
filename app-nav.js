@@ -881,3 +881,113 @@
   setTimeout(apply, 1000);
   setTimeout(apply, 2200);
 })();
+
+
+/* ==========================================================
+   4DK HOMEPAGE LEAD — THURSDAY NIGHT WEEK 2
+   Add-only runtime override. Keeps the Monday recap discoverable.
+   ========================================================== */
+(() => {
+  const path = (location.pathname || '/').toLowerCase();
+  const isHome = path === '/' || path.endsWith('/index.html');
+  if (!isHome) return;
+
+  const marker = 'thursday-week2';
+
+  const updateLead = () => {
+    const primary = document.querySelector('.home-v2-primary');
+    if (!primary || primary.dataset.homeLead === marker) return false;
+
+    primary.dataset.homeLead = marker;
+    primary.innerHTML = `
+      <span class="home-v2-lead-kicker">4DK NFL • THURSDAY NIGHT RECAP • WEEK 2</span>
+      <h1>THE HOUSE<br>THAT <em>ALLEN</em><br>BUILT.</h1>
+      <p>Five touchdowns. 41 points. Josh Allen and Buffalo opened the first regular-season game at new Highmark Stadium with a statement, beating Detroit 41–31 to move to 2–0.</p>
+      <div class="home-v2-primary-meta">
+        <span>Bills 41 • Lions 31</span>
+        <span>Allen: 5 total TD</span>
+        <span>Buffalo: 2–0</span>
+      </div>
+      <div class="home-v2-primary-actions">
+        <a class="home-v2-button" href="nfl-thursday-recap-week2-bills-lions.html">Read the Thursday Night Recap →</a>
+        <a class="home-v2-button alt" href="nfl-thursday-recaps.html">Thursday Recaps Archive</a>
+      </div>`;
+
+    return true;
+  };
+
+  const keepMondayVisible = () => {
+    const side = document.querySelector('.home-v2-side');
+    if (!side || side.querySelector('[data-monday-week1-previous]')) return;
+
+    const card = document.createElement('a');
+    card.className = 'home-v2-side-card';
+    card.href = 'nfl-mnf-recap-week1.html';
+    card.dataset.mondayWeek1Previous = '';
+    card.innerHTML = `
+      <small>NFL • PREVIOUS HEADLINE</small>
+      <b>The King Is Back</b>
+      <span>Patrick Mahomes, Kenneth Walker and Kansas City flattened Denver 31–10 on Monday night.</span>
+      <strong>Read the MNF Breakdown →</strong>`;
+
+    side.prepend(card);
+  };
+
+  const updateSportsDesk = () => {
+    const nflDesk = document.querySelector('.home-v2-desk.nfl');
+    if (!nflDesk || nflDesk.dataset.thursdayWeek2 === marker) return;
+
+    nflDesk.dataset.thursdayWeek2 = marker;
+
+    const kicker = nflDesk.querySelector('.home-v2-desk-kicker');
+    const heading = nflDesk.querySelector('h3');
+    const copy = nflDesk.querySelector('p');
+    const list = nflDesk.querySelector('.home-v2-desk-list');
+
+    if (kicker) kicker.textContent = '4DK NFL • WEEK 2';
+    if (heading) heading.innerHTML = 'Thursday<br>Changed the Board.';
+    if (copy) copy.textContent = 'Buffalo moved to 2–0 behind five Josh Allen touchdowns, while Detroit left Thursday night with a real defensive problem to solve.';
+
+    if (list && !list.querySelector('[data-thursday-week2-desk]')) {
+      const thursday = document.createElement('a');
+      thursday.href = 'nfl-thursday-recap-week2-bills-lions.html';
+      thursday.dataset.thursdayWeek2Desk = '';
+      thursday.innerHTML = '<small>THURSDAY</small><b>Bills 41, Lions 31 — The House That Allen Built</b><span>→</span>';
+      list.prepend(thursday);
+    }
+  };
+
+  const updateTicker = () => {
+    const ticker = document.querySelector('.ticker-track');
+    if (!ticker || ticker.dataset.thursdayWeek2 === marker) return;
+
+    const items = [
+      'Bills beat Lions 41–31 • Allen scores 5 TD',
+      'Chiefs dominate Denver 31–10',
+      'Thursday Night Recap live now',
+      'NFL MVP + Rookie Watch updated',
+      '1996 Draft: Mamba File 002'
+    ];
+
+    ticker.innerHTML = items.map(x => `<span><span class="dot">●</span> ${x}</span>`).join('');
+    ticker.dataset.thursdayWeek2 = marker;
+  };
+
+  const apply = () => {
+    updateLead();
+    keepMondayVisible();
+    updateSportsDesk();
+    updateTicker();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', apply, {once:true});
+  } else {
+    apply();
+  }
+
+  setTimeout(apply, 300);
+  setTimeout(apply, 900);
+  setTimeout(apply, 1800);
+  setTimeout(apply, 3200);
+})();
