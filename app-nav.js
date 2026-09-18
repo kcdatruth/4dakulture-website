@@ -695,3 +695,189 @@
   setTimeout(apply, 1000);
   setTimeout(apply, 2200);
 })();
+
+
+/* ==========================================================
+   THURSDAY NIGHT RECAPS — 4DK NFL DISCOVERY WIRING
+   Add-only integration. Existing NFL content stays intact.
+   ========================================================== */
+(() => {
+  const archiveUrl = 'nfl-thursday-recaps.html';
+  const recapUrl = 'nfl-thursday-recap-week2-bills-lions.html';
+  const path = (location.pathname || '/').toLowerCase();
+  const isNFL = path.endsWith('/nfl.html');
+  const isThursday = path.includes('/nfl-thursday-recap');
+
+  const addStyles = () => {
+    if (document.getElementById('fourdk-thursday-recaps-wiring-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'fourdk-thursday-recaps-wiring-styles';
+    style.textContent = `
+      .fourdk-thursday-recaps{
+        position:relative;overflow:hidden;
+        padding:30px 0 34px;
+        background:
+          radial-gradient(circle at 86% 18%,rgba(58,123,224,.18),transparent 16rem),
+          linear-gradient(145deg,#0d1727,#080b09 72%);
+        color:#fff;border-top:1px solid #26354c;border-bottom:1px solid #26354c
+      }
+      .fourdk-thursday-recaps:after{
+        content:'TNF';position:absolute;right:-12px;bottom:-26px;
+        font:1000 clamp(110px,18vw,220px)/.8 Arial Black,Impact,sans-serif;
+        color:#fff;opacity:.025;pointer-events:none
+      }
+      .fourdk-thursday-recaps-inner{
+        position:relative;z-index:2;
+        display:grid;grid-template-columns:140px minmax(0,1fr) auto;
+        gap:20px;align-items:center
+      }
+      .fourdk-thursday-recaps-mark{
+        border-right:1px solid #30425f;padding-right:18px
+      }
+      .fourdk-thursday-recaps-mark small{
+        display:block;color:#82b1ff;font-size:9px;font-weight:1000;
+        letter-spacing:.13em;text-transform:uppercase
+      }
+      .fourdk-thursday-recaps-mark strong{
+        display:block;margin-top:6px;font:1000 31px/.9 Arial Black,Impact,sans-serif
+      }
+      .fourdk-thursday-recaps-copy small{
+        color:#82b1ff;font-size:9px;font-weight:1000;
+        letter-spacing:.12em;text-transform:uppercase
+      }
+      .fourdk-thursday-recaps-copy h3{
+        margin:5px 0 6px;
+        font:1000 clamp(27px,4.3vw,44px)/.9 Arial Black,Impact,sans-serif;
+        text-transform:uppercase;letter-spacing:-.035em
+      }
+      .fourdk-thursday-recaps-copy p{
+        margin:0;color:#aeb9c9;font-size:12px;line-height:1.45
+      }
+      .fourdk-thursday-recaps-links{
+        display:flex;flex-direction:column;gap:8px;align-items:stretch
+      }
+      .fourdk-thursday-recaps-links a{
+        display:block;padding:10px 12px;border:1px solid #3a4f70;
+        color:#fff;text-decoration:none;font-size:9px;font-weight:1000;
+        letter-spacing:.09em;text-transform:uppercase;white-space:nowrap
+      }
+      .fourdk-thursday-recaps-links a:first-child{
+        background:#245fae;border-color:#245fae
+      }
+      @media(max-width:760px){
+        .fourdk-thursday-recaps-inner{grid-template-columns:82px minmax(0,1fr)}
+        .fourdk-thursday-recaps-links{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+        .fourdk-thursday-recaps-mark strong{font-size:23px}
+      }
+    `;
+    document.head.appendChild(style);
+  };
+
+  const addToSearch = () => {
+    try {
+      if (typeof siteSearchIndex === 'undefined') return;
+
+      if (!siteSearchIndex.some(item => item.url === archiveUrl)) {
+        siteSearchIndex.push({
+          title:'Thursday Night NFL Recaps',
+          type:'4DK NFL Weekly Series',
+          url:archiveUrl,
+          desc:'Every 4DK Thursday Night Football recap from the 2026 season.',
+          terms:'thursday night football tnf recap nfl weekly 4dk'
+        });
+      }
+
+      if (!siteSearchIndex.some(item => item.url === recapUrl)) {
+        siteSearchIndex.push({
+          title:'The House That Allen Built',
+          type:'Thursday Night Recap • Week 2',
+          url:recapUrl,
+          desc:'Josh Allen scores five total touchdowns as Buffalo beats Detroit 41-31 at new Highmark Stadium.',
+          terms:'bills lions josh allen detroit buffalo highmark thursday recap week 2 41 31'
+        });
+      }
+    } catch (e) {}
+  };
+
+  const wireNFL = () => {
+    if (!isNFL) return;
+
+    const quickNav = document.querySelector('.nfl-v2-nav');
+    if (quickNav && !quickNav.querySelector('[data-thursday-recaps-nav]')) {
+      const link = document.createElement('a');
+      link.href = archiveUrl;
+      link.dataset.thursdayRecapsNav = '';
+      link.textContent = 'Thursday Recaps';
+      quickNav.appendChild(link);
+    }
+
+    if (document.querySelector('.fourdk-thursday-recaps')) return;
+
+    const nav = document.querySelector('.nfl-v2-nav');
+    const scoreboard = document.querySelector('#scoreboard');
+    const target = nav || scoreboard;
+    if (!target) return;
+
+    const section = document.createElement('section');
+    section.className = 'fourdk-thursday-recaps';
+    section.setAttribute('aria-label','Thursday Night NFL Recaps');
+    section.innerHTML = `
+      <div class="shell fourdk-thursday-recaps-inner">
+        <div class="fourdk-thursday-recaps-mark">
+          <small>WEEK 2</small>
+          <strong>THU<br>NIGHT</strong>
+        </div>
+        <div class="fourdk-thursday-recaps-copy">
+          <small>4DK THURSDAY NIGHT RECAP • FINAL</small>
+          <h3>THE HOUSE THAT ALLEN BUILT.</h3>
+          <p>Josh Allen accounts for five touchdowns as Buffalo beats Detroit 41–31 in the first regular-season game at new Highmark Stadium.</p>
+        </div>
+        <div class="fourdk-thursday-recaps-links">
+          <a href="${recapUrl}">Read Week 2 →</a>
+          <a href="${archiveUrl}">All Thursday Recaps →</a>
+        </div>
+      </div>`;
+
+    if (nav) nav.after(section);
+    else scoreboard.parentNode.insertBefore(section, scoreboard);
+  };
+
+  const wireAppMore = () => {
+    const grid = document.querySelector('.fourdk-more-grid');
+    if (!grid || grid.querySelector('[data-thursday-recaps-more]')) return;
+    const link = document.createElement('a');
+    link.href = '/nfl-thursday-recaps.html';
+    link.dataset.thursdayRecapsMore = '';
+    link.innerHTML = 'Thursday NFL Recaps <span>›</span>';
+
+    const vick = grid.querySelector('[data-vick-files-more],a[href="/vick-files.html"]');
+    if (vick) vick.after(link);
+    else grid.appendChild(link);
+  };
+
+  const setNFLTab = () => {
+    if (!isThursday) return;
+    const nav = document.querySelector('.fourdk-app-nav');
+    if (!nav) return;
+    nav.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+    nav.querySelector('[data-fourdk-tab="nfl"]')?.classList.add('active');
+  };
+
+  const apply = () => {
+    addStyles();
+    addToSearch();
+    wireNFL();
+    wireAppMore();
+    setNFLTab();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', apply, {once:true});
+  } else {
+    apply();
+  }
+
+  setTimeout(apply, 300);
+  setTimeout(apply, 1000);
+  setTimeout(apply, 2200);
+})();
