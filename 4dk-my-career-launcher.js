@@ -36,3 +36,74 @@
   else if(legacy) legacy.before(sec);
   else document.querySelector('main')?.prepend(sec);
 })();
+
+/* 4DK NBA — 2026–27 DIVISION PREVIEWS */
+(() => {
+  if(!/(^|\/)nba(?:\.html)?$/.test(location.pathname.replace(/\/+$/,''))) return;
+  if(document.querySelector('#division-previews')) return;
+
+  if(!document.getElementById('division-preview-styles')){
+    const style=document.createElement('style');
+    style.id='division-preview-styles';
+    style.textContent=`
+      #division-previews{padding:46px 0;background:#0b0b0d;color:#fff;border-top:1px solid #252525;border-bottom:1px solid #252525}
+      #division-previews .dp-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+      #division-previews .dp-eyebrow{display:block;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+      #division-previews h2{margin:0;font:1000 clamp(38px,6vw,68px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em;text-transform:uppercase;color:#fff}
+      #division-previews .dp-head p{max-width:520px;margin:0;color:#a9a9ae;font:14px/1.5 Georgia,serif}
+      #division-previews .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+      #division-previews .dp-card{position:relative;overflow:hidden;min-height:245px;padding:28px;text-decoration:none!important;color:#fff!important;border:1px solid #343434;display:flex;flex-direction:column;justify-content:flex-end;background:#141414}
+      #division-previews .dp-card:before{content:'';position:absolute;inset:0;opacity:.75;pointer-events:none}
+      #division-previews .dp-card.atlantic:before{background:radial-gradient(circle at 80% 18%,rgba(34,110,194,.35),transparent 34%),linear-gradient(145deg,#151515 0%,#111722 100%)}
+      #division-previews .dp-card.central:before{background:radial-gradient(circle at 80% 18%,rgba(201,52,48,.3),transparent 34%),linear-gradient(145deg,#151515 0%,#211312 100%)}
+      #division-previews .dp-card>*{position:relative;z-index:1}
+      #division-previews .dp-card small{font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#ef8b62;margin-bottom:8px}
+      #division-previews .dp-card strong{font:1000 clamp(34px,5vw,56px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.025em;text-transform:uppercase}
+      #division-previews .dp-card p{margin:12px 0 0;color:#d0d0d3;font-size:13px;line-height:1.45;max-width:520px}
+      #division-previews .dp-teams{margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font-size:9px;font-weight:900;letter-spacing:.09em;color:#aaaeb5;text-transform:uppercase}
+      #division-previews .dp-read{display:inline-block;margin-top:14px;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+      @media(max-width:760px){#division-previews{padding:34px 0}#division-previews .dp-head{align-items:flex-start;flex-direction:column}#division-previews .dp-grid{grid-template-columns:1fr}#division-previews .dp-card{min-height:220px;padding:23px}}
+    `;
+    document.head.appendChild(style);
+  }
+
+  const nav=document.querySelector('.nba-hero-nav');
+  if(nav && !nav.querySelector('a[href="#division-previews"]')){
+    const link=document.createElement('a');
+    link.href='#division-previews';
+    link.textContent='Division Previews';
+    nav.appendChild(link);
+  }
+
+  const sec=document.createElement('section');
+  sec.id='division-previews';
+  sec.innerHTML=`
+    <div class="shell">
+      <div class="dp-head">
+        <div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>ATLANTIC + CENTRAL<br>ARE LIVE.</h2></div>
+        <p>Ten Eastern Conference teams. Two divisions. Championship pressure, rebuilds, young cores and the biggest questions shaping the new season.</p>
+      </div>
+      <div class="dp-grid">
+        <a class="dp-card atlantic" href="nba-atlantic-2026-27.html">
+          <small>ATLANTIC DIVISION</small>
+          <strong>CHAMPS.<br>STAR POWER.<br>PRESSURE.</strong>
+          <p>New York defends the crown while Philly, Toronto and Boston enter the year with completely different kinds of expectations. Brooklyn stays focused on the future.</p>
+          <span class="dp-teams">KNICKS • 76ERS • RAPTORS • CELTICS • NETS</span>
+          <span class="dp-read">READ THE ATLANTIC PREVIEW →</span>
+        </a>
+        <a class="dp-card central" href="nba-central-2026-27.html">
+          <small>CENTRAL DIVISION</small>
+          <strong>CONTENDERS.<br>BREAKOUTS.<br>REBUILDS.</strong>
+          <p>Detroit wants the next step, Cleveland has playoff pressure, Indiana stays dangerous and Chicago and Milwaukee are building toward what comes next.</p>
+          <span class="dp-teams">PISTONS • CAVALIERS • PACERS • BULLS • BUCKS</span>
+          <span class="dp-read">READ THE CENTRAL PREVIEW →</span>
+        </a>
+      </div>
+    </div>`;
+
+  const latest=document.querySelector('#latest');
+  const season=document.querySelector('#season-preview');
+  if(latest) latest.before(sec);
+  else if(season) season.after(sec);
+  else document.querySelector('main')?.append(sec);
+})();
