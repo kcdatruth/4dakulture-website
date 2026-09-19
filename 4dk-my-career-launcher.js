@@ -51,11 +51,12 @@
       #division-previews .dp-eyebrow{display:block;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
       #division-previews h2{margin:0;font:1000 clamp(38px,6vw,68px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em;text-transform:uppercase;color:#fff}
       #division-previews .dp-head p{max-width:520px;margin:0;color:#a9a9ae;font:14px/1.5 Georgia,serif}
-      #division-previews .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+      #division-previews .dp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
       #division-previews .dp-card{position:relative;overflow:hidden;min-height:245px;padding:28px;text-decoration:none!important;color:#fff!important;border:1px solid #343434;display:flex;flex-direction:column;justify-content:flex-end;background:#141414}
       #division-previews .dp-card:before{content:'';position:absolute;inset:0;opacity:.75;pointer-events:none}
       #division-previews .dp-card.atlantic:before{background:radial-gradient(circle at 80% 18%,rgba(34,110,194,.35),transparent 34%),linear-gradient(145deg,#151515 0%,#111722 100%)}
       #division-previews .dp-card.central:before{background:radial-gradient(circle at 80% 18%,rgba(201,52,48,.3),transparent 34%),linear-gradient(145deg,#151515 0%,#211312 100%)}
+      #division-previews .dp-card.southeast:before{background:radial-gradient(circle at 80% 18%,rgba(209,145,45,.32),transparent 34%),linear-gradient(145deg,#151515 0%,#211b11 100%)}
       #division-previews .dp-card>*{position:relative;z-index:1}
       #division-previews .dp-card small{font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#ef8b62;margin-bottom:8px}
       #division-previews .dp-card strong{font:1000 clamp(34px,5vw,56px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.025em;text-transform:uppercase}
@@ -80,8 +81,8 @@
   sec.innerHTML=`
     <div class="shell">
       <div class="dp-head">
-        <div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>ATLANTIC + CENTRAL<br>ARE LIVE.</h2></div>
-        <p>Ten Eastern Conference teams. Two divisions. Championship pressure, rebuilds, young cores and the biggest questions shaping the new season.</p>
+        <div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>THE EASTERN DIVISION<br>PREVIEWS ARE LIVE.</h2></div>
+        <p>Fifteen Eastern Conference teams. Three divisions. Championship pressure, rebuilds, young cores and the biggest questions shaping the new season.</p>
       </div>
       <div class="dp-grid">
         <a class="dp-card atlantic" href="nba-atlantic-2026-27.html">
@@ -97,6 +98,13 @@
           <p>Detroit wants the next step, Cleveland has playoff pressure, Indiana stays dangerous and Chicago and Milwaukee are building toward what comes next.</p>
           <span class="dp-teams">PISTONS • CAVALIERS • PACERS • BULLS • BUCKS</span>
           <span class="dp-read">READ THE CENTRAL PREVIEW →</span>
+        </a>
+        <a class="dp-card southeast" href="nba-southeast-2026-27.html">
+          <small>SOUTHEAST DIVISION</small>
+          <strong>STAR POWER.<br>YOUTH.<br>NEW DIRECTIONS.</strong>
+          <p>Miami is chasing a title with Giannis, Orlando wants the next jump, Atlanta stays dangerous, Charlotte keeps building and Washington hands the future to AJ Dybantsa.</p>
+          <span class="dp-teams">HEAT • MAGIC • HAWKS • HORNETS • WIZARDS</span>
+          <span class="dp-read">READ THE SOUTHEAST PREVIEW →</span>
         </a>
       </div>
     </div>`;
