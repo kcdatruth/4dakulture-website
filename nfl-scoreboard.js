@@ -682,8 +682,9 @@
 
     const groups = {
       'GAME DAY': {
-        status: 'FINAL • UPDATED',
+        status: 'WEEK 2 • LIVE',
         items: [
+          ['Rams response watch — Week 1 loss, Myles Garrett to IR and Giants–Rams MNF.','rams-week1-loss-garrett-injury-giants-mnf-2026.html','RAMS'],
           ['Bears 59, Panthers 37 — Chicago makes the first huge statement of Sunday.','nfl-sunday-recap-week1.html','RECAP'],
           ['Ravens 41, Colts 23 — Baltimore starts fast behind Lamar and Derrick Henry.','nfl-sunday-recap-week1.html','RECAP'],
           ['Giants 28, Cowboys 20 — New York closes Sunday night with an NFC East win.','nfl-sunday-recap-week1.html','SNF']

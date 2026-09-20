@@ -3,7 +3,61 @@
   const home = route === '' || route === 'index';
   if(!home) return;
 
-  const once = (selector) => document.querySelector(selector);
+  function installWeek2Theme(){
+    if(document.getElementById('fourdk-home-week2-theme')) return;
+    const style = document.createElement('style');
+    style.id = 'fourdk-home-week2-theme';
+    style.textContent = `
+      body.home-page .home-v2-lead:before{
+        content:"WEEK 2"!important;
+        right:-20px!important;
+        bottom:-34px!important;
+        opacity:.035!important;
+      }
+      body.home-page .home-v2-primary{
+        background:
+          linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.84)),
+          repeating-linear-gradient(90deg,transparent 0 76px,rgba(255,255,255,.028) 77px 78px),
+          radial-gradient(circle at 80% 22%,rgba(78,151,88,.38),transparent 14rem),
+          radial-gradient(circle at 14% 18%,rgba(232,69,46,.24),transparent 17rem),
+          linear-gradient(135deg,#142319,#080b09 72%)!important;
+        border-color:#34463a!important;
+      }
+      body.home-page .home-v2-primary:before{
+        content:"W2"!important;
+        color:#fff!important;
+        opacity:.07!important;
+      }
+      body.home-page .home-v2-primary h1 em{color:#ffd268!important}
+      body.home-page .home-v2-side-card.week2-rams{
+        border-top:3px solid #2e6db4!important;
+        background:
+          radial-gradient(circle at 88% 12%,rgba(255,196,37,.14),transparent 9rem),
+          linear-gradient(145deg,#101923,#0b0e11)!important;
+      }
+      body.home-page .home-v2-desk.nfl{
+        background:
+          repeating-linear-gradient(90deg,transparent 0 88px,rgba(255,255,255,.022) 89px 90px),
+          radial-gradient(circle at 86% 10%,rgba(66,137,82,.24),transparent 13rem),
+          linear-gradient(145deg,#0f1812,#080b09 72%)!important;
+      }
+      body.home-page .home-v2-desk.nfl:after{
+        content:"WEEK 2";
+        position:absolute;
+        right:-12px;
+        top:10px;
+        font:1000 clamp(54px,8vw,110px)/1 Arial Black,Impact,sans-serif;
+        letter-spacing:-.07em;
+        color:#fff;
+        opacity:.035;
+        pointer-events:none;
+      }
+      @media(max-width:760px){
+        body.home-page .home-v2-primary{min-height:440px}
+      }
+    `;
+    document.head.appendChild(style);
+  }
 
   function buildLead(){
     const main = document.querySelector('main#main');
@@ -16,43 +70,43 @@
     lead.innerHTML = `
       <div class="shell home-v2-lead-inner">
         <article class="home-v2-primary">
-          <span class="home-v2-lead-kicker">4DK NFL • MONDAY NIGHT HEADLINE • WEEK 1</span>
-          <h1>THE KING<br>IS <em>BACK.</em></h1>
-          <p>Kansas City answered every question in one night. Patrick Mahomes returned, Kenneth Walker exploded for 173 rushing yards and the Chiefs flattened Denver 31–10 to reset the AFC conversation.</p>
+          <span class="home-v2-lead-kicker">4DK NFL • WEEK 2 • SUNDAY TAKEOVER</span>
+          <h1>WEEK 2.<br>NOW IT <em>GETS REAL.</em></h1>
+          <p>Week 1 gave us the first impressions. Week 2 starts separating real trends from opening-week noise. Fourteen games hit Sunday, the injury picture is set, and Giants–Rams waits under the lights Monday night.</p>
           <div class="home-v2-primary-meta">
-            <span>Chiefs 31 • Broncos 10</span>
-            <span>Walker: 191 scrimmage yards</span>
-            <span>Week 1 complete</span>
+            <span>14 Sunday games</span>
+            <span>Final injury statuses updated</span>
+            <span>Giants @ Rams • MNF</span>
           </div>
           <div class="home-v2-primary-actions">
-            <a class="home-v2-button" href="nfl-mnf-recap-week1.html">Read the MNF Breakdown →</a>
+            <a class="home-v2-button" href="nfl-week2-sunday-preview-2026.html">Open the Week 2 Preview →</a>
             <a class="home-v2-button alt" href="nfl.html">Enter 4DK NFL</a>
           </div>
         </article>
         <aside class="home-v2-side">
-          <a class="home-v2-side-card" href="nfl.html#mvp-watch">
-            <small>NFL • UPDATED</small>
-            <b>MVP Watch: Week 1 Final Board</b>
-            <span>Josh Allen leads. Lamar, Caleb and Purdy are right behind him. Kenneth Walker crashes the Top 10.</span>
-            <strong>See the Top 10 →</strong>
+          <a class="home-v2-side-card week2-rams" href="rams-week1-loss-garrett-injury-giants-mnf-2026.html">
+            <small>RAMS • NEW 4DK WRITE</small>
+            <b>The Rams Got Punched. Now They Have to Respond.</b>
+            <span>A 27–7 Week 1 loss, Myles Garrett on IR and a 1–0 Giants team coming to SoFi on Monday night.</span>
+            <strong>Read the Rams feature →</strong>
           </a>
-          <a class="home-v2-side-card" href="nfl.html#rookie-watch">
-            <small>NFL • UPDATED</small>
-            <b>Rookie Watch: Delane Jumps In</b>
-            <span>The full Week 1 rookie board after Monday Night Football.</span>
-            <strong>See Rookie Watch →</strong>
+          <a class="home-v2-side-card" href="nfl-week2-sunday-preview-2026.html">
+            <small>NFL • WEEK 2 INJURY REPORT</small>
+            <b>Who’s Out Changes Everything</b>
+            <span>Final game-status designations across the Week 2 Sunday slate.</span>
+            <strong>Open injury report →</strong>
           </a>
-          <a class="home-v2-side-card" href="nfl-sunday-recap-week1.html">
-            <small>NFL • SUNDAY RECAP</small>
-            <b>Week 1 Made a Statement</b>
-            <span>Chicago explodes. Lamar + Henry dominate. The Giants open a new era.</span>
-            <strong>Read Sunday Recap →</strong>
+          <a class="home-v2-side-card" href="nfl.html#scoreboard">
+            <small>NFL • LIVE GAME CENTER</small>
+            <b>Week 2 Scores All Day</b>
+            <span>Live scores, scoring updates, team stats and player leaders from the 4DK NFL hub.</span>
+            <strong>Open game center →</strong>
           </a>
-          <a class="home-v2-side-card" href="mamba-file-002-1996-draft.html">
-            <small>MAMBA FILES • 002</small>
-            <b>The 1996 Draft, 30 Years Later</b>
-            <span>Kobe at 13 and a class that reshaped the league.</span>
-            <strong>Open the File →</strong>
+          <a class="home-v2-side-card" href="mamba-file-003-shaq-kobe-era.html">
+            <small>MAMBA FILES • 003</small>
+            <b>The Shaq–Kobe Era</b>
+            <span>The dynasty, the dominance, the three-peat and the breakup.</span>
+            <strong>Open File 003 →</strong>
           </a>
         </aside>
       </div>`;
@@ -93,14 +147,14 @@
         </div>
         <div class="home-v2-sports-grid">
           <article class="home-v2-desk nfl">
-            <span class="home-v2-desk-kicker">4DK NFL • WEEK 1</span>
-            <h3>The League<br>Already Moved.</h3>
-            <p>Monday finished the opening week. The Chiefs jumped to the top of the power board, the MVP race got its first real shape and the rookie board has a new prime-time riser.</p>
+            <span class="home-v2-desk-kicker">4DK NFL • WEEK 2</span>
+            <h3>Week 2 Is<br>About Response.</h3>
+            <p>Can Week 1’s breakout teams prove it twice? Can the teams that got hit answer back? Sunday tests the league, then the Rams get a national-stage response game against New York on Monday night.</p>
             <div class="home-v2-desk-list">
-              <a href="nfl-mnf-recap-week1.html"><small>MONDAY</small><b>Chiefs 31, Broncos 10 — The King Is Back</b><span>→</span></a>
-              <a href="nfl.html#mvp-watch"><small>TUESDAY</small><b>Top 10 MVP Watch — Week 1 Final</b><span>→</span></a>
-              <a href="nfl.html#rookie-watch"><small>TUESDAY</small><b>Top 10 Rookie Watch — Week 1 Final</b><span>→</span></a>
-              <a href="nfl-sunday-recaps.html"><small>WEEKLY</small><b>Sunday NFL Recaps</b><span>→</span></a>
+              <a href="nfl-week2-sunday-preview-2026.html"><small>SUNDAY</small><b>Week 2 Sunday Preview — All 14 Games</b><span>→</span></a>
+              <a href="nfl-week2-sunday-preview-2026.html"><small>INJURIES</small><b>Week 2 Final Injury Status</b><span>→</span></a>
+              <a href="rams-week1-loss-garrett-injury-giants-mnf-2026.html"><small>RAMS</small><b>Garrett Goes to IR — How L.A. Responds</b><span>→</span></a>
+              <a href="nfl.html#scoreboard"><small>LIVE</small><b>4DK NFL Game Center + Red Zone</b><span>→</span></a>
             </div>
           </article>
           <article class="home-v2-desk nba">
@@ -256,17 +310,32 @@
     const ticker = document.querySelector('.ticker-track');
     if(!ticker || ticker.dataset.v2Updated) return;
     const items = [
-      'Chiefs dominate Denver 31–10',
-      'NFL MVP + Rookie Watch updated',
-      '1996 Draft: Mamba File 002',
-      '2026–27 NBA Season Preview',
-      'Classic Albums Revisited'
+      'NFL WEEK 2: NOW IT GETS REAL',
+      'Rams respond after 27–7 Week 1 loss',
+      'Myles Garrett to IR after knee surgery',
+      'Giants at Rams Monday Night Football',
+      'Mamba File 003: The Shaq–Kobe Era'
     ];
     ticker.innerHTML = items.map(x => `<span><span class="dot">●</span> ${x}</span>`).join('');
     ticker.dataset.v2Updated = '1';
   }
 
+  function addRamsToSearch(){
+    try{
+      if(typeof siteSearchIndex !== 'undefined' && !siteSearchIndex.some(item => item.url === 'rams-week1-loss-garrett-injury-giants-mnf-2026.html')){
+        siteSearchIndex.push({
+          title:'The Rams Got Punched. Now They Have to Respond.',
+          type:'NFL • Rams • Week 2',
+          url:'rams-week1-loss-garrett-injury-giants-mnf-2026.html',
+          desc:'Week 1 loss to San Francisco, Myles Garrett’s knee injury and the Rams’ Monday Night Football response test against New York.',
+          terms:'rams los angeles 49ers week 1 myles garrett injury injured reserve knee giants monday night football jaxson dart aaron donald'
+        });
+      }
+    }catch(e){}
+  }
+
   function apply(){
+    installWeek2Theme();
     buildLead();
     buildJump();
     buildSports();
@@ -275,6 +344,7 @@
     markVault();
     buildStudio();
     updateTicker();
+    addRamsToSearch();
   }
 
   if(document.readyState === 'loading'){
@@ -283,8 +353,6 @@
     apply();
   }
 
-  // Existing 4DK revamp JS is injected dynamically by script.js.
-  // Run a second pass after it has had time to add its front-cover/latest modules.
   setTimeout(apply, 250);
   setTimeout(apply, 900);
 })();
