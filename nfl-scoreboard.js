@@ -97,8 +97,7 @@
       @media(max-width:520px){
         .nfl-live-center{margin-bottom:10px}.nfl-live-score-feed{padding:8px}.nfl-live-feed-item{flex-basis:84vw}
         .nfl-score-detail{padding:10px}.nfl-player-leaders{grid-template-columns:1fr}.nfl-team-stats{gap:6px 8px}
-        .nfl-score-card-foot small{display:none}.nfl-score-details-btn{min-height:28px;padding:0 9px;font-size:7px}
-      }
+        .nfl-score-card-foot small{display:none}.nfl-score-details-btn{min-height:28px;padding:0 9px;font-size:7px}      }
     `;
     document.head.appendChild(style);
   }
@@ -197,8 +196,7 @@
   function gameCard(game){
     const live=game.state==='in';
     const awayScore=Number(game.away?.score),homeScore=Number(game.home?.score);
-    const awayLeader=game.state==='post'&&Number.isFinite(awayScore)&&Number.isFinite(homeScore)&&awayScore>homeScore;
-    const homeLeader=game.state==='post'&&Number.isFinite(awayScore)&&Number.isFinite(homeScore)&&homeScore>awayScore;
+    const awayLeader=game.state==='post'&&Number.isFinite(awayScore)&&Number.isFinite(homeScore)&&awayScore>homeScore;    const homeLeader=game.state==='post'&&Number.isFinite(awayScore)&&Number.isFinite(homeScore)&&homeScore>awayScore;
     const detail=detailsCache.get(game.id);
     const expanded=openGames.has(game.id);
     return `
@@ -297,8 +295,7 @@
     const val=name=>{const i=labels.findIndex(label=>String(label).toUpperCase()===name);return i>=0?values[i]:''};
     const key=String(category.name||category.displayName||'').toLowerCase();
     if(key.includes('pass')) return {label:'PASS',value:`${athlete} • ${val('YDS')||''}${val('TD')?` YDS • ${val('TD')} TD`:''}`.replace(' •  YDS','')};
-    if(key.includes('rush')) return {label:'RUSH',value:`${athlete} • ${val('YDS')||''} YDS${val('TD')?` • ${val('TD')} TD`:''}`};
-    if(key.includes('receiv')) return {label:'REC',value:`${athlete} • ${val('YDS')||''} YDS${val('TD')?` • ${val('TD')} TD`:''}`};
+    if(key.includes('rush')) return {label:'RUSH',value:`${athlete} • ${val('YDS')||''} YDS${val('TD')?` • ${val('TD')} TD`:''}`};    if(key.includes('receiv')) return {label:'REC',value:`${athlete} • ${val('YDS')||''} YDS${val('TD')?` • ${val('TD')} TD`:''}`};
     return null;
   }
 
@@ -397,8 +394,7 @@
     const liveGames=(payload?.games||[]).filter(g=>g.state==='in');
     if(!liveGames.length) return;
     await Promise.allSettled(liveGames.map(async game=>{
-      try{
-        const detail=await fetchGameDetails(game);
+      try{        const detail=await fetchGameDetails(game);
         detailsCache.set(game.id,detail);
         const previous=seenScoringPlays.get(game.id);
         const ids=detail.scoringPlays.map(p=>p.id);
@@ -497,8 +493,7 @@
         .fourdk-sunday-recaps-read{font-size:9px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;color:#ff6b45}
         .fourdk-sunday-rhythm{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
         .fourdk-sunday-rhythm span{border:1px solid #2c332d;background:#0b0e0c;padding:7px 9px;color:#777c76;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
-        @media(max-width:760px){.fourdk-sunday-recaps-head{align-items:flex-start;flex-direction:column}.fourdk-sunday-recaps-card{grid-template-columns:82px minmax(0,1fr);gap:13px}.fourdk-sunday-recaps-read{grid-column:2}.fourdk-sunday-recaps-week{padding-right:10px}.fourdk-sunday-recaps-week strong{font-size:23px}}
-      `;
+        @media(max-width:760px){.fourdk-sunday-recaps-head{align-items:flex-start;flex-direction:column}.fourdk-sunday-recaps-card{grid-template-columns:82px minmax(0,1fr);gap:13px}.fourdk-sunday-recaps-read{grid-column:2}.fourdk-sunday-recaps-week{padding-right:10px}.fourdk-sunday-recaps-week strong{font-size:23px}}      `;
       document.head.appendChild(style);
     }
 
@@ -596,8 +591,7 @@
           <a class="fourdk-week-card mvp" data-day="MVP" href="#mvp-watch">
             <small>TUESDAY • REFRESH</small><strong>Top 10 MVP Watch</strong><span>Rank, production and momentum after Monday Night Football.</span><b>OPEN MVP WATCH →</b>
           </a>
-        </div>
-      </div>`;
+        </div>      </div>`;
 
     /* Put the new hub directly after the scoreboard. Existing recap sections remain below it. */
     scoreboard.insertAdjacentElement('afterend', section);
@@ -696,11 +690,14 @@
         ]
       },
       'INJURY REPORT': {
-        status: 'WATCH • UPDATED',
+        status: 'WEEK 2 • FINAL STATUS',
         items: [
-          ['Kyler Murray exits Minnesota’s opener with a concussion.','nfl-sunday-recap-week1.html','WATCH'],
-          ['Malik Nabers returns for the Giants after last season’s ACL injury.','nfl-sunday-recap-week1.html','ACTIVE'],
-          ['Week 1 availability continues to shape depth charts across the league.','#scoreboard','TRACK']
+          ['Kyler Murray is OUT with a concussion. Minnesota turns to Carson Wentz against Chicago.','nfl-week2-sunday-preview-2026.html','OUT'],
+          ['Sam Darnold is OUT with a glute injury. Drew Lock starts for Seattle at Arizona.','nfl-week2-sunday-preview-2026.html','OUT'],
+          ['Nico Collins is OUT with a hamstring injury for Houston vs. Cincinnati.','nfl-week2-sunday-preview-2026.html','OUT'],
+          ['Zay Flowers is DOUBTFUL with a hamstring injury for Baltimore vs. New Orleans.','nfl-week2-sunday-preview-2026.html','DOUBTFUL'],
+          ['Brock Bowers is DOUBTFUL with a knee injury for Las Vegas at the Chargers.','nfl-week2-sunday-preview-2026.html','DOUBTFUL'],
+          ['Tua Tagovailoa is DOUBTFUL with an oblique injury for Atlanta vs. Carolina.','nfl-week2-sunday-preview-2026.html','DOUBTFUL']
         ]
       },
       'ROSTER MOVES': {
@@ -743,11 +740,10 @@
 
     const sourceNote = document.createElement('div');
     sourceNote.className = 'fourdk-rz-source-note';
-    sourceNote.textContent = '4DK RED ZONE • HEADLINES REFRESH THROUGHOUT THE WEEK';
+    sourceNote.textContent = '4DK RED ZONE • WEEK 2 FINAL GAME STATUS • UPDATED SEPT. 20';
     grid.insertAdjacentElement('afterend', sourceNote);
   };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install, {once:true});
   else install();
 })();
-
