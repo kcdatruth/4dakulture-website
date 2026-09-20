@@ -51,18 +51,20 @@
       #division-previews .dp-eyebrow{display:block;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
       #division-previews h2{margin:0;font:1000 clamp(38px,6vw,68px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em;text-transform:uppercase;color:#fff}
       #division-previews .dp-head p{max-width:520px;margin:0;color:#a9a9ae;font:14px/1.5 Georgia,serif}
-      #division-previews .dp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+      #division-previews .dp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
       #division-previews .dp-card{position:relative;overflow:hidden;min-height:245px;padding:28px;text-decoration:none!important;color:#fff!important;border:1px solid #343434;display:flex;flex-direction:column;justify-content:flex-end;background:#141414}
       #division-previews .dp-card:before{content:'';position:absolute;inset:0;opacity:.75;pointer-events:none}
       #division-previews .dp-card.atlantic:before{background:radial-gradient(circle at 80% 18%,rgba(34,110,194,.35),transparent 34%),linear-gradient(145deg,#151515 0%,#111722 100%)}
       #division-previews .dp-card.central:before{background:radial-gradient(circle at 80% 18%,rgba(201,52,48,.3),transparent 34%),linear-gradient(145deg,#151515 0%,#211312 100%)}
       #division-previews .dp-card.southeast:before{background:radial-gradient(circle at 80% 18%,rgba(209,145,45,.32),transparent 34%),linear-gradient(145deg,#151515 0%,#211b11 100%)}
+      #division-previews .dp-card.northwest:before{background:radial-gradient(circle at 80% 18%,rgba(76,142,190,.34),transparent 34%),linear-gradient(145deg,#151515 0%,#10202b 100%)}
       #division-previews .dp-card>*{position:relative;z-index:1}
       #division-previews .dp-card small{font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#ef8b62;margin-bottom:8px}
       #division-previews .dp-card strong{font:1000 clamp(34px,5vw,56px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.025em;text-transform:uppercase}
       #division-previews .dp-card p{margin:12px 0 0;color:#d0d0d3;font-size:13px;line-height:1.45;max-width:520px}
       #division-previews .dp-teams{margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font-size:9px;font-weight:900;letter-spacing:.09em;color:#aaaeb5;text-transform:uppercase}
       #division-previews .dp-read{display:inline-block;margin-top:14px;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+      @media(max-width:1100px){#division-previews .dp-grid{grid-template-columns:repeat(2,1fr)}}
       @media(max-width:760px){#division-previews{padding:34px 0}#division-previews .dp-head{align-items:flex-start;flex-direction:column}#division-previews .dp-grid{grid-template-columns:1fr}#division-previews .dp-card{min-height:220px;padding:23px}}
     `;
     document.head.appendChild(style);
@@ -81,8 +83,8 @@
   sec.innerHTML=`
     <div class="shell">
       <div class="dp-head">
-        <div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>THE EASTERN DIVISION<br>PREVIEWS ARE LIVE.</h2></div>
-        <p>Fifteen Eastern Conference teams. Three divisions. Championship pressure, rebuilds, young cores and the biggest questions shaping the new season.</p>
+        <div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>FOUR DIVISION<br>PREVIEWS ARE LIVE.</h2></div>
+        <p>Twenty teams are now on the board. The East is complete, and the Northwest opens the Western Conference with title pressure, MVP expectations and rebuild questions.</p>
       </div>
       <div class="dp-grid">
         <a class="dp-card atlantic" href="nba-atlantic-2026-27.html">
@@ -105,6 +107,13 @@
           <p>Miami is chasing a title with Giannis, Orlando wants the next jump, Atlanta stays dangerous, Charlotte keeps building and Washington hands the future to AJ Dybantsa.</p>
           <span class="dp-teams">HEAT • MAGIC • HAWKS • HORNETS • WIZARDS</span>
           <span class="dp-read">READ THE SOUTHEAST PREVIEW →</span>
+        </a>
+        <a class="dp-card northwest" href="nba-northwest-2026-27.html">
+          <small>NORTHWEST DIVISION</small>
+          <strong>CONTENDERS.<br>MVP PRESSURE.<br>REBUILDS.</strong>
+          <p>OKC has Finals expectations, Denver still rides Jokic, Minnesota believes LaMelo unlocks Ant, Portland sorts out its crowded backcourt and Utah keeps stacking for the future.</p>
+          <span class="dp-teams">THUNDER • NUGGETS • TIMBERWOLVES • BLAZERS • JAZZ</span>
+          <span class="dp-read">READ THE NORTHWEST PREVIEW →</span>
         </a>
       </div>
     </div>`;
