@@ -35,10 +35,24 @@
     }
   }
 
+  // Add-only discovery enhancement. This does not replace page content.
+  function ensureSiteEnhance() {
+    if (document.querySelector('script[data-fourdk-site-enhance]')) return;
+    const script = document.createElement('script');
+    script.src = '/4dk-site-enhance.js';
+    script.defer = true;
+    script.dataset.fourdkSiteEnhance = '1';
+    document.head.appendChild(script);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ensureAppNav, { once:true });
+    document.addEventListener('DOMContentLoaded', () => {
+      ensureAppNav();
+      ensureSiteEnhance();
+    }, { once:true });
   } else {
     ensureAppNav();
+    ensureSiteEnhance();
   }
 
   function makeInstallButton() {
