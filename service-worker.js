@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v10-discovery';
+const CACHE_NAME = '4dk-pwa-v11-sunday-home';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   '/app-nav.css',
   '/app-nav.js',
   '/4dk-site-enhance.js',
+  '/4dk-home-current.js',
   '/4dk-push.js',
   '/OneSignalSDKWorker.js',
   '/power-rankings.js',
@@ -52,6 +53,9 @@ function injectAppFeatures(html) {
   }
   if (!html.includes('/4dk-site-enhance.js')) {
     addHead.push('<script defer src="/4dk-site-enhance.js" data-fourdk-site-enhance="1"></script>');
+  }
+  if (!html.includes('/4dk-home-current.js')) {
+    addHead.push('<script defer src="/4dk-home-current.js" data-fourdk-home-current="1"></script>');
   }
   if (!html.includes('/4dk-push.js')) {
     addHead.push('<script defer src="/4dk-push.js" data-fourdk-push="1"></script>');
@@ -161,6 +165,7 @@ self.addEventListener('fetch', event => {
 
   if (
     url.pathname === '/4dk-site-enhance.js' ||
+    url.pathname === '/4dk-home-current.js' ||
     url.pathname === '/power-rankings.js' ||
     url.pathname === '/nfl-picks.js' ||
     url.pathname === '/17-0.css' ||

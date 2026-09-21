@@ -15,6 +15,11 @@
       document.referrer.startsWith('android-app://');
   }
 
+  function isHomePage() {
+    const path=(location.pathname || '/').toLowerCase();
+    return path==='/' || path.endsWith('/index.html');
+  }
+
   // The service worker injects these on all HTML pages. Loading them here too
   // guarantees the home screen gets the app nav immediately after an update.
   function ensureAppNav() {
@@ -35,7 +40,6 @@
     }
   }
 
-  // Add-only discovery enhancement. This does not replace page content.
   function ensureSiteEnhance() {
     if (document.querySelector('script[data-fourdk-site-enhance]')) return;
     const script = document.createElement('script');
@@ -45,14 +49,26 @@
     document.head.appendChild(script);
   }
 
+  // Homepage-only current-story layer.
+  function ensureHomeCurrent() {
+    if (!isHomePage() || document.querySelector('script[data-fourdk-home-current]')) return;
+    const script = document.createElement('script');
+    script.src = '/4dk-home-current.js';
+    script.defer = true;
+    script.dataset.fourdkHomeCurrent = '1';
+    document.head.appendChild(script);
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       ensureAppNav();
       ensureSiteEnhance();
+      ensureHomeCurrent();
     }, { once:true });
   } else {
     ensureAppNav();
     ensureSiteEnhance();
+    ensureHomeCurrent();
   }
 
   function makeInstallButton() {
