@@ -52,8 +52,80 @@
         opacity:.035;
         pointer-events:none;
       }
+      body.home-page .home-v2-sunday-final{
+        position:relative;
+        overflow:hidden;
+        background:
+          radial-gradient(circle at 86% 20%,rgba(232,69,46,.17),transparent 18rem),
+          radial-gradient(circle at 12% 80%,rgba(215,173,85,.10),transparent 18rem),
+          linear-gradient(145deg,#111613,#080b09 72%);
+        color:#fff;
+        border-bottom:1px solid #282e29;
+        padding:26px 0 30px;
+      }
+      body.home-page .home-v2-sunday-final:after{
+        content:"33–30";
+        position:absolute;
+        right:-8px;
+        bottom:-32px;
+        font:1000 clamp(82px,15vw,190px)/.8 Arial Black,Impact,sans-serif;
+        letter-spacing:-.08em;
+        color:#fff;
+        opacity:.035;
+        pointer-events:none;
+      }
+      body.home-page .home-v2-sunday-final-grid{
+        position:relative;z-index:2;
+        display:grid;
+        grid-template-columns:minmax(0,1.45fr) minmax(270px,.55fr);
+        gap:14px;
+      }
+      body.home-page .home-v2-sunday-feature{
+        border:1px solid #303830;
+        border-left:4px solid #e8452e;
+        background:linear-gradient(135deg,#131a15,#0b0e0c);
+        padding:23px;
+      }
+      body.home-page .home-v2-sunday-feature small,
+      body.home-page .home-v2-sunday-side small{
+        display:block;color:#ff6c50;font-size:9px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase;
+      }
+      body.home-page .home-v2-sunday-feature h2{
+        margin:7px 0 9px;
+        font:1000 clamp(31px,5vw,55px)/.9 Arial Black,Impact,sans-serif;
+        letter-spacing:-.045em;
+        text-transform:uppercase;
+      }
+      body.home-page .home-v2-sunday-feature h2 em{font-style:normal;color:#ffd268}
+      body.home-page .home-v2-sunday-feature p{
+        margin:0;max-width:820px;color:#b6bcb7;font:14px/1.52 Georgia,serif;
+      }
+      body.home-page .home-v2-sunday-stats{
+        display:flex;gap:7px;flex-wrap:wrap;margin:17px 0 18px;
+      }
+      body.home-page .home-v2-sunday-stats span{
+        border:1px solid #353d36;background:#0b0f0c;padding:8px 9px;
+        color:#cfd3cf;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;
+      }
+      body.home-page .home-v2-sunday-feature a{
+        display:inline-flex;min-height:40px;align-items:center;padding:0 13px;
+        background:#e8452e;color:#fff;text-decoration:none;
+        font-size:9px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase;
+      }
+      body.home-page .home-v2-sunday-side{
+        display:flex;flex-direction:column;justify-content:space-between;
+        border:1px solid #303830;background:#0d110e;padding:19px;
+      }
+      body.home-page .home-v2-sunday-side strong{
+        display:block;margin:8px 0 8px;font:1000 24px/.98 Arial Black,Impact,sans-serif;text-transform:uppercase;
+      }
+      body.home-page .home-v2-sunday-side span{color:#9ca39d;font-size:11px;line-height:1.45}
+      body.home-page .home-v2-sunday-side a{
+        margin-top:16px;color:#ffd268;text-decoration:none;font-size:9px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase;
+      }
       @media(max-width:760px){
         body.home-page .home-v2-primary{min-height:440px}
+        body.home-page .home-v2-sunday-final-grid{grid-template-columns:1fr}
       }
     `;
     document.head.appendChild(style);
@@ -115,6 +187,53 @@
     main.insertBefore(lead, anchor);
   }
 
+  function buildSundayFinal(){
+    if(document.querySelector('.home-v2-sunday-final')) return;
+    const lead = document.querySelector('.home-v2-lead');
+    if(!lead) return;
+
+    const section = document.createElement('section');
+    section.className = 'home-v2-sunday-final';
+    section.id = 'home-sunday-final';
+    section.setAttribute('aria-label','Week 2 Sunday NFL recap');
+    section.innerHTML = `
+      <div class="shell home-v2-sunday-final-grid">
+        <article class="home-v2-sunday-feature">
+          <small>4DK NFL • WHAT WE LEARNED SUNDAY • WEEK 2</small>
+          <h2>MAHOMES WINS AN OT CLASSIC.<br><em>KELCE TURNS BACK THE CLOCK.</em></h2>
+          <p>Kansas City survives Indianapolis 33–30 in overtime. Patrick Mahomes throws for 382 yards and three touchdowns, Daniel Jones makes a statement, Travis Kelce looks like vintage Kelce, Kenneth Walker gives the Chiefs the balance they needed — and the overturned Laquon Treadwell fumble becomes the call everybody will debate.</p>
+          <div class="home-v2-sunday-stats">
+            <span>KC 33 • IND 30 OT</span>
+            <span>Mahomes: 382 YDS • 3 TD</span>
+            <span>Kelce: 9 REC • 101 YDS • TD</span>
+            <span>Walker: 117 RUSH YDS</span>
+          </div>
+          <a href="nfl-sunday-recap-week2.html">Read What We Learned Sunday →</a>
+        </article>
+        <aside class="home-v2-sunday-side">
+          <div>
+            <small>WEEK 2 • SUNDAY FINAL</small>
+            <strong>14 Games.<br>14 Verdicts.</strong>
+            <span>Carolina answers back. New Orleans stuns Baltimore. Green Bay survives overtime. Dallas gets rolling. San Francisco stays perfect. Vegas moves to 2–0. Then Kansas City closes the night with an overtime classic.</span>
+          </div>
+          <a href="nfl-sunday-recaps.html">Open Sunday Recap Archive →</a>
+        </aside>
+      </div>`;
+    const jump = document.querySelector('.home-v2-jump');
+    if(jump) jump.after(section);
+    else lead.after(section);
+
+    const jumpShell = document.querySelector('.home-v2-jump .shell');
+    if(jumpShell && !jumpShell.querySelector('a[href="#home-sunday-final"]')){
+      const link = document.createElement('a');
+      link.href = '#home-sunday-final';
+      link.textContent = 'Sunday Recap';
+      const sports = jumpShell.querySelector('a[href="#home-sports"]');
+      if(sports) sports.insertAdjacentElement('afterend', link);
+      else jumpShell.appendChild(link);
+    }
+  }
+
   function buildJump(){
     if(document.querySelector('.home-v2-jump')) return;
     const lead = document.querySelector('.home-v2-lead');
@@ -166,6 +285,8 @@
               <a href="top-50-nba-players-2026-27.html"><small>RANKING</small><b>The 50 Best NBA Players Entering 2026–27</b><span>→</span></a>
               <a href="jalen-duren-contract-gamble-2026.html"><small>DETROIT</small><b>The Jalen Duren Contract Gamble</b><span>→</span></a>
               <a href="nba-offseason-winners-losers.html"><small>OFFSEASON</small><b>The Power Shift Is Real</b><span>→</span></a>
+              <a href="nba-pacific-2026-27.html"><small>NEW • PACIFIC</small><b>Luka's Era. Phoenix's Crossroads. One More Ride.</b><span>→</span></a>
+              <a href="nba-southwest-2026-27.html"><small>NEW • SOUTHWEST</small><b>Wemby's Window. Flagg's Rise. Houston's Test.</b><span>→</span></a>
             </div>
           </article>
         </div>
@@ -310,6 +431,10 @@
     const ticker = document.querySelector('.ticker-track');
     if(!ticker || ticker.dataset.v2Updated) return;
     const items = [
+      'WHAT WE LEARNED SUNDAY: Chiefs 33, Colts 30 OT',
+      'Mahomes 382 yards • Kelce 101 • Walker 117 rushing',
+      'NEW: Pacific Division preview',
+      'NEW: Southwest Division preview completes all 30 teams',
       'NFL WEEK 2: NOW IT GETS REAL',
       'Rams respond after 27–7 Week 1 loss',
       'Myles Garrett to IR after knee surgery',
@@ -334,10 +459,43 @@
     }catch(e){}
   }
 
+  function addLatestToSearch(){
+    try{
+      if(typeof siteSearchIndex === 'undefined') return;
+      const additions = [
+        {
+          title:'What We Learned Sunday — Week 2',
+          type:'NFL • Sunday Recap',
+          url:'nfl-sunday-recap-week2.html',
+          desc:'Chiefs-Colts overtime classic, Mahomes, Daniel Jones, Travis Kelce, Kenneth Walker and the full Week 2 Sunday slate.',
+          terms:'nfl week 2 sunday recap chiefs colts mahomes daniel jones kelce kenneth walker overtime fumble reversal'
+        },
+        {
+          title:'2026–27 Pacific Division Outlook',
+          type:'NBA • Division Preview',
+          url:'nba-pacific-2026-27.html',
+          desc:'Luka’s Lakers, Phoenix’s crossroads, the Steph era and the Pacific Division.',
+          terms:'nba pacific lakers clippers suns kings warriors luka steph division preview'
+        },
+        {
+          title:'2026–27 Southwest Division Outlook',
+          type:'NBA • Division Preview',
+          url:'nba-southwest-2026-27.html',
+          desc:'Wemby, Cooper Flagg, Houston and the 2026–27 Southwest Division.',
+          terms:'nba southwest spurs mavericks rockets grizzlies pelicans wemby cooper flagg division preview'
+        }
+      ];
+      additions.forEach(item => {
+        if(!siteSearchIndex.some(existing => existing.url === item.url)) siteSearchIndex.push(item);
+      });
+    }catch(e){}
+  }
+
   function apply(){
     installWeek2Theme();
     buildLead();
     buildJump();
+    buildSundayFinal();
     buildSports();
     buildInteractive();
     wireAlbumDraftDiscovery();
@@ -345,6 +503,7 @@
     buildStudio();
     updateTicker();
     addRamsToSearch();
+    addLatestToSearch();
   }
 
   if(document.readyState === 'loading'){
