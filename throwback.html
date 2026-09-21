@@ -39,6 +39,48 @@
   object-fit:contain;
 }
 
+/* Carter II visibility refresh — additive only */
+.carter2-throwback-card{
+  text-decoration:none;
+  color:inherit;
+  border-color:#8c6f2f !important;
+  background:linear-gradient(145deg,#1a1711,#0f0e0c) !important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.carter2-throwback-card:hover,.carter2-throwback-card:focus-visible{
+  transform:translateY(-3px);
+  border-color:#d7ad4f !important;
+  box-shadow:0 16px 34px rgba(0,0,0,.24);
+  outline:2px solid #d7ad4f;
+  outline-offset:2px;
+}
+.carter2-feature-art{
+  padding:0 !important;
+  min-height:0 !important;
+  background:#090909 !important;
+  overflow:hidden;
+}
+.carter2-feature-art img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+.carter2-published{
+  color:#d7ad4f !important;
+  font-weight:1000 !important;
+  letter-spacing:.1em !important;
+}
+.carter2-read{
+  display:block;
+  margin-top:10px;
+  color:#d7ad4f;
+  font-size:8px;
+  font-weight:1000;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
 </style>
 </head>
 
@@ -252,18 +294,17 @@
         </div>
       </article>
 
-      <article class="archive-story-card">
-        <div class="story-tape music">
-          <span>2005</span>
-          <strong>CARTER<br>II</strong>
-          <small>LIL WAYNE • THE ASCENSION</small>
+      <a class="archive-story-card carter2-throwback-card" href="tha-carter-ii-when-wayne-became-wayne.html" aria-label="Read the published 4DK Tha Carter II review">
+        <div class="story-tape carter2-feature-art">
+          <img src="tha-carter-ii-feature.png" alt="4 Da Kulture Tha Carter II Classic Albums Revisited artwork">
         </div>
         <div>
-          <span>REVIEW QUEUED</span>
-          <h3>Tha Carter II</h3>
-          <p>The album at the center of Wayne’s mid-2000s rise.</p>
+          <span class="carter2-published">PUBLISHED • 9.6/10</span>
+          <h3>Tha Carter II: When Wayne Became Wayne</h3>
+          <p>The album that separated Wayne from the old Cash Money sound, sharpened the pen and launched the road to mixtape-era Weezy.</p>
+          <b class="carter2-read">READ THE FULL REVIEW →</b>
         </div>
-      </article>
+      </a>
     </div>
   </div>
 </section>
