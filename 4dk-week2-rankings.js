@@ -308,7 +308,7 @@
   }
 
   function updatePower(){
-    const section=document.querySelector('#fourdkPowerRankings');
+    const section=document.querySelector('#power-rankings.fourdk-power-rankings.nfl') || document.querySelector('#fourdkPowerRankings');
     if(!section) return false;
 
     const deck=section.querySelector('.pr-deck');
