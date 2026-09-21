@@ -1,40 +1,42 @@
-4DK SUNDAY HOMEPAGE CURRENT LAYER
-=================================
+4DK WEEK 2 — MVP WATCH + ROOKIE WATCH + POWER RANKINGS
+===========================================================
 
-UPLOAD ALL 4 FILES TO THE REPO ROOT.
+STATUS
+Post-Sunday Week 2 snapshot — Monday Night Football (Giants @ Rams) is still pending.
+
+UPLOAD ALL 4 FILES TO THE ROOT OF YOUR GITHUB REPO.
 
 NEW
-- 4dk-home-current.js
+- 4dk-week2-rankings.js
 
 REPLACE
 - pwa-install.js
 - service-worker.js
 
 NOTES
-- UPLOAD-README.txt is only instructions.
+- UPLOAD-README.txt is instructions only.
 
-WHAT THIS ENHANCES
-- Week 2 Sunday recap becomes the homepage lead story.
-- Thursday's Bills–Lions recap stays visible directly underneath as earlier Week 2 coverage.
-- Rams–Giants MNF feature stays visible.
-- Pacific + Southwest NBA previews stay visible.
-- Tha Carter II review stays visible.
-- NFL Sports Desk adds the Sunday recap while preserving the older Week 2 links.
-- Homepage ticker now leads with Sunday but still includes Thursday, Rams, NBA and Carter II.
-- Mobile search is tightened slightly so the lead story gets on-screen sooner.
+WHAT THIS UPDATES
+- NFL MVP Watch: refreshed Top 10 through Sunday of Week 2.
+- NFL Rookie Watch: refreshed Top 10 through Sunday of Week 2.
+- NFL Power Rankings: refreshed all 32 teams through Sunday of Week 2.
+- Week 2 current note: now says the rankings are updated through Sunday.
+- The installed-app cache is bumped to v12 so the updated boards show reliably.
 
 WHAT THIS DOES NOT REMOVE
-- No homepage sections.
+- No NFL articles.
+- No Sunday recap.
 - No Thursday recap.
-- No Rams feature.
-- No NBA content.
-- No Carter II review.
-- No Mamba Files.
-- No scoreboard / Red Zone / picks.
-- No article body content.
+- No Rams–Giants MNF feature.
+- No Week 1 archive content.
+- No scoreboard / Red Zone / Pick'em / 17–0.
+- No NBA or Music content.
+- No homepage sections.
 - No worker.js API logic.
 
-The service-worker cache is bumped to v11 so the installed app refreshes the homepage shell.
+IMPORTANT
+Giants–Rams has not been played yet. Those two teams are marked MNF pending.
+After Monday Night Football, the board can get a final Week 2 Tuesday adjustment.
 
 Suggested commit message:
-Promote Week 2 Sunday recap on homepage
+Refresh Week 2 MVP rookie and power rankings

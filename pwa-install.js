@@ -49,6 +49,18 @@
     document.head.appendChild(script);
   }
 
+  // Current NFL Week 2 rankings layer — add-only.
+  function ensureWeek2Rankings() {
+    const path=(location.pathname || '/').toLowerCase();
+    if (!(path.endsWith('/nfl.html') || path.endsWith('/nfl'))) return;
+    if (document.querySelector('script[data-fourdk-week2-rankings]')) return;
+    const script = document.createElement('script');
+    script.src = '/4dk-week2-rankings.js';
+    script.defer = true;
+    script.dataset.fourdkWeek2Rankings = '1';
+    document.head.appendChild(script);
+  }
+
   // Homepage-only current-story layer.
   function ensureHomeCurrent() {
     if (!isHomePage() || document.querySelector('script[data-fourdk-home-current]')) return;
@@ -64,11 +76,13 @@
       ensureAppNav();
       ensureSiteEnhance();
       ensureHomeCurrent();
+      ensureWeek2Rankings();
     }, { once:true });
   } else {
     ensureAppNav();
     ensureSiteEnhance();
     ensureHomeCurrent();
+    ensureWeek2Rankings();
   }
 
   function makeInstallButton() {
