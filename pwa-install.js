@@ -86,6 +86,17 @@
   }
 
   // Homepage-only current-story layer.
+  function ensureAI2001Video() {
+    const path=(location.pathname || '/').toLowerCase();
+    if (!path.endsWith('/the-answer-files-004-it-was-his-time.html')) return;
+    if (document.querySelector('script[data-fourdk-ai-2001-video]')) return;
+    const script = document.createElement('script');
+    script.src = '/4dk-ai-2001-video.js';
+    script.defer = true;
+    script.dataset.fourdkAi2001Video = '1';
+    document.head.appendChild(script);
+  }
+
   function ensureHomeCurrent() {
     if (!isHomePage() || document.querySelector('script[data-fourdk-home-current]')) return;
     const script = document.createElement('script');
@@ -104,6 +115,7 @@
       ensureRedZoneCurrent();
     ensureWeek3Framework();
       ensureWeek3Framework();
+      ensureAI2001Video();
     }, { once:true });
   } else {
     ensureAppNav();

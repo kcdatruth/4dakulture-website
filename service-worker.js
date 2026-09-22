@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v14-week3-framework';
+const CACHE_NAME = '4dk-pwa-v15-ai-2001-video';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -12,6 +12,7 @@ const APP_SHELL = [
   '/4dk-week2-rankings.js',
   '/4dk-redzone-week2-final.js',
   '/4dk-week3-framework.js',
+  '/4dk-ai-2001-video.js',
   '/nfl-week3-hub-2026.html',
   '/4dk-push.js',
   '/OneSignalSDKWorker.js',
@@ -70,6 +71,7 @@ function injectAppFeatures(html) {
   if (!html.includes('/4dk-week3-framework.js')) {
     addHead.push('<script defer src="/4dk-week3-framework.js" data-fourdk-week3-framework="1"></script>');
   }
+  if (!html.includes('/4dk-ai-2001-video.js')) addHead.push('<script defer src="/4dk-ai-2001-video.js" data-fourdk-ai-2001-video="1"></script>');
   if (!html.includes('/4dk-push.js')) {
     addHead.push('<script defer src="/4dk-push.js" data-fourdk-push="1"></script>');
   }
@@ -182,6 +184,7 @@ self.addEventListener('fetch', event => {
     url.pathname === '/4dk-week2-rankings.js' ||
     url.pathname === '/4dk-redzone-week2-final.js' ||
     url.pathname === '/4dk-week3-framework.js' ||
+    url.pathname === '/4dk-ai-2001-video.js' ||
     url.pathname === '/power-rankings.js' ||
     url.pathname === '/nfl-picks.js' ||
     url.pathname === '/17-0.css' ||
