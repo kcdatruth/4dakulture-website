@@ -20,6 +20,11 @@
     return path==='/' || path.endsWith('/index.html');
   }
 
+  function isNFLPage() {
+    const path=(location.pathname || '/').toLowerCase();
+    return path.endsWith('/nfl.html') || path.endsWith('/nfl');
+  }
+
   // The service worker injects these on all HTML pages. Loading them here too
   // guarantees the home screen gets the app nav immediately after an update.
   function ensureAppNav() {
@@ -51,13 +56,23 @@
 
   // Current NFL Week 2 rankings layer — add-only.
   function ensureWeek2Rankings() {
-    const path=(location.pathname || '/').toLowerCase();
-    if (!(path.endsWith('/nfl.html') || path.endsWith('/nfl'))) return;
+    if (!isNFLPage()) return;
     if (document.querySelector('script[data-fourdk-week2-rankings]')) return;
     const script = document.createElement('script');
     script.src = '/4dk-week2-rankings.js';
     script.defer = true;
     script.dataset.fourdkWeek2Rankings = '1';
+    document.head.appendChild(script);
+  }
+
+  // Current 4DK Red Zone layer — add-only.
+  function ensureRedZoneCurrent() {
+    if (!isNFLPage()) return;
+    if (document.querySelector('script[data-fourdk-redzone-current]')) return;
+    const script = document.createElement('script');
+    script.src = '/4dk-redzone-week2-final.js';
+    script.defer = true;
+    script.dataset.fourdkRedzoneCurrent = '1';
     document.head.appendChild(script);
   }
 
@@ -77,12 +92,14 @@
       ensureSiteEnhance();
       ensureHomeCurrent();
       ensureWeek2Rankings();
+      ensureRedZoneCurrent();
     }, { once:true });
   } else {
     ensureAppNav();
     ensureSiteEnhance();
     ensureHomeCurrent();
     ensureWeek2Rankings();
+    ensureRedZoneCurrent();
   }
 
   function makeInstallButton() {
