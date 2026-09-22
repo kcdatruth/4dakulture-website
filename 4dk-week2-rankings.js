@@ -65,6 +65,16 @@
     {team:'Atlanta Falcons',abbr:'ATL',prev:28,meta:'0–2 • L 3–34 at CAR',note:'Five turnovers and three points against a team that gave up 59 last week is the roughest result on the board. Atlanta lands at No. 32.'}
   ];
 
+  const LOCKED_IMAGES={
+    'Kirk Cousins':'/mvp-kirk-cousins-week2.webp',
+    'Matthew Stafford':'/mvp-matthew-stafford-week2.webp',
+    'Jalen Hurts':'/mvp-jalen-hurts-week2.webp',
+    'Dak Prescott':'/mvp-dak-prescott-week2.webp',
+    'Hezekiah Masses':'/rookie-hezekiah-masses-week2.webp',
+    'Antonio Williams':'/rookie-antonio-williams-week2.webp',
+    'Mansoor Delane':'/rookie-mansoor-delane-week2.webp'
+  };
+
   const logoCodes={ARI:'ari',ATL:'atl',BAL:'bal',BUF:'buf',CAR:'car',CHI:'chi',CIN:'cin',CLE:'cle',DAL:'dal',DEN:'den',DET:'det',GB:'gb',HOU:'hou',IND:'ind',JAX:'jax',KC:'kc',LV:'lv',LAC:'lac',LAR:'lar',MIA:'mia',MIN:'min',NE:'ne',NO:'no',NYG:'nyg',NYJ:'nyj',PHI:'phi',PIT:'pit',SEA:'sea',SF:'sf',TB:'tb',TEN:'ten',WAS:'wsh'};
 
   const esc=(v='')=>String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -105,6 +115,15 @@
     return found;
   }
 
+  function syncHonorableMentionCount(root,count){
+    if(!root) return;
+    [...root.querySelectorAll('h2,h3,h4,h5,strong')].forEach(el=>{
+      if(/honorable mentions/i.test(el.textContent||'')){
+        el.textContent=`${count} HONORABLE MENTIONS`;
+      }
+    });
+  }
+
   function updateMVP(){
     const root=document.querySelector('#mvp-watch');
     if(!root) return false;
@@ -115,11 +134,11 @@
     if(stamp) stamp.innerHTML='WEEK 2 • FINAL<br>SEPT. 21, 2026';
     const grid=root.querySelector('.mvp-grid');
     if(grid) grid.innerHTML=MVP.map(p=>{
-      const img=images[p.name]||'';
+      const img=LOCKED_IMAGES[p.name]||images[p.name]||'';
       return `<article class="mvp-card"><div class="mvp-rank">${p.rank}</div><div class="mvp-photo"><span class="w2-initials">${initials(p.name)}</span>${img?`<img src="${img}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:''}</div><div><h3>${esc(p.name)}</h3><div class="mvp-meta">${esc(p.meta)}</div><div class="mvp-note">${esc(p.note)}</div><span class="mvp-move ${p.cls}">${esc(p.move)}</span></div></article>`;
     }).join('');
     const hm=root.querySelector('.mvp-hm-list');
-    if(hm) hm.innerHTML=['Lamar Jackson','Bryce Young','Derrick Henry','Tyler Shough','Drew Lock','DeVonta Smith'].map(n=>`<span>${n}</span>`).join('');
+    if(hm){ hm.innerHTML=['Lamar Jackson','Bryce Young','Derrick Henry','Tyler Shough','Drew Lock','DeVonta Smith'].map(n=>`<span>${n}</span>`).join(''); syncHonorableMentionCount(root,6); }
     const foot=root.querySelector('.mvp-foot');
     if(foot) foot.textContent='Week 2 is complete: Allen holds No. 1, Mahomes surges, Kenneth Walker stays in the Top 3 and Matthew Stafford enters after a four-touchdown Monday night response.';
     root.dataset.week2Final='true';
@@ -136,11 +155,11 @@
     if(stamp) stamp.innerHTML='WEEK 2 • FINAL<br>SEPT. 21, 2026';
     const grid=root.querySelector('.rookie-grid');
     if(grid) grid.innerHTML=ROOKIES.map(p=>{
-      const img=images[p.name]||'';
+      const img=LOCKED_IMAGES[p.name]||images[p.name]||'';
       return `<article class="rookie-card"><div class="rookie-rank">${p.rank}</div><div class="rookie-photo"><span class="w2-initials">${initials(p.name)}</span>${img?`<img src="${img}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:''}</div><div><h3>${esc(p.name)}</h3><div class="rookie-meta">${esc(p.pos)} • ${esc(p.team)} • ${esc(p.stats)}</div><div class="rookie-note">${esc(p.note)}</div><span class="rookie-tag ${p.tagClass}">${esc(p.tag)}</span></div></article>`;
     }).join('');
     const hm=root.querySelector('.rookie-hm-list');
-    if(hm) hm.innerHTML=['Sonny Styles • WAS','Jacob Rodriguez • MIA','KC Concepcion • CLE','Mike Washington Jr. • LV','Emmett Johnson • KC','Jeremiyah Love • ARI'].map(n=>`<span>${n}</span>`).join('');
+    if(hm){ hm.innerHTML=['Sonny Styles • WAS','Jacob Rodriguez • MIA','KC Concepcion • CLE','Mike Washington Jr. • LV','Emmett Johnson • KC','Jeremiyah Love • ARI'].map(n=>`<span>${n}</span>`).join(''); syncHonorableMentionCount(root,6); }
     const foot=root.querySelector('.rookie-foot');
     if(foot) foot.textContent='Trotter keeps the top spot, Denzel Boston remains the top offensive rookie and Hezekiah Masses crashes the Top 3 after intercepting Justin Herbert twice in his first NFL start.';
     root.dataset.week2Final='true';
