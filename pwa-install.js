@@ -113,7 +113,6 @@
       ensureHomeCurrent();
       ensureWeek2Rankings();
       ensureRedZoneCurrent();
-    ensureWeek3Framework();
       ensureWeek3Framework();
       ensureAI2001Video();
     }, { once:true });
@@ -123,6 +122,8 @@
     ensureHomeCurrent();
     ensureWeek2Rankings();
     ensureRedZoneCurrent();
+    ensureWeek3Framework();
+    ensureAI2001Video();
   }
 
   function makeInstallButton() {

@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v15-ai-2001-video';
+const CACHE_NAME = '4dk-pwa-v16-ai-video-fix';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -36,7 +36,13 @@ const APP_SHELL = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(APP_SHELL))
+      .then(cache => Promise.all(APP_SHELL.map(async url => {
+        try {
+          await cache.add(url);
+        } catch (error) {
+          console.warn('4DK precache skipped:', url);
+        }
+      })))
       .then(() => self.skipWaiting())
   );
 });
