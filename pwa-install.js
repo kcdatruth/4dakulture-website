@@ -76,6 +76,15 @@
     document.head.appendChild(script);
   }
 
+  function ensureWeek3Framework() {
+    if (!isNFLPage() || document.querySelector('script[data-fourdk-week3-framework]')) return;
+    const script=document.createElement('script');
+    script.src='/4dk-week3-framework.js';
+    script.defer=true;
+    script.dataset.fourdkWeek3Framework='1';
+    document.head.appendChild(script);
+  }
+
   // Homepage-only current-story layer.
   function ensureHomeCurrent() {
     if (!isHomePage() || document.querySelector('script[data-fourdk-home-current]')) return;
@@ -93,6 +102,8 @@
       ensureHomeCurrent();
       ensureWeek2Rankings();
       ensureRedZoneCurrent();
+    ensureWeek3Framework();
+      ensureWeek3Framework();
     }, { once:true });
   } else {
     ensureAppNav();
