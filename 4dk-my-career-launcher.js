@@ -55,3 +55,35 @@
   </div></div>`;
   const latest=document.querySelector('#latest'); const season=document.querySelector('#season-preview'); if(latest) latest.before(sec); else if(season) season.after(sec); else document.querySelector('main')?.append(sec);
 })();
+
+/* 4DK NBA — OPENING WEEK 2026 PROMO */
+(() => {
+  if(!/(^|\/)nba(?:\.html)?$/.test(location.pathname.replace(/\/+$/,''))) return;
+  const nav=document.querySelector('.nba-hero-nav');
+  if(nav && !nav.querySelector('a[href="nba-opening-week-2026.html"]')){
+    const link=document.createElement('a');
+    link.href='nba-opening-week-2026.html';
+    link.textContent='Opening Week';
+    const seasonLink=[...nav.querySelectorAll('a')].find(a=>a.textContent.trim().toLowerCase()==='season preview');
+    if(seasonLink) seasonLink.after(link); else nav.prepend(link);
+  }
+  if(document.querySelector('#opening-week-latest-card')) return;
+  const grid=document.querySelector('#latest .nba-story-grid');
+  if(!grid) return;
+  if(!document.getElementById('opening-week-promo-styles')){
+    const style=document.createElement('style');
+    style.id='opening-week-promo-styles';
+    style.textContent=`
+      #opening-week-latest-card .nba-story-art{position:relative;min-height:285px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;overflow:hidden;background:radial-gradient(circle at 82% 18%,rgba(238,70,48,.42),transparent 34%),radial-gradient(circle at 12% 88%,rgba(54,104,218,.32),transparent 38%),linear-gradient(145deg,#16171a 0%,#2b1010 55%,#0b0c10 100%);text-decoration:none!important;color:#fff!important}
+      #opening-week-latest-card .nba-story-art:before{content:'OPENING WEEK';position:absolute;right:-26px;top:10px;font:1000 clamp(52px,7vw,92px)/.8 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:rgba(255,255,255,.07);transform:rotate(-4deg);white-space:nowrap}
+      #opening-week-latest-card .ow-lines{position:relative;z-index:2;display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}#opening-week-latest-card .ow-lines span{padding:6px 8px;border:1px solid rgba(255,255,255,.24);background:rgba(0,0,0,.2);font-size:8px;font-weight:1000;letter-spacing:.08em}
+      #opening-week-latest-card .nba-story-label{position:relative;z-index:2;color:#ff7b68}#opening-week-latest-card .nba-story-art strong{position:relative;z-index:2;font:1000 clamp(40px,5vw,66px)/.84 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em}#opening-week-latest-card .nba-story-art small{position:relative;z-index:2;color:#ddd}
+    `;
+    document.head.appendChild(style);
+  }
+  const card=document.createElement('article');
+  card.className='nba-story-card';
+  card.id='opening-week-latest-card';
+  card.innerHTML=`<a class="nba-story-art" href="nba-opening-week-2026.html"><div class="ow-lines"><span>NYK vs PHI</span><span>OKC vs SAS</span><span>MIN vs MIA</span><span>GSW vs LAL</span></div><span class="nba-story-label">2026–27 • OPENING WEEK</span><strong>EVERYTHING<br>ON THE LINE.</strong><small>BANNER NIGHT • NEW ERAS • FIRST TESTS</small></a><div class="nba-story-copy"><h3><a href="nba-opening-week-2026.html">The Season Starts With Everything on the Line</a></h3><p>Knicks banner night. LeBron in Philly. Giannis in Miami. SGA vs Wemby. Luka vs Steph. Eight stories that define the first week.</p><div class="meta">By Kcdatruth • September 2026</div></div>`;
+  grid.prepend(card);
+})();
