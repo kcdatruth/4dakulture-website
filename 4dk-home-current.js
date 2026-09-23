@@ -3,16 +3,16 @@
   const isHome=path==='/' || path.endsWith('/index.html');
   if(!isHome || window.__fourdkMondayHomeCurrent) return;
   window.__fourdkMondayHomeCurrent=true;
-  const MARKER='week2-five-headlines';
+  const MARKER='dart-season-feature';
 
   function addStyles(){
     if(document.getElementById('fourdk-mnf-home-current-styles')) return;
     const style=document.createElement('style');
     style.id='fourdk-mnf-home-current-styles';
     style.textContent=`
-      body.home-page .home-v2-primary{background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.88)),radial-gradient(circle at 84% 18%,rgba(217,37,37,.25),transparent 16rem),radial-gradient(circle at 14% 82%,rgba(231,185,72,.15),transparent 18rem),linear-gradient(145deg,#151914,#080a08 72%)!important;border-color:#3a3f39!important}
-      body.home-page .home-v2-primary:before{content:'W2'!important;right:-8px!important;bottom:-28px!important;font-size:clamp(100px,17vw,200px)!important;color:#fff!important;opacity:.04!important}
-      body.home-page .home-v2-primary h1 em{color:#ef4a3d!important}
+      body.home-page .home-v2-primary{background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.86)),radial-gradient(circle at 84% 18%,rgba(0,93,161,.30),transparent 16rem),radial-gradient(circle at 14% 82%,rgba(255,209,0,.17),transparent 18rem),linear-gradient(145deg,#151914,#080a08 72%)!important;border-color:#3a3f39!important}
+      body.home-page .home-v2-primary:before{content:'28–6'!important;right:-18px!important;bottom:-28px!important;font-size:clamp(88px,15vw,180px)!important;color:#fff!important;opacity:.045!important}
+      body.home-page .home-v2-primary h1 em{color:#83a9e5!important}
       .fourdk-current-shelf{position:relative;overflow:hidden;padding:18px 0 20px;background:#0c0d0c;color:#fff;border-top:1px solid #292d29;border-bottom:1px solid #292d29}
       .fourdk-current-shelf:after{content:'W2';position:absolute;right:-8px;bottom:-36px;font:1000 118px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.025;pointer-events:none}
       .fourdk-current-shelf-inner{position:relative;z-index:2;width:min(1180px,calc(100% - 34px));margin:auto}
@@ -37,7 +37,7 @@
     if(!primary) return false;
     if(primary.dataset.homeLead===MARKER) return true;
     primary.dataset.homeLead=MARKER;
-    primary.innerHTML=`<span class="home-v2-lead-kicker">4DK NFL • WEEK 2 • AROUND THE LEAGUE</span><h1>5 NFL HEADLINES<br><em>THAT MATTER.</em></h1><p>Jayden Daniels' health changes Washington's future. Kansas City finally has real balance. Vegas has hope while the Chargers feel pressure. The Rams reminded everybody what they can be. And San Francisco has looked like the league's most complete team through two weeks.</p><div class="home-v2-primary-meta"><span>DANIELS • LONG-TERM QUESTIONS</span><span>KC • BALANCE</span><span>NFC WEST • ARMS RACE</span></div><div class="home-v2-primary-actions"><a class="home-v2-button" href="nfl-week-2-five-biggest-headlines.html">Read All 5 Headlines →</a><a class="home-v2-button alt" href="nfl-mnf-recap-week2-rams-giants.html">Rams MNF Recap</a></div>`;
+    primary.innerHTML=`<span class="home-v2-lead-kicker">4DK NFL • BREAKING • SEPTEMBER 23</span><h1>DART'S SEASON<br><em>CHANGES EVERYTHING.</em></h1><p>Reports say Jaxson Dart is expected to undergo season-ending knee surgery. The Giants are 1–1, Jameis Winston is next up, and New York now has to decide how aggressively to attack the quarterback market if it still believes this is a playoff roster.</p><div class="home-v2-primary-meta"><span>NYG 1–1</span><span>WINSTON NEXT UP</span><span>QB MARKET WATCH</span></div><div class="home-v2-primary-actions"><a class="home-v2-button" href="jaxson-dart-season-ending-injury-giants-qb-future.html">Read the Full Dart Feature →</a><a class="home-v2-button alt" href="nfl-mnf-recap-week2-rams-giants.html">Rams–Giants MNF Recap</a></div>`;
     return true;
   }
 
@@ -46,13 +46,11 @@
     const lead=document.querySelector('.home-v2-lead'); if(!lead) return false;
     const section=document.createElement('section');section.className='fourdk-current-shelf';
     section.innerHTML=`<div class="fourdk-current-shelf-inner"><div class="fourdk-current-shelf-head"><div><small>STILL IN THE MIX • NOTHING GETS REMOVED</small><strong>MORE CURRENT 4DK.</strong></div><a href="/stories.html">Browse the Story Library →</a></div><div class="fourdk-current-shelf-grid">
-      <a class="fourdk-current-shelf-card rams" href="nfl-mnf-recap-week2-rams-giants.html"><small>WEEK 2 • MONDAY FINAL</small><b>The Rams Answered</b><span>Rams 28 • Giants 6 • Stafford 327 and 4 TD • Davante 195 and 2 TD • Aaron Donald returns.</span></a>
       <a class="fourdk-current-shelf-card rams" href="nfl-sunday-recap-week2.html"><small>WEEK 2 • SUNDAY</small><b>What We Learned Sunday</b><span>Chiefs 33 • Colts 30 OT • Mahomes, Kelce, Walker and all 14 Sunday verdicts.</span></a>
       <a class="fourdk-current-shelf-card thursday" href="nfl-thursday-recap-week2-bills-lions.html"><small>WEEK 2 • THURSDAY</small><b>The House That Allen Built</b><span>Bills 41 • Lions 31 • Josh Allen accounts for five touchdowns.</span></a>
       <a class="fourdk-current-shelf-card rams" href="nfl.html#power-rankings"><small>WEEK 2 • FINAL BOARD</small><b>MVP • Rookie • Power Rankings</b><span>All three 4DK boards are final after Giants–Rams.</span></a>
       <a class="fourdk-current-shelf-card nba" href="nba-pacific-2026-27.html"><small>NBA • PACIFIC</small><b>Luka’s Era. Phoenix’s Crossroads. One More Ride.</b><span>The full Pacific Division outlook remains live.</span></a>
       <a class="fourdk-current-shelf-card nba" href="nba-southwest-2026-27.html"><small>NBA • SOUTHWEST</small><b>Wemby’s Window. Flagg’s Rise. Houston’s Test.</b><span>The Southwest preview completed all 30 teams.</span></a>
-      <a class="fourdk-current-shelf-card music" href="tha-carter-ii-when-wayne-became-wayne.html"><small>MUSIC • CLASSIC ALBUMS</small><b>Tha Carter II: When Wayne Became Wayne</b><span>4DK rating: 9.6/10 • the full review stays in rotation.</span></a>
     </div></div>`;
     lead.insertAdjacentElement('afterend',section);return true;
   }
@@ -60,17 +58,17 @@
   function updateSportsDesk(){
     const desk=document.querySelector('.home-v2-desk.nfl');if(!desk)return false;
     const k=desk.querySelector('.home-v2-desk-kicker'),h=desk.querySelector('h3'),p=desk.querySelector('p'),list=desk.querySelector('.home-v2-desk-list');
-    if(k)k.textContent='4DK NFL • WEEK 2 • MONDAY FINAL';if(h)h.innerHTML='The Rams<br>Answered.';if(p)p.textContent='Week 2 is complete. The Rams closed it with a 28–6 response win, Stafford threw four touchdowns, Aaron Donald returned after 32 months away and all three 4DK ranking boards are final.';
+    if(k)k.textContent='4DK NFL • GIANTS • BREAKING';if(h)h.innerHTML='Dart\'s Season<br>Changes Everything.';if(p)p.textContent='Reports say season-ending knee surgery is expected for Jaxson Dart. Jameis Winston gets the first shot, but the Giants now have to decide how aggressively to work the quarterback market.';
     if(list){
-      let five=list.querySelector('[data-five-week2-desk]');if(!five){five=document.createElement('a');five.href='nfl-week-2-five-biggest-headlines.html';five.dataset.fiveWeek2Desk='';five.innerHTML='<small>WEEK 2 • AROUND THE LEAGUE</small><b>5 NFL Headlines That Matter — Daniels, KC, Vegas/L.A., Rams + 49ers</b><span>→</span>';}list.prepend(five);
-      let mnf=list.querySelector('[data-mnf-week2-final-desk]');if(!mnf){mnf=document.createElement('a');mnf.href='nfl-mnf-recap-week2-rams-giants.html';mnf.dataset.mnfWeek2FinalDesk='';mnf.innerHTML='<small>MONDAY • FINAL</small><b>The Rams Answered — Stafford, Donald & the Dart injury</b><span>→</span>';}five.insertAdjacentElement('afterend',mnf);
+      let dart=list.querySelector('[data-dart-season-desk]');if(!dart){dart=document.createElement('a');dart.href='jaxson-dart-season-ending-injury-giants-qb-future.html';dart.dataset.dartSeasonDesk='';dart.innerHTML='<small>GIANTS • BREAKING</small><b>Dart season-ending surgery expected — what now at QB?</b><span>→</span>';}list.prepend(dart);
+      let mnf=list.querySelector('[data-mnf-week2-final-desk]');if(!mnf){mnf=document.createElement('a');mnf.href='nfl-mnf-recap-week2-rams-giants.html';mnf.dataset.mnfWeek2FinalDesk='';mnf.innerHTML='<small>MONDAY • FINAL</small><b>The Rams Answered — Stafford, Donald & the Dart injury</b><span>→</span>';}dart.insertAdjacentElement('afterend',mnf);
       let sun=list.querySelector('[data-sunday-week2-desk]');if(!sun){sun=document.createElement('a');sun.href='nfl-sunday-recap-week2.html';sun.dataset.sundayWeek2Desk='';sun.innerHTML='<small>SUNDAY • FINAL</small><b>What We Learned Sunday — Chiefs 33, Colts 30 OT</b><span>→</span>';}mnf.insertAdjacentElement('afterend',sun);
     }return true;
   }
 
   function updateTicker(){
     const ticker=document.querySelector('.ticker-track');if(!ticker)return false;
-    const items=['NEW: 5 NFL HEADLINES THAT MATTER AFTER WEEK 2','Daniels health • KC balance • Raiders hope • Chargers pressure • Rams + 49ers','MNF FINAL: Rams 28, Giants 6 — Los Angeles answered','Stafford: 327 yards, 4 TD • Davante Adams: 195 yards, 2 TD','Aaron Donald completes his comeback after 32 months away','Jaxson Dart: left-knee injury • possible MCL sprain • MRI pending','FINAL WEEK 2: MVP Watch, Rookie Watch + Power Rankings updated','SUNDAY: Chiefs 33, Colts 30 OT','CLASSIC ALBUMS: Tha Carter II review • 9.6/10'];
+    const items=['GIANTS: Jaxson Dart season-ending knee surgery expected','Dart ACL intact • MCL, PCL and meniscus reportedly damaged','Jameis Winston next up • 4DK says New York should work the QB market','MNF FINAL: Rams 28, Giants 6','FINAL WEEK 2: MVP Watch, Rookie Watch + Power Rankings updated','SUNDAY: Chiefs 33, Colts 30 OT','CLASSIC ALBUMS: Tha Carter II review • 9.6/10'];
     ticker.innerHTML=items.map(x=>`<span><span class="dot">●</span> ${x}</span>`).join('');return true;
   }
 

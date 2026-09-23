@@ -65,16 +65,6 @@
     {team:'Atlanta Falcons',abbr:'ATL',prev:28,meta:'0–2 • L 3–34 at CAR',note:'Five turnovers and three points against a team that gave up 59 last week is the roughest result on the board. Atlanta lands at No. 32.'}
   ];
 
-  const LOCKED_IMAGES={
-    'Kirk Cousins':'/mvp-kirk-cousins-week2.webp',
-    'Matthew Stafford':'/mvp-matthew-stafford-week2.webp',
-    'Jalen Hurts':'/mvp-jalen-hurts-week2.webp',
-    'Dak Prescott':'/mvp-dak-prescott-week2.webp',
-    'Hezekiah Masses':'/rookie-hezekiah-masses-week2.webp',
-    'Antonio Williams':'/rookie-antonio-williams-week2.webp',
-    'Mansoor Delane':'/rookie-mansoor-delane-week2.webp'
-  };
-
   const logoCodes={ARI:'ari',ATL:'atl',BAL:'bal',BUF:'buf',CAR:'car',CHI:'chi',CIN:'cin',CLE:'cle',DAL:'dal',DEN:'den',DET:'det',GB:'gb',HOU:'hou',IND:'ind',JAX:'jax',KC:'kc',LV:'lv',LAC:'lac',LAR:'lar',MIA:'mia',MIN:'min',NE:'ne',NO:'no',NYG:'nyg',NYJ:'nyj',PHI:'phi',PIT:'pit',SEA:'sea',SF:'sf',TB:'tb',TEN:'ten',WAS:'wsh'};
 
   const esc=(v='')=>String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -89,6 +79,22 @@
       .w2-initials{position:absolute;inset:0;display:grid;place-items:center;color:rgba(255,255,255,.35);font:1000 24px/1 Arial Black,Impact,sans-serif}
       #mvp-watch .mvp-photo img,#rookie-watch .rookie-photo img{position:relative;z-index:2}
       .fourdk-mnf-week2-final{padding:34px 0;background:#080a09;color:#fff;border-top:1px solid #29302a;border-bottom:1px solid #29302a}
+      .fourdk-dart-feature{padding:34px 0;background:linear-gradient(135deg,#0b2446,#090d12 62%);color:#fff;border-bottom:1px solid #2c3b49}
+      .fourdk-dart-card{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:20px;align-items:stretch;color:#fff!important;text-decoration:none!important;border:1px solid #35506b;background:rgba(4,10,16,.55);overflow:hidden}
+      .fourdk-dart-side{position:relative;min-height:245px;padding:24px;background:radial-gradient(circle at 82% 18%,rgba(74,128,216,.34),transparent 16rem),linear-gradient(145deg,#102c55,#0a1119)}
+      .fourdk-dart-side:after{content:'6';position:absolute;right:-4px;bottom:-36px;font:1000 190px/.8 Arial Black,Impact,sans-serif;color:#fff;opacity:.08}
+      .fourdk-dart-side small{position:relative;z-index:2;color:#a9bfdc;font-size:8px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+      .fourdk-dart-side strong{position:relative;z-index:2;display:block;margin-top:16px;font:1000 clamp(38px,5vw,67px)/.82 Arial Black,Impact,sans-serif;text-transform:uppercase}
+      .fourdk-dart-copy{padding:26px}
+      .fourdk-dart-copy>span{color:#ff6d79;font-size:8px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+      .fourdk-dart-copy h2{margin:8px 0 10px;font:1000 clamp(30px,4vw,48px)/.9 Arial Black,Impact,sans-serif;text-transform:uppercase}
+      .fourdk-dart-copy h2 em{font-style:normal;color:#83a9e5}
+      .fourdk-dart-copy p{margin:0;color:#c7d0d8;font:15px/1.55 Georgia,'Times New Roman',serif}
+      .fourdk-dart-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+      .fourdk-dart-tags i{font-style:normal;padding:7px 9px;border:1px solid #3a5065;color:#aebdca;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+      .fourdk-dart-copy b{display:block;margin-top:18px;color:#fff;font-size:10px;letter-spacing:.1em}
+      @media(max-width:760px){.fourdk-dart-card{grid-template-columns:1fr}.fourdk-dart-side{min-height:190px}.fourdk-dart-copy{padding:21px}}
+
       .mnf2-card{display:grid;grid-template-columns:.78fr 1.22fr;border:1px solid #323933;background:linear-gradient(145deg,#111711,#090c0a);color:inherit!important;text-decoration:none!important;overflow:hidden}
       .mnf2-score{min-height:290px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 80% 15%,rgba(0,93,161,.24),transparent 15rem),radial-gradient(circle at 20% 82%,rgba(255,209,0,.16),transparent 15rem),#0d110e;border-right:1px solid #323933}
       .mnf2-score small,.mnf2-copy>span{color:#ffd150;font-size:9px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase}
@@ -115,15 +121,6 @@
     return found;
   }
 
-  function syncHonorableMentionCount(root,count){
-    if(!root) return;
-    [...root.querySelectorAll('h2,h3,h4,h5,strong')].forEach(el=>{
-      if(/honorable mentions/i.test(el.textContent||'')){
-        el.textContent=`${count} HONORABLE MENTIONS`;
-      }
-    });
-  }
-
   function updateMVP(){
     const root=document.querySelector('#mvp-watch');
     if(!root) return false;
@@ -134,11 +131,11 @@
     if(stamp) stamp.innerHTML='WEEK 2 • FINAL<br>SEPT. 21, 2026';
     const grid=root.querySelector('.mvp-grid');
     if(grid) grid.innerHTML=MVP.map(p=>{
-      const img=LOCKED_IMAGES[p.name]||images[p.name]||'';
+      const img=images[p.name]||'';
       return `<article class="mvp-card"><div class="mvp-rank">${p.rank}</div><div class="mvp-photo"><span class="w2-initials">${initials(p.name)}</span>${img?`<img src="${img}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:''}</div><div><h3>${esc(p.name)}</h3><div class="mvp-meta">${esc(p.meta)}</div><div class="mvp-note">${esc(p.note)}</div><span class="mvp-move ${p.cls}">${esc(p.move)}</span></div></article>`;
     }).join('');
     const hm=root.querySelector('.mvp-hm-list');
-    if(hm){ hm.innerHTML=['Lamar Jackson','Bryce Young','Derrick Henry','Tyler Shough','Drew Lock','DeVonta Smith'].map(n=>`<span>${n}</span>`).join(''); syncHonorableMentionCount(root,6); }
+    if(hm) hm.innerHTML=['Lamar Jackson','Bryce Young','Derrick Henry','Tyler Shough','Drew Lock','DeVonta Smith'].map(n=>`<span>${n}</span>`).join('');
     const foot=root.querySelector('.mvp-foot');
     if(foot) foot.textContent='Week 2 is complete: Allen holds No. 1, Mahomes surges, Kenneth Walker stays in the Top 3 and Matthew Stafford enters after a four-touchdown Monday night response.';
     root.dataset.week2Final='true';
@@ -155,11 +152,11 @@
     if(stamp) stamp.innerHTML='WEEK 2 • FINAL<br>SEPT. 21, 2026';
     const grid=root.querySelector('.rookie-grid');
     if(grid) grid.innerHTML=ROOKIES.map(p=>{
-      const img=LOCKED_IMAGES[p.name]||images[p.name]||'';
+      const img=images[p.name]||'';
       return `<article class="rookie-card"><div class="rookie-rank">${p.rank}</div><div class="rookie-photo"><span class="w2-initials">${initials(p.name)}</span>${img?`<img src="${img}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:''}</div><div><h3>${esc(p.name)}</h3><div class="rookie-meta">${esc(p.pos)} • ${esc(p.team)} • ${esc(p.stats)}</div><div class="rookie-note">${esc(p.note)}</div><span class="rookie-tag ${p.tagClass}">${esc(p.tag)}</span></div></article>`;
     }).join('');
     const hm=root.querySelector('.rookie-hm-list');
-    if(hm){ hm.innerHTML=['Sonny Styles • WAS','Jacob Rodriguez • MIA','KC Concepcion • CLE','Mike Washington Jr. • LV','Emmett Johnson • KC','Jeremiyah Love • ARI'].map(n=>`<span>${n}</span>`).join(''); syncHonorableMentionCount(root,6); }
+    if(hm) hm.innerHTML=['Sonny Styles • WAS','Jacob Rodriguez • MIA','KC Concepcion • CLE','Mike Washington Jr. • LV','Emmett Johnson • KC','Jeremiyah Love • ARI'].map(n=>`<span>${n}</span>`).join('');
     const foot=root.querySelector('.rookie-foot');
     if(foot) foot.textContent='Trotter keeps the top spot, Denzel Boston remains the top offensive rookie and Hezekiah Masses crashes the Top 3 after intercepting Justin Herbert twice in his first NFL start.';
     root.dataset.week2Final='true';
@@ -213,19 +210,35 @@
     section.className='fourdk-mnf-week2-final';
     section.id='mnf-week2-final';
     section.dataset.mnfWeek2Final='';
-    section.innerHTML=`<div class="shell"><a class="mnf2-card" href="nfl-mnf-recap-week2-rams-giants.html"><div class="mnf2-score"><small>4DK NFL • MONDAY NIGHT FOOTBALL • WEEK 2</small><div class="mnf2-final"><strong>28–6</strong><span>RAMS OVER GIANTS • FINAL</span></div></div><div class="mnf2-copy"><span>THE RESPONSE GAME</span><h2>THE RAMS<br><em>ANSWERED.</em></h2><p>Stafford throws four touchdowns, Davante Adams goes for 195 yards, Aaron Donald completes his comeback after 32 months away and Jaxson Dart exits with a left-knee injury that is being evaluated as a possible MCL sprain.</p><div class="mnf2-tags"><i>Stafford: 327 • 4 TD</i><i>Adams: 195 • 2 TD</i><i>Donald Returns</i><i>Dart MRI Pending</i></div><b>READ THE FULL 4DK MNF BREAKDOWN →</b></div></a></div>`;
+    section.innerHTML=`<div class="shell"><a class="mnf2-card" href="nfl-mnf-recap-week2-rams-giants.html"><div class="mnf2-score"><small>4DK NFL • MONDAY NIGHT FOOTBALL • WEEK 2</small><div class="mnf2-final"><strong>28–6</strong><span>RAMS OVER GIANTS • FINAL</span></div></div><div class="mnf2-copy"><span>THE RESPONSE GAME</span><h2>THE RAMS<br><em>ANSWERED.</em></h2><p>Stafford throws four touchdowns, Davante Adams goes for 195 yards, Aaron Donald completes his comeback after 32 months away and Jaxson Dart exits with a left-knee injury. Follow-up reporting now says season-ending surgery is expected; his ACL is intact, while the MCL, PCL and meniscus reportedly sustained damage.</p><div class="mnf2-tags"><i>Stafford: 327 • 4 TD</i><i>Adams: 195 • 2 TD</i><i>Donald Returns</i><i>Dart: Surgery Expected</i><i>ACL Intact</i></div><b>READ THE FULL 4DK MNF BREAKDOWN →</b></div></a></div>`;
     anchor.after(section);
     const nav=document.querySelector('.nfl-v2-nav');
     if(nav && !nav.querySelector('a[href="#mnf-week2-final"]')){const a=document.createElement('a');a.href='#mnf-week2-final';a.textContent='MNF Week 2';nav.appendChild(a);}
     return true;
   }
 
-  function updateCurrentNote(){
-    const note=document.querySelector('#week2-current .w2-note');
-    if(note) note.textContent='Week 2 is complete. MVP Watch, Rookie Watch and all 32 Power Rankings are final after the Rams’ 28–6 Monday Night Football win over the Giants.';
+
+  function addDartFeature(){
+    if(document.querySelector('[data-dart-season-feature]')) return true;
+    const anchor=document.querySelector('#mnf-week2-final')||document.querySelector('#rookie-watch')||document.querySelector('#mvp-watch')||document.querySelector('#scoreboard');
+    if(!anchor) return false;
+    const section=document.createElement('section');
+    section.className='fourdk-dart-feature';
+    section.id='dart-season-feature';
+    section.dataset.dartSeasonFeature='';
+    section.innerHTML=`<div class="shell"><a class="fourdk-dart-card" href="jaxson-dart-season-ending-injury-giants-qb-future.html"><div class="fourdk-dart-side"><small>4DK NFL • GIANTS QB EMERGENCY</small><strong>DART'S<br>SEASON<br>CHANGES.</strong></div><div class="fourdk-dart-copy"><span>SEPT. 23 • BREAKING ANALYSIS</span><h2>NOW WHAT FOR<br><em>THE GIANTS?</em></h2><p>Reports say Jaxson Dart is expected to undergo season-ending knee surgery. Jameis Winston gets the first shot, but if New York still believes this is a playoff roster, the front office should be working the quarterback market immediately.</p><div class="fourdk-dart-tags"><i>Giants 1–1</i><i>Winston Next Up</i><i>QB Market Watch</i><i>Dart ACL Intact</i></div><b>READ THE FULL 4DK FEATURE →</b></div></a></div>`;
+    anchor.after(section);
+    const nav=document.querySelector('.nfl-v2-nav');
+    if(nav && !nav.querySelector('a[href="#dart-season-feature"]')){const a=document.createElement('a');a.href='#dart-season-feature';a.textContent='Dart Injury';nav.appendChild(a);}
+    return true;
   }
 
-  function apply(){addStyles();updateMVP();updateRookies();updatePower();addMNFRecap();updateCurrentNote();}
+  function updateCurrentNote(){
+    const note=document.querySelector('#week2-current .w2-note');
+    if(note) note.textContent='Week 2 is complete. MVP Watch, Rookie Watch and all 32 Power Rankings are final. The newest Giants story: reports say Jaxson Dart is expected to undergo season-ending knee surgery.';
+  }
+
+  function apply(){addStyles();updateMVP();updateRookies();updatePower();addMNFRecap();addDartFeature();updateCurrentNote();}
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true}); else apply();
   [250,600,1100,1800,2800,4200,6000,7600].forEach(ms=>setTimeout(apply,ms));
 })();
