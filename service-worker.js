@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v16-ai-video-fix';
+const CACHE_NAME = '4dk-pwa-v17-ai-direct-embed';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -54,6 +54,90 @@ self.addEventListener('activate', event => {
       .then(() => self.clients.claim())
   );
 });
+
+
+function injectAI2001Video(html) {
+  const marker = '<h2><span>05.</span> THE ALL-STAR GAME MADE THE WHOLE LEAGUE WATCH.</h2>';
+  const videoId = 'zgkSkPRRtJQ';
+
+  // Do nothing on unrelated pages, or if the player is already present.
+  if (!html.includes(marker) || html.includes(`youtube-nocookie.com/embed/${videoId}`)) {
+    return html;
+  }
+
+  const styles = `
+<style id="fourdk-ai-2001-direct-video-styles">
+  .a4-direct-video{
+    margin:34px 0;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.14);
+    border-top:4px solid #d7a92e;
+    background:#0a0f18;
+    box-shadow:0 18px 45px rgba(0,0,0,.22)
+  }
+  .a4-direct-video-head{
+    padding:16px 18px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+    background:linear-gradient(90deg,rgba(215,169,46,.12),rgba(35,78,145,.09),transparent)
+  }
+  .a4-direct-video-head small{
+    display:block;color:#e8bd4a;font-size:8px;font-weight:1000;
+    letter-spacing:.13em;text-transform:uppercase
+  }
+  .a4-direct-video-head b{
+    display:block;margin-top:6px;color:#fff;
+    font:1000 clamp(22px,3.6vw,34px)/.96 Arial Black,Impact,sans-serif;
+    letter-spacing:-.035em;text-transform:uppercase
+  }
+  .a4-direct-video-embed{
+    position:relative;width:100%;aspect-ratio:16/9;background:#000
+  }
+  .a4-direct-video-embed iframe{
+    position:absolute;inset:0;width:100%;height:100%;border:0
+  }
+  .a4-direct-video-caption{
+    display:flex;justify-content:space-between;align-items:center;gap:14px;
+    padding:12px 16px;color:#9da8b8;font-size:9px;line-height:1.45
+  }
+  .a4-direct-video-caption a{
+    color:#e8bd4a!important;text-decoration:none!important;font-weight:1000;
+    letter-spacing:.08em;text-transform:uppercase;white-space:nowrap
+  }
+  @media(max-width:560px){
+    .a4-direct-video{margin:28px 0}
+    .a4-direct-video-caption{align-items:flex-start;flex-direction:column}
+  }
+</style>`;
+
+  const block = `
+<section class="a4-direct-video" aria-label="4DK Watch the Tape: Allen Iverson 2000-01 season highlights">
+  <div class="a4-direct-video-head">
+    <small>4DK WATCH THE TAPE • 2000–01 MVP SEASON</small>
+    <b>ALLEN IVERSON • IT WAS HIS TIME.</b>
+  </div>
+  <div class="a4-direct-video-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/${videoId}"
+      title="Allen Iverson 2000-01 season highlights"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  <div class="a4-direct-video-caption">
+    <span>Watch the 2000–01 tape, then continue into the All-Star Game, Mutombo trade and the rest of the 4DK breakdown.</span>
+    <a href="https://youtu.be/${videoId}" target="_blank" rel="noopener">YouTube →</a>
+  </div>
+</section>`;
+
+  if (!html.includes('fourdk-ai-2001-direct-video-styles')) {
+    html = html.includes('</head>')
+      ? html.replace('</head>', `${styles}\n</head>`)
+      : styles + html;
+  }
+
+  return html.replace(marker, `${block}\n${marker}`);
+}
 
 function injectAppFeatures(html) {
   const addHead = [];
@@ -124,7 +208,8 @@ async function navigationResponse(request) {
       return response;
     }
 
-    const html = injectAppFeatures(await response.text());
+    let html = injectAppFeatures(await response.text());
+    html = injectAI2001Video(html);
     const headers = new Headers(response.headers);
     headers.delete('content-length');
     headers.delete('content-encoding');
@@ -142,7 +227,8 @@ async function navigationResponse(request) {
     if (cached) {
       const type = cached.headers.get('content-type') || '';
       if (type.includes('text/html')) {
-        const html = injectAppFeatures(await cached.text());
+        let html = injectAppFeatures(await cached.text());
+        html = injectAI2001Video(html);
         const headers = new Headers(cached.headers);
         headers.delete('content-length');
         headers.delete('content-encoding');
