@@ -103,7 +103,7 @@
   <div class="album-rank-no">21</div>
   <div class="album-cover-wrap">
     <img class="album-art" loading="lazy" decoding="async" alt="Life Is...Too Short album cover"
-         data-artist="Too $hort" data-album="Life Is...Too Short">
+         data-artist="Too Short" data-album="Life Is...Too Short">
     <div class="art-fallback"><small>Too $hort</small><strong>Life Is...Too Short</strong><span>1988</span></div>
   </div>
   <div class="album-copy">
@@ -830,34 +830,67 @@
 <script src="script.js"></script>
 <script>
 (function(){
-  function norm(s){return (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g," ").trim();}
+  function norm(s){
+    return (s||"")
+      .normalize("NFKD")
+      .replace(/[̀-ͯ]/g, "")
+      .replace(/\$/g, "s")
+      .replace(/[’']/g, "")
+      .replace(/&/g, " and ")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  }
+  function tokens(s){ return norm(s).split(/\s+/).filter(Boolean); }
+  function overlapScore(a,b){
+    var A=tokens(a), B=tokens(b);
+    if(!A.length || !B.length) return 0;
+    var common=A.filter(function(t){ return B.indexOf(t)!==-1; }).length;
+    return common / Math.max(A.length, B.length);
+  }
+  function albumScore(candidate, target){
+    var c=norm(candidate), t=norm(target);
+    if(!c || !t) return 0;
+    if(c===t) return 100;
+    if(c.includes(t) || t.includes(c)) return 85;
+    return Math.round(overlapScore(c,t) * 70);
+  }
+  function artistScore(candidate, target){
+    var c=norm(candidate), t=norm(target);
+    if(!c || !t) return 0;
+    if(c===t) return 100;
+    if(c.includes(t) || t.includes(c)) return 88;
+    return Math.round(overlapScore(c,t) * 75);
+  }
   async function fetchArt(img){
     if(img.dataset.loaded) return;
     img.dataset.loaded="1";
     var artist=img.dataset.artist||"", album=img.dataset.album||"";
     var term=encodeURIComponent(artist+" "+album);
     try{
-      var r=await fetch("https://itunes.apple.com/search?term="+term+"&entity=album&limit=20");
+      var r=await fetch("https://itunes.apple.com/search?term="+term+"&entity=album&limit=50");
       if(!r.ok) throw new Error("art");
-      var d=await r.json(), target=norm(album), artistN=norm(artist);
-      var choices=(d.results||[]).filter(x=>x.artworkUrl100);
-      var hit=choices.find(x=>norm(x.collectionName)===target && (norm(x.artistName).includes(artistN)||artistN.includes(norm(x.artistName))));
-      if(!hit) hit=choices.find(x=>norm(x.collectionName)===target);
-      if(!hit) hit=choices.find(x=>norm(x.artistName).includes(artistN)||artistN.includes(norm(x.artistName)));
-      if(!hit) hit=choices[0];
-      if(hit && hit.artworkUrl100){
-        img.src=hit.artworkUrl100.replace(/\d+x\d+bb/, "700x700bb");
-        img.onload=function(){img.classList.add("art-ready");};
+      var d=await r.json();
+      var choices=(d.results||[]).filter(function(x){ return x.artworkUrl100; });
+      var scored=choices.map(function(x){
+        var aScore=artistScore(x.artistName, artist);
+        var cScore=albumScore(x.collectionName, album);
+        return { item:x, score:(cScore*2)+aScore, aScore:aScore, cScore:cScore };
+      }).sort(function(a,b){ return b.score-a.score; });
+      var best=scored[0];
+      if(best && best.cScore>=80 && best.aScore>=55 && best.item.artworkUrl100){
+        img.src=best.item.artworkUrl100.replace(/\d+x\d+bb/, "700x700bb");
+        img.onload=function(){ img.classList.add("art-ready"); };
       }
     }catch(e){}
   }
   var imgs=[].slice.call(document.querySelectorAll(".album-art"));
   if("IntersectionObserver" in window){
     var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){if(e.isIntersecting){fetchArt(e.target);io.unobserve(e.target);}});
+      entries.forEach(function(e){ if(e.isIntersecting){ fetchArt(e.target); io.unobserve(e.target); } });
     },{rootMargin:"700px 0px"});
-    imgs.forEach(function(img){io.observe(img);});
-  }else{imgs.forEach(fetchArt);}
+    imgs.forEach(function(img){ io.observe(img); });
+  }else{ imgs.forEach(fetchArt); }
 })();
 </script>
 </body></html>
