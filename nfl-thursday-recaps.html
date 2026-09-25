@@ -29,7 +29,7 @@ linear-gradient(180deg,#0d120f,#060807)}
 .tnr-head h2{margin:0;font:1000 42px/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}
 .tnr-head p{margin:0;color:#7f837d;font-size:11px}
 .tnr-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.tnr-card{display:block;border:1px solid #2d342e;background:#0f1410;padding:22px;color:#f4f0e6;position:relative;overflow:hidden}
+.tnr-card{display:block;border:1px solid #2d342e;background:#0f1410;padding:22px;color:#f4f0e6;position:relative;overflow:hidden;text-decoration:none}
 .tnr-card:after{content:'TNF';position:absolute;right:-12px;bottom:-24px;font:1000 88px/.8 Impact,sans-serif;color:#fff;opacity:.025}
 .tnr-card:hover{border-color:#6fa7ff}
 .tnr-card small{color:#6fa7ff;font-size:10px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
@@ -37,6 +37,8 @@ linear-gradient(180deg,#0d120f,#060807)}
 .tnr-card p{margin:0;color:#aeb1ab;font-size:13px;line-height:1.55}
 .tnr-card b{display:inline-block;margin-top:18px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
 .tnr-score{display:inline-flex;margin:10px 0 0;padding:7px 9px;background:#101b2b;border:1px solid #273c5d;color:#dce8ff;font-size:10px;font-weight:1000;letter-spacing:.08em}
+.tnr-card.latest{border-top:4px solid #c42d39;background:linear-gradient(145deg,#1b1011,#0f1410)}
+.tnr-card.latest small{color:#ff8d79}.tnr-card.latest .tnr-score{background:#2a1013;border-color:#6a2730;color:#ffe0d9}
 .tnr-coming{border-style:dashed;opacity:.62}
 .tnr-back{display:inline-flex;margin-top:24px;padding:12px 16px;border:1px solid #343b34;color:#f4f0e6;font-size:10px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
 @media(max-width:720px){.tnr-grid{grid-template-columns:1fr}.tnr-head{align-items:flex-start;flex-direction:column}}
@@ -77,6 +79,14 @@ linear-gradient(180deg,#0d120f,#060807)}
     </div>
 
     <div class="tnr-grid">
+      <a class="tnr-card latest" href="nfl-thursday-recap-week3-falcons-packers.html">
+        <small>Week 3 • September 24, 2026</small>
+        <h3>Penix Is Back. Bijan Took Over.</h3>
+        <div class="tnr-score">ATL 35 • GB 14</div>
+        <p>Michael Penix Jr. returns, Bijan Robinson runs for 194, Drake London goes for 194 receiving and Green Bay leaves Lambeau with major questions.</p>
+        <b>Read the full Thursday recap →</b>
+      </a>
+
       <a class="tnr-card" href="nfl-thursday-recap-week2-bills-lions.html">
         <small>Week 2 • September 17, 2026</small>
         <h3>The House That Allen Built</h3>
@@ -87,7 +97,7 @@ linear-gradient(180deg,#0d120f,#060807)}
 
       <div class="tnr-card tnr-coming">
         <small>Next Thursday</small>
-        <h3>Week 3</h3>
+        <h3>Week 4</h3>
         <p>The next Thursday Night Football recap drops after the final whistle.</p>
         <b>Coming after TNF</b>
       </div>
