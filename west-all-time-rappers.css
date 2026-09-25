@@ -19,3 +19,54 @@
 .tier-break{margin:50px 0 8px;padding:19px 20px;border-top:3px solid var(--west-gold);border-bottom:1px solid #54442f;display:flex;justify-content:space-between;align-items:center;gap:20px;background:#11100d}.tier-break span{font-size:14px;font-weight:1000;letter-spacing:.18em;color:var(--west-gold)}.tier-break strong{font-size:25px;letter-spacing:-.02em}.tier-break.five{border-top-color:#b94b35;background:linear-gradient(90deg,#25110d,#100f0c)}
 .west-closing{margin-top:58px;padding:40px;background:#efe6d5;color:#16120e}.west-closing .eyebrow{font-size:11px;font-weight:1000;letter-spacing:.17em;color:#8c311f}.west-closing h2{font-size:clamp(36px,6vw,65px);line-height:.94;margin:8px 0 18px}.west-closing p{font-size:18px;line-height:1.65;max-width:780px}.west-closing .button-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.west-closing .button{display:inline-block;background:#111;color:#fff;text-decoration:none;font-weight:900;padding:13px 17px}.west-closing .button.outline{background:transparent;color:#111;border:1px solid #111}
 @media(max-width:760px){.west-hero-inner{padding-top:44px;min-height:auto}.big-20{right:-24px;top:34px;font-size:180px}.sun-disc{width:220px;height:220px;right:-70px;top:100px}.west-hero h1{margin-top:26px}.city-strip{gap:6px}.west-article{padding-top:28px}.hm-section{padding:20px;margin-top:38px}.hm-head{display:block}.hm-head p{margin-top:10px}.hm-grid{grid-template-columns:1fr}.rank-entry{grid-template-columns:76px 1fr;gap:15px;padding:28px 0}.entry-no{font-size:58px}.entry-copy p{font-size:17px;line-height:1.62}.rank-entry.top-ten{margin-left:-10px;margin-right:-10px;padding-left:10px;padding-right:10px}.rank-entry.goat{grid-template-columns:68px 1fr;padding:28px 14px}.rank-entry.goat .entry-no{font-size:74px}.tier-break{display:block}.tier-break strong{display:block;margin-top:5px;font-size:19px}.west-closing{padding:28px 20px}}
+
+
+/* 4DK WEST COAST EDITION — red/blue paisley masthead */
+.west-all-time-page .masthead{
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(12,47,105,.70) 0%,rgba(8,8,10,.86) 31%,rgba(8,8,10,.86) 69%,rgba(128,17,27,.72) 100%),
+    url('west-coast-bandana-header.jpg') center/cover no-repeat!important;
+  border-bottom:0!important;
+  box-shadow:0 10px 28px rgba(0,0,0,.28);
+}
+.west-all-time-page .masthead:before{
+  content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(28,90,184,.24),transparent 31%,transparent 69%,rgba(202,42,50,.26)),
+    linear-gradient(180deg,rgba(0,0,0,.10),rgba(0,0,0,.32));
+}
+.west-all-time-page .masthead:after{
+  content:'';position:absolute;left:0;right:0;bottom:0;height:5px;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg,#2559a8 0 45%,#d8b35f 45% 55%,#b52b36 55% 100%);
+  box-shadow:0 -1px 0 rgba(255,255,255,.08);
+}
+.west-all-time-page .masthead .masthead-inner{position:relative;z-index:2}
+.west-all-time-page .masthead .brand{
+  color:#fff!important;
+  text-shadow:0 2px 8px #000,0 0 18px rgba(216,179,95,.16);
+  letter-spacing:-.035em;
+}
+.west-all-time-page .masthead .brand-mark{
+  background:#d8b35f!important;color:#0b0a08!important;
+  box-shadow:0 0 0 2px rgba(255,255,255,.13),0 0 22px rgba(216,179,95,.28);
+}
+.west-all-time-page .masthead .nav a,
+.west-all-time-page .masthead .menu-btn{color:#fff!important;text-shadow:0 1px 5px #000}
+.west-all-time-page .masthead .menu-btn{border-color:rgba(255,255,255,.24)!important;background:rgba(0,0,0,.18)!important}
+.west-all-time-page .masthead .mobile-nav{
+  position:relative;z-index:3;
+  background:rgba(8,8,10,.95)!important;
+  border-top:1px solid rgba(216,179,95,.28)!important;
+}
+.west-all-time-page .masthead .mobile-nav a{color:#f4eee4!important}
+@media(max-width:760px){
+  .west-all-time-page .masthead{
+    background:
+      linear-gradient(90deg,rgba(14,58,126,.72) 0%,rgba(7,7,9,.88) 37%,rgba(7,7,9,.88) 63%,rgba(137,17,28,.74) 100%),
+      url('west-coast-bandana-header.jpg') center/cover no-repeat!important;
+  }
+  .west-all-time-page .masthead:after{height:4px}
+}
