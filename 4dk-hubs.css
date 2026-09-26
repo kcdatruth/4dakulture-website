@@ -1,0 +1,81 @@
+
+:root{
+  --bg:#090b0a;--panel:#111411;--paper:#efe9de;--ink:#171717;
+  --red:#e8452e;--gold:#d6ac54;--muted:#9ba09a;--line:#2d332e
+}
+*{box-sizing:border-box}
+body.hub-page{margin:0;background:var(--bg);color:#f6f2e9;font-family:Arial,Helvetica,sans-serif}
+body.hub-page a{color:inherit}
+.hub-shell{width:min(1160px,calc(100% - 34px));margin:auto}
+.hub-top{background:#050605;border-bottom:1px solid #252925;color:#8f958f;font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.hub-top .hub-shell{display:flex;justify-content:space-between;gap:15px;padding:10px 0}
+.hub-top b{color:#fff}
+.hub-nav{background:#0b0d0b;border-bottom:1px solid #272c28}
+.hub-nav .hub-shell{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+.hub-brand{font-size:18px;font-weight:1000;letter-spacing:.08em;text-decoration:none}
+.hub-brand b{font-size:27px;color:var(--red)}
+.hub-links{display:flex;gap:14px;flex-wrap:wrap}
+.hub-links a{color:#b9bdb8;text-decoration:none;font-size:9px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.hub-links a:hover{color:#fff}
+.hub-hero{position:relative;overflow:hidden;padding:64px 0 46px;border-bottom:1px solid var(--line);background:
+  radial-gradient(circle at 84% 17%,rgba(232,69,46,.19),transparent 24rem),
+  radial-gradient(circle at 15% 88%,rgba(214,172,84,.09),transparent 25rem),
+  #0b0d0c}
+.hub-hero:after{content:attr(data-code);position:absolute;right:-20px;bottom:-60px;font:1000 clamp(150px,27vw,350px)/.8 Impact,Arial Black,sans-serif;color:#fff;opacity:.025;pointer-events:none}
+.hub-hero .hub-shell{position:relative;z-index:2}
+.hub-kicker{display:block;color:#ff6b50;font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase}
+.hub-hero h1{max-width:950px;margin:10px 0 13px;font:1000 clamp(54px,9vw,105px)/.83 Impact,Arial Black,sans-serif;letter-spacing:-.055em;text-transform:uppercase}
+.hub-hero h1 em{font-style:normal;color:var(--gold)}
+.hub-hero p{max-width:820px;margin:0;color:#b6bbb6;font:17px/1.55 Georgia,serif}
+.hub-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.hub-btn{display:inline-flex;align-items:center;min-height:42px;padding:0 14px;background:var(--red);color:#fff!important;text-decoration:none!important;font-size:9px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase}
+.hub-btn.alt{background:transparent;border:1px solid #454b46;color:#e7e2d9!important}
+.hub-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;max-width:720px;margin-top:28px;background:#2b302c;border:1px solid #2b302c}
+.hub-stats div{background:#101310;padding:14px}
+.hub-stats b{display:block;font-size:25px;color:#fff}
+.hub-stats span{display:block;margin-top:3px;color:#808780;font-size:8px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.hub-main{padding:38px 0 68px}
+.hub-section{margin-top:34px}
+.hub-section:first-child{margin-top:0}
+.hub-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:15px}
+.hub-head h2{margin:5px 0 0;font:1000 clamp(31px,5vw,50px)/.9 Impact,Arial Black,sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+.hub-head p{margin:0;max-width:520px;color:#8e958f;font-size:11px;line-height:1.45}
+.hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.hub-card{display:flex;flex-direction:column;min-height:200px;padding:17px;border:1px solid #2f3530;background:#111411;text-decoration:none;transition:.15s}
+.hub-card:hover{transform:translateY(-2px);border-color:#676d68;background:#151815}
+.hub-card small{display:block;color:#ff6a50;font-size:8px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+.hub-card h3{margin:8px 0 10px;font:700 22px/1.05 Georgia,'Times New Roman',serif}
+.hub-card p{margin:0;color:#979d98;font-size:11px;line-height:1.45}
+.hub-card b{margin-top:auto;padding-top:16px;color:var(--gold);font-size:8px;letter-spacing:.1em;text-transform:uppercase}
+.hub-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#303531;border:1px solid #303531}
+.hub-timeline div{padding:15px;background:#0f120f}
+.hub-timeline small{display:block;color:#6f776f;font-size:7px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.hub-timeline strong{display:block;margin-top:5px;font-size:12px;line-height:1.25}
+.hub-footer{padding:30px 0;border-top:1px solid #292e2a;color:#858b85}
+.hub-footer .hub-shell{display:flex;justify-content:space-between;gap:18px}
+.hub-footer b{color:#fff}
+
+/* directory */
+.hub-directory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.hub-directory-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:250px;padding:20px;border:1px solid #303630;background:#101310;text-decoration:none}
+.hub-directory-card:after{content:attr(data-mark);position:absolute;right:-8px;bottom:-30px;font:1000 100px/.85 Impact,Arial Black,sans-serif;color:#fff;opacity:.035}
+.hub-directory-card>*{position:relative;z-index:2}
+.hub-directory-card small{color:#ff6b50;font-size:8px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+.hub-directory-card h2{margin:9px 0 10px;font:1000 34px/.9 Impact,Arial Black,sans-serif;text-transform:uppercase}
+.hub-directory-card p{margin:0;color:#969d97;font:13px/1.5 Georgia,serif}
+.hub-directory-card b{margin-top:auto;padding-top:18px;color:var(--gold);font-size:8px;letter-spacing:.1em;text-transform:uppercase}
+.hub-coming{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}
+.hub-chip{padding:8px 10px;border:1px solid #333a34;background:#0d100e;color:#9ca29c;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+
+@media(max-width:900px){
+  .hub-grid,.hub-directory-grid{grid-template-columns:repeat(2,1fr)}
+  .hub-timeline{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .hub-links{display:none}
+  .hub-grid,.hub-directory-grid,.hub-stats{grid-template-columns:1fr}
+  .hub-head{align-items:flex-start;flex-direction:column}
+  .hub-hero h1{font-size:55px}
+  .hub-timeline{grid-template-columns:1fr}
+  .hub-footer .hub-shell{flex-direction:column}
+}
