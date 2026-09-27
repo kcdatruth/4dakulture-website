@@ -1,4 +1,4 @@
-const CACHE_NAME = '4dk-pwa-v18-discovery-polish';
+const CACHE_NAME = '4dk-pwa-v19-more-menu-fix';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -9,6 +9,7 @@ const APP_SHELL = [
   '/app-nav.js',
   '/4dk-site-enhance.js',
   '/4dk-discovery-upgrade.js',
+  '/4dk-menu-discovery-fix.js',
   '/4dk-home-current.js',
   '/4dk-week2-rankings.js',
   '/4dk-redzone-week2-final.js',
@@ -101,6 +102,7 @@ function injectAppFeatures(html) {
   if (!html.includes('/app-nav.css')) addHead.push('<link rel="stylesheet" href="/app-nav.css" data-fourdk-appnav="1">');
   if (!html.includes('/4dk-site-enhance.js')) addHead.push('<script defer src="/4dk-site-enhance.js" data-fourdk-site-enhance="1"></script>');
   if (!html.includes('/4dk-discovery-upgrade.js')) addHead.push('<script defer src="/4dk-discovery-upgrade.js" data-fourdk-discovery-upgrade="1"></script>');
+  if (!html.includes('/4dk-menu-discovery-fix.js')) addHead.push('<script defer src="/4dk-menu-discovery-fix.js" data-fourdk-menu-discovery-fix="1"></script>');
   if (!html.includes('/4dk-home-current.js')) addHead.push('<script defer src="/4dk-home-current.js" data-fourdk-home-current="1"></script>');
   if (!html.includes('/4dk-week2-rankings.js')) addHead.push('<script defer src="/4dk-week2-rankings.js" data-fourdk-week2-rankings="1"></script>');
   if (!html.includes('/4dk-redzone-week2-final.js')) addHead.push('<script defer src="/4dk-redzone-week2-final.js" data-fourdk-redzone-current="1"></script>');
@@ -199,8 +201,10 @@ self.addEventListener('fetch', event => {
   }
 
   if (
+    url.pathname === '/app-nav.js' ||
     url.pathname === '/4dk-site-enhance.js' ||
     url.pathname === '/4dk-discovery-upgrade.js' ||
+    url.pathname === '/4dk-menu-discovery-fix.js' ||
     url.pathname === '/4dk-home-current.js' ||
     url.pathname === '/4dk-week2-rankings.js' ||
     url.pathname === '/4dk-redzone-week2-final.js' ||
