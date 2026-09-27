@@ -82,6 +82,55 @@
       .fourdk-current-shelf-card.nba{border-top:3px solid #6b7fa4}
       .fourdk-current-shelf-card.music{border-top:3px solid #b22d40}
 
+      .fourdk-home-discovery{
+        padding:22px 0 24px;background:#101210;color:#fff;
+        border-bottom:1px solid #2b302c
+      }
+      .fourdk-home-discovery-inner{
+        width:min(1180px,calc(100% - 34px));margin:auto
+      }
+      .fourdk-home-discovery-head{
+        display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:12px
+      }
+      .fourdk-home-discovery-head small{
+        display:block;color:#d8b45d;font-size:8px;font-weight:1000;
+        letter-spacing:.13em;text-transform:uppercase
+      }
+      .fourdk-home-discovery-head strong{
+        display:block;margin-top:4px;font:1000 26px/.95 Arial Black,Impact,sans-serif;
+        text-transform:uppercase
+      }
+      .fourdk-home-discovery-head span{
+        color:#8f968f;font-size:9px
+      }
+      .fourdk-home-discovery-grid{
+        display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px
+      }
+      .fourdk-home-discovery-card{
+        position:relative;overflow:hidden;display:flex;flex-direction:column;
+        min-height:145px;padding:15px;border:1px solid #303630;background:#151815;
+        color:#f5f2eb!important;text-decoration:none!important
+      }
+      .fourdk-home-discovery-card:after{
+        content:attr(data-mark);position:absolute;right:-7px;bottom:-25px;
+        font:1000 88px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.035
+      }
+      .fourdk-home-discovery-card>*{position:relative;z-index:2}
+      .fourdk-home-discovery-card small{
+        color:#ff6548;font-size:7px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase
+      }
+      .fourdk-home-discovery-card b{
+        display:block;margin:7px 0;font:1000 20px/.95 Arial Black,Impact,sans-serif;
+        text-transform:uppercase
+      }
+      .fourdk-home-discovery-card span{
+        margin-top:auto;color:#949b95;font-size:8px;line-height:1.4
+      }
+      .fourdk-home-discovery-card em{
+        margin-top:12px;color:#d8b45d;font-style:normal;
+        font-size:7px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase
+      }
+
       body.home-page .home-v2-sunday-final{
         background:
           radial-gradient(circle at 86% 20%,rgba(214,49,58,.18),transparent 18rem),
@@ -107,6 +156,16 @@
         }
         .fourdk-current-shelf-card{
           flex:0 0 min(76vw,285px);scroll-snap-align:start
+        }
+
+        .fourdk-home-discovery-grid{
+          display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px
+        }
+        .fourdk-home-discovery-card{
+          flex:0 0 min(78vw,290px);scroll-snap-align:start
+        }
+        .fourdk-home-discovery-head{
+          align-items:flex-start;flex-direction:column
         }
       }
       @media(max-width:700px){
@@ -237,6 +296,51 @@
     return true;
   }
 
+
+  function homeDiscovery(){
+    if(document.querySelector('.fourdk-home-discovery')) return true;
+
+    const shelf=document.querySelector('.fourdk-current-shelf');
+    if(!shelf) return false;
+
+    const section=document.createElement('section');
+    section.className='fourdk-home-discovery';
+    section.setAttribute('aria-label','Explore 4 Da Kulture');
+    section.innerHTML=`
+      <div class="fourdk-home-discovery-inner">
+        <div class="fourdk-home-discovery-head">
+          <div>
+            <small>EXPLORE MORE • NOTHING GETS BURIED</small>
+            <strong>FIND THE FULL 4DK ARCHIVE.</strong>
+          </div>
+          <span>Permanent pages for the stories, hubs and rankings.</span>
+        </div>
+        <div class="fourdk-home-discovery-grid">
+          <a class="fourdk-home-discovery-card" data-mark="67" href="stories.html">
+            <small>FULL ARCHIVE</small>
+            <b>Story Library</b>
+            <span>Search all 67 indexed stories across NBA, NFL, music, player files and more.</span>
+            <em>Browse the library →</em>
+          </a>
+          <a class="fourdk-home-discovery-card" data-mark="HUB" href="4dk-hubs.html">
+            <small>CONNECTED ARCHIVES</small>
+            <b>Player + Team Hubs</b>
+            <span>Kobe, Iverson, Melo, LeBron, Lakers and 49ers — with more coming as coverage grows.</span>
+            <em>Explore the hubs →</em>
+          </a>
+          <a class="fourdk-home-discovery-card" data-mark="#" href="rankings.html">
+            <small>4DK LISTS + WEEKLY BOARDS</small>
+            <b>Rankings HQ</b>
+            <span>NBA Top 50, NFL boards, MVP watches and the major 4DK music rankings in one place.</span>
+            <em>Open Rankings HQ →</em>
+          </a>
+        </div>
+      </div>`;
+
+    shelf.insertAdjacentElement('afterend',section);
+    return true;
+  }
+
   function updateSundayBlock(){
     const section=document.querySelector('.home-v2-sunday-final');
     if(!section) return false;
@@ -350,6 +454,7 @@
     updateLead();
     updateSide();
     currentShelf();
+    homeDiscovery();
     updateSundayBlock();
     updateSportsDesk();
     updateFresh();
