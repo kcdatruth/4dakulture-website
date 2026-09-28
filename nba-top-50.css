@@ -1,4 +1,3 @@
-
 :root{
   --rank-ink:#0d0d0f;
   --rank-paper:#f2eadb;
@@ -104,4 +103,21 @@ body.nba-rank-page{background:var(--rank-paper);color:var(--rank-ink)}
   .rank-entry.top-five .entry-copy h2{font-size:2.55rem}
   .closing-callout{margin-left:-16px;margin-right:-16px;padding:34px 22px}
   .keep-grid{grid-template-columns:1fr}
+}
+
+/* 4DK fix: keep stat/meta cards readable on the cream ranking background. */
+.nba-rank-page .rank-entry:not(.top-ten) .entry-meta span,
+.nba-rank-page .rank-entry:not(.top-ten) .entry-stats{
+  border-color:#cfc2af;
+  background:#f8f0e2;
+}
+.nba-rank-page .rank-entry:not(.top-ten) .entry-meta small,
+.nba-rank-page .rank-entry:not(.top-ten) .entry-stats small{
+  color:#776f66;
+}
+.nba-rank-page .rank-entry:not(.top-ten) .entry-meta b{
+  color:#151315;
+}
+.nba-rank-page .rank-entry:not(.top-ten) .entry-stats strong{
+  color:#241f1b;
 }
