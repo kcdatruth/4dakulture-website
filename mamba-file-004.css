@@ -1,2 +1,62 @@
 
-.mf4-hero{background:linear-gradient(135deg,#09070d,#241035 65%,#08070b);color:#fff;padding:68px 0 42px}.mf4-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.mf4-kicker{color:#fdb927;font-weight:900;letter-spacing:.14em;font-size:.75rem}.mf4-hero h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.84;letter-spacing:-.055em;margin:12px 0 20px}.mf4-hero h1 em{display:block;color:#fdb927;font-style:normal}.mf4-deck{font-size:1.1rem;line-height:1.65;color:#eee}.mf4-byline{font-weight:800;color:#ccc}.mf4-photo{margin:30px 0;background:#151218;padding:8px}.mf4-photo img,.mf4-hero img{display:block;width:100%;max-height:720px;object-fit:cover}.mf4-hero figure{margin:0;background:#151218;padding:8px}.mf4-photo figcaption,.mf4-hero figcaption{color:#c8c0cf;font-size:.73rem;line-height:1.45;padding:9px 5px 2px}.mf4-stats{background:#fdb927}.mf4-stats .shell{display:grid;grid-template-columns:repeat(5,1fr)}.mf4-stat{padding:20px 12px;border-right:1px solid #b77f00}.mf4-stat b{display:block;font-size:2rem}.mf4-stat span{font-size:.68rem;font-weight:900}.mf4-body{background:#f1ede5;padding:52px 0 70px}.mf4-layout{display:grid;grid-template-columns:minmax(0,760px) 270px;gap:48px}.mf4-copy p{font-size:1.04rem;line-height:1.8}.mf4-copy h2{font-size:clamp(1.7rem,4vw,2.55rem);line-height:1.03;margin:52px 0 18px}.mf4-copy h2 span{color:#6f2da8}.mf4-thesis,.mf4-final{background:#151218;color:#fff;padding:28px;border-top:6px solid #fdb927}.mf4-thesis strong{display:block;font-size:1.5rem;margin:8px 0}.mf4-label{color:#fdb927;font-weight:900;letter-spacing:.12em}.mf4-pull{font-size:1.4rem;font-weight:950;line-height:1.25;border-left:6px solid #6f2da8;padding:8px 0 8px 20px;margin:34px 0}.mf4-run{background:#6f2da8;color:#fff;padding:26px;margin:34px 0}.mf4-run-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}.mf4-run-grid div{background:#0003;text-align:center;padding:14px 6px}.mf4-run-grid b{display:block;color:#fdb927;font-size:2rem}.mf4-run-grid span{font-size:.67rem;font-weight:900}.mf4-side{position:sticky;top:22px}.mf4-side-card{background:#17131c;color:#fff;padding:21px;margin-bottom:15px;border-top:4px solid #6f2da8}.mf4-side-card.gold{border-color:#fdb927}.mf4-side-card small{color:#fdb927;font-weight:900}.mf4-side-card b{display:block;font-size:1.45rem;margin:9px 0}.mf4-side-card span{color:#c9c1d1;font-size:.84rem}.mf4-final{margin-top:45px}.mf4-final h3{color:#fdb927;font-size:2rem;line-height:1.05}.mf4-sources{border-top:1px solid #bbb;margin-top:36px;padding-top:18px}.mf4-sources p{font-size:.84rem}.mf4-back{display:inline-block;margin-top:25px;font-weight:900;color:#54217d}@media(max-width:850px){.mf4-grid,.mf4-layout{grid-template-columns:1fr}.mf4-side{position:static}.mf4-stats .shell{grid-template-columns:repeat(2,1fr)}.mf4-run-grid{grid-template-columns:repeat(2,1fr)}}
+/* 4DK Mamba File 004 — mobile/body contrast fix
+   This patch intentionally targets ONLY File 004 article copy. */
+.mf4-body,
+.mf4-body .mf4-layout,
+.mf4-body .mf4-copy {
+  background:#f1ede5;
+  color:#151515 !important;
+}
+
+.mf4-body .mf4-copy h1,
+.mf4-body .mf4-copy h2,
+.mf4-body .mf4-copy h3,
+.mf4-body .mf4-copy h4,
+.mf4-body .mf4-copy p,
+.mf4-body .mf4-copy strong,
+.mf4-body .mf4-copy b,
+.mf4-body .mf4-copy li {
+  color:#151515 !important;
+}
+
+.mf4-body .mf4-copy h2 span {
+  color:#6f2da8 !important;
+}
+
+/* Preserve white type inside intentionally dark feature boxes. */
+.mf4-body .mf4-thesis,
+.mf4-body .mf4-thesis p,
+.mf4-body .mf4-thesis strong,
+.mf4-body .mf4-final,
+.mf4-body .mf4-final p,
+.mf4-body .mf4-final strong,
+.mf4-body .mf4-run,
+.mf4-body .mf4-run span {
+  color:#fff !important;
+}
+
+.mf4-body .mf4-thesis .mf4-label,
+.mf4-body .mf4-final .mf4-label,
+.mf4-body .mf4-final h3,
+.mf4-body .mf4-run .mf4-label,
+.mf4-body .mf4-run-grid b {
+  color:#fdb927 !important;
+}
+
+.mf4-body .mf4-pull {
+  color:#151515 !important;
+}
+
+.mf4-body .mf4-photo figcaption {
+  color:#c8c0cf !important;
+}
+
+.mf4-body .mf4-sources,
+.mf4-body .mf4-sources p {
+  color:#151515 !important;
+}
+
+.mf4-body .mf4-sources a,
+.mf4-body .mf4-back {
+  color:#54217d !important;
+}
