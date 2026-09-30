@@ -1,55 +1,75 @@
-(() => {
-  const isNFL=()=>{const p=(location.pathname||'/').toLowerCase();return p.endsWith('/nfl.html')||p.endsWith('/nfl')};
-  if(!isNFL()) return;
-  const $=(s,r=document)=>r.querySelector(s);
-  const $$=(s,r=document)=>[...r.querySelectorAll(s)];
-
-  const ranks=[['San Francisco 49ers','3–0'],['Buffalo Bills','3–0'],['Kansas City Chiefs','3–0'],['Minnesota Vikings','3–0'],['Las Vegas Raiders','3–0'],['Denver Broncos','2–1'],['Jacksonville Jaguars','2–1'],['Baltimore Ravens','2–1'],['Detroit Lions','2–1'],['Seattle Seahawks','2–1'],['Los Angeles Rams','1–2'],['Pittsburgh Steelers','2–1'],['Chicago Bears','2–1'],['Philadelphia Eagles','2–1'],['Cincinnati Bengals','2–1'],['Dallas Cowboys','1–2'],['New York Giants','2–1'],['Cleveland Browns','2–1'],['Atlanta Falcons','1–2'],['Washington Commanders','1–2'],['New Orleans Saints','1–2'],['Carolina Panthers','1–2'],['Green Bay Packers','1–2'],['Indianapolis Colts','1–2'],['New York Jets','1–2'],['Arizona Cardinals','1–2'],['New England Patriots','1–2'],['Houston Texans','0–3'],['Los Angeles Chargers','0–3'],['Tampa Bay Buccaneers','0–3'],['Tennessee Titans','0–3'],['Miami Dolphins','0–3']];
-  const rookies=[
-    ['Jeremiyah Love','ARI • RB','Week 3: 90 rushing yards plus five catches for 19 yards and a receiving touchdown.'],
-    ['Kenyon Sadiq','NYJ • TE','Breakout Week 3: seven catches, 105 yards and his first career receiving touchdown.'],
-    ['Hezekiah Masses','LV • CB','Three interceptions through three games, including another pick in the Raiders’ Week 3 win.'],
-    ['Jaishawn Barham','DAL • LB','Seven tackles and two tackles for loss against Baltimore, including a fourth-and-goal stop.'],
-    ['Genesis Smith','LAC • S','Two interceptions of Josh Allen in Week 3 put the fourth-round safety on the board.'],
-    ['Antonio Williams','WAS • WR','The Week 1 Rookie of the Week remains part of Washington’s young receiving core.'],
-    ['Denzel Boston','CLE • WR','One of the rookie pass-catchers we are tracking as Cleveland reaches 2–1.'],
-    ['Jadarian Price','SEA • RB','Still part of the early offensive rookie conversation as Seattle exits Week 3 at 2–1.'],
-    ['Arvell Reese','NYG • LB','A major piece of the Giants’ young defensive core as New York starts 2–1.'],
-    ['Caleb Downs','DAL • S','His fourth-down stop on Derrick Henry helped create a short-field touchdown opportunity.']
-  ];
-  const week4=[
-    ['THU • 8:15 ET','Steelers at Browns'],['SUN • LONDON • 9:30 ET','Colts at Commanders'],['SUN • 1:00 ET','Titans at Ravens'],['SUN • 1:00 ET','Patriots at Bills'],['SUN • 1:00 ET','Jets at Bears'],['SUN • 1:00 ET','Jaguars at Bengals'],['SUN • 1:00 ET','Cowboys at Texans'],['SUN • 1:00 ET','Cardinals at Giants'],['SUN • 1:00 ET','Rams at Eagles'],['SUN • 1:00 ET','Packers at Buccaneers'],['SUN • 4:05 ET','Dolphins at Vikings'],['SUN • 4:25 ET','Chiefs at Raiders'],['SUN • 4:25 ET','Chargers at Seahawks'],['SUN • 4:25 ET','Broncos at 49ers'],['SNF • 8:20 ET','Lions at Panthers'],['MNF • 8:15 ET','Falcons at Saints']
-  ];
-
-  function css(){if($('#fourdk-week4-css'))return;const s=document.createElement('style');s.id='fourdk-week4-css';s.textContent=`
-  .w4-current{background:#070a08;color:#f5f2e9;border-top:1px solid #29302a;border-bottom:1px solid #29302a;padding:38px 0}.w4-current .shell{width:min(1180px,calc(100% - 32px));margin:auto}.w4-k{color:#ef3b3f;font:1000 10px/1 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}.w4-current h2{margin:8px 0 10px;font:1000 clamp(40px,8vw,78px)/.86 Arial Black,Impact,sans-serif;letter-spacing:-.055em;text-transform:uppercase}.w4-current h2 em{font-style:normal;color:#ef3b3f}.w4-deck{max-width:800px;color:#aeb4ae;font:700 15px/1.6 Arial,sans-serif}.w4-actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 28px}.w4-actions a{padding:13px 16px;border:1px solid #3a423b;color:#fff!important;text-decoration:none!important;font:1000 10px/1 Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase}.w4-actions a:first-child{background:#ef3438;border-color:#ef3438}.w4-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.w4-game{border:1px solid #303730;background:#101511;padding:13px}.w4-game small{display:block;color:#e6b95c;font:900 8px/1.2 Arial,sans-serif;letter-spacing:.08em}.w4-game b{display:block;margin-top:7px;font:1000 15px/1.05 Arial Black,Arial,sans-serif;text-transform:uppercase}.w4-story{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.w4-story article{padding:18px;border:1px solid #303730;background:#0d110e}.w4-story small{color:#ef5a46;font:1000 8px/1 Arial,sans-serif;letter-spacing:.1em}.w4-story h3{margin:7px 0;font:1000 21px/1 Arial Black,Arial,sans-serif;text-transform:uppercase}.w4-story p{margin:0;color:#9fa69f;font:12px/1.5 Arial,sans-serif}.w4-ranks,.w4-rookies{padding:38px 0;background:#090c0a;color:#f5f2e9;border-bottom:1px solid #29302a}.w4-section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:16px}.w4-section-head h2{margin:5px 0 0;font:1000 clamp(34px,6vw,58px)/.9 Arial Black,Impact,sans-serif;text-transform:uppercase}.w4-section-head p{max-width:560px;margin:0;color:#999f99;font:12px/1.5 Arial,sans-serif}.w4-rankgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.w4-rank{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:12px 14px;background:#111511;border:1px solid #282f29}.w4-rank i{font:1000 24px/1 Arial Black,Arial,sans-serif;color:#777f78;font-style:normal}.w4-rank b{font:900 14px/1.1 Arial,sans-serif}.w4-rank span{color:#e8b95d;font:900 10px/1 Arial,sans-serif}.w4-rookiegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.w4-rookie{padding:15px;border:1px solid #2d342e;background:#101511}.w4-rookie strong{font:1000 17px/1 Arial Black,Arial,sans-serif}.w4-rookie span{display:block;margin:5px 0;color:#ef6650;font:900 9px/1 Arial,sans-serif}.w4-rookie p{margin:8px 0 0;color:#9fa59f;font:12px/1.45 Arial,sans-serif}.w4-archive{padding:34px 0;background:#070907;color:#f5f2e9}.w4-archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.w4-archive a{display:block;padding:18px;border:1px solid #303730;background:#0e120f;color:#fff!important;text-decoration:none!important}.w4-archive small{color:#ef5a46;font:900 8px/1 Arial,sans-serif}.w4-archive b{display:block;margin:7px 0;font:1000 20px/1 Arial Black,Arial,sans-serif}.w4-archive span{color:#929992;font:11px/1.4 Arial,sans-serif}@media(max-width:760px){.w4-grid{grid-template-columns:repeat(2,1fr)}.w4-story,.w4-rankgrid,.w4-rookiegrid,.w4-archive-grid{grid-template-columns:1fr}.w4-section-head{display:block}.w4-section-head p{margin-top:10px}}`;
-  document.head.appendChild(s)}
-
-  function cleanStale(){
-    $$('[data-week2-current-row],[data-week2-ticker]').forEach(x=>x.remove());
-    const old=$('#week2-current'); if(old){const k=$('.w2-kicker',old),h=$('.w2-top h2',old),p=$('.w2-top p',old),n=$('.w2-note',old);if(k)k.textContent='4DK NFL • ARCHIVE';if(h)h.textContent='WEEK 2 ARCHIVE.';if(p)p.textContent='Week 2 remains preserved in the 2026 archive. Week 3 is complete and Week 4 is now current.';if(n)n.textContent='Archived Week 2 coverage • preserved, not deleted.'}
-    $$('.w3rookies').forEach(x=>x.remove());
-  }
-
-  function hero(){const c=$('.nfl-v2-hero .nfl-v2-copy');if(!c)return;c.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4</div><h1>WEEK 4<br><em>STARTS NOW.</em></h1><p class="nfl-v2-deck">Week 3 is locked and archived. Pittsburgh–Cleveland opens the new week Thursday, London gets Colts–Commanders, and Sunday brings Rams–Eagles, Chiefs–Raiders and Broncos–49ers before Lions–Panthers in prime time.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week4-preview-2026.html">Open Week 4 Preview</a><a class="nfl-v2-secondary" href="nfl-week3-hub-2026.html">Week 3 Archive</a></div><div class="nfl-v2-meta"><span>WEEK 4 • OCT. 1–5</span><i>•</i><span>WEEK 3 ARCHIVED</span><i>•</i><span>LIVE SCORES BELOW</span></div>`}
-
-  function board(){const b=$('.nfl-v2-board');if(!b)return;b.innerHTML=`<div class="nfl-v2-board-top"><span>THE 4DK BOARD</span><strong>WEEK 4 • CURRENT</strong></div><a class="nfl-v2-board-row live" href="nfl-week4-preview-2026.html"><div><small>THURSDAY • NEXT</small><b>STEELERS AT BROWNS</b></div><span>PREVIEW →</span></a><a class="nfl-v2-board-row live" href="nfl-week4-preview-2026.html#sunday"><div><small>SUNDAY • WEEK 4</small><b>FULL 16-GAME WEEKEND BOARD</b></div><span>OPEN →</span></a><a class="nfl-v2-board-row" href="#week3-final-rankings"><div><small>WEEK 3 • FINAL</small><b>POWER RANKINGS • 1–32</b></div><span>RANKINGS →</span></a><a class="nfl-v2-board-row" href="#mvp-watch"><div><small>WEEK 3 • FINAL</small><b>MVP WATCH</b></div><span>BOARD →</span></a><a class="nfl-v2-board-row" href="#week3-final-rookies"><div><small>WEEK 3 • FINAL</small><b>ROOKIE WATCH</b></div><span>BOARD →</span></a><div class="nfl-v2-board-foot">CURRENT WEEK UP FRONT • COMPLETED WEEKS STAY IN THE ARCHIVE.</div>`}
-
-  function ticker(){const t=$('.nfl-ticker-track');if(!t)return;t.innerHTML=['WEEK 4 NEXT: Steelers at Browns','LONDON: Colts at Commanders','Rams at Eagles','Chiefs at Raiders','Broncos at 49ers','SNF: Lions at Panthers','MNF: Falcons at Saints','Week 3 archive remains live'].map(x=>`<span><b>●</b> ${x}</span>`).join('')}
-
-  function current(){let s=$('#week4-current');if(!s){s=document.createElement('section');s.id='week4-current';s.className='w4-current';const nav=$('.nfl-v2-nav'),score=$('#scoreboard');if(nav)nav.insertAdjacentElement('afterend',s);else if(score)score.insertAdjacentElement('beforebegin',s)}s.innerHTML=`<div class="shell"><span class="w4-k">4DK NFL • CURRENT WEEK</span><h2>WEEK 4<br><em>ON DECK.</em></h2><p class="w4-deck">The Week 3 results are final. Now the board turns forward: divisional pressure on Thursday, the first London game of October, unbeaten teams defending their starts and several 0–3 teams already facing real urgency.</p><div class="w4-actions"><a href="nfl-week4-preview-2026.html">Full Week 4 Preview →</a><a href="#scoreboard">Live Scoreboard →</a><a href="nfl-week3-hub-2026.html">Week 3 Archive →</a></div><div class="w4-grid">${week4.map(g=>`<div class="w4-game"><small>${g[0]}</small><b>${g[1]}</b></div>`).join('')}</div><div class="w4-story"><article><small>UNBEATEN PRESSURE</small><h3>CHIEFS–RAIDERS</h3><p>Kansas City and Las Vegas both enter Week 4 at 3–0. One of the AFC’s cleanest starts gets tested head-to-head.</p></article><article><small>4DK SPOTLIGHT</small><h3>BRONCOS–49ERS</h3><p>San Francisco owns our No. 1 ranking. Denver enters our top six after a dramatic Week 3 finish.</p></article><article><small>RESPONSE GAME</small><h3>RAMS–EAGLES</h3><p>Both teams come off Week 3 losses and arrive with something to prove before October gets rolling.</p></article></div></div>`}
-
-  function rankings(){let s=$('#week3-final-rankings');if(!s){s=document.createElement('section');s.id='week3-final-rankings';s.className='w4-ranks';const m=$('#mvp-watch');(m||$('#week4-current'))?.insertAdjacentElement('beforebegin',s)}s.innerHTML=`<div class="shell"><div class="w4-section-head"><div><span class="w4-k">4DK NFL • WEEK 3 FINAL</span><h2>POWER RANKINGS.</h2></div><p>Our locked 1–32 board after the complete Week 3 slate. These stay as the final Week 3 rankings until Week 4 is finished.</p></div><div class="w4-rankgrid">${ranks.map((r,i)=>`<div class="w4-rank"><i>${i+1}</i><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')}</div></div>`}
-
-  function mvp(){const w=$('#mvp-watch,.mvp-watch');if(!w)return;const h=$('.mvp-head',w);if(h)h.innerHTML=`<div><span class="mvp-kicker">4DK WEEKLY NFL FEATURE</span><h2>TOP 10 MVP WATCH</h2><p>Week 3 is complete. The board is locked through Monday night and will move again after Week 4.</p></div><div class="mvp-stamp">WEEK 3 • FINAL<br>SEPT. 29, 2026</div>`;const f=$('.mvp-foot',w);if(f)f.textContent='4DK Week 3 final MVP Watch • Brock Purdy holds No. 1 as the league turns to Week 4.'}
-
-  function rookie(){let s=$('#week3-final-rookies');if(!s){s=document.createElement('section');s.id='week3-final-rookies';s.className='w4-rookies';const w=$('#mvp-watch,.mvp-watch');w?.insertAdjacentElement('afterend',s)}s.innerHTML=`<div class="shell"><div class="w4-section-head"><div><span class="w4-k">4DK NFL • WEEK 3 FINAL</span><h2>ROOKIE WATCH.</h2></div><p>Final Week 3 board: production, role, winning impact and sustainable opportunity all matter.</p></div><div class="w4-rookiegrid">${rookies.map((r,i)=>`<article class="w4-rookie"><strong>${i+1}. ${r[0]}</strong><span>${r[1]}</span><p>${r[2]}</p></article>`).join('')}</div></div>`}
-
-  function archive(){let s=$('#fourdk-nfl-archive');if(!s){s=document.createElement('section');s.id='fourdk-nfl-archive';s.className='w4-archive';const main=$('main');main?.appendChild(s)}s.innerHTML=`<div class="shell"><div class="w4-section-head"><div><span class="w4-k">4DK NFL • 2026 ARCHIVE</span><h2>THE SEASON STAYS HERE.</h2></div><p>Nothing gets erased when the calendar moves. Completed weeks remain accessible as the 2026 season builds.</p></div><div class="w4-archive-grid"><a href="nfl-sunday-recaps.html"><small>ARCHIVE</small><b>WEEK 1</b><span>Opening-week recaps and the first weekly boards.</span></a><a href="#week2-current"><small>ARCHIVE</small><b>WEEK 2</b><span>Thursday, Sunday and Monday coverage preserved on the NFL page and recap archive.</span></a><a href="nfl-week3-hub-2026.html"><small>ARCHIVE</small><b>WEEK 3</b><span>Complete Week 3 hub: recaps, final rankings and Monday night closeout.</span></a></div></div>`}
-
-  function nav(){const n=$('.nfl-v2-nav');if(!n)return;n.innerHTML=`<a class="active" href="#week4-current">Week 4</a><a href="#scoreboard">Scores</a><a href="#week3-final-rankings">Rankings</a><a href="#mvp-watch">MVP</a><a href="#week3-final-rookies">Rookies</a><a href="nfl-week3-hub-2026.html">Week 3 Archive</a><a href="#fourdk-nfl-archive">Archives</a><a href="#pickem">Pick’em</a>`}
-
-  function run(){css();cleanStale();ticker();hero();board();nav();current();rankings();mvp();rookie();archive()}
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();
-  [200,700,1500,3000,6000,10000].forEach(t=>setTimeout(run,t));
+(()=>{const P=(location.pathname||'').toLowerCase();if(!P.endsWith('/nfl.html')&&!P.endsWith('/nfl'))return;
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const ranks=`San Francisco 49ers|3–0
+Buffalo Bills|3–0
+Kansas City Chiefs|3–0
+Minnesota Vikings|3–0
+Las Vegas Raiders|3–0
+Denver Broncos|2–1
+Jacksonville Jaguars|2–1
+Baltimore Ravens|2–1
+Detroit Lions|2–1
+Seattle Seahawks|2–1
+Los Angeles Rams|1–2
+Pittsburgh Steelers|2–1
+Chicago Bears|2–1
+Philadelphia Eagles|2–1
+Cincinnati Bengals|2–1
+Dallas Cowboys|1–2
+New York Giants|2–1
+Cleveland Browns|2–1
+Atlanta Falcons|1–2
+Washington Commanders|1–2
+New Orleans Saints|1–2
+Carolina Panthers|1–2
+Green Bay Packers|1–2
+Indianapolis Colts|1–2
+New York Jets|1–2
+Arizona Cardinals|1–2
+New England Patriots|1–2
+Houston Texans|0–3
+Los Angeles Chargers|0–3
+Tampa Bay Buccaneers|0–3
+Tennessee Titans|0–3
+Miami Dolphins|0–3`.split('\n').map(x=>x.split('|'));
+const mvp=[
+['Brock Purdy','QB • SF','789 PASS YDS • 9 PASS TD • 1 INT • 3–0','297 yards and four touchdowns in Week 3 keep Purdy at No. 1.'],
+['Josh Allen','QB • BUF','786 PASS YDS • 11 TOTAL TD • 2 INT • 3–0','Buffalo is unbeaten and Allen remains one of the league’s biggest early engines.'],
+['Patrick Mahomes','QB • KC','812 PASS YDS • 7 PASS TD • 3–0','Kansas City is unbeaten and Mahomes remains firmly in the race.'],
+['Kirk Cousins','QB • LV','9 PASS TD • LV 3–0','Vegas is 3–0 and Cousins has helped drive one of the league’s biggest early stories.'],
+['Jared Goff','QB • DET','802 PASS YDS • 8 PASS TD','One of the league’s most productive passers through three weeks.'],
+['Trevor Lawrence','QB • JAX','7 PASS TD • JAX 2–1','Jacksonville’s Week 3 blowout keeps Lawrence moving.'],
+['Lamar Jackson','QB • BAL','745 PASS YDS • BAL 2–1','Baltimore escaped Dallas and Lamar remains the engine.'],
+['Jahmyr Gibbs','RB • DET','83 TOUCHES','Workload and scoring impact keep a non-QB on the board.'],
+['Kenneth Walker III','RB • KC','76 TOUCHES • KC 3–0','Walker has changed the shape of Kansas City’s offense.'],
+['Dak Prescott','QB • DAL','7 PASS TD','Dallas is 1–2, but the early passing production keeps Prescott in the ten.']];
+const rook=[
+['Jeremiyah Love','ARI • RB','90 rush yards, five catches and a receiving TD in Week 3.'],
+['Kenyon Sadiq','NYJ • TE','Seven catches, 105 yards and a receiving TD in Week 3.'],
+['Hezekiah Masses','LV • CB','Three interceptions through three games for unbeaten Vegas.'],
+['Jaishawn Barham','DAL • LB','Seven tackles and two TFL against Baltimore.'],
+['Genesis Smith','LAC • S','Two interceptions of Josh Allen in Week 3.'],
+['Antonio Williams','WAS • WR','Still part of Washington’s young offensive core.'],
+['Denzel Boston','CLE • WR','One of the rookie pass-catchers we continue to track.'],
+['Jadarian Price','SEA • RB','Remains in Seattle’s early offensive rookie picture.'],
+['Arvell Reese','NYG • LB','A major piece of the Giants’ young defensive core.'],
+['Caleb Downs','DAL • S','A fourth-down stop on Derrick Henry highlighted Week 3.']];
+const games=[['THU • 8:15 ET','Steelers at Browns'],['SUN • LONDON • 9:30 ET','Colts at Commanders'],['SUN • 1 ET','Titans at Ravens'],['SUN • 1 ET','Patriots at Bills'],['SUN • 1 ET','Jets at Bears'],['SUN • 1 ET','Jaguars at Bengals'],['SUN • 1 ET','Cowboys at Texans'],['SUN • 1 ET','Cardinals at Giants'],['SUN • 1 ET','Rams at Eagles'],['SUN • 1 ET','Packers at Buccaneers'],['SUN • 4:05 ET','Dolphins at Vikings'],['SUN • 4:25 ET','Chiefs at Raiders'],['SUN • 4:25 ET','Chargers at Seahawks'],['SUN • 4:25 ET','Broncos at 49ers'],['SNF • 8:20 ET','Lions at Panthers'],['MNF • 8:15 ET','Falcons at Saints']];
+function css(){if($('#w4mastercss'))return;let s=document.createElement('style');s.id='w4mastercss';s.textContent=`
+.fourdk-live-board,.fourdk-mnf-headline,#week2-current,.w3rookies,#power-rankings,#mvp-watch,#rookie-watch{display:none!important}
+.w4{padding:40px 0;background:#080b09;color:#f6f2e8;border-bottom:1px solid #293029}.w4 .shell{width:min(1180px,calc(100% - 32px));margin:auto}.w4k{color:#ef4144;font:1000 10px Arial;letter-spacing:.15em}.w4 h2{margin:7px 0 12px;font:1000 clamp(38px,7vw,72px)/.87 Arial Black,Impact,sans-serif;letter-spacing:-.05em}.w4 h2 em{font-style:normal;color:#ef3438}.w4p{max-width:820px;color:#a5aba5;line-height:1.6}.w4btn{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.w4btn a{padding:12px 14px;border:1px solid #394039;color:#fff!important;text-decoration:none!important;font:900 9px Arial}.w4btn a:first-child{background:#ef3438;border-color:#ef3438}.w4grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.w4box{padding:13px;background:#101511;border:1px solid #303730}.w4box small{color:#dfb45a;font:900 8px Arial}.w4box b{display:block;margin-top:6px;font:1000 14px Arial}.w4list{display:grid;grid-template-columns:1fr 1fr;gap:7px}.w4row{display:grid;grid-template-columns:42px 1fr;gap:11px;padding:14px;background:#101511;border:1px solid #303730}.w4num{font:1000 25px Arial;color:#747d75}.w4row h3{margin:0;font:1000 17px Arial}.w4row small{display:block;color:#ef6650;margin:4px 0;font:900 9px Arial}.w4row b{display:block;color:#e4b65c;font:900 9px Arial}.w4row p{margin:6px 0 0;color:#a1a7a1;font:12px/1.45 Arial}.w4archive{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.w4archive a{padding:18px;border:1px solid #303730;color:#fff!important;text-decoration:none!important}.w4archive b{display:block;font:1000 22px Arial;margin:6px 0}.w4archive span{color:#9aa19a;font-size:11px}@media(max-width:760px){.w4grid{grid-template-columns:1fr 1fr}.w4list,.w4archive{grid-template-columns:1fr}}`;document.head.appendChild(s)}
+function kill(){$$('.fourdk-live-board,.fourdk-mnf-headline,.w3rookies,#week2-current').forEach(x=>x.remove())}
+function sec(id,after){let s=$('#'+id);if(!s){s=document.createElement('section');s.id=id;s.className='w4';after?.insertAdjacentElement('afterend',s)}return s}
+function run(){css();kill();
+let t=$('.nfl-ticker-track');if(t)t.innerHTML=['WEEK 4: STEELERS AT BROWNS','LONDON: COLTS AT COMMANDERS','RAMS AT EAGLES','CHIEFS AT RAIDERS','BRONCOS AT 49ERS','SNF: LIONS AT PANTHERS','MNF: FALCONS AT SAINTS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
+let h=$('.nfl-v2-hero .nfl-v2-copy');if(h)h.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 CURRENT</div><h1>WEEK 4<br><em>STARTS NOW.</em></h1><p class="nfl-v2-deck">Week 3 is final and preserved. The board turns to Week 4 without deleting the season behind it.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week4-preview-2026.html">OPEN WEEK 4 PREVIEW</a><a class="nfl-v2-secondary" href="nfl-week3-hub-2026.html">WEEK 3 ARCHIVE</a></div>`;
+let n=$('.nfl-v2-nav');if(n)n.innerHTML=`<a class="active" href="#w4current">Week 4</a><a href="#scoreboard">Scores</a><a href="#w4redzone">Red Zone</a><a href="#w4rank">Rankings</a><a href="#w4mvp">MVP</a><a href="#w4rook">Rookies</a><a href="#w4archive">Archives</a>`;
+let anchor=n||$('#scoreboard'),a=sec('w4current',anchor);a.innerHTML=`<div class="shell"><span class="w4k">4DK NFL • CURRENT WEEK</span><h2>WEEK 4 <em>ON DECK.</em></h2><p class="w4p">Week 3 is closed. Week 4 runs October 1–5 with the first London game of October and a loaded late Sunday window.</p><div class="w4btn"><a href="nfl-week4-preview-2026.html">FULL PREVIEW →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week3-hub-2026.html">WEEK 3 ARCHIVE →</a></div><div class="w4grid">${games.map(x=>`<div class="w4box"><small>${x[0]}</small><b>${x[1]}</b></div>`).join('')}</div></div>`;
+let z=sec('w4redzone',a);z.innerHTML=`<div class="shell"><span class="w4k">4DK RED ZONE • WEEK 4</span><h2>WHAT MATTERS <em>NOW.</em></h2><div class="w4grid"><div class="w4box"><small>UNBEATEN PRESSURE</small><b>CHIEFS AT RAIDERS</b></div><div class="w4box"><small>4DK SPOTLIGHT</small><b>BRONCOS AT 49ERS</b></div><div class="w4box"><small>RESPONSE GAME</small><b>RAMS AT EAGLES</b></div><div class="w4box"><small>PRIME TIME</small><b>LIONS AT PANTHERS</b></div></div></div>`;
+let r=sec('w4rank',z);r.innerHTML=`<div class="shell"><span class="w4k">WEEK 3 • FINAL</span><h2>POWER RANKINGS.</h2><div class="w4list">${ranks.map((x,i)=>`<div class="w4row"><div class="w4num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small></div></div>`).join('')}</div></div>`;
+let m=sec('w4mvp',r);m.innerHTML=`<div class="shell"><span class="w4k">WEEK 3 • FINAL</span><h2>MVP WATCH.</h2><div class="w4list">${mvp.map((x,i)=>`<div class="w4row"><div class="w4num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small><b>${x[2]}</b><p>${x[3]}</p></div></div>`).join('')}</div></div>`;
+let o=sec('w4rook',m);o.innerHTML=`<div class="shell"><span class="w4k">WEEK 3 • FINAL</span><h2>ROOKIE WATCH.</h2><div class="w4list">${rook.map((x,i)=>`<div class="w4row"><div class="w4num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small><p>${x[2]}</p></div></div>`).join('')}</div></div>`;
+let ar=sec('w4archive',o);ar.innerHTML=`<div class="shell"><span class="w4k">4DK NFL • 2026 ARCHIVE</span><h2>NOTHING GETS DELETED.</h2><div class="w4archive"><a href="nfl-sunday-recaps.html"><small>ARCHIVE</small><b>WEEK 1</b><span>Opening-week coverage and boards.</span></a><a href="nfl-sunday-recap-week2.html"><small>ARCHIVE</small><b>WEEK 2</b><span>Completed Week 2 coverage.</span></a><a href="nfl-week3-hub-2026.html"><small>ARCHIVE</small><b>WEEK 3</b><span>Recaps, MNF closeout and final boards.</span></a></div></div>`}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();
+[100,400,900,1800,3500,6500].forEach(x=>setTimeout(run,x));let busy=false;new MutationObserver(()=>{if(busy)return;busy=true;setTimeout(()=>{run();busy=false},80)}).observe(document.documentElement,{childList:true,subtree:true});
 })();
