@@ -1,4 +1,4 @@
-const CACHE_NAME='4dk-pwa-v25-week4-redzone';
+const CACHE_NAME='4dk-pwa-v26-official-nfl-visuals';
 const APP_SHELL=['/','/index.html','/offline.html','/app.webmanifest','/pwa-install.js','/app-nav.css','/app-nav.js','/4dk-site-enhance.js','/4dk-discovery-upgrade.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js','/nfl-week4-preview-2026.html','/nfl-week3-hub-2026.html','/nfl-picks.js','/4dk-push.js'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE_NAME).then(c=>Promise.all(APP_SHELL.map(async u=>{try{await c.add(u)}catch(_){}}))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE_NAME).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
