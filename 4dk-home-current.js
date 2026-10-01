@@ -1,450 +1,189 @@
 (() => {
   const path=(location.pathname || '/').toLowerCase();
   const isHome=path==='/' || path.endsWith('/index.html');
-  if(!isHome || window.__fourdkWeek3HomeCurrent) return;
-  window.__fourdkWeek3HomeCurrent=true;
+  if(!isHome || window.__fourdkWeek4HomeCurrent) return;
+  window.__fourdkWeek4HomeCurrent=true;
 
-  const MARKER='week3-falcons-packers';
+  const MARKER='week4-2026';
+  let repairTimer=0;
 
   function addStyles(){
-    if(document.getElementById('fourdk-week3-home-current-styles')) return;
+    if(document.getElementById('fourdk-week4-home-current-styles')) return;
     const style=document.createElement('style');
-    style.id='fourdk-week3-home-current-styles';
+    style.id='fourdk-week4-home-current-styles';
     style.textContent=`
       body.home-page .home-v2-primary{
+        position:relative;overflow:hidden;
         background:
-          linear-gradient(90deg,rgba(5,6,6,.95) 0%,rgba(5,6,6,.88) 48%,rgba(5,6,6,.54) 100%),
-          url('/falcons-storm-lambeau-35-14.png') center/cover no-repeat!important;
-        border-color:#5c2a27!important
+          linear-gradient(90deg,rgba(5,7,6,.96) 0%,rgba(5,7,6,.88) 53%,rgba(5,7,6,.52) 100%),
+          repeating-linear-gradient(90deg,transparent 0 74px,rgba(255,255,255,.027) 75px 76px),
+          radial-gradient(circle at 84% 19%,rgba(226,57,50,.29),transparent 15rem),
+          radial-gradient(circle at 70% 74%,rgba(215,173,85,.18),transparent 18rem),
+          linear-gradient(135deg,#16241b,#080b09 73%)!important;
+        border-color:#445148!important;
       }
       body.home-page .home-v2-primary:before{
-        content:'35–14'!important;
-        right:-16px!important;
-        bottom:-28px!important;
-        font-size:clamp(88px,15vw,180px)!important;
-        color:#fff!important;
-        opacity:.045!important
+        content:'W4'!important;right:-18px!important;bottom:-30px!important;
+        font-size:clamp(92px,16vw,190px)!important;color:#fff!important;opacity:.045!important
       }
-      body.home-page .home-v2-primary h1 em{color:#f0b342!important}
-
-      body.home-page .home-v2-side-card.week3-tnf{
-        border-top:3px solid #d6313a!important;
-        background:
-          radial-gradient(circle at 88% 12%,rgba(214,49,58,.19),transparent 9rem),
-          linear-gradient(145deg,#241012,#0b0e0c)!important
+      body.home-page .home-v2-primary h1 em{color:#f0bf54!important}
+      body.home-page .home-v2-side-card.week4-tnf{border-top:3px solid #d9b24f!important;background:linear-gradient(145deg,#211d12,#0b0e0c)!important}
+      body.home-page .home-v2-side-card.week4-gotw{border-top:3px solid #d6313a!important;background:linear-gradient(145deg,#231013,#0b0e0c)!important}
+      body.home-page .home-v2-desk.nfl{
+        position:relative;overflow:hidden;
+        background:repeating-linear-gradient(90deg,transparent 0 88px,rgba(255,255,255,.022) 89px 90px),radial-gradient(circle at 86% 10%,rgba(66,137,82,.24),transparent 13rem),linear-gradient(145deg,#0f1812,#080b09 72%)!important;
       }
-
-      .fourdk-current-shelf{
-        position:relative;overflow:hidden;padding:18px 0 20px;
-        background:#0c0d0c;color:#fff;border-top:1px solid #292d29;border-bottom:1px solid #292d29
+      body.home-page .home-v2-desk.nfl:after{
+        content:'WEEK 4'!important;position:absolute;right:-12px;top:10px;
+        font:1000 clamp(54px,8vw,110px)/1 Arial Black,Impact,sans-serif;letter-spacing:-.07em;color:#fff;opacity:.035;pointer-events:none;
       }
-      .fourdk-current-shelf:after{
-        content:'W3';position:absolute;right:-8px;bottom:-36px;
-        font:1000 118px/.85 Arial Black,Impact,sans-serif;
-        color:#fff;opacity:.025;pointer-events:none
-      }
-      .fourdk-current-shelf-inner{
-        position:relative;z-index:2;width:min(1180px,calc(100% - 34px));margin:auto
-      }
-      .fourdk-current-shelf-head{
-        display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:11px
-      }
-      .fourdk-current-shelf-head small{
-        display:block;color:#ff6548;font-size:8px;font-weight:1000;
-        letter-spacing:.13em;text-transform:uppercase
-      }
-      .fourdk-current-shelf-head strong{
-        display:block;margin-top:3px;font:1000 23px/.95 Arial Black,Impact,sans-serif;
-        text-transform:uppercase
-      }
-      .fourdk-current-shelf-head a{
-        color:#d8b45d!important;text-decoration:none!important;
-        font-size:8px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase
-      }
-      .fourdk-current-shelf-grid{
-        display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px
-      }
-      .fourdk-current-shelf-card{
-        display:flex;flex-direction:column;min-height:132px;padding:13px;
-        border:1px solid #303430;background:#121412;color:#f5f2eb!important;text-decoration:none!important
-      }
-      .fourdk-current-shelf-card small{
-        color:#ff6548;font-size:7px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase
-      }
-      .fourdk-current-shelf-card b{
-        display:block;margin:7px 0;font:700 17px/1.05 Georgia,'Times New Roman',serif
-      }
-      .fourdk-current-shelf-card span{
-        margin-top:auto;color:#a7ada7;font-size:8px;line-height:1.35
-      }
-      .fourdk-current-shelf-card.thursday{border-top:3px solid #d6313a}
-      .fourdk-current-shelf-card.sunday{border-top:3px solid #d8b45d}
-      .fourdk-current-shelf-card.nba{border-top:3px solid #6b7fa4}
-      .fourdk-current-shelf-card.music{border-top:3px solid #b22d40}
-
-      .fourdk-home-discovery{
-        padding:22px 0 24px;background:#101210;color:#fff;
-        border-bottom:1px solid #2b302c
-      }
-      .fourdk-home-discovery-inner{
-        width:min(1180px,calc(100% - 34px));margin:auto
-      }
-      .fourdk-home-discovery-head{
-        display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:12px
-      }
-      .fourdk-home-discovery-head small{
-        display:block;color:#d8b45d;font-size:8px;font-weight:1000;
-        letter-spacing:.13em;text-transform:uppercase
-      }
-      .fourdk-home-discovery-head strong{
-        display:block;margin-top:4px;font:1000 26px/.95 Arial Black,Impact,sans-serif;
-        text-transform:uppercase
-      }
-      .fourdk-home-discovery-head span{
-        color:#8f968f;font-size:9px
-      }
-      .fourdk-home-discovery-grid{
-        display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px
-      }
-      .fourdk-home-discovery-card{
-        position:relative;overflow:hidden;display:flex;flex-direction:column;
-        min-height:145px;padding:15px;border:1px solid #303630;background:#151815;
-        color:#f5f2eb!important;text-decoration:none!important
-      }
-      .fourdk-home-discovery-card:after{
-        content:attr(data-mark);position:absolute;right:-7px;bottom:-25px;
-        font:1000 88px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.035
-      }
-      .fourdk-home-discovery-card>*{position:relative;z-index:2}
-      .fourdk-home-discovery-card small{
-        color:#ff6548;font-size:7px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase
-      }
-      .fourdk-home-discovery-card b{
-        display:block;margin:7px 0;font:1000 20px/.95 Arial Black,Impact,sans-serif;
-        text-transform:uppercase
-      }
-      .fourdk-home-discovery-card span{
-        margin-top:auto;color:#949b95;font-size:8px;line-height:1.4
-      }
-      .fourdk-home-discovery-card em{
-        margin-top:12px;color:#d8b45d;font-style:normal;
-        font-size:7px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase
-      }
-
-      body.home-page .home-v2-sunday-final{
-        background:
-          radial-gradient(circle at 86% 20%,rgba(214,49,58,.18),transparent 18rem),
-          radial-gradient(circle at 12% 80%,rgba(215,173,85,.11),transparent 18rem),
-          linear-gradient(145deg,#14130f,#080b09 72%)!important
-      }
-      body.home-page .home-v2-sunday-final:after{
-        content:'WEEK 3'!important;
-        font-size:clamp(72px,13vw,165px)!important
-      }
-
-      .home-fresh-card[data-week3-tnf-home]{
-        border-top:4px solid #d6313a!important;
-        box-shadow:0 12px 34px rgba(0,0,0,.08)
-      }
-      .home-fresh-card[data-week3-tnf-home] img{
-        object-position:center 44%
-      }
-
-      @media(max-width:900px){
-        .fourdk-current-shelf-grid{
-          display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding-bottom:3px
-        }
-        .fourdk-current-shelf-card{
-          flex:0 0 min(76vw,285px);scroll-snap-align:start
-        }
-
-        .fourdk-home-discovery-grid{
-          display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px
-        }
-        .fourdk-home-discovery-card{
-          flex:0 0 min(78vw,290px);scroll-snap-align:start
-        }
-        .fourdk-home-discovery-head{
-          align-items:flex-start;flex-direction:column
-        }
-      }
-      @media(max-width:700px){
-        body.home-page .home-search{padding:9px 0!important}
-        body.home-page .site-search input,body.home-page .site-search button{
-          min-height:48px!important;height:48px!important
-        }
-        .fourdk-current-shelf-head{align-items:flex-start;flex-direction:column}
-        body.home-page .home-v2-primary{
-          background:
-            linear-gradient(180deg,rgba(5,6,6,.78),rgba(5,6,6,.94)),
-            url('/falcons-storm-lambeau-35-14.png') 50% 40%/cover no-repeat!important
-        }
-      }
+      .fourdk-current-shelf{position:relative;overflow:hidden;padding:19px 0 21px;background:#0b0d0b;color:#fff;border-top:1px solid #292f2a;border-bottom:1px solid #292f2a}
+      .fourdk-current-shelf:after{content:'W4';position:absolute;right:-8px;bottom:-38px;font:1000 122px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.025;pointer-events:none}
+      .fourdk-current-shelf-inner{position:relative;z-index:2;width:min(1180px,calc(100% - 34px));margin:auto}
+      .fourdk-current-shelf-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:12px}
+      .fourdk-current-shelf-head small{display:block;color:#ff6548;font-size:8px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+      .fourdk-current-shelf-head strong{display:block;margin-top:3px;font:1000 24px/.95 Arial Black,Impact,sans-serif;text-transform:uppercase}
+      .fourdk-current-shelf-head a{color:#d8b45d!important;text-decoration:none!important;font-size:8px;font-weight:1000;letter-spacing:.09em;text-transform:uppercase}
+      .fourdk-current-shelf-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+      .fourdk-current-shelf-card{display:flex;flex-direction:column;min-height:139px;padding:13px;border:1px solid #303630;background:#121512;color:#f5f2eb!important;text-decoration:none!important}
+      .fourdk-current-shelf-card small{color:#ff6548;font-size:7px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+      .fourdk-current-shelf-card b{display:block;margin:7px 0;font:700 17px/1.05 Georgia,'Times New Roman',serif}
+      .fourdk-current-shelf-card span{margin-top:auto;color:#a7ada7;font-size:8px;line-height:1.38}
+      .fourdk-current-shelf-card.gold{border-top:3px solid #d8b45d}.fourdk-current-shelf-card.red{border-top:3px solid #d6313a}.fourdk-current-shelf-card.green{border-top:3px solid #5f9c68}.fourdk-current-shelf-card.blue{border-top:3px solid #637ea7}
+      body.home-page .home-v2-sunday-final{background:radial-gradient(circle at 86% 20%,rgba(214,49,58,.17),transparent 18rem),radial-gradient(circle at 12% 80%,rgba(215,173,85,.11),transparent 18rem),linear-gradient(145deg,#13150f,#080b09 72%)!important}
+      body.home-page .home-v2-sunday-final:after{content:'3–0'!important;font-size:clamp(82px,14vw,180px)!important}
+      @media(max-width:900px){.fourdk-current-shelf-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding-bottom:3px}.fourdk-current-shelf-card{flex:0 0 min(76vw,285px);scroll-snap-align:start}}
+      @media(max-width:700px){.fourdk-current-shelf-head{align-items:flex-start;flex-direction:column}.home-v2-primary{min-height:430px}}
     `;
     document.head.appendChild(style);
   }
 
   function updateLead(){
     const primary=document.querySelector('.home-v2-primary');
-    if(!primary) return false;
-    if(primary.dataset.homeLead===MARKER) return true;
+    if(!primary || primary.dataset.homeLead===MARKER) return !!primary;
     primary.dataset.homeLead=MARKER;
     primary.innerHTML=`
-      <span class="home-v2-lead-kicker">4DK NFL • WEEK 3 • THURSDAY FINAL</span>
-      <h1>WEEK 3 IS LIVE.<br><em>ATLANTA WOKE UP.</em></h1>
-      <p>Michael Penix Jr. returned, Bijan Robinson ran for 194 yards and Drake London exploded for 194 receiving as the Falcons walked into Lambeau and beat Green Bay 35–14. Now the rest of Week 3 is waiting: 14 Sunday games, Ravens–Cowboys in Rio and Rams–Broncos under the lights.</p>
+      <span class="home-v2-lead-kicker">4DK NFL • WEEK 4 • THURSDAY NIGHT</span>
+      <h1>WEEK 4.<br><em>NOW THE PRESSURE CHANGES.</em></h1>
+      <p>Three weeks gave us the first real hierarchy. San Francisco, Buffalo, Kansas City, Minnesota and Las Vegas are unbeaten. Week 4 opens with AFC North pressure in Cleveland, hits London Sunday morning and peaks with a 3–0 Chiefs–Raiders collision in Vegas.</p>
       <div class="home-v2-primary-meta">
-        <span>ATL 35 • GB 14</span>
-        <span>BIJAN: 194 RUSH • 2 TD</span>
-        <span>LONDON: 9 REC • 194 YDS</span>
-        <span>14 SUNDAY GAMES</span>
+        <span>PIT @ CLE • TONIGHT</span>
+        <span>KC @ LV • 3–0 VS 3–0</span>
+        <span>DEN @ SF • #6 VS #1</span>
+        <span>IND @ WAS • LONDON</span>
       </div>
       <div class="home-v2-primary-actions">
-        <a class="home-v2-button" href="nfl-thursday-recap-week3-falcons-packers.html">Read the Week 3 TNF Recap →</a>
-        <a class="home-v2-button alt" href="nfl-week3-hub-2026.html">Open the Week 3 Hub</a>
+        <a class="home-v2-button" href="nfl-week4-preview-2026.html">Open the Week 4 Preview →</a>
+        <a class="home-v2-button alt" href="nfl.html#scoreboard">Open the Live Game Center</a>
       </div>`;
     return true;
   }
 
   function updateSide(){
     const side=document.querySelector('.home-v2-side');
-    if(!side) return false;
-    if(side.dataset.week3Current==='1') return true;
-    side.dataset.week3Current='1';
+    if(!side || side.dataset.week4Current==='1') return !!side;
+    side.dataset.week4Current='1';
     side.innerHTML=`
-      <a class="home-v2-side-card week3-tnf" href="nfl-thursday-recap-week3-falcons-packers.html">
-        <small>TNF • FINAL • WEEK 3</small>
-        <b>Penix Is Back. Bijan Took Over.</b>
-        <span>Atlanta 35, Green Bay 14. Penix returns, Bijan makes his RB1 case and Drake London goes off.</span>
-        <strong>Read the full recap →</strong>
+      <a class="home-v2-side-card week4-tnf" href="nfl-week4-preview-2026.html">
+        <small>TONIGHT • AFC NORTH</small><b>Steelers at Browns</b>
+        <span>Both enter 2–1. Week 4 starts with a divisional game that can reshuffle the entire AFC North.</span><strong>Open the Week 4 desk →</strong>
       </a>
-      <a class="home-v2-side-card" href="nfl.html#scoreboard">
-        <small>NFL • SUNDAY • 14 GAMES</small>
-        <b>Week 3 Takes Over Sunday</b>
-        <span>Chargers–Bills, Chiefs–Dolphins, Bengals–Steelers, 49ers–Cardinals and more.</span>
-        <strong>Open the live game center →</strong>
+      <a class="home-v2-side-card week4-gotw" href="nfl-week4-preview-2026.html#game-of-the-week">
+        <small>GAME OF THE WEEK</small><b>Chiefs at Raiders: 3–0 vs. 3–0</b>
+        <span>Kansas City’s championship standard meets the biggest early test of the new Vegas era.</span><strong>Read the matchup →</strong>
       </a>
-      <a class="home-v2-side-card" href="nfl-week3-hub-2026.html">
-        <small>INTERNATIONAL • RIO</small>
-        <b>Ravens vs. Cowboys</b>
-        <span>Baltimore and Dallas meet Sunday afternoon in the NFL's Rio de Janeiro game.</span>
-        <strong>Open Week 3 →</strong>
+      <a class="home-v2-side-card" href="nfl-week4-preview-2026.html#power-test">
+        <small>4DK POWER TEST</small><b>Broncos at 49ers</b>
+        <span>Our No. 6 team visits our No. 1 team. San Francisco’s unbeaten start gets another serious test.</span><strong>See what we’re watching →</strong>
       </a>
-      <a class="home-v2-side-card" href="nfl-week3-hub-2026.html">
-        <small>SUNDAY NIGHT FOOTBALL</small>
-        <b>Rams vs. Broncos</b>
-        <span>Matthew Stafford and the Rams head to Denver for the Week 3 Sunday night closer.</span>
-        <strong>See the Week 3 slate →</strong>
+      <a class="home-v2-side-card" href="nfl-power-rankings-week3-2026.html">
+        <small>WEEK 3 FINAL • ENTERING WEEK 4</small><b>49ers Hold the Top Spot</b>
+        <span>San Francisco, Buffalo, Kansas City, Minnesota and Las Vegas make up the current 4DK top five.</span><strong>See the full 1–32 →</strong>
       </a>`;
     return true;
   }
 
   function currentShelf(){
     const old=document.querySelector('.fourdk-current-shelf');
-    if(old && old.dataset.week3Shelf==='1') return true;
+    if(old && old.dataset.week4Shelf==='1') return true;
     if(old) old.remove();
-
     const lead=document.querySelector('.home-v2-lead');
     if(!lead) return false;
-
     const section=document.createElement('section');
     section.className='fourdk-current-shelf';
-    section.dataset.week3Shelf='1';
+    section.dataset.week4Shelf='1';
     section.innerHTML=`
       <div class="fourdk-current-shelf-inner">
         <div class="fourdk-current-shelf-head">
-          <div>
-            <small>WEEK 3 IS ACTIVE • NOTHING GETS REMOVED</small>
-            <strong>RIGHT NOW ON 4DK.</strong>
-          </div>
-          <a href="/stories.html">Browse the Story Library →</a>
+          <div><small>WEEK 4 IS LIVE • OLDER WEEKS STAY ARCHIVED</small><strong>RIGHT NOW ON 4DK.</strong></div>
+          <a href="nfl.html">Enter the NFL hub →</a>
         </div>
         <div class="fourdk-current-shelf-grid">
-          <a class="fourdk-current-shelf-card thursday" href="nfl-thursday-recap-week3-falcons-packers.html">
-            <small>WEEK 3 • THURSDAY FINAL</small>
-            <b>Penix Is Back. Bijan Took Over.</b>
-            <span>Falcons 35 • Packers 14 • The full Lambeau breakdown.</span>
-          </a>
-          <a class="fourdk-current-shelf-card sunday" href="nfl.html#scoreboard">
-            <small>WEEK 3 • SUNDAY</small>
-            <b>14 Games. All Day.</b>
-            <span>Live scores, team stats, player leaders and Red Zone from the NFL hub.</span>
-          </a>
-          <a class="fourdk-current-shelf-card sunday" href="nfl-week3-hub-2026.html">
-            <small>RIO • SUNDAY</small>
-            <b>Ravens vs. Cowboys</b>
-            <span>The NFL's Week 3 international spotlight lands in Rio de Janeiro.</span>
-          </a>
-          <a class="fourdk-current-shelf-card sunday" href="nfl-week3-hub-2026.html">
-            <small>SNF • SUNDAY</small>
-            <b>Rams vs. Broncos</b>
-            <span>Two 2025 conference-finalists meet in Denver under the lights.</span>
-          </a>
-          <a class="fourdk-current-shelf-card nba" href="nba-opening-week-2026.html">
-            <small>NBA • OPENING WEEK</small>
-            <b>The Season Starts With Everything on the Line.</b>
-            <span>Eight Opening Week storylines are live now.</span>
-          </a>
-          <a class="fourdk-current-shelf-card music" href="top-20-west-coast-rappers-all-time.html">
-            <small>4DK MUSIC • WEST COAST</small>
-            <b>The 20 Greatest West Coast Rappers.</b>
-            <span>Pac at one. Kendrick at two. Snoop at three.</span>
-          </a>
+          <a class="fourdk-current-shelf-card gold" href="nfl-week4-preview-2026.html"><small>THURSDAY • 8:15 ET</small><b>Steelers at Browns</b><span>2–1 vs. 2–1 opens Week 4 in Cleveland.</span></a>
+          <a class="fourdk-current-shelf-card blue" href="nfl-week4-preview-2026.html"><small>LONDON • 9:30 ET</small><b>Colts at Commanders</b><span>Sunday starts overseas with two 1–2 teams looking for a reset.</span></a>
+          <a class="fourdk-current-shelf-card red" href="nfl-week4-preview-2026.html#game-of-the-week"><small>GAME OF THE WEEK</small><b>Chiefs at Raiders</b><span>Two 3–0 AFC West teams. The first real measuring stick in Vegas.</span></a>
+          <a class="fourdk-current-shelf-card green" href="nfl-week4-preview-2026.html#power-test"><small>4DK #6 @ #1</small><b>Broncos at 49ers</b><span>Denver’s rise meets San Francisco’s unbeaten standard.</span></a>
+          <a class="fourdk-current-shelf-card gold" href="nfl-power-rankings-week3-2026.html"><small>4DK POWER RANKINGS</small><b>49ers Still No. 1</b><span>The full 1–32 board entering Week 4 is locked.</span></a>
+          <a class="fourdk-current-shelf-card red" href="nfl-week3-hub-2026.html"><small>WEEK 3 ARCHIVE</small><b>Week 3 Is in the Books</b><span>Thursday, Sunday, MNF and the final Week 3 boards stay one click away.</span></a>
         </div>
       </div>`;
     lead.insertAdjacentElement('afterend',section);
     return true;
   }
 
-
-  function homeDiscovery(){
-    if(document.querySelector('.fourdk-home-discovery')) return true;
-
-    const shelf=document.querySelector('.fourdk-current-shelf');
-    if(!shelf) return false;
-
-    const section=document.createElement('section');
-    section.className='fourdk-home-discovery';
-    section.setAttribute('aria-label','Explore 4 Da Kulture');
-    section.innerHTML=`
-      <div class="fourdk-home-discovery-inner">
-        <div class="fourdk-home-discovery-head">
-          <div>
-            <small>EXPLORE MORE • NOTHING GETS BURIED</small>
-            <strong>FIND THE FULL 4DK ARCHIVE.</strong>
-          </div>
-          <span>Permanent pages for the stories, hubs and rankings.</span>
-        </div>
-        <div class="fourdk-home-discovery-grid">
-          <a class="fourdk-home-discovery-card" data-mark="67" href="stories.html">
-            <small>FULL ARCHIVE</small>
-            <b>Story Library</b>
-            <span>Search all 67 indexed stories across NBA, NFL, music, player files and more.</span>
-            <em>Browse the library →</em>
-          </a>
-          <a class="fourdk-home-discovery-card" data-mark="HUB" href="4dk-hubs.html">
-            <small>CONNECTED ARCHIVES</small>
-            <b>Player + Team Hubs</b>
-            <span>Kobe, Iverson, Melo, LeBron, Lakers and 49ers — with more coming as coverage grows.</span>
-            <em>Explore the hubs →</em>
-          </a>
-          <a class="fourdk-home-discovery-card" data-mark="#" href="rankings.html">
-            <small>4DK LISTS + WEEKLY BOARDS</small>
-            <b>Rankings HQ</b>
-            <span>NBA Top 50, NFL boards, MVP watches and the major 4DK music rankings in one place.</span>
-            <em>Open Rankings HQ →</em>
-          </a>
-        </div>
-      </div>`;
-
-    shelf.insertAdjacentElement('afterend',section);
-    return true;
-  }
-
-  function updateSundayBlock(){
+  function updateSundayFinal(){
     const section=document.querySelector('.home-v2-sunday-final');
-    if(!section) return false;
-    if(section.dataset.week3Sunday==='1') return true;
-    section.dataset.week3Sunday='1';
-    section.setAttribute('aria-label','Week 3 NFL Sunday preview');
+    if(!section || section.dataset.week4Bridge==='1') return !!section;
+    section.dataset.week4Bridge='1';
+    section.setAttribute('aria-label','Week 3 final and Week 4 setup');
     section.innerHTML=`
       <div class="shell home-v2-sunday-final-grid">
         <article class="home-v2-sunday-feature">
-          <small>4DK NFL • WEEK 3 • SUNDAY NEXT</small>
-          <h2>THURSDAY SET THE TONE.<br><em>SUNDAY GETS THE WHOLE LEAGUE.</em></h2>
-          <p>Atlanta already made the first Week 3 statement. Sunday brings 14 more games: Chargers–Bills, Chiefs–Dolphins, Bengals–Steelers, 49ers–Cardinals, Ravens–Cowboys in Rio and Rams–Broncos on Sunday Night Football.</p>
-          <div class="home-v2-sunday-stats">
-            <span>14 SUNDAY GAMES</span>
-            <span>LAC @ BUF • 1 PM ET</span>
-            <span>BAL @ DAL • RIO • 4:25 ET</span>
-            <span>LAR @ DEN • SNF • 8:20 ET</span>
-          </div>
-          <a href="nfl.html#scoreboard">Open the Week 3 Game Center →</a>
+          <small>4DK NFL • WEEK 3 FINAL • ENTERING WEEK 4</small>
+          <h2>THE UNBEATEN GROUP IS REAL.<br><em>NOW SOMEBODY HAS TO BLINK.</em></h2>
+          <p>San Francisco, Buffalo, Kansas City, Minnesota and Las Vegas all reached 3–0. The 49ers hold our No. 1 spot, Brock Purdy just delivered a four-touchdown Sunday, and Week 4 gives us two massive tests: Kansas City at Las Vegas and Denver at San Francisco.</p>
+          <div class="home-v2-sunday-stats"><span>SF • 3–0 • #1</span><span>BUF • 3–0 • #2</span><span>KC • 3–0 • #3</span><span>MIN + LV • 3–0</span></div>
+          <a href="nfl-power-rankings-week3-2026.html">See the 1–32 Board →</a>
         </article>
-        <aside class="home-v2-sunday-side">
-          <div>
-            <small>WEEK 3 • WHAT TO WATCH</small>
-            <strong>Pressure Games.<br>Statement Games.</strong>
-            <span>Buffalo gets the Chargers. Kansas City heads to Miami. San Francisco hosts Arizona. Baltimore and Dallas get the Rio stage. The Rams and Broncos close Sunday.</span>
-          </div>
-          <a href="nfl-week3-hub-2026.html">Open the Week 3 Hub →</a>
-        </aside>
+        <aside class="home-v2-sunday-side"><div><small>WEEK 3 ARCHIVE</small><strong>Every Week Stays Live.</strong><span>The Falcons’ Lambeau statement, Purdy’s four-touchdown Sunday, Chicago’s Monday-night win and the complete Week 3 desk remain archived while Week 4 moves to the front.</span></div><a href="nfl-week3-hub-2026.html">Open the Week 3 Desk →</a></aside>
       </div>`;
-
-    const jumpLink=document.querySelector('.home-v2-jump a[href="#home-sunday-final"]');
-    if(jumpLink) jumpLink.textContent='Week 3 Sunday';
     return true;
   }
 
   function updateSportsDesk(){
     const desk=document.querySelector('.home-v2-desk.nfl');
-    if(!desk) return false;
-
-    const k=desk.querySelector('.home-v2-desk-kicker');
-    const h=desk.querySelector('h3');
-    const p=desk.querySelector('p');
-    const list=desk.querySelector('.home-v2-desk-list');
-
-    if(k) k.textContent='4DK NFL • WEEK 3';
-    if(h) h.innerHTML='Week 3 Is<br>Already Talking.';
-    if(p) p.textContent='Atlanta opened the week with a 35–14 statement in Green Bay. Penix is back, Bijan has an RB1 case, and Sunday brings 14 more games plus Rio and a loaded Sunday night matchup.';
-
-    if(list){
-      list.innerHTML=`
-        <a href="nfl-thursday-recap-week3-falcons-packers.html">
-          <small>THURSDAY • FINAL</small><b>Falcons 35, Packers 14 — Penix is back, Bijan took over</b><span>→</span>
-        </a>
-        <a href="nfl.html#scoreboard">
-          <small>SUNDAY • LIVE</small><b>Week 3 Game Center — 14 games all day</b><span>→</span>
-        </a>
-        <a href="nfl-week3-hub-2026.html">
-          <small>RIO</small><b>Ravens vs. Cowboys — international spotlight</b><span>→</span>
-        </a>
-        <a href="nfl-week3-hub-2026.html">
-          <small>SNF</small><b>Rams vs. Broncos — Sunday night in Denver</b><span>→</span>
-        </a>
-        <a href="nfl-week3-hub-2026.html">
-          <small>MNF</small><b>Eagles vs. Bears closes Week 3 Monday night</b><span>→</span>
-        </a>`;
-    }
+    if(!desk || desk.dataset.week4Desk==='1') return !!desk;
+    desk.dataset.week4Desk='1';
+    desk.innerHTML=`
+      <span class="home-v2-desk-kicker">4DK NFL • WEEK 4</span>
+      <h3>The First Month<br>Starts to Matter.</h3>
+      <p>Five teams are unbeaten. Five teams are still winless. Week 4 gives us an AFC North opener, London, a 3–0 vs. 3–0 AFC West showdown and a top-six 4DK matchup in San Francisco.</p>
+      <div class="home-v2-desk-list">
+        <a href="nfl-week4-preview-2026.html"><small>WEEK 4</small><b>Full Week 4 Preview — All 16 Games</b><span>→</span></a>
+        <a href="nfl-power-rankings-week3-2026.html"><small>RANKINGS</small><b>4DK 1–32 Entering Week 4</b><span>→</span></a>
+        <a href="nfl-week4-preview-2026.html#game-of-the-week"><small>SPOTLIGHT</small><b>Chiefs at Raiders — 3–0 vs. 3–0</b><span>→</span></a>
+        <a href="nfl.html#scoreboard"><small>LIVE</small><b>4DK NFL Game Center + Red Zone</b><span>→</span></a>
+      </div>`;
     return true;
   }
 
-  function updateFresh(){
-    const grid=document.querySelector('.home-fresh-grid');
-    if(!grid) return false;
-    if(grid.querySelector('[data-week3-tnf-home]')) return true;
-
-    const card=document.createElement('a');
-    card.className='home-fresh-card';
-    card.href='nfl-thursday-recap-week3-falcons-packers.html';
-    card.dataset.week3TnfHome='1';
-    card.innerHTML=`
-      <img src="falcons-storm-lambeau-35-14.png" alt="4DK Week 3 Falcons 35 Packers 14 Thursday Night Football recap graphic">
-      <div class="home-fresh-copy">
-        <small>NFL • WEEK 3 • TNF FINAL</small>
-        <h3>Penix Is Back. Bijan Took Over.</h3>
-        <p>Atlanta walks into Lambeau and wins 35–14. Penix returns, Bijan runs wild and Drake London erupts.</p>
-        <b>Read the full recap →</b>
-      </div>`;
-    grid.prepend(card);
+  function updateStaticNFLCard(){
+    const card=document.querySelector('.nfl-home-feature');
+    if(!card || card.dataset.week4Card==='1') return !!card;
+    card.dataset.week4Card='1';
+    const over=card.querySelector('.home-feature-overline'); if(over) over.textContent='4DK NFL • WEEK 4';
+    const lock=card.querySelector('.nfl-mini-lockup'); if(lock) lock.innerHTML='WEEK 4.<br>PRESSURE CHANGES.';
+    const score=card.querySelector('.nfl-mini-score'); if(score) score.textContent='W4';
+    const copy=card.querySelector('.home-feature-copy');
+    if(copy) copy.innerHTML='<div class="tag">NFL • Week 4</div><h3>Five Unbeatens. Five Winless Teams. The First Month Gets Real.</h3><p>Chiefs–Raiders, Broncos–49ers, London and a loaded Week 4 slate move to the front.</p><a class="read" href="nfl-week4-preview-2026.html">Open Week 4 →</a>';
     return true;
   }
 
   function updateTicker(){
     const ticker=document.querySelector('.ticker-track');
-    if(!ticker) return false;
-    const items=[
-      'WEEK 3: Falcons 35, Packers 14',
-      'Penix returns: 18/25 • 256 YDS • TD',
-      'Bijan Robinson: 194 rush yards • 2 TD',
-      'Drake London: 9 catches • 194 yards',
-      'SUNDAY: 14 games across the Week 3 slate',
-      'RIO: Ravens vs. Cowboys • Sunday 4:25 ET',
-      'SNF: Rams vs. Broncos • Sunday 8:20 ET',
-      'NBA: Opening Week headline board live now',
-      '4DK MUSIC: Top 20 West Coast rappers live now'
-    ];
+    if(!ticker || ticker.dataset.week4Current==='1') return !!ticker;
+    ticker.dataset.week4Current='1';
+    const items=['NFL WEEK 4: STEELERS AT BROWNS TONIGHT','CHIEFS AT RAIDERS: 3–0 VS 3–0','4DK #6 DENVER AT #1 SAN FRANCISCO','LONDON: COLTS AT COMMANDERS','WEEK 3 POWER RANKINGS: 49ERS HOLD #1','NBA 2026–27 COVERAGE CONTINUES'];
     ticker.innerHTML=items.map(x=>`<span><span class="dot">●</span> ${x}</span>`).join('');
     return true;
   }
@@ -454,18 +193,14 @@
     updateLead();
     updateSide();
     currentShelf();
-    homeDiscovery();
-    updateSundayBlock();
+    updateSundayFinal();
     updateSportsDesk();
-    updateFresh();
+    updateStaticNFLCard();
     updateTicker();
   }
 
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',apply,{once:true});
-  } else {
-    apply();
-  }
-
-  [250,500,900,1400,2200,3200,4500,6500].forEach(ms=>setTimeout(apply,ms));
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply,{once:true}); else apply();
+  [120,350,800,1400,2400,4200,7000].forEach(ms=>setTimeout(apply,ms));
+  const observer=new MutationObserver(()=>{clearTimeout(repairTimer);repairTimer=setTimeout(apply,70)});
+  observer.observe(document.documentElement,{subtree:true,childList:true});
 })();
