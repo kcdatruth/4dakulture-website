@@ -61,6 +61,28 @@ function css(){if($('#w4mastercss'))return;let s=document.createElement('style')
 function kill(){$$('.fourdk-live-board,.fourdk-mnf-headline,.w3rookies,#week2-current').forEach(x=>x.remove())}
 function sec(id,after){let s=$('#'+id);if(!s){s=document.createElement('section');s.id=id;s.className='w4';after?.insertAdjacentElement('afterend',s)}return s}
 function run(){css();kill();
+let board=$('.nfl-v2-board');if(board)board.innerHTML=`
+  <div class="nfl-v2-board-top">
+    <span>THE 4DK BOARD</span>
+    <strong>WEEK 4</strong>
+  </div>
+  <a class="nfl-v2-board-row live" href="nfl-thursday-recap-week4-steelers-browns.html">
+    <div><small>WEEK 4 • FINAL</small><b>BROWNS 27, STEELERS 24</b></div>
+    <span>RECAP →</span>
+  </a>
+  <a class="nfl-v2-board-row live" href="nfl-week4-preview-2026.html">
+    <div><small>WEEK 4 • CURRENT</small><b>SUNDAY PREVIEW</b></div>
+    <span>READ →</span>
+  </a>
+  <a class="nfl-v2-board-row" href="#scoreboard">
+    <div><small>LIVE</small><b>WEEK 4 SCOREBOARD</b></div>
+    <span>OPEN →</span>
+  </a>
+  <a class="nfl-v2-board-row" href="#w4rank">
+    <div><small>WEEK 3 • FINAL</small><b>POWER RANKINGS</b></div>
+    <span>VIEW →</span>
+  </a>
+  <div class="nfl-v2-board-foot">THURSDAY IS FINAL. SUNDAY IS NEXT.</div>`;
 let t=$('.nfl-ticker-track');if(t)t.innerHTML=['TNF FINAL: BROWNS 27, STEELERS 24','CLEVELAND IS 3–1','LONDON: COLTS AT COMMANDERS','CHIEFS AT RAIDERS: 3–0 VS 3–0','BRONCOS AT 49ERS','SNF: LIONS AT PANTHERS','MNF: FALCONS AT SAINTS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
 let h=$('.nfl-v2-hero .nfl-v2-copy');if(h)h.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 IN PROGRESS</div><h1>CLEVELAND<br><em>MADE THE FIRST MOVE.</em></h1><p class="nfl-v2-deck">The Browns are 3–1 after beating Pittsburgh 27–24. Deshaun Watson played winning football, the defense sacked Aaron Rodgers five times and Cleveland’s young core is forcing its way into the playoff conversation.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-thursday-recap-week4-steelers-browns.html">READ TNF RECAP</a><a class="nfl-v2-secondary" href="nfl-week4-preview-2026.html">WEEK 4 PREVIEW</a></div>`;
 let n=$('.nfl-v2-nav');if(n)n.innerHTML=`<a class="active" href="#w4current">Week 4</a><a href="#w4tnf">TNF Recap</a><a href="#scoreboard">Scores</a><a href="#w4redzone">Red Zone</a><a href="#w4rank">Rankings</a><a href="#w4mvp">MVP</a><a href="#w4rook">Rookies</a><a href="#w4archive">Archives</a>`;
