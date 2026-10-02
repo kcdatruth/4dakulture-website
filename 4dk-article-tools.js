@@ -186,3 +186,11 @@
     document.body.appendChild(reactionScript);
   }
 })();
+
+// 4DK Week 4 TNF current-story layer. Add-only: homepage, NFL page and Thursday archive.
+if(!document.querySelector('script[src="4dk-week4-tnf-update.js"]')){
+  const week4TnfScript=document.createElement('script');
+  week4TnfScript.src='4dk-week4-tnf-update.js';
+  week4TnfScript.defer=true;
+  document.body.appendChild(week4TnfScript);
+}
