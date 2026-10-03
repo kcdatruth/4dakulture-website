@@ -29,6 +29,10 @@
     const style=document.createElement('style'); style.id='division-preview-styles';
     style.textContent=`
       #division-previews{padding:46px 0;background:#0b0b0d;color:#fff;border-top:1px solid #252525;border-bottom:1px solid #252525}
+      #division-previews .dp-cover{display:block;margin:0 0 28px;border:1px solid #31343a;background:#07080a;overflow:hidden;text-decoration:none!important}
+      #division-previews .dp-cover img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+      #division-previews .dp-cover-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:11px 14px;border-top:1px solid #30333a;color:#c9cbd0;font-size:8px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+      #division-previews .dp-cover-meta b{color:#ef6130}
       #division-previews .dp-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}#division-previews .dp-eyebrow{display:block;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
       #division-previews h2{margin:0;font:1000 clamp(38px,6vw,68px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em;text-transform:uppercase;color:#fff}#division-previews .dp-head p{max-width:520px;margin:0;color:#a9a9ae;font:14px/1.5 Georgia,serif}
       #division-previews .dp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}#division-previews .dp-feature-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 18px}#division-previews .dp-hub{display:grid;grid-template-columns:1fr auto;gap:10px 24px;align-items:end;margin:0;padding:24px 26px;border:1px solid #40444c;background:linear-gradient(120deg,#191919,#101318);text-decoration:none!important;color:#fff!important}#division-previews .dp-standings{background:linear-gradient(120deg,#18120f,#24150f)}#division-previews .dp-hub span{grid-column:1/-1;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em}#division-previews .dp-hub strong{font:1000 clamp(26px,4vw,46px)/.92 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.02em}#division-previews .dp-hub b{font-size:9px;letter-spacing:.1em;background:#ef6130;padding:10px 12px;white-space:nowrap}@media(max-width:760px){#division-previews .dp-feature-row{grid-template-columns:1fr}#division-previews .dp-hub{grid-template-columns:1fr;align-items:start}#division-previews .dp-hub b{justify-self:start}}#division-previews .dp-card{position:relative;overflow:hidden;min-height:245px;padding:28px;text-decoration:none!important;color:#fff!important;border:1px solid #343434;display:flex;flex-direction:column;justify-content:flex-end;background:#141414}
@@ -42,7 +46,7 @@
   }
   const nav=document.querySelector('.nba-hero-nav'); if(nav && !nav.querySelector('a[href="#division-previews"]')){const link=document.createElement('a');link.href='#division-previews';link.textContent='Division Previews';nav.appendChild(link)}
   const sec=document.createElement('section'); sec.id='division-previews';
-  sec.innerHTML=`<div class="shell"><div class="dp-head"><div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>ALL SIX DIVISION<br>PREVIEWS ARE LIVE.</h2></div><p>All 30 teams are now on the board. The Southwest closes the series with Wemby's title expectations, the rise of Cooper Flagg, Houston's high ceiling and three franchises sorting out their futures.</p></div><div class="dp-feature-row">
+  sec.innerHTML=`<div class="shell"><a class="dp-cover" href="nba-season-preview-2026-27.html#division-previews"><img src="4DK-NBA-DIVISION-PREVIEWS-GRAPHIC.png" alt="4 Da Kulture 2026-27 NBA all six division previews graphic"><span class="dp-cover-meta"><span><b>4DK NBA</b> • ALL SIX DIVISIONS</span><span>30 TEAMS • FULL OUTLOOKS →</span></span></a><div class="dp-head"><div><span class="dp-eyebrow">4DK NBA • 2026–27 TEAM OUTLOOKS</span><h2>ALL SIX DIVISION<br>PREVIEWS ARE LIVE.</h2></div><p>All 30 teams are now on the board. The Southwest closes the series with Wemby's title expectations, the rise of Cooper Flagg, Houston's high ceiling and three franchises sorting out their futures.</p></div><div class="dp-feature-row">
       <a class="dp-hub" href="nba-season-preview-2026-27.html"><span>2026–27 NBA SEASON PREVIEW HUB</span><strong>ALL 30 TEAMS. ALL 6 DIVISIONS. ONE PLACE.</strong><b>ENTER THE HUB →</b></a>
       <a class="dp-hub dp-standings" href="nba-projected-standings-2026-27.html"><span>4DK PROJECTED STANDINGS</span><strong>WHO RUNS THE LEAGUE?</strong><b>SEE EAST + WEST →</b></a>
     </div><div class="dp-grid">
@@ -54,6 +58,18 @@
     <a class="dp-card southwest" href="nba-southwest-2026-27.html"><small>SOUTHWEST DIVISION</small><strong>WEMBY'S WINDOW.<br>FLAGG'S RISE.<br>HOUSTON'S TEST.</strong><p>San Antonio expects to contend, Dallas builds around Cooper Flagg, Houston has WCF upside, while Memphis and New Orleans put development and future decisions first.</p><span class="dp-teams">SPURS • MAVERICKS • ROCKETS • GRIZZLIES • PELICANS</span><span class="dp-read">READ THE SOUTHWEST PREVIEW →</span></a>
   </div></div>`;
   const latest=document.querySelector('#latest'); const season=document.querySelector('#season-preview'); if(latest) latest.before(sec); else if(season) season.after(sec); else document.querySelector('main')?.append(sec);
+
+  /* If an older NBA update duplicated the season-preview collage, turn that duplicate into the division graphic instead of showing the same cover twice. */
+  const seasonArt=[...document.querySelectorAll('img')].filter(img => (img.getAttribute('src')||'').includes('4dk-nba-2026-27-culture.png'));
+  if(seasonArt.length>1){
+    const duplicate=seasonArt.find(img => !img.closest('#nba-culture-cover')) || seasonArt[1];
+    if(duplicate){
+      duplicate.src='4DK-NBA-DIVISION-PREVIEWS-GRAPHIC.png';
+      duplicate.alt='4 Da Kulture 2026-27 NBA all six division previews graphic';
+      const link=duplicate.closest('a');
+      if(link) link.href='#division-previews';
+    }
+  }
 })();
 
 /* 4DK NBA — OPENING WEEK 2026 PROMO */
