@@ -155,7 +155,7 @@
 
   const sec = document.createElement('section');
   sec.id = 'rookie-class-feature';
-  sec.innerHTML = `<div class="shell"><a class="rcf-cover" href="nba-rookie-class-2026.html"><img src="4DK-NBA-ROOKIE-CLASS-GRAPHIC.png" alt="4 Da Kulture 2026-27 NBA rookie watch graphic"><span class="rcf-cover-meta"><span><b>4DK ROOKIE WATCH</b> • THE NEW CLASS</span><span>FULL FIRST ROUND • ROY WATCH →</span></span></a><div class="rcf-head"><div><span class="rcf-eyebrow">4DK NBA • 2026–27 ROOKIE WATCH</span><h2>30 PLAYERS.<br>30 EXPECTATIONS.</h2></div><p>AJ in Washington. Darryn fitting into Utah's young core. Cam becoming the centerpiece of the post-Ja era. Caleb leading Chicago's rebuild. Wagler getting an earlier green light in LA. We break down every first-round pick, every situation and the Rookie of the Year race.</p></div><div class="rcf-body"><a class="rcf-story" href="nba-rookie-class-2026.html"><small>4DK FEATURE • FIRST ROUND</small><strong>THE NEW CLASS.<br>REAL PRESSURE.</strong><p>From franchise-centerpiece expectations to the point-guard gauntlet, our rookie feature goes deep on team fit, responsibility and Year 1 pressure across the entire first round.</p><span class="rcf-read">READ THE FULL FEATURE →</span></a><aside class="rcf-board"><small>4DK PRESEASON ROY WATCH</small><div class="rcf-rank"><b>1</b><span>CAMERON BOOZER • MEMPHIS</span></div><div class="rcf-rank"><b>2</b><span>AJ DYBANTSA • WASHINGTON</span></div><div class="rcf-rank"><b>3</b><span>DARRYN PETERSON • UTAH</span></div><div class="rcf-rank"><b>4</b><span>CALEB WILSON • CHICAGO</span></div><div class="rcf-rank"><b>5</b><span>KEATON WAGLER • LA CLIPPERS</span></div><div class="rcf-board-foot">LOTTERY DEEP DIVES • FULL FIRST ROUND • TEAM FITS</div></aside></div></div>`;
+  sec.innerHTML = `<div class="shell"><a class="rcf-cover" href="nba-rookie-class-2026.html"><img src="4DK-NBA-ROOKIE-WATCH-2026-HUB.png?v=20261003-1532" alt="4 Da Kulture 2026-27 NBA rookie watch graphic"><span class="rcf-cover-meta"><span><b>4DK ROOKIE WATCH</b> • THE NEW CLASS</span><span>FULL FIRST ROUND • ROY WATCH →</span></span></a><div class="rcf-head"><div><span class="rcf-eyebrow">4DK NBA • 2026–27 ROOKIE WATCH</span><h2>30 PLAYERS.<br>30 EXPECTATIONS.</h2></div><p>AJ in Washington. Darryn fitting into Utah's young core. Cam becoming the centerpiece of the post-Ja era. Caleb leading Chicago's rebuild. Wagler getting an earlier green light in LA. We break down every first-round pick, every situation and the Rookie of the Year race.</p></div><div class="rcf-body"><a class="rcf-story" href="nba-rookie-class-2026.html"><small>4DK FEATURE • FIRST ROUND</small><strong>THE NEW CLASS.<br>REAL PRESSURE.</strong><p>From franchise-centerpiece expectations to the point-guard gauntlet, our rookie feature goes deep on team fit, responsibility and Year 1 pressure across the entire first round.</p><span class="rcf-read">READ THE FULL FEATURE →</span></a><aside class="rcf-board"><small>4DK PRESEASON ROY WATCH</small><div class="rcf-rank"><b>1</b><span>CAMERON BOOZER • MEMPHIS</span></div><div class="rcf-rank"><b>2</b><span>AJ DYBANTSA • WASHINGTON</span></div><div class="rcf-rank"><b>3</b><span>DARRYN PETERSON • UTAH</span></div><div class="rcf-rank"><b>4</b><span>CALEB WILSON • CHICAGO</span></div><div class="rcf-rank"><b>5</b><span>KEATON WAGLER • LA CLIPPERS</span></div><div class="rcf-board-foot">LOTTERY DEEP DIVES • FULL FIRST ROUND • TEAM FITS</div></aside></div></div>`;
 
   /* Put the new feature directly under the NBA identity graphic so it cannot be buried by injected sections. */
   const culture = document.querySelector('.nba-culture-graphic');
@@ -165,4 +165,21 @@
   else if(divisions) divisions.before(sec);
   else if(latest) latest.before(sec);
   else document.querySelector('main')?.prepend(sec);
+})();
+
+
+/* 4DK NBA — FORCE CURRENT ROOKIE HUB ART */
+(() => {
+  if(!/(^|\/)nba(?:\.html)?$/.test(location.pathname.replace(/\/+$/,''))) return;
+  const apply=()=>{
+    const rookie=document.querySelector('#rookie-class-feature .rcf-cover img');
+    if(rookie){
+      rookie.src='4DK-NBA-ROOKIE-WATCH-2026-HUB.png?v=20261003-1532';
+      rookie.alt='4 Da Kulture 2026-27 NBA rookie watch — The New Class, Real Pressure';
+    }
+  };
+  apply();
+  document.addEventListener('DOMContentLoaded', apply, {once:true});
+  setTimeout(apply,250);
+  setTimeout(apply,1200);
 })();
