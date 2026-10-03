@@ -127,37 +127,35 @@
     const style = document.createElement('style');
     style.id = 'rookie-class-feature-styles';
     style.textContent = `
-      #rookie-class-feature{padding:44px 0;background:#08090b;color:#fff;border-top:1px solid #26282d;border-bottom:1px solid #26282d}
-      #rookie-class-feature .rcf-card{position:relative;display:grid;grid-template-columns:1.25fr .75fr;min-height:420px;overflow:hidden;border:1px solid #3b3d43;background:radial-gradient(circle at 78% 16%,rgba(238,78,54,.32),transparent 32%),radial-gradient(circle at 15% 86%,rgba(62,104,219,.22),transparent 37%),linear-gradient(135deg,#18191d 0%,#120d0d 55%,#08090b 100%);text-decoration:none!important;color:#fff!important}
-      #rookie-class-feature .rcf-card:before{content:'ROOKIE WATCH';position:absolute;right:-42px;top:38px;color:rgba(255,255,255,.045);font:1000 clamp(70px,11vw,150px)/.78 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em;transform:rotate(-3deg);white-space:nowrap;pointer-events:none}
-      #rookie-class-feature .rcf-copy{position:relative;z-index:2;padding:42px 40px}
-      #rookie-class-feature .rcf-kicker{display:block;margin-bottom:12px;color:#ff6c56;font-size:10px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}
-      #rookie-class-feature h2{margin:0;color:#fff;font:1000 clamp(54px,8vw,102px)/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em;text-transform:uppercase}
-      #rookie-class-feature h2 em{display:block;color:#ef513d;font-style:normal}
-      #rookie-class-feature p{max-width:720px;margin:22px 0 0;color:#c7c7cb;font:16px/1.6 Georgia,serif}
-      #rookie-class-feature .rcf-cta{display:inline-block;margin-top:22px;padding:11px 14px;background:#ef513d;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
-      #rookie-class-feature .rcf-board{position:relative;z-index:2;padding:34px;border-left:1px solid #34363d;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(0,0,0,.12));display:flex;flex-direction:column;justify-content:center;gap:0}
+      #rookie-class-feature{padding:46px 0;background:#0a0b0e;color:#fff;border-top:1px solid #25272d;border-bottom:1px solid #25272d}
+      #rookie-class-feature .rcf-cover{display:block;margin:0 0 28px;border:1px solid #31343a;background:#07080a;overflow:hidden;text-decoration:none!important}
+      #rookie-class-feature .rcf-cover img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+      #rookie-class-feature .rcf-cover-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:11px 14px;border-top:1px solid #30333a;color:#c9cbd0;font-size:8px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+      #rookie-class-feature .rcf-cover-meta b{color:#ef6130}
+      #rookie-class-feature .rcf-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+      #rookie-class-feature .rcf-eyebrow{display:block;color:#ef6130;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+      #rookie-class-feature h2{margin:0;font:1000 clamp(38px,6vw,68px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.03em;text-transform:uppercase;color:#fff}
+      #rookie-class-feature .rcf-head p{max-width:560px;margin:0;color:#a9a9ae;font:14px/1.5 Georgia,serif}
+      #rookie-class-feature .rcf-body{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+      #rookie-class-feature .rcf-story{position:relative;overflow:hidden;min-height:265px;padding:28px;text-decoration:none!important;color:#fff!important;border:1px solid #34373d;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 82% 18%,rgba(239,97,48,.20),transparent 30%),radial-gradient(circle at 18% 82%,rgba(58,105,218,.16),transparent 36%),linear-gradient(145deg,#151515 0%,#171113 58%,#0d0e11 100%)}
+      #rookie-class-feature .rcf-story small{font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:#ef8b62;margin-bottom:8px}
+      #rookie-class-feature .rcf-story strong{font:1000 clamp(34px,5vw,56px)/.88 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.025em;text-transform:uppercase}
+      #rookie-class-feature .rcf-story p{margin:12px 0 0;color:#d0d0d3;font-size:13px;line-height:1.45;max-width:560px}
+      #rookie-class-feature .rcf-read{display:inline-block;margin-top:14px;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase}
+      #rookie-class-feature .rcf-board{padding:26px;border:1px solid #34373d;background:linear-gradient(180deg,#17181d,#101114);display:flex;flex-direction:column;justify-content:center;gap:0}
       #rookie-class-feature .rcf-board small{color:#ff7c69;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
       #rookie-class-feature .rcf-rank{display:grid;grid-template-columns:34px 1fr;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.11)}
       #rookie-class-feature .rcf-rank b{font:1000 26px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#ef513d}
       #rookie-class-feature .rcf-rank span{font-size:12px;font-weight:900;letter-spacing:.04em}
       #rookie-class-feature .rcf-board-foot{margin-top:18px;color:#a8abb2;font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
-      @media(max-width:760px){
-        #rookie-class-feature{padding:30px 0}
-        #rookie-class-feature .rcf-card{grid-template-columns:1fr;min-height:0}
-        #rookie-class-feature .rcf-copy{padding:30px 24px}
-        #rookie-class-feature h2{font-size:clamp(50px,15vw,76px)}
-        #rookie-class-feature p{font-size:14px}
-        #rookie-class-feature .rcf-board{padding:24px;border-left:0;border-top:1px solid #34363d}
-        #rookie-class-feature .rcf-card:before{right:-55px;top:30px;font-size:88px}
-      }
+      @media(max-width:760px){#rookie-class-feature{padding:34px 0}#rookie-class-feature .rcf-head{align-items:flex-start;flex-direction:column}#rookie-class-feature .rcf-body{grid-template-columns:1fr}#rookie-class-feature .rcf-story{min-height:220px;padding:23px}}
     `;
     document.head.appendChild(style);
   }
 
   const sec = document.createElement('section');
   sec.id = 'rookie-class-feature';
-  sec.innerHTML = `<div class="shell"><a class="rcf-card" href="nba-rookie-class-2026.html"><div class="rcf-copy"><span class="rcf-kicker">4DK ROOKIE WATCH • 2026–27</span><h2>30 PLAYERS.<em>30 EXPECTATIONS.</em></h2><p>AJ in Washington. Darryn fitting into Utah's young core. Cam becoming the centerpiece of the post-Ja era. Caleb leading Chicago's rebuild. Wagler getting an earlier green light in LA. We break down every first-round pick, every situation and the Rookie of the Year race.</p><span class="rcf-cta">READ THE FULL FIRST-ROUND FEATURE →</span></div><aside class="rcf-board"><small>4DK PRESEASON ROY WATCH</small><div class="rcf-rank"><b>1</b><span>CAMERON BOOZER • MEMPHIS</span></div><div class="rcf-rank"><b>2</b><span>AJ DYBANTSA • WASHINGTON</span></div><div class="rcf-rank"><b>3</b><span>DARRYN PETERSON • UTAH</span></div><div class="rcf-rank"><b>4</b><span>CALEB WILSON • CHICAGO</span></div><div class="rcf-rank"><b>5</b><span>KEATON WAGLER • LA CLIPPERS</span></div><div class="rcf-board-foot">LOTTERY DEEP DIVES • FULL FIRST ROUND • TEAM FITS</div></aside></a></div>`;
+  sec.innerHTML = `<div class="shell"><a class="rcf-cover" href="nba-rookie-class-2026.html"><img src="4DK-NBA-ROOKIE-CLASS-GRAPHIC.png" alt="4 Da Kulture 2026-27 NBA rookie watch graphic"><span class="rcf-cover-meta"><span><b>4DK ROOKIE WATCH</b> • THE NEW CLASS</span><span>FULL FIRST ROUND • ROY WATCH →</span></span></a><div class="rcf-head"><div><span class="rcf-eyebrow">4DK NBA • 2026–27 ROOKIE WATCH</span><h2>30 PLAYERS.<br>30 EXPECTATIONS.</h2></div><p>AJ in Washington. Darryn fitting into Utah's young core. Cam becoming the centerpiece of the post-Ja era. Caleb leading Chicago's rebuild. Wagler getting an earlier green light in LA. We break down every first-round pick, every situation and the Rookie of the Year race.</p></div><div class="rcf-body"><a class="rcf-story" href="nba-rookie-class-2026.html"><small>4DK FEATURE • FIRST ROUND</small><strong>THE NEW CLASS.<br>REAL PRESSURE.</strong><p>From franchise-centerpiece expectations to the point-guard gauntlet, our rookie feature goes deep on team fit, responsibility and Year 1 pressure across the entire first round.</p><span class="rcf-read">READ THE FULL FEATURE →</span></a><aside class="rcf-board"><small>4DK PRESEASON ROY WATCH</small><div class="rcf-rank"><b>1</b><span>CAMERON BOOZER • MEMPHIS</span></div><div class="rcf-rank"><b>2</b><span>AJ DYBANTSA • WASHINGTON</span></div><div class="rcf-rank"><b>3</b><span>DARRYN PETERSON • UTAH</span></div><div class="rcf-rank"><b>4</b><span>CALEB WILSON • CHICAGO</span></div><div class="rcf-rank"><b>5</b><span>KEATON WAGLER • LA CLIPPERS</span></div><div class="rcf-board-foot">LOTTERY DEEP DIVES • FULL FIRST ROUND • TEAM FITS</div></aside></div></div>`;
 
   /* Put the new feature directly under the NBA identity graphic so it cannot be buried by injected sections. */
   const culture = document.querySelector('.nba-culture-graphic');
