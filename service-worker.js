@@ -1,4 +1,4 @@
-const CACHE_NAME='4dk-pwa-v33-top50-source-fix';
+const CACHE_NAME='4dk-pwa-v34-top50-rank-block-fix';
 
 const APP_SHELL=[
   '/',
@@ -53,54 +53,78 @@ function injectSiteShell(h){
     : additions.join('\n')+h;
 }
 
-function sectionBoundsByName(html,name){
-  const marker=`<h2>${name}</h2>`;
-  const mid=html.indexOf(marker);
-  if(mid<0) return null;
+function getRankBlock(html,rank){
+  const marker=`<section class="rank-entry" id="rank-${rank}">`;
+  const start=html.indexOf(marker);
+  if(start<0) return null;
 
-  const start=html.lastIndexOf('<section class="rank-entry"',mid);
-  const close=html.indexOf('</section>',mid);
+  const close=html.indexOf('</section>',start);
+  if(close<0) return null;
 
-  if(start<0 || close<0) return null;
-  return {start,end:close+'</section>'.length};
+  return html.slice(start,close+'</section>'.length);
 }
 
-function replacePlayerRank(html,name,newRank){
-  const b=sectionBoundsByName(html,name);
-  if(!b) return html;
-
-  let block=html.slice(b.start,b.end);
-  block=block
+function changeRank(block,newRank){
+  if(!block) return '';
+  return block
     .replace(/id="rank-\d+"/,`id="rank-${newRank}"`)
     .replace(/<div class="entry-no">\d+<\/div>/,`<div class="entry-no">${newRank}</div>`);
-
-  return html.slice(0,b.start)+block+html.slice(b.end);
-}
-
-function removePlayerCard(html,name){
-  const b=sectionBoundsByName(html,name);
-  if(!b) return html;
-  return html.slice(0,b.start)+html.slice(b.end);
 }
 
 function rewriteTop50(html){
-  // Start from the actual static page every time.
-  // JJJ leaves the main Top 50 and becomes an Honorable Mention.
-  html=removePlayerCard(html,'Jaren Jackson Jr.');
+  /*
+    IMPORTANT:
+    We rebuild the entire #50→#41 section from the ORIGINAL STATIC RANK SLOTS.
+    We do not match player names at all.
 
-  // Everybody below the new #42 moves down one slot.
-  html=replacePlayerRank(html,'Cooper Flagg',49);
-  html=replacePlayerRank(html,'Kyrie Irving',48);
-  html=replacePlayerRank(html,'Domantas Sabonis',47);
-  html=replacePlayerRank(html,'De’Aaron Fox',46);
-  html=replacePlayerRank(html,'Zion Williamson',45);
-  html=replacePlayerRank(html,'Darius Garland',44);
-  html=replacePlayerRank(html,'Julius Randle',43);
+    Original:
+    50 Giddey
+    49 JJJ
+    48 Flagg
+    47 Kyrie
+    46 Sabonis
+    45 Fox
+    44 Zion
+    43 Garland
+    42 Randle
+    41 Avdija
 
-  // Duren is inserted directly before #41 Deni Avdija,
-  // so the visual order is 43 Randle → 42 Duren → 41 Avdija.
-  if(!html.includes('<h2>Jalen Duren</h2>')){
-    const duren=`<section class="rank-entry" id="rank-42">
+    Final:
+    50 Giddey
+    49 Flagg
+    48 Kyrie
+    47 Sabonis
+    46 Fox
+    45 Zion
+    44 Garland
+    43 Randle
+    42 Duren
+    41 Avdija
+  */
+
+  const start50=html.indexOf('<section class="rank-entry" id="rank-50">');
+  const tier40=html.indexOf(
+    '<div class="tier-break"><span>THE NEXT TIER</span><strong>#40 → #31</strong></div>',
+    start50
+  );
+
+  if(start50<0 || tier40<0) return html;
+
+  const b50=getRankBlock(html,50);
+  const b48=getRankBlock(html,48);
+  const b47=getRankBlock(html,47);
+  const b46=getRankBlock(html,46);
+  const b45=getRankBlock(html,45);
+  const b44=getRankBlock(html,44);
+  const b43=getRankBlock(html,43);
+  const b42=getRankBlock(html,42);
+  const b41=getRankBlock(html,41);
+
+  if(!b50||!b48||!b47||!b46||!b45||!b44||!b43||!b42||!b41){
+    return html;
+  }
+
+  const duren=`<section class="rank-entry" id="rank-42">
   <div class="entry-no">42</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
@@ -112,16 +136,24 @@ function rewriteTop50(html){
     <div class="entry-stats"><small>2025–26 REGULAR SEASON</small><strong>19.5 PPG • 10.5 RPG • 65.0 FG% • ALL-STAR • ALL-NBA 3RD</strong></div>
     <div class="entry-analysis"><p>Duren enters the Top 50 after a breakout season that changed Detroit’s timeline. He averaged 19.5 points and 10.5 rebounds while shooting 65 percent from the field, made his first All-Star team and earned Third Team All-NBA as the Pistons won 60 games. The next step is proving the regular-season production holds up in the playoffs and that his defense can become consistently impactful enough for Detroit to trust him as a true long-term second pillar next to Cade Cunningham.</p></div>
   </div>
-</section>
-`;
+</section>`;
 
-    const avdija=sectionBoundsByName(html,'Deni Avdija');
-    if(avdija){
-      html=html.slice(0,avdija.start)+duren+html.slice(avdija.start);
-    }
-  }
+  const rebuilt=[
+    changeRank(b50,50),
+    changeRank(b48,49),
+    changeRank(b47,48),
+    changeRank(b46,47),
+    changeRank(b45,46),
+    changeRank(b44,45),
+    changeRank(b43,44),
+    changeRank(b42,43),
+    duren,
+    changeRank(b41,41)
+  ].join('\n');
 
-  // Giddey stays #50. JJJ replaces Brandon Ingram in Honorable Mentions.
+  html=html.slice(0,start50)+rebuilt+'\n'+html.slice(tier40);
+
+  // JJJ replaces Brandon Ingram in Honorable Mentions.
   html=html.replace(
     '<article class="cut-card"><span>JUST MISSED</span><h3>Brandon Ingram</h3><p>The scoring talent is Top-50 caliber, but the overall field was deeper.</p></article>',
     '<article class="cut-card"><span>JUST MISSED</span><h3>Jaren Jackson Jr.</h3><p>Elite rim protection, switchability and floor spacing still give JJJ major two-way value. Health, rebounding and offensive consistency keep him just outside the main 50, but he remains one of the league’s most impactful defensive bigs when right.</p></article>'
@@ -130,36 +162,31 @@ function rewriteTop50(html){
   return html;
 }
 
-async function getNavigationResponse(r){
-  try{
-    return await fetch(r,{cache:'no-store'});
-  }catch(_){
-    return await caches.match(r);
-  }
-}
-
 async function nav(r){
-  const response=await getNavigationResponse(r);
-  if(!response) return caches.match('/offline.html');
-  if(!response.ok) return response;
+  try{
+    const response=await fetch(r,{cache:'no-store'});
+    if(!response.ok) return response;
 
-  const type=response.headers.get('content-type')||'';
-  if(!type.includes('text/html')) return response;
+    const type=response.headers.get('content-type')||'';
+    if(!type.includes('text/html')) return response;
 
-  let html=await response.text();
-  const url=new URL(r.url);
+    let html=await response.text();
+    const url=new URL(r.url);
 
-  if(url.pathname.endsWith('/top-50-nba-players-2026-27.html')){
-    html=rewriteTop50(html);
+    if(url.pathname.endsWith('/top-50-nba-players-2026-27.html')){
+      html=rewriteTop50(html);
+    }
+
+    html=injectSiteShell(html);
+
+    const headers=new Headers(response.headers);
+    headers.delete('content-length');
+    headers.delete('content-encoding');
+
+    return new Response(html,{status:response.status,headers});
+  }catch(_){
+    return await caches.match(r)||await caches.match('/offline.html');
   }
-
-  html=injectSiteShell(html);
-
-  const headers=new Headers(response.headers);
-  headers.delete('content-length');
-  headers.delete('content-encoding');
-
-  return new Response(html,{status:response.status,headers});
 }
 
 async function networkFirst(r){
