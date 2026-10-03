@@ -1,4 +1,4 @@
-const CACHE_NAME='4dk-pwa-v38-nfl-top50-source-board';
+const CACHE_NAME='4dk-pwa-v39-nfl-top50-header-fix';
 const APP_SHELL=['/','/index.html','/offline.html','/app.webmanifest','/pwa-install.js','/app-nav.css','/app-nav.js','/4dk-site-enhance.js','/4dk-discovery-upgrade.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js','/4dk-week4-tnf-update.js','/nfl-picks.js','/4dk-push.js'];
 
 self.addEventListener('install',e=>e.waitUntil(
@@ -60,18 +60,9 @@ self.addEventListener('fetch',e=>{
   if(r.method!=='GET')return;
   const u=new URL(r.url);
   if(u.origin!==location.origin||u.pathname.startsWith('/api/'))return;
-
   if(r.mode==='navigate')return e.respondWith(navigation(r));
-
-  if([
-    '/4dk-site-enhance.js',
-    '/4dk-home-current.js',
-    '/4dk-week4-current.js',
-    '/4dk-nfl-visuals.js',
-    '/4dk-redzone-week4-current.js'
-  ].includes(u.pathname)){
+  if(['/4dk-site-enhance.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js'].includes(u.pathname)){
     return e.respondWith(networkFirst(r));
   }
-
   e.respondWith(caches.match(r).then(hit=>hit||fetch(r)));
 });
