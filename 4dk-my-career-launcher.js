@@ -87,3 +87,68 @@
   card.innerHTML=`<a class="nba-story-art" href="nba-opening-week-2026.html"><div class="ow-lines"><span>NYK vs PHI</span><span>OKC vs SAS</span><span>MIN vs MIA</span><span>GSW vs LAL</span></div><span class="nba-story-label">2026–27 • OPENING WEEK</span><strong>EVERYTHING<br>ON THE LINE.</strong><small>BANNER NIGHT • NEW ERAS • FIRST TESTS</small></a><div class="nba-story-copy"><h3><a href="nba-opening-week-2026.html">The Season Starts With Everything on the Line</a></h3><p>Knicks banner night. LeBron in Philly. Giannis in Miami. SGA vs Wemby. Luka vs Steph. Eight stories that define the first week.</p><div class="meta">By Kcdatruth • September 2026</div></div>`;
   grid.prepend(card);
 })();
+
+/* 4DK NBA — 2026 ROOKIE CLASS FEATURE */
+(() => {
+  if(!/(^|\/)nba(?:\.html)?$/.test(location.pathname.replace(/\/+$/,''))) return;
+
+  /* Add a permanent Rookie Class shortcut to the NBA hero navigation. */
+  const nav = document.querySelector('.nba-hero-nav');
+  if(nav && !nav.querySelector('a[href="#rookie-class-feature"]')){
+    const link = document.createElement('a');
+    link.href = '#rookie-class-feature';
+    link.textContent = 'Rookie Class';
+    const opening = [...nav.querySelectorAll('a')].find(a => a.textContent.trim().toLowerCase() === 'opening week');
+    const season = [...nav.querySelectorAll('a')].find(a => a.textContent.trim().toLowerCase() === 'season preview');
+    if(opening) opening.after(link);
+    else if(season) season.after(link);
+    else nav.appendChild(link);
+  }
+
+  if(document.querySelector('#rookie-class-feature')) return;
+
+  if(!document.getElementById('rookie-class-feature-styles')){
+    const style = document.createElement('style');
+    style.id = 'rookie-class-feature-styles';
+    style.textContent = `
+      #rookie-class-feature{padding:44px 0;background:#08090b;color:#fff;border-top:1px solid #26282d;border-bottom:1px solid #26282d}
+      #rookie-class-feature .rcf-card{position:relative;display:grid;grid-template-columns:1.25fr .75fr;min-height:420px;overflow:hidden;border:1px solid #3b3d43;background:radial-gradient(circle at 78% 16%,rgba(238,78,54,.32),transparent 32%),radial-gradient(circle at 15% 86%,rgba(62,104,219,.22),transparent 37%),linear-gradient(135deg,#18191d 0%,#120d0d 55%,#08090b 100%);text-decoration:none!important;color:#fff!important}
+      #rookie-class-feature .rcf-card:before{content:'ROOKIE WATCH';position:absolute;right:-42px;top:38px;color:rgba(255,255,255,.045);font:1000 clamp(70px,11vw,150px)/.78 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em;transform:rotate(-3deg);white-space:nowrap;pointer-events:none}
+      #rookie-class-feature .rcf-copy{position:relative;z-index:2;padding:42px 40px}
+      #rookie-class-feature .rcf-kicker{display:block;margin-bottom:12px;color:#ff6c56;font-size:10px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}
+      #rookie-class-feature h2{margin:0;color:#fff;font:1000 clamp(54px,8vw,102px)/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+      #rookie-class-feature h2 em{display:block;color:#ef513d;font-style:normal}
+      #rookie-class-feature p{max-width:720px;margin:22px 0 0;color:#c7c7cb;font:16px/1.6 Georgia,serif}
+      #rookie-class-feature .rcf-cta{display:inline-block;margin-top:22px;padding:11px 14px;background:#ef513d;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+      #rookie-class-feature .rcf-board{position:relative;z-index:2;padding:34px;border-left:1px solid #34363d;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(0,0,0,.12));display:flex;flex-direction:column;justify-content:center;gap:0}
+      #rookie-class-feature .rcf-board small{color:#ff7c69;font-size:9px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+      #rookie-class-feature .rcf-rank{display:grid;grid-template-columns:34px 1fr;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.11)}
+      #rookie-class-feature .rcf-rank b{font:1000 26px/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;color:#ef513d}
+      #rookie-class-feature .rcf-rank span{font-size:12px;font-weight:900;letter-spacing:.04em}
+      #rookie-class-feature .rcf-board-foot{margin-top:18px;color:#a8abb2;font-size:9px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+      @media(max-width:760px){
+        #rookie-class-feature{padding:30px 0}
+        #rookie-class-feature .rcf-card{grid-template-columns:1fr;min-height:0}
+        #rookie-class-feature .rcf-copy{padding:30px 24px}
+        #rookie-class-feature h2{font-size:clamp(50px,15vw,76px)}
+        #rookie-class-feature p{font-size:14px}
+        #rookie-class-feature .rcf-board{padding:24px;border-left:0;border-top:1px solid #34363d}
+        #rookie-class-feature .rcf-card:before{right:-55px;top:30px;font-size:88px}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const sec = document.createElement('section');
+  sec.id = 'rookie-class-feature';
+  sec.innerHTML = `<div class="shell"><a class="rcf-card" href="nba-rookie-class-2026.html"><div class="rcf-copy"><span class="rcf-kicker">4DK ROOKIE WATCH • 2026–27</span><h2>30 PLAYERS.<em>30 EXPECTATIONS.</em></h2><p>AJ in Washington. Darryn fitting into Utah's young core. Cam becoming the centerpiece of the post-Ja era. Caleb leading Chicago's rebuild. Wagler getting an earlier green light in LA. We break down every first-round pick, every situation and the Rookie of the Year race.</p><span class="rcf-cta">READ THE FULL FIRST-ROUND FEATURE →</span></div><aside class="rcf-board"><small>4DK PRESEASON ROY WATCH</small><div class="rcf-rank"><b>1</b><span>CAMERON BOOZER • MEMPHIS</span></div><div class="rcf-rank"><b>2</b><span>AJ DYBANTSA • WASHINGTON</span></div><div class="rcf-rank"><b>3</b><span>DARRYN PETERSON • UTAH</span></div><div class="rcf-rank"><b>4</b><span>CALEB WILSON • CHICAGO</span></div><div class="rcf-rank"><b>5</b><span>KEATON WAGLER • LA CLIPPERS</span></div><div class="rcf-board-foot">LOTTERY DEEP DIVES • FULL FIRST ROUND • TEAM FITS</div></aside></a></div>`;
+
+  /* Put the new feature directly under the NBA identity graphic so it cannot be buried by injected sections. */
+  const culture = document.querySelector('.nba-culture-graphic');
+  const divisions = document.querySelector('#division-previews');
+  const latest = document.querySelector('#latest');
+  if(culture) culture.after(sec);
+  else if(divisions) divisions.before(sec);
+  else if(latest) latest.before(sec);
+  else document.querySelector('main')?.prepend(sec);
+})();
