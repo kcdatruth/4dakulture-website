@@ -117,3 +117,21 @@
     object-fit:contain;
   }
 }
+
+/* 4DK NBA — ROOKIE CLASS ART OVERRIDE */
+#rookie-class-feature .nba-season-feature-inner{
+  aspect-ratio:4 / 3;
+  background:
+    #080a0d
+    url("4DK-NBA-ROOKIE-WATCH-2026-HUB.png")
+    center / contain
+    no-repeat;
+}
+
+@media(max-width:760px){
+  #rookie-class-feature .nba-season-feature-inner{
+    aspect-ratio:4 / 3;
+    background-size:contain;
+    background-position:center;
+  }
+}
