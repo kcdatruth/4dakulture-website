@@ -59,17 +59,6 @@
   </div></div>`;
   const latest=document.querySelector('#latest'); const season=document.querySelector('#season-preview'); if(latest) latest.before(sec); else if(season) season.after(sec); else document.querySelector('main')?.append(sec);
 
-  /* If an older NBA update duplicated the season-preview collage, turn that duplicate into the division graphic instead of showing the same cover twice. */
-  const seasonArt=[...document.querySelectorAll('img')].filter(img => (img.getAttribute('src')||'').includes('4dk-nba-2026-27-culture.png'));
-  if(seasonArt.length>1){
-    const duplicate=seasonArt.find(img => !img.closest('#nba-culture-cover')) || seasonArt[1];
-    if(duplicate){
-      duplicate.src='4DK-NBA-DIVISION-PREVIEWS-GRAPHIC.png';
-      duplicate.alt='4 Da Kulture 2026-27 NBA all six division previews graphic';
-      const link=duplicate.closest('a');
-      if(link) link.href='#division-previews';
-    }
-  }
 })();
 
 /* 4DK NBA — OPENING WEEK 2026 PROMO */
@@ -182,4 +171,58 @@
   document.addEventListener('DOMContentLoaded', apply, {once:true});
   setTimeout(apply,250);
   setTimeout(apply,1200);
+})();
+
+
+/* 4DK NBA — RESOLVE DUPLICATE SEASON ART INTO ROOKIE WATCH */
+(() => {
+  if(!/(^|\/)nba(?:\.html)?$/.test(location.pathname.replace(/\/+$/,''))) return;
+
+  const rookieSrc='4DK-NBA-ROOKIE-WATCH-2026-HUB.png?v=20261003-1545';
+
+  const resolve=()=>{
+    const imgs=[...document.querySelectorAll('img')];
+    const seasonImgs=imgs.filter(img => {
+      const src=(img.getAttribute('src')||'')+' '+(img.currentSrc||'');
+      return src.includes('4dk-nba-2026-27-culture.png');
+    });
+
+    const original=seasonImgs.find(img => img.closest('#nba-culture-cover')) || seasonImgs[0];
+    const duplicates=seasonImgs.filter(img => img!==original);
+
+    if(duplicates.length){
+      const duplicate=duplicates[0];
+      duplicate.src=rookieSrc;
+      duplicate.alt='4 Da Kulture 2026-27 NBA rookie watch — The New Class, Real Pressure';
+      duplicate.setAttribute('data-4dk-rookie-cover','true');
+      const link=duplicate.closest('a');
+      if(link){
+        link.href='nba-rookie-class-2026.html';
+        link.setAttribute('aria-label','Open the 4 Da Kulture 2026-27 NBA rookie class feature');
+      }
+
+      /* The old duplicate visual now IS the rookie cover, so don't show the injected cover twice. */
+      const rookieSection=document.querySelector('#rookie-class-feature');
+      if(rookieSection){
+        rookieSection.querySelector('.rcf-cover')?.remove();
+        const host=duplicate.closest('section') || duplicate.closest('.shell') || duplicate.parentElement;
+        if(host && host!==rookieSection && host.parentNode){
+          host.after(rookieSection);
+        }
+      }
+    }
+
+    /* If there was no legacy duplicate, keep the injected rookie cover on its own section. */
+    const rookie=document.querySelector('#rookie-class-feature .rcf-cover img');
+    if(rookie){
+      rookie.src=rookieSrc;
+      rookie.alt='4 Da Kulture 2026-27 NBA rookie watch — The New Class, Real Pressure';
+    }
+  };
+
+  resolve();
+  document.addEventListener('DOMContentLoaded',resolve,{once:true});
+  const observer=new MutationObserver(()=>resolve());
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+  setTimeout(()=>observer.disconnect(),8000);
 })();
