@@ -20,43 +20,47 @@
     card.id='rank-'+n;
   }
 
-  function fix(){
+  function fixLocalOrder(){
     const randle=findPlayer('Julius Randle');
     const duren=findPlayer('Jalen Duren');
     const avdija=findPlayer('Deni Avdija');
 
-    if(!randle || !duren || !avdija || !avdija.parentNode) return;
+    if(!randle || !duren || !avdija) return;
 
     setRank(randle,43);
     setRank(duren,42);
     setRank(avdija,41);
 
-    // Targeted visual-order fix:
-    // put 43 and 42 directly before 41, every time.
-    avdija.parentNode.insertBefore(randle,avdija);
-    avdija.parentNode.insertBefore(duren,avdija);
+    const parent=duren.parentNode;
+    if(!parent || randle.parentNode!==parent || avdija.parentNode!==parent) return;
 
-    document.documentElement.dataset.top50LocalOrder='43-42-41';
+    // Absolute local order:
+    // 43 Randle
+    // 42 Duren
+    // 41 Avdija
+    parent.insertBefore(randle,duren);
+    parent.insertBefore(avdija,duren.nextSibling);
+
+    document.documentElement.dataset.top50Order='43-42-41';
   }
 
   function start(){
-    fix();
+    fixLocalOrder();
 
-    // Re-apply after every other site script has had time to run.
-    [50,150,350,700,1200,2000,3500,6000,9000].forEach(ms=>setTimeout(fix,ms));
+    // Run after every other page script has had a chance to touch the list.
+    [100,300,700,1200,2000,3500,5500,8000,12000].forEach(ms=>setTimeout(fixLocalOrder,ms));
 
-    // If another script moves the cards later, put them right back.
-    let timer=0;
+    let t=0;
     const obs=new MutationObserver(()=>{
-      clearTimeout(timer);
-      timer=setTimeout(fix,40);
+      clearTimeout(t);
+      t=setTimeout(fixLocalOrder,50);
     });
     obs.observe(document.body,{childList:true,subtree:true});
   }
 
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded',start,{once:true});
-  }else{
+  } else {
     start();
   }
 })();
