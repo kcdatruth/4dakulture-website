@@ -1,5 +1,5 @@
-const CACHE_NAME='4dk-pwa-v36-top50-final-source';
-const APP_SHELL=['/','/index.html','/offline.html','/app.webmanifest','/pwa-install.js','/app-nav.css','/app-nav.js','/4dk-site-enhance.js','/4dk-discovery-upgrade.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js','/4dk-week4-tnf-update.js','/nfl-picks.js','/4dk-push.js'];
+const CACHE_NAME='4dk-pwa-v37-nfl-top50-board-card';
+const APP_SHELL=['/','/index.html','/offline.html','/app.webmanifest','/pwa-install.js','/app-nav.css','/app-nav.js','/4dk-site-enhance.js','/4dk-discovery-upgrade.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js','/4dk-week4-tnf-update.js','/4dk-nfl-top50-card.js','/nfl-picks.js','/4dk-push.js'];
 
 self.addEventListener('install',e=>e.waitUntil(
   caches.open(CACHE_NAME)
@@ -22,7 +22,8 @@ function inject(h){
     ['/4dk-home-current.js','<script defer src="/4dk-home-current.js"></script>'],
     ['/4dk-week4-current.js','<script defer src="/4dk-week4-current.js"></script>'],
     ['/4dk-nfl-visuals.js','<script defer src="/4dk-nfl-visuals.js"></script>'],
-    ['/4dk-redzone-week4-current.js','<script defer src="/4dk-redzone-week4-current.js"></script>']
+    ['/4dk-redzone-week4-current.js','<script defer src="/4dk-redzone-week4-current.js"></script>'],
+    ['/4dk-nfl-top50-card.js','<script defer src="/4dk-nfl-top50-card.js"></script>']
   ]) if(!h.includes(x[0])) add.push(x[1]);
   return h.includes('</head>') ? h.replace('</head>',add.join('\n')+'\n</head>') : add.join('\n')+h;
 }
@@ -63,7 +64,14 @@ self.addEventListener('fetch',e=>{
 
   if(r.mode==='navigate')return e.respondWith(navigation(r));
 
-  if(['/4dk-site-enhance.js','/4dk-home-current.js','/4dk-week4-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js'].includes(u.pathname)){
+  if([
+    '/4dk-site-enhance.js',
+    '/4dk-home-current.js',
+    '/4dk-week4-current.js',
+    '/4dk-nfl-visuals.js',
+    '/4dk-redzone-week4-current.js',
+    '/4dk-nfl-top50-card.js'
+  ].includes(u.pathname)){
     return e.respondWith(networkFirst(r));
   }
 
