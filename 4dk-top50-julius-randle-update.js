@@ -6,18 +6,6 @@
   const qa=(s,r=document)=>[...r.querySelectorAll(s)];
   const txt=el=>(el?.textContent||'').replace(/\s+/g,' ').trim();
 
-  function rankOf(card){
-    const el=q('.entry-no',card);
-    const n=Number(txt(el));
-    return Number.isFinite(n)?n:null;
-  }
-
-  function setRank(card,n){
-    const el=q('.entry-no',card);
-    if(el) el.textContent=String(n);
-    card.id='rank-'+n;
-  }
-
   function findPlayer(name){
     return qa('.rank-entry').find(card=>{
       const h=q('h2,h3',card);
@@ -25,84 +13,118 @@
     });
   }
 
-  function setLeafAfterLabel(card,label,value){
+  function rankOf(card){
+    const el=q('.entry-no',card);
+    const n=Number(txt(el));
+    return Number.isFinite(n)?n:null;
+  }
+
+  function setRank(card,n){
+    if(!card) return;
+    const el=q('.entry-no',card);
+    if(el) el.textContent=String(n);
+    card.id='rank-'+n;
+  }
+
+  function setMeta(card,label,value){
+    if(!card) return;
     const labels=qa('small',card);
     const lab=labels.find(el=>txt(el).toLowerCase()===label.toLowerCase());
     if(!lab) return;
     const wrap=lab.closest('span') || lab.parentElement;
-    const b=wrap?.querySelector('b,strong');
-    if(b) b.textContent=value;
+    const target=wrap?.querySelector('b,strong');
+    if(target) target.textContent=value;
   }
 
-  function buildDuren(template){
-    const card=template.cloneNode(true);
-    setRank(card,42);
+  function makeOrUpdateDuren(){
+    let duren=findPlayer('Jalen Duren');
+    let randle=findPlayer('Julius Randle');
+    if(!randle) return null;
 
-    const heading=q('h2,h3',card);
+    if(!duren){
+      duren=randle.cloneNode(true);
+      randle.parentNode.insertBefore(duren,randle);
+    }
+
+    setRank(duren,42);
+
+    const heading=q('h2,h3',duren);
     if(heading) heading.textContent='Jalen Duren';
 
-    setLeafAfterLabel(card,'2026–27 TEAM','Detroit Pistons');
-    setLeafAfterLabel(card,'POSITION','C');
+    setMeta(duren,'2026–27 TEAM','Detroit Pistons');
+    setMeta(duren,'POSITION','C');
 
-    const stats=q('.entry-stats strong',card);
+    const stats=q('.entry-stats strong',duren);
     if(stats) stats.textContent='19.5 PPG • 10.5 RPG • 65.0 FG% • ALL-STAR • ALL-NBA 3RD';
 
-    const p=q('.entry-analysis p',card);
+    const p=q('.entry-analysis p',duren);
     if(p) p.textContent='Duren enters the Top 50 after a breakout season that changed Detroit’s timeline. He averaged 19.5 points and 10.5 rebounds while shooting 65 percent from the field, made his first All-Star team and earned Third Team All-NBA as the Pistons won 60 games. The next step is proving the regular-season production holds up in the playoffs and that his defense can become consistently impactful enough for Detroit to trust him as a true long-term second pillar next to Cade Cunningham.';
 
-    return card;
+    return duren;
   }
 
   function replaceBrandonWithJJJ(){
     const cards=qa('.cut-card');
+    let jjjHM=cards.find(card=>/jaren jackson jr/i.test(txt(card)));
     const bi=cards.find(card=>/brandon ingram/i.test(txt(card)));
-    if(!bi) return;
 
-    const h=q('h3,h2,strong',bi);
-    if(h) h.textContent='Jaren Jackson Jr.';
+    if(bi){
+      const h=q('h3,h2,strong',bi);
+      if(h) h.textContent='Jaren Jackson Jr.';
+      const p=q('p',bi);
+      if(p) p.textContent='Elite rim protection, switchability and floor spacing still give JJJ major two-way value. Health, rebounding and offensive consistency keep him just outside the main 50, but he remains one of the league’s most impactful defensive bigs when right.';
+      jjjHM=bi;
+    }
 
-    const p=q('p',bi);
-    if(p) p.textContent='Elite rim protection, switchability and floor spacing still give JJJ major two-way value. Health, rebounding and offensive consistency keep him just outside the main 50, but he remains one of the best defensive bigs in the league when right.';
+    if(jjjHM){
+      const p=q('p',jjjHM);
+      if(p && !/rim protection/i.test(p.textContent)){
+        p.textContent='Elite rim protection, switchability and floor spacing still give JJJ major two-way value. Health, rebounding and offensive consistency keep him just outside the main 50, but he remains one of the league’s most impactful defensive bigs when right.';
+      }
+    }
+  }
+
+  function enforceBottomOrder(){
+    // JJJ is honorable mention now, not part of the main 50.
+    const jjjMain=findPlayer('Jaren Jackson Jr.');
+    if(jjjMain) jjjMain.remove();
+
+    const duren=makeOrUpdateDuren();
+
+    const desired=[
+      ['Josh Giddey',50],
+      ['Cooper Flagg',49],
+      ['Kyrie Irving',48],
+      ['Domantas Sabonis',47],
+      ["De'Aaron Fox",46],
+      ['Zion Williamson',45],
+      ['Darius Garland',44],
+      ['Julius Randle',43],
+      ['Jalen Duren',42]
+    ];
+
+    desired.forEach(([name,rank])=>setRank(findPlayer(name),rank));
+
+    // The page runs from #50 down to #1.
+    // Put the entire 50→42 block immediately before #41 in the correct visual order.
+    const rank41=qa('.rank-entry').find(card=>rankOf(card)===41);
+    if(rank41 && rank41.parentNode){
+      desired.forEach(([name])=>{
+        const card=findPlayer(name);
+        if(card) rank41.parentNode.insertBefore(card,rank41);
+      });
+    }
+
+    replaceBrandonWithJJJ();
+
+    console.log('4DK Top 50 order locked: 50 Giddey, 49 Flagg, 48 Kyrie, 47 Sabonis, 46 Fox, 45 Zion, 44 Garland, 43 Randle, 42 Duren, then 41.');
   }
 
   function run(){
-    // If this exact correction already ran, only make sure the honorable mention is right.
-    const existingDuren=findPlayer('Jalen Duren');
-    const giddey=findPlayer('Josh Giddey');
-    if(existingDuren && rankOf(existingDuren)===42 && giddey && rankOf(giddey)===50){
-      replaceBrandonWithJJJ();
-      return;
-    }
-
-    // Start from the page's original lower tier.
-    const randle=findPlayer('Julius Randle');
-    if(!randle) return;
-
-    // Remove Jaren Jackson Jr. from the main Top 50.
-    const jjj=findPlayer('Jaren Jackson Jr.');
-    if(jjj) jjj.remove();
-
-    // Shift ONLY #42 through #48 down one.
-    // This keeps Josh Giddey locked at #50.
-    const lower=qa('.rank-entry')
-      .map(card=>({card,rank:rankOf(card)}))
-      .filter(x=>x.rank!==null && x.rank>=42 && x.rank<=48)
-      .sort((a,b)=>b.rank-a.rank);
-
-    lower.forEach(({card,rank})=>setRank(card,rank+1));
-
-    // Insert Duren at #42 immediately before the shifted Randle card (#43).
-    const duren=buildDuren(randle);
-    randle.parentNode.insertBefore(duren,randle);
-
-    // Explicitly protect Giddey's spot.
-    const g=findPlayer('Josh Giddey');
-    if(g) setRank(g,50);
-
-    // JJJ replaces Brandon Ingram in Honorable Mentions.
-    replaceBrandonWithJJJ();
-
-    console.log('4DK Top 50 corrected: Duren #42, Randle #43, Garland #44, Zion #45, Fox #46, Sabonis #47, Kyrie #48, Flagg #49, Giddey stays #50; JJJ to HM, Brandon Ingram removed.');
+    enforceBottomOrder();
+    // A couple quick repair passes cover any late page enhancement scripts.
+    setTimeout(enforceBottomOrder,250);
+    setTimeout(enforceBottomOrder,900);
   }
 
   if(document.readyState==='loading'){
