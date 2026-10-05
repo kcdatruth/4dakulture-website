@@ -1,379 +1,84 @@
 (() => {
   const root = document.querySelector('[data-score-ticker]');
   if (!root) return;
-
-  const track = root.querySelector('[data-score-track]');
-  const refreshBtn = root.querySelector('[data-score-refresh]');
-  const liveRegion = root.querySelector('[data-score-live-region]');
-  let timer = null;
-
-  const SPORTS = [
-    { league:'NFL',  path:'football/nfl' },
-    { league:'NBA',  path:'basketball/nba' },
-    { league:'MLB',  path:'baseball/mlb' },
-    { league:'NHL',  path:'hockey/nhl' },
-    { league:'WNBA', path:'basketball/wnba' },
-    { league:'NCAAF',path:'football/college-football' },
-    { league:'NCAAM',path:'basketball/mens-college-basketball' },
-    { league:'NCAAW',path:'basketball/womens-college-basketball' }
+  const track=root.querySelector('[data-score-track]');
+  const refreshBtn=root.querySelector('[data-score-refresh]');
+  const liveRegion=root.querySelector('[data-score-live-region]');
+  let timer=null;
+  const SPORTS=[
+    {league:'NFL',path:'football/nfl'},{league:'NBA',path:'basketball/nba'},{league:'MLB',path:'baseball/mlb'},
+    {league:'NHL',path:'hockey/nhl'},{league:'WNBA',path:'basketball/wnba'},{league:'NCAAF',path:'football/college-football'},
+    {league:'NCAAM',path:'basketball/mens-college-basketball'},{league:'NCAAW',path:'basketball/womens-college-basketball'}
   ];
+  const esc=(value='')=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  function localDateKey(){const n=new Date();return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`}
+  const compactDate=d=>d.replaceAll('-','');
+  function scoreValue(c){const s=c?.score;if(s==null)return '';return typeof s==='object'?(s.displayValue??s.value??''):String(s)}
+  function formatStart(iso){if(!iso)return 'UPCOMING';const d=new Date(iso);if(Number.isNaN(d.getTime()))return 'UPCOMING';return new Intl.DateTimeFormat(undefined,{hour:'numeric',minute:'2-digit'}).format(d)}
+  function normalizeEvent(event,league){const comp=event?.competitions?.[0];if(!comp)return null;const cs=comp.competitors||[];const home=cs.find(c=>c.homeAway==='home')||cs[0],away=cs.find(c=>c.homeAway==='away')||cs[1];if(!home||!away)return null;const st=event.status||comp.status||{},type=st.type||{},state=type.state||(type.completed?'post':'pre');return {id:String(event.id||''),league,state,statusText:state==='in'?(type.shortDetail||type.detail||st.displayClock||'LIVE'):state==='post'?'FINAL':'',startTime:event.date||comp.date||'',away:{abbr:away.team?.abbreviation||away.team?.shortDisplayName||'AWAY',score:scoreValue(away)},home:{abbr:home.team?.abbreviation||home.team?.shortDisplayName||'HOME',score:scoreValue(home)}}}
+  function sortGames(a,b){const rank={in:0,pre:1,post:2};return ((rank[a.state]??9)-(rank[b.state]??9))||(new Date(a.startTime||0)-new Date(b.startTime||0))||String(a.league).localeCompare(String(b.league))}
+  async function browserAllGames(){const date=compactDate(localDateKey());const settled=await Promise.allSettled(SPORTS.map(async sport=>{const u=`https://site.api.espn.com/apis/site/v2/sports/${sport.path}/scoreboard?dates=${date}&limit=500`;const res=await fetch(u,{cache:'no-store'});if(!res.ok)throw new Error(`${sport.league} ${res.status}`);const data=await res.json();return (data.events||[]).map(e=>normalizeEvent(e,sport.league)).filter(Boolean)}));return settled.filter(r=>r.status==='fulfilled').flatMap(r=>r.value).sort(sortGames)}
+  function gameKey(g){return g?.id?`${g.league}:${g.id}`:[g?.league||'',g?.away?.abbr||'',g?.home?.abbr||'',g?.startTime||''].join(':')}
+  function mergeGames(...lists){const map=new Map();lists.flat().forEach(g=>{if(!g)return;const k=gameKey(g),p=map.get(k);if(!p){map.set(k,g);return}const ps=(p.away?.score!==''||p.home?.score!==''),ns=(g.away?.score!==''||g.home?.score!=='');const pw=(p.state==='in'?3:p.state==='post'?2:1)+(ps?1:0),nw=(g.state==='in'?3:g.state==='post'?2:1)+(ns?1:0);if(nw>=pw)map.set(k,g)});return [...map.values()].sort(sortGames)}
+  const formatStatus=g=>g.state==='in'?(g.statusText||'LIVE'):g.state==='post'?'FINAL':formatStart(g.startTime);
+  function renderGame(g){const as=g.away?.score??'',hs=g.home?.score??'',has=g.state!=='pre'&&(as!==''||hs!=='');return `<div class="score-game ${g.state==='in'?'live':''}"><span class="score-league">${esc(g.league)}</span><span class="score-team">${esc(g.away?.abbr||'AWAY')}${has?`<b>${esc(as)}</b>`:''}</span><span class="score-at">${g.state==='pre'?'@':'–'}</span><span class="score-team">${esc(g.home?.abbr||'HOME')}${has?`<b>${esc(hs)}</b>`:''}</span><span class="score-status">${esc(formatStatus(g))}</span></div>`}
+  function setTicker(games){root.classList.remove('is-ready','has-live');if(!Array.isArray(games)||!games.length){track.innerHTML='<span class="score-ticker-message">No games scheduled in tracked leagues today.</span>';if(liveRegion)liveRegion.textContent='No games scheduled in tracked leagues today.';return}if(games.some(g=>g.state==='in'))root.classList.add('has-live');const h=games.map(renderGame).join('');track.innerHTML=h+h;requestAnimationFrame(()=>{const half=Math.max(1,track.scrollWidth/2),duration=Math.max(32,half/62);root.style.setProperty('--score-duration',`${duration.toFixed(1)}s`);root.classList.add('is-ready')});if(liveRegion)liveRegion.textContent=`${games.length} games in today's 4DK Live ticker.`}
+  async function loadScores(){if(refreshBtn)refreshBtn.disabled=true;let a=[],b=[],aw=false,bw=false;try{const res=await fetch(`/api/scores?date=${encodeURIComponent(localDateKey())}`,{cache:'no-store'});if(res.ok){const d=await res.json();a=Array.isArray(d.games)?d.games:[];aw=true}}catch(e){console.warn('4DK score ticker Worker feed failed:',e)}try{b=await browserAllGames();bw=true}catch(e){console.warn('4DK direct scoreboard feed failed:',e)}try{if(aw||bw)setTicker(mergeGames(a,b));else throw new Error('All score feeds failed')}catch(e){track.innerHTML='<span class="score-ticker-message">Live scores are temporarily unavailable.</span>';if(liveRegion)liveRegion.textContent='Live scores are temporarily unavailable.'}finally{if(refreshBtn)refreshBtn.disabled=false}}
+  refreshBtn?.addEventListener('click',loadScores);loadScores();timer=setInterval(loadScores,30000);window.addEventListener('pagehide',()=>timer&&clearInterval(timer),{once:true});
+})();
 
-  const esc = (value='') => String(value).replace(/[&<>"']/g, ch => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-  }[ch]));
-
-  function localDateKey(){
-    const now = new Date();
-    const y = now.getFullYear();
-    const m = String(now.getMonth() + 1).padStart(2,'0');
-    const d = String(now.getDate()).padStart(2,'0');
-    return `${y}-${m}-${d}`;
-  }
-
-  function compactDate(dayKey){
-    return dayKey.replaceAll('-','');
-  }
-
-  function scoreValue(competitor){
-    const score = competitor?.score;
-    if(score == null) return '';
-    if(typeof score === 'object') return score.displayValue ?? score.value ?? '';
-    return String(score);
-  }
-
-  function formatStart(iso){
-    if(!iso) return 'UPCOMING';
-    const d = new Date(iso);
-    if(Number.isNaN(d.getTime())) return 'UPCOMING';
-    return new Intl.DateTimeFormat(undefined,{
-      hour:'numeric',
-      minute:'2-digit'
-    }).format(d);
-  }
-
-  function normalizeEvent(event, league){
-    const competition = event?.competitions?.[0];
-    if(!competition) return null;
-
-    const competitors = competition.competitors || [];
-    const home = competitors.find(c => c.homeAway === 'home') || competitors[0];
-    const away = competitors.find(c => c.homeAway === 'away') || competitors[1];
-    if(!home || !away) return null;
-
-    const status = event.status || competition.status || {};
-    const type = status.type || {};
-    const state = type.state || (type.completed ? 'post' : 'pre');
-
-    let statusText = '';
-    if(state === 'in'){
-      statusText = type.shortDetail || type.detail || status.displayClock || 'LIVE';
-    }else if(state === 'post'){
-      statusText = 'FINAL';
-    }
-
-    return {
-      id:String(event.id || ''),
-      league,
-      state,
-      statusText,
-      startTime:event.date || competition.date || '',
-      away:{
-        abbr:away.team?.abbreviation || away.team?.shortDisplayName || 'AWAY',
-        score:scoreValue(away)
-      },
-      home:{
-        abbr:home.team?.abbreviation || home.team?.shortDisplayName || 'HOME',
-        score:scoreValue(home)
-      }
-    };
-  }
-
-  function sortGames(a,b){
-    const rank = {in:0, pre:1, post:2};
-    const diff = (rank[a.state] ?? 9) - (rank[b.state] ?? 9);
-    if(diff) return diff;
-
-    const timeDiff = new Date(a.startTime || 0) - new Date(b.startTime || 0);
-    if(timeDiff) return timeDiff;
-
-    return String(a.league).localeCompare(String(b.league));
-  }
-
-  async function browserAllGames(){
-    const date = compactDate(localDateKey());
-
-    const settled = await Promise.allSettled(
-      SPORTS.map(async sport => {
-        const endpoint = `https://site.api.espn.com/apis/site/v2/sports/${sport.path}/scoreboard?dates=${date}&limit=500`;
-        const res = await fetch(endpoint, {cache:'no-store'});
-        if(!res.ok) throw new Error(`${sport.league} ${res.status}`);
-        const data = await res.json();
-        return (data.events || [])
-          .map(event => normalizeEvent(event, sport.league))
-          .filter(Boolean);
-      })
-    );
-
-    return settled
-      .filter(r => r.status === 'fulfilled')
-      .flatMap(r => r.value)
-      .sort(sortGames);
-  }
-
-  function gameKey(game){
-    if(game?.id) return `${game.league}:${game.id}`;
-    return [
-      game?.league || '',
-      game?.away?.abbr || '',
-      game?.home?.abbr || '',
-      game?.startTime || ''
-    ].join(':');
-  }
-
-  function mergeGames(...lists){
-    const merged = new Map();
-
-    lists.flat().forEach(game => {
-      if(!game) return;
-      const key = gameKey(game);
-      const prev = merged.get(key);
-
-      if(!prev){
-        merged.set(key, game);
-        return;
-      }
-
-      const prevScore = (prev.away?.score !== '' || prev.home?.score !== '');
-      const nextScore = (game.away?.score !== '' || game.home?.score !== '');
-      const prevWeight = (prev.state === 'in' ? 3 : prev.state === 'post' ? 2 : 1) + (prevScore ? 1 : 0);
-      const nextWeight = (game.state === 'in' ? 3 : game.state === 'post' ? 2 : 1) + (nextScore ? 1 : 0);
-
-      if(nextWeight >= prevWeight) merged.set(key, game);
-    });
-
-    return [...merged.values()].sort(sortGames);
-  }
-
-  function formatStatus(game){
-    if(game.state === 'in') return game.statusText || 'LIVE';
-    if(game.state === 'post') return 'FINAL';
-    return formatStart(game.startTime);
-  }
-
-  function renderGame(game){
-    const awayScore = game.away?.score ?? '';
-    const homeScore = game.home?.score ?? '';
-    const hasScore = game.state !== 'pre' && (awayScore !== '' || homeScore !== '');
-
-    return `
-      <div class="score-game ${game.state === 'in' ? 'live' : ''}">
-        <span class="score-league">${esc(game.league)}</span>
-        <span class="score-team">${esc(game.away?.abbr || 'AWAY')}${hasScore ? `<b>${esc(awayScore)}</b>` : ''}</span>
-        <span class="score-at">${game.state === 'pre' ? '@' : '–'}</span>
-        <span class="score-team">${esc(game.home?.abbr || 'HOME')}${hasScore ? `<b>${esc(homeScore)}</b>` : ''}</span>
-        <span class="score-status">${esc(formatStatus(game))}</span>
-      </div>
-    `;
-  }
-
-  function setTicker(games){
-    root.classList.remove('is-ready','has-live');
-
-    if(!Array.isArray(games) || games.length === 0){
-      track.innerHTML = '<span class="score-ticker-message">No games scheduled in tracked leagues today.</span>';
-      liveRegion.textContent = 'No games scheduled in tracked leagues today.';
-      return;
-    }
-
-    const liveCount = games.filter(g => g.state === 'in').length;
-    if(liveCount) root.classList.add('has-live');
-
-    const html = games.map(renderGame).join('');
-    track.innerHTML = html + html;
-
-    requestAnimationFrame(() => {
-      const halfWidth = Math.max(1, track.scrollWidth / 2);
-      const pixelsPerSecond = 62;
-      const duration = Math.max(32, halfWidth / pixelsPerSecond);
-      root.style.setProperty('--score-duration', `${duration.toFixed(1)}s`);
-      root.classList.add('is-ready');
-    });
-
-    liveRegion.textContent = `${games.length} games in today's 4DK Live ticker.`;
-  }
-
-  async function loadScores(){
-    refreshBtn.disabled = true;
-
-    let primaryGames = [];
-    let directGames = [];
-    let primaryWorked = false;
-    let directWorked = false;
-
-    try{
-      const date = localDateKey();
-      const res = await fetch(`/api/scores?date=${encodeURIComponent(date)}`, {cache:'no-store'});
-      if(res.ok){
-        const data = await res.json();
-        primaryGames = Array.isArray(data.games) ? data.games : [];
-        primaryWorked = true;
-      }
-    }catch(err){
-      console.warn('4DK score ticker Worker feed failed:', err);
-    }
-
-    try{
-      directGames = await browserAllGames();
-      directWorked = true;
-    }catch(err){
-      console.warn('4DK direct scoreboard feed failed:', err);
-    }
-
-    try{
-      if(primaryWorked || directWorked){
-        setTicker(mergeGames(primaryGames, directGames));
-      }else{
-        throw new Error('All score feeds failed');
-      }
-    }catch(err){
-      console.warn('4DK score ticker failed:', err);
-      root.classList.remove('is-ready','has-live');
-      track.innerHTML = '<span class="score-ticker-message">Live scores are temporarily unavailable.</span>';
-      liveRegion.textContent = 'Live scores are temporarily unavailable.';
-    }finally{
-      refreshBtn.disabled = false;
-    }
-  }
-
-  refreshBtn.addEventListener('click', loadScores);
-  loadScores();
-
-  timer = setInterval(loadScores, 30000);
-
-  window.addEventListener('pagehide', () => {
-    if(timer) clearInterval(timer);
-  }, {once:true});
+(() => {
+  const page=location.pathname.split('/').pop().toLowerCase(),isNBA=page==='nba.html'||page==='nba',isNFL=page==='nfl.html'||page==='nfl';if(!isNBA&&!isNFL)return;
+  if(!document.getElementById('rosterEntryStyles')){const s=document.createElement('style');s.id='rosterEntryStyles';s.textContent=`.roster-entry-strip{position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.13);border-bottom:1px solid rgba(255,255,255,.13);background:#090d10;color:#fff}.roster-entry-strip:after{content:'ROSTERS';position:absolute;right:-12px;top:-18px;font:1000 clamp(70px,14vw,180px)/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.06em;color:#fff;opacity:.035;pointer-events:none}.roster-entry-inner{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:24px 20px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.roster-entry-copy small{display:block;margin-bottom:5px;font-size:9px;font-weight:1000;letter-spacing:.15em;text-transform:uppercase;color:var(--roster-entry-accent,#ef3937)}.roster-entry-copy strong{display:block;font:1000 clamp(27px,4vw,43px)/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase;letter-spacing:-.02em}.roster-entry-copy p{margin:7px 0 0;color:#aeb7bd;font-size:13px;line-height:1.4}.roster-entry-btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;background:var(--roster-entry-accent,#ef3937);border:1px solid var(--roster-entry-accent,#ef3937);color:#fff!important;text-decoration:none!important;font-size:10px;font-weight:1000;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap}.nba-roster-entry{--roster-entry-accent:#ef6130}.nfl-roster-entry{--roster-entry-accent:#3e86c4}@media(max-width:650px){.roster-entry-inner{grid-template-columns:1fr;gap:14px}.roster-entry-btn{width:100%}}`;document.head.appendChild(s)}
+  if(isNBA){const nav=document.querySelector('.nba-hero-nav');if(nav&&!nav.querySelector('a[href="nba-rosters.html"]'))nav.insertAdjacentHTML('beforeend','<a href="nba-rosters.html">Teams & Rosters</a>');const p=document.querySelector('.nba-pulse');if(p&&!document.querySelector('.nba-roster-entry'))p.insertAdjacentHTML('afterend','<section class="roster-entry-strip nba-roster-entry"><div class="roster-entry-inner"><div class="roster-entry-copy"><small>4DK NBA • Live Team Database</small><strong>30 Teams. Current Rosters.</strong><p>Player photos, jersey numbers, positions, measurements, experience and live roster status.</p></div><a class="roster-entry-btn" href="nba-rosters.html">Explore NBA Teams & Rosters →</a></div></section>')}
+  if(isNFL){const nav=document.querySelector('.nfl-v2-nav');if(nav&&!nav.querySelector('a[href="nfl-rosters.html"]'))nav.insertAdjacentHTML('beforeend','<a href="nfl-rosters.html">Teams & Rosters</a>');if(nav&&!document.querySelector('.nfl-roster-entry'))nav.insertAdjacentHTML('afterend','<section class="roster-entry-strip nfl-roster-entry"><div class="roster-entry-inner"><div class="roster-entry-copy"><small>4DK NFL • Live Team Database</small><strong>32 Teams. One Roster Hub.</strong><p>Current rosters with offense, defense and special teams filters plus player status information.</p></div><a class="roster-entry-btn" href="nfl-rosters.html">Explore NFL Teams & Rosters →</a></div></section>');const board=document.querySelector('.nfl-v2-board'),boardFoot=board?.querySelector('.nfl-v2-board-foot');if(board&&boardFoot&&!board.querySelector('a[href="nfl-rosters.html"]')){const row=document.createElement('a');row.className='nfl-v2-board-row live';row.href='nfl-rosters.html';row.innerHTML='<div><small>LIVE DATABASE</small><b>TEAMS & ROSTERS</b></div><span>32 TEAMS →</span>';board.insertBefore(row,boardFoot)}}
 })();
 
 /* ==========================================================
-   4DK — NBA/NFL TEAMS & ROSTERS ENTRY POINTS
-   Both nba.html and nfl.html already load scores.js, so this
-   safely wires the roster hubs into the main league pages.
+   4DK NFL — WEEK 4 SUNDAY NIGHT DESK • OCT. 4, 2026
+   Additive only. Preserves prior NFL content and labels the old
+   MVP board as an archive instead of deleting it.
    ========================================================== */
 (() => {
-  const page = location.pathname.split('/').pop().toLowerCase();
-  const isNBA = page === 'nba.html' || page === 'nba';
-  const isNFL = page === 'nfl.html' || page === 'nfl';
-  if(!isNBA && !isNFL) return;
-
-  if(!document.getElementById('rosterEntryStyles')){
-    const style = document.createElement('style');
-    style.id = 'rosterEntryStyles';
-    style.textContent = `
-      .roster-entry-strip{
-        position:relative;overflow:hidden;
-        border-top:1px solid rgba(255,255,255,.13);
-        border-bottom:1px solid rgba(255,255,255,.13);
-        background:#090d10;color:#fff
-      }
-      .roster-entry-strip:after{
-        content:'ROSTERS';position:absolute;right:-12px;top:-18px;
-        font:1000 clamp(70px,14vw,180px)/1 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
-        letter-spacing:-.06em;color:#fff;opacity:.035;pointer-events:none
-      }
-      .roster-entry-inner{
-        position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:24px 20px;
-        display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center
-      }
-      .roster-entry-copy small{
-        display:block;margin-bottom:5px;font-size:9px;font-weight:1000;letter-spacing:.15em;
-        text-transform:uppercase;color:var(--roster-entry-accent,#ef3937)
-      }
-      .roster-entry-copy strong{
-        display:block;font:1000 clamp(27px,4vw,43px)/.95 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
-        text-transform:uppercase;letter-spacing:-.02em
-      }
-      .roster-entry-copy p{margin:7px 0 0;color:#aeb7bd;font-size:13px;line-height:1.4}
-      .roster-entry-btn{
-        display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;
-        background:var(--roster-entry-accent,#ef3937);border:1px solid var(--roster-entry-accent,#ef3937);
-        color:#fff!important;text-decoration:none!important;font-size:10px;font-weight:1000;
-        letter-spacing:.11em;text-transform:uppercase;white-space:nowrap
-      }
-      .roster-entry-btn:hover{filter:brightness(1.08)}
-      .nba-roster-entry{--roster-entry-accent:#ef6130;background:
-        radial-gradient(circle at 82% 35%,rgba(239,97,48,.16),transparent 21rem),#0b0b0d}
-      .nfl-roster-entry{--roster-entry-accent:#3e86c4;background:
-        radial-gradient(circle at 82% 35%,rgba(62,134,196,.18),transparent 21rem),#080e13}
-      @media(max-width:650px){
-        .roster-entry-inner{grid-template-columns:1fr;padding-top:20px;padding-bottom:20px;gap:14px}
-        .roster-entry-btn{width:100%}
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
-  if(isNBA){
-    const heroNav = document.querySelector('.nba-hero-nav');
-    if(heroNav && !heroNav.querySelector('a[href="nba-rosters.html"]')){
-      const link = document.createElement('a');
-      link.href = 'nba-rosters.html';
-      link.textContent = 'Teams & Rosters';
-      heroNav.appendChild(link);
-    }
-
-    const pulse = document.querySelector('.nba-pulse');
-    if(pulse && !document.querySelector('.nba-roster-entry')){
-      const section = document.createElement('section');
-      section.className = 'roster-entry-strip nba-roster-entry';
-      section.innerHTML = `
-        <div class="roster-entry-inner">
-          <div class="roster-entry-copy">
-            <small>4DK NBA • Live Team Database</small>
-            <strong>30 Teams. Current Rosters.</strong>
-            <p>Player photos, jersey numbers, positions, measurements, experience and live roster status.</p>
-          </div>
-          <a class="roster-entry-btn" href="nba-rosters.html">Explore NBA Teams & Rosters →</a>
-        </div>`;
-      pulse.after(section);
-    }
-  }
-
-  if(isNFL){
-    const nav = document.querySelector('.nfl-v2-nav');
-    if(nav && !nav.querySelector('a[href="nfl-rosters.html"]')){
-      const link = document.createElement('a');
-      link.href = 'nfl-rosters.html';
-      link.textContent = 'Teams & Rosters';
-      nav.appendChild(link);
-    }
-
-    const mainNav = document.querySelector('.nfl-v2-nav');
-    if(mainNav && !document.querySelector('.nfl-roster-entry')){
-      const section = document.createElement('section');
-      section.className = 'roster-entry-strip nfl-roster-entry';
-      section.innerHTML = `
-        <div class="roster-entry-inner">
-          <div class="roster-entry-copy">
-            <small>4DK NFL • Live Team Database</small>
-            <strong>32 Teams. One Roster Hub.</strong>
-            <p>Current rosters with offense, defense and special teams filters plus player status information.</p>
-          </div>
-          <a class="roster-entry-btn" href="nfl-rosters.html">Explore NFL Teams & Rosters →</a>
-        </div>`;
-      mainNav.after(section);
-    }
-
-    const board = document.querySelector('.nfl-v2-board');
-    const boardFoot = board?.querySelector('.nfl-v2-board-foot');
-    if(board && boardFoot && !board.querySelector('a[href="nfl-rosters.html"]')){
-      const row = document.createElement('a');
-      row.className = 'nfl-v2-board-row live';
-      row.href = 'nfl-rosters.html';
-      row.innerHTML = `
-        <div><small>LIVE DATABASE</small><b>TEAMS & ROSTERS</b></div>
-        <span>32 TEAMS →</span>`;
-      board.insertBefore(row, boardFoot);
-    }
-  }
+  const page=location.pathname.split('/').pop().toLowerCase();
+  if(page!=='nfl.html'&&page!=='nfl') return;
+  if(document.getElementById('week4-snf-desk')) return;
+  const LEADERS={"Passing Yards": [{"name": "Bryce Young", "team": "CAR", "value": "1,268"}, {"name": "Jared Goff", "team": "DET", "value": "1,214"}, {"name": "Matthew Stafford", "team": "LAR", "value": "1,189"}, {"name": "Joe Burrow", "team": "CIN", "value": "1,171"}, {"name": "C.J. Stroud", "team": "HOU", "value": "1,141"}, {"name": "Dak Prescott", "team": "DAL", "value": "1,065"}, {"name": "Jordan Love", "team": "GB", "value": "1,041"}, {"name": "Josh Allen", "team": "BUF", "value": "1,039"}, {"name": "Patrick Mahomes", "team": "KC", "value": "1,037"}, {"name": "Kirk Cousins", "team": "LV", "value": "1,026"}], "Passing TDs": [{"name": "Kirk Cousins", "team": "LV", "value": "11"}, {"name": "Brock Purdy", "team": "SF", "value": "11"}, {"name": "Jared Goff", "team": "DET", "value": "9"}, {"name": "Patrick Mahomes", "team": "KC", "value": "9"}, {"name": "Bryce Young", "team": "CAR", "value": "9"}, {"name": "Dak Prescott", "team": "DAL", "value": "8"}, {"name": "Jordan Love", "team": "GB", "value": "8"}, {"name": "Tyler Shough", "team": "NO*", "value": "8"}, {"name": "Trevor Lawrence", "team": "JAX", "value": "8"}, {"name": "Aaron Rodgers / Joe Burrow / Jalen Hurts", "team": "PIT / CIN / PHI", "value": "7 (TIE)"}], "Rushing Yards": [{"name": "Kenneth Walker III", "team": "KC", "value": "537"}, {"name": "James Cook", "team": "BUF", "value": "421"}, {"name": "Derrick Henry", "team": "BAL", "value": "374"}, {"name": "Jahmyr Gibbs", "team": "DET", "value": "353"}, {"name": "Jonathan Taylor", "team": "IND", "value": "353"}, {"name": "Bijan Robinson", "team": "ATL*", "value": "349"}, {"name": "Kyle Monangai", "team": "CHI", "value": "324"}, {"name": "D’Andre Swift", "team": "CHI", "value": "311"}, {"name": "Jaylen Warren", "team": "PIT", "value": "309"}, {"name": "Chuba Hubbard", "team": "CAR", "value": "306"}], "Receiving Yards": [{"name": "CeeDee Lamb", "team": "DAL", "value": "498"}, {"name": "Jaxon Smith-Njigba", "team": "SEA", "value": "481"}, {"name": "Tee Higgins", "team": "CIN", "value": "401"}, {"name": "Davante Adams", "team": "LAR", "value": "390"}, {"name": "Tetairoa McMillan", "team": "CAR", "value": "385"}, {"name": "Chris Olave", "team": "NO*", "value": "375"}, {"name": "Zay Flowers", "team": "BAL", "value": "352"}, {"name": "Christian Watson", "team": "GB", "value": "331"}, {"name": "Denzel Boston", "team": "CLE", "value": "284"}, {"name": "Matthew Golden / Drake London", "team": "GB / ATL*", "value": "274"}], "Passer Rating (Primary Starters)": [{"name": "Brock Purdy", "team": "SF", "value": "126.2"}, {"name": "Lamar Jackson", "team": "BAL", "value": "119.6"}, {"name": "Trevor Lawrence", "team": "JAX", "value": "111.2"}, {"name": "Geno Smith", "team": "NYJ", "value": "109.0"}, {"name": "Jared Goff", "team": "DET", "value": "108.6"}, {"name": "Patrick Mahomes", "team": "KC", "value": "106.2"}, {"name": "Dak Prescott", "team": "DAL", "value": "105.0"}, {"name": "Deshaun Watson", "team": "CLE", "value": "101.2"}, {"name": "Josh Allen", "team": "BUF", "value": "100.1"}, {"name": "Bryce Young", "team": "CAR", "value": "100.0"}], "Tackles": [{"name": "Alex Singleton", "team": "DEN", "value": "47"}, {"name": "Jacob Rodriguez", "team": "MIA", "value": "46"}, {"name": "Anthony Hill Jr.", "team": "TEN", "value": "42"}, {"name": "Ernest Jones", "team": "SEA", "value": "41"}, {"name": "Fred Warner", "team": "SF", "value": "40"}, {"name": "Nick Bolton", "team": "KC", "value": "37"}, {"name": "Jihaad Campbell", "team": "PHI", "value": "37"}, {"name": "Akeem Davis-Gaither", "team": "IND", "value": "37"}, {"name": "Jordyn Brooks", "team": "MIA", "value": "35"}, {"name": "Carson Schwesinger", "team": "CLE", "value": "35"}], "Sacks": [{"name": "Greg Rousseau", "team": "BUF", "value": "6.0"}, {"name": "Dallas Turner", "team": "MIN", "value": "5.5"}, {"name": "Will Anderson Jr.", "team": "HOU", "value": "4.5"}, {"name": "T.J. Watt", "team": "PIT", "value": "4.5"}, {"name": "Mason Graham", "team": "CLE", "value": "4.0"}, {"name": "Aidan Hutchinson", "team": "DET", "value": "3.5"}, {"name": "Chase Young", "team": "NO*", "value": "3.5"}, {"name": "Byron Young", "team": "LAR", "value": "3.5"}, {"name": "Zach Allen", "team": "DEN", "value": "3.0"}, {"name": "DeForest Buckner", "team": "IND", "value": "3.0"}], "Defensive INT": [{"name": "Jevon Holland", "team": "NYG", "value": "3"}, {"name": "Hezekiah Masses", "team": "LV", "value": "3"}, {"name": "Talanoa Hufanga", "team": "DEN", "value": "2"}, {"name": "Jourdan Lewis", "team": "DAL", "value": "2"}, {"name": "Devin Lloyd", "team": "CAR", "value": "2"}, {"name": "Julian Love", "team": "SEA", "value": "2"}, {"name": "Foye Oluokun", "team": "JAX", "value": "2"}, {"name": "Genesis Smith", "team": "PHI", "value": "2"}, {"name": "Dee Alford", "team": "ATL*", "value": "1"}, {"name": "Budda Baker", "team": "ARI", "value": "1"}]};
+  const POWER=[{"rank": "1", "name": "San Francisco 49ers", "record": "4–0", "note": "Cleanest all-around résumé. Zero turnovers and one penalty against Denver; Purdy remains efficient and the defense keeps closing."}, {"rank": "2", "name": "Kansas City Chiefs", "record": "4–0", "note": "Still undefeated, and Walker’s explosion gives Mahomes a new way to win games without carrying every snap."}, {"rank": "3", "name": "Minnesota Vikings", "record": "4–0", "note": "Won without an offensive TD and controlled possession for nearly 40 minutes. That kind of floor matters."}, {"rank": "4", "name": "Baltimore Ravens", "record": "3–1", "note": "Efficient Lamar plus a defense that can dictate games. Ankle health and penalty volume are the Week 5 concerns."}, {"rank": "5", "name": "Seattle Seahawks", "record": "3–1", "note": "Three wins and another turnover-driven victory. Darnold doesn’t have to be Superman when the defense creates chaos."}, {"rank": "6", "name": "Las Vegas Raiders", "record": "3–1", "note": "The first loss came by three to 4–0 KC in a game Vegas led late. Their stock doesn’t crash because of that."}, {"rank": "7", "name": "Buffalo Bills", "record": "3–1", "note": "New England exposed some late-game vulnerability, but Allen and the roster still have a contender-level ceiling."}, {"rank": "8", "name": "Jacksonville Jaguars", "record": "3–1", "note": "Lawrence is playing clean football and Jacksonville is winning turnover margins and high-leverage downs."}, {"rank": "9", "name": "Chicago Bears", "record": "3–1", "note": "492 yards, 54 rushing attempts and nearly 43 minutes of possession against the Jets. A physical identity is forming."}, {"rank": "10", "name": "Cleveland Browns", "record": "3–1", "note": "Three wins through four and another clutch finish. The offense is uneven, but Cleveland keeps finding answers late."}];
+  const MVP=[{"rank": "1", "name": "Brock Purdy", "meta": "SF • QB", "stat": "4–0 • 1,007 PASS YDS • 11 TD • 1 INT • 126.2 RATE", "note": "Efficiency, record and ball security put him at the top of the 4DK board through Sunday."}, {"rank": "2", "name": "Patrick Mahomes", "meta": "KC • QB", "stat": "4–0 • 1,037 PASS YDS • 9 TD • 2 INT", "note": "Kansas City remains perfect, and Mahomes keeps making the plays that matter even when the box score is modest."}, {"rank": "3", "name": "Kenneth Walker III", "meta": "KC • RB", "stat": "537 RUSH YDS • 4 TD • 177 YDS, 2 TD IN W4", "note": "The league rushing leader just took over the biggest AFC West game of the season."}, {"rank": "4", "name": "Jared Goff", "meta": "DET • QB", "stat": "1,214 PASS YDS • 9 TD • 0 INT • 108.6 RATE", "note": "Detroit lost on SNF, but Goff has 1,200-plus yards without throwing an interception."}, {"rank": "5", "name": "Bryce Young", "meta": "CAR • QB", "stat": "NFL-HIGH 1,268 PASS YDS • 9 TD • 2 INT", "note": "A 329-yard, two-TD win over Detroit pushes him firmly into the race."}, {"rank": "6", "name": "Kirk Cousins", "meta": "LV • QB", "stat": "1,026 PASS YDS • 11 TD • 4 INT", "note": "Vegas is 3–1 and Cousins has consistently created touchdowns. The late KC interception costs him ground."}, {"rank": "7", "name": "Lamar Jackson", "meta": "BAL • QB", "stat": "967 PASS YDS • 6 TD • 1 INT • 119.6 RATE", "note": "Baltimore is 3–1 and Lamar remains elite; the ankle issue is now part of the watch."}, {"rank": "8", "name": "Josh Allen", "meta": "BUF • QB", "stat": "1,039 PASS YDS • 6 PASS TD • 3 INT", "note": "Still a top-tier candidate, but the home loss to New England knocks him down this week."}, {"rank": "9", "name": "Dak Prescott", "meta": "DAL • QB", "stat": "1,065 PASS YDS • 8 TD • 1 INT", "note": "335 yards and the late winner to Lamb gave Dallas the comeback it desperately needed."}, {"rank": "10", "name": "Trevor Lawrence", "meta": "JAX • QB", "stat": "3–1 • 8 PASS TD • 2 INT", "note": "Efficient, turnover-light football has Jacksonville leading the AFC South."}];
+  const ROOKIES=[{"rank": "1", "name": "Jacob Rodriguez", "meta": "MIA • LB • 2026 R2 No. 43", "stat": "46 COMBINED TACKLES", "note": "Second in the NFL in tackles through Sunday. That volume from a rookie linebacker is impossible to ignore."}, {"rank": "2", "name": "Anthony Hill Jr.", "meta": "TEN • LB • 2026 R2 No. 60", "stat": "42 COMBINED TACKLES", "note": "Third in the NFL in tackles despite Tennessee’s 0–4 start. Immediate three-down impact."}, {"rank": "3", "name": "Denzel Boston", "meta": "CLE • WR • 2026 R2 No. 39", "stat": "13 REC • 284 YDS • 2 TD", "note": "Four straight useful games and 89 yards on Thursday. He has been Cleveland’s most explosive rookie target."}, {"rank": "4", "name": "Hezekiah Masses", "meta": "LV • CB • 2026 R5 No. 175", "stat": "3 INT • TIED FOR NFL LEAD", "note": "A fifth-round rookie already tied at the top of the interception board is one of the stories of the first month."}, {"rank": "5", "name": "Carnell Tate", "meta": "TEN • WR • 2026 R1 No. 4", "stat": "22 REC • 268 YDS • W4: 9 REC, 145 YDS", "note": "His Baltimore game was the breakout: separation, contested work and legitimate WR1-level volume."}, {"rank": "6", "name": "Arvell Reese", "meta": "NYG • LB • 2026 R1 No. 5", "stat": "W4: 9 SOLO • 1 INT • 3 PDEF", "note": "The Giants are 3–1 and Reese just delivered his best all-around performance on the biggest stage of his young career."}, {"rank": "7", "name": "Jeremiyah Love", "meta": "ARI • RB • 2026 R1 No. 3", "stat": "223 RUSH YDS • 259 SCRIMMAGE YDS • 2 TOTAL TD", "note": "Arizona is struggling, but Love is already showing the burst and workload of a long-term feature back."}, {"rank": "8", "name": "Caleb Downs", "meta": "DAL • S • 2026 R1 No. 11", "stat": "19 TKL • 1 SACK • 2 FF THROUGH W3", "note": "His early impact has been disruptive even when the Cowboys defense has been inconsistent."}, {"rank": "9", "name": "Sonny Styles", "meta": "WAS • LB • 2026 R1 No. 7", "stat": "1 SACK • 1 INT • 1 FF THROUGH W3", "note": "The Week 3 takeover keeps him on the board; Washington’s London loss cooled the team momentum."}, {"rank": "10", "name": "Athan Kaliakmanis", "meta": "WAS • QB • 2026 R7 No. 223", "stat": "W4: 186 PASS YDS • 1 TD • 1 INT", "note": "Thrown into the London game after Mariota’s knee injury, the seventh-rounder got his first meaningful NFL audition."}];
+  const STANDINGS={"AFC East": [["BUF", "3–1"], ["NE", "2–2"], ["NYJ", "1–3"], ["MIA", "0–4"]], "AFC North": [["CLE", "3–1"], ["BAL", "3–1"], ["PIT", "2–2"], ["CIN", "2–2"]], "AFC South": [["JAX", "3–1"], ["IND", "2–2"], ["TEN", "0–4"], ["HOU", "0–4"]], "AFC West": [["KC", "4–0"], ["LV", "3–1"], ["DEN", "2–2"], ["LAC", "0–4"]], "NFC East": [["NYG", "3–1"], ["PHI", "2–2"], ["DAL", "2–2"], ["WAS", "1–3"]], "NFC North": [["MIN", "4–0"], ["CHI", "3–1"], ["DET", "2–2"], ["GB", "2–2"]], "NFC South": [["CAR", "2–2"], ["NO", "1–2*"], ["ATL", "1–2*"], ["TB", "0–4"]], "NFC West": [["SF", "4–0"], ["SEA", "3–1"], ["LAR", "2–2"], ["ARI", "1–3"]]};
+  const esc=v=>String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const style=document.createElement('style'); style.id='week4-snf-styles'; style.textContent=`
+    .wk4desk{background:#080b09;color:#f6f3ea;border-top:1px solid #29332b;border-bottom:1px solid #29332b}
+    .wk4shell{max-width:1180px;margin:auto;padding:34px 20px}
+    .wk4hero{display:grid;grid-template-columns:1.2fr .8fr;min-height:410px;border:1px solid #49534c;background:#0b100c;overflow:hidden}
+    .wk4hero img{width:100%;height:100%;object-fit:cover;min-height:410px}
+    .wk4copy{padding:30px;display:flex;flex-direction:column;justify-content:center}
+    .wk4eyebrow{font-size:10px;font-weight:1000;letter-spacing:.15em;color:#ef4b37;text-transform:uppercase}
+    .wk4copy h2,.wk4head h2{margin:8px 0 12px;font:1000 clamp(37px,5vw,64px)/.9 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase;letter-spacing:-.025em}
+    .wk4copy p{margin:0;color:#bcc4bd;font:15px/1.55 Georgia,serif}
+    .wk4btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.wk4btns a{padding:10px 12px;border:1px solid #535d56;font-size:9px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}.wk4btns a:first-child{background:#ef4b37;border-color:#ef4b37;color:#fff}
+    .wk4block{margin-top:28px}.wk4head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:14px}.wk4head p{margin:0;max-width:560px;color:#8f9a91;font-size:11px;line-height:1.45}
+    .wk4rankgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.wk4rank{display:grid;grid-template-columns:46px 1fr;gap:12px;padding:14px;border:1px solid #2d3730;background:#101511}.wk4rank>span{font-size:29px;font-weight:1000;color:#ef4b37}.wk4rank h3{margin:0 0 3px;font-size:18px}.wk4rank b{display:block;color:#f2c36f;font-size:8px;letter-spacing:.07em;text-transform:uppercase}.wk4rank p{margin:7px 0 0;color:#aab4ac;font-size:10px;line-height:1.45}
+    .wk4tabs{display:flex;gap:6px;overflow:auto;padding-bottom:9px;scrollbar-width:none}.wk4tabs::-webkit-scrollbar{display:none}.wk4tab{flex:0 0 auto;background:#101511;color:#bec6c0;border:1px solid #344038;padding:8px 10px;font-size:8px;font-weight:1000;text-transform:uppercase;letter-spacing:.07em;cursor:pointer}.wk4tab.active{background:#ef4b37;border-color:#ef4b37;color:#fff}
+    .wk4leader{border:1px solid #303b33;background:#0e130f;overflow:hidden}.wk4leader table{width:100%;border-collapse:collapse;font-size:11px}.wk4leader th,.wk4leader td{padding:9px 10px;border-bottom:1px solid #242d27;text-align:left}.wk4leader th{color:#77837a;font-size:8px;text-transform:uppercase}.wk4leader td:first-child{color:#ef4b37;font-weight:1000}.wk4leader td:last-child{color:#f2c36f;font-weight:1000}
+    .wk4stands{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.wk4div{border:1px solid #303b33;background:#0e130f}.wk4div h3{margin:0;padding:10px;border-bottom:1px solid #303b33;font-size:13px}.wk4div div{display:flex;justify-content:space-between;padding:7px 10px;border-bottom:1px solid #232c26;font-size:10px}.wk4div span{color:#f2c36f;font-weight:1000}
+    .wk4note{margin-top:10px;color:#7f8a82;font-size:9px;line-height:1.45}.mvp-watch.wk4-archived{margin-top:0}.wk4archive{background:#151a16;border-top:1px solid #343d36;border-bottom:1px solid #343d36;padding:10px 20px;text-align:center;color:#929c94;font-size:9px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+    @media(max-width:800px){.wk4hero{grid-template-columns:1fr}.wk4hero img{min-height:260px}.wk4rankgrid{grid-template-columns:1fr}.wk4stands{grid-template-columns:1fr 1fr}}@media(max-width:520px){.wk4stands{grid-template-columns:1fr}.wk4copy{padding:22px}}
+  `; document.head.appendChild(style);
+  const rankCards=(rows,type)=>rows.map(x=>`<article class="wk4rank"><span>${esc(x.rank)}</span><div><h3>${esc(x.name)}</h3><b>${esc(type==='power'?x.record:x.meta)}${type==='power'?'':` • ${esc(x.stat)}`}</b><p>${esc(x.note)}</p></div></article>`).join('');
+  const standHtml=Object.entries(STANDINGS).map(([d,rows])=>`<section class="wk4div"><h3>${esc(d)}</h3>${rows.map(([t,r])=>`<div><b>${esc(t)}</b><span>${esc(r)}</span></div>`).join('')}</section>`).join('');
+  const cats=Object.keys(LEADERS);
+  const root=document.createElement('section');root.id='week4-snf-desk';root.className='wk4desk';root.innerHTML=`<div class="wk4shell"><div class="wk4hero"><div class="wk4copy"><span class="wk4eyebrow">4DK NFL • WEEK 4 • THROUGH SUNDAY NIGHT</span><h2>The League Is Starting To Show Its Hand.</h2><p>KC, San Francisco and Minnesota stay perfect. Carolina erupts on SNF. Dallas steals one in Houston. The Chargers fall to 0–4. And Kenneth Walker III — Kansas City’s Kenneth Walker — just put 177 on Vegas.</p><div class="wk4btns"><a href="nfl-week-4-sunday-night-update-2026.html">Read Every Game →</a><a href="#wk4-leaders">League Leaders</a><a href="#wk4-mvp">MVP Watch</a><a href="#wk4-rookies">Rookie Watch</a></div></div><img src="nfl-week-4-snf-update-2026.jpg" alt="Authentic Week 4 NFL game-photo collage for the 4DK Sunday Night update"></div>
+  <div class="wk4block" id="wk4-power"><div class="wk4head"><div><span class="wk4eyebrow">4DK POWER RANKINGS</span><h2>Top 10 After Sunday</h2></div><p>MNF pending. This is the current 4DK board, not an official league ranking.</p></div><div class="wk4rankgrid">${rankCards(POWER,'power')}</div></div>
+  <div class="wk4block" id="wk4-mvp"><div class="wk4head"><div><span class="wk4eyebrow">4DK MVP WATCH</span><h2>Week 4 Board</h2></div><p>Purdy holds No. 1; Walker’s 177-yard takeover forces a non-QB into the top three.</p></div><div class="wk4rankgrid">${rankCards(MVP,'mvp')}</div></div>
+  <div class="wk4block" id="wk4-rookies"><div class="wk4head"><div><span class="wk4eyebrow">2026 DRAFT CLASS ONLY</span><h2>Rookie Watch</h2></div><p>McMillan and Mason Graham are second-year players. This list is restricted to verified 2026 rookies.</p></div><div class="wk4rankgrid">${rankCards(ROOKIES,'rookie')}</div></div>
+  <div class="wk4block" id="wk4-leaders"><div class="wk4head"><div><span class="wk4eyebrow">LEAGUE LEADERS</span><h2>Sunday Snapshot</h2></div><p>Verified through SNF. * = Atlanta/New Orleans player with MNF still pending.</p></div><div class="wk4tabs">${cats.map((c,i)=>`<button class="wk4tab ${i===0?'active':''}" data-wk4cat="${esc(c)}">${esc(c)}</button>`).join('')}</div><div class="wk4leader" data-wk4leader></div><p class="wk4note">Passer rating is limited to primary starters. Ties are shown instead of inventing tiebreakers. QBR, TFL, passes defended, forced fumbles and return-yard boards will be added to the Monday final only after the full Week 4 slate is complete. No stale partial tables.</p></div>
+  <div class="wk4block" id="wk4-standings"><div class="wk4head"><div><span class="wk4eyebrow">STANDINGS</span><h2>Through SNF</h2></div><p>Atlanta and New Orleans remain 1–2 entering Monday night.</p></div><div class="wk4stands">${standHtml}</div></div></div>`;
+  const scoreboard=document.querySelector('[data-nfl-scoreboard]');
+  if(scoreboard) scoreboard.insertAdjacentElement('afterend',root); else document.querySelector('main')?.prepend(root);
+  function renderLeader(cat){const rows=LEADERS[cat]||[];const host=root.querySelector('[data-wk4leader]');host.innerHTML=`<table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>${esc(cat)}</th></tr></thead><tbody>${rows.map((x,i)=>`<tr><td>${i+1}</td><td>${esc(x.name)}</td><td>${esc(x.team)}</td><td>${esc(x.value)}</td></tr>`).join('')}</tbody></table>`}
+  renderLeader(cats[0]); root.querySelectorAll('[data-wk4cat]').forEach(btn=>btn.addEventListener('click',()=>{root.querySelectorAll('[data-wk4cat]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderLeader(btn.dataset.wk4cat)}));
+  const old=document.querySelector('.mvp-watch');if(old){old.classList.add('wk4-archived');const h=old.querySelector('h2');if(h)h.textContent='MVP WATCH — WEEK 1 ARCHIVE';old.insertAdjacentHTML('beforebegin','<div class="wk4archive">Previous snapshot preserved below • Week 1 archive • Current Week 4 board is above</div>')}
 })();
