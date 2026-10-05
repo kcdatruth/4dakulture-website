@@ -61,6 +61,39 @@
 .home-franchise b{font-size:10px;letter-spacing:.06em;text-transform:uppercase;margin-top:auto}
 @media(max-width:980px){.home-fresh-grid,.home-vault-grid{grid-template-columns:repeat(2,1fr)}.home-franchise-grid{grid-template-columns:repeat(2,1fr)}.home-franchise:last-child{grid-column:1/-1}}
 @media(max-width:620px){.home-refresh-section{padding:32px 0}.home-refresh-head,.home-franchise-top{align-items:flex-start;flex-direction:column}.home-fresh-grid,.home-vault-grid,.home-franchise-grid{grid-template-columns:1fr}.home-franchise:last-child{grid-column:auto}.home-fresh-copy h3,.home-vault-card h3{font-size:21px}}
+
+/* 4DK HOMEPAGE LATEST DESK — OCTOBER 2026 */
+.home-latest-2026{background:#090b0a;color:#f7f3ea;border-bottom:1px solid #242724;padding:30px 0 34px}
+.home-latest-top{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:18px}
+.home-latest-top small{display:block;color:#ff654d;font-size:10px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px}
+.home-latest-top h2{margin:0;font-size:clamp(34px,6vw,58px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase}
+.home-latest-updated{border:1px solid #333934;padding:9px 11px;color:#aeb3ae;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.home-latest-layout{display:grid;grid-template-columns:1.35fr .9fr;gap:14px}
+.home-latest-lead{min-height:410px;position:relative;overflow:hidden;border:1px solid #333934;background:radial-gradient(circle at 78% 28%,rgba(232,69,46,.38),transparent 22%),linear-gradient(145deg,#1a201b,#080a09);padding:25px;display:flex;align-items:flex-end}
+.home-latest-lead:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.7%,rgba(255,255,255,.07) 50%,transparent 50.3%),repeating-linear-gradient(0deg,transparent 0 47px,rgba(255,255,255,.035) 48px 49px);pointer-events:none}
+.home-latest-lead:after{content:'W4';position:absolute;right:-8px;top:-40px;font-size:190px;font-weight:1000;letter-spacing:-.1em;color:#fff;opacity:.035}
+.home-latest-lead-copy{position:relative;z-index:2;max-width:650px}
+.home-latest-tag{display:inline-block;background:#e8452e;color:#fff;padding:6px 8px;font-size:10px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.home-latest-lead h3{margin:12px 0 10px;font-size:clamp(36px,6vw,68px);line-height:.88;letter-spacing:-.055em;text-transform:uppercase}
+.home-latest-lead p{margin:0;color:#b8beb9;max-width:620px;font:15px/1.55 Georgia,'Times New Roman',serif}
+.home-latest-cta{display:inline-block;margin-top:18px;font-size:11px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#f2c36f}
+.home-latest-side{display:grid;gap:14px}
+.home-latest-card{position:relative;overflow:hidden;min-height:127px;border:1px solid #333934;background:#111512;color:#fff;display:grid;grid-template-columns:138px minmax(0,1fr)}
+.home-latest-card-media{min-height:127px;background:#181d19;overflow:hidden;position:relative}
+.home-latest-card-media img{width:100%;height:100%;object-fit:cover}
+.home-latest-card-media.screen{background:radial-gradient(circle at 70% 25%,rgba(190,60,112,.4),transparent 22%),linear-gradient(145deg,#291322,#0e0b0d)}
+.home-latest-card-media.screen:after{content:'DROP';position:absolute;left:10px;bottom:7px;font-size:30px;font-weight:1000;letter-spacing:-.06em;color:#fff}
+.home-latest-card-copy{padding:14px 15px;display:flex;flex-direction:column;justify-content:center}
+.home-latest-card-copy small{color:#ff755f;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+.home-latest-card-copy h3{margin:6px 0 5px;font-family:Georgia,'Times New Roman',serif;font-size:20px;line-height:1.02;letter-spacing:-.025em}
+.home-latest-card-copy p{margin:0;color:#aeb3ae;font-size:11px;line-height:1.4}
+.home-latest-card-copy b{margin-top:8px;color:#f2c36f;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.home-latest-desk{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.home-latest-desk a{border:1px solid #343a35;background:#0e110f;padding:8px 10px;font-size:10px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#d5d8d5}
+.home-latest-desk a:hover{border-color:#e8452e;color:#fff}
+@media(max-width:900px){.home-latest-layout{grid-template-columns:1fr}.home-latest-lead{min-height:340px}.home-latest-side{grid-template-columns:1fr 1fr}.home-latest-card:last-child{grid-column:1/-1}}
+@media(max-width:620px){.home-latest-2026{padding:24px 0 28px}.home-latest-top{align-items:flex-start;flex-direction:column}.home-latest-updated{white-space:normal}.home-latest-side{grid-template-columns:1fr}.home-latest-card,.home-latest-card:last-child{grid-column:auto}.home-latest-card{grid-template-columns:112px minmax(0,1fr)}.home-latest-card-media{min-height:120px}.home-latest-card-copy h3{font-size:18px}}
+
 </style>
 </head>
 
@@ -111,6 +144,52 @@
 </section>
 
 <main id="main">
+
+<section class="home-latest-2026" aria-label="Latest from 4 Da Kulture">
+  <div class="shell">
+    <div class="home-latest-top">
+      <div><small>THE FRONT DESK • NEWEST FIRST</small><h2>LATEST FROM 4DK</h2></div>
+      <div class="home-latest-updated">UPDATED • OCT. 4, 2026</div>
+    </div>
+
+    <div class="home-latest-layout">
+      <a class="home-latest-lead" href="nfl.html">
+        <div class="home-latest-lead-copy">
+          <span class="home-latest-tag">NFL • WEEK 4 LIVE</span>
+          <h3>THE SEASON IS STARTING TO TELL US WHO'S REAL.</h3>
+          <p>Week 4 is where the early noise starts turning into actual trends. Scores, storylines, MVP movement and the full 4DK NFL desk stay together here.</p>
+          <span class="home-latest-cta">ENTER THE NFL DESK →</span>
+        </div>
+      </a>
+
+      <div class="home-latest-side">
+        <a class="home-latest-card" href="the-drop-episode-4-recap.html">
+          <div class="home-latest-card-media screen" aria-hidden="true"></div>
+          <div class="home-latest-card-copy"><small>4DK SCREEN • THE DROP</small><h3>Episode 4: “The Big Push”</h3><p>The music story, family mystery and Wanda/Leon history all collide.</p><b>Read the recap →</b></div>
+        </a>
+
+        <a class="home-latest-card" href="nba-rookie-class-2026.html">
+          <div class="home-latest-card-media"><img src="nba-rookie-class-2026-graphic.png" alt="4 Da Kulture 2026 NBA rookie class feature graphic"></div>
+          <div class="home-latest-card-copy"><small>NBA • ROOKIE CLASS</small><h3>30 Rookies. 30 Different Expectations.</h3><p>The first-round class gets the full 4DK treatment — team context, role and upside.</p><b>Read the feature →</b></div>
+        </a>
+
+        <a class="home-latest-card" href="mamba-file-007-no-5-had-to-go-through-boston.html">
+          <div class="home-latest-card-media"><img src="mamba-file-007-game7-celebration.jpg" alt="Kobe Bryant celebrating the 2010 NBA championship"></div>
+          <div class="home-latest-card-copy"><small>THE MAMBA FILES • 007</small><h3>No. 5 Had to Go Through Boston.</h3><p>Back-to-back. Revenge. Legacy. The fully formed champion.</p><b>Open File 007 →</b></div>
+        </a>
+      </div>
+    </div>
+
+    <nav class="home-latest-desk" aria-label="Latest 4DK section shortcuts">
+      <a href="nfl.html">NFL Desk</a>
+      <a href="nba.html">NBA Desk</a>
+      <a href="movies.html">4DK Screen</a>
+      <a href="hiphop.html">4DK Music</a>
+      <a href="stories.html">All Stories</a>
+    </nav>
+  </div>
+</section>
+
 <section class="hero">
   <div class="shell hero-grid">
     <article class="hero-art">
