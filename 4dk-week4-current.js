@@ -4,45 +4,6 @@
   if(window.__fourdkWeek4MondayNFL) return;
   window.__fourdkWeek4MondayNFL=true;
 
-  const ranks=[
-    ['San Francisco 49ers','4–0','Cleanest all-around résumé. Purdy remains efficient and the defense keeps closing.'],
-    ['Kansas City Chiefs','4–0','Still perfect, and Kenneth Walker gives Mahomes a new way to win.'],
-    ['Minnesota Vikings','4–0','Won without an offensive touchdown. That kind of floor matters.'],
-    ['Baltimore Ravens','3–1','Efficient Lamar plus a defense that can dictate games.'],
-    ['Seattle Seahawks','3–1','Three wins and another turnover-driven victory.'],
-    ['Las Vegas Raiders','3–1','The first loss came by three to 4–0 Kansas City. Their stock does not crash.'],
-    ['Buffalo Bills','3–1','The Patriots exposed late-game vulnerability, but the ceiling remains contender level.'],
-    ['Jacksonville Jaguars','3–1','Lawrence is playing clean football and Jacksonville keeps winning leverage downs.'],
-    ['Chicago Bears','3–1','A physical identity is forming behind the run game and possession control.'],
-    ['Cleveland Browns','3–1','Three wins through four and another clutch finish.']
-  ];
-
-  const mvp=[
-    ['Brock Purdy','SF • QB • 4–0','1,007 PASS YDS • 11 TD • 1 INT • 126.2 RATE'],
-    ['Patrick Mahomes','KC • QB • 4–0','1,037 PASS YDS • 9 TD • 2 INT'],
-    ['Kenneth Walker III','KC • RB','537 RUSH YDS • 4 TD • W4: 177 YDS, 2 TD'],
-    ['Jared Goff','DET • QB','1,214 PASS YDS • 9 TD • 0 INT'],
-    ['Bryce Young','CAR • QB','NFL-HIGH 1,268 PASS YDS • 9 TD • 2 INT'],
-    ['Kirk Cousins','LV • QB','1,026 PASS YDS • 11 TD • 4 INT'],
-    ['Lamar Jackson','BAL • QB','967 PASS YDS • 6 TD • 1 INT'],
-    ['Josh Allen','BUF • QB','1,039 PASS YDS • 6 PASS TD • 3 INT'],
-    ['Dak Prescott','DAL • QB','1,065 PASS YDS • 8 TD • 1 INT'],
-    ['Trevor Lawrence','JAX • QB • 3–1','8 PASS TD • 2 INT']
-  ];
-
-  const rook=[
-    ['Jacob Rodriguez','MIA • LB','46 COMBINED TACKLES'],
-    ['Anthony Hill Jr.','TEN • LB','42 COMBINED TACKLES'],
-    ['Denzel Boston','CLE • WR','13 REC • 284 YDS • 2 TD'],
-    ['Hezekiah Masses','LV • CB','3 INT • TIED FOR NFL LEAD'],
-    ['Carnell Tate','TEN • WR','W4: 9 REC • 145 YDS'],
-    ['Arvell Reese','NYG • LB','W4: 9 SOLO • 1 INT • 3 PDEF'],
-    ['Jeremiyah Love','ARI • RB','223 RUSH YDS • 2 TOTAL TD'],
-    ['Caleb Downs','DAL • S','19 TKL • 1 SACK • 2 FF THROUGH W3'],
-    ['Sonny Styles','WAS • LB','1 SACK • 1 INT • 1 FF THROUGH W3'],
-    ['Athan Kaliakmanis','WAS • QB','W4: 186 PASS YDS • 1 TD • 1 INT']
-  ];
-
   const stories=[
     ['#1','49ERS HOLD THE TOP SPOT','San Francisco is 4–0 and still the cleanest team on the board.','nfl-week-4-sunday-night-update-2026.html#power'],
     ['4–0','CHIEFS ADD A RUNNING-GAME HAMMER','Kenneth Walker ran for 177 yards and two TDs against Vegas.','nfl-week-4-sunday-night-update-2026.html'],
@@ -74,15 +35,12 @@
       .w4m-story small{color:#ef6650;font:1000 9px Arial;letter-spacing:.1em}
       .w4m-story b{display:block;margin:8px 0;font:1000 18px/1 Arial Black,Impact,sans-serif}
       .w4m-story span{margin-top:auto;color:#a1a7a1;font:12px/1.45 Arial}
-      .w4m-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-      .w4m-row{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:14px;background:#101511;border:1px solid #303730}
-      .w4m-num{font:1000 28px Arial;color:#747d75}
-      .w4m-row h3{margin:0;font:1000 17px Arial}
-      .w4m-row small{display:block;color:#ef6650;margin:4px 0;font:900 9px Arial}
-      .w4m-row b{display:block;color:#e4b65c;font:900 9px Arial}
-      .w4m-row p{margin:6px 0 0;color:#a1a7a1;font:12px/1.45 Arial}
+      .w4m-canonical{margin-top:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+      .w4m-canonical a{display:block;padding:15px;border:1px solid #303730;background:#0d100e;color:#fff!important;text-decoration:none!important}
+      .w4m-canonical small{display:block;color:#ef6650;font:1000 8px Arial;letter-spacing:.1em;text-transform:uppercase}
+      .w4m-canonical b{display:block;margin-top:7px;font:1000 17px/1.05 Arial Black,Impact,sans-serif}
       @media(max-width:900px){.w4m-story-grid{grid-template-columns:1fr 1fr}}
-      @media(max-width:760px){.w4m-story-grid,.w4m-list{grid-template-columns:1fr}.nfl-v2-hero .nfl-v2-copy h1{font-size:clamp(46px,15vw,62px)!important;line-height:.84!important}}
+      @media(max-width:760px){.w4m-story-grid,.w4m-canonical{grid-template-columns:1fr}.nfl-v2-hero .nfl-v2-copy h1{font-size:clamp(46px,15vw,62px)!important;line-height:.84!important}}
     `;
     document.head.appendChild(s);
   }
@@ -93,8 +51,13 @@
     return s;
   }
 
+  function removeDuplicateBoards(){
+    ['w4m-rank','w4m-mvp','w4m-rook'].forEach(id=>document.getElementById(id)?.remove());
+  }
+
   function run(){
     css();
+    removeDuplicateBoards();
 
     const hero=document.querySelector('.nfl-v2-hero .nfl-v2-copy');
     if(hero) hero.innerHTML=`
@@ -117,23 +80,14 @@
     if(ticker) ticker.innerHTML=['49ERS 4–0 • 4DK #1','CHIEFS 4–0 • WALKER LEADS NFL IN RUSHING','VIKINGS 4–0','RAIDERS 3–1 • STILL REAL','PANTHERS 32, LIONS 26','BILLS FALL TO 3–1','CHARGERS 0–4','MNF LIVE: FALCONS AT SAINTS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
 
     const nav=document.querySelector('.nfl-v2-nav');
-    if(nav) nav.innerHTML=`<a class="active" href="#w4m-current">Week 4</a><a href="#scoreboard">Scores</a><a href="#w4m-stories">Storylines</a><a href="#w4m-rank">Rankings</a><a href="#w4m-mvp">MVP</a><a href="#w4m-rook">Rookies</a><a href="nfl-week3-hub-2026.html">Week 3 Archive</a>`;
+    if(nav) nav.innerHTML=`<a class="active" href="#w4m-current">Week 4</a><a href="#scoreboard">Scores</a><a href="#w4m-stories">Storylines</a><a href="nfl-week-4-sunday-night-update-2026.html#power">Rankings</a><a href="nfl-week-4-sunday-night-update-2026.html#mvp">MVP</a><a href="nfl-week-4-sunday-night-update-2026.html#rookies">Rookies</a><a href="nfl-sunday-recaps.html">Sunday Recaps</a><a href="nfl-week3-hub-2026.html">Week 3 Archive</a>`;
 
     const anchor=nav||document.getElementById('scoreboard');
     const cur=section('w4m-current',anchor);
-    cur.innerHTML=`<div class="shell"><span class="w4mk">4DK NFL • CURRENT WEEK</span><h2>WEEK 4 <em>HAS SHAPE.</em></h2><p class="w4mp">Sunday is complete. Three teams are 4–0. San Francisco remains our No. 1. Kenneth Walker leads the league in rushing. Carolina found a real offensive identity. Buffalo took its first loss. The Chargers are winless. Monday night closes it.</p><div class="w4m-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 UPDATE →</a><a href="#scoreboard">MNF LIVE SCOREBOARD →</a><a href="nfl-week3-hub-2026.html">WEEK 3 ARCHIVE →</a></div></div>`;
+    cur.innerHTML=`<div class="shell"><span class="w4mk">4DK NFL • CURRENT WEEK</span><h2>WEEK 4 <em>HAS SHAPE.</em></h2><p class="w4mp">Sunday is complete. Three teams are 4–0. San Francisco remains our No. 1. Kenneth Walker leads the league in rushing. Carolina found a real offensive identity. Buffalo took its first loss. The Chargers are winless. Monday night closes it.</p><div class="w4m-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 UPDATE →</a><a href="#scoreboard">MNF LIVE SCOREBOARD →</a><a href="nfl-sunday-recaps.html">SUNDAY RECAP ARCHIVE →</a><a href="nfl-week3-hub-2026.html">WEEK 3 ARCHIVE →</a></div></div>`;
 
     const st=section('w4m-stories',cur);
-    st.innerHTML=`<div class="shell"><span class="w4mk">8 STORIES SHAPING THE BOARD</span><h2>WHAT MATTERS <em>RIGHT NOW.</em></h2><div class="w4m-story-grid">${stories.map(x=>`<a class="w4m-story" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
-
-    const rk=section('w4m-rank',st);
-    rk.innerHTML=`<div class="shell"><span class="w4mk">4DK POWER RANKINGS • THROUGH SUNDAY</span><h2>THE TOP 10.</h2><div class="w4m-list">${ranks.map((x,i)=>`<div class="w4m-row"><div class="w4m-num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small><p>${x[2]}</p></div></div>`).join('')}</div></div>`;
-
-    const mv=section('w4m-mvp',rk);
-    mv.innerHTML=`<div class="shell"><span class="w4mk">4DK MVP WATCH • THROUGH SUNDAY</span><h2>THE RACE.</h2><div class="w4m-list">${mvp.map((x,i)=>`<div class="w4m-row"><div class="w4m-num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small><b>${x[2]}</b></div></div>`).join('')}</div></div>`;
-
-    const ro=section('w4m-rook',mv);
-    ro.innerHTML=`<div class="shell"><span class="w4mk">2026 DRAFT CLASS ONLY</span><h2>ROOKIE WATCH.</h2><div class="w4m-list">${rook.map((x,i)=>`<div class="w4m-row"><div class="w4m-num">${i+1}</div><div><h3>${x[0]}</h3><small>${x[1]}</small><b>${x[2]}</b></div></div>`).join('')}</div></div>`;
+    st.innerHTML=`<div class="shell"><span class="w4mk">8 STORIES SHAPING THE BOARD</span><h2>WHAT MATTERS <em>RIGHT NOW.</em></h2><div class="w4m-story-grid">${stories.map(x=>`<a class="w4m-story" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div><div class="w4m-canonical"><a href="nfl-week-4-sunday-night-update-2026.html#power"><small>CANONICAL WEEK 4 BOARD</small><b>Power Rankings →</b></a><a href="nfl-week-4-sunday-night-update-2026.html#mvp"><small>CANONICAL WEEK 4 BOARD</small><b>MVP Watch →</b></a><a href="nfl-week-4-sunday-night-update-2026.html#rookies"><small>CANONICAL WEEK 4 BOARD</small><b>Rookie Watch →</b></a></div></div>`;
   }
 
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true}); else run();
