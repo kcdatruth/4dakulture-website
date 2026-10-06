@@ -1,97 +1,59 @@
 (()=> {
   const p=(location.pathname||'').toLowerCase();
   if(!p.endsWith('/nfl.html') && !p.endsWith('/nfl')) return;
-  if(window.__fourdkWeek4MondayNFL) return;
-  window.__fourdkWeek4MondayNFL=true;
+  if(window.__fourdkWeek4FinalNFL) return;
+  window.__fourdkWeek4FinalNFL=true;
 
   const stories=[
-    ['#1','49ERS HOLD THE TOP SPOT','San Francisco is 4–0 and still the cleanest team on the board.','nfl-week-4-sunday-night-update-2026.html#power'],
-    ['4–0','CHIEFS ADD A RUNNING-GAME HAMMER','Kenneth Walker ran for 177 yards and two TDs against Vegas.','nfl-week-4-sunday-night-update-2026.html'],
-    ['4–0','MINNESOTA KEEPS FINDING WAYS','The Vikings won without an offensive touchdown.','nfl-week-4-sunday-night-update-2026.html#power'],
-    ['3–1','RAIDERS LOSE WITHOUT FALLING OFF','Vegas pushed KC to the final seconds and still looks real.','nfl-week-4-sunday-night-update-2026.html'],
-    ['SNF','CAROLINA OFFENSE ARRIVES','Bryce Young and Tetairoa McMillan lit up Detroit.','nfl-week-4-sunday-night-update-2026.html'],
-    ['3–1','BUFFALO TAKES ITS FIRST HIT','New England exposed late-game vulnerability in Buffalo.','nfl-week-4-sunday-night-update-2026.html'],
-    ['0–4','CHARGERS ARE IN EMERGENCY MODE','Turnovers and penalties keep burying a talented roster.','nfl-week-4-sunday-night-update-2026.html'],
-    ['MNF','FALCONS–SAINTS CLOSES WEEK 4','Follow the live score from the 4DK game center.','#scoreboard']
+    ['MNF','BIJAN RUNS NEW ORLEANS OUT THE BUILDING','145 yards, two touchdowns and a 45–24 Atlanta win.','nfl-week-4-sunday-night-update-2026.html'],
+    ['#1','49ERS STAY ON TOP','San Francisco is 4–0 and keeps winning clean.','nfl-power-rankings-week4-2026.html'],
+    ['MVP','PURDY HOLDS NO. 1','Mahomes and Kenneth Walker stay close; Bijan jumps into the top four.','nfl-week-4-sunday-night-update-2026.html#mvp'],
+    ['ROOKIES','RODRIGUEZ STILL LEADS','Monday night did not force a change at the top of Rookie Watch.','nfl-week-4-sunday-night-update-2026.html#rookies'],
+    ['W5','49ERS AT SEAHAWKS','The No. 1 team gets a 3–1 division rival on the road.','nfl-week5-preview-2026.html'],
+    ['SNF','RAVENS AT FALCONS','Atlanta’s two-game surge gets a real Baltimore measuring stick.','nfl-week5-preview-2026.html'],
+    ['MNF','BILLS AT RAMS','Buffalo needs a response; the Rams just stole one in Philadelphia.','nfl-week5-preview-2026.html'],
+    ['BYE','KC + CAR REST','The 4–0 Chiefs and 2–2 Panthers sit Week 5 out.','nfl-week5-preview-2026.html']
   ];
 
   function css(){
-    if(document.getElementById('fourdk-week4-monday-nfl-css')) return;
-    const s=document.createElement('style');
-    s.id='fourdk-week4-monday-nfl-css';
-    s.textContent=`
-      #mvp-watch,#power-rankings,#rookie-watch,.fourdk-live-board,.fourdk-mnf-headline,#week2-current,.w3rookies{display:none!important}
-      .w4m{padding:42px 0;background:#080b09;color:#f6f2e8;border-bottom:1px solid #293029}
-      .w4m .shell{width:min(1180px,calc(100% - 32px));margin:auto}
-      .w4mk{color:#ef5b35;font:1000 10px Arial;letter-spacing:.15em;text-transform:uppercase}
-      .w4m h2{margin:7px 0 12px;font:1000 clamp(38px,7vw,72px)/.87 Arial Black,Impact,sans-serif;letter-spacing:-.05em;text-transform:uppercase}
-      .w4m h2 em{font-style:normal;color:#f0bd54}
-      .w4mp{max-width:860px;color:#a5aba5;line-height:1.6}
-      .w4m-btn{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
-      .w4m-btn a{padding:12px 14px;border:1px solid #394039;color:#fff!important;text-decoration:none!important;font:900 9px Arial}
-      .w4m-btn a:first-child{background:#d9561d;border-color:#d9561d}
-      .w4m-story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-      .w4m-story{min-height:170px;padding:15px;border:1px solid #303730;background:#101511;color:#fff!important;text-decoration:none!important;display:flex;flex-direction:column}
-      .w4m-story small{color:#ef6650;font:1000 9px Arial;letter-spacing:.1em}
-      .w4m-story b{display:block;margin:8px 0;font:1000 18px/1 Arial Black,Impact,sans-serif}
-      .w4m-story span{margin-top:auto;color:#a1a7a1;font:12px/1.45 Arial}
-      .w4m-canonical{margin-top:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-      .w4m-canonical a{display:block;padding:15px;border:1px solid #303730;background:#0d100e;color:#fff!important;text-decoration:none!important}
-      .w4m-canonical small{display:block;color:#ef6650;font:1000 8px Arial;letter-spacing:.1em;text-transform:uppercase}
-      .w4m-canonical b{display:block;margin-top:7px;font:1000 17px/1.05 Arial Black,Impact,sans-serif}
-      @media(max-width:900px){.w4m-story-grid{grid-template-columns:1fr 1fr}}
-      @media(max-width:760px){.w4m-story-grid,.w4m-canonical{grid-template-columns:1fr}.nfl-v2-hero .nfl-v2-copy h1{font-size:clamp(46px,15vw,62px)!important;line-height:.84!important}}
-    `;
-    document.head.appendChild(s);
+    if(document.getElementById('fourdk-week4-final-nfl-css')) return;
+    const s=document.createElement('style');s.id='fourdk-week4-final-nfl-css';s.textContent=`
+      #mvp-watch,#power-rankings,#rookie-watch,.fourdk-live-board,.fourdk-mnf-headline,#week2-current,.w3rookies,#w4m-rank,#w4m-mvp,#w4m-rook{display:none!important}
+      .w4f{padding:42px 0;background:#080b09;color:#f6f2e8;border-bottom:1px solid #293029}.w4f .shell{width:min(1180px,calc(100% - 32px));margin:auto}.w4fk{color:#ef5b35;font:1000 10px Arial;letter-spacing:.15em}.w4f h2{margin:7px 0 12px;font:1000 clamp(38px,7vw,72px)/.87 Arial Black,Impact,sans-serif;letter-spacing:-.05em;text-transform:uppercase}.w4f h2 em{font-style:normal;color:#f0bd54}.w4fp{max-width:860px;color:#a5aba5;line-height:1.6}.w4f-btn{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.w4f-btn a{padding:12px 14px;border:1px solid #394039;color:#fff!important;text-decoration:none!important;font:900 9px Arial}.w4f-btn a:first-child{background:#d9561d;border-color:#d9561d}.w4f-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.w4f-card{min-height:170px;padding:15px;border:1px solid #303730;background:#101511;color:#fff!important;text-decoration:none!important;display:flex;flex-direction:column}.w4f-card small{color:#ef6650;font:1000 9px Arial}.w4f-card b{display:block;margin:8px 0;font:1000 18px/1 Arial Black,Impact,sans-serif}.w4f-card span{margin-top:auto;color:#a1a7a1;font:12px/1.45 Arial}
+      @media(max-width:900px){.w4f-grid{grid-template-columns:1fr 1fr}}@media(max-width:760px){.w4f-grid{grid-template-columns:1fr}.nfl-v2-hero .nfl-v2-copy h1{font-size:clamp(46px,15vw,62px)!important;line-height:.84!important}}
+    `;document.head.appendChild(s);
   }
 
-  function section(id,after){
-    let s=document.getElementById(id);
-    if(!s){s=document.createElement('section');s.id=id;s.className='w4m';after?.insertAdjacentElement('afterend',s)}
-    return s;
-  }
-
-  function removeDuplicateBoards(){
-    ['w4m-rank','w4m-mvp','w4m-rook'].forEach(id=>document.getElementById(id)?.remove());
-  }
+  function section(id,after){let s=document.getElementById(id);if(!s){s=document.createElement('section');s.id=id;s.className='w4f';after?.insertAdjacentElement('afterend',s)}return s}
+  function cleanup(){['w4m-current','w4m-stories','w4m-rank','w4m-mvp','w4m-rook','w4current','w4tnf','w4redzone','w4rank','w4mvp','w4rook','w4archive'].forEach(id=>document.getElementById(id)?.remove())}
 
   function run(){
-    css();
-    removeDuplicateBoards();
-
+    css();cleanup();
     const hero=document.querySelector('.nfl-v2-hero .nfl-v2-copy');
-    if(hero) hero.innerHTML=`
-      <div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 • MONDAY NIGHT</div>
-      <h1>THE LEAGUE IS<br><em>STARTING TO SHOW ITS HAND.</em></h1>
-      <p class="nfl-v2-deck">San Francisco, Kansas City and Minnesota are 4–0. Carolina just lit up Detroit. Vegas took its first loss without losing our respect. Buffalo got clipped at home. The Chargers are 0–4. Falcons–Saints closes the week tonight.</p>
-      <div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 UPDATE</a><a class="nfl-v2-secondary" href="#scoreboard">FOLLOW MNF LIVE</a></div>`;
+    if(hero)hero.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 FINAL • WEEK 5 NEXT</div><h1>THE FIRST MONTH<br><em>IS IN THE BOOKS.</em></h1><p class="nfl-v2-deck">Atlanta closed Week 4 by running New Orleans out of the building. The 49ers, Chiefs and Vikings are 4–0. The full 1–32 ranking is locked. Week 5 starts Thursday.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week-4-sunday-night-update-2026.html">WEEK 4 FINAL</a><a class="nfl-v2-secondary" href="nfl-week5-preview-2026.html">WEEK 5 LOOKAHEAD</a></div>`;
 
     const board=document.querySelector('.nfl-v2-board');
-    if(board) board.innerHTML=`
-      <div class="nfl-v2-board-top"><span>THE 4DK BOARD</span><strong>WEEK 4</strong></div>
-      <a class="nfl-v2-board-row live" href="nfl-week-4-sunday-night-update-2026.html"><div><small>THROUGH SUNDAY</small><b>FULL WEEK 4 UPDATE</b></div><span>READ →</span></a>
-      <a class="nfl-v2-board-row live" href="nfl-week-4-sunday-night-update-2026.html#power"><div><small>POWER RANKINGS</small><b>49ERS HOLD #1</b></div><span>TOP 10 →</span></a>
-      <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#mvp"><div><small>MVP WATCH</small><b>PURDY LEADS THE RACE</b></div><span>VIEW →</span></a>
-      <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#rookies"><div><small>ROOKIE WATCH</small><b>WEEK 4 BOARD</b></div><span>VIEW →</span></a>
-      <a class="nfl-v2-board-row live" href="#scoreboard"><div><small>MONDAY NIGHT</small><b>FALCONS AT SAINTS • LIVE</b></div><span>OPEN →</span></a>
-      <div class="nfl-v2-board-foot">SUNDAY IS LOCKED. MONDAY CLOSES THE WEEK.</div>`;
+    if(board)board.innerHTML=`<div class="nfl-v2-board-top"><span>THE 4DK BOARD</span><strong>WEEK 4 FINAL</strong></div>
+      <a class="nfl-v2-board-row live" href="nfl-week-4-sunday-night-update-2026.html"><div><small>ALL 16 GAMES</small><b>WEEK 4 FINAL PACKAGE</b></div><span>READ →</span></a>
+      <a class="nfl-v2-board-row" href="nfl-power-rankings-week4-2026.html"><div><small>POWER RANKINGS</small><b>FULL 1–32 BOARD</b></div><span>OPEN →</span></a>
+      <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#mvp"><div><small>MVP WATCH</small><b>PURDY HOLDS #1</b></div><span>VIEW →</span></a>
+      <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#rookies"><div><small>ROOKIE WATCH</small><b>WEEK 4 FINAL</b></div><span>VIEW →</span></a>
+      <a class="nfl-v2-board-row live" href="nfl-week5-preview-2026.html"><div><small>NEXT</small><b>WEEK 5 EARLY LOOK</b></div><span>OPEN →</span></a>
+      <div class="nfl-v2-board-foot">NO DUPLICATE BOARDS. ONE CANONICAL HOME FOR EACH FEATURE.</div>`;
 
     const ticker=document.querySelector('.nfl-ticker-track');
-    if(ticker) ticker.innerHTML=['49ERS 4–0 • 4DK #1','CHIEFS 4–0 • WALKER LEADS NFL IN RUSHING','VIKINGS 4–0','RAIDERS 3–1 • STILL REAL','PANTHERS 32, LIONS 26','BILLS FALL TO 3–1','CHARGERS 0–4','MNF LIVE: FALCONS AT SAINTS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
+    if(ticker)ticker.innerHTML=['WEEK 4 FINAL: ATLANTA 45, NEW ORLEANS 24','BIJAN 145 RUSH YDS • 2 TD','49ERS #1 • FULL 1–32 LIVE','PURDY #1 MVP WATCH','WEEK 5: 49ERS AT SEAHAWKS','SNF: RAVENS AT FALCONS','MNF: BILLS AT RAMS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
 
     const nav=document.querySelector('.nfl-v2-nav');
-    if(nav) nav.innerHTML=`<a class="active" href="#w4m-current">Week 4</a><a href="#scoreboard">Scores</a><a href="#w4m-stories">Storylines</a><a href="nfl-week-4-sunday-night-update-2026.html#power">Rankings</a><a href="nfl-week-4-sunday-night-update-2026.html#mvp">MVP</a><a href="nfl-week-4-sunday-night-update-2026.html#rookies">Rookies</a><a href="nfl-sunday-recaps.html">Sunday Recaps</a><a href="nfl-week3-hub-2026.html">Week 3 Archive</a>`;
+    if(nav)nav.innerHTML=`<a class="active" href="#w4final">Week 4 Final</a><a href="#scoreboard">Scores</a><a href="#w5next">Week 5</a><a href="nfl-power-rankings-week4-2026.html">Rankings</a><a href="nfl-week-4-sunday-night-update-2026.html#mvp">MVP</a><a href="nfl-week-4-sunday-night-update-2026.html#rookies">Rookies</a><a href="nfl-sunday-recaps.html">Sunday Recaps</a><a href="nfl-week3-hub-2026.html">Archives</a>`;
 
     const anchor=nav||document.getElementById('scoreboard');
-    const cur=section('w4m-current',anchor);
-    cur.innerHTML=`<div class="shell"><span class="w4mk">4DK NFL • CURRENT WEEK</span><h2>WEEK 4 <em>HAS SHAPE.</em></h2><p class="w4mp">Sunday is complete. Three teams are 4–0. San Francisco remains our No. 1. Kenneth Walker leads the league in rushing. Carolina found a real offensive identity. Buffalo took its first loss. The Chargers are winless. Monday night closes it.</p><div class="w4m-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 UPDATE →</a><a href="#scoreboard">MNF LIVE SCOREBOARD →</a><a href="nfl-sunday-recaps.html">SUNDAY RECAP ARCHIVE →</a><a href="nfl-week3-hub-2026.html">WEEK 3 ARCHIVE →</a></div></div>`;
+    const final=section('w4final',anchor);final.innerHTML=`<div class="shell"><span class="w4fk">WEEK 4 IS FINAL</span><h2>BIJAN CLOSED IT.<br><em>THE BOARD IS LOCKED.</em></h2><p class="w4fp">Atlanta ran for 205 yards and five touchdowns in New Orleans. Penix played clean football. Shough piled up late volume in a game the Saints never controlled. Week 4 is complete.</p><div class="w4f-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 FINAL →</a><a href="nfl-power-rankings-week4-2026.html">FULL 1–32 POWER RANKINGS →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a></div><div class="w4f-grid">${stories.slice(0,4).map(x=>`<a class="w4f-card" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
 
-    const st=section('w4m-stories',cur);
-    st.innerHTML=`<div class="shell"><span class="w4mk">8 STORIES SHAPING THE BOARD</span><h2>WHAT MATTERS <em>RIGHT NOW.</em></h2><div class="w4m-story-grid">${stories.map(x=>`<a class="w4m-story" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div><div class="w4m-canonical"><a href="nfl-week-4-sunday-night-update-2026.html#power"><small>CANONICAL WEEK 4 BOARD</small><b>Power Rankings →</b></a><a href="nfl-week-4-sunday-night-update-2026.html#mvp"><small>CANONICAL WEEK 4 BOARD</small><b>MVP Watch →</b></a><a href="nfl-week-4-sunday-night-update-2026.html#rookies"><small>CANONICAL WEEK 4 BOARD</small><b>Rookie Watch →</b></a></div></div>`;
+    const next=section('w5next',final);next.innerHTML=`<div class="shell"><span class="w4fk">WEEK 5 STARTS THURSDAY</span><h2>THE NEXT TESTS<br><em>ARE READY.</em></h2><p class="w4fp">49ers–Seahawks is our game of the week. Atlanta gets Baltimore on Sunday night. Buffalo has to answer in Los Angeles on Monday. Kansas City and Carolina are on bye.</p><div class="w4f-btn"><a href="nfl-week5-preview-2026.html">OPEN WEEK 5 EARLY LOOK →</a></div><div class="w4f-grid">${stories.slice(4).map(x=>`<a class="w4f-card" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
   }
 
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true}); else run();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();
   [100,350,800,1500,3000,5500,9000].forEach(ms=>setTimeout(run,ms));
-  let busy=false;
-  new MutationObserver(()=>{if(busy)return;busy=true;setTimeout(()=>{run();busy=false},90)}).observe(document.documentElement,{childList:true,subtree:true});
+  let busy=false;new MutationObserver(()=>{if(busy)return;busy=true;setTimeout(()=>{run();busy=false},90)}).observe(document.documentElement,{childList:true,subtree:true});
 })();
