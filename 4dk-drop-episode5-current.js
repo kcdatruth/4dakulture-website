@@ -6,7 +6,7 @@
   if(window.__fourdkDropEpisode5Current) return;
   window.__fourdkDropEpisode5Current=true;
 
-  const MARK='drop-episode5-current-v1';
+  const MARK='drop-episode5-current-v2';
   let timer=0;
 
   function updateSnowfall(){
@@ -108,6 +108,13 @@
     const s=document.createElement('style');
     s.id='fourdk-drop-ep5-css';
     s.textContent=`
+      #drop .drop-copy > .drop-read{
+        color:#fff!important;
+        display:inline-flex!important;
+        width:auto!important;
+        max-width:100%!important;
+        align-self:flex-start!important;
+      }
       @media(max-width:880px){
         #drop .weekly-format{grid-template-columns:1fr 1fr!important}
       }
