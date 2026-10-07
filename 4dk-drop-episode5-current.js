@@ -6,7 +6,7 @@
   if(window.__fourdkDropEpisode5Current) return;
   window.__fourdkDropEpisode5Current=true;
 
-  const MARK='drop-episode5-current-v2';
+  const MARK='drop-episode5-current-v3';
   let timer=0;
 
   function updateSnowfall(){
@@ -84,13 +84,19 @@
 
     if(!card) return;
     if(card.dataset.ep5===MARK) return;
+
     card.dataset.ep5=MARK;
     card.href='the-drop-episode-5.html';
 
     const media=card.querySelector('.home-latest-card-media');
     if(media){
-      media.classList.add('screen');
-      media.innerHTML='';
+      media.classList.remove('screen');
+      media.innerHTML='<img src="the-drop-episode-5-homecoming.png" alt="The Drop: A Snowfall Saga Episode 5 Homecoming — 4 Da Kulture feature art">';
+      const img=media.querySelector('img');
+      if(img){
+        img.style.objectFit='cover';
+        img.style.objectPosition='50% 28%';
+      }
     }
 
     const copy=card.querySelector('.home-latest-card-copy');
@@ -114,6 +120,11 @@
         width:auto!important;
         max-width:100%!important;
         align-self:flex-start!important;
+      }
+      .home-latest-card-media img{
+        width:100%!important;
+        height:100%!important;
+        object-fit:cover!important;
       }
       @media(max-width:880px){
         #drop .weekly-format{grid-template-columns:1fr 1fr!important}
