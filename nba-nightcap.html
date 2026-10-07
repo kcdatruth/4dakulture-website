@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4DK NBA Nightcap | Nightly NBA Recaps, Stats & Highlights</title>
+<meta name="description" content="4 Da Kulture's nightly NBA desk: full-slate recaps, Player of the Night, rookie performances, top stats, highlights and what matters next.">
+<link rel="canonical" href="https://4dakulturemedia.com/nba-nightcap.html">
+<link rel="stylesheet" href="styles.css">
+<style>
+:root{--bg:#07090b;--panel:#101419;--line:#30363b;--red:#ee4937;--gold:#d8b45d;--ink:#f5f0e8;--muted:#969da3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 34px));margin:auto}
+.head{position:sticky;top:0;z-index:20;background:#f4efe6;color:#111;border-bottom:1px solid #ddd6cc}.head .wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:1000;font-size:27px;letter-spacing:-.04em}.brand i{font-style:normal;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#ef4a38;color:#fff;margin-right:10px}.back{font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
+.hero{padding:64px 0 46px;background:radial-gradient(circle at 84% 15%,rgba(238,73,55,.23),transparent 25rem),radial-gradient(circle at 15% 85%,rgba(216,180,93,.10),transparent 20rem),#090b0e;border-bottom:1px solid var(--line)}
+.kicker{color:var(--red);font-size:10px;font-weight:1000;letter-spacing:.16em;text-transform:uppercase}.hero h1{margin:10px 0 17px;font:1000 clamp(54px,9vw,104px)/.82 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;letter-spacing:-.06em;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:850px;margin:0;color:#c4c8c5;font:18px/1.62 Georgia,serif}.cadence{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.cadence span{padding:9px 10px;border:1px solid #343a3f;background:#101318;color:#aeb4b7;font-size:8px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+.archive{padding:42px 0 80px}.archive-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.archive-head h2{margin:5px 0 0;font:1000 clamp(38px,6vw,64px)/.9 Impact,Arial Black,sans-serif;text-transform:uppercase}.archive-head p{max-width:480px;color:#858c91;font-size:12px;line-height:1.45}
+.grid{display:grid;grid-template-columns:1fr;gap:13px}.card{display:grid;grid-template-columns:160px 1fr;gap:22px;padding:22px;border:1px solid var(--line);background:var(--panel)}.card-date{display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid #2c3236;padding-right:20px}.card-date small{color:var(--red);font-size:8px;font-weight:1000;letter-spacing:.11em}.card-date b{font:1000 30px/.95 Impact,Arial Black,sans-serif;text-transform:uppercase}.card-copy small{color:var(--gold);font-size:8px;font-weight:1000;letter-spacing:.1em}.card-copy h3{margin:7px 0 9px;font:1000 clamp(28px,4vw,46px)/.95 Impact,Arial Black,sans-serif;text-transform:uppercase;letter-spacing:-.03em}.card-copy p{margin:0;color:#aeb5b9;font:14px/1.5 Georgia,serif}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.chips span{padding:7px 8px;border:1px solid #333a40;color:#9fa6aa;font-size:7px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.read{display:inline-block;margin-top:16px;color:#fff;font-size:9px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase}
+.empty{padding:25px;border:1px solid var(--line);background:var(--panel);color:#9ba2a7}
+.footer{padding:35px 0 70px;text-align:center;color:#767d82}
+@media(max-width:700px){.card{grid-template-columns:1fr}.card-date{border-right:0;border-bottom:1px solid #2c3236;padding:0 0 15px}.archive-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="head"><div class="wrap"><a class="brand" href="index.html"><i>4</i>DA KULTURE</a><a class="back" href="nba.html">← NBA DESK</a></div></header>
+<main>
+<section class="hero"><div class="wrap"><span class="kicker">4DK NBA • NIGHTLY DESK</span><h1>NBA<br><em>NIGHTCAP.</em></h1><p>Every night gets a permanent record: the full slate, the performances that mattered, Player of the Night, rookie standouts, top numbers, official highlights and what carries into tomorrow.</p><div class="cadence"><span>Full Slate Recap</span><span>Player of the Night</span><span>Rookie Spotlight</span><span>Top Stats</span><span>Highlights</span><span>Next Night</span></div></div></section>
+<section class="archive"><div class="wrap"><div class="archive-head"><div><span class="kicker">NEWEST FIRST</span><h2>THE NIGHTLY ARCHIVE.</h2></div><p>One page per slate. Nothing gets overwritten. The newest Nightcap stays on top while every previous night remains one click away.</p></div><div class="grid" data-nightcap-archive><div class="empty">Loading the Nightcap archive…</div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">4 DA KULTURE • NBA NIGHTCAP</div></footer>
+<script>
+(async()=>{
+ const box=document.querySelector('[data-nightcap-archive]');
+ try{
+  const r=await fetch('nba-nightcap-index.json',{cache:'no-store'}); const items=await r.json();
+  box.innerHTML=items.map(x=>`<a class="card" href="${x.href}"><div class="card-date"><small>${x.label}</small><b>${x.date}</b></div><div class="card-copy"><small>4DK NBA NIGHTCAP</small><h3>${x.title}</h3><p>${x.deck}</p><div class="chips"><span>${x.player}</span><span>${x.rookie}</span><span>GAME: ${x.game}</span></div><span class="read">READ THE NIGHTCAP →</span></div></a>`).join('');
+ }catch(e){box.innerHTML='<div class="empty">Nightcap archive temporarily unavailable.</div>'}
+})();
+</script>
+</body></html>
