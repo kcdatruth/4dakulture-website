@@ -8,7 +8,7 @@
     ['MNF','BIJAN RUNS NEW ORLEANS OUT THE BUILDING','145 yards, two touchdowns and a 45–24 Atlanta win.','nfl-week-4-sunday-night-update-2026.html'],
     ['#1','49ERS STAY ON TOP','San Francisco is 4–0 and keeps winning clean.','nfl-power-rankings-week4-2026.html'],
     ['MVP','PURDY HOLDS NO. 1','Mahomes and Kenneth Walker stay close; Bijan jumps into the top four.','nfl-week-4-sunday-night-update-2026.html#mvp'],
-    ['ROOKIES','RODRIGUEZ STILL LEADS','Monday night did not force a change at the top of Rookie Watch.','nfl-week-4-sunday-night-update-2026.html#rookies'],
+    ['RECEIPTS','CHECK THE PREDICTIONS','Every preseason call vs. four weeks of actual production.','nfl-prediction-checkpoint-week4-2026.html'],
     ['W5','49ERS AT SEAHAWKS','The No. 1 team gets a 3–1 division rival on the road.','nfl-week5-preview-2026.html'],
     ['SNF','RAVENS AT FALCONS','Atlanta’s two-game surge gets a real Baltimore measuring stick.','nfl-week5-preview-2026.html'],
     ['MNF','BILLS AT RAMS','Buffalo needs a response; the Rams just stole one in Philadelphia.','nfl-week5-preview-2026.html'],
@@ -30,7 +30,7 @@
   function run(){
     css();cleanup();
     const hero=document.querySelector('.nfl-v2-hero .nfl-v2-copy');
-    if(hero)hero.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 FINAL • WEEK 5 NEXT</div><h1>THE FIRST MONTH<br><em>IS IN THE BOOKS.</em></h1><p class="nfl-v2-deck">Atlanta closed Week 4 by running New Orleans out of the building. The 49ers, Chiefs and Vikings are 4–0. The full 1–32 ranking is locked. Week 5 starts Thursday.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week-4-sunday-night-update-2026.html">WEEK 4 FINAL</a><a class="nfl-v2-secondary" href="nfl-week5-preview-2026.html">WEEK 5 LOOKAHEAD</a></div>`;
+    if(hero)hero.innerHTML=`<div class="nfl-v2-kicker"><span>4DK NFL</span> • WEEK 4 FINAL • WEEK 5 NEXT</div><h1>THE FIRST MONTH<br><em>IS IN THE BOOKS.</em></h1><p class="nfl-v2-deck">Atlanta closed Week 4 by running New Orleans out of the building. The 49ers, Chiefs and Vikings are 4–0. The full 1–32 ranking is locked. Week 5 starts Thursday.</p><div class="nfl-v2-actions"><a class="nfl-v2-primary" href="nfl-week-4-sunday-night-update-2026.html">WEEK 4 FINAL</a><a class="nfl-v2-secondary" href="nfl-prediction-checkpoint-week4-2026.html">CHECK THE RECEIPTS</a></div>`;
 
     const board=document.querySelector('.nfl-v2-board');
     if(board)board.innerHTML=`<div class="nfl-v2-board-top"><span>THE 4DK BOARD</span><strong>WEEK 4 FINAL</strong></div>
@@ -38,17 +38,18 @@
       <a class="nfl-v2-board-row" href="nfl-power-rankings-week4-2026.html"><div><small>POWER RANKINGS</small><b>FULL 1–32 BOARD</b></div><span>OPEN →</span></a>
       <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#mvp"><div><small>MVP WATCH</small><b>PURDY HOLDS #1</b></div><span>VIEW →</span></a>
       <a class="nfl-v2-board-row" href="nfl-week-4-sunday-night-update-2026.html#rookies"><div><small>ROOKIE WATCH</small><b>WEEK 4 FINAL</b></div><span>VIEW →</span></a>
+      <a class="nfl-v2-board-row live" href="nfl-prediction-checkpoint-week4-2026.html"><div><small>NEW • PREDICTION CHECKPOINT</small><b>CHECK THE RECEIPTS</b></div><span>READ →</span></a>
       <a class="nfl-v2-board-row live" href="nfl-week5-preview-2026.html"><div><small>NEXT</small><b>WEEK 5 EARLY LOOK</b></div><span>OPEN →</span></a>
-      <div class="nfl-v2-board-foot">NO DUPLICATE BOARDS. ONE CANONICAL HOME FOR EACH FEATURE.</div>`;
+      <div class="nfl-v2-board-foot">ORIGINAL PICKS STAY LIVE. THE CHECKPOINT SHOWS WHAT CHANGED.</div>`;
 
     const ticker=document.querySelector('.nfl-ticker-track');
-    if(ticker)ticker.innerHTML=['WEEK 4 FINAL: ATLANTA 45, NEW ORLEANS 24','BIJAN 145 RUSH YDS • 2 TD','49ERS #1 • FULL 1–32 LIVE','PURDY #1 MVP WATCH','WEEK 5: 49ERS AT SEAHAWKS','SNF: RAVENS AT FALCONS','MNF: BILLS AT RAMS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
+    if(ticker)ticker.innerHTML=['WEEK 4 FINAL: ATLANTA 45, NEW ORLEANS 24','NEW: 4DK PREDICTION CHECKPOINT — CHECK THE RECEIPTS','49ERS #1 • FULL 1–32 LIVE','PURDY #1 MVP WATCH','WEEK 5: 49ERS AT SEAHAWKS','SNF: RAVENS AT FALCONS','MNF: BILLS AT RAMS'].map(x=>`<span><b>●</b> ${x}</span>`).join('');
 
     const nav=document.querySelector('.nfl-v2-nav');
-    if(nav)nav.innerHTML=`<a class="active" href="#w4final">Week 4 Final</a><a href="#scoreboard">Scores</a><a href="#w5next">Week 5</a><a href="nfl-power-rankings-week4-2026.html">Rankings</a><a href="nfl-week-4-sunday-night-update-2026.html#mvp">MVP</a><a href="nfl-week-4-sunday-night-update-2026.html#rookies">Rookies</a><a href="nfl-sunday-recaps.html">Sunday Recaps</a><a href="nfl-week3-hub-2026.html">Archives</a>`;
+    if(nav)nav.innerHTML=`<a class="active" href="#w4final">Week 4 Final</a><a href="#scoreboard">Scores</a><a href="nfl-prediction-checkpoint-week4-2026.html">Prediction Check</a><a href="#w5next">Week 5</a><a href="nfl-power-rankings-week4-2026.html">Rankings</a><a href="nfl-week-4-sunday-night-update-2026.html#mvp">MVP</a><a href="nfl-week-4-sunday-night-update-2026.html#rookies">Rookies</a><a href="nfl-sunday-recaps.html">Sunday Recaps</a><a href="nfl-week3-hub-2026.html">Archives</a>`;
 
     const anchor=nav||document.getElementById('scoreboard');
-    const final=section('w4final',anchor);final.innerHTML=`<div class="shell"><span class="w4fk">WEEK 4 IS FINAL</span><h2>BIJAN CLOSED IT.<br><em>THE BOARD IS LOCKED.</em></h2><p class="w4fp">Atlanta ran for 205 yards and five touchdowns in New Orleans. Penix played clean football. Shough piled up late volume in a game the Saints never controlled. Week 4 is complete.</p><div class="w4f-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 FINAL →</a><a href="nfl-power-rankings-week4-2026.html">FULL 1–32 POWER RANKINGS →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a></div><div class="w4f-grid">${stories.slice(0,4).map(x=>`<a class="w4f-card" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
+    const final=section('w4final',anchor);final.innerHTML=`<div class="shell"><span class="w4fk">WEEK 4 IS FINAL</span><h2>BIJAN CLOSED IT.<br><em>THE BOARD IS LOCKED.</em></h2><p class="w4fp">Atlanta ran for 205 yards and five touchdowns in New Orleans. Penix played clean football. Shough piled up late volume in a game the Saints never controlled. Week 4 is complete.</p><div class="w4f-btn"><a href="nfl-week-4-sunday-night-update-2026.html">FULL WEEK 4 FINAL →</a><a href="nfl-prediction-checkpoint-week4-2026.html">CHECK THE RECEIPTS →</a><a href="nfl-power-rankings-week4-2026.html">FULL 1–32 POWER RANKINGS →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a></div><div class="w4f-grid">${stories.slice(0,4).map(x=>`<a class="w4f-card" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
 
     const next=section('w5next',final);next.innerHTML=`<div class="shell"><span class="w4fk">WEEK 5 STARTS THURSDAY</span><h2>THE NEXT TESTS<br><em>ARE READY.</em></h2><p class="w4fp">49ers–Seahawks is our game of the week. Atlanta gets Baltimore on Sunday night. Buffalo has to answer in Los Angeles on Monday. Kansas City and Carolina are on bye.</p><div class="w4f-btn"><a href="nfl-week5-preview-2026.html">OPEN WEEK 5 EARLY LOOK →</a></div><div class="w4f-grid">${stories.slice(4).map(x=>`<a class="w4f-card" href="${x[3]}"><small>${x[0]}</small><b>${x[1]}</b><span>${x[2]}</span></a>`).join('')}</div></div>`;
   }
