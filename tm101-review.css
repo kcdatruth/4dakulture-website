@@ -24,3 +24,12 @@
 .tm101-final-line{padding:58px 0;background:#b9963e;color:#111}.tm101-final-line blockquote{max-width:980px;margin:0;font:italic 700 clamp(31px,4.6vw,58px)/1.13 Georgia,serif}.tm101-final-line p{margin:20px 0 0;font-size:9px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:950px){.tm101-hero-grid,.tm101-story-grid,.tm101-legacy-grid,.tm101-verdict-grid{grid-template-columns:1fr}.tm101-poster{max-width:620px;width:100%;margin:auto}.tm101-rail{position:static}.tm101-file-grid{grid-template-columns:repeat(2,1fr)}.tm101-file-grid div{border-bottom:1px solid #c4c9c6}.tm101-board-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.tm101-hero{padding-top:28px}.tm101-poster{min-height:440px}.tm101-giant{top:120px;font-size:180px}.tm101-poster-bottom b{font-size:28px}.tm101-hero h1{font-size:62px}.tm101-subhead{font-size:23px}.tm101-file-grid{grid-template-columns:1fr 1fr}.tm101-story,.tm101-track-review,.tm101-board,.tm101-legacy,.tm101-verdict{padding:46px 0}.tm101-prose p{font-size:17px}.tm101-section-head{grid-template-columns:1fr}.tm101-section-head h2{font-size:53px}.tm101-track{grid-template-columns:33px minmax(0,1fr) 54px;gap:10px}.tm101-track>b{font-size:25px}.tm101-track span{font-size:19px}.tm101-track p{font-size:12px}.tm101-track>strong{font-size:22px}.tm101-board-grid{grid-template-columns:1fr}.tm101-legacy h2,.tm101-verdict h2{font-size:56px}}
+
+
+/* USER-SUPPLIED TM101 ALBUM ART */
+.tm101-cover-art{min-height:0!important;padding:14px!important;margin:0;background:#080a0a!important;overflow:visible!important}
+.tm101-cover-art:before,.tm101-cover-art:after{display:none!important}
+.tm101-cover-art img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#111}
+.tm101-cover-art .tm101-issue{z-index:3;top:26px;left:0}
+.tm101-cover-art figcaption{margin:12px 2px 0;color:#9ea6a4;font-size:8px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
+@media(max-width:650px){.tm101-cover-art{min-height:0!important}.tm101-cover-art img{height:auto!important}}
