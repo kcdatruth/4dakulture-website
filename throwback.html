@@ -3,533 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>4DK Throwback | Sports • Hip-Hop • TV • Culture</title>
-<meta name="description" content="4DK Throwback revisits old-school hoops, classic hip-hop, vintage TV, games, style and moments that still move the culture.">
+<title>4DK Throwback | The Digital Museum of Sports, Hip-Hop & Culture</title>
+<meta name="description" content="4DK Throwback is the digital museum for classic NBA, NFL, hip-hop, film, television and the eras that shaped the culture.">
 <link rel="canonical" href="https://4dakulturemedia.com/throwback.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="4DK Throwback">
-<meta property="og:description" content="Past. Present. Culture always. The archive for old-school hoops, classic hip-hop, vintage TV and moments that still hit.">
+<meta property="og:title" content="4DK Throwback | The Digital Museum">
+<meta property="og:description" content="Past. Present. Kulture. Browse the archive by era, series and story.">
 <meta property="og:url" content="https://4dakulturemedia.com/throwback.html">
 <meta property="og:image" content="https://4dakulturemedia.com/throwback-archive-cover.png">
 <meta name="theme-color" content="#11100f">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="throwback.css">
-
-<style>
-/* 4DK Throwback content-hub enhancement — additive, Sep 2026 */
-.tb-hub-section{padding:44px 0;background:#f2eee5;border-top:1px solid #d4cec2;border-bottom:1px solid #d4cec2;color:#151515}
-.tb-hub-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:22px}
-.tb-hub-kicker{display:block;color:#e84732;font-size:11px;font-weight:1000;letter-spacing:.18em;text-transform:uppercase;margin-bottom:7px}
-.tb-hub-head h2{margin:0;font-size:clamp(32px,5vw,58px);line-height:.92;letter-spacing:-.045em;text-transform:uppercase}
-.tb-hub-head p{max-width:560px;margin:0;color:#726d64;font:16px/1.55 Georgia,'Times New Roman',serif}
-.tb-live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.tb-live-card{display:grid;grid-template-columns:138px 1fr;min-height:180px;background:#fffdf8;border:1px solid #d8d1c6;text-decoration:none;color:#151515;overflow:hidden;transition:transform .16s ease,border-color .16s ease}
-.tb-live-card:hover{transform:translateY(-2px);border-color:#151515}
-.tb-live-art{display:flex;align-items:flex-end;padding:15px;background:linear-gradient(160deg,#171717,#2a2520);color:#fff;position:relative;overflow:hidden}
-.tb-live-art:after{content:attr(data-code);position:absolute;right:-7px;bottom:-18px;font-size:76px;line-height:1;font-weight:1000;opacity:.09}
-.tb-live-art b{font-size:12px;line-height:1.1;letter-spacing:.08em;text-transform:uppercase;position:relative;z-index:1}
-.tb-live-copy{padding:18px;display:flex;flex-direction:column}
-.tb-live-copy small{font-size:9px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase;color:#e84732}
-.tb-live-copy h3{font:700 24px/1.02 Georgia,'Times New Roman',serif;margin:8px 0}
-.tb-live-copy p{font:14px/1.45 Georgia,'Times New Roman',serif;color:#69645c;margin:0 0 12px}
-.tb-live-copy strong{margin-top:auto;font-size:10px;letter-spacing:.09em;text-transform:uppercase}
-.tb-build-section{padding:50px 0;background:#111;color:#f8f4eb;border-bottom:1px solid #34312c}
-.tb-build-section .tb-hub-head p{color:#aaa49a}.tb-build-section .tb-hub-kicker{color:#ff6c58}
-.tb-build-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
-.tb-build-card{border:1px solid #37342f;background:#171717;padding:22px;min-height:218px;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.tb-build-card:first-child{min-height:300px;background:radial-gradient(circle at 80% 10%,rgba(93,63,141,.22),transparent 40%),#171717}
-.tb-build-no{font-size:58px;font-weight:1000;line-height:.8;color:#2e2b28;position:absolute;right:14px;top:14px}
-.tb-build-card small{font-size:9px;font-weight:1000;letter-spacing:.14em;text-transform:uppercase;color:#ff6c58;position:relative;z-index:1}
-.tb-build-card h3{font:700 clamp(25px,3vw,42px)/.98 Georgia,'Times New Roman',serif;margin:12px 0 10px;max-width:480px;position:relative;z-index:1}
-.tb-build-card p{font:14px/1.5 Georgia,'Times New Roman',serif;color:#b9b3aa;margin:0 0 16px;position:relative;z-index:1}
-.tb-build-card b{margin-top:auto;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#f1c268;position:relative;z-index:1}
-.tb-build-card .tb-questions{display:grid;gap:7px;margin-top:8px;color:#ccc5ba;font-size:12px;line-height:1.35}
-.tb-build-card .tb-questions span:before{content:'— ';color:#ff6c58}
-.tb-status-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.tb-status{border:1px solid #48433d;border-radius:999px;padding:7px 10px;font-size:9px;font-weight:1000;letter-spacing:.08em;text-transform:uppercase;color:#ccc5ba}
-.tb-status.ready{border-color:#e84732;color:#ff8a76}
-.tb-weekly-link{color:inherit;text-decoration:none;display:block;height:100%}
-.tb-weekly-link .weekly-card{height:100%}
-.tb-archive-note{padding:20px 0;background:#e9e3d8;border-bottom:1px solid #cfc7ba}
-.tb-archive-note .shell{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.tb-archive-note p{margin:0;color:#625e57;font:14px/1.5 Georgia,'Times New Roman',serif}
-.tb-archive-note strong{font-size:11px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-.archive-tabs .shell{scrollbar-width:none}.archive-tabs .shell::-webkit-scrollbar{display:none}
-@media(max-width:860px){
-  .archive-cover-section{padding-top:18px!important;padding-bottom:18px!important}
-  .archive-cover{margin-top:10px!important;margin-bottom:10px!important}
-  .archive-cover img{display:block;width:94%!important;margin:0 auto!important}
-  .tb-hub-head{align-items:flex-start;flex-direction:column}
-  .tb-live-grid{grid-template-columns:1fr}
-  .tb-build-grid{grid-template-columns:1fr 1fr}
-  .tb-build-card:first-child{grid-column:1/-1}
-}
-@media(max-width:560px){
-  .tb-hub-section,.tb-build-section{padding:34px 0}
-  .tb-live-card{grid-template-columns:105px 1fr;min-height:155px}
-  .tb-live-copy{padding:14px}.tb-live-copy h3{font-size:20px}.tb-live-copy p{font-size:12.5px}
-  .tb-build-grid{grid-template-columns:1fr}.tb-build-card:first-child{grid-column:auto;min-height:260px}
-  .tb-archive-note .shell{align-items:flex-start;flex-direction:column}
-}
-</style>
-
 </head>
-
 <body class="throwback-page">
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="topline throwback-topline">
-  <div class="shell">
-    <span><strong>4DK</strong> Past • Present • Culture Always</span>
-    <span>The archive never closes.</span>
-  </div>
-</div>
+<div class="topline throwback-topline"><div class="shell"><span><strong>4DK</strong> PAST • PRESENT • KULTURE</span><span>THE ARCHIVE NEVER CLOSES.</span></div></div>
 
 <header class="masthead throwback-masthead">
   <div class="shell masthead-inner">
-    <nav class="nav">
-      <a href="nba.html">NBA</a>
-      <a href="nfl.html">NFL</a>
-      <a href="movies.html">TV & Movies</a>
-      <a href="magazine.html">Magazine</a>
-    </nav>
-
-    <a class="brand" href="index.html">
-      <span class="brand-mark">4</span> DA KULTURE
-    </a>
-
-    <nav class="nav right">
-      <a class="active" href="throwback.html">Throwback</a>
-      <a href="hiphop.html">Hip-Hop</a>
-      <a href="podcast.html">Podcast</a>
-      <a href="about.html">About</a>
-    </nav>
-
+    <nav class="nav"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="movies.html">TV & Movies</a><a href="magazine.html">Magazine</a></nav>
+    <a class="brand" href="index.html"><span class="brand-mark">4</span> DA KULTURE</a>
+    <nav class="nav right"><a class="active" href="throwback.html">Throwback</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
-
-  <nav class="mobile-nav" id="mobileNav">
-    <a href="nba.html">NBA</a>
-    <a href="nfl.html">NFL</a>
-    <a href="movies.html">TV & Movies</a>
-    <a class="active" href="throwback.html">Throwback</a>
-    <a href="magazine.html">Magazine</a>
-    <a href="hiphop.html">Hip-Hop</a>
-    <a href="podcast.html">Podcast</a>
-    <a href="about.html">About</a>
-  </nav>
+  <nav class="mobile-nav" id="mobileNav"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="movies.html">TV & Movies</a><a class="active" href="throwback.html">Throwback</a><a href="magazine.html">Magazine</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
 </header>
 
 <main id="main">
+<section class="tb-cover"><div class="shell">
+  <div class="tb-cover-bar"><span>4DK ARCHIVE • ISSUE 001</span><a href="#featured">ENTER THE MUSEUM ↓</a></div>
+  <figure><img src="throwback-archive-cover.png" alt="4DK Throwback archive cover"></figure>
+  <div class="tb-cover-foot"><span>SPORTS • HIP-HOP • SCREEN • CULTURE</span><span>PAST / PRESENT / KULTURE</span></div>
+</div></section>
 
-<section class="archive-cover-section">
-  <div class="shell">
-    <div class="archive-cover-top">
-      <span>4DK ARCHIVE • ISSUE 001</span>
-      <a href="#archive">ENTER THE ARCHIVE ↓</a>
-    </div>
+<section class="tb-manifesto"><div class="shell tb-manifesto-grid">
+  <div><span class="tb-eyebrow">4DK THROWBACK</span><h1>THE DIGITAL<br><em>MUSEUM.</em></h1></div>
+  <div class="tb-manifesto-copy">
+    <p class="drop">Throwback is not where old stories go to die. It is where the culture gets put back in context.</p>
+    <p>Classic seasons. Dynasty years. Draft nights. MVP runs. Albums that changed rap. Movies that became language. Players the internet remembers wrong. Eras that still shape the arguments we have now.</p>
+    <p>Everything here is organized by <strong>era, series and story</strong> — so the archive feels like something you can actually explore.</p>
+    <div class="tb-statline"><b>29</b><span>LIVE LEGACY FILES<br>CONNECTED TO THE ARCHIVE</span></div>
+  </div>
+</div></section>
 
-    <figure class="archive-cover">
-      <img src="throwback-archive-cover.png" alt="4DK Throwback archive artwork with a VHS and classic sports, hip-hop and television nostalgia">
-    </figure>
+<nav class="tb-jump" aria-label="Throwback archive navigation"><div class="shell">
+  <a href="#featured">Featured</a><a href="#eras">Browse By Era</a><a href="#vault">The Vault</a><a href="#albums">Classic Albums</a><a href="#spotlight">2001 Spotlight</a><a href="#screen">4DK Rewind</a>
+</div></nav>
 
-    <div class="archive-cover-foot">
-      <span>PAST / PRESENT / KULTURE</span>
-      <span>EST. 2026</span>
+<section class="tb-section tb-featured" id="featured"><div class="shell">
+  <div class="tb-section-head"><div><span class="tb-eyebrow">FEATURED FROM THE ARCHIVE</span><h2>START HERE.</h2></div><p>One major story leads the museum. Everything underneath it opens another door into the archive.</p></div>
+
+  <a class="tb-lead" href="when-kobe-became-kobe.html">
+    <div class="tb-lead-image"><img src="kobe-champion-archive.jpg" alt="Kobe Bryant championship archive image"><span>2000 • MAMBA FILES SPECIAL</span></div>
+    <div class="tb-lead-copy"><small>FEATURED THROWBACK</small><h3>When Kobe Became Kobe</h3><p>Game 4 in Indiana. The first ring. The night the conversation shifted from potential to proof.</p><strong>READ THE FEATURE →</strong></div>
+  </a>
+
+  <div class="tb-feature-grid">
+    <a class="tb-feature-card" href="the-answer-files-004-it-was-his-time.html"><img src="iverson-mvp-trophy.jpg" alt=""><span>2001 • THE ANSWER FILES</span><h3>It Was His Time.</h3><p>Iverson’s MVP season, the Sixers’ run and the year the league had to move around him.</p></a>
+    <a class="tb-feature-card" href="me7o-file-006-2012-13-king-of-new-york.html"><img src="me7o-knicks-7.jpg" alt=""><span>2012–13 • ME7O FILES</span><h3>King of New York.</h3><p>Melo’s scoring title, 54 wins and the last great Knicks season before the drought.</p></a>
+    <a class="tb-feature-card" href="mamba-file-007-no-5-had-to-go-through-boston.html"><img src="mamba-file-007-game7-celebration.jpg" alt=""><span>2010 • MAMBA FILES</span><h3>No. 5 Had To Go Through Boston.</h3><p>The Game 7 fight, the fifth ring and why the ugliest win of the run meant so much.</p></a>
+  </div>
+</div></section>
+
+<section class="tb-section tb-era-browser" id="eras"><div class="shell">
+  <div class="tb-section-head inverse"><div><span class="tb-eyebrow">BROWSE BY ERA</span><h2>PICK A TIME.<br>OPEN THE FILE.</h2></div><p>Sports and hip-hop belong on the same timeline. Browse the archive by the years that shaped the culture.</p></div>
+  <div class="tb-era-tabs"><a href="#era-90s">90s</a><a href="#era-0004">2000–04</a><a href="#era-0509">2005–09</a><a href="#era-1014">2010–14</a><a href="#era-1519">2015–19</a><a href="#era-now">Legacy / Now</a></div>
+
+  <div class="tb-era-block" id="era-90s"><div class="tb-era-title"><b>90s</b><span>THE ARRIVALS</span></div><div class="tb-era-grid">
+    <a href="mamba-file-002-1996-draft.html"><small>1996 • NBA</small><strong>The 1996 Draft Class</strong><p>Kobe at 13. Iverson at 1. Nash, Ray, Marbury and a class that changed the league.</p></a>
+    <a href="the-answer-files-000-georgetown-before-the-answer.html"><small>GEORGETOWN • AI</small><strong>Before The Answer</strong><p>Before Philadelphia, before the sleeve, before the MVP — Iverson became a phenomenon in college.</p></a>
+    <a href="vick-file-001-virginia-tech.html"><small>1999 • VICK FILES</small><strong>Virginia Tech Michael Vick</strong><p>The arm, the speed and the college version that made the future of quarterback play feel different.</p></a>
+  </div></div>
+
+  <div class="tb-era-block" id="era-0004"><div class="tb-era-title"><b>2000–04</b><span>TAKEOVER YEARS</span></div><div class="tb-era-grid">
+    <a href="when-kobe-became-kobe.html"><small>2000 • NBA</small><strong>When Kobe Became Kobe</strong><p>Game 4 in Indiana and the first championship proof.</p></a>
+    <a href="the-answer-files-004-it-was-his-time.html"><small>2001 • NBA</small><strong>Iverson: It Was His Time</strong><p>The MVP, the Finals run and the season that became his defining peak.</p></a>
+    <a href="hiphop-jay-z-blueprint-25-years-later.html"><small>2001 • HIP-HOP</small><strong>The Blueprint</strong><p>Jay-Z, soul samples and one of the defining rap albums of the century.</p></a>
+    <a href="me7o-file-001-syracuse-one-year-one-title.html"><small>2003 • COLLEGE</small><strong>One Year. One Title.</strong><p>Melo’s Syracuse season went from freshman hype to championship history.</p></a>
+  </div></div>
+
+  <div class="tb-era-block" id="era-0509"><div class="tb-era-title"><b>2005–09</b><span>PEAK YEARS</span></div><div class="tb-era-grid">
+    <a href="mamba-file-001-kobe-2005-06.html"><small>2005–06 • NBA</small><strong>The Season Kobe Broke The Scale</strong><p>35.4 a night, 81 points and a scoring season that still feels unreal.</p></a>
+    <a href="tha-carter-ii-when-wayne-became-wayne.html"><small>2005 • HIP-HOP</small><strong>Tha Carter II</strong><p>The album at the center of Wayne’s rise from star to best-rapper-alive conversation.</p></a>
+    <a href="mamba-file-006-the-job-wasnt-finished.html"><small>2008–09 • NBA</small><strong>The Job Wasn’t Finished</strong><p>Kobe, Pau, Denver, Orlando and the title that validated the post-Shaq era.</p></a>
+    <a href="me7o-file-004-2009-the-closest-he-got.html"><small>2009 • NBA</small><strong>The Closest Melo Got</strong><p>Denver’s conference-finals run and the version of Melo that came closest to the Finals.</p></a>
+  </div></div>
+
+  <div class="tb-era-block" id="era-1014"><div class="tb-era-title"><b>2010–14</b><span>LEGACY PRESSURE</span></div><div class="tb-era-grid">
+    <a href="mamba-file-007-no-5-had-to-go-through-boston.html"><small>2010 • NBA</small><strong>No. 5 Had To Go Through Boston</strong><p>The fifth ring had to come through the rival that denied Kobe two years earlier.</p></a>
+    <a href="me7o-file-005-the-new-york-years.html"><small>2011–17 • NBA</small><strong>The New York Years</strong><p>Melo returned home to become the face of Madison Square Garden.</p></a>
+    <a href="me7o-file-006-2012-13-king-of-new-york.html"><small>2012–13 • NBA</small><strong>King of New York</strong><p>The scoring title, 54 wins and Melo at the center of the basketball world in New York.</p></a>
+  </div></div>
+
+  <div class="tb-era-block" id="era-1519"><div class="tb-era-title"><b>2015–19</b><span>THE TURN</span></div><div class="tb-era-grid">
+    <a href="me7o-file-007-melo-vs-the-era.html"><small>ME7O FILES</small><strong>Melo vs. The Era</strong><p>How the league changed around one of the defining scorers of the previous generation.</p></a>
+    <a href="me7o-file-008-olympic-melo.html"><small>USA BASKETBALL</small><strong>Olympic Melo</strong><p>The international version of Carmelo became its own basketball identity.</p></a>
+    <a href="me7o-file-009-the-fall.html"><small>LATE 2010s</small><strong>The Fall</strong><p>Houston, the league’s changing priorities and the moment a Hall of Famer was nearly pushed out.</p></a>
+  </div></div>
+
+  <div class="tb-era-block" id="era-now"><div class="tb-era-title"><b>NOW</b><span>LEGACY FILES</span></div><div class="tb-era-grid">
+    <a href="me7o-file-010-the-comeback.html"><small>ME7O FILES</small><strong>The Comeback</strong><p>Portland, acceptance, adjustment and the second life of Carmelo Anthony’s career.</p></a>
+    <a href="me7o-file-011-the-legacy.html"><small>ME7O FILES</small><strong>The Legacy</strong><p>What survives after the arguments about rings, style and era finally cool down.</p></a>
+    <a href="the-answer-files-001-iverson-is-the-kulture.html"><small>THE ANSWER FILES</small><strong>Iverson Is The Kulture</strong><p>The influence went far beyond points and playoff runs. The league still looks like AI helped shape it.</p></a>
+  </div></div>
+</div></section>
+
+<section class="tb-section tb-vault" id="vault"><div class="shell">
+  <div class="tb-section-head"><div><span class="tb-eyebrow">THE VAULT</span><h2>THE FRANCHISES.</h2></div><p>These are permanent homes — not one-off articles. Open a file and keep going.</p></div>
+  <div class="tb-series-grid">
+    <a href="mamba-files.html"><span>07 FILES</span><b>MAMBA<br>FILES</b><p>Kobe’s career, season by season, turning point by turning point.</p><strong>ENTER THE SERIES →</strong></a>
+    <a href="the-answer-files.html"><span>06 FILES</span><b>THE ANSWER<br>FILES</b><p>Iverson before Philly, his rise, his peak and the culture he changed.</p><strong>ENTER THE SERIES →</strong></a>
+    <a href="me7o-files.html"><span>11 FILES</span><b>ME7O<br>FILES</b><p>Syracuse to Denver to New York, the fall, comeback and legacy.</p><strong>ENTER THE SERIES →</strong></a>
+    <a href="vick-files.html"><span>VOLUME 001</span><b>VICK<br>FILES</b><p>The electric quarterback story starts at Virginia Tech.</p><strong>ENTER THE SERIES →</strong></a>
+    <a href="classic-albums.html"><span>MUSIC ARCHIVE</span><b>CLASSIC<br>ALBUMS</b><p>Track by track. Best beat. Best verse. Legacy. No nostalgia pass.</p><strong>ENTER THE SERIES →</strong></a>
+    <a href="4dk-rewind.html"><span>SCREEN ARCHIVE</span><b>4DK<br>REWIND</b><p>Classic movies and television with context, soundtracks and legacy.</p><strong>ENTER THE SERIES →</strong></a>
+  </div>
+</div></section>
+
+<section class="tb-section tb-albums" id="albums"><div class="shell">
+  <div class="tb-section-head inverse"><div><span class="tb-eyebrow">CLASSIC ALBUMS REVISITED</span><h2>THE MUSIC SHELF.</h2></div><p>Three live deep dives already give the Throwback archive a real hip-hop spine.</p></div>
+  <div class="tb-album-grid">
+    <a href="hiphop-dr-dre-2001-revisited.html"><img src="dr-dre-2001-feature.png" alt=""><div><small>1999</small><h3>Dr. Dre — 2001</h3><p>West Coast cinema, elite production and a record that still sounds expensive.</p><strong>READ →</strong></div></a>
+    <a href="hiphop-jay-z-blueprint-25-years-later.html"><img src="blueprint-feature.png" alt=""><div><small>2001</small><h3>Jay-Z — The Blueprint</h3><p>Twenty-five years later, the soul samples and bars still define an era.</p><strong>READ →</strong></div></a>
+    <a href="tha-carter-ii-when-wayne-became-wayne.html"><img src="tha-carter-ii-feature.png" alt=""><div><small>2005</small><h3>Lil Wayne — Tha Carter II</h3><p>The album where Wayne’s climb toward the top became impossible to ignore.</p><strong>READ →</strong></div></a>
+  </div>
+</div></section>
+
+<section class="tb-section tb-spotlight" id="spotlight"><div class="shell">
+  <div class="tb-spotlight-head"><span>YEAR SPOTLIGHT • 2001</span><b>01</b></div>
+  <div class="tb-spotlight-grid">
+    <div class="tb-spotlight-copy"><h2>AI.<br>SHAQ + KOBE.<br><em>THE BLUEPRINT.</em></h2><p>This is the idea behind the new Throwback section in one year: sports and hip-hop on the same cultural timeline.</p></div>
+    <div class="tb-spotlight-links">
+      <a href="the-answer-files-004-it-was-his-time.html"><small>NBA</small><strong>Iverson Wins MVP</strong><span>OPEN FILE →</span></a>
+      <a href="mamba-file-003-shaq-kobe-era.html"><small>NBA</small><strong>Shaq + Kobe Dynasty Era</strong><span>OPEN FILE →</span></a>
+      <a href="hiphop-jay-z-blueprint-25-years-later.html"><small>HIP-HOP</small><strong>The Blueprint</strong><span>OPEN FILE →</span></a>
     </div>
   </div>
-</section>
+</div></section>
 
-<nav class="archive-tabs" aria-label="Throwback categories">
-  <div class="shell">
-    <a href="mamba-files.html">Mamba Files</a>
-    <a href="#live-archive">NBA Flashback</a>
-    <a href="#build-queue">Hip-Hop Classics</a>
-    <a href="classic-albums.html">Classic Albums</a>
-    <a href="#build-queue">TV Time Capsule</a>
-    <a href="#iconic-moments">Iconic Moments</a>
-    <a href="#vault">From the Vault</a>
-  </div>
-</nav>
-
-<section class="archive-intro" id="archive">
-  <div class="shell archive-intro-grid">
-    <div class="archive-manifesto">
-      <span class="archive-eyebrow">4DK THROWBACK</span>
-      <h1>CULTURE<br>NEVER<br>FORGETS.</h1>
-    </div>
-
-    <div class="archive-copy">
-      <p class="drop">Throwback isn't just nostalgia. It's remembering why something mattered in the first place.</p>
-      <p>Old NBA seasons. Mixtape eras. Classic TV. Video games. Fashion. Soundtracks. Sports moments. Neighborhood memories. The stuff that helped shape how we talk, dress, listen, watch and argue today.</p>
-      <p>This is where 4DK puts the past back in context.</p>
-      <div class="archive-pull">Not everything old is classic. But the classics never really leave.</div>
-    </div>
-  </div>
-</section>
-
-<section class="tb-hub-section" id="live-archive" aria-label="Live in the 4DK Throwback archive">
-  <div class="shell">
-    <div class="tb-hub-head">
-      <div><span class="tb-hub-kicker">LIVE IN THE ARCHIVE</span><h2>START WITH WHAT'S ALREADY BUILT.</h2></div>
-      <p>The cover stays as the visual identity. Under it, the archive becomes a real content hub — live stories first, future features right behind them.</p>
-    </div>
-    <div class="tb-live-grid">
-      <a class="tb-live-card" href="when-kobe-became-kobe.html">
-        <div class="tb-live-art" data-code="00"><b>MAMBA FILES<br>SPECIAL</b></div>
-        <div class="tb-live-copy"><small>Kobe • New Feature • Live</small><h3>When Kobe Became Kobe</h3><p>Game 4 in Indiana, the first ring and the moment potential became proof.</p><strong>Read the feature →</strong></div>
-      </a>
-      <a class="tb-live-card" href="mamba-file-002-1996-draft.html">
-        <div class="tb-live-art" data-code="96"><b>MAMBA FILES<br>FILE 002</b></div>
-        <div class="tb-live-copy"><small>Basketball History • Live</small><h3>The 1996 NBA Draft: The Class That Changed Everything</h3><p>Kobe at 13. Iverson at 1. Nash, Ray, Marbury and one of the deepest draft classes ever.</p><strong>Read the file →</strong></div>
-      </a>
-      <a class="tb-live-card" href="mamba-file-001-kobe-2005-06.html">
-        <div class="tb-live-art" data-code="81"><b>MAMBA FILES<br>FILE 001</b></div>
-        <div class="tb-live-copy"><small>Kobe • Live</small><h3>2005–06 Kobe: The Season He Broke the Scale</h3><p>35.4 a night, 81 points and a season that pushed shot-making and volume into another category.</p><strong>Read the feature →</strong></div>
-      </a>
-      <a class="tb-live-card" href="classic-albums.html">
-        <div class="tb-live-art" data-code="LP"><b>CLASSIC ALBUMS<br>REVISITED</b></div>
-        <div class="tb-live-copy"><small>Music History • Live</small><h3>Classic Albums Revisited</h3><p>The Blueprint, 2001, Brown Sugar, Tha Carter II and the growing track-by-track archive.</p><strong>Enter the series →</strong></div>
-      </a>
-      <a class="tb-live-card" href="4dk-rewind.html">
-        <div class="tb-live-art" data-code="RW"><b>4DK REWIND<br>SCREEN</b></div>
-        <div class="tb-live-copy"><small>TV + Film • Live</small><h3>4DK Rewind</h3><p>Movies, television and culture moments that deserve more than a quick nostalgia post.</p><strong>Enter Rewind →</strong></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="tb-build-section" id="build-queue" aria-label="4DK Throwback build queue">
-  <div class="shell">
-    <div class="tb-hub-head">
-      <div><span class="tb-hub-kicker">THE BUILD QUEUE</span><h2>THESE ARE THE NEXT STORIES.</h2></div>
-      <p>Instead of letting the magazine art pretend these are already published, the page now makes the pipeline clear. We can build these one at a time and turn each card live when the story is finished.</p>
-    </div>
-    <div class="tb-build-grid">
-      <article class="tb-build-card">
-        <div class="tb-build-no">01</div><small>CULTURE CLASSIC • NEXT BUILD</small>
-        <h3>The 106 &amp; Park Era</h3><p>Countdowns, Freestyle Friday, videos, fashion, interviews and the after-school ritual that gave hip-hop television a daily home.</p>
-        <div class="tb-status-row"><span class="tb-status ready">Ready to build</span><span class="tb-status">Music + culture</span></div><b>NEXT UP →</b>
-      </article>
-      <article class="tb-build-card">
-        <div class="tb-build-no">02</div><small>TV TIME CAPSULE</small>
-        <h3>Sunday Night Nostalgia</h3><p>Fresh Prince, NBA on NBC, appointment television and what it felt like when everybody seemed to be watching the same thing.</p>
-        <div class="tb-status-row"><span class="tb-status ready">Queued</span><span class="tb-status">TV + sports</span></div><b>IN THE QUEUE →</b>
-      </article>
-      <article class="tb-build-card">
-        <div class="tb-build-no">03</div><small>MAMBA FILES • DYNASTY ERA</small>
-        <h3>Shaq + Kobe: The Three-Peat Years</h3><p>Dominance, tension, trust, big moments and how two different superstars built one of the defining runs of the era.</p>
-        <div class="tb-status-row"><span class="tb-status ready">Queued</span><span class="tb-status">Basketball history</span></div><b>IN THE QUEUE →</b>
-      </article>
-    </div>
-  </div>
-</section>
-
-<div class="tb-archive-note"><div class="shell"><p><strong>HOW THIS WORKS:</strong> the cover is the magazine front. The sections below it are the actual archive. Every time we finish a story, it moves from the Build Queue into Live in the Archive.</p><strong>PAST / PRESENT / KULTURE</strong></div></div>
-
-<section class="archive-section feature-archive" id="nba-flashback">
-  <div class="shell">
-    <div class="archive-section-head">
-      <div>
-        <span class="archive-eyebrow">FROM THE ARCHIVE</span>
-        <h2>THROWBACK CONCEPT BOARD.</h2>
-      </div>
-      <p>The original concepts stay here as part of the archive blueprint. As we finish them, each one graduates into the live shelf above.</p>
-    </div>
-
-    <a class="archive-lead" href="when-kobe-became-kobe.html" style="color:inherit;text-decoration:none">
-      <div class="archive-lead-art">
-        <span>NBA FLASHBACK • PUBLISHED</span>
-        <div class="year-stamp">00</div>
-        <strong>WHEN KOBE<br>BECAME KOBE</strong>
-        <small>GAME 4 • FIRST RING • SUPERSTAR ARRIVAL</small>
-      </div>
-
-      <div class="archive-lead-copy">
-        <span>NEW 4DK FEATURE</span>
-        <h3>When Kobe Became Kobe</h3>
-        <p>The talent came first. The ring changed the way he was seen. Game 4 in Indianapolis is where 4DK draws the line.</p>
-        <b>READ THE FEATURE →</b>
-      </div>
-    </a>
-
-    <div class="archive-story-grid">
-      <article class="archive-story-card">
-        <div class="story-tape nba">
-          <span>2000–02</span>
-          <strong>SHAQ<br>+ KOBE</strong>
-          <small>THE THREE-PEAT YEARS</small>
-        </div>
-        <div>
-          <span>NBA FLASHBACK</span>
-          <h3>Dominance, Brotherhood &amp; The Dynasty</h3>
-          <p>The Lakers that felt inevitable — until suddenly they weren't.</p>
-        </div>
-      </article>
-
-      <article class="archive-story-card" id="hiphop-classics">
-        <div class="story-tape music">
-          <span>2000s</span>
-          <strong>106<br>&amp; PARK</strong>
-          <small>COUNTDOWN GENERATION</small>
-        </div>
-        <div>
-          <span>CULTURE CLASSIC</span>
-          <h3>The 106 &amp; Park Era</h3>
-          <p>When music television, fashion, videos and after-school culture all lived in the same room.</p>
-        </div>
-      </article>
-
-      <article class="archive-story-card" id="tv-time-capsule">
-        <div class="story-tape tv">
-          <span>90s</span>
-          <strong>SUNDAY<br>NIGHT</strong>
-          <small>TV NOSTALGIA</small>
-        </div>
-        <div>
-          <span>TV TIME CAPSULE</span>
-          <h3>When Everybody Watched the Same Thing</h3>
-          <p>Fresh Prince, NBA on NBC, appointment television and the feeling of a shared night.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-<section class="archive-section feature-archive" id="classic-albums">
-  <div class="shell">
-    <div class="archive-section-head">
-      <div>
-        <span class="archive-eyebrow">4DK ORIGINAL SERIES</span>
-        <h2>CLASSIC ALBUMS<br>REVISITED.</h2>
-      </div>
-      <p>Track by track. Best beat. Best verse. Best feature. Top five. Skips. Legacy. Final grade.</p>
-    </div>
-
-    <a class="archive-lead" href="classic-albums.html" style="color:inherit;text-decoration:none">
-      <div class="archive-lead-art">
-        <span>NEXT REVIEW • SEPTEMBER 11</span>
-        <div class="year-stamp">01</div>
-        <strong>THE<br>BLUEPRINT</strong>
-        <small>JAY-Z • 25 YEARS LATER</small>
-      </div>
-
-      <div class="archive-lead-copy">
-        <span>CLASSIC ALBUMS REVISITED</span>
-        <h3>We’re Going Back Track by Track</h3>
-        <p>A permanent 4DK Throwback series revisiting the albums that shaped rap and R&amp;B — without giving anything a nostalgia pass.</p>
-        <b>EXPLORE THE SERIES →</b>
-      </div>
-    </a>
-
-    <div class="archive-story-grid">
-      <article class="archive-story-card">
-        <div class="story-tape music">
-          <span>1999</span>
-          <strong>DR. DRE<br>2001</strong>
-          <small>WEST COAST CINEMA</small>
-        </div>
-        <div>
-          <span>REVIEW QUEUED</span>
-          <h3>2001</h3>
-          <p>Dre’s return, the production, the features and how the record aged.</p>
-        </div>
-      </article>
-
-      <article class="archive-story-card">
-        <div class="story-tape music">
-          <span>1996</span>
-          <strong>ALL EYEZ<br>ON ME</strong>
-          <small>2PAC • DOUBLE ALBUM</small>
-        </div>
-        <div>
-          <span>REVIEW QUEUED</span>
-          <h3>All Eyez on Me</h3>
-          <p>Twenty-seven tracks, Death Row at full force and Pac in takeover mode.</p>
-        </div>
-      </article>
-
-      <article class="archive-story-card">
-        <div class="story-tape music">
-          <span>2005</span>
-          <strong>CARTER<br>II</strong>
-          <small>LIL WAYNE • THE ASCENSION</small>
-        </div>
-        <div>
-          <span>REVIEW QUEUED</span>
-          <h3>Tha Carter II</h3>
-          <p>The album at the center of Wayne’s mid-2000s rise.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="archive-section time-capsule-section" id="iconic-moments">
-  <div class="shell">
-    <div class="archive-section-head inverse">
-      <div>
-        <span class="archive-eyebrow">4DK TIME CAPSULE</span>
-        <h2>PICK A YEAR.<br>OPEN THE BOX.</h2>
-      </div>
-      <p>One year. Sports, music, movies, TV, games and whatever else defined the moment.</p>
-    </div>
-
-    <div class="year-grid">
-      <article>
-        <span>1996</span>
-        <strong>KOBE ARRIVES.<br>2PAC EVERYWHERE.<br>THE BULLS WIN 72.</strong>
-        <small>OPEN CAPSULE →</small>
-      </article>
-      <article>
-        <span>2001</span>
-        <strong>AI. SHAQ &amp; KOBE.<br>THE BLUEPRINT.<br>BET AFTER SCHOOL.</strong>
-        <small>OPEN CAPSULE →</small>
-      </article>
-      <article>
-        <span>2004</span>
-        <strong>PISTONS SHOCK L.A.<br>COLLEGE DROPOUT.<br>DEF JAM: FFNY.</strong>
-        <small>OPEN CAPSULE →</small>
-      </article>
-      <article>
-        <span>2012</span>
-        <strong>LEBRON BREAKS THROUGH.<br>GKMC.<br>A NEW ERA TAKES OVER.</strong>
-        <small>OPEN CAPSULE →</small>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="archive-section week-throwback" id="this-week">
-  <div class="shell">
-    <div class="archive-section-head">
-      <div>
-        <span class="archive-eyebrow">ROTATING COLUMN</span>
-        <h2>THIS WEEK IN THROWBACK</h2>
-      </div>
-      <p>Quick-hit nostalgia that can become a deeper feature whenever the conversation demands it.</p>
-    </div>
-
-    <div class="weekly-grid">
-      <article class="weekly-card">
-        <span>NBA</span>
-        <div class="weekly-code">23</div>
-        <h3>The Last Dance Effect</h3>
-        <p>Why Jordan nostalgia still shapes how every superstar gets judged.</p>
-      </article>
-
-      <article class="weekly-card">
-        <span>MUSIC</span>
-        <div class="weekly-code tape">D90</div>
-        <h3>Mixtape Mentality</h3>
-        <p>The era when finding the music was part of loving the music.</p>
-      </article>
-
-      <article class="weekly-card">
-        <span>CULTURE</span>
-        <div class="weekly-code game">PS</div>
-        <h3>Late Night Vibes</h3>
-        <p>NBA, hip-hop, video games and staying up way too late — a whole kind of childhood.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="archive-section vault-section" id="vault">
-  <div class="shell">
-    <div class="archive-section-head inverse">
-      <div>
-        <span class="archive-eyebrow">DEEP CUTS</span>
-        <h2>FROM THE VAULT</h2>
-      </div>
-      <p>The stories that might not trend today — but still deserve to be remembered correctly.</p>
-    </div>
-
-    <div class="vault-lanes">
-      <article>
-        <span>FORGOTTEN STARS</span>
-        <h3>Players who were way better than the internet remembers.</h3>
-      </article>
-      <article>
-        <span>CLASSIC ALBUM</span>
-        <h3>Go back track by track and see what still hits.</h3>
-      </article>
-      <article>
-        <span>OLD SCHOOL TV</span>
-        <h3>Shows, episodes and moments that became part of the language.</h3>
-      </article>
-      <article>
-        <span>VIDEO GAMES</span>
-        <h3>When sports games, wrestling games and Def Jam owned the room.</h3>
-      </article>
-      <article>
-        <span>STYLE</span>
-        <h3>Jerseys, fitteds, tall tees, sneakers and eras you could recognize on sight.</h3>
-      </article>
-      <article>
-        <span>WHERE WERE YOU?</span>
-        <h3>The moments everybody remembers exactly where they were for.</h3>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="archive-section rewind-section">
-  <div class="shell rewind-grid">
-    <div>
-      <span class="archive-eyebrow">4DK REWIND</span>
-      <h2>WHAT SHOULD WE<br>GO BACK TO NEXT?</h2>
-      <p>The archive grows from your memories, arguments and random “you remember when…” conversations.</p>
-    </div>
-
-    <div class="rewind-stack">
-      <div><span>01</span><strong>CLASSIC NBA SEASON</strong></div>
-      <div><span>02</span><strong>CLASSIC ALBUM</strong></div>
-      <div><span>03</span><strong>OLD TV / MOVIE</strong></div>
-      <div><span>04</span><strong>VIDEO GAME ERA</strong></div>
-      <div><span>05</span><strong>ICONIC CULTURE MOMENT</strong></div>
-    </div>
-  </div>
-</section>
-
+<section class="tb-section tb-screen" id="screen"><div class="shell tb-screen-grid">
+  <div class="tb-screen-art"><img src="menace-ii-society-4dk-rewind.png" alt="4DK Rewind Menace II Society artwork"></div>
+  <div class="tb-screen-copy"><span class="tb-eyebrow">4DK REWIND • SCREEN × THROWBACK</span><h2>NO<br>NOSTALGIA<br><em>PASS.</em></h2><p>Rewind is the screen wing of the museum: performances, soundtracks, setting, what the work was saying, how it aged and why the culture kept it alive.</p><a href="4dk-rewind.html">ENTER 4DK REWIND →</a></div>
+</div></section>
 </main>
 
-<footer class="footer">
-  <div class="shell">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">4 DA KULTURE</div>
-        <p>Independent coverage and conversation across sports, music, movies, television and the moments that built the culture.</p>
-      </div>
-
-      <div>
-        <h4>Sections</h4>
-        <div class="footer-links">
-          <a href="nba.html">NBA</a>
-          <a href="nfl.html">NFL</a>
-          <a href="movies.html">TV & Movies</a>
-          <a href="throwback.html">Throwback</a>
-          <a href="hiphop.html">Hip-Hop</a>
-          <a href="podcast.html">Podcast</a>
-        </div>
-      </div>
-
-      <div>
-        <h4>4DK</h4>
-        <div class="footer-links">
-          <a href="magazine.html">Magazine</a>
-          <a href="about.html">About</a>
-          <a href="kcdatruth.html">Kcdatruth</a>
-          <a href="210west.html">210West</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="fine">© 2026 4 Da Kulture. Past / Present / Kulture.</div>
+<footer class="footer"><div class="shell">
+  <div class="footer-grid">
+    <div><div class="footer-brand">4 DA KULTURE</div><p>Independent coverage and conversation across sports, music, movies, television and the moments that built the culture.</p></div>
+    <div><h4>Archive</h4><div class="footer-links"><a href="#eras">Browse By Era</a><a href="#vault">The Vault</a><a href="#albums">Classic Albums</a><a href="4dk-rewind.html">4DK Rewind</a></div></div>
+    <div><h4>4DK</h4><div class="footer-links"><a href="magazine.html">Magazine</a><a href="about.html">About</a><a href="kcdatruth.html">Kcdatruth</a><a href="210west.html">210West</a></div></div>
   </div>
-</footer>
-
+  <div class="fine">© 2026 4 Da Kulture. Past / Present / Kulture.</div>
+</div></footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
