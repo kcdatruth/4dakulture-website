@@ -1,17 +1,26 @@
 (() => {
   const path = (location.pathname || '/').toLowerCase();
   const isHome = path === '/' || path.endsWith('/index.html');
-  if (!isHome || window.__fourdkLatestWeek5) return;
-  window.__fourdkLatestWeek5 = true;
+  if (!isHome || window.__fourdkLatestWeek5TNF) return;
+  window.__fourdkLatestWeek5TNF = true;
 
-  const ARTICLE = 'nfl-week5-five-major-headlines.html';
+  const ARTICLE = 'nfl-thursday-recap-week5-buccaneers-cowboys.html';
+  const MARK = 'week5-tnf-latest-v1';
 
   function addStyle(){
-    if (document.getElementById('fourdk-latest-week5-style')) return;
+    if (document.getElementById('fourdk-latest-week5-tnf-style')) return;
     const s = document.createElement('style');
-    s.id = 'fourdk-latest-week5-style';
+    s.id = 'fourdk-latest-week5-tnf-style';
     s.textContent = `
-      .home-latest-lead:after{content:'W5'!important}
+      .home-latest-lead:after{content:'TNF'!important}
+      .home-latest-lead{
+        background:
+          linear-gradient(90deg,rgba(5,6,5,.97) 0%,rgba(5,6,5,.88) 52%,rgba(5,6,5,.58) 100%),
+          radial-gradient(circle at 84% 20%,rgba(198,38,49,.34),transparent 15rem),
+          radial-gradient(circle at 70% 80%,rgba(67,103,156,.18),transparent 18rem),
+          linear-gradient(135deg,#241013,#080b09 72%)!important;
+      }
+      .home-latest-lead .home-latest-tag{background:#d93636!important}
     `;
     document.head.appendChild(s);
   }
@@ -20,19 +29,21 @@
     addStyle();
 
     const updated = document.querySelector('.home-latest-updated');
-    if (updated) updated.textContent = 'UPDATED • OCT. 7, 2026';
+    if (updated) updated.textContent = 'UPDATED • OCT. 8, 2026';
 
     const lead = document.querySelector('.home-latest-lead');
     if (!lead) return;
+    if (lead.dataset.latestTnf === MARK) return;
 
+    lead.dataset.latestTnf = MARK;
     lead.href = ARTICLE;
-    lead.style.background = "linear-gradient(90deg,rgba(3,6,4,.96) 0%,rgba(3,6,4,.82) 48%,rgba(3,6,4,.48) 100%),url('nfl-week-4-snf-update-2026.jpg') center/cover no-repeat";
+    lead.removeAttribute('style');
     lead.innerHTML = `
       <div class="home-latest-lead-copy">
-        <span class="home-latest-tag">NFL • WEEK 5 • 5 MAJOR HEADLINES</span>
-        <h3>WEEK 5: THE PRESSURE CHANGES.</h3>
-        <p>San Francisco goes into Seattle against the defending champs. Buffalo gets a Monday-night contender check in Los Angeles. Vegas has a must-win road test, Jacksonville leads the surprise teams we trust, and injuries are starting to test the league's depth.</p>
-        <span class="home-latest-cta">READ THE WEEK 5 HEADLINES →</span>
+        <span class="home-latest-tag">NFL • WEEK 5 • TNF FINAL</span>
+        <h3>DALLAS LET ONE GET AWAY.</h3>
+        <p>Tampa Bay got its first win behind Jalon Daniels and a huge Bucky Irving night. Dallas fell to 2–3 after dropping a winnable home game — and now the playoff questions get louder.</p>
+        <span class="home-latest-cta">READ THE FULL TNF RECAP →</span>
       </div>`;
   }
 
@@ -42,11 +53,11 @@
     apply();
   }
 
-  [150, 500, 1000, 1800, 3500, 6500, 10000].forEach(ms => setTimeout(apply, ms));
+  [100,300,700,1200,2200,4000,7000,10500].forEach(ms => setTimeout(apply, ms));
 
   let timer = 0;
   new MutationObserver(() => {
     clearTimeout(timer);
-    timer = setTimeout(apply, 120);
+    timer = setTimeout(apply, 100);
   }).observe(document.documentElement, {subtree:true, childList:true});
 })();
