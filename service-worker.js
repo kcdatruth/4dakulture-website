@@ -1,4 +1,4 @@
-const CACHE_NAME='4dk-pwa-v52-current-runtime-fix';
+const CACHE_NAME='4dk-pwa-v53-nightcap-oct9';
 const APP_SHELL=['/','/index.html','/offline.html','/app.webmanifest','/pwa-install.js','/app-nav.css','/app-nav.js','/4dk-site-enhance.js','/4dk-discovery-upgrade.js','/4dk-home-current.js','/4dk-week5-headlines-current.js','/4dk-home-latest-week5.js','/4dk-home-week5-sunday-ready.js','/nba-live-scoreboard.js','/4dk-nba-regular-season.js','/4dk-nba-nightcap.js','/4dk-nba-nightcap-hero-fix.js','/nba-nightcap-index.json','/4dk-drop-episode5-current.js','/4dk-nfl-visuals.js','/4dk-redzone-week4-current.js','/4dk-week5-tnf-update.js','/nfl-picks.js','/4dk-push.js','/throwback.css','/4dk-music-current.js','/music-franchise.css'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE_NAME).then(c=>Promise.all(APP_SHELL.map(async u=>{try{await c.add(u)}catch(_){}}))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
