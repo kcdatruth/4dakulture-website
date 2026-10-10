@@ -202,3 +202,12 @@ if(!document.querySelector('script[src="4dk-rookie-cover-2026.js"]')) {
   rookieArtScript.defer=true;
   document.body.appendChild(rookieArtScript);
 }
+
+// 4DK NFL Week 5 front page and expandable legacy archive (October 10, 2026).
+if ((location.pathname.split('/').pop() || '').toLowerCase() === 'nfl.html' &&
+    !document.querySelector('script[src="4dk-nfl-week5-refresh.js"]')) {
+  const script = document.createElement('script');
+  script.src = '4dk-nfl-week5-refresh.js';
+  script.defer = true;
+  document.body.appendChild(script);
+}
