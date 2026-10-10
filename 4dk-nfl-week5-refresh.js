@@ -8,7 +8,7 @@
   const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
   if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-10-w5-authentic-photo-v4';
+  const version = '2026-10-10-w5-feature-graphics-v5';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
@@ -85,6 +85,15 @@
     .dk5photodesc h3{font:1000 clamp(24px,2.5vw,38px)/.98 Impact,'Arial Black',sans-serif;text-transform:uppercase;margin:11px 0;letter-spacing:-.025em}
     .dk5photodesc p{font:13px/1.6 Arial,sans-serif;color:#c0c5bd;margin:0 0 17px}
     .dk5photoread{color:#efbc5d;font:1000 10px Arial,sans-serif;letter-spacing:.08em}
+
+    /* The new graphics are COMPLETE posters: show the full artwork without cropping or overlays. */
+    .dk5graphic-card .dk5poster{display:block;width:100%;height:auto;object-fit:contain;background:#0a0e0c;filter:none}
+    .dk5graphic-card .dk5photolink{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between}
+    .dk5graphic-card .dk5graphic-read{display:block;padding:13px 17px;color:#efbc5d;background:#0e1612;font:900 11px Arial,sans-serif;letter-spacing:.07em;text-decoration:none;border-top:1px solid #293b32}
+    .dk5graphic-card .dk5poster:hover{filter:brightness(1.07)}
+    .dk5graphic-card:first-child{grid-column:span 1}
+    @media(max-width:960px){.dk5photogrid{grid-template-columns:repeat(2,minmax(0,1fr))}.dk5graphic-card:first-child{grid-column:1/-1}}
+    @media(max-width:680px){.dk5photogrid{grid-template-columns:minmax(0,1fr)}.dk5graphic-card:first-child{grid-column:auto}.dk5graphic-card .dk5poster{height:auto;object-fit:contain}}
     .dk5photocredit{border-top:1px solid #2d3930;margin:0;padding:10px 16px 13px;color:#8d9890;font:10px/1.5 Arial,sans-serif}
     .dk5photocredit a{color:#bfcbbf!important;text-decoration:underline;text-underline-offset:2px}
     .dk5photohead .dk5more{color:#efbd5e!important;text-decoration:none!important;font:900 11px Arial,sans-serif;white-space:nowrap}
@@ -217,23 +226,13 @@
       <div class="dk5actions"><a href="nfl-week5-preview-2026.html">FULL SUNDAY PREVIEW →</a><a href="nfl-week5-five-major-headlines.html">FIVE STORYLINES →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
       <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">THURSDAY NIGHT • FINAL</span><div class="dk5tnf-logos"><img src="${logo('tb')}" alt="Tampa Bay Buccaneers official team logo" loading="lazy"><span>FINAL</span><img src="${logo('dal')}" alt="Dallas Cowboys official team logo" loading="lazy"></div><span class="dk5score">TAMPA BAY 24 <span style="color:#f1be5d">–</span> DALLAS 16</span><h2>DALLAS LET ONE GET AWAY.</h2><p>The Bucs get their first win; Jalon Daniels earns his first as an NFL starter, and Bucky Irving's ground game helps Tampa secure the road victory. Dallas falls to 2–3 and the playoff questions only get louder.</p><a href="nfl-thursday-recap-week5-buccaneers-cowboys.html">READ THE FULL 4DK BREAKDOWN →</a></article>
       <aside class="dk5aside"><span class="dk5micro">WEEK 5 • INJURY DESK</span><h3>LAMAR OUT.<br>BOSA OUT.<br>THE BOARD CHANGES.</h3><p>Lamar Jackson will miss Baltimore's Sunday night trip to Atlanta with an ankle injury; Tyler Huntley starts. San Francisco will be without Nick Bosa and Kyle Juszczyk against Seattle, while Leonard Williams is cleared for the Seahawks.</p><p class="dk5time">Statuses checked October 10 • Check again before kickoff</p><a href="nfl-week5-preview-2026.html">THE WEEKEND OUTLOOK →</a></aside></div>
-    </div></div><div class="dk5body dk5wrap"><section class="dk5photodesk" id="dk5-photo-desk" aria-label="4DK NFL authentic photography features">
-  <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • THE NFL PHOTO DESK</span><h2>REAL PLAYERS. <em>REAL PRESSURE.</em></h2></div><p>Three major stories. Authentic player images and original 4DK analysis.</p></div>
+    </div></div><div class="dk5body dk5wrap"><section class="dk5photodesk" id="dk5-photo-desk" aria-label="4DK NFL Week 5 feature graphics">
+  <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • NFL FEATURE DESK</span><h2>THE WEEK 5 <em>SPOTLIGHT.</em></h2></div><p>Major games. Major players. Original 4DK feature graphics and analysis.</p></div>
   <div class="dk5photogrid">
-   <article class="dk5photocard">
-    <a class="dk5photolink" href="nfl-week5-five-major-headlines.html"><figure class="dk5photoframe"><img class="dk5realpic" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/George_Kittle_%28cropped%29.jpg/960px-George_Kittle_%28cropped%29.jpg" alt="Real archival photograph of San Francisco 49ers tight end George Kittle, 2019" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('sf')}" alt=""></span><span class="dk5photowatermark">49ERS • FILE PHOTO 2019</span></figure><div class="dk5photodesc"><span class="dk5photokicker">NFC WEST • GAME OF THE WEEK</span><h3>THE WEST IS ON THE LINE.</h3><p>San Francisco enters Seattle unbeaten. Does a 4–0 start translate to a statement road win against the defending champs?</p><span class="dk5photoread">READ THE 4DK FEATURE →</span></div></a>
-    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:George_Kittle_(cropped).jpg" target="_blank" rel="noopener noreferrer">AlexanderJonesi / Wikimedia Commons</a> • <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> • 2019 file photo, cropped for layout</p>
-   </article>
-   <article class="dk5photocard">
-    <a class="dk5photolink" href="nfl-week5-preview-2026.html"><figure class="dk5photoframe"><img class="dk5realpic" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Bijan_Robinson_2025.jpg/960px-Bijan_Robinson_2025.jpg" alt="Authentic action photograph of Bijan Robinson carrying the ball in Atlanta Falcons uniform in 2025" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('atl')}" alt=""></span><span class="dk5photowatermark">BIJAN • FILE PHOTO 2025</span></figure><div class="dk5photodesc"><span class="dk5photokicker">FALCONS • SUNDAY NIGHT</span><h3>ATLANTA RUNS THROUGH BIJAN.</h3><p>His Week 4 takeover raised the standard. Baltimore comes to town with Lamar sidelined.</p><span class="dk5photoread">THE SUNDAY NIGHT OUTLOOK →</span></div></a>
-    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Bijan_Robinson_2025.jpg" target="_blank" rel="noopener noreferrer">All-Pro Reels / Wikimedia Commons</a> • <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> • 2025 file photo, cropped for layout</p>
-   </article>
-   <article class="dk5photocard">
-    <a class="dk5photolink" href="nfl-week-4-sunday-night-update-2026.html#mvp"><figure class="dk5photoframe"><img class="dk5realpic" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Patrick_Mahomes_2023_%28cropped%29.jpg" alt="Authentic archival photograph of Kansas City Chiefs quarterback Patrick Mahomes wearing a red team practice jersey in 2023" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('kc')}" alt=""></span><span class="dk5photowatermark">MVP WATCH • FILE PHOTO 2023</span></figure><div class="dk5photodesc"><span class="dk5photokicker">4DK MVP RACE • WEEK 4 FINAL</span><h3>WHO OWNS THE LEAGUE?</h3><p>Purdy leads our board. Mahomes is right there. Bijan's momentum is changing the conversation.</p><span class="dk5photoread">OPEN THE TOP 10 MVP WATCH →</span></div></a>
-    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Patrick_Mahomes_2023_(cropped).jpg" target="_blank" rel="noopener noreferrer">U.S. Air Force / Wikimedia Commons</a> • public domain • 2023 file photo</p>
-   </article>
+    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week5-five-major-headlines.html" aria-label="Open 4DK NFL Week 5: The West Is on the Line"><img class="dk5poster" src="the_west_is_on_the_line.png?v=20261010-feature-v5" alt="4DK NFL Week 5: The West Is on the Line. A San Francisco 49ers quarterback graphic for the NFC West matchup." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
+    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week5-preview-2026.html" aria-label="Open 4DK NFL Week 5: Atlanta Runs Through Bijan"><img class="dk5poster" src="falcons_sunday_night_feature_card.png?v=20261010-feature-v5" alt="4DK NFL Week 5: Atlanta Runs Through Bijan. Sunday Night matchup feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
+    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week-4-sunday-night-update-2026.html#mvp" aria-label="Open 4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic"><img class="dk5poster" src="who_owns_the_league.png?v=20261010-feature-v5" alt="4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
   </div>
-  <p class="dk5photonote">Player images are archival editorial photographs, not images from Week 5 games. 4DK graphics and headlines are independently created.</p>
 </section><div class="dk5head"><div><span class="dk5micro">MATCHUPS • TEAMS • STORIES</span><h2>THE WEEK 5 BOARD.</h2></div><p>Tomorrow's biggest tests. This is pregame analysis, not a prediction of final results.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
       <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • WEEK 4 FINAL BASELINE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#mvp">FULL TOP 10 MVP BOARD →</a></div>
