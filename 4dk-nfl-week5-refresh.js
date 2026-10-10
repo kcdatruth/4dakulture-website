@@ -8,7 +8,7 @@
   const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
   if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-10-w5-archive-fix-v2';
+  const version = '2026-10-10-w5-nav-polish-v3';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
@@ -98,6 +98,71 @@
     body.nfl-page #dk5-archived-originals #power-rankings,
     body.nfl-page #dk5-archived-originals #week2-current {display:block!important}
     
+
+    /* 4DK Week 5 polish: one active tab, true swipeable mobile rail. */
+    body.nfl-page .nfl-v2-nav {
+      display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;
+      overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+      scroll-snap-type:x proximity;gap:8px;min-width:0;max-width:100%;
+    }
+    body.nfl-page .nfl-v2-nav::-webkit-scrollbar{display:none}
+    body.nfl-page .nfl-v2-nav a {flex:0 0 auto!important;white-space:nowrap!important;scroll-snap-align:start;padding:12px 16px;min-height:46px;display:inline-flex;align-items:center;justify-content:center}
+    /* Belt-and-suspenders in case the older TNF script re-inserts its tab. */
+    body.nfl-page .nfl-v2-nav a[href="#w5current"],
+    body.nfl-page .nfl-v2-nav a[href="#w5next"]{display:none!important}
+    /* Main navigation hamburger: accessible against the dark NFL masthead. */
+    body.nfl-page .nfl-masthead #menuBtn {
+      color:#f8f4e9!important;-webkit-text-fill-color:#f8f4e9!important;
+      opacity:1!important;text-shadow:0 1px 2px #000;
+      font-size:29px!important;line-height:1;min-width:44px;min-height:44px;
+      background:transparent!important;cursor:pointer;
+    }
+    body.nfl-page .nfl-masthead #menuBtn:focus-visible {outline:2px solid #f3c45d;outline-offset:4px}
+    body.nfl-page .nfl-masthead .mobile-nav.open {background:#101813!important;color:#f8f4e9!important;position:relative;z-index:25}
+    body.nfl-page .nfl-masthead .mobile-nav.open a {color:#f8f4e9!important}
+    /* Authentic team-logo graphic treatment: editorial design, no synthetic player portraits. */
+    body.nfl-page .dk5game{
+      position:relative;isolation:isolate;overflow:hidden;
+      border:1px solid #465044;box-shadow:inset 0 1px 0 #ffffff0a;
+      background:radial-gradient(ellipse at 50% 13%,rgba(236,195,91,.10),transparent 64%),
+        radial-gradient(ellipse at 92% 88%,rgba(218,51,43,.10),transparent 50%),linear-gradient(145deg,#182019,#0b0e0c 75%);
+      padding:20px;
+    }
+    body.nfl-page .dk5game::before{
+      content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;
+      background:repeating-linear-gradient(90deg,transparent 0 62px,#fff1 63px,#fff0 64px);
+      opacity:.25;
+    }
+    body.nfl-page .dk5game::after{
+      content:'';position:absolute;top:0;left:0;width:88px;height:4px;background:#e84636;pointer-events:none;
+    }
+    body.nfl-page .dk5logos{justify-content:center;gap:clamp(15px,3vw,35px);padding:13px 4px;margin:13px 0 15px;
+      border-top:1px solid #44493e;border-bottom:1px solid #44493e;
+      background:radial-gradient(ellipse at center,#44402d55,transparent 73%)}
+    body.nfl-page .dk5logos img{width:clamp(63px,9vw,94px);height:clamp(63px,9vw,94px);object-fit:contain;
+      filter:drop-shadow(0 9px 13px #000a)}
+    body.nfl-page .dk5logos span{font:1000 11px Arial,sans-serif;letter-spacing:.18em;color:#e5c271}
+    body.nfl-page .dk5game:first-child{grid-column:span 2;border-color:#c69356;
+      background:radial-gradient(ellipse at 48% 8%,#9f342b36,transparent 55%),linear-gradient(150deg,#251a17,#0d100e 80%)}
+    body.nfl-page .dk5game:first-child::after{width:100%;background:linear-gradient(90deg,#de4639,#e8be67)}
+    body.nfl-page .dk5game:first-child .dk5logos img{width:clamp(95px,12vw,136px);height:clamp(95px,12vw,136px)}
+    body.nfl-page .dk5game:first-child h3{font-size:clamp(30px,4vw,43px)}
+    body.nfl-page .dk5game h3{overflow-wrap:break-word}
+    body.nfl-page .dk5game small{margin-top:10px}
+    /* Thursday's final also gets authentic team art rather than a generic text box. */
+    body.nfl-page .dk5tnf-logos{display:flex;align-items:center;gap:16px;margin:14px 0 8px;max-width:370px}
+    body.nfl-page .dk5tnf-logos img{width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 7px 11px #000a)}
+    body.nfl-page .dk5tnf-logos span{font:1000 12px Arial,sans-serif;color:#d6b467;letter-spacing:.13em}
+    @media(max-width:680px){
+      body.nfl-page .nfl-v2-nav{width:100%!important;max-width:none!important;margin:0!important;
+        padding:10px 13px!important;scroll-padding-inline:13px}
+      body.nfl-page .nfl-v2-nav a{font-size:11px;padding:11px 14px;min-height:44px}
+      body.nfl-page .dk5game:first-child{grid-column:auto}
+      body.nfl-page .dk5logos img{width:82px;height:82px}
+      body.nfl-page .dk5game:first-child .dk5logos img{width:106px;height:106px}
+      body.nfl-page .dk5game{padding:17px}
+    }
+
     .dk5time{color:#969f98;font:900 10px Arial,sans-serif;letter-spacing:.09em}
     @media(max-width:950px){.dk5games{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:680px){.dk5top{padding:34px 0 25px}.dk5title{font-size:clamp(51px,13vw,82px)}.dk5strap,.dk5boards,.dk5games{grid-template-columns:1fr}.dk5logos img{width:63px;height:63px}.dk5game p{min-height:0}.dk5head{display:block}.dk5head p{margin-top:10px}.dk5body{padding-top:27px}.dk5board{padding:16px}.dk5archlinks{padding:0 13px 18px}#nfl-season-archive>summary{padding:17px}}
@@ -115,7 +180,7 @@
       <h1 class="dk5title">THE PRESSURE<br><em>JUST WENT UP.</em></h1>
       <p class="dk5deck">One game is in the books. The rest of Week 5 is ready to test the league's early pecking order. Our 4–0 49ers head to Seattle, Atlanta hosts Baltimore without Lamar Jackson, and Buffalo closes the week in Los Angeles.</p>
       <div class="dk5actions"><a href="nfl-week5-preview-2026.html">FULL SUNDAY PREVIEW →</a><a href="nfl-week5-five-major-headlines.html">FIVE STORYLINES →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
-      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">THURSDAY NIGHT • FINAL</span><span class="dk5score">TAMPA BAY 24 <span style="color:#f1be5d">–</span> DALLAS 16</span><h2>DALLAS LET ONE GET AWAY.</h2><p>The Bucs get their first win; Jalon Daniels earns his first as an NFL starter, and Bucky Irving's ground game helps Tampa secure the road victory. Dallas falls to 2–3 and the playoff questions only get louder.</p><a href="nfl-thursday-recap-week5-buccaneers-cowboys.html">READ THE FULL 4DK BREAKDOWN →</a></article>
+      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">THURSDAY NIGHT • FINAL</span><div class="dk5tnf-logos"><img src="${logo('tb')}" alt="Tampa Bay Buccaneers official team logo" loading="lazy"><span>FINAL</span><img src="${logo('dal')}" alt="Dallas Cowboys official team logo" loading="lazy"></div><span class="dk5score">TAMPA BAY 24 <span style="color:#f1be5d">–</span> DALLAS 16</span><h2>DALLAS LET ONE GET AWAY.</h2><p>The Bucs get their first win; Jalon Daniels earns his first as an NFL starter, and Bucky Irving's ground game helps Tampa secure the road victory. Dallas falls to 2–3 and the playoff questions only get louder.</p><a href="nfl-thursday-recap-week5-buccaneers-cowboys.html">READ THE FULL 4DK BREAKDOWN →</a></article>
       <aside class="dk5aside"><span class="dk5micro">WEEK 5 • INJURY DESK</span><h3>LAMAR OUT.<br>BOSA OUT.<br>THE BOARD CHANGES.</h3><p>Lamar Jackson will miss Baltimore's Sunday night trip to Atlanta with an ankle injury; Tyler Huntley starts. San Francisco will be without Nick Bosa and Kyle Juszczyk against Seattle, while Leonard Williams is cleared for the Seahawks.</p><p class="dk5time">Statuses checked October 10 • Check again before kickoff</p><a href="nfl-week5-preview-2026.html">THE WEEKEND OUTLOOK →</a></aside></div>
     </div></div><div class="dk5body dk5wrap"><div class="dk5head"><div><span class="dk5micro">MATCHUPS • TEAMS • STORIES</span><h2>THE WEEK 5 BOARD.</h2></div><p>Tomorrow's biggest tests. This is pregame analysis, not a prediction of final results.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
@@ -202,19 +267,44 @@
       if(!records.some(rec=>!document.getElementById('nfl-season-archive')?.contains(rec.target))) return;
       if(pending)return;
       pending=true;
-      setTimeout(()=>{pending=false;archive();},240);
+      setTimeout(()=>{pending=false;archive();navEnhance();},240);
     });
     observer.observe(document.body,{childList:true,subtree:true});
     window.__dk5ArchiveObserver=observer;
   }
 
   function navEnhance(){
-    const nav=document.querySelector('.nfl-v2-nav');if(!nav)return;
-    const first=nav.querySelector('a[href="#dk5current"]');
-    if(!first){let a=document.createElement('a');a.href='#dk5current';a.textContent='WEEK 5 CURRENT';a.className='active';nav.prepend(a);}
-    if(!nav.querySelector('a[href="#nfl-season-archive"]')){
-      const a=document.createElement('a');a.href='#nfl-season-archive';a.textContent='ARCHIVES';nav.append(a);
+    const nav=document.querySelector('.nfl-v2-nav');
+    if(!nav) return;
+    let primary=nav.querySelector('a[href="#dk5current"]');
+    if(!primary){
+      primary=document.createElement('a');
+      primary.href='#dk5current';
+      primary.className='active';
+      nav.prepend(primary);
     }
+    if(primary.textContent!=='WEEK 5') primary.textContent='WEEK 5';
+    primary.classList.add('active');
+    if(nav.firstElementChild!==primary) nav.prepend(primary);
+    // Two earlier 4DK scripts were creating separate Week 5 tabs.
+    // Remove only the duplicate navigation links, never content or archives.
+    nav.querySelectorAll('a').forEach(a=>{
+      if(a===primary) return;
+      const href=a.getAttribute('href')||'';
+      const label=(a.textContent||'').trim().replace(/\s+/g,' ');
+      if(href==='#w5current'||href==='#w5next'||
+         (/^week\s*5(?:\s*current)?$/i.test(label) && href[0]==='#')) {
+        a.remove();
+      }
+    });
+    // Keep every remaining navigation tab horizontally scrollable on mobile.
+    if(!nav.querySelector('a[href="#nfl-season-archive"]')){
+      const a=document.createElement('a');
+      a.href='#nfl-season-archive';
+      a.textContent='ARCHIVES';
+      nav.append(a);
+    }
+    nav.setAttribute('aria-label','NFL sections — swipe horizontally to see more');
   }
 
   function run(){styles();render();archive();navEnhance();watchLateInsertions();if(location.hash==='#nfl-season-archive')document.getElementById('nfl-season-archive').open=true;}

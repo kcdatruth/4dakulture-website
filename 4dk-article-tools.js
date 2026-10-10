@@ -207,8 +207,8 @@ if(!document.querySelector('script[src="4dk-rookie-cover-2026.js"]')) {
 if (/\/nfl(?:\.html)?\/?$/i.test(location.pathname) &&
     !document.querySelector('script[data-dk5-refresh-loader]')) {
   const script = document.createElement('script');
-  script.dataset.dk5RefreshLoader = 'v2';
-  script.src = '4dk-nfl-week5-refresh.js?v=20261010b';
+  script.dataset.dk5RefreshLoader = 'v3';
+  script.src = '4dk-nfl-week5-refresh.js?v=20261010c';
   script.defer = true;
   document.body.appendChild(script);
 }
