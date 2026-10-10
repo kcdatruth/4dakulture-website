@@ -194,3 +194,11 @@ if(!document.querySelector('script[src="4dk-week4-tnf-update.js"]')){
   week4TnfScript.defer=true;
   document.body.appendChild(week4TnfScript);
 }
+
+// 4DK 2026 rookie cover — additive, site-wide loader.
+if(!document.querySelector('script[src="4dk-rookie-cover-2026.js"]')) {
+  const rookieArtScript=document.createElement('script');
+  rookieArtScript.src='4dk-rookie-cover-2026.js';
+  rookieArtScript.defer=true;
+  document.body.appendChild(rookieArtScript);
+}
