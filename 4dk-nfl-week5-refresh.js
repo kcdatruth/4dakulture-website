@@ -8,7 +8,7 @@
   const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
   if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-10-w5-nav-polish-v3';
+  const version = '2026-10-10-w5-authentic-photo-v4';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
@@ -58,6 +58,41 @@
     .dk5lead a,.dk5aside a{font:900 10px Arial,sans-serif;color:#f0bf5a!important;text-decoration:none}
     .dk5aside{border:1px solid #334038;padding:22px;background:#111913}
     .dk5aside h3{font:1000 26px/1.05 Impact,'Arial Black',sans-serif;margin:8px 0 10px}
+
+    /* 4DK editorial photo desk: independently licensed real photography, not AI portraits. */
+    .dk5photodesk{margin:0 0 33px;padding:0;background:#080b09;color:#f8f4ec}
+    .dk5photohead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:0 0 17px}
+    .dk5photohead h2{font:1000 clamp(34px,5.8vw,64px)/.9 Impact,'Arial Black',sans-serif;letter-spacing:-.038em;text-transform:uppercase;margin:7px 0}
+    .dk5photohead h2 em{font-style:normal;color:#eab95b}
+    .dk5photohead p{font:13px/1.6 Arial,sans-serif;color:#aab4ad;max-width:340px;margin:0}
+    .dk5photogrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px}
+    .dk5photocard{min-width:0;border:1px solid #42463e;display:flex;flex-direction:column;background:#111714;position:relative}
+    .dk5photocard:first-child{border-color:#bb8c52}
+    .dk5photocard::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e84a38,#e6b659);pointer-events:none}
+    .dk5photolink{color:#f6f2e8!important;text-decoration:none!important;display:flex;flex-direction:column;flex:1;min-width:0}
+    .dk5photoframe{margin:0;position:relative;height:275px;overflow:hidden;background:linear-gradient(140deg,#28241d,#101612);border-bottom:1px solid #3e463b}
+    .dk5photocard:first-child .dk5photoframe{height:320px}
+    .dk5photoframe img.dk5realpic{display:block;width:100%;height:100%;object-fit:cover;object-position:center 29%;filter:saturate(.86) contrast(1.06)}
+    .dk5photocard:first-child .dk5photoframe img.dk5realpic{object-position:center 19%}
+    .dk5photoframe::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,#060b09aa 100%);pointer-events:none}
+    .dk5photowatermark{position:absolute;left:15px;bottom:13px;z-index:1;background:#131714d9;border-left:3px solid #d74637;padding:7px 10px;color:#f8d08a;font:900 10px Arial,sans-serif;letter-spacing:.08em}
+    .dk5photo-fallback{position:absolute;inset:0;display:grid;place-items:center;z-index:0;pointer-events:none;opacity:.3}
+    .dk5photo-fallback img{width:140px;height:140px;object-fit:contain}
+    .dk5photoframe:not(.dk5photo-error) .dk5photo-fallback{display:none}
+    .dk5photoframe.dk5photo-error .dk5realpic{display:none!important}
+    .dk5photodesc{padding:21px 18px 22px;flex:1}
+    .dk5photokicker{color:#f36b54;font:1000 10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+    .dk5photodesc h3{font:1000 clamp(24px,2.5vw,38px)/.98 Impact,'Arial Black',sans-serif;text-transform:uppercase;margin:11px 0;letter-spacing:-.025em}
+    .dk5photodesc p{font:13px/1.6 Arial,sans-serif;color:#c0c5bd;margin:0 0 17px}
+    .dk5photoread{color:#efbc5d;font:1000 10px Arial,sans-serif;letter-spacing:.08em}
+    .dk5photocredit{border-top:1px solid #2d3930;margin:0;padding:10px 16px 13px;color:#8d9890;font:10px/1.5 Arial,sans-serif}
+    .dk5photocredit a{color:#bfcbbf!important;text-decoration:underline;text-underline-offset:2px}
+    .dk5photohead .dk5more{color:#efbd5e!important;text-decoration:none!important;font:900 11px Arial,sans-serif;white-space:nowrap}
+    .dk5photonote{margin-top:12px;color:#929c92;font:11px/1.55 Arial,sans-serif}
+    @media(max-width:960px){.dk5photogrid{grid-template-columns:1fr 1fr}.dk5photocard:first-child{grid-column:1/-1}.dk5photocard:first-child .dk5photoframe{height:360px}}
+    @media(max-width:680px){.dk5photohead{display:block}.dk5photohead p{margin-top:8px}.dk5photogrid{grid-template-columns:1fr;gap:14px}.dk5photocard:first-child{grid-column:auto}
+      .dk5photocard:first-child .dk5photoframe,.dk5photoframe{height:300px}.dk5photodesc{padding:17px}.dk5photodesc h3{font-size:34px}.dk5photodesk{margin-bottom:28px}}
+
     .dk5body{padding:36px 0 45px}
     .dk5head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin:0 0 19px}
     .dk5head h2{margin:7px 0 0;font:1000 clamp(31px,6vw,52px)/.93 Impact,'Arial Black',sans-serif;text-transform:uppercase}
@@ -182,7 +217,24 @@
       <div class="dk5actions"><a href="nfl-week5-preview-2026.html">FULL SUNDAY PREVIEW →</a><a href="nfl-week5-five-major-headlines.html">FIVE STORYLINES →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
       <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">THURSDAY NIGHT • FINAL</span><div class="dk5tnf-logos"><img src="${logo('tb')}" alt="Tampa Bay Buccaneers official team logo" loading="lazy"><span>FINAL</span><img src="${logo('dal')}" alt="Dallas Cowboys official team logo" loading="lazy"></div><span class="dk5score">TAMPA BAY 24 <span style="color:#f1be5d">–</span> DALLAS 16</span><h2>DALLAS LET ONE GET AWAY.</h2><p>The Bucs get their first win; Jalon Daniels earns his first as an NFL starter, and Bucky Irving's ground game helps Tampa secure the road victory. Dallas falls to 2–3 and the playoff questions only get louder.</p><a href="nfl-thursday-recap-week5-buccaneers-cowboys.html">READ THE FULL 4DK BREAKDOWN →</a></article>
       <aside class="dk5aside"><span class="dk5micro">WEEK 5 • INJURY DESK</span><h3>LAMAR OUT.<br>BOSA OUT.<br>THE BOARD CHANGES.</h3><p>Lamar Jackson will miss Baltimore's Sunday night trip to Atlanta with an ankle injury; Tyler Huntley starts. San Francisco will be without Nick Bosa and Kyle Juszczyk against Seattle, while Leonard Williams is cleared for the Seahawks.</p><p class="dk5time">Statuses checked October 10 • Check again before kickoff</p><a href="nfl-week5-preview-2026.html">THE WEEKEND OUTLOOK →</a></aside></div>
-    </div></div><div class="dk5body dk5wrap"><div class="dk5head"><div><span class="dk5micro">MATCHUPS • TEAMS • STORIES</span><h2>THE WEEK 5 BOARD.</h2></div><p>Tomorrow's biggest tests. This is pregame analysis, not a prediction of final results.</p></div>
+    </div></div><div class="dk5body dk5wrap"><section class="dk5photodesk" id="dk5-photo-desk" aria-label="4DK NFL authentic photography features">
+  <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • THE NFL PHOTO DESK</span><h2>REAL PLAYERS. <em>REAL PRESSURE.</em></h2></div><p>Three major stories. Authentic player images and original 4DK analysis.</p></div>
+  <div class="dk5photogrid">
+   <article class="dk5photocard">
+    <a class="dk5photolink" href="nfl-week5-five-major-headlines.html"><figure class="dk5photoframe"><img class="dk5realpic" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/George_Kittle_%28cropped%29.jpg/960px-George_Kittle_%28cropped%29.jpg" alt="Real archival photograph of San Francisco 49ers tight end George Kittle, 2019" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('sf')}" alt=""></span><span class="dk5photowatermark">49ERS • FILE PHOTO 2019</span></figure><div class="dk5photodesc"><span class="dk5photokicker">NFC WEST • GAME OF THE WEEK</span><h3>THE WEST IS ON THE LINE.</h3><p>San Francisco enters Seattle unbeaten. Does a 4–0 start translate to a statement road win against the defending champs?</p><span class="dk5photoread">READ THE 4DK FEATURE →</span></div></a>
+    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:George_Kittle_(cropped).jpg" target="_blank" rel="noopener noreferrer">AlexanderJonesi / Wikimedia Commons</a> • <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> • 2019 file photo, cropped for layout</p>
+   </article>
+   <article class="dk5photocard">
+    <a class="dk5photolink" href="nfl-week5-preview-2026.html"><figure class="dk5photoframe"><img class="dk5realpic" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Bijan_Robinson_2025.jpg/960px-Bijan_Robinson_2025.jpg" alt="Authentic action photograph of Bijan Robinson carrying the ball in Atlanta Falcons uniform in 2025" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('atl')}" alt=""></span><span class="dk5photowatermark">BIJAN • FILE PHOTO 2025</span></figure><div class="dk5photodesc"><span class="dk5photokicker">FALCONS • SUNDAY NIGHT</span><h3>ATLANTA RUNS THROUGH BIJAN.</h3><p>His Week 4 takeover raised the standard. Baltimore comes to town with Lamar sidelined.</p><span class="dk5photoread">THE SUNDAY NIGHT OUTLOOK →</span></div></a>
+    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Bijan_Robinson_2025.jpg" target="_blank" rel="noopener noreferrer">All-Pro Reels / Wikimedia Commons</a> • <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> • 2025 file photo, cropped for layout</p>
+   </article>
+   <article class="dk5photocard">
+    <a class="dk5photolink" href="nfl-week-4-sunday-night-update-2026.html#mvp"><figure class="dk5photoframe"><img class="dk5realpic" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Patrick_Mahomes_2023_%28cropped%29.jpg" alt="Authentic archival photograph of Kansas City Chiefs quarterback Patrick Mahomes wearing a red team practice jersey in 2023" loading="lazy" decoding="async"><span class="dk5photo-fallback"><img src="${logo('kc')}" alt=""></span><span class="dk5photowatermark">MVP WATCH • FILE PHOTO 2023</span></figure><div class="dk5photodesc"><span class="dk5photokicker">4DK MVP RACE • WEEK 4 FINAL</span><h3>WHO OWNS THE LEAGUE?</h3><p>Purdy leads our board. Mahomes is right there. Bijan's momentum is changing the conversation.</p><span class="dk5photoread">OPEN THE TOP 10 MVP WATCH →</span></div></a>
+    <p class="dk5photocredit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Patrick_Mahomes_2023_(cropped).jpg" target="_blank" rel="noopener noreferrer">U.S. Air Force / Wikimedia Commons</a> • public domain • 2023 file photo</p>
+   </article>
+  </div>
+  <p class="dk5photonote">Player images are archival editorial photographs, not images from Week 5 games. 4DK graphics and headlines are independently created.</p>
+</section><div class="dk5head"><div><span class="dk5micro">MATCHUPS • TEAMS • STORIES</span><h2>THE WEEK 5 BOARD.</h2></div><p>Tomorrow's biggest tests. This is pregame analysis, not a prediction of final results.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
       <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • WEEK 4 FINAL BASELINE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#mvp">FULL TOP 10 MVP BOARD →</a></div>
       <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • WEEK 4 FINAL BASELINE</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • entering Week 5</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#rookies">FULL TOP 10 ROOKIE BOARD →</a></div></div>
@@ -298,6 +350,11 @@
       }
     });
     // Keep every remaining navigation tab horizontally scrollable on mobile.
+    if(!nav.querySelector('a[href="#dk5-photo-desk"]')){
+      const a=document.createElement('a');a.href='#dk5-photo-desk';a.textContent='PHOTO DESK';
+      const current=nav.querySelector('a[href="#dk5current"]');
+      if(current)current.insertAdjacentElement('afterend',a);else nav.prepend(a);
+    }
     if(!nav.querySelector('a[href="#nfl-season-archive"]')){
       const a=document.createElement('a');
       a.href='#nfl-season-archive';
@@ -307,7 +364,7 @@
     nav.setAttribute('aria-label','NFL sections — swipe horizontally to see more');
   }
 
-  function run(){styles();render();archive();navEnhance();watchLateInsertions();if(location.hash==='#nfl-season-archive')document.getElementById('nfl-season-archive').open=true;}
+  function run(){styles();render();document.querySelectorAll('#dk5-photo-desk img.dk5realpic').forEach(img=>{if(img.dataset.fallbackWired)return;img.dataset.fallbackWired='1';img.addEventListener('error',()=>img.closest('.dk5photoframe')?.classList.add('dk5photo-error'));});archive();navEnhance();watchLateInsertions();if(location.hash==='#nfl-season-archive')document.getElementById('nfl-season-archive').open=true;}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();
   [600,1800,4000,8500,13000].forEach(ms=>setTimeout(run,ms));
 })();
