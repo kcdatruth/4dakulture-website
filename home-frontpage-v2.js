@@ -515,3 +515,14 @@
   setTimeout(apply, 250);
   setTimeout(apply, 900);
 })();
+
+/* 4DK Daily Front Desk 2.0 — additive automatic loader. */
+(() => {
+  const p=location.pathname.replace(/^\/+|\/+$/g,'').replace(/\.html$/,'');
+  if(p && p!=='index') return;
+  if(document.querySelector('script[data-4dk-daily-desk]')) return;
+  const s=document.createElement('script');
+  s.src='4dk-daily-frontdesk.js?v=20261009';
+  s.dataset.fourdkDailyDesk='1';
+  document.head.appendChild(s);
+})();

@@ -1,0 +1,59 @@
+[
+  {
+    "category": "NFL",
+    "label": "NFL • WEEK 5 • MAJOR HEADLINES",
+    "title": "FIVE NFL STORYLINES WE'RE WATCHING IN WEEK 5",
+    "deck": "San Francisco, Seattle, Buffalo, the Rams and the pressure points shaping the next NFL weekend.",
+    "href": "nfl-week5-five-major-headlines.html",
+    "date": "2026-10-09",
+    "priority": 50
+  },
+  {
+    "category": "SCREEN",
+    "label": "4DK SCREEN • THE DROP • EPISODE 5",
+    "title": "HOMECOMING: THE FAMILY SECRET COMES OUT",
+    "deck": "Mama G, Rochelle, Maurice and Lamar. Episode 5 changes the family story, and we break down what it reveals.",
+    "href": "the-drop-episode-5.html",
+    "priority": 80
+  },
+  {
+    "category": "NFL",
+    "label": "NFL • THURSDAY NIGHT FOOTBALL • WEEK 5",
+    "title": "DALLAS LET ONE GET AWAY",
+    "deck": "Tampa Bay takes down Dallas in the Week 5 Thursday night matchup. Our 4DK breakdown of what changed.",
+    "href": "nfl-thursday-recap-week5-buccaneers-cowboys.html",
+    "date": "2026-10-08"
+  },
+  {
+    "category": "NBA",
+    "label": "NBA • ROOKIE CLASS • 2026–27",
+    "title": "30 ROOKIES. 30 DIFFERENT EXPECTATIONS.",
+    "deck": "Every lottery situation, every role, every expectation. Our complete 2026 rookie-class examination.",
+    "href": "nba-rookie-class-2026.html",
+    "image": "nba-rookie-class-2026-graphic.png",
+    "alt": "4DK 2026 NBA rookie class feature artwork"
+  },
+  {
+    "category": "NBA",
+    "label": "THE MAMBA FILES • 007",
+    "title": "NO. 5 HAD TO GO THROUGH BOSTON",
+    "deck": "Back-to-back. Revenge. Legacy. The 2010 championship and the fully formed Kobe Bryant.",
+    "href": "mamba-file-007-no-5-had-to-go-through-boston.html",
+    "image": "mamba-file-007-game7-celebration.jpg",
+    "alt": "Kobe Bryant celebrating the 2010 championship"
+  },
+  {
+    "category": "MUSIC",
+    "label": "4DK MUSIC • THE FINAL RANKING",
+    "title": "THE 26 BEST RAPPERS OF 2000–2026",
+    "deck": "Wayne, Kendrick, Nas, Jay, Drake and the debates that shaped our all-regions ranking.",
+    "href": "top-26-rappers-2000-2026.html"
+  },
+  {
+    "category": "MUSIC",
+    "label": "4DK MUSIC • CLASSIC ALBUMS",
+    "title": "CLASSIC ALBUMS. TIMELESS ARGUMENTS.",
+    "deck": "The Blueprint, 2001, Dogg Food, The Diary and the projects that live beyond their original moment.",
+    "href": "classic-albums.html"
+  }
+]
