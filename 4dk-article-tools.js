@@ -204,10 +204,11 @@ if(!document.querySelector('script[src="4dk-rookie-cover-2026.js"]')) {
 }
 
 // 4DK NFL Week 5 front page and expandable legacy archive (October 10, 2026).
-if ((location.pathname.split('/').pop() || '').toLowerCase() === 'nfl.html' &&
-    !document.querySelector('script[src="4dk-nfl-week5-refresh.js"]')) {
+if (/\/nfl(?:\.html)?\/?$/i.test(location.pathname) &&
+    !document.querySelector('script[data-dk5-refresh-loader]')) {
   const script = document.createElement('script');
-  script.src = '4dk-nfl-week5-refresh.js';
+  script.dataset.dk5RefreshLoader = 'v2';
+  script.src = '4dk-nfl-week5-refresh.js?v=20261010b';
   script.defer = true;
   document.body.appendChild(script);
 }

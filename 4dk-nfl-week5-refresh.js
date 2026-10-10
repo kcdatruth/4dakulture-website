@@ -5,10 +5,10 @@
  */
 (() => {
   'use strict';
-  const route = (location.pathname.split('/').pop() || '').toLowerCase();
-  if (route !== 'nfl.html' || window.__fourdkWeek5NFLRefresh) return;
+  const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
+  if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-10-w5';
+  const version = '2026-10-10-w5-archive-fix-v2';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
@@ -90,6 +90,14 @@
     #dk5-archived-originals{border-top:1px solid #354038}
     #dk5-archived-originals>.dk5archlabel{padding:20px 20px 0;color:#f1c260;font:900 10px Arial,sans-serif;letter-spacing:.11em}
     #dk5-archived-originals>section{max-width:none}
+    /* Previously hidden legacy sections must still be readable when the archive opens. */
+    body.nfl-page #dk5-archived-originals > [data-dk5-archived="true"]{display:block!important}
+    #nfl-season-archive[open] #dk5-archived-originals > *{max-width:100%}
+    body.nfl-page #dk5-archived-originals #mvp-watch,
+    body.nfl-page #dk5-archived-originals #rookie-watch,
+    body.nfl-page #dk5-archived-originals #power-rankings,
+    body.nfl-page #dk5-archived-originals #week2-current {display:block!important}
+    
     .dk5time{color:#969f98;font:900 10px Arial,sans-serif;letter-spacing:.09em}
     @media(max-width:950px){.dk5games{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:680px){.dk5top{padding:34px 0 25px}.dk5title{font-size:clamp(51px,13vw,82px)}.dk5strap,.dk5boards,.dk5games{grid-template-columns:1fr}.dk5logos img{width:63px;height:63px}.dk5game p{min-height:0}.dk5head{display:block}.dk5head p{margin-top:10px}.dk5body{padding-top:27px}.dk5board{padding:16px}.dk5archlinks{padding:0 13px 18px}#nfl-season-archive>summary{padding:17px}}
@@ -118,22 +126,86 @@
     nav.insertAdjacentElement('afterend',section);
   }
 
+
+  // Fix v2: Earlier layouts generated their own containers AFTER DOMContentLoaded.
+  // Move each completed-week block into the native, collapsed archive without
+  // removing any original article, link, or event handler.
+  const oldSelectors = [
+    '#mvp-watch','#rookie-watch','#power-rankings','#mnf-headline',
+    '#this-week-4dk-nfl','#sunday-recaps','#redzone',
+    '#w4final','#w4m-current','#w4m-stories','#w4m-rank',
+    '#w4m-mvp','#w4m-rook','#w4current','#w4tnf','#w4redzone',
+    '#w4rank','#w4mvp','#w4rook','#w4archive',
+    '#week2-current','#week1-recaps',
+    '[data-week1-recaps]','.nfl-week1-recaps','.fourdk-sunday-recaps',
+    '.fourdk-this-week','.fourdk-mnf-headline','.w3rookies'
+  ];
+
   function archive(){
     let details=document.getElementById('nfl-season-archive');
     if(!details){
-      details=document.createElement('details');details.id='nfl-season-archive';details.className='dk5wrap';
-      details.innerHTML=`<summary><b>SEASON ARCHIVE • WEEKS 1–4</b><span>OPEN / CLOSE ▾</span></summary><div class="dk5archlinks"><a href="nfl-season-archive-2026.html">FULL SEASON ARCHIVE →</a><a href="nfl-sunday-recaps.html">SUNDAY RECAPS →</a><a href="nfl-thursday-recaps.html">THURSDAY RECAPS →</a><a href="nfl-week-4-sunday-night-update-2026.html">WEEK 4 FINAL →</a><a href="nfl-power-rankings-week4-2026.html">WEEK 4 POWER RANKINGS →</a></div><div id="dk5-archived-originals"><div class="dk5archlabel">ORIGINAL EARLY-SEASON SECTIONS • PRESERVED BELOW</div></div>`;
+      details=document.createElement('details');
+      details.id='nfl-season-archive';
+      details.className='dk5wrap';
+      details.innerHTML=`<summary><b>SEASON ARCHIVE • WEEKS 1–4</b><span>OPEN / CLOSE ▾</span></summary>
+        <div class="dk5archlinks">
+        <a href="nfl-season-archive-2026.html">FULL SEASON ARCHIVE →</a>
+        <a href="nfl-sunday-recaps.html">SUNDAY RECAPS →</a>
+        <a href="nfl-thursday-recaps.html">THURSDAY RECAPS →</a>
+        <a href="nfl-week-4-sunday-night-update-2026.html">WEEK 4 FINAL →</a>
+        <a href="nfl-power-rankings-week4-2026.html">WEEK 4 POWER RANKINGS →</a>
+        </div><div id="dk5-archived-originals"><div class="dk5archlabel">EARLY-SEASON COVERAGE • ALL ORIGINAL CONTENT PRESERVED</div></div>`;
       const anchor=document.getElementById('season-board')||document.querySelector('footer');
       if(anchor)anchor.before(details);else document.body.append(details);
     }
-    const dest=document.getElementById('dk5-archived-originals');if(!dest)return;
-    const oldIds=['mvp-watch','rookie-watch','mnf-headline','this-week-4dk-nfl','sunday-recaps','w4final','redzone'];
-    oldIds.forEach(id=>{
-      const old=document.getElementById(id);
-      if(!old||dest.contains(old)||old.contains(dest)||old===details)return;
-      // DOM nodes are moved, not removed: event handlers, portraits, and full content survive.
-      old.dataset.dk5Archived='true';dest.appendChild(old);
+
+    const dest=document.getElementById('dk5-archived-originals');
+    if(!dest) return;
+    const prevent=new Set(['dk5current','nfl-season-archive','scoreboard','season-board','pickem','storylines']);
+    const collection=new Set();
+
+    // Known legacy insertions, including the Week 1 opening-two cards added by nfl-scoreboard.js.
+    for(const sel of oldSelectors){
+      try { document.querySelectorAll(sel).forEach(el=>collection.add(el)); } catch(e) {}
+    }
+
+    // Catch earlier week cards created by other site layers under slightly different names.
+    // Only inspect main/top-level SECTIONS, not individual cards or all the page's paragraphs.
+    document.querySelectorAll('body > section, main > section, .nfl-page > section').forEach(el=>{
+      const title=el.querySelector('h1,h2')?.textContent?.trim()||'';
+      const id=el.id||'';
+      const cls=typeof el.className==='string'?el.className:'';
+      const olderHeading=/\bWEEK\s*[1-4]\b/i.test(title);
+      const olderContainer=/^(?:w[1-4](?:-|$)|week[1-4](?:-|$))/.test(id) ||
+        /\b(?:nfl-week1-recaps|fourdk-sunday-recaps|fourdk-this-week)\b/i.test(cls);
+      if(olderHeading||olderContainer||/THE OPENING TWO|SUNDAY NFL RECAPS/i.test(title)){
+        collection.add(el);
+      }
     });
+
+    collection.forEach(el=>{
+      if(!el.isConnected || dest.contains(el) || el===details || el.contains(details)) return;
+      if(prevent.has(el.id)||el.contains(document.getElementById('dk5current')))return;
+      if(el.matches('.nfl-scoreboard,.nfl-v2-hero,.nfl-v2-nav,.nfl-v2-season,.nfl-pickem'))return;
+      // Don't move a child of an already archived panel a second time.
+      if([...collection].some(parent=>parent!==el && parent.contains(el) && !dest.contains(parent)))return;
+      el.dataset.dk5Archived='true';
+      dest.appendChild(el);
+    });
+  }
+
+  function watchLateInsertions(){
+    if(window.__dk5ArchiveObserver) return;
+    let pending=false;
+    const observer=new MutationObserver(records=>{
+      // Ignore DOM updates INSIDE our already-archived material to avoid render loops.
+      if(!records.some(rec=>!document.getElementById('nfl-season-archive')?.contains(rec.target))) return;
+      if(pending)return;
+      pending=true;
+      setTimeout(()=>{pending=false;archive();},240);
+    });
+    observer.observe(document.body,{childList:true,subtree:true});
+    window.__dk5ArchiveObserver=observer;
   }
 
   function navEnhance(){
@@ -145,7 +217,7 @@
     }
   }
 
-  function run(){styles();render();archive();navEnhance();if(location.hash==='#nfl-season-archive')document.getElementById('nfl-season-archive').open=true;}
+  function run(){styles();render();archive();navEnhance();watchLateInsertions();if(location.hash==='#nfl-season-archive')document.getElementById('nfl-season-archive').open=true;}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();
   [600,1800,4000,8500,13000].forEach(ms=>setTimeout(run,ms));
 })();
