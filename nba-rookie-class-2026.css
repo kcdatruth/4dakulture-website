@@ -30,3 +30,47 @@ body.rookie-feature-page{background:var(--rookie-bg);color:var(--rookie-text)}
 .rookie-close{padding:64px 0 74px;background:#07080a}.rookie-close h2{max-width:950px;margin:8px 0 22px;font:1000 clamp(50px,8vw,94px)/.84 Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;text-transform:uppercase}.rookie-close p{max-width:900px;color:#d2ccc2;font:18px/1.76 Georgia,serif}.rookie-close .final-line{margin-top:28px;color:#fff;font:700 28px/1.25 Georgia,serif}.rookie-back{display:inline-block;margin-top:28px;padding:12px 15px;background:var(--rookie-red);color:#fff;text-decoration:none;font-size:9px;font-weight:1000;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:880px){.rookie-intro-grid,.rookie-copy{grid-template-columns:1fr}.rookie-note{position:static}.rookie-board-grid{grid-template-columns:repeat(2,1fr)}.roy-board{grid-template-columns:repeat(2,1fr)}.gauntlet-list{grid-template-columns:1fr}.capsule-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.rookie-feature-graphic{padding:8px 0 22px}.rookie-feature-graphic .shell{padding-left:0;padding-right:0}.rookie-feature-graphic figure{border-left:0;border-right:0}.rookie-hero{padding:52px 0 38px}.rookie-hero h1{font-size:56px}.rookie-deck{font-size:17px}.rookie-question{font-size:20px}.rookie-copy .body p{font-size:16px}.rookie-board-grid{grid-template-columns:1fr 1fr}.rookie-section{padding:34px 0}.rookie-rank{font-size:46px}.rookie-section h2{font-size:44px}.roy-board{grid-template-columns:1fr 1fr}.roy-pick{font-size:23px}.rookie-close .final-line{font-size:23px}}
+
+/* 4DK Rookie Class — mobile readability and authentic 8-player cover, Oct 2026.
+   Additive adjustments only; existing article content and design remain intact. */
+body.rookie-feature-page .masthead .brand {
+  color:#101216!important;
+  text-shadow:none!important;
+}
+body.rookie-feature-page .masthead .brand .brand-mark {
+  color:#fff!important;
+}
+body.rookie-feature-page .rookie-hero h1 {
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+body.rookie-feature-page .rookie-feature-graphic img {
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  display:block;
+}
+@media(max-width:700px) {
+  body.rookie-feature-page {overflow-x:clip;}
+  body.rookie-feature-page .rookie-hero h1 {
+    font-size:clamp(36px,9vw,53px)!important;
+    line-height:.94;
+    letter-spacing:-.05em;
+    word-break:normal;
+  }
+  body.rookie-feature-page .rookie-hero h1 em {
+    font-size:.98em;
+    overflow-wrap:anywhere;
+  }
+  body.rookie-feature-page .rookie-jump {
+    position:relative!important;
+    top:auto!important;
+    z-index:2;
+  }
+  body.rookie-feature-page .rookie-intro,
+  body.rookie-feature-page .rookie-board {
+    position:relative;
+    z-index:1;
+  }
+}
