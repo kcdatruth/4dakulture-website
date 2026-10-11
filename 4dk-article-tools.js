@@ -212,3 +212,57 @@ if (/\/nfl(?:\.html)?\/?$/i.test(location.pathname) &&
   script.defer = true;
   document.body.appendChild(script);
 }
+
+// 4DK REGIONAL ARTICLE MAGAZINE: inject a linked reading shelf on the exact 12 original rankings.
+// Original order, analysis, hero graphics, and article content remain in their existing HTML files.
+(() => {
+  const page=(location.pathname.split('/').pop()||'').toLowerCase();
+  const regions={
+    west:{name:'WEST COAST',label:'THE WEST',headline:'THE WEST<br><em>STILL MOVES.</em>',description:'From the L.A. streets to Bay Area independence. Three original arguments, one regional legacy.',color:'#dd6849',labelLong:'West Coast',art:[['doggystyle.jpg','Doggystyle — Snoop Dogg','DOGGYSTYLE'],['the-chronic.jpg','The Chronic — Dr. Dre','THE CHRONIC'],['me-against-the-world.jpg','Me Against the World — 2Pac','ME AGAINST THE WORLD']],paths:['top-26-west-coast-rappers-since-2000.html','top-20-west-coast-rappers-all-time.html','top-25-west-coast-albums-all-time.html']},
+    south:{name:'THE SOUTH',label:'THE SOUTH',headline:'THE SOUTH<br><em>WROTE THE RULES.</em>',description:'New Orleans. Houston. Atlanta. Memphis. The artists and records that changed hip-hop’s center of gravity.',color:'#d4af6e',labelLong:'The South',art:[['south-scarface-the-diary.jpg','The Diary — Scarface','THE DIARY'],['south-outkast-southernplayalistic.jpg','Southernplayalisticadillacmuzik — OutKast','SOUTHERNPLAYALISTIC'],['south-ugk-ridin-dirty.jpg','Ridin’ Dirty — UGK','RIDIN’ DIRTY']],paths:['top-26-southern-rappers-since-2000.html','top-20-southern-rappers-all-time.html','top-25-southern-albums-all-time.html']},
+    east:{name:'EAST COAST',label:'THE EAST',headline:'THE EAST<br><em>SET THE BAR.</em>',description:'From the five boroughs to Philly and beyond: cornerstone albums, lyricists and legacies.',color:'#c18ba9',labelLong:'East Coast',art:[['blueprint-cover.jpg','The Blueprint — Jay-Z','THE BLUEPRINT'],['east-08-cuban-linx.jpg','Only Built 4 Cuban Linx… — Raekwon','CUBAN LINX'],['east-13-muddy-waters.jpg','Muddy Waters — Redman','MUDDY WATERS']],paths:['top-26-east-coast-rappers-2000-2026.html','top-20-east-coast-rappers-all-time.html','top-25-east-coast-albums-all-time.html']},
+    midwest:{name:'MIDWEST',label:'THE MIDWEST',headline:'THE MIDWEST<br><em>HAS RANGE.</em>',description:'Chicago soul, Detroit bars, Cleveland melodies, St. Louis anthems. A region that never needed one sound.',color:'#9bafc0',labelLong:'Midwest',art:[['','Late Registration — Kanye West','LATE REGISTRATION'],['','The Marshall Mathers LP — Eminem','MARSHALL MATHERS LP'],['','Like Water for Chocolate — Common','LIKE WATER FOR CHOCOLATE']],paths:['top-26-midwest-rappers-2000-2026.html','top-20-midwest-rappers-all-time.html','top-25-midwest-albums-all-time.html']}
+  };
+  const types=[{short:'MODERN ERA',title:'26 BEST SINCE 2000',size:'26'}, {short:'ALL-TIME MCs',title:'20 GREATEST RAPPERS',size:'20'}, {short:'CLASSIC ALBUMS',title:'25 GREATEST ALBUMS',size:'25'}];
+  let current=null;
+  for(const [key,region] of Object.entries(regions)){
+    const idx=region.paths.indexOf(page);
+    if(idx!==-1){current={key,region,idx};break;}
+  }
+  if(!current||window.__fourdkRegionalCompanionV1)return;
+  window.__fourdkRegionalCompanionV1=true;
+  function cardArt(item){
+    const [src,alt,caption]=item;
+    if(!src)return `<div class="fdr-sleeve fdr-type-art" role="img" aria-label="${alt}"><b>${caption}</b></div>`;
+    return `<div class="fdr-sleeve has-art"><img src="${src}" alt="${alt}" loading="lazy" decoding="async"><span class="fdr-art-caption">${caption}</span></div>`;
+  }
+  function install(){
+    if(document.querySelector('.fourdk-regional-companion'))return;
+    const main=document.querySelector('main');
+    if(!main)return;
+    document.body.classList.add('fourdk-regional-enhanced');
+    if(!document.querySelector('link[data-fourdk-regional-magazine-css]')){
+      const link=document.createElement('link');link.rel='stylesheet';link.href='4dk-regional-article-magazine.css?v=20261011a';link.dataset.fourdkRegionalMagazineCss='1';document.head.appendChild(link);
+    }
+    const {key,region,idx}=current;
+    const section=document.createElement('section');
+    section.className='fourdk-regional-companion';
+    section.style.setProperty('--fourdk-r-accent',region.color);
+    section.setAttribute('aria-label','Explore other 4DK regional hip-hop rankings');
+    section.innerHTML=`
+      <div class="fdr-wrap">
+        <div class="fdr-kicker"><span class="fdr-eyebrow">4 DA KULTURE • THE REGIONAL ISSUE • ${types[idx].short}</span><a class="fdr-back" href="music-regional-rankings.html">ALL FOUR REGIONS ↗</a></div>
+        <div class="fdr-layout">
+          <div><div class="fdr-title-tag">THE ${region.name} COLLECTION · 4DK ORIGINALS</div><h2 class="fdr-main-title">${region.headline}</h2><p class="fdr-copy">${region.description}</p><div class="fdr-metadata"><span>4DK ORIGINAL COVERAGE</span><span>03 PUBLISHED RANKINGS</span><span>REGION / ${key.toUpperCase()}</span></div></div>
+          <div class="fdr-vinyl-shelf" aria-label="Album sleeves from the ${region.name} archive"><div class="fdr-shelf-top"><span>THE RECORD SHELF</span><span>4DK / ${region.name}</span></div><div class="fdr-sleeves">${region.art.map(cardArt).join('')}</div><div class="fdr-shelf-foot">Three records from the regional conversation · Not ranked in this display</div></div>
+        </div>
+        <div class="fdr-toolbar"><div class="fdr-toolbar-head"><strong>KEEP READING THIS REGION</strong><span>Current article is highlighted below</span></div><nav class="fdr-type-grid" aria-label="Other ${region.name} rankings">${types.map((t,i)=>`<a href="${region.paths[i]}" ${i===idx?'aria-current="page"':''}><small>${t.short} · ${t.size}</small><b>${t.title}</b>${i===idx?'<span class="fdr-active-mark">YOU ARE HERE ✓</span>':'<span class="fdr-active-mark">READ THE LIST ↗</span>'}</a>`).join('')}</nav></div>
+        <nav class="fdr-region-footer" aria-label="Switch between hip-hop regions"><span>SWITCH REGIONS</span>${Object.entries(regions).map(([otherKey,otherRegion])=>`<a href="${otherRegion.paths[idx]}" ${otherKey===key?'aria-current="true"':''}>${otherRegion.name}</a>`).join('')}</nav>
+      </div>`;
+    const firstHero=main.querySelector(':scope > section');
+    if(firstHero)firstHero.insertAdjacentElement('afterend',section);
+    else main.prepend(section);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',install,{once:true});
+  else install();
+})();

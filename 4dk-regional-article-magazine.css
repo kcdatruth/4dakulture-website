@@ -1,0 +1,57 @@
+/* 4 DA KULTURE — Regional Reading Series, October 2026.
+   Additive classes; no edits to existing ranking text or article layouts. */
+.fourdk-regional-enhanced .fourdk-regional-companion{
+  --fourdk-r-accent:#d75640;
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:31px 0 35px;
+  background:radial-gradient(ellipse at 89% 4%,color-mix(in srgb,var(--fourdk-r-accent) 25%,transparent),transparent 65%),linear-gradient(145deg,#19171a,#0c0e10 85%);
+  border-top:4px solid var(--fourdk-r-accent);border-bottom:1px solid #383638;
+  color:#f7f1e8;font-family:Arial,Helvetica,sans-serif;
+}
+.fourdk-regional-enhanced .fourdk-regional-companion a{color:inherit;text-decoration:none}
+.fourdk-regional-enhanced .fourdk-regional-companion *{box-sizing:border-box}
+.fourdk-regional-companion .fdr-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto;position:relative;z-index:1}
+.fourdk-regional-companion .fdr-eyebrow{font:900 10px/1.35 system-ui,sans-serif;letter-spacing:.14em;color:#eacb9e;text-transform:uppercase}
+.fourdk-regional-companion .fdr-kicker{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid #514440;padding-bottom:14px}
+.fourdk-regional-companion .fdr-back{display:inline-flex;align-items:center;gap:5px;font:900 10px/1.3 system-ui,sans-serif;letter-spacing:.08em;color:#f0c68c!important;text-transform:uppercase}
+.fourdk-regional-companion .fdr-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.88fr);gap:24px;align-items:center;padding:24px 0 20px}
+.fourdk-regional-companion .fdr-title-tag{font:900 10px/1.4 system-ui,sans-serif;letter-spacing:.18em;color:var(--fourdk-r-accent);text-transform:uppercase}
+.fourdk-regional-companion .fdr-main-title{color:#f7f1e8!important;letter-spacing:-.035em;text-transform:uppercase;margin:12px 0 14px;font:900 clamp(40px,6vw,73px)/.88 Impact,'Arial Black',Arial,sans-serif}
+.fourdk-regional-companion .fdr-main-title em{font-style:normal;color:#e6c28b}
+.fourdk-regional-companion .fdr-copy{margin:0;max-width:500px;font:400 14px/1.6 Georgia,'Times New Roman',serif;color:#c5b7af}
+.fourdk-regional-companion .fdr-metadata{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.fourdk-regional-companion .fdr-metadata span{border:1px solid #564740;background:#292124;padding:7px 9px;color:#e5c89b;font:900 9px/1.15 system-ui,sans-serif;letter-spacing:.09em}
+.fourdk-regional-companion .fdr-vinyl-shelf{background:#0a0b0f;border:1px solid #695245;padding:15px;box-shadow:10px 10px 0 rgba(0,0,0,.18)}
+.fourdk-regional-companion .fdr-shelf-top{display:flex;justify-content:space-between;gap:10px;padding-bottom:11px;color:#d9c0a5;font:900 9px/1.3 system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.fourdk-regional-companion .fdr-sleeves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.fourdk-regional-companion .fdr-sleeve{position:relative;overflow:hidden;min-width:0;aspect-ratio:1;border:1px solid #514541;background:linear-gradient(125deg,#34302c,#151417)}
+.fourdk-regional-companion .fdr-sleeve img{display:block;width:100%;height:100%;object-fit:cover}
+.fourdk-regional-companion .fdr-sleeve.has-art::after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.77));pointer-events:none}
+.fourdk-regional-companion .fdr-sleeve .fdr-art-caption{position:absolute;bottom:7px;left:7px;right:6px;color:#fff;font:900 clamp(8px,.9vw,11px)/1.05 system-ui,sans-serif;text-shadow:0 1px 3px #000;z-index:1}
+.fourdk-regional-companion .fdr-sleeve.fdr-type-art{display:flex;align-items:flex-end;background:linear-gradient(140deg,#34424b,#1b1b21 78%);padding:8px}
+.fourdk-regional-companion .fdr-sleeve.fdr-type-art:nth-child(2){background:linear-gradient(140deg,#503e3e,#1b1b21 78%)}
+.fourdk-regional-companion .fdr-sleeve.fdr-type-art:nth-child(3){background:linear-gradient(140deg,#4e4334,#1b1b21 78%)}
+.fourdk-regional-companion .fdr-type-art b{font:900 clamp(9px,1.3vw,16px)/1.05 Impact,'Arial Black',sans-serif;color:#f6e2c6;overflow-wrap:anywhere;text-transform:uppercase}
+.fourdk-regional-companion .fdr-shelf-foot{padding-top:10px;color:#b8a99b;font:800 9px/1.3 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.fourdk-regional-companion .fdr-toolbar{padding-top:18px;border-top:1px solid #524642}
+.fourdk-regional-companion .fdr-toolbar-head{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-bottom:12px}
+.fourdk-regional-companion .fdr-toolbar-head strong{font:900 10px/1.3 system-ui,sans-serif;letter-spacing:.12em;color:#f1d4ab;text-transform:uppercase}
+.fourdk-regional-companion .fdr-toolbar-head span{font:700 10px/1.3 system-ui,sans-serif;color:#aca29a}
+.fourdk-regional-companion .fdr-type-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fourdk-regional-companion .fdr-type-grid a{position:relative;min-height:97px;padding:13px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;border:1px solid #5c504a;background:#242225;transition:background .2s,border-color .2s}
+.fourdk-regional-companion .fdr-type-grid a:is(:hover,:focus-visible){border-color:#e4c28a;background:#383036}
+.fourdk-regional-companion .fdr-type-grid a[aria-current="page"]{border-color:#e1b97e;background:#5b402c;box-shadow:inset 0 3px 0 #e1b97e}
+.fourdk-regional-companion .fdr-type-grid small{font:900 9px/1.25 system-ui,sans-serif;letter-spacing:.11em;color:#dbb889;text-transform:uppercase}
+.fourdk-regional-companion .fdr-type-grid b{font:900 clamp(14px,1.7vw,20px)/1.08 Arial,sans-serif;color:#fff;text-transform:uppercase}
+.fourdk-regional-companion .fdr-type-grid .fdr-active-mark{color:#f0c484;font:900 9px/1.25 system-ui,sans-serif;letter-spacing:.06em}
+.fourdk-regional-companion .fdr-region-footer{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.fourdk-regional-companion .fdr-region-footer span{font:900 9px/1.3 system-ui,sans-serif;color:#b9a99a;letter-spacing:.13em;margin-right:5px}
+.fourdk-regional-companion .fdr-region-footer a{border:1px solid #5e5147;padding:8px 11px;font:900 9px/1.25 system-ui,sans-serif;letter-spacing:.06em;color:#e9d0ab!important}
+.fourdk-regional-companion .fdr-region-footer a[aria-current="true"]{border-color:#e1b97e;background:#5b402c;color:#fff!important}
+.fourdk-regional-companion .fdr-region-footer a:hover{border-color:#e1b97e}
+.fourdk-regional-companion .fdr-endcap{border-block:1px solid #453b37;background:#171517;padding:17px 0;color:#e8cda9}
+.fourdk-regional-companion .fdr-endcap a{font:900 10px system-ui,sans-serif;letter-spacing:.08em;color:#e6bf85!important;text-decoration:none}
+.fourdk-regional-enhanced .masthead .menu-btn{color:#fff!important}
+@media(max-width:790px){.fourdk-regional-companion .fdr-layout{grid-template-columns:1fr}.fourdk-regional-companion .fdr-vinyl-shelf{max-width:680px}.fourdk-regional-companion .fdr-main-title{font-size:56px}}
+@media(max-width:550px){.fourdk-regional-companion{padding:25px 0 30px!important}.fourdk-regional-companion .fdr-wrap{width:calc(100% - 30px)}.fourdk-regional-companion .fdr-kicker{align-items:flex-start}.fourdk-regional-companion .fdr-eyebrow{font-size:9px}.fourdk-regional-companion .fdr-back{font-size:9px;white-space:nowrap}.fourdk-regional-companion .fdr-layout{gap:18px;padding-top:20px}.fourdk-regional-companion .fdr-main-title{font-size:46px}.fourdk-regional-companion .fdr-vinyl-shelf{padding:10px;box-shadow:5px 5px 0 rgba(0,0,0,.18)}.fourdk-regional-companion .fdr-sleeves{gap:5px}.fourdk-regional-companion .fdr-sleeve .fdr-art-caption{font-size:8px}.fourdk-regional-companion .fdr-type-grid{grid-template-columns:1fr;gap:6px}.fourdk-regional-companion .fdr-type-grid a{min-height:65px;padding:12px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px}.fourdk-regional-companion .fdr-type-grid b{font-size:16px}.fourdk-regional-companion .fdr-type-grid .fdr-active-mark{grid-column:2;grid-row:1/3}.fourdk-regional-companion .fdr-toolbar-head span{display:none}}
+@media(prefers-reduced-motion:reduce){.fourdk-regional-companion .fdr-type-grid a{transition:none}}
