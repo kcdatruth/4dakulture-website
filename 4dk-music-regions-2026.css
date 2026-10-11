@@ -19,3 +19,24 @@
 .music-front-page .regional-rankings .fourdk-regions-direct{display:inline-block;background:#e6bc7e;color:#211813!important;text-decoration:none!important;padding:12px 16px;font:900 10px system-ui,sans-serif;letter-spacing:.06em;margin:12px 0 19px}
 @media(max-width:700px){.fourdk-regions-gateway .fourdk-gateway-heading{display:block}.fourdk-regions-gateway .fourdk-gateway-heading p{margin-top:12px}.fourdk-regions-gateway .fourdk-gateway-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fourdk-regions-gateway .fourdk-gateway-grid a{min-height:115px}}
 @media(prefers-reduced-motion:reduce){.fourdk-regions-gateway .fourdk-gateway-grid a{transition:none}.fourdk-regions-gateway .fourdk-gateway-grid a:hover{transform:none}}
+
+/* October 11 mobile readability polish: 4DK Music's hamburger was black against charcoal. */
+.music-front-page .masthead .menu-btn,
+.music-front-page .masthead #menuBtn{
+  color:#fff !important;
+  opacity:1 !important;
+  text-shadow:0 0 5px rgba(255,255,255,.17);
+}
+.music-front-page #mobileNav.open{
+  color:#f8f3eb;
+  background:#151517;
+  border-top-color:#413b35;
+}
+.music-front-page #mobileNav.open a{color:#f8f3eb}
+.music-front-page #mobileNav.open a.active{color:#e6bc7e}
+
+/* Give the retained, complete rankings shelf a clear archive treatment. */
+.music-front-page #regional-rankings{
+  border-top:5px solid #e2b67e;
+}
+.music-front-page #regional-rankings .regional-grid{scroll-margin-top:18px}
