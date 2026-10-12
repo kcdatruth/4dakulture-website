@@ -1,6 +1,37 @@
 [
   {
     "category": "NFL",
+    "label": "NFL • WEEK 5 • SUNDAY FINAL",
+    "title": "SUNDAY GOT WILD. ONE GAME LEFT.",
+    "deck": "Ravens 30, Falcons 23 in overtime. The 49ers survive Seattle 32–29 to move to 5–0, Minnesota stays unbeaten and Jacksonville wins in London. All 13 Sunday games are covered. Bills–Rams closes Week 5 on Monday.",
+    "href": "nfl-sunday-recap-week5.html",
+    "date": "2026-10-11",
+    "priority": 100
+  },
+  {
+    "category": "MUSIC",
+    "label": "4DK CLASSICS • ALBUM FILES • ISSUE 03",
+    "title": "THA CARTER II: WHEN WAYNE BECAME WAYNE",
+    "deck": "Our complete 22-track retrospective, favorite cuts and the Southern hip-hop legacy behind Lil Wayne’s 2005 classic.",
+    "href": "album-files-tha-carter-ii.html",
+    "date": "2026-10-11",
+    "priority": 30,
+    "image": "4dk-tha-carter-ii-original-cover.jpg",
+    "alt": "Original Lil Wayne Tha Carter II album artwork"
+  },
+  {
+    "category": "MUSIC",
+    "label": "4DK CLASSICS • ALBUM FILES • ISSUE 02",
+    "title": "DOGGYSTYLE: THE WEST COAST TAKEOVER",
+    "deck": "G-funk, Dr. Dre, Slick Rick’s influence, Snoop’s 1993 case and the debut that helped redefine West Coast rap.",
+    "href": "album-files-doggystyle.html",
+    "date": "2026-10-11",
+    "priority": 20,
+    "image": "doggystyle.jpg",
+    "alt": "Original Doggystyle album artwork"
+  },
+  {
+    "category": "NFL",
     "label": "NFL • WEEK 5 • MAJOR HEADLINES",
     "title": "FIVE NFL STORYLINES WE'RE WATCHING IN WEEK 5",
     "deck": "San Francisco, Seattle, Buffalo, the Rams and the pressure points shaping the next NFL weekend.",
