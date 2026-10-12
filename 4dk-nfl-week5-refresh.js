@@ -1,22 +1,22 @@
 /* 4 DA KULTURE — NFL WEEK 5 CURRENT DESK
- * Latest completed week: Week 4; Week 5 TNF final; Sunday/Monday games upcoming.
+ * Week 5 Sunday is final; Monday Bills–Rams is still upcoming.
  * Archives are kept in the DOM and on their original URLs; this layer never deletes articles.
- * October 10, 2026 edition. Editorial snapshots are labeled as such.
+ * October 11, 2026 Sunday final edition. Week 4 rankings remain labeled snapshots.
  */
 (() => {
   'use strict';
   const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
   if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-10-w5-feature-graphics-v5';
+  const version = '2026-10-11-w5-sunday-final-v1';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
-    {a:'sf',b:'sea',type:'SUNDAY • 4:25 ET',title:'49ERS AT SEAHAWKS',subtitle:'The 4–0 Niners travel to the 3–1 defending champs. Seattle gets Leonard Williams back, while Nick Bosa remains out for San Francisco.',tag:'NFC WEST • GAME OF THE WEEK'},
-    {a:'bal',b:'atl',type:'SUNDAY NIGHT • 8:20 ET',title:'RAVENS AT FALCONS',subtitle:'Lamar Jackson is out with an ankle injury; Tyler Huntley gets the start. Bijan and Atlanta get their next measuring stick.',tag:'INJURY CHANGES THE MATCHUP'},
-    {a:'phi',b:'jax',type:'LONDON • SUNDAY 9:30 ET',title:'EAGLES AT JAGUARS',subtitle:'Jacksonville enters 3–1. Philly enters 2–2. The overseas opener puts both teams under a microscope.',tag:'EARLY KICKOFF'},
-    {a:'lv',b:'ne',type:'SUNDAY • 1:00 ET',title:'RAIDERS AT PATRIOTS',subtitle:'A 3–1 Vegas team looks to rebound against the Patriots team that just handed Buffalo its first defeat.',tag:'AFC CREDIBILITY TEST'},
-    {a:'buf',b:'lar',type:'MONDAY NIGHT • 8:15 ET',title:'BILLS AT RAMS',subtitle:'Buffalo has a response to make after its first loss. The Rams have an opportunity to make another statement in prime time.',tag:'MNF • STAR POWER'}
+    {a:'bal',b:'atl',type:'SUNDAY NIGHT • FINAL / OT',title:'RAVENS 30 • FALCONS 23',subtitle:'Tyler Huntley ties it with 40 seconds left and wins it with a 1-yard overtime touchdown run. Atlanta loses Penix to a rib injury, then sees Kyle Hamilton intercept Tua Tagovailoa.',tag:'SUNDAY NIGHT • OVERTIME FINISH'},
+    {a:'sf',b:'sea',type:'SUNDAY • FINAL',title:'49ERS 32 • SEAHAWKS 29',subtitle:'San Francisco survives a turnover-filled road battle to reach 5–0. Purdy throws for 189 yards and two touchdowns in the NFC West showdown.',tag:'49ERS 5–0 • NFC WEST STATEMENT'},
+    {a:'phi',b:'jax',type:'LONDON • FINAL',title:'JAGUARS 19 • EAGLES 17',subtitle:'Cam Little wins it from 57 yards after an Ameer Abdullah return flips the final seconds. Jacksonville rises to 4–1.',tag:'WALK-OFF IN LONDON'},
+    {a:'lv',b:'ne',type:'SUNDAY • FINAL',title:'PATRIOTS 45 • RAIDERS 17',subtitle:'The Patriots flatten Vegas and both clubs move to 3–2. A hard reality check for a Raiders team chasing legitimacy.',tag:'AFC • THE RESULT THAT STINGS'},
+    {a:'buf',b:'lar',type:'MONDAY NIGHT • 8:15 ET',title:'BILLS AT RAMS',subtitle:'Still to play. Buffalo heads to Los Angeles with a response to make. The final Week 5 power rankings and MVP board wait until this result is in.',tag:'MNF • THE FINAL GAME OF WEEK 5'}
   ];
   const mvp = [
     ['1','BROCK PURDY','SF • QB','4–0; No. 1 in 4DK’s completed Week 4 ranking'],
@@ -220,24 +220,24 @@
     if(!nav)return;
     section=document.createElement('section');section.id='dk5current';section.dataset.edition=version;
     section.innerHTML=`<div class="dk5top"><div class="dk5wrap">
-      <span class="dk5eyebrow">4 DA KULTURE • NFL WEEK 5 • OCTOBER 10, 2026</span>
-      <h1 class="dk5title">THE PRESSURE<br><em>JUST WENT UP.</em></h1>
-      <p class="dk5deck">One game is in the books. The rest of Week 5 is ready to test the league's early pecking order. Our 4–0 49ers head to Seattle, Atlanta hosts Baltimore without Lamar Jackson, and Buffalo closes the week in Los Angeles.</p>
-      <div class="dk5actions"><a href="nfl-week5-preview-2026.html">FULL SUNDAY PREVIEW →</a><a href="nfl-week5-five-major-headlines.html">FIVE STORYLINES →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
-      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">THURSDAY NIGHT • FINAL</span><div class="dk5tnf-logos"><img src="${logo('tb')}" alt="Tampa Bay Buccaneers official team logo" loading="lazy"><span>FINAL</span><img src="${logo('dal')}" alt="Dallas Cowboys official team logo" loading="lazy"></div><span class="dk5score">TAMPA BAY 24 <span style="color:#f1be5d">–</span> DALLAS 16</span><h2>DALLAS LET ONE GET AWAY.</h2><p>The Bucs get their first win; Jalon Daniels earns his first as an NFL starter, and Bucky Irving's ground game helps Tampa secure the road victory. Dallas falls to 2–3 and the playoff questions only get louder.</p><a href="nfl-thursday-recap-week5-buccaneers-cowboys.html">READ THE FULL 4DK BREAKDOWN →</a></article>
-      <aside class="dk5aside"><span class="dk5micro">WEEK 5 • INJURY DESK</span><h3>LAMAR OUT.<br>BOSA OUT.<br>THE BOARD CHANGES.</h3><p>Lamar Jackson will miss Baltimore's Sunday night trip to Atlanta with an ankle injury; Tyler Huntley starts. San Francisco will be without Nick Bosa and Kyle Juszczyk against Seattle, while Leonard Williams is cleared for the Seahawks.</p><p class="dk5time">Statuses checked October 10 • Check again before kickoff</p><a href="nfl-week5-preview-2026.html">THE WEEKEND OUTLOOK →</a></aside></div>
+      <span class="dk5eyebrow">4 DA KULTURE • NFL WEEK 5 • OCTOBER 11, 2026</span>
+      <h1 class="dk5title">SUNDAY GOT WILD.<br><em>ONE GAME LEFT.</em></h1>
+      <p class="dk5deck">Thirteen Sunday games. Baltimore steals the Sunday night finale 30–23 in overtime. The 49ers survive Seattle 32–29 to reach 5–0, Minnesota stays unbeaten, and Jacksonville wins a London thriller. Bills–Rams is still waiting on Monday.</p>
+      <div class="dk5actions"><a href="nfl-sunday-recap-week5.html">FULL SUNDAY RECAP →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
+      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">SUNDAY NIGHT • FINAL / OT</span><div class="dk5tnf-logos"><img src="${logo('bal')}" alt="Baltimore Ravens official team logo" loading="lazy"><span>OT FINAL</span><img src="${logo('atl')}" alt="Atlanta Falcons official team logo" loading="lazy"></div><span class="dk5score">BALTIMORE 30 <span style="color:#f1be5d">–</span> ATLANTA 23 (OT)</span><h2>BALTIMORE STOLE THE NIGHT.</h2><p>Tyler Huntley engineers the tying touchdown and two-point conversion, then scores the overtime winner. Atlanta led 23–15 late but fell to 2–3 after a chaotic finish.</p><a href="nfl-sunday-recap-week5.html#game-01">READ THE SUNDAY NIGHT BREAKDOWN →</a></article>
+      <aside class="dk5aside"><span class="dk5micro">WEEK 5 • SUNDAY FINAL</span><h3>TWO TEAMS<br>AT 5–0.<br>MNF AWAITS.</h3><p>San Francisco beats Seattle 32–29, Minnesota handles New Orleans 23–13, and Jacksonville jolts Philadelphia in London. Penix leaves the Falcons game with a rib injury; follow team updates for his status.</p><p class="dk5time">13 Sunday games completed • Monday still pending</p><a href="nfl-sunday-recap-week5.html">ALL 13 GAME RECAPS →</a></aside></div>
     </div></div><div class="dk5body dk5wrap"><section class="dk5photodesk" id="dk5-photo-desk" aria-label="4DK NFL Week 5 feature graphics">
-  <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • NFL FEATURE DESK</span><h2>THE WEEK 5 <em>SPOTLIGHT.</em></h2></div><p>Major games. Major players. Original 4DK feature graphics and analysis.</p></div>
+  <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • NFL FEATURE DESK</span><h2>THE WEEK 5 <em>SPOTLIGHT.</em></h2></div><p>The original pregame magazine covers are preserved; tap through for updated Sunday-final analysis.</p></div>
   <div class="dk5photogrid">
-    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week5-five-major-headlines.html" aria-label="Open 4DK NFL Week 5: The West Is on the Line"><img class="dk5poster" src="the_west_is_on_the_line.png?v=20261010-feature-v5" alt="4DK NFL Week 5: The West Is on the Line. A San Francisco 49ers quarterback graphic for the NFC West matchup." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
-    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week5-preview-2026.html" aria-label="Open 4DK NFL Week 5: Atlanta Runs Through Bijan"><img class="dk5poster" src="falcons_sunday_night_feature_card.png?v=20261010-feature-v5" alt="4DK NFL Week 5: Atlanta Runs Through Bijan. Sunday Night matchup feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
+    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-sunday-recap-week5.html#game-02" aria-label="Open the 4DK 49ers–Seahawks Week 5 final recap"><img class="dk5poster" src="the_west_is_on_the_line.png?v=20261010-feature-v5" alt="4DK NFL Week 5: The West Is on the Line. A San Francisco 49ers quarterback graphic for the NFC West matchup." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
+    <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-sunday-recap-week5.html#game-01" aria-label="Open the 4DK Ravens–Falcons Sunday Night overtime recap"><img class="dk5poster" src="falcons_sunday_night_feature_card.png?v=20261010-feature-v5" alt="4DK NFL Week 5: Atlanta Runs Through Bijan. Sunday Night matchup feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
     <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week-4-sunday-night-update-2026.html#mvp" aria-label="Open 4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic"><img class="dk5poster" src="who_owns_the_league.png?v=20261010-feature-v5" alt="4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
   </div>
-</section><div class="dk5head"><div><span class="dk5micro">MATCHUPS • TEAMS • STORIES</span><h2>THE WEEK 5 BOARD.</h2></div><p>Tomorrow's biggest tests. This is pregame analysis, not a prediction of final results.</p></div>
+</section><div class="dk5head"><div><span class="dk5micro">SUNDAY RESULTS • MONDAY PREVIEW</span><h2>THE WEEK 5 BOARD.</h2></div><p>Sunday’s five defining matchups, four final scores and the one remaining Monday game. Read every result in our full Sunday recap.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
       <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • WEEK 4 FINAL BASELINE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#mvp">FULL TOP 10 MVP BOARD →</a></div>
       <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • WEEK 4 FINAL BASELINE</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • entering Week 5</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#rookies">FULL TOP 10 ROOKIE BOARD →</a></div></div>
-      <div class="dk5tip"><b>4DK's editorial rule:</b> New-week coverage moves to the front; past-week boards stay in the archive. MVP and Rookie Watch are Week 4 FINAL snapshots until this week's games are complete. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week4-2026.html">Power Rankings entering Week 5</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 standings through Thursday</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
+      <div class="dk5tip"><b>4DK's editorial rule:</b> Sunday coverage moves to the front while every preview stays in the archive. MVP and Rookie Watch are intentionally labeled Week 4 FINAL snapshots until Bills–Rams is complete. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week4-2026.html">Power Rankings entering Week 5</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 standings (check live scores for Sunday changes)</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
       </div>`;
     nav.insertAdjacentElement('afterend',section);
   }
@@ -263,7 +263,7 @@
       details=document.createElement('details');
       details.id='nfl-season-archive';
       details.className='dk5wrap';
-      details.innerHTML=`<summary><b>SEASON ARCHIVE • WEEKS 1–4</b><span>OPEN / CLOSE ▾</span></summary>
+      details.innerHTML=`<summary><b>SEASON ARCHIVE • WEEKS 1–5</b><span>OPEN / CLOSE ▾</span></summary>
         <div class="dk5archlinks">
         <a href="nfl-season-archive-2026.html">FULL SEASON ARCHIVE →</a>
         <a href="nfl-sunday-recaps.html">SUNDAY RECAPS →</a>
