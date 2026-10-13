@@ -1,14 +1,14 @@
 /* 4 DA KULTURE — NFL WEEK 5 CURRENT DESK
- * Week 5 is final, including the Bills–Rams Monday overtime finish.
+ * Week 5 Sunday is final; Monday Bills–Rams is still upcoming.
  * Archives are kept in the DOM and on their original URLs; this layer never deletes articles.
- * October 12, 2026 Monday final edition. Week 4 rankings remain labeled snapshots until a separate post-Week-5 ranking refresh.
+ * October 11, 2026 Sunday final edition. Week 4 rankings remain labeled snapshots.
  */
 (() => {
   'use strict';
   const route = (location.pathname.replace(/\/+$/, '').split('/').pop() || '').toLowerCase();
   if (!['nfl','nfl.html'].includes(route) || window.__fourdkWeek5NFLRefresh) return;
   window.__fourdkWeek5NFLRefresh = true;
-  const version = '2026-10-12-w5-monday-final-v2';
+  const version = '2026-10-11-w5-sunday-final-v1';
   const logo = (team) => `https://a.espncdn.com/i/teamlogos/nfl/500/${team}.png`;
   const matchup = (a,b) => `<div class="dk5logos"><img src="${logo(a)}" alt="${a.toUpperCase()} logo" loading="lazy"><span>AT</span><img src="${logo(b)}" alt="${b.toUpperCase()} logo" loading="lazy"></div>`;
   const matchupCards = [
@@ -16,14 +16,14 @@
     {a:'sf',b:'sea',type:'SUNDAY • FINAL',title:'49ERS 32 • SEAHAWKS 29',subtitle:'San Francisco survives a turnover-filled road battle to reach 5–0. Purdy throws for 189 yards and two touchdowns in the NFC West showdown.',tag:'49ERS 5–0 • NFC WEST STATEMENT'},
     {a:'phi',b:'jax',type:'LONDON • FINAL',title:'JAGUARS 19 • EAGLES 17',subtitle:'Cam Little wins it from 57 yards after an Ameer Abdullah return flips the final seconds. Jacksonville rises to 4–1.',tag:'WALK-OFF IN LONDON'},
     {a:'lv',b:'ne',type:'SUNDAY • FINAL',title:'PATRIOTS 45 • RAIDERS 17',subtitle:'The Patriots flatten Vegas and both clubs move to 3–2. A hard reality check for a Raiders team chasing legitimacy.',tag:'AFC • THE RESULT THAT STINGS'},
-    {a:'buf',b:'lar',type:'MONDAY NIGHT • FINAL / OT',title:'BILLS 37 • RAMS 34 (OT)',subtitle:'Allen delivers 331 total yards. Stafford throws for 383; Puka posts 17 catches. Rousseau blocks the Rams’ winning attempt and Bass ends it from 45 yards.',tag:'MNF • COMPLETE WEEK 5',href:'nfl-mnf-recap-week5-bills-rams.html'}
+    {a:'buf',b:'lar',type:'MONDAY NIGHT • FINAL / OT',title:'BILLS 37 • RAMS 34',subtitle:'Josh Allen delivers 331 combined yards, Puka catches 17 passes, and Greg Rousseau blocks a crucial overtime field goal before Tyler Bass wins it.',tag:'MNF • BUFFALO SURVIVES'}
   ];
   const mvp = [
-    ['1','BROCK PURDY','SF • QB','4–0; No. 1 in 4DK’s completed Week 4 ranking'],
-    ['2','PATRICK MAHOMES','KC • QB','4–0; Kansas City enters its bye week unbeaten'],
-    ['3','KENNETH WALKER III','KC • RB','A central piece of the Chiefs’ undefeated start'],
-    ['4','BIJAN ROBINSON','ATL • RB','145 rushing yards and 2 TD on Week 4 Monday night'],
-    ['5','JARED GOFF','DET • QB','Detroit’s passing production keeps him in the debate']
+    ['1','BROCK PURDY','SF • QB','5–0; San Francisco survives Seattle in a division thriller'],
+    ['2','JOSH ALLEN','BUF • QB','331 combined yards and 2 total TD; OT win over the Rams'],
+    ['3','PATRICK MAHOMES','KC • QB','4–0; undefeated Chiefs return from Week 5 bye'],
+    ['4','KENNETH WALKER III','KC • RB','Remains a centerpiece of unbeaten Kansas City’s attack'],
+    ['5','BIJAN ROBINSON','ATL • RB','Still in the conversation despite the Falcons’ OT loss']
   ];
   const rookies = [
     ['1','JACOB RODRIGUEZ','MIAMI • LB'],
@@ -32,7 +32,7 @@
     ['4','HEZEKIAH MASSES','LAS VEGAS • CB'],
     ['5','CARNELL TATE','TENNESSEE • WR']
   ];
-  const card = (s) => `<article class="dk5game"><span class="dk5micro">${s.type}</span>${matchup(s.a,s.b)}<h3>${s.title}</h3><p>${s.subtitle}</p><small>${s.tag}</small>${s.href?`<a class="dk5-result-link" href="${s.href}">READ THE MONDAY NIGHT BREAKDOWN →</a>`:''}</article>`;
+  const card = (s) => `<article class="dk5game"><span class="dk5micro">${s.type}</span>${matchup(s.a,s.b)}<h3>${s.title}</h3><p>${s.subtitle}</p><small>${s.tag}</small></article>`;
 
   function styles(){
     if(document.getElementById('dk5refresh-styles')) return;
@@ -113,7 +113,7 @@
     .dk5logos span{font:900 10px Arial;color:#9da99d}
     .dk5game h3{font:1000 23px/.99 Impact,'Arial Black',sans-serif;margin:10px 0}
     .dk5game p{color:#b8bdb8;font:13px/1.62 Arial,sans-serif;min-height:85px;margin:0 0 14px}
-    .dk5game small{display:block;color:#f0bb5b;font:900 10px Arial,sans-serif;letter-spacing:.06em}.dk5-result-link{display:inline-block;margin-top:13px;padding:10px 12px;border:1px solid #f0bb5b;color:#f0bb5b!important;font:900 11px Arial,sans-serif;text-decoration:none}
+    .dk5game small{display:block;color:#f0bb5b;font:900 10px Arial,sans-serif;letter-spacing:.06em}
     .dk5boards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
     .dk5board{border:1px solid #39423c;background:#0d120e;padding:20px}
     .dk5board h3{font:1000 28px/1 Impact,'Arial Black',sans-serif;margin:7px 0 11px}
@@ -220,12 +220,12 @@
     if(!nav)return;
     section=document.createElement('section');section.id='dk5current';section.dataset.edition=version;
     section.innerHTML=`<div class="dk5top"><div class="dk5wrap">
-      <span class="dk5eyebrow">4 DA KULTURE • NFL WEEK 5 • OCTOBER 12, 2026</span>
-      <h1 class="dk5title">WEEK 5 IS COMPLETE.<br><em>ALLEN GOT THE LAST WORD.</em></h1>
-      <p class="dk5deck">Buffalo wins 37–34 in overtime on Monday night to finish Week 5. Allen and Stafford trade late-game answers, Puka makes 17 catches, Rousseau blocks a potential Rams winner, and Bass finishes it. Sunday’s 13 games — including San Francisco’s 5–0 start — remain covered in full.</p>
-      <div class="dk5actions"><a href="nfl-mnf-recap-week5-bills-rams.html">READ THE MNF FINAL →</a><a href="nfl-monday-recaps.html">MONDAY RECAP ARCHIVE →</a><a href="nfl-sunday-recap-week5.html">FULL SUNDAY RECAP →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
-      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">MONDAY NIGHT • FINAL / OT</span><div class="dk5tnf-logos"><img src="${logo('buf')}" alt="Buffalo Bills official team logo" loading="lazy"><span>OT FINAL</span><img src="${logo('lar')}" alt="Los Angeles Rams official team logo" loading="lazy"></div><span class="dk5score">BUFFALO 37 <span style="color:#f1be5d">–</span> LOS ANGELES 34 (OT)</span><h2>ALLEN GOT THE LAST WORD.</h2><p>Allen: 331 total yards. Stafford: 383 passing yards. Puka: 17 catches. Cook: two fumbles. Rousseau blocks a would-be game winner before Bass closes it from 45 yards.</p><a href="nfl-mnf-recap-week5-bills-rams.html">READ OUR IN-DEPTH MNF BREAKDOWN →</a></article>
-      <aside class="dk5aside"><span class="dk5micro">WEEK 5 • ALL GAMES FINAL</span><h3>BILLS 4–1.<br>RAMS 2–3.<br>THE WEST FEELS IT.</h3><p>San Francisco beats Seattle 32–29, Minnesota handles New Orleans 23–13, and Jacksonville jolts Philadelphia in London. Penix leaves the Falcons game with a rib injury; follow team updates for his status.</p><p class="dk5time">14 Week 5 games completed • Monday final now added</p><a href="nfl-sunday-recap-week5.html">ALL 13 SUNDAY GAME RECAPS →</a></aside></div>
+      <span class="dk5eyebrow">4 DA KULTURE • NFL WEEK 5 • OCTOBER 11, 2026</span>
+      <h1 class="dk5title">SUNDAY GOT WILD.<br><em>ONE GAME LEFT.</em></h1>
+      <p class="dk5deck">Thirteen Sunday games. Baltimore steals the Sunday night finale 30–23 in overtime. The 49ers survive Seattle 32–29 to reach 5–0, Minnesota stays unbeaten, and Jacksonville wins a London thriller. Bills–Rams is still waiting on Monday.</p>
+      <div class="dk5actions"><a href="nfl-sunday-recap-week5.html">FULL SUNDAY RECAP →</a><a href="nfl-sunday-recaps.html">SUNDAY ARCHIVE →</a><a href="#dk5rankings">MVP + ROOKIE WATCH →</a><a href="#scoreboard">LIVE SCOREBOARD →</a><a href="nfl-week5-standings-2026.html">WEEK 5 STANDINGS →</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE →</a></div>
+      <div class="dk5strap"><article class="dk5lead"><span class="dk5micro">SUNDAY NIGHT • FINAL / OT</span><div class="dk5tnf-logos"><img src="${logo('bal')}" alt="Baltimore Ravens official team logo" loading="lazy"><span>OT FINAL</span><img src="${logo('atl')}" alt="Atlanta Falcons official team logo" loading="lazy"></div><span class="dk5score">BALTIMORE 30 <span style="color:#f1be5d">–</span> ATLANTA 23 (OT)</span><h2>BALTIMORE STOLE THE NIGHT.</h2><p>Tyler Huntley engineers the tying touchdown and two-point conversion, then scores the overtime winner. Atlanta led 23–15 late but fell to 2–3 after a chaotic finish.</p><a href="nfl-sunday-recap-week5.html#game-01">READ THE SUNDAY NIGHT BREAKDOWN →</a></article>
+      <aside class="dk5aside"><span class="dk5micro">WEEK 5 • SUNDAY FINAL</span><h3>TWO TEAMS<br>AT 5–0.<br>MNF AWAITS.</h3><p>San Francisco beats Seattle 32–29, Minnesota handles New Orleans 23–13, and Jacksonville jolts Philadelphia in London. Penix leaves the Falcons game with a rib injury; follow team updates for his status.</p><p class="dk5time">13 Sunday games completed • Monday still pending</p><a href="nfl-sunday-recap-week5.html">ALL 13 GAME RECAPS →</a></aside></div>
     </div></div><div class="dk5body dk5wrap"><section class="dk5photodesk" id="dk5-photo-desk" aria-label="4DK NFL Week 5 feature graphics">
   <div class="dk5photohead"><div><span class="dk5micro">4 DA KULTURE • NFL FEATURE DESK</span><h2>THE WEEK 5 <em>SPOTLIGHT.</em></h2></div><p>The original pregame magazine covers are preserved; tap through for updated Sunday-final analysis.</p></div>
   <div class="dk5photogrid">
@@ -233,11 +233,11 @@
     <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-sunday-recap-week5.html#game-01" aria-label="Open the 4DK Ravens–Falcons Sunday Night overtime recap"><img class="dk5poster" src="falcons_sunday_night_feature_card.png?v=20261010-feature-v5" alt="4DK NFL Week 5: Atlanta Runs Through Bijan. Sunday Night matchup feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
     <article class="dk5photocard dk5graphic-card"><a class="dk5photolink" href="nfl-week-4-sunday-night-update-2026.html#mvp" aria-label="Open 4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic"><img class="dk5poster" src="who_owns_the_league.png?v=20261010-feature-v5" alt="4DK MVP Watch: Who Owns the League? Kansas City Chiefs MVP race feature graphic." loading="lazy" decoding="async"><span class="dk5graphic-read">READ THE 4DK STORY →</span></a></article>
   </div>
-</section><div class="dk5head"><div><span class="dk5micro">WEEK 5 • ALL RESULTS FINAL</span><h2>THE WEEK 5 BOARD.</h2></div><p>Week 5 is complete. Explore the Monday overtime classic and our full set of Sunday recaps.</p></div>
+</section><div class="dk5head"><div><span class="dk5micro">WEEK 5 • ALL GAMES FINAL</span><h2>THE WEEK 5 BOARD.</h2></div><p>The full Week 5 slate is complete. Buffalo wins Monday’s overtime thriller, while the 49ers and Vikings remain undefeated. Read the Sunday and Monday recaps.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
-      <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • WEEK 4 FINAL BASELINE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#mvp">FULL TOP 10 MVP BOARD →</a></div>
-      <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • WEEK 4 FINAL BASELINE</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • entering Week 5</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#rookies">FULL TOP 10 ROOKIE BOARD →</a></div></div>
-      <div class="dk5tip"><b>4DK's editorial rule:</b> Sunday coverage moves to the front while every preview stays in the archive. MVP and Rookie Watch below remain labeled Week 4 FINAL snapshots while our post-Week-5 rankings are prepared; no unverified rankings have been inserted. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week4-2026.html">Power Rankings entering Week 5</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 standings (check live scores for Sunday changes)</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
+      <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • POST-WEEK 5 TOP FIVE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#mvp">FULL TOP 10 MVP BOARD →</a></div>
+      <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • WEEK 4 VERIFIED BASELINE</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • previous ranking; Week 5 review pending</small></div></div>`).join('')}<a href="nfl-week-4-sunday-night-update-2026.html#rookies">FULL TOP 10 ROOKIE BOARD →</a></div></div>
+      <div class="dk5tip"><b>4DK's editorial rule:</b> Sunday coverage moves to the front while every preview stays in the archive. MVP Watch reflects our post-Week 5 editorial top five. Rookie Watch is explicitly retained as the Week 4 baseline until individual Week 5 rookie performances are checked. The previous full Top 10 boards remain archived. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week4-2026.html">Power Rankings entering Week 5</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 final standings</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
       </div>`;
     nav.insertAdjacentElement('afterend',section);
   }
