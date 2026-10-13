@@ -1,0 +1,30 @@
+4 DA KULTURE — MASTER WORKFLOW / HANDOFF
+Updated October 13, 2026
+
+WEBSITE
+Live domain: https://4dakulturemedia.com/
+GitHub: https://github.com/kcdatruth/4dakulture-website
+Branch: main. Site includes NBA, NFL, hip-hop, culture, TV, magazine, archives and interactive features.
+
+LOCKED AND PREFERRED UPDATE METHOD
+1. Assistant makes a SMALL ZIP with ONLY the updated website files, at ZIP root (not inside another folder).
+2. User downloads ZIP on Android, extracts it in My Files.
+3. In GitHub repo main, Add file > Upload files. Select individual extracted HTML/CSS/JS/image files, NOT ZIP and NOT README.
+4. Verify file names and destination (repo root), enter concise commit message, tap Commit changes.
+5. Verify published site after deployment.
+Never ask user to manually code, copy HTML, use terminal or overwrite the whole repo. Never delete existing articles, archives, playlists, graphics or pages. Replace ONLY files explicitly in the small update ZIP.
+
+CONTENT / STYLE
+4DK articles use collective voice (we / 4 Da Kulture), not personal first-person Kcdatruth perspective. Deep, informed magazine-style sports and hip-hop writing. No sources/references section or external outlet name drops in published article copy. Verify current facts, rosters, dates, scores and photos before publishing. Do not invent stats. Prefer real/authentic player photos and headline-specific graphics. Preserve all previous articles as archives.
+
+SITE UI
+On mobile the 4 DA KULTURE logo/header and score ticker should be ABOVE the lead headlines. NBA live scores should appear as a top ticker, not an NFL-style section.
+
+NFL
+Week 6 preview featured Josh Allen with authentic user-provided photos; Week 5 articles remain archived. Keep weekly MVP, rookie watch, standings, power rankings, Sunday and Monday recaps current without deleting prior weeks.
+
+NBA
+Preseason 2026–27 daily desk, Nightcap, full 30-team power rankings, rookie-class feature, season preview, live top ticker, and archived Nightcaps. Last known published Nightcap October 11, 2026. This October 13 ZIP updates nba.html front-page desk ONLY; it does not invent an October 12/13 game recap. As games finish, write verified in-depth nightly recaps and player stats.
+
+CONTINUITY RULE
+At end of long chats, update this file with: what was posted, exact filenames, pending tasks, and the last verified live state. Upload this handoff file to new chat along with latest relevant ZIP if needed. Do not claim new chat automatically sees every detail.
