@@ -5,11 +5,7 @@
   const refreshBtn=root.querySelector('[data-score-refresh]');
   const liveRegion=root.querySelector('[data-score-live-region]');
   let timer=null;
-  const SPORTS=[
-    {league:'NFL',path:'football/nfl'},{league:'NBA',path:'basketball/nba'},{league:'MLB',path:'baseball/mlb'},
-    {league:'NHL',path:'hockey/nhl'},{league:'WNBA',path:'basketball/wnba'},{league:'NCAAF',path:'football/college-football'},
-    {league:'NCAAM',path:'basketball/mens-college-basketball'},{league:'NCAAW',path:'basketball/womens-college-basketball'}
-  ];
+  const SPORTS=[{league:'NFL',path:'football/nfl'},{league:'NBA',path:'basketball/nba'}];
   const esc=(value='')=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   function localDateKey(){const n=new Date();return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`}
   const compactDate=d=>d.replaceAll('-','');
