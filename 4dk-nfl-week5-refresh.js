@@ -26,11 +26,11 @@
     ['5','BIJAN ROBINSON','ATL • RB','Still in the conversation despite the Falcons’ OT loss']
   ];
   const rookies = [
-    ['1','JACOB RODRIGUEZ','MIAMI • LB'],
-    ['2','ANTHONY HILL JR.','TENNESSEE • LB'],
-    ['3','DENZEL BOSTON','CLEVELAND • WR'],
-    ['4','HEZEKIAH MASSES','LAS VEGAS • CB'],
-    ['5','CARNELL TATE','TENNESSEE • WR']
+    ['1','DAVID BAILEY','NEW YORK JETS • EDGE'],
+    ['2','SONNY STYLES','WASHINGTON • LB'],
+    ['3','CARNELL TATE','TENNESSEE • WR'],
+    ['4','GAVIN BARTHOLOMEW','ROOKIE WATCH • TOP FIVE'],
+    ['5','WILLIE LAMPKIN','ROOKIE WATCH • TOP FIVE']
   ];
   const card = (s) => `<article class="dk5game"><span class="dk5micro">${s.type}</span>${matchup(s.a,s.b)}<h3>${s.title}</h3><p>${s.subtitle}</p><small>${s.tag}</small></article>`;
 
@@ -236,8 +236,8 @@
 </section><div class="dk5head"><div><span class="dk5micro">WEEK 5 • ALL GAMES FINAL</span><h2>THE WEEK 5 BOARD.</h2></div><p>The full Week 5 slate is complete. Buffalo wins Monday’s overtime thriller, while the 49ers and Vikings remain undefeated. Read the Sunday and Monday recaps.</p></div>
       <div class="dk5games">${matchupCards.map(card).join('')}</div>
       <div class="dk5boards" id="dk5rankings"><div class="dk5board"><span class="dk5micro">4DK MVP WATCH • POST-WEEK 5 TOP FIVE</span><h3>THE TOP OF THE RACE</h3>${mvp.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • ${p[3]}</small></div></div>`).join('')}<a href="nfl-mvp-watch-week5-2026.html">FULL TOP 10 MVP BOARD →</a></div>
-      <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • WEEK 5 STATUS / PRIOR BOARD</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]} • previous ranking; Week 5 review pending</small></div></div>`).join('')}<a href="nfl-rookie-watch-week5-2026.html">ROOKIE WATCH STATUS →</a></div></div>
-      <div class="dk5tip"><b>4DK's editorial rule:</b> Sunday coverage moves to the front while every preview stays in the archive. MVP Watch reflects our post-Week 5 editorial top five. Rookie Watch is explicitly retained as the Week 4 baseline until individual Week 5 rookie performances are checked. The previous full Top 10 boards remain archived. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week5-2026.html">Post-Week 5 Power Rankings</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 final standings</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
+      <div class="dk5board"><span class="dk5micro">4DK ROOKIE WATCH • POST-WEEK 5 TOP FIVE</span><h3>THE NEW NAMES TO KNOW</h3>${rookies.map(p=>`<div class="dk5row"><b>${p[0]}</b><div><strong>${p[1]}</strong><small>${p[2]}</small></div></div>`).join('')}<a href="nfl-rookie-watch-week5-2026.html">FULL TOP 10 ROOKIE BOARD →</a></div></div>
+      <div class="dk5tip"><b>4DK's editorial rule:</b> Sunday coverage moves to the front while every preview stays in the archive. MVP Watch reflects our post-Week 5 editorial top five. Rookie Watch now features the updated Week 5 top five, with the complete top ten in the linked article. The previous full Top 10 boards remain archived. Full 1–32 <a style="color:#f4c461" href="nfl-power-rankings-week5-2026.html">Post-Week 5 Power Rankings</a>, <a style="color:#f4c461" href="nfl-week5-standings-2026.html">Week 5 final standings</a> and <a style="color:#f4c461" href="nfl-season-archive-2026.html">all archived recaps</a> remain available.</div>
       </div>`;
     nav.insertAdjacentElement('afterend',section);
   }
