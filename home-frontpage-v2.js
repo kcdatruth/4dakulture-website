@@ -526,3 +526,56 @@
   s.dataset.fourdkDailyDesk='1';
   document.head.appendChild(s);
 })();
+
+
+/* 4DK AUTO DESK v1: curated, date-sorted, no fabricated news or images. */
+(() => {
+  const path = location.pathname.replace(/^\/+|\/+$/g, '');
+  if (path !== '' && path !== 'index.html') return;
+  const render = async () => {
+    const main = document.querySelector('main');
+    if (!main || document.getElementById('fourdk-auto-desk')) return;
+    try {
+      const response = await fetch('4dk-frontdesk-feed.json', {cache:'no-store'});
+      if (!response.ok) return;
+      const raw = await response.json();
+      if (!Array.isArray(raw)) return;
+      const valid = raw.filter(s => s && typeof s.title === 'string' && typeof s.href === 'string' && /^(?!\/|https?:|javascript:)[a-zA-Z0-9._\/-]+\.html$/.test(s.href) && /^\d{4}-\d{2}-\d{2}$/.test(s.date || '') && s.date <= new Date().toISOString().slice(0,10));
+      valid.sort((a,b) => b.date.localeCompare(a.date) || (Number(b.priority)||0)-(Number(a.priority)||0));
+      if (!valid.length) return;
+      const selected=valid.slice(0,6);
+      const css=document.createElement('style');css.textContent=`
+        #fourdk-auto-desk{background:#101211;color:#f5f0e8;border-top:4px solid #dc4a31;border-bottom:1px solid #39332b;padding:28px 0}
+        #fourdk-auto-desk .auto-shell{width:min(1180px,92%);margin:auto}
+        #fourdk-auto-desk h2{font:900 clamp(29px,5vw,52px)/1 Impact,Arial,sans-serif;margin:4px 0 8px;color:#fff}
+        #fourdk-auto-desk .auto-kicker{font-size:11px;color:#e7bb6b;letter-spacing:.13em;font-weight:900}
+        #fourdk-auto-desk .auto-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+        #fourdk-auto-desk .auto-story{background:#1a1d1a;border:1px solid #3c403b;display:flex;flex-direction:column;text-decoration:none;color:#fff;overflow:hidden}
+        #fourdk-auto-desk .auto-story img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+        #fourdk-auto-desk .auto-body{padding:16px;flex:1}
+        #fourdk-auto-desk .auto-meta{font-size:10px;letter-spacing:.1em;color:#e7bb6b;font-weight:900;text-transform:uppercase}
+        #fourdk-auto-desk h3{font:900 clamp(18px,2vw,25px)/1.06 Impact,Arial,sans-serif;margin:10px 0;color:#fff}
+        #fourdk-auto-desk p{font:13px/1.5 Georgia,serif;color:#c4c6c1;margin:0}
+        @media(max-width:760px){#fourdk-auto-desk .auto-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:480px){#fourdk-auto-desk .auto-grid{grid-template-columns:1fr}}
+      `;document.head.appendChild(css);
+      const section=document.createElement('section');section.id='fourdk-auto-desk';section.setAttribute('aria-label','Newest approved 4DK stories');
+      const shell=document.createElement('div');shell.className='auto-shell';
+      const kicker=document.createElement('div');kicker.className='auto-kicker';kicker.textContent='4DK DAILY • LATEST PUBLISHED STORIES';shell.appendChild(kicker);
+      const title=document.createElement('h2');title.textContent='FRESH FROM THE KULTURE.';shell.appendChild(title);
+      const grid=document.createElement('div');grid.className='auto-grid';
+      for(const s of selected){
+        const a=document.createElement('a');a.className='auto-story';a.href=s.href;
+        if(typeof s.image==='string' && /^[a-zA-Z0-9._\/-]+\.(png|jpe?g|webp)$/i.test(s.image)){
+          const img=document.createElement('img');img.src=s.image;img.alt=s.alt || s.title;img.loading='lazy';img.onerror=()=>img.remove();a.appendChild(img);
+        }
+        const body=document.createElement('div');body.className='auto-body';
+        const meta=document.createElement('div');meta.className='auto-meta';meta.textContent=(s.label||s.category||'4DK')+' • '+s.date;body.appendChild(meta);
+        const h=document.createElement('h3');h.textContent=s.title;body.appendChild(h);
+        const p=document.createElement('p');p.textContent=s.deck||'';body.appendChild(p);a.appendChild(body);grid.appendChild(a);
+      }
+      shell.appendChild(grid);section.appendChild(shell);main.prepend(section);
+    }catch(e){ /* Existing homepage remains intact if feed is unavailable. */ }
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',render,{once:true});else render();
+})();
