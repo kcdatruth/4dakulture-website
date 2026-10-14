@@ -1,7 +1,7 @@
 [
   {
     "category": "NBA",
-    "label": "NBA • DAILY DESK • OCTOBER 13",
+    "label": "NBA • DAILY DESK",
     "title": "THE COUNTDOWN IS ON. EVERY ROLE MATTERS.",
     "deck": "The preseason evaluation continues: rotations, young players and the questions that matter before opening night.",
     "href": "nba.html",
@@ -10,7 +10,7 @@
   },
   {
     "category": "NBA",
-    "label": "NBA • NIGHTCAP • OCTOBER 11",
+    "label": "NBA • PRESEASON NIGHTCAP",
     "title": "KYRIE RETURNS. JOKIĆ TRIPLES. HARDEN DELIVERS. CALEB GROWS.",
     "deck": "The October 11 Nightcap stays in the archive as the next NBA reports take shape.",
     "href": "nba-nightcap-2026-10-11.html",
@@ -72,7 +72,9 @@
     "title": "HOMECOMING: THE FAMILY SECRET COMES OUT",
     "deck": "Mama G, Rochelle, Maurice and Lamar. Episode 5 changes the family story, and we break down what it reveals.",
     "href": "the-drop-episode-5.html",
-    "priority": 80
+    "priority": 80,
+    "image": "the-drop-episode-5-homecoming.png",
+    "alt": "4DK The Drop Episode 5 Homecoming original feature graphic"
   },
   {
     "category": "NFL",
