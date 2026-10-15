@@ -17,7 +17,9 @@
     "deck": "The 49ers and Vikings are 5–0. Buffalo survives in overtime. The Seattle–Denver injury picture shifts, and our full Week 6 field report is in.",
     "href": "nfl-desk-oct15-2026.html",
     "date": "2026-10-15",
-    "priority": 260
+    "priority": 260,
+    "image": "4dk-nfl-week6-crossroads.webp",
+    "alt": "Magazine-style illustrated 4DK NFL Week 6 Desk cover with Mahomes, Hurts and Greenlaw"
   },
   {
     "category": "NFL",
@@ -26,7 +28,9 @@
     "deck": "Seahawks–Broncos opens a pivotal week, Bills–Raiders tests Vegas, and San Francisco brings its 5–0 start into Monday night. Full 4DK matchup-by-matchup preview with injury updates.",
     "href": "nfl-week6-preview-oct15-2026.html",
     "date": "2026-10-15",
-    "priority": 258
+    "priority": 258,
+    "image": "4dk-nfl-week6-preview.webp",
+    "alt": "Magazine-style illustrated 4DK NFL Week 6 Preview cover featuring Seahawks and Raiders"
   },
   {
     "category": "NFL",
@@ -35,7 +39,9 @@
     "deck": "The refreshed 4DK post-Week 5 MVP Top 10: Purdy, Allen, Mahomes, Lawrence, Maye and the big non-quarterback challengers.",
     "href": "nfl-mvp-watch-week6-2026.html",
     "date": "2026-10-15",
-    "priority": 250
+    "priority": 250,
+    "image": "4dk-nfl-week6-mvp.webp",
+    "alt": "Magazine-style illustrated 4DK Week 6 MVP Watch cover featuring Purdy and Allen"
   },
   {
     "category": "NFL",
