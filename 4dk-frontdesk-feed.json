@@ -50,7 +50,9 @@
     "deck": "Nine pressures and three sacks in Week 5 put Bailey atop the 4DK rookie board. Sonny Styles, Carnell Tate and the next wave follow.",
     "href": "nfl-rookie-watch-week6-2026.html",
     "date": "2026-10-15",
-    "priority": 240
+    "priority": 240,
+    "image": "4dk-nfl-week6-rookie-watch-cover.webp",
+    "alt": "4DK NFL Week 6 rookie watch — The Next Wave editorial cover"
   },
   {
     "category": "NFL",
@@ -59,7 +61,9 @@
     "deck": "All eight divisions, all 32 teams, with verified records through the Monday-night finish. Earlier standings snapshots remain archived.",
     "href": "nfl-standings-after-week5-2026.html",
     "date": "2026-10-15",
-    "priority": 235
+    "priority": 235,
+    "image": "4dk-nfl-week6-standings-cover.webp",
+    "alt": "4DK NFL Week 6 division standings — The Race Tightens editorial cover"
   },
   {
     "category": "NBA",
