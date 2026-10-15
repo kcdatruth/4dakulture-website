@@ -1,5 +1,50 @@
 [
   {
+    "category": "NFL",
+    "label": "4DK NFL • OCTOBER 15 • WEEK 6 DESK",
+    "title": "THE NFL IS AT THE CROSSROADS.",
+    "deck": "The 49ers and Vikings are 5–0. Buffalo survives in overtime. The Seattle–Denver injury picture shifts, and our full Week 6 field report is in.",
+    "href": "nfl-desk-oct15-2026.html",
+    "date": "2026-10-15",
+    "priority": 260
+  },
+  {
+    "category": "NFL",
+    "label": "4DK NFL • COMPLETE WEEK 6 PREVIEW • OCT 15",
+    "title": "WEEK 6. THE PRESSURE RISES. ALL 14 MATCHUPS.",
+    "deck": "Seahawks–Broncos opens a pivotal week, Bills–Raiders tests Vegas, and San Francisco brings its 5–0 start into Monday night. Full 4DK matchup-by-matchup preview with injury updates.",
+    "href": "nfl-week6-preview-oct15-2026.html",
+    "date": "2026-10-15",
+    "priority": 258
+  },
+  {
+    "category": "NFL",
+    "label": "4DK NFL • CURRENT MVP WATCH • OCT 15",
+    "title": "PURDY LEADS. ALLEN ANSWERS. MAHOMES WAITS.",
+    "deck": "The refreshed 4DK post-Week 5 MVP Top 10: Purdy, Allen, Mahomes, Lawrence, Maye and the big non-quarterback challengers.",
+    "href": "nfl-mvp-watch-week6-2026.html",
+    "date": "2026-10-15",
+    "priority": 250
+  },
+  {
+    "category": "NFL",
+    "label": "4DK NFL • CURRENT ROOKIE WATCH • OCT 15",
+    "title": "DAVID BAILEY SETS THE PACE.",
+    "deck": "Nine pressures and three sacks in Week 5 put Bailey atop the 4DK rookie board. Sonny Styles, Carnell Tate and the next wave follow.",
+    "href": "nfl-rookie-watch-week6-2026.html",
+    "date": "2026-10-15",
+    "priority": 240
+  },
+  {
+    "category": "NFL",
+    "label": "4DK NFL • ALL 32 • FINAL WEEK 5 TABLE",
+    "title": "THE NFL STANDINGS ARE SET ENTERING WEEK 6.",
+    "deck": "All eight divisions, all 32 teams, with verified records through the Monday-night finish. Earlier standings snapshots remain archived.",
+    "href": "nfl-standings-after-week5-2026.html",
+    "date": "2026-10-15",
+    "priority": 235
+  },
+  {
     "category": "NBA",
     "label": "4DK NBA • OCTOBER 15 • DAILY DESK",
     "title": "THE SEASON IS CLOSE. THE QUESTIONS AREN’T.",
