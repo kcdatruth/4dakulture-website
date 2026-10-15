@@ -1,5 +1,23 @@
 [
   {
+    "category": "NBA",
+    "label": "4DK NBA • OCTOBER 15 • DAILY DESK",
+    "title": "THE SEASON IS CLOSE. THE QUESTIONS AREN’T.",
+    "deck": "Giannis changes Miami, Duren gives Detroit another gear, Boston turns defense into offense. Plus Raptors–Knicks and Thunder–Rockets next.",
+    "href": "nba-daily-desk-2026-10-15.html",
+    "date": "2026-10-15",
+    "priority": 230
+  },
+  {
+    "category": "NBA",
+    "label": "4DK NBA • OCTOBER 14 • NIGHTCAP",
+    "title": "GIANNIS RUNS MIAMI. DUREN MAKES NOISE. BOSTON CLAMPS DOWN.",
+    "deck": "Seven verified preseason finals: Giannis 20/15/9, Duren 24 in 15 minutes, Tatum, Wemby, Chicago youth, New Orleans and the Clippers finishing Denver.",
+    "href": "nba-nightcap-2026-10-14.html",
+    "date": "2026-10-15",
+    "priority": 220
+  },
+  {
     "category": "SCREEN",
     "label": "4DK SCREEN • THE DROP • EPISODE 6",
     "title": "EXIT WOUNDS: LAMAR BECOMES DJ NEX",
