@@ -94,6 +94,44 @@
   .nba-rank-page .rank-entry.top-ten .entry-copy h2{font-size:clamp(1.85rem,8vw,2.25rem)!important}
 }
 </style>
+<style id="fourdk-top50-ranking-movement-styles">
+/* 4DK ranking history: opening-night baseline (50/50 intact). */
+.fourdk-rank-tracker-intro{margin:19px 0 25px;border:1px solid #b59c84;border-left:5px solid #a02729;padding:18px 19px;background:linear-gradient(125deg,#fff4e0,#eee0d0);color:#25191b}
+.fourdk-rank-tracker-intro .track-eyebrow{font:900 11px/1.35 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8c2529}
+.fourdk-rank-tracker-intro h2{margin:7px 0 7px;font:900 clamp(21px,3vw,28px)/1.15 Georgia,serif;letter-spacing:-.025em;color:#25191b}
+.fourdk-rank-tracker-intro p{margin:0 0 10px;max-width:850px;font-size:15px;line-height:1.55;color:#51433c}
+.fourdk-rank-tracker-intro .tracker-legend{display:flex;gap:10px 18px;flex-wrap:wrap;font:800 11px/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#4b3736}
+.fourdk-rank-tracker-intro .tracker-legend span{white-space:nowrap}
+.fourdk-rank-tracker-intro .tracker-legend b{color:#8b2325}
+.nba-rank-page .rank-entry .fourdk-rank-motion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;max-width:730px;margin:11px 0 18px;padding:1px;background:#bda990;border:1px solid #bda990;clear:both}
+.nba-rank-page .rank-entry .fourdk-rank-motion .rm-box{min-width:0;padding:11px 12px 10px;background:#f9f2e6;display:flex;flex-direction:column;gap:5px;align-items:flex-start}
+.nba-rank-page .rank-entry .fourdk-rank-motion .rm-label{font:900 9px/1.3 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6e6261}
+.nba-rank-page .rank-entry .fourdk-rank-motion .rm-value{font:900 16px/1.25 Arial,sans-serif;color:#261c1d}
+.nba-rank-page .rank-entry .fourdk-rank-motion .rm-status{font:900 12px/1.25 Arial,sans-serif;text-transform:uppercase;letter-spacing:.035em;color:#834729}
+.nba-rank-page .rank-entry .fourdk-rank-motion[data-direction="up"] .rm-status{color:#176c45}
+.nba-rank-page .rank-entry .fourdk-rank-motion[data-direction="down"] .rm-status{color:#b82c32}
+.nba-rank-page .rank-entry .fourdk-rank-motion[data-direction="same"] .rm-status{color:#575256}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion{background:#755257;border-color:#755257}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion .rm-box{background:#231b20}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion .rm-label{color:#c6ad9f}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion .rm-value{color:#fff1de}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion .rm-status{color:#e1bf8e}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion[data-direction="up"] .rm-status{color:#85dea9}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion[data-direction="down"] .rm-status{color:#ffa19e}
+.nba-rank-page .rank-entry.top-ten .fourdk-rank-motion[data-direction="same"] .rm-status{color:#c9c4cb}
+@media(max-width:760px){
+ .fourdk-rank-tracker-intro{margin:14px 0 22px;padding:15px 14px}
+ .nba-rank-page .rank-entry .fourdk-rank-motion{max-width:100%;margin:11px 0 18px}
+ .nba-rank-page .rank-entry .fourdk-rank-motion .rm-box{padding:9px 7px}
+ .nba-rank-page .rank-entry .fourdk-rank-motion .rm-label{font-size:8px;letter-spacing:.03em}
+ .nba-rank-page .rank-entry .fourdk-rank-motion .rm-value{font-size:14px}
+ .nba-rank-page .rank-entry .fourdk-rank-motion .rm-status{font-size:10px;letter-spacing:0}
+}
+@media(max-width:390px){
+ .nba-rank-page .rank-entry .fourdk-rank-motion{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nba-rank-page .rank-entry .fourdk-rank-motion .rm-box:last-child{grid-column:span 2}
+}
+</style>
 </head>
 <body class="nba-rank-page">
 <!-- 4DK TOP 50 FINAL SOURCE ORDER v36: 50 Giddey through 41 Avdija -->
@@ -154,6 +192,13 @@
     </div>
     <p>That is why Kyrie can land in the 40s, why LeBron can sit outside the Top 20, why Brunson can come off a championship and Finals MVP and still barely miss the Top 4 — and why a 22-year-old can take the crown.</p>
     <div class="stats-note"><strong>EXPANDED EDITION:</strong> Every player includes his 2026–27 team, position, 2025–26 regular-season line, age and an official NBA player portrait. Players who missed the full 2025–26 season are marked DNP. The analysis intentionally gets deeper beginning at No. 25 and grows into full essays near the top of the list.</div>
+
+    <aside class="fourdk-rank-tracker-intro" id="fourdk-rank-tracker" aria-label="4DK NBA Top 50 movement tracker">
+      <div class="track-eyebrow">4DK Top 50 / Ranking movement tracker</div>
+      <h2>THE BASELINE IS SET. NOW EARN YOUR SPOT.</h2>
+      <p>These are our initial 2026–27 Top 50 rankings. Each player's current spot is locked as the baseline, so <strong>Previous</strong> and <strong>Movement</strong> begin with no change recorded. After the first 10-game evaluation, we’ll show each player’s previous spot and who climbed, slipped or held steady.</p>
+      <div class="tracker-legend"><span><b>↑</b> Rising</span><span><b>↓</b> Falling</span><span><b>→</b> Holding steady</span><span>— Initial ranking</span></div>
+    </aside>
     <div class="depth-guide"><div><small>50–31</small><b>SCOUTING SNAPSHOTS</b></div><div><small>30–26</small><b>ALL-STAR CASE</b></div><div><small>25–11</small><b>DEEPER BREAKDOWNS</b></div><div><small>10–1</small><b>SUPERSTAR FILES + ESSAYS</b></div></div>
   </section>
 
@@ -176,7 +221,8 @@
   <div class="entry-no">50</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Josh Giddey</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630581.png" alt="Official NBA player portrait of Josh Giddey" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Josh Giddey</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Josh Giddey" aria-label="Current rank 50, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#50</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630581.png" alt="Official NBA player portrait of Josh Giddey" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>24 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Chicago Bulls</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -189,7 +235,8 @@
   <div class="entry-no">49</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Kyrie Irving</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png" alt="Official NBA player portrait of Kyrie Irving" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Kyrie Irving</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Kyrie Irving" aria-label="Current rank 49, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#49</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png" alt="Official NBA player portrait of Kyrie Irving" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>34 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Dallas Mavericks</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -202,7 +249,8 @@
   <div class="entry-no">48</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Ja Morant</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png" alt="Official NBA player portrait of Ja Morant" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Ja Morant</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Ja Morant" aria-label="Current rank 48, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#48</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png" alt="Official NBA player portrait of Ja Morant" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>27 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Portland Trail Blazers</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -215,7 +263,8 @@
   <div class="entry-no">47</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Domantas Sabonis</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627734.png" alt="Official NBA player portrait of Domantas Sabonis" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Domantas Sabonis</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Domantas Sabonis" aria-label="Current rank 47, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#47</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627734.png" alt="Official NBA player portrait of Domantas Sabonis" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>30 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Sacramento Kings</b></span>
       <span><small>POSITION</small><b>C</b></span>
@@ -228,7 +277,8 @@
   <div class="entry-no">46</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>De’Aaron Fox</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628368.png" alt="Official NBA player portrait of De’Aaron Fox" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>De’Aaron Fox</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="De’Aaron Fox" aria-label="Current rank 46, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#46</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628368.png" alt="Official NBA player portrait of De’Aaron Fox" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>28 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>San Antonio Spurs</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -241,7 +291,8 @@
   <div class="entry-no">45</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Zion Williamson</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629627.png" alt="Official NBA player portrait of Zion Williamson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Zion Williamson</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Zion Williamson" aria-label="Current rank 45, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#45</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629627.png" alt="Official NBA player portrait of Zion Williamson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>26 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>New Orleans Pelicans</b></span>
       <span><small>POSITION</small><b>PF</b></span>
@@ -254,7 +305,8 @@
   <div class="entry-no">44</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Cooper Flagg</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1642843.png" alt="Official NBA player portrait of Cooper Flagg" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Cooper Flagg</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Cooper Flagg" aria-label="Current rank 44, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#44</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1642843.png" alt="Official NBA player portrait of Cooper Flagg" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>19 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Dallas Mavericks</b></span>
       <span><small>POSITION</small><b>SF</b></span>
@@ -267,7 +319,8 @@
   <div class="entry-no">43</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Darius Garland</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629636.png" alt="Official NBA player portrait of Darius Garland" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Darius Garland</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Darius Garland" aria-label="Current rank 43, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#43</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629636.png" alt="Official NBA player portrait of Darius Garland" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>26 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Los Angeles Clippers</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -280,7 +333,8 @@
   <div class="entry-no">42</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Julius Randle</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203944.png" alt="Official NBA player portrait of Julius Randle" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Julius Randle</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Julius Randle" aria-label="Current rank 42, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#42</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203944.png" alt="Official NBA player portrait of Julius Randle" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>31 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Brooklyn Nets</b></span>
       <span><small>POSITION</small><b>PF</b></span>
@@ -293,7 +347,8 @@
   <div class="entry-no">41</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Jalen Duren</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631105.png" alt="Official NBA player portrait of Jalen Duren" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Jalen Duren</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jalen Duren" aria-label="Current rank 41, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#41</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631105.png" alt="Official NBA player portrait of Jalen Duren" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>22 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Detroit Pistons</b></span>
       <span><small>POSITION</small><b>C</b></span>
@@ -307,7 +362,8 @@
   <div class="entry-no">40</div>
   <div class="entry-copy">
     <div class="entry-label">SCOUTING SNAPSHOT</div>
-    <h2>Deni Avdija</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630166.png" alt="Official NBA player portrait of Deni Avdija" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Deni Avdija</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Deni Avdija" aria-label="Current rank 40, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#40</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630166.png" alt="Official NBA player portrait of Deni Avdija" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Portland Trail Blazers</b></span>
       <span><small>POSITION</small><b>SF</b></span>
@@ -320,7 +376,8 @@
   <div class="entry-no">39</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Amen Thompson</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1641708.png" alt="Official NBA player portrait of Amen Thompson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Amen Thompson</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Amen Thompson" aria-label="Current rank 39, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#39</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1641708.png" alt="Official NBA player portrait of Amen Thompson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>23 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Houston Rockets</b></span>
       <span><small>POSITION</small><b>PG / SF</b></span>
@@ -333,7 +390,8 @@
   <div class="entry-no">38</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>James Harden</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201935.png" alt="Official NBA player portrait of James Harden" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>James Harden</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="James Harden" aria-label="Current rank 38, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#38</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201935.png" alt="Official NBA player portrait of James Harden" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>37 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Cleveland Cavaliers</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -346,7 +404,8 @@
   <div class="entry-no">37</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Alperen Şengün</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630578.png" alt="Official NBA player portrait of Alperen Şengün" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Alperen Şengün</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Alperen Şengün" aria-label="Current rank 37, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#37</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630578.png" alt="Official NBA player portrait of Alperen Şengün" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>24 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Houston Rockets</b></span>
       <span><small>POSITION</small><b>C</b></span>
@@ -359,7 +418,8 @@
   <div class="entry-no">36</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>OG Anunoby</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628384.png" alt="Official NBA player portrait of OG Anunoby" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>OG Anunoby</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="OG Anunoby" aria-label="Current rank 36, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#36</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628384.png" alt="Official NBA player portrait of OG Anunoby" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>29 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>New York Knicks</b></span>
       <span><small>POSITION</small><b>SF / PF</b></span>
@@ -372,7 +432,8 @@
   <div class="entry-no">35</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Austin Reaves</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630559.png" alt="Official NBA player portrait of Austin Reaves" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Austin Reaves</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Austin Reaves" aria-label="Current rank 35, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#35</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630559.png" alt="Official NBA player portrait of Austin Reaves" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>28 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Los Angeles Lakers</b></span>
       <span><small>POSITION</small><b>SG</b></span>
@@ -385,7 +446,8 @@
   <div class="entry-no">34</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Pascal Siakam</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627783.png" alt="Official NBA player portrait of Pascal Siakam" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Pascal Siakam</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Pascal Siakam" aria-label="Current rank 34, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#34</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627783.png" alt="Official NBA player portrait of Pascal Siakam" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>32 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Indiana Pacers</b></span>
       <span><small>POSITION</small><b>PF</b></span>
@@ -398,7 +460,8 @@
   <div class="entry-no">33</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Franz Wagner</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png" alt="Official NBA player portrait of Franz Wagner" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Franz Wagner</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Franz Wagner" aria-label="Current rank 33, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#33</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png" alt="Official NBA player portrait of Franz Wagner" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Orlando Magic</b></span>
       <span><small>POSITION</small><b>SF</b></span>
@@ -411,7 +474,8 @@
   <div class="entry-no">32</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Jalen Williams</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631114.png" alt="Official NBA player portrait of Jalen Williams" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Jalen Williams</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jalen Williams" aria-label="Current rank 32, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#32</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631114.png" alt="Official NBA player portrait of Jalen Williams" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Oklahoma City Thunder</b></span>
       <span><small>POSITION</small><b>SG / PF</b></span>
@@ -424,7 +488,8 @@
   <div class="entry-no">31</div>
   <div class="entry-copy">
     <div class="entry-label">EXPANDED SCOUT</div>
-    <h2>Stephon Castle</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1642264.png" alt="Official NBA player portrait of Stephon Castle" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Stephon Castle</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Stephon Castle" aria-label="Current rank 31, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#31</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1642264.png" alt="Official NBA player portrait of Stephon Castle" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>21 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>San Antonio Spurs</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -437,7 +502,8 @@
   <div class="entry-no">30</div>
   <div class="entry-copy">
     <div class="entry-label">ALL-STAR CASE</div>
-    <h2>Evan Mobley</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630596.png" alt="Official NBA player portrait of Evan Mobley" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Evan Mobley</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Evan Mobley" aria-label="Current rank 30, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#30</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630596.png" alt="Official NBA player portrait of Evan Mobley" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Cleveland Cavaliers</b></span>
       <span><small>POSITION</small><b>PF / C</b></span>
@@ -450,7 +516,8 @@
   <div class="entry-no">29</div>
   <div class="entry-copy">
     <div class="entry-label">ALL-STAR CASE</div>
-    <h2>Anthony Davis</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203076.png" alt="Official NBA player portrait of Anthony Davis" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Anthony Davis</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Anthony Davis" aria-label="Current rank 29, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#29</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203076.png" alt="Official NBA player portrait of Anthony Davis" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>33 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Washington Wizards</b></span>
       <span><small>POSITION</small><b>PF / C</b></span>
@@ -463,7 +530,8 @@
   <div class="entry-no">28</div>
   <div class="entry-copy">
     <div class="entry-label">ALL-STAR CASE</div>
-    <h2>Trae Young</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629027.png" alt="Official NBA player portrait of Trae Young" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Trae Young</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Trae Young" aria-label="Current rank 28, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#28</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629027.png" alt="Official NBA player portrait of Trae Young" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>28 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Washington Wizards</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -476,7 +544,8 @@
   <div class="entry-no">27</div>
   <div class="entry-copy">
     <div class="entry-label">ALL-STAR CASE</div>
-    <h2>Joel Embiid</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203954.png" alt="Official NBA player portrait of Joel Embiid" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Joel Embiid</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Joel Embiid" aria-label="Current rank 27, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#27</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203954.png" alt="Official NBA player portrait of Joel Embiid" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>32 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Philadelphia 76ers</b></span>
       <span><small>POSITION</small><b>C</b></span>
@@ -489,7 +558,8 @@
   <div class="entry-no">26</div>
   <div class="entry-copy">
     <div class="entry-label">ALL-STAR CASE</div>
-    <h2>Chet Holmgren</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631096.png" alt="Official NBA player portrait of Chet Holmgren" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
+    <h2>Chet Holmgren</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Chet Holmgren" aria-label="Current rank 26, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#26</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631096.png" alt="Official NBA player portrait of Chet Holmgren" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 50 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>24 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Oklahoma City Thunder</b></span>
       <span><small>POSITION</small><b>C / PF</b></span>
@@ -502,7 +572,8 @@
   <div class="entry-no">25</div>
   <div class="entry-copy">
     <div class="entry-label">TOP-25 BREAKDOWN</div>
-    <h2>LaMelo Ball</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png" alt="NBA player portrait of LaMelo Ball" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>LaMelo Ball</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="LaMelo Ball" aria-label="Current rank 25, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#25</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png" alt="NBA player portrait of LaMelo Ball" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Minnesota Timberwolves</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -515,7 +586,8 @@
   <div class="entry-no">24</div>
   <div class="entry-copy">
     <div class="entry-label">TOP-25 BREAKDOWN</div>
-    <h2>Tyrese Haliburton</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630169.png" alt="NBA player portrait of Tyrese Haliburton" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Tyrese Haliburton</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Tyrese Haliburton" aria-label="Current rank 24, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#24</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630169.png" alt="NBA player portrait of Tyrese Haliburton" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>26 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Indiana Pacers</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -528,7 +600,8 @@
   <div class="entry-no">23</div>
   <div class="entry-copy">
     <div class="entry-label">TOP-25 BREAKDOWN</div>
-    <h2>Karl-Anthony Towns</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626157.png" alt="NBA player portrait of Karl-Anthony Towns" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Karl-Anthony Towns</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Karl-Anthony Towns" aria-label="Current rank 23, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#23</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626157.png" alt="NBA player portrait of Karl-Anthony Towns" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>30 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>New York Knicks</b></span>
       <span><small>POSITION</small><b>C / PF</b></span>
@@ -541,7 +614,8 @@
   <div class="entry-no">22</div>
   <div class="entry-copy">
     <div class="entry-label">TOP-25 BREAKDOWN</div>
-    <h2>Devin Booker</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626164.png" alt="NBA player portrait of Devin Booker" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Devin Booker</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Devin Booker" aria-label="Current rank 22, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#22</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626164.png" alt="NBA player portrait of Devin Booker" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>29 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Phoenix Suns</b></span>
       <span><small>POSITION</small><b>SG / PG</b></span>
@@ -554,7 +628,8 @@
   <div class="entry-no">21</div>
   <div class="entry-copy">
     <div class="entry-label">TOP-25 BREAKDOWN</div>
-    <h2>LeBron James</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="NBA player portrait of LeBron James" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>LeBron James</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="LeBron James" aria-label="Current rank 21, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#21</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="NBA player portrait of LeBron James" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>41 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Philadelphia 76ers</b></span>
       <span><small>POSITION</small><b>SF / PF</b></span>
@@ -567,7 +642,8 @@
   <div class="entry-no">20</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Jamal Murray</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627750.png" alt="NBA player portrait of Jamal Murray" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Jamal Murray</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jamal Murray" aria-label="Current rank 20, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#20</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627750.png" alt="NBA player portrait of Jamal Murray" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>29 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Denver Nuggets</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -580,7 +656,8 @@
   <div class="entry-no">19</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Paolo Banchero</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631094.png" alt="NBA player portrait of Paolo Banchero" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Paolo Banchero</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Paolo Banchero" aria-label="Current rank 19, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#19</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631094.png" alt="NBA player portrait of Paolo Banchero" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>23 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Orlando Magic</b></span>
       <span><small>POSITION</small><b>PF</b></span>
@@ -593,7 +670,8 @@
   <div class="entry-no">18</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Scottie Barnes</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630567.png" alt="NBA player portrait of Scottie Barnes" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Scottie Barnes</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Scottie Barnes" aria-label="Current rank 18, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#18</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630567.png" alt="NBA player portrait of Scottie Barnes" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Toronto Raptors</b></span>
       <span><small>POSITION</small><b>PF / SF</b></span>
@@ -606,7 +684,8 @@
   <div class="entry-no">17</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Bam Adebayo</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png" alt="NBA player portrait of Bam Adebayo" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Bam Adebayo</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Bam Adebayo" aria-label="Current rank 17, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#17</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png" alt="NBA player portrait of Bam Adebayo" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>29 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Miami Heat</b></span>
       <span><small>POSITION</small><b>C / PF</b></span>
@@ -619,7 +698,8 @@
   <div class="entry-no">16</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Jalen Johnson</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630552.png" alt="NBA player portrait of Jalen Johnson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Jalen Johnson</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jalen Johnson" aria-label="Current rank 16, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#16</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630552.png" alt="NBA player portrait of Jalen Johnson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>24 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Atlanta Hawks</b></span>
       <span><small>POSITION</small><b>SF / PF</b></span>
@@ -632,7 +712,8 @@
   <div class="entry-no">15</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Donovan Mitchell</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628378.png" alt="NBA player portrait of Donovan Mitchell" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Donovan Mitchell</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Donovan Mitchell" aria-label="Current rank 15, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#15</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628378.png" alt="NBA player portrait of Donovan Mitchell" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>30 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Cleveland Cavaliers</b></span>
       <span><small>POSITION</small><b>SG / PG</b></span>
@@ -645,7 +726,8 @@
   <div class="entry-no">14</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Kevin Durant</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png" alt="NBA player portrait of Kevin Durant" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Kevin Durant</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Kevin Durant" aria-label="Current rank 14, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#14</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png" alt="NBA player portrait of Kevin Durant" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>38 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Houston Rockets</b></span>
       <span><small>POSITION</small><b>SF / PF</b></span>
@@ -658,7 +740,8 @@
   <div class="entry-no">13</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Tyrese Maxey</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png" alt="NBA player portrait of Tyrese Maxey" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Tyrese Maxey</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Tyrese Maxey" aria-label="Current rank 13, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#13</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png" alt="NBA player portrait of Tyrese Maxey" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Philadelphia 76ers</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -671,7 +754,8 @@
   <div class="entry-no">12</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Stephen Curry</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png" alt="NBA player portrait of Stephen Curry" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Stephen Curry</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Stephen Curry" aria-label="Current rank 12, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#12</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png" alt="NBA player portrait of Stephen Curry" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>38 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Golden State Warriors</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -684,7 +768,8 @@
   <div class="entry-no">11</div>
   <div class="entry-copy">
     <div class="entry-label">DEEP-DIVE ANALYSIS</div>
-    <h2>Jaylen Brown</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png" alt="NBA player portrait of Jaylen Brown" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Jaylen Brown</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jaylen Brown" aria-label="Current rank 11, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#11</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png" alt="NBA player portrait of Jaylen Brown" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>29 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Philadelphia 76ers</b></span>
       <span><small>POSITION</small><b>SF / SG</b></span>
@@ -697,7 +782,8 @@
   <div class="entry-no">10</div>
   <div class="entry-copy">
     <div class="entry-label">SUPERSTAR FILE</div>
-    <h2>Jayson Tatum</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png" alt="NBA player portrait of Jayson Tatum" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Jayson Tatum</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jayson Tatum" aria-label="Current rank 10, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#10</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628369.png" alt="NBA player portrait of Jayson Tatum" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>28 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Boston Celtics</b></span>
       <span><small>POSITION</small><b>SF / PF</b></span>
@@ -710,7 +796,8 @@
   <div class="entry-no">9</div>
   <div class="entry-copy">
     <div class="entry-label">SUPERSTAR FILE</div>
-    <h2>Kawhi Leonard</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202695.png" alt="NBA player portrait of Kawhi Leonard" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Kawhi Leonard</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Kawhi Leonard" aria-label="Current rank 9, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#9</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202695.png" alt="NBA player portrait of Kawhi Leonard" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>35 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Toronto Raptors</b></span>
       <span><small>POSITION</small><b>SF</b></span>
@@ -723,7 +810,8 @@
   <div class="entry-no">8</div>
   <div class="entry-copy">
     <div class="entry-label">SUPERSTAR FILE</div>
-    <h2>Cade Cunningham</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630595.png" alt="NBA player portrait of Cade Cunningham" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Cade Cunningham</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Cade Cunningham" aria-label="Current rank 8, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#8</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630595.png" alt="NBA player portrait of Cade Cunningham" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Detroit Pistons</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -736,7 +824,8 @@
   <div class="entry-no">7</div>
   <div class="entry-copy">
     <div class="entry-label">SUPERSTAR FILE</div>
-    <h2>Anthony Edwards</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630162.png" alt="NBA player portrait of Anthony Edwards" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Anthony Edwards</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Anthony Edwards" aria-label="Current rank 7, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#7</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630162.png" alt="NBA player portrait of Anthony Edwards" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>25 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Minnesota Timberwolves</b></span>
       <span><small>POSITION</small><b>SG</b></span>
@@ -749,7 +838,8 @@
   <div class="entry-no">6</div>
   <div class="entry-copy">
     <div class="entry-label">SUPERSTAR FILE</div>
-    <h2>Giannis Antetokounmpo</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png" alt="NBA player portrait of Giannis Antetokounmpo" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Giannis Antetokounmpo</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Giannis Antetokounmpo" aria-label="Current rank 6, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#6</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png" alt="NBA player portrait of Giannis Antetokounmpo" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>31 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Miami Heat</b></span>
       <span><small>POSITION</small><b>PF</b></span>
@@ -762,7 +852,8 @@
   <div class="entry-no">5</div>
   <div class="entry-copy">
     <div class="entry-label">FULL 4DK ESSAY</div>
-    <h2>Jalen Brunson</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628973.png" alt="NBA player portrait of Jalen Brunson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Jalen Brunson</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Jalen Brunson" aria-label="Current rank 5, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#5</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628973.png" alt="NBA player portrait of Jalen Brunson" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>30 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>New York Knicks</b></span>
       <span><small>POSITION</small><b>PG</b></span>
@@ -775,7 +866,8 @@
   <div class="entry-no">4</div>
   <div class="entry-copy">
     <div class="entry-label">FULL 4DK ESSAY</div>
-    <h2>Nikola Jokić</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png" alt="NBA player portrait of Nikola Jokić" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Nikola Jokić</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Nikola Jokić" aria-label="Current rank 4, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#4</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png" alt="NBA player portrait of Nikola Jokić" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>31 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Denver Nuggets</b></span>
       <span><small>POSITION</small><b>C</b></span>
@@ -788,7 +880,8 @@
   <div class="entry-no">3</div>
   <div class="entry-copy">
     <div class="entry-label">FULL 4DK ESSAY</div>
-    <h2>Luka Dončić</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629029.png" alt="NBA player portrait of Luka Dončić" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Luka Dončić</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Luka Dončić" aria-label="Current rank 3, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#3</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629029.png" alt="NBA player portrait of Luka Dončić" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>27 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Los Angeles Lakers</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -801,7 +894,8 @@
   <div class="entry-no">2</div>
   <div class="entry-copy">
     <div class="entry-label">FULL 4DK ESSAY</div>
-    <h2>Shai Gilgeous-Alexander</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png" alt="NBA player portrait of Shai Gilgeous-Alexander" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Shai Gilgeous-Alexander</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Shai Gilgeous-Alexander" aria-label="Current rank 2, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#2</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png" alt="NBA player portrait of Shai Gilgeous-Alexander" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>28 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>Oklahoma City Thunder</b></span>
       <span><small>POSITION</small><b>PG / SG</b></span>
@@ -814,7 +908,8 @@
   <div class="entry-no">1</div>
   <div class="entry-copy">
     <div class="entry-label">FULL 4DK ESSAY</div>
-    <h2>Victor Wembanyama</h2><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png" alt="NBA player portrait of Victor Wembanyama" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
+    <h2>Victor Wembanyama</h2>
+    <div class="fourdk-rank-motion" data-direction="initial" data-player="Victor Wembanyama" aria-label="Current rank 1, previous rank not available, initial ranking"><span class="rm-box"><small class="rm-label">Current rank</small><strong class="rm-value rm-current">#1</strong></span><span class="rm-box"><small class="rm-label">Previous rank</small><strong class="rm-value rm-previous">—</strong></span><span class="rm-box"><small class="rm-label">Movement</small><strong class="rm-status rm-movement">INITIAL</strong></span></div><figure class="fourdk-top25-photo"><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png" alt="NBA player portrait of Victor Wembanyama" loading="lazy" decoding="async" onerror="this.closest('figure').style.display='none'"><figcaption>4DK • TOP 25 PLAYER PROFILE</figcaption></figure>
     <div class="entry-meta"><span class="fourdk-player-age"><small>AGE • OCT 20, 2026</small><b>22 YEARS OLD</b></span>
       <span><small>2026–27 TEAM</small><b>San Antonio Spurs</b></span>
       <span><small>POSITION</small><b>C / PF</b></span>
@@ -849,5 +944,102 @@
 
 
 <script src="script.js"></script>
+<script type="application/json" id="fourdk-top50-ranking-history">
+{
+  "format_version": 1,
+  "initial_edition": "2026-27-opening-night",
+  "initial_date": "2026-10-16",
+  "current_edition": "2026-27-opening-night",
+  "previous": null,
+  "baseline": {
+    "Victor Wembanyama": 1,
+    "Shai Gilgeous-Alexander": 2,
+    "Luka Dončić": 3,
+    "Nikola Jokić": 4,
+    "Jalen Brunson": 5,
+    "Giannis Antetokounmpo": 6,
+    "Anthony Edwards": 7,
+    "Cade Cunningham": 8,
+    "Kawhi Leonard": 9,
+    "Jayson Tatum": 10,
+    "Jaylen Brown": 11,
+    "Stephen Curry": 12,
+    "Tyrese Maxey": 13,
+    "Kevin Durant": 14,
+    "Donovan Mitchell": 15,
+    "Jalen Johnson": 16,
+    "Bam Adebayo": 17,
+    "Scottie Barnes": 18,
+    "Paolo Banchero": 19,
+    "Jamal Murray": 20,
+    "LeBron James": 21,
+    "Devin Booker": 22,
+    "Karl-Anthony Towns": 23,
+    "Tyrese Haliburton": 24,
+    "LaMelo Ball": 25,
+    "Chet Holmgren": 26,
+    "Joel Embiid": 27,
+    "Trae Young": 28,
+    "Anthony Davis": 29,
+    "Evan Mobley": 30,
+    "Stephon Castle": 31,
+    "Jalen Williams": 32,
+    "Franz Wagner": 33,
+    "Pascal Siakam": 34,
+    "Austin Reaves": 35,
+    "OG Anunoby": 36,
+    "Alperen Şengün": 37,
+    "James Harden": 38,
+    "Amen Thompson": 39,
+    "Deni Avdija": 40,
+    "Jalen Duren": 41,
+    "Julius Randle": 42,
+    "Darius Garland": 43,
+    "Cooper Flagg": 44,
+    "Zion Williamson": 45,
+    "De’Aaron Fox": 46,
+    "Domantas Sabonis": 47,
+    "Ja Morant": 48,
+    "Kyrie Irving": 49,
+    "Josh Giddey": 50
+  },
+  "how_to_update": "Before the next rankings update: set previous to the rank map from this edition, then update card order/IDs/numbers; arrows derive automatically."
+}
+</script>
+<script id="fourdk-top50-ranking-movement-logic">
+(function(){
+  'use strict';
+  const historyEl=document.getElementById('fourdk-top50-ranking-history');
+  if(!historyEl)return;
+  let state;
+  try{state=JSON.parse(historyEl.textContent)}catch(err){return}
+  const prior=state.previous;
+  const cards=[...document.querySelectorAll('.rank-entry[id^="rank-"]')];
+  cards.forEach(card=>{
+    const name=card.querySelector('h2')?.textContent?.trim();
+    const position=Number(card.id.replace('rank-',''));
+    const bar=card.querySelector('.fourdk-rank-motion');
+    if(!name||!Number.isInteger(position)||!bar)return;
+    const curr=bar.querySelector('.rm-current'),prev=bar.querySelector('.rm-previous'),change=bar.querySelector('.rm-movement');
+    if(curr)curr.textContent='#'+position;
+    const oldRank=prior && Object.prototype.hasOwnProperty.call(prior,name)?Number(prior[name]):null;
+    if(!oldRank){
+      if(prev)prev.textContent='—';
+      if(change)change.textContent='INITIAL';
+      bar.dataset.direction='initial';
+      bar.setAttribute('aria-label','Current rank '+position+', previous rank not available, initial ranking');
+      return;
+    }
+    if(prev)prev.textContent='#'+oldRank;
+    let direction,delta,accessible;
+    if(position<oldRank){direction='up';delta='↑ '+(oldRank-position);accessible='up '+(oldRank-position)+' spots';}
+    else if(position>oldRank){direction='down';delta='↓ '+(position-oldRank);accessible='down '+(position-oldRank)+' spots';}
+    else{direction='same';delta='→ SAME';accessible='unchanged';}
+    bar.dataset.direction=direction;
+    if(change)change.textContent=delta;
+    bar.setAttribute('aria-label','Current rank '+position+', previous rank '+oldRank+', '+accessible);
+  });
+})();
+</script>
 </body>
 </html>
