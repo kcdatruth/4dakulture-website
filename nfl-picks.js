@@ -495,3 +495,36 @@
   else if(scoreboard && scoreboard.parentNode) scoreboard.parentNode.insertBefore(section,scoreboard);
   else document.querySelector('main')?.prepend(section);
 })();
+
+
+/* 4DK NFL Week 6 TNF Postgame — Oct 16, 2026 (additive front-page freshness) */
+(() => {
+  const front = document.getElementById('fourdk-week6-lead');
+  if (!front || document.getElementById('fourdk-tnf-2026-postgame-done')) return;
+  const mark = document.createElement('i'); mark.id='fourdk-tnf-2026-postgame-done'; mark.hidden=true; front.appendChild(mark);
+  const target='nfl-tnf-seahawks-broncos-oct15-2026.html';
+  const meta=front.querySelector('.fourdk-front-meta');
+  if(meta){const date=meta.querySelector('span');if(date)date.textContent='FRIDAY, OCT 16, 2026';}
+  const card=front.querySelector('.fourdk-front-kickoff');
+  if(card){
+    const stamp=card.querySelector('small'),headline=card.querySelector('strong'),desc=card.querySelector('p'),link=card.querySelector('a');
+    if(stamp)stamp.textContent='THURSDAY NIGHT FINAL · OCT 15 · OVERTIME';
+    if(headline)headline.innerHTML='DENVER 17.<br>SEATTLE 14.';
+    if(desc)desc.textContent='Seattle held Denver to 168 yards, but Darnold’s late interceptions proved costly. JSN erupted after halftime. Our in-depth postgame analysis is live.';
+    if(link){link.href=target;link.textContent='READ THE FULL 4DK TNF RECAP →';}
+  }
+  const menu=front.querySelector('.fourdk-front-links');
+  if(menu && !menu.querySelector('[href="'+target+'"]')){
+    const a=document.createElement('a');a.href=target;
+    const small=document.createElement('small');small.textContent='NEW · OCT 16';
+    const label=document.createElement('strong');label.textContent='BRONCOS–SEAHAWKS TNF →';
+    a.append(small,label);menu.prepend(a);
+  }
+  const cover=front.querySelector('.fourdk-front-read');
+  if(cover && cover.textContent.includes('TODAY'))cover.textContent='READ OCT 15 NFL DESK →';
+  document.querySelectorAll('.nfl-revamp-ticker .nfl-ticker-track > span').forEach(span=>{
+    if(span.textContent.includes('WEEK 6 OPENER: SEAHAWKS @ BRONCOS')){
+      const b=span.querySelector('b');span.textContent=' TNF FINAL: BRONCOS 17, SEAHAWKS 14 (OT) · READ THE 4DK RECAP';if(b)span.prepend(b);
+    }
+  });
+})();
