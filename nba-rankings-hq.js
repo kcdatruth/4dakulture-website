@@ -187,7 +187,7 @@
      No generated scouting grades, simulated winners, or invented ranking movement. */
   function publishedStat(p, stat) {
     const label = String(p.stats || '');
-    const match = new RegExp('(?:^|\\s|•)([0-9]+(?:\\.[0-9]+)?)\\s*' + stat + '\\b', 'i').exec(label);
+    const match = new RegExp('(?:^|\\s|•)([0-9]+(?:\\.[0-9]+)?)\\s*' + stat + '(?=\\s|$|•)', 'i').exec(label);
     if (!match) return null;
     const val=Number(match[1]);
     return Number.isFinite(val) ? val : null;
@@ -235,6 +235,166 @@
       <a class="source-cta" href="${esc(p.href)}">ORIGINAL 4DK PROFILE <span aria-hidden="true">↗</span></a>
     </div>`;
   }
+
+  /* OCT 18 — 4DK expanded Head-to-Head extras. No new player evaluations or invented votes. */
+  const voteMemory = Object.create(null);
+  const debateKey = (a,b) => `4dk-my-pick-2026-27-${Math.min(a,b)}-${Math.max(a,b)}`;
+  function ownPick(a,b){
+    const key=debateKey(a,b);
+    try { const val=localStorage.getItem(key); return val===null?(voteMemory[key]||null):Number(val); }
+    catch(_) { return voteMemory[key]||null; }
+  }
+  function saveOwnPick(a,b,pick){
+    const key=debateKey(a,b); voteMemory[key]=pick;
+    try {localStorage.setItem(key,String(pick));}catch(_){/* browser storage may be unavailable */}
+  }
+  function currentMatchupLink(a,b){
+    const url=new URL(location.href); url.hash=''; url.searchParams.set('compare',`${a.rank}-${b.rank}`);
+    return url.href;
+  }
+  async function copyText(str){
+    if(navigator.clipboard && window.isSecureContext){try {await navigator.clipboard.writeText(str);return true;}catch(_){/* fallback below */}}
+    const ta=document.createElement('textarea'); ta.value=str;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;opacity:0;left:-9999px;top:0';document.body.appendChild(ta);ta.select();
+    let worked=false;try {worked=document.execCommand('copy');}catch(_){}ta.remove();return worked;
+  }
+  function socialShareText(a,b,pick=null){return `4 DA KULTURE · WHO YOU GOT?\n#${a.rank} ${a.name} vs #${b.rank} ${b.name}${pick?`\nMy pick: ${pick.name}`:''}\n${currentMatchupLink(a,b)}`;}
+  function verdictMarkup(a,b){
+    const high=a.rank<b.rank?a:b;const low=a.rank<b.rank?b:a;
+    return `<section class="extra-verdict" aria-label="4DK editorial comparison">
+      <span class="eyebrow">THE 4DK VERDICT DESK</span><h2>THE RANKINGS EDGE. <em>THE REAL DEBATE.</em></h2>
+      <div class="verdict-grid"><div class="verdict-lead"><small>WHAT OUR PUBLISHED BOARD SAYS</small><strong>#${high.rank} ${esc(high.name)}</strong><p>4DK currently ranks ${esc(high.name)} above ${esc(low.name)} on its 2026–27 Top 50. That's our documented overall ranking, <b>not</b> a newly declared one-game or playoff-series winner.</p></div>
+      <div class="verdict-pending"><small>HEAD-TO-HEAD EDITORIAL CALL</small><strong>NOT YET PUBLISHED</strong><p>We won't invent 4DK's playoff pick, defensive grades, or overall winner. The original essays below contain the full case for both players. An official 4DK showdown verdict can be published once the editors make that call.</p></div></div>
+      <div class="verdict-lenses"><div><b>SCORING & CREATION</b><p>Compare the documented scoring and playmaking plus each player's original 4DK analysis.</p></div><div><b>DEFENSE & AVAILABILITY</b><p>Use source game totals, scouting context, and what the original essays say about each player's impact.</p></div><div><b>PLAYOFF TRUST</b><p>Who would we take in a series? A separate editorial judgment—not something a stat bar can decide.</p></div></div>
+    </section>`;
+  }
+  function voteMarkup(a,b){
+    const selected=ownPick(a.rank,b.rank);
+    return `<section class="extra-debate" aria-label="Fan debate preview"><span class="eyebrow">4DK WHO YOU GOT?</span><h2>YOUR CALL. YOUR SIDE.</h2>
+      <p>Choose your player for this matchup. Your pick is saved <strong>only in this browser</strong> when storage is available. This is not a public vote, and no sitewide vote totals are being counted yet.</p>
+      <div class="vote-choice"><button type="button" data-debate-vote="${a.rank}" aria-pressed="${selected===a.rank}">#${a.rank} ${esc(a.name)}</button><button type="button" data-debate-vote="${b.rank}" aria-pressed="${selected===b.rank}">#${b.rank} ${esc(b.name)}</button></div>
+      <div class="vote-result" role="status" aria-live="polite">${selected?`Your pick: <b>${esc(state.players[selected-1]?.name||'')}</b>. This is your saved preference, not a public result.`:'Make your pick to save your side on this device.'}</div>
+      <button type="button" class="extra-share-pick" id="share-own-pick" ${!selected?'disabled':''}>SHARE MY PICK ↗</button>
+    </section>`;
+  }
+  function socialMarkup(a,b){
+    const url=currentMatchupLink(a,b);
+    return `<section class="extra-social" aria-label="Share matchup"><div><span class="eyebrow">4DK SHARE STUDIO</span><h2>TAKE THE DEBATE OUTSIDE.</h2><p>Save a branded matchup graphic for Instagram or X, or copy the exact matchup link. Only source-published rankings and statistics appear on the graphic.</p></div>
+      <div class="social-preview"><div class="social-brand">4<span>DA</span>KULTURE <small>NBA • HEAD-TO-HEAD</small></div><div class="social-names"><div><b>#${a.rank}</b><strong>${esc(a.name)}</strong><small>${esc(a.team)}</small></div><i>VS</i><div><b>#${b.rank}</b><strong>${esc(b.name)}</strong><small>${esc(b.team)}</small></div></div><p>WHO YOU GOT? <span>4DAKULTUREMEDIA.COM</span></p></div>
+      <div class="social-actions"><button type="button" id="save-feed">SAVE IG FEED · 1080×1350</button><button type="button" id="save-story">SAVE STORY · 1080×1920</button><button type="button" id="copy-matchup">COPY MATCHUP LINK</button><button type="button" id="native-share">SHARE MATCHUP ↗</button></div>
+      <div class="social-feedback" id="social-feedback" role="status" aria-live="polite"></div><p class="fineprint">Exports use real 4DK text and stats. Portraits are included when the NBA image server permits safe image export; otherwise a clean typography-first card is generated without fake player photos.</p>
+      <div class="social-link"><small>DIRECT MATCHUP LINK</small><a href="${esc(url)}">${esc(url)}</a></div>
+    </section>`;
+  }
+  function roundRect(ctx,x,y,w,h,r,fill){
+    ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fillStyle=fill;ctx.fill();
+  }
+  function textLines(ctx,value,maxWidth,fontSize,maxLines=3){
+    let size=fontSize; ctx.font=`900 ${size}px Impact, 'Arial Narrow', sans-serif`;
+    let lines=[];
+    for(;size>=25;size-=2){
+      ctx.font=`900 ${size}px Impact, 'Arial Narrow', sans-serif`;
+      const rawWords=value.toUpperCase().split(/\s+/);let words=[];lines=[];let cur='';
+      for(const raw of rawWords){
+        if(ctx.measureText(raw).width<=maxWidth){words.push(raw);continue;}
+        let chunk='';for(const ch of raw){if(chunk && ctx.measureText(chunk+ch).width>maxWidth){words.push(chunk);chunk=ch;}else{chunk+=ch;}}
+        if(chunk)words.push(chunk);
+      }
+      for(const word of words){const candidate=cur?cur+' '+word:word;
+        if(ctx.measureText(candidate).width>maxWidth && cur){lines.push(cur);cur=word;}else{cur=candidate;}}
+      if(cur)lines.push(cur);if(lines.length<=maxLines && lines.every(x=>ctx.measureText(x).width<=maxWidth))break;
+    }
+    return {lines,size};
+  }
+  async function exportPortrait(ctx,p,x,y,w,h){
+    if(!p.image)return false;
+    const img=new Image(); img.crossOrigin='anonymous'; img.decoding='async';
+    const loaded=await new Promise(resolve=>{
+      let done=false;const finish=v=>{if(!done){done=true;resolve(v)}};
+      const timeout=setTimeout(()=>finish(false),5000);
+      img.onload=()=>{clearTimeout(timeout);finish(true)};
+      img.onerror=()=>{clearTimeout(timeout);finish(false)};
+      img.src=p.image;
+    });
+    if(!loaded)return false;
+    try{ const ratio=Math.min(w/img.width,h/img.height);const iw=img.width*ratio,ih=img.height*ratio;ctx.drawImage(img,x+(w-iw)/2,y+h-ih,iw,ih);return true;}catch(_){return false;}
+  }
+  async function exportCard(a,b,story,feedback){
+    const W=1080,H=story?1920:1350,canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;
+    const ctx=canvas.getContext('2d');if(!ctx){feedback.textContent='Graphic export is not supported in this browser.';return;}
+    const bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#141116');bg.addColorStop(.6,'#2e1b24');bg.addColorStop(1,'#090a0f');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+    ctx.fillStyle='#e34b3e';ctx.fillRect(0,0,W,15);
+    ctx.fillStyle='#edc887';ctx.font='900 80px Impact, sans-serif';ctx.fillText('4',56,108);
+    ctx.fillStyle='#f9eee1';ctx.font='900 37px Arial, sans-serif';ctx.fillText('DA KULTURE',109,105);
+    ctx.fillStyle='#eac27f';ctx.font='bold 20px Arial, sans-serif';ctx.fillText('NBA • 2026–27 • HEAD-TO-HEAD',55,165);
+    ctx.fillStyle='#fff4e8';ctx.font='900 86px Impact, sans-serif';ctx.fillText('WHO YOU GOT?',55,270);
+    ctx.fillStyle='#b9a9ab';ctx.font='24px Arial, sans-serif';ctx.fillText('THE RANKINGS. THE CULTURE. THE ARGUMENT.',55,318);
+    const gap=22,px=55,cardW=(W-110-gap)/2,top=story?420:350,cardH=story?890:550;
+    const portraits=story?440:290;
+    for(const [idx,p] of [a,b].entries()){
+      const x=px+idx*(cardW+gap);
+      roundRect(ctx,x,top,cardW,cardH,16,idx?'#30242b':'#39232d');
+      ctx.strokeStyle=idx?'#907356':'#ac5554';ctx.lineWidth=2;ctx.strokeRect(x,top,cardW,cardH);
+      ctx.fillStyle='#edc887';ctx.font='900 91px Impact, sans-serif';ctx.fillText('#'+p.rank,x+20,top+102);
+      const name=textLines(ctx,p.name,cardW-35,53,2);ctx.fillStyle='#fff5ea';ctx.font=`900 ${name.size}px Impact, sans-serif`;
+      name.lines.forEach((line,j)=>ctx.fillText(line,x+20,top+170+j*(name.size+3)));
+      const team=p.team.length>29?p.team.slice(0,28)+'…':p.team;
+      // NBA portraits are included only if the host explicitly permits cross-origin canvas access.
+      const py=top+cardH-portraits-24;
+      const portraitOk=await exportPortrait(ctx,p,x+12,py,cardW-24,portraits);
+      if(!portraitOk){
+        // Photo-free fallback: true-to-4DK typography, without generating a fake athlete portrait.
+        const cy=py+portraits*.5,cx=x+cardW*.5,r=Math.min(cardW*.32,portraits*.40);
+        ctx.save();ctx.globalAlpha=.35;ctx.lineWidth=4;ctx.strokeStyle=idx?'#eac281':'#f0aa97';
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();
+        ctx.beginPath();ctx.moveTo(cx-r,cy);ctx.lineTo(cx+r,cy);ctx.stroke();
+        ctx.beginPath();ctx.moveTo(cx,cy-r);ctx.lineTo(cx,cy+r);ctx.stroke();
+        ctx.beginPath();ctx.ellipse(cx,cy,r*.58,r,0,0,Math.PI*2);ctx.stroke();ctx.restore();
+        const initials=p.name.split(/\s+/).map(v=>v[0]).join('').slice(0,3).toUpperCase();
+        ctx.fillStyle='#f0d3a4';ctx.font='900 84px Impact, sans-serif';ctx.textAlign='center';ctx.fillText(initials,cx,cy+29);ctx.textAlign='start';
+      }
+      ctx.fillStyle='rgba(13,12,19,.92)';ctx.fillRect(x+2,top+cardH-58,cardW-4,56);
+      ctx.fillStyle='#efd1aa';ctx.font='bold 19px Arial, sans-serif';ctx.fillText(team,x+18,top+cardH-22);
+    }
+    roundRect(ctx,W/2-54,top+cardH*.43,108,94,48,'#b6383d');ctx.fillStyle='#fff';ctx.font='900 47px Impact, sans-serif';ctx.fillText('VS',W/2-30,top+cardH*.43+62);
+    const statTop=top+cardH+55;
+    ctx.fillStyle='#edc887';ctx.font='900 37px Impact, sans-serif';ctx.fillText('2025–26 • BY THE NUMBERS',55,statTop);
+    const fields=[['PPG','POINTS'],['RPG','REBOUNDS'],['APG','ASSISTS']];
+    const fieldGap=story?86:65;
+    fields.forEach(([code,label],i)=>{const y=statTop+50+i*fieldGap;const av=publishedStat(a,code),bv=publishedStat(b,code);
+      ctx.fillStyle='#ece0d8';ctx.font='bold 24px Arial, sans-serif';ctx.fillText(av===null?'—':av.toFixed(1),60,y);
+      ctx.fillStyle='#c9aaa5';ctx.font='bold 19px Arial, sans-serif';const tw=ctx.measureText(label).width;ctx.fillText(label,(W-tw)/2,y);
+      const str=bv===null?'—':bv.toFixed(1);const width=ctx.measureText(str).width;ctx.fillStyle='#f2cc92';ctx.fillText(str,W-60-width,y);
+      ctx.fillStyle='#54404a';ctx.fillRect(55,y+12,W-110,1);
+    });
+    ctx.fillStyle='#c4ada6';ctx.font='18px Arial, sans-serif';ctx.fillText('SOURCE: 4DK 2026–27 TOP 50 • NOT AN AUTOMATED VERDICT',55,H-115);
+    ctx.fillStyle='#edc887';ctx.font='900 25px Arial, sans-serif';ctx.fillText('4DAKULTUREMEDIA.COM',55,H-65);
+    const blob=await new Promise(resolve=>{try{canvas.toBlob(resolve,'image/png')}catch(_){resolve(null)}});
+    if(!blob){feedback.textContent='Graphic could not be exported. Try the copy-link option.';return;}
+    const obj=URL.createObjectURL(blob),anchor=document.createElement('a');anchor.href=obj;anchor.download=`4DK-${a.rank}-vs-${b.rank}-${story?'story':'feed'}.png`;
+    document.body.appendChild(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(obj),15000);
+    feedback.textContent=`${story?'Story':'Feed'} graphic ready. Check your browser downloads.`;
+  }
+  function wireExtendedCompare(a,b){
+    const feedback=panel.querySelector('#social-feedback');
+    panel.querySelector('#copy-matchup')?.addEventListener('click',async()=>{feedback.textContent=(await copyText(currentMatchupLink(a,b)))?'Matchup link copied.':'Copy not available; use the direct link below.'});
+    panel.querySelector('#native-share')?.addEventListener('click',async()=>{if(navigator.share){try{await navigator.share({title:`4DK: ${a.name} vs ${b.name}`,text:'4DK NBA Head-to-Head',url:currentMatchupLink(a,b)});return;}catch(e){if(e.name==='AbortError')return;}}
+      feedback.textContent=(await copyText(currentMatchupLink(a,b)))?'Matchup link copied for sharing.':'Use the matchup link below to share.';});
+    panel.querySelector('#save-feed')?.addEventListener('click',async e=>{e.currentTarget.disabled=true;feedback.textContent='Creating feed graphic…';try{await exportCard(a,b,false,feedback)}finally{const b=panel.querySelector('#save-feed');if(b)b.disabled=false;}});
+    panel.querySelector('#save-story')?.addEventListener('click',async e=>{e.currentTarget.disabled=true;feedback.textContent='Creating story graphic…';try{await exportCard(a,b,true,feedback)}finally{const b=panel.querySelector('#save-story');if(b)b.disabled=false;}});
+    panel.querySelectorAll('[data-debate-vote]').forEach(button=>button.addEventListener('click',()=>{saveOwnPick(a.rank,b.rank,Number(button.dataset.debateVote));
+      panel.querySelectorAll('[data-debate-vote]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+      const selected=state.players[Number(button.dataset.debateVote)-1];
+      panel.querySelector('.vote-result').innerHTML=`Your pick: <b>${esc(selected.name)}</b>. This is your saved preference, not a public result.`;
+      const share=panel.querySelector('#share-own-pick');if(share)share.disabled=false;
+    }));
+    panel.querySelector('#share-own-pick')?.addEventListener('click',async()=>{
+      const rank=ownPick(a.rank,b.rank),pick=state.players[rank-1];if(!pick)return;
+      const msg=socialShareText(a,b,pick);
+      if(navigator.share){try{await navigator.share({title:'4DK WHO YOU GOT?',text:msg});return;}catch(e){if(e.name==='AbortError')return;}}
+      feedback.textContent=(await copyText(msg))?'Your pick and matchup link copied.':'Use the matchup link to share your pick.';
+    });
+  }
+
   function renderCompare(){
     const a=state.players[state.compareA-1], b=state.players[state.compareB-1];
     if(!a||!b) {panel.innerHTML='<div class="error">Comparison could not be loaded from the Top 50 source.</div>';return;}
@@ -256,17 +416,22 @@
     <div class="compare-stats"><div class="compare-stats-head"><span class="eyebrow">2025–26 · PUBLISHED PLAYER STAT LINES</span><h3>BY THE NUMBERS.</h3><p>Values are read directly from our existing Top 50. Bars are proportional within each statistic, not a composite score.</p></div>
       <div class="compare-metric-names"><span>${esc(a.name)}</span><span>${esc(b.name)}</span></div>
       ${compareMetric(a,b,'POINTS','PPG')}${compareMetric(a,b,'REBOUNDS','RPG')}${compareMetric(a,b,'ASSISTS','APG')}
+      ${compareMetric(a,b,'GAMES PLAYED','G')}${compareMetric(a,b,'FIELD GOAL %','FG%')}
       <div class="compare-stat-raw"><div><strong>${esc(a.name)}</strong><p>${esc(a.stats||'Not supplied')}</p></div><div><strong>${esc(b.name)}</strong><p>${esc(b.stats||'Not supplied')}</p></div></div>
       <p class="fineprint">${esc(gamesText)} Different game totals and injury absences affect interpretation. A dash (—) means the published source does not supply a comparable value; it does not mean zero.</p>
     </div>
+    ${verdictMarkup(a,b)}
     <div class="compare-essays-head"><span class="eyebrow">4DK SCOUTING ROOM</span><h2>THE ORIGINAL ARGUMENTS.</h2><p>These are the actual words from our existing Top 50, not a condensed or newly generated verdict.</p></div>
     <div class="compare-editorial-grid">${compareEssay(a,'a')}${compareEssay(b,'b')}</div>
+    ${voteMarkup(a,b)}
+    ${socialMarkup(a,b)}
     <div class="compare-bottom"><span>SHARE THIS SPECIFIC MATCHUP</span><a href="${esc(url.pathname+url.search)}">${esc(url.pathname+url.search)}</a><p>Use this link to revisit the same comparison. The player order and existing ranking essays are preserved.</p></div>`;
     const selectA=panel.querySelector('#compare-select-a'),selectB=panel.querySelector('#compare-select-b');
     selectA.addEventListener('change',()=>setMatchup(Number(selectA.value),state.compareB));
     selectB.addEventListener('change',()=>setMatchup(state.compareA,Number(selectB.value)));
     panel.querySelector('#compare-swap').addEventListener('click',()=>setMatchup(state.compareB,state.compareA));
     panel.querySelectorAll('[data-matchup]').forEach(button=>button.addEventListener('click',()=>{const pair=button.dataset.matchup.split('-').map(Number);setMatchup(pair[0],pair[1]);}));
+    wireExtendedCompare(a,b);
   }
   function setMatchup(a,b){
     if(!Number.isInteger(a)||!Number.isInteger(b)||a<1||a>50||b<1||b>50||a===b)return;

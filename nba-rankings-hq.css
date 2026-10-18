@@ -166,3 +166,43 @@
  .compare-editorial-grid{grid-template-columns:minmax(0,1fr)}.compare-editorial{padding:17px}
 }
 @media(max-width:350px){.compare-player h3{font-size:18px}.compare-metric{grid-template-columns:minmax(0,1fr) 68px minmax(0,1fr)}}
+
+
+/* 4DK WHO YOU GOT? — added October 18, 2026; original ranking layout remains intact. */
+.extra-verdict,.extra-debate,.extra-social{margin:28px 0;padding:24px;border:1px solid #6f4c4b;background:linear-gradient(135deg,#2d2027,#17151b);min-width:0}
+.extra-verdict h2,.extra-debate h2,.extra-social h2{font:1000 clamp(30px,5vw,56px)/1 Impact,'Arial Narrow',sans-serif;letter-spacing:-.025em;margin:11px 0 16px;text-transform:uppercase}
+.extra-verdict h2 em{color:var(--gold);font-style:normal}
+.verdict-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:17px 0}
+.verdict-grid>div{border:1px solid #604b4c;padding:19px;background:#201b20;min-width:0}
+.verdict-grid small{font-size:10px;letter-spacing:.1em;font-weight:900;color:#cda97a;display:block;margin-bottom:13px}
+.verdict-grid strong{display:block;font:1000 clamp(22px,3vw,35px)/1.05 Impact,'Arial Narrow',sans-serif;color:#fff1d7;text-transform:uppercase;overflow-wrap:anywhere}
+.verdict-grid p,.verdict-lenses p,.extra-debate>p,.extra-social>div>p{font:14px/1.7 Georgia,serif;color:#ddd0cb}
+.verdict-lenses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.verdict-lenses>div{padding:15px;background:#1a171b;border-top:3px solid #ac4040}
+.verdict-lenses b{color:#f4c888;font-size:12px;letter-spacing:.03em}
+.vote-choice{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:18px 0}
+.vote-choice button{border:1px solid #b58b74;border-radius:3px;background:#33262c;padding:18px 12px;color:white;font-weight:900;font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+.vote-choice button[aria-pressed="true"]{background:#e8c480;color:#24191d;border-color:#e8c480}
+.vote-result{font-size:13px;color:#e7d5cc;padding:13px 0;min-height:45px}.vote-result b{color:#efc87e}
+.extra-share-pick{background:#c13e3b;border:0;color:#fff;padding:13px 20px;font-weight:900;font-size:12px;letter-spacing:.06em}
+.extra-share-pick:disabled{opacity:.4;cursor:not-allowed}
+.social-preview{max-width:710px;background:linear-gradient(125deg,#190e19,#612b35 65%,#19121c);padding:28px;border:1px solid #c59667;border-top:6px solid #e74a3c;margin:18px 0;overflow:hidden}
+.social-brand{font:1000 35px/1 Impact,'Arial Narrow',sans-serif}.social-brand>span{color:#eec684;margin:0 5px}.social-brand small{font:900 9px Arial,sans-serif;letter-spacing:.09em;color:#ddbfa0;display:block;margin-top:7px}
+.social-names{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:8px;align-items:center;margin:38px 0}
+.social-names>div{min-width:0}.social-names b{display:block;font:1000 52px Impact,sans-serif;color:#f3ca87;margin-bottom:13px}.social-names strong{font:1000 clamp(19px,3vw,31px)/1 Impact,'Arial Narrow',sans-serif;display:block;text-transform:uppercase;overflow-wrap:anywhere}.social-names small{font-size:11px;color:#f5d7bd;margin-top:10px;display:block}
+.social-names>i{background:#b63e3b;border-radius:50%;padding:12px 4px;text-align:center;font:1000 17px Impact,sans-serif;font-style:normal}
+.social-preview>p{display:flex;justify-content:space-between;gap:10px;border-top:1px solid #a17975;padding-top:15px;font-size:13px;font-weight:900;color:#fce1b3}.social-preview>p span{font-size:10px}
+.social-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.social-actions button{background:#eed19a;border:0;color:#22181c;font-weight:900;font-size:12px;padding:15px 10px;min-width:0}
+.social-actions button:nth-child(n+3){background:#393039;border:1px solid #826b60;color:#fff}
+.social-actions button:disabled{opacity:.4;cursor:wait}
+.social-feedback{font-size:12px;color:#f3c987;min-height:15px;margin:12px 0}
+.social-link{border-top:1px solid #57474a;padding-top:12px;margin-top:12px}.social-link small{font-size:10px;color:#e3bd83}.social-link a{display:block;overflow-wrap:anywhere;color:#fff;margin-top:7px;font-size:11px}
+@media(max-width:680px){
+.extra-verdict,.extra-debate,.extra-social{padding:16px 12px;margin:20px 0}
+.verdict-grid{grid-template-columns:1fr}.verdict-lenses{grid-template-columns:1fr}.verdict-grid>div{padding:14px}
+.vote-choice{gap:6px}.vote-choice button{padding:13px 7px;font-size:11px}
+.social-preview{padding:14px}.social-brand{font-size:28px}.social-names{grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:5px;margin:25px 0}
+.social-names b{font-size:38px}.social-names strong{font-size:clamp(16px,4.6vw,24px)}.social-names>i{font-size:12px;padding:9px 3px}.social-names small{font-size:9px}
+.social-preview>p{font-size:10px}.social-preview>p span{font-size:8px}.social-actions{gap:7px}.social-actions button{font-size:10px;padding:13px 6px}
+}
