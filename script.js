@@ -788,3 +788,12 @@ if(!document.querySelector('script[src="4dk-article-tools.js"]')){
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', queuePowerRefresh, {once:true});
   else queuePowerRefresh();
 })();
+
+
+/* 4DK Interactive Desk: load additive navigation only on 4DK hub pages. */
+;(() => {
+  const page=location.pathname.split('/').pop().toLowerCase() || 'index.html';
+  if (!['index.html','nba.html','nfl.html','hiphop.html','king-files.html'].includes(page)) return;
+  const css=document.createElement('link');css.rel='stylesheet';css.href='4dk-experiences.css';document.head.appendChild(css);
+  const js=document.createElement('script');js.src='4dk-experience-links.js';js.defer=true;document.body.appendChild(js);
+})();
