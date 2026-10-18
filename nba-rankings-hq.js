@@ -1,5 +1,5 @@
 /* 4 DA KULTURE — NBA Rankings HQ (Oct 18, 2026)
-   Read-only interface: sources of truth are the original published rankings pages.
+   Read-only rankings and player comparison: sources of truth are the original published rankings pages.
    No rank changes, no newly invented movement, no truncated replacement essays.
 */
 (() => {
@@ -9,7 +9,7 @@
   if (!root || !panel) return;
   const PLAYER_SOURCE = 'top-50-nba-players-2026-27.html';
   const TEAM_SOURCE = 'nba-power-rankings-2026-27.html';
-  const state = {tab:'players', filter:'all', search:'', playerRank:1, teamRank:1, players:[], teams:[], history:null};
+  const state = {tab:'players', filter:'all', search:'', playerRank:1, teamRank:1, compareA:1, compareB:2, players:[], teams:[], history:null};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const text = element => element?.textContent?.trim() || '';
   const headshot = id => `https://cdn.nba.com/headshots/nba/latest/1040x760/${id}.png`;
@@ -82,6 +82,7 @@
     state.tab=tab;state.filter='all';state.search='';
     if(tab==='players'&&rank)state.playerRank=rank;
     if(tab==='teams'&&rank)state.teamRank=rank;
+    if(tab!=='compare' && location.search.includes('compare=')){const u=new URL(location.href);u.searchParams.delete('compare');try{history.replaceState(null,'',u.pathname+u.search+u.hash);}catch(_){/* local preview */}}
     tabMarkup(tab);render();
   }
   function filterButtons() {
@@ -181,7 +182,101 @@
     list.innerHTML=changes.map(p=>`<button type="button" class="entry" data-history-player="${p.rank}" aria-label="Open ${esc(p.name)} current rank ${p.rank}, ${esc(p.motion.line)}"><span class="num">${p.rank}</span><img class="thumb" src="${esc(p.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><span class="entry-text"><strong>${esc(p.name)}</strong><small>Previous rank: ${esc(p.motion.prior)}</small></span><span class="status ${p.motion.cls}">${esc(p.motion.label)}</span></button>`).join('');
     list.addEventListener('click', e=>{const b=e.target.closest('[data-history-player]');if(b)changeTab('players',Number(b.dataset.historyPlayer));});
   }
-  function render(){if(state.tab==='history')renderHistory();else renderBoard();}
+
+  /* The head-to-head board uses ONLY published Top 50 source data.
+     No generated scouting grades, simulated winners, or invented ranking movement. */
+  function publishedStat(p, stat) {
+    const label = String(p.stats || '');
+    const match = new RegExp('(?:^|\\s|•)([0-9]+(?:\\.[0-9]+)?)\\s*' + stat + '\\b', 'i').exec(label);
+    if (!match) return null;
+    const val=Number(match[1]);
+    return Number.isFinite(val) ? val : null;
+  }
+  function seasonGames(p) {
+    const match=/\b(\d+)\s*G\b/.exec(String(p.stats||''));
+    return match ? Number(match[1]) : null;
+  }
+  function comparePhoto(p) {
+    return p.image ? `<img src="${esc(p.image)}" alt="Portrait of ${esc(p.name)}" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentElement.classList.add('photo-unavailable')"><div class="compare-no-photo compare-photo-fallback" aria-hidden="true">PORTRAIT UNAVAILABLE</div>` : `<div class="compare-no-photo">PORTRAIT UNAVAILABLE</div>`;
+  }
+  function comparePortrait(p, side) {
+    return `<div class="compare-player compare-player-${side}">
+      <span class="eyebrow">${side==='a'?'PLAYER ONE':'PLAYER TWO'} · 4DK TOP 50</span>
+      <strong class="compare-rank">#${p.rank}</strong>
+      <h3>${esc(p.name)}</h3>
+      <span class="compare-team">${esc(p.team)} · ${esc(p.position)}</span>
+      <div class="compare-portrait">${comparePhoto(p)}</div>
+      <div class="compare-player-footer"><span>AGE · SOURCE EDITION</span><strong>${esc(p.age)}</strong></div>
+    </div>`;
+  }
+  function compareOptions(selected,other) {
+    return state.players.map(p=>`<option value="${p.rank}" ${p.rank===selected?'selected':''} ${p.rank===other?'disabled':''}>#${p.rank} ${esc(p.name)}</option>`).join('');
+  }
+  function compareMetric(p1,p2,label,stat) {
+    const a=publishedStat(p1,stat),b=publishedStat(p2,stat);
+    const max=Math.max(a===null?0:a,b===null?0:b,1);
+    function half(value,who){
+      return `<div class="compare-half ${who}" aria-label="${esc(who==='a'?p1.name:p2.name)}: ${value===null?'unavailable':value+' '+stat}">
+       <div class="compare-number">${value===null?'—':value.toFixed(1)}</div>
+       <div class="compare-track"><div class="compare-fill" style="width:${value===null?0:Math.max(0,Math.min(100,value/max*100)).toFixed(2)}%"></div></div>
+      </div>`;
+    }
+    return `<div class="compare-metric" role="group" aria-label="${esc(label)} comparison">
+     ${half(a,'a')}<span class="compare-metric-label">${esc(label)}</span>${half(b,'b')}
+     </div>`;
+  }
+  function compareEssay(p,side) {
+    return `<div class="compare-editorial compare-editorial-${side}">
+      <span class="eyebrow">THE 4DK READ · #${p.rank}</span><h3>${esc(p.name)}</h3>
+      <div class="compare-analysis">
+       ${p.content.length?`<p>${esc(p.content[0])}</p>`:'<p>The complete original analysis is available at the source article.</p>'}
+       ${p.content.length>1?`<details><summary>CONTINUE THE ORIGINAL 4DK ESSAY <span aria-hidden="true">↓</span></summary><div class="compare-more">${essays(p.content.slice(1))}</div></details>`:''}
+      </div>
+      <a class="source-cta" href="${esc(p.href)}">ORIGINAL 4DK PROFILE <span aria-hidden="true">↗</span></a>
+    </div>`;
+  }
+  function renderCompare(){
+    const a=state.players[state.compareA-1], b=state.players[state.compareB-1];
+    if(!a||!b) {panel.innerHTML='<div class="error">Comparison could not be loaded from the Top 50 source.</div>';return;}
+    const url=new URL(location.href);url.searchParams.set('compare',`${a.rank}-${b.rank}`);url.hash='';
+    const aGames=seasonGames(a),bGames=seasonGames(b);
+    const gamesText= aGames===null||bGames===null ? 'Games-played information is unavailable for at least one player in the original source.' : `Games played in the source: ${a.name} ${aGames} · ${b.name} ${bGames}.`;
+    panel.innerHTML=`<div class="hub-title compare-title"><div><span class="eyebrow">4DK BASKETBALL · HEAD-TO-HEAD</span>
+    <h2>THE PLAYER SHOWDOWN.</h2>
+    <p>Pick any two of our established Top 50. See their published numbers and complete original 4DK evaluations side by side. We don't invent a winner.</p></div></div>
+    <div class="compare-picker" aria-label="Choose two ranked players"><label for="compare-select-a">PLAYER ONE<select id="compare-select-a">${compareOptions(a.rank,b.rank)}</select></label>
+     <button class="compare-swap" type="button" id="compare-swap" aria-label="Swap player positions" title="Swap players">⇄ <span>SWAP</span></button>
+     <label for="compare-select-b">PLAYER TWO<select id="compare-select-b">${compareOptions(b.rank,a.rank)}</select></label></div>
+    <div class="compare-presets" role="group" aria-label="Quick matchup examples"><span>QUICK MATCHUPS</span>
+      <button type="button" data-matchup="1-2">WEMBY / SGA</button><button type="button" data-matchup="3-4">LUKA / JOKIĆ</button><button type="button" data-matchup="44-48">FLAGG / JA</button>
+    </div>
+    <div class="compare-card-grid">${comparePortrait(a,'a')}<div class="compare-vs" aria-hidden="true">VS</div>${comparePortrait(b,'b')}</div>
+    <div class="compare-rank-note"><span><b>4DK BOARD POSITION</b><br>#${a.rank} ${esc(a.name)} · #${b.rank} ${esc(b.name)}</span>
+       <span class="compare-rank-gap">${Math.abs(a.rank-b.rank)} RANK ${Math.abs(a.rank-b.rank)===1?'PLACE':'PLACES'} APART</span></div>
+    <div class="compare-stats"><div class="compare-stats-head"><span class="eyebrow">2025–26 · PUBLISHED PLAYER STAT LINES</span><h3>BY THE NUMBERS.</h3><p>Values are read directly from our existing Top 50. Bars are proportional within each statistic, not a composite score.</p></div>
+      <div class="compare-metric-names"><span>${esc(a.name)}</span><span>${esc(b.name)}</span></div>
+      ${compareMetric(a,b,'POINTS','PPG')}${compareMetric(a,b,'REBOUNDS','RPG')}${compareMetric(a,b,'ASSISTS','APG')}
+      <div class="compare-stat-raw"><div><strong>${esc(a.name)}</strong><p>${esc(a.stats||'Not supplied')}</p></div><div><strong>${esc(b.name)}</strong><p>${esc(b.stats||'Not supplied')}</p></div></div>
+      <p class="fineprint">${esc(gamesText)} Different game totals and injury absences affect interpretation. A dash (—) means the published source does not supply a comparable value; it does not mean zero.</p>
+    </div>
+    <div class="compare-essays-head"><span class="eyebrow">4DK SCOUTING ROOM</span><h2>THE ORIGINAL ARGUMENTS.</h2><p>These are the actual words from our existing Top 50, not a condensed or newly generated verdict.</p></div>
+    <div class="compare-editorial-grid">${compareEssay(a,'a')}${compareEssay(b,'b')}</div>
+    <div class="compare-bottom"><span>SHARE THIS SPECIFIC MATCHUP</span><a href="${esc(url.pathname+url.search)}">${esc(url.pathname+url.search)}</a><p>Use this link to revisit the same comparison. The player order and existing ranking essays are preserved.</p></div>`;
+    const selectA=panel.querySelector('#compare-select-a'),selectB=panel.querySelector('#compare-select-b');
+    selectA.addEventListener('change',()=>setMatchup(Number(selectA.value),state.compareB));
+    selectB.addEventListener('change',()=>setMatchup(state.compareA,Number(selectB.value)));
+    panel.querySelector('#compare-swap').addEventListener('click',()=>setMatchup(state.compareB,state.compareA));
+    panel.querySelectorAll('[data-matchup]').forEach(button=>button.addEventListener('click',()=>{const pair=button.dataset.matchup.split('-').map(Number);setMatchup(pair[0],pair[1]);}));
+  }
+  function setMatchup(a,b){
+    if(!Number.isInteger(a)||!Number.isInteger(b)||a<1||a>50||b<1||b>50||a===b)return;
+    state.compareA=a;state.compareB=b;
+    const url=new URL(location.href);url.searchParams.set('compare',`${a}-${b}`);
+    try {history.replaceState(null,'',url.pathname+url.search+url.hash);} catch (_) { /* local/offline preview origin */ }
+    renderCompare();
+  }
+
+  function render(){if(state.tab==='history')renderHistory();else if(state.tab==='compare')renderCompare();else renderBoard();}
   document.querySelectorAll('.hub-tab').forEach(button=>button.addEventListener('click',()=>changeTab(button.dataset.tab)));
   async function start() {
     try {
@@ -189,6 +284,8 @@
       const data=readPlayers(pDoc);state.players=data.players;state.history=data.history;
       state.teams=readTeams(tDoc);
       if(location.hash){const rank=Number(location.hash.slice(1).replace('player-',''));if(rank>=1&&rank<=50)state.playerRank=rank;}
+      const requested=new URLSearchParams(location.search).get('compare');
+      if(requested){const match=/^(\d{1,2})-(\d{1,2})$/.exec(requested);if(match){const a=Number(match[1]),b=Number(match[2]);if(a>=1&&a<=50&&b>=1&&b<=50&&a!==b){state.compareA=a;state.compareB=b;state.tab='compare';tabMarkup('compare');}}}
       render();
       root.dataset.ready='true';
       console.info('4DK NBA Rankings HQ verified',state.players.length,'player profiles and',state.teams.length,'team profiles.');
