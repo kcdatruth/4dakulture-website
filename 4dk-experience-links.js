@@ -17,3 +17,9 @@
  const first=main.firstElementChild;
  if(first && first.tagName==='SECTION' && first.parentNode===main){first.insertAdjacentElement('afterend',section)}else main.insertBefore(section,first);
 })();
+
+/* The current-edition feed promotes verified newly published coverage above the preserved archive. */
+if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.html") {
+  const refreshCss=document.createElement("link");refreshCss.rel="stylesheet";refreshCss.href="4dk-home-refresh.css";document.head.appendChild(refreshCss);
+  const refreshJs=document.createElement("script");refreshJs.src="4dk-home-refresh.js";refreshJs.defer=true;document.body.appendChild(refreshJs);
+}
