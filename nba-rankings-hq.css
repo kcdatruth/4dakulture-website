@@ -11,3 +11,78 @@
 @media(max-width:850px){.hero h1{font-size:clamp(48px,6.8vw,75px)}.hero-person{max-width:59%;right:-9%}.hub-grid{grid-template-columns:minmax(240px,.86fr) minmax(0,1.14fr)}.profile-inner{padding:17px}.profile-hero h3{font-size:42px}.profile-hero-content{padding:18px}.facts{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.shell{padding:0 14px}.topbar-inner{min-height:60px}.logo{font-size:17px}.logo strong{font-size:25px}.nav{gap:12px}.nav a{font-size:9px}.nav a:nth-child(n+4){display:none}.hero .shell{min-height:310px;padding-top:29px;padding-bottom:34px}.hero-copy{width:87%}.hero h1{font-size:clamp(39px,10vw,52px)}.hero-person{max-width:82%;height:83%;right:-29%;bottom:-4%;opacity:.44}.hero p{font-size:14px}.hero-stamp{font-size:9px}.strip-cell{padding:15px 5px}.strip-cell strong{font-size:31px}.strip-cell span{font-size:8px}.hub-section{padding-top:17px}.hub-tabs{gap:5px}.hub-tab{flex:1;min-width:0;padding:12px 6px;font-size:9px;letter-spacing:0}.hub-title{margin:22px 0 12px}.hub-title h2{font-size:38px}.hub-toolbar{margin-top:13px}.filter-btn{padding:9px 10px;font-size:9px}.hub-grid{grid-template-columns:1fr;gap:12px}.board-scroll{max-height:275px}.entry{padding:10px}.thumb{width:45px;height:45px}.profile-hero{min-height:260px}.profile-hero-image{max-width:72%;height:100%;right:-7%}.profile-rank{font-size:83px}.profile-hero h3{font-size:44px}.profile-hero-content{max-width:76%}.profile-inner{padding:17px}.analysis p{font-size:14px;line-height:1.75}.history{padding:18px}.history-grid{gap:5px}.history-box{padding:12px 4px}.history-box b{font-size:35px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* OCT 18 MOBILE PROFILE POLISH — layout-only, preserving source ranks and essays.
+   Long player names must remain whole, and authentic photos must not cover headings.
+   Team headlines and action photographs have their own separate space on phones. */
+@media (max-width:680px) {
+  .profile-hero,
+  .profile-hero.has-team {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    min-height:0;
+    overflow:hidden;
+  }
+  .profile-hero .profile-hero-content,
+  .profile-hero.has-team .profile-hero-content {
+    order:0;
+    width:100%;
+    max-width:100%;
+    padding:23px 22px 17px;
+    text-shadow:none;
+  }
+  .profile-hero .profile-rank {
+    font-size:clamp(66px,20vw,86px);
+    margin:14px 0 19px;
+  }
+  .profile-hero h3,
+  .profile-hero.has-team h3 {
+    font-size:clamp(32px,8.6vw,43px);
+    line-height:1.02;
+    letter-spacing:-.035em;
+    overflow-wrap:normal;
+    word-break:normal;
+    hyphens:manual;
+    max-width:100%;
+  }
+  .profile-hero .subtitle {
+    max-width:100%;
+    overflow-wrap:break-word;
+    font-size:13px;
+  }
+  .profile-hero .profile-hero-image,
+  .profile-hero.has-team .profile-hero-image {
+    order:1;
+    position:relative;
+    inset:auto;
+    display:block;
+    width:100%;
+    max-width:100%;
+    flex:none;
+    margin:0;
+    filter:none;
+  }
+  .profile-hero:not(.has-team) .profile-hero-image {
+    height:clamp(185px,60vw,270px);
+    object-fit:contain;
+    object-position:center bottom;
+    filter:drop-shadow(0 4px 16px #0008);
+  }
+  .profile-hero.has-team .profile-hero-content {
+    padding-bottom:22px;
+  }
+  .profile-hero.has-team .profile-hero-image {
+    height:clamp(180px,58vw,275px);
+    object-fit:cover;
+    object-position:center center;
+    border-top:1px solid #715151;
+  }
+}
+
+/* Keep the narrowest phones from widening the entire page on long player names. */
+@media (max-width:680px) {
+  .hub-grid { grid-template-columns:minmax(0,1fr); }
+  .hub-grid > *, .board, .board-scroll { min-width:0; }
+  .entry-text strong { overflow-wrap:anywhere; }
+}
