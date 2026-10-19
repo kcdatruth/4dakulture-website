@@ -86,7 +86,8 @@
       {name:'All Eyez on Me',artist:'2Pac',href:'album-files-all-eyez-on-me.html',vol:'two',cover:'https://coverartarchive.org/release/b8d2916e-c077-430b-8535-069dc6891360/front-500'},
       {name:'Thug Motivation 101',artist:'Jeezy',href:'album-files-tm101.html',vol:'two',cover:'4dk-tm101-original-cover.jpg'},
       {name:'Take Care',artist:'Drake',href:'album-files-take-care.html',vol:'two',cover:'4dk-take-care-original-cover.jpg'},
-      {name:'To Pimp a Butterfly',artist:'Kendrick Lamar',href:'album-files-to-pimp-a-butterfly.html',vol:'two',cover:'https://storage.googleapis.com/pr-newsroom-wp/1/2024/02/Kendrick-Lamar-TPAB-EX-00602547311009-Cvr-1024x1024.jpg'}
+      {name:'To Pimp a Butterfly',artist:'Kendrick Lamar',href:'album-files-to-pimp-a-butterfly.html',vol:'two',cover:'https://storage.googleapis.com/pr-newsroom-wp/1/2024/02/Kendrick-Lamar-TPAB-EX-00602547311009-Cvr-1024x1024.jpg'},
+      {name:'Only Built 4 Cuban Linx…',artist:'Raekwon',href:'album-files-only-built-4-cuban-linx.html',vol:'two',cover:'east-08-cuban-linx.jpg'}
     ];
     let volume='all',q='',covers={};
     const output=$('#fx-album-results'),detail=$('#fx-album-detail');
