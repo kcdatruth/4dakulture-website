@@ -43,3 +43,23 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',insert,{once:true});else insert();
 })();
+
+/* 4DK Week 6 Sunday full recap • additive NFL-only entry point.
+ * Never replaces the Rams emergency report, current rankings or historical articles. */
+;(() => {
+  'use strict';
+  const page=location.pathname.split('/').pop().toLowerCase()||'index.html';
+  if(page!=='nfl.html')return;
+  function addSundayRecap(){
+    if(document.getElementById('fourdk-week6-sunday-recap-banner'))return;
+    const main=document.querySelector('main');if(!main)return;
+    const style=document.createElement('style');style.id='fourdk-week6-sunday-banner-style';
+    style.textContent='#fourdk-week6-sunday-recap-banner{display:flex;align-items:stretch;justify-content:space-between;gap:23px;background:linear-gradient(112deg,#281921,#492830,#140e14);border-bottom:4px solid #e4493e;color:#f9f0e9;text-decoration:none;font-family:Arial,Helvetica,sans-serif;min-width:0}#fourdk-week6-sunday-recap-banner .recap-copy{padding:31px max(5%,calc((100% - 1120px)/2));flex:1;min-width:0}#fourdk-week6-sunday-recap-banner small{display:block;color:#efc183;font-weight:900;letter-spacing:.14em;font-size:10px}#fourdk-week6-sunday-recap-banner strong{display:block;font:1000 clamp(37px,6vw,76px)/.94 Impact,Arial,sans-serif;margin:13px 0;letter-spacing:-.02em}#fourdk-week6-sunday-recap-banner p{color:#e2d1c8;font:16px/1.5 Georgia,serif;max-width:800px;margin:0 0 15px}#fourdk-week6-sunday-recap-banner b{color:#f4c88b;font-weight:900;font-size:11px;letter-spacing:.09em}#fourdk-week6-sunday-recap-banner .recap-image{max-width:250px;width:28%;min-height:205px;object-fit:cover;object-position:center}@media(max-width:590px){#fourdk-week6-sunday-recap-banner .recap-image{width:32%;max-width:115px}#fourdk-week6-sunday-recap-banner .recap-copy{padding:22px 16px}#fourdk-week6-sunday-recap-banner strong{font-size:clamp(31px,8vw,48px)}}';
+    document.head.appendChild(style);
+    const promo=document.createElement('a');
+    promo.id='fourdk-week6-sunday-recap-banner';promo.href='nfl-sunday-recap-week6-2026.html';
+    promo.innerHTML='<div class="recap-copy"><small>4DK NFL • WEEK 6 SUNDAY RECAP • ALL 12 FINALS</small><strong>SUNDAY BROKE THE SCRIPT.</strong><p>Every result, every fourth-quarter swing, and the complete 4DK film-room analysis. From the Rams crisis to Dallas’s offensive collapse in Green Bay—every game, including our full Sunday Night Football film room.</p><b>READ THE ENTIRE SUNDAY RECAP →</b></div><img class="recap-image" loading="lazy" src="4dk-week6-josh-allen.jpg" alt="4DK NFL archive image of Josh Allen">';
+    main.insertBefore(promo,main.firstChild);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',addSundayRecap,{once:true});else addSundayRecap();
+})();
