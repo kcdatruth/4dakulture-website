@@ -1,7 +1,7 @@
 /* Additive discovery ribbon for existing 4DK pages. Doesn't replace or mutate editorial content. */
 (() => {
  'use strict';
- const page=location.pathname.split('/').pop().toLowerCase()||'index.html';
+ const page=(location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase()||'index').replace(/\.html$/,'')+'.html';
  const active=new Set(['index.html','nba.html','nfl.html','hiphop.html','king-files.html']);
  if(!active.has(page) || document.getElementById('fx-launcher'))return;
  const items=[
@@ -29,7 +29,7 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
    Add-only story spotlight; existing scores, articles, editorial and navigation remain untouched. */
 ;(() => {
   'use strict';
-  const page=(location.pathname.split('/').pop().toLowerCase()||'index.html');
+  const page=((location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase()||'index').replace(/\.html$/,'')+'.html');
   if(page!=='nfl.html')return;
   function insert(){
     if(document.getElementById('fourdk-rams-emergency-banner'))return;
@@ -48,7 +48,7 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
  * Never replaces the Rams emergency report, current rankings or historical articles. */
 ;(() => {
   'use strict';
-  const page=location.pathname.split('/').pop().toLowerCase()||'index.html';
+  const page=(location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase()||'index').replace(/\.html$/,'')+'.html';
   if(page!=='nfl.html')return;
   function addSundayRecap(){
     if(document.getElementById('fourdk-week6-sunday-recap-banner'))return;
