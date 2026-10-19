@@ -23,3 +23,23 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
   const refreshCss=document.createElement("link");refreshCss.rel="stylesheet";refreshCss.href="4dk-home-refresh.css";document.head.appendChild(refreshCss);
   const refreshJs=document.createElement("script");refreshJs.src="4dk-home-refresh.js";refreshJs.defer=true;document.body.appendChild(refreshJs);
 }
+
+
+/* 4DK NFL EMERGENCY DESK — Week 6 Cardinals 18, Rams 16, October 18 2026.
+   Add-only story spotlight; existing scores, articles, editorial and navigation remain untouched. */
+;(() => {
+  'use strict';
+  const page=(location.pathname.split('/').pop().toLowerCase()||'index.html');
+  if(page!=='nfl.html')return;
+  function insert(){
+    if(document.getElementById('fourdk-rams-emergency-banner'))return;
+    const main=document.querySelector('main');if(!main)return;
+    const style=document.createElement('style');style.id='fourdk-rams-emergency-style';
+    style.textContent='#fourdk-rams-emergency-banner{background:linear-gradient(114deg,#22171b,#5e292f 65%,#211b21);border-top:4px solid #e5b978;border-bottom:3px solid #e34a3f;color:#f8efe8;padding:25px 5%;display:block;text-decoration:none;font-family:Arial,sans-serif}#fourdk-rams-emergency-banner .rams-inner{max-width:1150px;margin:auto}#fourdk-rams-emergency-banner small{color:#eed3a3;font-size:11px;font-weight:900;letter-spacing:.15em}#fourdk-rams-emergency-banner strong{display:block;font-size:clamp(37px,6vw,74px);line-height:.96;margin:10px 0;font-weight:1000;letter-spacing:-.035em}#fourdk-rams-emergency-banner p{color:#e6d3cd;font-size:clamp(14px,2vw,18px);line-height:1.5;margin:0 0 12px;max-width:840px}#fourdk-rams-emergency-banner b{font-size:11px;color:#f5c47c;letter-spacing:.08em}';
+    document.head.appendChild(style);
+    const promo=document.createElement('a');promo.href='rams-week6-emergency-oct18-2026.html';promo.id='fourdk-rams-emergency-banner';
+    promo.innerHTML='<div class="rams-inner"><small>4DK EMERGENCY NFL REPORT • WEEK 6 FINAL • OCT 18</small><strong>THE RAMS ARE IN TROUBLE.</strong><p>Arizona 18, Los Angeles 16. Two and four, last in the NFC West. Our preseason 14–3 prediction is officially dead.</p><b>READ THE COMPLETE 4DK EMERGENCY BREAKDOWN →</b></div>';
+    main.insertBefore(promo,main.firstChild);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',insert,{once:true});else insert();
+})();

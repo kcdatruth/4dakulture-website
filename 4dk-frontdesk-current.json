@@ -1,51 +1,90 @@
 [
   {
-    "category": "NFL", "label": "4DK NFL • OCT 18 • WEEK 6 GAMEDAY", "date": "2026-10-18", "priority": 500,
+    "category": "NFL",
+    "label": "4DK NFL • OCT 18 • EMERGENCY POSTGAME",
+    "date": "2026-10-18",
+    "priority": 900,
+    "title": "THE RAMS ARE IN TROUBLE.",
+    "deck": "Arizona 18, Los Angeles 16. The Rams fall to 2–4, the 14–3 prediction is officially dead, and San Francisco is pulling away in the NFC West.",
+    "href": "rams-week6-emergency-oct18-2026.html",
+    "image": "",
+    "alt": "4 Da Kulture Rams crisis editorial, 2026 Week 6"
+  },
+  {
+    "category": "NFL",
+    "label": "4DK NFL • OCT 18 • WEEK 6 GAMEDAY",
+    "date": "2026-10-18",
+    "priority": 500,
     "title": "LONDON FIRST. THE LEAGUE FOLLOWS.",
     "deck": "The Week 6 Sunday game-day report: London's opening test, the full Sunday slate and the pressure building toward Monday's Washington–San Francisco matchup. Pregame coverage; results are not invented.",
     "href": "nfl-week6-sunday-kickoff-oct18-2026.html",
-    "image": "4dk-week6-josh-allen.jpg", "alt": "Josh Allen football photograph used in the 4DK Week 6 game-day report"
+    "image": "4dk-week6-josh-allen.jpg",
+    "alt": "Josh Allen football photograph used in the 4DK Week 6 game-day report"
   },
   {
-    "category": "NBA", "label": "4DK NBA • OCT 17 • OPENING NIGHT PREVIEW", "date": "2026-10-17", "priority": 440,
+    "category": "NBA",
+    "label": "4DK NBA • OCT 17 • OPENING NIGHT PREVIEW",
+    "date": "2026-10-17",
+    "priority": 440,
     "title": "THE FIRST THREE TESTS.",
     "deck": "Boston at Detroit. Philadelphia at New York. Oklahoma City at San Antonio. Our complete 4DK opening-night examination before the October 20 tipoff.",
-    "href": "nba-opening-night-2026-first-three-tests.html", "image": "4dk-nba-opening-night-2026.png",
+    "href": "nba-opening-night-2026-first-three-tests.html",
+    "image": "4dk-nba-opening-night-2026.png",
     "alt": "Authentic 4DK NBA opening night editorial cover featuring the three scheduled matchups"
   },
   {
-    "category": "NBA", "label": "4DK NBA • INTERACTIVE RANKINGS HQ", "date": "2026-10-18", "priority": 420,
+    "category": "NBA",
+    "label": "4DK NBA • INTERACTIVE RANKINGS HQ",
+    "date": "2026-10-18",
+    "priority": 420,
     "title": "50 PLAYERS. 30 TEAMS. YOUR MATCHUP.",
     "deck": "Explore the complete Top 50, every team's 4DK analysis, real ranking history and Head-to-Head matchups using existing published stats.",
-    "href": "nba-rankings-hq.html", "image": "4DK-NBA-POWER-RANKINGS-TOP8-ACCURATE.png",
+    "href": "nba-rankings-hq.html",
+    "image": "4DK-NBA-POWER-RANKINGS-TOP8-ACCURATE.png",
     "alt": "4DK NBA power rankings editorial collage"
   },
   {
-    "category": "NBA", "label": "4DK NBA • OCT 20 • NIGHTCAP READY", "date": "2026-10-17", "priority": 325,
+    "category": "NBA",
+    "label": "4DK NBA • OCT 20 • NIGHTCAP READY",
+    "date": "2026-10-17",
+    "priority": 325,
     "title": "OPENING NIGHT GETS A REAL NIGHTCAP.",
     "deck": "The Nightcap Desk is ready for verified final scores and original recaps after the October 20 games. Older preseason editions stay archived.",
-    "href": "nba-nightcap.html", "image": "4dk-nba-opening-night-2026.png",
+    "href": "nba-nightcap.html",
+    "image": "4dk-nba-opening-night-2026.png",
     "alt": "4DK NBA Opening Night 2026 editorial cover"
   },
   {
-    "category": "MUSIC", "label": "4DK ALBUM FILES • VOL II • ISSUE 09", "date": "2026-10-16", "priority": 300,
+    "category": "MUSIC",
+    "label": "4DK ALBUM FILES • VOL II • ISSUE 09",
+    "date": "2026-10-16",
+    "priority": 300,
     "title": "TO PIMP A BUTTERFLY: THE COMPLETE FILE.",
     "deck": "Kendrick's classic receives the full 4DK treatment: era, production, historical stakes, track-by-track analysis and legacy. Issue 09 is published, not upcoming.",
-    "href": "album-files-to-pimp-a-butterfly.html", "image": "4dk-album-files-volume-two-magazine.jpg",
+    "href": "album-files-to-pimp-a-butterfly.html",
+    "image": "4dk-album-files-volume-two-magazine.jpg",
     "alt": "4DK Album Files Volume II hip-hop editorial magazine graphic"
   },
   {
-    "category": "NBA", "label": "4DK KING FILES • FILE 001 • OCT 17", "date": "2026-10-17", "priority": 340,
+    "category": "NBA",
+    "label": "4DK KING FILES • FILE 001 • OCT 17",
+    "date": "2026-10-17",
+    "priority": 340,
     "title": "THE CHOSEN ONE: KING FILES 001.",
     "deck": "LeBron's pre-NBA story, from St. Vincent–St. Mary and the national spotlight to the 2003 draft. The full published first file, not an unwritten future chapter.",
-    "href": "king-file-001-the-chosen-one.html", "image": "king-file-001-si-chosen-one.jpeg",
+    "href": "king-file-001-the-chosen-one.html",
+    "image": "king-file-001-si-chosen-one.jpeg",
     "alt": "LeBron James Sports Illustrated cover used for 4DK King Files 001"
   },
   {
-    "category": "CULTURE", "label": "4DK INTERACTIVE WORLD • NEW", "date": "2026-10-18", "priority": 400,
+    "category": "CULTURE",
+    "label": "4DK INTERACTIVE WORLD • NEW",
+    "date": "2026-10-18",
+    "priority": 400,
     "title": "THE STORIES. YOU EXPLORE.",
     "deck": "The new interactive 4DK desk unites NBA Nightcap, NFL, Album Files, King Files and Who You Got? with the existing articles.",
-    "href": "4dk-interactive.html", "image": "4dk-nba-opening-night-2026.png",
+    "href": "4dk-interactive.html",
+    "image": "4dk-nba-opening-night-2026.png",
     "alt": "4 Da Kulture original NBA editorial artwork"
   }
 ]
