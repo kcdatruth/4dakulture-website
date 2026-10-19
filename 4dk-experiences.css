@@ -15,3 +15,55 @@ body.fx-body{margin:0;background:var(--fx-bg);color:var(--fx-cream);font-family:
 .fx-shell,.fx-main,.fx-card,.fx-entry,.fx-toolbar,.fx-toolbar>*{min-width:0}.fx-entry h3,.fx-entry p,.fx-card strong,.fx-era h3{overflow-wrap:anywhere}@media(max-width:350px){.fx-control{width:100%;flex-basis:100%}.fx-toolbar .fx-pill{flex:1 1 30%;padding:9px 6px}}
 
 .fx-era[hidden]{display:none!important}
+
+
+/* 4DK Week 6 recap hero — mobile-only presentation repair.
+   Full-width authentic 16:9 photo; no changes to stories, scripts or desktop. */
+@media screen and (max-width: 720px) {
+  html body #fourdk-week6-sunday-recap-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  html body #fourdk-week6-sunday-recap-banner .recap-image {
+    display: block;
+    order: -1;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: auto;
+    flex: none;
+    object-fit: contain;
+    object-position: center;
+  }
+  html body #fourdk-week6-sunday-recap-banner .recap-copy {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px 21px 28px;
+    flex: none;
+    min-width: 0;
+  }
+  html body #fourdk-week6-sunday-recap-banner strong {
+    display: block;
+    font-size: clamp(38px, 10vw, 52px);
+    line-height: 0.99;
+    overflow-wrap: normal;
+  }
+  html body #fourdk-week6-sunday-recap-banner p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    max-width: 58ch;
+  }
+  html body #fourdk-week6-sunday-recap-banner b {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
