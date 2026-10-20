@@ -83,3 +83,50 @@
   renderLeader(cats[0]); root.querySelectorAll('[data-wk4cat]').forEach(btn=>btn.addEventListener('click',()=>{root.querySelectorAll('[data-wk4cat]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderLeader(btn.dataset.wk4cat)}));
   const old=document.querySelector('.mvp-watch');if(old){old.classList.add('wk4-archived');const h=old.querySelector('h2');if(h)h.textContent='MVP WATCH — WEEK 1 ARCHIVE';old.insertAdjacentHTML('beforebegin','<div class="wk4archive">Previous snapshot preserved below • Week 1 archive • Current Week 4 board is above</div>')}
 })();
+
+
+/* 4DK NFL • OCT 19 POST-WEEK-6 DESK • ADDITIVE, NON-DESTRUCTIVE */
+(function(){
+  'use strict';
+  if (!/(?:^|\/)nfl(?:\.html)?$/.test(location.pathname.replace(/\/$/,''))) return;
+  function afterSix(){
+    if (document.getElementById('dk-week6-final-script-marker')) return;
+    var main=document.querySelector('main#main');if(!main)return;
+    var mark=document.createElement('span');mark.id='dk-week6-final-script-marker';mark.hidden=true;main.appendChild(mark);
+    var notices=[
+      'MNF FINAL: 49ERS 23 • COMMANDERS 17 — SAN FRANCISCO 6–0',
+      'WASHINGTON 1–4–1 • THE COMEBACK FELL SIX POINTS SHORT',
+      'THE FULL 4DK MONDAY NIGHT FILM ROOM IS LIVE',
+      'ALL 12 SUNDAY RECAPS • WEEK 6 ARCHIVE IS LIVE',
+      'MVP AND ROOKIE TOP 10S ARE THE ENTERING-WEEK-6 BALLOTS',
+      'NEXT UP: 49ERS AT FALCONS • SUNDAY, OCT 25'
+    ];
+    document.querySelectorAll('.nfl-revamp-ticker [data-4dk-current]').forEach(function(el,i){if(notices[i])el.textContent='● '+notices[i]});
+    var latest=document.querySelector('.fourdk-front-kickoff');
+    if(latest){
+      var small=latest.querySelector('small');if(small)small.textContent='MONDAY NIGHT FINAL • OCT 19 • WEEK 6 COMPLETE';
+      var heading=latest.querySelector('strong');if(heading)heading.innerHTML='49ERS 23.<br>COMMANDERS 17.';
+      var para=latest.querySelector('p');if(para)para.textContent='San Francisco is 6–0, but had to survive Washington’s comeback. Daniels threw for 300 yards, Purdy for 264, McCaffrey scored twice, and the late defensive stops saved the night. Evans’ Achilles injury remains a concern.';
+      var link=latest.querySelector('a');if(link){link.href='nfl-mnf-49ers-commanders-week6-2026.html';link.textContent='READ THE COMPLETE 4DK MNF FILM ROOM →';}
+      if(!latest.querySelector('[data-week6-tnf-archive]'))latest.insertAdjacentHTML('beforeend','<p data-week6-tnf-archive style="margin-top:13px;font:700 12px/1.6 Arial"><a href="nfl-tnf-seahawks-broncos-oct15-2026.html">ARCHIVE: DENVER–SEATTLE THURSDAY RECAP →</a></p>');
+    }
+    var links=document.querySelector('.fourdk-front-links');
+    if(links){
+      var first=links.querySelector('a');if(first){first.querySelector('small').textContent='ARCHIVE • OCT 15 • TNF';}
+      if(!links.querySelector('[data-week6-final-link]'))links.insertAdjacentHTML('afterbegin','<a data-week6-final-link href="nfl-mnf-49ers-commanders-week6-2026.html"><small>NEW • OCT 19 • MONDAY FINAL</small><strong>49ERS 23, COMMANDERS 17 →</strong></a>');
+      var old=links.querySelectorAll('a');old.forEach(function(a){
+        if(a.href.includes('nfl-mvp-watch-week6-2026')){var sm=a.querySelector('small');if(sm)sm.textContent='ENTERING WEEK 6 • ARCHIVE';}
+        if(a.href.includes('nfl-rookie-watch-week6-2026')){var sm=a.querySelector('small');if(sm)sm.textContent='ENTERING WEEK 6 • ARCHIVE';}
+        if(a.href.includes('nfl-standings-after-week5')){var st=a.querySelector('strong');if(st)st.textContent='WEEK 5 STANDINGS ARCHIVE →';}
+      });
+    }
+    var prev=document.querySelector('#fourdk-week6-lead');
+    if(prev&&!document.getElementById('dk-week6-awards-new')){
+      var note=document.createElement('section');note.id='dk-week6-awards-new';note.style.cssText='background:#121b16;color:#f5eee0;border-block:3px solid #e0b36b;padding:26px 20px;font:16px/1.65 Arial,sans-serif';
+      note.innerHTML='<div style="max-width:1160px;margin:auto"><small style="color:#eac077;letter-spacing:.12em;font-weight:900">OCTOBER 19 • POST-WEEK-6 CHECKPOINT</small><h2 style="font-size:clamp(28px,5vw,51px);line-height:1;margin:12px 0;color:#fff">6–0. BUT THE QUESTIONS GOT LOUDER.</h2><p style="max-width:850px;color:#e0d8c9">The Week 6 MNF recap is the current story. Our October 15 MVP and rookie Top 10 lists remain preserved as <strong style="color:#f1c17d">entering-Week-6 editorial ballots</strong>, not misleading postgame rerankings. The next official ballot will account for every verified Week 6 performance.</p><p style="display:flex;flex-wrap:wrap;gap:12px"><a style="padding:12px 15px;background:#d84636;color:white;font-weight:900;text-decoration:none" href="nfl-mnf-49ers-commanders-week6-2026.html">READ MONDAY FILM ROOM →</a><a style="padding:12px 15px;border:1px solid #ddb472;color:#e8c27f;font-weight:900;text-decoration:none" href="nfl-sunday-recap-week6-2026.html">12-GAME SUNDAY RECAP →</a></p></div>';
+      prev.parentNode.insertBefore(note,prev);
+    }
+    document.querySelectorAll('.dk-secondary a[href*="nfl-mvp-watch-week6"],.dk-secondary a[href*="nfl-rookie-watch-week6"]').forEach(function(a){var sm=a.querySelector('small');if(sm)sm.textContent='ENTERING WEEK 6 • ARCHIVE'});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',afterSix,{once:true});else afterSix();
+})();

@@ -1,4 +1,4 @@
-/* 4 DA KULTURE • DAILY FRONT DESK CURRENT EDITION • Oct 18 2026
+/* 4 DA KULTURE • DAILY FRONT DESK CURRENT EDITION • LIVE NEWSROOM
    Presentation layer. Existing 4dk-frontdesk-feed.json, older stories,
    original page and rankings remain unchanged.
 */
@@ -11,7 +11,9 @@
   const allowedImage=/^[a-zA-Z0-9._-]+\.(?:jpe?g|png|webp)$/i;
   const esc=v=>String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const fmt=d=>new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}).toUpperCase();
-  const dateOK=x=>/^\d{4}-\d{2}-\d{2}$/.test(x.date||'')&&x.date<='2026-10-18';
+  const localParts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(v=>[v.type,v.value]));
+  const todayPacific=[localParts.year,localParts.month,localParts.day].join('-');
+  const dateOK=x=>/^\d{4}-\d{2}-\d{2}$/.test(x.date||'')&&x.date<=todayPacific;
   const existingIds=['dk-current-edition','dk-earlier-edition'];
   const trustedLinks=[
     ['INTERACTIVE WORLD','4dk-interactive.html'],
@@ -38,7 +40,7 @@
     if(!existing){
       const section=document.createElement('section');section.className='dk-current';section.id='dk-current-edition';section.setAttribute('aria-label','Latest published 4DK newsroom coverage');
       section.innerHTML=`
-        <div class="dk-current-header"><div><span class="dk-current-kicker">CURRENT 4DK EDITION • OCTOBER 18, 2026</span><h3>THE STORIES KEEP MOVING.</h3><p>Sunday football. NBA opening night approaching. The latest King Files. Original reports, not fabricated live results.</p></div><a class="dk-current-all" href="4dk-interactive.html">EXPLORE THE INTERACTIVE WORLD ↗</a></div>
+        <div class="dk-current-header"><div><span class="dk-current-kicker">CURRENT 4DK EDITION • ${fmt(records[0].date)}</span><h3>THE STORIES KEEP MOVING.</h3><p>Week 6 is final. The 49ers are 6–0. NBA opening night is next, and the King Files continue. Original reports, not fabricated results.</p></div><a class="dk-current-all" href="4dk-interactive.html">EXPLORE THE INTERACTIVE WORLD ↗</a></div>
         <div class="dk-current-grid">${cards.map(x=>`<a class="dk-current-card" href="${esc(x.href)}"><span class="dk-current-media">${allowedImage.test(x.image||'')?`<img loading="lazy" src="${esc(x.image)}" alt="${esc(x.alt||x.title)}">`:''}</span><span class="dk-current-copy"><small class="dk-current-category">${esc(x.label)}</small><strong class="dk-current-title">${esc(x.title)}</strong><p>${esc(x.deck)}</p><b class="dk-current-open">READ THE COMPLETE 4DK FEATURE →</b></span></a>`).join('')}</div>
         <nav class="dk-current-quick" aria-label="Explore 4DK interactive tools"><span>GO DEEPER</span>${trustedLinks.map(([label,href])=>`<a href="${href}">${label} ↗</a>`).join('')}</nav>`;
       mast.insertAdjacentElement('afterend',section);
