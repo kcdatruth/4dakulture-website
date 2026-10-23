@@ -183,31 +183,37 @@
 
 <main id="main">
 <style>
-#fourdk-week7-lead{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 85% 15%,#663322 0,transparent 45%),linear-gradient(145deg,#090c0c 0%,#201313 58%,#0a0a0a 100%);color:#fff8ef;padding:clamp(30px,7vw,80px) max(20px,calc((100% - 1180px)/2));border-top:4px solid #e3af64;border-bottom:5px solid #d73d34;font-family:Arial,Helvetica,sans-serif}
-#fourdk-week7-lead:before{content:'7';position:absolute;right:-.07em;top:-.25em;font:900 clamp(260px,55vw,780px)/1 Impact,'Arial Narrow',sans-serif;color:#ffffff08;z-index:-1}
-#fourdk-week7-lead .k{color:#f2c27e;letter-spacing:.16em;font-size:12px;font-weight:900}
-#fourdk-week7-lead h1{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(57px,11vw,140px);line-height:.88;letter-spacing:.005em;margin:20px 0 25px;text-transform:uppercase}
-#fourdk-week7-lead h1 em{font-style:normal;color:#e6ad63}
-#fourdk-week7-lead .intro{font:clamp(18px,2.8vw,25px)/1.5 Georgia,serif;max-width:900px;color:#efe0d5}
-#fourdk-week7-lead .walker{margin:28px 0 0;border-left:5px solid #dfaa62;padding:12px 0 12px 18px;max-width:850px;background:#ffffff08}
-#fourdk-week7-lead .walker strong{display:block;color:#f2c27e;font-size:12px;letter-spacing:.13em;margin-bottom:7px}
-#fourdk-week7-lead .walker span{font-size:clamp(19px,3vw,29px);font-weight:900;line-height:1.2}
-#fourdk-week7-lead .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-#fourdk-week7-lead .links a{display:inline-block;padding:16px 20px;background:#d13f34;color:#fff;text-decoration:none;font-weight:900;font-size:13px;letter-spacing:.04em}
-#fourdk-week7-lead .links a:last-child{background:transparent;border:1px solid #b69b7e;color:#f2c27e}
-#fourdk-week7-lead .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
-#fourdk-week7-lead .chips span{border:1px solid #6d5543;padding:8px 10px;font-weight:800;font-size:11px;color:#e8c99d}
-#fourdk-week7-lead .archive-note{font-size:12px;color:#c9b6a1;margin-top:22px}
+#fourdk-week7-cover{background:#0c0d0b;color:#fff7e8;border-bottom:5px solid #c93b33;font-family:Arial,Helvetica,sans-serif}
+#fourdk-week7-cover .cover-img{display:block;width:100%;height:clamp(290px,53vw,680px);object-fit:cover;object-position:center 35%}
+#fourdk-week7-cover .cover-copy{padding:clamp(24px,5vw,60px) max(22px,calc((100% - 1180px)/2));background:linear-gradient(130deg,#181e16,#341b20)}
+#fourdk-week7-cover .eyebrow{font-size:12px;letter-spacing:.16em;color:#efbf79;font-weight:900}
+#fourdk-week7-cover h1{font:900 clamp(52px,10vw,125px)/.94 Impact,'Arial Narrow',Arial,sans-serif;letter-spacing:.01em;margin:18px 0 20px}
+#fourdk-week7-cover h1 em{color:#edb56e;font-style:normal}
+#fourdk-week7-cover .deck{font-size:clamp(19px,2.6vw,27px);line-height:1.45;max-width:850px;margin:0 0 25px}
+#fourdk-week7-cover .cover-link{display:inline-block;padding:17px 21px;background:#cb3c32;color:white;font-weight:900;text-decoration:none;letter-spacing:.04em}
+#fourdk-week7-cover .features{max-width:1180px;margin:auto;padding:30px 18px 42px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#fourdk-week7-cover .feature{background:#1c1c1b;border:1px solid #675039;overflow:hidden;text-decoration:none;color:#fff7e8}
+#fourdk-week7-cover .feature img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+#fourdk-week7-cover .feature div{padding:15px}
+#fourdk-week7-cover .feature small{font-size:11px;letter-spacing:.1em;color:#e8b675;font-weight:900}
+#fourdk-week7-cover .feature strong{display:block;font:900 clamp(22px,3vw,33px)/1.08 Impact,'Arial Narrow',Arial,sans-serif;margin:8px 0}
+#fourdk-week7-cover .feature p{font-size:14px;line-height:1.5;margin:0}
+#fourdk-week7-cover .archive{padding:0 22px 26px;text-align:center}
+#fourdk-week7-cover .archive a{color:#eec18a}
+@media(max-width:620px){#fourdk-week7-cover .features{grid-template-columns:1fr}#fourdk-week7-cover .cover-img{height:300px}#fourdk-week7-cover .feature img{aspect-ratio:16/8}}
 </style>
-<section id="fourdk-week7-lead" aria-label="4DK NFL Week 7 lead feature">
-<div class="k">4 DA KULTURE • CURRENT NFL LEAD • WEEK 7 • OCTOBER 22, 2026</div>
-<h1>WEEK 7.<br><em>NO ROOM<br>TO HIDE.</em></h1>
-<p class="intro">The Patriots and Bears kick off a new week. San Francisco puts its unbeaten run on the line in Atlanta. And Kenneth Walker returns to Seattle in a Chiefs uniform—one of the season's biggest homecoming stories.</p>
-<div class="walker"><strong>4DK SUNDAY NIGHT SPOTLIGHT</strong><span>KENNETH WALKER III: FROM SEATTLE'S SUPER BOWL HERO TO KANSAS CITY'S BACKFIELD ENGINE.</span></div>
-<div class="chips"><span>TNF · PATRIOTS @ BEARS</span><span>49ERS @ FALCONS</span><span>CHIEFS @ SEAHAWKS</span><span>RAMS @ RAIDERS</span><span>COWBOYS @ EAGLES</span></div>
-<div class="links"><a href="nfl-week7-kickoff-2026.html">READ THE WEEK 7 DEEP DIVE →</a><a href="nfl-season-archive-2026.html">PREVIOUS WEEKS & ARCHIVES →</a></div>
-<p class="archive-note">Week 6 recaps, power rankings, MVP Watch and Rookie Watch are preserved below.</p>
-</section>
+<section id="fourdk-week7-cover" aria-label="4DK NFL Week 7 photo cover">
+<img class="cover-img" src="4dk-week7-walker.jpg" alt="Kenneth Walker III in a Kansas City Chiefs uniform carrying the football against the Chargers" fetchpriority="high">
+<div class="cover-copy"><div class="eyebrow">4 DA KULTURE • NFL DESK • WEEK 7 • OCTOBER 22, 2026</div>
+<h1>WEEK 7.<br><em>NO ROOM TO HIDE.</em></h1>
+<p class="deck">Kenneth Walker returns to Seattle as Kansas City’s rushing leader. Maye meets Caleb under the Thursday-night lights. Purdy takes the unbeaten 49ers to Atlanta. The Rams and Eagles face defining tests.</p>
+<a class="cover-link" href="nfl-week7-kickoff-2026.html">READ OUR COMPLETE WEEK 7 FILM ROOM →</a></div>
+<div class="features" aria-label="Week 7 featured matchups">
+<a class="feature" href="nfl-week7-kickoff-2026.html"><img src="4dk-week7-caleb.jpg" alt="MAYE VS. CALEB Week 7 NFL feature photo" loading="lazy"><div><small>PATRIOTS AT BEARS</small><strong>MAYE VS. CALEB</strong><p>Thursday night puts two rising quarterbacks and playoff hopefuls under the lights.</p></div></a>
+<a class="feature" href="nfl-week7-kickoff-2026.html"><img src="4dk-week7-purdy.jpg" alt="PURDY AND THE 49ERS Week 7 NFL feature photo" loading="lazy"><div><small>49ERS AT FALCONS</small><strong>PURDY AND THE 49ERS</strong><p>San Francisco takes its unbeaten run on the road, with health and execution under the microscope.</p></div></a>
+<a class="feature" href="nfl-week7-kickoff-2026.html"><img src="4dk-week7-stafford.jpg" alt="THE RAMS RESPONSE Week 7 NFL feature photo" loading="lazy"><div><small>RAMS AT RAIDERS</small><strong>THE RAMS RESPONSE</strong><p>Stafford and Los Angeles need a response after a difficult Week 6.</p></div></a>
+<a class="feature" href="nfl-week7-kickoff-2026.html"><img src="4dk-week7-barkley.jpg" alt="NFC EAST PRESSURE Week 7 NFL feature photo" loading="lazy"><div><small>COWBOYS AT EAGLES</small><strong>NFC EAST PRESSURE</strong><p>Monday night brings another high-stakes division test.</p></div></a>
+</div><div class="archive"><a href="nfl-sunday-recap-week6-2026.html">WEEK 6 SUNDAY RECAP &amp; PREVIOUS COVERAGE →</a></div></section>
 
 <!-- 4DK OCT 19 MNF LEAD: additive; previous Sunday feature and all archives retained -->
 <section id="fourdk-mnf-oct19-nfl" aria-label="Featured 49ers Commanders Monday Night Football recap" style="background:linear-gradient(130deg,#101b15,#24191b);color:#fff7ea;border-top:5px solid #dc4a3c;border-bottom:4px solid #dfb66f;padding:clamp(20px,5vw,44px) 18px;font-family:Arial,Helvetica,sans-serif">
@@ -221,8 +227,8 @@
 </div></div></section>
 
 
-<!-- 4DK: Latest published Week 6 coverage. Static navigation so it works even without JavaScript. -->
-<section id="fourdk-nfl-latest-restored" aria-label="Latest published 4DK NFL coverage">
+<!-- 4DK: Preserved Week 6 archive coverage; Week 7 photo cover is above. -->
+<section id="fourdk-nfl-latest-restored" aria-label="Week 6 archived 4DK NFL coverage">
 <style>
 #fourdk-nfl-latest-restored{color:#fff8ed;background:linear-gradient(128deg,#07130f 0%,#18271c 45%,#311b1d 100%);border-top:4px solid #e7b96d;border-bottom:4px solid #cf433a;font-family:Arial,Helvetica,sans-serif;padding:clamp(22px,5vw,45px) 18px}
 #fourdk-nfl-latest-restored .dk-latest-inner{max-width:1180px;margin:auto}
