@@ -150,7 +150,24 @@
 #fourdk-nfl-hybrid .dk-archive a{text-decoration:underline;text-underline-offset:4px;color:#efbe79}
 @media(max-width:780px){#fourdk-nfl-hybrid .dk-grid{grid-template-columns:1fr}#fourdk-nfl-hybrid .dk-story{min-height:0}#fourdk-nfl-hybrid .dk-tools{grid-template-columns:1fr}#fourdk-nfl-hybrid h1{font-size:clamp(42px,10vw,70px)}}
 </style>
-</head>
+<style id="fourdk-nfl-hybrid-refine-css">
+#fourdk-nfl-hybrid .dk-cover-panel{border:1px solid #60484a;background:#201b20;border-radius:6px;overflow:hidden;margin:0 0 30px}
+#fourdk-nfl-hybrid .dk-cover-panel img{width:100%;height:auto;max-height:520px;object-fit:cover;display:block}
+#fourdk-nfl-hybrid .dk-cover-caption{padding:22px 24px 26px}
+#fourdk-nfl-hybrid .dk-cover-caption span{font-size:12px;letter-spacing:.14em;color:#edbd78;font-weight:900}
+#fourdk-nfl-hybrid .dk-cover-caption strong{display:block;font-size:clamp(26px,5vw,49px);line-height:1.05;margin:12px 0;color:#fff}
+#fourdk-nfl-hybrid .dk-cover-caption p{font:17px/1.45 Georgia,serif;color:#e5d7ce;margin:0}
+#fourdk-nfl-hybrid .dk-tool{overflow:hidden;padding:0 0 22px}
+#fourdk-nfl-hybrid .dk-tool img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;margin-bottom:18px}
+#fourdk-nfl-hybrid .dk-tool b,#fourdk-nfl-hybrid .dk-tool span{margin-left:20px;margin-right:20px}
+.dk-editorial-archive{background:#171519;color:#f6eee4;border-top:4px solid #b84238;border-bottom:4px solid #b84238;font-family:Arial,sans-serif}
+.dk-editorial-archive>summary{padding:24px max(22px,calc((100% - 1120px)/2));cursor:pointer;list-style:none}
+.dk-editorial-archive>summary::-webkit-details-marker{display:none}
+.dk-editorial-archive>summary span{color:#edbd78;font-size:12px;font-weight:900;letter-spacing:.12em;display:block}
+.dk-editorial-archive>summary strong{font-size:clamp(23px,4vw,40px);display:block;margin:10px 0}
+.dk-editorial-archive>summary small{color:#e3d0c0;font-size:14px}
+.dk-editorial-archive[open]>summary{border-bottom:1px solid #725254}
+</style></head>
 <body class="nfl-page nfl-revamp-page">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead nfl-masthead">
@@ -218,6 +235,7 @@
 <nav class="dk-menu" aria-label="NFL desk shortcuts">
 <a href="#fourdk-nfl-hybrid-latest">LATEST COVERAGE ↗</a><a href="#fourdk-nfl-hybrid-network">POWER RANKINGS ↗</a><a href="#fourdk-nfl-hybrid-network">MVP &amp; ROOKIE WATCH ↗</a><a href="4dk-nfl-command-center.html">GAME DAY ↗</a><a href="nfl-season-archive-2026.html">ARCHIVES ↗</a>
 </nav>
+<div class="dk-cover-panel" aria-label="Week 7 NFL magazine cover"><img src="4dk-week7-walker.jpg" alt="4DK NFL Week 7 football cover featuring Kenneth Walker III" loading="eager"><div class="dk-cover-caption"><span>4DK NFL • WEEK 7</span><strong>THE LEAGUE DOESN’T WAIT.</strong><p>The matchups, the pressure and the film-room conversations shaping the week.</p></div></div>
 <div class="dk-section-title" id="fourdk-nfl-hybrid-latest">THE FRONT PAGE • WEEK 7</div>
 <div class="dk-grid">
 <a class="dk-story" href="bears-patriots-tnf-nightcap-2026-10-22.html"><small>THURSDAY NIGHTCAP • OCT 22 • FINAL</small><strong>CHICAGO HAS ITS QUARTERBACK.</strong><p>Bears 30, Patriots 24. Caleb Williams and Chicago make their statement in the NFC North.</p><span class="dk-go">READ THE NIGHTCAP →</span></a>
@@ -226,14 +244,14 @@
 </div>
 <div class="dk-section-title" id="fourdk-nfl-hybrid-network">THE 4DK FOOTBALL NETWORK</div>
 <div class="dk-tools">
-<a class="dk-tool" href="nfl-power-rankings-week6-2026.html"><span>THE TEAM BOARD • WEEK 6</span><b>POWER RANKINGS.</b><span>ALL 32 TEAMS →</span></a>
-<a class="dk-tool" href="nfl-mvp-watch-after-week6-2026.html"><span>THE PLAYER RACE</span><b>MVP WATCH.</b><span>SEE THE CONTENDERS →</span></a>
-<a class="dk-tool" href="nfl-rookie-watch-week6-2026.html"><span>THE NEXT GENERATION</span><b>ROOKIE WATCH.</b><span>MEET THE BREAKOUTS →</span></a>
+<a class="dk-tool" href="nfl-power-rankings-week6-2026.html"><img src="4dk-week7-purdy.jpg" alt="4DK NFL football feature" loading="lazy"><span>THE TEAM BOARD • WEEK 6</span><b>POWER RANKINGS.</b><span>ALL 32 TEAMS →</span></a>
+<a class="dk-tool" href="nfl-mvp-watch-after-week6-2026.html"><img src="4dk-week7-caleb.jpg" alt="4DK NFL football feature" loading="lazy"><span>THE PLAYER RACE</span><b>MVP WATCH.</b><span>SEE THE CONTENDERS →</span></a>
+<a class="dk-tool" href="nfl-rookie-watch-week6-2026.html"><img src="4dk-week7-barkley.jpg" alt="4DK NFL football feature" loading="lazy"><span>THE NEXT GENERATION</span><b>ROOKIE WATCH.</b><span>MEET THE BREAKOUTS →</span></a>
 </div>
 <p class="dk-archive">The original NFL stories, week-by-week analysis and visuals continue below. <a href="nfl-season-archive-2026.html">Browse the full season archive →</a></p>
 </div></section>
 
-<section id="fourdk-week7-tnf-lead" style="background:linear-gradient(135deg,#151c16,#301c21);color:#fff4e6;padding:42px max(22px,calc((100% - 1120px)/2));border-bottom:6px solid #d4473c;font-family:Arial,Helvetica,sans-serif">
+<details id="fourdk-nfl-editorial-archive" class="dk-editorial-archive"><summary><span>4DK NFL ARCHIVE • WEEK 6 &amp; WEEK 7</span><strong>ORIGINAL COVERS &amp; COMPLETE WEEKLY FEATURES</strong><small>Tap to explore previous front-page artwork, film-room reports and archived coverage ↓</small></summary><div class="dk-editorial-archive-content"><section id="fourdk-week7-tnf-lead" style="background:linear-gradient(135deg,#151c16,#301c21);color:#fff4e6;padding:42px max(22px,calc((100% - 1120px)/2));border-bottom:6px solid #d4473c;font-family:Arial,Helvetica,sans-serif">
 <div style="color:#f1b879;font-size:12px;font-weight:900;letter-spacing:.15em">4 DA KULTURE • NFL WEEK 7 • THURSDAY NIGHTCAP • OCT 22, 2026</div>
 <h1 style="font:900 clamp(42px,8vw,90px)/1.02 Impact,'Arial Narrow',Arial,sans-serif;margin:18px 0">CHICAGO HAS ITS QUARTERBACK.<br><span style="color:#f1b879">NOW THE NFC NORTH HAS A PROBLEM.</span></h1>
 <p style="font-size:24px;font-weight:900;margin:0 0 14px">BEARS 30 · PATRIOTS 24 — FINAL</p>
@@ -407,6 +425,7 @@
 <section id="4dk-oct12-refresh" aria-label="4DK latest updates" style="background:linear-gradient(115deg,#121312,#291712);color:#f7f1e6;padding:25px 20px;border-top:4px solid #e74731;border-bottom:1px solid #b78b55"><div style="max-width:1180px;margin:auto"><p style="font-size:12px;font-weight:900;letter-spacing:.13em;color:#e4b96b;margin:0 0 10px">4DK NFL • WEEK 5 FINAL • OCTOBER 12, 2026</p><h2 style="font-size:clamp(28px,5vw,50px);line-height:1.08;margin:0 0 14px;color:#fff">BUFFALO WINS THE MONDAY NIGHT THRILLER.</h2><p style="font-size:clamp(16px,2vw,20px);line-height:1.5;max-width:950px">Josh Allen and the Bills survive Matthew Stafford and the Rams 37–34 in overtime. San Francisco remains unbeaten at 5–0 after Sunday’s Seattle showdown. Follow the MNF breakdown, Sunday recaps and Week 5 standings without losing the archive.</p><div style="margin-top:12px"><a href="nfl-mnf-recap-week5-bills-rams.html" style="display:inline-block;margin:5px 8px 5px 0;padding:12px 14px;border:1px solid #c39d61;color:#ffe0a1;font-weight:800;text-decoration:none">MNF: Bills vs. Rams →</a><a href="nfl-sunday-recap-week5.html" style="display:inline-block;margin:5px 8px 5px 0;padding:12px 14px;border:1px solid #c39d61;color:#ffe0a1;font-weight:800;text-decoration:none">Sunday Week 5 recap →</a><a href="nfl-week5-standings-2026.html" style="display:inline-block;margin:5px 8px 5px 0;padding:12px 14px;border:1px solid #c39d61;color:#ffe0a1;font-weight:800;text-decoration:none">Week 5 standings →</a><a href="nfl-sunday-recaps.html" style="display:inline-block;margin:5px 8px 5px 0;padding:12px 14px;border:1px solid #c39d61;color:#ffe0a1;font-weight:800;text-decoration:none">Sunday archive →</a></div></div></section>
 </details>
 
+</div></details>
 <section class="nfl-v2-hero">
   <div class="nfl-v2-grid shell">
     <div class="nfl-v2-copy">
