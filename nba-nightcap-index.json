@@ -1,7 +1,29 @@
 [
   {
-    "date": "October 21, 2026",
+    "date_iso": "2026-10-23",
+    "date": "October 23, 2026",
+    "label": "REGULAR SEASON • GAME-DAY PREVIEW",
+    "title": "LA BATTLE. EASTERN REMATCH. WESTERN TEST.",
+    "deck": "Lakers–Clippers, Knicks–Celtics and Rockets–Spurs headline Friday’s slate. A preview only; no final scores claimed.",
+    "player": "Luka Dončić • Jalen Brunson • Victor Wembanyama",
+    "rookie": "Opening-week rookie development watch",
+    "game": "Friday, October 23 slate",
+    "href": "nba-gameday-preview-oct23-2026.html"
+  },
+  {
+    "date_iso": "2026-10-22",
+    "date": "October 22, 2026",
+    "label": "REGULAR SEASON NIGHTCAP • FINAL",
+    "title": "29 DOWN. ZERO PANIC. OKC LOCKS IN.",
+    "deck": "Philadelphia storms back from 29 down to beat Cleveland 114–106; Oklahoma City holds Denver to 84 in a 96–84 win.",
+    "player": "Tyrese Maxey • 32 PTS",
+    "rookie": "VJ Edgecombe • Philadelphia development watch",
+    "game": "76ers 114–106 Cavaliers • Thunder 96–84 Nuggets",
+    "href": "nba-nightcap-2026-10-22.html"
+  },
+  {
     "date_iso": "2026-10-21",
+    "date": "October 21, 2026",
     "label": "REGULAR SEASON NIGHTCAP • FINAL",
     "title": "ANT’S 45. NEW ERAS. ELEVEN GAMES.",
     "deck": "All eleven finals, new arrivals, injury returns, rookie debuts and the 4DK Nightcap awards.",
@@ -11,8 +33,8 @@
     "href": "nba-nightcap-2026-10-21.html"
   },
   {
-    "date": "October 21, 2026",
     "date_iso": "2026-10-21",
+    "date": "October 21, 2026",
     "label": "REGULAR SEASON PREVIEW",
     "title": "ELEVEN GAMES. NEW ERAS. NO EASY ANSWERS.",
     "deck": "All 11 matchups, Haliburton’s comeback, Dame and Ja in Portland, stars on new teams and rookie debut watch. Pre-game analysis, not final results.",
@@ -22,8 +44,8 @@
     "href": "nba-nightcap-preview-oct21-2026.html"
   },
   {
-    "date": "October 14, 2026",
     "date_iso": "2026-10-14",
+    "date": "October 14, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "GIANNIS RUNS MIAMI. DUREN MAKES NOISE. BOSTON CLAMPS DOWN.",
     "deck": "Seven preseason finals. Giannis orchestrates Miami with 20 points, 15 rebounds and nine assists; Duren erupts, Boston defends, and the new rotations take shape.",
@@ -33,8 +55,8 @@
     "href": "nba-nightcap-2026-10-14.html"
   },
   {
-    "date": "October 11, 2026",
     "date_iso": "2026-10-11",
+    "date": "October 11, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "KYRIE RETURNS. JOKIĆ TRIPLES. HARDEN DELIVERS. CALEB GROWS.",
     "deck": "Four preseason finals. Kyrie Irving returns, Jokić records a 22/11/10 triple-double, Harden scores 24 and Caleb Wilson shows his playmaking as Denver edges Chicago.",
@@ -44,8 +66,8 @@
     "href": "nba-nightcap-2026-10-11.html"
   },
   {
-    "date": "October 10, 2026",
     "date_iso": "2026-10-10",
+    "date": "October 10, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "BOSTON DROPS 144. YAXEL BREAKS OUT. WIZARDS SURVIVE OT.",
     "deck": "Seven final scores. Pritchard and Tatum power Boston, Lendeborg delivers a 23/10/6 breakout, and Washington outlasts Detroit in overtime.",
@@ -55,8 +77,8 @@
     "href": "nba-nightcap-2026-10-10.html"
   },
   {
-    "date": "October 9, 2026",
     "date_iso": "2026-10-09",
+    "date": "October 9, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "SENGUN TRIPLES. CALEB ERUPTS. MEMPHIS HANGS ON. HOUSTON ROLLS.",
     "deck": "Two games, Houston's offense showing real depth, Alperen Sengun posting a triple-double, Caleb Wilson exploding after halftime and Memphis surviving in Chicago.",
@@ -66,8 +88,8 @@
     "href": "nba-nightcap-2026-10-09.html"
   },
   {
-    "date": "October 8, 2026",
     "date_iso": "2026-10-08",
+    "date": "October 8, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "GARZA GRINDS. GIANNIS FITS. BRON DEBUTS. DC STEALS MSG.",
     "deck": "Six games, Boston's depth making noise, Giannis settling into Miami, LeBron's first Sixers run, Washington closing at MSG and Luka controlling the Lakers.",
@@ -77,8 +99,8 @@
     "href": "nba-nightcap-2026-10-08.html"
   },
   {
-    "date": "October 7, 2026",
     "date_iso": "2026-10-07",
+    "date": "October 7, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "MARA CAN'T MISS. BUCKS STEAL IT. DAME'S BACK. PACERS PUSH.",
     "deck": "Five games, one perfect shooting night, a 24-point comeback, Dame back in Portland and another useful look at the league's new rotations.",
@@ -88,8 +110,8 @@
     "href": "nba-nightcap-2026-10-07.html"
   },
   {
-    "date": "October 6, 2026",
     "date_iso": "2026-10-06",
+    "date": "October 6, 2026",
     "label": "PRESEASON NIGHTCAP",
     "title": "PETERSON POPS. WARRIORS ROLL. PELS RALLY. NETS CRUISE.",
     "deck": "Four games, four different stories — and the first full test of the nightly 4DK NBA desk.",
