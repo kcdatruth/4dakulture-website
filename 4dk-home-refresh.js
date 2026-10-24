@@ -51,10 +51,20 @@
       archive.appendChild(section);
       mast.insertAdjacentElement('afterend',archive);
     }
-    // Existing desk cards remain visible as the earlier editorial edition.
+    // Keep the October 15 editorial cards and their original links, but collapse them.
     const old=desk.querySelector('.dk-columns');
-    if(old&&!desk.querySelector('#dk-earlier-edition')){
-      const note=document.createElement('small');note.className='dk-older-label';note.id='dk-earlier-edition';note.textContent='PREVIOUS EDITION • OCTOBER 15 STORIES & ORIGINAL ARCHIVE';old.insertAdjacentElement('beforebegin',note);
+    if(old && !desk.querySelector('#dk-oct15-edition-archive')){
+      const earlier=document.createElement('details');
+      earlier.id='dk-oct15-edition-archive';
+      earlier.className='dk-edition-archive';
+      const summary=document.createElement('summary');
+      summary.textContent='FROM THE ARCHIVES · OCTOBER 15 EDITION ▾';
+      summary.style.cssText='cursor:pointer;padding:16px 18px;background:#201b19;color:#edba77;font:800 13px Arial,sans-serif;letter-spacing:.08em;border:1px solid #6c5640';
+      earlier.appendChild(summary);
+      old.parentNode.insertBefore(earlier,old);
+      earlier.appendChild(old);
+      const oldLabel=desk.querySelector('#dk-earlier-edition');
+      if(oldLabel)oldLabel.remove();
     }
     const date=desk.querySelector('.dk-date');
     if(date){const latest=records[0].date;const display=`LATEST CURATED EDITION: ${fmt(latest)} • ORIGINAL 4DK COVERAGE`;if(date.textContent!==display)date.textContent=display;}
