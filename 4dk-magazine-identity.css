@@ -1,0 +1,23 @@
+
+/* 4DK Magazine Identity 2.0 — additive homepage layer */
+body.home-page{--fourdk-red:#c82f2e;--fourdk-gold:#d8ad5e;--fourdk-ink:#121212;--fourdk-paper:#f5f0e7;background:var(--fourdk-paper)}
+body.home-page .topline{background:#121212;color:#e8e2d7}
+body.home-page .masthead{background:#111;color:#fff;border-bottom:3px solid var(--fourdk-red)}
+body.home-page .masthead a{color:inherit}
+body.home-page .masthead .brand{font-weight:950;letter-spacing:-.055em}
+body.home-page .masthead .brand-mark{color:var(--fourdk-gold)}
+body.home-page .ticker{border-bottom:1px solid #d9c7a6}
+body.home-page .home-search{background:#eee8dc}
+.fourdk-edition{background:#121212;color:#f9f5ec;border-top:1px solid #38332b;border-bottom:4px solid #c82f2e}
+.fourdk-edition-inner{max-width:1200px;margin:auto;padding:22px 22px 26px}
+.fourdk-edition-eyebrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:800 11px/1.4 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#d8ad5e}
+.fourdk-edition-title{font:900 clamp(42px,8vw,105px)/.9 Impact,'Arial Black',Arial,sans-serif;letter-spacing:-.035em;margin:20px 0 12px;color:#fff}
+.fourdk-edition-title em{font-style:normal;color:#d8ad5e}
+.fourdk-edition-deck{max-width:760px;font:400 clamp(15px,2vw,19px)/1.5 Georgia,serif;color:#d8d3c9;margin:0 0 22px}
+.fourdk-edition-links{display:flex;flex-wrap:wrap;gap:10px}
+.fourdk-edition-links a{color:#fff;text-decoration:none;border:1px solid #71665a;padding:12px 15px;font:800 12px Arial,sans-serif;letter-spacing:.05em}
+.fourdk-edition-links a:first-child{background:#c82f2e;border-color:#c82f2e}
+.fourdk-edition-links a:hover,.fourdk-edition-links a:focus-visible{background:#d8ad5e;color:#111;border-color:#d8ad5e}
+body.home-page .home-refresh-head h2,body.home-page .home-franchise-top h2{letter-spacing:-.055em}
+body.home-page .home-fresh-card{box-shadow:0 4px 18px #1a140b0c}
+@media(max-width:620px){.fourdk-edition-inner{padding:19px 17px 22px}.fourdk-edition-title{font-size:clamp(39px,12vw,66px)}.fourdk-edition-links a{flex:1 1 43%;text-align:center;padding:12px 8px}}
