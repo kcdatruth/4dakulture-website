@@ -43,7 +43,13 @@
         <div class="dk-current-header"><div><span class="dk-current-kicker">CURRENT 4DK EDITION • ${fmt(records[0].date)}</span><h3>THE STORIES KEEP MOVING.</h3><p>Week 6 is final. The 49ers are 6–0. NBA opening night is next, and the King Files continue. Original reports, not fabricated results.</p></div><a class="dk-current-all" href="4dk-interactive.html">EXPLORE THE INTERACTIVE WORLD ↗</a></div>
         <div class="dk-current-grid">${cards.map(x=>`<a class="dk-current-card" href="${esc(x.href)}"><span class="dk-current-media">${allowedImage.test(x.image||'')?`<img loading="lazy" src="${esc(x.image)}" alt="${esc(x.alt||x.title)}">`:''}</span><span class="dk-current-copy"><small class="dk-current-category">${esc(x.label)}</small><strong class="dk-current-title">${esc(x.title)}</strong><p>${esc(x.deck)}</p><b class="dk-current-open">READ THE COMPLETE 4DK FEATURE →</b></span></a>`).join('')}</div>
         <nav class="dk-current-quick" aria-label="Explore 4DK interactive tools"><span>GO DEEPER</span>${trustedLinks.map(([label,href])=>`<a href="${href}">${label} ↗</a>`).join('')}</nav>`;
-      mast.insertAdjacentElement('afterend',section);
+      // Preserve the October 19 editorial edition, but keep it collapsed in archives.
+      const archive=document.createElement('details');
+      archive.id='dk-oct19-edition-archive';
+      archive.className='dk-edition-archive';
+      archive.innerHTML='<summary style="cursor:pointer;padding:16px 18px;background:#201b19;color:#edba77;font:800 13px Arial,sans-serif;letter-spacing:.08em;border:1px solid #6c5640">FROM THE ARCHIVES · OCTOBER 19 EDITION ▾</summary>';
+      archive.appendChild(section);
+      mast.insertAdjacentElement('afterend',archive);
     }
     // Existing desk cards remain visible as the earlier editorial edition.
     const old=desk.querySelector('.dk-columns');
