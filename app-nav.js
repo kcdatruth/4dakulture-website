@@ -1231,3 +1231,39 @@
   setTimeout(apply, 1000);
   setTimeout(apply, 2200);
 })();
+
+
+/* 4DK current-edition headline ticker: override stale Week 2 promotion.
+   Headline ticker only; the independent live scoreboard is untouched. */
+(() => {
+  'use strict';
+  const page = location.pathname.split('/').pop().toLowerCase();
+  if (page && page !== 'index.html') return;
+  const headlines = [
+    '4DK • OCTOBER 26 • THE KULTURE DOESN\'T CLOCK OUT',
+    'NBA NIGHTCAP • 29 DOWN. ZERO PANIC.',
+    'NFL WEEK 7 • FULL SUNDAY RECAP',
+    'THE DROP • EPISODE 7',
+    'ALBUM FILES • ONLY BUILT 4 CUBAN LINX…',
+    '4DK ARCHIVE • 68 STORIES'
+  ];
+  const html = headlines.map(h => '<span><span class="dot">●</span> ' + h + '</span>').join('');
+  function refresh() {
+    const ticker = document.querySelector('.ticker-track');
+    if (ticker && ticker.innerHTML !== html) ticker.innerHTML = html;
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', refresh);
+  else refresh();
+  window.addEventListener('load', refresh);
+  [250, 1000, 2000, 3500].forEach(ms => setTimeout(refresh, ms));
+  // Other legacy scripts can update the ticker later; correct only if it changes.
+  const observer = new MutationObserver(() => {
+    if (document.querySelector('.ticker-track')?.innerHTML !== html) refresh();
+  });
+  function observe() {
+    const ticker = document.querySelector('.ticker-track');
+    if (ticker) observer.observe(ticker, {childList:true,subtree:true,characterData:true});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', observe);
+  else observe();
+})();

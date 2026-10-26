@@ -78,3 +78,24 @@
   window.addEventListener('load',refresh);
   setTimeout(refresh,1000);
 })();
+
+
+/* 4DK Oct 26: prioritize editorial content over the interactive launcher.
+   Move only the existing launcher; preserve all links and cards. */
+(() => {
+  'use strict';
+  const page = location.pathname.split('/').pop().toLowerCase();
+  if (page && page !== 'index.html') return;
+  function arrange() {
+    const main = document.querySelector('main');
+    const desk = document.getElementById('fourdk-current-front-desk');
+    const launcher = document.getElementById('fx-launcher');
+    if (!main || !desk || !launcher || !main.contains(desk)) return;
+    // Place Interactive World immediately after the current editorial desk.
+    if (desk.nextElementSibling !== launcher) desk.insertAdjacentElement('afterend', launcher);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', arrange);
+  else arrange();
+  window.addEventListener('load', arrange);
+  [300, 1000, 2200, 4000].forEach(ms => setTimeout(arrange, ms));
+})();
