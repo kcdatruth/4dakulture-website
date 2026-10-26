@@ -99,3 +99,51 @@
   window.addEventListener('load', arrange);
   [300, 1000, 2200, 4000].forEach(ms => setTimeout(arrange, ms));
 })();
+
+
+/* 4DK homepage: synchronize featured cards with published current feed. */
+(() => {
+  'use strict';
+  if (!['','index.html'].includes(location.pathname.split('/').pop().toLowerCase())) return;
+  const FALLBACK = [
+    {category:'NFL',label:'NFL • WEEK 7 • SUNDAY RECAP',title:'UNBEATEN NO MORE.',deck:'Atlanta ends San Francisco’s unbeaten run. Read our complete Week 7 Sunday analysis.',href:'nfl-sunday-recap-week7-2026.html',image:'4dk-week7-falcons.jpg'},
+    {category:'NBA',label:'NBA • NIGHTCAP • OCTOBER 25',title:'LUKA’S 52. SUNDAY SHAKES THE LEAGUE.',deck:'The October 25 NBA Nightcap: Luka’s 52 headlines our full Sunday breakdown.',href:'nba-nightcap-2026-10-25.html',image:'4DK-NBA-POWER-RANKINGS-TOP8-ACCURATE.png'}
+  ];
+  const pick = (data, cat) => {
+    const rows = Array.isArray(data) ? data.filter(x => x.category === cat && /\.html$/.test(x.href||'')) : [];
+    rows.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')) || ((+b.priority||0)-(+a.priority||0)));
+    return rows[0] || FALLBACK.find(x=>x.category===cat);
+  };
+  const update = (data) => {
+    const desk = document.getElementById('fourdk-current-front-desk');
+    if (!desk) return;
+    const cards = [...desk.querySelectorAll('a')];
+    for (const cat of ['NFL','NBA']) {
+      const item = pick(data,cat);
+      const card = cards.find(a=>a.querySelector('small')?.textContent.toUpperCase().includes(cat));
+      if (!card || !item) continue;
+      card.href=item.href;
+      const label=card.querySelector('small'),title=card.querySelector('h3'),deck=card.querySelector('p'),pic=card.querySelector('img');
+      if(label)label.textContent=item.label||cat;
+      if(title)title.textContent=item.title||'';
+      if(deck)deck.textContent=item.deck||'';
+      if(pic && item.image) {pic.src=item.image;pic.alt=item.alt||'4DK '+cat+' featured coverage';}
+    }
+    const quick = document.querySelector('#fourdk-reader-nav a[href*="nba-nightcap"]');
+    if(quick)quick.href=pick(data,'NBA').href;
+    // Update other visible homepage links that still point to the October 22 edition.
+    document.querySelectorAll('a[href="nba-nightcap-2026-10-22.html"]').forEach(a=>{
+      if (!a.closest('details')) a.href=pick(data,'NBA').href;
+    });
+  };
+  const run=()=>{
+    update(FALLBACK);
+    fetch('4dk-frontdesk-current.json?v=20261026',{cache:'no-store'})
+      .then(r=>{if(!r.ok)throw Error('feed unavailable');return r.json()})
+      .then(update).catch(()=>{});
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);
+  else run();
+  window.addEventListener('load',run);
+  setTimeout(run,1400);
+})();
