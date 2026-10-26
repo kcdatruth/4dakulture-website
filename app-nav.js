@@ -962,11 +962,11 @@
     if (!ticker || ticker.dataset.thursdayWeek2 === marker) return;
 
     const items = [
-      'Bills beat Lions 41–31 • Allen scores 5 TD',
-      'Chiefs dominate Denver 31–10',
-      'Thursday Night Recap live now',
-      'NFL MVP + Rookie Watch updated',
-      '1996 Draft: Mamba File 002'
+      '4DK NBA Nightcap • Opening-week breakdowns',
+      'NFL Week 7 • Unbeaten No More • Full Sunday recap',
+      'The Drop • Episode 7 • Blood In, Blood Out',
+      'Album Files • Only Built 4 Cuban Linx…',
+      'Explore the 4DK archive • 68 stories'
     ];
 
     ticker.innerHTML = items.map(x => `<span><span class="dot">●</span> ${x}</span>`).join('');

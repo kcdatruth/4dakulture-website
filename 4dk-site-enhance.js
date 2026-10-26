@@ -17,7 +17,7 @@
     style.id='fourdk-discovery-enhance-style';
     style.textContent=`
       .fourdk-library-strip{position:relative;overflow:hidden;padding:20px 0;background:#0d0f0e;color:#fff;border-top:1px solid #2b2f2c;border-bottom:1px solid #2b2f2c}
-      .fourdk-library-strip:after{content:'48';position:absolute;right:-5px;bottom:-26px;font:1000 100px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.035;pointer-events:none}
+      .fourdk-library-strip:after{content:'68';position:absolute;right:-5px;bottom:-26px;font:1000 100px/.85 Arial Black,Impact,sans-serif;color:#fff;opacity:.035;pointer-events:none}
       .fourdk-library-inner{position:relative;z-index:2;width:min(1160px,calc(100% - 34px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
       .fourdk-library-copy small{display:block;color:#ff684d;font-size:8px;font-weight:1000;letter-spacing:.13em;text-transform:uppercase}
       .fourdk-library-copy strong{display:block;margin:4px 0 2px;font:1000 clamp(22px,3.8vw,36px)/.94 Arial Black,Impact,sans-serif;text-transform:uppercase;letter-spacing:-.035em}
@@ -72,19 +72,16 @@
       <div class="fourdk-library-inner">
         <div class="fourdk-library-copy">
           <small>THE 4DK ARCHIVE • NOTHING GETS BURIED</small>
-          <strong>48 Stories. One Permanent Library.</strong>
+          <strong>68 Stories. One Permanent Library.</strong>
           <span>NBA, NFL, music, rankings, recaps, long-form files and screen coverage.</span>
         </div>
-        <a class="fourdk-library-link" href="/stories.html">Explore All 48 Stories →</a>
+        <a class="fourdk-library-link" href="/stories.html">Explore All 68 Stories →</a>
       </div>`;
 
     const sunday=document.querySelector('.home-v2-sunday-final');
     const jump=document.querySelector('.home-v2-jump');
     const lead=document.querySelector('.home-v2-lead');
-    if (sunday) sunday.insertAdjacentElement('afterend',strip);
-    else if (jump) jump.insertAdjacentElement('afterend',strip);
-    else if (lead) lead.insertAdjacentElement('afterend',strip);
-    else main.prepend(strip);
+    main.appendChild(strip); // Archive follows all editorial content, never precedes current stories.
     return true;
   }
 
