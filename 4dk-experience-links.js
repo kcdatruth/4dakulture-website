@@ -30,7 +30,7 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
 ;(() => {
   'use strict';
   const page=((location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase()||'index').replace(/\.html$/,'')+'.html');
-  if(page==='nfl.html')return;
+  return; // Archived Week 6 homepage promo disabled
   function insert(){
     if(document.getElementById('fourdk-rams-emergency-banner'))return;
     const main=document.querySelector('main');if(!main)return;
@@ -49,7 +49,7 @@ if ((location.pathname.split("/").pop().toLowerCase()||"index.html")==="index.ht
 ;(() => {
   'use strict';
   const page=(location.pathname.replace(/\/+$/,'').split('/').pop().toLowerCase()||'index').replace(/\.html$/,'')+'.html';
-  if(page==='nfl.html')return;
+  return; // Archived Week 6 homepage promo disabled
   function addSundayRecap(){
     if(document.getElementById('fourdk-week6-sunday-recap-banner'))return;
     const main=document.querySelector('main');if(!main)return;
