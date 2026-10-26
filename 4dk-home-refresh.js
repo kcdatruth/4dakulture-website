@@ -44,3 +44,37 @@
     if (document.getElementById(archiveId) || ++attempts >= 20) clearInterval(interval);
   }, 500);
 })();
+
+
+/* 4DK October 26 homepage refresh — presentation-only; archives and feature grid preserved. */
+(() => {
+  'use strict';
+  const path = location.pathname.split('/').pop().toLowerCase();
+  if (path && path !== 'index.html') return;
+  function refresh() {
+    const main = document.querySelector('main');
+    if (!main) return;
+    // Keep the follow panel, but place it after editorial content and before the footer.
+    const follow = [...document.querySelectorAll('section')].find(s =>
+      s.querySelector('a[href*="x.com/4DaKultureMedia"]') &&
+      /FOLLOW 4 DA KULTURE/i.test(s.textContent || '')
+    );
+    if (follow && main.nextElementSibling !== follow) main.insertAdjacentElement('afterend', follow);
+    if (follow) {
+      follow.id = 'fourdk-home-social-footer';
+      follow.style.padding = '22px 20px';
+      follow.style.borderLeft = '0';
+      follow.style.borderTop = '3px solid #ef4b37';
+      follow.style.maxWidth = 'none';
+    }
+    // Refresh the dated front-desk label without modifying story content.
+    [...main.querySelectorAll('p,small')].forEach(el => {
+      if ((el.textContent || '').trim() === '4 DA KULTURE • CURRENT DESK • OCTOBER 22, 2026')
+        el.textContent = '4 DA KULTURE • CURRENT DESK • OCTOBER 26, 2026';
+    });
+  }
+  if (document.readyState==='loading') document.addEventListener('DOMContentLoaded',refresh);
+  else refresh();
+  window.addEventListener('load',refresh);
+  setTimeout(refresh,1000);
+})();
