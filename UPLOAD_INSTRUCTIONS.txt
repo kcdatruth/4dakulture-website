@@ -1,0 +1,12 @@
+4DK NBA RANKINGS HQ CONNECTION PATCH — October 27, 2026
+
+Upload the contents of this ZIP to the ROOT of your existing GitHub site.
+Do NOT delete your existing website or its folders.
+
+Changed: nba-rankings-hq.html (current Power 30 and 30-team grid above archived preseason board), nba.html (NBA landing link), rankings.html (rankings landing link).
+Included: nba-weekly-boards.html and its CSS/JS/current JSON from the October 27 safe upload package.
+Preserved: Top 50 Players, head-to-head, original preseason board, old archives and all other pages.
+
+IMPORTANT: This small patch does NOT delete old site content. If GitHub prompts you to replace these specific three HTML files, accept.
+
+Commit: Connect current 4DK Power 30 to NBA rankings hub and preserve preseason archive
