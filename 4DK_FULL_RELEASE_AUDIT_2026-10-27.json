@@ -1,0 +1,59 @@
+{
+  "edition": "2026-10-27",
+  "publication_decision": "HOLD \u2014 not fully verified",
+  "checks": {
+    "opening_week_results": {
+      "status": "PASS",
+      "count": 52,
+      "sources": [
+        "https://www.nba.com/",
+        "https://www.basketball-reference.com/boxscores/",
+        "https://statsnext.com/nba/games"
+      ]
+    },
+    "team_records": {
+      "status": "PASS",
+      "count": 30,
+      "method": "all 104 team-game results reconcile to 52 games"
+    },
+    "ranking_integrity": {
+      "status": "PASS",
+      "counts": {
+        "power30": 30,
+        "mvp": 10,
+        "rookies": 10
+      }
+    },
+    "player_averages": {
+      "status": "PARTIAL",
+      "scoped_verified": [
+        "Ty Jerome",
+        "Tyrese Maxey",
+        "Yaxel Lendeborg"
+      ],
+      "pending": 17,
+      "warning": "Some verified averages are for only three games; check date ranges"
+    },
+    "rosters_and_transactions": {
+      "status": "PENDING",
+      "warning": "All 20 MVP/rookie team affiliations and Power 30 roster claims require direct roster audit"
+    },
+    "injury_reports": {
+      "status": "PARTIAL",
+      "warning": "Selected reports only; prior Banchero claim unconfirmed; Leonard updated"
+    },
+    "editorial_prose": {
+      "status": "PENDING",
+      "warning": "Every narrative player/score/injury assertion requires source-level crosscheck"
+    },
+    "site_navigation_mobile": {
+      "status": "PENDING",
+      "warning": "Standalone preview is not live navigation; responsive browser regression not performed"
+    }
+  },
+  "corrected_injuries": {
+    "Kawhi Leonard": "Raptors confirmed out at least one week due to left knee swelling, Oct 27",
+    "Paolo Banchero": "Previously reported 4\u20136 week absence unverified; suppress"
+  },
+  "release_rule": "Do not publish as fact-checked until all pending gates pass"
+}

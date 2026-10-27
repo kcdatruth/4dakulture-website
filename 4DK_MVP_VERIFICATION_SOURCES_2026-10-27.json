@@ -1,0 +1,21 @@
+{
+  "verified_sources": [
+    {
+      "name": "NBA Starting 5 October 27",
+      "url": "https://www.nba.com/news/starting-5-october-27-2026"
+    },
+    {
+      "name": "NBA Players of the Week",
+      "url": "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week"
+    },
+    {
+      "name": "Philadelphia 76ers Maxey award report",
+      "url": "https://www.nba.com/sixers/news/tyrese-maxey-named-eastern-conference-player-of-the-week-2"
+    },
+    {
+      "name": "Warriors vs Nuggets AP game report",
+      "url": "https://www.cbssports.com/nba/news/yaxel-lendeborg-scores-31-as-warriors-rout-nuggets-for-first-win/"
+    }
+  ],
+  "editorial_caution": "Only specified game totals and awards were cross-checked; no claim of complete leaguewide injury or per-player season-stat verification."
+}

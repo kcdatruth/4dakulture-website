@@ -1,0 +1,20 @@
+4 DA KULTURE | OCTOBER 27, 2026 — EDITORIAL AUDIT
+================================================
+This ZIP is a preservation-first REVIEW package, not a live-site deployment.
+All existing website files, articles, images and archives are retained.
+
+ADDED:
+- October 26 final game results for 18 teams / nine NBA games.
+- Structured game-log data per team with explicit incompleteness labels.
+- Injury-report audit flags instead of invented up-to-date status.
+- Separate review HTML table of results and editorial limitations.
+
+PUBLISHING GATES NOT YET PASSED:
+1. Verify complete last-five results for all teams.
+2. Verify all 50 player profiles and their season statistics.
+3. Verify current injury report and roster status.
+4. Edit full-length profiles to the agreed depth.
+5. Integrate latest URLs and immutable dated archives without changing existing live pages.
+6. Preview and regression-test site/mobile pages.
+
+DO NOT EXTRACT THIS PACKAGE OVER THE LIVE WEBSITE AS A PUBLISHED UPDATE.

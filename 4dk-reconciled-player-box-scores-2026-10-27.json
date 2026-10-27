@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-10-27",
+  "release": "HOLD",
+  "verified_game_logs": {
+    "Ty Jerome": [
+      [
+        "2026-10-21",
+        "UTA",
+        45,
+        7,
+        6
+      ],
+      [
+        "2026-10-23",
+        "GSW",
+        28,
+        2,
+        5
+      ],
+      [
+        "2026-10-25",
+        "SAC",
+        31,
+        4,
+        7
+      ],
+      [
+        "2026-10-26",
+        "UTA",
+        15,
+        1,
+        8
+      ]
+    ],
+    "Yaxel Lendeborg": [
+      [
+        "2026-10-21",
+        "LAL",
+        12,
+        3,
+        2
+      ],
+      [
+        "2026-10-23",
+        "MEM",
+        18,
+        13,
+        6
+      ],
+      [
+        "2026-10-24",
+        "PHX",
+        26,
+        9,
+        5
+      ],
+      [
+        "2026-10-26",
+        "DEN",
+        31,
+        12,
+        6
+      ]
+    ]
+  },
+  "source_urls": {
+    "Ty Jerome": [
+      "https://www.foxsports.com/nba/ty-jerome-player-game-log?season=2026",
+      "https://www.nba.com/news/starting-5-october-27-2026"
+    ],
+    "Yaxel Lendeborg": [
+      "https://www.statmuse.com/nba/player/yaxel-lendeborg-30683/game-log?playerStatsBreakdown=perGame&seasonYear=2027",
+      "https://www.cbssports.com/nba/players/29231622/yaxel-lendeborg/game-log/"
+    ]
+  },
+  "important_note": "NBA.com player widgets may omit latest game due to update lag; this report uses dated individual box-score logs. Previous unverified claims elsewhere in ZIP must not be treated as publication-ready."
+}

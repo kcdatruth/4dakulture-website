@@ -1,0 +1,3401 @@
+{
+  "edition": "2026-10-27",
+  "status": "HOLD — two player game logs reconciled; all-player verification pending",
+  "power30": [
+    {
+      "rank": 1,
+      "team": "Oklahoma City Thunder",
+      "previous": 1,
+      "movement": 0,
+      "analysis": "SGA and Chet carry a heavier load amid significant injuries; sustaining elite two-way execution is the challenge.",
+      "record_verified_2026_10_27": "4–0",
+      "expanded_analysis": "The injuries to Jalen Williams and Cason Wallace are not ordinary rotation absences: they strip Oklahoma City of creation and point-of-attack defense. Ajay Mitchell's 30 against Phoenix illustrates why the Thunder can survive through depth, but SGA and Chet must sustain that burden against elite opponents. 4DK outlook: SGA and Chet carry a heavier load amid significant injuries; sustaining elite two-way execution is the challenge.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "The undefeated start is real, but the roster's next test is less about talent than adaptation. Williams and Wallace being out removes secondary creation and a trusted perimeter defender. Ajay Mitchell's 30 against Phoenix was a welcome response, not a guaranteed nightly replacement. We want to see how Shai Gilgeous-Alexander and Chet Holmgren handle opponents that load up on the stars and make the replacement guards finish possessions.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "The undefeated start is real, but the roster's next test is less about talent than adaptation. Williams and Wallace being out removes secondary creation and a trusted perimeter defender. Ajay Mitchell's 30 against Phoenix was a welcome response, not a guaranteed nightly replacement. We want to see how Shai Gilgeous-Alexander and Chet Holmgren handle opponents that load up on the stars and make the replacement guards finish possessions.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Phoenix Suns",
+          "venue": "home",
+          "result": "W",
+          "score": "125–114"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Phoenix Suns",
+          "venue": "home",
+          "result": "W",
+          "score": "125-114"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "LA Clippers",
+          "venue": "home",
+          "result": "W",
+          "score": "108-101"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Denver Nuggets",
+          "venue": "home",
+          "result": "W",
+          "score": "96-84"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "San Antonio Spurs",
+          "venue": "away",
+          "result": "W",
+          "score": "116-104"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Phoenix Suns",
+          "venue": "home",
+          "result": "W",
+          "score": "125-114"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "LA Clippers",
+          "venue": "home",
+          "result": "W",
+          "score": "108-101"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Denver Nuggets",
+          "venue": "home",
+          "result": "W",
+          "score": "96-84"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "San Antonio Spurs",
+          "venue": "away",
+          "result": "W",
+          "score": "116-104"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verified": [
+        {
+          "player": "Jalen Williams",
+          "injury": "fractured left fibula and dislocated left ankle",
+          "status": "surgery required; return date not confirmed"
+        },
+        {
+          "player": "Cason Wallace",
+          "injury": "torn labrum, left shoulder",
+          "status": "surgery required; return date not confirmed"
+        }
+      ],
+      "injury_source": "https://www.nba.com/news/starting-5-october-27-2026",
+      "injury_audit_entries": [
+        {
+          "team": "Oklahoma City Thunder",
+          "player": "Jalen Williams",
+          "injury": "fractured left fibula and dislocated ankle",
+          "status": "Surgery required; return timetable not announced",
+          "verification": "confirmed",
+          "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+        },
+        {
+          "team": "Oklahoma City Thunder",
+          "player": "Cason Wallace",
+          "injury": "torn left shoulder labrum",
+          "status": "Surgery required; return timetable not announced",
+          "verification": "confirmed",
+          "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+        }
+      ],
+      "verified_injury_update_2026_10_27": {
+        "Jalen Williams": "Fractured fibula and dislocated ankle; surgery required; no established return date",
+        "Cason Wallace": "Torn left shoulder labrum; surgery required; no established return date",
+        "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+      }
+    },
+    {
+      "rank": 2,
+      "team": "Houston Rockets",
+      "previous": 7,
+      "movement": 5,
+      "analysis": "A five-place jump reflects early winning, but defensive consistency and performance against top opposition remain our tests.",
+      "record_verified_2026_10_27": "4–0",
+      "expanded_analysis": "Houston's 120–110 win over Atlanta was a statement about late-game control. Alperen Şengün delivered 29 points, nine rebounds, nine assists and six steals, while Kevin Durant supplied 22 points. The 14–0 fourth-quarter run was more telling than the final margin: this group can win a tense game without abandoning its identity. 4DK outlook: A five-place jump reflects early winning, but defensive consistency and performance against top opposition remain our tests.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Four straight wins have turned the early discussion from potential into execution. Şengün's 29 points, nine rebounds, nine assists and six steals against Atlanta show why he is more than a post scorer. Houston's 14–0 fourth-quarter burst demonstrated the ability to change a game without relying on one jumper. Kevin Durant's scoring gives the offense another release valve; we are watching whether Houston can keep defending at that level when the offense cools.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Four straight wins have turned the early discussion from potential into execution. Şengün's 29 points, nine rebounds, nine assists and six steals against Atlanta show why he is more than a post scorer. Houston's 14–0 fourth-quarter burst demonstrated the ability to change a game without relying on one jumper. Kevin Durant's scoring gives the offense another release valve; we are watching whether Houston can keep defending at that level when the offense cools.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "W",
+          "score": "120–110"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "W",
+          "score": "120-110"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Atlanta Hawks",
+          "venue": "away",
+          "result": "W",
+          "score": "121-114"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "San Antonio Spurs",
+          "venue": "away",
+          "result": "W",
+          "score": "114-110"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "W",
+          "score": "128-110"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "W",
+          "score": "120-110"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Atlanta Hawks",
+          "venue": "away",
+          "result": "W",
+          "score": "121-114"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "San Antonio Spurs",
+          "venue": "away",
+          "result": "W",
+          "score": "114-110"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "W",
+          "score": "128-110"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 3,
+      "team": "Minnesota Timberwolves",
+      "previous": 5,
+      "movement": 2,
+      "analysis": "Anthony Edwards drives the ceiling, while LaMelo Ball, Rudy Gobert and a deep rotation give Minnesota multiple ways to win.",
+      "record_verified_2026_10_27": "3–1",
+      "expanded_analysis": "Anthony Edwards scored 47 in the overtime loss at Cleveland, a performance that showed how high Minnesota's individual ceiling remains even in defeat. LaMelo Ball's seven turnovers in that game are a reminder that chemistry takes time. Rudy Gobert's 20 rebounds kept the Wolves competitive, but late execution cost them. 4DK outlook: Anthony Edwards drives the ceiling, while LaMelo Ball, Rudy Gobert and a deep rotation give Minnesota multiple ways to win.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "A 3–1 start is a strong foundation, even after a painful overtime loss. Edwards' 47 in Cleveland was superstar-level shotmaking, and Gobert's presence still gives Minnesota an interior identity. But 125 points were not enough to secure the win, and integrating LaMelo Ball demands sharper late-game decision-making. The ceiling is contender-high. The concern is whether a deep rotation can become a dependable closing five.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "A 3–1 start is a strong foundation, even after a painful overtime loss. Edwards' 47 in Cleveland was superstar-level shotmaking, and Gobert's presence still gives Minnesota an interior identity. But 125 points were not enough to secure the win, and integrating LaMelo Ball demands sharper late-game decision-making. The ceiling is contender-high. The concern is whether a deep rotation can become a dependable closing five.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "away",
+          "result": "L",
+          "score": "125–127"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "away",
+          "result": "L",
+          "score": "125-127"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Toronto Raptors",
+          "venue": "home",
+          "result": "W",
+          "score": "117-94"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Orlando Magic",
+          "venue": "away",
+          "result": "W",
+          "score": "115-93"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "131-106"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "away",
+          "result": "L",
+          "score": "125-127"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Toronto Raptors",
+          "venue": "home",
+          "result": "W",
+          "score": "117-94"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Orlando Magic",
+          "venue": "away",
+          "result": "W",
+          "score": "115-93"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "131-106"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 4,
+      "team": "Detroit Pistons",
+      "previous": 10,
+      "movement": 6,
+      "analysis": "Cade Cunningham controls the offense; Detroit’s resilience, Jalen Duren and its supporting cast are becoming real strengths.",
+      "record_verified_2026_10_27": "3–0",
+      "expanded_analysis": "Cade Cunningham controls the offense; Detroit’s resilience, Jalen Duren and its supporting cast are becoming real strengths. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "The 3–0 start has been built on more than hot shooting. Coming back from 22 down against Boston showed competitive resilience; holding Philadelphia to 93 showed defensive structure. Cade Cunningham controls tempo while Detroit's perimeter shooting has added a new dimension. The next step is proving that the three-point efficiency and fourth-quarter execution travel against another quality opponent.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "The 3–0 start has been built on more than hot shooting. Coming back from 22 down against Boston showed competitive resilience; holding Philadelphia to 93 showed defensive structure. Cade Cunningham controls tempo while Detroit's perimeter shooting has added a new dimension. The next step is proving that the three-point efficiency and fourth-quarter execution travel against another quality opponent.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "W",
+          "score": "106-93"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "128-111"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Boston Celtics",
+          "venue": "home",
+          "result": "W",
+          "score": "121-113"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "W",
+          "score": "106-93"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "128-111"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Boston Celtics",
+          "venue": "home",
+          "result": "W",
+          "score": "121-113"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 5,
+      "team": "Philadelphia 76ers",
+      "previous": 4,
+      "movement": -1,
+      "analysis": "Maxey, Jaylen Brown and the supporting cast provide multiple offensive options; chemistry and health remain central.",
+      "record_verified_2026_10_27": "3–1",
+      "expanded_analysis": "Maxey, Jaylen Brown and the supporting cast provide multiple offensive options; chemistry and health remain central. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Philadelphia has star power, but its first losses should sharpen rather than erase the title conversation. Detroit held the Sixers to 93 points, illustrating what happens when rhythm disappears and opponents win the physical battle. Maxey's Player of the Week opening is a bright spot amid a crowded offensive hierarchy. We need to see cleaner late-clock possessions and defined defensive roles alongside LeBron James and Jaylen Brown.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Philadelphia has star power, but its first losses should sharpen rather than erase the title conversation. Detroit held the Sixers to 93 points, illustrating what happens when rhythm disappears and opponents win the physical battle. Maxey's Player of the Week opening is a bright spot amid a crowded offensive hierarchy. We need to see cleaner late-clock possessions and defined defensive roles alongside LeBron James and Jaylen Brown.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Detroit Pistons",
+          "venue": "home",
+          "result": "L",
+          "score": "93-106"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Milwaukee Bucks",
+          "venue": "home",
+          "result": "W",
+          "score": "127-116"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "home",
+          "result": "W",
+          "score": "114-106"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "New York Knicks",
+          "venue": "away",
+          "result": "W",
+          "score": "106-100"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Detroit Pistons",
+          "venue": "home",
+          "result": "L",
+          "score": "93-106"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Milwaukee Bucks",
+          "venue": "home",
+          "result": "W",
+          "score": "127-116"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "home",
+          "result": "W",
+          "score": "114-106"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "New York Knicks",
+          "venue": "away",
+          "result": "W",
+          "score": "106-100"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 6,
+      "team": "Memphis Grizzlies",
+      "previous": 27,
+      "movement": 21,
+      "analysis": "Ty Jerome’s scorching start has been a revelation, and Cam Boozer is contributing; stronger opponents will test the 4–0 opening.",
+      "record_verified_2026_10_27": "4–0",
+      "expanded_analysis": "Ty Jerome's 15 points on 4-for-15 shooting against Utah were far from his sharpest night, yet his eight assists and late jumpers helped Memphis close out a 110–105 win. That matters: a 4–0 team needs more than hot shooting. Cam Boozer's development remains central, and tougher competition will tell us more. 4DK outlook: Ty Jerome’s scorching start has been a revelation, and Cam Boozer is contributing; stronger opponents will test the 4–0 opening.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "No team has changed the conversation faster than Memphis. Jerome's 4-for-15 shooting against Utah could have exposed a one-dimensional attack; instead he made late jumpers and distributed eight assists as Memphis reached 4–0. Cam Boozer adds a developing frontcourt dimension. The +21 leap is earned by results. We are reserving judgment on true contender status until the opponent quality rises.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "No team has changed the conversation faster than Memphis. Jerome's 4-for-15 shooting against Utah could have exposed a one-dimensional attack; instead he made late jumpers and distributed eight assists as Memphis reached 4–0. Cam Boozer adds a developing frontcourt dimension. The +21 leap is earned by results. We are reserving judgment on true contender status until the opponent quality rises.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "W",
+          "score": "110–105"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "W",
+          "score": "110-105"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Sacramento Kings",
+          "venue": "away",
+          "result": "W",
+          "score": "123-112"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Golden State Warriors",
+          "venue": "away",
+          "result": "W",
+          "score": "111-108"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Utah Jazz",
+          "venue": "home",
+          "result": "W",
+          "score": "123-103"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "W",
+          "score": "110-105"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Sacramento Kings",
+          "venue": "away",
+          "result": "W",
+          "score": "123-112"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Golden State Warriors",
+          "venue": "away",
+          "result": "W",
+          "score": "111-108"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Utah Jazz",
+          "venue": "home",
+          "result": "W",
+          "score": "123-103"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 7,
+      "team": "Los Angeles Lakers",
+      "previous": 11,
+      "movement": 4,
+      "analysis": "Luka has seized command of the offense. Keeping the supporting cast involved and defending consistently will determine the ceiling.",
+      "record_verified_2026_10_27": "3–0",
+      "expanded_analysis": "Luka has seized command of the offense. Keeping the supporting cast involved and defending consistently will determine the ceiling. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Three wins and a 52-point Luka Dončić masterpiece against Utah put Los Angeles firmly in the opening-week conversation. The Lakers recovered from a 47–29 first-quarter deficit against the Jazz, an important early sign of resilience. Luka's scoring and passing define the offense, but the group still has to demonstrate consistent stops and bench reliability. Our question is not whether Luka can carry a night. It's whether the Lakers can build a championship defense around him.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Three wins and a 52-point Luka Dončić masterpiece against Utah put Los Angeles firmly in the opening-week conversation. The Lakers recovered from a 47–29 first-quarter deficit against the Jazz, an important early sign of resilience. Luka's scoring and passing define the offense, but the group still has to demonstrate consistent stops and bench reliability. Our question is not whether Luka can carry a night. It's whether the Lakers can build a championship defense around him.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "W",
+          "score": "132-123"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "LA Clippers",
+          "venue": "home",
+          "result": "W",
+          "score": "125-117"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "W",
+          "score": "127-105"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "W",
+          "score": "132-123"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "LA Clippers",
+          "venue": "home",
+          "result": "W",
+          "score": "125-117"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "W",
+          "score": "127-105"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 8,
+      "team": "San Antonio Spurs",
+      "previous": 3,
+      "movement": -5,
+      "analysis": "Wembanyama changes shots and game plans, but San Antonio must turn its talent into consistent team execution.",
+      "record_verified_2026_10_27": "1–2",
+      "expanded_analysis": "Wembanyama changes shots and game plans, but San Antonio must turn its talent into consistent team execution. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "A slow start does not change Victor Wembanyama's impact, but the scoreboard still counts. San Antonio lost a tight 114–110 game to Houston and then answered Dallas with a 122–106 win. Those swings capture a team with immense defensive upside but uneven offensive rhythm. We are watching the spacing around Wembanyama and the decisions that determine whether a close game becomes a win.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "A slow start does not change Victor Wembanyama's impact, but the scoreboard still counts. San Antonio lost a tight 114–110 game to Houston and then answered Dallas with a 122–106 win. Those swings capture a team with immense defensive upside but uneven offensive rhythm. We are watching the spacing around Wembanyama and the decisions that determine whether a close game becomes a win.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Dallas Mavericks",
+          "venue": "away",
+          "result": "W",
+          "score": "122-106"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Houston Rockets",
+          "venue": "home",
+          "result": "L",
+          "score": "110-114"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "home",
+          "result": "L",
+          "score": "104-116"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Dallas Mavericks",
+          "venue": "away",
+          "result": "W",
+          "score": "122-106"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Houston Rockets",
+          "venue": "home",
+          "result": "L",
+          "score": "110-114"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "home",
+          "result": "L",
+          "score": "104-116"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 9,
+      "team": "Cleveland Cavaliers",
+      "previous": 8,
+      "movement": -1,
+      "analysis": "Cleveland’s ability to recover from a blown 29-point lead is an early test of composure and defensive discipline.",
+      "record_verified_2026_10_27": "2–1",
+      "expanded_analysis": "Cleveland's 127–125 overtime comeback against Minnesota featured 26 points from Donovan Mitchell and a timely 16-point debut from Meleek Thomas. Evan Mobley added an 18-point, 10-rebound double-double. Winning after trailing by 15 is encouraging, but the Cavaliers must limit the deficits they create. 4DK outlook: Cleveland’s ability to recover from a blown 29-point lead is an early test of composure and defensive discipline.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Cleveland's overtime comeback over Minnesota was the sort of win that can reset a shaky opening week. Mitchell supplied 26 points and key overtime baskets; Mobley added 18 and 10, and rookie Meleek Thomas contributed 16 in his debut. The Cavaliers came back from 15 down rather than letting an Edwards scoring explosion bury them. We still want better first-half discipline. The comeback showed resilience, but spotting good teams double-digit leads is not a sustainable plan.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Cleveland's overtime comeback over Minnesota was the sort of win that can reset a shaky opening week. Mitchell supplied 26 points and key overtime baskets; Mobley added 18 and 10, and rookie Meleek Thomas contributed 16 in his debut. The Cavaliers came back from 15 down rather than letting an Edwards scoring explosion bury them. We still want better first-half discipline. The comeback showed resilience, but spotting good teams double-digit leads is not a sustainable plan.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "W",
+          "score": "127–125"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "W",
+          "score": "127-125"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Brooklyn Nets",
+          "venue": "home",
+          "result": "W",
+          "score": "125-121"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "L",
+          "score": "106-114"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "W",
+          "score": "127-125"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Brooklyn Nets",
+          "venue": "home",
+          "result": "W",
+          "score": "125-121"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "L",
+          "score": "106-114"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 10,
+      "team": "Boston Celtics",
+      "previous": 13,
+      "movement": 3,
+      "analysis": "Boston has enough talent to contend; late-game offense and the fit of its rotation warrant close attention.",
+      "record_verified_2026_10_27": "2–1",
+      "expanded_analysis": "Boston's 134–99 victory over Chicago turned on a devastating third-quarter surge. Payton Pritchard hit seven threes on his way to 28 points; Jayson Tatum added 23 points, seven rebounds and six assists. This is the kind of balanced offensive response that can stabilize an uneven opening stretch. 4DK outlook: Boston has enough talent to contend; late-game offense and the fit of its rotation warrant close attention.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Boston has already shown both its vulnerabilities and its explosive response. After surrendering a 22-point lead to Detroit in the opener, Boston dismantled Chicago 134–99. Pritchard's seven threes and Tatum's all-around 23-point night illustrate the range of ways the offense can function. The priority is sustaining defensive focus for four quarters, not simply producing one devastating shooting run.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Boston has already shown both its vulnerabilities and its explosive response. After surrendering a 22-point lead to Detroit in the opener, Boston dismantled Chicago 134–99. Pritchard's seven threes and Tatum's all-around 23-point night illustrate the range of ways the offense can function. The priority is sustaining defensive focus for four quarters, not simply producing one devastating shooting run.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "W",
+          "score": "134–99"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "W",
+          "score": "134-99"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "New York Knicks",
+          "venue": "home",
+          "result": "W",
+          "score": "107-103"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Detroit Pistons",
+          "venue": "away",
+          "result": "L",
+          "score": "113-121"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "W",
+          "score": "134-99"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "New York Knicks",
+          "venue": "home",
+          "result": "W",
+          "score": "107-103"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Detroit Pistons",
+          "venue": "away",
+          "result": "L",
+          "score": "113-121"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 11,
+      "team": "New York Knicks",
+      "previous": 2,
+      "movement": -9,
+      "analysis": "The winless opening has exposed real issues. New York must restore offensive flow and defensive focus before it climbs.",
+      "record_verified_2026_10_27": "0–3",
+      "expanded_analysis": "The winless opening has exposed real issues. New York must restore offensive flow and defensive focus before it climbs. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "The defending champions' 0–3 start deserves scrutiny, not excuses. The losses to Boston and Orlando highlight the early challenge: the Knicks have not consistently generated the late-game stops and half-court execution that defined their championship identity. Jalen Brunson's leadership matters now. We need to see whether New York responds with adjustments or continues relying on reputation.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "The defending champions' 0–3 start deserves scrutiny, not excuses. The losses to Boston and Orlando highlight the early challenge: the Knicks have not consistently generated the late-game stops and half-court execution that defined their championship identity. Jalen Brunson's leadership matters now. We need to see whether New York responds with adjustments or continues relying on reputation.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Orlando Magic",
+          "venue": "home",
+          "result": "L",
+          "score": "102-111"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Boston Celtics",
+          "venue": "away",
+          "result": "L",
+          "score": "103-107"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Philadelphia 76ers",
+          "venue": "home",
+          "result": "L",
+          "score": "100-106"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Orlando Magic",
+          "venue": "home",
+          "result": "L",
+          "score": "102-111"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Boston Celtics",
+          "venue": "away",
+          "result": "L",
+          "score": "103-107"
+        },
+        {
+          "date": "2026-10-20",
+          "opponent": "Philadelphia 76ers",
+          "venue": "home",
+          "result": "L",
+          "score": "100-106"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 12,
+      "team": "Golden State Warriors",
+      "previous": 17,
+      "movement": 5,
+      "analysis": "Yaxel Lendeborg’s versatility has been a revelation, including a 31-point, 12-rebound, six-assist night in Denver.",
+      "record_verified_2026_10_27": "1–3",
+      "expanded_analysis": "Golden State's 134–114 win in Denver was its first of the season, not proof that the early struggles have vanished. Rookie Yaxel Lendeborg's 31 points, 12 rebounds and six assists showed a genuine source of frontcourt creation. Stephen Curry's perfect 8-for-8 shooting gave the Warriors another route to offense. 4DK outlook: Yaxel Lendeborg’s versatility has been a revelation, including a 31-point, 12-rebound, six-assist night in Denver.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Golden State's first win came with a glimpse of its next offensive dimension. Yaxel Lendeborg's 31-12-6 line in Denver was not a routine rookie performance; his passing and finishing helped the Warriors generate offense without forcing everything through Curry. Steph was perfect from the field in a 24-point outing. The 1–3 record still matters. We need to see whether this chemistry holds up when defenses prepare specifically for Lendeborg.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Golden State's first win came with a glimpse of its next offensive dimension. Yaxel Lendeborg's 31-12-6 line in Denver was not a routine rookie performance; his passing and finishing helped the Warriors generate offense without forcing everything through Curry. Steph was perfect from the field in a 24-point outing. The 1–3 record still matters. We need to see whether this chemistry holds up when defenses prepare specifically for Lendeborg.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Denver Nuggets",
+          "venue": "away",
+          "result": "W",
+          "score": "134–114"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Denver Nuggets",
+          "venue": "away",
+          "result": "W",
+          "score": "134-114"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Phoenix Suns",
+          "venue": "away",
+          "result": "L",
+          "score": "122-131"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "108-111"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Los Angeles Lakers",
+          "venue": "away",
+          "result": "L",
+          "score": "105-127"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Denver Nuggets",
+          "venue": "away",
+          "result": "W",
+          "score": "134-114"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Phoenix Suns",
+          "venue": "away",
+          "result": "L",
+          "score": "122-131"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "108-111"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Los Angeles Lakers",
+          "venue": "away",
+          "result": "L",
+          "score": "105-127"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 13,
+      "team": "Denver Nuggets",
+      "previous": 9,
+      "movement": -4,
+      "analysis": "Jokić remains the hub, but Denver’s defensive lapses have prevented its talent from translating into sustained wins.",
+      "record_verified_2026_10_27": "1–2",
+      "expanded_analysis": "A 20-point home defeat to Golden State exposed Denver's difficulty containing downhill attacks and responding when the opponent finds momentum. Jokić still organizes an elite offense, but the Nuggets cannot depend on him to repair every defensive breakdown. Their 1–2 start warrants concern, not panic. 4DK outlook: Jokić remains the hub, but Denver’s defensive lapses have prevented its talent from translating into sustained wins.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Denver's 1–2 start is a reminder that Nikola Jokić cannot solve every issue alone. The 134–114 home loss to Golden State exposed defensive problems against a rookie-led frontcourt attack. Jokić produced 19 points and 11 assists, but the Nuggets could not match the Warriors' scoring pace. The offense will create good looks. We are measuring whether Denver can defend consistently enough to turn that creation into wins.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Denver's 1–2 start is a reminder that Nikola Jokić cannot solve every issue alone. The 134–114 home loss to Golden State exposed defensive problems against a rookie-led frontcourt attack. Jokić produced 19 points and 11 assists, but the Nuggets could not match the Warriors' scoring pace. The offense will create good looks. We are measuring whether Denver can defend consistently enough to turn that creation into wins.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "L",
+          "score": "114–134"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "L",
+          "score": "114-134"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "New Orleans Pelicans",
+          "venue": "home",
+          "result": "W",
+          "score": "141-135"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "84-96"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "L",
+          "score": "114-134"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "New Orleans Pelicans",
+          "venue": "home",
+          "result": "W",
+          "score": "141-135"
+        },
+        {
+          "date": "2026-10-22",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "84-96"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 14,
+      "team": "Toronto Raptors",
+      "previous": 12,
+      "movement": -2,
+      "analysis": "Scottie Barnes faces more offensive responsibility while Kawhi Leonard is sidelined; half-court creation is the pressure point.",
+      "record_verified_2026_10_27": "2–1",
+      "expanded_analysis": "Scottie Barnes faces more offensive responsibility while Kawhi Leonard is sidelined; half-court creation is the pressure point. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Toronto's early wins keep it in the middle of a crowded Eastern Conference race. The Raptors beat Washington before falling 117–94 to Minnesota. Kawhi Leonard's health is a major variable for this roster, and the Wolves game illustrated how quickly the offense can bog down when physical defenders dictate pace. We are watching lineup continuity and secondary creation, not assuming a healthy star will fix every possession.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Toronto's early wins keep it in the middle of a crowded Eastern Conference race. The Raptors beat Washington before falling 117–94 to Minnesota. Kawhi Leonard's health is a major variable for this roster, and the Wolves game illustrated how quickly the offense can bog down when physical defenders dictate pace. We are watching lineup continuity and secondary creation, not assuming a healthy star will fix every possession.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "Kawhi Leonard: left knee swelling, at least one week out per NBA; no definitive return date. Full team injury report not audited.",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "away",
+          "result": "L",
+          "score": "94-117"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Washington Wizards",
+          "venue": "away",
+          "result": "W",
+          "score": "112-102"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "W",
+          "score": "135-92"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "away",
+          "result": "L",
+          "score": "94-117"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Washington Wizards",
+          "venue": "away",
+          "result": "W",
+          "score": "112-102"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "W",
+          "score": "135-92"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": [
+        {
+          "team": "Toronto Raptors",
+          "player": "Kawhi Leonard",
+          "injury": "knee",
+          "status": "Raptors announced Oct 27: will miss at least one week due to left knee swelling; no acute injury on testing.",
+          "verification": "confirmed team announcement via NBA.com",
+          "source": "https://www.nba.com/news/kawhi-leonard-knee-out-at-least-a-week"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "team": "Portland Trail Blazers",
+      "previous": 18,
+      "movement": 3,
+      "analysis": "The young core is showing progress through pace and athleticism; closing games and execution will determine the next jump.",
+      "record_verified_2026_10_27": "2–0",
+      "expanded_analysis": "The young core is showing progress through pace and athleticism; closing games and execution will determine the next jump. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "An unbeaten opening is encouraging, but the sample is still tiny. Portland beat Sacramento 128–120 and has shown it can score in a high-tempo setting. The next challenge is defending disciplined opponents and finding repeatable half-court answers when transition chances disappear. We like the early confidence; we want evidence it survives a difficult road stretch.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "An unbeaten opening is encouraging, but the sample is still tiny. Portland beat Sacramento 128–120 and has shown it can score in a high-tempo setting. The next challenge is defending disciplined opponents and finding repeatable half-court answers when transition chances disappear. We like the early confidence; we want evidence it survives a difficult road stretch.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 2 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-23",
+          "opponent": "Sacramento Kings",
+          "venue": "away",
+          "result": "W",
+          "score": "128-120"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Phoenix Suns",
+          "venue": "home",
+          "result": "W",
+          "score": "124-83"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-23",
+          "opponent": "Sacramento Kings",
+          "venue": "away",
+          "result": "W",
+          "score": "128-120"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Phoenix Suns",
+          "venue": "home",
+          "result": "W",
+          "score": "124-83"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 16,
+      "team": "Orlando Magic",
+      "previous": 14,
+      "movement": -2,
+      "analysis": "Paolo Banchero and Franz Wagner provide a strong foundation, but offensive consistency will decide Orlando’s climb.",
+      "record_verified_2026_10_27": "1–2",
+      "expanded_analysis": "Paolo Banchero and Franz Wagner provide a strong foundation, but offensive consistency will decide Orlando’s climb. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Orlando has already delivered a meaningful road result. The 111–102 win in New York showed that the Magic can make a more celebrated opponent uncomfortable through physicality and defensive pressure. Their offensive ceiling still depends on spacing and avoiding stagnant possessions. We are watching whether Orlando can turn one strong defensive night into an identity.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Orlando has already delivered a meaningful road result. The 111–102 win in New York showed that the Magic can make a more celebrated opponent uncomfortable through physicality and defensive pressure. Their offensive ceiling still depends on spacing and avoiding stagnant possessions. We are watching whether Orlando can turn one strong defensive night into an identity.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "NOT VERIFIED: do not publish prior Banchero four-to-six-week estimate",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "New York Knicks",
+          "venue": "away",
+          "result": "W",
+          "score": "111-102"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "L",
+          "score": "93-115"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "L",
+          "score": "125-132"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "New York Knicks",
+          "venue": "away",
+          "result": "W",
+          "score": "111-102"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "L",
+          "score": "93-115"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "L",
+          "score": "125-132"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": [
+        {
+          "team": "Orlando Magic",
+          "player": "Paolo Banchero",
+          "injury": "right high ankle sprain",
+          "status": "Four-to-six-week absence not confirmed by available primary source; remove from published injury claims.",
+          "verification": "UNVERIFIED — previously cited injury tracker does not corroborate this claim; DO NOT PUBLISH",
+          "source": "https://www.basketball-reference.com/friv/injuries.cgi"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "team": "Dallas Mavericks",
+      "previous": 19,
+      "movement": 2,
+      "analysis": "A developing rotation has flashed promise; the question is how often its young players can deliver against disciplined defenses.",
+      "record_verified_2026_10_27": "2–2",
+      "expanded_analysis": "A developing rotation has flashed promise; the question is how often its young players can deliver against disciplined defenses. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Dallas has been more competitive than its position suggests. Cooper Flagg's 29 points, 11 assists, five steals and three blocks against Miami showed remarkable two-way influence in a 113–109 road win. His emergence gives Dallas a young player who can affect every phase of a game. The question is how consistently the Mavericks can surround that production with spacing and disciplined team defense.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Dallas has been more competitive than its position suggests. Cooper Flagg's 29 points, 11 assists, five steals and three blocks against Miami showed remarkable two-way influence in a 113–109 road win. His emergence gives Dallas a young player who can affect every phase of a game. The question is how consistently the Mavericks can surround that production with spacing and disciplined team defense.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "113–109"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "113-109"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "San Antonio Spurs",
+          "venue": "home",
+          "result": "L",
+          "score": "106-122"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Indiana Pacers",
+          "venue": "away",
+          "result": "W",
+          "score": "121-105"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Houston Rockets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-128"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Miami Heat",
+          "venue": "away",
+          "result": "W",
+          "score": "113-109"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "San Antonio Spurs",
+          "venue": "home",
+          "result": "L",
+          "score": "106-122"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Indiana Pacers",
+          "venue": "away",
+          "result": "W",
+          "score": "121-105"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Houston Rockets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-128"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 18,
+      "team": "Washington Wizards",
+      "previous": 21,
+      "movement": 3,
+      "analysis": "Washington’s young core needs to turn individual flashes into coherent two-way play and stronger late-game decisions.",
+      "record_verified_2026_10_27": "2–2",
+      "expanded_analysis": "Washington lost 110–103 at Charlotte despite 29 points and 10 rebounds from Anthony Davis and a 22-point, 10-assist contribution from Trae Young. The star power is real; the defensive answer to Brandon Miller was not. Washington needs better perimeter containment and more cohesive late-game possessions. 4DK outlook: Washington’s young core needs to turn individual flashes into coherent two-way play and stronger late-game decisions.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Washington's talent is more interesting than its early results. Anthony Davis scored 29 and grabbed 10 boards while Trae Young produced 22 and 10 assists against Charlotte, yet the Wizards still lost 110–103 because Brandon Miller erupted for 39. The ceiling depends on defense and role balance: elite individual offense cannot cover repeated perimeter breakdowns.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Washington's talent is more interesting than its early results. Anthony Davis scored 29 and grabbed 10 boards while Trae Young produced 22 and 10 assists against Charlotte, yet the Wizards still lost 110–103 because Brandon Miller erupted for 39. The ceiling depends on defense and role balance: elite individual offense cannot cover repeated perimeter breakdowns.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "L",
+          "score": "103–110"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "L",
+          "score": "103-110"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Chicago Bulls",
+          "venue": "away",
+          "result": "W",
+          "score": "124-120"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Toronto Raptors",
+          "venue": "home",
+          "result": "L",
+          "score": "102-112"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Milwaukee Bucks",
+          "venue": "home",
+          "result": "W",
+          "score": "128-116"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "L",
+          "score": "103-110"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Chicago Bulls",
+          "venue": "away",
+          "result": "W",
+          "score": "124-120"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Toronto Raptors",
+          "venue": "home",
+          "result": "L",
+          "score": "102-112"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Milwaukee Bucks",
+          "venue": "home",
+          "result": "W",
+          "score": "128-116"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": [
+        {
+          "team": "Washington Wizards",
+          "player": "AJ Dybantsa",
+          "injury": "ankle",
+          "status": "Game-time decision on Oct 26 tracker; verify next game participation",
+          "verification": "reported",
+          "source": "https://www.cbssports.com/nba/injuries/daily/"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "team": "Atlanta Hawks",
+      "previous": 16,
+      "movement": -3,
+      "analysis": "Atlanta has scoring upside, but the defense and game-to-game reliability remain the clearest obstacles.",
+      "record_verified_2026_10_27": "2–2",
+      "expanded_analysis": "Atlanta has scoring upside, but the defense and game-to-game reliability remain the clearest obstacles. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Atlanta's start has offered glimpses of offense without enough reliable stops. The Hawks surrendered 120 in Houston and could not withstand the Rockets' decisive 14–0 fourth-quarter run. The 128–81 win in Charlotte earlier showed the upside, but the contrast is stark. We are tracking whether the Hawks can defend quality creators in the final six minutes of close games.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Atlanta's start has offered glimpses of offense without enough reliable stops. The Hawks surrendered 120 in Houston and could not withstand the Rockets' decisive 14–0 fourth-quarter run. The 128–81 win in Charlotte earlier showed the upside, but the contrast is stark. We are tracking whether the Hawks can defend quality creators in the final six minutes of close games.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Houston Rockets",
+          "venue": "away",
+          "result": "L",
+          "score": "110–120"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Houston Rockets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-120"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Houston Rockets",
+          "venue": "home",
+          "result": "L",
+          "score": "114-121"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "W",
+          "score": "128-81"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Orlando Magic",
+          "venue": "away",
+          "result": "W",
+          "score": "132-125"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Houston Rockets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-120"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Houston Rockets",
+          "venue": "home",
+          "result": "L",
+          "score": "114-121"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "W",
+          "score": "128-81"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Orlando Magic",
+          "venue": "away",
+          "result": "W",
+          "score": "132-125"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 20,
+      "team": "Phoenix Suns",
+      "previous": 20,
+      "movement": 0,
+      "analysis": "Devin Booker remains the offensive anchor; Phoenix must build steadier defense and contributions beyond its top option.",
+      "record_verified_2026_10_27": "1–2",
+      "expanded_analysis": "Phoenix stayed competitive in stretches at Oklahoma City but lost 125–114. The Suns' 1–2 start shows why Devin Booker's creation needs to be supported by better defensive possessions and a more dependable secondary attack. Talent alone cannot close the gap with the conference leaders. 4DK outlook: Devin Booker remains the offensive anchor; Phoenix must build steadier defense and contributions beyond its top option.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Phoenix is still searching for a dependable rhythm around Devin Booker. A 131–122 victory over Golden State showed the Suns can score, but Oklahoma City put up 125 against them the following game. The offense needs better complementary creation while the defense must finish possessions. The middle of the West is unforgiving; isolated shotmaking will not be enough.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Phoenix is still searching for a dependable rhythm around Devin Booker. A 131–122 victory over Golden State showed the Suns can score, but Oklahoma City put up 125 against them the following game. The offense needs better complementary creation while the defense must finish possessions. The middle of the West is unforgiving; isolated shotmaking will not be enough.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "114–125"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "114-125"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "W",
+          "score": "131-122"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Portland Trail Blazers",
+          "venue": "away",
+          "result": "L",
+          "score": "83-124"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "114-125"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Golden State Warriors",
+          "venue": "home",
+          "result": "W",
+          "score": "131-122"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Portland Trail Blazers",
+          "venue": "away",
+          "result": "L",
+          "score": "83-124"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 21,
+      "team": "Indiana Pacers",
+      "previous": 15,
+      "movement": -6,
+      "analysis": "Indiana has dropped six spots; restoring identity and sustaining effort through the full game are essential.",
+      "record_verified_2026_10_27": "2–2",
+      "expanded_analysis": "Indiana fell 110–102 in Milwaukee despite 22 points and nine assists from Tyrese Haliburton. The Pacers must create more reliable fourth-quarter offense; they scored only 17 in the final period. Their slide in our rankings reflects early results, not a dismissal of their established talent. 4DK outlook: Indiana has dropped six spots; restoring identity and sustaining effort through the full game are essential.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Indiana's early swings reveal a team that has not found a stable closing identity. Haliburton's 22 points and nine assists were not enough against Milwaukee, where the Pacers managed just 17 fourth-quarter points. A 136–109 win over Brooklyn showed how dangerous they are when pace and ball movement click. The gap between those performances is what we need to understand before moving them back up.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Indiana's early swings reveal a team that has not found a stable closing identity. Haliburton's 22 points and nine assists were not enough against Milwaukee, where the Pacers managed just 17 fourth-quarter points. A 136–109 win over Brooklyn showed how dangerous they are when pace and ball movement click. The gap between those performances is what we need to understand before moving them back up.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Milwaukee Bucks",
+          "venue": "away",
+          "result": "L",
+          "score": "102–110"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Milwaukee Bucks",
+          "venue": "away",
+          "result": "L",
+          "score": "102-110"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Brooklyn Nets",
+          "venue": "away",
+          "result": "W",
+          "score": "136-109"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "L",
+          "score": "105-121"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "New Orleans Pelicans",
+          "venue": "away",
+          "result": "W",
+          "score": "123-120"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Milwaukee Bucks",
+          "venue": "away",
+          "result": "L",
+          "score": "102-110"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Brooklyn Nets",
+          "venue": "away",
+          "result": "W",
+          "score": "136-109"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "L",
+          "score": "105-121"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "New Orleans Pelicans",
+          "venue": "away",
+          "result": "W",
+          "score": "123-120"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 22,
+      "team": "Chicago Bulls",
+      "previous": 22,
+      "movement": 0,
+      "analysis": "Caleb Wilson’s early production is a genuine bright spot, even as Chicago works through the inconsistencies of a young roster.",
+      "record_verified_2026_10_27": "1–3",
+      "expanded_analysis": "The 134–99 loss in Boston was a harsh lesson for a developing roster. Caleb Wilson's 17 points, five rebounds and two blocks were encouraging, but the Bulls couldn't contain Boston's perimeter eruption. Development requires giving Wilson room to grow while demanding better collective defensive discipline. 4DK outlook: Caleb Wilson’s early production is a genuine bright spot, even as Chicago works through the inconsistencies of a young roster.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Chicago is developing talent while taking some difficult early lessons. Caleb Wilson's 17 points and two blocks in Boston were a useful sign, but the Bulls lost 134–99 after Pritchard ignited a huge Celtics run. Young players need responsibility, and Chicago also needs defensive accountability. We are measuring Wilson's growth alongside the team's ability to avoid extended scoring droughts.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Chicago is developing talent while taking some difficult early lessons. Caleb Wilson's 17 points and two blocks in Boston were a useful sign, but the Bulls lost 134–99 after Pritchard ignited a huge Celtics run. Young players need responsibility, and Chicago also needs defensive accountability. We are measuring Wilson's growth alongside the team's ability to avoid extended scoring droughts.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Boston Celtics",
+          "venue": "away",
+          "result": "L",
+          "score": "99–134"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Boston Celtics",
+          "venue": "away",
+          "result": "L",
+          "score": "99-134"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Washington Wizards",
+          "venue": "home",
+          "result": "L",
+          "score": "120-124"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Milwaukee Bucks",
+          "venue": "away",
+          "result": "W",
+          "score": "132-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Toronto Raptors",
+          "venue": "away",
+          "result": "L",
+          "score": "92-135"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Boston Celtics",
+          "venue": "away",
+          "result": "L",
+          "score": "99-134"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Washington Wizards",
+          "venue": "home",
+          "result": "L",
+          "score": "120-124"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Milwaukee Bucks",
+          "venue": "away",
+          "result": "W",
+          "score": "132-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Toronto Raptors",
+          "venue": "away",
+          "result": "L",
+          "score": "92-135"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 23,
+      "team": "Miami Heat",
+      "previous": 6,
+      "movement": -17,
+      "analysis": "Giannis remains a force, but Miami’s steep drop reflects a team that has not yet found consistent winning combinations.",
+      "record_verified_2026_10_27": "0–4",
+      "expanded_analysis": "Miami's 0–4 start is too severe to explain away with adjustment time alone. A 113–109 loss to Dallas continued the pattern. Giannis gives Miami a dominant interior force, but the supporting lineups need more reliable spacing and late-game execution before the Heat can justify their preseason expectations. 4DK outlook: Giannis remains a force, but Miami’s steep drop reflects a team that has not yet found consistent winning combinations.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Miami's 0–4 start has put immediate pressure on its new identity. Giannis recorded 29 points, 14 rebounds and 11 assists against Dallas, but the Heat lost 113–109. The problem is not whether Giannis is producing; it is whether the team can space the floor and defend the decisive possessions around him. A superstar can change the ceiling, but the group has to establish winning habits.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Miami's 0–4 start has put immediate pressure on its new identity. Giannis recorded 29 points, 14 rebounds and 11 assists against Dallas, but the Heat lost 113–109. The problem is not whether Giannis is producing; it is whether the team can space the floor and defend the decisive possessions around him. A superstar can change the ceiling, but the group has to establish winning habits.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "L",
+          "score": "109–113"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "L",
+          "score": "109-113"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-115"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Detroit Pistons",
+          "venue": "home",
+          "result": "L",
+          "score": "111-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "L",
+          "score": "106-131"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Dallas Mavericks",
+          "venue": "home",
+          "result": "L",
+          "score": "109-113"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Charlotte Hornets",
+          "venue": "away",
+          "result": "L",
+          "score": "110-115"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Detroit Pistons",
+          "venue": "home",
+          "result": "L",
+          "score": "111-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Minnesota Timberwolves",
+          "venue": "home",
+          "result": "L",
+          "score": "106-131"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 24,
+      "team": "Utah Jazz",
+      "previous": 23,
+      "movement": -1,
+      "analysis": "Darryn Peterson’s shot creation adds another dimension; balancing touches with Keyonte George is a key developmental task.",
+      "record_verified_2026_10_27": "1–3",
+      "expanded_analysis": "Darryn Peterson’s shot creation adds another dimension; balancing touches with Keyonte George is a key developmental task. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Utah is competitive in stretches while still defining its young core. Keyonte George put up 26 and six assists against Memphis, yet the Jazz fell 110–105. Darryn Peterson's development alongside George, Lauri Markkanen, Ace Bailey and Isaiah Collier remains a central storyline. We care more about quality possessions and defensive growth than one early result, but the late-game execution must improve.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Utah is competitive in stretches while still defining its young core. Keyonte George put up 26 and six assists against Memphis, yet the Jazz fell 110–105. Darryn Peterson's development alongside George, Lauri Markkanen, Ace Bailey and Isaiah Collier remains a central storyline. We care more about quality possessions and defensive growth than one early result, but the late-game execution must improve.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "105–110"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "105-110"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Los Angeles Lakers",
+          "venue": "home",
+          "result": "L",
+          "score": "123-132"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "New Orleans Pelicans",
+          "venue": "home",
+          "result": "W",
+          "score": "120-119"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Memphis Grizzlies",
+          "venue": "away",
+          "result": "L",
+          "score": "103-123"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "105-110"
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "Los Angeles Lakers",
+          "venue": "home",
+          "result": "L",
+          "score": "123-132"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "New Orleans Pelicans",
+          "venue": "home",
+          "result": "W",
+          "score": "120-119"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Memphis Grizzlies",
+          "venue": "away",
+          "result": "L",
+          "score": "103-123"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": [
+        {
+          "team": "Utah Jazz",
+          "player": "Lauri Markkanen",
+          "injury": "wrist",
+          "status": "Game-time decision on Oct 26 tracker; not a confirmed absence",
+          "verification": "reported",
+          "source": "https://www.cbssports.com/nba/injuries/daily/"
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "team": "Charlotte Hornets",
+      "previous": 25,
+      "movement": 0,
+      "analysis": "Charlotte needs more consistent creation and defensive stops; its young players must prove they can sustain competitive stretches.",
+      "record_verified_2026_10_27": "3–1",
+      "expanded_analysis": "Brandon Miller's career-high 39 points powered a 110–103 victory over Washington and helped Charlotte reach 3–1. That is a significant individual development for a roster trying to find stability. The next challenge is turning those scoring explosions into repeatable team offense. 4DK outlook: Charlotte needs more consistent creation and defensive stops; its young players must prove they can sustain competitive stretches.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Charlotte's 3–1 start deserves more respect than the preseason projections gave it. Brandon Miller's career-high 39 against Washington was a star-level shotmaking display, and Charlotte finished the job 110–103. The 47-point loss to Atlanta shows how uneven the floor still can be. We want to know whether Miller can keep producing when opponents send more attention his way.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Charlotte's 3–1 start deserves more respect than the preseason projections gave it. Brandon Miller's career-high 39 against Washington was a star-level shotmaking display, and Charlotte finished the job 110–103. The 47-point loss to Atlanta shows how uneven the floor still can be. We want to know whether Miller can keep producing when opponents send more attention his way.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Washington Wizards",
+          "venue": "home",
+          "result": "W",
+          "score": "110–103"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Washington Wizards",
+          "venue": "home",
+          "result": "W",
+          "score": "110-103"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Miami Heat",
+          "venue": "home",
+          "result": "W",
+          "score": "115-110"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "L",
+          "score": "81-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Brooklyn Nets",
+          "venue": "away",
+          "result": "W",
+          "score": "110-103"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Washington Wizards",
+          "venue": "home",
+          "result": "W",
+          "score": "110-103"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Miami Heat",
+          "venue": "home",
+          "result": "W",
+          "score": "115-110"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Atlanta Hawks",
+          "venue": "home",
+          "result": "L",
+          "score": "81-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Brooklyn Nets",
+          "venue": "away",
+          "result": "W",
+          "score": "110-103"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 26,
+      "team": "New Orleans Pelicans",
+      "previous": 26,
+      "movement": 0,
+      "analysis": "The young core has intriguing offensive tools, but execution, defense and consistency remain major questions.",
+      "record_verified_2026_10_27": "0–3",
+      "expanded_analysis": "The young core has intriguing offensive tools, but execution, defense and consistency remain major questions. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "New Orleans has shown fight without turning it into wins. The 141–135 loss in Denver demonstrated offensive potential, but allowing 141 points is not a sustainable formula. The young pieces can score; the challenge is communication, rebounding and resistance at the rim. We are looking for a complete defensive performance before rewarding the upside.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "New Orleans has shown fight without turning it into wins. The 141–135 loss in Denver demonstrated offensive potential, but allowing 141 points is not a sustainable formula. The young pieces can score; the challenge is communication, rebounding and resistance at the rim. We are looking for a complete defensive performance before rewarding the upside.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Denver Nuggets",
+          "venue": "away",
+          "result": "L",
+          "score": "135-141"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "L",
+          "score": "119-120"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "L",
+          "score": "120-123"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-24",
+          "opponent": "Denver Nuggets",
+          "venue": "away",
+          "result": "L",
+          "score": "135-141"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Utah Jazz",
+          "venue": "away",
+          "result": "L",
+          "score": "119-120"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "L",
+          "score": "120-123"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 27,
+      "team": "Milwaukee Bucks",
+      "previous": 29,
+      "movement": 2,
+      "analysis": "Brayden Burries offers promising guard depth, while Milwaukee searches for reliable two-way combinations.",
+      "record_verified_2026_10_27": "1–3",
+      "expanded_analysis": "Milwaukee earned its first win, 110–102 over Indiana, behind Tyler Herro's 23 points, 10 rebounds and seven assists. A single win does not erase the difficult start, but it gives the Bucks a functional template: organized guard play, defensive rebounding and steadier late-game offense. 4DK outlook: Brayden Burries offers promising guard depth, while Milwaukee searches for reliable two-way combinations.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Milwaukee finally has a result to build on. Tyler Herro's 23 points, 10 rebounds and seven assists helped the Bucks beat Indiana 110–102 after an 0–3 start. The win showed how organized guard play and a strong finish can change the feel of a season. One win does not fix the defense or the rotation, but it provides a practical blueprint.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Milwaukee finally has a result to build on. Tyler Herro's 23 points, 10 rebounds and seven assists helped the Bucks beat Indiana 110–102 after an 0–3 start. The win showed how organized guard play and a strong finish can change the feel of a season. One win does not fix the defense or the rotation, but it provides a practical blueprint.",
+      "verified_recent_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "W",
+          "score": "110–102"
+        }
+      ],
+      "last_five_status": "Complete as of October 26, 2026: 4 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "W",
+          "score": "110-102"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "L",
+          "score": "116-127"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "L",
+          "score": "125-132"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Washington Wizards",
+          "venue": "away",
+          "result": "L",
+          "score": "116-128"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-26",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "W",
+          "score": "110-102"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Philadelphia 76ers",
+          "venue": "away",
+          "result": "L",
+          "score": "116-127"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Chicago Bulls",
+          "venue": "home",
+          "result": "L",
+          "score": "125-132"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Washington Wizards",
+          "venue": "away",
+          "result": "L",
+          "score": "116-128"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 28,
+      "team": "LA Clippers",
+      "previous": 24,
+      "movement": -4,
+      "analysis": "Keaton Wagler’s opportunity is worth tracking; the Clippers need more dependable scoring and defensive cohesion.",
+      "record_verified_2026_10_27": "1–2",
+      "expanded_analysis": "Keaton Wagler’s opportunity is worth tracking; the Clippers need more dependable scoring and defensive cohesion. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "The Clippers have competed against elite teams but are still chasing consistency. They lost 108–101 at Oklahoma City and 125–117 to the Lakers. Both games showed that hanging around against quality opponents is not the same as finishing them. Rookie Keaton Wagler is part of a changing rotation. We are watching shot creation, injury availability and whether the second unit can keep games within reach.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "The Clippers have competed against elite teams but are still chasing consistency. They lost 108–101 at Oklahoma City and 125–117 to the Lakers. Both games showed that hanging around against quality opponents is not the same as finishing them. Rookie Keaton Wagler is part of a changing rotation. We are watching shot creation, injury availability and whether the second unit can keep games within reach.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "101-108"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Los Angeles Lakers",
+          "venue": "away",
+          "result": "L",
+          "score": "117-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Sacramento Kings",
+          "venue": "home",
+          "result": "W",
+          "score": "121-96"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Oklahoma City Thunder",
+          "venue": "away",
+          "result": "L",
+          "score": "101-108"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Los Angeles Lakers",
+          "venue": "away",
+          "result": "L",
+          "score": "117-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Sacramento Kings",
+          "venue": "home",
+          "result": "W",
+          "score": "121-96"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    },
+    {
+      "rank": 29,
+      "team": "Sacramento Kings",
+      "previous": 28,
+      "movement": -1,
+      "analysis": "Acuff has already demonstrated scoring aggression and a green light, but efficiency and organizing the offense are the next tests.",
+      "record_verified_2026_10_27": "0–3",
+      "expanded_analysis": "Acuff has already demonstrated scoring aggression and a green light, but efficiency and organizing the offense are the next tests. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Sacramento's winless start has left little room for optimism. Memphis beat the Kings 123–112 and Portland scored 128 in another defeat. Darius Acuff Jr.'s early scoring flashes matter, but the Kings must build a defensive foundation around their developing guard. The franchise needs a sustainable identity rather than another isolated big rookie night.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Sacramento's winless start has left little room for optimism. Memphis beat the Kings 123–112 and Portland scored 128 in another defeat. Darius Acuff Jr.'s early scoring flashes matter, but the Kings must build a defensive foundation around their developing guard. The franchise needs a sustainable identity rather than another isolated big rookie night.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "112-123"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Portland Trail Blazers",
+          "venue": "home",
+          "result": "L",
+          "score": "120-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "LA Clippers",
+          "venue": "away",
+          "result": "L",
+          "score": "96-121"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Memphis Grizzlies",
+          "venue": "home",
+          "result": "L",
+          "score": "112-123"
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "Portland Trail Blazers",
+          "venue": "home",
+          "result": "L",
+          "score": "120-128"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "LA Clippers",
+          "venue": "away",
+          "result": "L",
+          "score": "96-121"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": [
+        {
+          "team": "Sacramento Kings",
+          "player": "Keegan Murray",
+          "injury": "ankle",
+          "status": "Reported out; third-party estimated date is not a team-confirmed return",
+          "verification": "reported",
+          "source": "https://www.cbssports.com/nba/injuries/"
+        },
+        {
+          "team": "Sacramento Kings",
+          "player": "Ben Simmons",
+          "injury": "Achilles",
+          "status": "Listed out for season by injury tracker; seek primary confirmation",
+          "verification": "needs primary confirmation",
+          "source": "https://www.cbssports.com/nba/injuries/"
+        }
+      ]
+    },
+    {
+      "rank": 30,
+      "team": "Brooklyn Nets",
+      "previous": 30,
+      "movement": 0,
+      "analysis": "Brooklyn remains in evaluation mode; identifying dependable building blocks matters more than isolated scoring bursts.",
+      "record_verified_2026_10_27": "0–3",
+      "expanded_analysis": "Brooklyn remains in evaluation mode; identifying dependable building blocks matters more than isolated scoring bursts. Our next evaluation will weigh lineup continuity, defensive possessions, opponent quality and whether the current role distribution produces repeatable wins. We will not substitute preseason expectations for on-court evidence.",
+      "record_verification": "Basketball-Reference standings through games October 26, 2026",
+      "editorial_assessment": "Brooklyn is at the bottom because the opening results have not shown enough progress. The Nets lost 125–121 to Cleveland and then 136–109 to Indiana. Competitive stretches exist, but the defense has been unable to string together stops against established offenses. We are looking for individual growth and better possession-by-possession discipline before moving them upward.",
+      "fact_status": "review: selected scores cross-checked; comprehensive game logs, player averages and injury list not yet audited",
+      "record_as_of": "2026-10-26",
+      "deep_dive_analysis": "Brooklyn is at the bottom because the opening results have not shown enough progress. The Nets lost 125–121 to Cleveland and then 136–109 to Indiana. Competitive stretches exist, but the defense has been unable to string together stops against established offenses. We are looking for individual growth and better possession-by-possession discipline before moving them upward.",
+      "verified_recent_results": [],
+      "last_five_status": "Complete as of October 26, 2026: 3 regular-season games played (fewer than five for every team)",
+      "injury_status": "PARTIAL: selected notable reports only; verify official game-day injury report",
+      "opening_week_game_log": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "L",
+          "score": "109-136"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "away",
+          "result": "L",
+          "score": "121-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Charlotte Hornets",
+          "venue": "home",
+          "result": "L",
+          "score": "103-110"
+        }
+      ],
+      "last_five_results": [
+        {
+          "date": "2026-10-25",
+          "opponent": "Indiana Pacers",
+          "venue": "home",
+          "result": "L",
+          "score": "109-136"
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "Cleveland Cavaliers",
+          "venue": "away",
+          "result": "L",
+          "score": "121-125"
+        },
+        {
+          "date": "2026-10-21",
+          "opponent": "Charlotte Hornets",
+          "venue": "home",
+          "result": "L",
+          "score": "103-110"
+        }
+      ],
+      "record_validation": "PASS — recomputed from 2026-27 regular-season game results",
+      "injury_verification": "PENDING — do not infer full injury report",
+      "injury_audit_entries": []
+    }
+  ],
+  "mvp": [
+    {
+      "rank": 1,
+      "player": "Luka Dončić",
+      "team": "Lakers",
+      "analysis": "Luka’s command of the Lakers’ offense and winning start place him first. We value his scoring pressure, playmaking and ability to dictate tempo, while monitoring defense and sustainability.",
+      "evidence_status": "editorial; full game-log verification pending",
+      "expanded_analysis": "Luka remains first because 4DK weighs the entire offensive burden, not just a nightly scoring headline. His change of pace forces defenders to commit before the pass arrives, creating advantages for cutters and weak-side shooters. The Lakers’ 3–0 start strengthens his case. The question we will track is whether the team can sustain that control against elite defensive pressure without letting Luka shoulder every late-clock possession.",
+      "statistics_status": "NOT VERIFIED — do not publish numerical averages without source"
+    },
+    {
+      "rank": 2,
+      "player": "Anthony Edwards",
+      "team": "Timberwolves",
+      "analysis": "Edwards remains Minnesota’s late-game shot creator and emotional engine. The deeper supporting cast should help him choose when to attack rather than forcing every possession.",
+      "evidence_status": "verified Oct 26 scoring and game result",
+      "expanded_analysis": "Edwards supplied 47 points in Minnesota’s 127–125 overtime loss to Cleveland. Eleven of those points came in the extra period, a clear reminder that he can generate offense when opponents know the ball is coming his way. We are not moving him down because of one close defeat. What matters next is how Edwards and LaMelo Ball divide late-game creation, and whether Minnesota converts Gobert’s interior work into enough defensive stops to win tight games.",
+      "fact_checked_stats": {
+        "scope": "Oct 26 single game",
+        "points": 47,
+        "result": "125–127 OT loss to Cleveland",
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      "statistics_status": "VERIFIED: four game box scores and arithmetic reconciled",
+      "verified_oct27_game_log": {
+        "team": "Minnesota Timberwolves",
+        "games": 4,
+        "points": [
+          45,
+          15,
+          26,
+          47
+        ],
+        "rebounds": [
+          10,
+          4,
+          1,
+          4
+        ],
+        "assists": [
+          3,
+          4,
+          3,
+          4
+        ],
+        "source": "https://www.cbssports.com/nba/players/3141406/anthony-edwards/game-log/",
+        "totals": {
+          "points": 133,
+          "rebounds": 19,
+          "assists": 14
+        },
+        "averages": {
+          "points": 33.25,
+          "rebounds": 4.75,
+          "assists": 3.5
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Shai Gilgeous-Alexander",
+      "team": "Thunder",
+      "analysis": "SGA is the primary stabilizer for our No. 1 team. Injuries increase the burden on his efficient scoring and decision-making, making team resilience central to his candidacy.",
+      "evidence_status": "verified Oct 26 team result and injury details",
+      "expanded_analysis": "Oklahoma City opened 4–0, including a 125–114 win over Phoenix in which SGA scored 26. Jalen Williams’ fractured fibula and dislocated ankle and Cason Wallace’s torn labrum will test the Thunder’s depth and change the type of creation SGA must provide. Ajay Mitchell’s 30 against Phoenix was encouraging, but an MVP season requires sustaining elite efficiency while absorbing more attention. Our third-place position reflects both the winning and the challenge ahead.",
+      "statistics_status": "NOT VERIFIED — do not publish numerical averages without source"
+    },
+    {
+      "rank": 4,
+      "player": "Cade Cunningham",
+      "team": "Pistons",
+      "analysis": "Cade’s pace control and playmaking have defined Detroit’s early surge. His MVP case grows when his scoring creates opportunities for Duren and the full rotation.",
+      "evidence_status": "editorial; full game-log verification pending",
+      "expanded_analysis": "Cade has Detroit positioned among the early East contenders, and his value goes well beyond a box-score scoring total. He controls matchups with size, patience and passing angles that let Detroit dictate pace. The comeback against Boston is a useful early test of poise, but our next update will evaluate how often Detroit’s half-court offense creates efficient looks when the first action stalls. Fourth is an aggressive ranking, intentionally rewarding the Pistons’ early response rather than relying on preseason reputation.",
+      "statistics_status": "NOT VERIFIED — do not publish numerical averages without source"
+    },
+    {
+      "rank": 5,
+      "player": "Ty Jerome",
+      "team": "Grizzlies",
+      "analysis": "Jerome’s breakout deserves recognition now, even if this pace is unlikely to last all season. Tougher defenses and his ability to sustain efficiency will tell us how high he belongs.",
+      "evidence_status": "verified NBA Week 1 award and Oct 26 game",
+      "expanded_analysis": "The Western Conference Player of the Week averaged 34.7 points and 6.0 assists on 56.3% shooting over Memphis’s first three games. He then shot 4-for-15 against Utah, yet his late jumpers and eight assists helped secure a 110–105 win and a 4–0 start. That contrast is why we have him fifth: the breakout is real as an early-season event, but we need to see whether his shotmaking holds up against better defenses and scouting adjustments. We are rewarding the work, not predicting he will score 35 a night all year. UPDATED FOUR-GAME CONTEXT: With 15 points and eight assists against Utah added to his first three outings, Jerome is at 29.8 points and 6.5 assists per game through four contests. The earlier 34.7 points-per-game figure belongs only to the three-game Player of the Week window.",
+      "fact_checked_stats": {
+        "scope": "Oct 20–25 only (3 games)",
+        "ppg": 34.7,
+        "apg": 6.0,
+        "fg_pct": 56.3,
+        "award": "Western Conference Player of the Week",
+        "source": "https://www.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+        "oct26": "15 PTS, 8 AST, 4/15 FG vs Utah; weekly award averages must NOT be represented as four-game season averages",
+        "four_game_ppg": 29.75,
+        "four_game_points": 119,
+        "four_game_assists": 26,
+        "four_game_apg": 6.5,
+        "four_game_scope": "Oct 21, 23, 25, 26 (four regular-season games)",
+        "four_game_source_note": "First three games: 45, 28, 31 PTS and 6, 5, 7 AST per NBA player game log. Fourth game Oct 26: 15 PTS and 8 AST per 4DK prior checked box score."
+      },
+      "statistics_status": "Four-game points/assists reconciled: 29.75 PPG and 6.5 APG; four-game rebounds NOT verified. Three-game Player of the Week averages 34.7 PPG and 6.0 APG.",
+      "verified_opening_week": {
+        "games": 3,
+        "points_per_game": 34.7,
+        "assists_per_game": 6.0,
+        "field_goal_percentage": 56.3,
+        "period": "Oct 20–25, 2026",
+        "source": "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week"
+      },
+      "verified_stat_snapshot_2026_10_27": {
+        "team": "Memphis Grizzlies",
+        "scope": "Oct 20–25, 2026, first 3 games",
+        "games": 3,
+        "ppg": 34.7,
+        "apg": 6.0,
+        "fg_pct": 56.3,
+        "source": "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+        "note": "Player of Week award window, not full four-game averages"
+      },
+      "game_by_game_reconciliation_2026_10_27": {
+        "games": [
+          {
+            "date": "2026-10-21",
+            "points": 45,
+            "rebounds": 7,
+            "assists": 6
+          },
+          {
+            "date": "2026-10-23",
+            "points": 28,
+            "rebounds": 2,
+            "assists": 5
+          },
+          {
+            "date": "2026-10-25",
+            "points": 31,
+            "rebounds": 4,
+            "assists": 7
+          },
+          {
+            "date": "2026-10-26",
+            "points": 15,
+            "rebounds": null,
+            "assists": 8
+          }
+        ],
+        "source": "https://www.nba.com/player/1629660/ty-jerome",
+        "note": "Fourth game scoring and assists supported by October 26 recap; fourth-game rebounds not checked. NBA player page may lag latest result.",
+        "points_average": 29.75,
+        "rebounds_average": null,
+        "assists_average": 6.5
+      },
+      "audited_box_scores": [
+        {
+          "date": "2026-10-21",
+          "opponent": "UTA",
+          "points": 45,
+          "rebounds": 7,
+          "assists": 6
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "GSW",
+          "points": 28,
+          "rebounds": 2,
+          "assists": 5
+        },
+        {
+          "date": "2026-10-25",
+          "opponent": "SAC",
+          "points": 31,
+          "rebounds": 4,
+          "assists": 7
+        },
+        {
+          "date": "2026-10-26",
+          "opponent": "UTA",
+          "points": 15,
+          "rebounds": 1,
+          "assists": 8
+        }
+      ],
+      "audited_totals": {
+        "points": 119,
+        "rebounds": 14,
+        "assists": 26
+      },
+      "audited_averages": {
+        "points": 29.75,
+        "rebounds": 3.5,
+        "assists": 6.5
+      },
+      "audited_games": 4,
+      "audited_sources": [
+        "https://www.foxsports.com/nba/ty-jerome-player-game-log?season=2026",
+        "https://www.nba.com/news/starting-5-october-27-2026"
+      ],
+      "audited_scope": "four regular-season games, through 2026-10-26",
+      "assists_discrepancy_flag": "STOP: prior report states 6.5 APG through four games; Basketball-Reference 2026-27 season table currently shows 6.3 APG. Reconcile primary box score before publishing."
+    },
+    {
+      "rank": 6,
+      "player": "Nikola Jokić",
+      "team": "Nuggets",
+      "analysis": "Jokić remains Denver’s offensive system, punishing mismatches with scoring and passing. Team defensive weaknesses, not his all-around value, keep him outside the top five.",
+      "evidence_status": "verified Oct 26 box-score totals and game result",
+      "expanded_analysis": "Denver’s 134–114 home loss to Golden State was a reminder that even the best offensive organizer cannot compensate for every defensive lapse. Jokić had 19 points, seven rebounds and 11 assists, yet the Nuggets surrendered 74 second-half points. His ability to read the floor still gives Denver a championship-caliber offensive foundation. Sixth reflects the early team results; it is not a claim that five players have suddenly become better all-around basketball players.",
+      "statistics_status": "Verified against user-supplied screenshot for GP/PTS/TRB/AST only",
+      "screenshot_verified_stats": {
+        "gp": 3,
+        "ppg": 22.3,
+        "rpg": 9.7,
+        "apg": 8.7,
+        "source": "User-supplied Basketball-Reference 2026-27 player screenshot, 2026-10-27"
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Victor Wembanyama",
+      "team": "Spurs",
+      "analysis": "Wembanyama alters entire possessions as a rim protector and mobile defender. More efficient shot selection and more Spurs wins would move him toward the top.",
+      "evidence_status": "editorial; full game-log verification pending",
+      "expanded_analysis": "Wembanyama’s two-way ceiling remains unique: he can change shot selection without blocking a shot and stretch defenses with his size and skill. Our seventh spot is a present-tense MVP evaluation, not a ceiling projection. We need to measure his efficiency, minutes and San Antonio’s actual defensive performance as the schedule develops. The path upward is straightforward: dominant production that consistently turns into wins.",
+      "statistics_status": "Verified against user-supplied screenshot for GP/PTS/TRB/AST only",
+      "screenshot_verified_stats": {
+        "gp": 3,
+        "ppg": 20.0,
+        "rpg": 11.0,
+        "apg": 2.3,
+        "source": "User-supplied Basketball-Reference 2026-27 player screenshot, 2026-10-27"
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Tyrese Maxey",
+      "team": "76ers",
+      "analysis": "Maxey supplies speed, shooting and downhill pressure in a crowded Philadelphia offense. His ability to assert himself while sharing possessions is the key question.",
+      "evidence_status": "verified NBA and Philadelphia 76ers Week 1 award report",
+      "expanded_analysis": "Maxey earned Eastern Conference Player of the Week after averaging 28.8 points, 4.0 rebounds, 4.8 assists, 2.0 steals and 1.0 blocks across Philadelphia’s 3–1 first week. That production matters because it combines scoring with disruption on the other end. With LeBron James and Jaylen Brown in the 4DK roster context, we are watching whether Maxey can remain aggressive while sharing touches. Eighth rewards an excellent opening week while leaving room for a larger sample.",
+      "fact_checked_stats": {
+        "scope": "Oct 20–25 (4 games)",
+        "ppg": 28.75,
+        "rpg": 4.0,
+        "apg": 4.75,
+        "spg": 2.0,
+        "bpg": 1.0,
+        "award": "Eastern Conference Player of the Week",
+        "source": "https://www.nba.com/sixers/news/tyrese-maxey-named-eastern-conference-player-of-the-week-2",
+        "season_scope_as_of": "Four games through Oct 25, 2026"
+      },
+      "statistics_status": "VERIFIED: four game box scores and arithmetic reconciled",
+      "verified_opening_week": {
+        "games": 4,
+        "points_per_game": 28.8,
+        "rebounds_per_game": 4.0,
+        "assists_per_game": 4.8,
+        "steals_per_game": 2.0,
+        "blocks_per_game": 1.0,
+        "field_goal_percentage": 46.6,
+        "period": "Oct 20–25, 2026",
+        "source": "https://www.nba.com/sixers/news/tyrese-maxey-named-eastern-conference-player-of-the-week-2"
+      },
+      "verified_stat_snapshot_2026_10_27": {
+        "team": "Philadelphia 76ers",
+        "scope": "Oct 20–25, 2026, first 4 games",
+        "games": 4,
+        "ppg": 28.8,
+        "rpg": 4.0,
+        "apg": 4.8,
+        "source": "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week"
+      },
+      "verified_oct27_game_log": {
+        "team": "Philadelphia 76ers",
+        "games": 4,
+        "points": [
+          28,
+          32,
+          26,
+          29
+        ],
+        "rebounds": [
+          4,
+          3,
+          4,
+          5
+        ],
+        "assists": [
+          5,
+          6,
+          4,
+          4
+        ],
+        "source": "https://www.cbssports.com/nba/players/3142479/tyrese-maxey/game-log/",
+        "totals": {
+          "points": 115,
+          "rebounds": 16,
+          "assists": 19
+        },
+        "averages": {
+          "points": 28.75,
+          "rebounds": 4.0,
+          "assists": 4.75
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jayson Tatum",
+      "team": "Celtics",
+      "analysis": "Tatum’s three-level scoring and two-way versatility keep him in the conversation. Boston’s evolving rotation must translate individual talent into sustained wins.",
+      "evidence_status": "verified Oct 26 result and totals",
+      "expanded_analysis": "Boston’s 134–99 win over Chicago gave us a glimpse of the Celtics’ ceiling when the perimeter offense flows. Tatum recorded 23 points, seven rebounds and six assists, while Payton Pritchard hit seven threes. Tatum’s MVP case depends on being both the primary problem-solver and the player who unlocks teammates when defenses load up. Ninth reflects the current early-season picture; the next step is proving that Boston can repeat this offensive balance against stronger resistance.",
+      "statistics_status": "Verified against user-supplied screenshot for GP/PTS/TRB/AST only",
+      "screenshot_verified_stats": {
+        "gp": 3,
+        "ppg": 24.0,
+        "rpg": 6.7,
+        "apg": 8.0,
+        "source": "User-supplied Basketball-Reference 2026-27 player screenshot, 2026-10-27"
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Giannis Antetokounmpo",
+      "team": "Heat",
+      "analysis": "Giannis still generates paint pressure and defensive value, but Miami’s poor opening results limit his standing until the team improves.",
+      "evidence_status": "verified Oct 26 result and totals",
+      "expanded_analysis": "Giannis put up 29 points, 14 rebounds and 11 assists against Dallas, but Miami lost 113–109 to fall to 0–4. We cannot pretend that triple-double is anything less than elite individual production, nor can we pretend a winless start is irrelevant to an MVP board. The Heat need cleaner spacing and more reliable closing possessions around him. Tenth is a warning about team results, not a dismissal of his impact.",
+      "fact_checked_stats": {
+        "scope": "Oct 26 single game",
+        "points": 29,
+        "rebounds": 14,
+        "assists": 11,
+        "result": "109–113 loss to Dallas",
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      "statistics_status": "VERIFIED ONLY FOR EXPLICIT SCOPE; other season averages pending"
+    }
+  ],
+  "rookies": [
+    {
+      "rank": 1,
+      "player": "Yaxel Lendeborg",
+      "team": "Warriors",
+      "analysis": "Lendeborg’s feel for the game fits Golden State’s movement offense, but he has also shown real individual creation. His 31-point, 12-rebound, six-assist game against Denver demonstrates a ceiling beyond complementary minutes.",
+      "expanded_analysis": "Four regular-season games give us more than a single highlight: 12 points in the opener, 18 and 13 rebounds against Memphis, 26 and nine against Phoenix, then 31 and 12 in Denver. His six assists in both the Memphis and Denver games demonstrate connective playmaking, not just scoring. The counterpoint is Golden State’s 1–3 start and his 1-for-8 three-point shooting against Denver. Our No. 1 ranking rewards his overall production while recognizing that shot selection and team defense remain works in progress.",
+      "evidence_status": "selected stats verified",
+      "verified_box_score_2026_10_26": {
+        "opponent": "Denver Nuggets",
+        "result": "W 134–114",
+        "points": 31,
+        "rebounds": 12,
+        "assists": 6,
+        "field_goals": "9-19",
+        "free_throws": "12-13",
+        "minutes": "30:49"
+      },
+      "fact_checked_stats": {
+        "scope": "first four games through Oct 26",
+        "ppg": 21.75,
+        "rpg": 9.25,
+        "apg": 4.75,
+        "oct26": "31 PTS, 12 REB, 6 AST at Denver",
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "verified_opening_week": {
+        "games": 4,
+        "points_per_game": 21.75,
+        "rebounds_per_game": 9.25,
+        "assists_per_game": 4.75,
+        "period": "Oct 21–26, 2026",
+        "source": "https://cdn-uat.nba.com/player/1642865"
+      },
+      "verified_stat_snapshot_2026_10_27": {
+        "team": "Golden State Warriors",
+        "scope": "Oct 21–26, 2026, first 4 games",
+        "games": 4,
+        "ppg": 21.75,
+        "rpg": 9.25,
+        "apg": 4.75,
+        "game_points": [
+          12,
+          18,
+          26,
+          31
+        ],
+        "game_rebounds": [
+          3,
+          13,
+          9,
+          12
+        ],
+        "game_assists": [
+          2,
+          6,
+          5,
+          6
+        ],
+        "source": "https://cdn-uat.nba.com/player/1642865"
+      },
+      "game_by_game_reconciliation_2026_10_27": {
+        "games": [
+          {
+            "date": "2026-10-21",
+            "points": 12,
+            "rebounds": 3,
+            "assists": 2
+          },
+          {
+            "date": "2026-10-23",
+            "points": 18,
+            "rebounds": 13,
+            "assists": 6
+          },
+          {
+            "date": "2026-10-24",
+            "points": 26,
+            "rebounds": 9,
+            "assists": 5
+          },
+          {
+            "date": "2026-10-26",
+            "points": 31,
+            "rebounds": 12,
+            "assists": 6
+          }
+        ],
+        "source": "https://cdn-uat.nba.com/player/1642865",
+        "note": "Four regular-season box scores from NBA player game log. Excludes October 16 preseason game.",
+        "points_average": 21.75,
+        "rebounds_average": 9.25,
+        "assists_average": 4.75
+      },
+      "audited_box_scores": [
+        {
+          "date": "2026-10-21",
+          "opponent": "LAL",
+          "points": 12,
+          "rebounds": 3,
+          "assists": 2
+        },
+        {
+          "date": "2026-10-23",
+          "opponent": "MEM",
+          "points": 18,
+          "rebounds": 13,
+          "assists": 6
+        },
+        {
+          "date": "2026-10-24",
+          "opponent": "PHX",
+          "points": 26,
+          "rebounds": 9,
+          "assists": 5
+        },
+        {
+          "date": "2026-10-26",
+          "opponent": "DEN",
+          "points": 31,
+          "rebounds": 12,
+          "assists": 6
+        }
+      ],
+      "audited_totals": {
+        "points": 87,
+        "rebounds": 37,
+        "assists": 19
+      },
+      "audited_averages": {
+        "points": 21.75,
+        "rebounds": 9.25,
+        "assists": 4.75
+      },
+      "audited_games": 4,
+      "audited_sources": [
+        "https://www.statmuse.com/nba/player/yaxel-lendeborg-30683/game-log?playerStatsBreakdown=perGame&seasonYear=2027",
+        "https://www.cbssports.com/nba/players/29231622/yaxel-lendeborg/game-log/"
+      ],
+      "audited_scope": "four regular-season games, through 2026-10-26",
+      "screenshot_verified_stats": {
+        "ppg": 21.8,
+        "rpg": 9.3,
+        "apg": 4.8,
+        "mpg": 33.3,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Caleb Wilson",
+      "team": "Bulls",
+      "analysis": "Wilson combines mobility, finishing and weak-side defense with a growing face-up game. Chicago is allowing him to develop through mistakes, and his early scoring and rebounding justify a top-two place.",
+      "expanded_analysis": "Wilson’s long-term projection is why we have been watching him closely. We see elements of Kevin Garnett’s rangy frame and motor, Rasheed Wallace’s multi-positional tools, and Jermaine O’Neal’s two-way instincts. That is a stylistic comparison, not a claim that he has already reached their level. His 17 points, five rebounds and two blocks in the 134–99 loss to Boston showed individual flashes against a much more cohesive opponent. Chicago must give him opportunities to make reads through mistakes, especially against physical frontcourts.",
+      "evidence_status": "selected stats verified",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 21.0,
+        "rpg": 7.3,
+        "apg": 1.8,
+        "mpg": 34.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Cam Boozer",
+      "team": "Grizzlies",
+      "analysis": "Boozer contributes rebounding, interior scoring and connective passing on a Memphis team that has started well. The next test is producing against tougher frontcourts without forcing offense.",
+      "expanded_analysis": "Boozer is contributing to a 4–0 Memphis team without needing the offense built around him. His 13 points in the 110–105 win over Utah illustrate how he can fit beside the guards and still supply reliable finishing. We want to track his defensive positioning, rebounding in traffic and how his touches change against stronger competition. Being third on our board is a recognition of his role in winning, not a prediction that his usage will stay limited.",
+      "evidence_status": "selected stats verified",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 15.3,
+        "rpg": 10.5,
+        "apg": 4.8,
+        "mpg": 33.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Darius Acuff Jr.",
+      "team": "Kings",
+      "analysis": "Acuff’s early 30-point game illustrates his green light and ability to create a shot. Improving efficiency and balancing scoring with lead-guard responsibilities will define his trajectory.",
+      "expanded_analysis": "Acuff has already delivered a 30-point game early in his career, an important indicator of the scoring responsibility Sacramento is willing to hand him. We like his ability to create pressure off the dribble and manufacture a shot late in the clock. The next test is whether he can combine those scoring bursts with efficient playmaking and defensive consistency while the Kings search for their first win.",
+      "evidence_status": "editorial assessment; game-by-game stats pending",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 22.3,
+        "rpg": 2.7,
+        "apg": 4.7,
+        "mpg": 36.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Darryn Peterson",
+      "team": "Jazz",
+      "analysis": "Peterson brings shot creation and perimeter scoring to Utah. The fit with Keyonte George, Ace Bailey and the other young pieces depends on decision-making as much as shotmaking.",
+      "expanded_analysis": "Peterson is entering a Utah backcourt with Keyonte George and Isaiah Collier, while Lauri Markkanen and Ace Bailey demand their own touches. He contributed 14 points and seven rebounds against Memphis. His value is not simply whether he leads the Jazz in scoring right away; it is how quickly he learns to create good looks without freezing the rest of the offense. We want to see his off-ball movement, defensive effort and late-clock decisions.",
+      "evidence_status": "selected stats verified",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 11.5,
+        "rpg": 4.3,
+        "apg": 2.5,
+        "mpg": 29.3,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Keaton Wagler",
+      "team": "Clippers",
+      "analysis": "Wagler can shoot and handle secondary playmaking responsibilities. More consistent minutes will reveal whether he can hold up against NBA defensive attention.",
+      "expanded_analysis": "Opportunity matters in a rookie race. With the Clippers working through their early-season rotation, Wagler has a chance to earn a larger role. We will evaluate the quality of his possessions rather than assume that more minutes automatically equal progress: can he keep the ball moving, defend his matchup and create a dependable scoring action when the offense stalls?",
+      "evidence_status": "editorial assessment; game-by-game stats pending",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 13.0,
+        "rpg": 4.3,
+        "apg": 4.0,
+        "mpg": 26.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Trevon Brazile",
+      "team": "Nuggets",
+      "analysis": "Brazile gives Denver size, activity, vertical finishing and rebounding. His early bench production is encouraging; improved defensive positioning and dependable shooting will expand his role.",
+      "expanded_analysis": "Brazile is with Denver, where frontcourt minutes must be earned around Nikola Jokić and a veteran offensive structure. His athleticism can give the Nuggets vertical spacing and energy, but we need to see reliable screening, defensive rotations and rebounding against NBA size. His ranking is a developmental assessment, not a claim that he has already secured a permanent rotation role.",
+      "evidence_status": "editorial assessment; game-by-game stats pending",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 9.0,
+        "rpg": 7.3,
+        "apg": 0.0,
+        "mpg": 21.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Brayden Burries",
+      "team": "Bucks",
+      "analysis": "Burries has shown flashes as a scorer in Milwaukee’s crowded guard rotation. The priority is efficiency, defensive reliability and earning consistent minutes.",
+      "expanded_analysis": "Burries is with Milwaukee. The opportunity is to bring pace and perimeter energy to a club looking for steadier guard play. We will track whether his decision-making keeps up with his aggression, especially when he faces pressure at the point of attack. He belongs on the board because of the early promise, while his offensive efficiency and defensive consistency still need a larger sample.",
+      "evidence_status": "editorial assessment; game-by-game stats pending",
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 7.3,
+        "rpg": 3.3,
+        "apg": 1.5,
+        "mpg": 14.3,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Meleek Thomas",
+      "team": "Cavaliers",
+      "analysis": "Thomas scored 16 off Cleveland’s bench in his debut, a meaningful spark in a limited sample. We need several more games before making larger claims about his role.",
+      "expanded_analysis": "Thomas made his NBA debut in Cleveland’s 127–125 overtime win over Minnesota and scored 16 points off the bench. That matters because his first opportunity came in a competitive game, not empty minutes. We are encouraged by his catch-and-shoot confidence and willingness to play within the Cavaliers’ veteran offense, but one game is too small a sample to make claims about season-long efficiency or a guaranteed role.",
+      "evidence_status": "selected stats verified",
+      "verified_box_score_2026_10_26": {
+        "opponent": "Minnesota Timberwolves",
+        "result": "W 127–125 OT",
+        "points": 16,
+        "field_goals": "6-10",
+        "three_pointers": "4-5",
+        "minutes": "19:07"
+      },
+      "fact_checked_stats": {
+        "scope": "Oct 26 NBA debut",
+        "points": 16,
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      "statistics_status": "Verified against user-supplied screenshot for PTS/TRB/AST/MP only",
+      "screenshot_verified_stats": {
+        "ppg": 16.0,
+        "rpg": 2.0,
+        "apg": 0.0,
+        "mpg": 19.0,
+        "source": "User-supplied Basketball-Reference 2026-27 rookies table screenshots, 2026-10-27"
+      }
+    },
+    {
+      "rank": 10,
+      "player": "AJ Dybantsa",
+      "team": "Wizards",
+      "analysis": "Dybantsa retains this spot provisionally on upside alone. He must appear in a regular-season game before the next ranking to remain eligible; otherwise an active rookie takes his place.",
+      "expanded_analysis": "Dybantsa remains tenth on our board as an explicitly conditional projection. We have not counted an NBA debut or invented production. Under the 4DK rule, he must appear in a regular-season game before the next ranking or he leaves the Top 10 until he plays. This is a one-week grace period, not an exception to our performance-first standard.",
+      "evidence_status": "editorial assessment; game-by-game stats pending",
+      "statistics_status": "No current-season stat line visible in supplied screenshots; DO NOT fabricate averages",
+      "availability_as_of_2026_10_27": {
+        "games_played": 0,
+        "status": "Awaiting NBA regular-season debut; ankle injury",
+        "source": "https://www.nba.com/news/aj-dybantsa-to-miss-season-opener-2026-27",
+        "as_of": "2026-10-27 afternoon"
+      }
+    }
+  ],
+  "rules": {
+    "AJ Dybantsa": "Must play before next edition to remain eligible"
+  },
+  "verification_note": "All team records checked as of end of games October 26. No current-season player averages claimed verified by this audit.",
+  "source_audit": [
+    {
+      "source": "NBA Starting 5, October 27 2026",
+      "url": "https://www.nba.com/news/starting-5-october-27-2026",
+      "supports": "Monday games; 4-0 clubs; OKC injuries; Sengun and Jerome"
+    },
+    {
+      "source": "NBA October 26 scores",
+      "url": "https://www.nba.com/",
+      "supports": "final scores and selected standings"
+    },
+    {
+      "source": "Basketball Reference October 26 scoreboard and standings",
+      "url": "https://www.basketball-reference.com/boxscores/",
+      "supports": "Monday box-score leaders; team records"
+    },
+    {
+      "source": "NBA Yaxel Lendeborg player game log",
+      "url": "https://www.nba.com/player/1642865",
+      "supports": "Lendeborg game-by-game statistics"
+    }
+  ],
+  "record_audit": {
+    "source": "https://www.basketball-reference.com/boxscores/",
+    "as_of": "2026-10-26",
+    "teams_verified": 30
+  },
+  "verification_addendum": {
+    "cutoff": "2026-10-26",
+    "sources": [
+      "https://www.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+      "https://www.nba.com/news/starting-5-october-27-2026",
+      "https://www.basketball-reference.com/boxscores/",
+      "https://www.basketball-reference.com/friv/dailyleaders.cgi?type=rookie"
+    ],
+    "status": "editorial review only, no site navigation changes"
+  },
+  "mvp_deep_dive_review_date": "2026-10-27",
+  "game_log_audit": {
+    "source": "https://statsnext.com/nba/games",
+    "crosscheck": "https://www.basketball-reference.com/boxscores/",
+    "games_verified": 52,
+    "teams": 30,
+    "cutoff": "2026-10-26",
+    "method": "Every regular-season game Oct 20-26 reconciled to published 30 team W-L records"
+  },
+  "verified_player_stats": {
+    "Ty Jerome": {
+      "scope": "Oct 20–25 only (3 games)",
+      "ppg": 34.7,
+      "apg": 6.0,
+      "fg_pct": 56.3,
+      "award": "Western Conference Player of the Week",
+      "source": "https://www.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+      "oct26": "15 PTS, 8 AST, 4/15 FG vs Utah; weekly award averages must NOT be represented as four-game season averages"
+    },
+    "Tyrese Maxey": {
+      "scope": "Oct 20–25 (4 games)",
+      "ppg": 28.8,
+      "rpg": 4.0,
+      "apg": 4.8,
+      "spg": 2.0,
+      "bpg": 1.0,
+      "award": "Eastern Conference Player of the Week",
+      "source": "https://www.nba.com/sixers/news/tyrese-maxey-named-eastern-conference-player-of-the-week-2"
+    },
+    "Anthony Edwards": {
+      "scope": "Oct 26 single game",
+      "points": 47,
+      "result": "125–127 OT loss to Cleveland",
+      "source": "https://www.nba.com/news/starting-5-october-27-2026"
+    },
+    "Giannis Antetokounmpo": {
+      "scope": "Oct 26 single game",
+      "points": 29,
+      "rebounds": 14,
+      "assists": 11,
+      "result": "109–113 loss to Dallas",
+      "source": "https://www.nba.com/news/starting-5-october-27-2026"
+    },
+    "Yaxel Lendeborg": {
+      "scope": "first four games through Oct 26",
+      "ppg": 21.75,
+      "rpg": 9.25,
+      "apg": 4.75,
+      "oct26": "31 PTS, 12 REB, 6 AST at Denver",
+      "source": "https://www.nba.com/news/starting-5-october-27-2026"
+    },
+    "Meleek Thomas": {
+      "scope": "Oct 26 NBA debut",
+      "points": 16,
+      "source": "https://www.nba.com/news/starting-5-october-27-2026"
+    }
+  },
+  "editorial_corrections_2026_10_27": {
+    "Ty Jerome": "29.75 PPG and 6.5 APG after four games; 34.7 PPG/6.0 APG only for Oct 20-25 award window",
+    "Tyrese Maxey": "28.75 PPG/4.75 APG/4.0 RPG through four games, rounded in NBA reporting to 28.8/4.8/4.0",
+    "status": "Stat scopes verified; other MVP and rookie statistics still require individual audits"
+  },
+  "editorial_hub": "nba-4dk-oct27-editorial-hub.html",
+  "score_verification_2026_10_27": {
+    "source": "NBA schedule data, October 20–26, 2026",
+    "games_crosschecked": 52,
+    "team_records_recomputed": 30,
+    "result": "PASS",
+    "hub_link_check": "PASS after one broken link fixed",
+    "statistical_scope": "Team scores and records only; individual statistics and injury reports remain partial"
+  },
+  "injury_ledger": {
+    "as_of": "2026-10-27",
+    "entries": [
+      {
+        "team": "Oklahoma City Thunder",
+        "player": "Jalen Williams",
+        "injury": "fractured left fibula and dislocated ankle",
+        "status": "Surgery required; return timetable not announced",
+        "verification": "confirmed",
+        "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+      },
+      {
+        "team": "Oklahoma City Thunder",
+        "player": "Cason Wallace",
+        "injury": "torn left shoulder labrum",
+        "status": "Surgery required; return timetable not announced",
+        "verification": "confirmed",
+        "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+      },
+      {
+        "team": "Orlando Magic",
+        "player": "Paolo Banchero",
+        "injury": "right high ankle sprain",
+        "status": "PRIOR ESTIMATE RETRACTED; primary verification required",
+        "verification": "UNVERIFIED",
+        "source": "https://www.basketball-reference.com/friv/injuries.cgi"
+      },
+      {
+        "team": "Toronto Raptors",
+        "player": "Kawhi Leonard",
+        "injury": "knee",
+        "status": "NBA reports at least one week out with left knee swelling; no confirmed return date",
+        "verification": "CONFIRMED NBA REPORT",
+        "source": "https://www.nba.com/news/kawhi-leonard-knee-out-at-least-a-week"
+      },
+      {
+        "team": "Sacramento Kings",
+        "player": "Keegan Murray",
+        "injury": "ankle",
+        "status": "Reported out; third-party estimated date is not a team-confirmed return",
+        "verification": "reported",
+        "source": "https://www.cbssports.com/nba/injuries/"
+      },
+      {
+        "team": "Sacramento Kings",
+        "player": "Ben Simmons",
+        "injury": "Achilles",
+        "status": "Listed out for season by injury tracker; seek primary confirmation",
+        "verification": "needs primary confirmation",
+        "source": "https://www.cbssports.com/nba/injuries/"
+      },
+      {
+        "team": "Washington Wizards",
+        "player": "AJ Dybantsa",
+        "injury": "ankle",
+        "status": "Game-time decision on Oct 26 tracker; verify next game participation",
+        "verification": "reported",
+        "source": "https://www.cbssports.com/nba/injuries/daily/"
+      },
+      {
+        "team": "Utah Jazz",
+        "player": "Lauri Markkanen",
+        "injury": "wrist",
+        "status": "Game-time decision on Oct 26 tracker; not a confirmed absence",
+        "verification": "reported",
+        "source": "https://www.cbssports.com/nba/injuries/daily/"
+      }
+    ],
+    "scope": "Selected notable injuries, NOT a complete league-wide report",
+    "official_source": "https://official.nba.com/nba-injury-report-2026-27-season"
+  },
+  "player_stats_verification_2026_10_27": {
+    "verified_players": [
+      "Ty Jerome",
+      "Tyrese Maxey",
+      "Yaxel Lendeborg"
+    ],
+    "count": 3,
+    "unverified_mvp_count": 8,
+    "unverified_rookie_count": 9,
+    "scope": "partial, publication HOLD",
+    "sources": [
+      "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+      "https://cdn-uat.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week",
+      "https://cdn-uat.nba.com/player/1642865"
+    ]
+  },
+  "release_audit_2026_10_27": {
+    "edition": "2026-10-27",
+    "publication_decision": "HOLD — not fully verified",
+    "checks": {
+      "opening_week_results": {
+        "status": "PASS",
+        "count": 52,
+        "sources": [
+          "https://www.nba.com/",
+          "https://www.basketball-reference.com/boxscores/",
+          "https://statsnext.com/nba/games"
+        ]
+      },
+      "team_records": {
+        "status": "PASS",
+        "count": 30,
+        "method": "all 104 team-game results reconcile to 52 games"
+      },
+      "ranking_integrity": {
+        "status": "PASS",
+        "counts": {
+          "power30": 30,
+          "mvp": 10,
+          "rookies": 10
+        }
+      },
+      "player_averages": {
+        "status": "PARTIAL",
+        "scoped_verified": [
+          "Ty Jerome",
+          "Tyrese Maxey",
+          "Yaxel Lendeborg"
+        ],
+        "pending": 17,
+        "warning": "Some verified averages are for only three games; check date ranges"
+      },
+      "rosters_and_transactions": {
+        "status": "PENDING",
+        "warning": "All 20 MVP/rookie team affiliations and Power 30 roster claims require direct roster audit"
+      },
+      "injury_reports": {
+        "status": "PARTIAL",
+        "warning": "Selected reports only; prior Banchero claim unconfirmed; Leonard updated"
+      },
+      "editorial_prose": {
+        "status": "PENDING",
+        "warning": "Every narrative player/score/injury assertion requires source-level crosscheck"
+      },
+      "site_navigation_mobile": {
+        "status": "PENDING",
+        "warning": "Standalone preview is not live navigation; responsive browser regression not performed"
+      }
+    },
+    "corrected_injuries": {
+      "Kawhi Leonard": "Raptors confirmed out at least one week due to left knee swelling, Oct 27",
+      "Paolo Banchero": "Previously reported 4–6 week absence unverified; suppress"
+    },
+    "release_rule": "Do not publish as fact-checked until all pending gates pass"
+  },
+  "primary_source_recheck_2026_10_27": {
+    "checks": [
+      {
+        "subject": "Ty Jerome",
+        "status": "CONFIRMED",
+        "claim": "34.7 PPG, 6.0 APG, 56.3% FG in three games Oct 20–25; not full four-game averages.",
+        "source": "https://www.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week"
+      },
+      {
+        "subject": "Tyrese Maxey",
+        "status": "CONFIRMED",
+        "claim": "28.8 PPG, 4.0 RPG, 4.8 APG in four games Oct 20–25; 3–1 Sixers.",
+        "source": "https://www.nba.com/sixers/news/tyrese-maxey-named-eastern-conference-player-of-the-week-2"
+      },
+      {
+        "subject": "Yaxel Lendeborg",
+        "status": "CONFIRMED SINGLE GAME",
+        "claim": "31 points, 12 rebounds, 6 assists against Denver Oct 26. Full season averages not independently rechecked in this pass.",
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      {
+        "subject": "Ty Jerome",
+        "status": "CONFIRMED SINGLE GAME",
+        "claim": "15 points, 8 assists, 4-for-15 shooting against Utah Oct 26.",
+        "source": "https://www.nba.com/news/starting-5-october-27-2026"
+      },
+      {
+        "subject": "Jalen Williams",
+        "status": "CONFIRMED",
+        "claim": "Broken left fibula and dislocated left ankle; surgery required; no return date established.",
+        "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+      },
+      {
+        "subject": "Cason Wallace",
+        "status": "CONFIRMED",
+        "claim": "Left shoulder labral tear; surgery required; no return date established.",
+        "source": "https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery"
+      },
+      {
+        "subject": "Kawhi Leonard",
+        "status": "CONFIRMED",
+        "claim": "Left knee swelling; to miss at least a week per NBA reporting; no definitive return date.",
+        "source": "https://www.nba.com/news/ty-jerome-tyrese-maxey-named-nba-players-of-the-week"
+      },
+      {
+        "subject": "Paolo Banchero",
+        "status": "RETRACT PRIOR CLAIM",
+        "claim": "Earlier 4–6 week high-ankle-sprain assertion lacks adequate primary confirmation in this pass. Do not publish it as fact.",
+        "source": "https://www.nba.com/"
+      },
+      {
+        "subject": "AJ Dybantsa",
+        "status": "NOT CONFIRMED OUT",
+        "claim": "Third-party game-time-decision designation is not proof of a missed game. Check official game participation.",
+        "source": "https://www.cbssports.com/nba/injuries/"
+      }
+    ],
+    "scope": "Targeted verification; not all player profiles or all injury reports",
+    "release_status": "HOLD"
+  },
+  "release_gate": {
+    "status": "HOLD",
+    "reason": "Remaining MVP screenshot verification, rookie AJ availability, injury audit, editorial and rendered-site QA incomplete",
+    "next_step": "Finish checks before final publication"
+  },
+  "release_status": "HOLD — review pages contain incomplete injury/roster audit; all three boards must pass before publication",
+  "screenshot_verification_2026_10_27": {
+    "mvp_players": [
+      "Nikola Jokić",
+      "Victor Wembanyama",
+      "Jayson Tatum"
+    ],
+    "rookies": [
+      "Yaxel Lendeborg",
+      "Caleb Wilson",
+      "Cam Boozer",
+      "Darius Acuff Jr.",
+      "Darryn Peterson",
+      "Keaton Wagler",
+      "Trevon Brazile",
+      "Brayden Burries",
+      "Meleek Thomas"
+    ],
+    "missing_rookie": "AJ Dybantsa",
+    "notes": "Stats read directly from six screenshots. GP is not visible for rookies; do not infer games from minutes or totals. Snapshot through games Oct 26."
+  },
+  "publication_cutoff": "2026-10-27 afternoon PT, completed games through 2026-10-26"
+}

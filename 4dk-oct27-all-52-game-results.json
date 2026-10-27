@@ -1,0 +1,366 @@
+[
+  {
+    "date": "2026-10-26",
+    "away": "GSW",
+    "home": "DEN",
+    "away_points": 134,
+    "home_points": 114
+  },
+  {
+    "date": "2026-10-26",
+    "away": "MEM",
+    "home": "UTA",
+    "away_points": 110,
+    "home_points": 105
+  },
+  {
+    "date": "2026-10-26",
+    "away": "ATL",
+    "home": "HOU",
+    "away_points": 110,
+    "home_points": 120
+  },
+  {
+    "date": "2026-10-26",
+    "away": "PHX",
+    "home": "OKC",
+    "away_points": 114,
+    "home_points": 125
+  },
+  {
+    "date": "2026-10-26",
+    "away": "IND",
+    "home": "MIL",
+    "away_points": 102,
+    "home_points": 110
+  },
+  {
+    "date": "2026-10-26",
+    "away": "DAL",
+    "home": "MIA",
+    "away_points": 113,
+    "home_points": 109
+  },
+  {
+    "date": "2026-10-26",
+    "away": "CHI",
+    "home": "BOS",
+    "away_points": 99,
+    "home_points": 134
+  },
+  {
+    "date": "2026-10-26",
+    "away": "WAS",
+    "home": "CHA",
+    "away_points": 103,
+    "home_points": 110
+  },
+  {
+    "date": "2026-10-26",
+    "away": "MIN",
+    "home": "CLE",
+    "away_points": 125,
+    "home_points": 127
+  },
+  {
+    "date": "2026-10-25",
+    "away": "MEM",
+    "home": "SAC",
+    "away_points": 123,
+    "home_points": 112
+  },
+  {
+    "date": "2026-10-25",
+    "away": "DET",
+    "home": "PHI",
+    "away_points": 106,
+    "home_points": 93
+  },
+  {
+    "date": "2026-10-25",
+    "away": "LAC",
+    "home": "OKC",
+    "away_points": 101,
+    "home_points": 108
+  },
+  {
+    "date": "2026-10-25",
+    "away": "ORL",
+    "home": "NYK",
+    "away_points": 111,
+    "home_points": 102
+  },
+  {
+    "date": "2026-10-25",
+    "away": "TOR",
+    "home": "MIN",
+    "away_points": 94,
+    "home_points": 117
+  },
+  {
+    "date": "2026-10-25",
+    "away": "IND",
+    "home": "BKN",
+    "away_points": 136,
+    "home_points": 109
+  },
+  {
+    "date": "2026-10-25",
+    "away": "LAL",
+    "home": "UTA",
+    "away_points": 132,
+    "home_points": 123
+  },
+  {
+    "date": "2026-10-24",
+    "away": "GSW",
+    "home": "PHX",
+    "away_points": 122,
+    "home_points": 131
+  },
+  {
+    "date": "2026-10-24",
+    "away": "NOP",
+    "home": "DEN",
+    "away_points": 135,
+    "home_points": 141
+  },
+  {
+    "date": "2026-10-24",
+    "away": "HOU",
+    "home": "ATL",
+    "away_points": 121,
+    "home_points": 114
+  },
+  {
+    "date": "2026-10-24",
+    "away": "SAS",
+    "home": "DAL",
+    "away_points": 122,
+    "home_points": 106
+  },
+  {
+    "date": "2026-10-24",
+    "away": "WAS",
+    "home": "CHI",
+    "away_points": 124,
+    "home_points": 120
+  },
+  {
+    "date": "2026-10-24",
+    "away": "BKN",
+    "home": "CLE",
+    "away_points": 121,
+    "home_points": 125
+  },
+  {
+    "date": "2026-10-24",
+    "away": "MIL",
+    "home": "PHI",
+    "away_points": 116,
+    "home_points": 127
+  },
+  {
+    "date": "2026-10-24",
+    "away": "MIA",
+    "home": "CHA",
+    "away_points": 110,
+    "home_points": 115
+  },
+  {
+    "date": "2026-10-23",
+    "away": "POR",
+    "home": "SAC",
+    "away_points": 128,
+    "home_points": 120
+  },
+  {
+    "date": "2026-10-23",
+    "away": "LAC",
+    "home": "LAL",
+    "away_points": 117,
+    "home_points": 125
+  },
+  {
+    "date": "2026-10-23",
+    "away": "MEM",
+    "home": "GSW",
+    "away_points": 111,
+    "home_points": 108
+  },
+  {
+    "date": "2026-10-23",
+    "away": "NOP",
+    "home": "UTA",
+    "away_points": 119,
+    "home_points": 120
+  },
+  {
+    "date": "2026-10-23",
+    "away": "HOU",
+    "home": "SAS",
+    "away_points": 114,
+    "home_points": 110
+  },
+  {
+    "date": "2026-10-23",
+    "away": "DET",
+    "home": "MIA",
+    "away_points": 128,
+    "home_points": 111
+  },
+  {
+    "date": "2026-10-23",
+    "away": "MIN",
+    "home": "ORL",
+    "away_points": 115,
+    "home_points": 93
+  },
+  {
+    "date": "2026-10-23",
+    "away": "TOR",
+    "home": "WAS",
+    "away_points": 112,
+    "home_points": 102
+  },
+  {
+    "date": "2026-10-23",
+    "away": "ATL",
+    "home": "CHA",
+    "away_points": 128,
+    "home_points": 81
+  },
+  {
+    "date": "2026-10-23",
+    "away": "NYK",
+    "home": "BOS",
+    "away_points": 103,
+    "home_points": 107
+  },
+  {
+    "date": "2026-10-23",
+    "away": "DAL",
+    "home": "IND",
+    "away_points": 121,
+    "home_points": 105
+  },
+  {
+    "date": "2026-10-23",
+    "away": "CHI",
+    "home": "MIL",
+    "away_points": 132,
+    "home_points": 125
+  },
+  {
+    "date": "2026-10-22",
+    "away": "DEN",
+    "home": "OKC",
+    "away_points": 84,
+    "home_points": 96
+  },
+  {
+    "date": "2026-10-22",
+    "away": "CLE",
+    "home": "PHI",
+    "away_points": 106,
+    "home_points": 114
+  },
+  {
+    "date": "2026-10-21",
+    "away": "SAC",
+    "home": "LAC",
+    "away_points": 96,
+    "home_points": 121
+  },
+  {
+    "date": "2026-10-21",
+    "away": "PHX",
+    "home": "POR",
+    "away_points": 83,
+    "home_points": 124
+  },
+  {
+    "date": "2026-10-21",
+    "away": "GSW",
+    "home": "LAL",
+    "away_points": 105,
+    "home_points": 127
+  },
+  {
+    "date": "2026-10-21",
+    "away": "DAL",
+    "home": "HOU",
+    "away_points": 110,
+    "home_points": 128
+  },
+  {
+    "date": "2026-10-21",
+    "away": "UTA",
+    "home": "MEM",
+    "away_points": 103,
+    "home_points": 123
+  },
+  {
+    "date": "2026-10-21",
+    "away": "IND",
+    "home": "NOP",
+    "away_points": 123,
+    "home_points": 120
+  },
+  {
+    "date": "2026-10-21",
+    "away": "CHA",
+    "home": "BKN",
+    "away_points": 110,
+    "home_points": 103
+  },
+  {
+    "date": "2026-10-21",
+    "away": "MIN",
+    "home": "MIA",
+    "away_points": 131,
+    "home_points": 106
+  },
+  {
+    "date": "2026-10-21",
+    "away": "CHI",
+    "home": "TOR",
+    "away_points": 92,
+    "home_points": 135
+  },
+  {
+    "date": "2026-10-21",
+    "away": "MIL",
+    "home": "WAS",
+    "away_points": 116,
+    "home_points": 128
+  },
+  {
+    "date": "2026-10-21",
+    "away": "ATL",
+    "home": "ORL",
+    "away_points": 132,
+    "home_points": 125
+  },
+  {
+    "date": "2026-10-20",
+    "away": "OKC",
+    "home": "SAS",
+    "away_points": 116,
+    "home_points": 104
+  },
+  {
+    "date": "2026-10-20",
+    "away": "PHI",
+    "home": "NYK",
+    "away_points": 106,
+    "home_points": 100
+  },
+  {
+    "date": "2026-10-20",
+    "away": "BOS",
+    "home": "DET",
+    "away_points": 113,
+    "home_points": 121
+  }
+]

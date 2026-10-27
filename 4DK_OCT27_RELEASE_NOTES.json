@@ -1,0 +1,15 @@
+{
+  "edition": "2026-10-27",
+  "cutoff": "Games completed through October 26, 2026",
+  "navigation": [
+    "index.html",
+    "nba.html",
+    "nba-rankings-hq.html",
+    "rankings.html",
+    "nba-4dk-oct27-editorial-hub.html"
+  ],
+  "integrity": "All existing ZIP entries preserved; updated pages replaced in place",
+  "injury_review": "October 27 Thunder, Raptors, Jazz, Wizards updates; no speculative return dates",
+  "stat_basis": "User-supplied Basketball-Reference screenshots and existing audited box scores",
+  "caveat": "Not a live injury feed; reevaluate before each new publication"
+}
