@@ -3,3 +3,34 @@
 .wrap{max-width:1160px;margin:auto;padding:0 20px}.mast{background:#0f0e0d;border-bottom:3px solid #b88b48;padding:18px 0}.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.brand{font-weight:1000;letter-spacing:-.05em;font-size:clamp(23px,4vw,37px);text-decoration:none}.mast nav{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;font-weight:900;text-transform:uppercase}.mast nav a{text-decoration:none;color:#dec7a5}.mast nav a:hover{text-decoration:underline}
 .eyebrow{font-size:11px;color:#dcb56e;letter-spacing:.2em;font-weight:900;text-transform:uppercase}.hero{padding:55px 0 32px;border-bottom:1px solid #493528;background:radial-gradient(circle at 95% 15%,#34211c,#090909 60%)}h1{font-size:clamp(43px,8vw,90px);letter-spacing:-.07em;line-height:.93;margin:14px 0;text-transform:uppercase}h2{font-size:clamp(27px,4vw,43px);letter-spacing:-.04em;line-height:1.05}.dek{font:19px/1.55 Georgia,serif;color:#d4c7b7;max-width:800px}.muted{color:#b4a99a;font-size:13px;line-height:1.6}.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.toolbar input,.toolbar select{background:#191716;color:#f7ebda;border:1px solid #876747;border-radius:3px;padding:14px;font-size:16px;min-width:190px}.toolbar input{flex:1}.count{color:#d8b16d;font-weight:900;font-size:12px;letter-spacing:.08em}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0 65px}.card{border:1px solid #4a3830;background:#161311;display:flex;flex-direction:column;overflow:hidden}.card-top{display:flex;gap:10px;align-items:center;min-height:140px;background:linear-gradient(125deg,#382521,#151210)}.card img{width:45%;height:145px;object-fit:contain;object-position:center bottom}.card .rank{font-size:34px;font-weight:1000;color:#e6c18b}.card .name{font-size:22px;line-height:1.02;font-weight:1000;text-transform:uppercase;letter-spacing:-.04em}.card-content{padding:18px;flex:1;display:flex;flex-direction:column}.pill{font-size:10px;color:#e4b66e;text-transform:uppercase;font-weight:900;letter-spacing:.1em}.card .stats{font:13px/1.5 Georgia,serif;color:#e1d5c5;margin:12px 0 16px}.button{display:inline-block;background:#c49a5d;color:#120e0c!important;text-decoration:none;font:900 12px Arial,sans-serif;letter-spacing:.07em;padding:13px 14px;text-transform:uppercase;margin-top:auto;text-align:center}.button.secondary{background:#2d211d;color:#f6dfbc!important;border:1px solid #8c6443}.card-actions{display:grid;gap:8px;margin-top:auto}.note{border-left:4px solid #bd4337;padding:13px 17px;background:#211816;margin:20px 0;font:14px/1.6 Georgia,serif}.profile-top{display:grid;grid-template-columns:minmax(0,1fr) 38%;align-items:end;gap:15px}.profile-top img{width:100%;max-height:440px;object-fit:contain;object-position:center bottom;background:radial-gradient(circle,#53332b,#120e0d 70%)}.stats-box{padding:22px;border:1px solid #6c4d35;background:#171310;margin:24px 0}.stats-box strong{display:block;font:900 22px/1.4 Arial,sans-serif;color:#e5b974}.scouting{max-width:850px;margin:35px 0 70px}.scouting p{font:19px/1.85 Georgia,serif;color:#efe4d5;margin:0 0 22px}.foot{padding:30px 0;border-top:1px solid #5e4937;color:#b8a78f;font-size:12px} [hidden]{display:none!important}
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:570px){.grid{grid-template-columns:1fr}.profile-top{grid-template-columns:1fr}.profile-top img{max-height:310px}.hero{padding:35px 0 24px}.wrap{padding:0 15px}.card-top{min-height:125px}.card img{height:135px}}
+
+/* 4DK Player Files — mobile readability polish, 2026-10-29 */
+.card-top{min-width:0;overflow:hidden}
+.card-top>div{min-width:0;flex:1;padding:12px 12px 12px 0}
+.card .name{overflow-wrap:anywhere;word-break:normal;hyphens:auto;font-size:clamp(17px,1.85vw,22px);line-height:1.06}
+.card .rank{line-height:1.05;margin-bottom:5px}
+.card img{flex:0 0 41%;width:41%;min-width:0}
+.toolbar>*{min-width:0}
+@media(max-width:570px){
+  .toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin:18px 0 14px}
+  .toolbar input{grid-column:1/-1;width:100%;min-width:0}
+  .toolbar select{width:100%;min-width:0;padding:12px 9px;font-size:14px}
+  .card-top{min-height:145px}
+  .card img{flex-basis:42%;width:42%;height:145px}
+  .card-top>div{padding:10px 12px 10px 0}
+  .card .name{font-size:clamp(19px,5.2vw,27px);line-height:1.02;letter-spacing:-.045em}
+  .card .rank{font-size:clamp(29px,8vw,39px)}
+  .card-content{padding:16px}
+}
+@media(max-width:360px){
+  .card .name{font-size:18px}
+  .toolbar{grid-template-columns:1fr}
+  .toolbar input{grid-column:auto}
+}
+
+/* Free 2026–27 averages, additive to the historical edition */
+.live-averages{margin:12px 0;padding:12px 14px;border-left:3px solid #c9a269;background:#211b18;color:#f6e8d4;font:700 14px/1.6 Arial,sans-serif;overflow-wrap:anywhere}
+.live-averages .stat-caption{display:block;color:#e5bd80;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.live-averages .stat-meta{display:block;color:#bcae9c;font:12px/1.5 Arial,sans-serif;margin-top:5px}
+.profile-live{padding:18px 22px;margin:24px 0}
+.stats-disclosure{color:#dfc5a2;font:13px/1.6 Arial,sans-serif;margin:8px 0 20px}
