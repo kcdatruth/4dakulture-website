@@ -1,0 +1,17 @@
+name: 4DK Free NBA Averages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  setup-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check repository
+        uses: actions/checkout@v4
+
+      - name: Confirm setup
+        run: echo "4DK NBA automation workflow installed successfully"
