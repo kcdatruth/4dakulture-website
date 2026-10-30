@@ -1,0 +1,252 @@
+[
+  {
+    "rank": 1,
+    "name": "Victor Wembanyama",
+    "team": "San Antonio Spurs"
+  },
+  {
+    "rank": 2,
+    "name": "Shai Gilgeous-Alexander",
+    "team": "Oklahoma City Thunder"
+  },
+  {
+    "rank": 3,
+    "name": "Luka Dončić",
+    "team": "Los Angeles Lakers"
+  },
+  {
+    "rank": 4,
+    "name": "Nikola Jokić",
+    "team": "Denver Nuggets"
+  },
+  {
+    "rank": 5,
+    "name": "Jalen Brunson",
+    "team": "New York Knicks"
+  },
+  {
+    "rank": 6,
+    "name": "Giannis Antetokounmpo",
+    "team": "Miami Heat"
+  },
+  {
+    "rank": 7,
+    "name": "Anthony Edwards",
+    "team": "Minnesota Timberwolves"
+  },
+  {
+    "rank": 8,
+    "name": "Cade Cunningham",
+    "team": "Detroit Pistons"
+  },
+  {
+    "rank": 9,
+    "name": "Kawhi Leonard",
+    "team": "Toronto Raptors"
+  },
+  {
+    "rank": 10,
+    "name": "Jayson Tatum",
+    "team": "Boston Celtics"
+  },
+  {
+    "rank": 11,
+    "name": "Jaylen Brown",
+    "team": "Philadelphia 76ers"
+  },
+  {
+    "rank": 12,
+    "name": "Stephen Curry",
+    "team": "Golden State Warriors"
+  },
+  {
+    "rank": 13,
+    "name": "Tyrese Maxey",
+    "team": "Philadelphia 76ers"
+  },
+  {
+    "rank": 14,
+    "name": "Kevin Durant",
+    "team": "Houston Rockets"
+  },
+  {
+    "rank": 15,
+    "name": "Donovan Mitchell",
+    "team": "Cleveland Cavaliers"
+  },
+  {
+    "rank": 16,
+    "name": "Jalen Johnson",
+    "team": "Atlanta Hawks"
+  },
+  {
+    "rank": 17,
+    "name": "Bam Adebayo",
+    "team": "Miami Heat"
+  },
+  {
+    "rank": 18,
+    "name": "Scottie Barnes",
+    "team": "Toronto Raptors"
+  },
+  {
+    "rank": 19,
+    "name": "Paolo Banchero",
+    "team": "Orlando Magic"
+  },
+  {
+    "rank": 20,
+    "name": "Jamal Murray",
+    "team": "Denver Nuggets"
+  },
+  {
+    "rank": 21,
+    "name": "LeBron James",
+    "team": "Philadelphia 76ers"
+  },
+  {
+    "rank": 22,
+    "name": "Devin Booker",
+    "team": "Phoenix Suns"
+  },
+  {
+    "rank": 23,
+    "name": "Karl-Anthony Towns",
+    "team": "New York Knicks"
+  },
+  {
+    "rank": 24,
+    "name": "Tyrese Haliburton",
+    "team": "Indiana Pacers"
+  },
+  {
+    "rank": 25,
+    "name": "LaMelo Ball",
+    "team": "Minnesota Timberwolves"
+  },
+  {
+    "rank": 26,
+    "name": "Chet Holmgren",
+    "team": "Oklahoma City Thunder"
+  },
+  {
+    "rank": 27,
+    "name": "Joel Embiid",
+    "team": "Philadelphia 76ers"
+  },
+  {
+    "rank": 28,
+    "name": "Trae Young",
+    "team": "Washington Wizards"
+  },
+  {
+    "rank": 29,
+    "name": "Anthony Davis",
+    "team": "Washington Wizards"
+  },
+  {
+    "rank": 30,
+    "name": "Evan Mobley",
+    "team": "Cleveland Cavaliers"
+  },
+  {
+    "rank": 31,
+    "name": "Stephon Castle",
+    "team": "San Antonio Spurs"
+  },
+  {
+    "rank": 32,
+    "name": "Jalen Williams",
+    "team": "Oklahoma City Thunder"
+  },
+  {
+    "rank": 33,
+    "name": "Franz Wagner",
+    "team": "Orlando Magic"
+  },
+  {
+    "rank": 34,
+    "name": "Pascal Siakam",
+    "team": "Indiana Pacers"
+  },
+  {
+    "rank": 35,
+    "name": "Austin Reaves",
+    "team": "Los Angeles Lakers"
+  },
+  {
+    "rank": 36,
+    "name": "OG Anunoby",
+    "team": "New York Knicks"
+  },
+  {
+    "rank": 37,
+    "name": "Alperen Şengün",
+    "team": "Houston Rockets"
+  },
+  {
+    "rank": 38,
+    "name": "James Harden",
+    "team": "Cleveland Cavaliers"
+  },
+  {
+    "rank": 39,
+    "name": "Amen Thompson",
+    "team": "Houston Rockets"
+  },
+  {
+    "rank": 40,
+    "name": "Deni Avdija",
+    "team": "Portland Trail Blazers"
+  },
+  {
+    "rank": 41,
+    "name": "Jalen Duren",
+    "team": "Detroit Pistons"
+  },
+  {
+    "rank": 42,
+    "name": "Julius Randle",
+    "team": "Brooklyn Nets"
+  },
+  {
+    "rank": 43,
+    "name": "Darius Garland",
+    "team": "Los Angeles Clippers"
+  },
+  {
+    "rank": 44,
+    "name": "Cooper Flagg",
+    "team": "Dallas Mavericks"
+  },
+  {
+    "rank": 45,
+    "name": "Zion Williamson",
+    "team": "New Orleans Pelicans"
+  },
+  {
+    "rank": 46,
+    "name": "De’Aaron Fox",
+    "team": "San Antonio Spurs"
+  },
+  {
+    "rank": 47,
+    "name": "Domantas Sabonis",
+    "team": "Sacramento Kings"
+  },
+  {
+    "rank": 48,
+    "name": "Ja Morant",
+    "team": "Portland Trail Blazers"
+  },
+  {
+    "rank": 49,
+    "name": "Kyrie Irving",
+    "team": "Dallas Mavericks"
+  },
+  {
+    "rank": 50,
+    "name": "Josh Giddey",
+    "team": "Chicago Bulls"
+  }
+]
