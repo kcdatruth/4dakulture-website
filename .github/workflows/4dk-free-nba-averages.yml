@@ -3,7 +3,9 @@ name: 4DK Free NBA Season Averages
 on:
   workflow_dispatch:
   schedule:
+    # Morning and late-night Pacific refreshes; UTC times shift by an hour with DST.
     - cron: '35 13 * * *'
+    - cron: '35 7 * * *'
 
 permissions:
   contents: write
