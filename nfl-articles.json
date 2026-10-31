@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updated": "2026-10-30",
+  "articles": [
+    {"type":"TNF","date":"2026-10-29","week":8,"title":"LOVE DELIVERS. GREEN BAY SURVIVES. BUT THE CRACKS REMAIN.","summary":"Green Bay beats Carolina 27–19. Love and the pass rush deliver, but late-game execution leaves questions.","score":"GB 27 · CAR 19","url":"nfl-tnf-packers-panthers-oct29-2026.html"},
+    {"type":"TNF","date":"2026-10-15","week":6,"title":"SEAHAWKS AT BRONCOS — THURSDAY NIGHT RECAP","summary":"The Week 6 Thursday night deep dive.","url":"nfl-tnf-seahawks-broncos-oct15-2026.html"},
+    {"type":"TNF","date":"2026-10-08","week":5,"title":"DALLAS LET ONE GET AWAY","summary":"Tampa Bay's Week 5 Thursday night win.","score":"TB 24 · DAL 16","url":"nfl-thursday-recap-week5-buccaneers-cowboys.html"},
+    {"type":"TNF","date":"2026-10-02","week":4,"title":"CLEVELAND IS 3–1. NOW WHAT?","summary":"Cleveland's Week 4 Thursday night win.","score":"CLE 27 · PIT 24","url":"nfl-thursday-recap-week4-steelers-browns.html"},
+    {"type":"TNF","date":"2026-09-24","week":3,"title":"PENIX IS BACK. BIJAN TOOK OVER.","summary":"Atlanta's Week 3 Thursday night statement.","score":"ATL 35 · GB 14","url":"nfl-thursday-recap-week3-falcons-packers.html"},
+    {"type":"TNF","date":"2026-09-17","week":2,"title":"THE HOUSE THAT ALLEN BUILT","summary":"Buffalo's Week 2 Thursday night win.","score":"BUF 41 · DET 31","url":"nfl-thursday-recap-week2-bills-lions.html"},
+    {"type":"MNF","date":"2026-10-26","week":7,"title":"COWBOYS AT EAGLES — MONDAY NIGHT RECAP","summary":"Dallas defeats Philadelphia.","score":"DAL 38 · PHI 21","url":"nfl-mnf-cowboys-eagles-week7-2026.html"},
+    {"type":"SNF","date":"2026-10-25","week":7,"title":"SEAHAWKS AT CHIEFS — SUNDAY NIGHT RECAP","summary":"Seattle's Week 7 Sunday night victory.","score":"SEA 20 · KC 3","url":"nfl-snf-seahawks-chiefs-week7-2026.html"},
+    {"type":"SUNDAY","date":"2026-10-25","week":7,"title":"WEEK 7: UNBEATEN NO MORE.","summary":"4DK's complete Week 7 Sunday breakdown.","url":"nfl-sunday-recap-week7-2026.html"}
+  ]
+}
