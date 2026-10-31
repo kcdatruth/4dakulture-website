@@ -35,9 +35,9 @@ def main():
  reb_names=['reb','trb','rebounds','total_rebounds']
  ast_names=['ast','assists','total_assists']
  stl_names=['stl','steals']; blk_names=['blk','blocks']
- fgm_names=['fgm','field_goals_made']; fga_names=['fga','field_goals_attempted']
- tpm_names=['fg3m','3pm','three_pointers_made']; tpa_names=['fg3a','3pa','three_pointers_attempted']
- ftm_names=['ftm','free_throws_made']; fta_names=['fta','free_throws_attempted']
+ fgm_names=['fgm','field_goals_made']; fga_names=['fga','field_goals_attempted','field_goal_attempts']
+  tpm_names=['fg3m','3pm','three_pointers_made','three_point_makes']; tpa_names=['fg3a','3pa','three_pointers_attempted','three_point_attempts']
+  ftm_names=['ftm','free_throws_made']; fta_names=['fta','free_throws_attempted','free_throw_attempts']
  if choose(rows[0],player_names) is None:raise ValueError('Player-name column missing')
  if choose(rows[0],games_names) is None:raise ValueError('Games column missing')
  for col in (pts_names,reb_names,ast_names):
