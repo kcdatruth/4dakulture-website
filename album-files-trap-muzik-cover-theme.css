@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-trap-muzik.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#100e10;--album-glow:#34272b;--album-accent:#b73332;--album-gold:#d5b47b;--album-cream:#f3e8dc;}
+html{background:#100e10;}
+body{background:#100e10 !important;color:#f3e8dc;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#34272b 0%,transparent 60%),linear-gradient(145deg,#100e10 4%,#34272b 100%) !important;border-bottom:2px solid #b73332;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#d5b47b;}
+main{background:linear-gradient(180deg,#100e10,#0b0b0e 45%,#100e10);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#34272b;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#34272b44,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f3e8dc;}
+.track p,.section p,.prose p{color:#f3e8dc;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#d5b47b;}
+.track-num,.section-num{color:#b73332;}
+blockquote{border-left-color:#b73332;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#34272b,transparent 65%),#100e10;border-color:#d5b47b;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#34272b,transparent 60%),#100e10 !important;}}

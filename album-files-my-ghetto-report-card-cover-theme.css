@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-my-ghetto-report-card.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#0c1712;--album-glow:#214b37;--album-accent:#bb913c;--album-gold:#e4bf73;--album-cream:#f3e8d5;}
+html{background:#0c1712;}
+body{background:#0c1712 !important;color:#f3e8d5;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#214b37 0%,transparent 60%),linear-gradient(145deg,#0c1712 4%,#214b37 100%) !important;border-bottom:2px solid #bb913c;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#e4bf73;}
+main{background:linear-gradient(180deg,#0c1712,#0b0b0e 45%,#0c1712);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#214b37;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#214b3744,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f3e8d5;}
+.track p,.section p,.prose p{color:#f3e8d5;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#e4bf73;}
+.track-num,.section-num{color:#bb913c;}
+blockquote{border-left-color:#bb913c;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#214b37,transparent 65%),#0c1712;border-color:#e4bf73;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#214b37,transparent 60%),#0c1712 !important;}}

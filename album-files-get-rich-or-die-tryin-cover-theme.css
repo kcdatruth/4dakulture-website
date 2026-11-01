@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-get-rich-or-die-tryin.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#0d1015;--album-glow:#333c46;--album-accent:#ad2839;--album-gold:#d9b4a6;--album-cream:#f5ebe2;}
+html{background:#0d1015;}
+body{background:#0d1015 !important;color:#f5ebe2;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#333c46 0%,transparent 60%),linear-gradient(145deg,#0d1015 4%,#333c46 100%) !important;border-bottom:2px solid #ad2839;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#d9b4a6;}
+main{background:linear-gradient(180deg,#0d1015,#0b0b0e 45%,#0d1015);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#333c46;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#333c4644,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f5ebe2;}
+.track p,.section p,.prose p{color:#f5ebe2;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#d9b4a6;}
+.track-num,.section-num{color:#ad2839;}
+blockquote{border-left-color:#ad2839;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#333c46,transparent 65%),#0d1015;border-color:#d9b4a6;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#333c46,transparent 60%),#0d1015 !important;}}

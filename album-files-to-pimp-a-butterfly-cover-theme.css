@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-to-pimp-a-butterfly.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#0c0d0e;--album-glow:#303236;--album-accent:#9e824c;--album-gold:#ded6c5;--album-cream:#f3eee6;}
+html{background:#0c0d0e;}
+body{background:#0c0d0e !important;color:#f3eee6;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#303236 0%,transparent 60%),linear-gradient(145deg,#0c0d0e 4%,#303236 100%) !important;border-bottom:2px solid #9e824c;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#ded6c5;}
+main{background:linear-gradient(180deg,#0c0d0e,#0b0b0e 45%,#0c0d0e);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#303236;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#30323644,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f3eee6;}
+.track p,.section p,.prose p{color:#f3eee6;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#ded6c5;}
+.track-num,.section-num{color:#9e824c;}
+blockquote{border-left-color:#9e824c;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#303236,transparent 65%),#0c0d0e;border-color:#ded6c5;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#303236,transparent 60%),#0c0d0e !important;}}

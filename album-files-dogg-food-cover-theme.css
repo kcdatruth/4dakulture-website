@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-dogg-food.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#130e11;--album-glow:#43212b;--album-accent:#b8914c;--album-gold:#e3c58c;--album-cream:#f4e9d9;}
+html{background:#130e11;}
+body{background:#130e11 !important;color:#f4e9d9;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#43212b 0%,transparent 60%),linear-gradient(145deg,#130e11 4%,#43212b 100%) !important;border-bottom:2px solid #b8914c;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#e3c58c;}
+main{background:linear-gradient(180deg,#130e11,#0b0b0e 45%,#130e11);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#43212b;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#43212b44,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f4e9d9;}
+.track p,.section p,.prose p{color:#f4e9d9;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#e3c58c;}
+.track-num,.section-num{color:#b8914c;}
+blockquote{border-left-color:#b8914c;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#43212b,transparent 65%),#130e11;border-color:#e3c58c;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#43212b,transparent 60%),#130e11 !important;}}

@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-take-care.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#16100d;--album-glow:#493021;--album-accent:#a4783d;--album-gold:#ebc38a;--album-cream:#f6eadb;}
+html{background:#16100d;}
+body{background:#16100d !important;color:#f6eadb;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#493021 0%,transparent 60%),linear-gradient(145deg,#16100d 4%,#493021 100%) !important;border-bottom:2px solid #a4783d;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#ebc38a;}
+main{background:linear-gradient(180deg,#16100d,#0b0b0e 45%,#16100d);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#493021;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#49302144,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f6eadb;}
+.track p,.section p,.prose p{color:#f6eadb;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#ebc38a;}
+.track-num,.section-num{color:#a4783d;}
+blockquote{border-left-color:#a4783d;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#493021,transparent 65%),#16100d;border-color:#ebc38a;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#493021,transparent 60%),#16100d !important;}}

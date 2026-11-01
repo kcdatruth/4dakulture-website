@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-the-infamous.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#0c1118;--album-glow:#263a50;--album-accent:#6d8290;--album-gold:#c4ced1;--album-cream:#f1eee7;}
+html{background:#0c1118;}
+body{background:#0c1118 !important;color:#f1eee7;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#263a50 0%,transparent 60%),linear-gradient(145deg,#0c1118 4%,#263a50 100%) !important;border-bottom:2px solid #6d8290;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#c4ced1;}
+main{background:linear-gradient(180deg,#0c1118,#0b0b0e 45%,#0c1118);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#263a50;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#263a5044,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f1eee7;}
+.track p,.section p,.prose p{color:#f1eee7;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#c4ced1;}
+.track-num,.section-num{color:#6d8290;}
+blockquote{border-left-color:#6d8290;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#263a50,transparent 65%),#0c1118;border-color:#c4ced1;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#263a50,transparent 60%),#0c1118 !important;}}

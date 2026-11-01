@@ -1,0 +1,21 @@
+
+/* 4DK Album Files: cover-inspired visual theme for album-files-tha-carter-ii.html.
+   Visual overrides only: all article text, ratings, images and links preserved. */
+:root{--album-bg:#150d11;--album-glow:#48202b;--album-accent:#ab7d38;--album-gold:#e8c38c;--album-cream:#f1e6dc;}
+html{background:#150d11;}
+body{background:#150d11 !important;color:#f1e6dc;}
+.hero{background:radial-gradient(ellipse at 85% 13%,#48202b 0%,transparent 60%),linear-gradient(145deg,#150d11 4%,#48202b 100%) !important;border-bottom:2px solid #ab7d38;}
+.hero::after{pointer-events:none;}
+.hero h1,.hero h2{text-shadow:0 3px 18px #0006;}
+.hero .kicker,.hero .eyebrow,.hero .metadata,.hero .date{color:#e8c38c;}
+main{background:linear-gradient(180deg,#150d11,#0b0b0e 45%,#150d11);}
+.section,.feature,.tracks,.track-list{background-color:transparent;}
+.track,.track-card,article.track{border-color:#48202b;}
+.track:nth-child(even),.track:nth-of-type(even){background:linear-gradient(90deg,#48202b44,transparent 82%);}
+.track h3,.track h2,.section h2{color:#f1e6dc;}
+.track p,.section p,.prose p{color:#f1e6dc;}
+.track small,.track .rating,.section .kicker,.section .eyebrow{color:#e8c38c;}
+.track-num,.section-num{color:#ab7d38;}
+blockquote{border-left-color:#ab7d38;}
+.verdict{background:radial-gradient(ellipse at 90% 0%,#48202b,transparent 65%),#150d11;border-color:#e8c38c;}
+@media(max-width:650px){.hero{background:radial-gradient(ellipse at 90% 0%,#48202b,transparent 60%),#150d11 !important;}}
