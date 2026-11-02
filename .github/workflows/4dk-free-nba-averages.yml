@@ -3,12 +3,15 @@ name: 4DK Free NBA Season Averages
 on:
   workflow_dispatch:
   schedule:
-    # Morning and late-night Pacific refreshes; UTC times shift by an hour with DST.
     - cron: '35 13 * * *'
     - cron: '35 7 * * *'
 
 permissions:
   contents: write
+
+concurrency:
+  group: 4dk-nba-season-averages
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -20,8 +23,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Refresh and validate player averages
-        run: python scripts/refresh_free_nba_stats.py
+      - name: Install statistics dependencies
+        run: pip install pandas pyarrow requests
+
+      - name: Refresh and validate NBA averages
+        run: python scripts/refresh_sdv_nba_stats.py --publish
 
       - name: Commit verified dataset only
         run: |
