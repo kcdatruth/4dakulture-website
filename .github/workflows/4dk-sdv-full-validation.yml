@@ -1,0 +1,16 @@
+name: 4DK SportsDataverse Full Averages Validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas pyarrow requests
+      - name: Validate all 50 full season stat lines (read only)
+        run: python scripts/refresh_sdv_nba_stats.py
