@@ -121,3 +121,33 @@ body.nba-rank-page{background:var(--rank-paper);color:var(--rank-ink)}
 .nba-rank-page .rank-entry:not(.top-ten) .entry-stats strong{
   color:#241f1b;
 }
+
+/* 4DK November 2026: unranked honorable mentions, matching editorial language. */
+.hm-section{margin:64px 0 48px;padding:30px clamp(16px,4vw,42px);background:#100d0d;color:#f3eadb;border-top:5px solid #a72524;border-bottom:5px solid #a72524}
+.hm-intro{border-bottom:1px solid #6b3b2c;padding-bottom:28px;margin-bottom:10px}
+.hm-eyebrow{font-size:.68rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase;color:#d6ac54}
+.hm-intro h2{font-size:clamp(2.4rem,6vw,5rem);line-height:1.02;letter-spacing:-.035em;margin:14px 0;color:#f4ead9;text-transform:uppercase}
+.hm-intro h2 em{color:#d6ac54;font-style:normal}
+.hm-intro p{max-width:750px;color:#d4c4b1;font-size:1.05rem;line-height:1.7}
+.hm-profile{padding:27px 0 30px;border-bottom:1px solid #583b32}
+.hm-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.hm-heading h3{color:#f4ead9;font-size:clamp(1.6rem,3.4vw,2.45rem);line-height:1.1;margin:7px 0}
+.hm-team{color:#d6ac54;font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:.72rem;margin:0}
+.hm-unranked{color:#c9ad86;border:1px solid #68513b;padding:7px;font-size:.58rem;letter-spacing:.12em;white-space:nowrap}
+.hm-statline{margin:18px 0;background:#201b19;border-left:3px solid #b12d27;padding:13px 15px}
+.hm-statline small{display:block;color:#d6ac54;font-weight:800;font-size:.63rem;letter-spacing:.1em;margin-bottom:7px}
+.hm-statline strong{color:#fff3df;font-size:.93rem;line-height:1.65}
+.hm-statline strong span{color:#a95e4c;margin:0 4px}
+.hm-analysis p{font-family:Georgia,serif;color:#e5d7c4;font-size:1.06rem;line-height:1.8;max-width:900px;margin:0}
+.hm-footnote{font-size:.73rem;color:#b8a48e;line-height:1.6;margin:20px 0 0}
+@media(max-width:640px){.hm-section{margin:36px -16px;padding:24px 18px}.hm-heading{flex-direction:column}.hm-unranked{align-self:flex-start}.hm-statline strong{font-size:.84rem}.hm-analysis p{font-size:1rem}}
+
+.fourdk-rank-motion{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.rm-box{background:#201a17;border:1px solid #59432f;padding:8px 12px;display:flex;flex-direction:column;gap:3px}
+.rm-label{color:#c7a56e;text-transform:uppercase;letter-spacing:.1em;font-size:.61rem}
+.rm-value,.rm-status{color:#f4e8d4;font-size:.95rem}
+.entry-stats{margin:18px 0;padding:13px 15px;background:#211b18;border-left:3px solid #ac3028;display:flex;flex-direction:column;gap:6px}
+.entry-stats small{color:#d7af65;font-weight:800;letter-spacing:.08em;font-size:.67rem}
+.entry-stats strong{color:#f7ecdd;line-height:1.7;font-size:.9rem}
+.november-update{border-top:1px solid #65432f;padding-top:18px;margin-top:18px}
+.november-note{padding:14px;border-left:3px solid #b52e28;background:#1c1714;color:#f0ddc0;font-weight:700}
