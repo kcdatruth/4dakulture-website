@@ -109,8 +109,8 @@
   function playerDetail(p) {
     const movement=motion(p.name,p.rank,state.history?.previous);
     return `<article class="profile" id="active-ranking-profile" aria-label="4DK profile: ${esc(p.name)}">
-     <div class="profile-hero"><img class="profile-hero-image" src="${esc(p.image)}" alt="Portrait of ${esc(p.name)}" loading="lazy" decoding="async" onerror="this.hidden=true"><div class="profile-hero-content"><span class="eyebrow">FULL 4DK PLAYER PROFILE</span><div class="profile-rank">#${p.rank}</div><h3>${esc(p.name)}</h3><div class="subtitle">${esc(p.team)} • ${esc(p.position)}</div></div></div>
-     <div class="profile-inner"><div class="facts"><div class="fact"><small>AGE · SOURCE EDITION</small><strong>${esc(p.age)}</strong></div><div class="fact"><small>CURRENT RANK</small><strong>#${p.rank}</strong></div><div class="fact"><small>PREVIOUS RANK</small><strong>${esc(movement.prior)}</strong></div></div>
+     <div class="profile-hero"><img class="profile-hero-image" src="${esc(p.image)}" alt="Portrait of ${esc(p.name)}" loading="lazy" decoding="async" onerror="this.hidden=true"><div class="profile-hero-content"><span class="eyebrow">FULL 4DK PLAYER PROFILE</span><div class="profile-rank">#${p.rank}</div><h3>${esc(p.name)}</h3><div class="subtitle">${esc(p.team)} • ${esc(p.position)}</div><div class="profile-movement-top" style="display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;padding:10px 14px;border:1px solid #b88b5d;background:#211c21;color:#f2cc8a;font-size:14px;font-weight:900;letter-spacing:.04em"><span>RANK MOVEMENT</span><strong style="font-size:20px;color:#f4d092">${esc(movement.label)}</strong><small style="color:#ddd0c4;font-weight:600">PREVIOUS ${esc(movement.prior)}</small></div></div></div>
+     <div class="profile-inner"><div class="facts"><div class="fact"><small>AGE · NOV 3, 2026</small><strong>${esc(p.age)}</strong></div><div class="fact"><small>CURRENT RANK</small><strong>#${p.rank}</strong></div><div class="fact"><small>PREVIOUS RANK</small><strong>${esc(movement.prior)}</strong></div></div>
      <h4>${esc(p.statLabel||'2025–26 REGULAR SEASON')}</h4><div class="statline">${esc(p.stats||'No stat line listed in original profile')}</div>
      <div class="movement-banner"><span>RANKING HISTORY<br>${esc(movement.line)}</span><b>${esc(movement.label)}</b></div>
      <div class="analysis"><h4>THE COMPLETE 4DK BREAKDOWN</h4>${essays(p.content)||'<p>Read the original feature for the full 4DK analysis.</p>'}</div>
@@ -208,7 +208,7 @@
       <h3>${esc(p.name)}</h3>
       <span class="compare-team">${esc(p.team)} · ${esc(p.position)}</span>
       <div class="compare-portrait">${comparePhoto(p)}</div>
-      <div class="compare-player-footer"><span>AGE · SOURCE EDITION</span><strong>${esc(p.age)}</strong></div>
+      <div class="compare-player-footer"><span>AGE · NOV 3, 2026</span><strong>${esc(p.age)}</strong></div>
     </div>`;
   }
   function compareOptions(selected,other) {
