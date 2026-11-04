@@ -96,7 +96,7 @@
 }
 </style>
 <style id="fourdk-top50-ranking-movement-styles">
-/* 4DK ranking history: opening-night baseline (50/50 intact). */
+/* 4DK ranking history: November 3 versus October opening edition. */
 .fourdk-rank-tracker-intro{margin:19px 0 25px;border:1px solid #b59c84;border-left:5px solid #a02729;padding:18px 19px;background:linear-gradient(125deg,#fff4e0,#eee0d0);color:#25191b}
 .fourdk-rank-tracker-intro .track-eyebrow{font:900 11px/1.35 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8c2529}
 .fourdk-rank-tracker-intro h2{margin:7px 0 7px;font:900 clamp(21px,3vw,28px)/1.15 Georgia,serif;letter-spacing:-.025em;color:#25191b}
@@ -799,8 +799,54 @@
   "format_version": 1,
   "initial_edition": "2026-27-opening-night",
   "initial_date": "2026-10-16",
-  "current_edition": "2026-27-opening-night",
-  "previous": null,
+  "current_edition": "2026-11-03",
+  "previous": {
+    "Victor Wembanyama": 1,
+    "Luka Doncic": 3,
+    "Shai Gilgeous-Alexander": 2,
+    "Nikola Jokic": 4,
+    "Giannis Antetokounmpo": 6,
+    "Jayson Tatum": 10,
+    "Cade Cunningham": 8,
+    "Jalen Brunson": 5,
+    "Anthony Edwards": 7,
+    "Tyrese Maxey": 13,
+    "Jaylen Brown": 11,
+    "Stephen Curry": 12,
+    "Donovan Mitchell": 15,
+    "Kevin Durant": 14,
+    "Jalen Johnson": 16,
+    "Scottie Barnes": 18,
+    "Kawhi Leonard": 9,
+    "Karl-Anthony Towns": 23,
+    "Alperen Sengun": 37,
+    "Jamal Murray": 20,
+    "Devin Booker": 22,
+    "Anthony Davis": 29,
+    "LeBron James": 21,
+    "Evan Mobley": 30,
+    "Bam Adebayo": 17,
+    "Deni Avdija": 40,
+    "Paolo Banchero": 19,
+    "Joel Embiid": 27,
+    "Tyrese Haliburton": 24,
+    "Cooper Flagg": 44,
+    "Trae Young": 28,
+    "LaMelo Ball": 25,
+    "Chet Holmgren": 26,
+    "Franz Wagner": 33,
+    "Pascal Siakam": 34,
+    "Austin Reaves": 35,
+    "Zion Williamson": 45,
+    "Stephon Castle": 31,
+    "Domantas Sabonis": 47,
+    "Jalen Duren": 41,
+    "Amen Thompson": 39,
+    "OG Anunoby": 36,
+    "De'Aaron Fox": 46,
+    "Julius Randle": 42,
+    "Kyrie Irving": 49
+  },
   "baseline": {
     "Victor Wembanyama": 1,
     "Shai Gilgeous-Alexander": 2,
@@ -847,13 +893,68 @@
     "Darius Garland": 43,
     "Cooper Flagg": 44,
     "Zion Williamson": 45,
-    "De’Aaron Fox": 46,
+    "De'Aaron Fox": 46,
     "Domantas Sabonis": 47,
     "Ja Morant": 48,
     "Kyrie Irving": 49,
     "Josh Giddey": 50
   },
-  "how_to_update": "Before the next rankings update: set previous to the rank map from this edition, then update card order/IDs/numbers; arrows derive automatically."
+  "how_to_update": "For the next edition, move the current map to previous and publish a new current map; preserve archived editions.",
+  "current_date": "2026-11-03",
+  "previous_edition": "2026-27-opening-night",
+  "previous_date": "2026-10-16",
+  "current": {
+    "Victor Wembanyama": 1,
+    "Luka Doncic": 2,
+    "Shai Gilgeous-Alexander": 3,
+    "Nikola Jokic": 4,
+    "Giannis Antetokounmpo": 5,
+    "Jayson Tatum": 6,
+    "Cade Cunningham": 7,
+    "Jalen Brunson": 8,
+    "Anthony Edwards": 9,
+    "Tyrese Maxey": 10,
+    "Jaylen Brown": 11,
+    "Stephen Curry": 12,
+    "Donovan Mitchell": 13,
+    "Kevin Durant": 14,
+    "Jalen Johnson": 15,
+    "Scottie Barnes": 16,
+    "Kawhi Leonard": 17,
+    "Karl-Anthony Towns": 18,
+    "Alperen Sengun": 19,
+    "Jamal Murray": 20,
+    "Devin Booker": 21,
+    "Anthony Davis": 22,
+    "LeBron James": 23,
+    "Evan Mobley": 24,
+    "Bam Adebayo": 25,
+    "Deni Avdija": 26,
+    "Paolo Banchero": 27,
+    "Joel Embiid": 28,
+    "Tyrese Haliburton": 29,
+    "Cooper Flagg": 30,
+    "Trae Young": 31,
+    "LaMelo Ball": 32,
+    "Chet Holmgren": 33,
+    "Franz Wagner": 34,
+    "Pascal Siakam": 35,
+    "Austin Reaves": 36,
+    "Zion Williamson": 37,
+    "Stephon Castle": 38,
+    "Domantas Sabonis": 39,
+    "Jalen Duren": 40,
+    "Amen Thompson": 41,
+    "OG Anunoby": 42,
+    "De'Aaron Fox": 43,
+    "Dylan Harper": 44,
+    "Julius Randle": 45,
+    "Kyrie Irving": 46,
+    "Ty Jerome": 47,
+    "Paul George": 48,
+    "Nickeil Alexander-Walker": 49,
+    "Jaden McDaniels": 50
+  }
 }
 </script>
 <script id="fourdk-top50-ranking-movement-logic">
@@ -875,8 +976,8 @@
     const oldRank=prior && Object.prototype.hasOwnProperty.call(prior,name)?Number(prior[name]):null;
     if(!oldRank){
       if(prev)prev.textContent='—';
-      if(change)change.textContent='INITIAL';
-      bar.dataset.direction='initial';
+      if(change)change.textContent=prior?'NEW':'INITIAL';
+      bar.dataset.direction=prior?'new':'initial';
       bar.setAttribute('aria-label','Current rank '+position+', previous rank not available, initial ranking');
       return;
     }

@@ -17,7 +17,8 @@
   const paragraphs = parent => [...(parent?.querySelectorAll('p') || [])].map(p => text(p)).filter(Boolean);
   const essays = arr => arr.map(p=>`<p>${esc(p)}</p>`).join('');
   const motion = (name, current, previous) => {
-    if (!previous || !Object.prototype.hasOwnProperty.call(previous, name)) return { label:'INITIAL', prior:'—', cls:'', line:'Opening-night edition • no previous ranking' };
+    if (!previous) return { label:'INITIAL', prior:'—', cls:'', line:'Opening-night edition • no previous ranking' };
+    if (!Object.prototype.hasOwnProperty.call(previous, name)) return { label:'NEW', prior:'NR', cls:'new', line:'New to the November Top 50' };
     const old = Number(previous[name]);
     if (!Number.isInteger(old) || old < 1) return {label:'INITIAL', prior:'—', cls:'', line:'No verified previous ranking'};
     const d = old-current;
@@ -171,11 +172,12 @@
     const up=havePrevious?changes.filter(p=>p.motion.cls==='up').length:0;
     const down=havePrevious?changes.filter(p=>p.motion.cls==='down').length:0;
     const same=havePrevious?changes.filter(p=>p.motion.cls==='same').length:0;
+    const newcomers=havePrevious?changes.filter(p=>p.motion.cls==='new').length:0;
     panel.innerHTML=`<div class="hub-title"><div><span class="eyebrow">4DK RANKING ARCHIVE • 2026–27</span><h2>EVERY MOVE HAS TO BE EARNED.</h2><p>Historic comparisons use actual 4DK ranking editions. No invented rises, falls or weekly shifts.</p></div></div>
       <div class="history"><span class="eyebrow">${havePrevious?'LATEST VERIFIED COMPARISON':'OPENING-NIGHT BASELINE'}</span><h3>${havePrevious?'A REAL RANKING-TO-RANKING COMPARISON.':'THE FIRST 50. THE STARTING LINE.'}</h3>
-       <p>${havePrevious?'Movement below is calculated by comparing the previous saved 4DK player ranking map with the current original Top 50 page.':'The currently published 4DK Top 50 establishes the initial 2026–27 edition. Since the ranking-history file contains no prior edition, every player is correctly labeled INITIAL. No arrows appear until a later editorial update supplies an authentic previous-rank map.'}</p>
+       <p>${havePrevious?'November 3, 2026 rankings compared with the October 16 opening edition. Returning players show verified movement; new additions are marked NEW.':'The currently published 4DK Top 50 establishes the initial 2026–27 edition. Since the ranking-history file contains no prior edition, every player is correctly labeled INITIAL. No arrows appear until a later editorial update supplies an authentic previous-rank map.'}</p>
        <div class="history-grid"><div class="history-box"><b>${havePrevious?up:50}</b><small>${havePrevious?'RANKED HIGHER':'INITIAL POSITIONS'}</small></div><div class="history-box"><b>${havePrevious?down:'—'}</b><small>${havePrevious?'RANKED LOWER':'PRIOR EDITION'}</small></div><div class="history-box"><b>${havePrevious?same:'0'}</b><small>${havePrevious?'UNCHANGED':'VERIFIED MOVES'}</small></div></div>
-       <div class="history-legend"><span><b>↑</b> Higher rank</span><span><b>↓</b> Lower rank</span><span><b>→</b> No change</span><span><b>INITIAL</b> First edition</span></div>
+       <p class="history-newcomers">${havePrevious?`${newcomers} new entries in the November edition. Returning players compared with October 16.`:''}</p><div class="history-legend"><span><b>↑</b> Higher rank</span><span><b>↓</b> Lower rank</span><span><b>→</b> No change</span><span><b>NEW</b> New entry</span><span><b>INITIAL</b> First edition</span></div>
       </div><div class="board"><div class="board-head"><strong>PLAYER RANK MOVEMENT • SOURCE HISTORY</strong><small>ALL 50</small></div><div class="board-scroll" data-history-list></div></div>
       <div class="history-footer">Power rankings: the 30-team preseason board is a baseline as well. No regular-season team movement is implied or automatically generated.</div>`;
     const list=panel.querySelector('[data-history-list]');
