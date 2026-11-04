@@ -90,11 +90,10 @@
       {name:'Only Built 4 Cuban Linx…',artist:'Raekwon',href:'album-files-only-built-4-cuban-linx.html',vol:'two',cover:'east-08-cuban-linx.jpg'},
       {name:'My Ghetto Report Card',artist:'E-40',href:'album-files-my-ghetto-report-card.html',vol:'three',cover:'e40-my-ghetto-report-card-cover.jpg',rating:'9.2'},
       {name:'The Infamous',artist:'Mobb Deep',href:'album-files-the-infamous.html',vol:'three',cover:'album-files-the-infamous-original-cover.jpg',rating:'9.3'},
-      {name:'Dogg Food',artist:'Tha Dogg Pound',href:'album-files-dogg-food.html',vol:'three',cover:'album-files-dogg-food-original-cover.jpg',rating:'9.3'},
-      {name:'Trap Muzik',artist:'T.I.',href:'album-files-trap-muzik.html',vol:'three',cover:'trap-muzik-original-cover.jpg',rating:'9.3'},
-      {name:'Reasonable Doubt',artist:'Jay-Z',href:'album-files-reasonable-doubt.html',vol:'three',rating:'9.4'}
+      {name:'Dogg Food',artist:'Tha Dogg Pound',href:'album-files-dogg-food.html',vol:'three',cover:'album-files-dogg-food-original-cover.jpg',rating:'9.3'}
+      {name:'It Was Written',artist:'Nas',href:'album-files-it-was-written.html',vol:'four',cover:'album-files-it-was-written-cover.jpg',rating:'9.3'}
     ];
-    let volume='all',q='',covers={}; const volLabel={one:'I',two:'II',three:'III'};
+    let volume='all',q='',covers={}; const volLabel={one:'I',two:'II',three:'III',four:'IV'};
     const output=$('#fx-album-results'),detail=$('#fx-album-detail');
     function render(){const items=albums.filter(a=>(volume==='all'||a.vol===volume)&&(`${a.name} ${a.artist} ${a.href} ${a.vol}`).toLowerCase().includes(q));
       $('#fx-album-status').textContent=`${items.length} completed issues shown · ${albums.length} published issue links preserved`;
