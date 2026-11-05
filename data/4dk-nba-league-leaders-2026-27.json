@@ -2,7 +2,7 @@
   "season": "2026-27",
   "status": "verified",
   "scope": "full-league",
-  "checked_utc": "2026-11-05 05:38 UTC",
+  "checked_utc": "2026-11-05 05:56 UTC",
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet",
   "matched": 448,
   "players": {
@@ -16,7 +16,10 @@
       "fg_pct": 35.8,
       "fg3_pct": 34.6,
       "ft_pct": 84.6,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 53,
+      "three_pa": 26,
+      "fta": 26
     },
     "Aaron Nesmith": {
       "games": 6,
@@ -28,7 +31,10 @@
       "fg_pct": 39.3,
       "fg3_pct": 30.3,
       "ft_pct": 86.4,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 56,
+      "three_pa": 33,
+      "fta": 22
     },
     "Aaron Wiggins": {
       "games": 8,
@@ -40,7 +46,10 @@
       "fg_pct": 46.2,
       "fg3_pct": 40.4,
       "ft_pct": 62.5,
-      "three_pm": 2.6
+      "three_pm": 2.6,
+      "fga": 91,
+      "three_pa": 52,
+      "fta": 8
     },
     "Ace Bailey": {
       "games": 7,
@@ -52,7 +61,10 @@
       "fg_pct": 45.6,
       "fg3_pct": 27.8,
       "ft_pct": 75.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 79,
+      "three_pa": 36,
+      "fta": 4
     },
     "Aday Mara": {
       "games": 7,
@@ -64,7 +76,10 @@
       "fg_pct": 55.9,
       "fg3_pct": null,
       "ft_pct": 77.8,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 34,
+      "three_pa": 0,
+      "fta": 9
     },
     "Adem Bona": {
       "games": 8,
@@ -76,7 +91,10 @@
       "fg_pct": 35.3,
       "fg3_pct": 0.0,
       "ft_pct": 33.3,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 17,
+      "three_pa": 3,
+      "fta": 6
     },
     "Ajay Mitchell": {
       "games": 7,
@@ -88,7 +106,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 19.0,
       "ft_pct": 95.5,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 94,
+      "three_pa": 21,
+      "fta": 22
     },
     "AJ Dybantsa": {
       "games": 3,
@@ -100,7 +121,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 27.3,
       "ft_pct": 93.3,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 40,
+      "three_pa": 11,
+      "fta": 15
     },
     "AJ Green": {
       "games": 7,
@@ -112,7 +136,10 @@
       "fg_pct": 47.4,
       "fg3_pct": 47.1,
       "ft_pct": 100.0,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 38,
+      "three_pa": 34,
+      "fta": 1
     },
     "AJ Johnson": {
       "games": 1,
@@ -124,7 +151,10 @@
       "fg_pct": 0.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Alex Caruso": {
       "games": 4,
@@ -136,7 +166,10 @@
       "fg_pct": 56.5,
       "fg3_pct": 50.0,
       "ft_pct": 75.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 23,
+      "three_pa": 16,
+      "fta": 4
     },
     "Alex Karaban": {
       "games": 4,
@@ -148,7 +181,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 40.0,
       "ft_pct": 50.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 6,
+      "three_pa": 5,
+      "fta": 2
     },
     "Alex Morales": {
       "games": 4,
@@ -160,7 +196,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 0.0,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 2,
+      "fta": 2
     },
     "Alex Sarr": {
       "games": 6,
@@ -172,7 +211,10 @@
       "fg_pct": 52.4,
       "fg3_pct": 25.0,
       "ft_pct": 72.7,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 42,
+      "three_pa": 16,
+      "fta": 11
     },
     "Al Horford": {
       "games": 6,
@@ -184,7 +226,10 @@
       "fg_pct": 40.7,
       "fg3_pct": 40.0,
       "ft_pct": 0.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 27,
+      "three_pa": 20,
+      "fta": 1
     },
     "Alijah Martin": {
       "games": 6,
@@ -196,7 +241,10 @@
       "fg_pct": 63.6,
       "fg3_pct": 33.3,
       "ft_pct": 50.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 11,
+      "three_pa": 6,
+      "fta": 2
     },
     "Allen Graves": {
       "games": 7,
@@ -208,7 +256,10 @@
       "fg_pct": 47.8,
       "fg3_pct": 20.0,
       "ft_pct": 63.6,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 23,
+      "three_pa": 10,
+      "fta": 11
     },
     "Alperen Sengun": {
       "games": 6,
@@ -220,7 +271,10 @@
       "fg_pct": 57.4,
       "fg3_pct": 53.8,
       "ft_pct": 73.5,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 94,
+      "three_pa": 13,
+      "fta": 34
     },
     "Alpha Diallo": {
       "games": 2,
@@ -232,7 +286,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 2,
+      "fta": 0
     },
     "Amen Thompson": {
       "games": 8,
@@ -244,7 +301,10 @@
       "fg_pct": 52.6,
       "fg3_pct": 28.6,
       "ft_pct": 76.5,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 95,
+      "three_pa": 7,
+      "fta": 34
     },
     "Andre Drummond": {
       "games": 7,
@@ -256,7 +316,10 @@
       "fg_pct": 44.7,
       "fg3_pct": 0.0,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 38,
+      "three_pa": 1,
+      "fta": 10
     },
     "Andrew Nembhard": {
       "games": 6,
@@ -268,7 +331,10 @@
       "fg_pct": 45.0,
       "fg3_pct": 41.7,
       "ft_pct": 88.9,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 80,
+      "three_pa": 36,
+      "fta": 27
     },
     "Andrew Wiggins": {
       "games": 7,
@@ -280,7 +346,10 @@
       "fg_pct": 44.6,
       "fg3_pct": 29.4,
       "ft_pct": 66.7,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 65,
+      "three_pa": 34,
+      "fta": 6
     },
     "Anfernee Simons": {
       "games": 8,
@@ -292,7 +361,10 @@
       "fg_pct": 39.5,
       "fg3_pct": 40.0,
       "ft_pct": 80.0,
-      "three_pm": 2.8
+      "three_pm": 2.8,
+      "fga": 76,
+      "three_pa": 55,
+      "fta": 10
     },
     "Anthony Black": {
       "games": 4,
@@ -304,7 +376,10 @@
       "fg_pct": 52.5,
       "fg3_pct": 47.4,
       "ft_pct": 78.9,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 40,
+      "three_pa": 19,
+      "fta": 19
     },
     "Anthony Davis": {
       "games": 7,
@@ -316,7 +391,10 @@
       "fg_pct": 48.0,
       "fg3_pct": 36.8,
       "ft_pct": 82.1,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 127,
+      "three_pa": 19,
+      "fta": 39
     },
     "Anthony Edwards": {
       "games": 4,
@@ -328,7 +406,10 @@
       "fg_pct": 48.1,
       "fg3_pct": 40.0,
       "ft_pct": 75.0,
-      "three_pm": 4.5
+      "three_pm": 4.5,
+      "fga": 104,
+      "three_pa": 45,
+      "fta": 20
     },
     "Anthony Gill": {
       "games": 1,
@@ -340,7 +421,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Asa Newell": {
       "games": 4,
@@ -352,7 +436,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 25.0,
       "ft_pct": 50.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 14,
+      "three_pa": 8,
+      "fta": 4
     },
     "Ausar Thompson": {
       "games": 6,
@@ -364,7 +451,10 @@
       "fg_pct": 55.8,
       "fg3_pct": 0.0,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 43,
+      "three_pa": 3,
+      "fta": 15
     },
     "Austin Reaves": {
       "games": 8,
@@ -376,7 +466,10 @@
       "fg_pct": 53.9,
       "fg3_pct": 44.4,
       "ft_pct": 86.5,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 115,
+      "three_pa": 45,
+      "fta": 52
     },
     "Ayo Dosunmu": {
       "games": 8,
@@ -388,7 +481,10 @@
       "fg_pct": 51.5,
       "fg3_pct": 41.9,
       "ft_pct": 84.6,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 99,
+      "three_pa": 31,
+      "fta": 13
     },
     "Baba Miller": {
       "games": 6,
@@ -400,7 +496,10 @@
       "fg_pct": 62.5,
       "fg3_pct": 50.0,
       "ft_pct": 75.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 8,
+      "three_pa": 2,
+      "fta": 4
     },
     "Bam Adebayo": {
       "games": 7,
@@ -412,7 +511,10 @@
       "fg_pct": 49.4,
       "fg3_pct": 17.4,
       "ft_pct": 76.5,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 85,
+      "three_pa": 23,
+      "fta": 34
     },
     "Baylor Scheierman": {
       "games": 7,
@@ -424,7 +526,10 @@
       "fg_pct": 44.1,
       "fg3_pct": 40.0,
       "ft_pct": null,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 34,
+      "three_pa": 20,
+      "fta": 0
     },
     "Bennedict Mathurin": {
       "games": 7,
@@ -436,7 +541,10 @@
       "fg_pct": 43.9,
       "fg3_pct": 26.3,
       "ft_pct": 90.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 41,
+      "three_pa": 19,
+      "fta": 10
     },
     "Bennett Stirtz": {
       "games": 7,
@@ -448,7 +556,10 @@
       "fg_pct": 44.4,
       "fg3_pct": 42.1,
       "ft_pct": 83.3,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 27,
+      "three_pa": 19,
+      "fta": 6
     },
     "Ben Saraf": {
       "games": 1,
@@ -460,7 +571,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Ben Sheppard": {
       "games": 1,
@@ -472,7 +586,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 3,
+      "three_pa": 2,
+      "fta": 0
     },
     "Bilal Coulibaly": {
       "games": 7,
@@ -484,7 +601,10 @@
       "fg_pct": 53.7,
       "fg3_pct": 18.8,
       "ft_pct": 71.4,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 41,
+      "three_pa": 16,
+      "fta": 14
     },
     "Blake Wesley": {
       "games": 2,
@@ -496,7 +616,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 2
     },
     "Bobby Portis": {
       "games": 7,
@@ -508,7 +631,10 @@
       "fg_pct": 40.4,
       "fg3_pct": 40.0,
       "ft_pct": 80.0,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 57,
+      "three_pa": 30,
+      "fta": 5
     },
     "Bogdan Bogdanovic": {
       "games": 8,
@@ -520,7 +646,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 45.5,
       "ft_pct": 100.0,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 34,
+      "three_pa": 22,
+      "fta": 6
     },
     "Bogoljub Markovic": {
       "games": 1,
@@ -532,7 +661,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Bones Hyland": {
       "games": 8,
@@ -544,7 +676,10 @@
       "fg_pct": 44.7,
       "fg3_pct": 33.3,
       "ft_pct": 100.0,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 47,
+      "three_pa": 30,
+      "fta": 5
     },
     "Braden Smith": {
       "games": 5,
@@ -556,7 +691,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 40.0,
       "ft_pct": 50.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 16,
+      "three_pa": 5,
+      "fta": 4
     },
     "Branden Carlson": {
       "games": 2,
@@ -568,7 +706,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 2,
+      "fta": 0
     },
     "Brandin Podziemski": {
       "games": 6,
@@ -580,7 +721,10 @@
       "fg_pct": 46.2,
       "fg3_pct": 35.0,
       "ft_pct": 70.0,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 80,
+      "three_pa": 40,
+      "fta": 20
     },
     "Brandon Miller": {
       "games": 8,
@@ -592,7 +736,10 @@
       "fg_pct": 37.8,
       "fg3_pct": 28.6,
       "ft_pct": 83.9,
-      "three_pm": 3.2
+      "three_pm": 3.2,
+      "fga": 180,
+      "three_pa": 91,
+      "fta": 31
     },
     "Brandon Williams": {
       "games": 7,
@@ -604,7 +751,10 @@
       "fg_pct": 38.1,
       "fg3_pct": 35.0,
       "ft_pct": 83.9,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 63,
+      "three_pa": 20,
+      "fta": 31
     },
     "Brayden Burries": {
       "games": 7,
@@ -616,7 +766,10 @@
       "fg_pct": 40.8,
       "fg3_pct": 25.0,
       "ft_pct": 72.7,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 49,
+      "three_pa": 24,
+      "fta": 22
     },
     "Brice Sensabaugh": {
       "games": 7,
@@ -628,7 +781,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 44.8,
       "ft_pct": 100.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 49,
+      "three_pa": 29,
+      "fta": 10
     },
     "Bronny James": {
       "games": 4,
@@ -640,7 +796,10 @@
       "fg_pct": 66.7,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 1,
+      "fta": 0
     },
     "Brook Lopez": {
       "games": 7,
@@ -652,7 +811,10 @@
       "fg_pct": 53.1,
       "fg3_pct": 42.9,
       "ft_pct": 78.6,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 64,
+      "three_pa": 21,
+      "fta": 14
     },
     "Brooks Barnhizer": {
       "games": 5,
@@ -664,7 +826,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 1,
+      "fta": 6
     },
     "Bruce Thornton": {
       "games": 6,
@@ -676,7 +841,10 @@
       "fg_pct": 55.6,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 9,
+      "three_pa": 4,
+      "fta": 0
     },
     "Bryce Hopkins": {
       "games": 4,
@@ -688,7 +856,10 @@
       "fg_pct": 54.5,
       "fg3_pct": 25.0,
       "ft_pct": 100.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 11,
+      "three_pa": 4,
+      "fta": 2
     },
     "Bryce McGowens": {
       "games": 4,
@@ -700,7 +871,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": 75.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 6,
+      "three_pa": 2,
+      "fta": 4
     },
     "Bub Carrington": {
       "games": 7,
@@ -712,7 +886,10 @@
       "fg_pct": 40.6,
       "fg3_pct": 48.0,
       "ft_pct": 100.0,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 32,
+      "three_pa": 25,
+      "fta": 5
     },
     "Buddy Hield": {
       "games": 7,
@@ -724,7 +901,10 @@
       "fg_pct": 46.9,
       "fg3_pct": 35.0,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 32,
+      "three_pa": 20,
+      "fta": 1
     },
     "Cade Cunningham": {
       "games": 7,
@@ -736,7 +916,10 @@
       "fg_pct": 48.3,
       "fg3_pct": 37.0,
       "ft_pct": 76.7,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 120,
+      "three_pa": 46,
+      "fta": 43
     },
     "Caleb Love": {
       "games": 1,
@@ -748,7 +931,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Caleb Martin": {
       "games": 3,
@@ -760,7 +946,10 @@
       "fg_pct": 57.1,
       "fg3_pct": 55.6,
       "ft_pct": 100.0,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 14,
+      "three_pa": 9,
+      "fta": 2
     },
     "Caleb Wilson": {
       "games": 7,
@@ -772,7 +961,10 @@
       "fg_pct": 43.2,
       "fg3_pct": 32.1,
       "ft_pct": 69.4,
-      "three_pm": 2.6
+      "three_pm": 2.6,
+      "fga": 125,
+      "three_pa": 56,
+      "fta": 36
     },
     "Cam Christie": {
       "games": 4,
@@ -784,7 +976,10 @@
       "fg_pct": 18.2,
       "fg3_pct": 25.0,
       "ft_pct": 100.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 11,
+      "three_pa": 4,
+      "fta": 2
     },
     "Cameron Boozer": {
       "games": 7,
@@ -796,7 +991,10 @@
       "fg_pct": 37.5,
       "fg3_pct": 36.4,
       "ft_pct": 94.4,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 96,
+      "three_pa": 44,
+      "fta": 36
     },
     "Cameron Carr": {
       "games": 2,
@@ -808,7 +1006,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Cameron Johnson": {
       "games": 3,
@@ -820,7 +1021,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 33.3,
       "ft_pct": 50.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 21,
+      "three_pa": 12,
+      "fta": 4
     },
     "Cam Spencer": {
       "games": 7,
@@ -832,7 +1036,10 @@
       "fg_pct": 51.1,
       "fg3_pct": 56.0,
       "ft_pct": 100.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 47,
+      "three_pa": 25,
+      "fta": 4
     },
     "Cam Whitmore": {
       "games": 2,
@@ -844,7 +1051,10 @@
       "fg_pct": 57.1,
       "fg3_pct": 0.0,
       "ft_pct": 0.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 7,
+      "three_pa": 2,
+      "fta": 1
     },
     "Carson Cooper": {
       "games": 1,
@@ -856,7 +1066,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 2
     },
     "Carter Bryant": {
       "games": 7,
@@ -868,7 +1081,10 @@
       "fg_pct": 31.6,
       "fg3_pct": 26.7,
       "ft_pct": 50.0,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 19,
+      "three_pa": 15,
+      "fta": 2
     },
     "Cason Wallace": {
       "games": 3,
@@ -880,7 +1096,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 30.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 20,
+      "three_pa": 10,
+      "fta": 0
     },
     "Cedric Coward": {
       "games": 6,
@@ -892,7 +1111,10 @@
       "fg_pct": 49.2,
       "fg3_pct": 57.7,
       "ft_pct": 66.7,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 59,
+      "three_pa": 26,
+      "fta": 6
     },
     "Chaney Johnson": {
       "games": 7,
@@ -904,7 +1126,10 @@
       "fg_pct": 35.9,
       "fg3_pct": 31.6,
       "ft_pct": 87.5,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 39,
+      "three_pa": 19,
+      "fta": 8
     },
     "Charles Bassey": {
       "games": 6,
@@ -916,7 +1141,10 @@
       "fg_pct": 64.0,
       "fg3_pct": 0.0,
       "ft_pct": 81.8,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 25,
+      "three_pa": 1,
+      "fta": 11
     },
     "Chaz Lanier": {
       "games": 3,
@@ -928,7 +1156,10 @@
       "fg_pct": 71.4,
       "fg3_pct": 60.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 7,
+      "three_pa": 5,
+      "fta": 0
     },
     "Chet Holmgren": {
       "games": 3,
@@ -940,7 +1171,10 @@
       "fg_pct": 40.7,
       "fg3_pct": 33.3,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 27,
+      "three_pa": 6,
+      "fta": 12
     },
     "Chris Cenac Jr.": {
       "games": 3,
@@ -952,7 +1186,10 @@
       "fg_pct": 75.0,
       "fg3_pct": 50.0,
       "ft_pct": 50.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 2
     },
     "Chris Manon": {
       "games": 2,
@@ -964,7 +1201,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 1,
+      "fta": 0
     },
     "Christian Anderson": {
       "games": 8,
@@ -976,7 +1216,10 @@
       "fg_pct": 31.0,
       "fg3_pct": 13.3,
       "ft_pct": 100.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 29,
+      "three_pa": 15,
+      "fta": 1
     },
     "Christian Braun": {
       "games": 6,
@@ -988,7 +1231,10 @@
       "fg_pct": 53.0,
       "fg3_pct": 40.6,
       "ft_pct": 80.0,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 66,
+      "three_pa": 32,
+      "fta": 10
     },
     "Chris Youngblood": {
       "games": 2,
@@ -1000,7 +1246,10 @@
       "fg_pct": 30.0,
       "fg3_pct": 22.2,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 10,
+      "three_pa": 9,
+      "fta": 2
     },
     "CJ McCollum": {
       "games": 8,
@@ -1012,7 +1261,10 @@
       "fg_pct": 45.7,
       "fg3_pct": 37.2,
       "ft_pct": 82.4,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 92,
+      "three_pa": 43,
+      "fta": 17
     },
     "Clint Capela": {
       "games": 6,
@@ -1024,7 +1276,10 @@
       "fg_pct": 64.3,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 14,
+      "three_pa": 0,
+      "fta": 2
     },
     "Coby White": {
       "games": 1,
@@ -1036,7 +1291,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 20.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 9,
+      "three_pa": 5,
+      "fta": 0
     },
     "Cody Williams": {
       "games": 5,
@@ -1048,7 +1306,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 1,
+      "fta": 0
     },
     "Colin Castleton": {
       "games": 2,
@@ -1060,7 +1321,10 @@
       "fg_pct": 66.7,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 6,
+      "three_pa": 0,
+      "fta": 2
     },
     "Collin Gillespie": {
       "games": 5,
@@ -1072,7 +1336,10 @@
       "fg_pct": 32.6,
       "fg3_pct": 28.6,
       "ft_pct": 25.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 43,
+      "three_pa": 35,
+      "fta": 4
     },
     "Collin Murray-Boyles": {
       "games": 7,
@@ -1084,7 +1351,10 @@
       "fg_pct": 47.1,
       "fg3_pct": 33.3,
       "ft_pct": 85.7,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 51,
+      "three_pa": 12,
+      "fta": 14
     },
     "Collin Sexton": {
       "games": 7,
@@ -1096,7 +1366,10 @@
       "fg_pct": 44.1,
       "fg3_pct": 25.9,
       "ft_pct": 64.3,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 59,
+      "three_pa": 27,
+      "fta": 14
     },
     "Cooper Flagg": {
       "games": 6,
@@ -1108,7 +1381,10 @@
       "fg_pct": 48.6,
       "fg3_pct": 23.3,
       "ft_pct": 88.9,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 107,
+      "three_pa": 30,
+      "fta": 45
     },
     "Corey Kispert": {
       "games": 4,
@@ -1120,7 +1396,10 @@
       "fg_pct": 64.7,
       "fg3_pct": 61.5,
       "ft_pct": null,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 17,
+      "three_pa": 13,
+      "fta": 0
     },
     "Craig Porter Jr.": {
       "games": 5,
@@ -1132,7 +1411,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 33.3,
       "ft_pct": null,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 5,
+      "three_pa": 3,
+      "fta": 0
     },
     "Daeqwon Plowden": {
       "games": 6,
@@ -1144,7 +1426,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 22.2,
       "ft_pct": 50.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 14,
+      "three_pa": 9,
+      "fta": 2
     },
     "Dailyn Swain": {
       "games": 1,
@@ -1156,7 +1441,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 1,
+      "fta": 0
     },
     "Damian Lillard": {
       "games": 6,
@@ -1168,7 +1456,10 @@
       "fg_pct": 39.8,
       "fg3_pct": 32.7,
       "ft_pct": 80.5,
-      "three_pm": 2.8
+      "three_pm": 2.8,
+      "fga": 83,
+      "three_pa": 52,
+      "fta": 41
     },
     "Daniel Gafford": {
       "games": 7,
@@ -1180,7 +1471,10 @@
       "fg_pct": 75.0,
       "fg3_pct": 100.0,
       "ft_pct": 66.7,
-      "three_pm": 0.1
+      "three_pm": 0.1,
+      "fga": 40,
+      "three_pa": 1,
+      "fta": 15
     },
     "Daniss Jenkins": {
       "games": 7,
@@ -1192,7 +1486,10 @@
       "fg_pct": 44.4,
       "fg3_pct": 41.7,
       "ft_pct": 84.6,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 54,
+      "three_pa": 24,
+      "fta": 13
     },
     "Danny Wolf": {
       "games": 2,
@@ -1204,7 +1501,10 @@
       "fg_pct": 55.6,
       "fg3_pct": 62.5,
       "ft_pct": null,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 9,
+      "three_pa": 8,
+      "fta": 0
     },
     "Darius Acuff Jr.": {
       "games": 7,
@@ -1216,7 +1516,10 @@
       "fg_pct": 40.6,
       "fg3_pct": 31.3,
       "ft_pct": 84.8,
-      "three_pm": 3.0
+      "three_pm": 3.0,
+      "fga": 165,
+      "three_pa": 67,
+      "fta": 33
     },
     "Darius Garland": {
       "games": 7,
@@ -1228,7 +1531,10 @@
       "fg_pct": 43.5,
       "fg3_pct": 32.7,
       "ft_pct": 83.3,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 115,
+      "three_pa": 49,
+      "fta": 30
     },
     "DaRon Holmes II": {
       "games": 2,
@@ -1240,7 +1546,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 33.3,
       "ft_pct": null,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 0
     },
     "Darryn Peterson": {
       "games": 7,
@@ -1252,7 +1561,10 @@
       "fg_pct": 36.3,
       "fg3_pct": 37.5,
       "ft_pct": 88.9,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 91,
+      "three_pa": 32,
+      "fta": 18
     },
     "David Jones Garcia": {
       "games": 1,
@@ -1264,7 +1576,10 @@
       "fg_pct": 0.0,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 2
     },
     "Davion Mitchell": {
       "games": 7,
@@ -1276,7 +1591,10 @@
       "fg_pct": 51.8,
       "fg3_pct": 45.7,
       "ft_pct": 71.4,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 83,
+      "three_pa": 35,
+      "fta": 14
     },
     "Day'Ron Sharpe": {
       "games": 7,
@@ -1288,7 +1606,10 @@
       "fg_pct": 48.7,
       "fg3_pct": 42.9,
       "ft_pct": 64.7,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 39,
+      "three_pa": 7,
+      "fta": 17
     },
     "De'Aaron Fox": {
       "games": 7,
@@ -1300,7 +1621,10 @@
       "fg_pct": 58.2,
       "fg3_pct": 40.0,
       "ft_pct": 78.1,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 67,
+      "three_pa": 20,
+      "fta": 32
     },
     "Deandre Ayton": {
       "games": 7,
@@ -1312,7 +1636,10 @@
       "fg_pct": 66.7,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 27,
+      "three_pa": 0,
+      "fta": 4
     },
     "De'Andre Hunter": {
       "games": 7,
@@ -1324,7 +1651,10 @@
       "fg_pct": 43.8,
       "fg3_pct": 38.5,
       "ft_pct": 57.9,
-      "three_pm": 2.1
+      "three_pm": 2.1,
+      "fga": 73,
+      "three_pa": 39,
+      "fta": 19
     },
     "DeAndre Jordan": {
       "games": 2,
@@ -1336,7 +1666,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 0,
+      "fta": 6
     },
     "De'Anthony Melton": {
       "games": 8,
@@ -1348,7 +1681,10 @@
       "fg_pct": 43.5,
       "fg3_pct": 46.3,
       "ft_pct": 85.7,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 62,
+      "three_pa": 41,
+      "fta": 14
     },
     "Dean Wade": {
       "games": 6,
@@ -1360,7 +1696,10 @@
       "fg_pct": 52.9,
       "fg3_pct": 41.7,
       "ft_pct": 60.0,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 17,
+      "three_pa": 12,
+      "fta": 5
     },
     "Dejounte Murray": {
       "games": 4,
@@ -1372,7 +1711,10 @@
       "fg_pct": 46.8,
       "fg3_pct": 20.0,
       "ft_pct": 90.9,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 62,
+      "three_pa": 15,
+      "fta": 11
     },
     "DeMar DeRozan": {
       "games": 6,
@@ -1384,7 +1726,10 @@
       "fg_pct": 40.4,
       "fg3_pct": 22.2,
       "ft_pct": 83.3,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 52,
+      "three_pa": 9,
+      "fta": 24
     },
     "Deni Avdija": {
       "games": 6,
@@ -1396,7 +1741,10 @@
       "fg_pct": 48.5,
       "fg3_pct": 33.3,
       "ft_pct": 66.7,
-      "three_pm": 1.8
+      "three_pm": 1.8,
+      "fga": 97,
+      "three_pa": 33,
+      "fta": 57
     },
     "Dennis Schroder": {
       "games": 8,
@@ -1408,7 +1756,10 @@
       "fg_pct": 37.3,
       "fg3_pct": 18.2,
       "ft_pct": 86.4,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 83,
+      "three_pa": 33,
+      "fta": 22
     },
     "Derik Queen": {
       "games": 7,
@@ -1420,7 +1771,10 @@
       "fg_pct": 52.7,
       "fg3_pct": 42.9,
       "ft_pct": 86.7,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 55,
+      "three_pa": 7,
+      "fta": 30
     },
     "Derrick Jones Jr.": {
       "games": 6,
@@ -1432,7 +1786,10 @@
       "fg_pct": 53.1,
       "fg3_pct": 52.0,
       "ft_pct": 66.7,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 49,
+      "three_pa": 25,
+      "fta": 6
     },
     "Derrick White": {
       "games": 7,
@@ -1444,7 +1801,10 @@
       "fg_pct": 43.5,
       "fg3_pct": 32.4,
       "ft_pct": 100.0,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 69,
+      "three_pa": 34,
+      "fta": 7
     },
     "Desmond Bane": {
       "games": 7,
@@ -1456,7 +1816,10 @@
       "fg_pct": 38.6,
       "fg3_pct": 37.3,
       "ft_pct": 84.6,
-      "three_pm": 3.6
+      "three_pm": 3.6,
+      "fga": 101,
+      "three_pa": 67,
+      "fta": 26
     },
     "Devin Booker": {
       "games": 5,
@@ -1468,7 +1831,10 @@
       "fg_pct": 48.8,
       "fg3_pct": 35.0,
       "ft_pct": 93.3,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 82,
+      "three_pa": 20,
+      "fta": 30
     },
     "Devin Vassell": {
       "games": 7,
@@ -1480,7 +1846,10 @@
       "fg_pct": 41.4,
       "fg3_pct": 30.0,
       "ft_pct": 94.1,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 70,
+      "three_pa": 30,
+      "fta": 17
     },
     "Dillon Brooks": {
       "games": 5,
@@ -1492,7 +1861,10 @@
       "fg_pct": 49.1,
       "fg3_pct": 47.8,
       "ft_pct": 73.9,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 57,
+      "three_pa": 23,
+      "fta": 23
     },
     "Dillon Mitchell": {
       "games": 1,
@@ -1504,7 +1876,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Domantas Sabonis": {
       "games": 7,
@@ -1516,7 +1891,10 @@
       "fg_pct": 71.2,
       "fg3_pct": 50.0,
       "ft_pct": 80.0,
-      "three_pm": 0.1
+      "three_pm": 0.1,
+      "fga": 59,
+      "three_pa": 2,
+      "fta": 25
     },
     "Donovan Clingan": {
       "games": 6,
@@ -1528,7 +1906,10 @@
       "fg_pct": 52.2,
       "fg3_pct": 46.2,
       "ft_pct": 54.5,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 46,
+      "three_pa": 13,
+      "fta": 11
     },
     "Donovan Mitchell": {
       "games": 7,
@@ -1540,7 +1921,10 @@
       "fg_pct": 46.8,
       "fg3_pct": 39.1,
       "ft_pct": 81.6,
-      "three_pm": 2.6
+      "three_pm": 2.6,
+      "fga": 111,
+      "three_pa": 46,
+      "fta": 38
     },
     "Dorian Finney-Smith": {
       "games": 3,
@@ -1552,7 +1936,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 33.3,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 0
     },
     "Drake Powell": {
       "games": 2,
@@ -1564,7 +1951,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": 0.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 2
     },
     "Draymond Green": {
       "games": 6,
@@ -1576,7 +1966,10 @@
       "fg_pct": 38.9,
       "fg3_pct": 28.6,
       "ft_pct": 75.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 18,
+      "three_pa": 7,
+      "fta": 4
     },
     "Dru Smith": {
       "games": 5,
@@ -1588,7 +1981,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 60.0,
       "ft_pct": 66.7,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 8,
+      "three_pa": 5,
+      "fta": 6
     },
     "Duncan Robinson": {
       "games": 7,
@@ -1600,7 +1996,10 @@
       "fg_pct": 44.6,
       "fg3_pct": 45.2,
       "ft_pct": 88.5,
-      "three_pm": 4.0
+      "three_pm": 4.0,
+      "fga": 83,
+      "three_pa": 62,
+      "fta": 26
     },
     "Duop Reath": {
       "games": 3,
@@ -1612,7 +2011,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 50.0,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 5,
+      "three_pa": 4,
+      "fta": 2
     },
     "Dylan Harper": {
       "games": 7,
@@ -1624,7 +2026,10 @@
       "fg_pct": 48.5,
       "fg3_pct": 36.0,
       "ft_pct": 87.5,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 101,
+      "three_pa": 25,
+      "fta": 24
     },
     "Dyson Daniels": {
       "games": 8,
@@ -1636,7 +2041,10 @@
       "fg_pct": 46.6,
       "fg3_pct": 10.0,
       "ft_pct": 56.2,
-      "three_pm": 0.1
+      "three_pm": 0.1,
+      "fga": 73,
+      "three_pa": 10,
+      "fta": 16
     },
     "Ebuka Okorie": {
       "games": 4,
@@ -1648,7 +2056,10 @@
       "fg_pct": 22.2,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 9,
+      "three_pa": 3,
+      "fta": 2
     },
     "Egor Demin": {
       "games": 4,
@@ -1660,7 +2071,10 @@
       "fg_pct": 31.0,
       "fg3_pct": 28.6,
       "ft_pct": 100.0,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 29,
+      "three_pa": 21,
+      "fta": 7
     },
     "Elijah Harkless": {
       "games": 1,
@@ -1672,7 +2086,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Emanuel Sharp": {
       "games": 7,
@@ -1684,7 +2101,10 @@
       "fg_pct": 36.7,
       "fg3_pct": 38.1,
       "ft_pct": 100.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 30,
+      "three_pa": 21,
+      "fta": 2
     },
     "Evan Mobley": {
       "games": 7,
@@ -1696,7 +2116,10 @@
       "fg_pct": 57.6,
       "fg3_pct": 53.3,
       "ft_pct": 64.5,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 85,
+      "three_pa": 30,
+      "fta": 31
     },
     "Felix Okpara": {
       "games": 1,
@@ -1708,7 +2131,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 2
     },
     "Franz Wagner": {
       "games": 7,
@@ -1720,7 +2146,10 @@
       "fg_pct": 41.9,
       "fg3_pct": 20.0,
       "ft_pct": 79.5,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 124,
+      "three_pa": 35,
+      "fta": 39
     },
     "Fred VanVleet": {
       "games": 6,
@@ -1732,7 +2161,10 @@
       "fg_pct": 36.9,
       "fg3_pct": 31.8,
       "ft_pct": 84.6,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 65,
+      "three_pa": 44,
+      "fta": 13
     },
     "Gary Payton II": {
       "games": 8,
@@ -1744,7 +2176,10 @@
       "fg_pct": 43.6,
       "fg3_pct": 18.8,
       "ft_pct": null,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 39,
+      "three_pa": 16,
+      "fta": 0
     },
     "Gary Trent Jr.": {
       "games": 2,
@@ -1756,7 +2191,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 5,
+      "three_pa": 4,
+      "fta": 0
     },
     "Georges Niang": {
       "games": 8,
@@ -1768,7 +2206,10 @@
       "fg_pct": 43.4,
       "fg3_pct": 29.0,
       "ft_pct": 75.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 53,
+      "three_pa": 31,
+      "fta": 4
     },
     "GG Jackson": {
       "games": 7,
@@ -1780,7 +2221,10 @@
       "fg_pct": 40.4,
       "fg3_pct": 40.9,
       "ft_pct": 77.8,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 52,
+      "three_pa": 22,
+      "fta": 9
     },
     "Giannis Antetokounmpo": {
       "games": 7,
@@ -1792,7 +2236,10 @@
       "fg_pct": 58.6,
       "fg3_pct": 23.5,
       "ft_pct": 61.9,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 133,
+      "three_pa": 17,
+      "fta": 63
     },
     "Goga Bitadze": {
       "games": 5,
@@ -1804,7 +2251,10 @@
       "fg_pct": 40.0,
       "fg3_pct": null,
       "ft_pct": 90.9,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 10,
+      "three_pa": 0,
+      "fta": 11
     },
     "Gradey Dick": {
       "games": 7,
@@ -1816,7 +2266,10 @@
       "fg_pct": 44.1,
       "fg3_pct": 38.5,
       "ft_pct": 90.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 34,
+      "three_pa": 13,
+      "fta": 10
     },
     "Graham Ike": {
       "games": 6,
@@ -1828,7 +2281,10 @@
       "fg_pct": 52.0,
       "fg3_pct": 100.0,
       "ft_pct": 83.3,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 25,
+      "three_pa": 4,
+      "fta": 6
     },
     "Grayson Allen": {
       "games": 8,
@@ -1840,7 +2296,10 @@
       "fg_pct": 45.9,
       "fg3_pct": 46.6,
       "ft_pct": 92.3,
-      "three_pm": 3.4
+      "three_pm": 3.4,
+      "fga": 74,
+      "three_pa": 58,
+      "fta": 26
     },
     "Gui Santos": {
       "games": 6,
@@ -1852,7 +2311,10 @@
       "fg_pct": 48.4,
       "fg3_pct": 36.4,
       "ft_pct": 64.3,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 31,
+      "three_pa": 11,
+      "fta": 14
     },
     "Hannes Steinbach": {
       "games": 3,
@@ -1864,7 +2326,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": 0.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 8,
+      "three_pa": 0,
+      "fta": 1
     },
     "Harrison Barnes": {
       "games": 5,
@@ -1876,7 +2341,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 44.4,
       "ft_pct": 83.3,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 10,
+      "three_pa": 9,
+      "fta": 6
     },
     "Herbert Jones": {
       "games": 7,
@@ -1888,7 +2356,10 @@
       "fg_pct": 45.5,
       "fg3_pct": 31.6,
       "ft_pct": 80.0,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 44,
+      "three_pa": 19,
+      "fta": 5
     },
     "Hugo Gonzalez": {
       "games": 7,
@@ -1900,7 +2371,10 @@
       "fg_pct": 45.5,
       "fg3_pct": 20.0,
       "ft_pct": 57.1,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 22,
+      "three_pa": 10,
+      "fta": 7
     },
     "Immanuel Quickley": {
       "games": 7,
@@ -1912,7 +2386,10 @@
       "fg_pct": 40.8,
       "fg3_pct": 34.5,
       "ft_pct": 84.4,
-      "three_pm": 2.7
+      "three_pm": 2.7,
+      "fga": 98,
+      "three_pa": 55,
+      "fta": 32
     },
     "Isaac Jones": {
       "games": 3,
@@ -1924,7 +2401,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 1,
+      "fta": 0
     },
     "Isaac Okoro": {
       "games": 7,
@@ -1936,7 +2416,10 @@
       "fg_pct": 26.9,
       "fg3_pct": 17.6,
       "ft_pct": 85.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 26,
+      "three_pa": 17,
+      "fta": 20
     },
     "Isaiah Collier": {
       "games": 7,
@@ -1948,7 +2431,10 @@
       "fg_pct": 40.5,
       "fg3_pct": 0.0,
       "ft_pct": 58.1,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 42,
+      "three_pa": 8,
+      "fta": 31
     },
     "Isaiah Crawford": {
       "games": 6,
@@ -1960,7 +2446,10 @@
       "fg_pct": 55.6,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 9,
+      "three_pa": 8,
+      "fta": 0
     },
     "Isaiah Evans": {
       "games": 4,
@@ -1972,7 +2461,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 0
     },
     "Isaiah Hartenstein": {
       "games": 7,
@@ -1984,7 +2476,10 @@
       "fg_pct": 48.1,
       "fg3_pct": 0.0,
       "ft_pct": 92.3,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 52,
+      "three_pa": 2,
+      "fta": 13
     },
     "Isaiah Jackson": {
       "games": 7,
@@ -1996,7 +2491,10 @@
       "fg_pct": 60.4,
       "fg3_pct": 100.0,
       "ft_pct": 66.7,
-      "three_pm": 0.1
+      "three_pm": 0.1,
+      "fga": 48,
+      "three_pa": 1,
+      "fta": 12
     },
     "Isaiah Joe": {
       "games": 3,
@@ -2008,7 +2506,10 @@
       "fg_pct": 36.8,
       "fg3_pct": 23.1,
       "ft_pct": 62.5,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 19,
+      "three_pa": 13,
+      "fta": 8
     },
     "Isaiah Stewart": {
       "games": 6,
@@ -2020,7 +2521,10 @@
       "fg_pct": 65.9,
       "fg3_pct": 57.1,
       "ft_pct": 100.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 44,
+      "three_pa": 14,
+      "fta": 11
     },
     "Ivica Zubac": {
       "games": 3,
@@ -2032,7 +2536,10 @@
       "fg_pct": 60.0,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 20,
+      "three_pa": 0,
+      "fta": 6
     },
     "Jabari Smith Jr.": {
       "games": 8,
@@ -2044,7 +2551,10 @@
       "fg_pct": 49.0,
       "fg3_pct": 48.1,
       "ft_pct": 88.0,
-      "three_pm": 3.1
+      "three_pm": 3.1,
+      "fga": 102,
+      "three_pa": 52,
+      "fta": 25
     },
     "Jabari Walker": {
       "games": 5,
@@ -2056,7 +2566,10 @@
       "fg_pct": 61.5,
       "fg3_pct": 25.0,
       "ft_pct": 75.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 13,
+      "three_pa": 4,
+      "fta": 4
     },
     "Jaden Akins": {
       "games": 2,
@@ -2068,7 +2581,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Jaden Bradley": {
       "games": 5,
@@ -2080,7 +2596,10 @@
       "fg_pct": 40.0,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 5
     },
     "Jaden Hardy": {
       "games": 5,
@@ -2092,7 +2611,10 @@
       "fg_pct": 10.0,
       "fg3_pct": 12.5,
       "ft_pct": 83.3,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 10,
+      "three_pa": 8,
+      "fta": 6
     },
     "Jaden McDaniels": {
       "games": 8,
@@ -2104,7 +2626,10 @@
       "fg_pct": 52.8,
       "fg3_pct": 36.4,
       "ft_pct": 66.7,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 108,
+      "three_pa": 33,
+      "fta": 12
     },
     "Jae'Sean Tate": {
       "games": 6,
@@ -2116,7 +2641,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 1,
+      "fta": 0
     },
     "Jahmai Mashack": {
       "games": 2,
@@ -2128,7 +2656,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Jaime Jaquez Jr.": {
       "games": 7,
@@ -2140,7 +2671,10 @@
       "fg_pct": 50.6,
       "fg3_pct": 44.0,
       "ft_pct": 70.8,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 87,
+      "three_pa": 25,
+      "fta": 24
     },
     "Jake LaRavia": {
       "games": 7,
@@ -2152,7 +2686,10 @@
       "fg_pct": 55.2,
       "fg3_pct": 53.3,
       "ft_pct": 50.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 29,
+      "three_pa": 15,
+      "fta": 4
     },
     "Ja'Kobe Walter": {
       "games": 7,
@@ -2164,7 +2701,10 @@
       "fg_pct": 45.0,
       "fg3_pct": 38.6,
       "ft_pct": 63.2,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 60,
+      "three_pa": 44,
+      "fta": 19
     },
     "Ja'Kobi Gillespie": {
       "games": 2,
@@ -2176,7 +2716,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 33.3,
       "ft_pct": null,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 4,
+      "three_pa": 3,
+      "fta": 0
     },
     "Jakob Poeltl": {
       "games": 5,
@@ -2188,7 +2731,10 @@
       "fg_pct": 52.9,
       "fg3_pct": null,
       "ft_pct": 55.6,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 17,
+      "three_pa": 0,
+      "fta": 9
     },
     "Jalen Brunson": {
       "games": 7,
@@ -2200,7 +2746,10 @@
       "fg_pct": 39.3,
       "fg3_pct": 33.3,
       "ft_pct": 73.2,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 145,
+      "three_pa": 51,
+      "fta": 56
     },
     "Jalen Duren": {
       "games": 2,
@@ -2212,7 +2761,10 @@
       "fg_pct": 58.8,
       "fg3_pct": null,
       "ft_pct": 85.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 17,
+      "three_pa": 0,
+      "fta": 7
     },
     "Jalen Green": {
       "games": 5,
@@ -2224,7 +2776,10 @@
       "fg_pct": 41.8,
       "fg3_pct": 22.2,
       "ft_pct": 45.5,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 55,
+      "three_pa": 18,
+      "fta": 11
     },
     "Jalen Johnson": {
       "games": 7,
@@ -2236,7 +2791,10 @@
       "fg_pct": 42.1,
       "fg3_pct": 25.8,
       "ft_pct": 83.3,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 107,
+      "three_pa": 31,
+      "fta": 36
     },
     "Jalen Pickett": {
       "games": 3,
@@ -2248,7 +2806,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 5,
+      "three_pa": 2,
+      "fta": 0
     },
     "Jalen Slawson": {
       "games": 7,
@@ -2260,7 +2821,10 @@
       "fg_pct": 47.1,
       "fg3_pct": 28.6,
       "ft_pct": 66.7,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 17,
+      "three_pa": 7,
+      "fta": 15
     },
     "Jalen Smith": {
       "games": 7,
@@ -2272,7 +2836,10 @@
       "fg_pct": 47.8,
       "fg3_pct": 27.8,
       "ft_pct": 75.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 69,
+      "three_pa": 36,
+      "fta": 12
     },
     "Jalen Suggs": {
       "games": 3,
@@ -2284,7 +2851,10 @@
       "fg_pct": 35.7,
       "fg3_pct": 11.1,
       "ft_pct": 75.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 28,
+      "three_pa": 9,
+      "fta": 4
     },
     "Jalen Williams": {
       "games": 3,
@@ -2296,7 +2866,10 @@
       "fg_pct": 38.5,
       "fg3_pct": 33.3,
       "ft_pct": 80.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 39,
+      "three_pa": 9,
+      "fta": 10
     },
     "Jamal Cain": {
       "games": 7,
@@ -2308,7 +2881,10 @@
       "fg_pct": 46.7,
       "fg3_pct": 36.8,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 30,
+      "three_pa": 19,
+      "fta": 7
     },
     "Jamal Murray": {
       "games": 6,
@@ -2320,7 +2896,10 @@
       "fg_pct": 48.6,
       "fg3_pct": 51.9,
       "ft_pct": 81.4,
-      "three_pm": 4.5
+      "three_pm": 4.5,
+      "fga": 105,
+      "three_pa": 52,
+      "fta": 43
     },
     "Jamal Shead": {
       "games": 7,
@@ -2332,7 +2911,10 @@
       "fg_pct": 36.1,
       "fg3_pct": 18.8,
       "ft_pct": 92.3,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 36,
+      "three_pa": 16,
+      "fta": 13
     },
     "Jamaree Bouyea": {
       "games": 2,
@@ -2344,7 +2926,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 0,
+      "fta": 1
     },
     "James Harden": {
       "games": 7,
@@ -2356,7 +2941,10 @@
       "fg_pct": 39.1,
       "fg3_pct": 36.0,
       "ft_pct": 80.0,
-      "three_pm": 2.6
+      "three_pm": 2.6,
+      "fga": 87,
+      "three_pa": 50,
+      "fta": 35
     },
     "James Wiseman": {
       "games": 3,
@@ -2368,7 +2956,10 @@
       "fg_pct": 0.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 0
     },
     "Jamison Battle": {
       "games": 7,
@@ -2380,7 +2971,10 @@
       "fg_pct": 46.3,
       "fg3_pct": 43.3,
       "ft_pct": 87.5,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 41,
+      "three_pa": 30,
+      "fta": 8
     },
     "Ja Morant": {
       "games": 4,
@@ -2392,7 +2986,10 @@
       "fg_pct": 54.2,
       "fg3_pct": 42.9,
       "ft_pct": 83.3,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 48,
+      "three_pa": 14,
+      "fta": 6
     },
     "Jarace Walker": {
       "games": 8,
@@ -2404,7 +3001,10 @@
       "fg_pct": 37.7,
       "fg3_pct": 33.3,
       "ft_pct": 53.8,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 61,
+      "three_pa": 30,
+      "fta": 13
     },
     "Jared McCain": {
       "games": 7,
@@ -2416,7 +3016,10 @@
       "fg_pct": 34.7,
       "fg3_pct": 28.2,
       "ft_pct": 81.8,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 75,
+      "three_pa": 39,
+      "fta": 11
     },
     "Jaren Jackson Jr.": {
       "games": 4,
@@ -2428,7 +3031,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 35.7,
       "ft_pct": 76.2,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 44,
+      "three_pa": 14,
+      "fta": 21
     },
     "Jarred Vanderbilt": {
       "games": 4,
@@ -2440,7 +3046,10 @@
       "fg_pct": 75.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 0,
+      "fta": 0
     },
     "Jarrett Allen": {
       "games": 7,
@@ -2452,7 +3061,10 @@
       "fg_pct": 63.1,
       "fg3_pct": 66.7,
       "ft_pct": 68.8,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 65,
+      "three_pa": 3,
+      "fta": 32
     },
     "Jase Richardson": {
       "games": 7,
@@ -2464,7 +3076,10 @@
       "fg_pct": 36.4,
       "fg3_pct": 26.3,
       "ft_pct": 80.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 44,
+      "three_pa": 19,
+      "fta": 5
     },
     "Javon Small": {
       "games": 1,
@@ -2476,7 +3091,10 @@
       "fg_pct": 28.6,
       "fg3_pct": 50.0,
       "ft_pct": 50.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 7,
+      "three_pa": 4,
+      "fta": 2
     },
     "Javonte Green": {
       "games": 7,
@@ -2488,7 +3106,10 @@
       "fg_pct": 36.1,
       "fg3_pct": 33.3,
       "ft_pct": 100.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 36,
+      "three_pa": 30,
+      "fta": 11
     },
     "Jaxson Hayes": {
       "games": 6,
@@ -2500,7 +3121,10 @@
       "fg_pct": 55.9,
       "fg3_pct": 0.0,
       "ft_pct": 68.8,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 34,
+      "three_pa": 1,
+      "fta": 16
     },
     "Jay Huff": {
       "games": 7,
@@ -2512,7 +3136,10 @@
       "fg_pct": 52.4,
       "fg3_pct": 27.3,
       "ft_pct": 88.9,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 42,
+      "three_pa": 22,
+      "fta": 9
     },
     "Jaylen Brown": {
       "games": 7,
@@ -2524,7 +3151,10 @@
       "fg_pct": 45.7,
       "fg3_pct": 41.9,
       "ft_pct": 73.5,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 116,
+      "three_pa": 31,
+      "fta": 34
     },
     "Jaylen Clark": {
       "games": 7,
@@ -2536,7 +3166,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 35.7,
       "ft_pct": 50.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 20,
+      "three_pa": 14,
+      "fta": 10
     },
     "Jaylen Wells": {
       "games": 7,
@@ -2548,7 +3181,10 @@
       "fg_pct": 55.0,
       "fg3_pct": 38.9,
       "ft_pct": 69.2,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 60,
+      "three_pa": 36,
+      "fta": 13
     },
     "Jaylin Sellers": {
       "games": 4,
@@ -2560,7 +3196,10 @@
       "fg_pct": 23.1,
       "fg3_pct": 22.2,
       "ft_pct": 50.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 13,
+      "three_pa": 9,
+      "fta": 2
     },
     "Jaylin Williams": {
       "games": 7,
@@ -2572,7 +3211,10 @@
       "fg_pct": 20.0,
       "fg3_pct": 20.8,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 30,
+      "three_pa": 24,
+      "fta": 3
     },
     "Jaylon Tyson": {
       "games": 5,
@@ -2584,7 +3226,10 @@
       "fg_pct": 41.0,
       "fg3_pct": 22.7,
       "ft_pct": 50.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 39,
+      "three_pa": 22,
+      "fta": 4
     },
     "Jayson Kent": {
       "games": 1,
@@ -2596,7 +3241,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 0
     },
     "Jayson Tatum": {
       "games": 7,
@@ -2608,7 +3256,10 @@
       "fg_pct": 41.8,
       "fg3_pct": 22.9,
       "ft_pct": 87.0,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 141,
+      "three_pa": 48,
+      "fta": 69
     },
     "Jerami Grant": {
       "games": 7,
@@ -2620,7 +3271,10 @@
       "fg_pct": 38.6,
       "fg3_pct": 35.7,
       "ft_pct": 70.6,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 57,
+      "three_pa": 28,
+      "fta": 17
     },
     "Jeremiah Fears": {
       "games": 7,
@@ -2632,7 +3286,10 @@
       "fg_pct": 41.1,
       "fg3_pct": 24.1,
       "ft_pct": 69.2,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 90,
+      "three_pa": 29,
+      "fta": 13
     },
     "Jericho Sims": {
       "games": 3,
@@ -2644,7 +3301,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Jett Howard": {
       "games": 3,
@@ -2656,7 +3316,10 @@
       "fg_pct": 75.0,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 0
     },
     "Jevon Carter": {
       "games": 3,
@@ -2668,7 +3331,10 @@
       "fg_pct": 26.7,
       "fg3_pct": 27.3,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 15,
+      "three_pa": 11,
+      "fta": 0
     },
     "Joan Beringer": {
       "games": 8,
@@ -2680,7 +3346,10 @@
       "fg_pct": 56.8,
       "fg3_pct": null,
       "ft_pct": 71.4,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 37,
+      "three_pa": 0,
+      "fta": 14
     },
     "Jock Landale": {
       "games": 7,
@@ -2692,7 +3361,10 @@
       "fg_pct": 44.7,
       "fg3_pct": 17.6,
       "ft_pct": 58.3,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 38,
+      "three_pa": 17,
+      "fta": 12
     },
     "Joel Embiid": {
       "games": 6,
@@ -2704,7 +3376,10 @@
       "fg_pct": 40.7,
       "fg3_pct": 13.0,
       "ft_pct": 85.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 91,
+      "three_pa": 23,
+      "fta": 40
     },
     "John Collins": {
       "games": 7,
@@ -2716,7 +3391,10 @@
       "fg_pct": 42.4,
       "fg3_pct": 35.0,
       "ft_pct": 40.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 59,
+      "three_pa": 20,
+      "fta": 5
     },
     "John Tonje": {
       "games": 1,
@@ -2728,7 +3406,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 50.0,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 2,
+      "three_pa": 2,
+      "fta": 2
     },
     "Jonathan Kuminga": {
       "games": 8,
@@ -2740,7 +3421,10 @@
       "fg_pct": 43.4,
       "fg3_pct": 44.1,
       "ft_pct": 55.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 83,
+      "three_pa": 34,
+      "fta": 20
     },
     "Jonathan Mogbo": {
       "games": 4,
@@ -2752,7 +3436,10 @@
       "fg_pct": 35.3,
       "fg3_pct": 16.7,
       "ft_pct": 100.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 17,
+      "three_pa": 6,
+      "fta": 2
     },
     "Jordan Clarkson": {
       "games": 6,
@@ -2764,7 +3451,10 @@
       "fg_pct": 56.0,
       "fg3_pct": 50.0,
       "ft_pct": 66.7,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 25,
+      "three_pa": 6,
+      "fta": 3
     },
     "Jordan Goodwin": {
       "games": 5,
@@ -2776,7 +3466,10 @@
       "fg_pct": 44.1,
       "fg3_pct": 37.5,
       "ft_pct": null,
-      "three_pm": 1.8
+      "three_pm": 1.8,
+      "fga": 34,
+      "three_pa": 24,
+      "fta": 0
     },
     "Jordan Hawkins": {
       "games": 3,
@@ -2788,7 +3481,10 @@
       "fg_pct": 28.6,
       "fg3_pct": 0.0,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 7,
+      "three_pa": 4,
+      "fta": 3
     },
     "Jordan McLaughlin": {
       "games": 3,
@@ -2800,7 +3496,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 7,
+      "three_pa": 2,
+      "fta": 0
     },
     "Jordan Poole": {
       "games": 4,
@@ -2812,7 +3511,10 @@
       "fg_pct": 19.0,
       "fg3_pct": 21.4,
       "ft_pct": 92.9,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 21,
+      "three_pa": 14,
+      "fta": 14
     },
     "Jordan Walsh": {
       "games": 7,
@@ -2824,7 +3526,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 29.4,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 30,
+      "three_pa": 17,
+      "fta": 2
     },
     "Jose Alvarado": {
       "games": 3,
@@ -2836,7 +3541,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 40.0,
       "ft_pct": null,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 10,
+      "three_pa": 5,
+      "fta": 0
     },
     "Josh Dix": {
       "games": 4,
@@ -2848,7 +3556,10 @@
       "fg_pct": 28.6,
       "fg3_pct": 11.1,
       "ft_pct": null,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 14,
+      "three_pa": 9,
+      "fta": 0
     },
     "Josh Giddey": {
       "games": 7,
@@ -2860,7 +3571,10 @@
       "fg_pct": 36.9,
       "fg3_pct": 26.9,
       "ft_pct": 69.2,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 65,
+      "three_pa": 26,
+      "fta": 13
     },
     "Josh Green": {
       "games": 5,
@@ -2872,7 +3586,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 33.3,
       "ft_pct": 100.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 10,
+      "three_pa": 6,
+      "fta": 1
     },
     "Josh Hart": {
       "games": 7,
@@ -2884,7 +3601,10 @@
       "fg_pct": 38.6,
       "fg3_pct": 34.2,
       "ft_pct": 60.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 57,
+      "three_pa": 38,
+      "fta": 5
     },
     "Josh Minott": {
       "games": 5,
@@ -2896,7 +3616,10 @@
       "fg_pct": 38.9,
       "fg3_pct": 23.1,
       "ft_pct": 100.0,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 18,
+      "three_pa": 13,
+      "fta": 4
     },
     "Josh Okogie": {
       "games": 6,
@@ -2908,7 +3631,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 28.6,
       "ft_pct": 100.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 12,
+      "three_pa": 7,
+      "fta": 6
     },
     "Joshua Jefferson": {
       "games": 1,
@@ -2920,7 +3646,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 0
     },
     "Jrue Holiday": {
       "games": 6,
@@ -2932,7 +3661,10 @@
       "fg_pct": 51.9,
       "fg3_pct": 38.7,
       "ft_pct": 81.2,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 52,
+      "three_pa": 31,
+      "fta": 16
     },
     "Julian Champagnie": {
       "games": 7,
@@ -2944,7 +3676,10 @@
       "fg_pct": 48.1,
       "fg3_pct": 46.8,
       "ft_pct": 85.7,
-      "three_pm": 3.1
+      "three_pm": 3.1,
+      "fga": 52,
+      "three_pa": 47,
+      "fta": 7
     },
     "Julian Reese": {
       "games": 1,
@@ -2956,7 +3691,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Julius Randle": {
       "games": 7,
@@ -2968,7 +3706,10 @@
       "fg_pct": 41.5,
       "fg3_pct": 32.4,
       "ft_pct": 80.7,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 106,
+      "three_pa": 37,
+      "fta": 57
     },
     "Justin Champagnie": {
       "games": 4,
@@ -2980,7 +3721,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 28.6,
       "ft_pct": 100.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 20,
+      "three_pa": 7,
+      "fta": 3
     },
     "Justin Edwards": {
       "games": 3,
@@ -2992,7 +3736,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 0,
+      "fta": 0
     },
     "Karim Lopez": {
       "games": 2,
@@ -3004,7 +3751,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 1,
+      "fta": 0
     },
     "Karl-Anthony Towns": {
       "games": 7,
@@ -3016,7 +3766,10 @@
       "fg_pct": 55.1,
       "fg3_pct": 39.4,
       "ft_pct": 77.8,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 98,
+      "three_pa": 33,
+      "fta": 27
     },
     "Karlo Matkovic": {
       "games": 6,
@@ -3028,7 +3781,10 @@
       "fg_pct": 64.7,
       "fg3_pct": 52.6,
       "ft_pct": 60.0,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 34,
+      "three_pa": 19,
+      "fta": 10
     },
     "Kasparas Jakucionis": {
       "games": 7,
@@ -3040,7 +3796,10 @@
       "fg_pct": 42.5,
       "fg3_pct": 20.0,
       "ft_pct": 86.4,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 40,
+      "three_pa": 20,
+      "fta": 22
     },
     "Kawhi Leonard": {
       "games": 2,
@@ -3052,7 +3811,10 @@
       "fg_pct": 32.4,
       "fg3_pct": 28.6,
       "ft_pct": 100.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 37,
+      "three_pa": 14,
+      "fta": 11
     },
     "Keaton Wagler": {
       "games": 7,
@@ -3064,7 +3826,10 @@
       "fg_pct": 29.0,
       "fg3_pct": 30.3,
       "ft_pct": 84.8,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 62,
+      "three_pa": 33,
+      "fta": 46
     },
     "Keegan Murray": {
       "games": 2,
@@ -3076,7 +3841,10 @@
       "fg_pct": 29.4,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 17,
+      "three_pa": 7,
+      "fta": 4
     },
     "Keldon Johnson": {
       "games": 7,
@@ -3088,7 +3856,10 @@
       "fg_pct": 49.1,
       "fg3_pct": 28.6,
       "ft_pct": 68.8,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 53,
+      "three_pa": 7,
+      "fta": 16
     },
     "Kel'el Ware": {
       "games": 7,
@@ -3100,7 +3871,10 @@
       "fg_pct": 44.1,
       "fg3_pct": 25.0,
       "ft_pct": 73.7,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 68,
+      "three_pa": 24,
+      "fta": 19
     },
     "Kelly Oubre Jr.": {
       "games": 7,
@@ -3112,7 +3886,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 25.9,
       "ft_pct": 68.8,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 56,
+      "three_pa": 27,
+      "fta": 16
     },
     "Kenrich Williams": {
       "games": 7,
@@ -3124,7 +3901,10 @@
       "fg_pct": 48.4,
       "fg3_pct": 47.4,
       "ft_pct": 100.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 31,
+      "three_pa": 19,
+      "fta": 3
     },
     "Kentavious Caldwell-Pope": {
       "games": 8,
@@ -3136,7 +3916,10 @@
       "fg_pct": 42.1,
       "fg3_pct": 44.0,
       "ft_pct": 100.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 38,
+      "three_pa": 25,
+      "fta": 4
     },
     "Keon Ellis": {
       "games": 7,
@@ -3148,7 +3931,10 @@
       "fg_pct": 35.0,
       "fg3_pct": 26.9,
       "ft_pct": 0.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 40,
+      "three_pa": 26,
+      "fta": 2
     },
     "Kevin Durant": {
       "games": 8,
@@ -3160,7 +3946,10 @@
       "fg_pct": 53.1,
       "fg3_pct": 40.7,
       "ft_pct": 83.6,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 98,
+      "three_pa": 27,
+      "fta": 61
     },
     "Kevin Huerter": {
       "games": 7,
@@ -3172,7 +3961,10 @@
       "fg_pct": 39.0,
       "fg3_pct": 38.5,
       "ft_pct": 50.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 41,
+      "three_pa": 26,
+      "fta": 4
     },
     "Kevon Looney": {
       "games": 4,
@@ -3184,7 +3976,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 6,
+      "three_pa": 0,
+      "fta": 2
     },
     "Keyonte George": {
       "games": 7,
@@ -3196,7 +3991,10 @@
       "fg_pct": 43.7,
       "fg3_pct": 34.9,
       "ft_pct": 80.0,
-      "three_pm": 2.1
+      "three_pm": 2.1,
+      "fga": 103,
+      "three_pa": 43,
+      "fta": 40
     },
     "Khaman Maluach": {
       "games": 5,
@@ -3208,7 +4006,10 @@
       "fg_pct": 58.3,
       "fg3_pct": 33.3,
       "ft_pct": 72.7,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 24,
+      "three_pa": 3,
+      "fta": 11
     },
     "Khris Middleton": {
       "games": 5,
@@ -3220,7 +4021,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 20.0,
       "ft_pct": 83.3,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 9,
+      "three_pa": 5,
+      "fta": 6
     },
     "Kingston Flemings": {
       "games": 7,
@@ -3232,7 +4036,10 @@
       "fg_pct": 47.6,
       "fg3_pct": 38.5,
       "ft_pct": 71.4,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 42,
+      "three_pa": 13,
+      "fta": 7
     },
     "Klay Thompson": {
       "games": 7,
@@ -3244,7 +4051,10 @@
       "fg_pct": 43.9,
       "fg3_pct": 41.1,
       "ft_pct": 100.0,
-      "three_pm": 3.3
+      "three_pm": 3.3,
+      "fga": 66,
+      "three_pa": 56,
+      "fta": 2
     },
     "Koa Peat": {
       "games": 2,
@@ -3256,7 +4066,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 0,
+      "fta": 0
     },
     "Kobe Brown": {
       "games": 5,
@@ -3268,7 +4081,10 @@
       "fg_pct": 47.6,
       "fg3_pct": 30.0,
       "ft_pct": 83.3,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 21,
+      "three_pa": 10,
+      "fta": 6
     },
     "Kobe Sanders": {
       "games": 7,
@@ -3280,7 +4096,10 @@
       "fg_pct": 46.4,
       "fg3_pct": 43.8,
       "ft_pct": 100.0,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 56,
+      "three_pa": 32,
+      "fta": 11
     },
     "Kris Dunn": {
       "games": 7,
@@ -3292,7 +4111,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 33.3,
       "ft_pct": 84.6,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 46,
+      "three_pa": 18,
+      "fta": 13
     },
     "Kris Murray": {
       "games": 4,
@@ -3304,7 +4126,10 @@
       "fg_pct": 12.5,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 8,
+      "three_pa": 6,
+      "fta": 0
     },
     "Kyle Anderson": {
       "games": 5,
@@ -3316,7 +4141,10 @@
       "fg_pct": 40.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 0
     },
     "Kyle Filipowski": {
       "games": 5,
@@ -3328,7 +4156,10 @@
       "fg_pct": 30.0,
       "fg3_pct": 33.3,
       "ft_pct": 66.7,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 10,
+      "three_pa": 3,
+      "fta": 3
     },
     "Kyle Kuzma": {
       "games": 7,
@@ -3340,7 +4171,10 @@
       "fg_pct": 43.9,
       "fg3_pct": 29.0,
       "ft_pct": 50.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 66,
+      "three_pa": 31,
+      "fta": 6
     },
     "Kyrie Irving": {
       "games": 5,
@@ -3352,7 +4186,10 @@
       "fg_pct": 52.7,
       "fg3_pct": 39.0,
       "ft_pct": 100.0,
-      "three_pm": 3.2
+      "three_pm": 3.2,
+      "fga": 74,
+      "three_pa": 41,
+      "fta": 13
     },
     "Kyshawn George": {
       "games": 7,
@@ -3364,7 +4201,10 @@
       "fg_pct": 48.3,
       "fg3_pct": 32.4,
       "ft_pct": 78.9,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 89,
+      "three_pa": 37,
+      "fta": 19
     },
     "Labaron Philon Jr.": {
       "games": 5,
@@ -3376,7 +4216,10 @@
       "fg_pct": 38.5,
       "fg3_pct": 28.6,
       "ft_pct": 0.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 13,
+      "three_pa": 7,
+      "fta": 2
     },
     "LaMelo Ball": {
       "games": 8,
@@ -3388,7 +4231,10 @@
       "fg_pct": 42.7,
       "fg3_pct": 36.6,
       "ft_pct": 75.0,
-      "three_pm": 3.2
+      "three_pm": 3.2,
+      "fga": 110,
+      "three_pa": 71,
+      "fta": 20
     },
     "Landry Shamet": {
       "games": 7,
@@ -3400,7 +4246,10 @@
       "fg_pct": 43.8,
       "fg3_pct": 45.7,
       "ft_pct": 83.3,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 48,
+      "three_pa": 35,
+      "fta": 12
     },
     "Larry Nance Jr.": {
       "games": 7,
@@ -3412,7 +4261,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 31.2,
       "ft_pct": 40.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 24,
+      "three_pa": 16,
+      "fta": 5
     },
     "Lauri Markkanen": {
       "games": 6,
@@ -3424,7 +4276,10 @@
       "fg_pct": 38.5,
       "fg3_pct": 34.8,
       "ft_pct": 88.5,
-      "three_pm": 2.7
+      "three_pm": 2.7,
+      "fga": 78,
+      "three_pa": 46,
+      "fta": 26
     },
     "Lawson Lovering": {
       "games": 1,
@@ -3436,7 +4291,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Leaky Black": {
       "games": 3,
@@ -3448,7 +4306,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 10,
+      "three_pa": 8,
+      "fta": 0
     },
     "LeBron James": {
       "games": 6,
@@ -3460,7 +4321,10 @@
       "fg_pct": 45.1,
       "fg3_pct": 23.8,
       "ft_pct": 62.1,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 82,
+      "three_pa": 21,
+      "fta": 29
     },
     "Leonard Miller": {
       "games": 7,
@@ -3472,7 +4336,10 @@
       "fg_pct": 44.0,
       "fg3_pct": 19.2,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 50,
+      "three_pa": 26,
+      "fta": 4
     },
     "Liam McNeeley": {
       "games": 4,
@@ -3484,7 +4351,10 @@
       "fg_pct": 10.0,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 10,
+      "three_pa": 4,
+      "fta": 5
     },
     "LJ Cryer": {
       "games": 6,
@@ -3496,7 +4366,10 @@
       "fg_pct": 37.5,
       "fg3_pct": 50.0,
       "ft_pct": 50.0,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 16,
+      "three_pa": 10,
+      "fta": 2
     },
     "Luguentz Dort": {
       "games": 8,
@@ -3508,7 +4381,10 @@
       "fg_pct": 37.5,
       "fg3_pct": 31.6,
       "ft_pct": 82.4,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 64,
+      "three_pa": 38,
+      "fta": 17
     },
     "Luka Doncic": {
       "games": 7,
@@ -3520,7 +4396,10 @@
       "fg_pct": 49.7,
       "fg3_pct": 42.7,
       "ft_pct": 88.7,
-      "three_pm": 5.9
+      "three_pm": 5.9,
+      "fga": 165,
+      "three_pa": 96,
+      "fta": 71
     },
     "Luka Garza": {
       "games": 7,
@@ -3532,7 +4411,10 @@
       "fg_pct": 45.5,
       "fg3_pct": 47.1,
       "ft_pct": 73.3,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 33,
+      "three_pa": 17,
+      "fta": 15
     },
     "Luke Kennard": {
       "games": 4,
@@ -3544,7 +4426,10 @@
       "fg_pct": 52.4,
       "fg3_pct": 47.4,
       "ft_pct": 100.0,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 21,
+      "three_pa": 19,
+      "fta": 4
     },
     "Luke Kornet": {
       "games": 7,
@@ -3556,7 +4441,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 16,
+      "three_pa": 0,
+      "fta": 9
     },
     "Malevy Leons": {
       "games": 4,
@@ -3568,7 +4456,10 @@
       "fg_pct": 16.7,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 6,
+      "three_pa": 1,
+      "fta": 0
     },
     "Malik Monk": {
       "games": 6,
@@ -3580,7 +4471,10 @@
       "fg_pct": 36.6,
       "fg3_pct": 33.3,
       "ft_pct": 87.5,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 41,
+      "three_pa": 18,
+      "fta": 8
     },
     "Maliq Brown": {
       "games": 1,
@@ -3592,7 +4486,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Marcus Sasser": {
       "games": 7,
@@ -3604,7 +4501,10 @@
       "fg_pct": 47.5,
       "fg3_pct": 39.1,
       "ft_pct": 100.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 40,
+      "three_pa": 23,
+      "fta": 2
     },
     "Marcus Smart": {
       "games": 5,
@@ -3616,7 +4516,10 @@
       "fg_pct": 47.4,
       "fg3_pct": 40.7,
       "ft_pct": 88.9,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 38,
+      "three_pa": 27,
+      "fta": 9
     },
     "Mario Hezonja": {
       "games": 7,
@@ -3628,7 +4531,10 @@
       "fg_pct": 44.9,
       "fg3_pct": 37.0,
       "ft_pct": 50.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 49,
+      "three_pa": 27,
+      "fta": 6
     },
     "Marvin Bagley III": {
       "games": 6,
@@ -3640,7 +4546,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 20,
+      "three_pa": 2,
+      "fta": 12
     },
     "Matas Buzelis": {
       "games": 7,
@@ -3652,7 +4561,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 29.0,
       "ft_pct": 81.1,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 65,
+      "three_pa": 31,
+      "fta": 37
     },
     "Matisse Thybulle": {
       "games": 8,
@@ -3664,7 +4576,10 @@
       "fg_pct": 46.9,
       "fg3_pct": 45.9,
       "ft_pct": 85.7,
-      "three_pm": 2.1
+      "three_pm": 2.1,
+      "fga": 49,
+      "three_pa": 37,
+      "fta": 7
     },
     "Max Christie": {
       "games": 7,
@@ -3676,7 +4591,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 27.0,
       "ft_pct": 100.0,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 54,
+      "three_pa": 37,
+      "fta": 4
     },
     "Max Strus": {
       "games": 1,
@@ -3688,7 +4606,10 @@
       "fg_pct": 30.0,
       "fg3_pct": 33.3,
       "ft_pct": 66.7,
-      "three_pm": 3.0
+      "three_pm": 3.0,
+      "fga": 10,
+      "three_pa": 9,
+      "fta": 3
     },
     "Meleek Thomas": {
       "games": 4,
@@ -3700,7 +4621,10 @@
       "fg_pct": 48.9,
       "fg3_pct": 47.6,
       "ft_pct": 100.0,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 45,
+      "three_pa": 21,
+      "fta": 2
     },
     "Micah Peavy": {
       "games": 3,
@@ -3712,7 +4636,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 100.0,
       "ft_pct": 100.0,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 6,
+      "three_pa": 2,
+      "fta": 2
     },
     "Micah Potter": {
       "games": 3,
@@ -3724,7 +4651,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 2,
+      "fta": 3
     },
     "Michael Porter Jr.": {
       "games": 7,
@@ -3736,7 +4666,10 @@
       "fg_pct": 46.2,
       "fg3_pct": 38.1,
       "ft_pct": 76.7,
-      "three_pm": 3.4
+      "three_pm": 3.4,
+      "fga": 106,
+      "three_pa": 63,
+      "fta": 30
     },
     "Mikal Bridges": {
       "games": 7,
@@ -3748,7 +4681,10 @@
       "fg_pct": 30.8,
       "fg3_pct": 26.9,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 52,
+      "three_pa": 26,
+      "fta": 4
     },
     "Mike Conley": {
       "games": 2,
@@ -3760,7 +4696,10 @@
       "fg_pct": 100.0,
       "fg3_pct": 100.0,
       "ft_pct": null,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 0
     },
     "Mikel Brown Jr.": {
       "games": 5,
@@ -3772,7 +4711,10 @@
       "fg_pct": 29.8,
       "fg3_pct": 25.0,
       "ft_pct": 85.7,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 57,
+      "three_pa": 32,
+      "fta": 14
     },
     "Miles Bridges": {
       "games": 5,
@@ -3784,7 +4726,10 @@
       "fg_pct": 45.8,
       "fg3_pct": 28.1,
       "ft_pct": 84.6,
-      "three_pm": 1.8
+      "three_pm": 1.8,
+      "fga": 72,
+      "three_pa": 32,
+      "fta": 13
     },
     "Miles McBride": {
       "games": 7,
@@ -3796,7 +4741,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 41.9,
       "ft_pct": 75.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 40,
+      "three_pa": 31,
+      "fta": 4
     },
     "Mitchell Robinson": {
       "games": 6,
@@ -3808,7 +4756,10 @@
       "fg_pct": 84.2,
       "fg3_pct": null,
       "ft_pct": 38.5,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 19,
+      "three_pa": 0,
+      "fta": 13
     },
     "Mo Bamba": {
       "games": 4,
@@ -3820,7 +4771,10 @@
       "fg_pct": 76.2,
       "fg3_pct": null,
       "ft_pct": 80.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 21,
+      "three_pa": 0,
+      "fta": 5
     },
     "Mohamed Diawara": {
       "games": 2,
@@ -3832,7 +4786,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 1,
+      "fta": 0
     },
     "Morez Johnson Jr.": {
       "games": 7,
@@ -3844,7 +4801,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 0.0,
       "ft_pct": 64.3,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 35,
+      "three_pa": 4,
+      "fta": 14
     },
     "Moritz Wagner": {
       "games": 7,
@@ -3856,7 +4816,10 @@
       "fg_pct": 53.1,
       "fg3_pct": 56.2,
       "ft_pct": 80.0,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 49,
+      "three_pa": 16,
+      "fta": 20
     },
     "Moussa Cisse": {
       "games": 5,
@@ -3868,7 +4831,10 @@
       "fg_pct": 80.0,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 4
     },
     "Moussa Diabate": {
       "games": 8,
@@ -3880,7 +4846,10 @@
       "fg_pct": 64.6,
       "fg3_pct": null,
       "ft_pct": 78.6,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 48,
+      "three_pa": 0,
+      "fta": 14
     },
     "Myles Turner": {
       "games": 7,
@@ -3892,7 +4861,10 @@
       "fg_pct": 38.6,
       "fg3_pct": 25.0,
       "ft_pct": 80.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 57,
+      "three_pa": 32,
+      "fta": 5
     },
     "Myron Gardner": {
       "games": 4,
@@ -3904,7 +4876,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 4
     },
     "Naji Marshall": {
       "games": 4,
@@ -3916,7 +4891,10 @@
       "fg_pct": 43.5,
       "fg3_pct": 18.8,
       "ft_pct": 42.9,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 46,
+      "three_pa": 16,
+      "fta": 7
     },
     "Nate Ament": {
       "games": 5,
@@ -3928,7 +4906,10 @@
       "fg_pct": 48.0,
       "fg3_pct": 44.4,
       "ft_pct": 60.0,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 25,
+      "three_pa": 9,
+      "fta": 10
     },
     "Naz Reid": {
       "games": 8,
@@ -3940,7 +4921,10 @@
       "fg_pct": 39.5,
       "fg3_pct": 34.5,
       "ft_pct": 61.1,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 119,
+      "three_pa": 55,
+      "fta": 18
     },
     "Neemias Queta": {
       "games": 7,
@@ -3952,7 +4936,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 66.7,
       "ft_pct": 65.5,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 40,
+      "three_pa": 3,
+      "fta": 29
     },
     "Nickeil Alexander-Walker": {
       "games": 8,
@@ -3964,7 +4951,10 @@
       "fg_pct": 43.8,
       "fg3_pct": 40.3,
       "ft_pct": 81.2,
-      "three_pm": 3.9
+      "three_pm": 3.9,
+      "fga": 128,
+      "three_pa": 77,
+      "fta": 32
     },
     "Nick Martinelli": {
       "games": 4,
@@ -3976,7 +4966,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 66.7,
       "ft_pct": 100.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 10,
+      "three_pa": 3,
+      "fta": 1
     },
     "Nick Richards": {
       "games": 4,
@@ -3988,7 +4981,10 @@
       "fg_pct": 100.0,
       "fg3_pct": 100.0,
       "ft_pct": null,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 3,
+      "three_pa": 1,
+      "fta": 0
     },
     "Nikola Jokic": {
       "games": 6,
@@ -4000,7 +4996,10 @@
       "fg_pct": 47.2,
       "fg3_pct": 22.6,
       "ft_pct": 88.5,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 108,
+      "three_pa": 31,
+      "fta": 26
     },
     "Nikola Jovic": {
       "games": 6,
@@ -4012,7 +5011,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 12.5,
       "ft_pct": 75.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 18,
+      "three_pa": 8,
+      "fta": 4
     },
     "Nikola Vucevic": {
       "games": 7,
@@ -4024,7 +5026,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 27.3,
       "ft_pct": 50.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 21,
+      "three_pa": 11,
+      "fta": 2
     },
     "Nique Clifford": {
       "games": 6,
@@ -4036,7 +5041,10 @@
       "fg_pct": 26.7,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 15,
+      "three_pa": 7,
+      "fta": 0
     },
     "Noa Essengue": {
       "games": 6,
@@ -4048,7 +5056,10 @@
       "fg_pct": 37.5,
       "fg3_pct": 25.0,
       "ft_pct": 45.5,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 24,
+      "three_pa": 12,
+      "fta": 11
     },
     "Noah Clowney": {
       "games": 7,
@@ -4060,7 +5071,10 @@
       "fg_pct": 37.9,
       "fg3_pct": 28.6,
       "ft_pct": 70.6,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 29,
+      "three_pa": 14,
+      "fta": 17
     },
     "Nolan Traore": {
       "games": 7,
@@ -4072,7 +5086,10 @@
       "fg_pct": 47.5,
       "fg3_pct": 50.0,
       "ft_pct": 70.6,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 59,
+      "three_pa": 24,
+      "fta": 17
     },
     "Norman Powell": {
       "games": 7,
@@ -4084,7 +5101,10 @@
       "fg_pct": 41.8,
       "fg3_pct": 34.0,
       "ft_pct": 79.0,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 91,
+      "three_pa": 50,
+      "fta": 62
     },
     "Obi Toppin": {
       "games": 5,
@@ -4096,7 +5116,10 @@
       "fg_pct": 53.8,
       "fg3_pct": 40.7,
       "ft_pct": 64.3,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 52,
+      "three_pa": 27,
+      "fta": 14
     },
     "OG Anunoby": {
       "games": 7,
@@ -4108,7 +5131,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 30.2,
       "ft_pct": 85.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 85,
+      "three_pa": 43,
+      "fta": 40
     },
     "Olivier-Maxence Prosper": {
       "games": 2,
@@ -4120,7 +5146,10 @@
       "fg_pct": 60.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 0
     },
     "Onyeka Okongwu": {
       "games": 8,
@@ -4132,7 +5161,10 @@
       "fg_pct": 45.2,
       "fg3_pct": 27.8,
       "ft_pct": 71.4,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 84,
+      "three_pa": 36,
+      "fta": 14
     },
     "Oscar Tshiebwe": {
       "games": 4,
@@ -4144,7 +5176,10 @@
       "fg_pct": 85.7,
       "fg3_pct": null,
       "ft_pct": 25.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 7,
+      "three_pa": 0,
+      "fta": 4
     },
     "Oso Ighodaro": {
       "games": 3,
@@ -4156,7 +5191,10 @@
       "fg_pct": 68.8,
       "fg3_pct": null,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 16,
+      "three_pa": 0,
+      "fta": 4
     },
     "Ousmane Dieng": {
       "games": 5,
@@ -4168,7 +5206,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 14.3,
       "ft_pct": 50.0,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 15,
+      "three_pa": 7,
+      "fta": 2
     },
     "Pacome Dadiet": {
       "games": 2,
@@ -4180,7 +5221,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Paolo Banchero": {
       "games": 2,
@@ -4192,7 +5236,10 @@
       "fg_pct": 69.6,
       "fg3_pct": 50.0,
       "ft_pct": 70.0,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 23,
+      "three_pa": 6,
+      "fta": 20
     },
     "Pascal Siakam": {
       "games": 7,
@@ -4204,7 +5251,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 28.6,
       "ft_pct": 65.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 116,
+      "three_pa": 28,
+      "fta": 40
     },
     "Pat Spencer": {
       "games": 1,
@@ -4216,7 +5266,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 100.0,
       "ft_pct": null,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 2,
+      "three_pa": 1,
+      "fta": 0
     },
     "Paul George": {
       "games": 6,
@@ -4228,7 +5281,10 @@
       "fg_pct": 46.3,
       "fg3_pct": 38.8,
       "ft_pct": 89.5,
-      "three_pm": 3.2
+      "three_pm": 3.2,
+      "fga": 95,
+      "three_pa": 49,
+      "fta": 19
     },
     "Paul Reed": {
       "games": 7,
@@ -4240,7 +5296,10 @@
       "fg_pct": 65.0,
       "fg3_pct": 71.4,
       "ft_pct": 73.3,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 60,
+      "three_pa": 7,
+      "fta": 15
     },
     "Payton Pritchard": {
       "games": 7,
@@ -4252,7 +5311,10 @@
       "fg_pct": 40.3,
       "fg3_pct": 31.0,
       "ft_pct": 85.2,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 72,
+      "three_pa": 42,
+      "fta": 27
     },
     "Pelle Larsson": {
       "games": 7,
@@ -4264,7 +5326,10 @@
       "fg_pct": 46.8,
       "fg3_pct": 38.9,
       "ft_pct": 90.6,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 47,
+      "three_pa": 18,
+      "fta": 32
     },
     "Peyton Watson": {
       "games": 6,
@@ -4276,7 +5341,10 @@
       "fg_pct": 37.1,
       "fg3_pct": 16.7,
       "ft_pct": 78.9,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 62,
+      "three_pa": 24,
+      "fta": 19
     },
     "PJ Hall": {
       "games": 2,
@@ -4288,7 +5356,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 0
     },
     "P.J. Washington": {
       "games": 7,
@@ -4300,7 +5371,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 29.5,
       "ft_pct": 72.0,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 80,
+      "three_pa": 44,
+      "fta": 25
     },
     "Precious Achiuwa": {
       "games": 7,
@@ -4312,7 +5386,10 @@
       "fg_pct": 56.2,
       "fg3_pct": 20.0,
       "ft_pct": 42.1,
-      "three_pm": 0.1
+      "three_pm": 0.1,
+      "fga": 64,
+      "three_pa": 5,
+      "fta": 19
     },
     "Quentin Grimes": {
       "games": 8,
@@ -4324,7 +5401,10 @@
       "fg_pct": 46.7,
       "fg3_pct": 26.1,
       "ft_pct": 71.4,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 45,
+      "three_pa": 23,
+      "fta": 28
     },
     "Quenton Jackson": {
       "games": 8,
@@ -4336,7 +5416,10 @@
       "fg_pct": 45.9,
       "fg3_pct": 28.0,
       "ft_pct": 90.0,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 61,
+      "three_pa": 25,
+      "fta": 20
     },
     "Quinten Post": {
       "games": 5,
@@ -4348,7 +5431,10 @@
       "fg_pct": 62.5,
       "fg3_pct": 41.7,
       "ft_pct": 75.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 24,
+      "three_pa": 12,
+      "fta": 4
     },
     "Rasheer Fleming": {
       "games": 2,
@@ -4360,7 +5446,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": 50.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 6,
+      "three_pa": 4,
+      "fta": 2
     },
     "Rayan Rupert": {
       "games": 1,
@@ -4372,7 +5461,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "RayJ Dennis": {
       "games": 1,
@@ -4384,7 +5476,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 2,
+      "fta": 0
     },
     "Reece Beekman": {
       "games": 1,
@@ -4396,7 +5491,10 @@
       "fg_pct": null,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 0,
+      "three_pa": 0,
+      "fta": 0
     },
     "Reed Sheppard": {
       "games": 5,
@@ -4408,7 +5506,10 @@
       "fg_pct": 38.3,
       "fg3_pct": 30.6,
       "ft_pct": 100.0,
-      "three_pm": 2.2
+      "three_pm": 2.2,
+      "fga": 47,
+      "three_pa": 36,
+      "fta": 3
     },
     "Riley Minix": {
       "games": 1,
@@ -4420,7 +5521,10 @@
       "fg_pct": 0.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 2,
+      "fta": 0
     },
     "RJ Barrett": {
       "games": 7,
@@ -4432,7 +5536,10 @@
       "fg_pct": 49.1,
       "fg3_pct": 29.7,
       "ft_pct": 58.8,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 116,
+      "three_pa": 37,
+      "fta": 34
     },
     "Robert Williams III": {
       "games": 5,
@@ -4444,7 +5551,10 @@
       "fg_pct": 65.2,
       "fg3_pct": null,
       "ft_pct": 66.7,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 23,
+      "three_pa": 0,
+      "fta": 6
     },
     "Ronald Holland II": {
       "games": 7,
@@ -4456,7 +5566,10 @@
       "fg_pct": 41.0,
       "fg3_pct": 29.4,
       "ft_pct": 66.7,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 39,
+      "three_pa": 17,
+      "fta": 9
     },
     "Ron Harper Jr.": {
       "games": 3,
@@ -4468,7 +5581,10 @@
       "fg_pct": 14.3,
       "fg3_pct": 20.0,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 7,
+      "three_pa": 5,
+      "fta": 0
     },
     "Royce O'Neale": {
       "games": 8,
@@ -4480,7 +5596,10 @@
       "fg_pct": 34.2,
       "fg3_pct": 28.6,
       "ft_pct": 80.0,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 38,
+      "three_pa": 35,
+      "fta": 5
     },
     "Rudy Gobert": {
       "games": 7,
@@ -4492,7 +5611,10 @@
       "fg_pct": 42.5,
       "fg3_pct": 0.0,
       "ft_pct": 43.9,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 40,
+      "three_pa": 3,
+      "fta": 41
     },
     "Rui Hachimura": {
       "games": 5,
@@ -4504,7 +5626,10 @@
       "fg_pct": 36.9,
       "fg3_pct": 38.7,
       "ft_pct": 58.3,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 65,
+      "three_pa": 31,
+      "fta": 12
     },
     "Ryan Conwell": {
       "games": 5,
@@ -4516,7 +5641,10 @@
       "fg_pct": 45.5,
       "fg3_pct": 42.9,
       "ft_pct": 50.0,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 11,
+      "three_pa": 7,
+      "fta": 2
     },
     "Ryan Dunn": {
       "games": 5,
@@ -4528,7 +5656,10 @@
       "fg_pct": 47.1,
       "fg3_pct": 50.0,
       "ft_pct": 66.7,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 17,
+      "three_pa": 8,
+      "fta": 6
     },
     "Ryan Kalkbrenner": {
       "games": 8,
@@ -4540,7 +5671,10 @@
       "fg_pct": 75.0,
       "fg3_pct": null,
       "ft_pct": 83.3,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 20,
+      "three_pa": 0,
+      "fta": 6
     },
     "Ryan Nembhard": {
       "games": 2,
@@ -4552,7 +5686,10 @@
       "fg_pct": 75.0,
       "fg3_pct": 100.0,
       "ft_pct": 100.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 4,
+      "three_pa": 1,
+      "fta": 2
     },
     "Ryan Rollins": {
       "games": 7,
@@ -4564,7 +5701,10 @@
       "fg_pct": 34.5,
       "fg3_pct": 26.3,
       "ft_pct": 58.3,
-      "three_pm": 1.4
+      "three_pm": 1.4,
+      "fga": 87,
+      "three_pa": 38,
+      "fta": 12
     },
     "Saddiq Bey": {
       "games": 7,
@@ -4576,7 +5716,10 @@
       "fg_pct": 48.7,
       "fg3_pct": 35.3,
       "ft_pct": 88.5,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 76,
+      "three_pa": 34,
+      "fta": 26
     },
     "Sam Hauser": {
       "games": 7,
@@ -4588,7 +5731,10 @@
       "fg_pct": 43.9,
       "fg3_pct": 41.2,
       "ft_pct": null,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 41,
+      "three_pa": 34,
+      "fta": 0
     },
     "Sam Merrill": {
       "games": 7,
@@ -4600,7 +5746,10 @@
       "fg_pct": 40.4,
       "fg3_pct": 32.4,
       "ft_pct": 90.0,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 47,
+      "three_pa": 37,
+      "fta": 10
     },
     "Sandro Mamukelashvili": {
       "games": 8,
@@ -4612,7 +5761,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 34.6,
       "ft_pct": 71.4,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 60,
+      "three_pa": 26,
+      "fta": 14
     },
     "Scoot Henderson": {
       "games": 6,
@@ -4624,7 +5776,10 @@
       "fg_pct": 34.0,
       "fg3_pct": 18.5,
       "ft_pct": 91.7,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 53,
+      "three_pa": 27,
+      "fta": 12
     },
     "Scottie Barnes": {
       "games": 7,
@@ -4636,7 +5791,10 @@
       "fg_pct": 47.6,
       "fg3_pct": 12.5,
       "ft_pct": 69.6,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 143,
+      "three_pa": 24,
+      "fta": 46
     },
     "Scotty Pippen Jr.": {
       "games": 5,
@@ -4648,7 +5806,10 @@
       "fg_pct": 42.3,
       "fg3_pct": 22.2,
       "ft_pct": 80.0,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 26,
+      "three_pa": 9,
+      "fta": 10
     },
     "Sergio de Larrea": {
       "games": 4,
@@ -4660,7 +5821,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 60.0,
       "ft_pct": null,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 18,
+      "three_pa": 5,
+      "fta": 0
     },
     "Shai Gilgeous-Alexander": {
       "games": 7,
@@ -4672,7 +5836,10 @@
       "fg_pct": 45.1,
       "fg3_pct": 33.3,
       "ft_pct": 87.5,
-      "three_pm": 2.3
+      "three_pm": 2.3,
+      "fga": 164,
+      "three_pa": 48,
+      "fta": 40
     },
     "Sidy Cissoko": {
       "games": 6,
@@ -4684,7 +5851,10 @@
       "fg_pct": 56.5,
       "fg3_pct": 33.3,
       "ft_pct": 54.5,
-      "three_pm": 0.8
+      "three_pm": 0.8,
+      "fga": 23,
+      "three_pa": 15,
+      "fta": 11
     },
     "Simone Fontecchio": {
       "games": 3,
@@ -4696,7 +5866,10 @@
       "fg_pct": 20.0,
       "fg3_pct": 25.0,
       "ft_pct": null,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 5,
+      "three_pa": 4,
+      "fta": 0
     },
     "Sion James": {
       "games": 8,
@@ -4708,7 +5881,10 @@
       "fg_pct": 27.7,
       "fg3_pct": 21.6,
       "ft_pct": 75.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 47,
+      "three_pa": 37,
+      "fta": 4
     },
     "Stephen Curry": {
       "games": 6,
@@ -4720,7 +5896,10 @@
       "fg_pct": 46.8,
       "fg3_pct": 42.9,
       "ft_pct": 98.1,
-      "three_pm": 4.5
+      "three_pm": 4.5,
+      "fga": 109,
+      "three_pa": 63,
+      "fta": 52
     },
     "Stephon Castle": {
       "games": 7,
@@ -4732,7 +5911,10 @@
       "fg_pct": 40.8,
       "fg3_pct": 34.0,
       "ft_pct": 75.0,
-      "three_pm": 2.4
+      "three_pm": 2.4,
+      "fga": 98,
+      "three_pa": 50,
+      "fta": 8
     },
     "Steven Adams": {
       "games": 1,
@@ -4744,7 +5926,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 0,
+      "fta": 0
     },
     "Svi Mykhailiuk": {
       "games": 7,
@@ -4756,7 +5941,10 @@
       "fg_pct": 28.6,
       "fg3_pct": 26.1,
       "ft_pct": 50.0,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 35,
+      "three_pa": 23,
+      "fta": 2
     },
     "Tari Eason": {
       "games": 8,
@@ -4768,7 +5956,10 @@
       "fg_pct": 47.0,
       "fg3_pct": 28.0,
       "ft_pct": 93.3,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 66,
+      "three_pa": 25,
+      "fta": 15
     },
     "Tarris Reed Jr.": {
       "games": 4,
@@ -4780,7 +5971,10 @@
       "fg_pct": 80.0,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 2
     },
     "Taurean Prince": {
       "games": 2,
@@ -4792,7 +5986,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 33.3,
       "ft_pct": 50.0,
-      "three_pm": 0.5
+      "three_pm": 0.5,
+      "fga": 3,
+      "three_pa": 3,
+      "fta": 2
     },
     "Taylor Hendricks": {
       "games": 3,
@@ -4804,7 +6001,10 @@
       "fg_pct": 40.0,
       "fg3_pct": 40.0,
       "ft_pct": null,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 5,
+      "three_pa": 5,
+      "fta": 0
     },
     "Terance Mann": {
       "games": 2,
@@ -4816,7 +6016,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 1,
+      "fta": 0
     },
     "Terrence Shannon Jr.": {
       "games": 7,
@@ -4828,7 +6031,10 @@
       "fg_pct": 42.4,
       "fg3_pct": 39.4,
       "ft_pct": 72.4,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 59,
+      "three_pa": 33,
+      "fta": 29
     },
     "Thomas Bryant": {
       "games": 2,
@@ -4840,7 +6046,10 @@
       "fg_pct": 41.7,
       "fg3_pct": 37.5,
       "ft_pct": 66.7,
-      "three_pm": 1.5
+      "three_pm": 1.5,
+      "fga": 12,
+      "three_pa": 8,
+      "fta": 3
     },
     "Tidjane Salaun": {
       "games": 7,
@@ -4852,7 +6061,10 @@
       "fg_pct": 44.8,
       "fg3_pct": 31.6,
       "ft_pct": 50.0,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 29,
+      "three_pa": 19,
+      "fta": 2
     },
     "Tim Hardaway Jr.": {
       "games": 7,
@@ -4864,7 +6076,10 @@
       "fg_pct": 31.8,
       "fg3_pct": 28.1,
       "ft_pct": 69.2,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 44,
+      "three_pa": 32,
+      "fta": 13
     },
     "Tobe Awaka": {
       "games": 4,
@@ -4876,7 +6091,10 @@
       "fg_pct": 75.0,
       "fg3_pct": null,
       "ft_pct": 33.3,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 0,
+      "fta": 6
     },
     "Tobi Lawal": {
       "games": 4,
@@ -4888,7 +6106,10 @@
       "fg_pct": 60.0,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 5,
+      "three_pa": 2,
+      "fta": 0
     },
     "Tolu Smith": {
       "games": 6,
@@ -4900,7 +6121,10 @@
       "fg_pct": 40.0,
       "fg3_pct": null,
       "ft_pct": 25.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 5,
+      "three_pa": 0,
+      "fta": 4
     },
     "Tony Bradley": {
       "games": 2,
@@ -4912,7 +6136,10 @@
       "fg_pct": 50.0,
       "fg3_pct": null,
       "ft_pct": 0.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 4,
+      "three_pa": 0,
+      "fta": 2
     },
     "Toumani Camara": {
       "games": 6,
@@ -4924,7 +6151,10 @@
       "fg_pct": 54.7,
       "fg3_pct": 50.0,
       "ft_pct": 100.0,
-      "three_pm": 3.8
+      "three_pm": 3.8,
+      "fga": 53,
+      "three_pa": 46,
+      "fta": 4
     },
     "Trae Young": {
       "games": 7,
@@ -4936,7 +6166,10 @@
       "fg_pct": 39.4,
       "fg3_pct": 27.1,
       "ft_pct": 83.9,
-      "three_pm": 1.9
+      "three_pm": 1.9,
+      "fga": 94,
+      "three_pa": 48,
+      "fta": 62
     },
     "Trayce Jackson-Davis": {
       "games": 7,
@@ -4948,7 +6181,10 @@
       "fg_pct": 71.4,
       "fg3_pct": null,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 14,
+      "three_pa": 0,
+      "fta": 3
     },
     "Tre Johnson": {
       "games": 6,
@@ -4960,7 +6196,10 @@
       "fg_pct": 42.9,
       "fg3_pct": 26.9,
       "ft_pct": 100.0,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 49,
+      "three_pa": 26,
+      "fta": 7
     },
     "Tre Jones": {
       "games": 7,
@@ -4972,7 +6211,10 @@
       "fg_pct": 48.9,
       "fg3_pct": 40.0,
       "ft_pct": 75.8,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 47,
+      "three_pa": 5,
+      "fta": 33
     },
     "Tre Mann": {
       "games": 2,
@@ -4984,7 +6226,10 @@
       "fg_pct": 0.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 1,
+      "three_pa": 0,
+      "fta": 0
     },
     "Trendon Watford": {
       "games": 3,
@@ -4996,7 +6241,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 0.0,
       "ft_pct": 81.8,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 10,
+      "three_pa": 3,
+      "fta": 11
     },
     "Trevon Brazile": {
       "games": 6,
@@ -5008,7 +6256,10 @@
       "fg_pct": 55.9,
       "fg3_pct": 35.3,
       "ft_pct": 54.5,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 34,
+      "three_pa": 17,
+      "fta": 11
     },
     "Trey Lyles": {
       "games": 8,
@@ -5020,7 +6271,10 @@
       "fg_pct": 48.6,
       "fg3_pct": 36.0,
       "ft_pct": 61.5,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 35,
+      "three_pa": 25,
+      "fta": 13
     },
     "Trey Murphy III": {
       "games": 7,
@@ -5032,7 +6286,10 @@
       "fg_pct": 45.5,
       "fg3_pct": 38.5,
       "ft_pct": 82.6,
-      "three_pm": 2.1
+      "three_pm": 2.1,
+      "fga": 77,
+      "three_pa": 39,
+      "fta": 23
     },
     "Tristan da Silva": {
       "games": 7,
@@ -5044,7 +6301,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 44.2,
       "ft_pct": 0.0,
-      "three_pm": 3.3
+      "three_pm": 3.3,
+      "fga": 76,
+      "three_pa": 52,
+      "fta": 3
     },
     "Tristan Enaruna": {
       "games": 1,
@@ -5056,7 +6316,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 2,
+      "fta": 0
     },
     "Ty Jerome": {
       "games": 6,
@@ -5068,7 +6331,10 @@
       "fg_pct": 50.4,
       "fg3_pct": 42.1,
       "ft_pct": 88.6,
-      "three_pm": 2.7
+      "three_pm": 2.7,
+      "fga": 113,
+      "three_pa": 38,
+      "fta": 44
     },
     "Tyler Herro": {
       "games": 7,
@@ -5080,7 +6346,10 @@
       "fg_pct": 45.9,
       "fg3_pct": 43.1,
       "ft_pct": 69.6,
-      "three_pm": 3.6
+      "three_pm": 3.6,
+      "fga": 122,
+      "three_pa": 58,
+      "fta": 23
     },
     "Tyler Kolek": {
       "games": 5,
@@ -5092,7 +6361,10 @@
       "fg_pct": 29.4,
       "fg3_pct": 30.0,
       "ft_pct": 100.0,
-      "three_pm": 0.6
+      "three_pm": 0.6,
+      "fga": 17,
+      "three_pa": 10,
+      "fta": 2
     },
     "Tyrese Haliburton": {
       "games": 4,
@@ -5104,7 +6376,10 @@
       "fg_pct": 51.6,
       "fg3_pct": 37.0,
       "ft_pct": 86.7,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 62,
+      "three_pa": 27,
+      "fta": 15
     },
     "Tyrese Maxey": {
       "games": 8,
@@ -5116,7 +6391,10 @@
       "fg_pct": 50.3,
       "fg3_pct": 33.9,
       "ft_pct": 83.1,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 163,
+      "three_pa": 59,
+      "fta": 59
     },
     "Tyrese Proctor": {
       "games": 6,
@@ -5128,7 +6406,10 @@
       "fg_pct": 52.2,
       "fg3_pct": 58.3,
       "ft_pct": 100.0,
-      "three_pm": 1.2
+      "three_pm": 1.2,
+      "fga": 23,
+      "three_pa": 12,
+      "fta": 2
     },
     "Tyus Jones": {
       "games": 6,
@@ -5140,7 +6421,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 33.3,
       "ft_pct": 100.0,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 12,
+      "three_pa": 6,
+      "fta": 4
     },
     "Victor Wembanyama": {
       "games": 7,
@@ -5152,7 +6436,10 @@
       "fg_pct": 46.9,
       "fg3_pct": 26.2,
       "ft_pct": 73.8,
-      "three_pm": 1.6
+      "three_pm": 1.6,
+      "fga": 147,
+      "three_pa": 42,
+      "fta": 42
     },
     "Vit Krejci": {
       "games": 6,
@@ -5164,7 +6451,10 @@
       "fg_pct": 26.7,
       "fg3_pct": 18.2,
       "ft_pct": 66.7,
-      "three_pm": 0.3
+      "three_pm": 0.3,
+      "fga": 15,
+      "three_pa": 11,
+      "fta": 6
     },
     "VJ Edgecombe": {
       "games": 7,
@@ -5176,7 +6466,10 @@
       "fg_pct": 44.3,
       "fg3_pct": 34.3,
       "ft_pct": 63.6,
-      "three_pm": 1.7
+      "three_pm": 1.7,
+      "fga": 79,
+      "three_pa": 35,
+      "fta": 11
     },
     "Walker Kessler": {
       "games": 8,
@@ -5188,7 +6481,10 @@
       "fg_pct": 71.4,
       "fg3_pct": null,
       "ft_pct": 53.6,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 70,
+      "three_pa": 0,
+      "fta": 28
     },
     "Walter Clayton Jr.": {
       "games": 6,
@@ -5200,7 +6496,10 @@
       "fg_pct": 53.8,
       "fg3_pct": 57.1,
       "ft_pct": 71.4,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 26,
+      "three_pa": 14,
+      "fta": 7
     },
     "Wendell Carter Jr.": {
       "games": 7,
@@ -5212,7 +6511,10 @@
       "fg_pct": 61.2,
       "fg3_pct": 33.3,
       "ft_pct": 80.8,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 49,
+      "three_pa": 18,
+      "fta": 26
     },
     "Will Richard": {
       "games": 8,
@@ -5224,7 +6526,10 @@
       "fg_pct": 42.4,
       "fg3_pct": 41.2,
       "ft_pct": 66.7,
-      "three_pm": 0.9
+      "three_pm": 0.9,
+      "fga": 33,
+      "three_pa": 17,
+      "fta": 3
     },
     "Will Riley": {
       "games": 5,
@@ -5236,7 +6541,10 @@
       "fg_pct": 33.3,
       "fg3_pct": 0.0,
       "ft_pct": 100.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 3,
+      "three_pa": 2,
+      "fta": 2
     },
     "Yang Hansen": {
       "games": 3,
@@ -5248,7 +6556,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 66.7,
       "ft_pct": null,
-      "three_pm": 1.3
+      "three_pm": 1.3,
+      "fga": 10,
+      "three_pa": 6,
+      "fta": 0
     },
     "Yaxel Lendeborg": {
       "games": 8,
@@ -5260,7 +6571,10 @@
       "fg_pct": 50.0,
       "fg3_pct": 40.0,
       "ft_pct": 76.9,
-      "three_pm": 2.5
+      "three_pm": 2.5,
+      "fga": 112,
+      "three_pa": 50,
+      "fta": 52
     },
     "Yves Missi": {
       "games": 2,
@@ -5272,7 +6586,10 @@
       "fg_pct": 88.9,
       "fg3_pct": null,
       "ft_pct": 75.0,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 9,
+      "three_pa": 0,
+      "fta": 4
     },
     "Zaccharie Risacher": {
       "games": 7,
@@ -5284,7 +6601,10 @@
       "fg_pct": 36.8,
       "fg3_pct": 27.6,
       "ft_pct": 70.0,
-      "three_pm": 1.1
+      "three_pm": 1.1,
+      "fga": 57,
+      "three_pa": 29,
+      "fta": 10
     },
     "Zach Collins": {
       "games": 5,
@@ -5296,7 +6616,10 @@
       "fg_pct": 27.3,
       "fg3_pct": 0.0,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 11,
+      "three_pa": 5,
+      "fta": 0
     },
     "Zach Edey": {
       "games": 6,
@@ -5308,7 +6631,10 @@
       "fg_pct": 53.1,
       "fg3_pct": 100.0,
       "ft_pct": 85.7,
-      "three_pm": 0.2
+      "three_pm": 0.2,
+      "fga": 32,
+      "three_pa": 1,
+      "fta": 7
     },
     "Zach LaVine": {
       "games": 7,
@@ -5320,7 +6646,10 @@
       "fg_pct": 50.5,
       "fg3_pct": 37.0,
       "ft_pct": 82.9,
-      "three_pm": 2.9
+      "three_pm": 2.9,
+      "fga": 109,
+      "three_pa": 54,
+      "fta": 41
     },
     "Zeke Nnaji": {
       "games": 1,
@@ -5332,7 +6661,10 @@
       "fg_pct": 100.0,
       "fg3_pct": 100.0,
       "ft_pct": 100.0,
-      "three_pm": 1.0
+      "three_pm": 1.0,
+      "fga": 1,
+      "three_pa": 1,
+      "fta": 2
     },
     "Ziaire Williams": {
       "games": 5,
@@ -5344,7 +6676,10 @@
       "fg_pct": 55.9,
       "fg3_pct": 47.6,
       "ft_pct": 85.7,
-      "three_pm": 2.0
+      "three_pm": 2.0,
+      "fga": 34,
+      "three_pa": 21,
+      "fta": 7
     },
     "Zion Williamson": {
       "games": 7,
@@ -5356,7 +6691,10 @@
       "fg_pct": 63.6,
       "fg3_pct": 42.9,
       "ft_pct": 73.9,
-      "three_pm": 0.4
+      "three_pm": 0.4,
+      "fga": 88,
+      "three_pa": 7,
+      "fta": 46
     },
     "Zuby Ejiofor": {
       "games": 3,
@@ -5368,7 +6706,10 @@
       "fg_pct": 28.6,
       "fg3_pct": 50.0,
       "ft_pct": null,
-      "three_pm": 0.7
+      "three_pm": 0.7,
+      "fga": 7,
+      "three_pa": 4,
+      "fta": 0
     },
     "Zyon Pullin": {
       "games": 2,
@@ -5380,7 +6721,10 @@
       "fg_pct": 100.0,
       "fg3_pct": null,
       "ft_pct": null,
-      "three_pm": 0.0
+      "three_pm": 0.0,
+      "fga": 2,
+      "three_pa": 0,
+      "fta": 0
     }
   }
 }
