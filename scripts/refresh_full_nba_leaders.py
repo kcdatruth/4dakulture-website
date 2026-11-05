@@ -37,7 +37,7 @@ def main():
         name=str(grp.athlete_display_name.mode().iloc[0]);tot=grp[FIELDS].sum()
         def avg(field):return round(float(tot[field])/gp,1)
         def pct(made,att):return round(100*float(tot[made])/float(tot[att]),1) if tot[att] else None
-        result[name]={'games':gp,'ppg':avg('points'),'rpg':avg('rebounds'),'apg':avg('assists'),'spg':avg('steals'),'bpg':avg('blocks'),'fg_pct':pct('field_goals_made','field_goals_attempted'),'fg3_pct':pct('three_point_field_goals_made','three_point_field_goals_attempted'),'ft_pct':pct('free_throws_made','free_throws_attempted'),'three_pm':avg('three_point_field_goals_made')}
+        result[name]={'games':gp,'ppg':avg('points'),'rpg':avg('rebounds'),'apg':avg('assists'),'spg':avg('steals'),'bpg':avg('blocks'),'fg_pct':pct('field_goals_made','field_goals_attempted'),'fg3_pct':pct('three_point_field_goals_made','three_point_field_goals_attempted'),'ft_pct':pct('free_throws_made','free_throws_attempted'),'three_pm':avg('three_point_field_goals_made'),'fga':int(tot['field_goals_attempted']),'three_pa':int(tot['three_point_field_goals_attempted']),'fta':int(tot['free_throws_attempted'])}
     if len(result)<200 or len(result)>700:raise ValueError(f'Unexpected player coverage: {len(result)}')
     if DEST.exists():
         prev=json.loads(DEST.read_text())
