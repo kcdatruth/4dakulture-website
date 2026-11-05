@@ -1,0 +1,31 @@
+name: 4DK Full NBA League Leaders
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 7 * * *'
+    - cron: '45 13 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: 4dk-full-nba-leaders
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas pyarrow requests
+      - name: Validate full-league stats
+        run: python scripts/refresh_full_nba_leaders.py
+      - name: Commit only verified league data
+        run: |
+          if ! git diff --quiet -- data/4dk-nba-league-leaders-2026-27.json || [ -n "$(git ls-files --others --exclude-standard data/4dk-nba-league-leaders-2026-27.json)" ]; then
+            git config user.name "4DK Stats Bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/4dk-nba-league-leaders-2026-27.json
+            git commit -m "Refresh verified full NBA league leaders"
+            git push
+          fi
