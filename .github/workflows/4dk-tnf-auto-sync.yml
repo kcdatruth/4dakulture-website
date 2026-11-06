@@ -1,0 +1,62 @@
+name: 4DK TNF homepage and mobile sync
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'nfl-articles.json'
+      - '.github/workflows/4dk-tnf-auto-sync.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Connect TNF feature and tune mobile article
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          homepage = Path('nfl.html')
+          article = Path('nfl-thursday-recap-week9-jaguars-ravens.html')
+          feed = Path('nfl-articles.json')
+          import json
+          data = json.loads(feed.read_text(encoding='utf-8'))
+          assert any(x.get('type') == 'TNF' and x.get('week') == 9 for x in data['articles']), 'Week 9 TNF is missing from feed'
+          if homepage.exists():
+              s = homepage.read_text(encoding='utf-8')
+              tag = '<script defer src="4dk-nfl-publishing.js"></script>'
+              if '4dk-nfl-publishing.js' not in s:
+                  assert '</body>' in s.lower(), 'Cannot find closing body tag'
+                  s = re.sub(r'</body>', tag + '\n</body>', s, count=1, flags=re.I)
+                  homepage.write_text(s, encoding='utf-8')
+          if article.exists():
+              s = article.read_text(encoding='utf-8')
+              css = '''<style id="fourdk-tnf-mobile-tune">
+          @media(max-width:600px){
+            .shell{padding-left:20px!important;padding-right:20px!important}
+            .hero{padding-top:42px!important}
+            .hero h1{font-size:clamp(35px,9.4vw,48px)!important;line-height:1.02!important;overflow-wrap:break-word}
+            .dek{font-size:19px!important;line-height:1.5!important}
+            .article p{font-size:18px!important;line-height:1.68!important}
+            .article h2{font-size:clamp(27px,7vw,35px)!important;line-height:1.12!important;margin-top:42px!important}
+            .score{gap:16px!important}
+            .score strong{font-size:clamp(24px,6.4vw,34px)!important}
+          }
+          </style>'''
+              if 'fourdk-tnf-mobile-tune' not in s:
+                  assert '</head>' in s.lower(), 'Cannot find closing head tag'
+                  s = re.sub(r'</head>', lambda _: css + '\n</head>', s, count=1, flags=re.I)
+                  article.write_text(s, encoding='utf-8')
+      - name: Commit only changed pages
+        run: |
+          git config user.name '4DK Publishing Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add nfl.html nfl-thursday-recap-week9-jaguars-ravens.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync Week 9 TNF homepage feature and mobile typography"
+            git push
+          fi
