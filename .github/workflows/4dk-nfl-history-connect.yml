@@ -1,0 +1,50 @@
+name: 4DK NFL verified history connection
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/4dk-nfl-history-connect.yml'
+permissions:
+  contents: write
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Connect verified historical articles without replacing existing entries
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('nfl-weekly-index.json')
+          data=json.loads(p.read_text())
+          additions=[
+            dict(type='MNF',week=6,date='2026-10-19',title='6–0, But Not Without a Warning — 49ers at Commanders',url='nfl-mnf-49ers-commanders-week6-2026.html'),
+            dict(type='SUNDAY',week=1,date='2026-09-10',title='Week 1 Opening Shots — Seattle Survives, San Francisco Sends a Message',url='nfl-week-1-opening-recap-2026.html'),
+            dict(type='PREVIEW',week=1,date='2026-09-13',title='Sunday NFL Preview — Every Week 1 Game',url='nfl-week-1-sunday-preview-2026.html'),
+            dict(type='PREVIEW',week=2,date='2026-09-20',title='NFL Week 2 Sunday Preview',url='nfl-week2-sunday-preview-2026.html'),
+            dict(type='PREVIEW',week=3,date='2026-09-27',title='NFL Week 3 Sunday Preview',url='nfl-week3-sunday-preview-2026.html'),
+            dict(type='PREVIEW',week=6,date='2026-10-18',title='Week 6 Sunday Gameday — London First, The League Follows',url='nfl-week6-sunday-kickoff-oct18-2026.html'),
+          ]
+          known={a.get('url') for a in data['articles']}
+          added=[]
+          for a in additions:
+            if a['url'] in known: continue
+            if not pathlib.Path(a['url']).is_file():
+              print('SKIPPED missing page:',a['url']);continue
+            data['articles'].append(a);known.add(a['url']);added.append(a['url'])
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          print('Newly connected:',len(added),added)
+          PY
+      - name: Commit only updated index
+        run: |
+          if ! git diff --quiet -- nfl-weekly-index.json; then
+            git config user.name '4DK NFL Archive Bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add nfl-weekly-index.json
+            git commit -m 'Connect verified NFL historical articles to Weekly HQ'
+            git push
+          else
+            echo 'No new verified historical entries to connect.'
+          fi
