@@ -1,0 +1,62 @@
+name: 4DK NFL archive reconcile
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/4dk-nfl-archive-sync.yml'
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconcile verified feed entries and audit archives
+        shell: python
+        run: |
+          import json,re,glob,os
+          from pathlib import Path
+          master=Path('nfl-weekly-index.json')
+          feed=Path('nfl-articles.json')
+          data=json.loads(master.read_text(encoding='utf-8'))
+          other=json.loads(feed.read_text(encoding='utf-8'))
+          rows=data.get('articles',[])
+          known={a.get('url') for a in rows}
+          allowed={'TNF','SUNDAY','SNF','MNF','PREVIEW'}
+          added=[]
+          for a in other.get('articles',[]):
+              url=a.get('url','')
+              if (url not in known and re.fullmatch(r'nfl-[a-z0-9-]+\.html',url)
+                  and Path(url).is_file() and a.get('type') in allowed
+                  and isinstance(a.get('week'),int) and a['week']>0
+                  and re.fullmatch(r'\d{4}-\d{2}-\d{2}',a.get('date',''))
+                  and a.get('title')):
+                  rows.append({k:a[k] for k in ('type','week','date','title','url')})
+                  known.add(url);added.append(url)
+          data['articles']=sorted(rows,key=lambda a:(-int(a['week']),a.get('date',''),a.get('type','')))
+          # Current edition changes only when an actual newer article has been published.
+          data['current_week']=max(int(data.get('current_week',0)),*(a['week'] for a in rows))
+          result=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
+          if result!=master.read_text(encoding='utf-8'):
+              master.write_text(result,encoding='utf-8')
+          # Audit candidate stories without inventing dates, weeks, or article metadata.
+          candidates=[]
+          for path in glob.glob('nfl-*.html'):
+              name=os.path.basename(path)
+              if any(t in name for t in ('recap','tnf','snf','mnf','thursday','sunday')) and name not in known:
+                  candidates.append(name)
+          report=['4DK NFL ARCHIVE AUDIT','Indexed stories: '+str(len(rows)),'Imported verified feed entries: '+str(len(added))]
+          report+=['Imported: '+x for x in added]
+          report+=['','Unindexed candidate pages (review before adding):']
+          report+=sorted(candidates) or ['None']
+          Path('nfl-archive-audit.txt').write_text('\n'.join(report)+'\n',encoding='utf-8')
+          print('\n'.join(report))
+      - name: Commit only archive index and audit report
+        run: |
+          git config user.name '4DK Publishing Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add nfl-weekly-index.json nfl-archive-audit.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'Reconcile NFL weekly archive and flag unindexed recaps'
+            git push
+          fi
