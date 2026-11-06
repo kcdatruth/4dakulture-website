@@ -1,0 +1,70 @@
+name: 4DK NFL Weekly HQ maintenance
+on:
+  push:
+    paths:
+      - 'nfl-weekly-index.json'
+      - 'nfl-articles.json'
+      - '.github/workflows/4dk-nfl-weekly-maintenance.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update weekly HQ labels, archive index and mobile styling
+        shell: python
+        run: |
+          import json,re
+          from pathlib import Path
+          index_path=Path('nfl-weekly-index.json')
+          home=Path('nfl.html')
+          hq=Path('nfl-weekly-hq.html')
+          if not all(p.exists() for p in (index_path,home,hq)):
+              raise SystemExit('Required NFL files missing; no changes made')
+          data=json.loads(index_path.read_text(encoding='utf-8'))
+          articles=data.get('articles',[])
+          known={a.get('url') for a in articles}
+          feed=Path('nfl-articles.json')
+          if feed.exists():
+              raw=json.loads(feed.read_text(encoding='utf-8'))
+              for a in raw.get('articles',[]):
+                  url=a.get('url','')
+                  if not (url and url not in known and re.fullmatch(r'nfl-[a-z0-9-]+\.html',url) and Path(url).is_file()):
+                      continue
+                  if not isinstance(a.get('week'),int) or not a.get('title') or not a.get('type'):
+                      continue
+                  articles.append({k:a[k] for k in ('type','week','date','title','url') if k in a})
+                  known.add(url)
+          # Advance only when an actual newer-week article exists, never just because the calendar changed.
+          weeks=[a['week'] for a in articles if isinstance(a.get('week'),int)]
+          if weeks:
+              data['current_week']=max(int(data.get('current_week',1)),max(weeks))
+          data['articles']=sorted(articles,key=lambda a:(-int(a.get('week',0)),a.get('date',''),a.get('type','')))
+          index_path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+          t=home.read_text(encoding='utf-8')
+          t=t.replace('Week 9 previews, Thursday, Sunday, SNF and MNF recaps — together in one newsroom.', 'Weekly previews, Thursday, Sunday, SNF and MNF recaps — together in one newsroom.')
+          t=t.replace('EXPLORE WEEK 9 & THE FULL ARCHIVE →','EXPLORE THE CURRENT WEEK & FULL ARCHIVE →')
+          style='''<style id="fourdk-nfl-mobile-refinement">@media(max-width:600px){#fourdk-nfl-feed-feature h1,#fourdk-nfl-feed-feature h2,#fourdk-nfl-feed-feature h3{font-size:clamp(25px,7.3vw,34px)!important;line-height:1.13!important;letter-spacing:-.03em!important}#fourdk-nfl-feed-feature{margin:16px 14px 24px!important;padding:22px 19px!important}#fourdk-nfl-feed-feature p{font-size:17px!important;line-height:1.55!important}.fourdk-weekly-hq-promo h2{font-size:clamp(27px,7.5vw,37px)!important}.fourdk-weekly-hq-promo p{font-size:17px!important;line-height:1.55!important}}</style>'''
+          if 'id="fourdk-nfl-mobile-refinement"' not in t:
+              t=t.replace('</head>',style+'\n</head>',1)
+          home.write_text(t,encoding='utf-8')
+          t=hq.read_text(encoding='utf-8')
+          # Existing archive script already reads the index; dynamically label the current edition.
+          js='''<script id="fourdk-weekly-current-labels">(async()=>{try{const r=await fetch('nfl-weekly-index.json',{cache:'no-store'});if(!r.ok)return;const d=await r.json();const w=Number(d.current_week);if(!Number.isInteger(w)||w<1||w>25)return;const nodes=[...document.querySelectorAll('body *')].filter(el=>el.children.length===0&&el.textContent&&/WEEK 9|Week 9/.test(el.textContent));for(const el of nodes){if(el.closest('#archive'))continue;el.textContent=el.textContent.replace(/WEEK 9/g,'WEEK '+w).replace(/Week 9/g,'Week '+w)}}catch(e){console.warn('Weekly HQ labels:',e)}})();</script>'''
+          if 'id="fourdk-weekly-current-labels"' not in t:
+              t=t.replace('</body>',js+'</body>',1)
+          hq.write_text(t,encoding='utf-8')
+          print('Updated current week from published articles; preserved archives; refined mobile headline.')
+      - name: Commit only changed files
+        run: |
+          git config user.name '4DK Publishing Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add nfl.html nfl-weekly-hq.html nfl-weekly-index.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Keep NFL Weekly HQ current and refine mobile layout'
+            git push
+          else
+            echo 'Already up to date'
+          fi
