@@ -52,9 +52,12 @@ def main(publish):
         for _, group in duplicates.groupby(['game_id','key']):
             if group[FIELDS].astype(str).drop_duplicates().shape[0] != 1: fail('Conflicting duplicate player-game rows')
         df = df.drop_duplicates(subset=['game_id','key'])
+    # ESPN uses Cameron Boozer; 4DK publishes Cam Boozer.
+    SOURCE_NAME_ALIASES = {'camboozer': 'Cameron Boozer'}
     result, missing_mentions = {}, []
     for name in names:
-        rows = df[df['key']==norm(name)].copy()
+        source_name = SOURCE_NAME_ALIASES.get(norm(name), name)
+        rows = df[df['key']==norm(source_name)].copy()
         if rows.empty:
             if norm(name) in required: fail('Ranked player missing from source: '+name)
             missing_mentions.append(name)
