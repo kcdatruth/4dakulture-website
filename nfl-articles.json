@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-05",
   "articles": [
+    {
+      "type": "TNF",
+      "date": "2026-11-05",
+      "week": 9,
+      "title": "JACKSONVILLE MAKES A STATEMENT. BALTIMORE IS RUNNING OUT OF ANSWERS.",
+      "summary": "Lawrence and Washington deliver the defining play as Jacksonville controls Baltimore in a 33–10 Thursday night victory.",
+      "score": "JAX 33 · BAL 10",
+      "url": "nfl-thursday-recap-week9-jaguars-ravens.html"
+    },
     {
       "type": "SUNDAY",
       "date": "2026-11-01",
