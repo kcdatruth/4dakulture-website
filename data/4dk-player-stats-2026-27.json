@@ -1,12 +1,10 @@
 {
   "season": "2026-27",
-  "checked_utc": "2026-11-06 04:19 UTC",
+  "checked_utc": "2026-11-06 04:28 UTC",
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet",
   "status": "verified",
-  "matched": 59,
-  "unmatched": [
-    "Cam Boozer"
-  ],
+  "matched": 60,
+  "unmatched": [],
   "players": {
     "Victor Wembanyama": {
       "games": 8,
@@ -612,6 +610,17 @@
       "fg_pct": 42.0,
       "fg3_pct": 31.7,
       "ft_pct": 82.6
+    },
+    "Cam Boozer": {
+      "games": 8,
+      "ppg": 16.5,
+      "rpg": 9.8,
+      "apg": 5.4,
+      "spg": 0.4,
+      "bpg": 0.8,
+      "fg_pct": 36.4,
+      "fg3_pct": 36.7,
+      "ft_pct": 94.4
     },
     "Yaxel Lendeborg": {
       "games": 8,
