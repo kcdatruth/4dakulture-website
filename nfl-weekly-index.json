@@ -164,6 +164,48 @@
       "date": "2026-09-14",
       "title": "Week 1 Monday night recap",
       "url": "nfl-mnf-recap-week1.html"
+    },
+    {
+      "type": "MNF",
+      "week": 6,
+      "date": "2026-10-19",
+      "title": "6–0, But Not Without a Warning — 49ers at Commanders",
+      "url": "nfl-mnf-49ers-commanders-week6-2026.html"
+    },
+    {
+      "type": "SUNDAY",
+      "week": 1,
+      "date": "2026-09-10",
+      "title": "Week 1 Opening Shots — Seattle Survives, San Francisco Sends a Message",
+      "url": "nfl-week-1-opening-recap-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 1,
+      "date": "2026-09-13",
+      "title": "Sunday NFL Preview — Every Week 1 Game",
+      "url": "nfl-week-1-sunday-preview-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 2,
+      "date": "2026-09-20",
+      "title": "NFL Week 2 Sunday Preview",
+      "url": "nfl-week2-sunday-preview-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 3,
+      "date": "2026-09-27",
+      "title": "NFL Week 3 Sunday Preview",
+      "url": "nfl-week3-sunday-preview-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 6,
+      "date": "2026-10-18",
+      "title": "Week 6 Sunday Gameday — London First, The League Follows",
+      "url": "nfl-week6-sunday-kickoff-oct18-2026.html"
     }
   ]
 }
