@@ -194,7 +194,24 @@
 #fourdk-nfl-player-watch .dk-mvp-updated-art .art-eyebrow{font:900 12px Arial,sans-serif;letter-spacing:.17em;color:#d8ab63}
 #fourdk-nfl-player-watch .dk-mvp-updated-art strong{font:900 clamp(34px,8vw,68px)/.95 Arial,sans-serif;letter-spacing:-.05em}
 #fourdk-nfl-player-watch .dk-mvp-updated-art em{font:900 16px Arial,sans-serif;color:#d8ab63;font-style:normal}
-</style></head>
+</style><style id="fourdk-nfl-weekly-hq-styles">
+#fourdk-nfl-feed-feature{max-width:1160px!important;margin:20px auto 28px!important;padding:clamp(24px,5vw,48px)!important;background:linear-gradient(135deg,#1d1716,#090909)!important;border:1px solid #634d37!important;border-top:5px solid #b43c36!important;border-radius:4px!important;color:#f4ebdc!important;box-sizing:border-box!important}
+#fourdk-nfl-feed-feature *{box-sizing:border-box!important}
+#fourdk-nfl-feed-feature .fourdk-feed-wrap{max-width:100%!important;padding:0!important;margin:0!important;background:transparent!important;border:0!important}
+#fourdk-nfl-feed-feature .fourdk-feed-label{color:#d9b36c!important;font:800 12px/1.6 Arial,sans-serif!important;letter-spacing:.15em!important;text-transform:uppercase!important}
+#fourdk-nfl-feed-feature h1,#fourdk-nfl-feed-feature h2,#fourdk-nfl-feed-feature h3{font:900 clamp(29px,4.2vw,48px)/1.08 Arial,sans-serif!important;letter-spacing:-.025em!important;color:#f4ebdc!important;margin:18px 0!important;overflow-wrap:break-word!important}
+#fourdk-nfl-feed-feature p{font:clamp(17px,2vw,20px)/1.6 Georgia,serif!important;color:#e4d7c5!important;max-width:850px!important;margin:15px 0 24px!important}
+#fourdk-nfl-feed-feature a{display:inline-block!important;padding:13px 17px!important;margin:6px 8px 6px 0!important;border:1px solid #d8b16d!important;color:#d8b16d!important;text-decoration:none!important;font:800 12px/1.45 Arial,sans-serif!important;letter-spacing:.035em!important;max-width:100%!important}
+#fourdk-nfl-feed-feature a:first-of-type{background:#d8b16d!important;color:#17110c!important}
+.fourdk-weekly-hq-promo{max-width:1160px;margin:16px auto 26px;padding:25px 24px;background:#11100f;border-left:5px solid #d8b16d;color:#f4ebdc;box-sizing:border-box}
+.fourdk-weekly-hq-promo small{font:800 12px Arial,sans-serif;color:#d8b16d;letter-spacing:.15em}
+.fourdk-weekly-hq-promo h2{font:900 clamp(28px,4vw,44px)/1.08 Arial,sans-serif;margin:12px 0;color:#f4ebdc}
+.fourdk-weekly-hq-promo p{font:17px/1.5 Georgia,serif;color:#e1d6c5;margin:12px 0 18px}
+.fourdk-weekly-hq-promo a{display:inline-block;background:#d8b16d;color:#16100c;padding:13px 17px;font:800 13px Arial,sans-serif;text-decoration:none}
+.fourdk-archive-hq-link{display:block;max-width:1000px;margin:18px auto!important;padding:16px 20px!important;background:#171411!important;border:1px solid #b28c55!important;color:#e6bd77!important;font:800 15px/1.4 Arial,sans-serif!important;text-align:center;text-decoration:none!important}
+@media(max-width:640px){#fourdk-nfl-feed-feature{margin:12px 12px 24px!important;padding:22px 19px!important}#fourdk-nfl-feed-feature h1,#fourdk-nfl-feed-feature h2,#fourdk-nfl-feed-feature h3{font-size:30px!important}#fourdk-nfl-feed-feature p{font-size:17px!important}.fourdk-weekly-hq-promo{margin:14px 12px 22px;padding:22px 19px}}
+</style>
+</head>
 <body class="nfl-page nfl-revamp-page">
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead nfl-masthead">
@@ -762,5 +779,6 @@
 <script src="nfl-scoreboard.js"></script>
 <script src="nfl-picks.js"></script>
 <script defer src="4dk-nfl-publishing.js"></script>
+<script id="fourdk-weekly-hq-injector">document.addEventListener('DOMContentLoaded',function(){if(document.getElementById('fourdk-weekly-hq-promo'))return;var section=document.createElement('div');section.innerHTML='<section class="fourdk-weekly-hq-promo" id="fourdk-weekly-hq-promo"><small>4 DA KULTURE · NFL 2026</small><h2>THE NFL WEEKLY HQ.</h2><p>Week 9 previews, Thursday, Sunday, SNF and MNF recaps — together in one newsroom. Browse every previous week in the unified archive.</p><a href="nfl-weekly-hq.html">EXPLORE WEEK 9 & THE FULL ARCHIVE →</a></section>';var target=document.querySelector('#fourdk-nfl-feed-feature, #fourdk-nfl-week8-lead, #fourdk-week8-lead, main');if(target&&target.parentNode)target.parentNode.insertBefore(section.firstChild,target);else document.body.insertBefore(section.firstChild,document.body.firstChild);});</script>
 </body>
 </html>
