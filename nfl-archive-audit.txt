@@ -1,0 +1,14 @@
+4DK NFL ARCHIVE AUDIT
+Indexed stories: 23
+Imported verified feed entries: 0
+
+Unindexed candidate pages (review before adding):
+nfl-mnf-49ers-commanders-week6-2026.html
+nfl-monday-recaps.html
+nfl-sunday-recaps.html
+nfl-thursday-recaps.html
+nfl-week-1-opening-recap-2026.html
+nfl-week-1-sunday-preview-2026.html
+nfl-week2-sunday-preview-2026.html
+nfl-week3-sunday-preview-2026.html
+nfl-week6-sunday-kickoff-oct18-2026.html
