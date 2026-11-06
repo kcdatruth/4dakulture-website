@@ -1,0 +1,83 @@
+name: 4DK NFL Weekly HQ dynamic cards
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/4dk-nfl-dynamic-hq.yml'
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Connect current week cards and archive
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          p=Path('nfl-weekly-hq.html')
+          if not p.exists(): raise SystemExit('Weekly HQ page missing')
+          s=p.read_text(encoding='utf-8')
+          s,n=re.subn(r'<div id="current" class="grid">.*?</div>(?=<h2>COMPLETE WEEK-BY-WEEK ARCHIVE)', '<div id="current" class="grid"><p class="lead">Loading current week...</p></div>', s,count=1,flags=re.S)
+          if n!=1 and 'Loading current week...' not in s: raise SystemExit('Current cards marker not found')
+          s=s.replace('Current edition · Week 9','Current edition · <span data-current-week>Week 9</span>')
+          s=s.replace('WEEK 9 / THE LEAGUE NEVER STANDS STILL.','<span data-current-headline>WEEK 9 / THE LEAGUE NEVER STANDS STILL.</span>')
+          script=r"""<script id="fourdk-dynamic-weekly-hq">
+          (async()=>{
+            const current=document.getElementById('current'),archive=document.getElementById('archive');
+            const types={PREVIEW:'Preview',TNF:'Thursday Night Football',SUNDAY:'Sunday Recap',SNF:'Sunday Night Football',MNF:'Monday Night Football'};
+            const order={PREVIEW:0,TNF:1,SUNDAY:2,SNF:3,MNF:4};
+            const safeUrl=u=>typeof u==='string'&&/^nfl-[a-z0-9-]+\.html$/.test(u);
+            const addCard=(container,a,w,archiveMode=false)=>{
+              const link=document.createElement('a');link.href=a.url;link.className=archiveMode?'':'card';
+              if(archiveMode){link.textContent=(types[a.type]||a.type)+' · '+a.title;}
+              else{
+                const small=document.createElement('small');small.textContent=(types[a.type]||a.type)+' · WEEK '+w;
+                const h=document.createElement('h3');h.textContent=a.title;
+                const p=document.createElement('p');p.textContent=a.date||'Read the complete 4DK coverage';
+                link.append(small,h,p);
+              }
+              container.append(link);
+            };
+            try{
+              const r=await fetch('nfl-weekly-index.json',{cache:'no-store'});
+              if(!r.ok)throw Error('index unavailable');
+              const data=await r.json();
+              const articles=(data.articles||[]).filter(a=>Number.isInteger(a.week)&&a.week>0&&safeUrl(a.url)&&a.title);
+              const week=Math.max(Number(data.current_week)||0,...articles.map(a=>a.week));
+              if(!week)throw Error('No current week');
+              document.querySelectorAll('[data-current-week]').forEach(e=>e.textContent='Week '+week);
+              document.querySelectorAll('[data-current-headline]').forEach(e=>e.textContent='WEEK '+week+' / THE LEAGUE NEVER STANDS STILL.');
+              const sorted=a=>a.slice().sort((x,y)=>(order[x.type]??9)-(order[y.type]??9)||String(x.date).localeCompare(String(y.date)));
+              current.replaceChildren();archive.replaceChildren();
+              const active=sorted(articles.filter(a=>a.week===week));
+              if(active.length)active.forEach(a=>addCard(current,a,week));
+              else current.textContent='Coverage for this week is being prepared.';
+              const weeks=[...new Set(articles.filter(a=>a.week<week).map(a=>a.week))].sort((a,b)=>b-a);
+              for(const w of weeks){
+                const section=document.createElement('section');section.className='week';
+                const heading=document.createElement('h3');heading.textContent='WEEK '+w;
+                const links=document.createElement('div');links.className='week-links';
+                sorted(articles.filter(a=>a.week===w)).forEach(a=>addCard(links,a,w,true));
+                section.append(heading,links);archive.append(section);
+              }
+            }catch(e){current.textContent='Current week temporarily unavailable. Use the original archive links below.';archive.textContent='Archive feed temporarily unavailable.'}
+          })();
+          </script>"""
+          start=s.find('<script>\n(async()=>')
+          if start<0: start=s.find('<script id="fourdk-dynamic-weekly-hq">')
+          if start<0: raise SystemExit('Original archive script marker missing')
+          s=s[:start]+script+'</body></html>'
+          p.write_text(s,encoding='utf-8')
+      - name: Commit changed HQ page
+        run: |
+          git config user.name '4DK Publishing Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add nfl-weekly-hq.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Connect current NFL week cards to unified archive'
+            git push
+          else
+            echo 'Weekly HQ already connected'
+          fi
