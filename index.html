@@ -341,6 +341,13 @@ html { scroll-padding-top: 95px; }
 .fourdk-nfl-auto-links a{display:block;background:#1d1915;color:#f1dfc3;border:1px solid #4d3d2c;padding:12px;font:700 12px/1.5 Arial,sans-serif;text-decoration:none}
 .fourdk-nfl-auto-links .fourdk-archived-week{opacity:.8}
 @media(max-width:650px){.fourdk-nfl-auto-links{grid-template-columns:1fr}}
+</style><style id="fourdk-fresh-headlines-css">
+#fourdk-fresh-headlines{background:#f5eee1;color:#17130f;border-top:3px solid #b58a44;border-bottom:2px solid #b58a44;overflow:hidden}
+#fourdk-fresh-headlines .fourdk-headlines-inner{max-width:1450px;margin:auto;display:flex;align-items:center;gap:19px;white-space:nowrap;overflow-x:auto;scrollbar-width:thin;padding:10px 16px}
+#fourdk-fresh-headlines .fourdk-headlines-label{flex:none;background:#d8392c;color:white;font:900 11px Arial,sans-serif;letter-spacing:.08em;padding:7px 9px}
+#fourdk-fresh-headlines a{color:#17130f;text-decoration:none;font:900 13px Arial,sans-serif;letter-spacing:.02em}
+#fourdk-fresh-headlines .fourdk-headlines-separator{color:#db3c2c;font-size:12px}
+@media(max-width:650px){#fourdk-fresh-headlines .fourdk-headlines-inner{gap:13px;padding:8px 10px}#fourdk-fresh-headlines a{font-size:12px}}
 </style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -354,8 +361,8 @@ html { scroll-padding-top: 95px; }
 </div>
 <nav class="mobile-nav" id="mobileNav"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="magazine.html">Magazine</a><a href="movies.html">TV &amp; Movies</a><a href="throwback.html">Throwback</a><a href="classic-albums.html">Classic Albums</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
 </header>
-<div class="ticker"><div class="shell ticker-track"><span><span class="dot">●</span> 26–27 NBA Season Preview</span><span><span class="dot">●</span> 4DK NFL section now live</span><span><span class="dot">●</span> East Coast Top 26 live now</span><span><span class="dot">●</span> Classic Albums Revisited</span></div></div>
-<div aria-label="Live sports scores" class="score-ticker" data-score-ticker="">
+
+<div aria-label="Latest 4DK headlines" id="fourdk-fresh-headlines"><div class="fourdk-headlines-inner"><span class="fourdk-headlines-label">4DK HEADLINES</span><a href="nfl-thursday-recap-week9-jaguars-ravens.html" id="fourdk-headline-nfl">NFL WEEK 9 • JAGUARS 33, RAVENS 10 • READ THE TNF RECAP</a><span class="fourdk-headlines-separator">●</span><a href="nba.html">NBA RANKINGS HQ</a><span class="fourdk-headlines-separator">●</span><a href="classic-albums.html">THE ALBUM FILES</a></div></div><div aria-label="Live sports scores" class="score-ticker" data-score-ticker="">
 <div class="score-ticker-label"><span aria-hidden="true" class="score-live-dot"></span><strong>4DK LIVE</strong></div>
 <div class="score-ticker-viewport"><div class="score-ticker-track" data-score-track=""><span class="score-ticker-message">Loading live scores…</span></div></div>
 <button aria-label="Refresh scores" class="score-ticker-refresh" data-score-refresh="" type="button">↻</button>
@@ -694,6 +701,17 @@ fetch('nfl-weekly-index.json',{cache:'no-store'}).then(function(r){if(!r.ok)thro
   details.appendChild(list);archive.appendChild(details);
  }
 }).catch(function(){/* Keep the verified Week 9 fallback visible if the feed is unavailable. */});
+})();
+</script><script id="fourdk-fresh-headlines-auto">
+(function(){
+ var link=document.getElementById('fourdk-headline-nfl');if(!link)return;
+ fetch('nfl-weekly-index.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('unavailable');return r.json()}).then(function(data){
+ var order={TNF:1,SUNDAY:2,SNF:3,MNF:4};
+ var all=(Array.isArray(data.articles)?data.articles:[]).filter(function(a){return a&&order[a.type]&&Number.isInteger(a.week)&&/^\d{4}-\d\d-\d\d$/.test(a.date||'')&&typeof a.url==='string'&&/^[a-z0-9][a-z0-9._/-]*\.html$/i.test(a.url)&&!a.url.includes('..')&&typeof a.title==='string'});
+ if(!all.length)return;
+ all.sort(function(a,b){return b.week-a.week||b.date.localeCompare(a.date)||order[b.type]-order[a.type]});
+ var a=all[0];link.href=a.url;link.textContent='NFL WEEK '+a.week+' • '+a.type+' • '+a.title.toUpperCase();
+ }).catch(function(){/* Keep verified Week 9 headline as fallback. */});
 })();
 </script></body>
 </html>
