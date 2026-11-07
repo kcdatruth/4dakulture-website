@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "note": "Add each new published Music or TV story here with its publication date, title, and actual URL. Homepage displays newest dated entry per category. Existing entries are retained.",
+  "music": [
+    {
+      "date": "2026-11-07",
+      "title": "Redman \u2014 Muddy Waters | Album Files",
+      "url": "album-files-muddy-waters.html"
+    }
+  ],
+  "tv": [
+    {
+      "date": "2026-10-29",
+      "title": "The Drop \u2014 Episode 8: Hercules",
+      "url": "the-drop-episode-8-hercules.html"
+    }
+  ]
+}

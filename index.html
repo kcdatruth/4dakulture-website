@@ -361,8 +361,7 @@ html { scroll-padding-top: 95px; }
 </div>
 <nav class="mobile-nav" id="mobileNav"><a href="nba.html">NBA</a><a href="nfl.html">NFL</a><a href="magazine.html">Magazine</a><a href="movies.html">TV &amp; Movies</a><a href="throwback.html">Throwback</a><a href="classic-albums.html">Classic Albums</a><a href="hiphop.html">Hip-Hop</a><a href="podcast.html">Podcast</a><a href="about.html">About</a></nav>
 </header>
-
-<div aria-label="Latest 4DK headlines" id="fourdk-fresh-headlines"><div class="fourdk-headlines-inner"><span class="fourdk-headlines-label">4DK HEADLINES</span><a href="nfl-thursday-recap-week9-jaguars-ravens.html" id="fourdk-headline-nfl">NFL WEEK 9 • JAGUARS 33, RAVENS 10 • READ THE TNF RECAP</a><span class="fourdk-headlines-separator">●</span><a href="nba.html">NBA RANKINGS HQ</a><span class="fourdk-headlines-separator">●</span><a href="classic-albums.html">THE ALBUM FILES</a></div></div><div aria-label="Live sports scores" class="score-ticker" data-score-ticker="">
+<div aria-label="Latest 4DK headlines" id="fourdk-fresh-headlines"><div class="fourdk-headlines-inner"><span class="fourdk-headlines-label">4DK HEADLINES</span><a data-fourdk-headline="nba" href="nba-nightcap-2026-11-06.html">NBA • LUKA DROPS 53</a><span class="fourdk-headlines-separator">●</span><a data-fourdk-headline="nfl" href="nfl-thursday-recap-week9-jaguars-ravens.html">NFL • JACKSONVILLE MAKES A STATEMENT</a><span class="fourdk-headlines-separator">●</span><a data-fourdk-headline="music" href="album-files-muddy-waters.html">MUSIC • REDMAN: MUDDY WATERS</a><span class="fourdk-headlines-separator">●</span><a data-fourdk-headline="tv" href="the-drop-episode-8-hercules.html">TV • THE DROP: HERCULES</a></div></div><div aria-label="Live sports scores" class="score-ticker" data-score-ticker="">
 <div class="score-ticker-label"><span aria-hidden="true" class="score-live-dot"></span><strong>4DK LIVE</strong></div>
 <div class="score-ticker-viewport"><div class="score-ticker-track" data-score-track=""><span class="score-ticker-message">Loading live scores…</span></div></div>
 <button aria-label="Refresh scores" class="score-ticker-refresh" data-score-refresh="" type="button">↻</button>
@@ -702,16 +701,28 @@ fetch('nfl-weekly-index.json',{cache:'no-store'}).then(function(r){if(!r.ok)thro
  }
 }).catch(function(){/* Keep the verified Week 9 fallback visible if the feed is unavailable. */});
 })();
-</script><script id="fourdk-fresh-headlines-auto">
+</script><script id="fourdk-cross-desk-headlines-auto">
 (function(){
- var link=document.getElementById('fourdk-headline-nfl');if(!link)return;
- fetch('nfl-weekly-index.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('unavailable');return r.json()}).then(function(data){
- var order={TNF:1,SUNDAY:2,SNF:3,MNF:4};
- var all=(Array.isArray(data.articles)?data.articles:[]).filter(function(a){return a&&order[a.type]&&Number.isInteger(a.week)&&/^\d{4}-\d\d-\d\d$/.test(a.date||'')&&typeof a.url==='string'&&/^[a-z0-9][a-z0-9._/-]*\.html$/i.test(a.url)&&!a.url.includes('..')&&typeof a.title==='string'});
- if(!all.length)return;
- all.sort(function(a,b){return b.week-a.week||b.date.localeCompare(a.date)||order[b.type]-order[a.type]});
- var a=all[0];link.href=a.url;link.textContent='NFL WEEK '+a.week+' • '+a.type+' • '+a.title.toUpperCase();
- }).catch(function(){/* Keep verified Week 9 headline as fallback. */});
+'use strict';
+var links={};['nba','nfl','music','tv'].forEach(function(k){links[k]=document.querySelector('[data-fourdk-headline="'+k+'"]')});
+function safeUrl(v){return typeof v==='string'&&/^[a-z0-9][a-z0-9._/-]*\.html$/i.test(v)&&v.indexOf('..')<0}
+function update(k,title,url){if(!links[k]||!safeUrl(url)||typeof title!=='string'||!title.trim())return;links[k].href=url;links[k].textContent=k.toUpperCase()+' • '+title.trim().toUpperCase()}
+function json(url,fn){fetch(url,{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('unavailable');return r.json()}).then(fn).catch(function(){/* Retain verified fallback headline. */})}
+json('nightcap-latest.json',function(d){update('nba',d.headline,d.url)});
+json('nfl-weekly-index.json',function(d){
+var order={TNF:1,SUNDAY:2,SNF:3,MNF:4};
+var a=(Array.isArray(d.articles)?d.articles:[]).filter(function(x){return x&&order[x.type]&&Number.isInteger(x.week)&&/^\d{4}-\d\d-\d\d$/.test(x.date||'')&&safeUrl(x.url)&&typeof x.title==='string'});
+a.sort(function(x,y){return y.week-x.week||y.date.localeCompare(x.date)||order[y.type]-order[x.type]});
+if(a[0])update('nfl','WEEK '+a[0].week+' '+a[0].type+' • '+a[0].title,a[0].url);
+});
+json('4dk-culture-headlines.json',function(d){
+['music','tv'].forEach(function(k){
+var entries=Array.isArray(d[k])?d[k]:[];
+entries=entries.filter(function(x){return x&&/^\d{4}-\d\d-\d\d$/.test(x.date||'')&&safeUrl(x.url)&&typeof x.title==='string'});
+entries.sort(function(a,b){return b.date.localeCompare(a.date)});
+if(entries[0])update(k,entries[0].title,entries[0].url);
+});
+});
 })();
 </script></body>
 </html>
