@@ -810,5 +810,13 @@ if(entries[0])update(k,entries[0].title,entries[0].url);
 });
 })();
 </script><!-- 4DK Phase 10 direct publishing: archive shelf collapsed by default -->
+
+<style id="fourdk-phase10-direct">
+@media(max-width:700px){#drop8-home-feature{margin-block:16px!important}#drop8-home-feature h2{line-height:1.07!important}#fourdk-home-legacy-shelf{margin-top:22px!important}#fourdk-front-hub{padding-top:24px!important;padding-bottom:24px!important}}
+#fourdk-home-legacy-shelf>summary{cursor:pointer}#fourdk-home-legacy-shelf>section{max-width:100%}
+</style>
+<script id="fourdk-phase10-direct-organize">
+(function(){function organize(){var shelf=document.getElementById('fourdk-home-legacy-shelf');if(!shelf)return;shelf.removeAttribute('open');['fourdk-magazine-front','4dk-oct12-refresh','4dk-oct27-feature','fourdk-current-front-desk','fourdk-nba-five-front','fourdk-network-front'].forEach(function(id){var node=document.getElementById(id);if(node&&!shelf.contains(node))shelf.appendChild(node)});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',organize);else organize();})();
+</script>
 </body>
 </html>
