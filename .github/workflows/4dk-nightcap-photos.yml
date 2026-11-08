@@ -1,0 +1,27 @@
+name: 4DK November 7 Nightcap photos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'inbox/nightcap-photos-2026-11-07.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install verified photos
+        run: python3 scripts/install_nightcap_photos_2026_11_07.py
+      - name: Commit photo update
+        run: |
+          git config user.name "4DK Publishing Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nba-nightcap-2026-11-07.html assets/nightcap-2026-11-07/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add seven matchup photos to November 7 Nightcap"
+            git push
+          fi
