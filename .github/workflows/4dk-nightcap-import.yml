@@ -1,0 +1,20 @@
+name: 4DK Nightcap ZIP Import (review only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import and validate Nightcap
+        run: python3 scripts/import_nightcap_zip.py
+      - name: Commit changes on review branch
+        run: |
+          git config user.name "4DK Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add nba-nightcap-20*.html nba-nightcap-archive.html nightcap-latest.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Prepare dated NBA Nightcap from verified ZIP"
+          git push
