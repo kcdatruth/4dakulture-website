@@ -1,0 +1,30 @@
+name: Import November 7 Nightcap photos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'inbox/nightcap-photos-2026-11-07.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Import seven photos safely
+        run: python scripts/import_nightcap_photos_2026_11_07.py
+      - name: Commit photos and article image references
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nba-nightcap-2026-11-07.html assets/nightcap-2026-11-07/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add seven game-matched photos to November 7 Nightcap"
+            git push
+          fi
