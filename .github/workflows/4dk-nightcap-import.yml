@@ -16,13 +16,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check whether a new ZIP was uploaded
+        id: zip_change
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]] && git diff --name-only HEAD^ HEAD -- inbox/nightcap-update.zip | grep -q '^inbox/nightcap-update.zip
       - name: Run isolated importer safety tests
         run: python3 scripts/test_nightcap_import.py
       - name: Import and validate Nightcap
-        if: ${{ hashFiles('inbox/nightcap-update.zip') != '' }}
+        if: ${{ steps.zip_change.outputs.import == 'true' }}
         run: python3 scripts/import_nightcap_zip.py
       - name: Commit changes on review branch
-        if: ${{ hashFiles('inbox/nightcap-update.zip') != '' }}
+        if: ${{ steps.zip_change.outputs.import == 'true' }}
+        run: |
+          git config user.name "4DK Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add nba-nightcap-20*.html nba-nightcap-archive.html nightcap-latest.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Prepare dated NBA Nightcap from verified ZIP"
+          git push
+; then
+            echo 'import=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'import=false' >> "$GITHUB_OUTPUT"
+            echo 'No new ZIP in this push; importer safely skipped.'
+          fi
+      - name: Run isolated importer safety tests
+        run: python3 scripts/test_nightcap_import.py
+      - name: Import and validate Nightcap
+        if: ${{ steps.zip_change.outputs.import == 'true' }}
+        run: python3 scripts/import_nightcap_zip.py
+      - name: Commit changes on review branch
+        if: ${{ steps.zip_change.outputs.import == 'true' }}
         run: |
           git config user.name "4DK Publisher"
           git config user.email "actions@users.noreply.github.com"
