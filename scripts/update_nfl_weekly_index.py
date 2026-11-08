@@ -17,9 +17,9 @@ TYPES = {"tnf": "TNF", "thursday": "TNF", "snf": "SNF", "sunday-night": "SNF",
          "mnf": "MNF", "monday": "MNF", "sunday": "SUNDAY", "preview": "PREVIEW"}
 EXCLUDE = ("index", "archive", "rankings", "power", "mvp", "rookie", "weekly-hq",
            "injury", "top-50", "stats", "players", "schedule", "stock", "hub")
-WEEK = re.compile(r"(?:^|-)week-?(\\d{1,2})(?:-|\\.)", re.I)
+WEEK = re.compile(r"(?:^|-)week-?(\d{1,2})(?:-|\.)", re.I)
 TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
-META_DATE = re.compile(r'<meta[^>]+(?:article:published_time|datePublished)[^>]+content=["\\\'](\\d{4}-\\d{2}-\\d{2})', re.I)
+META_DATE = re.compile(r"""<meta[^>]+(?:article:published_time|datePublished)[^>]+content=["'](\d{4}-\d{2}-\d{2})""", re.I)
 ORDER = {"PREVIEW": 0, "TNF": 1, "SUNDAY": 2, "SNF": 3, "MNF": 4}
 
 def classify(name):
@@ -68,9 +68,9 @@ def main():
         week, kind = info
         html = file.read_text(encoding="utf-8", errors="replace")[:12000]
         match = TITLE.search(html)
-        title = re.sub(r"\\s+", " ", re.sub(r"<[^>]+>", "", match.group(1))).strip() if match else ""
-        title = re.sub(r"\\s*[|·]\\s*4\\s*Da\\s*Kulture.*$", "", title, flags=re.I)
-        title = re.sub(r"\\s*[|·]\\s*4DK.*$", "", title, flags=re.I)
+        title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", match.group(1))).strip() if match else ""
+        title = re.sub(r"\s*[|·]\s*4\s*Da\s*Kulture.*$", "", title, flags=re.I)
+        title = re.sub(r"\s*[|·]\s*4DK.*$", "", title, flags=re.I)
         if not title:
             continue
         date_match = META_DATE.search(html)
@@ -96,7 +96,7 @@ def main():
     output["articles"] = sorted(by_url.values(), key=lambda a: (-int(a["week"]), ORDER.get(a.get("type"), 99), a.get("date", ""), a["url"]))
     if output["articles"] != existing or current != data.get("current_week"):
         output["updated"] = date.today().isoformat()
-        INDEX.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        INDEX.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"Indexed {len(added)} new stories; current week {current}; retained {len(existing)} existing entries.")
     else:
         print(f"No changes. Retained {len(existing)} indexed stories.")
