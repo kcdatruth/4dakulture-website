@@ -1,5 +1,10 @@
 name: 4DK Nightcap ZIP Import (review before publishing)
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/4dk-nightcap-import.yml'
+      - 'scripts/import_nightcap_zip.py'
+      - 'scripts/test_nightcap_import.py'
   push:
     branches: [main]
     paths:
@@ -19,10 +24,13 @@ jobs:
       - name: Test importer against isolated fixtures
         run: python3 scripts/test_nightcap_import.py
       - name: Prepare new edition
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: python3 scripts/import_nightcap_zip.py
       - name: Exclude the uploaded ZIP from the proposed commit
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: git rm --ignore-unmatch inbox/nightcap-update.zip
       - name: Open a review pull request (never auto-merge)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peter-evans/create-pull-request@v7
         with:
           branch: automation/next-nightcap
