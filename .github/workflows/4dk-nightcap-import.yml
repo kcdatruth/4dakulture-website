@@ -15,9 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Run isolated importer safety tests
+        run: python3 scripts/test_nightcap_import.py
       - name: Import and validate Nightcap
+        if: ${{ hashFiles('inbox/nightcap-update.zip') != '' }}
         run: python3 scripts/import_nightcap_zip.py
       - name: Commit changes on review branch
+        if: ${{ hashFiles('inbox/nightcap-update.zip') != '' }}
         run: |
           git config user.name "4DK Publisher"
           git config user.email "actions@users.noreply.github.com"
