@@ -10,58 +10,37 @@
 .card[data-type="SNF"],.card[data-type="TNF"]{border-left-color:#b13d36}
 .week-links a{background:#121010}
 @media(max-width:600px){.card h3{font-size:21px}}
-</style></head><body><header><a href="nfl.html">4 DA KULTURE / NFL</a></header><main class="wrap"><div class="eyebrow">2026 Season · One connected newsroom</div><h1>THE NFL<br>WEEKLY HQ.</h1><p class="lead">Every Thursday. Every Sunday. Every primetime finish. One place to follow the full 4 Da Kulture story of each NFL week — and every previous edition stays in the archive.</p><div class="rule"></div><div class="eyebrow">Current edition · <span data-current-week>Week 9</span></div><h2><span data-current-headline>WEEK 9 / THE LEAGUE NEVER STANDS STILL.</span></h2><div id="current" class="grid"><p class="lead">Loading current week...</p></div><h2>COMPLETE WEEK-BY-WEEK ARCHIVE</h2><p class="lead">No deleted recaps. No competing Thursday archives. Every indexed story is grouped by its NFL week.</p><div id="archive"></div><div class="rule"></div><h2>Browse the original archives</h2><a class="button subtle" href="nfl-thursday-recaps.html">Thursday archive</a><a class="button subtle" href="nfl-sunday-recaps.html">Sunday archive</a><a class="button subtle" href="nfl-monday-recaps.html">Monday archive</a><a class="button subtle" href="nfl-season-archive-2026.html">Season archive</a></main><script id="fourdk-dynamic-weekly-hq">
-(async()=>{
-  const current=document.getElementById('current'),archive=document.getElementById('archive');
-  const types={PREVIEW:'Preview',TNF:'Thursday Night Football',SUNDAY:'Sunday Recap',SNF:'Sunday Night Football',MNF:'Monday Night Football'};
-  const order={PREVIEW:0,TNF:1,SUNDAY:2,SNF:3,MNF:4};
-  const editorialDate=value=>{
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return value||'';
-  const [y,m,d]=value.split('-').map(Number);
-  return new Date(Date.UTC(y,m-1,d)).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).toUpperCase();
-};
-const teasers={
-  PREVIEW:'The matchups, pressure points and storylines shaping the week.',
-  TNF:'The Thursday night result and what it means for the rest of the NFL week.',
-  SUNDAY:'The defining Sunday performances, turning points and fallout.',
-  SNF:'A primetime spotlight on the matchup and its defining plays.',
-  MNF:'The Monday night finish and its impact on the league landscape.'
-};
-  const safeUrl=u=>typeof u==='string'&&/^nfl-[a-z0-9-]+\.html$/.test(u);
-  const addCard=(container,a,w,archiveMode=false)=>{
-    const link=document.createElement('a');link.href=a.url;link.className=archiveMode?'':'card';link.dataset.type=a.type;
-    if(archiveMode){link.textContent=(types[a.type]||a.type)+' · '+a.title;}
-    else{
-      const small=document.createElement('small');small.textContent=(types[a.type]||a.type)+' · WEEK '+w;
-      const h=document.createElement('h3');h.textContent=a.title;
-      const teaser=document.createElement('div');teaser.className='card-teaser';teaser.textContent=a.summary||teasers[a.type]||'Read the complete 4DK coverage';
-                const p=document.createElement('p');p.textContent=editorialDate(a.date);
-      link.append(small,h,teaser,p);
-    }
-    container.append(link);
-  };
-  try{
-    const r=await fetch('nfl-weekly-index.json',{cache:'no-store'});
-    if(!r.ok)throw Error('index unavailable');
-    const data=await r.json();
-    const articles=(data.articles||[]).filter(a=>Number.isInteger(a.week)&&a.week>0&&safeUrl(a.url)&&a.title);
-    const week=Math.max(Number(data.current_week)||0,...articles.map(a=>a.week));
-    if(!week)throw Error('No current week');
-    document.querySelectorAll('[data-current-week]').forEach(e=>e.textContent='Week '+week);
-    document.querySelectorAll('[data-current-headline]').forEach(e=>e.textContent='WEEK '+week+' / THE LEAGUE NEVER STANDS STILL.');
-    const sorted=a=>a.slice().sort((x,y)=>(order[x.type]??9)-(order[y.type]??9)||String(x.date).localeCompare(String(y.date)));
-    current.replaceChildren();archive.replaceChildren();
-    const active=sorted(articles.filter(a=>a.week===week));
-    if(active.length)active.forEach(a=>addCard(current,a,week));
-    else current.textContent='Coverage for this week is being prepared.';
-    const weeks=[...new Set(articles.filter(a=>a.week<week).map(a=>a.week))].sort((a,b)=>b-a);
-    for(const w of weeks){
-      const section=document.createElement('section');section.className='week';
-      const heading=document.createElement('h3');heading.textContent='WEEK '+w;
-      const links=document.createElement('div');links.className='week-links';
-      sorted(articles.filter(a=>a.week===w)).forEach(a=>addCard(links,a,w,true));
-      section.append(heading,links);archive.append(section);
-    }
-  }catch(e){current.textContent='Current week temporarily unavailable. Use the original archive links below.';archive.textContent='Archive feed temporarily unavailable.'}
+</style><style id="fourdk-connected-newsroom-2026">
+:root{--gold:#e6bd74;--cream:#f7eddc;--red:#b93d36}body{background:#090908;color:var(--cream)}.week-status{margin:26px 0 35px;padding:22px;border:1px solid #69503d;background:linear-gradient(135deg,#261b16,#110f0e)}.week-status p{font:17px/1.65 Georgia;color:#e5d7c4}.stage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0 25px}.stage{border:1px solid #6c5040;background:#191514;padding:17px 14px;min-width:0}.stage b{display:block;font:900 13px Arial;color:#f1cf98}.stage small{display:block;margin:10px 0;font:700 11px/1.4 Arial;letter-spacing:.08em;color:#b8ad9f}.stage a{font:800 12px/1.5 Arial;color:#f4eadb}.stage.pending{border-style:dashed;opacity:.8}.week-header{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.week-header a{font:800 12px Arial;color:var(--gold)}.archive-week{padding:24px 0;border-top:1px solid #584134}.archive-week summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:15px;align-items:center}.archive-week summary::-webkit-details-marker{display:none}.archive-week summary h3{margin:0;font:900 28px Arial;color:var(--gold)}.archive-week summary span{font:700 12px Arial;color:#cbbda9}.archive-week[open] summary{margin-bottom:20px}.archive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.archive-grid a{display:block;text-decoration:none;padding:17px;background:#171312;border:1px solid #4b382e}.archive-grid b{display:block;font:900 12px Arial;color:var(--gold);margin-bottom:9px}.archive-grid strong{display:block;font:800 17px/1.3 Arial;color:var(--cream)}.archive-grid small{display:block;margin-top:10px;color:#bfb3a4;font:12px Arial}.card{border-left:4px solid #b93d36}.hq-links{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.hq-links a{font:800 12px Arial;color:#f6d5a0;padding:10px 13px;border:1px solid #6e4d37;text-decoration:none}.newsroom-note{border-left:4px solid var(--red);padding:15px 19px;background:#1d1512;font:15px/1.6 Georgia;color:#e7d6c3}@media(max-width:700px){.stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stage{padding:14px}.archive-grid{grid-template-columns:1fr}.week-status{padding:16px}.archive-week summary h3{font-size:22px}}
+</style></head><body><header><a href="nfl.html">4 DA KULTURE / NFL</a></header><main class="wrap"><div class="eyebrow">2026 Season · One connected newsroom</div><h1>THE NFL<br>WEEKLY HQ.</h1><p class="lead">Every Thursday. Every Sunday. Every primetime finish. One place to follow the full 4 Da Kulture story of each NFL week — and every previous edition stays in the archive.</p><div class="rule"></div><div class="eyebrow">CURRENT EDITION · <span data-current-week>WEEK 9</span></div><h2 data-current-headline>WEEK 9 / THE FULL STORY.</h2><p class="lead">Thursday opens the week. Sunday delivers the biggest answers. Sunday Night Football gets its own spotlight. Monday completes the story. Each finished 4DK report joins this edition without replacing anything that came before.</p>
+<div class="hq-links"><a href="nfl.html">NFL FRONT PAGE</a><a href="nfl-rankings-hq.html">RANKINGS HQ</a><a href="nfl-season-archive-2026.html">SEASON ARCHIVE</a></div>
+<section class="week-status" aria-label="Current week coverage status"><div class="eyebrow">THE 4DK WEEKLY RUNNING ORDER</div><div class="stage-grid" id="week-stages"><p>Loading weekly coverage…</p></div><p class="newsroom-note">A recap is linked only after its article is published. Upcoming games are never presented as final. Earlier weeks remain preserved as their own dated editions.</p></section>
+<h2>THIS WEEK'S PUBLISHED COVERAGE</h2><div id="current" class="grid"><p class="lead">Loading current week…</p></div>
+<h2>THE COMPLETE WEEK-BY-WEEK ARCHIVE</h2><p class="lead">Select any previous week to revisit its original Thursday, Sunday, Sunday night, Monday and preview coverage. Every article stays at its original URL.</p><div id="archive"></div><div class="rule"></div><h2>Browse the original archives</h2><a class="button subtle" href="nfl-thursday-recaps.html">Thursday archive</a><a class="button subtle" href="nfl-sunday-recaps.html">Sunday archive</a><a class="button subtle" href="nfl-monday-recaps.html">Monday archive</a><a class="button subtle" href="nfl-season-archive-2026.html">Season archive</a></main><script id="fourdk-dynamic-weekly-hq">
+(async function(){
+const current=document.getElementById('current'),archive=document.getElementById('archive'),stages=document.getElementById('week-stages');
+const types={PREVIEW:'WEEK PREVIEW',TNF:'THURSDAY NIGHT',SUNDAY:'SUNDAY RECAP',SNF:'SUNDAY NIGHT',MNF:'MONDAY NIGHT'};
+const order={PREVIEW:0,TNF:1,SUNDAY:2,SNF:3,MNF:4};
+const safe=a=>a&&Number.isInteger(a.week)&&a.week>0&&typeof a.title==='string'&&/^nfl-[a-z0-9-]+\.html$/.test(a.url||'')&&Object.hasOwn(types,a.type);
+const date=s=>/^\d{4}-\d\d-\d\d$/.test(s||'')?new Date(s+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}):'';
+const sorted=arr=>arr.slice().sort((a,b)=>(order[a.type]-order[b.type])||String(a.date).localeCompare(String(b.date)));
+function node(tag,cls,content){const el=document.createElement(tag);if(cls)el.className=cls;if(content!==undefined)el.textContent=content;return el;}
+function link(a,week,compact=false){const el=node('a',compact?'':'card');el.href=a.url;el.dataset.type=a.type;
+if(compact){el.append(node('b','',types[a.type]),node('strong','',a.title),node('small','',date(a.date)));return el;}
+el.append(node('small','',types[a.type]+' · WEEK '+week),node('h3','',a.title),node('p','',a.summary||'Read the complete 4DK editorial breakdown and the lasting implications.'),node('p','time',date(a.date)));return el;}
+try{
+const response=await fetch('nfl-weekly-index.json',{cache:'no-store'});if(!response.ok)throw Error('Index unavailable');
+const data=await response.json(),articles=(data.articles||[]).filter(safe);
+const week=Number(data.current_week);if(!Number.isInteger(week)||week<1)throw Error('Invalid current week');
+document.querySelectorAll('[data-current-week]').forEach(x=>x.textContent='WEEK '+week);
+document.querySelectorAll('[data-current-headline]').forEach(x=>x.textContent='WEEK '+week+' / THE FULL STORY.');
+const active=sorted(articles.filter(a=>a.week===week));current.replaceChildren();stages.replaceChildren();archive.replaceChildren();
+const stageDefs=[['TNF','THURSDAY'],['SUNDAY','SUNDAY'],['SNF','SUNDAY NIGHT'],['MNF','MONDAY']];
+for(const [type,label] of stageDefs){const item=active.find(a=>a.type===type),card=node('div','stage'+(item?'':' pending'));card.append(node('b','',label),node('small','',item?'PUBLISHED':'AWAITING PUBLISHED RECAP'));if(item){const a=node('a','',item.title+' →');a.href=item.url;card.append(a);}else card.append(node('small','','Will appear here when the full 4DK write-up is published.'));stages.append(card);}
+if(active.length)active.forEach(a=>current.append(link(a,week)));else current.append(node('p','lead','This week’s articles are being prepared.'));
+const weeks=[...new Set(articles.filter(a=>a.week<week).map(a=>a.week))].sort((a,b)=>b-a);
+for(const w of weeks){const list=sorted(articles.filter(a=>a.week===w)),section=node('details','archive-week');section.id='week-'+w;const summary=node('summary'),title=node('h3','', 'WEEK '+w),count=node('span','',list.length+' ORIGINAL STORIES · VIEW EDITION');summary.append(title,count);const grid=node('div','archive-grid');list.forEach(a=>grid.append(link(a,w,true)));section.append(summary,grid);archive.append(section);}
+if(!weeks.length)archive.append(node('p','lead','Earlier editions will appear here.'));
+}catch(err){current.replaceChildren(node('p','lead','The weekly index is temporarily unavailable. Use the original collections below.'));stages.replaceChildren(node('p','','Coverage status temporarily unavailable.'));archive.replaceChildren(node('p','','Browse the original archives below.'));}
 })();
 </script></body></html>
