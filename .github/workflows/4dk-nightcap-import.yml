@@ -1,44 +1,35 @@
-name: 4DK Nightcap ZIP Import (review only)
+name: 4DK Nightcap ZIP Import (review before publishing)
 on:
   push:
-    branches:
-      - feature/4dk-nightcap-zip-importer
+    branches: [main]
     paths:
-      - inbox/nightcap-update.zip
-      - .github/workflows/4dk-nightcap-import.yml
-      - scripts/import_nightcap_zip.py
-      - scripts/test_nightcap_import.py
+      - 'inbox/nightcap-update.zip'
   workflow_dispatch:
 permissions:
   contents: write
+  pull-requests: write
+concurrency:
+  group: 4dk-nightcap-import
+  cancel-in-progress: false
 jobs:
   import:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-      - name: Check for a newly uploaded ZIP
-        id: zip_change
-        shell: bash
-        run: |
-          if [[ "${{ github.event_name }}" == "push" ]] && ! git diff --quiet HEAD^ HEAD -- inbox/nightcap-update.zip; then
-            echo "import=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "import=false" >> "$GITHUB_OUTPUT"
-            echo "No new ZIP in this push; importer safely skipped."
-          fi
-      - name: Run isolated importer safety tests
+      - name: Test importer against isolated fixtures
         run: python3 scripts/test_nightcap_import.py
-      - name: Import and validate Nightcap
-        if: steps.zip_change.outputs.import == 'true'
+      - name: Prepare new edition
         run: python3 scripts/import_nightcap_zip.py
-      - name: Commit changes on review branch
-        if: steps.zip_change.outputs.import == 'true'
-        run: |
-          git config user.name "4DK Publisher"
-          git config user.email "actions@users.noreply.github.com"
-          git add nba-nightcap-20*.html nba-nightcap-archive.html nightcap-latest.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Prepare dated NBA Nightcap from verified ZIP"
-          git push
+      - name: Exclude the uploaded ZIP from the proposed commit
+        run: git rm --ignore-unmatch inbox/nightcap-update.zip
+      - name: Open a review pull request (never auto-merge)
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/next-nightcap
+          delete-branch: true
+          title: '4DK: Review next NBA Nightcap'
+          commit-message: '4DK: Prepare new NBA Nightcap and update latest feed'
+          body: |
+            Review all game scores, player statistics, editorial analysis,
+            photos, homepage feed and archive before merging.
+            Existing dated Nightcaps are protected against overwrite.
