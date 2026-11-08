@@ -5,6 +5,7 @@ on:
     paths:
       - 'nfl-*.html'
       - 'scripts/update_nfl_weekly_index.py'
+      - 'scripts/test_nfl_weekly_index.py'
       - '.github/workflows/nfl-weekly-hq.yml'
   workflow_dispatch:
 permissions:
@@ -22,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify new-week rotation, archive preservation, and safe repeat runs
+        run: python scripts/test_nfl_weekly_index.py
       - name: Discover newly published NFL recaps and refresh weekly archive
         run: python scripts/update_nfl_weekly_index.py
       - name: Commit index only when changed
