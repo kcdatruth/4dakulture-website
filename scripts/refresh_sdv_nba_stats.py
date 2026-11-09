@@ -3,6 +3,7 @@
 import argparse, datetime, io, json, pathlib, re, sys, unicodedata
 import pandas as pd
 import requests
+from espn_live_fallback import append_recent_missing_games
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PATH = ROOT / 'data/4dk-player-stats-2026-27.json'
@@ -52,6 +53,7 @@ def main(publish):
     response.raise_for_status()
     if not 1000 <= len(response.content) <= 100_000_000: fail('Unexpected source download size')
     df = pd.read_parquet(io.BytesIO(response.content))
+    df = append_recent_missing_games(df)
     needed = set(FIELDS) | {'athlete_display_name','game_id','season_type','did_not_play'}
     if needed - set(df.columns): fail('Missing source columns: '+str(sorted(needed-set(df.columns))))
     if 'season' in df.columns:
