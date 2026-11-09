@@ -3,6 +3,7 @@
 import datetime, io, json, pathlib, re, sys, unicodedata
 import pandas as pd
 import requests
+from espn_live_fallback import append_recent_missing_games
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DEST=ROOT/'data/4dk-nba-league-leaders-2026-27.json'
 URL='https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet'
@@ -24,6 +25,7 @@ def main():
     resp=requests.get(URL,timeout=90,headers={'User-Agent':'4DK-Full-League-Stats/1.0'});resp.raise_for_status()
     if not 1000<len(resp.content)<100_000_000:raise ValueError('Invalid download size')
     df=pd.read_parquet(io.BytesIO(resp.content))
+    df = append_recent_missing_games(df)
     required=set(FIELDS)|{'athlete_display_name','game_id','season_type','did_not_play'}
     if required-set(df.columns):raise ValueError('Missing columns '+str(required-set(df.columns)))
     if 'season' in df:df=df[pd.to_numeric(df.season,errors='coerce')==2027]
