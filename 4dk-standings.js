@@ -28,8 +28,8 @@ document.querySelectorAll("[data-4dk-standings]").forEach(function(host){
   var tabs=document.createElement("div");tabs.className="fourdk-standings-tabs";tabs.setAttribute("role","tablist");tabs.setAttribute("aria-label","Select conference");
   var mode=document.createElement("div");mode.className="fourdk-standings-modes";
   var confButton=document.createElement("button"),divButton=document.createElement("button"),raceButton=document.createElement("button");
-  confButton.textContent="CONFERENCE";divButton.textContent="DIVISIONS";raceButton.textContent="PLAYOFF RACE";
-  (league==="nfl"?[confButton,divButton,raceButton]:[confButton,divButton]).forEach(function(b){b.type="button";b.className="fourdk-standings-mode";mode.appendChild(b)});
+  confButton.textContent="CONFERENCE";divButton.textContent="DIVISIONS";raceButton.textContent=league==="nba"?"NBA CUP":"PLAYOFF RACE";
+  [confButton,divButton,raceButton].forEach(function(b){b.type="button";b.className="fourdk-standings-mode";mode.appendChild(b)});
   var divisionSelect=document.createElement("select");divisionSelect.className="fourdk-standings-division-select";divisionSelect.setAttribute("aria-label","Select division");
   Object.keys(divisions[league]).forEach(function(name){var opt=document.createElement("option");opt.value=name;opt.textContent=name;divisionSelect.appendChild(opt)});
   divisionSelect.hidden=true;
@@ -37,6 +37,7 @@ document.querySelectorAll("[data-4dk-standings]").forEach(function(host){
   var head=document.createElement("thead");head.innerHTML="<tr><th>TEAM</th><th>W</th><th>L</th>"+(league==="nfl"?"<th>T</th>":"")+"<th>PCT</th></tr>";table.appendChild(head);
   var body=document.createElement("tbody");table.appendChild(body);
   var buttons=[],view="conference";
+  var cupPanel=league==="nba"?document.createElement("div"):null;if(cupPanel){cupPanel.setAttribute("data-4dk-nba-cup","");cupPanel.hidden=true;}
   var racePanel=document.createElement("div");racePanel.className="fourdk-playoff-race";
   var raceNote=document.createElement("p");raceNote.className="fourdk-playoff-note";
   var raceList=document.createElement("div");raceList.className="fourdk-playoff-grid";
@@ -93,16 +94,16 @@ document.querySelectorAll("[data-4dk-standings]").forEach(function(host){
   }
   names.forEach(function(name){var b=document.createElement("button");b.type="button";b.className="fourdk-standings-tab";b.textContent=name;b.setAttribute("role","tab");b.addEventListener("click",function(){show(name)});tabs.appendChild(b);buttons.push(b)});
   function setMode(next){
-    view=next;tabs.hidden=view!=="conference";divisionSelect.hidden=view!=="division";table.hidden=view==="playoffs";racePanel.hidden=view!=="playoffs";
-    confButton.classList.toggle("active",view==="conference");divButton.classList.toggle("active",view==="division");raceButton.classList.toggle("active",view==="playoffs");
-    if(view!=="playoffs")show(view==="conference"?names[0]:divisionSelect.value);
+    view=next;tabs.hidden=view!=="conference";divisionSelect.hidden=view!=="division";table.hidden=view==="playoffs"||view==="cup";racePanel.hidden=view!=="playoffs";if(cupPanel)cupPanel.hidden=view!=="cup";
+    confButton.classList.toggle("active",view==="conference");divButton.classList.toggle("active",view==="division");raceButton.classList.toggle("active",view==="playoffs"||view==="cup");
+    if(view!=="playoffs"&&view!=="cup")show(view==="conference"?names[0]:divisionSelect.value);
   }
   confButton.addEventListener("click",function(){setMode("conference")});
   divButton.addEventListener("click",function(){setMode("division")});
-  raceButton.addEventListener("click",function(){setMode("playoffs")});
+  raceButton.addEventListener("click",function(){setMode(league==="nba"?"cup":"playoffs")});
   divisionSelect.addEventListener("change",function(){show(divisionSelect.value)});
   if(league==="nba"){var gbth=document.createElement("th");gbth.textContent="GB";head.rows[0].appendChild(gbth)}
-  host.replaceChildren(heading,date,mode,tabs,divisionSelect,table,racePanel);setMode("conference");
+  host.replaceChildren(heading,date,mode,tabs,divisionSelect,table,racePanel);if(cupPanel){host.appendChild(cupPanel);var s=document.createElement("script");s.src="4dk-nba-cup.js?v=1";document.head.appendChild(s)}setMode("conference");
  }).catch(function(){host.textContent="Standings temporarily unavailable. Original 4DK coverage remains accessible."});
 });
 })();
