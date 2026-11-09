@@ -16,6 +16,18 @@ def norm(v):
 def fail(message):
     raise ValueError(message + '; existing published data preserved')
 
+def warn_if_unchanged(checked_utc):
+    """Make successful but unchanged upstream feeds visible in GitHub Actions."""
+    try:
+        last = datetime.datetime.strptime(checked_utc, '%Y-%m-%d %H:%M UTC').replace(tzinfo=datetime.timezone.utc)
+        age_hours = (datetime.datetime.now(datetime.timezone.utc) - last).total_seconds() / 3600
+    except (TypeError, ValueError):
+        print('::warning title=4DK NBA stats freshness::Upstream box scores unchanged; last refresh time unavailable')
+        return
+    print(f'4DK UPSTREAM FRESHNESS: last published update {checked_utc}; age {age_hours:.1f} hours')
+    if age_hours >= 12:
+        print(f'::warning title=4DK NBA stats source has not advanced::No new player-game records detected for {age_hours:.1f} hours. Workflow succeeded but stats did NOT refresh. Check upstream SportsDataverse/ESPN feed; existing verified averages preserved.')
+
 def main(publish):
     previous = json.loads(PATH.read_text())
     page = (ROOT/'top-50-nba-players-2026-27.html').read_text()
@@ -88,7 +100,9 @@ def main(publish):
     if not publish:
         print('DRY RUN: No files changed'); return
     if not changed:
-        print('No changes; original timestamp preserved'); return
+        print('No changes; original timestamp preserved')
+        warn_if_unchanged(previous.get('checked_utc'))
+        return
     payload = dict(season='2026-27',checked_utc=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),source=URL,status='verified',matched=len(result),unmatched=missing_mentions,players=result)
     PATH.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n')
     print('WROTE ONLY:',PATH.relative_to(ROOT))
