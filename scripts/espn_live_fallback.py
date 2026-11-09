@@ -54,12 +54,12 @@ def _parse_game(game_id, summary):
                 for label, target in COLUMNS.items():
                     raw = str(mapped[label]).strip()
                     if isinstance(target, tuple):
-                        match = re.fullmatch(r"(\\d+)-(\\d+)", raw)
+                        match = re.fullmatch(r"(\d+)-(\d+)", raw)
                         if not match:
                             raise ValueError("Invalid ESPN shooting line: " + raw)
                         row[target[0]], row[target[1]] = map(int, match.groups())
                     else:
-                        if not re.fullmatch(r"\\d+", raw):
+                        if not re.fullmatch(r"\d+", raw):
                             raise ValueError("Invalid ESPN counting stat: " + raw)
                         row[target] = int(raw)
                 if row["field_goals_made"] > row["field_goals_attempted"]:
