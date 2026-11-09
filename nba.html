@@ -375,4 +375,29 @@
 .fourdk-nba-feature-library[open]>summary{border-bottom:2px solid #8e623c}
 .fourdk-nba-feature-library-content{padding:0 10px 24px}
 .fourdk-nba-feature-library:focus-within{outline-offset:3px}
-</style></body></html>
+</style>
+<script id="fourdk-nba-interactive-placement">
+/* Preserve the cross-sport interactive feature, but keep NBA coverage first. */
+(function () {
+  function moveInteractiveWorld() {
+    var main = document.querySelector('main#main');
+    if (!main) return false;
+    var destination = document.getElementById('fourdk-hybrid') || document.getElementById('fourdk-nba-feature-library');
+    if (!destination) return false;
+    var sections = Array.prototype.slice.call(main.querySelectorAll('section'));
+    var feature = sections.find(function (section) {
+      var heading = section.querySelector('h1,h2,h3');
+      return heading && /FIVE WAYS TO GO DEEPER/i.test(heading.textContent || '') && /INTERACTIVE WORLD/i.test(section.textContent || '');
+    });
+    if (!feature || feature === destination || destination.contains(feature)) return false;
+    if (feature.compareDocumentPosition(destination) & Node.DOCUMENT_POSITION_FOLLOWING) {
+      destination.insertAdjacentElement('afterend', feature);
+    }
+    return true;
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', moveInteractiveWorld, {once:true});
+  else moveInteractiveWorld();
+  window.addEventListener('load', moveInteractiveWorld, {once:true});
+})();
+</script>
+</body></html>
