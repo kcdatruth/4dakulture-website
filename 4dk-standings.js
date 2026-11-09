@@ -15,6 +15,7 @@ document.querySelectorAll("[data-4dk-standings]").forEach(function(host){
  // Put standings after the current editorial lead, rather than at the page bottom.
  var target=league==="nba"?document.querySelector("#lead-story"):document.querySelector("#fourdk-weekly-hq-promo");
  if(target&&target.parentNode)target.insertAdjacentElement("afterend",host);
+ if(league==="nfl"&&!target)document.addEventListener("DOMContentLoaded",function(){var promo=document.querySelector("#fourdk-weekly-hq-promo");if(promo)promo.insertAdjacentElement("afterend",host)},{once:true});
  fetch("data/4dk-"+league+"-standings-2026.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("Unavailable");return r.json()}).then(function(data){
   if(data.status!=="verified"||!Array.isArray(data.teams)||data.teams.length!==(league==="nba"?30:32))throw Error("Incomplete");
   var groups=conferences[league], names=Object.keys(groups), classified=data.teams.map(function(t){return {team:t,group:conference(league,t)}});
