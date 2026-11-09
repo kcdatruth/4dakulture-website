@@ -377,27 +377,35 @@
 .fourdk-nba-feature-library:focus-within{outline-offset:3px}
 </style>
 <script id="fourdk-nba-interactive-placement">
-/* Preserve the cross-sport interactive feature, but keep NBA coverage first. */
+/* Cross-site interactive panel is injected outside <main> by other site code.
+   Relocate the actual panel after NBA coverage, retaining all links and markup. */
 (function () {
-  function moveInteractiveWorld() {
-    var main = document.querySelector('main#main');
-    if (!main) return false;
-    var destination = document.getElementById('fourdk-hybrid') || document.getElementById('fourdk-nba-feature-library');
-    if (!destination) return false;
-    var sections = Array.prototype.slice.call(main.querySelectorAll('section'));
-    var feature = sections.find(function (section) {
-      var heading = section.querySelector('h1,h2,h3');
-      return heading && /FIVE WAYS TO GO DEEPER/i.test(heading.textContent || '') && /INTERACTIVE WORLD/i.test(section.textContent || '');
-    });
-    if (!feature || feature === destination || destination.contains(feature)) return false;
-    if (feature.compareDocumentPosition(destination) & Node.DOCUMENT_POSITION_FOLLOWING) {
-      destination.insertAdjacentElement('afterend', feature);
+  var moving = false;
+  function relocate() {
+    if (moving) return;
+    var destination = document.getElementById('fourdk-nba-feature-library') ||
+                      document.getElementById('fourdk-hybrid');
+    if (!destination) return;
+    var headings = document.querySelectorAll('h1,h2,h3,h4');
+    for (var i = 0; i < headings.length; i++) {
+      if (!/FIVE WAYS TO GO DEEPER/i.test(headings[i].textContent || '')) continue;
+      var panel = headings[i].closest('section,aside,[class*="interactive"]');
+      if (!panel || panel.contains(destination) || destination.contains(panel)) continue;
+      if (panel.previousElementSibling === destination) return;
+      moving = true;
+      destination.insertAdjacentElement('afterend', panel);
+      moving = false;
+      return;
     }
-    return true;
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', moveInteractiveWorld, {once:true});
-  else moveInteractiveWorld();
-  window.addEventListener('load', moveInteractiveWorld, {once:true});
+  function start() {
+    relocate();
+    var observer = new MutationObserver(function () { relocate(); });
+    observer.observe(document.body, {childList:true,subtree:true});
+    window.addEventListener('load', relocate, {once:true});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, {once:true});
+  else start();
 })();
 </script>
 </body></html>
