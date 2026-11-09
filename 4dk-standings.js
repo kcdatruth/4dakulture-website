@@ -4,7 +4,7 @@ var conferences={
  nba:{East:"ATL BOS BKN CHA CHI CLE DET IND MIA MIL NY ORL PHI TOR WSH",West:"DAL DEN GS HOU LAC LAL MEM MIN NO OKC PHX POR SAC SA UTA"},
  nfl:{AFC:"BAL BUF CIN CLE DEN HOU IND JAX KC LAC LV MIA NE NYJ PIT TEN",NFC:"ARI ATL CAR CHI DAL DET GB LAR MIN NO NYG PHI SEA SF TB WSH"}
 };
-var aliases={nba:{NYK:"NY",GSW:"GS",NOP:"NO",SAS:"SA",UTA:"UTA",WAS:"WSH"},nfl:{WSH:"WSH",JAC:"JAX",LA:"LAR"}};
+var aliases={nba:{NYK:"NY",GSW:"GS",NOP:"NO",SAS:"SA",UTAH:"UTA",UTA:"UTA",WAS:"WSH"},nfl:{WSH:"WSH",JAC:"JAX",LA:"LAR"}};
 function conference(league,team){
  var abbr=(aliases[league][team.abbreviation]||team.abbreviation||"").toUpperCase();
  var sets=conferences[league];
