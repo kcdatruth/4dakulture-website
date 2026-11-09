@@ -1,0 +1,41 @@
+name: 4DK Daily NBA and NFL Standings
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/4dk-daily-standings.yml'
+      - 'scripts/refresh_standings.py'
+  schedule:
+    - cron: '30 11 * * *'
+    - cron: '30 17 * * *'
+  pull_request:
+    paths:
+      - 'scripts/refresh_standings.py'
+      - '.github/workflows/4dk-daily-standings.yml'
+permissions:
+  contents: write
+concurrency:
+  group: 4dk-daily-standings
+  cancel-in-progress: false
+jobs:
+  standings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Validate and refresh all 62 teams
+        run: python scripts/refresh_standings.py
+      - name: Commit verified standings only
+        if: github.event_name != 'pull_request'
+        run: |
+          if ! git diff --quiet -- data/4dk-nba-standings-2026.json data/4dk-nfl-standings-2026.json || [ -n "$(git ls-files --others --exclude-standard data/4dk-*-standings-2026.json)" ]; then
+            git config user.name "4DK Stats Bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/4dk-nba-standings-2026.json data/4dk-nfl-standings-2026.json
+            git commit -m "Refresh verified NBA and NFL standings"
+            git push
+          fi
