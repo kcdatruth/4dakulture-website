@@ -64,6 +64,6 @@ def audit(page, dataset):
     print(f'PASS: all {len(fixtures)} official fixtures, six groups, 30 teams, {len(results)} completed games, every W/L/DIFF verified')
 
 def main():
-    response=requests.get(OFFICIAL,timeout=30);response.raise_for_status()
+    response=requests.get(OFFICIAL,headers={"User-Agent":"Mozilla/5.0", "Accept":"text/html,application/xhtml+xml"},timeout=30);response.raise_for_status()
     audit(response.text,json.loads(DEST.read_text()))
 if __name__=='__main__': main()
