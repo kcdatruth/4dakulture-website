@@ -24,7 +24,11 @@
       "date": "2026-11-08",
       "title": "What We Learned Sunday — NFL Week 9",
       "url": "nfl-sunday-recap-week9-2026.html",
-      "summary": "All 13 Sunday games: Chicago survives, San Francisco and Kansas City answer back, and C.J. Stroud throws five touchdowns. Includes 13 photos and the Sunday Night Football spotlight."
+      "summary": "All 13 Sunday games: Chicago survives, San Francisco and Kansas City answer back, and C.J. Stroud throws five touchdowns. Includes 13 photos and the Sunday Night Football spotlight.",
+      "snf_spotlight": {
+        "title": "Bears 27–24 Buccaneers — Sunday Night Football spotlight",
+        "fragment": "game-13"
+      }
     },
     {
       "type": "PREVIEW",
