@@ -1,0 +1,231 @@
+{
+  "season": "2026",
+  "status": "verified",
+  "source": "ESPN completed scoreboard; official NBA Cup schedule whitelist",
+  "updated_utc": "2026-11-09T19:45:48.092719+00:00",
+  "completed_games": 19,
+  "groups": {
+    "East A": [
+      {
+        "team": "DET",
+        "wins": 1,
+        "losses": 0,
+        "diff": 16,
+        "points": 110
+      },
+      {
+        "team": "ORL",
+        "wins": 1,
+        "losses": 0,
+        "diff": 7,
+        "points": 121
+      },
+      {
+        "team": "TOR",
+        "wins": 1,
+        "losses": 1,
+        "diff": 7,
+        "points": 235
+      },
+      {
+        "team": "MIL",
+        "wins": 0,
+        "losses": 1,
+        "diff": -14,
+        "points": 107
+      },
+      {
+        "team": "BKN",
+        "wins": 0,
+        "losses": 1,
+        "diff": -16,
+        "points": 94
+      }
+    ],
+    "East B": [
+      {
+        "team": "CLE",
+        "wins": 1,
+        "losses": 0,
+        "diff": 24,
+        "points": 119
+      },
+      {
+        "team": "MIA",
+        "wins": 1,
+        "losses": 0,
+        "diff": 20,
+        "points": 145
+      },
+      {
+        "team": "PHI",
+        "wins": 1,
+        "losses": 1,
+        "diff": -19,
+        "points": 193
+      },
+      {
+        "team": "NYK",
+        "wins": 0,
+        "losses": 1,
+        "diff": -5,
+        "points": 93
+      },
+      {
+        "team": "IND",
+        "wins": 0,
+        "losses": 1,
+        "diff": -20,
+        "points": 125
+      }
+    ],
+    "East C": [
+      {
+        "team": "BOS",
+        "wins": 2,
+        "losses": 0,
+        "diff": 53,
+        "points": 244
+      },
+      {
+        "team": "ATL",
+        "wins": 1,
+        "losses": 0,
+        "diff": 7,
+        "points": 139
+      },
+      {
+        "team": "WSH",
+        "wins": 1,
+        "losses": 1,
+        "diff": 9,
+        "points": 227
+      },
+      {
+        "team": "CHI",
+        "wins": 0,
+        "losses": 1,
+        "diff": -14,
+        "points": 111
+      },
+      {
+        "team": "CHA",
+        "wins": 0,
+        "losses": 2,
+        "diff": -55,
+        "points": 159
+      }
+    ],
+    "West A": [
+      {
+        "team": "DAL",
+        "wins": 2,
+        "losses": 0,
+        "diff": 17,
+        "points": 228
+      },
+      {
+        "team": "DEN",
+        "wins": 1,
+        "losses": 0,
+        "diff": 7,
+        "points": 127
+      },
+      {
+        "team": "HOU",
+        "wins": 0,
+        "losses": 1,
+        "diff": -5,
+        "points": 111
+      },
+      {
+        "team": "PHX",
+        "wins": 0,
+        "losses": 1,
+        "diff": -7,
+        "points": 120
+      },
+      {
+        "team": "UTA",
+        "wins": 0,
+        "losses": 1,
+        "diff": -12,
+        "points": 100
+      }
+    ],
+    "West B": [
+      {
+        "team": "MIN",
+        "wins": 2,
+        "losses": 0,
+        "diff": 32,
+        "points": 242
+      },
+      {
+        "team": "OKC",
+        "wins": 1,
+        "losses": 0,
+        "diff": 31,
+        "points": 128
+      },
+      {
+        "team": "NOP",
+        "wins": 0,
+        "losses": 1,
+        "diff": -6,
+        "points": 109
+      },
+      {
+        "team": "LAC",
+        "wins": 0,
+        "losses": 1,
+        "diff": -26,
+        "points": 101
+      },
+      {
+        "team": "MEM",
+        "wins": 0,
+        "losses": 1,
+        "diff": -31,
+        "points": 97
+      }
+    ],
+    "West C": [
+      {
+        "team": "GSW",
+        "wins": 1,
+        "losses": 0,
+        "diff": 17,
+        "points": 112
+      },
+      {
+        "team": "SAS",
+        "wins": 1,
+        "losses": 0,
+        "diff": 15,
+        "points": 124
+      },
+      {
+        "team": "LAL",
+        "wins": 1,
+        "losses": 1,
+        "diff": -11,
+        "points": 219
+      },
+      {
+        "team": "POR",
+        "wins": 0,
+        "losses": 1,
+        "diff": -6,
+        "points": 118
+      },
+      {
+        "team": "SAC",
+        "wins": 0,
+        "losses": 1,
+        "diff": -15,
+        "points": 109
+      }
+    ]
+  }
+}
