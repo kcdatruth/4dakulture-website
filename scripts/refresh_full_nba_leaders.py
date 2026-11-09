@@ -8,6 +8,18 @@ DEST=ROOT/'data/4dk-nba-league-leaders-2026-27.json'
 URL='https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet'
 FIELDS=['points','rebounds','assists','steals','blocks','field_goals_made','field_goals_attempted','three_point_field_goals_made','three_point_field_goals_attempted','free_throws_made','free_throws_attempted']
 def norm(s):return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower())
+def warn_if_unchanged(checked_utc):
+    """Make successful but unchanged upstream feeds visible in GitHub Actions."""
+    try:
+        last = datetime.datetime.strptime(checked_utc, '%Y-%m-%d %H:%M UTC').replace(tzinfo=datetime.timezone.utc)
+        age_hours = (datetime.datetime.now(datetime.timezone.utc) - last).total_seconds() / 3600
+    except (TypeError, ValueError):
+        print('::warning title=4DK NBA stats freshness::Upstream box scores unchanged; last refresh time unavailable')
+        return
+    print(f'4DK UPSTREAM FRESHNESS: last published update {checked_utc}; age {age_hours:.1f} hours')
+    if age_hours >= 12:
+        print(f'::warning title=4DK NBA stats source has not advanced::No new player-game records detected for {age_hours:.1f} hours. Workflow succeeded but stats did NOT refresh. Check upstream SportsDataverse/ESPN feed; existing verified averages preserved.')
+
 def main():
     resp=requests.get(URL,timeout=90,headers={'User-Agent':'4DK-Full-League-Stats/1.0'});resp.raise_for_status()
     if not 1000<len(resp.content)<100_000_000:raise ValueError('Invalid download size')
@@ -45,7 +57,10 @@ def main():
         if len(result)<len(old)*0.85:raise ValueError('Suspicious drop in player coverage')
         for name,stats in old.items():
             if name in result and result[name]['games']<stats.get('games',0):raise ValueError('Stale source for '+name)
-        if result==old:print('No new stats; existing timestamp preserved');return
+        if result==old:
+            print('No new stats; existing timestamp preserved')
+            warn_if_unchanged(prev.get('checked_utc'))
+            return
     DEST.parent.mkdir(parents=True,exist_ok=True)
     payload={'season':'2026-27','status':'verified','scope':'full-league','checked_utc':datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),'source':URL,'matched':len(result),'players':result}
     DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');print('Validated',len(result),'players; wrote',DEST)
