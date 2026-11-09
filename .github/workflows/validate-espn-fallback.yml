@@ -20,4 +20,5 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install pandas requests
       - run: python -m unittest discover -s tests -p 'test_espn_live_fallback.py' -v
+      - run: python tests/live_espn_smoke.py
       - run: python -m py_compile scripts/espn_live_fallback.py scripts/refresh_sdv_nba_stats.py scripts/refresh_full_nba_leaders.py
