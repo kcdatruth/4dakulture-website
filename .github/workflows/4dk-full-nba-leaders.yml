@@ -1,6 +1,12 @@
 name: 4DK Full NBA League Leaders
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/4dk-full-nba-leaders.yml'
+      - 'scripts/refresh_full_nba_leaders.py'
+      - 'scripts/espn_live_fallback.py'
   schedule:
     - cron: '45 7 * * *'
     - cron: '45 13 * * *'
