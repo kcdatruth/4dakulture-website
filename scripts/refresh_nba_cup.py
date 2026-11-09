@@ -55,6 +55,16 @@ def main():
                 row=teams[code];row["wins"]+=int(scores[i]>scores[1-i]);row["losses"]+=int(scores[i]<scores[1-i])
                 row["diff"]+=scores[i]-scores[1-i];row["points"]+=scores[i]
             expected[key]=True;completed+=1
+    # Validate the immutable official schedule before any source fetch.
+    assert len(expected)==60, "NBA Cup schedule must contain 60 unique games"
+    for (date,pair) in expected:
+        assert len(pair)==2, "Invalid fixture pairing"
+        group_matches=[g for g,names in GROUPS.items() if pair.issubset(set(names.split()))]
+        assert len(group_matches)==1, "Cup fixture teams must share exactly one group: "+date+" "+str(pair)
+    counts={code:0 for code in teams}
+    for _,pair in expected:
+        for code in pair:counts[code]+=1
+    assert all(v==4 for v in counts.values()), "Every NBA Cup team must have four group games: "+str(counts)
     # A past Cup date must have all games final before publishing.
     for (date,pair),ok in expected.items():
         if dt.datetime.strptime(date,"%Y%m%d").date()<today and not ok:
