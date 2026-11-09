@@ -103,7 +103,7 @@ document.querySelectorAll("[data-4dk-standings]").forEach(function(host){
   raceButton.addEventListener("click",function(){setMode(league==="nba"?"cup":"playoffs")});
   divisionSelect.addEventListener("change",function(){show(divisionSelect.value)});
   if(league==="nba"){var gbth=document.createElement("th");gbth.textContent="GB";head.rows[0].appendChild(gbth)}
-  host.replaceChildren(heading,date,mode,tabs,divisionSelect,table,racePanel);if(cupPanel){host.appendChild(cupPanel);var s=document.createElement("script");s.src="4dk-nba-cup.js?v=1";document.head.appendChild(s)}setMode("conference");
+  host.replaceChildren(heading,date,mode,tabs,divisionSelect,table,racePanel);if(cupPanel){host.appendChild(cupPanel);var s=document.createElement("script");s.src="4dk-nba-cup.js?v=2";document.head.appendChild(s)}setMode("conference");
  }).catch(function(){host.textContent="Standings temporarily unavailable. Original 4DK coverage remains accessible."});
 });
 })();
