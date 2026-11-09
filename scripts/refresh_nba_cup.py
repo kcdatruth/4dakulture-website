@@ -11,7 +11,7 @@ import requests
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DEST=ROOT/"data/4dk-nba-cup-2026.json"
 GROUPS={
-"East A":"DET ORL TOR MIL BKN","East B":"CLE MIA PHI NYK IND","East C":"BOS ATL WAS CHI CHA",
+"East A":"DET ORL TOR MIL BKN","East B":"CLE MIA PHI NYK IND","East C":"BOS ATL WSH CHI CHA",
 "West A":"DAL DEN HOU PHX UTA","West B":"MIN OKC NOP LAC MEM","West C":"GSW SAS LAL POR SAC"}
 # NBA Cup matchups by official group-play night; order does not matter.
 FIXTURES={
