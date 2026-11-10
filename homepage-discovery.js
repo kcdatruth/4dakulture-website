@@ -22,8 +22,11 @@
       link.href=data.url;
       link.textContent='Latest Nightcap · '+(typeof data.shortDate==='string'?data.shortDate:data.url.slice(13,23));
     }).catch(function(){/* Existing linked Nightcap remains available. */});
-    var target=document.querySelector('main')||document.querySelector('#fourdk-front-hub')||document.body;
-    target.insertBefore(rail,target.firstChild);
+    var lead=document.querySelector('#dk-latest-nightcap');
+    if(lead&&lead.parentNode){lead.parentNode.insertBefore(rail,lead);}else{
+      var target=document.querySelector('main')||document.querySelector('#fourdk-front-hub')||document.body;
+      target.insertBefore(rail,target.firstChild);
+    }
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
