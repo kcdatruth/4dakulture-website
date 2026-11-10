@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "All ten MVP and all ten rookie profiles crosschecked in GP/PPG/RPG/APG; Ty Jerome APG corrected to 4.9. Remaining: previous rank movement audit, official Phoenix injury report, final workflow and website checks.",
+  "stats_status": "Recorded four-field stat checks complete for all 20 award candidates; Nov 3 movement archive reconciled (17 returning, 3 NEW). Injury and final website QA remain pending.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -555,7 +555,7 @@
     "https://www.basketball-reference.com/boxscores/index.fcgi",
     "https://www.nba.com/watch/video/nba-nightly-recap-november-9-2026"
   ],
-  "publication_guard": "Previous-rank baseline resolved; release still held for official Phoenix injury submission, final current injury refresh, and successful workflow and website QA.",
+  "publication_guard": "Awards board audit cleared. Global publication held pending Phoenix official injury submission and full release/website QA.",
   "stat_source": "https://keelstats.com/players",
   "team_corrections": [
     "AJ Dybantsa — Washington Wizards",
@@ -576,10 +576,8 @@
       "Nikola Jokić"
     ],
     "conflicts": [],
-    "unresolved_critical": [
-      "Remaining player full-field stat checks"
-    ],
-    "release_hold": true,
+    "unresolved_critical": [],
+    "release_hold": false,
     "boozer_discrepancy": "RESOLVED_16_2_PPG",
     "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html",
     "rookie_table_checked": [
@@ -640,7 +638,8 @@
         "new": 4.9
       }
     ],
-    "remaining_mvp_issues": []
+    "remaining_mvp_issues": [],
+    "release_hold_reason": "Awards structural and recorded crosscheck audit complete; global publication still gated on injury report and site QA"
   },
   "previous_rank_movement_audit": {
     "status": "PASS",
