@@ -70,3 +70,9 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 - The November 8 Lakers 121–116 Pistons result is included in the candidate sequence and corroborated by the official NBA recap: https://www.nba.com/watch/video/game-recap-lakers-121-pistons-116-nov-8 . The previously approved Lakers last-five omitted this game and must be reverified before publication.
 
 **DO NOT MERGE.** Publication remains blocked by the incomplete full-schedule audit, 30 injury-report checks, awards statistical reconciliation and rendered page tests.
+
+## November 10 — venue audit complete
+
+All 150 candidate entries now have explicit home/away flags. The complete seven-game November 7 slate (14 team entries) was reconciled against Basketball-Reference and RealGM: https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026 and https://basketball.realgm.com/schedules/2026-11-07/NBA . No score/winner mismatches were found in those 14 entries. The remaining unknown-venue count is **zero**.
+
+**This does not verify all last-five histories:** a team can have five valid dated games while missing a more recent game. Continue complete schedule gap analysis before copying `last_five_candidate` to `last_five`. Injuries and awards stats remain pending. Keep release HOLD.
