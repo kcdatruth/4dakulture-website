@@ -1775,7 +1775,9 @@
           "opponent": "PHI",
           "result": "W",
           "score": "119-95",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-02",
@@ -2150,7 +2152,9 @@
           "opponent": "OKC",
           "result": "L",
           "score": "75-114",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": false,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-06",
@@ -2330,7 +2334,9 @@
           "opponent": "BOS",
           "result": "L",
           "score": "80-119",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-02",
@@ -2766,7 +2772,9 @@
           "opponent": "PHI",
           "result": "L",
           "score": "121-127",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-02",
@@ -2948,7 +2956,9 @@
           "opponent": "SAS",
           "result": "L",
           "score": "109-124",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-02",
@@ -3027,7 +3037,9 @@
           "opponent": "BOS",
           "result": "L",
           "score": "97-117",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "home_derived_from_reciprocal": true
         },
         {
           "date": "2026-11-06",
@@ -3081,5 +3093,14 @@
   },
   "game_log_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps",
   "game_log_note": "Recent games verified from NBA recaps; incomplete histories are NOT labeled full last-five. Preserve any previously drafted last_five but require reconciliation before publishing.",
-  "last_five_verified_count": 5
+  "last_five_verified_count": 5,
+  "last_five_candidate_audit": {
+    "teams_with_five_candidate_entries": 30,
+    "entries": 150,
+    "home_flags_derived_from_reciprocal": 6,
+    "home_flags_unresolved": 32,
+    "reciprocal_score_conflicts": [],
+    "status": "CANDIDATES_NOT_YET_VERIFIED_AGAINST_COMPLETE_SCHEDULE",
+    "warning": "Five dated entries are not proof they are the actual last five: dates omitted from both baseline and recent log must be checked against complete team schedule."
+  }
 }
