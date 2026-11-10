@@ -49,7 +49,10 @@ for t in teams:
         g = game_map[alias]
         expected = "W" if g["winner"] == alias else "L"
         check(t.get("nov9_game", {}).get("result") == expected, f"{alias}: Nov 9 result mismatch")
+        check(t.get("nov9_game", {}).get("score") == f"{g['away_points']}-{g['home_points']}" if alias == g["away"] else t.get("nov9_game", {}).get("score") == f"{g['home_points']}-{g['away_points']}", f"{alias}: Nov 9 score mismatch")
     check(t.get("injury_status") not in (None, "PENDING_CURRENT_OFFICIAL_REPORT"), f"{alias}: injury verification outstanding")
+    check(len(t.get("last_five_candidate", [])) == 5, f"{alias}: candidate game log incomplete")
+    check(all(isinstance(g.get("home"), bool) for g in t.get("last_five_candidate", [])), f"{alias}: candidate home/away field unresolved")
 # Cross-team consistency: when both sides have a game on the same date,
 # they must agree on opponent, result, score and home/away.
 team_by_alias = {t["alias"]: t for t in teams}
@@ -63,7 +66,8 @@ for team in teams:
         other = next((g for g in opponent.get("last_five", []) if g.get("date") == game.get("date") and g.get("opponent") == alias), None)
         if other:
             check(other.get("result") != game.get("result"), f"{alias}: same result as {opponent['alias']} on {game['date']}")
-            check(other.get("home") != game.get("home"), f"{alias}: both teams have same home flag on {game['date']}")
+            if isinstance(other.get("home"), bool) and isinstance(game.get("home"), bool):
+                check(other["home"] != game["home"], f"{alias}: both teams have same home flag on {game['date']}")
             try:
                 a,b = [int(v) for v in game["score"].split("-")]
                 c,d = [int(v) for v in other["score"].split("-")]
@@ -80,7 +84,7 @@ for label, key in (("MVP", "mvp_watch"), ("Rookie", "rookie_watch")):
         s = x.get("season_stats") or {}
         check(all(isinstance(s.get(k), (int, float)) for k in ("ppg", "rpg", "apg")), f"{label}: {x['name']} missing complete numeric stats")
         check(bool(x.get("stat_source") or awards.get("stat_source")), f"{label}: {x['name']} missing stats provenance")
-check(awards.get("stats_status", "").lower().find("conflict") < 0, "Awards stats still declare unresolved conflicts")
+check("reconciliation" not in awards.get("stats_status", "").lower() and "conflict" not in awards.get("stats_status", "").lower(), "Awards stats still require reconciliation or contain conflicts")
 print(f"4DK Rankings HQ November 10 QA: {len(teams)} teams, 20 award candidates, {len(failures)} blockers")
 for issue in failures:
     print("BLOCK:", issue)
