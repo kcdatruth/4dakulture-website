@@ -581,7 +581,7 @@
       ],
       "analysis_baseline": "Memphis finally lost, but a 6–1 record and +90 point differential demand a place among the league's early elite. Ty Jerome poured in 40 in the overtime defeat to New Orleans; the result was painful, but the performance demonstrated that his scoring surge has survived multiple scouting adjustments. Cameron Boozer is already giving the Grizzlies a second story, with rebounding, passing and the confidence to play through contact.\n\nThe danger is allowing the undefeated narrative to distract from the underlying work. Memphis must defend late-game possessions better after surrendering 135 to the Pelicans, and Jerome cannot be asked to rescue every difficult possession. Still, the offense has multiple points of attack, and the frontcourt is becoming more versatile by the game. We have moved Memphis into the top five on merit, not hype.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FROM_PLAYER_GAME_LOG_AND_TEAM_RESULTS",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Memphis remains a genuine early-season story even after slipping in our rankings. Ty Jerome has become a central source of scoring and organization, while Cameron Boozer's versatility gives the frontcourt an unusual passing dimension for a rookie. Zach Edey's size creates another problem for opponents near the basket. The Grizzlies need to show they can dictate the terms of games against disciplined defenses rather than relying on their young talent to win every broken possession.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -610,7 +610,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "118-102"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "97-128"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "IND",
+          "home": true,
+          "result": "L",
+          "score": "103-107"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "NOP",
+          "home": true,
+          "result": "L",
+          "score": "134-135"
+        },
+        {
+          "date": "2026-10-29",
+          "opponent": "POR",
+          "home": false,
+          "result": "W",
+          "score": "124-103"
+        }
+      ],
+      "last_five_record": "2-3",
+      "last_five_source": "https://www.cbssports.com/nba/players/2268642/ty-jerome/game-log/",
+      "nov9_spotlight": {
+        "player": "Ty Jerome",
+        "points": 27,
+        "rebounds": 6,
+        "assists": 2,
+        "source": "https://www.nba.com/game/mem-vs-tor-0022600206/blueprint"
+      }
     },
     {
       "rank": 13,
