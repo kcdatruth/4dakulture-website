@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "All 10 rookie profiles match 2026-27 RookieRanks Nov 10 table in GP/PPG/RPG/APG. MVP remaining full-field checks, previous ranking movements, official Phoenix report and release workflow pending.",
+  "stats_status": "All ten MVP and all ten rookie profiles crosschecked in GP/PPG/RPG/APG; Ty Jerome APG corrected to 4.9. Remaining: previous rank movement audit, official Phoenix injury report, final workflow and website checks.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -18,11 +18,12 @@
         "apg": 7.9
       },
       "stat_audit_nov10": {
-        "status": "MATCHED_PUBLISHED_SEASON_TABLE_PARTIAL_FIELDS",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "checked_fields": [
-          "gp",
+          "games_played",
           "ppg",
           "rpg",
           "apg"
@@ -41,11 +42,12 @@
         "apg": 3
       },
       "stat_audit_nov10": {
-        "status": "MATCHED_PUBLISHED_SEASON_TABLE_PARTIAL_FIELDS",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "checked_fields": [
-          "gp",
+          "games_played",
           "ppg",
           "rpg",
           "apg"
@@ -64,12 +66,14 @@
         "apg": 4.9
       },
       "stat_audit_nov10": {
-        "status": "MATCHED_PUBLISHED_SEASON_TABLE_PARTIAL_FIELDS",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "checked_fields": [
-          "gp",
+          "games_played",
           "ppg",
+          "rpg",
           "apg"
         ]
       }
@@ -86,9 +90,16 @@
         "apg": 7.8
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -103,12 +114,14 @@
         "apg": 4.3
       },
       "stat_audit_nov10": {
-        "status": "MATCHED_PUBLISHED_SEASON_TABLE_PARTIAL_FIELDS",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "checked_fields": [
-          "gp",
+          "games_played",
           "ppg",
+          "rpg",
           "apg"
         ]
       }
@@ -125,9 +138,16 @@
         "apg": 7.6
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -142,9 +162,16 @@
         "apg": 5.5
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -159,13 +186,15 @@
         "apg": 9
       },
       "stat_audit_nov10": {
-        "status": "MATCHED_PUBLISHED_SEASON_TABLE_PARTIAL_FIELDS",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "checked_fields": [
-          "gp",
+          "games_played",
           "ppg",
-          "rpg"
+          "rpg",
+          "apg"
         ]
       }
     },
@@ -181,9 +210,16 @@
         "apg": 7.8
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -195,12 +231,19 @@
       "season_stats": {
         "ppg": 26.7,
         "rpg": 3.7,
-        "apg": 4.8
+        "apg": 4.9
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     }
   ],
@@ -532,6 +575,28 @@
     "rookie_profiles_full_four_field_matches": 10,
     "rookie_profiles_unresolved": [],
     "rookie_source": "https://rookieranks.com/nba/rookie-leaders",
-    "rookie_source_updated": "2026-11-10 00:07 MST"
+    "rookie_source_updated": "2026-11-10 00:07 MST",
+    "mvp_profiles_full_four_field_matches": 10,
+    "mvp_profiles_crosschecked": [
+      "Luka Dončić",
+      "Victor Wembanyama",
+      "Shai Gilgeous-Alexander",
+      "Jayson Tatum",
+      "Stephen Curry",
+      "Cade Cunningham",
+      "Tyrese Maxey",
+      "Nikola Jokić",
+      "Alperen Şengün",
+      "Ty Jerome"
+    ],
+    "mvp_changes": [
+      {
+        "player": "Ty Jerome",
+        "field": "apg",
+        "old": 4.8,
+        "new": 4.9
+      }
+    ],
+    "remaining_mvp_issues": []
   }
 }
