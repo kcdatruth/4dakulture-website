@@ -16,6 +16,7 @@ const styles=`.board-extra{margin-top:30px}.statline{font:800 12px/1.5 Arial,san
 const st=document.createElement('style');st.textContent=styles;document.head.append(st);
 function render(d){
 const byAlias=Object.fromEntries(d.teams.map(t=>[t.alias,t]));
+teamSnapshot=Object.fromEntries(d.teams.filter(t=>t.image).map(t=>[t.alias,t.image]));
 const isArchive=Boolean(edition);const e=d.edition||edition;
 const risers=[...d.teams].filter(t=>t.movement>0).sort((a,b)=>b.movement-a.movement).slice(0,5);
 const fallers=[...d.teams].filter(t=>t.movement<0).sort((a,b)=>a.movement-b.movement).slice(0,5);
