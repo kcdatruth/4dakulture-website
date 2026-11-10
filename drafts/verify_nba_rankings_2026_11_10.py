@@ -50,6 +50,27 @@ for t in teams:
         expected = "W" if g["winner"] == alias else "L"
         check(t.get("nov9_game", {}).get("result") == expected, f"{alias}: Nov 9 result mismatch")
     check(t.get("injury_status") not in (None, "PENDING_CURRENT_OFFICIAL_REPORT"), f"{alias}: injury verification outstanding")
+# Cross-team consistency: when both sides have a game on the same date,
+# they must agree on opponent, result, score and home/away.
+team_by_alias = {t["alias"]: t for t in teams}
+for team in teams:
+    alias = team["alias"]
+    for game in team.get("last_five", []):
+        opponent = team_by_alias.get(game.get("opponent"))
+        if opponent is None:
+            failures.append(f"{alias}: unknown opponent {game.get('opponent')}")
+            continue
+        other = next((g for g in opponent.get("last_five", []) if g.get("date") == game.get("date") and g.get("opponent") == alias), None)
+        if other:
+            check(other.get("result") != game.get("result"), f"{alias}: same result as {opponent['alias']} on {game['date']}")
+            check(other.get("home") != game.get("home"), f"{alias}: both teams have same home flag on {game['date']}")
+            try:
+                a,b = [int(v) for v in game["score"].split("-")]
+                c,d = [int(v) for v in other["score"].split("-")]
+                check((a,b) == (d,c), f"{alias}: reversed score disagrees with {opponent['alias']} on {game['date']}")
+            except (ValueError, KeyError):
+                failures.append(f"{alias}: invalid score format on {game.get('date')}")
+
 for label, key in (("MVP", "mvp_watch"), ("Rookie", "rookie_watch")):
     entries = awards[key]
     check(len(entries) == 10, f"{label}: expected ten entries")
