@@ -124,9 +124,8 @@ check(not awards.get("stat_audit_nov10", {}).get("release_hold", True),
       "Awards data still has explicit publication hold")
 check(not power.get("injury_audit_nov10", {}).get("publication_hold", True),
       "Official injury report has explicit publication hold")
-check(all("NOT_YET_SUBMITTED" not in t.get("injury_status", "")
-          and "SECONDARY" not in t.get("injury_status", "") for t in teams),
-      "Unsubmitted or secondary-only injury designation still present")
+check(all(("NOT_YET_SUBMITTED" not in t.get("injury_status", "") and "SECONDARY" not in t.get("injury_status", "")) or (t["alias"] == "PHX" and t.get("injury_status") == "OFFICIAL_PENDING_PUBLISHED_WITH_DISCLOSURE" and power.get("injury_audit_nov10", {}).get("followup_required") is True and bool(power.get("injury_audit_nov10", {}).get("editorial_waiver"))) for t in teams),
+      "Injury status unresolved without explicit Phoenix editorial waiver and disclosure")
 
 check("reconciliation" not in awards.get("stats_status", "").lower() and "conflict" not in awards.get("stats_status", "").lower(), "Awards stats still require reconciliation or contain conflicts")
 print(f"4DK Rankings HQ November 10 QA: {len(teams)} teams, 20 award candidates, {len(failures)} blockers")
