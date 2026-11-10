@@ -16,7 +16,7 @@
       "previous_rank": 4,
       "movement": 3,
       "record_provisional": "9-2",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Victor Wembanyama",
         "Dylan Harper",
@@ -36,7 +36,8 @@
         "result": "W",
         "score": "122-96"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "9-2"
     },
     {
       "rank": 2,
@@ -47,7 +48,7 @@
       "previous_rank": 3,
       "movement": 1,
       "record_provisional": "9-2",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Tyrese Maxey",
         "LeBron James",
@@ -60,7 +61,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Philadelphia's 9–2 provisional mark puts the Sixers firmly in the No. 1 conversation, but we are keeping them second because the full defensive identity is still coming into focus. Tyrese Maxey sets the pace while LeBron James and Jaylen Brown give the offense multiple ways to attack switches. Embiid's health and workload are the swing variables: the ceiling is enormous when he can anchor the interior without slowing the ball. We want to see the Sixers win possessions with connected defense, not simply outscore opponents through star power.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "9-2"
     },
     {
       "rank": 3,
@@ -71,7 +73,7 @@
       "previous_rank": 10,
       "movement": 7,
       "record_provisional": "8-2",
-      "record_status": "PENDING_OFFICIAL_STANDINGS_CONFIRMATION",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Shai Gilgeous-Alexander",
         "Ajay Mitchell",
@@ -122,7 +124,9 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/"
+      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/",
+      "record_verified": "8-2",
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
     },
     {
       "rank": 4,
@@ -133,7 +137,7 @@
       "previous_rank": 7,
       "movement": 3,
       "record_provisional": "10-2",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Luka Dončić",
         "Austin Reaves",
@@ -152,7 +156,8 @@
         "result": "W",
         "score": "124-114"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "10-2"
     },
     {
       "rank": 5,
@@ -163,7 +168,7 @@
       "previous_rank": 6,
       "movement": 1,
       "record_provisional": "8-2",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Jayson Tatum",
         "Paul George",
@@ -176,7 +181,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Boston is still a top-five team in our eyes because Jayson Tatum gives it a reliable late-clock answer and the collective structure has survived major personnel changes. Paul George adds a different rhythm to the offense, while Payton Pritchard's spacing and Neemias Queta's interior work help the Celtics win possessions that never make highlight reels. The issue to monitor is how consistently Boston creates easy paint touches; leaning on difficult jumpers is a fragile way to protect an elite record.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "8-2"
     },
     {
       "rank": 6,
@@ -187,7 +193,7 @@
       "previous_rank": 9,
       "movement": 3,
       "record_provisional": "8-3",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Stephen Curry",
         "Yaxel Lendeborg",
@@ -207,7 +213,8 @@
         "result": "W",
         "score": "138-87"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "8-3"
     },
     {
       "rank": 7,
@@ -218,7 +225,7 @@
       "previous_rank": 2,
       "movement": -5,
       "record_provisional": "7-3",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Cade Cunningham",
         "Paul Reed",
@@ -238,7 +245,8 @@
         "result": "W",
         "score": "122-111"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "7-3"
     },
     {
       "rank": 8,
@@ -249,7 +257,7 @@
       "previous_rank": 1,
       "movement": -7,
       "record_provisional": "8-3",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Alperen Şengün",
         "Kevin Durant",
@@ -269,7 +277,8 @@
         "result": "W",
         "score": "110-100"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "8-3"
     },
     {
       "rank": 9,
@@ -280,7 +289,7 @@
       "previous_rank": 11,
       "movement": 2,
       "record_provisional": "8-3",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "LaMelo Ball",
         "Ayo Dosunmu",
@@ -293,7 +302,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Minnesota's record demands top-ten respect, especially given the pressure created by Anthony Edwards's absence. LaMelo Ball brings an improvisational element to the offense, while Rudy Gobert gives the team a defensive anchor around which to build its coverage. The Wolves must find dependable half-court possessions when opponents take away the first action. This stretch is a real test of organizational depth: wins collected without a primary star carry weight, but the defensive details must remain sharp.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "8-3"
     },
     {
       "rank": 10,
@@ -304,7 +314,7 @@
       "previous_rank": 17,
       "movement": 7,
       "record_provisional": "5-4",
-      "record_status": "PENDING_OFFICIAL_STANDINGS_CONFIRMATION",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Jalen Brunson",
         "Karl-Anthony Towns",
@@ -316,7 +326,9 @@
       "last_five_status": "PENDING_NOV_9_RECONCILIATION",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "New York makes a meaningful move upward because its core still has the tools to win ugly games. Jalen Brunson can control tempo late, Karl-Anthony Towns bends matchups with his shooting, and OG Anunoby gives the Knicks defensive versatility on the wing. The question is how well the pieces function together when the game speeds up. We need more than isolated scoring bursts; the next step is creating consistent advantages early in possessions and protecting the defensive glass.",
-      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement."
+      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "record_verified": "5-4",
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
     },
     {
       "rank": 11,
@@ -327,7 +339,7 @@
       "previous_rank": 16,
       "movement": 5,
       "record_provisional": "5-4",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Nikola Jokić",
         "Jamal Murray",
@@ -347,7 +359,8 @@
         "result": "L",
         "score": "100-110"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "5-4"
     },
     {
       "rank": 12,
@@ -358,7 +371,7 @@
       "previous_rank": 5,
       "movement": -7,
       "record_provisional": "7-3",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Ty Jerome",
         "Cameron Boozer",
@@ -378,7 +391,8 @@
         "result": "W",
         "score": "118-102"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "7-3"
     },
     {
       "rank": 13,
@@ -389,7 +403,7 @@
       "previous_rank": 8,
       "movement": -5,
       "record_provisional": "6-3",
-      "record_status": "PENDING_OFFICIAL_STANDINGS_CONFIRMATION",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Deni Avdija",
         "Damian Lillard",
@@ -440,7 +454,9 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/"
+      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/",
+      "record_verified": "6-3",
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
     },
     {
       "rank": 14,
@@ -451,7 +467,7 @@
       "previous_rank": 15,
       "movement": 1,
       "record_provisional": "7-4",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Cooper Flagg",
         "Kyrie Irving",
@@ -471,7 +487,8 @@
         "result": "W",
         "score": "125-122"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "7-4"
     },
     {
       "rank": 15,
@@ -482,7 +499,7 @@
       "previous_rank": 18,
       "movement": 3,
       "record_provisional": "7-5",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Jalen Johnson",
         "Nickeil Alexander-Walker",
@@ -502,7 +519,8 @@
         "result": "L",
         "score": "114-124"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "7-5"
     },
     {
       "rank": 16,
@@ -513,7 +531,7 @@
       "previous_rank": 13,
       "movement": -3,
       "record_provisional": "5-6",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Donovan Mitchell",
         "Evan Mobley",
@@ -533,7 +551,8 @@
         "result": "L",
         "score": "112-124"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "5-6"
     },
     {
       "rank": 17,
@@ -544,7 +563,7 @@
       "previous_rank": 12,
       "movement": -5,
       "record_provisional": "5-5",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Scottie Barnes",
         "Immanuel Quickley",
@@ -564,7 +583,8 @@
         "result": "L",
         "score": "102-118"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "5-5"
     },
     {
       "rank": 18,
@@ -575,7 +595,7 @@
       "previous_rank": 21,
       "movement": 3,
       "record_provisional": "4-6",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Giannis Antetokounmpo",
         "Bam Adebayo",
@@ -587,7 +607,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Miami's record is underwhelming relative to the frontcourt talent. Giannis Antetokounmpo and Bam Adebayo can make opponents think twice before entering the paint, but that defensive promise has to translate into consistent execution and cleaner offensive spacing. The Heat need reliable guard play to keep the floor organized and avoid asking their bigs to manufacture every advantage. The upside is clear; the current results have not yet earned a higher place.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "4-6"
     },
     {
       "rank": 19,
@@ -598,7 +619,7 @@
       "previous_rank": 24,
       "movement": 5,
       "record_provisional": "3-6",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Devin Booker",
         "Jalen Green",
@@ -617,7 +638,8 @@
         "result": "L",
         "score": "96-122"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "3-6"
     },
     {
       "rank": 20,
@@ -628,7 +650,7 @@
       "previous_rank": 14,
       "movement": -6,
       "record_provisional": "4-7",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Anthony Davis",
         "Trae Young",
@@ -648,7 +670,8 @@
         "result": "L",
         "score": "111-122"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "4-7"
     },
     {
       "rank": 21,
@@ -659,7 +682,7 @@
       "previous_rank": 20,
       "movement": -1,
       "record_provisional": "2-7",
-      "record_status": "PENDING_OFFICIAL_STANDINGS_CONFIRMATION",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Franz Wagner",
         "Desmond Bane",
@@ -671,7 +694,9 @@
       "last_five_status": "PENDING_NOV_9_RECONCILIATION",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Orlando's early record is a warning sign, not a verdict on its talent. Franz Wagner can generate offense in multiple ways, Desmond Bane supplies shooting gravity, and Paolo Banchero's availability is a major variable. The Magic need to avoid long stretches where the offense becomes predictable and the defense cannot generate enough stops to compensate. We want to see a healthy rotation establish clear roles before projecting a turnaround.",
-      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement."
+      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "record_verified": "2-7",
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
     },
     {
       "rank": 22,
@@ -682,7 +707,7 @@
       "previous_rank": 22,
       "movement": 0,
       "record_provisional": "4-7",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Brandon Miller",
         "Coby White",
@@ -701,7 +726,8 @@
         "result": "W",
         "score": "124-112"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "4-7"
     },
     {
       "rank": 23,
@@ -712,7 +738,7 @@
       "previous_rank": 23,
       "movement": 0,
       "record_provisional": "3-8",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Tyrese Haliburton",
         "Pascal Siakam",
@@ -731,7 +757,8 @@
         "result": "L",
         "score": "122-125"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "3-8"
     },
     {
       "rank": 24,
@@ -742,7 +769,7 @@
       "previous_rank": 29,
       "movement": 5,
       "record_provisional": "2-7",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Darius Garland",
         "Kobe Sanders",
@@ -755,7 +782,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Clippers rise from twenty-ninth to twenty-fourth in our editorial order, but the provisional record still reflects a difficult opening stretch. Darius Garland can organize the attack, and the younger perimeter players need room to develop without being asked to rescue every possession. Brook Lopez can provide structure near the rim. The focus should be on a repeatable identity: better shot selection, fewer empty trips, and consistent effort on the defensive glass.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "2-7"
     },
     {
       "rank": 25,
@@ -766,7 +794,7 @@
       "previous_rank": 19,
       "movement": -6,
       "record_provisional": "4-7",
-      "record_status": "VERIFIED_NBA_NOV9_GAME_RECAP",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Zion Williamson",
         "Jeremiah Fears",
@@ -786,7 +814,8 @@
         "result": "L",
         "score": "87-138"
       },
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "4-7"
     },
     {
       "rank": 26,
@@ -797,7 +826,7 @@
       "previous_rank": 30,
       "movement": 4,
       "record_provisional": "2-8",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Julius Randle",
         "Michael Porter Jr.",
@@ -810,7 +839,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Brooklyn's rise from thirtieth to twenty-sixth is modest but worth noting. Julius Randle and Michael Porter Jr. give the Nets proven scoring options, while Mikel Brown Jr. and Nolan Traoré represent the developmental side of the roster. The question is how to balance those priorities without losing structure. We want to see the young guards create quality possessions and the veteran forwards commit to the defensive work required to make those possessions matter.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "2-8"
     },
     {
       "rank": 27,
@@ -821,7 +851,7 @@
       "previous_rank": 27,
       "movement": 0,
       "record_provisional": "1-8",
-      "record_status": "PENDING_OFFICIAL_STANDINGS_CONFIRMATION",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Caleb Wilson",
         "Josh Giddey",
@@ -833,7 +863,9 @@
       "last_five_status": "PENDING_NOV_9_RECONCILIATION",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Chicago's difficult start should not obscure Caleb Wilson's potential, but the Bulls cannot ask a rookie to fix every structural problem. Josh Giddey can push the ball and find cutters, while Matas Buzelis offers length and scoring upside. The team needs better spacing and a clearer defensive identity. Player development is important, but so is establishing habits that travel: communicating through screens, boxing out, and protecting the ball.",
-      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement."
+      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "record_verified": "1-8",
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
     },
     {
       "rank": 28,
@@ -844,7 +876,7 @@
       "previous_rank": 26,
       "movement": -2,
       "record_provisional": "1-9",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Lauri Markkanen",
         "Keyonte George",
@@ -857,7 +889,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Utah has struggled to turn individual talent into results. Lauri Markkanen can stretch the floor, Keyonte George provides creation, and Darryn Peterson is part of the longer-term development story. Jaren Jackson Jr. could alter the defensive ceiling when healthy, but his status must be verified before we treat that as an immediate advantage. The Jazz need more disciplined transition defense and a more reliable way to finish possessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "1-9"
     },
     {
       "rank": 29,
@@ -868,7 +901,7 @@
       "previous_rank": 25,
       "movement": -4,
       "record_provisional": "1-9",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Darius Acuff Jr.",
         "Domantas Sabonis",
@@ -881,7 +914,8 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Sacramento's record is the headline, but Darius Acuff Jr.'s development remains one of the most important stories on the roster. Domantas Sabonis can facilitate from the elbows, while Zach LaVine and Malik Monk supply perimeter scoring. The Kings need to turn those individual abilities into connected offense rather than a series of isolated possessions. The defense must also give the offense a chance by avoiding easy paint concessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "1-9"
     },
     {
       "rank": 30,
@@ -892,7 +926,7 @@
       "previous_rank": 28,
       "movement": -2,
       "record_provisional": "1-9",
-      "record_status": "VERIFIED_NBA_NOV8_GAME_RECAP_NO_NOV9_GAME",
+      "record_status": "VERIFIED_AS_OF_2026-11-09_CONFERENCE_STANDINGS",
       "key_players_prior_week": [
         "Tyler Herro",
         "Kel’el Ware",
@@ -904,22 +938,18 @@
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Milwaukee sits at the bottom of our board because the early results have not supported a stronger argument. Tyler Herro can create offense and Kel'el Ware offers an interior presence, but the Bucks need far better cohesion on both ends. Brayden Burries' development is worth following, though young players should not be forced into unrealistic expectations. A meaningful rise begins with defensive communication, rebounding, and a clearer hierarchy of offensive decisions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
-      "record_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "record_verified": "1-9"
     }
   ],
-  "publication_gate": "Nov 9 results linked for 16 participating teams; 28 teams still need complete five-game histories; all team records require source-level reconciliation; hold publication.",
+  "publication_gate": "All 30 records cross-checked against November 9 conference standings. HOLD: last-five logs, injuries, awards source validation, page testing.",
   "analysis_count": 30,
   "results_reconciled_nov9": 16,
   "record_audit": {
-    "verified_from_official_recap": 25,
-    "pending_official_standings": [
-      "OKC",
-      "NYK",
-      "POR",
-      "ORL",
-      "CHI"
-    ],
+    "verified_from_standings": 30,
+    "pending_official_standings": [],
     "cutoff": "2026-11-09",
-    "note": "Nov 8 game recaps establish records for nine teams with no Nov 9 game; Nov 9 recaps establish records for 16 participants. Five remaining records require independent official standings validation."
+    "source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+    "errors": []
   }
 }
