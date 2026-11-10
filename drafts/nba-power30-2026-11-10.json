@@ -3013,7 +3013,7 @@
       "analysis_baseline": "Phoenix is 1–4 and has now lost three straight. Devin Booker scored 26 in the 116–113 loss at Golden State, but the Suns again failed to finish a close game. Their offensive talent can produce individual bursts, yet the defense and late-game execution have not been reliable enough to convert those bursts into wins.\n\nJalen Green's eight assists against the Warriors are a positive sign of expanding playmaking responsibility. Still, the Suns need to settle their lineups and create more predictable defensive coverages. A -53 point differential in only five games is an early warning. The upcoming Portland matchup offers an opportunity to show whether this team can compete with a rising West opponent.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "OFFICIAL_REPORT_NOT_YET_SUBMITTED_1000AM_ET",
+      "injury_status": "SECONDARY_CONFIRMED_OFFICIAL_NBA_SUBMISSION_PENDING",
       "analysis_nov10": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed. Dillon Brooks supplies edge and defensive competitiveness. The problem is that a few difficult makes do not compensate for breakdowns on the other end. The Suns need a more stable possession-to-possession defensive approach and better shot quality when the first option is taken away. That is the route out of the bottom third.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "nov9_game": {
@@ -3158,9 +3158,24 @@
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       },
       "injury_report_nov10": {
-        "report_time": "2026-11-10 10:00 AM ET",
-        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_00AM.pdf",
-        "scope": "Phoenix Suns listed NOT YET SUBMITTED. Do not infer any player availability."
+        "report_time": "2026-11-10, secondary sources accessed during prepublication audit",
+        "source": "https://foxsportsradio1340.iheart.com/content/2026-11-10-clippers-vs-suns-injury-report-nov-10/",
+        "secondary_source": "https://www.dailyil.com/en/team/nba-phx/",
+        "players": [
+          {
+            "name": "Jordan Goodwin",
+            "status": "Out",
+            "reason": "Calf injury",
+            "verification": "SECONDARY_ONLY_OFFICIAL_NBA_SUBMISSION_NOT_CONFIRMED"
+          },
+          {
+            "name": "Mark Williams",
+            "status": "Out",
+            "reason": "Left shoulder surgery",
+            "verification": "SECONDARY_ONLY_OFFICIAL_NBA_SUBMISSION_NOT_CONFIRMED"
+          }
+        ],
+        "scope": "Two independent November 10 secondary sources agree; DO NOT mark as official until the dated NBA referee injury report confirms Phoenix submission."
       }
     },
     {
@@ -5091,6 +5106,15 @@
       "BKN",
       "CHI"
     ],
-    "warning": "No-game designation is not an all-clear or an injury-free assertion; refresh Phoenix and game-day player statuses before publishing."
+    "warning": "No-game designation is not an all-clear or an injury-free assertion; refresh Phoenix and game-day player statuses before publishing.",
+    "phoenix_secondary_crosscheck": "Jordan Goodwin OUT (calf); Mark Williams OUT (shoulder). Both from dated secondary reports, NOT official submission.",
+    "secondary_sources": [
+      "https://foxsportsradio1340.iheart.com/content/2026-11-10-clippers-vs-suns-injury-report-nov-10/",
+      "https://www.dailyil.com/en/team/nba-phx/"
+    ],
+    "remaining_official_submission_verification": [
+      "PHX"
+    ],
+    "publication_hold": true
   }
 }
