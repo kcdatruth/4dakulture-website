@@ -58,3 +58,15 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 - NBA.com and Basketball-Reference agree on the eight November 9 scores; CBS's team-leader snippet still says Ty Jerome 25 while Basketball-Reference and the official NBA game box identify 27. For publication, cite the official box score, not the CBS snippet. Sources: https://www.nba.com/game/0022600206-grizzlies-vs-raptors-toronto-on-11-09-2026 ; https://www.basketball-reference.com/boxscores/ ; https://www.cbssports.com/nba/schedule/20261109/ .
 
 **Release status remains HOLD.** No live changes or merge authorized by this QA update.
+
+## November 10 — complete candidate reconstruction (not publication-ready)
+
+**30/30 teams now have five dated candidate games (150 entries)** assembled from the immutable November 3 current-board baseline and November 5–9 recaps, without replacing the separately approved `last_five` fields. The reconstruction is stored as `last_five_candidate`.
+
+- Candidate reciprocal checks: no conflicting winners or scores among shared matches.
+- Six home/away flags inferred from the opposing team's already-known location.
+- **32 home/away fields remain unresolved.**
+- The full NBA schedule must be checked for missing games between the Nov 3 archive and the later recap subset; five candidates do not necessarily equal the actual most recent five.
+- The November 8 Lakers 121–116 Pistons result is included in the candidate sequence and corroborated by the official NBA recap: https://www.nba.com/watch/video/game-recap-lakers-121-pistons-116-nov-8 . The previously approved Lakers last-five omitted this game and must be reverified before publication.
+
+**DO NOT MERGE.** Publication remains blocked by the incomplete full-schedule audit, 30 injury-report checks, awards statistical reconciliation and rendered page tests.
