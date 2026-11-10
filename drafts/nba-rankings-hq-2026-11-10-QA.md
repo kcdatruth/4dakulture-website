@@ -48,3 +48,13 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 **PASS — 30/30 records.** The date-specific Basketball-Reference index endpoint https://www.basketball-reference.com/boxscores/index.fcgi displays post-November-9 standings and matches every provisional team record, with zero discrepancies. The separately parameterized https://www.basketball-reference.com/boxscores/?day=9&month=11&year=2026 endpoint displays stale standings and incorrectly reports no games; **do not use that parameterized URL as the cutoff source.** NBA.com recap records also corroborate teams playing November 9. Prior source caveat is resolved by identifying the distinct URLs, not by assuming all Basketball-Reference pages are equivalent.
 
 **HOLD:** full five-game logs, player statistics/injuries, and rendered page and link QA still outstanding.
+
+## November 10 current repository audit — strict source and status separation
+
+- **Three** five-game histories carry explicit VERIFIED status: SAS, LAL, MEM. Two other five-game arrays (OKC and POR) exist but **do not** carry a VERIFIED status and must not be counted as complete/approved.
+- **27** teams still lack an approved five-game history.
+- **30** teams still have `injury_status: PENDING_CURRENT_OFFICIAL_REPORT`. Dated notes are not a replacement for checking the actual injury report.
+- Awards include 20 numeric PPG/RPG/APG snapshots but source-date reconciliation remains pending; Cameron Boozer's 16.4 vs 16.2 PPG is explicitly unresolved.
+- NBA.com and Basketball-Reference agree on the eight November 9 scores; CBS's team-leader snippet still says Ty Jerome 25 while Basketball-Reference and the official NBA game box identify 27. For publication, cite the official box score, not the CBS snippet. Sources: https://www.nba.com/game/0022600206-grizzlies-vs-raptors-toronto-on-11-09-2026 ; https://www.basketball-reference.com/boxscores/ ; https://www.cbssports.com/nba/schedule/20261109/ .
+
+**Release status remains HOLD.** No live changes or merge authorized by this QA update.
