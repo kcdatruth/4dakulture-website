@@ -3013,7 +3013,7 @@
       "analysis_baseline": "Phoenix is 1–4 and has now lost three straight. Devin Booker scored 26 in the 116–113 loss at Golden State, but the Suns again failed to finish a close game. Their offensive talent can produce individual bursts, yet the defense and late-game execution have not been reliable enough to convert those bursts into wins.\n\nJalen Green's eight assists against the Warriors are a positive sign of expanding playmaking responsibility. Still, the Suns need to settle their lineups and create more predictable defensive coverages. A -53 point differential in only five games is an early warning. The upcoming Portland matchup offers an opportunity to show whether this team can compete with a rising West opponent.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "OFFICIAL_NOV10_0200PM_NOT_YET_SUBMITTED",
+      "injury_status": "OFFICIAL_PENDING_PUBLISHED_WITH_DISCLOSURE",
       "analysis_nov10": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed. Dillon Brooks supplies edge and defensive competitiveness. The problem is that a few difficult makes do not compensate for breakdowns on the other end. The Suns need a more stable possession-to-possession defensive approach and better shot quality when the first option is taken away. That is the route out of the bottom third.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "nov9_game": {
@@ -3175,7 +3175,7 @@
             "verification": "SECONDARY_ONLY_OFFICIAL_NBA_SUBMISSION_NOT_CONFIRMED"
           }
         ],
-        "scope": "Official report still unsubmitted. Secondary player status research must not be presented as official.",
+        "scope": "As of the November 10 2:15 PM ET official report, Phoenix had not submitted. Goodwin and Williams are secondary-reported OUT, not NBA-confirmed; display this disclaimer prominently.",
         "official_source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_00PM.pdf",
         "official_submission": "NOT YET SUBMITTED"
       }
@@ -5054,7 +5054,7 @@
       }
     }
   ],
-  "publication_gate": "Records verified 30/30. HOLD for complete last-five histories, injury statuses, awards statistical sourcing and page/link checks.",
+  "publication_gate": "Injury-report editorial waiver approved with Phoenix disclosure; final page, navigation, archives and workflow checks still required.",
   "analysis_count": 30,
   "results_reconciled_nov9": 16,
   "record_audit": {
@@ -5127,7 +5127,7 @@
     "remaining_official_submission_verification": [
       "PHX"
     ],
-    "publication_hold": true,
+    "publication_hold": false,
     "latest_official_report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_15PM.pdf",
     "latest_official_report_time": "2026-11-10 02:15 PM ET",
     "official_snapshot_changes_215pm": [
@@ -5141,7 +5141,9 @@
         "from": "Questionable",
         "to": "Out"
       }
-    ]
+    ],
+    "editorial_waiver": "User authorized publication with latest available injury data on 2026-11-10. Phoenix official submission pending, with prominent disclosure. Never present secondary player reports as official.",
+    "followup_required": true
   },
   "previous_rank_movement_audit": {
     "status": "PASS",
