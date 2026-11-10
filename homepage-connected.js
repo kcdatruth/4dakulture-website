@@ -11,7 +11,7 @@
     data.sections.slice(0,6).forEach(function(item){
       if(!item||!safe(item.url)||!safe(item.hub))return;
       var article=document.createElement('article');article.className='fourdk-connected-card';
-      if(typeof item.image==='string' && (item.image==='4dk-power-01-okc.jpeg'||item.image==='https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500')){
+      if(typeof item.image==='string' && (item.image==='week9-snf-spotlight.svg'||item.image==='4dk-power-01-okc.jpeg'||item.image==='https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500')){
         var image=document.createElement('img');image.className='fourdk-connected-image';image.src=item.image;image.alt=String(item.imageAlt||item.title||'4DK feature');image.loading='lazy';image.decoding='async';article.appendChild(image);
       }
       var label=document.createElement('span');label.className='fourdk-connected-label';label.textContent=String(item.label||'4DK FEATURE');article.appendChild(label);
@@ -27,7 +27,7 @@
     if(target&&target.parentNode)target.parentNode.insertBefore(section,target.nextSibling);
   }
   var fallback={sections:[
-    {label:'NFL WEEKLY HQ',title:'Week 9 — What We Learned Sunday',url:'nfl-sunday-recap-week9-2026.html',hub:'nfl.html',hubLabel:'NFL Coverage'},
+    {label:'NFL WEEKLY HQ',title:'Week 9 — What We Learned Sunday',url:'nfl-sunday-recap-week9-2026.html',hub:'nfl.html',hubLabel:'NFL Coverage',image:'week9-snf-spotlight.svg',imageAlt:'Chicago Bears versus Tampa Bay Buccaneers — Week 9 Sunday Night Football'},
     {label:'NBA RANKINGS HQ',title:'4DK NBA Power Rankings',url:'nba-power-rankings-2026-27.html',hub:'nba-rankings-hq.html',hubLabel:'Rankings HQ',image:'4dk-power-01-okc.jpeg',imageAlt:'Oklahoma City Thunder in the 4DK NBA Power Rankings'},
     {label:'ALBUM FILES',title:'The Game — The Documentary',url:'album-files-the-documentary.html',hub:'album-files.html',hubLabel:'Album Files Archive',image:'https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500',imageAlt:'The Game The Documentary album cover'}
   ]};
