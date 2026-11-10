@@ -158,6 +158,18 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Devin Vassell",
+          "Jayden Quaintance",
+          "Tobias Harris"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       }
     },
     {
@@ -458,6 +470,21 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Cason Wallace",
+          "Chet Holmgren",
+          "Jalen Williams",
+          "Jaylin Williams",
+          "Nikola Topic",
+          "Thomas Sorber"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       }
     },
     {
@@ -611,6 +638,17 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Austin Reaves",
+          "Quentin Grimes"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       }
     },
     {
@@ -930,7 +968,20 @@
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Jimmy Butler",
+          "Kristaps Porzingis",
+          "Moses Moody",
+          "Will Richard"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 7,
@@ -1074,7 +1125,18 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Isaiah Joe",
+          "Jalen Duren"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 8,
@@ -1218,7 +1280,19 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Clint Capela",
+          "Oscar Tshiebwe",
+          "Steven Adams"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 9,
@@ -1357,7 +1431,18 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Anthony Edwards",
+          "Donte DiVincenzo"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 10,
@@ -1643,7 +1728,17 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Julian Strawther"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 12,
@@ -1794,6 +1889,19 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Isaiah Stewart",
+          "Quinten Post",
+          "Richie Saunders",
+          "Scotty Pippen Jr."
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       }
     },
     {
@@ -1933,6 +2041,19 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Ja Morant",
+          "John Tonje",
+          "Shaedon Sharpe",
+          "Vit Krejci"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
       }
     },
     {
@@ -2086,7 +2207,20 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Dereck Lively II",
+          "Morez Johnson",
+          "Sergio De Larrea",
+          "Tarik Biberovic"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 15,
@@ -2239,7 +2373,20 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Asa Newell",
+          "Henri Veesaar",
+          "Keshon Gilbert",
+          "Mouhamed Gueye"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 16,
@@ -2393,7 +2540,18 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Jaylon Tyson",
+          "Sam Merrill"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 17,
@@ -2537,7 +2695,21 @@
         }
       ],
       "last_five_record": "2-3",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Collin Murray-Boyles",
+          "Immanuel Quickley",
+          "Kawhi Leonard",
+          "Nate Bittle",
+          "Scottie Barnes"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 18,
@@ -2675,7 +2847,17 @@
         }
       ],
       "last_five_record": "3-2",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Giannis Antetokounmpo"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 19,
@@ -2827,7 +3009,18 @@
         }
       ],
       "last_five_record": "2-3",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Jordan Goodwin",
+          "Mark Williams"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 20,
@@ -2981,7 +3174,21 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Bilal Coulibaly",
+          "Jamir Watkins",
+          "Justin Champagnie",
+          "Reece Beekman",
+          "Tristan Vukcevic"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 21,
@@ -3120,7 +3327,21 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Izaiyah Nelson",
+          "Jalen Suggs",
+          "Jonathan Isaac",
+          "Noah Penda",
+          "Paolo Banchero"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 22,
@@ -3264,7 +3485,21 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Brandon Miller",
+          "Dennis Schroder",
+          "Grant Williams",
+          "Kon Knueppel",
+          "Moussa Diabate"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 23,
@@ -3407,7 +3642,19 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Ben Sheppard",
+          "Johnny Furphy",
+          "Tyrese Haliburton"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 24,
@@ -3727,7 +3974,21 @@
         }
       ],
       "last_five_record": "2-3",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Jaron Pierre Jr.",
+          "Malik Dia",
+          "Trendon Watford",
+          "Trey Murphy III",
+          "Yves Missi"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 26,
@@ -3866,7 +4127,19 @@
         }
       ],
       "last_five_record": "2-3",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Egor Demin",
+          "Grant Nelson",
+          "Mikel Brown Jr."
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 27,
@@ -3997,7 +4270,18 @@
         }
       ],
       "last_five_record": "0-5",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Norman Powell",
+          "Zach Collins"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 28,
@@ -4136,7 +4420,23 @@
         }
       ],
       "last_five_record": "0-5",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Harrison Ingram",
+          "Jaren Jackson Jr.",
+          "Jusuf Nurkic",
+          "Keyonte George",
+          "Kobe Bufkin",
+          "Lauri Markkanen",
+          "Trey Alexander"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 29,
@@ -4276,7 +4576,22 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_watch_unverified": {
+        "source": "https://cornerwire.com/story/injury-daily-nba-2026-11-10",
+        "source_type": "secondary provider listings; NOT official game-day NBA injury report",
+        "snapshot": "2026-11-09 23:25 ET",
+        "players": [
+          "Ben Simmons",
+          "Domantas Sabonis",
+          "Jonathan Mogbo",
+          "Keegan Murray",
+          "Maxime Raynaud",
+          "Sean Pedulla"
+        ],
+        "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
+        "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      }
     },
     {
       "rank": 30,
