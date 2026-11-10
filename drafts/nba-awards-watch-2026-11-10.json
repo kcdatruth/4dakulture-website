@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "Rookie table reconciliation corrected Acuff APG, Lendeborg RPG and Dybantsa RPG. Eight rookie profiles crosschecked, two need additional direct confirmation. MVP full-field checks and previous movements still pending.",
+  "stats_status": "All 10 rookie profiles match 2026-27 RookieRanks Nov 10 table in GP/PPG/RPG/APG. MVP remaining full-field checks, previous ranking movements, official Phoenix report and release workflow pending.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -217,10 +217,10 @@
         "apg": 4
       },
       "stat_audit_nov10": {
-        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -241,10 +241,10 @@
         "apg": 7.4
       },
       "stat_audit_nov10": {
-        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -265,10 +265,10 @@
         "apg": 5.5
       },
       "stat_audit_nov10": {
-        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -289,10 +289,10 @@
         "apg": 2.1
       },
       "stat_audit_nov10": {
-        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -313,10 +313,10 @@
         "apg": 2.1
       },
       "stat_audit_nov10": {
-        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -337,10 +337,10 @@
         "apg": 3.9
       },
       "stat_audit_nov10": {
-        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -363,10 +363,10 @@
       "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
       "stat_source": "https://www.nba.com/player/1643414/mikel-brown-jr",
       "stat_audit_nov10": {
-        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -389,9 +389,16 @@
       "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
       "stat_source": "https://fantasyteamadvice.com/nba/players/26217/brayden-burries/stats",
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -406,9 +413,16 @@
         "apg": 1.3
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -425,10 +439,10 @@
       },
       "stat_source": "https://www.basketball-reference.com/players/m/maraad01.html",
       "stat_audit_nov10": {
-        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
-        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
         "checked_fields": [
           "games_played",
           "ppg",
@@ -483,13 +497,15 @@
     "boozer_discrepancy": "RESOLVED_16_2_PPG",
     "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html",
     "rookie_table_checked": [
-      "Darius Acuff Jr.",
       "Yaxel Lendeborg",
-      "AJ Dybantsa",
+      "Darius Acuff Jr.",
       "Cameron Boozer",
       "Caleb Wilson",
+      "AJ Dybantsa",
       "Darryn Peterson",
       "Mikel Brown Jr.",
+      "Brayden Burries",
+      "Meleek Thomas",
       "Aday Mara"
     ],
     "rookie_table_changes": [
@@ -512,9 +528,10 @@
         "to": 6.1
       }
     ],
-    "rookie_table_pending": [
-      "Brayden Burries",
-      "Meleek Thomas"
-    ]
+    "rookie_table_pending": [],
+    "rookie_profiles_full_four_field_matches": 10,
+    "rookie_profiles_unresolved": [],
+    "rookie_source": "https://rookieranks.com/nba/rookie-leaders",
+    "rookie_source_updated": "2026-11-10 00:07 MST"
   }
 }
