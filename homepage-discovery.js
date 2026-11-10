@@ -10,7 +10,7 @@
     items.push({label:'NBA Rankings HQ',href:'nba-rankings-hq.html'});
     items.push({label:'NFL Weekly HQ',href:'nfl.html'});
     items.push({label:'Album Files',href:'album-files.html'});
-    items.push({label:'All Stories',href:'all-stories.html'});
+    items.push({label:'All Stories',href:'stories.html'});
     var rail=document.createElement('nav');rail.id='fourdk-discovery-rail';rail.setAttribute('aria-label','4DK quick story navigation');
     var heading=document.createElement('strong');heading.textContent='EXPLORE 4DK';rail.appendChild(heading);
     items.forEach(function(item){var a=document.createElement('a');a.href=item.href;a.textContent=item.label;rail.appendChild(a)});
