@@ -25,7 +25,7 @@
       ],
       "analysis_baseline": "San Antonio has answered its uneven first week with five consecutive victories. Wembanyama's 43 against Minnesota and his dominant two-way stretch have restored the feeling that the Spurs can dictate the geometry of a game. He protects the rim, changes shot selection and forces defenders to account for a scorer who can finish above the defense or attack in space.\n\nDylan Harper's 17 points and eight assists against Utah show why this roster is more than a one-man experiment. De'Aaron Fox and the guards have to keep creating the pace and spacing that make Wembanyama's work sustainable. The defensive ceiling is enormous; the question is whether San Antonio can maintain this precision when opponents take away the easy transition opportunities.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "VERIFIED_AGAINST_DATED_PLAYER_GAME_LOG",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "San Antonio owns the top line in our editorial race because Victor Wembanyama gives the Spurs a defensive advantage that is difficult to reproduce. His November 9 explosion against Phoenix—40 points and nine blocks—captures the full equation: elite offense at one end, a rewritten shot chart at the other. The Fox–Harper–Castle guard rotation matters because opponents cannot simply crowd the paint and assume the Spurs will run out of creation. The next question is how the supporting cast responds when Wembanyama is forced into early foul trouble or a slower half-court game.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -100,7 +100,7 @@
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.cbssports.com/nba/players/29005036/victor-wembanyama/game-log/",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)",
       "last_five_candidate": [
         {
           "date": "2026-11-09",
@@ -157,7 +157,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -296,7 +296,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -435,7 +435,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -455,7 +455,7 @@
       ],
       "analysis_baseline": "Luka Dončić is playing the most forceful offensive basketball in the league. His 42 points and 13 assists against Miami pushed the Lakers to 6–2, and his season average sits at 38.3 points. The Lakers' ability to play through Luka and still get 27 from Austin Reaves and 15 rebounds from Walker Kessler is why the offense can overwhelm opponents without becoming one-dimensional.\n\nThe concern is on the other end. Los Angeles has scored 980 points but conceded 922 in eight games; the scoring is championship-caliber, while the defensive consistency still fluctuates. The Lakers are dangerous enough to beat anyone in a single night. The next stage is proving they can control games when Luka is merely excellent rather than superhuman.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "VERIFIED_DATED_TEAM_SCHEDULE_AND_OFFICIAL_NBA_NOV8",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player. His 32-point, 10-assist performance on November 9 demonstrated how he can punish both single coverage and the help defense that follows. Austin Reaves gives Los Angeles another live-ball decision-maker, while Walker Kessler's rim protection changes the defensive floor. We are keeping them fourth for now because the schedule's next wave will test whether the defense holds when Luka sits.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -530,7 +530,7 @@
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.nba.com/game/lal-vs-det-0022600197 ; https://www.cbssports.com/nba/teams/LAL/los-angeles-lakers/schedule/",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)",
       "last_five_candidate": [
         {
           "date": "2026-11-09",
@@ -588,7 +588,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -727,7 +727,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -841,7 +841,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -912,6 +912,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "PHI",
+          "home": true,
+          "result": "L",
+          "score": "106-112",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "CHA",
           "home": false,
@@ -926,35 +934,19 @@
           "result": "W",
           "score": "110-94",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "CHA",
-          "home": true,
-          "result": "W",
-          "score": "97-89",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-30",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "PHI",
-            "home": true,
-            "result": "L",
-            "score": "106-112"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1025,6 +1017,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "MIN",
+          "home": true,
+          "result": "L",
+          "score": "107-117",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "BOS",
           "home": true,
@@ -1039,35 +1039,19 @@
           "result": "W",
           "score": "119-98",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "DAL",
-          "home": false,
-          "result": "L",
-          "score": "111-116",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "MIN",
-            "home": true,
-            "result": "L",
-            "score": "107-117"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1133,6 +1117,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "HOU",
+          "home": false,
+          "result": "W",
+          "score": "117-107",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "MIL",
           "home": true,
@@ -1147,35 +1139,19 @@
           "result": "L",
           "score": "111-121",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "LAC",
-          "home": true,
-          "result": "W",
-          "score": "127-101",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "HOU",
-            "home": false,
-            "result": "W",
-            "score": "117-107"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1224,6 +1200,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "CHI",
+          "home": true,
+          "result": "W",
+          "score": "135-105",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "BKN",
           "home": true,
@@ -1246,35 +1230,19 @@
           "result": "W",
           "score": "133-127",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-27",
-          "opponent": "DET",
-          "home": true,
-          "result": "W",
-          "score": "111-97",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-07",
-      "last_five_candidate_oldest_date": "2026-10-27",
+      "last_five_candidate_oldest_date": "2026-10-28",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "CHI",
-            "home": true,
-            "result": "W",
-            "score": "135-105"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1345,6 +1313,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "TOR",
+          "home": true,
+          "result": "W",
+          "score": "128-109",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "POR",
           "home": true,
@@ -1359,35 +1335,19 @@
           "result": "W",
           "score": "127-120",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "NOP",
-          "home": false,
-          "result": "W",
-          "score": "104-91",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-30",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "TOR",
-            "home": true,
-            "result": "W",
-            "score": "128-109"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1538,7 +1498,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1677,7 +1637,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -1698,7 +1658,7 @@
       ],
       "analysis_baseline": "Dallas sits at 4–3 after Sacramento snapped its three-game winning streak with a 115–100 result. The Mavericks shot poorly from outside, and Cooper Flagg struggled to finish, going 3-for-19 from the field. Those are the nights that test a young star's decision-making and the team's ability to find alternative scoring routes.\n\nKyrie Irving missed the game for left-knee management, leaving the Mavericks without their most dependable perimeter creator. Dallas has shown it can defend and play through multiple options, but the margin narrows when the offense turns into difficult individual possessions. The next test is San Antonio's length and rim protection; that matchup should tell us how far Dallas' half-court execution has come.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Dallas's climb is driven by the rapid emergence of Cooper Flagg as a player who can influence the game in several phases. His 43-point outing against Indiana on November 9 is the kind of performance that changes the expectations surrounding a young star. Kyrie Irving's creation and the Mavericks' frontcourt size can make Dallas difficult to scheme against. We still need to see whether the defensive execution and offensive decision-making remain stable when Flagg is not scoring at that level.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -1765,19 +1725,19 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "111-112",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "SAC",
           "home": true,
           "result": "L",
           "score": "100-115",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "HOU",
-          "home": true,
-          "result": "W",
-          "score": "116-111",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -1785,22 +1745,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "SAS",
-            "home": false,
-            "result": "L",
-            "score": "111-112"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "125-122"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "130-93"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "112-100"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "111-112"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "SAC",
+          "home": true,
+          "result": "L",
+          "score": "100-115"
+        }
+      ],
+      "last_five_record": "3-2",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 15,
@@ -1820,7 +1811,7 @@
       ],
       "analysis_baseline": "Atlanta returned to .500 with a 108–104 road win over Indiana. Nickeil Alexander-Walker delivered 34 points, and CJ McCollum supplied 12 assists. That kind of complementary production is vital because the Hawks need multiple creators to make their spacing work and prevent opponents from keying on Jalen Johnson.\n\nThe defensive identity is still uneven. Atlanta's +10 point differential and 4–4 record suggest a team capable of competing but not yet capable of controlling games for extended stretches. The next stage is learning to close without surrendering the middle of the floor. The Hawks have enough talent to climb; they need a more reliable defensive floor.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Atlanta's 7–5 provisional start has the Hawks in the middle of a crowded race, but Jalen Johnson gives them a compelling two-way foundation. Nickeil Alexander-Walker's perimeter activity and CJ McCollum's shot-making offer different ways to survive stretches when the offense stalls. The issue is consistency of defensive resistance: opponents should not be able to reach their preferred spots without a second effort. Atlanta's next move depends on turning competitive quarters into complete games.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -1887,19 +1878,19 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "WAS",
+          "home": false,
+          "result": "W",
+          "score": "120-105",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "IND",
           "home": false,
           "result": "W",
           "score": "108-104",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-31",
-          "opponent": "NOP",
-          "home": false,
-          "result": "L",
-          "score": "99-121",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -1907,22 +1898,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "WAS",
-            "home": false,
-            "result": "W",
-            "score": "120-105"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "114-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "124-121"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "139-132"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "WAS",
+          "home": false,
+          "result": "W",
+          "score": "120-105"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "108-104"
+        }
+      ],
+      "last_five_record": "4-1",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 16,
@@ -1942,7 +1964,7 @@
       ],
       "analysis_baseline": "Cleveland's 4–3 record reflects a team still trying to put together complete games. The Thunder escaped with a 117–112 win despite a season-best 17 from rookie Meleek Thomas and 11 assists from Donovan Mitchell. The Cavaliers had opportunities late, but Shai Gilgeous-Alexander found the decisive shot and Cleveland couldn't close the possession.\n\nThe roster still has proven interior talent and enough perimeter creation to challenge the East's best. The issue is consistency: the Cavaliers cannot spend long stretches reacting instead of dictating matchups. Thomas' growing confidence is encouraging, but Cleveland needs its veteran core to produce more reliable defensive stops and better first-quarter execution.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Cleveland has more talent than its early record suggests. Donovan Mitchell can carry a scoring run, Evan Mobley changes the game at the rim, and James Harden gives the offense another organizer. The problem is turning those individual strengths into a reliable collective identity. When the Cavaliers defend without fouling and move the ball before the defense loads up, the ceiling looks much higher than sixteenth. Until those habits hold for entire games, the ranking stays cautious.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -2010,19 +2032,19 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "OKC",
+          "home": false,
+          "result": "L",
+          "score": "116-124",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "OKC",
           "home": true,
           "result": "L",
           "score": "112-117",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-31",
-          "opponent": "MIL",
-          "home": false,
-          "result": "W",
-          "score": "136-111",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -2030,22 +2052,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "OKC",
-            "home": false,
-            "result": "L",
-            "score": "116-124"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CHA",
+          "home": false,
+          "result": "L",
+          "score": "112-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "NYK",
+          "home": true,
+          "result": "L",
+          "score": "97-109"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "PHI",
+          "home": true,
+          "result": "W",
+          "score": "119-95"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "OKC",
+          "home": false,
+          "result": "L",
+          "score": "116-124"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "112-117"
+        }
+      ],
+      "last_five_record": "1-4",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 17,
@@ -2115,6 +2168,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "DEN",
+          "home": false,
+          "result": "L",
+          "score": "109-128",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "LAC",
           "home": false,
@@ -2129,35 +2190,19 @@
           "result": "L",
           "score": "125-131",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "ORL",
-          "home": true,
-          "result": "L",
-          "score": "114-121",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-01",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "DEN",
-            "home": false,
-            "result": "L",
-            "score": "109-128"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2222,6 +2267,14 @@
           "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "LAC",
+          "home": false,
+          "result": "W",
+          "score": "117-116",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "LAL",
           "home": false,
@@ -2236,35 +2289,19 @@
           "result": "W",
           "score": "145-125",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "ATL",
-          "home": false,
-          "result": "W",
-          "score": "129-117",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-30",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "LAC",
-            "home": false,
-            "result": "W",
-            "score": "117-116"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2284,7 +2321,7 @@
       ],
       "analysis_baseline": "Phoenix is 1–4 and has now lost three straight. Devin Booker scored 26 in the 116–113 loss at Golden State, but the Suns again failed to finish a close game. Their offensive talent can produce individual bursts, yet the defense and late-game execution have not been reliable enough to convert those bursts into wins.\n\nJalen Green's eight assists against the Warriors are a positive sign of expanding playmaking responsibility. Still, the Suns need to settle their lineups and create more predictable defensive coverages. A -53 point differential in only five games is an early warning. The upcoming Portland matchup offers an opportunity to show whether this team can compete with a rising West opponent.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed. Dillon Brooks supplies edge and defensive competitiveness. The problem is that a few difficult makes do not compensate for breakdowns on the other end. The Suns need a more stable possession-to-possession defensive approach and better shot quality when the first option is taken away. That is the route out of the bottom third.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -2351,19 +2388,19 @@
           "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "119-132",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "GSW",
           "home": false,
           "result": "L",
           "score": "113-116",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "DEN",
-          "home": true,
-          "result": "L",
-          "score": "120-127",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -2371,22 +2408,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "POR",
-            "home": true,
-            "result": "L",
-            "score": "119-132"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "96-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "HOU",
+          "home": true,
+          "result": "W",
+          "score": "102-99"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "ORL",
+          "home": true,
+          "result": "W",
+          "score": "117-104"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "119-132"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "113-116"
+        }
+      ],
+      "last_five_record": "2-3",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 20,
@@ -2406,7 +2474,7 @@
       ],
       "analysis_baseline": "Washington is 4–3 and leading the Southeast, a sentence that would have sounded aggressive before the season. Anthony Davis scored 27 in the 103–94 win over Orlando, while Trae Young handed out nine assists. Their partnership gives the Wizards a workable inside-out structure: Young bends the defense with the ball, and Davis gives them a dependable target and a defensive eraser.\n\nThe Wizards still have to prove they can win when the jumpers aren't falling and when opponents force Davis to defend away from the basket. But a two-game winning streak and a positive point differential are more than a curiosity. AJ Dybantsa's development adds another layer to a team with a chance to remain in the early playoff picture.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Washington has intriguing pieces but has not yet converted them into a reliable winning identity. Trae Young's playmaking and Anthony Davis's interior presence give the Wizards obvious offensive and defensive building blocks, while AJ Dybantsa offers long-term upside. The question is fit and continuity: who sets the pace, who finishes possessions, and how does the team respond when the first action is stopped? Those answers matter more than any one scoring explosion.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -2474,19 +2542,19 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "ATL",
+          "home": true,
+          "result": "L",
+          "score": "105-120",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "ORL",
           "home": false,
           "result": "W",
           "score": "103-94",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "CHA",
-          "home": true,
-          "result": "W",
-          "score": "95-79",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -2494,22 +2562,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "ATL",
-            "home": true,
-            "result": "L",
-            "score": "105-120"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DET",
+          "home": false,
+          "result": "L",
+          "score": "111-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "OKC",
+          "home": false,
+          "result": "L",
+          "score": "75-114"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "ATL",
+          "home": false,
+          "result": "L",
+          "score": "132-139"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "ATL",
+          "home": true,
+          "result": "L",
+          "score": "105-120"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "ORL",
+          "home": false,
+          "result": "W",
+          "score": "103-94"
+        }
+      ],
+      "last_five_record": "1-4",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 21,
@@ -2608,7 +2707,7 @@
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
         "missing_games": [],
         "score_conflicts": [],
-        "status": "NO_GAPS_AFTER_NOV3"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2679,6 +2778,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "BKN",
+          "home": false,
+          "result": "L",
+          "score": "104-114",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "DET",
           "home": true,
@@ -2693,35 +2800,19 @@
           "result": "L",
           "score": "104-109",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "WAS",
-          "home": false,
-          "result": "L",
-          "score": "79-95",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "BKN",
-            "home": false,
-            "result": "L",
-            "score": "104-114"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2791,6 +2882,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "107-103",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "ATL",
           "home": true,
@@ -2805,35 +2904,19 @@
           "result": "L",
           "score": "90-98",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "MIA",
-          "home": false,
-          "result": "L",
-          "score": "125-145",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-01",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "MEM",
-            "home": false,
-            "result": "W",
-            "score": "107-103"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2882,6 +2965,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "MIA",
+          "home": true,
+          "result": "L",
+          "score": "116-117",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "TOR",
           "home": true,
@@ -2904,35 +2995,19 @@
           "result": "L",
           "score": "101-127",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "LAL",
-          "home": true,
-          "result": "L",
-          "score": "87-103",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-30",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "MIA",
-            "home": true,
-            "result": "L",
-            "score": "116-117"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -2953,7 +3028,7 @@
       ],
       "analysis_baseline": "New Orleans has won three straight, including the 135–134 overtime upset that handed Memphis its first loss. Zion Williamson was active around the rim and on the glass, while the Pelicans made the late plays necessary to finish a game against an unbeaten opponent. That result is a significant confidence builder for a team that opened the season slowly.\n\nThe offense is finding more ways to generate pressure, and the supporting frontcourt is producing. But New Orleans still has to prove it can defend without relying on a late-game shot or whistle. The Pelicans' +12 point differential is modest, which is why we are rewarding momentum without declaring a sudden contender. This is the kind of week that can reset a season if the habits last.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_FULL_NOV4_NOV9_SCHEDULE_PLUS_NOV2_BASELINE",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "New Orleans has enough talent to be more competitive than its ranking suggests. Zion Williamson can create paint pressure that few teams can match, while Jeremiah Fears and Derik Queen offer developing complementary skills. The Pelicans need to protect the ball and turn Zion's drives into reliable secondary offense. The bigger concern is whether the defense can string together stops when the pace slows. Until that happens, occasional statement wins remain isolated.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -3020,19 +3095,19 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "120-113",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "MEM",
           "home": false,
           "result": "W",
           "score": "135-134",
-          "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-31",
-          "opponent": "ATL",
-          "home": true,
-          "result": "W",
-          "score": "121-99",
           "source": "2026-11-03 published baseline"
         }
       ],
@@ -3040,22 +3115,53 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31",
+      "last_five_candidate_oldest_date": "2026-11-02",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "UTA",
-            "home": true,
-            "result": "W",
-            "score": "120-113"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
-      }
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "87-138"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAC",
+          "home": false,
+          "result": "L",
+          "score": "123-139"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIN",
+          "home": true,
+          "result": "L",
+          "score": "109-115"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "120-113"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "135-134"
+        }
+      ],
+      "last_five_record": "2-3",
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (November 2 archived results)"
     },
     {
       "rank": 26,
@@ -3120,6 +3226,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "CHA",
+          "home": true,
+          "result": "W",
+          "score": "114-104",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "NYK",
           "home": false,
@@ -3134,35 +3248,19 @@
           "result": "W",
           "score": "98-90",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-30",
-          "opponent": "DET",
-          "home": true,
-          "result": "L",
-          "score": "94-110",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-30",
+      "last_five_candidate_oldest_date": "2026-11-01",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "CHA",
-            "home": true,
-            "result": "W",
-            "score": "114-104"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -3212,6 +3310,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "NYK",
+          "home": false,
+          "result": "L",
+          "score": "105-135",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "PHI",
           "home": false,
@@ -3234,35 +3340,19 @@
           "result": "L",
           "score": "127-133",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-26",
-          "opponent": "BOS",
-          "home": false,
-          "result": "L",
-          "score": "99-134",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-26",
+      "last_five_candidate_oldest_date": "2026-10-28",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "NYK",
-            "home": false,
-            "result": "L",
-            "score": "105-135"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -3328,6 +3418,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "NOP",
+          "home": false,
+          "result": "L",
+          "score": "113-120",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "SAS",
           "home": false,
@@ -3342,35 +3440,19 @@
           "result": "L",
           "score": "90-112",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "SAS",
-          "home": true,
-          "result": "L",
-          "score": "111-117",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "NOP",
-            "home": false,
-            "result": "L",
-            "score": "113-120"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -3437,6 +3519,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "103-116",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "DAL",
           "home": false,
@@ -3451,35 +3541,19 @@
           "result": "L",
           "score": "105-136",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-29",
-          "opponent": "NOP",
-          "home": false,
-          "result": "L",
-          "score": "120-132",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-29",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "LAL",
-            "home": true,
-            "result": "L",
-            "score": "103-116"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     },
     {
@@ -3545,6 +3619,14 @@
           "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=6&month=11&year=2026"
         },
         {
+          "date": "2026-11-04",
+          "opponent": "BOS",
+          "home": false,
+          "result": "L",
+          "score": "102-109",
+          "source": "Complete November 2026 NBA schedule"
+        },
+        {
           "date": "2026-11-02",
           "opponent": "MIN",
           "home": false,
@@ -3559,35 +3641,19 @@
           "result": "L",
           "score": "111-136",
           "source": "2026-11-03 published baseline"
-        },
-        {
-          "date": "2026-10-28",
-          "opponent": "HOU",
-          "home": true,
-          "result": "L",
-          "score": "100-132",
-          "source": "2026-11-03 published baseline"
         }
       ],
       "last_five_candidate_count": 5,
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28",
+      "last_five_candidate_oldest_date": "2026-10-31",
       "schedule_gap_audit": {
         "checked_dates": "2026-11-04 through 2026-11-09",
         "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
-        "missing_games": [
-          {
-            "date": "2026-11-04",
-            "opponent": "BOS",
-            "home": false,
-            "result": "L",
-            "score": "102-109"
-          }
-        ],
+        "missing_games": [],
         "score_conflicts": [],
-        "status": "GAP_OR_CONFLICT_FOUND"
+        "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
       }
     }
   ],
@@ -3604,7 +3670,7 @@
   },
   "game_log_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps",
   "game_log_note": "Recent games verified from NBA recaps; incomplete histories are NOT labeled full last-five. Preserve any previously drafted last_five but require reconciliation before publishing.",
-  "last_five_verified_count": 5,
+  "last_five_verified_count": 8,
   "last_five_candidate_audit": {
     "teams_with_five_candidate_entries": 30,
     "entries": 150,
@@ -3621,6 +3687,253 @@
       "conflicts": []
     },
     "nov5_boxscore_verified_entries": 4,
-    "nov7_boxscore_verified_entries": 14
+    "nov7_boxscore_verified_entries": 14,
+    "full_schedule_nov4_nov9_checked": true,
+    "missing_nov4_games_repaired": 21,
+    "teams_with_verified_last_five": 8,
+    "remaining_schedule_issues": [
+      {
+        "team": "PHI",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "OKC",
+        "dates": [
+          "2026-11-07",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "BOS",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-11-01"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "GSW",
+        "dates": [
+          "2026-11-09",
+          "2026-11-07",
+          "2026-11-05",
+          "2026-11-02",
+          "2026-11-01"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "DET",
+        "dates": [
+          "2026-11-09",
+          "2026-11-08",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-30"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "HOU",
+        "dates": [
+          "2026-11-09",
+          "2026-11-07",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "MIN",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "NYK",
+        "dates": [
+          "2026-11-07",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-30",
+          "2026-10-28"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "DEN",
+        "dates": [
+          "2026-11-09",
+          "2026-11-07",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-30"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "MEM",
+        "dates": [
+          "2026-11-09",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "POR",
+        "dates": [
+          "2026-11-07",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "TOR",
+        "dates": [
+          "2026-11-09",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-11-01"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "MIA",
+        "dates": [
+          "2026-11-08",
+          "2026-11-05",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-30"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "ORL",
+        "dates": [
+          "2026-11-07",
+          "2026-11-05",
+          "2026-11-02",
+          "2026-11-01",
+          "2026-10-30"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "CHA",
+        "dates": [
+          "2026-11-09",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "IND",
+        "dates": [
+          "2026-11-09",
+          "2026-11-07",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-11-01"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "LAC",
+        "dates": [
+          "2026-11-08",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-11-01",
+          "2026-10-30"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "BKN",
+        "dates": [
+          "2026-11-08",
+          "2026-11-07",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-11-01"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "CHI",
+        "dates": [
+          "2026-11-08",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-30",
+          "2026-10-28"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "UTA",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "SAC",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      },
+      {
+        "team": "MIL",
+        "dates": [
+          "2026-11-08",
+          "2026-11-06",
+          "2026-11-04",
+          "2026-11-02",
+          "2026-10-31"
+        ],
+        "conflicts": []
+      }
+    ]
   }
 }
