@@ -1,42 +1,31 @@
-# 4DK November 10 Rankings HQ — structural QA
+# 4DK November 10 Rankings HQ — automated draft QA (2026-11-10)
 
-**Status: DRAFT / NOT APPROVED FOR PUBLICATION**
+**HOLD — DO NOT MERGE OR PUBLISH.** All metrics below are checks on draft content, not claims of independent statistical verification.
 
-## Confirmed structure
+| Test | Result |
+|---|---|
+| Power 30 count, unique teams, rank sequence | 30/30 |
+| Original Nov 10 team analyses | 30/30 |
+| Previous-rank movement arithmetic | 30/30 |
+| Nov 9 results cross-matched to stored scoreboard | 16/16 teams |
+| Complete five-game histories staged | 2/30 teams |
+| MVP Watch entries | 10/10 |
+| Rookie Watch entries | 10/10 |
+| Award entries with three per-game stats populated | 20/20 (source and cutoff validation still required) |
+| Structural errors | 0 |
 
-- 30 unique NBA teams; ranks 1–30 each used once.
-- November 3 previous positions recovered from the repository's published weekly-board dataset, not invented.
-- Both locked awards lists contain ten entries.
-- Provisional team records balance to 154 wins and 154 losses across all 30 clubs. This is an arithmetic cross-check only, **not independent score verification**.
+## Errors
+No structural errors found.
 
-## Biggest risers from the November 3 board
+## Blocking work
 
-| New | Team | Previous | Change | Provisional record |
-|---:|---|---:|---:|---|
-| 3 | Oklahoma City Thunder | 10 | +7 | 8-2 |
-| 10 | New York Knicks | 17 | +7 | 5-4 |
-| 11 | Denver Nuggets | 16 | +5 | 5-4 |
-| 19 | Phoenix Suns | 24 | +5 | 3-6 |
-| 24 | LA Clippers | 29 | +5 | 2-7 |
+1. Independently reconstruct five-game histories for 28 teams, with opponents, home/away, scores and W–L.
+2. Verify all 30 current records against official final game logs; the 154–154 checksum is **not** sufficient.
+3. Validate all 20 award statistical snapshots against primary sources as of the cutoff. Resolve Ty Jerome 25 vs 27 points on November 9 and Cameron Boozer's scoring-average discrepancy before citing either disputed number.
+4. Validate injury reports as of the November 9 cutoff, separating date-specific statuses from next-game designations.
+5. Build and test responsive HQ rendering, current-vs-archive pointers, awards links and homepage navigation. Confirm no unrelated content changes.
+6. Re-run all checks and require explicit approval before merging.
 
-## Biggest fallers from the November 3 board
+## Source check
 
-| New | Team | Previous | Change | Provisional record |
-|---:|---|---:|---:|---|
-| 8 | Houston Rockets | 1 | -7 | 8-3 |
-| 12 | Memphis Grizzlies | 5 | -7 | 7-3 |
-| 20 | Washington Wizards | 14 | -6 | 4-7 |
-| 25 | New Orleans Pelicans | 19 | -6 | 4-7 |
-| 7 | Detroit Pistons | 2 | -5 | 7-3 |
-
-## Publication blockers
-
-1. Independently confirm all 30 provisional W–L records against games final November 9.
-2. Reconstruct and verify every team's actual last five games and scores.
-3. Update original 4DK analysis for all 30 teams; the draft carries prior-week text as a baseline **only**, not a November 10 article.
-4. Verify all injuries against an official dated report, avoiding outdated designations.
-5. Verify season snapshots for Mikel Brown Jr., Brayden Burries and Aday Mara, plus previous awards ranking movement.
-6. Resolve conflicting Ty Jerome single-game totals before any public citation.
-7. Render and test full Rankings HQ, then archive November 3 without overwriting it.
-
-**Do not merge PR #40 or update the homepage until all blockers are cleared.**
+November 9 finals independently match the CBS scoreboard and Basketball-Reference scoreboard: https://www.cbssports.com/nba/schedule/20261109/ and https://www.basketball-reference.com/boxscores/ . Note their Ty Jerome points conflict; preserve this as an unresolved primary-box-score check.
