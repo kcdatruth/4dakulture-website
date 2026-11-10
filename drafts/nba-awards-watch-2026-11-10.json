@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "Cameron Boozer corrected to 16.2 PPG and 9.7 RPG / 5.5 APG verified via 10-game season totals. Remaining award player full-field checks and previous rank verification still pending; do not publish.",
+  "stats_status": "Rookie table reconciliation corrected Acuff APG, Lendeborg RPG and Dybantsa RPG. Eight rookie profiles crosschecked, two need additional direct confirmation. MVP full-field checks and previous movements still pending.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -213,13 +213,20 @@
       "games_played": 11,
       "season_stats": {
         "ppg": 21.4,
-        "rpg": 7.1,
+        "rpg": 7.2,
         "apg": 4
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -231,12 +238,19 @@
       "season_stats": {
         "ppg": 25.9,
         "rpg": 3.8,
-        "apg": 7.3
+        "apg": 7.4
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -251,15 +265,16 @@
         "apg": 5.5
       },
       "stat_audit_nov10": {
-        "status": "VERIFIED_FULL_PPG_RPG_APG",
+        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
         "cutoff": "2026-11-09",
-        "games_played": 10,
-        "source": "https://www.basketball-reference.com/players/b/boozeca02.html",
-        "corroboration": [
-          "https://rookieranks.com/nba/rookie-leaders",
-          "https://hoopsgraph.com/players/cameron-boozer-1643409"
-        ],
-        "verification": "162 points / 10 games = 16.2 PPG; 97 rebounds / 10 = 9.7 RPG; 55 assists / 10 = 5.5 APG"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -274,9 +289,16 @@
         "apg": 2.1
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -287,13 +309,20 @@
       "games_played": 7,
       "season_stats": {
         "ppg": 16.7,
-        "rpg": 6.3,
+        "rpg": 6.1,
         "apg": 2.1
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "VERIFIED_2026_27_ROOKIE_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -308,9 +337,16 @@
         "apg": 3.9
       },
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -327,9 +363,16 @@
       "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
       "stat_source": "https://www.nba.com/player/1643414/mikel-brown-jr",
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     },
     {
@@ -382,9 +425,16 @@
       },
       "stat_source": "https://www.basketball-reference.com/players/m/maraad01.html",
       "stat_audit_nov10": {
-        "status": "PENDING_FULL_SOURCE_RECONCILIATION",
+        "status": "CROSSCHECKED_ROOKIE_SEASON_TABLE",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html"
+        "source": "https://www.basketball-reference.com/leagues/NBA_2027_rookies.html",
+        "crosscheck": "https://rookieranks.com/nba/rookie-leaders",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
       }
     }
   ],
@@ -431,6 +481,40 @@
     ],
     "release_hold": true,
     "boozer_discrepancy": "RESOLVED_16_2_PPG",
-    "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html"
+    "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html",
+    "rookie_table_checked": [
+      "Darius Acuff Jr.",
+      "Yaxel Lendeborg",
+      "AJ Dybantsa",
+      "Cameron Boozer",
+      "Caleb Wilson",
+      "Darryn Peterson",
+      "Mikel Brown Jr.",
+      "Aday Mara"
+    ],
+    "rookie_table_changes": [
+      {
+        "player": "Yaxel Lendeborg",
+        "field": "rpg",
+        "from": 7.1,
+        "to": 7.2
+      },
+      {
+        "player": "Darius Acuff Jr.",
+        "field": "apg",
+        "from": 7.3,
+        "to": 7.4
+      },
+      {
+        "player": "AJ Dybantsa",
+        "field": "rpg",
+        "from": 6.3,
+        "to": 6.1
+      }
+    ],
+    "rookie_table_pending": [
+      "Brayden Burries",
+      "Meleek Thomas"
+    ]
   }
 }
