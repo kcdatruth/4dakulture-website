@@ -38,3 +38,13 @@ The source displays these as 2026–27 season averages alongside games through N
 ## Cross-source reconciliation flag
 
 The November 9 Memphis–Toronto Ty Jerome total **disagrees** between [CBS Sports' November 9 scoreboard](https://www.cbssports.com/nba/schedule/20261109/) (25) and [Basketball-Reference's November 9 game listing](https://www.basketball-reference.com/boxscores/) (27). The earlier 27-point figure in this draft is **provisional**; confirm against the official scorer's box before publication. This discrepancy does not change Jerome's locked No. 10 editorial position.
+
+## November 10 source reconciliation update
+
+The November 9 **eight final scores** agree across NBA.com, Basketball-Reference and CBS Sports. All 16 participating teams' final scores can therefore be treated as verified. NBA.com also explicitly confirms each participating team's updated W–L record in its game recap collection.
+
+**Ty Jerome discrepancy remains open:** Basketball-Reference's November 9 slate lists Jerome at 27 points, while CBS Sports' scoreboard lists 25. Do not present his November 9 points as an undisputed fact until a primary box score is inspected. No changes to his No. 10 MVP placement.
+
+**New source:** https://www.nba.com/watch/list/collection/2026-27-game-recaps
+
+**Correction to workflow:** The 30-team provisional records balancing at 154–154 is only a checksum, not proof of accuracy. Do not mark all 30 records verified on that basis.
