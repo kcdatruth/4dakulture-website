@@ -1,0 +1,19 @@
+/* 4DK mobile homepage polish: additive overrides, no content removed. */
+@media(max-width:700px){
+  html,body{max-width:100%;overflow-x:clip}
+  .home-search .shell,.home-search .search-shell,.home-search .site-search{min-width:0;max-width:100%}
+  .home-search .site-search{display:flex;width:100%;align-items:stretch}
+  .home-search .site-search input#siteSearchInput{min-width:0!important;width:1%!important;flex:1 1 auto!important;font-size:16px!important;text-overflow:ellipsis}
+  .home-search .site-search button{flex:0 0 auto!important;min-width:86px!important;padding-inline:12px!important}
+  .home-search .search-mark{display:none!important}
+  #dk-latest-nightcap{padding:12px!important}
+  #dk-latest-nightcap>a{border-width:2px!important;padding:22px 20px!important}
+  #dk-latest-nightcap h2{font-size:clamp(26px,7.1vw,38px)!important;line-height:1.1!important;margin:15px 0!important;overflow-wrap:break-word}
+  #dk-latest-nightcap p{font-size:clamp(16px,4.3vw,19px)!important;line-height:1.42!important;margin:14px 0!important}
+  #dk-latest-nightcap strong{font-size:13px!important}
+  #fourdk-fresh-headlines{max-width:100%;overflow:hidden}
+  #fourdk-fresh-headlines .fourdk-headlines-inner{min-width:0}
+  #fourdk-fresh-headlines .fourdk-headlines-label{flex-shrink:0}
+  #fourdk-discovery-rail{margin:10px 12px!important}
+  #fourdk-connected-latest{margin:12px!important}
+}
