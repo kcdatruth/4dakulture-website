@@ -25,7 +25,7 @@
       ],
       "analysis_baseline": "San Antonio has answered its uneven first week with five consecutive victories. Wembanyama's 43 against Minnesota and his dominant two-way stretch have restored the feeling that the Spurs can dictate the geometry of a game. He protects the rim, changes shot selection and forces defenders to account for a scorer who can finish above the defense or attack in space.\n\nDylan Harper's 17 points and eight assists against Utah show why this roster is more than a one-man experiment. De'Aaron Fox and the guards have to keep creating the pace and spacing that make Wembanyama's work sustainable. The defensive ceiling is enormous; the question is whether San Antonio can maintain this precision when opponents take away the easy transition opportunities.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_AGAINST_DATED_PLAYER_GAME_LOG",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "San Antonio owns the top line in our editorial race because Victor Wembanyama gives the Spurs a defensive advantage that is difficult to reproduce. His November 9 explosion against Phoenix—40 points and nine blocks—captures the full equation: elite offense at one end, a rewritten shot chart at the other. The Fox–Harper–Castle guard rotation matters because opponents cannot simply crowd the paint and assume the Spurs will run out of creation. The next question is how the supporting cast responds when Wembanyama is forced into early foul trouble or a slower half-court game.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -61,7 +61,46 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "122-96"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "POR",
+          "home": false,
+          "result": "W",
+          "score": "125-103"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "124-109"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DAL",
+          "home": true,
+          "result": "W",
+          "score": "112-111"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "119-97"
+        }
+      ],
+      "last_five_record": "5-0",
+      "last_five_source": "https://www.cbssports.com/nba/players/29005036/victor-wembanyama/game-log/"
     },
     {
       "rank": 2,
@@ -203,7 +242,7 @@
       ],
       "analysis_baseline": "Luka Dončić is playing the most forceful offensive basketball in the league. His 42 points and 13 assists against Miami pushed the Lakers to 6–2, and his season average sits at 38.3 points. The Lakers' ability to play through Luka and still get 27 from Austin Reaves and 15 rebounds from Walker Kessler is why the offense can overwhelm opponents without becoming one-dimensional.\n\nThe concern is on the other end. Los Angeles has scored 980 points but conceded 922 in eight games; the scoring is championship-caliber, while the defensive consistency still fluctuates. The Lakers are dangerous enough to beat anyone in a single night. The next stage is proving they can control games when Luka is merely excellent rather than superhuman.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
+      "last_five_status": "VERIFIED_AGAINST_DATED_PLAYER_GAME_LOG",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player. His 32-point, 10-assist performance on November 9 demonstrated how he can punish both single coverage and the help defense that follows. Austin Reaves gives Los Angeles another live-ball decision-maker, while Walker Kessler's rim protection changes the defensive floor. We are keeping them fourth for now because the schedule's next wave will test whether the defense holds when Luka sits.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -239,7 +278,46 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "ATL",
+          "home": false,
+          "result": "W",
+          "score": "124-114"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "POR",
+          "home": true,
+          "result": "W",
+          "score": "124-118"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "116-103"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIA",
+          "home": true,
+          "result": "W",
+          "score": "138-117"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "TOR",
+          "home": true,
+          "result": "W",
+          "score": "131-125"
+        }
+      ],
+      "last_five_record": "5-0",
+      "last_five_source": "https://www.cbssports.com/nba/players/2900426/luka-doncic/game-log/"
     },
     {
       "rank": 5,
@@ -1552,5 +1630,6 @@
     "mismatches": []
   },
   "game_log_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps",
-  "game_log_note": "Recent games verified from NBA recaps; incomplete histories are NOT labeled full last-five. Preserve any previously drafted last_five but require reconciliation before publishing."
+  "game_log_note": "Recent games verified from NBA recaps; incomplete histories are NOT labeled full last-five. Preserve any previously drafted last_five but require reconciliation before publishing.",
+  "last_five_verified_count": 3
 }
