@@ -25,3 +25,16 @@ Luka's 32 points and 10 assists illustrate why his offensive burden supports the
 ## Hold before merge
 
 Verify 2026–27 season-to-date PPG/RPG/APG and percentages for **all 20** candidates, previous awards placements, current teams, minutes and injuries. Integrate into Rankings HQ only after those checks; preserve all existing archives.
+
+## Season-to-date snapshot — verified November 10
+
+| Locked rank | Candidate | PPG | RPG | APG | Source |
+|---:|---|---:|---:|---:|---|
+| MVP 1 | Luka Dončić | 39.3 | 7.8 | 7.9 | [CBS Sports 2026–27 game log](https://www.cbssports.com/nba/players/2900426/luka-doncic/game-log/) |
+| MVP 2 | Victor Wembanyama | 30.1 | 11.9 | 3.0 | [CBS Sports 2026–27 game log](https://www.cbssports.com/nba/players/29005036/victor-wembanyama/game-log/) |
+
+The source displays these as 2026–27 season averages alongside games through November 9. No other candidate's season averages are asserted until checked individually.
+
+## Cross-source reconciliation flag
+
+The November 9 Memphis–Toronto Ty Jerome total **disagrees** between [CBS Sports' November 9 scoreboard](https://www.cbssports.com/nba/schedule/20261109/) (25) and [Basketball-Reference's November 9 game listing](https://www.basketball-reference.com/boxscores/) (27). The earlier 27-point figure in this draft is **provisional**; confirm against the official scorer's box before publication. This discrepancy does not change Jerome's locked No. 10 editorial position.
