@@ -59,7 +59,11 @@ def extract(payload, league):
     return rows
 
 def main():
-    for league, (sport, _) in LEAGUES.items():
+    selected = sys.argv[1:] or list(LEAGUES)
+    if any(league not in LEAGUES for league in selected):
+        raise ValueError("Choose nba or nfl")
+    for league in selected:
+        sport, _ = LEAGUES[league]
         url = f"https://site.api.espn.com/apis/v2/sports/{sport}/{league}/standings"
         response = requests.get(url, params={"season": 2026 if league == "nfl" else 2027}, timeout=35, headers={"User-Agent":"4DK-Standings/1.0"})
         response.raise_for_status()
