@@ -7,7 +7,7 @@ on:
       - '.github/workflows/4dk-daily-standings.yml'
       - 'scripts/refresh_standings.py'
   schedule:
-    - cron: '30 11 * * *'
+    - cron: '30 8 * * *'
     - cron: '30 17 * * *'
   pull_request:
     paths:
@@ -20,6 +20,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   standings:
+    strategy:
+      fail-fast: false
+      matrix:
+        league: [nba, nfl]
+    concurrency:
+      group: 4dk-standings-${{ matrix.league }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,15 +34,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
-      - name: Validate and refresh all 62 teams
-        run: python scripts/refresh_standings.py
+      - name: Validate and refresh ${{ matrix.league }} standings
+        run: python scripts/refresh_standings.py ${{ matrix.league }}
       - name: Commit verified standings only
         if: github.event_name != 'pull_request'
         run: |
-          if ! git diff --quiet -- data/4dk-nba-standings-2026.json data/4dk-nfl-standings-2026.json || [ -n "$(git ls-files --others --exclude-standard data/4dk-*-standings-2026.json)" ]; then
+          if ! git diff --quiet -- data/4dk-${{ matrix.league }}-standings-2026.json || [ -n "$(git ls-files --others --exclude-standard data/4dk-${{ matrix.league }}-standings-2026.json)" ]; then
             git config user.name "4DK Stats Bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/4dk-nba-standings-2026.json data/4dk-nfl-standings-2026.json
-            git commit -m "Refresh verified NBA and NFL standings"
+            git commit -m "Refresh verified ${{ matrix.league }} standings"
             git push
           fi
