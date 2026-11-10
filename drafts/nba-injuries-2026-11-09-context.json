@@ -1,0 +1,58 @@
+{
+  "edition": "2026-11-10",
+  "status": "DATED_INJURY_CONTEXT_NOT_NEXT_GAME_DESIGNATIONS",
+  "as_of": "2026-11-09",
+  "sources": [
+    "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_00AM.pdf",
+    "https://www.fantasyalarm.com/articles/nba/fantasy-basketball-injury-report/nba-injury-report-week-4-2026-fantasy-basketball/198451",
+    "https://cornerwire.com/story/injury-daily-nba-2026-11-09"
+  ],
+  "key_items": [
+    {
+      "team": "MIN",
+      "player": "Anthony Edwards",
+      "context": "Knee surgery; out as of November 9 reporting"
+    },
+    {
+      "team": "OKC",
+      "player": "Chet Holmgren",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "OKC",
+      "player": "Jalen Williams",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "DET",
+      "player": "Jalen Duren",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "ORL",
+      "player": "Paolo Banchero",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "TOR",
+      "player": "Kawhi Leonard",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "UTA",
+      "player": "Jaren Jackson Jr.",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "POR",
+      "player": "Ja Morant",
+      "context": "Reported out November 9"
+    },
+    {
+      "team": "IND",
+      "player": "Tyrese Haliburton",
+      "context": "Reported out November 9"
+    }
+  ],
+  "warning": "Statuses reflect dated reporting, not an official designation for the next game. Official injury report snapshots update during the day; reconcile exact timestamp and team before publication."
+}
