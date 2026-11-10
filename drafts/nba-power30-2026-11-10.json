@@ -422,7 +422,7 @@
       ],
       "analysis_baseline": "Luka Dončić is playing the most forceful offensive basketball in the league. His 42 points and 13 assists against Miami pushed the Lakers to 6–2, and his season average sits at 38.3 points. The Lakers' ability to play through Luka and still get 27 from Austin Reaves and 15 rebounds from Walker Kessler is why the offense can overwhelm opponents without becoming one-dimensional.\n\nThe concern is on the other end. Los Angeles has scored 980 points but conceded 922 in eight games; the scoring is championship-caliber, while the defensive consistency still fluctuates. The Lakers are dangerous enough to beat anyone in a single night. The next stage is proving they can control games when Luka is merely excellent rather than superhuman.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "VERIFIED_AGAINST_DATED_PLAYER_GAME_LOG",
+      "last_five_status": "VERIFIED_DATED_TEAM_SCHEDULE_AND_OFFICIAL_NBA_NOV8",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player. His 32-point, 10-assist performance on November 9 demonstrated how he can punish both single coverage and the help defense that follows. Austin Reaves gives Los Angeles another live-ball decision-maker, while Walker Kessler's rim protection changes the defensive floor. We are keeping them fourth for now because the schedule's next wave will test whether the defense holds when Luka sits.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -468,6 +468,13 @@
           "score": "124-114"
         },
         {
+          "date": "2026-11-08",
+          "opponent": "DET",
+          "home": false,
+          "result": "W",
+          "score": "121-116"
+        },
+        {
           "date": "2026-11-06",
           "opponent": "POR",
           "home": true,
@@ -487,17 +494,10 @@
           "home": true,
           "result": "W",
           "score": "138-117"
-        },
-        {
-          "date": "2026-11-01",
-          "opponent": "TOR",
-          "home": true,
-          "result": "W",
-          "score": "131-125"
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.cbssports.com/nba/players/2900426/luka-doncic/game-log/",
+      "last_five_source": "https://www.nba.com/game/lal-vs-det-0022600197 ; https://www.cbssports.com/nba/teams/LAL/los-angeles-lakers/schedule/",
       "last_five_candidate": [
         {
           "date": "2026-11-09",
@@ -543,7 +543,8 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-11-02"
+      "last_five_candidate_oldest_date": "2026-11-02",
+      "last_five_correction_note": "November 8 Detroit win was absent from earlier Luka individual game log because Luka did not play. Corrected using team schedule and official NBA box score."
     },
     {
       "rank": 5,
