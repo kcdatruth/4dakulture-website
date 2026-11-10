@@ -29,7 +29,9 @@ def main():
             path = item.get(field, "")
             if not SAFE.fullmatch(path) or not (ROOT / path).is_file():
                 raise ValueError(f"Missing or invalid {field}: {path}")
-    data["updated"] = datetime.now(timezone.utc).date().isoformat()
+    previous = json.loads(FEED.read_text(encoding="utf-8"))
+    if data["sections"] != previous["sections"]:
+        data["updated"] = datetime.now(timezone.utc).date().isoformat()
     FEED.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Homepage feed validated and refreshed")
 
