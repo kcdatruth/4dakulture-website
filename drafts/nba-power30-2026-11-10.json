@@ -71,10 +71,49 @@
       ],
       "analysis_baseline": "Oklahoma City remains 5–2, and Shai Gilgeous-Alexander's 43-point response in Cleveland was a reminder of the individual brilliance still available to the Thunder. But the 117–112 win also exposed how much work it takes to win with so many missing pieces. Shai had to carry 35 field-goal attempts and hit the decisive three late; that's a solution for one night, not a sustainable plan for an entire season.\n\nJalen Williams and Cason Wallace face lengthy rehabilitation, and Chet Holmgren is expected to miss eight to ten weeks. That is three foundational two-way players absent at once. Ajay Mitchell and the younger rotation can help the Thunder survive, but the championship version of this team has been interrupted. We drop Oklahoma City because of the changed present-tense roster, not because its long-term culture has disappeared.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "VERIFIED_FROM_NOV10_SCHEDULE_PREVIEW",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Thunder make the week's loudest climb among the contenders, from tenth to third. Shai Gilgeous-Alexander's shot creation remains the stable center of the attack, and Chet Holmgren gives Oklahoma City a second axis of defensive pressure. The challenge is sustaining their intensity across a rotation that has dealt with injuries. A contender can survive missing talent for a night; maintaining its offensive structure through those absences is the test that separates a deep team from a merely talented one.",
-      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement."
+      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "WAS",
+          "result": "W",
+          "score": "114-75",
+          "home": true
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MEM",
+          "result": "W",
+          "score": "128-97",
+          "home": false
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "CLE",
+          "result": "W",
+          "score": "124-116",
+          "home": true
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CLE",
+          "result": "W",
+          "score": "117-112",
+          "home": false
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "HOU",
+          "result": "L",
+          "score": "98-119",
+          "home": false
+        }
+      ],
+      "last_five_record": "4-1",
+      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/"
     },
     {
       "rank": 4,
@@ -300,10 +339,49 @@
       ],
       "analysis_baseline": "Portland is 5–1 and undefeated in four road games, an early sign that the Trail Blazers are comfortable away from home. Deni Avdija's 28 points against Denver and Donovan Clingan's 18 rebounds turned a difficult road matchup into a 118–110 win. This is a team with length, rebounding and enough perimeter creation to stay dangerous even when one of its primary scorers is quiet.\n\nThe 124–103 home loss to Memphis remains a warning about how quickly elite opponents can force Portland into uncomfortable possessions. But the response has been strong: back-to-back wins and a willingness to defend and rebound through physical games. We want to see whether the Blazers can maintain this road discipline when the schedule gets denser and opponents target their half-court weaknesses.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "VERIFIED_FROM_NOV10_SCHEDULE_PREVIEW",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Portland's start deserves serious consideration because the Blazers have multiple ways to generate offense. Deni Avdija can attack mismatches, Damian Lillard changes the geometry of the floor, and Donovan Clingan gives the defense a clear interior presence. Jrue Holiday's experience matters when the game becomes a possession-by-possession contest. The next challenge is consistency away from home and against teams that can match their physicality without sacrificing perimeter coverage.",
-      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement."
+      "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "SAS",
+          "result": "L",
+          "score": "103-125",
+          "home": true
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "LAL",
+          "result": "L",
+          "score": "118-124",
+          "home": false
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "PHX",
+          "result": "W",
+          "score": "132-119",
+          "home": false
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DEN",
+          "result": "W",
+          "score": "118-110",
+          "home": false
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "UTA",
+          "result": "W",
+          "score": "112-90",
+          "home": false
+        }
+      ],
+      "last_five_record": "3-2",
+      "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/"
     },
     {
       "rank": 14,
