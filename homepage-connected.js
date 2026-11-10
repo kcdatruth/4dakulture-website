@@ -2,7 +2,7 @@
 (function(){
   function build(data){
     if(!data||!Array.isArray(data.sections)||document.getElementById('fourdk-connected-latest'))return;
-    var safe=function(h){return typeof h==='string'&&/^[a-z0-9][a-z0-9-]*\.html$/.test(h)};
+    var safe=function(h){return typeof h==='string'&&/^[a-z0-9][a-z0-9-]*\.html(?:#[a-z0-9-]+)?$/.test(h)};
     var section=document.createElement('section');section.id='fourdk-connected-latest';section.setAttribute('aria-label','Latest 4DK coverage');
     var header=document.createElement('div');header.className='fourdk-connected-heading';
     var eyebrow=document.createElement('span');eyebrow.textContent='THE 4DK NETWORK';header.appendChild(eyebrow);
@@ -28,7 +28,7 @@
   }
   var fallback={sections:[
     {label:'NFL WEEKLY HQ',title:'Week 9 — What We Learned Sunday',url:'nfl-sunday-recap-week9-2026.html',hub:'nfl.html',hubLabel:'NFL Coverage',image:'week9-snf-spotlight.svg',imageAlt:'Chicago Bears versus Tampa Bay Buccaneers — Week 9 Sunday Night Football'},
-    {label:'NBA RANKINGS HQ',title:'4DK NBA Power Rankings',url:'nba-power-rankings-2026-27.html',hub:'nba-rankings-hq.html',hubLabel:'Rankings HQ',image:'4dk-power-01-okc.jpeg',imageAlt:'Oklahoma City Thunder in the 4DK NBA Power Rankings'},
+    {label:'NBA RANKINGS HQ',title:'4DK NBA Power Rankings',url:'nba-weekly-boards.html#power30',hub:'nba-rankings-hq.html',hubLabel:'Rankings HQ',image:'4dk-power-01-okc.jpeg',imageAlt:'Oklahoma City Thunder in the 4DK NBA Power Rankings'},
     {label:'ALBUM FILES',title:'The Game — The Documentary',url:'album-files-the-documentary.html',hub:'album-files.html',hubLabel:'Album Files Archive',image:'https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500',imageAlt:'The Game The Documentary album cover'}
   ]};
   function init(){fetch('homepage-latest.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('feed unavailable');return r.json()}).then(build).catch(function(){build(fallback)});}
