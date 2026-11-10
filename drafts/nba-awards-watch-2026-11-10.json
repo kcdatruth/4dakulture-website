@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "17/20 candidates have leaderboard-sourced season averages; three rookies (Mikel Brown Jr., Brayden Burries, Aday Mara) still require individual game-log checks. Injuries and previous rankings remain pending.",
+  "stats_status": "19 of 20 candidates have sourced points per game; 17 have full PPG/RPG/APG lines; Aday Mara requires a complete current season snapshot. Existing rookie Cameron Boozer scoring figure conflicts between sources (16.4 vs 16.2) and must be reconciled.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -203,12 +203,24 @@
     {
       "rank": 7,
       "name": "Mikel Brown Jr.",
-      "analysis": "Brown's placement recognizes the flashes of shot creation. Consistency and role clarity are the next checkpoints."
+      "analysis": "Brown's placement recognizes the flashes of shot creation. Consistency and role clarity are the next checkpoints.",
+      "team": "BKN",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 12.9
+      },
+      "stat_verification": "PPG and games played verified; RPG/APG not yet verified"
     },
     {
       "rank": 8,
       "name": "Brayden Burries",
-      "analysis": "Burries has the tools to contribute as a perimeter scorer. His shot selection and defensive discipline matter as much as his highlights."
+      "analysis": "Burries has the tools to contribute as a perimeter scorer. His shot selection and defensive discipline matter as much as his highlights.",
+      "team": "MIL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 10.5
+      },
+      "stat_verification": "PPG and games played verified; RPG/APG not yet verified"
     },
     {
       "rank": 9,
@@ -225,7 +237,9 @@
     {
       "rank": 10,
       "name": "Aday Mara",
-      "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification."
+      "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification.",
+      "team": "OKC",
+      "stat_verification": "Current team confirmed in RotoWire November 4 rookie impact index; full season line still pending"
     }
   ],
   "verified_nov9_spotlights": [
@@ -250,5 +264,9 @@
   "team_corrections": [
     "AJ Dybantsa — Washington Wizards",
     "Meleek Thomas — Cleveland Cavaliers"
+  ],
+  "stat_sources_additional": [
+    "https://rookieranks.com/nba/rookie-leaders",
+    "https://www.rotowire.com/basketball/article/2026-27-nba-rookie-rankings-impact-index-top-performers-145291"
   ]
 }
