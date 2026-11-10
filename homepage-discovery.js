@@ -4,7 +4,8 @@
     if(document.getElementById('fourdk-discovery-rail'))return;
     var links=Array.from(document.querySelectorAll('a[href]'));
     var nightcaps=links.map(function(a){var h=a.getAttribute('href')||'';var m=h.match(/(?:^|\/)nba-nightcap-(20\d{2}-\d{2}-\d{2})\.html(?:[?#].*)?$/);return m?{date:m[1],href:h}:null}).filter(Boolean).sort(function(a,b){return b.date.localeCompare(a.date)});
-    if(!nightcaps.some(function(x){return x.date==='2026-11-08'}))nightcaps.push({date:'2026-11-08',href:'nba-nightcap-2026-11-08.html'});nightcaps.sort(function(a,b){return b.date.localeCompare(a.date)});\n    var items=[];
+    if(!nightcaps.some(function(x){return x.date==='2026-11-08'}))nightcaps.push({date:'2026-11-08',href:'nba-nightcap-2026-11-08.html'});nightcaps.sort(function(a,b){return b.date.localeCompare(a.date)});
+    var items=[];
     if(nightcaps.length)items.push({label:'Latest linked Nightcap · '+nightcaps[0].date,href:nightcaps[0].href});
     items.push({label:'All NBA Nightcaps',href:'nba-nightcap-archive.html'});
     items.push({label:'NBA Rankings HQ',href:'nba-rankings-hq.html'});
