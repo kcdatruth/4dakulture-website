@@ -16,7 +16,9 @@
       "title": "4DK NBA Power Rankings",
       "url": "nba-power-rankings-2026-27.html",
       "hub": "nba-rankings-hq.html",
-      "hubLabel": "Rankings HQ"
+      "hubLabel": "Rankings HQ",
+      "image": "4dk-power-01-okc.jpeg",
+      "imageAlt": "Oklahoma City Thunder in the 4DK NBA Power Rankings"
     },
     {
       "id": "music",
@@ -24,7 +26,9 @@
       "title": "The Game — The Documentary",
       "url": "album-files-the-documentary.html",
       "hub": "album-files.html",
-      "hubLabel": "Album Files Archive"
+      "hubLabel": "Album Files Archive",
+      "image": "https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500",
+      "imageAlt": "The Game — The Documentary original album cover"
     }
   ]
 }
