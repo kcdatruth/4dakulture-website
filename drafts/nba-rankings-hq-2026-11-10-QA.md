@@ -32,4 +32,13 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 
 ## November 10 record reconciliation
 
-**PASS: 30/30** November 9 cutoff records match the Eastern and Western Conference standings; no discrepancies. Source: https://www.basketball-reference.com/boxscores/index.fcgi . The record check is independent of the prior 154–154 checksum.
+**REOPENED / PARTIAL:** Earlier 30/30 standings claim relied on a stale Basketball-Reference page. NBA official recap postgame records support participating teams; independent date-specific verification remains required for all others. The previous 30/30 claim is withdrawn.
+
+## November 10 follow-up: official NBA game log expansion and source correction
+
+- Added 25 dated NBA.com recap results from November 5–8 to the November 9 games already attached, linked per team as `recent_games_verified`.
+- These are partial histories, **not** complete last-five logs. No team currently has five results in the newly assembled official-recap subset; full five-game verification remains blocked.
+- **Source correction:** Basketball-Reference's November 9 box-score landing page was stale and showed pre-November-9 records for several teams. It must **not** be cited as evidence for all 30 final records. The November 9 NBA.com official recaps do establish the postgame records of participating teams. Reconfirm any nonparticipating teams using dated official results before final sign-off.
+- Source: https://www.nba.com/watch/list/collection/2026-27-game-recaps
+
+**Release gate remains HOLD.**
