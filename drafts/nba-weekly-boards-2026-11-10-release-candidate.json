@@ -1,0 +1,3121 @@
+{
+  "schema_version": "4dk.nba.weekly.v2",
+  "edition": "2026-11-10",
+  "week_label": "Week 4 / November 10, 2026",
+  "cutoff": "2026-11-09 23:59 ET",
+  "is_live": false,
+  "rankings_type": "4DK editorial power rankings, not official NBA standings",
+  "baseline": "2026-11-03 archived 4DK Power 30",
+  "teams": [
+    {
+      "rank": 1,
+      "previous_rank": 4,
+      "movement": 3,
+      "alias": "SAS",
+      "name": "San Antonio Spurs",
+      "conference": "West",
+      "division": "Southwest",
+      "record": "9-2",
+      "wins": 9,
+      "losses": 2,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "122-96"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "POR",
+          "home": false,
+          "result": "W",
+          "score": "125-103"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "124-109"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DAL",
+          "home": true,
+          "result": "W",
+          "score": "112-111"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "119-97"
+        }
+      ],
+      "last_five_record": "5-0",
+      "key_players": [
+        "Victor Wembanyama",
+        "Dylan Harper",
+        "De’Aaron Fox",
+        "Stephon Castle"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Dylan Harper 17 PTS, 8 AST; Victor Wembanyama 11 REB. Team: 117.6 PPG scored / 108.3 allowed; point differential +65.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-03-spurs.jpeg",
+      "headline": "San Antonio owns the top line in our editorial race because Victor Wembanyama gives the Spurs a defensive advantage that is difficult to reproduce.",
+      "analysis": "San Antonio owns the top line in our editorial race because Victor Wembanyama gives the Spurs a defensive advantage that is difficult to reproduce. His November 9 explosion against Phoenix—40 points and nine blocks—captures the full equation: elite offense at one end, a rewritten shot chart at the other. The Fox–Harper–Castle guard rotation matters because opponents cannot simply crowd the paint and assume the Spurs will run out of creation. The next question is how the supporting cast responds when Wembanyama is forced into early foul trouble or a slower half-court game.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-3",
+      "point_diff": 65
+    },
+    {
+      "rank": 2,
+      "previous_rank": 3,
+      "movement": 1,
+      "alias": "PHI",
+      "name": "Philadelphia 76ers",
+      "conference": "East",
+      "division": "Atlantic",
+      "record": "9-2",
+      "wins": 9,
+      "losses": 2,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "CHI",
+          "home": false,
+          "result": "W",
+          "score": "127-121"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CLE",
+          "home": false,
+          "result": "L",
+          "score": "95-119"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DET",
+          "home": false,
+          "result": "W",
+          "score": "112-106"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CHI",
+          "home": true,
+          "result": "W",
+          "score": "126-107"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "109-104"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "Tyrese Maxey",
+        "LeBron James",
+        "Jaylen Brown",
+        "Joel Embiid"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Tyrese Maxey 26 PTS, 11 AST; Jaylen Brown 11 REB. Team: 110.9 PPG scored / 105.1 allowed; point differential +46.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-04-sixers.jpeg",
+      "headline": "Philadelphia's 9–2 provisional mark puts the Sixers firmly in the No.",
+      "analysis": "Philadelphia's 9–2 provisional mark puts the Sixers firmly in the No. 1 conversation, but we are keeping them second because the full defensive identity is still coming into focus. Tyrese Maxey sets the pace while LeBron James and Jaylen Brown give the offense multiple ways to attack switches. Embiid's health and workload are the swing variables: the ceiling is enormous when he can anchor the interior without slowing the ball. We want to see the Sixers win possessions with connected defense, not simply outscore opponents through star power.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-4",
+      "point_diff": 46
+    },
+    {
+      "rank": 3,
+      "previous_rank": 10,
+      "movement": 7,
+      "alias": "OKC",
+      "name": "Oklahoma City Thunder",
+      "conference": "West",
+      "division": "Northwest",
+      "record": "8-2",
+      "wins": 8,
+      "losses": 2,
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "114-75"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "128-97"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "CLE",
+          "home": true,
+          "result": "W",
+          "score": "124-116"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CLE",
+          "home": false,
+          "result": "W",
+          "score": "117-112"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "98-119"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "Shai Gilgeous-Alexander",
+        "Ajay Mitchell",
+        "Isaiah Hartenstein",
+        "Chet Holmgren"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Shai Gilgeous-Alexander 43 PTS, 8 AST; Isaiah Hartenstein 14 REB. Team: 108.0 PPG scored / 107.7 allowed; point differential +2.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-01-okc.jpeg",
+      "headline": "The Thunder make the week's loudest climb among the contenders, from tenth to third.",
+      "analysis": "The Thunder make the week's loudest climb among the contenders, from tenth to third. Shai Gilgeous-Alexander's shot creation remains the stable center of the attack, and Chet Holmgren gives Oklahoma City a second axis of defensive pressure. The challenge is sustaining their intensity across a rotation that has dealt with injuries. A contender can survive missing talent for a night; maintaining its offensive structure through those absences is the test that separates a deep team from a merely talented one.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-1",
+      "point_diff": 2
+    },
+    {
+      "rank": 4,
+      "previous_rank": 7,
+      "movement": 3,
+      "alias": "LAL",
+      "name": "Los Angeles Lakers",
+      "conference": "West",
+      "division": "Pacific",
+      "record": "10-2",
+      "wins": 10,
+      "losses": 2,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "ATL",
+          "home": false,
+          "result": "W",
+          "score": "124-114"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "DET",
+          "home": false,
+          "result": "W",
+          "score": "121-116"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "POR",
+          "home": true,
+          "result": "W",
+          "score": "124-118"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "116-103"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIA",
+          "home": true,
+          "result": "W",
+          "score": "138-117"
+        }
+      ],
+      "last_five_record": "5-0",
+      "key_players": [
+        "Luka Dončić",
+        "Austin Reaves",
+        "Walker Kessler"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Luka Dončić 42 PTS, 13 AST; Walker Kessler 15 REB. Team: 122.5 PPG scored / 115.2 allowed; point differential +58.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-11-lakers.jpeg",
+      "headline": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player.",
+      "analysis": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player. His 32-point, 10-assist performance on November 9 demonstrated how he can punish both single coverage and the help defense that follows. Austin Reaves gives Los Angeles another live-ball decision-maker, while Walker Kessler's rim protection changes the defensive floor. We are keeping them fourth for now because the schedule's next wave will test whether the defense holds when Luka sits.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-11",
+      "point_diff": 58
+    },
+    {
+      "rank": 5,
+      "previous_rank": 6,
+      "movement": 1,
+      "alias": "BOS",
+      "name": "Boston Celtics",
+      "conference": "East",
+      "division": "Atlantic",
+      "record": "8-2",
+      "wins": 8,
+      "losses": 2,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIL",
+          "home": false,
+          "result": "W",
+          "score": "117-97"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "119-80"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "MIL",
+          "home": true,
+          "result": "W",
+          "score": "109-102"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "93-109"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "ORL",
+          "home": false,
+          "result": "W",
+          "score": "108-97"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "Jayson Tatum",
+        "Paul George",
+        "Payton Pritchard",
+        "Neemias Queta"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Jayson Tatum 19 PTS, 9 AST. Team: 115.0 PPG scored / 109.1 allowed; point differential +41.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-13-celtics.jpeg",
+      "headline": "Boston is still a top-five team in our eyes because Jayson Tatum gives it a reliable late-clock answer and the collective structure has survived major personnel changes.",
+      "analysis": "Boston is still a top-five team in our eyes because Jayson Tatum gives it a reliable late-clock answer and the collective structure has survived major personnel changes. Paul George adds a different rhythm to the offense, while Payton Pritchard's spacing and Neemias Queta's interior work help the Celtics win possessions that never make highlight reels. The issue to monitor is how consistently Boston creates easy paint touches; leaning on difficult jumpers is a fragile way to protect an elite record.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-13",
+      "point_diff": 41
+    },
+    {
+      "rank": 6,
+      "previous_rank": 9,
+      "movement": 3,
+      "alias": "GSW",
+      "name": "Golden State Warriors",
+      "conference": "West",
+      "division": "Pacific",
+      "record": "8-3",
+      "wins": 8,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "NOP",
+          "home": true,
+          "result": "W",
+          "score": "138-87"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ORL",
+          "home": true,
+          "result": "W",
+          "score": "126-119"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "MIA",
+          "home": true,
+          "result": "W",
+          "score": "120-100"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "PHX",
+          "home": true,
+          "result": "W",
+          "score": "116-113"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "LAC",
+          "home": true,
+          "result": "W",
+          "score": "124-112"
+        }
+      ],
+      "last_five_record": "5-0",
+      "key_players": [
+        "Stephen Curry",
+        "Yaxel Lendeborg",
+        "Brandin Podziemski",
+        "Draymond Green"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Stephen Curry 34 PTS, 7 AST; Charles Bassey 8 REB. Team: 117.5 PPG scored / 114.6 allowed; point differential +23.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-17-warriors.jpeg",
+      "headline": "Golden State's rise reflects more than Stephen Curry's scoring.",
+      "analysis": "Golden State's rise reflects more than Stephen Curry's scoring. His movement forces defenses into impossible choices, and rookie Yaxel Lendeborg has provided the kind of energetic secondary play that can turn those choices into efficient possessions. Brandin Podziemski and Draymond Green help the Warriors keep the ball moving and organize their defense. The concern is sustainability: opponents will test whether Golden State can finish defensive possessions and manufacture offense when Curry is denied clean looks.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-17",
+      "point_diff": 23
+    },
+    {
+      "rank": 7,
+      "previous_rank": 2,
+      "movement": -5,
+      "alias": "DET",
+      "name": "Detroit Pistons",
+      "conference": "East",
+      "division": "Central",
+      "record": "7-3",
+      "wins": 7,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "122-111"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "116-121"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "PHI",
+          "home": true,
+          "result": "L",
+          "score": "106-112"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "124-91"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "BKN",
+          "home": false,
+          "result": "W",
+          "score": "110-94"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Cade Cunningham",
+        "Paul Reed",
+        "Ausar Thompson",
+        "Jalen Duren"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Cade Cunningham 33 PTS; Ausar Thompson 6 REB. Team: 111.9 PPG scored / 100.3 allowed; point differential +81.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-10-pistons.jpeg",
+      "headline": "Detroit falls from second to seventh, but that should not be mistaken for a collapse in our evaluation.",
+      "analysis": "Detroit falls from second to seventh, but that should not be mistaken for a collapse in our evaluation. Cade Cunningham still drives the offense, Ausar Thompson supplies perimeter disruption, and Paul Reed's role has grown in the frontcourt. The concern is the physical burden of playing without a fully settled interior rotation. A team that built its identity on pressure and rebounding has to keep those advantages against opponents with size. Detroit can climb again quickly if it restores that consistency.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-10",
+      "point_diff": 81
+    },
+    {
+      "rank": 8,
+      "previous_rank": 1,
+      "movement": -7,
+      "alias": "HOU",
+      "name": "Houston Rockets",
+      "conference": "West",
+      "division": "Southwest",
+      "record": "8-3",
+      "wins": 8,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DEN",
+          "home": true,
+          "result": "W",
+          "score": "110-100"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "PHX",
+          "home": false,
+          "result": "L",
+          "score": "99-102"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "MIN",
+          "home": true,
+          "result": "L",
+          "score": "107-117"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "BOS",
+          "home": true,
+          "result": "W",
+          "score": "109-93"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "OKC",
+          "home": true,
+          "result": "W",
+          "score": "119-98"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Alperen Şengün",
+        "Kevin Durant",
+        "Amen Thompson",
+        "Fred VanVleet"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Alperen Şengün 26 PTS, 10 AST; Jabari Smith Jr. 10 REB. Team: 119.2 PPG scored / 106.4 allowed; point differential +103.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-07-rockets.jpeg",
+      "headline": "Houston's slide from first to eighth is about the strength of the field, not a loss of respect for its talent.",
+      "analysis": "Houston's slide from first to eighth is about the strength of the field, not a loss of respect for its talent. Alperen Şengün remains one of the most creative big-man hubs in basketball, and Kevin Durant supplies the half-court shot-making that prevents opponents from overloading the paint. Amen Thompson's athleticism raises the defensive ceiling. What we need from the Rockets is more dependable control of momentum: turnovers and transition defense can undo several minutes of excellent execution.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-7",
+      "point_diff": 103
+    },
+    {
+      "rank": 9,
+      "previous_rank": 11,
+      "movement": 2,
+      "alias": "MIN",
+      "name": "Minnesota Timberwolves",
+      "conference": "West",
+      "division": "Northwest",
+      "record": "8-3",
+      "wins": 8,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "115-100"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "NOP",
+          "home": false,
+          "result": "W",
+          "score": "115-109"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "HOU",
+          "home": false,
+          "result": "W",
+          "score": "117-107"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIL",
+          "home": true,
+          "result": "W",
+          "score": "112-100"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "111-121"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "LaMelo Ball",
+        "Ayo Dosunmu",
+        "Rudy Gobert",
+        "Anthony Edwards"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: LaMelo Ball 34 PTS; Ayo Dosunmu 12 REB, 8 AST. Team: 119.0 PPG scored / 107.6 allowed; point differential +91.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-05-timberwolves.jpeg",
+      "headline": "Minnesota's record demands top-ten respect, especially given the pressure created by Anthony Edwards's absence.",
+      "analysis": "Minnesota's record demands top-ten respect, especially given the pressure created by Anthony Edwards's absence. LaMelo Ball brings an improvisational element to the offense, while Rudy Gobert gives the team a defensive anchor around which to build its coverage. The Wolves must find dependable half-court possessions when opponents take away the first action. This stretch is a real test of organizational depth: wins collected without a primary star carry weight, but the defensive details must remain sharp.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-5",
+      "point_diff": 91
+    },
+    {
+      "rank": 10,
+      "previous_rank": 17,
+      "movement": 7,
+      "alias": "NYK",
+      "name": "New York Knicks",
+      "conference": "East",
+      "division": "Atlantic",
+      "record": "5-4",
+      "wins": 5,
+      "losses": 4,
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "CLE",
+          "home": false,
+          "result": "W",
+          "score": "109-97"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "CHI",
+          "home": true,
+          "result": "W",
+          "score": "135-105"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "103-90"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "PHI",
+          "home": false,
+          "result": "L",
+          "score": "93-98"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "CHI",
+          "home": false,
+          "result": "W",
+          "score": "133-127"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "Jalen Brunson",
+        "Karl-Anthony Towns",
+        "Josh Hart",
+        "OG Anunoby"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Landry Shamet 22 PTS; Karl-Anthony Towns 16 REB. Team: 106.4 PPG scored / 105.1 allowed; point differential +9.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-02-knicks.jpeg",
+      "headline": "New York makes a meaningful move upward because its core still has the tools to win ugly games.",
+      "analysis": "New York makes a meaningful move upward because its core still has the tools to win ugly games. Jalen Brunson can control tempo late, Karl-Anthony Towns bends matchups with his shooting, and OG Anunoby gives the Knicks defensive versatility on the wing. The question is how well the pieces function together when the game speeds up. We need more than isolated scoring bursts; the next step is creating consistent advantages early in possessions and protecting the defensive glass.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-2",
+      "point_diff": 9
+    },
+    {
+      "rank": 11,
+      "previous_rank": 16,
+      "movement": 5,
+      "alias": "DEN",
+      "name": "Denver Nuggets",
+      "conference": "West",
+      "division": "Northwest",
+      "record": "5-4",
+      "wins": 5,
+      "losses": 4,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "100-110"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "114-102"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "TOR",
+          "home": true,
+          "result": "W",
+          "score": "128-109"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "110-118"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "127-120"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Nikola Jokić",
+        "Jamal Murray",
+        "Cam Johnson",
+        "Trevon Brazile"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Jamal Murray 35 PTS; Nikola Jokić 9 REB, 8 AST. Team: 113.3 PPG scored / 115.7 allowed; point differential -14.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-09-nuggets.jpeg",
+      "headline": "Denver is moving up, but the Nuggets still have work to do to match the expectations created by Nikola Jokić's all-around brilliance.",
+      "analysis": "Denver is moving up, but the Nuggets still have work to do to match the expectations created by Nikola Jokić's all-around brilliance. Jamal Murray's shot creation and the spacing around the big man are crucial when defenses refuse to send a second defender. The challenge is reducing the possessions where Jokić has to solve everything from the top of the floor. Denver's ceiling remains high; a cleaner defensive effort and steadier support scoring are what will push it toward the top ten.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-9",
+      "point_diff": -14
+    },
+    {
+      "rank": 12,
+      "previous_rank": 5,
+      "movement": -7,
+      "alias": "MEM",
+      "name": "Memphis Grizzlies",
+      "conference": "West",
+      "division": "Southwest",
+      "record": "7-3",
+      "wins": 7,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "118-102"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "97-128"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "IND",
+          "home": true,
+          "result": "L",
+          "score": "103-107"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "NOP",
+          "home": true,
+          "result": "L",
+          "score": "134-135"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "SAC",
+          "home": true,
+          "result": "W",
+          "score": "136-105"
+        }
+      ],
+      "last_five_record": "2-3",
+      "key_players": [
+        "Ty Jerome",
+        "Cameron Boozer",
+        "Zach Edey",
+        "Cedric Coward"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Ty Jerome 40 PTS; Zach Edey 9 REB. Team: 123.0 PPG scored / 110.1 allowed; point differential +90.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-27-grizzlies.jpeg",
+      "headline": "Memphis remains a genuine early-season story even after slipping in our rankings.",
+      "analysis": "Memphis remains a genuine early-season story even after slipping in our rankings. Ty Jerome has become a central source of scoring and organization, while Cameron Boozer's versatility gives the frontcourt an unusual passing dimension for a rookie. Zach Edey's size creates another problem for opponents near the basket. The Grizzlies need to show they can dictate the terms of games against disciplined defenses rather than relying on their young talent to win every broken possession.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-27",
+      "point_diff": 90
+    },
+    {
+      "rank": 13,
+      "previous_rank": 8,
+      "movement": -5,
+      "alias": "POR",
+      "name": "Portland Trail Blazers",
+      "conference": "West",
+      "division": "Northwest",
+      "record": "6-3",
+      "wins": 6,
+      "losses": 3,
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "103-125"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "118-124"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "132-119"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DEN",
+          "home": false,
+          "result": "W",
+          "score": "118-110"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "UTA",
+          "home": false,
+          "result": "W",
+          "score": "112-90"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Deni Avdija",
+        "Damian Lillard",
+        "Donovan Clingan",
+        "Jrue Holiday"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Deni Avdija 28 PTS; Donovan Clingan 18 REB; Jrue Holiday 10 AST. Team: 120.2 PPG scored / 109.3 allowed; point differential +65.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-18-blazers.jpeg",
+      "headline": "Portland's start deserves serious consideration because the Blazers have multiple ways to generate offense.",
+      "analysis": "Portland's start deserves serious consideration because the Blazers have multiple ways to generate offense. Deni Avdija can attack mismatches, Damian Lillard changes the geometry of the floor, and Donovan Clingan gives the defense a clear interior presence. Jrue Holiday's experience matters when the game becomes a possession-by-possession contest. The next challenge is consistency away from home and against teams that can match their physicality without sacrificing perimeter coverage.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-18",
+      "point_diff": 65
+    },
+    {
+      "rank": 14,
+      "previous_rank": 15,
+      "movement": 1,
+      "alias": "DAL",
+      "name": "Dallas Mavericks",
+      "conference": "West",
+      "division": "Southwest",
+      "record": "7-4",
+      "wins": 7,
+      "losses": 4,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "125-122"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "130-93"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "112-100"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "111-112"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "SAC",
+          "home": true,
+          "result": "L",
+          "score": "100-115"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Cooper Flagg",
+        "Kyrie Irving",
+        "Daniel Gafford",
+        "P.J. Washington"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Walter Clayton Jr. 20 PTS; Daniel Gafford 7 REB. Team: 112.3 PPG scored / 112.3 allowed; point differential +0.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-19-mavericks.jpeg",
+      "headline": "Dallas's climb is driven by the rapid emergence of Cooper Flagg as a player who can influence the game in several phases.",
+      "analysis": "Dallas's climb is driven by the rapid emergence of Cooper Flagg as a player who can influence the game in several phases. His 43-point outing against Indiana on November 9 is the kind of performance that changes the expectations surrounding a young star. Kyrie Irving's creation and the Mavericks' frontcourt size can make Dallas difficult to scheme against. We still need to see whether the defensive execution and offensive decision-making remain stable when Flagg is not scoring at that level.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-19",
+      "point_diff": 0
+    },
+    {
+      "rank": 15,
+      "previous_rank": 18,
+      "movement": 3,
+      "alias": "ATL",
+      "name": "Atlanta Hawks",
+      "conference": "East",
+      "division": "Southeast",
+      "record": "7-5",
+      "wins": 7,
+      "losses": 5,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "114-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "124-121"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "139-132"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "WAS",
+          "home": false,
+          "result": "W",
+          "score": "120-105"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "108-104"
+        }
+      ],
+      "last_five_record": "4-1",
+      "key_players": [
+        "Jalen Johnson",
+        "Nickeil Alexander-Walker",
+        "CJ McCollum",
+        "Onyeka Okongwu"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Nickeil Alexander-Walker 34 PTS; CJ McCollum 12 AST. Team: 115.2 PPG scored / 114.0 allowed; point differential +10.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-16-hawks.jpeg",
+      "headline": "Atlanta's 7–5 provisional start has the Hawks in the middle of a crowded race, but Jalen Johnson gives them a compelling two-way foundation.",
+      "analysis": "Atlanta's 7–5 provisional start has the Hawks in the middle of a crowded race, but Jalen Johnson gives them a compelling two-way foundation. Nickeil Alexander-Walker's perimeter activity and CJ McCollum's shot-making offer different ways to survive stretches when the offense stalls. The issue is consistency of defensive resistance: opponents should not be able to reach their preferred spots without a second effort. Atlanta's next move depends on turning competitive quarters into complete games.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-16",
+      "point_diff": 10
+    },
+    {
+      "rank": 16,
+      "previous_rank": 13,
+      "movement": -3,
+      "alias": "CLE",
+      "name": "Cleveland Cavaliers",
+      "conference": "East",
+      "division": "Central",
+      "record": "5-6",
+      "wins": 5,
+      "losses": 6,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CHA",
+          "home": false,
+          "result": "L",
+          "score": "112-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "NYK",
+          "home": true,
+          "result": "L",
+          "score": "97-109"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "PHI",
+          "home": true,
+          "result": "W",
+          "score": "119-95"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "OKC",
+          "home": false,
+          "result": "L",
+          "score": "116-124"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "112-117"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Donovan Mitchell",
+        "Evan Mobley",
+        "James Harden",
+        "Meleek Thomas"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Meleek Thomas 17 PTS; Donovan Mitchell 11 AST. Team: 119.7 PPG scored / 116.1 allowed; point differential +25.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-08-cavaliers.jpeg",
+      "headline": "Cleveland has more talent than its early record suggests.",
+      "analysis": "Cleveland has more talent than its early record suggests. Donovan Mitchell can carry a scoring run, Evan Mobley changes the game at the rim, and James Harden gives the offense another organizer. The problem is turning those individual strengths into a reliable collective identity. When the Cavaliers defend without fouling and move the ball before the defense loads up, the ceiling looks much higher than sixteenth. Until those habits hold for entire games, the ranking stays cautious.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-8",
+      "point_diff": 25
+    },
+    {
+      "rank": 17,
+      "previous_rank": 12,
+      "movement": -5,
+      "alias": "TOR",
+      "name": "Toronto Raptors",
+      "conference": "East",
+      "division": "Atlantic",
+      "record": "5-5",
+      "wins": 5,
+      "losses": 5,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "MEM",
+          "home": true,
+          "result": "L",
+          "score": "102-118"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIL",
+          "home": false,
+          "result": "W",
+          "score": "121-107"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DEN",
+          "home": false,
+          "result": "L",
+          "score": "109-128"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "LAC",
+          "home": false,
+          "result": "W",
+          "score": "125-118"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "125-131"
+        }
+      ],
+      "last_five_record": "2-3",
+      "key_players": [
+        "Scottie Barnes",
+        "Immanuel Quickley",
+        "RJ Barrett",
+        "Kawhi Leonard"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Immanuel Quickley 27 PTS; Scottie Barnes 15 REB, 8 AST. Team: 119.1 PPG scored / 111.4 allowed; point differential +54.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-12-raptors.jpeg",
+      "headline": "Toronto has the size and versatility to trouble better-ranked teams.",
+      "analysis": "Toronto has the size and versatility to trouble better-ranked teams. Scottie Barnes is a natural connector, Kawhi Leonard provides another potential half-court option when available, and RJ Barrett can create pressure at the rim. The Raptors need better control of the margins: defensive rebounding, turnovers, and shot selection will decide whether their balanced roster translates into a winning streak. We are watching the health and continuity of the wing rotation as closely as the final score.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-12",
+      "point_diff": 54
+    },
+    {
+      "rank": 18,
+      "previous_rank": 21,
+      "movement": 3,
+      "alias": "MIA",
+      "name": "Miami Heat",
+      "conference": "East",
+      "division": "Southeast",
+      "record": "4-6",
+      "wins": 4,
+      "losses": 6,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "114-108"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "100-120"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "LAC",
+          "home": false,
+          "result": "W",
+          "score": "117-116"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "117-138"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "145-125"
+        }
+      ],
+      "last_five_record": "3-2",
+      "key_players": [
+        "Giannis Antetokounmpo",
+        "Bam Adebayo",
+        "Davion Mitchell"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Giannis Antetokounmpo 30 PTS, 12 REB. Team: 118.1 PPG scored / 123.9 allowed; point differential -40.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-06-heat.jpeg",
+      "headline": "Miami's record is underwhelming relative to the frontcourt talent.",
+      "analysis": "Miami's record is underwhelming relative to the frontcourt talent. Giannis Antetokounmpo and Bam Adebayo can make opponents think twice before entering the paint, but that defensive promise has to translate into consistent execution and cleaner offensive spacing. The Heat need reliable guard play to keep the floor organized and avoid asking their bigs to manufacture every advantage. The upside is clear; the current results have not yet earned a higher place.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-6",
+      "point_diff": -40
+    },
+    {
+      "rank": 19,
+      "previous_rank": 24,
+      "movement": 5,
+      "alias": "PHX",
+      "name": "Phoenix Suns",
+      "conference": "West",
+      "division": "Pacific",
+      "record": "3-6",
+      "wins": 3,
+      "losses": 6,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "96-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "HOU",
+          "home": true,
+          "result": "W",
+          "score": "102-99"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "ORL",
+          "home": true,
+          "result": "W",
+          "score": "117-104"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "119-132"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "113-116"
+        }
+      ],
+      "last_five_record": "2-3",
+      "key_players": [
+        "Devin Booker",
+        "Jalen Green",
+        "Dillon Brooks"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Devin Booker 26 PTS; Jalen Green 8 AST. Team: 112.2 PPG scored / 122.8 allowed; point differential -53.",
+      "injury_watch": "Official Phoenix injury submission pending as of November 10, 2:15 PM ET. Secondary sources report Jordan Goodwin and Mark Williams OUT; NOT NBA-confirmed.",
+      "image": "4dk-power-20-suns.jpeg",
+      "headline": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed.",
+      "analysis": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed. Dillon Brooks supplies edge and defensive competitiveness. The problem is that a few difficult makes do not compensate for breakdowns on the other end. The Suns need a more stable possession-to-possession defensive approach and better shot quality when the first option is taken away. That is the route out of the bottom third.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-20",
+      "point_diff": -53
+    },
+    {
+      "rank": 20,
+      "previous_rank": 14,
+      "movement": -6,
+      "alias": "WAS",
+      "name": "Washington Wizards",
+      "conference": "East",
+      "division": "Southeast",
+      "record": "4-7",
+      "wins": 4,
+      "losses": 7,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DET",
+          "home": false,
+          "result": "L",
+          "score": "111-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "OKC",
+          "home": false,
+          "result": "L",
+          "score": "75-114"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "ATL",
+          "home": false,
+          "result": "L",
+          "score": "132-139"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "ATL",
+          "home": true,
+          "result": "L",
+          "score": "105-120"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "ORL",
+          "home": false,
+          "result": "W",
+          "score": "103-94"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Anthony Davis",
+        "Trae Young",
+        "AJ Dybantsa",
+        "Kyshawn George"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Anthony Davis 27 PTS, 9 REB; Trae Young 9 AST. Team: 109.4 PPG scored / 107.4 allowed; point differential +14.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-21-wizards.jpeg",
+      "headline": "Washington has intriguing pieces but has not yet converted them into a reliable winning identity.",
+      "analysis": "Washington has intriguing pieces but has not yet converted them into a reliable winning identity. Trae Young's playmaking and Anthony Davis's interior presence give the Wizards obvious offensive and defensive building blocks, while AJ Dybantsa offers long-term upside. The question is fit and continuity: who sets the pace, who finishes possessions, and how does the team respond when the first action is stopped? Those answers matter more than any one scoring explosion.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-21",
+      "point_diff": 14
+    },
+    {
+      "rank": 21,
+      "previous_rank": 20,
+      "movement": -1,
+      "alias": "ORL",
+      "name": "Orlando Magic",
+      "conference": "East",
+      "division": "Southeast",
+      "record": "2-7",
+      "wins": 2,
+      "losses": 7,
+      "last_five": [
+        {
+          "date": "2026-11-07",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "119-126"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "PHX",
+          "home": false,
+          "result": "L",
+          "score": "104-117"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "WAS",
+          "home": true,
+          "result": "L",
+          "score": "94-103"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "BOS",
+          "home": true,
+          "result": "L",
+          "score": "97-108"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "121-114"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Franz Wagner",
+        "Desmond Bane",
+        "Paolo Banchero",
+        "Wendell Carter Jr."
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Franz Wagner 24 PTS, 6 AST; Wendell Carter Jr. 9 REB. Team: 105.7 PPG scored / 114.7 allowed; point differential -63.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-14-magic.jpeg",
+      "headline": "Orlando's early record is a warning sign, not a verdict on its talent.",
+      "analysis": "Orlando's early record is a warning sign, not a verdict on its talent. Franz Wagner can generate offense in multiple ways, Desmond Bane supplies shooting gravity, and Paolo Banchero's availability is a major variable. The Magic need to avoid long stretches where the offense becomes predictable and the defense cannot generate enough stops to compensate. We want to see a healthy rotation establish clear roles before projecting a turnaround.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-14",
+      "point_diff": -63
+    },
+    {
+      "rank": 22,
+      "previous_rank": 22,
+      "movement": 0,
+      "alias": "CHA",
+      "name": "Charlotte Hornets",
+      "conference": "East",
+      "division": "Southeast",
+      "record": "4-7",
+      "wins": 4,
+      "losses": 7,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CLE",
+          "home": true,
+          "result": "W",
+          "score": "124-112"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "BOS",
+          "home": true,
+          "result": "L",
+          "score": "80-119"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "BKN",
+          "home": false,
+          "result": "L",
+          "score": "104-114"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DET",
+          "home": true,
+          "result": "L",
+          "score": "91-124"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "PHI",
+          "home": true,
+          "result": "L",
+          "score": "104-109"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Brandon Miller",
+        "Coby White",
+        "Moussa Diabaté"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Brandon Miller 17 PTS; Moussa Diabaté 9 REB. Team: 97.4 PPG scored / 108.6 allowed; point differential -90.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-25-hornets.jpeg",
+      "headline": "Charlotte is holding steady at twenty-second because the young core continues to offer promise without consistent results.",
+      "analysis": "Charlotte is holding steady at twenty-second because the young core continues to offer promise without consistent results. Brandon Miller's scoring versatility and Coby White's guard play can make the offense dangerous, but the Hornets have to build a more dependable defensive floor. Moussa Diabaté's energy can help on the glass. The next stage is learning to close tight games without relying on difficult individual shots every trip.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-25",
+      "point_diff": -90
+    },
+    {
+      "rank": 23,
+      "previous_rank": 23,
+      "movement": 0,
+      "alias": "IND",
+      "name": "Indiana Pacers",
+      "conference": "East",
+      "division": "Central",
+      "record": "3-8",
+      "wins": 3,
+      "losses": 8,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "122-125"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "DEN",
+          "home": true,
+          "result": "L",
+          "score": "102-114"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "107-103"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "ATL",
+          "home": true,
+          "result": "L",
+          "score": "104-108"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "BKN",
+          "home": true,
+          "result": "L",
+          "score": "90-98"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Tyrese Haliburton",
+        "Pascal Siakam",
+        "Jay Huff"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Jay Huff 22 PTS, 8 REB; Braden Smith 10 AST. Team: 111.8 PPG scored / 115.6 allowed; point differential -31.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-15-pacers.jpeg",
+      "headline": "Indiana's start has been difficult, but the Pacers still have recognizable strengths.",
+      "analysis": "Indiana's start has been difficult, but the Pacers still have recognizable strengths. Tyrese Haliburton's passing can create high-quality looks, Pascal Siakam provides a dependable mismatch option, and the frontcourt must finish possessions against more physical opponents. The concern is whether the defense can hold long enough for the offense to find its rhythm. A few strong offensive stretches will not change this ranking without sustained resistance at the other end.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-15",
+      "point_diff": -31
+    },
+    {
+      "rank": 24,
+      "previous_rank": 29,
+      "movement": 5,
+      "alias": "LAC",
+      "name": "LA Clippers",
+      "conference": "West",
+      "division": "Pacific",
+      "record": "2-7",
+      "wins": 2,
+      "losses": 7,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "NOP",
+          "home": true,
+          "result": "W",
+          "score": "139-123"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "MIA",
+          "home": true,
+          "result": "L",
+          "score": "116-117"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "TOR",
+          "home": true,
+          "result": "L",
+          "score": "118-125"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "112-124"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "MIN",
+          "home": false,
+          "result": "L",
+          "score": "101-127"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Darius Garland",
+        "Kobe Sanders",
+        "Keaton Wagler",
+        "Brook Lopez"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Kobe Sanders 26 PTS; Darius Garland 8 AST. Team: 108.1 PPG scored / 115.4 allowed; point differential -51.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-24-clippers.jpeg",
+      "headline": "The Clippers rise from twenty-ninth to twenty-fourth in our editorial order, but the provisional record still reflects a difficult opening stretch.",
+      "analysis": "The Clippers rise from twenty-ninth to twenty-fourth in our editorial order, but the provisional record still reflects a difficult opening stretch. Darius Garland can organize the attack, and the younger perimeter players need room to develop without being asked to rescue every possession. Brook Lopez can provide structure near the rim. The focus should be on a repeatable identity: better shot selection, fewer empty trips, and consistent effort on the defensive glass.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-24",
+      "point_diff": -51
+    },
+    {
+      "rank": 25,
+      "previous_rank": 19,
+      "movement": -6,
+      "alias": "NOP",
+      "name": "New Orleans Pelicans",
+      "conference": "West",
+      "division": "Southwest",
+      "record": "4-7",
+      "wins": 4,
+      "losses": 7,
+      "last_five": [
+        {
+          "date": "2026-11-09",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "87-138"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAC",
+          "home": false,
+          "result": "L",
+          "score": "123-139"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIN",
+          "home": true,
+          "result": "L",
+          "score": "109-115"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "120-113"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "135-134"
+        }
+      ],
+      "last_five_record": "2-3",
+      "key_players": [
+        "Zion Williamson",
+        "Jeremiah Fears",
+        "Karlo Matković",
+        "Derik Queen"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Karlo Matković 25 PTS; Zion Williamson 11 REB. Team: 121.9 PPG scored / 120.1 allowed; point differential +12.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-26-pelicans.jpeg",
+      "headline": "New Orleans has enough talent to be more competitive than its ranking suggests.",
+      "analysis": "New Orleans has enough talent to be more competitive than its ranking suggests. Zion Williamson can create paint pressure that few teams can match, while Jeremiah Fears and Derik Queen offer developing complementary skills. The Pelicans need to protect the ball and turn Zion's drives into reliable secondary offense. The bigger concern is whether the defense can string together stops when the pace slows. Until that happens, occasional statement wins remain isolated.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-26",
+      "point_diff": 12
+    },
+    {
+      "rank": 26,
+      "previous_rank": 30,
+      "movement": 4,
+      "alias": "BKN",
+      "name": "Brooklyn Nets",
+      "conference": "East",
+      "division": "Atlantic",
+      "record": "2-8",
+      "wins": 2,
+      "losses": 8,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "93-130"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ATL",
+          "home": false,
+          "result": "L",
+          "score": "121-124"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "CHA",
+          "home": true,
+          "result": "W",
+          "score": "114-104"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "NYK",
+          "home": false,
+          "result": "L",
+          "score": "90-103"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "98-90"
+        }
+      ],
+      "last_five_record": "2-3",
+      "key_players": [
+        "Julius Randle",
+        "Michael Porter Jr.",
+        "Mikel Brown Jr.",
+        "Nolan Traoré"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Julius Randle 21 PTS, 11 REB. Team: 105.6 PPG scored / 114.1 allowed; point differential -60.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-30-nets.jpeg",
+      "headline": "Brooklyn's rise from thirtieth to twenty-sixth is modest but worth noting.",
+      "analysis": "Brooklyn's rise from thirtieth to twenty-sixth is modest but worth noting. Julius Randle and Michael Porter Jr. give the Nets proven scoring options, while Mikel Brown Jr. and Nolan Traoré represent the developmental side of the roster. The question is how to balance those priorities without losing structure. We want to see the young guards create quality possessions and the veteran forwards commit to the defensive work required to make those possessions matter.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-30",
+      "point_diff": -60
+    },
+    {
+      "rank": 27,
+      "previous_rank": 27,
+      "movement": 0,
+      "alias": "CHI",
+      "name": "Chicago Bulls",
+      "conference": "East",
+      "division": "Central",
+      "record": "1-8",
+      "wins": 1,
+      "losses": 8,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "PHI",
+          "home": true,
+          "result": "L",
+          "score": "121-127"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "NYK",
+          "home": false,
+          "result": "L",
+          "score": "105-135"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "PHI",
+          "home": false,
+          "result": "L",
+          "score": "107-126"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "BOS",
+          "home": false,
+          "result": "L",
+          "score": "111-125"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "NYK",
+          "home": true,
+          "result": "L",
+          "score": "127-133"
+        }
+      ],
+      "last_five_record": "0-5",
+      "key_players": [
+        "Caleb Wilson",
+        "Josh Giddey",
+        "Matas Buzelis",
+        "Jalen Smith"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Caleb Wilson 24 PTS; Josh Giddey 10 AST. Team: 112.6 PPG scored / 128.9 allowed; point differential -114.",
+      "injury_watch": "No November 10 game; game-day injury designation not applicable.",
+      "image": "4dk-power-22-bulls.jpeg",
+      "headline": "Chicago's difficult start should not obscure Caleb Wilson's potential, but the Bulls cannot ask a rookie to fix every structural problem.",
+      "analysis": "Chicago's difficult start should not obscure Caleb Wilson's potential, but the Bulls cannot ask a rookie to fix every structural problem. Josh Giddey can push the ball and find cutters, while Matas Buzelis offers length and scoring upside. The team needs better spacing and a clearer defensive identity. Player development is important, but so is establishing habits that travel: communicating through screens, boxing out, and protecting the ball.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-22",
+      "point_diff": -114
+    },
+    {
+      "rank": 28,
+      "previous_rank": 26,
+      "movement": -2,
+      "alias": "UTA",
+      "name": "Utah Jazz",
+      "conference": "West",
+      "division": "Northwest",
+      "record": "1-9",
+      "wins": 1,
+      "losses": 9,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIN",
+          "home": false,
+          "result": "L",
+          "score": "100-115"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "100-112"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "NOP",
+          "home": false,
+          "result": "L",
+          "score": "113-120"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "97-119"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "90-112"
+        }
+      ],
+      "last_five_record": "0-5",
+      "key_players": [
+        "Lauri Markkanen",
+        "Keyonte George",
+        "Darryn Peterson",
+        "Jaren Jackson Jr."
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Lauri Markkanen 22 PTS; Darryn Peterson 6 AST. Team: 107.0 PPG scored / 118.9 allowed; point differential -83.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-23-jazz.jpeg",
+      "headline": "Utah has struggled to turn individual talent into results.",
+      "analysis": "Utah has struggled to turn individual talent into results. Lauri Markkanen can stretch the floor, Keyonte George provides creation, and Darryn Peterson is part of the longer-term development story. Jaren Jackson Jr. could alter the defensive ceiling when healthy, but his status must be verified before we treat that as an immediate advantage. The Jazz need more disciplined transition defense and a more reliable way to finish possessions.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-23",
+      "point_diff": -83
+    },
+    {
+      "rank": 29,
+      "previous_rank": 25,
+      "movement": -4,
+      "alias": "SAC",
+      "name": "Sacramento Kings",
+      "conference": "West",
+      "division": "Pacific",
+      "record": "1-9",
+      "wins": 1,
+      "losses": 9,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIA",
+          "home": true,
+          "result": "L",
+          "score": "108-114"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "109-124"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "103-116"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DAL",
+          "home": false,
+          "result": "W",
+          "score": "115-100"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "MEM",
+          "home": false,
+          "result": "L",
+          "score": "105-136"
+        }
+      ],
+      "last_five_record": "1-4",
+      "key_players": [
+        "Darius Acuff Jr.",
+        "Domantas Sabonis",
+        "Zach LaVine",
+        "Malik Monk"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Darius Acuff Jr. 25 PTS; Malik Monk 7 AST. Team: 110.1 PPG scored / 124.3 allowed; point differential -99.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-28-kings.jpeg",
+      "headline": "Sacramento's record is the headline, but Darius Acuff Jr.'s development remains one of the most important stories on the roster.",
+      "analysis": "Sacramento's record is the headline, but Darius Acuff Jr.'s development remains one of the most important stories on the roster. Domantas Sabonis can facilitate from the elbows, while Zach LaVine and Malik Monk supply perimeter scoring. The Kings need to turn those individual abilities into connected offense rather than a series of isolated possessions. The defense must also give the offense a chance by avoiding easy paint concessions.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-28",
+      "point_diff": -99
+    },
+    {
+      "rank": 30,
+      "previous_rank": 28,
+      "movement": -2,
+      "alias": "MIL",
+      "name": "Milwaukee Bucks",
+      "conference": "East",
+      "division": "Central",
+      "record": "1-9",
+      "wins": 1,
+      "losses": 9,
+      "last_five": [
+        {
+          "date": "2026-11-08",
+          "opponent": "BOS",
+          "home": true,
+          "result": "L",
+          "score": "97-117"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "TOR",
+          "home": true,
+          "result": "L",
+          "score": "107-121"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "BOS",
+          "home": false,
+          "result": "L",
+          "score": "102-109"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIN",
+          "home": false,
+          "result": "L",
+          "score": "100-112"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "CLE",
+          "home": true,
+          "result": "L",
+          "score": "111-136"
+        }
+      ],
+      "last_five_record": "0-5",
+      "key_players": [
+        "Tyler Herro",
+        "Kel’el Ware",
+        "Brayden Burries"
+      ],
+      "stat_note": "Nov. 2 box-score leaders: Tyler Herro 21 PTS; Kel’el Ware 9 REB. Team: 111.1 PPG scored / 124.1 allowed; point differential -91.",
+      "injury_watch": "Dated November 10 official injury-report snapshot; statuses may change.",
+      "image": "4dk-power-29-bucks.jpeg",
+      "headline": "Milwaukee sits at the bottom of our board because the early results have not supported a stronger argument.",
+      "analysis": "Milwaukee sits at the bottom of our board because the early results have not supported a stronger argument. Tyler Herro can create offense and Kel'el Ware offers an interior presence, but the Bucks need far better cohesion on both ends. Brayden Burries' development is worth following, though young players should not be forced into unrealistic expectations. A meaningful rise begins with defensive communication, rebounding, and a clearer hierarchy of offensive decisions.",
+      "outlook": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
+      "preseason_essay_url": "nba-power-rankings-2026-27.html#rank-29",
+      "point_diff": -91
+    }
+  ],
+  "mvp_watch": [
+    {
+      "rank": 1,
+      "name": "Luka Dončić",
+      "analysis": "The league's most explosive scoring engine is still our standard. His 32-point, 10-assist outing against Atlanta underlined how his playmaking survives even when the jumper is not automatic.",
+      "team": "LAL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 39.3,
+        "rpg": 7.8,
+        "apg": 7.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 1,
+      "movement": 0,
+      "stat_line": "39.3 PPG · 7.8 RPG · 7.9 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 2,
+      "name": "Victor Wembanyama",
+      "analysis": "The strongest two-way counterargument to Luka: 40 points and nine blocks against Phoenix, changing both the scoreboard and the shots opponents dare attempt.",
+      "team": "SAS",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 30.1,
+        "rpg": 11.9,
+        "apg": 3
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 2,
+      "movement": 0,
+      "stat_line": "30.1 PPG · 11.9 RPG · 3 APG · 11 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 3,
+      "name": "Shai Gilgeous-Alexander",
+      "analysis": "His control of Oklahoma City's offense and ability to manufacture efficient looks keep him in the top tier. The Thunder's team success strengthens the case.",
+      "team": "OKC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 29.9,
+        "rpg": 4,
+        "apg": 4.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 5,
+      "movement": 2,
+      "stat_line": "29.9 PPG · 4 RPG · 4.9 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 4,
+      "name": "Jayson Tatum",
+      "analysis": "Tatum's position reflects his established value as a primary creator and two-way wing. We need to weigh current availability and team results without inventing a stat line.",
+      "team": "BOS",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 27.1,
+        "rpg": 6,
+        "apg": 7.8
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 6,
+      "movement": 2,
+      "stat_line": "27.1 PPG · 6 RPG · 7.8 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 5,
+      "name": "Stephen Curry",
+      "analysis": "Golden State's offense still bends around his shooting gravity. His impact goes beyond points: defenses compromise their shape simply to deny him touches.",
+      "team": "GSW",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 30.6,
+        "rpg": 4.2,
+        "apg": 4.3
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 9,
+      "movement": 4,
+      "stat_line": "30.6 PPG · 4.2 RPG · 4.3 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 6,
+      "name": "Cade Cunningham",
+      "analysis": "Detroit's rise gives Cade a compelling leadership case. The test is whether his creation remains steady when opponents force the ball out of his hands.",
+      "team": "DET",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 22.3,
+        "rpg": 5.2,
+        "apg": 7.6
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 4,
+      "movement": -2,
+      "stat_line": "22.3 PPG · 5.2 RPG · 7.6 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 7,
+      "name": "Tyrese Maxey",
+      "analysis": "Philadelphia's pace and offensive organization run through Maxey. His speed turns defensive hesitation into immediate pressure on the rim.",
+      "team": "PHI",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 26.9,
+        "rpg": 3.7,
+        "apg": 5.5
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 3,
+      "movement": -4,
+      "stat_line": "26.9 PPG · 3.7 RPG · 5.5 APG · 11 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 8,
+      "name": "Nikola Jokić",
+      "analysis": "Denver's fulcrum remains the standard for decision-making bigs. We will distinguish his all-around impact from the Nuggets' early record.",
+      "team": "DEN",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 23.1,
+        "rpg": 10.8,
+        "apg": 9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW",
+      "stat_line": "23.1 PPG · 10.8 RPG · 9 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 9,
+      "name": "Alperen Şengün",
+      "analysis": "Houston's inside-out creation gives the Rockets a second offensive language. His passing from the middle of the floor unlocks the surrounding talent.",
+      "team": "HOU",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 21.3,
+        "rpg": 9.1,
+        "apg": 7.8
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 8,
+      "movement": -1,
+      "stat_line": "21.3 PPG · 9.1 RPG · 7.8 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 10,
+      "name": "Ty Jerome",
+      "analysis": "Memphis's early success puts Jerome's shot-making and decision-making in focus. His November 9 scoring performance against Toronto supports the case.",
+      "team": "MEM",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 26.7,
+        "rpg": 3.7,
+        "apg": 4.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 7,
+      "movement": -3,
+      "stat_line": "26.7 PPG · 3.7 RPG · 4.9 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    }
+  ],
+  "rookie_watch": [
+    {
+      "rank": 1,
+      "name": "Yaxel Lendeborg",
+      "analysis": "Our No. 1 rookie has earned the spotlight through his two-way energy and growing role with Golden State. The next step is proving the production holds across different matchups.",
+      "team": "GSW",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 21.4,
+        "rpg": 7.2,
+        "apg": 4
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 1,
+      "movement": 0,
+      "stat_line": "21.4 PPG · 7.2 RPG · 4 APG · 11 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 2,
+      "name": "Darius Acuff Jr.",
+      "analysis": "Acuff's placement reflects his creation burden and offensive upside. We will measure his efficiency and turnover control alongside his scoring.",
+      "team": "SAC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 25.9,
+        "rpg": 3.8,
+        "apg": 7.4
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 4,
+      "movement": 2,
+      "stat_line": "25.9 PPG · 3.8 RPG · 7.4 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 3,
+      "name": "Cameron Boozer",
+      "analysis": "Boozer's rebounding, playmaking and physical maturity make this a real three-player race at the top. Memphis's winning start adds context.",
+      "team": "MEM",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 16.2,
+        "rpg": 9.7,
+        "apg": 5.5
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 2,
+      "movement": -1,
+      "stat_line": "16.2 PPG · 9.7 RPG · 5.5 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 4,
+      "name": "Caleb Wilson",
+      "analysis": "Wilson has to create value in a difficult Chicago environment. His production should be judged on responsibility as well as raw totals.",
+      "team": "CHI",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 19.3,
+        "rpg": 6.3,
+        "apg": 2.1
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 3,
+      "movement": -1,
+      "stat_line": "19.3 PPG · 6.3 RPG · 2.1 APG · 9 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 5,
+      "name": "AJ Dybantsa",
+      "analysis": "Dybantsa's ceiling remains enormous, but availability and minutes must be documented before the next edition goes live.",
+      "team": "WAS",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 16.7,
+        "rpg": 6.1,
+        "apg": 2.1
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 6,
+      "movement": 1,
+      "stat_line": "16.7 PPG · 6.1 RPG · 2.1 APG · 7 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 6,
+      "name": "Darryn Peterson",
+      "analysis": "Peterson's scoring talent gives Utah a reason to watch every possession. We need the current efficiency and usage before making stronger statistical claims.",
+      "team": "UTA",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 14.8,
+        "rpg": 4,
+        "apg": 3.9
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 5,
+      "movement": -1,
+      "stat_line": "14.8 PPG · 4 RPG · 3.9 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 7,
+      "name": "Mikel Brown Jr.",
+      "analysis": "Brown's placement recognizes the flashes of shot creation. Consistency and role clarity are the next checkpoints.",
+      "team": "BKN",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 12.9,
+        "rpg": 2.1,
+        "apg": 3.9
+      },
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://www.nba.com/player/1643414/mikel-brown-jr",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW",
+      "stat_line": "12.9 PPG · 2.1 RPG · 3.9 APG · 7 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 8,
+      "name": "Brayden Burries",
+      "analysis": "Burries has the tools to contribute as a perimeter scorer. His shot selection and defensive discipline matter as much as his highlights.",
+      "team": "MIL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 10.5,
+        "rpg": 5.5,
+        "apg": 2.2
+      },
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://fantasyteamadvice.com/nba/players/26217/brayden-burries/stats",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 10,
+      "movement": 2,
+      "stat_line": "10.5 PPG · 5.5 RPG · 2.2 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 9,
+      "name": "Meleek Thomas",
+      "analysis": "Thomas has an opportunity to make a meaningful impression in Minnesota's rotation. We will track his role alongside the team's injury situation.",
+      "team": "CLE",
+      "games_played": 8,
+      "season_stats": {
+        "ppg": 13,
+        "rpg": 2.6,
+        "apg": 1.3
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 7,
+      "movement": -2,
+      "stat_line": "13 PPG · 2.6 RPG · 1.3 APG · 8 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    },
+    {
+      "rank": 10,
+      "name": "Aday Mara",
+      "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification.",
+      "team": "OKC",
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 8.1,
+        "rpg": 5.9,
+        "apg": 1.3
+      },
+      "stat_source": "https://www.basketball-reference.com/players/m/maraad01.html",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW",
+      "stat_line": "8.1 PPG · 5.9 RPG · 1.3 APG · 10 GP",
+      "stat_scope": "2026-27 season averages through November 9"
+    }
+  ],
+  "highlights": {
+    "team_of_week": "SAS",
+    "team_of_week_note": "San Antonio leads 4DK's November 10 editorial Power 30.",
+    "headlines": [
+      "Updated Power 30, MVP Watch and Rookie Watch through November 9.",
+      "Phoenix injury statuses remain pending official confirmation."
+    ]
+  },
+  "methodology": "4DK editorial rankings as of November 10; game results through November 9. Movement from November 3 archived edition. Phoenix official injury report not submitted as of 2:15 PM ET; secondary injury reports are not NBA-confirmed. Standings seed order is an editorial W/L percentage snapshot, not official NBA tiebreak seeding. Point differential omitted where a November 9 verified figure is unavailable.",
+  "verification_urls": [
+    "https://official.nba.com/nba-injury-report-2026-27-season",
+    "https://odyn.bet/nba/injury-report",
+    "https://basketball.realgm.com/scores/2026-11-02",
+    "https://basketball.realgm.com/scores/2026-11-01",
+    "https://basketball.realgm.com/scores/2026-10-31",
+    "https://basketball.realgm.com/scores/2026-10-30",
+    "https://basketball.realgm.com/scores/2026-10-29",
+    "https://basketball.realgm.com/scores/2026-10-28",
+    "https://basketball.realgm.com/scores/2026-10-27",
+    "https://basketball.realgm.com/scores/2026-10-26",
+    "https://basketball.realgm.com/scores/2026-10-25",
+    "https://basketball.realgm.com/scores/2026-10-24",
+    "https://basketball.realgm.com/scores/2026-10-23",
+    "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+    "https://rookieranks.com/nba/stats",
+    "https://www.nba.com/thunder/news/medical-update-261030",
+    "https://www.nba.com/news/pistons-star-jalen-duren-sidelined-at-least-2-weeks-with-a-strained-hamstring"
+  ],
+  "archive_editions": [
+    "2026-10-27",
+    "2026-11-03",
+    "2026-11-10"
+  ],
+  "standings": {
+    "East": [
+      {
+        "alias": "PHI",
+        "name": "Philadelphia 76ers",
+        "division": "Atlantic",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 1,
+        "position": "direct"
+      },
+      {
+        "alias": "BOS",
+        "name": "Boston Celtics",
+        "division": "Atlantic",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 2,
+        "position": "direct"
+      },
+      {
+        "alias": "DET",
+        "name": "Detroit Pistons",
+        "division": "Central",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 3,
+        "position": "direct"
+      },
+      {
+        "alias": "ATL",
+        "name": "Atlanta Hawks",
+        "division": "Southeast",
+        "w": 7,
+        "l": 5,
+        "pct": 0.583,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 4,
+        "position": "direct"
+      },
+      {
+        "alias": "NYK",
+        "name": "New York Knicks",
+        "division": "Atlantic",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 5,
+        "position": "direct"
+      },
+      {
+        "alias": "TOR",
+        "name": "Toronto Raptors",
+        "division": "Atlantic",
+        "w": 5,
+        "l": 5,
+        "pct": 0.5,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 6,
+        "position": "direct"
+      },
+      {
+        "alias": "CLE",
+        "name": "Cleveland Cavaliers",
+        "division": "Central",
+        "w": 5,
+        "l": 6,
+        "pct": 0.455,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 7,
+        "position": "play-in"
+      },
+      {
+        "alias": "MIA",
+        "name": "Miami Heat",
+        "division": "Southeast",
+        "w": 4,
+        "l": 6,
+        "pct": 0.4,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 8,
+        "position": "play-in"
+      },
+      {
+        "alias": "CHA",
+        "name": "Charlotte Hornets",
+        "division": "Southeast",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 9,
+        "position": "play-in"
+      },
+      {
+        "alias": "WAS",
+        "name": "Washington Wizards",
+        "division": "Southeast",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 10,
+        "position": "play-in"
+      },
+      {
+        "alias": "IND",
+        "name": "Indiana Pacers",
+        "division": "Central",
+        "w": 3,
+        "l": 8,
+        "pct": 0.273,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 11,
+        "position": "outside"
+      },
+      {
+        "alias": "ORL",
+        "name": "Orlando Magic",
+        "division": "Southeast",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 12,
+        "position": "outside"
+      },
+      {
+        "alias": "BKN",
+        "name": "Brooklyn Nets",
+        "division": "Atlantic",
+        "w": 2,
+        "l": 8,
+        "pct": 0.2,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 13,
+        "position": "outside"
+      },
+      {
+        "alias": "CHI",
+        "name": "Chicago Bulls",
+        "division": "Central",
+        "w": 1,
+        "l": 8,
+        "pct": 0.111,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 14,
+        "position": "outside"
+      },
+      {
+        "alias": "MIL",
+        "name": "Milwaukee Bucks",
+        "division": "Central",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 15,
+        "position": "outside"
+      }
+    ],
+    "West": [
+      {
+        "alias": "LAL",
+        "name": "Los Angeles Lakers",
+        "division": "Pacific",
+        "w": 10,
+        "l": 2,
+        "pct": 0.833,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 1,
+        "position": "direct"
+      },
+      {
+        "alias": "SAS",
+        "name": "San Antonio Spurs",
+        "division": "Southwest",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 2,
+        "position": "direct"
+      },
+      {
+        "alias": "OKC",
+        "name": "Oklahoma City Thunder",
+        "division": "Northwest",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 3,
+        "position": "direct"
+      },
+      {
+        "alias": "GSW",
+        "name": "Golden State Warriors",
+        "division": "Pacific",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 4,
+        "position": "direct"
+      },
+      {
+        "alias": "HOU",
+        "name": "Houston Rockets",
+        "division": "Southwest",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 5,
+        "position": "direct"
+      },
+      {
+        "alias": "MIN",
+        "name": "Minnesota Timberwolves",
+        "division": "Northwest",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 6,
+        "position": "direct"
+      },
+      {
+        "alias": "MEM",
+        "name": "Memphis Grizzlies",
+        "division": "Southwest",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 7,
+        "position": "play-in"
+      },
+      {
+        "alias": "POR",
+        "name": "Portland Trail Blazers",
+        "division": "Northwest",
+        "w": 6,
+        "l": 3,
+        "pct": 0.667,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 8,
+        "position": "play-in"
+      },
+      {
+        "alias": "DAL",
+        "name": "Dallas Mavericks",
+        "division": "Southwest",
+        "w": 7,
+        "l": 4,
+        "pct": 0.636,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 9,
+        "position": "play-in"
+      },
+      {
+        "alias": "DEN",
+        "name": "Denver Nuggets",
+        "division": "Northwest",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 10,
+        "position": "play-in"
+      },
+      {
+        "alias": "NOP",
+        "name": "New Orleans Pelicans",
+        "division": "Southwest",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 11,
+        "position": "outside"
+      },
+      {
+        "alias": "PHX",
+        "name": "Phoenix Suns",
+        "division": "Pacific",
+        "w": 3,
+        "l": 6,
+        "pct": 0.333,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 12,
+        "position": "outside"
+      },
+      {
+        "alias": "LAC",
+        "name": "LA Clippers",
+        "division": "Pacific",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 13,
+        "position": "outside"
+      },
+      {
+        "alias": "SAC",
+        "name": "Sacramento Kings",
+        "division": "Pacific",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 14,
+        "position": "outside"
+      },
+      {
+        "alias": "UTA",
+        "name": "Utah Jazz",
+        "division": "Northwest",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 15,
+        "position": "outside"
+      }
+    ]
+  },
+  "divisions": {
+    "Southwest": [
+      {
+        "alias": "SAS",
+        "name": "San Antonio Spurs",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818
+      },
+      {
+        "alias": "HOU",
+        "name": "Houston Rockets",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "MEM",
+        "name": "Memphis Grizzlies",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7
+      },
+      {
+        "alias": "DAL",
+        "name": "Dallas Mavericks",
+        "w": 7,
+        "l": 4,
+        "pct": 0.636
+      },
+      {
+        "alias": "NOP",
+        "name": "New Orleans Pelicans",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      }
+    ],
+    "Atlantic": [
+      {
+        "alias": "PHI",
+        "name": "Philadelphia 76ers",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818
+      },
+      {
+        "alias": "BOS",
+        "name": "Boston Celtics",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8
+      },
+      {
+        "alias": "NYK",
+        "name": "New York Knicks",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556
+      },
+      {
+        "alias": "TOR",
+        "name": "Toronto Raptors",
+        "w": 5,
+        "l": 5,
+        "pct": 0.5
+      },
+      {
+        "alias": "BKN",
+        "name": "Brooklyn Nets",
+        "w": 2,
+        "l": 8,
+        "pct": 0.2
+      }
+    ],
+    "Northwest": [
+      {
+        "alias": "OKC",
+        "name": "Oklahoma City Thunder",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8
+      },
+      {
+        "alias": "MIN",
+        "name": "Minnesota Timberwolves",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "POR",
+        "name": "Portland Trail Blazers",
+        "w": 6,
+        "l": 3,
+        "pct": 0.667
+      },
+      {
+        "alias": "DEN",
+        "name": "Denver Nuggets",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556
+      },
+      {
+        "alias": "UTA",
+        "name": "Utah Jazz",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Pacific": [
+      {
+        "alias": "LAL",
+        "name": "Los Angeles Lakers",
+        "w": 10,
+        "l": 2,
+        "pct": 0.833
+      },
+      {
+        "alias": "GSW",
+        "name": "Golden State Warriors",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "PHX",
+        "name": "Phoenix Suns",
+        "w": 3,
+        "l": 6,
+        "pct": 0.333
+      },
+      {
+        "alias": "LAC",
+        "name": "LA Clippers",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222
+      },
+      {
+        "alias": "SAC",
+        "name": "Sacramento Kings",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Central": [
+      {
+        "alias": "DET",
+        "name": "Detroit Pistons",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7
+      },
+      {
+        "alias": "CLE",
+        "name": "Cleveland Cavaliers",
+        "w": 5,
+        "l": 6,
+        "pct": 0.455
+      },
+      {
+        "alias": "IND",
+        "name": "Indiana Pacers",
+        "w": 3,
+        "l": 8,
+        "pct": 0.273
+      },
+      {
+        "alias": "CHI",
+        "name": "Chicago Bulls",
+        "w": 1,
+        "l": 8,
+        "pct": 0.111
+      },
+      {
+        "alias": "MIL",
+        "name": "Milwaukee Bucks",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Southeast": [
+      {
+        "alias": "ATL",
+        "name": "Atlanta Hawks",
+        "w": 7,
+        "l": 5,
+        "pct": 0.583
+      },
+      {
+        "alias": "MIA",
+        "name": "Miami Heat",
+        "w": 4,
+        "l": 6,
+        "pct": 0.4
+      },
+      {
+        "alias": "CHA",
+        "name": "Charlotte Hornets",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      },
+      {
+        "alias": "WAS",
+        "name": "Washington Wizards",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      },
+      {
+        "alias": "ORL",
+        "name": "Orlando Magic",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222
+      }
+    ]
+  }
+}

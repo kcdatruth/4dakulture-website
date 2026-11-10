@@ -1,0 +1,28 @@
+name: 4DK NBA Rankings HQ Release Gate
+
+on:
+  pull_request:
+    paths:
+      - 'drafts/nba-power30-2026-11-10.json'
+      - 'drafts/nba-awards-watch-2026-11-10.json'
+      - 'drafts/nba-2026-11-09-verified-results.json'
+      - 'drafts/verify_nba_rankings_2026_11_10.py'
+      - '.github/workflows/4dk-nba-rankings-release-gate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rankings-hq-release-gate:
+    name: Validate Nov 10 Rankings HQ before merge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout candidate
+        uses: actions/checkout@v4
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate editorial data and cross-team games
+        run: python3 drafts/verify_nba_rankings_2026_11_10.py

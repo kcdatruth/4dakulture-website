@@ -1,0 +1,670 @@
+{
+  "schema_version": "4dk.nba.awards.draft.v1",
+  "edition": "2026-11-10",
+  "cutoff": "2026-11-09 end of games",
+  "status": "DRAFT_NOT_LIVE",
+  "editorial_lock": "November 9 user-established order; do not reorder",
+  "stats_status": "Recorded four-field stat checks complete for all 20 award candidates; Nov 3 movement archive reconciled (17 returning, 3 NEW). Injury and final website QA remain pending.",
+  "mvp_watch": [
+    {
+      "rank": 1,
+      "name": "Luka Dončić",
+      "analysis": "The league's most explosive scoring engine is still our standard. His 32-point, 10-assist outing against Atlanta underlined how his playmaking survives even when the jumper is not automatic.",
+      "team": "LAL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 39.3,
+        "rpg": 7.8,
+        "apg": 7.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 1,
+      "movement": 0
+    },
+    {
+      "rank": 2,
+      "name": "Victor Wembanyama",
+      "analysis": "The strongest two-way counterargument to Luka: 40 points and nine blocks against Phoenix, changing both the scoreboard and the shots opponents dare attempt.",
+      "team": "SAS",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 30.1,
+        "rpg": 11.9,
+        "apg": 3
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 2,
+      "movement": 0
+    },
+    {
+      "rank": 3,
+      "name": "Shai Gilgeous-Alexander",
+      "analysis": "His control of Oklahoma City's offense and ability to manufacture efficient looks keep him in the top tier. The Thunder's team success strengthens the case.",
+      "team": "OKC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 29.9,
+        "rpg": 4,
+        "apg": 4.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 5,
+      "movement": 2
+    },
+    {
+      "rank": 4,
+      "name": "Jayson Tatum",
+      "analysis": "Tatum's position reflects his established value as a primary creator and two-way wing. We need to weigh current availability and team results without inventing a stat line.",
+      "team": "BOS",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 27.1,
+        "rpg": 6,
+        "apg": 7.8
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 6,
+      "movement": 2
+    },
+    {
+      "rank": 5,
+      "name": "Stephen Curry",
+      "analysis": "Golden State's offense still bends around his shooting gravity. His impact goes beyond points: defenses compromise their shape simply to deny him touches.",
+      "team": "GSW",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 30.6,
+        "rpg": 4.2,
+        "apg": 4.3
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 9,
+      "movement": 4
+    },
+    {
+      "rank": 6,
+      "name": "Cade Cunningham",
+      "analysis": "Detroit's rise gives Cade a compelling leadership case. The test is whether his creation remains steady when opponents force the ball out of his hands.",
+      "team": "DET",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 22.3,
+        "rpg": 5.2,
+        "apg": 7.6
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 4,
+      "movement": -2
+    },
+    {
+      "rank": 7,
+      "name": "Tyrese Maxey",
+      "analysis": "Philadelphia's pace and offensive organization run through Maxey. His speed turns defensive hesitation into immediate pressure on the rim.",
+      "team": "PHI",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 26.9,
+        "rpg": 3.7,
+        "apg": 5.5
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 3,
+      "movement": -4
+    },
+    {
+      "rank": 8,
+      "name": "Nikola Jokić",
+      "analysis": "Denver's fulcrum remains the standard for decision-making bigs. We will distinguish his all-around impact from the Nuggets' early record.",
+      "team": "DEN",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 23.1,
+        "rpg": 10.8,
+        "apg": 9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
+    },
+    {
+      "rank": 9,
+      "name": "Alperen Şengün",
+      "analysis": "Houston's inside-out creation gives the Rockets a second offensive language. His passing from the middle of the floor unlocks the surrounding talent.",
+      "team": "HOU",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 21.3,
+        "rpg": 9.1,
+        "apg": 7.8
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 8,
+      "movement": -1
+    },
+    {
+      "rank": 10,
+      "name": "Ty Jerome",
+      "analysis": "Memphis's early success puts Jerome's shot-making and decision-making in focus. His November 9 scoring performance against Toronto supports the case.",
+      "team": "MEM",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 26.7,
+        "rpg": 3.7,
+        "apg": 4.9
+      },
+      "stat_audit_nov10": {
+        "status": "CROSSCHECKED_FULL_FOUR_FIELDS",
+        "source": "https://keelstats.com/players",
+        "corroboration": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 7,
+      "movement": -3
+    }
+  ],
+  "rookie_watch": [
+    {
+      "rank": 1,
+      "name": "Yaxel Lendeborg",
+      "analysis": "Our No. 1 rookie has earned the spotlight through his two-way energy and growing role with Golden State. The next step is proving the production holds across different matchups.",
+      "team": "GSW",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 21.4,
+        "rpg": 7.2,
+        "apg": 4
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 1,
+      "movement": 0
+    },
+    {
+      "rank": 2,
+      "name": "Darius Acuff Jr.",
+      "analysis": "Acuff's placement reflects his creation burden and offensive upside. We will measure his efficiency and turnover control alongside his scoring.",
+      "team": "SAC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 25.9,
+        "rpg": 3.8,
+        "apg": 7.4
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 4,
+      "movement": 2
+    },
+    {
+      "rank": 3,
+      "name": "Cameron Boozer",
+      "analysis": "Boozer's rebounding, playmaking and physical maturity make this a real three-player race at the top. Memphis's winning start adds context.",
+      "team": "MEM",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 16.2,
+        "rpg": 9.7,
+        "apg": 5.5
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 2,
+      "movement": -1
+    },
+    {
+      "rank": 4,
+      "name": "Caleb Wilson",
+      "analysis": "Wilson has to create value in a difficult Chicago environment. His production should be judged on responsibility as well as raw totals.",
+      "team": "CHI",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 19.3,
+        "rpg": 6.3,
+        "apg": 2.1
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 3,
+      "movement": -1
+    },
+    {
+      "rank": 5,
+      "name": "AJ Dybantsa",
+      "analysis": "Dybantsa's ceiling remains enormous, but availability and minutes must be documented before the next edition goes live.",
+      "team": "WAS",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 16.7,
+        "rpg": 6.1,
+        "apg": 2.1
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 6,
+      "movement": 1
+    },
+    {
+      "rank": 6,
+      "name": "Darryn Peterson",
+      "analysis": "Peterson's scoring talent gives Utah a reason to watch every possession. We need the current efficiency and usage before making stronger statistical claims.",
+      "team": "UTA",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 14.8,
+        "rpg": 4,
+        "apg": 3.9
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 5,
+      "movement": -1
+    },
+    {
+      "rank": 7,
+      "name": "Mikel Brown Jr.",
+      "analysis": "Brown's placement recognizes the flashes of shot creation. Consistency and role clarity are the next checkpoints.",
+      "team": "BKN",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 12.9,
+        "rpg": 2.1,
+        "apg": 3.9
+      },
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://www.nba.com/player/1643414/mikel-brown-jr",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
+    },
+    {
+      "rank": 8,
+      "name": "Brayden Burries",
+      "analysis": "Burries has the tools to contribute as a perimeter scorer. His shot selection and defensive discipline matter as much as his highlights.",
+      "team": "MIL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 10.5,
+        "rpg": 5.5,
+        "apg": 2.2
+      },
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://fantasyteamadvice.com/nba/players/26217/brayden-burries/stats",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 10,
+      "movement": 2
+    },
+    {
+      "rank": 9,
+      "name": "Meleek Thomas",
+      "analysis": "Thomas has an opportunity to make a meaningful impression in Minnesota's rotation. We will track his role alongside the team's injury situation.",
+      "team": "CLE",
+      "games_played": 8,
+      "season_stats": {
+        "ppg": 13,
+        "rpg": 2.6,
+        "apg": 1.3
+      },
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": 7,
+      "movement": -2
+    },
+    {
+      "rank": 10,
+      "name": "Aday Mara",
+      "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification.",
+      "team": "OKC",
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 8.1,
+        "rpg": 5.9,
+        "apg": 1.3
+      },
+      "stat_source": "https://www.basketball-reference.com/players/m/maraad01.html",
+      "stat_audit_nov10": {
+        "status": "FULL_FOUR_FIELD_MATCH",
+        "source": "https://rookieranks.com/nba/rookie-leaders",
+        "source_updated": "2026-11-10 00:07 MST",
+        "cutoff": "2026-11-09",
+        "checked_fields": [
+          "games_played",
+          "ppg",
+          "rpg",
+          "apg"
+        ]
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
+    }
+  ],
+  "verified_nov9_spotlights": [
+    {
+      "name": "Victor Wembanyama",
+      "points": 40,
+      "rebounds": 11,
+      "blocks": 9
+    },
+    {
+      "name": "Luka Dončić",
+      "points": 32,
+      "assists": 10
+    }
+  ],
+  "sources": [
+    "https://www.basketball-reference.com/boxscores/index.fcgi",
+    "https://www.nba.com/watch/video/nba-nightly-recap-november-9-2026"
+  ],
+  "publication_guard": "Awards board audit cleared. Global publication held pending Phoenix official injury submission and full release/website QA.",
+  "stat_source": "https://keelstats.com/players",
+  "team_corrections": [
+    "AJ Dybantsa — Washington Wizards",
+    "Meleek Thomas — Cleveland Cavaliers"
+  ],
+  "stat_sources_additional": [
+    "https://rookieranks.com/nba/rookie-leaders",
+    "https://www.rotowire.com/basketball/article/2026-27-nba-rookie-rankings-impact-index-top-performers-145291"
+  ],
+  "stat_audit_nov10": {
+    "checked_at": "2026-11-10",
+    "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
+    "partial_matches": [
+      "Luka Dončić",
+      "Victor Wembanyama",
+      "Shai Gilgeous-Alexander",
+      "Stephen Curry",
+      "Nikola Jokić"
+    ],
+    "conflicts": [],
+    "unresolved_critical": [],
+    "release_hold": false,
+    "boozer_discrepancy": "RESOLVED_16_2_PPG",
+    "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html",
+    "rookie_table_checked": [
+      "Yaxel Lendeborg",
+      "Darius Acuff Jr.",
+      "Cameron Boozer",
+      "Caleb Wilson",
+      "AJ Dybantsa",
+      "Darryn Peterson",
+      "Mikel Brown Jr.",
+      "Brayden Burries",
+      "Meleek Thomas",
+      "Aday Mara"
+    ],
+    "rookie_table_changes": [
+      {
+        "player": "Yaxel Lendeborg",
+        "field": "rpg",
+        "from": 7.1,
+        "to": 7.2
+      },
+      {
+        "player": "Darius Acuff Jr.",
+        "field": "apg",
+        "from": 7.3,
+        "to": 7.4
+      },
+      {
+        "player": "AJ Dybantsa",
+        "field": "rpg",
+        "from": 6.3,
+        "to": 6.1
+      }
+    ],
+    "rookie_table_pending": [],
+    "rookie_profiles_full_four_field_matches": 10,
+    "rookie_profiles_unresolved": [],
+    "rookie_source": "https://rookieranks.com/nba/rookie-leaders",
+    "rookie_source_updated": "2026-11-10 00:07 MST",
+    "mvp_profiles_full_four_field_matches": 10,
+    "mvp_profiles_crosschecked": [
+      "Luka Dončić",
+      "Victor Wembanyama",
+      "Shai Gilgeous-Alexander",
+      "Jayson Tatum",
+      "Stephen Curry",
+      "Cade Cunningham",
+      "Tyrese Maxey",
+      "Nikola Jokić",
+      "Alperen Şengün",
+      "Ty Jerome"
+    ],
+    "mvp_changes": [
+      {
+        "player": "Ty Jerome",
+        "field": "apg",
+        "old": 4.8,
+        "new": 4.9
+      }
+    ],
+    "remaining_mvp_issues": [],
+    "release_hold_reason": "Awards structural and recorded crosscheck audit complete; global publication still gated on injury report and site QA"
+  },
+  "previous_rank_movement_audit": {
+    "status": "PASS",
+    "baseline": "nba-weekly-boards-archive-2026-11-03.json",
+    "baseline_edition": "2026-11-03",
+    "checked_profiles": 20,
+    "matched_previous_entries": 17,
+    "new_entries": [
+      {
+        "board": "MVP",
+        "name": "Nikola Jokić",
+        "rank": 8
+      },
+      {
+        "board": "Rookie",
+        "name": "Mikel Brown Jr.",
+        "rank": 7
+      },
+      {
+        "board": "Rookie",
+        "name": "Aday Mara",
+        "rank": 10
+      }
+    ],
+    "method": "Exact player-name comparison to immutable Nov 3 published awards boards; absent players marked NEW, not assigned invented prior rank.",
+    "publication_hold": false
+  }
+}
