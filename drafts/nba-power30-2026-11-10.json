@@ -1641,12 +1641,12 @@
       "last_five_record": "4-1",
       "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
       "injury_report_nov10": {
-        "report_time": "2026-11-10 02:00 PM ET",
-        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_00PM.pdf",
+        "report_time": "2026-11-10 02:15 PM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_15PM.pdf",
         "players": [
           {
             "name": "Josh Hart",
-            "status": "Questionable",
+            "status": "Doubtful",
             "reason": "Illness"
           }
         ],
@@ -3996,8 +3996,8 @@
       "last_five_record": "1-4",
       "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
       "injury_report_nov10": {
-        "report_time": "2026-11-10 02:45 AM ET",
-        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "report_time": "2026-11-10 02:15 PM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_15PM.pdf",
         "players": [
           {
             "name": "Bradley Beal",
@@ -4016,7 +4016,7 @@
           },
           {
             "name": "Nick Martinelli",
-            "status": "Questionable",
+            "status": "Out",
             "reason": "G League - Two-Way"
           },
           {
@@ -5128,8 +5128,20 @@
       "PHX"
     ],
     "publication_hold": true,
-    "latest_official_report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_00PM.pdf",
-    "latest_official_report_time": "2026-11-10 02:00 PM ET"
+    "latest_official_report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_15PM.pdf",
+    "latest_official_report_time": "2026-11-10 02:15 PM ET",
+    "official_snapshot_changes_215pm": [
+      {
+        "name": "Josh Hart",
+        "from": "Questionable",
+        "to": "Doubtful"
+      },
+      {
+        "name": "Nick Martinelli",
+        "from": "Questionable",
+        "to": "Out"
+      }
+    ]
   },
   "previous_rank_movement_audit": {
     "status": "PASS",
