@@ -112,6 +112,22 @@ for label, key in (("MVP", "mvp_watch"), ("Rookie", "rookie_watch")):
         s = x.get("season_stats") or {}
         check(all(isinstance(s.get(k), (int, float)) for k in ("ppg", "rpg", "apg")), f"{label}: {x['name']} missing complete numeric stats")
         check(bool(x.get("stat_source") or awards.get("stat_source")), f"{label}: {x['name']} missing stats provenance")
+# Explicit fail-closed editorial and official-injury gates. Structural completeness
+# alone must never authorize publication while these are unresolved.
+check(power.get("previous_rank_movement_audit", {}).get("status") == "PASS",
+      "Power 30 previous-rank movement audit has not passed")
+check(all(isinstance(x.get("previous_rank"), int) for x in awards["mvp_watch"] + awards["rookie_watch"]),
+      "Award previous ranks missing: verify Nov 3 archived boards before publishing")
+check(awards.get("previous_rank_movement_audit", {}).get("status") == "PASS",
+      "Award movement baseline audit not approved")
+check(not awards.get("stat_audit_nov10", {}).get("release_hold", True),
+      "Awards data still has explicit publication hold")
+check(not power.get("injury_audit_nov10", {}).get("publication_hold", True),
+      "Official injury report has explicit publication hold")
+check(all("NOT_YET_SUBMITTED" not in t.get("injury_status", "")
+          and "SECONDARY" not in t.get("injury_status", "") for t in teams),
+      "Unsubmitted or secondary-only injury designation still present")
+
 check("reconciliation" not in awards.get("stats_status", "").lower() and "conflict" not in awards.get("stats_status", "").lower(), "Awards stats still require reconciliation or contain conflicts")
 print(f"4DK Rankings HQ November 10 QA: {len(teams)} teams, 20 award candidates, {len(failures)} blockers")
 for issue in failures:
