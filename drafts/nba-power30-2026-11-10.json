@@ -100,7 +100,54 @@
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.cbssports.com/nba/players/29005036/victor-wembanyama/game-log/"
+      "last_five_source": "https://www.cbssports.com/nba/players/29005036/victor-wembanyama/game-log/",
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "122-96",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "POR",
+          "home": false,
+          "result": "W",
+          "score": "125-103",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "124-109",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DAL",
+          "home": true,
+          "result": "W",
+          "score": "112-111",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "UTA",
+          "home": true,
+          "result": "W",
+          "score": "119-97",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-11-02"
     },
     {
       "rank": 2,
@@ -181,7 +228,54 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://www.basketball-reference.com/teams/PHI/2027.html"
+      "last_five_source": "https://www.basketball-reference.com/teams/PHI/2027.html",
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "CHI",
+          "home": false,
+          "result": "W",
+          "score": "127-121",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CLE",
+          "home": false,
+          "result": "L",
+          "score": "95-119",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "DET",
+          "home": false,
+          "result": "W",
+          "score": "112-106",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CHI",
+          "home": true,
+          "result": "W",
+          "score": "126-107",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "109-104",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 3,
@@ -262,7 +356,54 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-07",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "114-75",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "128-97",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "CLE",
+          "home": true,
+          "result": "W",
+          "score": "124-116",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CLE",
+          "home": false,
+          "result": "W",
+          "score": "117-112",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "98-119",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-07",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 4,
@@ -356,7 +497,53 @@
         }
       ],
       "last_five_record": "5-0",
-      "last_five_source": "https://www.cbssports.com/nba/players/2900426/luka-doncic/game-log/"
+      "last_five_source": "https://www.cbssports.com/nba/players/2900426/luka-doncic/game-log/",
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "ATL",
+          "home": false,
+          "result": "W",
+          "score": "124-114",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "DET",
+          "result": "W",
+          "score": "121-116",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "POR",
+          "home": true,
+          "result": "W",
+          "score": "124-118",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "SAC",
+          "home": false,
+          "result": "W",
+          "score": "116-103",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIA",
+          "home": true,
+          "result": "W",
+          "score": "138-117",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-11-02"
     },
     {
       "rank": 5,
@@ -437,7 +624,54 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://www.cbssports.com/nba/teams/bos/boston-celtics/schedule/"
+      "last_five_source": "https://www.cbssports.com/nba/teams/bos/boston-celtics/schedule/",
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIL",
+          "home": false,
+          "result": "W",
+          "score": "117-97",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "119-80",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "MIL",
+          "home": true,
+          "result": "W",
+          "score": "109-102",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "93-109",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "ORL",
+          "home": false,
+          "result": "W",
+          "score": "108-97",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-11-01"
     },
     {
       "rank": 6,
@@ -493,7 +727,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "NOP",
+          "home": true,
+          "result": "W",
+          "score": "138-87",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ORL",
+          "result": "W",
+          "score": "126-119",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "MIA",
+          "result": "W",
+          "score": "120-100",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "PHX",
+          "home": true,
+          "result": "W",
+          "score": "116-113",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "LAC",
+          "home": true,
+          "result": "W",
+          "score": "124-112",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-11-01"
     },
     {
       "rank": 7,
@@ -542,7 +821,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "122-111",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAL",
+          "result": "L",
+          "score": "116-121",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "CHA",
+          "home": false,
+          "result": "W",
+          "score": "124-91",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "BKN",
+          "home": false,
+          "result": "W",
+          "score": "110-94",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "CHA",
+          "home": true,
+          "result": "W",
+          "score": "97-89",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-28"
     },
     {
       "rank": 8,
@@ -591,7 +916,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DEN",
+          "home": true,
+          "result": "W",
+          "score": "110-100",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "PHX",
+          "result": "L",
+          "score": "99-102",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "BOS",
+          "home": true,
+          "result": "W",
+          "score": "109-93",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "OKC",
+          "home": true,
+          "result": "W",
+          "score": "119-98",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "111-116",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 9,
@@ -633,7 +1004,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "UTA",
+          "result": "W",
+          "score": "115-100",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "NOP",
+          "result": "W",
+          "score": "115-109",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIL",
+          "home": true,
+          "result": "W",
+          "score": "112-100",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "111-121",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "LAC",
+          "home": true,
+          "result": "W",
+          "score": "127-101",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 10,
@@ -668,7 +1084,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 1
+      "recent_games_verified_count": 1,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-07",
+          "opponent": "CLE",
+          "result": "W",
+          "score": "109-97",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "BKN",
+          "home": true,
+          "result": "W",
+          "score": "103-90",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "PHI",
+          "home": false,
+          "result": "L",
+          "score": "93-98",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "CHI",
+          "home": false,
+          "result": "W",
+          "score": "133-127",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-27",
+          "opponent": "DET",
+          "home": true,
+          "result": "W",
+          "score": "111-97",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-07",
+      "last_five_candidate_oldest_date": "2026-10-27"
     },
     {
       "rank": 11,
@@ -717,7 +1179,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "100-110",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "IND",
+          "result": "W",
+          "score": "114-102",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "110-118",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "127-120",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "NOP",
+          "home": false,
+          "result": "W",
+          "score": "104-91",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-28"
     },
     {
       "rank": 12,
@@ -812,7 +1320,54 @@
         "rebounds": 6,
         "assists": 2,
         "source": "https://www.nba.com/game/mem-vs-tor-0022600206/blueprint"
-      }
+      },
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "118-102",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "97-128",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "IND",
+          "home": true,
+          "result": "L",
+          "score": "103-107",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "NOP",
+          "home": true,
+          "result": "L",
+          "score": "134-135",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "SAC",
+          "home": true,
+          "result": "W",
+          "score": "136-105",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 13,
@@ -893,7 +1448,54 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-07",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "103-125",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "118-124",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-04",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "132-119",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DEN",
+          "home": false,
+          "result": "W",
+          "score": "118-110",
+          "source": "existing last-five draft"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "UTA",
+          "home": false,
+          "result": "W",
+          "score": "112-90",
+          "source": "existing last-five draft"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-07",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 14,
@@ -949,7 +1551,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "125-122",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "BKN",
+          "result": "W",
+          "score": "130-93",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "UTA",
+          "result": "W",
+          "score": "112-100",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "SAC",
+          "home": true,
+          "result": "L",
+          "score": "100-115",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "HOU",
+          "home": true,
+          "result": "W",
+          "score": "116-111",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 15,
@@ -1005,7 +1652,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "114-124",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "BKN",
+          "result": "W",
+          "score": "124-121",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "WAS",
+          "result": "W",
+          "score": "139-132",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "108-104",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "NOP",
+          "home": false,
+          "result": "L",
+          "score": "99-121",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 16,
@@ -1061,7 +1753,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CHA",
+          "home": false,
+          "result": "L",
+          "score": "112-124",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "NYK",
+          "result": "L",
+          "score": "97-109",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "PHI",
+          "result": "W",
+          "score": "119-95",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "OKC",
+          "home": true,
+          "result": "L",
+          "score": "112-117",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "MIL",
+          "home": false,
+          "result": "W",
+          "score": "136-111",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 17,
@@ -1110,7 +1847,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "MEM",
+          "home": true,
+          "result": "L",
+          "score": "102-118",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIL",
+          "result": "W",
+          "score": "121-107",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "LAC",
+          "home": false,
+          "result": "W",
+          "score": "125-118",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "125-131",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "ORL",
+          "home": true,
+          "result": "L",
+          "score": "114-121",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 18,
@@ -1151,7 +1934,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "SAC",
+          "result": "W",
+          "score": "114-108",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "GSW",
+          "result": "L",
+          "score": "100-120",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "LAL",
+          "home": false,
+          "result": "L",
+          "score": "117-138",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "145-125",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "ATL",
+          "home": false,
+          "result": "W",
+          "score": "129-117",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-28"
     },
     {
       "rank": 19,
@@ -1206,7 +2034,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "96-122",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "HOU",
+          "result": "W",
+          "score": "102-99",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "ORL",
+          "result": "W",
+          "score": "117-104",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "113-116",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "DEN",
+          "home": true,
+          "result": "L",
+          "score": "120-127",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 20,
@@ -1262,7 +2135,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DET",
+          "home": false,
+          "result": "L",
+          "score": "111-122",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "OKC",
+          "result": "L",
+          "score": "75-114",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "ATL",
+          "result": "L",
+          "score": "132-139",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "ORL",
+          "home": false,
+          "result": "W",
+          "score": "103-94",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "CHA",
+          "home": true,
+          "result": "W",
+          "score": "95-79",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 21,
@@ -1304,7 +2222,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-07",
+          "opponent": "GSW",
+          "result": "L",
+          "score": "119-126",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "PHX",
+          "result": "L",
+          "score": "104-117",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "WAS",
+          "home": true,
+          "result": "L",
+          "score": "94-103",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "BOS",
+          "home": true,
+          "result": "L",
+          "score": "97-108",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "121-114",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-07",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 22,
@@ -1352,7 +2315,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CLE",
+          "home": true,
+          "result": "W",
+          "score": "124-112",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "BOS",
+          "result": "L",
+          "score": "80-119",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DET",
+          "home": true,
+          "result": "L",
+          "score": "91-124",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "PHI",
+          "home": true,
+          "result": "L",
+          "score": "104-109",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "WAS",
+          "home": false,
+          "result": "L",
+          "score": "79-95",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 23,
@@ -1400,7 +2409,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "122-125",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "DEN",
+          "result": "L",
+          "score": "102-114",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "ATL",
+          "home": true,
+          "result": "L",
+          "score": "104-108",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "BKN",
+          "home": true,
+          "result": "L",
+          "score": "90-98",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "MIA",
+          "home": false,
+          "result": "L",
+          "score": "125-145",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 24,
@@ -1435,7 +2490,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 1
+      "recent_games_verified_count": 1,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "NOP",
+          "result": "W",
+          "score": "139-123",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "TOR",
+          "home": true,
+          "result": "L",
+          "score": "118-125",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "112-124",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "MIN",
+          "home": false,
+          "result": "L",
+          "score": "101-127",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "87-103",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-28"
     },
     {
       "rank": 25,
@@ -1491,7 +2592,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 3
+      "recent_games_verified_count": 3,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-09",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "87-138",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAC",
+          "result": "L",
+          "score": "123-139",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIN",
+          "result": "L",
+          "score": "109-115",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MEM",
+          "home": false,
+          "result": "W",
+          "score": "135-134",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "ATL",
+          "home": true,
+          "result": "W",
+          "score": "121-99",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-09",
+      "last_five_candidate_oldest_date": "2026-10-31"
     },
     {
       "rank": 26,
@@ -1533,7 +2679,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "DAL",
+          "result": "L",
+          "score": "93-130",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ATL",
+          "result": "L",
+          "score": "121-124",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "NYK",
+          "home": false,
+          "result": "L",
+          "score": "90-103",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-11-01",
+          "opponent": "IND",
+          "home": false,
+          "result": "W",
+          "score": "98-90",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "DET",
+          "home": true,
+          "result": "L",
+          "score": "94-110",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-30"
     },
     {
       "rank": 27,
@@ -1568,7 +2759,53 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 1
+      "recent_games_verified_count": 1,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "PHI",
+          "result": "L",
+          "score": "121-127",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "PHI",
+          "home": false,
+          "result": "L",
+          "score": "107-126",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-30",
+          "opponent": "BOS",
+          "home": false,
+          "result": "L",
+          "score": "111-125",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "NYK",
+          "home": true,
+          "result": "L",
+          "score": "127-133",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-26",
+          "opponent": "BOS",
+          "home": false,
+          "result": "L",
+          "score": "99-134",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-26"
     },
     {
       "rank": 28,
@@ -1610,7 +2847,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIN",
+          "result": "L",
+          "score": "100-115",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "DAL",
+          "result": "L",
+          "score": "100-112",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "SAS",
+          "home": false,
+          "result": "L",
+          "score": "97-119",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "POR",
+          "home": true,
+          "result": "L",
+          "score": "90-112",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "111-117",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-28"
     },
     {
       "rank": 29,
@@ -1652,7 +2934,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIA",
+          "result": "L",
+          "score": "108-114",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAS",
+          "result": "L",
+          "score": "109-124",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "DAL",
+          "home": false,
+          "result": "W",
+          "score": "115-100",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "MEM",
+          "home": false,
+          "result": "L",
+          "score": "105-136",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-29",
+          "opponent": "NOP",
+          "home": false,
+          "result": "L",
+          "score": "120-132",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-29"
     },
     {
       "rank": 30,
@@ -1693,7 +3020,52 @@
           "source": "NBA official 2026-27 game recaps"
         }
       ],
-      "recent_games_verified_count": 2
+      "recent_games_verified_count": 2,
+      "last_five_candidate": [
+        {
+          "date": "2026-11-08",
+          "opponent": "BOS",
+          "result": "L",
+          "score": "97-117",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "TOR",
+          "result": "L",
+          "score": "107-121",
+          "source": "recent dated game logs"
+        },
+        {
+          "date": "2026-11-02",
+          "opponent": "MIN",
+          "home": false,
+          "result": "L",
+          "score": "100-112",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-31",
+          "opponent": "CLE",
+          "home": true,
+          "result": "L",
+          "score": "111-136",
+          "source": "2026-11-03 published baseline"
+        },
+        {
+          "date": "2026-10-28",
+          "opponent": "HOU",
+          "home": true,
+          "result": "L",
+          "score": "100-132",
+          "source": "2026-11-03 published baseline"
+        }
+      ],
+      "last_five_candidate_count": 5,
+      "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
+      "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
+      "last_five_candidate_last_date": "2026-11-08",
+      "last_five_candidate_oldest_date": "2026-10-28"
     }
   ],
   "publication_gate": "Records verified 30/30. HOLD for complete last-five histories, injury statuses, awards statistical sourcing and page/link checks.",
