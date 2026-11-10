@@ -4,89 +4,201 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "Season averages, prior-week movement and injury designations pending source verification",
+  "stats_status": "17/20 candidates have leaderboard-sourced season averages; three rookies (Mikel Brown Jr., Brayden Burries, Aday Mara) still require individual game-log checks. Injuries and previous rankings remain pending.",
   "mvp_watch": [
     {
       "rank": 1,
       "name": "Luka Dončić",
-      "analysis": "The league's most explosive scoring engine is still our standard. His 32-point, 10-assist outing against Atlanta underlined how his playmaking survives even when the jumper is not automatic."
+      "analysis": "The league's most explosive scoring engine is still our standard. His 32-point, 10-assist outing against Atlanta underlined how his playmaking survives even when the jumper is not automatic.",
+      "team": "LAL",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 39.3,
+        "rpg": 7.8,
+        "apg": 7.9
+      }
     },
     {
       "rank": 2,
       "name": "Victor Wembanyama",
-      "analysis": "The strongest two-way counterargument to Luka: 40 points and nine blocks against Phoenix, changing both the scoreboard and the shots opponents dare attempt."
+      "analysis": "The strongest two-way counterargument to Luka: 40 points and nine blocks against Phoenix, changing both the scoreboard and the shots opponents dare attempt.",
+      "team": "SAS",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 30.1,
+        "rpg": 11.9,
+        "apg": 3
+      }
     },
     {
       "rank": 3,
       "name": "Shai Gilgeous-Alexander",
-      "analysis": "His control of Oklahoma City's offense and ability to manufacture efficient looks keep him in the top tier. The Thunder's team success strengthens the case."
+      "analysis": "His control of Oklahoma City's offense and ability to manufacture efficient looks keep him in the top tier. The Thunder's team success strengthens the case.",
+      "team": "OKC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 29.9,
+        "rpg": 4,
+        "apg": 4.9
+      }
     },
     {
       "rank": 4,
       "name": "Jayson Tatum",
-      "analysis": "Tatum's position reflects his established value as a primary creator and two-way wing. We need to weigh current availability and team results without inventing a stat line."
+      "analysis": "Tatum's position reflects his established value as a primary creator and two-way wing. We need to weigh current availability and team results without inventing a stat line.",
+      "team": "BOS",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 27.1,
+        "rpg": 6,
+        "apg": 7.8
+      }
     },
     {
       "rank": 5,
       "name": "Stephen Curry",
-      "analysis": "Golden State's offense still bends around his shooting gravity. His impact goes beyond points: defenses compromise their shape simply to deny him touches."
+      "analysis": "Golden State's offense still bends around his shooting gravity. His impact goes beyond points: defenses compromise their shape simply to deny him touches.",
+      "team": "GSW",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 30.6,
+        "rpg": 4.2,
+        "apg": 4.3
+      }
     },
     {
       "rank": 6,
       "name": "Cade Cunningham",
-      "analysis": "Detroit's rise gives Cade a compelling leadership case. The test is whether his creation remains steady when opponents force the ball out of his hands."
+      "analysis": "Detroit's rise gives Cade a compelling leadership case. The test is whether his creation remains steady when opponents force the ball out of his hands.",
+      "team": "DET",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 22.3,
+        "rpg": 5.2,
+        "apg": 7.6
+      }
     },
     {
       "rank": 7,
       "name": "Tyrese Maxey",
-      "analysis": "Philadelphia's pace and offensive organization run through Maxey. His speed turns defensive hesitation into immediate pressure on the rim."
+      "analysis": "Philadelphia's pace and offensive organization run through Maxey. His speed turns defensive hesitation into immediate pressure on the rim.",
+      "team": "PHI",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 26.9,
+        "rpg": 3.7,
+        "apg": 5.5
+      }
     },
     {
       "rank": 8,
       "name": "Nikola Jokić",
-      "analysis": "Denver's fulcrum remains the standard for decision-making bigs. We will distinguish his all-around impact from the Nuggets' early record."
+      "analysis": "Denver's fulcrum remains the standard for decision-making bigs. We will distinguish his all-around impact from the Nuggets' early record.",
+      "team": "DEN",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 23.1,
+        "rpg": 10.8,
+        "apg": 9
+      }
     },
     {
       "rank": 9,
       "name": "Alperen Şengün",
-      "analysis": "Houston's inside-out creation gives the Rockets a second offensive language. His passing from the middle of the floor unlocks the surrounding talent."
+      "analysis": "Houston's inside-out creation gives the Rockets a second offensive language. His passing from the middle of the floor unlocks the surrounding talent.",
+      "team": "HOU",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 21.3,
+        "rpg": 9.1,
+        "apg": 7.8
+      }
     },
     {
       "rank": 10,
       "name": "Ty Jerome",
-      "analysis": "Memphis's early success puts Jerome's shot-making and decision-making in focus. His November 9 scoring performance against Toronto supports the case."
+      "analysis": "Memphis's early success puts Jerome's shot-making and decision-making in focus. His November 9 scoring performance against Toronto supports the case.",
+      "team": "MEM",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 26.7,
+        "rpg": 3.7,
+        "apg": 4.8
+      }
     }
   ],
   "rookie_watch": [
     {
       "rank": 1,
       "name": "Yaxel Lendeborg",
-      "analysis": "Our No. 1 rookie has earned the spotlight through his two-way energy and growing role with Golden State. The next step is proving the production holds across different matchups."
+      "analysis": "Our No. 1 rookie has earned the spotlight through his two-way energy and growing role with Golden State. The next step is proving the production holds across different matchups.",
+      "team": "GSW",
+      "games_played": 11,
+      "season_stats": {
+        "ppg": 21.4,
+        "rpg": 7.1,
+        "apg": 4
+      }
     },
     {
       "rank": 2,
       "name": "Darius Acuff Jr.",
-      "analysis": "Acuff's placement reflects his creation burden and offensive upside. We will measure his efficiency and turnover control alongside his scoring."
+      "analysis": "Acuff's placement reflects his creation burden and offensive upside. We will measure his efficiency and turnover control alongside his scoring.",
+      "team": "SAC",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 25.9,
+        "rpg": 3.8,
+        "apg": 7.3
+      }
     },
     {
       "rank": 3,
       "name": "Cameron Boozer",
-      "analysis": "Boozer's rebounding, playmaking and physical maturity make this a real three-player race at the top. Memphis's winning start adds context."
+      "analysis": "Boozer's rebounding, playmaking and physical maturity make this a real three-player race at the top. Memphis's winning start adds context.",
+      "team": "MEM",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 16.4,
+        "rpg": 9.7,
+        "apg": 5.5
+      }
     },
     {
       "rank": 4,
       "name": "Caleb Wilson",
-      "analysis": "Wilson has to create value in a difficult Chicago environment. His production should be judged on responsibility as well as raw totals."
+      "analysis": "Wilson has to create value in a difficult Chicago environment. His production should be judged on responsibility as well as raw totals.",
+      "team": "CHI",
+      "games_played": 9,
+      "season_stats": {
+        "ppg": 19.3,
+        "rpg": 6.3,
+        "apg": 2.1
+      }
     },
     {
       "rank": 5,
       "name": "AJ Dybantsa",
-      "analysis": "Dybantsa's ceiling remains enormous, but availability and minutes must be documented before the next edition goes live."
+      "analysis": "Dybantsa's ceiling remains enormous, but availability and minutes must be documented before the next edition goes live.",
+      "team": "WAS",
+      "games_played": 7,
+      "season_stats": {
+        "ppg": 16.7,
+        "rpg": 6.3,
+        "apg": 2.1
+      }
     },
     {
       "rank": 6,
       "name": "Darryn Peterson",
-      "analysis": "Peterson's scoring talent gives Utah a reason to watch every possession. We need the current efficiency and usage before making stronger statistical claims."
+      "analysis": "Peterson's scoring talent gives Utah a reason to watch every possession. We need the current efficiency and usage before making stronger statistical claims.",
+      "team": "UTA",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 14.8,
+        "rpg": 4,
+        "apg": 3.9
+      }
     },
     {
       "rank": 7,
@@ -101,7 +213,14 @@
     {
       "rank": 9,
       "name": "Meleek Thomas",
-      "analysis": "Thomas has an opportunity to make a meaningful impression in Minnesota's rotation. We will track his role alongside the team's injury situation."
+      "analysis": "Thomas has an opportunity to make a meaningful impression in Minnesota's rotation. We will track his role alongside the team's injury situation.",
+      "team": "CLE",
+      "games_played": 8,
+      "season_stats": {
+        "ppg": 13,
+        "rpg": 2.6,
+        "apg": 1.3
+      }
     },
     {
       "rank": 10,
@@ -126,5 +245,10 @@
     "https://www.basketball-reference.com/boxscores/index.fcgi",
     "https://www.nba.com/watch/video/nba-nightly-recap-november-9-2026"
   ],
-  "publication_guard": "Do not publish until full current season averages, previous rank, team and injury checks complete."
+  "publication_guard": "Do not publish until full current season averages, previous rank, team and injury checks complete.",
+  "stat_source": "https://keelstats.com/players",
+  "team_corrections": [
+    "AJ Dybantsa — Washington Wizards",
+    "Meleek Thomas — Cleveland Cavaliers"
+  ]
 }
