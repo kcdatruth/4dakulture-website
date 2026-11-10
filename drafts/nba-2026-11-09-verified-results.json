@@ -1,0 +1,77 @@
+{
+  "edition": "2026-11-10",
+  "date": "2026-11-09",
+  "status": "RESULTS_VERIFIED_FROM_TWO_INDEPENDENT_SCOREBOARDS",
+  "sources": [
+    "https://www.cbssports.com/nba/schedule/20261109/",
+    "https://sportlark.com/nba/games/2026-11-09"
+  ],
+  "games": [
+    {
+      "away": "LAL",
+      "home": "ATL",
+      "away_points": 124,
+      "home_points": 114,
+      "winner": "LAL",
+      "loser": "ATL"
+    },
+    {
+      "away": "CLE",
+      "home": "CHA",
+      "away_points": 112,
+      "home_points": 124,
+      "winner": "CHA",
+      "loser": "CLE"
+    },
+    {
+      "away": "WAS",
+      "home": "DET",
+      "away_points": 111,
+      "home_points": 122,
+      "winner": "DET",
+      "loser": "WAS"
+    },
+    {
+      "away": "MEM",
+      "home": "TOR",
+      "away_points": 118,
+      "home_points": 102,
+      "winner": "MEM",
+      "loser": "TOR"
+    },
+    {
+      "away": "IND",
+      "home": "DAL",
+      "away_points": 122,
+      "home_points": 125,
+      "winner": "DAL",
+      "loser": "IND"
+    },
+    {
+      "away": "DEN",
+      "home": "HOU",
+      "away_points": 100,
+      "home_points": 110,
+      "winner": "HOU",
+      "loser": "DEN"
+    },
+    {
+      "away": "SAS",
+      "home": "PHX",
+      "away_points": 122,
+      "home_points": 96,
+      "winner": "SAS",
+      "loser": "PHX"
+    },
+    {
+      "away": "NOP",
+      "home": "GSW",
+      "away_points": 87,
+      "home_points": 138,
+      "winner": "GSW",
+      "loser": "NOP"
+    }
+  ],
+  "game_count": 8,
+  "teams_played": 16
+}
