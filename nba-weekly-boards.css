@@ -2,3 +2,6 @@
 
 /* 4DK Nov 10 mobile overflow protection */
 html,body{max-width:100%;overflow-x:clip}.container,.team,.team-body,.team-top,.watch,.watch-grid,.lead-grid{min-width:0;max-width:100%}.team h3,.watch h3,.team p,.watch p,.team-body,.team .outlook{overflow-wrap:anywhere;word-break:normal}.team-top{min-width:0}.team-top img{max-width:28%;height:auto;object-fit:cover;flex-shrink:0}.team-body p{max-width:100%}@media(max-width:580px){.team h3{font-size:clamp(27px,8vw,35px)}.team-top{gap:10px}.team-top img{width:92px;max-width:25%;height:70px}.team-body{width:100%}}
+
+/* Existing Power 30 team snapshots reused on awards profiles */
+.watch-snapshot{margin:18px 0 14px;max-width:100%;overflow:hidden;background:#171715;border:1px solid #40372b}.watch-snapshot img{display:block;width:100%;height:clamp(170px,25vw,280px);object-fit:cover;object-position:center 30%}.watch-snapshot figcaption{padding:9px 12px;color:#d5aa67;font:800 10px/1.4 Arial,sans-serif;letter-spacing:.13em}.watch-snapshot+ .statline{margin-top:12px}@media(max-width:600px){.watch-snapshot img{height:210px}.watch-snapshot{margin:16px 0 12px}}
