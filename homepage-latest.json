@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated": "2026-11-09",
+  "sections": [
+    {
+      "id": "nfl",
+      "label": "NFL WEEKLY HQ",
+      "title": "Week 9 — What We Learned Sunday",
+      "url": "nfl-sunday-recap-week9-2026.html",
+      "hub": "nfl.html",
+      "hubLabel": "NFL Coverage"
+    },
+    {
+      "id": "nba",
+      "label": "NBA RANKINGS HQ",
+      "title": "4DK NBA Power Rankings",
+      "url": "nba-power-rankings-2026-27.html",
+      "hub": "nba-rankings-hq.html",
+      "hubLabel": "Rankings HQ"
+    },
+    {
+      "id": "music",
+      "label": "ALBUM FILES · VOL. IV",
+      "title": "The Game — The Documentary",
+      "url": "album-files-the-documentary.html",
+      "hub": "album-files.html",
+      "hubLabel": "Album Files Archive"
+    }
+  ]
+}
