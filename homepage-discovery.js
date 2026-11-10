@@ -16,7 +16,7 @@
     items.forEach(function(item){var a=document.createElement('a');a.href=item.href;a.textContent=item.label;rail.appendChild(a)});
     /* Use the existing authoritative feed; keep linked HTML as an offline fallback. */
     fetch('nightcap-latest.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw Error('feed');return response.json()}).then(function(data){
-      if(!data||typeof data.url!=='string'||!/^nba-nightcap-20\\d{2}-\\d{2}-\\d{2}\\.html$/.test(data.url))return;
+      if(!data||typeof data.url!=='string'||!/^nba-nightcap-20\d{2}-\d{2}-\d{2}\.html$/.test(data.url))return;
       var link=rail.querySelector('a[href^="nba-nightcap-20"]');
       if(!link){link=document.createElement('a');rail.insertBefore(link,rail.children[1]||null);}
       link.href=data.url;
