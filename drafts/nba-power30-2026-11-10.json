@@ -151,7 +151,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-11-02"
+      "last_five_candidate_oldest_date": "2026-11-02",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 2,
@@ -283,7 +290,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 3,
@@ -415,7 +429,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-07",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 4,
@@ -561,7 +582,14 @@
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
       "last_five_candidate_oldest_date": "2026-11-02",
-      "last_five_correction_note": "November 8 Detroit win was absent from earlier Luka individual game log because Luka did not play. Corrected using team schedule and official NBA box score."
+      "last_five_correction_note": "November 8 Detroit win was absent from earlier Luka individual game log because Luka did not play. Corrected using team schedule and official NBA box score.",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 5,
@@ -693,7 +721,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-11-01"
+      "last_five_candidate_oldest_date": "2026-11-01",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 6,
@@ -800,7 +835,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-11-01"
+      "last_five_candidate_oldest_date": "2026-11-01",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 7,
@@ -898,7 +940,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "PHI",
+            "home": true,
+            "result": "L",
+            "score": "106-112"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 8,
@@ -996,7 +1053,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MIN",
+            "home": true,
+            "result": "L",
+            "score": "107-117"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 9,
@@ -1089,7 +1161,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "HOU",
+            "home": false,
+            "result": "W",
+            "score": "117-107"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 10,
@@ -1173,7 +1260,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-07",
-      "last_five_candidate_oldest_date": "2026-10-27"
+      "last_five_candidate_oldest_date": "2026-10-27",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "CHI",
+            "home": true,
+            "result": "W",
+            "score": "135-105"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 11,
@@ -1271,7 +1373,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "TOR",
+            "home": true,
+            "result": "W",
+            "score": "128-109"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 12,
@@ -1415,7 +1532,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 13,
@@ -1547,7 +1671,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-07",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 14,
@@ -1654,7 +1785,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "SAS",
+            "home": false,
+            "result": "L",
+            "score": "111-112"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 15,
@@ -1761,7 +1907,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "WAS",
+            "home": false,
+            "result": "W",
+            "score": "120-105"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 16,
@@ -1869,7 +2030,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "OKC",
+            "home": false,
+            "result": "L",
+            "score": "116-124"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 17,
@@ -1967,7 +2143,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "DEN",
+            "home": false,
+            "result": "L",
+            "score": "109-128"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 18,
@@ -2059,7 +2250,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "LAC",
+            "home": false,
+            "result": "W",
+            "score": "117-116"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 19,
@@ -2165,7 +2371,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "POR",
+            "home": true,
+            "result": "L",
+            "score": "119-132"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 20,
@@ -2273,7 +2494,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "ATL",
+            "home": true,
+            "result": "L",
+            "score": "105-120"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 21,
@@ -2366,7 +2602,14 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-07",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [],
+        "score_conflicts": [],
+        "status": "NO_GAPS_AFTER_NOV3"
+      }
     },
     {
       "rank": 22,
@@ -2464,7 +2707,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "BKN",
+            "home": false,
+            "result": "L",
+            "score": "104-114"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 23,
@@ -2561,7 +2819,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MEM",
+            "home": false,
+            "result": "W",
+            "score": "107-103"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 24,
@@ -2645,7 +2918,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "MIA",
+            "home": true,
+            "result": "L",
+            "score": "116-117"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 25,
@@ -2752,7 +3040,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-09",
-      "last_five_candidate_oldest_date": "2026-10-31"
+      "last_five_candidate_oldest_date": "2026-10-31",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "UTA",
+            "home": true,
+            "result": "W",
+            "score": "120-113"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 26,
@@ -2845,7 +3148,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-30"
+      "last_five_candidate_oldest_date": "2026-10-30",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "CHA",
+            "home": true,
+            "result": "W",
+            "score": "114-104"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 27,
@@ -2930,7 +3248,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-26"
+      "last_five_candidate_oldest_date": "2026-10-26",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "NYK",
+            "home": false,
+            "result": "L",
+            "score": "105-135"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 28,
@@ -3023,7 +3356,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "NOP",
+            "home": false,
+            "result": "L",
+            "score": "113-120"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 29,
@@ -3117,7 +3465,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-29"
+      "last_five_candidate_oldest_date": "2026-10-29",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "LAL",
+            "home": true,
+            "result": "L",
+            "score": "103-116"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     },
     {
       "rank": 30,
@@ -3210,7 +3573,22 @@
       "last_five_candidate_status": "RECONSTRUCTED_FROM_ARCHIVE_AND_RECENT_LOGS_REQUIRES_SCHEDULE_GAP_CHECK",
       "last_five_candidate_source": "nba-weekly-boards-current.json (published Nov 3); drafts recent_games_verified and existing draft last_five",
       "last_five_candidate_last_date": "2026-11-08",
-      "last_five_candidate_oldest_date": "2026-10-28"
+      "last_five_candidate_oldest_date": "2026-10-28",
+      "schedule_gap_audit": {
+        "checked_dates": "2026-11-04 through 2026-11-09",
+        "schedule_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm",
+        "missing_games": [
+          {
+            "date": "2026-11-04",
+            "opponent": "BOS",
+            "home": false,
+            "result": "L",
+            "score": "102-109"
+          }
+        ],
+        "score_conflicts": [],
+        "status": "GAP_OR_CONFLICT_FOUND"
+      }
     }
   ],
   "publication_gate": "Records verified 30/30. HOLD for complete last-five histories, injury statuses, awards statistical sourcing and page/link checks.",
