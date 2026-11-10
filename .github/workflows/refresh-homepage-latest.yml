@@ -1,0 +1,33 @@
+name: Refresh 4DK Homepage Latest Feed
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'nfl-sunday-recap-week*-2026.html'
+      - 'nba-power-rankings-2026-27.html'
+      - 'album-files-the-documentary.html'
+      - 'scripts/refresh_homepage_latest.py'
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and refresh homepage feed
+        run: python scripts/refresh_homepage_latest.py
+      - name: Commit only changed homepage feed
+        run: |
+          if ! git diff --quiet -- homepage-latest.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add homepage-latest.json
+            git commit -m "Refresh latest 4DK homepage feature links"
+            git push
+          fi
