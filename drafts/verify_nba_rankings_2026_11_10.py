@@ -116,8 +116,8 @@ for label, key in (("MVP", "mvp_watch"), ("Rookie", "rookie_watch")):
 # alone must never authorize publication while these are unresolved.
 check(power.get("previous_rank_movement_audit", {}).get("status") == "PASS",
       "Power 30 previous-rank movement audit has not passed")
-check(all(isinstance(x.get("previous_rank"), int) for x in awards["mvp_watch"] + awards["rookie_watch"]),
-      "Award previous ranks missing: verify Nov 3 archived boards before publishing")
+check(all((isinstance(x.get("previous_rank"), int) and x.get("movement") == x["previous_rank"] - x["rank"]) or (x.get("previous_rank") is None and x.get("movement") is None and x.get("movement_label") == "NEW") for x in awards["mvp_watch"] + awards["rookie_watch"]),
+      "Award previous ranks or NEW-entry movement fields invalid")
 check(awards.get("previous_rank_movement_audit", {}).get("status") == "PASS",
       "Award movement baseline audit not approved")
 check(not awards.get("stat_audit_nov10", {}).get("release_hold", True),
