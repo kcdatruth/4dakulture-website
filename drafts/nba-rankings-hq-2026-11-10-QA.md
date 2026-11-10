@@ -42,3 +42,9 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 - Source: https://www.nba.com/watch/list/collection/2026-27-game-recaps
 
 **Release gate remains HOLD.**
+
+## November 10 final standings cross-check
+
+**PASS — 30/30 records.** The date-specific Basketball-Reference index endpoint https://www.basketball-reference.com/boxscores/index.fcgi displays post-November-9 standings and matches every provisional team record, with zero discrepancies. The separately parameterized https://www.basketball-reference.com/boxscores/?day=9&month=11&year=2026 endpoint displays stale standings and incorrectly reports no games; **do not use that parameterized URL as the cutoff source.** NBA.com recap records also corroborate teams playing November 9. Prior source caveat is resolved by identifying the distinct URLs, not by assuming all Basketball-Reference pages are equivalent.
+
+**HOLD:** full five-game logs, player statistics/injuries, and rendered page and link QA still outstanding.
