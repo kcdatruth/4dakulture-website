@@ -352,7 +352,7 @@
       "analysis_baseline": "Oklahoma City remains 5–2, and Shai Gilgeous-Alexander's 43-point response in Cleveland was a reminder of the individual brilliance still available to the Thunder. But the 117–112 win also exposed how much work it takes to win with so many missing pieces. Shai had to carry 35 field-goal attempts and hit the decisive three late; that's a solution for one night, not a sustainable plan for an entire season.\n\nJalen Williams and Cason Wallace face lengthy rehabilitation, and Chet Holmgren is expected to miss eight to ten weeks. That is three foundational two-way players absent at once. Ajay Mitchell and the younger rotation can help the Thunder survive, but the championship version of this team has been interrupted. We drop Oklahoma City because of the changed present-tense roster, not because its long-term culture has disappeared.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "The Thunder make the week's loudest climb among the contenders, from tenth to third. Shai Gilgeous-Alexander's shot creation remains the stable center of the attack, and Chet Holmgren gives Oklahoma City a second axis of defensive pressure. The challenge is sustaining their intensity across a rotation that has dealt with injuries. A contender can survive missing talent for a night; maintaining its offensive structure through those absences is the test that separates a deep team from a merely talented one.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "last_five": [
@@ -485,6 +485,43 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Chet Holmgren",
+            "status": "Out",
+            "reason": "Right knee injury recovery"
+          },
+          {
+            "name": "Thomas Sorber",
+            "status": "Out",
+            "reason": "Right knee surgery"
+          },
+          {
+            "name": "Cason Wallace",
+            "status": "Out",
+            "reason": "Left shoulder surgery"
+          },
+          {
+            "name": "Jalen Williams",
+            "status": "Out",
+            "reason": "Left ankle surgery"
+          },
+          {
+            "name": "Jaylin Williams",
+            "status": "Out",
+            "reason": "Low back spasms"
+          },
+          {
+            "name": "Nikola Topic",
+            "status": "Out",
+            "reason": "G League assignment"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
@@ -1923,7 +1960,7 @@
       "analysis_baseline": "Portland is 5–1 and undefeated in four road games, an early sign that the Trail Blazers are comfortable away from home. Deni Avdija's 28 points against Denver and Donovan Clingan's 18 rebounds turned a difficult road matchup into a 118–110 win. This is a team with length, rebounding and enough perimeter creation to stay dangerous even when one of its primary scorers is quiet.\n\nThe 124–103 home loss to Memphis remains a warning about how quickly elite opponents can force Portland into uncomfortable possessions. But the response has been strong: back-to-back wins and a willingness to defend and rebound through physical games. We want to see whether the Blazers can maintain this road discipline when the schedule gets denser and opponents target their half-court weaknesses.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Portland's start deserves serious consideration because the Blazers have multiple ways to generate offense. Deni Avdija can attack mismatches, Damian Lillard changes the geometry of the floor, and Donovan Clingan gives the defense a clear interior presence. Jrue Holiday's experience matters when the game becomes a possession-by-possession contest. The next challenge is consistency away from home and against teams that can match their physicality without sacrificing perimeter coverage.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "last_five": [
@@ -2054,6 +2091,33 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Vit Krejci",
+            "status": "Out",
+            "reason": "Left ankle fracture"
+          },
+          {
+            "name": "Ja Morant",
+            "status": "Out",
+            "reason": "Left hamstring strain"
+          },
+          {
+            "name": "Shaedon Sharpe",
+            "status": "Out",
+            "reason": "Right meniscus surgery"
+          },
+          {
+            "name": "John Tonje",
+            "status": "Out",
+            "reason": "G League assignment"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
@@ -2729,7 +2793,7 @@
       "analysis_baseline": "Miami has recovered from its 0–4 opening to win two games, but the 138–117 loss to the Lakers showed the distance still to travel. Giannis Antetokounmpo produced 30 points and 12 rebounds, yet Los Angeles generated too many clean looks and controlled the third quarter. The Heat cannot treat every Giannis masterpiece as an automatic solution to structural problems.\n\nThe offense is capable of scoring, and the team has enough experience to improve. But the spacing, transition defense and clarity of roles still fluctuate. Miami's 2–5 record is not a season-ending verdict, though it does put pressure on the next stretch. The goal is to build a consistent identity around Giannis instead of asking him to repair every possession by force.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Miami's record is underwhelming relative to the frontcourt talent. Giannis Antetokounmpo and Bam Adebayo can make opponents think twice before entering the paint, but that defensive promise has to translate into consistent execution and cleaner offensive spacing. The Heat need reliable guard play to keep the floor organized and avoid asking their bigs to manufacture every advantage. The upside is clear; the current results have not yet earned a higher place.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -2857,6 +2921,18 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Giannis Antetokounmpo",
+            "status": "Probable",
+            "reason": "Right wrist sprain"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
@@ -3209,7 +3285,7 @@
       "analysis_baseline": "Orlando's 2–5 start is troubling, and the 103–94 home loss to Washington underscored the problem: too many possessions become difficult when Paolo Banchero isn't available to create the first advantage. Franz Wagner scored 24 and handed out six assists, but the Magic struggled to find consistent half-court rhythm.\n\nDesmond Bane can supply perimeter scoring and Wagner can orchestrate stretches, yet the offense needs more paint touches and better secondary decisions. The defensive tools remain real. The issue is whether the group can keep opponents out of transition while generating enough efficient looks to survive until Paolo returns. The Magic are still talented, but the early standings have already become unforgiving.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Orlando's early record is a warning sign, not a verdict on its talent. Franz Wagner can generate offense in multiple ways, Desmond Bane supplies shooting gravity, and Paolo Banchero's availability is a major variable. The Magic need to avoid long stretches where the offense becomes predictable and the defense cannot generate enough stops to compensate. We want to see a healthy rotation establish clear roles before projecting a turnaround.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_verified": "2-7",
@@ -3341,6 +3417,38 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Paolo Banchero",
+            "status": "Out",
+            "reason": "Right high ankle sprain"
+          },
+          {
+            "name": "Jalen Suggs",
+            "status": "Out",
+            "reason": "Right knee contusion / bone bruise"
+          },
+          {
+            "name": "Jonathan Isaac",
+            "status": "Out",
+            "reason": "Left knee injury management"
+          },
+          {
+            "name": "Noah Penda",
+            "status": "Out",
+            "reason": "Right partially torn hamstring"
+          },
+          {
+            "name": "Izaiyah Nelson",
+            "status": "Out",
+            "reason": "Left ankle injury recovery"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
@@ -4302,7 +4410,7 @@
       "analysis_baseline": "Utah has lost five straight and is struggling to defend the paint and control possessions. Lauri Markkanen scored 22 against San Antonio, but the Jazz lost 119–97 and could not consistently stop the Spurs from generating high-quality looks. Jaren Jackson Jr.'s MCL injury has removed a crucial defensive piece from a roster already trying to establish a coherent identity.\n\nDarryn Peterson's development remains worth watching, and Keyonte George gives Utah another creator. But young guards cannot fix every breakdown behind them. The Jazz need better defensive communication and more efficient possessions before the losing streak becomes the defining story of the season. Development matters; so does accountability.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Utah has struggled to turn individual talent into results. Lauri Markkanen can stretch the floor, Keyonte George provides creation, and Darryn Peterson is part of the longer-term development story. Jaren Jackson Jr. could alter the defensive ceiling when healthy, but his status must be verified before we treat that as an immediate advantage. The Jazz need more disciplined transition defense and a more reliable way to finish possessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -4436,6 +4544,48 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Jaren Jackson Jr.",
+            "status": "Out",
+            "reason": "Right MCL tear"
+          },
+          {
+            "name": "Jusuf Nurkic",
+            "status": "Out",
+            "reason": "Right second plantar plate tear"
+          },
+          {
+            "name": "Keyonte George",
+            "status": "Out",
+            "reason": "Right ankle sprain"
+          },
+          {
+            "name": "Lauri Markkanen",
+            "status": "Questionable",
+            "reason": "Right wrist sprain"
+          },
+          {
+            "name": "Harrison Ingram",
+            "status": "Out",
+            "reason": "G League assignment"
+          },
+          {
+            "name": "Kobe Bufkin",
+            "status": "Out",
+            "reason": "G League assignment"
+          },
+          {
+            "name": "Trey Alexander",
+            "status": "Out",
+            "reason": "G League assignment"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
@@ -4457,7 +4607,7 @@
       "analysis_baseline": "Sacramento finally got its first win, beating Dallas 115–100 behind 25 points from rookie Darius Acuff Jr. That result matters because the Kings have spent the first two weeks absorbing losses while Acuff has been asked to carry an enormous offensive workload. His scoring is legitimate, but the efficiency and defensive details will need time to develop.\n\nDomantas Sabonis and Zach LaVine provide veteran support, and Malik Monk's seven assists against Dallas show how the Kings can share creation. The challenge is to make the Dallas result the beginning of a more competitive stretch, not a one-night release. Sacramento still has a -99 point differential, so there is no justification for a dramatic rise on one win alone.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_1015AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Sacramento's record is the headline, but Darius Acuff Jr.'s development remains one of the most important stories on the roster. Domantas Sabonis can facilitate from the elbows, while Zach LaVine and Malik Monk supply perimeter scoring. The Kings need to turn those individual abilities into connected offense rather than a series of isolated possessions. The defense must also give the offense a chance by avoiding easy paint concessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -4591,6 +4741,43 @@
         ],
         "publication_status": "REFERENCE_ONLY_DO_NOT_LABEL_OFFICIAL_OR_FINAL",
         "note": "Some listed players are day-to-day, not necessarily out. Confirm each player with NBA official report before publication."
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 10:15 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_10_15AM.pdf",
+        "players": [
+          {
+            "name": "Keegan Murray",
+            "status": "Questionable",
+            "reason": "Right wrist soreness"
+          },
+          {
+            "name": "Domantas Sabonis",
+            "status": "Questionable",
+            "reason": "Left knee soreness"
+          },
+          {
+            "name": "Ben Simmons",
+            "status": "Out",
+            "reason": "Right Achilles repair surgery"
+          },
+          {
+            "name": "Maxime Raynaud",
+            "status": "Out",
+            "reason": "Right patella subluxation"
+          },
+          {
+            "name": "Jonathan Mogbo",
+            "status": "Out",
+            "reason": "G League assignment"
+          },
+          {
+            "name": "Sean Pedulla",
+            "status": "Out",
+            "reason": "G League assignment"
+          }
+        ],
+        "scope": "Official Nov 10 game-day report snapshot; statuses may change before tip-off"
       }
     },
     {
