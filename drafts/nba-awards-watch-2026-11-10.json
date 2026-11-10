@@ -28,7 +28,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 1,
+      "movement": 0
     },
     {
       "rank": 2,
@@ -52,7 +54,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 2,
+      "movement": 0
     },
     {
       "rank": 3,
@@ -76,7 +80,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 5,
+      "movement": 2
     },
     {
       "rank": 4,
@@ -100,7 +106,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 6,
+      "movement": 2
     },
     {
       "rank": 5,
@@ -124,7 +132,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 9,
+      "movement": 4
     },
     {
       "rank": 6,
@@ -148,7 +158,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 4,
+      "movement": -2
     },
     {
       "rank": 7,
@@ -172,7 +184,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 3,
+      "movement": -4
     },
     {
       "rank": 8,
@@ -196,7 +210,10 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
     },
     {
       "rank": 9,
@@ -220,7 +237,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 8,
+      "movement": -1
     },
     {
       "rank": 10,
@@ -244,7 +263,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 7,
+      "movement": -3
     }
   ],
   "rookie_watch": [
@@ -270,7 +291,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 1,
+      "movement": 0
     },
     {
       "rank": 2,
@@ -294,7 +317,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 4,
+      "movement": 2
     },
     {
       "rank": 3,
@@ -318,7 +343,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 2,
+      "movement": -1
     },
     {
       "rank": 4,
@@ -342,7 +369,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 3,
+      "movement": -1
     },
     {
       "rank": 5,
@@ -366,7 +395,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 6,
+      "movement": 1
     },
     {
       "rank": 6,
@@ -390,7 +421,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 5,
+      "movement": -1
     },
     {
       "rank": 7,
@@ -416,7 +449,10 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
     },
     {
       "rank": 8,
@@ -442,7 +478,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 10,
+      "movement": 2
     },
     {
       "rank": 9,
@@ -466,7 +504,9 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": 7,
+      "movement": -2
     },
     {
       "rank": 10,
@@ -492,7 +532,10 @@
           "rpg",
           "apg"
         ]
-      }
+      },
+      "previous_rank": null,
+      "movement": null,
+      "movement_label": "NEW"
     }
   ],
   "verified_nov9_spotlights": [
@@ -512,7 +555,7 @@
     "https://www.basketball-reference.com/boxscores/index.fcgi",
     "https://www.nba.com/watch/video/nba-nightly-recap-november-9-2026"
   ],
-  "publication_guard": "Hold until verified Nov 3 award rankings are recovered, Phoenix official injury report is refreshed, and release workflow passes. Do not infer previous ranks.",
+  "publication_guard": "Previous-rank baseline resolved; release still held for official Phoenix injury submission, final current injury refresh, and successful workflow and website QA.",
   "stat_source": "https://keelstats.com/players",
   "team_corrections": [
     "AJ Dybantsa — Washington Wizards",
@@ -600,111 +643,29 @@
     "remaining_mvp_issues": []
   },
   "previous_rank_movement_audit": {
-    "status": "BLOCKED_MISSING_BASELINE",
+    "status": "PASS",
+    "baseline": "nba-weekly-boards-archive-2026-11-03.json",
+    "baseline_edition": "2026-11-03",
     "checked_profiles": 20,
-    "missing_previous_rank": [
-      {
-        "board": "MVP",
-        "name": "Luka Dončić",
-        "rank": 1
-      },
-      {
-        "board": "MVP",
-        "name": "Victor Wembanyama",
-        "rank": 2
-      },
-      {
-        "board": "MVP",
-        "name": "Shai Gilgeous-Alexander",
-        "rank": 3
-      },
-      {
-        "board": "MVP",
-        "name": "Jayson Tatum",
-        "rank": 4
-      },
-      {
-        "board": "MVP",
-        "name": "Stephen Curry",
-        "rank": 5
-      },
-      {
-        "board": "MVP",
-        "name": "Cade Cunningham",
-        "rank": 6
-      },
-      {
-        "board": "MVP",
-        "name": "Tyrese Maxey",
-        "rank": 7
-      },
+    "matched_previous_entries": 17,
+    "new_entries": [
       {
         "board": "MVP",
         "name": "Nikola Jokić",
         "rank": 8
       },
       {
-        "board": "MVP",
-        "name": "Alperen Şengün",
-        "rank": 9
-      },
-      {
-        "board": "MVP",
-        "name": "Ty Jerome",
-        "rank": 10
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Yaxel Lendeborg",
-        "rank": 1
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Darius Acuff Jr.",
-        "rank": 2
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Cameron Boozer",
-        "rank": 3
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Caleb Wilson",
-        "rank": 4
-      },
-      {
-        "board": "ROOKIE",
-        "name": "AJ Dybantsa",
-        "rank": 5
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Darryn Peterson",
-        "rank": 6
-      },
-      {
-        "board": "ROOKIE",
+        "board": "Rookie",
         "name": "Mikel Brown Jr.",
         "rank": 7
       },
       {
-        "board": "ROOKIE",
-        "name": "Brayden Burries",
-        "rank": 8
-      },
-      {
-        "board": "ROOKIE",
-        "name": "Meleek Thomas",
-        "rank": 9
-      },
-      {
-        "board": "ROOKIE",
+        "board": "Rookie",
         "name": "Aday Mara",
         "rank": 10
       }
     ],
-    "source_needed": "Verified November 3 4DK MVP and Rookie Watch archive; do not infer from player rank or other edition",
-    "publication_hold": true
+    "method": "Exact player-name comparison to immutable Nov 3 published awards boards; absent players marked NEW, not assigned invented prior rank.",
+    "publication_hold": false
   }
 }
