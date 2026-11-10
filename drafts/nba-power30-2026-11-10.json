@@ -179,7 +179,7 @@
       "analysis_baseline": "Philadelphia has gone 7–1 and won four straight, but its identity is more interesting than its star-studded names. Tyrese Maxey remains the pace-setter, delivering 26 points and 11 assists against Chicago while the Sixers scored 126. His ability to attack before the defense sets gives LeBron James, Jaylen Brown and Joel Embiid different ways to contribute without turning every trip into an isolation possession.\n\nThe 106–93 loss to Detroit earlier in the season remains an important piece of evidence. When the first action stalls, the Sixers must resist becoming static and trust the second and third reads. Their rematch with Detroit is the early measuring stick: this is a top-three team today, with a legitimate argument for No. 1 if the chemistry and defense hold against the East's toughest challenger.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_0245AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Philadelphia's 9–2 provisional mark puts the Sixers firmly in the No. 1 conversation, but we are keeping them second because the full defensive identity is still coming into focus. Tyrese Maxey sets the pace while LeBron James and Jaylen Brown give the offense multiple ways to attack switches. Embiid's health and workload are the swing variables: the ceiling is enormous when he can anchor the interior without slowing the ball. We want to see the Sixers win possessions with connected defense, not simply outscore opponents through star power.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -297,6 +297,28 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 02:45 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "players": [
+          {
+            "name": "Dominick Barlow",
+            "status": "Out",
+            "reason": "Low Back Stress Reaction"
+          },
+          {
+            "name": "Adem Bona",
+            "status": "Out",
+            "reason": "Cervical Spine Sprain"
+          },
+          {
+            "name": "Ariel Hukporti",
+            "status": "Out",
+            "reason": "Right Achilles Tendon Rupture / Tear"
+          }
+        ],
+        "scope": "Official report snapshot; listed players only; not a guarantee of game-time availability"
       }
     },
     {
@@ -610,7 +632,7 @@
       "analysis_baseline": "Boston's five-game winning streak ended at Houston, where the Celtics scored only 93. That loss is a useful check on a team that has otherwise looked deeper than preseason projections suggested. Jayson Tatum has handled primary creation while Payton Pritchard, Paul George and the supporting group have provided enough movement and shotmaking to win in several styles.\n\nThe question now is whether the offense has a reliable counter when the first wave of actions is cut off. Tatum's nine assists against Houston show the willingness to move the ball, but the team still needs easier paint touches and fewer stretches of contested jumpers. Boston belongs in the top tier of the East; the Rockets exposed exactly where the next improvement must come.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_0245AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Boston is still a top-five team in our eyes because Jayson Tatum gives it a reliable late-clock answer and the collective structure has survived major personnel changes. Paul George adds a different rhythm to the offense, while Payton Pritchard's spacing and Neemias Queta's interior work help the Celtics win possessions that never make highlight reels. The issue to monitor is how consistently Boston creates easy paint touches; leaning on difficult jumpers is a fragile way to protect an elite record.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -728,6 +750,33 @@
         "missing_games": [],
         "score_conflicts": [],
         "status": "NOV4_NOV9_SCHEDULE_GAPS_REPAIRED"
+      },
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 02:45 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "players": [
+          {
+            "name": "Devin Carter",
+            "status": "Out",
+            "reason": "G League - Two-Way"
+          },
+          {
+            "name": "Christopher Cenac Jr.",
+            "status": "Questionable",
+            "reason": "G League - On Assignment"
+          },
+          {
+            "name": "Dillon Mitchell",
+            "status": "Questionable",
+            "reason": "G League - Two-Way"
+          },
+          {
+            "name": "Amari Williams",
+            "status": "Out",
+            "reason": "G League - Two-Way"
+          }
+        ],
+        "scope": "Official report snapshot; listed players only; not a guarantee of game-time availability"
       }
     },
     {
@@ -1329,7 +1378,7 @@
       "analysis_baseline": "The Knicks are 3–4, and the 103–90 win over Brooklyn was needed after a frustrating start. Landry Shamet scored 22, Karl-Anthony Towns grabbed 16 rebounds and Josh Hart distributed seven assists. The win demonstrated that New York can generate offense through its supporting pieces rather than asking Jalen Brunson to solve every possession.\n\nBut the broader question remains: can the Knicks defend with enough consistency and create quality late-clock looks against the best teams? Their positive point differential is encouraging, yet the record says they have not finished enough games. We still believe there is top-ten potential here, but 4DK isn't ranking a reputation ahead of actual execution.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_0245AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "New York makes a meaningful move upward because its core still has the tools to win ugly games. Jalen Brunson can control tempo late, Karl-Anthony Towns bends matchups with his shooting, and OG Anunoby gives the Knicks defensive versatility on the wing. The question is how well the pieces function together when the game speeds up. We need more than isolated scoring bursts; the next step is creating consistent advantages early in possessions and protecting the defensive glass.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_verified": "5-4",
@@ -1438,7 +1487,19 @@
         }
       ],
       "last_five_record": "4-1",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 02:45 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "players": [
+          {
+            "name": "Josh Hart",
+            "status": "Questionable",
+            "reason": "Right Ankle Soreness"
+          }
+        ],
+        "scope": "Official report snapshot; listed players only; not a guarantee of game-time availability"
+      }
     },
     {
       "rank": 11,
@@ -3367,7 +3428,7 @@
       "analysis_baseline": "The Clippers have lost six straight after their opening win, and Monday's 125–118 defeat to Toronto may be the most frustrating. Los Angeles led by 14 in the fourth quarter and still surrendered a 47-point period. Kobe Sanders scored 26, but the team could not protect the ball or find the defensive answers needed to close.\n\nDarius Garland's eight assists show he can create, but his turnovers were costly. The roster has capable veterans and young contributors, yet the collective defense has fallen apart in important moments. At 1–6, the Clippers need more than a lineup adjustment; they need a clear closing identity and an immediate response to the way opponents are attacking them.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_0245AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "The Clippers rise from twenty-ninth to twenty-fourth in our editorial order, but the provisional record still reflects a difficult opening stretch. Darius Garland can organize the attack, and the younger perimeter players need room to develop without being asked to rescue every possession. Brook Lopez can provide structure near the rim. The focus should be on a repeatable identity: better shot selection, fewer empty trips, and consistent effort on the defensive glass.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -3476,7 +3537,44 @@
         }
       ],
       "last_five_record": "1-4",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 02:45 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "players": [
+          {
+            "name": "Bradley Beal",
+            "status": "Out",
+            "reason": "Right Knee Injury Management"
+          },
+          {
+            "name": "Cam Christie",
+            "status": "Questionable",
+            "reason": "Right Ankle Sprain"
+          },
+          {
+            "name": "Brandon Ingram",
+            "status": "Out",
+            "reason": "Right Heel Surgery"
+          },
+          {
+            "name": "Nick Martinelli",
+            "status": "Questionable",
+            "reason": "G League - Two-Way"
+          },
+          {
+            "name": "Jordan Miller",
+            "status": "Out",
+            "reason": "Left Rotator Cuff Surgery"
+          },
+          {
+            "name": "Yanic Konan Niederhauser",
+            "status": "Out",
+            "reason": "Right Lisfranc Surgery"
+          }
+        ],
+        "scope": "Official report snapshot; listed players only; not a guarantee of game-time availability"
+      }
     },
     {
       "rank": 25,
@@ -4198,7 +4296,7 @@
       "analysis_baseline": "Milwaukee's 1–6 start is alarming, and the 112–100 loss to Minnesota reinforced how difficult life has become without consistent two-way execution. Tyler Herro scored 21 and Kel'el Ware rebounded well, but the Bucks could not contain LaMelo Ball or sustain enough scoring pressure to close the gap.\n\nThis roster needs clearer roles and better transition defense. The -91 point differential is not a statistical accident; opponents are getting comfortable looks and Milwaukee is too often forced to play from behind. There is time to recover in the East, but the Bucks must establish something dependable on both ends before the schedule becomes more difficult.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
       "last_five_status": "VERIFIED_NOV4_NOV9_COMPLETE_SCHEDULE_AND_NOV3_ARCHIVE",
-      "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
+      "injury_status": "OFFICIAL_NOV10_0245AM_SNAPSHOT_REQUIRES_FINAL_REFRESH",
       "analysis_nov10": "Milwaukee sits at the bottom of our board because the early results have not supported a stronger argument. Tyler Herro can create offense and Kel'el Ware offers an interior presence, but the Bucks need far better cohesion on both ends. Brayden Burries' development is worth following, though young players should not be forced into unrealistic expectations. A meaningful rise begins with defensive communication, rebounding, and a clearer hierarchy of offensive decisions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
@@ -4317,7 +4415,19 @@
         }
       ],
       "last_five_record": "0-5",
-      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)"
+      "last_five_source": "https://www.landofbasketball.com/results/2026_2027_nov_scores.htm ; nba-weekly-boards-current.json (immutable Nov 3 baseline)",
+      "injury_report_nov10": {
+        "report_time": "2026-11-10 02:45 AM ET",
+        "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_45AM.pdf",
+        "players": [
+          {
+            "name": "Tyler Herro",
+            "status": "Questionable",
+            "reason": "Right Contusion"
+          }
+        ],
+        "scope": "Official report snapshot; listed players only; not a guarantee of game-time availability"
+      }
     }
   ],
   "publication_gate": "Records verified 30/30. HOLD for complete last-five histories, injury statuses, awards statistical sourcing and page/link checks.",
