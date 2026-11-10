@@ -5130,5 +5130,17 @@
     "publication_hold": true,
     "latest_official_report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-10_02_00PM.pdf",
     "latest_official_report_time": "2026-11-10 02:00 PM ET"
+  },
+  "previous_rank_movement_audit": {
+    "status": "PASS",
+    "source": "November 3 editorial locked 4DK Power 30 order",
+    "checked_teams": 30,
+    "checks": [
+      "previous_rank",
+      "rank_delta",
+      "unique_current_ranks"
+    ],
+    "errors": [],
+    "checked_date": "2026-11-10"
   }
 }
