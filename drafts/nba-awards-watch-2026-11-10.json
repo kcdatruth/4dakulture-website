@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "5 MVP player profiles partially cross-checked against 2026-27 season table; remaining player stats and Cameron Boozer discrepancy require direct confirmation. Do not publish.",
+  "stats_status": "Cameron Boozer corrected to 16.2 PPG and 9.7 RPG / 5.5 APG verified via 10-game season totals. Remaining award player full-field checks and previous rank verification still pending; do not publish.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -246,15 +246,20 @@
       "team": "MEM",
       "games_played": 10,
       "season_stats": {
-        "ppg": 16.4,
+        "ppg": 16.2,
         "rpg": 9.7,
         "apg": 5.5
       },
       "stat_audit_nov10": {
-        "status": "UNRESOLVED_16_4_VS_16_2_PPG",
+        "status": "VERIFIED_FULL_PPG_RPG_APG",
         "cutoff": "2026-11-09",
-        "source": "https://www.basketball-reference.com/leagues/NBA_2027_per_game.html",
-        "note": "Do not change or publish PPG until direct season-table verification."
+        "games_played": 10,
+        "source": "https://www.basketball-reference.com/players/b/boozeca02.html",
+        "corroboration": [
+          "https://rookieranks.com/nba/rookie-leaders",
+          "https://hoopsgraph.com/players/cameron-boozer-1643409"
+        ],
+        "verification": "162 points / 10 games = 16.2 PPG; 97 rebounds / 10 = 9.7 RPG; 55 assists / 10 = 5.5 APG"
       }
     },
     {
@@ -422,9 +427,10 @@
     ],
     "conflicts": [],
     "unresolved_critical": [
-      "Cameron Boozer PPG 16.4 versus 16.2",
-      "Remaining 15 player full-field stat checks"
+      "Remaining player full-field stat checks"
     ],
-    "release_hold": true
+    "release_hold": true,
+    "boozer_discrepancy": "RESOLVED_16_2_PPG",
+    "boozer_verified_source": "https://www.basketball-reference.com/players/b/boozeca02.html"
   }
 }
