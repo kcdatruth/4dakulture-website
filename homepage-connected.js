@@ -11,7 +11,7 @@
     data.sections.slice(0,6).forEach(function(item){
       if(!item||!safe(item.url)||!safe(item.hub))return;
       var article=document.createElement('article');article.className='fourdk-connected-card';
-      if(typeof item.image==='string'&&/^(?:[a-z0-9][a-z0-9._-]*\\.(?:jpg|jpeg|png|webp)|https:\\/\\/coverartarchive\\.org\\/release\\/[a-z0-9-]+\\/front-500)$/.test(item.image)){
+      if(typeof item.image==='string' && (item.image==='4dk-power-01-okc.jpeg'||item.image==='https://coverartarchive.org/release/a9003c45-896e-3138-a07e-22f56a81847c/front-500')){
         var image=document.createElement('img');image.className='fourdk-connected-image';image.src=item.image;image.alt=String(item.imageAlt||item.title||'4DK feature');image.loading='lazy';image.decoding='async';article.appendChild(image);
       }
       var label=document.createElement('span');label.className='fourdk-connected-label';label.textContent=String(item.label||'4DK FEATURE');article.appendChild(label);
