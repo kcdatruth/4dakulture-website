@@ -75,6 +75,34 @@ for team in teams:
             except (ValueError, KeyError):
                 failures.append(f"{alias}: invalid score format on {game.get('date')}")
 
+# Check the reconstructed candidate logs independently from approved last-five logs.
+# Every reciprocal game must have reversed scores, opposite results, and opposite venues.
+for team in teams:
+    alias = team["alias"]
+    candidates = team.get("last_five_candidate", [])
+    check(len({g.get("date") for g in candidates}) == len(candidates), f"{alias}: duplicate candidate dates")
+    check(all(candidates[i]["date"] > candidates[i+1]["date"] for i in range(len(candidates)-1)), f"{alias}: candidate dates out of order")
+    for game in candidates:
+        opponent = team_by_alias.get(game.get("opponent"))
+        check(opponent is not None, f"{alias}: unknown candidate opponent {game.get('opponent')}")
+        check(game.get("date", "") <= "2026-11-09", f"{alias}: post-cutoff candidate game")
+        if not opponent:
+            continue
+        other = next((g for g in opponent.get("last_five_candidate", []) if g.get("date") == game.get("date") and g.get("opponent") == alias), None)
+        if other:
+            check(other.get("result") != game.get("result"), f"{alias}: reciprocal candidate result conflict {game['date']}")
+            try:
+                a,b = [int(v) for v in game["score"].split("-")]
+                c,d = [int(v) for v in other["score"].split("-")]
+                check((a,b) == (d,c), f"{alias}: reciprocal candidate score conflict {game['date']}")
+            except (ValueError, KeyError):
+                failures.append(f"{alias}: candidate score format invalid {game.get('date')}")
+            if isinstance(other.get("home"), bool) and isinstance(game.get("home"), bool):
+                check(other["home"] != game["home"], f"{alias}: reciprocal candidate venue conflict {game['date']}")
+    approved = team.get("last_five", [])
+    if len(approved) == 5 and len(candidates) == 5:
+        check([(g["date"],g["opponent"],g["score"],g["result"]) for g in approved] == [(g["date"],g["opponent"],g["score"],g["result"]) for g in candidates], f"{alias}: approved and candidate last-five disagree")
+
 for label, key in (("MVP", "mvp_watch"), ("Rookie", "rookie_watch")):
     entries = awards[key]
     check(len(entries) == 10, f"{label}: expected ten entries")
