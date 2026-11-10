@@ -25,7 +25,7 @@
       ],
       "analysis_baseline": "San Antonio has answered its uneven first week with five consecutive victories. Wembanyama's 43 against Minnesota and his dominant two-way stretch have restored the feeling that the Spurs can dictate the geometry of a game. He protects the rim, changes shot selection and forces defenders to account for a scorer who can finish above the defense or attack in space.\n\nDylan Harper's 17 points and eight assists against Utah show why this roster is more than a one-man experiment. De'Aaron Fox and the guards have to keep creating the pace and spacing that make Wembanyama's work sustainable. The defensive ceiling is enormous; the question is whether San Antonio can maintain this precision when opponents take away the easy transition opportunities.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "San Antonio owns the top line in our editorial race because Victor Wembanyama gives the Spurs a defensive advantage that is difficult to reproduce. His November 9 explosion against Phoenix—40 points and nine blocks—captures the full equation: elite offense at one end, a rewritten shot chart at the other. The Fox–Harper–Castle guard rotation matters because opponents cannot simply crowd the paint and assume the Spurs will run out of creation. The next question is how the supporting cast responds when Wembanyama is forced into early foul trouble or a slower half-court game.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -37,7 +37,31 @@
         "score": "122-96"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "9-2"
+      "record_verified": "9-2",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "PHX",
+          "home": false,
+          "result": "W",
+          "score": "122-96"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "POR",
+          "result": "W",
+          "score": "125-103",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAC",
+          "result": "W",
+          "score": "124-109",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 2,
@@ -57,12 +81,29 @@
       ],
       "analysis_baseline": "Philadelphia has gone 7–1 and won four straight, but its identity is more interesting than its star-studded names. Tyrese Maxey remains the pace-setter, delivering 26 points and 11 assists against Chicago while the Sixers scored 126. His ability to attack before the defense sets gives LeBron James, Jaylen Brown and Joel Embiid different ways to contribute without turning every trip into an isolation possession.\n\nThe 106–93 loss to Detroit earlier in the season remains an important piece of evidence. When the first action stalls, the Sixers must resist becoming static and trust the second and third reads. Their rematch with Detroit is the early measuring stick: this is a top-three team today, with a legitimate argument for No. 1 if the chemistry and defense hold against the East's toughest challenger.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Philadelphia's 9–2 provisional mark puts the Sixers firmly in the No. 1 conversation, but we are keeping them second because the full defensive identity is still coming into focus. Tyrese Maxey sets the pace while LeBron James and Jaylen Brown give the offense multiple ways to attack switches. Embiid's health and workload are the swing variables: the ceiling is enormous when he can anchor the interior without slowing the ball. We want to see the Sixers win possessions with connected defense, not simply outscore opponents through star power.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "9-2"
+      "record_verified": "9-2",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "CHI",
+          "result": "W",
+          "score": "127-121",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CLE",
+          "result": "L",
+          "score": "95-119",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 3,
@@ -82,7 +123,7 @@
       ],
       "analysis_baseline": "Oklahoma City remains 5–2, and Shai Gilgeous-Alexander's 43-point response in Cleveland was a reminder of the individual brilliance still available to the Thunder. But the 117–112 win also exposed how much work it takes to win with so many missing pieces. Shai had to carry 35 field-goal attempts and hit the decisive three late; that's a solution for one night, not a sustainable plan for an entire season.\n\nJalen Williams and Cason Wallace face lengthy rehabilitation, and Chet Holmgren is expected to miss eight to ten weeks. That is three foundational two-way players absent at once. Ajay Mitchell and the younger rotation can help the Thunder survive, but the championship version of this team has been interrupted. We drop Oklahoma City because of the changed present-tense roster, not because its long-term culture has disappeared.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "VERIFIED_FROM_NOV10_SCHEDULE_PREVIEW",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Thunder make the week's loudest climb among the contenders, from tenth to third. Shai Gilgeous-Alexander's shot creation remains the stable center of the attack, and Chet Holmgren gives Oklahoma City a second axis of defensive pressure. The challenge is sustaining their intensity across a rotation that has dealt with injuries. A contender can survive missing talent for a night; maintaining its offensive structure through those absences is the test that separates a deep team from a merely talented one.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -126,7 +167,24 @@
       "last_five_record": "4-1",
       "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/",
       "record_verified": "8-2",
-      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-07",
+          "opponent": "WAS",
+          "result": "W",
+          "score": "114-75",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MEM",
+          "result": "W",
+          "score": "128-97",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 4,
@@ -145,7 +203,7 @@
       ],
       "analysis_baseline": "Luka Dončić is playing the most forceful offensive basketball in the league. His 42 points and 13 assists against Miami pushed the Lakers to 6–2, and his season average sits at 38.3 points. The Lakers' ability to play through Luka and still get 27 from Austin Reaves and 15 rebounds from Walker Kessler is why the offense can overwhelm opponents without becoming one-dimensional.\n\nThe concern is on the other end. Los Angeles has scored 980 points but conceded 922 in eight games; the scoring is championship-caliber, while the defensive consistency still fluctuates. The Lakers are dangerous enough to beat anyone in a single night. The next stage is proving they can control games when Luka is merely excellent rather than superhuman.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Lakers' 10–2 provisional record is the best mark on this board, and Luka Dončić is producing like the league's most dangerous offensive player. His 32-point, 10-assist performance on November 9 demonstrated how he can punish both single coverage and the help defense that follows. Austin Reaves gives Los Angeles another live-ball decision-maker, while Walker Kessler's rim protection changes the defensive floor. We are keeping them fourth for now because the schedule's next wave will test whether the defense holds when Luka sits.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -157,7 +215,31 @@
         "score": "124-114"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "10-2"
+      "record_verified": "10-2",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "ATL",
+          "home": false,
+          "result": "W",
+          "score": "124-114"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "DET",
+          "result": "W",
+          "score": "121-116",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "POR",
+          "result": "W",
+          "score": "124-118",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 5,
@@ -177,12 +259,29 @@
       ],
       "analysis_baseline": "Boston's five-game winning streak ended at Houston, where the Celtics scored only 93. That loss is a useful check on a team that has otherwise looked deeper than preseason projections suggested. Jayson Tatum has handled primary creation while Payton Pritchard, Paul George and the supporting group have provided enough movement and shotmaking to win in several styles.\n\nThe question now is whether the offense has a reliable counter when the first wave of actions is cut off. Tatum's nine assists against Houston show the willingness to move the ball, but the team still needs easier paint touches and fewer stretches of contested jumpers. Boston belongs in the top tier of the East; the Rockets exposed exactly where the next improvement must come.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Boston is still a top-five team in our eyes because Jayson Tatum gives it a reliable late-clock answer and the collective structure has survived major personnel changes. Paul George adds a different rhythm to the offense, while Payton Pritchard's spacing and Neemias Queta's interior work help the Celtics win possessions that never make highlight reels. The issue to monitor is how consistently Boston creates easy paint touches; leaning on difficult jumpers is a fragile way to protect an elite record.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "8-2"
+      "record_verified": "8-2",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIL",
+          "result": "W",
+          "score": "117-97",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "CHA",
+          "result": "W",
+          "score": "119-80",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 6,
@@ -202,7 +301,7 @@
       ],
       "analysis_baseline": "Five consecutive wins have completely changed the Warriors' opening-week story. Stephen Curry scored 34 against Phoenix and continues to bend defenses with his shooting range, but rookie Yaxel Lendeborg has become the second headline. His 37-point game against the Clippers showed the ability to score, pass and move within Golden State's read-and-react offense without looking overwhelmed by the stage.\n\nThe winning streak has come with real offensive variety, and that is the most encouraging part. Curry still attracts the extra defender, but Golden State is getting production from players who understand how to punish that attention. The next challenge is maintaining its defensive effort against bigger, more physical teams. The Warriors are our Team of the Week because the turnaround has been earned on the floor.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Golden State's rise reflects more than Stephen Curry's scoring. His movement forces defenses into impossible choices, and rookie Yaxel Lendeborg has provided the kind of energetic secondary play that can turn those choices into efficient possessions. Brandin Podziemski and Draymond Green help the Warriors keep the ball moving and organize their defense. The concern is sustainability: opponents will test whether Golden State can finish defensive possessions and manufacture offense when Curry is denied clean looks.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -214,7 +313,31 @@
         "score": "138-87"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "8-3"
+      "record_verified": "8-3",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "NOP",
+          "home": true,
+          "result": "W",
+          "score": "138-87"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ORL",
+          "result": "W",
+          "score": "126-119",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "MIA",
+          "result": "W",
+          "score": "120-100",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 7,
@@ -234,7 +357,7 @@
       ],
       "analysis_baseline": "Detroit's 6–1 start has real defensive substance behind it. The Pistons have allowed only 702 points in seven games and sit at +81 despite playing without Jalen Duren. Cade Cunningham scored 33 in the 124–91 demolition of Charlotte, but the wider story is how Detroit can win with physical defense one night and accurate perimeter shooting the next.\n\nPaul Reed's opportunity matters. His mobility, touch and willingness to compete have given Detroit another functional big, even if replacing Duren's interior force remains a long-term challenge. The Sixers visit next, and that matchup will tell us whether Detroit can control a contender's scoring options for four quarters. This is not just a hot start; it's a test of a team trying to turn last season's breakthrough into sustained authority.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Detroit falls from second to seventh, but that should not be mistaken for a collapse in our evaluation. Cade Cunningham still drives the offense, Ausar Thompson supplies perimeter disruption, and Paul Reed's role has grown in the frontcourt. The concern is the physical burden of playing without a fully settled interior rotation. A team that built its identity on pressure and rebounding has to keep those advantages against opponents with size. Detroit can climb again quickly if it restores that consistency.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -246,7 +369,24 @@
         "score": "122-111"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "7-3"
+      "record_verified": "7-3",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "WAS",
+          "home": true,
+          "result": "W",
+          "score": "122-111"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAL",
+          "result": "L",
+          "score": "116-121",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 8,
@@ -266,7 +406,7 @@
       ],
       "analysis_baseline": "Houston has earned the top spot with more than a sparkling 7–1 record. The Rockets own a league-best +103 point differential and just beat Boston 109–93, holding a team that had won five straight below 100. Şengün's 26 points and 10 assists against the Celtics captured the versatility that makes this offense difficult to load up against; he can score from the middle of the floor and turn a second defender into an open shot for someone else.\n\nThe Durant–Şengün pairing gives Houston answers for different defensive looks, while Amen Thompson and the rest of the rotation supply activity that turns stops into transition. A 5–0 start did not survive the trip to Dallas, but the response has been mature. The next test is Minnesota: can the Rockets keep generating clean looks without needing the same player to dominate every fourth quarter?",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Houston's slide from first to eighth is about the strength of the field, not a loss of respect for its talent. Alperen Şengün remains one of the most creative big-man hubs in basketball, and Kevin Durant supplies the half-court shot-making that prevents opponents from overloading the paint. Amen Thompson's athleticism raises the defensive ceiling. What we need from the Rockets is more dependable control of momentum: turnovers and transition defense can undo several minutes of excellent execution.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -278,7 +418,24 @@
         "score": "110-100"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "8-3"
+      "record_verified": "8-3",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DEN",
+          "home": true,
+          "result": "W",
+          "score": "110-100"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "PHX",
+          "result": "L",
+          "score": "99-102",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 9,
@@ -298,12 +455,29 @@
       ],
       "analysis_baseline": "Minnesota's 5–3 record is respectable given Anthony Edwards' knee injury, but the offense has been forced to change identities almost overnight. LaMelo Ball scored 34 against Milwaukee, and Ayo Dosunmu contributed 12 rebounds and eight assists, illustrating the collective effort required when the team's best downhill scorer is unavailable.\n\nThe Wolves have scored 952 points in eight games, so offense hasn't vanished. What changes is the quality of their late-clock options against elite defenses. Rudy Gobert still gives Minnesota an interior backbone, while the wings must defend and finish at a higher rate. This is a survival ranking: the Wolves have the depth to remain relevant, but their title ceiling depends on Edwards' recovery.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Minnesota's record demands top-ten respect, especially given the pressure created by Anthony Edwards's absence. LaMelo Ball brings an improvisational element to the offense, while Rudy Gobert gives the team a defensive anchor around which to build its coverage. The Wolves must find dependable half-court possessions when opponents take away the first action. This stretch is a real test of organizational depth: wins collected without a primary star carry weight, but the defensive details must remain sharp.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "8-3"
+      "record_verified": "8-3",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "UTA",
+          "result": "W",
+          "score": "115-100",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "NOP",
+          "result": "W",
+          "score": "115-109",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 10,
@@ -323,12 +497,22 @@
       ],
       "analysis_baseline": "The Knicks are 3–4, and the 103–90 win over Brooklyn was needed after a frustrating start. Landry Shamet scored 22, Karl-Anthony Towns grabbed 16 rebounds and Josh Hart distributed seven assists. The win demonstrated that New York can generate offense through its supporting pieces rather than asking Jalen Brunson to solve every possession.\n\nBut the broader question remains: can the Knicks defend with enough consistency and create quality late-clock looks against the best teams? Their positive point differential is encouraging, yet the record says they have not finished enough games. We still believe there is top-ten potential here, but 4DK isn't ranking a reputation ahead of actual execution.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "New York makes a meaningful move upward because its core still has the tools to win ugly games. Jalen Brunson can control tempo late, Karl-Anthony Towns bends matchups with his shooting, and OG Anunoby gives the Knicks defensive versatility on the wing. The question is how well the pieces function together when the game speeds up. We need more than isolated scoring bursts; the next step is creating consistent advantages early in possessions and protecting the defensive glass.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_verified": "5-4",
-      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-07",
+          "opponent": "CLE",
+          "result": "W",
+          "score": "109-97",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 1
     },
     {
       "rank": 11,
@@ -348,7 +532,7 @@
       ],
       "analysis_baseline": "Denver is 3–3 and has already experienced several very different kinds of games. Jamal Murray scored 35 in the 118–110 loss to Portland, while Nikola Jokić added nine rebounds and eight assists. The Nuggets can still generate quality shots through their two stars, but the defensive balance has not been dependable enough to turn every strong offensive night into a win.\n\nCam Johnson's integration and the supporting group's ability to defend space remain important variables. Denver cannot assume that Jokić's playmaking will erase every missed rotation or slow start. This is still a team with an elite offensive organizer, but its current results justify a mid-board position until the defense and bench establish a more reliable baseline.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Denver is moving up, but the Nuggets still have work to do to match the expectations created by Nikola Jokić's all-around brilliance. Jamal Murray's shot creation and the spacing around the big man are crucial when defenses refuse to send a second defender. The challenge is reducing the possessions where Jokić has to solve everything from the top of the floor. Denver's ceiling remains high; a cleaner defensive effort and steadier support scoring are what will push it toward the top ten.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -360,7 +544,24 @@
         "score": "100-110"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "5-4"
+      "record_verified": "5-4",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "HOU",
+          "home": false,
+          "result": "L",
+          "score": "100-110"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "IND",
+          "result": "W",
+          "score": "114-102",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 12,
@@ -380,7 +581,7 @@
       ],
       "analysis_baseline": "Memphis finally lost, but a 6–1 record and +90 point differential demand a place among the league's early elite. Ty Jerome poured in 40 in the overtime defeat to New Orleans; the result was painful, but the performance demonstrated that his scoring surge has survived multiple scouting adjustments. Cameron Boozer is already giving the Grizzlies a second story, with rebounding, passing and the confidence to play through contact.\n\nThe danger is allowing the undefeated narrative to distract from the underlying work. Memphis must defend late-game possessions better after surrendering 135 to the Pelicans, and Jerome cannot be asked to rescue every difficult possession. Still, the offense has multiple points of attack, and the frontcourt is becoming more versatile by the game. We have moved Memphis into the top five on merit, not hype.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Memphis remains a genuine early-season story even after slipping in our rankings. Ty Jerome has become a central source of scoring and organization, while Cameron Boozer's versatility gives the frontcourt an unusual passing dimension for a rookie. Zach Edey's size creates another problem for opponents near the basket. The Grizzlies need to show they can dictate the terms of games against disciplined defenses rather than relying on their young talent to win every broken possession.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -392,7 +593,24 @@
         "score": "118-102"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "7-3"
+      "record_verified": "7-3",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "TOR",
+          "home": false,
+          "result": "W",
+          "score": "118-102"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "OKC",
+          "result": "L",
+          "score": "97-128",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 13,
@@ -412,7 +630,7 @@
       ],
       "analysis_baseline": "Portland is 5–1 and undefeated in four road games, an early sign that the Trail Blazers are comfortable away from home. Deni Avdija's 28 points against Denver and Donovan Clingan's 18 rebounds turned a difficult road matchup into a 118–110 win. This is a team with length, rebounding and enough perimeter creation to stay dangerous even when one of its primary scorers is quiet.\n\nThe 124–103 home loss to Memphis remains a warning about how quickly elite opponents can force Portland into uncomfortable possessions. But the response has been strong: back-to-back wins and a willingness to defend and rebound through physical games. We want to see whether the Blazers can maintain this road discipline when the schedule gets denser and opponents target their half-court weaknesses.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "VERIFIED_FROM_NOV10_SCHEDULE_PREVIEW",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Portland's start deserves serious consideration because the Blazers have multiple ways to generate offense. Deni Avdija can attack mismatches, Damian Lillard changes the geometry of the floor, and Donovan Clingan gives the defense a clear interior presence. Jrue Holiday's experience matters when the game becomes a possession-by-possession contest. The next challenge is consistency away from home and against teams that can match their physicality without sacrificing perimeter coverage.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -456,7 +674,24 @@
       "last_five_record": "3-2",
       "last_five_source": "https://550thezone.iheart.com/content/2026-11-10-thunder-vs-trail-blazers-time-tv-stream-nov-10/",
       "record_verified": "6-3",
-      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-07",
+          "opponent": "SAS",
+          "result": "L",
+          "score": "103-125",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "LAL",
+          "result": "L",
+          "score": "118-124",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 14,
@@ -476,7 +711,7 @@
       ],
       "analysis_baseline": "Dallas sits at 4–3 after Sacramento snapped its three-game winning streak with a 115–100 result. The Mavericks shot poorly from outside, and Cooper Flagg struggled to finish, going 3-for-19 from the field. Those are the nights that test a young star's decision-making and the team's ability to find alternative scoring routes.\n\nKyrie Irving missed the game for left-knee management, leaving the Mavericks without their most dependable perimeter creator. Dallas has shown it can defend and play through multiple options, but the margin narrows when the offense turns into difficult individual possessions. The next test is San Antonio's length and rim protection; that matchup should tell us how far Dallas' half-court execution has come.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Dallas's climb is driven by the rapid emergence of Cooper Flagg as a player who can influence the game in several phases. His 43-point outing against Indiana on November 9 is the kind of performance that changes the expectations surrounding a young star. Kyrie Irving's creation and the Mavericks' frontcourt size can make Dallas difficult to scheme against. We still need to see whether the defensive execution and offensive decision-making remain stable when Flagg is not scoring at that level.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -488,7 +723,31 @@
         "score": "125-122"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "7-4"
+      "record_verified": "7-4",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "IND",
+          "home": true,
+          "result": "W",
+          "score": "125-122"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "BKN",
+          "result": "W",
+          "score": "130-93",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "UTA",
+          "result": "W",
+          "score": "112-100",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 15,
@@ -508,7 +767,7 @@
       ],
       "analysis_baseline": "Atlanta returned to .500 with a 108–104 road win over Indiana. Nickeil Alexander-Walker delivered 34 points, and CJ McCollum supplied 12 assists. That kind of complementary production is vital because the Hawks need multiple creators to make their spacing work and prevent opponents from keying on Jalen Johnson.\n\nThe defensive identity is still uneven. Atlanta's +10 point differential and 4–4 record suggest a team capable of competing but not yet capable of controlling games for extended stretches. The next stage is learning to close without surrendering the middle of the floor. The Hawks have enough talent to climb; they need a more reliable defensive floor.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Atlanta's 7–5 provisional start has the Hawks in the middle of a crowded race, but Jalen Johnson gives them a compelling two-way foundation. Nickeil Alexander-Walker's perimeter activity and CJ McCollum's shot-making offer different ways to survive stretches when the offense stalls. The issue is consistency of defensive resistance: opponents should not be able to reach their preferred spots without a second effort. Atlanta's next move depends on turning competitive quarters into complete games.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -520,7 +779,31 @@
         "score": "114-124"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "7-5"
+      "record_verified": "7-5",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "LAL",
+          "home": true,
+          "result": "L",
+          "score": "114-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "BKN",
+          "result": "W",
+          "score": "124-121",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "WAS",
+          "result": "W",
+          "score": "139-132",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 16,
@@ -540,7 +823,7 @@
       ],
       "analysis_baseline": "Cleveland's 4–3 record reflects a team still trying to put together complete games. The Thunder escaped with a 117–112 win despite a season-best 17 from rookie Meleek Thomas and 11 assists from Donovan Mitchell. The Cavaliers had opportunities late, but Shai Gilgeous-Alexander found the decisive shot and Cleveland couldn't close the possession.\n\nThe roster still has proven interior talent and enough perimeter creation to challenge the East's best. The issue is consistency: the Cavaliers cannot spend long stretches reacting instead of dictating matchups. Thomas' growing confidence is encouraging, but Cleveland needs its veteran core to produce more reliable defensive stops and better first-quarter execution.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Cleveland has more talent than its early record suggests. Donovan Mitchell can carry a scoring run, Evan Mobley changes the game at the rim, and James Harden gives the offense another organizer. The problem is turning those individual strengths into a reliable collective identity. When the Cavaliers defend without fouling and move the ball before the defense loads up, the ceiling looks much higher than sixteenth. Until those habits hold for entire games, the ranking stays cautious.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -552,7 +835,31 @@
         "score": "112-124"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "5-6"
+      "record_verified": "5-6",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CHA",
+          "home": false,
+          "result": "L",
+          "score": "112-124"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "NYK",
+          "result": "L",
+          "score": "97-109",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "PHI",
+          "result": "W",
+          "score": "119-95",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 17,
@@ -572,7 +879,7 @@
       ],
       "analysis_baseline": "Toronto is 4–3 and just stole a 125–118 win from the Clippers after trailing by 14 in the fourth quarter. Immanuel Quickley scored 27, while Scottie Barnes contributed 15 rebounds and eight assists. That combination matters because the Raptors are learning how to manufacture offense and composure without Kawhi Leonard.\n\nKawhi's knee swelling has made his return timeline uncertain, but the young core is not waiting for permission to compete. Barnes can direct possessions from several spots, and Quickley has given Toronto the shotmaking needed to close. The concern is whether that production can survive repeated defensive attention. The Raptors are in the early East mix, but the long-term ceiling remains linked to Leonard's availability.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Toronto has the size and versatility to trouble better-ranked teams. Scottie Barnes is a natural connector, Kawhi Leonard provides another potential half-court option when available, and RJ Barrett can create pressure at the rim. The Raptors need better control of the margins: defensive rebounding, turnovers, and shot selection will decide whether their balanced roster translates into a winning streak. We are watching the health and continuity of the wing rotation as closely as the final score.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -584,7 +891,24 @@
         "score": "102-118"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "5-5"
+      "record_verified": "5-5",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "MEM",
+          "home": true,
+          "result": "L",
+          "score": "102-118"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIL",
+          "result": "W",
+          "score": "121-107",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 18,
@@ -603,12 +927,29 @@
       ],
       "analysis_baseline": "Miami has recovered from its 0–4 opening to win two games, but the 138–117 loss to the Lakers showed the distance still to travel. Giannis Antetokounmpo produced 30 points and 12 rebounds, yet Los Angeles generated too many clean looks and controlled the third quarter. The Heat cannot treat every Giannis masterpiece as an automatic solution to structural problems.\n\nThe offense is capable of scoring, and the team has enough experience to improve. But the spacing, transition defense and clarity of roles still fluctuate. Miami's 2–5 record is not a season-ending verdict, though it does put pressure on the next stretch. The goal is to build a consistent identity around Giannis instead of asking him to repair every possession by force.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Miami's record is underwhelming relative to the frontcourt talent. Giannis Antetokounmpo and Bam Adebayo can make opponents think twice before entering the paint, but that defensive promise has to translate into consistent execution and cleaner offensive spacing. The Heat need reliable guard play to keep the floor organized and avoid asking their bigs to manufacture every advantage. The upside is clear; the current results have not yet earned a higher place.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "4-6"
+      "record_verified": "4-6",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "SAC",
+          "result": "W",
+          "score": "114-108",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "GSW",
+          "result": "L",
+          "score": "100-120",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 19,
@@ -627,7 +968,7 @@
       ],
       "analysis_baseline": "Phoenix is 1–4 and has now lost three straight. Devin Booker scored 26 in the 116–113 loss at Golden State, but the Suns again failed to finish a close game. Their offensive talent can produce individual bursts, yet the defense and late-game execution have not been reliable enough to convert those bursts into wins.\n\nJalen Green's eight assists against the Warriors are a positive sign of expanding playmaking responsibility. Still, the Suns need to settle their lineups and create more predictable defensive coverages. A -53 point differential in only five games is an early warning. The upcoming Portland matchup offers an opportunity to show whether this team can compete with a rising West opponent.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Phoenix has the kind of shot creation that can steal any single night, with Devin Booker at the center of its offense and Jalen Green adding speed. Dillon Brooks supplies edge and defensive competitiveness. The problem is that a few difficult makes do not compensate for breakdowns on the other end. The Suns need a more stable possession-to-possession defensive approach and better shot quality when the first option is taken away. That is the route out of the bottom third.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -639,7 +980,31 @@
         "score": "96-122"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "3-6"
+      "record_verified": "3-6",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "SAS",
+          "home": true,
+          "result": "L",
+          "score": "96-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "HOU",
+          "result": "W",
+          "score": "102-99",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "ORL",
+          "result": "W",
+          "score": "117-104",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 20,
@@ -659,7 +1024,7 @@
       ],
       "analysis_baseline": "Washington is 4–3 and leading the Southeast, a sentence that would have sounded aggressive before the season. Anthony Davis scored 27 in the 103–94 win over Orlando, while Trae Young handed out nine assists. Their partnership gives the Wizards a workable inside-out structure: Young bends the defense with the ball, and Davis gives them a dependable target and a defensive eraser.\n\nThe Wizards still have to prove they can win when the jumpers aren't falling and when opponents force Davis to defend away from the basket. But a two-game winning streak and a positive point differential are more than a curiosity. AJ Dybantsa's development adds another layer to a team with a chance to remain in the early playoff picture.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Washington has intriguing pieces but has not yet converted them into a reliable winning identity. Trae Young's playmaking and Anthony Davis's interior presence give the Wizards obvious offensive and defensive building blocks, while AJ Dybantsa offers long-term upside. The question is fit and continuity: who sets the pace, who finishes possessions, and how does the team respond when the first action is stopped? Those answers matter more than any one scoring explosion.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -671,7 +1036,31 @@
         "score": "111-122"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "4-7"
+      "record_verified": "4-7",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DET",
+          "home": false,
+          "result": "L",
+          "score": "111-122"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "OKC",
+          "result": "L",
+          "score": "75-114",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "ATL",
+          "result": "L",
+          "score": "132-139",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 21,
@@ -691,12 +1080,29 @@
       ],
       "analysis_baseline": "Orlando's 2–5 start is troubling, and the 103–94 home loss to Washington underscored the problem: too many possessions become difficult when Paolo Banchero isn't available to create the first advantage. Franz Wagner scored 24 and handed out six assists, but the Magic struggled to find consistent half-court rhythm.\n\nDesmond Bane can supply perimeter scoring and Wagner can orchestrate stretches, yet the offense needs more paint touches and better secondary decisions. The defensive tools remain real. The issue is whether the group can keep opponents out of transition while generating enough efficient looks to survive until Paolo returns. The Magic are still talented, but the early standings have already become unforgiving.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Orlando's early record is a warning sign, not a verdict on its talent. Franz Wagner can generate offense in multiple ways, Desmond Bane supplies shooting gravity, and Paolo Banchero's availability is a major variable. The Magic need to avoid long stretches where the offense becomes predictable and the defense cannot generate enough stops to compensate. We want to see a healthy rotation establish clear roles before projecting a turnaround.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_verified": "2-7",
-      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-07",
+          "opponent": "GSW",
+          "result": "L",
+          "score": "119-126",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-05",
+          "opponent": "PHX",
+          "result": "L",
+          "score": "104-117",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 22,
@@ -715,7 +1121,7 @@
       ],
       "analysis_baseline": "Charlotte's four-game losing streak has pushed the Hornets to 3–5. Detroit exposed their defensive problems in a 124–91 loss, holding Brandon Miller to 17 while creating quality looks from the perimeter. The Hornets have individual talent, but their offense becomes too easy to anticipate when the first option is taken away.\n\nMiller's scoring ability remains important, and Coby White's return can provide another ballhandler as he gets comfortable. The question is whether Charlotte can defend the point of attack and secure rebounds without overhelping. The current -90 point differential is a bigger warning than the record alone. This is a young team that needs better habits, not merely better shooting luck.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Charlotte is holding steady at twenty-second because the young core continues to offer promise without consistent results. Brandon Miller's scoring versatility and Coby White's guard play can make the offense dangerous, but the Hornets have to build a more dependable defensive floor. Moussa Diabaté's energy can help on the glass. The next stage is learning to close tight games without relying on difficult individual shots every trip.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -727,7 +1133,24 @@
         "score": "124-112"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "4-7"
+      "record_verified": "4-7",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "CLE",
+          "home": true,
+          "result": "W",
+          "score": "124-112"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "BOS",
+          "result": "L",
+          "score": "80-119",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 23,
@@ -746,7 +1169,7 @@
       ],
       "analysis_baseline": "Indiana has dropped five straight, and the 108–104 loss to Atlanta continued a pattern of competitive stretches without enough late execution. Jay Huff scored 22 and Braden Smith supplied 10 assists, but the Pacers couldn't contain Alexander-Walker's scoring or manufacture enough stops when the game tightened.\n\nTyrese Haliburton and Pascal Siakam remain the established offensive names, but the team needs to convert that talent into more reliable defensive possessions. The Pacers' 2–6 record does not mean every piece is failing; it means the overall balance is not working. Their next trip to Memphis is an immediate test against a team that has been far more consistent.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Indiana's start has been difficult, but the Pacers still have recognizable strengths. Tyrese Haliburton's passing can create high-quality looks, Pascal Siakam provides a dependable mismatch option, and the frontcourt must finish possessions against more physical opponents. The concern is whether the defense can hold long enough for the offense to find its rhythm. A few strong offensive stretches will not change this ranking without sustained resistance at the other end.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -758,7 +1181,24 @@
         "score": "122-125"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "3-8"
+      "record_verified": "3-8",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "DAL",
+          "home": false,
+          "result": "L",
+          "score": "122-125"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "DEN",
+          "result": "L",
+          "score": "102-114",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 24,
@@ -778,12 +1218,22 @@
       ],
       "analysis_baseline": "The Clippers have lost six straight after their opening win, and Monday's 125–118 defeat to Toronto may be the most frustrating. Los Angeles led by 14 in the fourth quarter and still surrendered a 47-point period. Kobe Sanders scored 26, but the team could not protect the ball or find the defensive answers needed to close.\n\nDarius Garland's eight assists show he can create, but his turnovers were costly. The roster has capable veterans and young contributors, yet the collective defense has fallen apart in important moments. At 1–6, the Clippers need more than a lineup adjustment; they need a clear closing identity and an immediate response to the way opponents are attacking them.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "The Clippers rise from twenty-ninth to twenty-fourth in our editorial order, but the provisional record still reflects a difficult opening stretch. Darius Garland can organize the attack, and the younger perimeter players need room to develop without being asked to rescue every possession. Brook Lopez can provide structure near the rim. The focus should be on a repeatable identity: better shot selection, fewer empty trips, and consistent effort on the defensive glass.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "2-7"
+      "record_verified": "2-7",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "NOP",
+          "result": "W",
+          "score": "139-123",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 1
     },
     {
       "rank": 25,
@@ -803,7 +1253,7 @@
       ],
       "analysis_baseline": "New Orleans has won three straight, including the 135–134 overtime upset that handed Memphis its first loss. Zion Williamson was active around the rim and on the glass, while the Pelicans made the late plays necessary to finish a game against an unbeaten opponent. That result is a significant confidence builder for a team that opened the season slowly.\n\nThe offense is finding more ways to generate pressure, and the supporting frontcourt is producing. But New Orleans still has to prove it can defend without relying on a late-game shot or whistle. The Pelicans' +12 point differential is modest, which is why we are rewarding momentum without declaring a sudden contender. This is the kind of week that can reset a season if the habits last.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "NOV_9_GAME_VERIFIED_REMAINING_GAMES_PENDING",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "New Orleans has enough talent to be more competitive than its ranking suggests. Zion Williamson can create paint pressure that few teams can match, while Jeremiah Fears and Derik Queen offer developing complementary skills. The Pelicans need to protect the ball and turn Zion's drives into reliable secondary offense. The bigger concern is whether the defense can string together stops when the pace slows. Until that happens, occasional statement wins remain isolated.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
@@ -815,7 +1265,31 @@
         "score": "87-138"
       },
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "4-7"
+      "record_verified": "4-7",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-09",
+          "opponent": "GSW",
+          "home": false,
+          "result": "L",
+          "score": "87-138"
+        },
+        {
+          "date": "2026-11-08",
+          "opponent": "LAC",
+          "result": "L",
+          "score": "123-139",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "MIN",
+          "result": "L",
+          "score": "109-115",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 3
     },
     {
       "rank": 26,
@@ -835,12 +1309,29 @@
       ],
       "analysis_baseline": "Brooklyn's 1–6 record reflects a team still searching for dependable two-way structure. Julius Randle scored 21 and grabbed 11 rebounds against the Knicks, but the Nets lost 103–90 and struggled to create enough quality offense when New York tightened its defense.\n\nThe younger guards are gaining valuable reps, including Mikel Brown Jr., but development has to include decision-making under pressure and better transition coverage. Brooklyn has been outscored by 60 points through seven games. There are flashes worth building on, yet the Nets have not shown the sustained execution required to climb the board.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Brooklyn's rise from thirtieth to twenty-sixth is modest but worth noting. Julius Randle and Michael Porter Jr. give the Nets proven scoring options, while Mikel Brown Jr. and Nolan Traoré represent the developmental side of the roster. The question is how to balance those priorities without losing structure. We want to see the young guards create quality possessions and the veteran forwards commit to the defensive work required to make those possessions matter.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "2-8"
+      "record_verified": "2-8",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "DAL",
+          "result": "L",
+          "score": "93-130",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-07",
+          "opponent": "ATL",
+          "result": "L",
+          "score": "121-124",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 27,
@@ -860,12 +1351,22 @@
       ],
       "analysis_baseline": "Chicago has lost five consecutive games, and the 126–107 defeat in Philadelphia highlighted how much the Bulls still have to learn about defensive organization. Caleb Wilson scored 24 and remains one of the most compelling young players in the league, but his individual growth has not translated into collective stops.\n\nJosh Giddey contributed 10 assists against the Sixers, showing that Chicago can move the ball when the offense is connected. The problem is the other end: 902 points allowed in seven games is the worst total in the East. The Bulls should continue giving their young core responsibility, but they need a system that makes mistakes teachable rather than repetitive.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Chicago's difficult start should not obscure Caleb Wilson's potential, but the Bulls cannot ask a rookie to fix every structural problem. Josh Giddey can push the ball and find cutters, while Matas Buzelis offers length and scoring upside. The team needs better spacing and a clearer defensive identity. Player development is important, but so is establishing habits that travel: communicating through screens, boxing out, and protecting the ball.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_verified": "1-8",
-      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi"
+      "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "PHI",
+          "result": "L",
+          "score": "121-127",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 1
     },
     {
       "rank": 28,
@@ -885,12 +1386,29 @@
       ],
       "analysis_baseline": "Utah has lost five straight and is struggling to defend the paint and control possessions. Lauri Markkanen scored 22 against San Antonio, but the Jazz lost 119–97 and could not consistently stop the Spurs from generating high-quality looks. Jaren Jackson Jr.'s MCL injury has removed a crucial defensive piece from a roster already trying to establish a coherent identity.\n\nDarryn Peterson's development remains worth watching, and Keyonte George gives Utah another creator. But young guards cannot fix every breakdown behind them. The Jazz need better defensive communication and more efficient possessions before the losing streak becomes the defining story of the season. Development matters; so does accountability.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Utah has struggled to turn individual talent into results. Lauri Markkanen can stretch the floor, Keyonte George provides creation, and Darryn Peterson is part of the longer-term development story. Jaren Jackson Jr. could alter the defensive ceiling when healthy, but his status must be verified before we treat that as an immediate advantage. The Jazz need more disciplined transition defense and a more reliable way to finish possessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "1-9"
+      "record_verified": "1-9",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIN",
+          "result": "L",
+          "score": "100-115",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "DAL",
+          "result": "L",
+          "score": "100-112",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 29,
@@ -910,12 +1428,29 @@
       ],
       "analysis_baseline": "Sacramento finally got its first win, beating Dallas 115–100 behind 25 points from rookie Darius Acuff Jr. That result matters because the Kings have spent the first two weeks absorbing losses while Acuff has been asked to carry an enormous offensive workload. His scoring is legitimate, but the efficiency and defensive details will need time to develop.\n\nDomantas Sabonis and Zach LaVine provide veteran support, and Malik Monk's seven assists against Dallas show how the Kings can share creation. The challenge is to make the Dallas result the beginning of a more competitive stretch, not a one-night release. Sacramento still has a -99 point differential, so there is no justification for a dramatic rise on one win alone.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Sacramento's record is the headline, but Darius Acuff Jr.'s development remains one of the most important stories on the roster. Domantas Sabonis can facilitate from the elbows, while Zach LaVine and Malik Monk supply perimeter scoring. The Kings need to turn those individual abilities into connected offense rather than a series of isolated possessions. The defense must also give the offense a chance by avoiding easy paint concessions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "1-9"
+      "record_verified": "1-9",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "MIA",
+          "result": "L",
+          "score": "108-114",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "SAS",
+          "result": "L",
+          "score": "109-124",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     },
     {
       "rank": 30,
@@ -934,12 +1469,29 @@
       ],
       "analysis_baseline": "Milwaukee's 1–6 start is alarming, and the 112–100 loss to Minnesota reinforced how difficult life has become without consistent two-way execution. Tyler Herro scored 21 and Kel'el Ware rebounded well, but the Bucks could not contain LaMelo Ball or sustain enough scoring pressure to close the gap.\n\nThis roster needs clearer roles and better transition defense. The -91 point differential is not a statistical accident; opponents are getting comfortable looks and Milwaukee is too often forced to play from behind. There is time to recover in the East, but the Bucks must establish something dependable on both ends before the schedule becomes more difficult.",
       "analysis_status": "NEW_4DK_EDITORIAL_DRAFT_REQUIRES_FINAL_FACT_CHECK",
-      "last_five_status": "PENDING_NOV_9_RECONCILIATION",
+      "last_five_status": "PARTIAL_OFFICIAL_GAME_LOG_PENDING",
       "injury_status": "PENDING_CURRENT_OFFICIAL_REPORT",
       "analysis_nov10": "Milwaukee sits at the bottom of our board because the early results have not supported a stronger argument. Tyler Herro can create offense and Kel'el Ware offers an interior presence, but the Bucks need far better cohesion on both ends. Brayden Burries' development is worth following, though young players should not be forced into unrealistic expectations. A meaningful rise begins with defensive communication, rebounding, and a clearer hierarchy of offensive decisions.",
       "outlook_nov10": "Next review: verify opponent-specific last-five trends, current availability, and whether the team's recent performance supports this editorial placement.",
       "record_source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-      "record_verified": "1-9"
+      "record_verified": "1-9",
+      "recent_games_verified": [
+        {
+          "date": "2026-11-08",
+          "opponent": "BOS",
+          "result": "L",
+          "score": "97-117",
+          "source": "NBA official 2026-27 game recaps"
+        },
+        {
+          "date": "2026-11-06",
+          "opponent": "TOR",
+          "result": "L",
+          "score": "107-121",
+          "source": "NBA official 2026-27 game recaps"
+        }
+      ],
+      "recent_games_verified_count": 2
     }
   ],
   "publication_gate": "All 30 records cross-checked against November 9 conference standings. HOLD: last-five logs, injuries, awards source validation, page testing.",
@@ -950,6 +1502,9 @@
     "pending_official_standings": [],
     "cutoff": "2026-11-09",
     "source": "https://www.basketball-reference.com/boxscores/index.fcgi",
-    "errors": []
-  }
+    "errors": [],
+    "source_correction": "Prior Basketball-Reference Nov 9 standings display was stale before final Nov 9 results; use NBA.com official recap records instead. Do not cite Basketball-Reference as final Nov 9 cutoff verification."
+  },
+  "game_log_source": "https://www.nba.com/watch/list/collection/2026-27-game-recaps",
+  "game_log_note": "Recent games verified from NBA recaps; incomplete histories are NOT labeled full last-five. Preserve any previously drafted last_five but require reconciliation before publishing."
 }
