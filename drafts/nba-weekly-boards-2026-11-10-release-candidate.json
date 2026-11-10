@@ -2503,7 +2503,7 @@
       "Phoenix injury statuses remain pending official confirmation."
     ]
   },
-  "methodology": "4DK editorial rankings as of November 10; game results through November 9. Movement from November 3 archived edition. Phoenix official injury report not submitted as of 2:15 PM ET; secondary injury reports are not NBA-confirmed.",
+  "methodology": "4DK editorial rankings as of November 10; game results through November 9. Movement from November 3 archived edition. Phoenix official injury report not submitted as of 2:15 PM ET; secondary injury reports are not NBA-confirmed. Standings seed order is an editorial W/L percentage snapshot, not official NBA tiebreak seeding. Point differential omitted where a November 9 verified figure is unavailable.",
   "verification_urls": [
     "https://official.nba.com/nba-injury-report-2026-27-season",
     "https://odyn.bet/nba/injury-report",
@@ -2527,5 +2527,595 @@
     "2026-10-27",
     "2026-11-03",
     "2026-11-10"
-  ]
+  ],
+  "standings": {
+    "East": [
+      {
+        "alias": "PHI",
+        "name": "Philadelphia 76ers",
+        "division": "Atlantic",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 1,
+        "position": "direct"
+      },
+      {
+        "alias": "BOS",
+        "name": "Boston Celtics",
+        "division": "Atlantic",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 2,
+        "position": "direct"
+      },
+      {
+        "alias": "DET",
+        "name": "Detroit Pistons",
+        "division": "Central",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 3,
+        "position": "direct"
+      },
+      {
+        "alias": "ATL",
+        "name": "Atlanta Hawks",
+        "division": "Southeast",
+        "w": 7,
+        "l": 5,
+        "pct": 0.583,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 4,
+        "position": "direct"
+      },
+      {
+        "alias": "NYK",
+        "name": "New York Knicks",
+        "division": "Atlantic",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 5,
+        "position": "direct"
+      },
+      {
+        "alias": "TOR",
+        "name": "Toronto Raptors",
+        "division": "Atlantic",
+        "w": 5,
+        "l": 5,
+        "pct": 0.5,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 6,
+        "position": "direct"
+      },
+      {
+        "alias": "CLE",
+        "name": "Cleveland Cavaliers",
+        "division": "Central",
+        "w": 5,
+        "l": 6,
+        "pct": 0.455,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 7,
+        "position": "play-in"
+      },
+      {
+        "alias": "MIA",
+        "name": "Miami Heat",
+        "division": "Southeast",
+        "w": 4,
+        "l": 6,
+        "pct": 0.4,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 8,
+        "position": "play-in"
+      },
+      {
+        "alias": "CHA",
+        "name": "Charlotte Hornets",
+        "division": "Southeast",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 9,
+        "position": "play-in"
+      },
+      {
+        "alias": "WAS",
+        "name": "Washington Wizards",
+        "division": "Southeast",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 10,
+        "position": "play-in"
+      },
+      {
+        "alias": "IND",
+        "name": "Indiana Pacers",
+        "division": "Central",
+        "w": 3,
+        "l": 8,
+        "pct": 0.273,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 11,
+        "position": "outside"
+      },
+      {
+        "alias": "ORL",
+        "name": "Orlando Magic",
+        "division": "Southeast",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 12,
+        "position": "outside"
+      },
+      {
+        "alias": "BKN",
+        "name": "Brooklyn Nets",
+        "division": "Atlantic",
+        "w": 2,
+        "l": 8,
+        "pct": 0.2,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 13,
+        "position": "outside"
+      },
+      {
+        "alias": "CHI",
+        "name": "Chicago Bulls",
+        "division": "Central",
+        "w": 1,
+        "l": 8,
+        "pct": 0.111,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 14,
+        "position": "outside"
+      },
+      {
+        "alias": "MIL",
+        "name": "Milwaukee Bucks",
+        "division": "Central",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 15,
+        "position": "outside"
+      }
+    ],
+    "West": [
+      {
+        "alias": "LAL",
+        "name": "Los Angeles Lakers",
+        "division": "Pacific",
+        "w": 10,
+        "l": 2,
+        "pct": 0.833,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 1,
+        "position": "direct"
+      },
+      {
+        "alias": "SAS",
+        "name": "San Antonio Spurs",
+        "division": "Southwest",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 2,
+        "position": "direct"
+      },
+      {
+        "alias": "OKC",
+        "name": "Oklahoma City Thunder",
+        "division": "Northwest",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 3,
+        "position": "direct"
+      },
+      {
+        "alias": "GSW",
+        "name": "Golden State Warriors",
+        "division": "Pacific",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "5-0",
+        "point_diff": null,
+        "seed": 4,
+        "position": "direct"
+      },
+      {
+        "alias": "HOU",
+        "name": "Houston Rockets",
+        "division": "Southwest",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 5,
+        "position": "direct"
+      },
+      {
+        "alias": "MIN",
+        "name": "Minnesota Timberwolves",
+        "division": "Northwest",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727,
+        "l5": "4-1",
+        "point_diff": null,
+        "seed": 6,
+        "position": "direct"
+      },
+      {
+        "alias": "MEM",
+        "name": "Memphis Grizzlies",
+        "division": "Southwest",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 7,
+        "position": "play-in"
+      },
+      {
+        "alias": "POR",
+        "name": "Portland Trail Blazers",
+        "division": "Northwest",
+        "w": 6,
+        "l": 3,
+        "pct": 0.667,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 8,
+        "position": "play-in"
+      },
+      {
+        "alias": "DAL",
+        "name": "Dallas Mavericks",
+        "division": "Southwest",
+        "w": 7,
+        "l": 4,
+        "pct": 0.636,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 9,
+        "position": "play-in"
+      },
+      {
+        "alias": "DEN",
+        "name": "Denver Nuggets",
+        "division": "Northwest",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556,
+        "l5": "3-2",
+        "point_diff": null,
+        "seed": 10,
+        "position": "play-in"
+      },
+      {
+        "alias": "NOP",
+        "name": "New Orleans Pelicans",
+        "division": "Southwest",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 11,
+        "position": "outside"
+      },
+      {
+        "alias": "PHX",
+        "name": "Phoenix Suns",
+        "division": "Pacific",
+        "w": 3,
+        "l": 6,
+        "pct": 0.333,
+        "l5": "2-3",
+        "point_diff": null,
+        "seed": 12,
+        "position": "outside"
+      },
+      {
+        "alias": "LAC",
+        "name": "LA Clippers",
+        "division": "Pacific",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 13,
+        "position": "outside"
+      },
+      {
+        "alias": "SAC",
+        "name": "Sacramento Kings",
+        "division": "Pacific",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "1-4",
+        "point_diff": null,
+        "seed": 14,
+        "position": "outside"
+      },
+      {
+        "alias": "UTA",
+        "name": "Utah Jazz",
+        "division": "Northwest",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1,
+        "l5": "0-5",
+        "point_diff": null,
+        "seed": 15,
+        "position": "outside"
+      }
+    ]
+  },
+  "divisions": {
+    "Southwest": [
+      {
+        "alias": "SAS",
+        "name": "San Antonio Spurs",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818
+      },
+      {
+        "alias": "HOU",
+        "name": "Houston Rockets",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "MEM",
+        "name": "Memphis Grizzlies",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7
+      },
+      {
+        "alias": "DAL",
+        "name": "Dallas Mavericks",
+        "w": 7,
+        "l": 4,
+        "pct": 0.636
+      },
+      {
+        "alias": "NOP",
+        "name": "New Orleans Pelicans",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      }
+    ],
+    "Atlantic": [
+      {
+        "alias": "PHI",
+        "name": "Philadelphia 76ers",
+        "w": 9,
+        "l": 2,
+        "pct": 0.818
+      },
+      {
+        "alias": "BOS",
+        "name": "Boston Celtics",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8
+      },
+      {
+        "alias": "NYK",
+        "name": "New York Knicks",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556
+      },
+      {
+        "alias": "TOR",
+        "name": "Toronto Raptors",
+        "w": 5,
+        "l": 5,
+        "pct": 0.5
+      },
+      {
+        "alias": "BKN",
+        "name": "Brooklyn Nets",
+        "w": 2,
+        "l": 8,
+        "pct": 0.2
+      }
+    ],
+    "Northwest": [
+      {
+        "alias": "OKC",
+        "name": "Oklahoma City Thunder",
+        "w": 8,
+        "l": 2,
+        "pct": 0.8
+      },
+      {
+        "alias": "MIN",
+        "name": "Minnesota Timberwolves",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "POR",
+        "name": "Portland Trail Blazers",
+        "w": 6,
+        "l": 3,
+        "pct": 0.667
+      },
+      {
+        "alias": "DEN",
+        "name": "Denver Nuggets",
+        "w": 5,
+        "l": 4,
+        "pct": 0.556
+      },
+      {
+        "alias": "UTA",
+        "name": "Utah Jazz",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Pacific": [
+      {
+        "alias": "LAL",
+        "name": "Los Angeles Lakers",
+        "w": 10,
+        "l": 2,
+        "pct": 0.833
+      },
+      {
+        "alias": "GSW",
+        "name": "Golden State Warriors",
+        "w": 8,
+        "l": 3,
+        "pct": 0.727
+      },
+      {
+        "alias": "PHX",
+        "name": "Phoenix Suns",
+        "w": 3,
+        "l": 6,
+        "pct": 0.333
+      },
+      {
+        "alias": "LAC",
+        "name": "LA Clippers",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222
+      },
+      {
+        "alias": "SAC",
+        "name": "Sacramento Kings",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Central": [
+      {
+        "alias": "DET",
+        "name": "Detroit Pistons",
+        "w": 7,
+        "l": 3,
+        "pct": 0.7
+      },
+      {
+        "alias": "CLE",
+        "name": "Cleveland Cavaliers",
+        "w": 5,
+        "l": 6,
+        "pct": 0.455
+      },
+      {
+        "alias": "IND",
+        "name": "Indiana Pacers",
+        "w": 3,
+        "l": 8,
+        "pct": 0.273
+      },
+      {
+        "alias": "CHI",
+        "name": "Chicago Bulls",
+        "w": 1,
+        "l": 8,
+        "pct": 0.111
+      },
+      {
+        "alias": "MIL",
+        "name": "Milwaukee Bucks",
+        "w": 1,
+        "l": 9,
+        "pct": 0.1
+      }
+    ],
+    "Southeast": [
+      {
+        "alias": "ATL",
+        "name": "Atlanta Hawks",
+        "w": 7,
+        "l": 5,
+        "pct": 0.583
+      },
+      {
+        "alias": "MIA",
+        "name": "Miami Heat",
+        "w": 4,
+        "l": 6,
+        "pct": 0.4
+      },
+      {
+        "alias": "CHA",
+        "name": "Charlotte Hornets",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      },
+      {
+        "alias": "WAS",
+        "name": "Washington Wizards",
+        "w": 4,
+        "l": 7,
+        "pct": 0.364
+      },
+      {
+        "alias": "ORL",
+        "name": "Orlando Magic",
+        "w": 2,
+        "l": 7,
+        "pct": 0.222
+      }
+    ]
+  }
 }
