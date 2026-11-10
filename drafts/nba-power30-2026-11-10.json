@@ -638,7 +638,9 @@
           "home": false,
           "result": "W",
           "score": "117-97",
-          "source": "existing last-five draft"
+          "source": "existing last-five draft",
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-06",
@@ -1020,7 +1022,10 @@
           "opponent": "UTA",
           "result": "W",
           "score": "115-100",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-06",
@@ -1955,7 +1960,10 @@
           "opponent": "SAC",
           "result": "W",
           "score": "114-108",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": false,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-05",
@@ -2885,7 +2893,10 @@
           "opponent": "MIN",
           "result": "L",
           "score": "100-115",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": false,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-06",
@@ -2972,7 +2983,10 @@
           "opponent": "MIA",
           "result": "L",
           "score": "108-114",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-06",
@@ -3062,7 +3076,9 @@
           "score": "97-117",
           "source": "recent dated game logs",
           "home": true,
-          "home_derived_from_reciprocal": true
+          "home_derived_from_reciprocal": true,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://www.basketball-reference.com/boxscores/?day=8&month=11&year=2026"
         },
         {
           "date": "2026-11-06",
@@ -3121,11 +3137,11 @@
     "teams_with_five_candidate_entries": 30,
     "entries": 150,
     "home_flags_derived_from_reciprocal": 6,
-    "home_flags_unresolved": 26,
+    "home_flags_unresolved": 22,
     "reciprocal_score_conflicts": [],
     "status": "CANDIDATES_NOT_YET_VERIFIED_AGAINST_COMPLETE_SCHEDULE",
     "warning": "Five dated entries are not proof they are the actual last five: dates omitted from both baseline and recent log must be checked against complete team schedule.",
-    "nov8_boxscore_verified_entries": 8,
+    "nov8_boxscore_verified_entries": 14,
     "nov8_boxscore_issues": []
   }
 }
