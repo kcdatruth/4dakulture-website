@@ -48,3 +48,13 @@ The November 9 **eight final scores** agree across NBA.com, Basketball-Reference
 **New source:** https://www.nba.com/watch/list/collection/2026-27-game-recaps
 
 **Correction to workflow:** The 30-team provisional records balancing at 154–154 is only a checksum, not proof of accuracy. Do not mark all 30 records verified on that basis.
+
+## November 10 — Ty Jerome discrepancy resolved with primary source
+
+**CONFIRMED: 27 points**, six rebounds, two assists at Toronto on November 9. The official NBA game page explicitly states Jerome scored 27 points on 9-for-19 shooting (5-for-11 from three), and the Memphis Grizzlies' official postgame release independently states 27. The earlier CBS scoreboard's 25 was incorrect; its updated individual game log now lists 27. Do not carry the earlier dispute forward as an open blocker.
+
+Primary sources:
+- https://www.nba.com/game/mem-vs-tor-0022600206/blueprint
+- https://www.nba.com/grizzlies/news/grizzlies-defeat-raptors-118-102
+
+Memphis last five reconstructed from the November 9 Ty Jerome game log: Nov 9 TOR W 118-102; Nov 6 OKC L 97-128; Nov 4 IND L 103-107; Nov 2 NOP L 134-135; Oct 29 POR W 124-103. **Last five: 2–3.** Source: https://www.cbssports.com/nba/players/2268642/ty-jerome/game-log/
