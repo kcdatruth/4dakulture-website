@@ -4,7 +4,7 @@
   "cutoff": "2026-11-09 end of games",
   "status": "DRAFT_NOT_LIVE",
   "editorial_lock": "November 9 user-established order; do not reorder",
-  "stats_status": "19 of 20 candidates have sourced points per game; 17 have full PPG/RPG/APG lines; Aday Mara requires a complete current season snapshot. Existing rookie Cameron Boozer scoring figure conflicts between sources (16.4 vs 16.2) and must be reconciled.",
+  "stats_status": "20 of 20 candidates have sourced PPG/RPG/APG; individual stats still need final source/date reconciliation, including Cameron Boozer's 16.4 vs 16.2 PPG conflict. Previous award movements and official injury designations not finalized.",
   "mvp_watch": [
     {
       "rank": 1,
@@ -207,9 +207,12 @@
       "team": "BKN",
       "games_played": 7,
       "season_stats": {
-        "ppg": 12.9
+        "ppg": 12.9,
+        "rpg": 2.1,
+        "apg": 3.9
       },
-      "stat_verification": "PPG and games played verified; RPG/APG not yet verified"
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://www.nba.com/player/1643414/mikel-brown-jr"
     },
     {
       "rank": 8,
@@ -218,9 +221,12 @@
       "team": "MIL",
       "games_played": 10,
       "season_stats": {
-        "ppg": 10.5
+        "ppg": 10.5,
+        "rpg": 5.5,
+        "apg": 2.2
       },
-      "stat_verification": "PPG and games played verified; RPG/APG not yet verified"
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "stat_source": "https://fantasyteamadvice.com/nba/players/26217/brayden-burries/stats"
     },
     {
       "rank": 9,
@@ -239,7 +245,14 @@
       "name": "Aday Mara",
       "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification.",
       "team": "OKC",
-      "stat_verification": "Current team confirmed in RotoWire November 4 rookie impact index; full season line still pending"
+      "stat_verification": "PPG/RPG/APG sourced for 2026-27 through November 9",
+      "games_played": 10,
+      "season_stats": {
+        "ppg": 8.1,
+        "rpg": 5.9,
+        "apg": 1.3
+      },
+      "stat_source": "https://www.basketball-reference.com/players/m/maraad01.html"
     }
   ],
   "verified_nov9_spotlights": [
