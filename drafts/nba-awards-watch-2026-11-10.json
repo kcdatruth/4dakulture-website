@@ -1,0 +1,130 @@
+{
+  "schema_version": "4dk.nba.awards.draft.v1",
+  "edition": "2026-11-10",
+  "cutoff": "2026-11-09 end of games",
+  "status": "DRAFT_NOT_LIVE",
+  "editorial_lock": "November 9 user-established order; do not reorder",
+  "stats_status": "Season averages, prior-week movement and injury designations pending source verification",
+  "mvp_watch": [
+    {
+      "rank": 1,
+      "name": "Luka Dončić",
+      "analysis": "The league's most explosive scoring engine is still our standard. His 32-point, 10-assist outing against Atlanta underlined how his playmaking survives even when the jumper is not automatic."
+    },
+    {
+      "rank": 2,
+      "name": "Victor Wembanyama",
+      "analysis": "The strongest two-way counterargument to Luka: 40 points and nine blocks against Phoenix, changing both the scoreboard and the shots opponents dare attempt."
+    },
+    {
+      "rank": 3,
+      "name": "Shai Gilgeous-Alexander",
+      "analysis": "His control of Oklahoma City's offense and ability to manufacture efficient looks keep him in the top tier. The Thunder's team success strengthens the case."
+    },
+    {
+      "rank": 4,
+      "name": "Jayson Tatum",
+      "analysis": "Tatum's position reflects his established value as a primary creator and two-way wing. We need to weigh current availability and team results without inventing a stat line."
+    },
+    {
+      "rank": 5,
+      "name": "Stephen Curry",
+      "analysis": "Golden State's offense still bends around his shooting gravity. His impact goes beyond points: defenses compromise their shape simply to deny him touches."
+    },
+    {
+      "rank": 6,
+      "name": "Cade Cunningham",
+      "analysis": "Detroit's rise gives Cade a compelling leadership case. The test is whether his creation remains steady when opponents force the ball out of his hands."
+    },
+    {
+      "rank": 7,
+      "name": "Tyrese Maxey",
+      "analysis": "Philadelphia's pace and offensive organization run through Maxey. His speed turns defensive hesitation into immediate pressure on the rim."
+    },
+    {
+      "rank": 8,
+      "name": "Nikola Jokić",
+      "analysis": "Denver's fulcrum remains the standard for decision-making bigs. We will distinguish his all-around impact from the Nuggets' early record."
+    },
+    {
+      "rank": 9,
+      "name": "Alperen Şengün",
+      "analysis": "Houston's inside-out creation gives the Rockets a second offensive language. His passing from the middle of the floor unlocks the surrounding talent."
+    },
+    {
+      "rank": 10,
+      "name": "Ty Jerome",
+      "analysis": "Memphis's early success puts Jerome's shot-making and decision-making in focus. His November 9 scoring performance against Toronto supports the case."
+    }
+  ],
+  "rookie_watch": [
+    {
+      "rank": 1,
+      "name": "Yaxel Lendeborg",
+      "analysis": "Our No. 1 rookie has earned the spotlight through his two-way energy and growing role with Golden State. The next step is proving the production holds across different matchups."
+    },
+    {
+      "rank": 2,
+      "name": "Darius Acuff Jr.",
+      "analysis": "Acuff's placement reflects his creation burden and offensive upside. We will measure his efficiency and turnover control alongside his scoring."
+    },
+    {
+      "rank": 3,
+      "name": "Cameron Boozer",
+      "analysis": "Boozer's rebounding, playmaking and physical maturity make this a real three-player race at the top. Memphis's winning start adds context."
+    },
+    {
+      "rank": 4,
+      "name": "Caleb Wilson",
+      "analysis": "Wilson has to create value in a difficult Chicago environment. His production should be judged on responsibility as well as raw totals."
+    },
+    {
+      "rank": 5,
+      "name": "AJ Dybantsa",
+      "analysis": "Dybantsa's ceiling remains enormous, but availability and minutes must be documented before the next edition goes live."
+    },
+    {
+      "rank": 6,
+      "name": "Darryn Peterson",
+      "analysis": "Peterson's scoring talent gives Utah a reason to watch every possession. We need the current efficiency and usage before making stronger statistical claims."
+    },
+    {
+      "rank": 7,
+      "name": "Mikel Brown Jr.",
+      "analysis": "Brown's placement recognizes the flashes of shot creation. Consistency and role clarity are the next checkpoints."
+    },
+    {
+      "rank": 8,
+      "name": "Brayden Burries",
+      "analysis": "Burries has the tools to contribute as a perimeter scorer. His shot selection and defensive discipline matter as much as his highlights."
+    },
+    {
+      "rank": 9,
+      "name": "Meleek Thomas",
+      "analysis": "Thomas has an opportunity to make a meaningful impression in Minnesota's rotation. We will track his role alongside the team's injury situation."
+    },
+    {
+      "rank": 10,
+      "name": "Aday Mara",
+      "analysis": "Mara rounds out the locked ten. His size and interior skill give him a distinct developmental path; playing time and availability need verification."
+    }
+  ],
+  "verified_nov9_spotlights": [
+    {
+      "name": "Victor Wembanyama",
+      "points": 40,
+      "rebounds": 11,
+      "blocks": 9
+    },
+    {
+      "name": "Luka Dončić",
+      "points": 32,
+      "assists": 10
+    }
+  ],
+  "sources": [
+    "https://www.basketball-reference.com/boxscores/index.fcgi",
+    "https://www.nba.com/watch/video/nba-nightly-recap-november-9-2026"
+  ],
+  "publication_guard": "Do not publish until full current season averages, previous rank, team and injury checks complete."
+}
