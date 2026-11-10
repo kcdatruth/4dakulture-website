@@ -767,7 +767,10 @@
           "opponent": "MIA",
           "result": "W",
           "score": "120-100",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
           "date": "2026-11-02",
@@ -1998,7 +2001,10 @@
           "opponent": "GSW",
           "result": "L",
           "score": "100-120",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": false,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
           "date": "2026-11-02",
@@ -2106,7 +2112,10 @@
           "opponent": "ORL",
           "result": "W",
           "score": "117-104",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": true,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
           "date": "2026-11-02",
@@ -2291,7 +2300,10 @@
           "opponent": "PHX",
           "result": "L",
           "score": "104-117",
-          "source": "recent dated game logs"
+          "source": "recent dated game logs",
+          "home": false,
+          "official_boxscore_checked": true,
+          "official_boxscore_source": "https://statsnext.com/nba/games"
         },
         {
           "date": "2026-11-02",
@@ -3181,7 +3193,7 @@
     "teams_with_five_candidate_entries": 30,
     "entries": 150,
     "home_flags_derived_from_reciprocal": 6,
-    "home_flags_unresolved": 14,
+    "home_flags_unresolved": 10,
     "reciprocal_score_conflicts": [],
     "status": "CANDIDATES_NOT_YET_VERIFIED_AGAINST_COMPLETE_SCHEDULE",
     "warning": "Five dated entries are not proof they are the actual last five: dates omitted from both baseline and recent log must be checked against complete team schedule.",
@@ -3191,6 +3203,7 @@
     "nov6_issues": {
       "missing": [],
       "conflicts": []
-    }
+    },
+    "nov5_boxscore_verified_entries": 4
   }
 }
