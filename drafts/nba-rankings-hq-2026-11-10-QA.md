@@ -76,3 +76,9 @@ November 9 finals independently match the CBS scoreboard and Basketball-Referenc
 All 150 candidate entries now have explicit home/away flags. The complete seven-game November 7 slate (14 team entries) was reconciled against Basketball-Reference and RealGM: https://www.basketball-reference.com/boxscores/?day=7&month=11&year=2026 and https://basketball.realgm.com/schedules/2026-11-07/NBA . No score/winner mismatches were found in those 14 entries. The remaining unknown-venue count is **zero**.
 
 **This does not verify all last-five histories:** a team can have five valid dated games while missing a more recent game. Continue complete schedule gap analysis before copying `last_five_candidate` to `last_five`. Injuries and awards stats remain pending. Keep release HOLD.
+
+## November 10 — full schedule-gap audit completed
+
+Cross-referenced **all 47 NBA fixtures November 4–9** (14 + 2 + 9 + 7 + 7 + 8) against all 30 teams' candidate logs using https://www.landofbasketball.com/results/2026_2027_nov_scores.htm and the immutable November 3 baseline `nba-weekly-boards-current.json`. Found **21 missing November 4 team entries** and repaired all of them. Rebuilt and marked **30/30 five-game histories** verified against the full Nov 4–9 schedule plus the Nov 3 archive. Every entry now includes a date, opponent, result, score and home/away flag.
+
+**Release still HOLD:** 30 official injury-status checks, awards statistics and source/date reconciliation, and final preview/site link and responsive testing remain outstanding. The workflow's successful execution has not yet been confirmed. Do not merge.
