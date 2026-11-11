@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "checked_utc": "2026-11-10 15:16 UTC",
+  "checked_utc": "2026-11-11 15:34 UTC",
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet",
   "status": "verified",
   "matched": 60,
@@ -29,15 +29,15 @@
       "ft_pct": 88.1
     },
     "Shai Gilgeous-Alexander": {
-      "games": 10,
-      "ppg": 29.9,
-      "rpg": 3.9,
-      "apg": 4.9,
-      "spg": 1.0,
+      "games": 11,
+      "ppg": 29.5,
+      "rpg": 4.3,
+      "apg": 4.7,
+      "spg": 0.9,
       "bpg": 1.1,
-      "fg_pct": 46.1,
-      "fg3_pct": 39.1,
-      "ft_pct": 85.3
+      "fg_pct": 45.3,
+      "fg3_pct": 37.0,
+      "ft_pct": 86.1
     },
     "Nikola Jokic": {
       "games": 9,
@@ -51,26 +51,26 @@
       "ft_pct": 89.7
     },
     "Giannis Antetokounmpo": {
-      "games": 10,
-      "ppg": 27.5,
-      "rpg": 12.8,
-      "apg": 5.3,
-      "spg": 1.0,
-      "bpg": 1.1,
-      "fg_pct": 56.6,
-      "fg3_pct": 20.0,
-      "ft_pct": 62.2
+      "games": 11,
+      "ppg": 27.7,
+      "rpg": 12.6,
+      "apg": 5.2,
+      "spg": 0.9,
+      "bpg": 1.0,
+      "fg_pct": 56.7,
+      "fg3_pct": 22.2,
+      "ft_pct": 61.6
     },
     "Jayson Tatum": {
-      "games": 9,
-      "ppg": 27.1,
+      "games": 10,
+      "ppg": 26.5,
       "rpg": 6.0,
-      "apg": 7.8,
-      "spg": 0.8,
-      "bpg": 0.6,
-      "fg_pct": 42.0,
-      "fg3_pct": 31.3,
-      "ft_pct": 89.3
+      "apg": 7.4,
+      "spg": 0.7,
+      "bpg": 0.7,
+      "fg_pct": 42.5,
+      "fg3_pct": 32.4,
+      "ft_pct": 89.5
     },
     "Cade Cunningham": {
       "games": 10,
@@ -84,15 +84,15 @@
       "ft_pct": 80.0
     },
     "Jalen Brunson": {
-      "games": 9,
-      "ppg": 26.2,
-      "rpg": 3.0,
-      "apg": 5.6,
-      "spg": 0.7,
+      "games": 10,
+      "ppg": 25.9,
+      "rpg": 3.1,
+      "apg": 5.2,
+      "spg": 0.6,
       "bpg": 0.3,
-      "fg_pct": 42.2,
-      "fg3_pct": 36.8,
-      "ft_pct": 75.7
+      "fg_pct": 42.0,
+      "fg3_pct": 36.6,
+      "ft_pct": 78.2
     },
     "Anthony Edwards": {
       "games": 4,
@@ -106,26 +106,26 @@
       "ft_pct": 75.0
     },
     "Tyrese Maxey": {
-      "games": 11,
-      "ppg": 26.9,
-      "rpg": 3.7,
-      "apg": 5.5,
-      "spg": 1.4,
+      "games": 12,
+      "ppg": 26.7,
+      "rpg": 3.5,
+      "apg": 5.3,
+      "spg": 1.2,
       "bpg": 0.6,
-      "fg_pct": 48.1,
-      "fg3_pct": 34.1,
-      "ft_pct": 85.7
+      "fg_pct": 49.1,
+      "fg3_pct": 36.0,
+      "ft_pct": 86.6
     },
     "Jaylen Brown": {
-      "games": 10,
-      "ppg": 22.3,
-      "rpg": 6.7,
-      "apg": 4.0,
-      "spg": 1.2,
-      "bpg": 0.4,
-      "fg_pct": 47.7,
-      "fg3_pct": 39.2,
-      "ft_pct": 71.4
+      "games": 11,
+      "ppg": 21.5,
+      "rpg": 6.5,
+      "apg": 3.8,
+      "spg": 1.3,
+      "bpg": 0.5,
+      "fg_pct": 47.6,
+      "fg3_pct": 38.2,
+      "ft_pct": 70.9
     },
     "Stephen Curry": {
       "games": 9,
@@ -194,15 +194,15 @@
       "ft_pct": 100.0
     },
     "Karl-Anthony Towns": {
-      "games": 9,
+      "games": 10,
       "ppg": 20.9,
-      "rpg": 13.6,
+      "rpg": 13.8,
       "apg": 3.1,
-      "spg": 0.7,
-      "bpg": 0.4,
-      "fg_pct": 56.5,
-      "fg3_pct": 43.6,
-      "ft_pct": 79.5
+      "spg": 0.8,
+      "bpg": 0.5,
+      "fg_pct": 54.3,
+      "fg3_pct": 39.6,
+      "ft_pct": 75.5
     },
     "Alperen Sengun": {
       "games": 9,
@@ -227,15 +227,15 @@
       "ft_pct": 85.2
     },
     "Devin Booker": {
-      "games": 9,
-      "ppg": 26.0,
+      "games": 10,
+      "ppg": 25.1,
       "rpg": 2.7,
       "apg": 4.8,
-      "spg": 1.1,
+      "spg": 1.0,
       "bpg": 0.3,
-      "fg_pct": 48.8,
-      "fg3_pct": 36.0,
-      "ft_pct": 94.9
+      "fg_pct": 48.3,
+      "fg3_pct": 35.7,
+      "ft_pct": 93.7
     },
     "Anthony Davis": {
       "games": 9,
@@ -249,15 +249,15 @@
       "ft_pct": 84.6
     },
     "LeBron James": {
-      "games": 9,
-      "ppg": 15.6,
-      "rpg": 7.1,
-      "apg": 6.7,
-      "spg": 1.4,
-      "bpg": 0.8,
-      "fg_pct": 44.2,
-      "fg3_pct": 25.0,
-      "ft_pct": 68.4
+      "games": 10,
+      "ppg": 15.1,
+      "rpg": 7.2,
+      "apg": 6.5,
+      "spg": 1.3,
+      "bpg": 0.7,
+      "fg_pct": 43.2,
+      "fg3_pct": 23.7,
+      "ft_pct": 70.0
     },
     "Evan Mobley": {
       "games": 11,
@@ -271,26 +271,26 @@
       "ft_pct": 63.4
     },
     "Bam Adebayo": {
-      "games": 10,
-      "ppg": 18.5,
+      "games": 11,
+      "ppg": 17.8,
       "rpg": 8.4,
-      "apg": 3.2,
-      "spg": 2.1,
-      "bpg": 0.6,
-      "fg_pct": 53.0,
-      "fg3_pct": 18.2,
+      "apg": 3.3,
+      "spg": 2.3,
+      "bpg": 0.7,
+      "fg_pct": 50.7,
+      "fg3_pct": 17.1,
       "ft_pct": 75.0
     },
     "Deni Avdija": {
-      "games": 9,
-      "ppg": 22.3,
+      "games": 10,
+      "ppg": 22.5,
       "rpg": 6.4,
-      "apg": 6.3,
+      "apg": 6.5,
       "spg": 0.9,
       "bpg": 0.1,
-      "fg_pct": 47.1,
-      "fg3_pct": 33.3,
-      "ft_pct": 66.7
+      "fg_pct": 47.7,
+      "fg3_pct": 34.7,
+      "ft_pct": 67.4
     },
     "Paolo Banchero": {
       "games": 2,
@@ -304,15 +304,15 @@
       "ft_pct": 70.0
     },
     "Joel Embiid": {
-      "games": 9,
-      "ppg": 17.9,
-      "rpg": 9.7,
-      "apg": 4.1,
-      "spg": 0.8,
-      "bpg": 0.8,
-      "fg_pct": 38.0,
-      "fg3_pct": 10.0,
-      "ft_pct": 90.0
+      "games": 10,
+      "ppg": 17.7,
+      "rpg": 9.3,
+      "apg": 3.8,
+      "spg": 0.7,
+      "bpg": 0.7,
+      "fg_pct": 37.0,
+      "fg3_pct": 12.1,
+      "ft_pct": 89.0
     },
     "Tyrese Haliburton": {
       "games": 4,
@@ -370,15 +370,15 @@
       "ft_pct": 100.0
     },
     "Franz Wagner": {
-      "games": 9,
-      "ppg": 20.8,
-      "rpg": 6.3,
-      "apg": 8.8,
-      "spg": 1.3,
+      "games": 10,
+      "ppg": 22.0,
+      "rpg": 6.4,
+      "apg": 8.6,
+      "spg": 1.4,
       "bpg": 0.0,
-      "fg_pct": 44.0,
-      "fg3_pct": 23.3,
-      "ft_pct": 77.1
+      "fg_pct": 44.5,
+      "fg3_pct": 22.9,
+      "ft_pct": 81.0
     },
     "Pascal Siakam": {
       "games": 10,
@@ -425,15 +425,15 @@
       "ft_pct": 71.4
     },
     "Domantas Sabonis": {
-      "games": 9,
-      "ppg": 15.3,
-      "rpg": 14.6,
-      "apg": 6.0,
-      "spg": 0.9,
+      "games": 10,
+      "ppg": 13.8,
+      "rpg": 13.3,
+      "apg": 5.9,
+      "spg": 0.8,
       "bpg": 0.1,
-      "fg_pct": 67.9,
-      "fg3_pct": 50.0,
-      "ft_pct": 74.3
+      "fg_pct": 66.3,
+      "fg3_pct": 40.0,
+      "ft_pct": 70.3
     },
     "Jalen Duren": {
       "games": 2,
@@ -458,15 +458,15 @@
       "ft_pct": 78.3
     },
     "OG Anunoby": {
-      "games": 9,
-      "ppg": 16.4,
-      "rpg": 5.6,
+      "games": 10,
+      "ppg": 16.7,
+      "rpg": 5.3,
       "apg": 2.4,
-      "spg": 1.1,
-      "bpg": 0.6,
-      "fg_pct": 38.0,
-      "fg3_pct": 29.3,
-      "ft_pct": 87.5
+      "spg": 1.0,
+      "bpg": 0.5,
+      "fg_pct": 39.2,
+      "fg3_pct": 33.3,
+      "ft_pct": 87.9
     },
     "De'Aaron Fox": {
       "games": 11,
@@ -524,15 +524,15 @@
       "ft_pct": 89.1
     },
     "Paul George": {
-      "games": 9,
-      "ppg": 20.4,
+      "games": 10,
+      "ppg": 22.0,
       "rpg": 5.2,
-      "apg": 4.1,
-      "spg": 2.3,
+      "apg": 3.8,
+      "spg": 2.1,
       "bpg": 0.4,
-      "fg_pct": 46.5,
-      "fg3_pct": 42.5,
-      "ft_pct": 80.8
+      "fg_pct": 48.8,
+      "fg3_pct": 44.0,
+      "ft_pct": 82.1
     },
     "Nickeil Alexander-Walker": {
       "games": 12,
@@ -568,14 +568,14 @@
       "ft_pct": 84.9
     },
     "Derrick White": {
-      "games": 10,
-      "ppg": 12.9,
-      "rpg": 3.3,
-      "apg": 5.3,
-      "spg": 1.4,
+      "games": 11,
+      "ppg": 12.2,
+      "rpg": 3.1,
+      "apg": 5.1,
+      "spg": 1.3,
       "bpg": 0.5,
-      "fg_pct": 43.9,
-      "fg3_pct": 32.7,
+      "fg_pct": 43.4,
+      "fg3_pct": 32.1,
       "ft_pct": 100.0
     },
     "Walker Kessler": {
@@ -601,15 +601,15 @@
       "ft_pct": 71.1
     },
     "Damian Lillard": {
-      "games": 9,
-      "ppg": 19.4,
+      "games": 10,
+      "ppg": 20.0,
       "rpg": 3.2,
-      "apg": 4.4,
+      "apg": 4.3,
       "spg": 0.8,
       "bpg": 0.1,
-      "fg_pct": 42.1,
-      "fg3_pct": 34.2,
-      "ft_pct": 84.2
+      "fg_pct": 43.4,
+      "fg3_pct": 34.9,
+      "ft_pct": 85.5
     },
     "Cam Boozer": {
       "games": 10,
