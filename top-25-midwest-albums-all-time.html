@@ -407,7 +407,7 @@
 <section class="album-rank top-ten top-five champion" id="rank-1">
   <div class="album-rank-no">1</div>
   <div class="album-cover-wrap">
-    <img class="album-art" alt="Late Registration album cover" data-artist="Kanye West" data-album="Late Registration" loading="lazy" decoding="async">
+    <img class="album-art art-ready" alt="Late Registration original album cover" data-artist="Kanye West" data-album="Late Registration" data-loaded="1" src="4dk-late-registration-original-cover.jpg" loading="lazy" decoding="async">
     <div class="art-fallback"><small>Kanye West</small><strong>Late Registration</strong><span>2005</span></div>
   </div>
   <div class="album-copy">
@@ -793,6 +793,7 @@
   const imgs=[...document.querySelectorAll('.album-art[data-artist][data-album]')];
   const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
   async function load(img){
+    if(img.dataset.loaded==='1')return;
     try{
       const artist=img.dataset.artist,album=img.dataset.album;
       const q=encodeURIComponent(artist+' '+album);
