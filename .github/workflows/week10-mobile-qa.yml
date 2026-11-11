@@ -5,6 +5,9 @@ on:
     paths:
       - 'nfl-week10-2026-integrated-edition-review.html'
       - 'scripts/qa_week10_mobile.mjs'
+      - 'scripts/qa_week10_editorial.mjs'
+      - 'nfl-week10-2026-rookie-stats-audit.html'
+      - 'nfl-week10-2026-editorial-review-hq.html'
       - '.github/workflows/week10-mobile-qa.yml'
 jobs:
   mobile-qa:
@@ -20,6 +23,8 @@ jobs:
         run: npm install --no-save --no-package-lock playwright
       - name: Install Chromium and system dependencies
         run: npx playwright install --with-deps chromium
+      - name: Validate cross-page editorial consistency
+        run: node scripts/qa_week10_editorial.mjs
       - name: Render 360, 390, 768 and 1280 pixel layouts
         run: node scripts/qa_week10_mobile.mjs
       - name: Upload screenshots and test evidence
