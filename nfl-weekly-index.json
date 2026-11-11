@@ -1,9 +1,25 @@
 {
   "version": 1,
   "season": 2026,
-  "current_week": 9,
+  "current_week": 10,
   "updated": "2026-11-10",
   "articles": [
+    {
+      "type": "RANKINGS",
+      "week": 10,
+      "date": "2026-11-10",
+      "title": "Week 10 Rankings HQ — The full picture",
+      "url": "nfl-rankings-week10-2026.html",
+      "summary": "Power 32, all 20 MVP and rookie profiles, season leaders, standings and the playoff race."
+    },
+    {
+      "type": "INJURY",
+      "week": 10,
+      "date": "2026-11-10",
+      "title": "Week 10 Injury Report — Giants–Commanders",
+      "url": "nfl-week10-injury-report-2026.html",
+      "summary": "Dated practice estimates. Final game designations remain pending."
+    },
     {
       "type": "PREVIEW",
       "week": 9,
