@@ -1,0 +1,31 @@
+name: Week 10 mobile browser QA
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'nfl-week10-2026-integrated-edition-review.html'
+      - 'scripts/qa_week10_mobile.mjs'
+      - '.github/workflows/week10-mobile-qa.yml'
+jobs:
+  mobile-qa:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test runner
+        run: npm install --no-save --no-package-lock playwright
+      - name: Install Chromium and system dependencies
+        run: npx playwright install --with-deps chromium
+      - name: Render 360, 390, 768 and 1280 pixel layouts
+        run: node scripts/qa_week10_mobile.mjs
+      - name: Upload screenshots and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: week10-mobile-qa
+          path: qa-artifacts/week10/
+          if-no-files-found: warn
