@@ -44,4 +44,4 @@ for(const w of weeks){const list=sorted(articles.filter(a=>a.week===w)),section=
 if(!weeks.length)archive.append(node('p','lead','Earlier editions will appear here.'));
 }catch(err){current.replaceChildren(node('p','lead','The weekly index is temporarily unavailable. Use the original collections below.'));stages.replaceChildren(node('p','','Coverage status temporarily unavailable.'));archive.replaceChildren(node('p','','Browse the original archives below.'));}
 })();
-</script></body></html>
+</script><script id="fourdk-weekly-current-labels">(async()=>{try{const r=await fetch('nfl-weekly-index.json',{cache:'no-store'});if(!r.ok)return;const d=await r.json();const w=Number(d.current_week);if(!Number.isInteger(w)||w<1||w>25)return;const nodes=[...document.querySelectorAll('body *')].filter(el=>el.children.length===0&&el.textContent&&/WEEK 9|Week 9/.test(el.textContent));for(const el of nodes){if(el.closest('#archive'))continue;el.textContent=el.textContent.replace(/WEEK 9/g,'WEEK '+w).replace(/Week 9/g,'Week '+w)}}catch(e){console.warn('Weekly HQ labels:',e)}})();</script></body></html>
