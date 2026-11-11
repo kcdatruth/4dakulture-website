@@ -90,8 +90,13 @@
       {name:'Only Built 4 Cuban Linx…',artist:'Raekwon',href:'album-files-only-built-4-cuban-linx.html',vol:'two',cover:'east-08-cuban-linx.jpg'},
       {name:'My Ghetto Report Card',artist:'E-40',href:'album-files-my-ghetto-report-card.html',vol:'three',cover:'e40-my-ghetto-report-card-cover.jpg',rating:'9.2'},
       {name:'The Infamous',artist:'Mobb Deep',href:'album-files-the-infamous.html',vol:'three',cover:'album-files-the-infamous-original-cover.jpg',rating:'9.3'},
-      {name:'Dogg Food',artist:'Tha Dogg Pound',href:'album-files-dogg-food.html',vol:'three',cover:'album-files-dogg-food-original-cover.jpg',rating:'9.3'}
-      {name:'It Was Written',artist:'Nas',href:'album-files-it-was-written.html',vol:'four',cover:'album-files-it-was-written-cover.jpg',rating:'9.3'}
+      {name:'Dogg Food',artist:'Tha Dogg Pound',href:'album-files-dogg-food.html',vol:'three',cover:'album-files-dogg-food-original-cover.jpg',rating:'9.3'},
+      {name:'Trap Muzik',artist:'T.I.',href:'album-files-trap-muzik.html',vol:'three',cover:'',rating:''},
+      {name:'Reasonable Doubt',artist:'Jay-Z',href:'album-files-reasonable-doubt.html',vol:'three',cover:'',rating:''},
+      {name:'It Was Written',artist:'Nas',href:'album-files-it-was-written.html',vol:'four',cover:'album-files-it-was-written-cover.jpg',rating:'9.3'},
+      {name:'Muddy Waters',artist:'Redman',href:'album-files-muddy-waters.html',vol:'four',cover:'',rating:'9.2'},
+      {name:'The Documentary',artist:'The Game',href:'album-files-the-documentary.html',vol:'four',cover:'',rating:'9.1'},
+      {name:'Savage Life',artist:'Webbie',href:'album-files-savage-life.html',vol:'four',cover:'https://coverartarchive.org/release/56b371b5-28f6-4b9c-a1e5-a6c9970425c3/front-500',rating:'9.2'}
     ];
     let volume='all',q='',covers={}; const volLabel={one:'I',two:'II',three:'III',four:'IV'};
     const output=$('#fx-album-results'),detail=$('#fx-album-detail');
