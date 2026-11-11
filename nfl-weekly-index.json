@@ -1,15 +1,24 @@
 {
   "version": 1,
   "season": 2026,
-  "current_week": 9,
+  "current_week": 10,
   "updated": "2026-11-10",
   "articles": [
     {
-      "type": "PREVIEW",
-      "week": 9,
-      "date": "2026-11-06",
-      "title": "Week 9 — Every game, every storyline",
-      "url": "nfl-week9-preview-2026.html"
+      "type": "INJURY",
+      "week": 10,
+      "date": "2026-11-10",
+      "title": "Week 10 Injury Report — Giants–Commanders",
+      "url": "nfl-week10-injury-report-2026.html",
+      "summary": "Dated practice estimates. Final game designations remain pending."
+    },
+    {
+      "type": "RANKINGS",
+      "week": 10,
+      "date": "2026-11-10",
+      "title": "Week 10 Rankings HQ — The full picture",
+      "url": "nfl-rankings-week10-2026.html",
+      "summary": "Power 32, all 20 MVP and rookie profiles, season leaders, standings and the playoff race."
     },
     {
       "type": "TNF",
@@ -17,6 +26,13 @@
       "date": "2026-11-05",
       "title": "Jacksonville makes a statement. Baltimore is running out of answers.",
       "url": "nfl-thursday-recap-week9-jaguars-ravens.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 9,
+      "date": "2026-11-06",
+      "title": "Week 9 — Every game, every storyline",
+      "url": "nfl-week9-preview-2026.html"
     },
     {
       "type": "SUNDAY",
@@ -73,18 +89,18 @@
       "url": "nfl-week7-kickoff-2026.html"
     },
     {
-      "type": "SUNDAY",
-      "week": 7,
-      "date": "2026-10-25",
-      "title": "Week 7: Unbeaten no more",
-      "url": "nfl-sunday-recap-week7-2026.html"
-    },
-    {
       "type": "SNF",
       "week": 7,
       "date": "2026-10-25",
       "title": "Seahawks at Chiefs — Sunday night recap",
       "url": "nfl-snf-seahawks-chiefs-week7-2026.html"
+    },
+    {
+      "type": "SUNDAY",
+      "week": 7,
+      "date": "2026-10-25",
+      "title": "Week 7: Unbeaten no more",
+      "url": "nfl-sunday-recap-week7-2026.html"
     },
     {
       "type": "MNF",
@@ -108,18 +124,18 @@
       "url": "nfl-week6-preview-oct15-2026.html"
     },
     {
-      "type": "PREVIEW",
-      "week": 6,
-      "date": "2026-10-18",
-      "title": "Week 6 Sunday Gameday — London First, The League Follows",
-      "url": "nfl-week6-sunday-kickoff-oct18-2026.html"
-    },
-    {
       "type": "TNF",
       "week": 6,
       "date": "2026-10-15",
       "title": "Seahawks at Broncos — Thursday night recap",
       "url": "nfl-tnf-seahawks-broncos-oct15-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 6,
+      "date": "2026-10-18",
+      "title": "Week 6 Sunday Gameday — London First, The League Follows",
+      "url": "nfl-week6-sunday-kickoff-oct18-2026.html"
     },
     {
       "type": "SUNDAY",
@@ -185,18 +201,18 @@
       "url": "nfl-week-4-sunday-night-update-2026.html"
     },
     {
-      "type": "PREVIEW",
-      "week": 3,
-      "date": "2026-09-27",
-      "title": "NFL Week 3 Sunday Preview",
-      "url": "nfl-week3-sunday-preview-2026.html"
-    },
-    {
       "type": "TNF",
       "week": 3,
       "date": "2026-09-24",
       "title": "Penix is back. Bijan took over.",
       "url": "nfl-thursday-recap-week3-falcons-packers.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 3,
+      "date": "2026-09-27",
+      "title": "NFL Week 3 Sunday Preview",
+      "url": "nfl-week3-sunday-preview-2026.html"
     },
     {
       "type": "SUNDAY",
@@ -213,18 +229,18 @@
       "url": "nfl-mnf-recap-week3-bears-eagles.html"
     },
     {
-      "type": "PREVIEW",
-      "week": 2,
-      "date": "2026-09-20",
-      "title": "NFL Week 2 Sunday Preview",
-      "url": "nfl-week2-sunday-preview-2026.html"
-    },
-    {
       "type": "TNF",
       "week": 2,
       "date": "2026-09-17",
       "title": "The house that Allen built",
       "url": "nfl-thursday-recap-week2-bills-lions.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 2,
+      "date": "2026-09-20",
+      "title": "NFL Week 2 Sunday Preview",
+      "url": "nfl-week2-sunday-preview-2026.html"
     },
     {
       "type": "SUNDAY",
@@ -241,18 +257,18 @@
       "url": "nfl-mnf-recap-week2-rams-giants.html"
     },
     {
-      "type": "PREVIEW",
-      "week": 1,
-      "date": "2026-09-13",
-      "title": "Sunday NFL Preview — Every Week 1 Game",
-      "url": "nfl-week-1-sunday-preview-2026.html"
-    },
-    {
       "type": "SUNDAY",
       "week": 1,
       "date": "2026-09-10",
       "title": "Week 1 Opening Shots — Seattle Survives, San Francisco Sends a Message",
       "url": "nfl-week-1-opening-recap-2026.html"
+    },
+    {
+      "type": "PREVIEW",
+      "week": 1,
+      "date": "2026-09-13",
+      "title": "Sunday NFL Preview — Every Week 1 Game",
+      "url": "nfl-week-1-sunday-preview-2026.html"
     },
     {
       "type": "SUNDAY",
