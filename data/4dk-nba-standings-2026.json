@@ -1,7 +1,7 @@
 {
   "league": "NBA",
   "season": "2026-27",
-  "updated_utc": "2026-11-11 16:26 UTC",
+  "updated_utc": "2026-11-12 16:57 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/basketball/nba/standings",
   "status": "verified",
   "teams": [
@@ -9,10 +9,10 @@
       "id": "13",
       "name": "Los Angeles Lakers",
       "abbreviation": "LAL",
-      "wins": 10,
+      "wins": 11,
       "losses": 2,
       "ties": null,
-      "pct": 0.833,
+      "pct": 0.846,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
       "group": "overall"
     },
@@ -20,10 +20,10 @@
       "id": "2",
       "name": "Boston Celtics",
       "abbreviation": "BOS",
-      "wins": 9,
+      "wins": 10,
       "losses": 2,
       "ties": null,
-      "pct": 0.818,
+      "pct": 0.833,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "group": "overall"
     },
@@ -31,11 +31,22 @@
       "id": "24",
       "name": "San Antonio Spurs",
       "abbreviation": "SA",
-      "wins": 9,
+      "wins": 10,
       "losses": 2,
       "ties": null,
-      "pct": 0.818,
+      "pct": 0.833,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "group": "overall"
+    },
+    {
+      "id": "10",
+      "name": "Houston Rockets",
+      "abbreviation": "HOU",
+      "wins": 9,
+      "losses": 3,
+      "ties": null,
+      "pct": 0.75,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
       "group": "overall"
     },
     {
@@ -50,28 +61,6 @@
       "group": "overall"
     },
     {
-      "id": "9",
-      "name": "Golden State Warriors",
-      "abbreviation": "GS",
-      "wins": 8,
-      "losses": 3,
-      "ties": null,
-      "pct": 0.727,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
-      "group": "overall"
-    },
-    {
-      "id": "10",
-      "name": "Houston Rockets",
-      "abbreviation": "HOU",
-      "wins": 8,
-      "losses": 3,
-      "ties": null,
-      "pct": 0.727,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-      "group": "overall"
-    },
-    {
       "id": "16",
       "name": "Minnesota Timberwolves",
       "abbreviation": "MIN",
@@ -83,14 +72,14 @@
       "group": "overall"
     },
     {
-      "id": "25",
-      "name": "Oklahoma City Thunder",
-      "abbreviation": "OKC",
+      "id": "22",
+      "name": "Portland Trail Blazers",
+      "abbreviation": "POR",
       "wins": 8,
       "losses": 3,
       "ties": null,
       "pct": 0.727,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
       "group": "overall"
     },
     {
@@ -105,25 +94,25 @@
       "group": "overall"
     },
     {
-      "id": "29",
-      "name": "Memphis Grizzlies",
-      "abbreviation": "MEM",
-      "wins": 7,
-      "losses": 3,
+      "id": "9",
+      "name": "Golden State Warriors",
+      "abbreviation": "GS",
+      "wins": 8,
+      "losses": 4,
       "ties": null,
-      "pct": 0.7,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "pct": 0.667,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png",
       "group": "overall"
     },
     {
-      "id": "22",
-      "name": "Portland Trail Blazers",
-      "abbreviation": "POR",
-      "wins": 7,
-      "losses": 3,
+      "id": "25",
+      "name": "Oklahoma City Thunder",
+      "abbreviation": "OKC",
+      "wins": 8,
+      "losses": 4,
       "ties": null,
-      "pct": 0.7,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
+      "pct": 0.667,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
       "group": "overall"
     },
     {
@@ -138,14 +127,25 @@
       "group": "overall"
     },
     {
-      "id": "18",
-      "name": "New York Knicks",
-      "abbreviation": "NY",
+      "id": "29",
+      "name": "Memphis Grizzlies",
+      "abbreviation": "MEM",
+      "wins": 7,
+      "losses": 4,
+      "ties": null,
+      "pct": 0.636,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+      "group": "overall"
+    },
+    {
+      "id": "7",
+      "name": "Denver Nuggets",
+      "abbreviation": "DEN",
       "wins": 6,
       "losses": 4,
       "ties": null,
       "pct": 0.6,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
       "group": "overall"
     },
     {
@@ -160,35 +160,24 @@
       "group": "overall"
     },
     {
-      "id": "7",
-      "name": "Denver Nuggets",
-      "abbreviation": "DEN",
-      "wins": 5,
-      "losses": 4,
-      "ties": null,
-      "pct": 0.556,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-      "group": "overall"
-    },
-    {
-      "id": "28",
-      "name": "Toronto Raptors",
-      "abbreviation": "TOR",
-      "wins": 5,
+      "id": "18",
+      "name": "New York Knicks",
+      "abbreviation": "NY",
+      "wins": 6,
       "losses": 5,
       "ties": null,
-      "pct": 0.5,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "pct": 0.545,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
       "group": "overall"
     },
     {
       "id": "5",
       "name": "Cleveland Cavaliers",
       "abbreviation": "CLE",
-      "wins": 5,
+      "wins": 6,
       "losses": 6,
       "ties": null,
-      "pct": 0.455,
+      "pct": 0.5,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cle.png",
       "group": "overall"
     },
@@ -201,6 +190,17 @@
       "ties": null,
       "pct": 0.455,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+      "group": "overall"
+    },
+    {
+      "id": "28",
+      "name": "Toronto Raptors",
+      "abbreviation": "TOR",
+      "wins": 5,
+      "losses": 6,
+      "ties": null,
+      "pct": 0.455,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
       "group": "overall"
     },
     {
@@ -226,13 +226,35 @@
       "group": "overall"
     },
     {
-      "id": "3",
-      "name": "New Orleans Pelicans",
-      "abbreviation": "NO",
+      "id": "19",
+      "name": "Orlando Magic",
+      "abbreviation": "ORL",
       "wins": 4,
       "losses": 7,
       "ties": null,
       "pct": 0.364,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
+      "group": "overall"
+    },
+    {
+      "id": "11",
+      "name": "Indiana Pacers",
+      "abbreviation": "IND",
+      "wins": 4,
+      "losses": 8,
+      "ties": null,
+      "pct": 0.333,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "group": "overall"
+    },
+    {
+      "id": "3",
+      "name": "New Orleans Pelicans",
+      "abbreviation": "NO",
+      "wins": 4,
+      "losses": 8,
+      "ties": null,
+      "pct": 0.333,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/no.png",
       "group": "overall"
     },
@@ -241,42 +263,20 @@
       "name": "Washington Wizards",
       "abbreviation": "WSH",
       "wins": 4,
-      "losses": 7,
-      "ties": null,
-      "pct": 0.364,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
-      "group": "overall"
-    },
-    {
-      "id": "19",
-      "name": "Orlando Magic",
-      "abbreviation": "ORL",
-      "wins": 3,
-      "losses": 7,
-      "ties": null,
-      "pct": 0.3,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-      "group": "overall"
-    },
-    {
-      "id": "11",
-      "name": "Indiana Pacers",
-      "abbreviation": "IND",
-      "wins": 3,
       "losses": 8,
       "ties": null,
-      "pct": 0.273,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "pct": 0.333,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
       "group": "overall"
     },
     {
       "id": "17",
       "name": "Brooklyn Nets",
       "abbreviation": "BKN",
-      "wins": 2,
+      "wins": 3,
       "losses": 8,
       "ties": null,
-      "pct": 0.2,
+      "pct": 0.273,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
       "group": "overall"
     },
@@ -296,21 +296,10 @@
       "name": "Chicago Bulls",
       "abbreviation": "CHI",
       "wins": 1,
-      "losses": 8,
+      "losses": 9,
       "ties": null,
-      "pct": 0.111,
+      "pct": 0.1,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
-      "group": "overall"
-    },
-    {
-      "id": "15",
-      "name": "Milwaukee Bucks",
-      "abbreviation": "MIL",
-      "wins": 1,
-      "losses": 10,
-      "ties": null,
-      "pct": 0.091,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
       "group": "overall"
     },
     {
@@ -325,13 +314,24 @@
       "group": "overall"
     },
     {
+      "id": "15",
+      "name": "Milwaukee Bucks",
+      "abbreviation": "MIL",
+      "wins": 1,
+      "losses": 11,
+      "ties": null,
+      "pct": 0.083,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "group": "overall"
+    },
+    {
       "id": "26",
       "name": "Utah Jazz",
       "abbreviation": "UTAH",
       "wins": 1,
-      "losses": 10,
+      "losses": 11,
       "ties": null,
-      "pct": 0.091,
+      "pct": 0.083,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "group": "overall"
     }
