@@ -1,54 +1,54 @@
 {
   "season": "2026-27",
-  "checked_utc": "2026-11-11 15:34 UTC",
+  "checked_utc": "2026-11-12 16:11 UTC",
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet",
   "status": "verified",
   "matched": 60,
   "unmatched": [],
   "players": {
     "Victor Wembanyama": {
-      "games": 11,
-      "ppg": 30.1,
-      "rpg": 11.9,
-      "apg": 3.0,
-      "spg": 1.1,
+      "games": 12,
+      "ppg": 30.2,
+      "rpg": 11.7,
+      "apg": 2.8,
+      "spg": 1.2,
       "bpg": 4.4,
-      "fg_pct": 52.9,
-      "fg3_pct": 32.3,
-      "ft_pct": 77.4
+      "fg_pct": 54.3,
+      "fg3_pct": 32.4,
+      "ft_pct": 77.6
     },
     "Luka Doncic": {
-      "games": 10,
-      "ppg": 39.3,
-      "rpg": 7.8,
-      "apg": 7.9,
+      "games": 11,
+      "ppg": 38.6,
+      "rpg": 7.5,
+      "apg": 7.6,
       "spg": 2.0,
-      "bpg": 0.8,
-      "fg_pct": 49.8,
-      "fg3_pct": 40.7,
-      "ft_pct": 88.1
+      "bpg": 0.7,
+      "fg_pct": 48.9,
+      "fg3_pct": 40.8,
+      "ft_pct": 86.6
     },
     "Shai Gilgeous-Alexander": {
-      "games": 11,
-      "ppg": 29.5,
-      "rpg": 4.3,
-      "apg": 4.7,
+      "games": 12,
+      "ppg": 29.7,
+      "rpg": 4.2,
+      "apg": 4.5,
       "spg": 0.9,
-      "bpg": 1.1,
+      "bpg": 1.0,
       "fg_pct": 45.3,
-      "fg3_pct": 37.0,
-      "ft_pct": 86.1
+      "fg3_pct": 33.8,
+      "ft_pct": 87.1
     },
     "Nikola Jokic": {
-      "games": 9,
-      "ppg": 23.1,
+      "games": 10,
+      "ppg": 23.5,
       "rpg": 10.8,
-      "apg": 9.1,
-      "spg": 1.9,
+      "apg": 9.0,
+      "spg": 1.8,
       "bpg": 1.2,
-      "fg_pct": 48.8,
-      "fg3_pct": 22.5,
-      "ft_pct": 89.7
+      "fg_pct": 50.0,
+      "fg3_pct": 23.3,
+      "ft_pct": 87.2
     },
     "Giannis Antetokounmpo": {
       "games": 11,
@@ -62,15 +62,15 @@
       "ft_pct": 61.6
     },
     "Jayson Tatum": {
-      "games": 10,
-      "ppg": 26.5,
-      "rpg": 6.0,
-      "apg": 7.4,
-      "spg": 0.7,
-      "bpg": 0.7,
-      "fg_pct": 42.5,
-      "fg3_pct": 32.4,
-      "ft_pct": 89.5
+      "games": 11,
+      "ppg": 26.3,
+      "rpg": 6.1,
+      "apg": 7.5,
+      "spg": 0.6,
+      "bpg": 0.8,
+      "fg_pct": 41.1,
+      "fg3_pct": 30.6,
+      "ft_pct": 88.8
     },
     "Cade Cunningham": {
       "games": 10,
@@ -84,14 +84,14 @@
       "ft_pct": 80.0
     },
     "Jalen Brunson": {
-      "games": 10,
-      "ppg": 25.9,
+      "games": 11,
+      "ppg": 26.0,
       "rpg": 3.1,
       "apg": 5.2,
       "spg": 0.6,
-      "bpg": 0.3,
-      "fg_pct": 42.0,
-      "fg3_pct": 36.6,
+      "bpg": 0.4,
+      "fg_pct": 43.0,
+      "fg3_pct": 36.7,
       "ft_pct": 78.2
     },
     "Anthony Edwards": {
@@ -128,37 +128,37 @@
       "ft_pct": 70.9
     },
     "Stephen Curry": {
-      "games": 9,
-      "ppg": 30.6,
-      "rpg": 4.1,
-      "apg": 4.3,
-      "spg": 1.0,
+      "games": 10,
+      "ppg": 27.8,
+      "rpg": 3.7,
+      "apg": 3.9,
+      "spg": 0.9,
       "bpg": 0.1,
-      "fg_pct": 50.3,
+      "fg_pct": 50.0,
       "fg3_pct": 45.7,
       "ft_pct": 98.7
     },
     "Donovan Mitchell": {
-      "games": 11,
+      "games": 12,
       "ppg": 22.8,
-      "rpg": 4.8,
+      "rpg": 5.0,
       "apg": 5.5,
       "spg": 1.3,
       "bpg": 0.5,
-      "fg_pct": 48.0,
-      "fg3_pct": 38.5,
-      "ft_pct": 77.8
+      "fg_pct": 48.5,
+      "fg3_pct": 37.6,
+      "ft_pct": 79.4
     },
     "Kevin Durant": {
-      "games": 11,
-      "ppg": 21.0,
-      "rpg": 6.3,
-      "apg": 3.5,
+      "games": 12,
+      "ppg": 20.9,
+      "rpg": 6.1,
+      "apg": 3.6,
       "spg": 0.6,
-      "bpg": 1.4,
-      "fg_pct": 49.6,
-      "fg3_pct": 35.7,
-      "ft_pct": 86.4
+      "bpg": 1.2,
+      "fg_pct": 49.4,
+      "fg3_pct": 34.8,
+      "ft_pct": 85.9
     },
     "Jalen Johnson": {
       "games": 9,
@@ -194,37 +194,37 @@
       "ft_pct": 100.0
     },
     "Karl-Anthony Towns": {
-      "games": 10,
+      "games": 11,
       "ppg": 20.9,
-      "rpg": 13.8,
-      "apg": 3.1,
-      "spg": 0.8,
+      "rpg": 13.5,
+      "apg": 3.5,
+      "spg": 0.7,
       "bpg": 0.5,
-      "fg_pct": 54.3,
+      "fg_pct": 55.0,
       "fg3_pct": 39.6,
-      "ft_pct": 75.5
+      "ft_pct": 77.6
     },
     "Alperen Sengun": {
-      "games": 9,
-      "ppg": 21.3,
-      "rpg": 9.1,
-      "apg": 7.8,
+      "games": 10,
+      "ppg": 21.1,
+      "rpg": 9.4,
+      "apg": 7.9,
       "spg": 1.1,
       "bpg": 1.1,
-      "fg_pct": 51.4,
-      "fg3_pct": 47.4,
-      "ft_pct": 74.0
+      "fg_pct": 51.9,
+      "fg3_pct": 47.6,
+      "ft_pct": 72.2
     },
     "Jamal Murray": {
-      "games": 9,
-      "ppg": 25.8,
-      "rpg": 5.1,
-      "apg": 5.7,
-      "spg": 1.0,
-      "bpg": 0.8,
-      "fg_pct": 49.3,
-      "fg3_pct": 50.7,
-      "ft_pct": 85.2
+      "games": 10,
+      "ppg": 26.2,
+      "rpg": 5.0,
+      "apg": 5.9,
+      "spg": 0.9,
+      "bpg": 0.9,
+      "fg_pct": 50.9,
+      "fg3_pct": 51.3,
+      "ft_pct": 84.2
     },
     "Devin Booker": {
       "games": 10,
@@ -238,15 +238,15 @@
       "ft_pct": 93.7
     },
     "Anthony Davis": {
-      "games": 9,
-      "ppg": 25.7,
-      "rpg": 9.7,
-      "apg": 2.0,
+      "games": 10,
+      "ppg": 25.2,
+      "rpg": 10.0,
+      "apg": 1.8,
       "spg": 1.3,
-      "bpg": 1.0,
-      "fg_pct": 53.3,
-      "fg3_pct": 37.5,
-      "ft_pct": 84.6
+      "bpg": 1.1,
+      "fg_pct": 51.3,
+      "fg3_pct": 33.3,
+      "ft_pct": 83.6
     },
     "LeBron James": {
       "games": 10,
@@ -260,37 +260,37 @@
       "ft_pct": 70.0
     },
     "Evan Mobley": {
-      "games": 11,
-      "ppg": 17.5,
-      "rpg": 7.5,
+      "games": 12,
+      "ppg": 16.9,
+      "rpg": 7.3,
       "apg": 3.6,
       "spg": 0.6,
       "bpg": 1.1,
-      "fg_pct": 55.8,
-      "fg3_pct": 50.0,
-      "ft_pct": 63.4
+      "fg_pct": 55.5,
+      "fg3_pct": 47.9,
+      "ft_pct": 62.2
     },
     "Bam Adebayo": {
       "games": 11,
       "ppg": 17.8,
       "rpg": 8.4,
       "apg": 3.3,
-      "spg": 2.3,
+      "spg": 2.2,
       "bpg": 0.7,
       "fg_pct": 50.7,
       "fg3_pct": 17.1,
       "ft_pct": 75.0
     },
     "Deni Avdija": {
-      "games": 10,
-      "ppg": 22.5,
-      "rpg": 6.4,
+      "games": 11,
+      "ppg": 23.0,
+      "rpg": 6.1,
       "apg": 6.5,
-      "spg": 0.9,
-      "bpg": 0.1,
-      "fg_pct": 47.7,
-      "fg3_pct": 34.7,
-      "ft_pct": 67.4
+      "spg": 1.2,
+      "bpg": 0.3,
+      "fg_pct": 47.4,
+      "fg3_pct": 33.9,
+      "ft_pct": 69.4
     },
     "Paolo Banchero": {
       "games": 2,
@@ -337,15 +337,15 @@
       "ft_pct": 90.3
     },
     "Trae Young": {
-      "games": 11,
-      "ppg": 18.5,
+      "games": 12,
+      "ppg": 18.2,
       "rpg": 3.2,
-      "apg": 8.7,
+      "apg": 8.3,
       "spg": 1.2,
       "bpg": 0.2,
-      "fg_pct": 39.3,
-      "fg3_pct": 28.8,
-      "ft_pct": 82.1
+      "fg_pct": 40.0,
+      "fg3_pct": 29.6,
+      "ft_pct": 82.6
     },
     "LaMelo Ball": {
       "games": 11,
@@ -370,58 +370,58 @@
       "ft_pct": 100.0
     },
     "Franz Wagner": {
-      "games": 10,
-      "ppg": 22.0,
-      "rpg": 6.4,
-      "apg": 8.6,
+      "games": 11,
+      "ppg": 23.5,
+      "rpg": 6.5,
+      "apg": 7.9,
       "spg": 1.4,
       "bpg": 0.0,
-      "fg_pct": 44.5,
-      "fg3_pct": 22.9,
-      "ft_pct": 81.0
+      "fg_pct": 45.9,
+      "fg3_pct": 25.0,
+      "ft_pct": 82.4
     },
     "Pascal Siakam": {
-      "games": 10,
-      "ppg": 22.2,
-      "rpg": 6.8,
-      "apg": 4.3,
+      "games": 11,
+      "ppg": 22.7,
+      "rpg": 6.9,
+      "apg": 4.4,
       "spg": 1.0,
       "bpg": 0.1,
-      "fg_pct": 52.1,
-      "fg3_pct": 35.4,
-      "ft_pct": 67.3
+      "fg_pct": 51.1,
+      "fg3_pct": 34.5,
+      "ft_pct": 73.4
     },
     "Austin Reaves": {
-      "games": 11,
-      "ppg": 25.3,
-      "rpg": 3.4,
-      "apg": 4.6,
-      "spg": 1.0,
-      "bpg": 0.4,
-      "fg_pct": 50.8,
-      "fg3_pct": 41.3,
-      "ft_pct": 90.9
+      "games": 12,
+      "ppg": 24.7,
+      "rpg": 3.3,
+      "apg": 4.7,
+      "spg": 1.2,
+      "bpg": 0.3,
+      "fg_pct": 51.3,
+      "fg3_pct": 40.9,
+      "ft_pct": 91.5
     },
     "Zion Williamson": {
-      "games": 10,
-      "ppg": 21.0,
-      "rpg": 5.3,
-      "apg": 2.7,
-      "spg": 2.2,
+      "games": 11,
+      "ppg": 21.7,
+      "rpg": 5.2,
+      "apg": 2.6,
+      "spg": 2.0,
       "bpg": 0.5,
-      "fg_pct": 62.8,
-      "fg3_pct": 42.9,
-      "ft_pct": 76.4
+      "fg_pct": 62.2,
+      "fg3_pct": 50.0,
+      "ft_pct": 77.9
     },
     "Stephon Castle": {
-      "games": 11,
-      "ppg": 14.3,
-      "rpg": 6.1,
-      "apg": 5.2,
-      "spg": 0.8,
-      "bpg": 0.3,
-      "fg_pct": 39.2,
-      "fg3_pct": 32.4,
+      "games": 12,
+      "ppg": 14.0,
+      "rpg": 5.6,
+      "apg": 5.0,
+      "spg": 0.9,
+      "bpg": 0.2,
+      "fg_pct": 39.4,
+      "fg3_pct": 31.5,
       "ft_pct": 71.4
     },
     "Domantas Sabonis": {
@@ -447,59 +447,59 @@
       "ft_pct": 85.7
     },
     "Amen Thompson": {
-      "games": 11,
-      "ppg": 14.9,
-      "rpg": 6.7,
-      "apg": 3.0,
+      "games": 12,
+      "ppg": 15.2,
+      "rpg": 6.8,
+      "apg": 3.1,
       "spg": 1.2,
-      "bpg": 0.5,
-      "fg_pct": 49.6,
-      "fg3_pct": 22.2,
-      "ft_pct": 78.3
+      "bpg": 0.7,
+      "fg_pct": 51.4,
+      "fg3_pct": 20.0,
+      "ft_pct": 76.5
     },
     "OG Anunoby": {
-      "games": 10,
-      "ppg": 16.7,
-      "rpg": 5.3,
+      "games": 11,
+      "ppg": 16.5,
+      "rpg": 5.4,
       "apg": 2.4,
-      "spg": 1.0,
+      "spg": 1.1,
       "bpg": 0.5,
-      "fg_pct": 39.2,
+      "fg_pct": 38.8,
       "fg3_pct": 33.3,
-      "ft_pct": 87.9
+      "ft_pct": 89.1
     },
     "De'Aaron Fox": {
-      "games": 11,
-      "ppg": 13.9,
-      "rpg": 4.4,
-      "apg": 5.9,
-      "spg": 1.2,
+      "games": 12,
+      "ppg": 14.2,
+      "rpg": 4.3,
+      "apg": 6.2,
+      "spg": 1.3,
       "bpg": 0.5,
-      "fg_pct": 53.2,
-      "fg3_pct": 36.7,
-      "ft_pct": 82.4
+      "fg_pct": 51.4,
+      "fg3_pct": 35.1,
+      "ft_pct": 81.1
     },
     "Dylan Harper": {
-      "games": 11,
+      "games": 12,
       "ppg": 18.0,
       "rpg": 5.4,
-      "apg": 4.4,
-      "spg": 0.7,
-      "bpg": 0.1,
-      "fg_pct": 51.0,
-      "fg3_pct": 33.3,
-      "ft_pct": 85.0
+      "apg": 4.8,
+      "spg": 1.0,
+      "bpg": 0.2,
+      "fg_pct": 49.7,
+      "fg3_pct": 35.0,
+      "ft_pct": 85.7
     },
     "Julius Randle": {
-      "games": 10,
-      "ppg": 20.0,
-      "rpg": 6.7,
+      "games": 11,
+      "ppg": 19.7,
+      "rpg": 6.5,
       "apg": 5.0,
-      "spg": 0.8,
+      "spg": 0.7,
       "bpg": 0.2,
-      "fg_pct": 44.8,
-      "fg3_pct": 34.1,
-      "ft_pct": 79.2
+      "fg_pct": 44.0,
+      "fg3_pct": 30.6,
+      "ft_pct": 79.5
     },
     "Kyrie Irving": {
       "games": 9,
@@ -513,15 +513,15 @@
       "ft_pct": 89.7
     },
     "Ty Jerome": {
-      "games": 9,
-      "ppg": 26.7,
-      "rpg": 3.7,
+      "games": 10,
+      "ppg": 26.2,
+      "rpg": 3.5,
       "apg": 4.9,
-      "spg": 0.8,
+      "spg": 0.7,
       "bpg": 0.2,
       "fg_pct": 50.0,
-      "fg3_pct": 37.9,
-      "ft_pct": 89.1
+      "fg3_pct": 36.6,
+      "ft_pct": 89.7
     },
     "Paul George": {
       "games": 10,
@@ -548,7 +548,7 @@
     "Jaden McDaniels": {
       "games": 11,
       "ppg": 17.0,
-      "rpg": 6.2,
+      "rpg": 6.1,
       "apg": 3.6,
       "spg": 0.9,
       "bpg": 0.8,
@@ -557,81 +557,81 @@
       "ft_pct": 81.0
     },
     "James Harden": {
-      "games": 11,
-      "ppg": 15.3,
-      "rpg": 4.8,
-      "apg": 5.7,
-      "spg": 0.7,
+      "games": 12,
+      "ppg": 16.7,
+      "rpg": 4.6,
+      "apg": 5.6,
+      "spg": 0.8,
       "bpg": 0.5,
-      "fg_pct": 36.4,
-      "fg3_pct": 35.5,
-      "ft_pct": 84.9
+      "fg_pct": 39.0,
+      "fg3_pct": 38.6,
+      "ft_pct": 84.4
     },
     "Derrick White": {
-      "games": 11,
-      "ppg": 12.2,
-      "rpg": 3.1,
-      "apg": 5.1,
-      "spg": 1.3,
-      "bpg": 0.5,
-      "fg_pct": 43.4,
-      "fg3_pct": 32.1,
+      "games": 12,
+      "ppg": 12.8,
+      "rpg": 2.9,
+      "apg": 5.2,
+      "spg": 1.2,
+      "bpg": 0.8,
+      "fg_pct": 43.8,
+      "fg3_pct": 33.3,
       "ft_pct": 100.0
     },
     "Walker Kessler": {
-      "games": 12,
-      "ppg": 14.9,
+      "games": 13,
+      "ppg": 14.5,
       "rpg": 10.8,
-      "apg": 1.7,
+      "apg": 1.8,
       "spg": 1.2,
-      "bpg": 2.3,
-      "fg_pct": 69.1,
+      "bpg": 2.2,
+      "fg_pct": 67.5,
       "fg3_pct": null,
       "ft_pct": 61.4
     },
     "Caleb Wilson": {
-      "games": 9,
-      "ppg": 19.3,
-      "rpg": 6.3,
-      "apg": 2.1,
-      "spg": 1.9,
-      "bpg": 1.0,
-      "fg_pct": 40.6,
-      "fg3_pct": 30.4,
-      "ft_pct": 71.1
+      "games": 10,
+      "ppg": 18.9,
+      "rpg": 6.2,
+      "apg": 1.9,
+      "spg": 1.8,
+      "bpg": 0.9,
+      "fg_pct": 42.0,
+      "fg3_pct": 32.4,
+      "ft_pct": 73.2
     },
     "Damian Lillard": {
-      "games": 10,
-      "ppg": 20.0,
+      "games": 11,
+      "ppg": 19.8,
       "rpg": 3.2,
-      "apg": 4.3,
+      "apg": 4.2,
       "spg": 0.8,
       "bpg": 0.1,
-      "fg_pct": 43.4,
-      "fg3_pct": 34.9,
-      "ft_pct": 85.5
+      "fg_pct": 42.7,
+      "fg3_pct": 33.3,
+      "ft_pct": 86.8
     },
     "Cam Boozer": {
-      "games": 10,
-      "ppg": 16.2,
-      "rpg": 9.7,
+      "games": 11,
+      "ppg": 15.9,
+      "rpg": 9.8,
       "apg": 5.5,
-      "spg": 0.4,
-      "bpg": 0.6,
-      "fg_pct": 36.4,
+      "spg": 0.5,
+      "bpg": 0.5,
+      "fg_pct": 36.6,
       "fg3_pct": 29.0,
-      "ft_pct": 93.3
+      "ft_pct": 91.5
     },
     "Yaxel Lendeborg": {
-      "games": 11,
-      "ppg": 21.4,
-      "rpg": 7.2,
-      "apg": 4.0,
-      "spg": 1.0,
+      "games": 12,
+      "ppg": 21.7,
+      "rpg": 7.4,
+      "apg": 3.7,
+      "spg": 1.1,
       "bpg": 0.7,
-      "fg_pct": 52.3,
-      "fg3_pct": 44.3,
-      "ft_pct": 75.8
+      "fg_pct": 51.8,
+      "fg3_pct": 42.6,
+      "ft_pct": 74.3
     },
     "Ja Morant": {
       "games": 4,
@@ -645,26 +645,26 @@
       "ft_pct": 83.3
     },
     "Jarrett Allen": {
-      "games": 9,
-      "ppg": 13.1,
-      "rpg": 7.7,
-      "apg": 1.2,
+      "games": 10,
+      "ppg": 12.9,
+      "rpg": 8.3,
+      "apg": 1.4,
       "spg": 0.6,
       "bpg": 1.4,
-      "fg_pct": 64.8,
+      "fg_pct": 64.1,
       "fg3_pct": 75.0,
-      "ft_pct": 67.6
+      "ft_pct": 70.3
     },
     "RJ Barrett": {
-      "games": 10,
-      "ppg": 21.3,
-      "rpg": 5.8,
-      "apg": 3.7,
-      "spg": 0.4,
+      "games": 11,
+      "ppg": 20.5,
+      "rpg": 6.0,
+      "apg": 4.0,
+      "spg": 0.5,
       "bpg": 0.5,
-      "fg_pct": 45.7,
-      "fg3_pct": 27.8,
-      "ft_pct": 61.3
+      "fg_pct": 44.5,
+      "fg3_pct": 26.8,
+      "ft_pct": 62.5
     }
   }
 }
