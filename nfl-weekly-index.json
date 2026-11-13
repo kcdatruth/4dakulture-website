@@ -2,8 +2,16 @@
   "version": 1,
   "season": 2026,
   "current_week": 10,
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "articles": [
+    {
+      "type": "TNF",
+      "week": 10,
+      "date": "2026-11-12",
+      "title": "Washington 24, Giants 21 — One more chance was all Jayden needed",
+      "url": "nfl-thursday-recap-week10-commanders-giants.html",
+      "summary": "Daniels finds Diggs for the winner with 57 seconds left. Washington survives; New York wastes two late takeaways."
+    },
     {
       "type": "RANKINGS",
       "week": 10,
