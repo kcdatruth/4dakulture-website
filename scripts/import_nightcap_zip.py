@@ -37,6 +37,22 @@ page=archive.read_text()
 if filename in page: fail("Duplicate archive link")
 card=f'<a class="card" href="{filename}"><span class="label">{date}</span><h2>{escape(manifest["headline"])}</h2><p>{escape(manifest["summary"])} →</p></a>'
 if '<div class="grid">' not in page: fail("Archive marker missing")
+# Connect each new edition to the previous edition and the permanent archive.
+# Never rewrite previously published editions.
+nav = (
+    '<nav aria-label="NBA Nightcap editions" '
+    'style="display:flex;flex-wrap:wrap;gap:12px;margin:24px 0;'
+    'padding:18px 0;border-top:1px solid #775333;'
+    'border-bottom:1px solid #775333;font:700 14px/1.5 Arial,sans-serif">'
+    f'<a href="{old_url}">← PREVIOUS NIGHTCAP</a>'
+    '<a href="nba-nightcap-archive.html">ALL NIGHTCAP ARCHIVES</a>'
+    '<a href="nba.html">NBA HQ</a></nav>'
+)
+if "</body>" not in html.lower(): fail("Missing closing body tag")
+if 'aria-label="NBA Nightcap editions"' not in html:
+    html = re.sub(r"</body>", nav + "</body>", html, count=1, flags=re.I)
+if html.count('aria-label="NBA Nightcap editions"') != 1:
+    fail("Nightcap navigation must appear exactly once")
 target.write_text(html)
 archive.write_text(page.replace('<div class="grid">','<div class="grid">'+card,1))
 new={"date":edition_date.strftime("%B %-d, %Y").upper(),"shortDate":edition_date.strftime("%b %-d").upper(),"headline":manifest["headline"],"summary":manifest["summary"],"url":filename,"previousDate":old["date"],"previousUrl":old["url"],"archiveUrl":"nba-nightcap-archive.html"}
