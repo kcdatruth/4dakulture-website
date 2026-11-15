@@ -1,7 +1,7 @@
 {
   "league": "NBA",
   "season": "2026-27",
-  "updated_utc": "2026-11-15 15:45 UTC",
+  "updated_utc": "2026-11-15 21:58 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/basketball/nba/standings",
   "status": "verified",
   "teams": [
@@ -39,6 +39,17 @@
       "group": "overall"
     },
     {
+      "id": "20",
+      "name": "Philadelphia 76ers",
+      "abbreviation": "PHI",
+      "wins": 11,
+      "losses": 3,
+      "ties": null,
+      "pct": 0.786,
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "group": "overall"
+    },
+    {
       "id": "10",
       "name": "Houston Rockets",
       "abbreviation": "HOU",
@@ -47,17 +58,6 @@
       "ties": null,
       "pct": 0.769,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/hou.png",
-      "group": "overall"
-    },
-    {
-      "id": "20",
-      "name": "Philadelphia 76ers",
-      "abbreviation": "PHI",
-      "wins": 10,
-      "losses": 3,
-      "ties": null,
-      "pct": 0.769,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
       "group": "overall"
     },
     {
@@ -230,9 +230,9 @@
       "name": "Indiana Pacers",
       "abbreviation": "IND",
       "wins": 5,
-      "losses": 8,
+      "losses": 9,
       "ties": null,
-      "pct": 0.385,
+      "pct": 0.357,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
       "group": "overall"
     },
