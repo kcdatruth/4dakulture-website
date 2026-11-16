@@ -2,8 +2,20 @@
   "version": 1,
   "season": 2026,
   "current_week": 10,
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "articles": [
+    {
+      "type": "SUNDAY",
+      "week": 10,
+      "date": "2026-11-15",
+      "title": "Week 10 Deluxe — What We Learned Sunday",
+      "url": "nfl-sunday-recap-week10-2026.html",
+      "summary": "All 12 Sunday games and 13 photos: McCaffrey dominates Dallas, Burrow and Chase take over Sunday night, and Mendoza faces the reigning champions. Plus Box Score Spotlights, Championship Landscape and Triple Crown Players of the Day.",
+      "snf_spotlight": {
+        "title": "Bengals 38–18 Steelers — Chase owns Sunday night",
+        "fragment": "game12"
+      }
+    },
     {
       "type": "PREVIEW",
       "week": 10,
