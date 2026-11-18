@@ -97,6 +97,60 @@ def main(publish):
     for name, value in previous.get('players',{}).items():
         if norm(name) in {norm(n) for n in names} and norm(name) not in {norm(n) for n in result}:
             result[name] = value
+
+    # Separate leaguewide dataset: do not change the locked Top 50 publishing contract.
+    # Aggregate every regular-season participant, including players outside the rankings.
+    league_path = ROOT / 'data/4dk-nba-league-stats-2026-27.json'
+    league_players = {}
+    identity_column = next((c for c in ('athlete_id','athlete_uid','athleteId') if c in df.columns), None)
+    for player_key, rows in df.groupby('key', sort=True):
+        names_in_group = sorted(set(str(v).strip() for v in rows['athlete_display_name'] if str(v).strip()))
+        if not player_key or not names_in_group:
+            continue
+        # Names are a fallback key; if a normalized name maps to multiple athlete IDs,
+        # do not silently merge two different players.
+        ids = sorted(set(str(v) for v in rows[identity_column].dropna())) if identity_column else []
+        if len(ids) > 1:
+            print('::warning::Ambiguous player identity excluded: ' + ', '.join(names_in_group))
+            continue
+        gp = len(rows)
+        if not 1 <= gp <= 82:
+            fail('Implausible leaguewide games played for '+names_in_group[0])
+        for field in FIELDS:
+            if rows[field].isna().any() or (rows[field] < 0).any():
+                fail('Invalid leaguewide '+field+' for '+names_in_group[0])
+        for made, attempted in [('field_goals_made','field_goals_attempted'),('three_point_field_goals_made','three_point_field_goals_attempted'),('free_throws_made','free_throws_attempted')]:
+            if (rows[made] > rows[attempted]).any():
+                fail('Leaguewide made exceeds attempted for '+names_in_group[0])
+        totals = rows[FIELDS].sum()
+        def average(field): return round(float(totals[field])/gp, 1)
+        def percentage(made, attempted):
+            return round(float(totals[made])*100/float(totals[attempted]),1) if totals[attempted] else None
+        name = names_in_group[0]
+        league_players[player_key] = dict(name=name, athlete_id=ids[0] if ids else None,
+            games=gp, ppg=average('points'), rpg=average('rebounds'), apg=average('assists'),
+            spg=average('steals'), bpg=average('blocks'),
+            fg_pct=percentage('field_goals_made','field_goals_attempted'),
+            fg3_pct=percentage('three_point_field_goals_made','three_point_field_goals_attempted'),
+            ft_pct=percentage('free_throws_made','free_throws_attempted'))
+    if len(league_players) < len(result):
+        fail('Leaguewide dataset unexpectedly smaller than ranked coverage')
+    previous_league = json.loads(league_path.read_text()) if league_path.exists() else {}
+    for key, entry in league_players.items():
+        prior = previous_league.get('players',{}).get(key)
+        if prior and entry['games'] < prior.get('games',0):
+            fail('Leaguewide source regressed for '+entry['name'])
+    league_changed = league_players != previous_league.get('players',{})
+    if publish and league_changed:
+        league_payload = dict(schemaVersion=1,season='2026-27',
+            checked_utc=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+            source=URL,status='verified',matched=len(league_players),
+            identity_column=identity_column,players=league_players)
+        league_path.write_text(json.dumps(league_payload,indent=2,ensure_ascii=False)+'\\n')
+        print('WROTE:',league_path.relative_to(ROOT),'players:',len(league_players))
+    elif not publish:
+        print('LEAGUEWIDE DRY RUN:',len(league_players),'players; no files changed')
+
     changed = result != previous.get('players',{}) or previous.get('matched') != len(result)
     print(f'VALIDATED: all 50 ranked + {len(result)-50} others; unmatched mentions={missing_mentions}; changed={changed}; publish={publish}')
     if not publish:
