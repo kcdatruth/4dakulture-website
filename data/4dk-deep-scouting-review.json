@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile or, for Oscar Tshiebwe, the official Houston roster. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 38,
+  "approvedCount": 49,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -533,7 +533,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "3136777": {
       "name": "Jae'Sean Tate",
@@ -701,7 +701,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "3934723": {
       "name": "Thomas Bryant",
@@ -1726,7 +1726,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4432446": {
       "name": "Jabari Walker",
@@ -1830,7 +1830,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4432848": {
       "name": "Jaime Jaquez Jr.",
@@ -1963,7 +1963,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4433599": {
       "name": "Arthur Kaluma",
@@ -2093,7 +2093,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4592691": {
       "name": "Jake LaRavia",
@@ -2136,7 +2136,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4593016": {
       "name": "Quinten Post",
@@ -2850,7 +2850,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4896372": {
       "name": "Walter Clayton Jr.",
@@ -3090,7 +3090,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5061589": {
       "name": "Yves Missi",
@@ -3584,7 +3584,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5159925": {
       "name": "Nikola Topic",
@@ -3850,7 +3850,7 @@
       "teamId": "16",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5281370": {
       "name": "Hannes Steinbach",

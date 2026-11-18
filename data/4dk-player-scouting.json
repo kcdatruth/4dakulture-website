@@ -2245,13 +2245,31 @@
       "name": "Trey Lyles",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909293.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE MISSING SEASON IN THE NBA TABLE",
           "paragraphs": [
-            "Lyles blocked Lillard's final look against Portland, an example of staying in a late possession after the play breaks down. His pick-and-pop threat gives Minnesota a different frontcourt alignment. The test at five is rebounding after the first contest."
+            "Between Sacramento and Minnesota, Lyles played for Real Madrid. His NBA biography credits him with 74 appearances across four competitions in 2025–26. That matters for a veteran whose NBA stat line skips a year. His basketball work continued. And Minnesota already has a postseason reference for the role it might need: Lyles played all seven games of Sacramento’s 2023 playoff series, averaging 16.9 minutes."
+          ]
+        },
+        {
+          "title": "THE BIG WHO BRINGS HIS MAN OUT",
+          "paragraphs": [
+            "With Gobert or Beringer in the lane, a second big’s most valuable action can be catching outside the arc with his feet ready. Lyles opened his Wolves tenure making one three on three attempts per game over 15 appearances. The question is how a defense treats that shot. If his man stays outside, the roller has one fewer body to beat. If the defender lunges out from the paint, a pass back to Ball can restart the attack before help is organized. We would track the choices after the catch as closely as the percentage."
+          ]
+        },
+        {
+          "title": "THE SMALL-CENTER TRADEOFF",
+          "paragraphs": [
+            "At 6-foot-9 and 234 pounds, Lyles offers a way to change the offensive spacing by moving to center. That also changes who is responsible for the rim. Against a reserve big who wants to post up, an early three-quarter denial and timely help might work. Against a vertical lob threat, a late rotation can concede a dunk even if the on-ball defender does his job. His early 3.9 rebounds in 19.1 minutes argue for pairing him with wings who will come back to the glass in those units."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We like Lyles as the frontcourt adjustment a coaching staff can make without substituting its lead guard. Play him at four to create room for the roller. Try him at five to pull a reluctant center outside. Keep the second version only as long as the Wolves can close the possession with a rebound. His value is in giving them the choice."
           ]
         },
         {
@@ -2273,6 +2291,11 @@
             "Inside the arc: 0-for-0. From three: 2-for-5. Defensive rebounds: 7. Steals: 0. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1626168/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136196/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3136196/stats?seasontype=3"
       ]
     },
     "3136777": {
@@ -2955,21 +2978,38 @@
       "name": "Donte DiVincenzo",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE SHOTS MINNESOTA HAS TO REPLACE",
           "paragraphs": [
-            "DiVincenzo can change the spacing of a Minnesota possession by sprinting from the weak corner to the wing. He can also rebound and push it himself. We would look for the early three when the retreating defense crowds the ball rather than his lane."
+            "DiVincenzo made 244 threes in 82 games last season. The part Minnesota misses is how many possessions he was willing to finish. A defender who leaves a reluctant shooter can recover while the ball is still in his hands. Leave Donte to help on an Edwards drive and there is a real chance the shot is already up. His 37.9 percent on 7.9 attempts per game gives us a better measure of that risk than the description “floor spacer” does."
           ]
         },
         {
-          "title": "BEFORE THIS SEASON",
+          "title": "TWO GUARDS WHO CAN MOVE THE HELP",
           "paragraphs": [
-            "In the 2025–26 NBA season, Donte DiVincenzo averaged 12.2 points, 4.1 rebounds and 3.8 assists across 82 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
+            "His path from Villanova through Milwaukee, Sacramento, Golden State and New York gave him exposure to offenses with very different first options. Alongside Ball we would make the first cut toward the rim and send Donte behind it, so the helper has to change direction twice. Alongside Dosunmu we like him one pass away, ready either to shoot or to give the ball straight back if Ayo’s man jumps out. His career-best 3.8 assists per game last season suggest there is room to use him as the passer in that exchange."
+          ]
+        },
+        {
+          "title": "DEFENDING AFTER THE SHOT GOES UP",
+          "paragraphs": [
+            "For a 6-foot-4 guard who averaged 4.1 rebounds, there is value in ending the play himself. The harder decision is when to leave the corner to pursue a long rebound. Guess wrong and the opponent gets a clean catch over a scrambling defense. McDaniels can cover a lot of ground, but we would rather keep him attached to the primary wing. Donte’s defensive contribution in that group starts with choosing when the gamble is worth taking."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The league’s injury report for the November 17 Portland game listed DiVincenzo out after right Achilles tendon repair. Last season’s numbers describe what the Wolves have been missing. They cannot establish a timetable or his movement after a return. When available, the first pairing we would try is Ball and DiVincenzo against a unit that sends two defenders to the ball. See whether Donte still draws a chaser away from the paint before asking him to chase the other team’s quickest guard."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1628978/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3934673/stats",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-16_11_30PM.pdf"
       ]
     },
     "3934723": {
@@ -7349,13 +7389,31 @@
       "name": "Jaylen Clark",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909978. ESPN play-by-play 401909915.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE SECOND-ROUND BET STILL HAS A CLEAR PURPOSE",
           "paragraphs": [
-            "Clark can make life difficult for a guard before the offense reaches its first screen. Minnesota needs an offensive role when that pressure player is ignored outside. Screening for LaMelo or cutting behind a ball watcher puts the defender back to work."
+            "Minnesota acquired the UCLA guard with the 53rd pick in 2023 and waited through a full season of rehabilitation from a right Achilles rupture. By 2025–26 he played 68 regular-season games, starting once. His role is easiest to identify on a night when an opposing reserve guard changes the pace of a game. Minnesota can assign Clark to that problem without pulling McDaniels off the first unit’s best wing."
+          ]
+        },
+        {
+          "title": "THE DEFENDER WHO HAS TO OCCUPY A DEFENDER",
+          "paragraphs": [
+            "Clark averaged four points last season. In his first 12 appearances this year he made 36 percent of his threes on 2.1 attempts a game. The number we care about next is how promptly he takes the open one. When Gobert screens for Ball, Clark’s defender has a short trip from the corner to the roll man. Pausing on the catch lets him make the trip both ways. If the defender turns his back entirely, a baseline cut gives Ball an alternative target, provided Clark times it after the roller clears the lane."
+          ]
+        },
+        {
+          "title": "EARNING THE NEXT SHIFT",
+          "paragraphs": [
+            "We would judge Clark’s pressure on whether he can make a guard start the action two steps farther out without fouling 30 feet from the basket. Sending a dribbler sideways buys the center time to set his coverage. Reaching from behind after a missed steal leaves that center facing two. His six appearances at 9.5 minutes a game in last season’s playoffs put the offensive question in context. He has had a postseason assignment, but the Wolves have yet to rely on him for extended minutes there."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Clark’s best route to a bigger role runs through one specific substitution. A scorer gets hot, Clark takes him, and the offense still has enough space to run its usual actions. If his corner decisions let the Wolves play that way, the original investment has value far beyond his scoring average."
           ]
         },
         {
@@ -7377,6 +7435,11 @@
             "Inside the arc: 2-for-2. From three: 1-for-3. Defensive rebounds: 5. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641740/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432247/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432247/stats?seasontype=3"
       ]
     },
     "4432446": {
@@ -7772,13 +7835,31 @@
       "name": "Terrence Shannon Jr.",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909978.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE BENCH SCORER EARNED A LONGER LOOK IN APRIL",
           "paragraphs": [
-            "Shannon can put immediate pressure on the rim from the wing. The developmental read is the low defender coming from the opposite corner. If he makes that pass on time, Minnesota can use the same first step against a set defense."
+            "Shannon had a 33-point game in Orlando near the end of his second regular season. More persuasive for us was what followed. After playing just 6.3 minutes per appearance in the 2025 playoffs, he averaged 22.6 minutes and 11.8 points across nine postseason games in 2026. A hot April night got attention. The minutes against prepared opponents make a stronger case that Minnesota can put real responsibility on his shoulders while Anthony Edwards is unavailable."
+          ]
+        },
+        {
+          "title": "MAKE THE SECOND DEFENDER MOVE",
+          "paragraphs": [
+            "At Texas Tech and Illinois, Shannon had years to learn how to attack a defense with the ball. In Minnesota the best entry point might come a beat earlier. With Ball bringing it up and McDaniels occupying a baseline defender, Shannon can run wide, catch with momentum and get a shoulder into the lane before the center sets his feet. Through 12 appearances he was at 12.9 points and 2.9 assists in 22.9 minutes. His 37.8 percent on threes offers a counter when the first defender retreats. We would develop the pass from just inside the foul line. That is where a downhill wing can still find both corners before his momentum dictates the finish."
+          ]
+        },
+        {
+          "title": "CAN HE TAKE THE HEAVIER WING?",
+          "paragraphs": [
+            "At 6-foot-6 and 215 pounds, Shannon offers a matchup choice in smaller lineups. Assign him the sturdier wing and McDaniels can use his reach against the longer scorer. We would grade the experiment on whether Shannon can hold position through the first bump and still contest the shot without reaching. Being strong enough to survive the initial contact is only half of that possession."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "When Ant returns, the temptation will be to treat Shannon’s extra shots as temporary. We would keep the early offense he generates and trim the late-clock isolations first. One skill makes life easier for the stars regardless of who calls the play. The other is valuable insurance on the nights they cannot carry it."
           ]
         },
         {
@@ -7800,6 +7881,11 @@
             "Inside the arc: 2-for-4. From three: 1-for-3. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630545/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432847/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4432847/stats?seasontype=3"
       ]
     },
     "4432848": {
@@ -8372,21 +8458,39 @@
       "name": "Johni Broome",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHEN THE COLLEGE CENTER IS THE SMALLER BIG",
           "paragraphs": [
-            "Broome brings prior NBA experience to Minnesota. We would start with the short catch after a screen, where his touch can help him finish or move the ball on. Defensive rebounds through contact are the clearest route to earning the next shift."
+            "Broome put up 25 points and 14 rebounds against Michigan State to send Auburn to the 2025 Final Four. Philadelphia then selected him 35th. His first NBA season produced 11 regular-season appearances at five minutes a game and two brief playoff appearances. We know he could carry a college frontcourt through an elimination game. What Minnesota has to determine is how much of that interior value travels when a 6-foot-9 big has to finish over NBA centers."
           ]
         },
         {
-          "title": "BEFORE THIS SEASON",
+          "title": "GIVE HIM THE BALL WITH A DECISION TO MAKE",
           "paragraphs": [
-            "In the 2025–26 NBA season, Johni Broome averaged 0.9 points, 1.5 rebounds and 0.4 assists across 11 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
+            "At Auburn he averaged 2.9 assists during his final season. That interests us as much as the scoring. A short roll with Bones Hyland drawing two defenders would give Broome the ball near the foul line with the defense already moving. From there he can attack a smaller helper or send the ball to the corner. Parking him beside Gobert under the basket makes the assignment easier for the defense. Putting their defenders at different heights at least makes the defense choose which catch to concede."
+          ]
+        },
+        {
+          "title": "CAN HE FINISH THE STOP AT CENTER?",
+          "paragraphs": [
+            "Broome’s listed 244 pounds gives him a base for getting an early box-out. It does not give him Gobert’s reach. In a small lineup we would judge him on whether he makes contact before the opposing center gets inside and whether he can stay vertical when the guard turns the corner. Stepping up too soon opens the lob. Backing all the way to the rim concedes a short jumper. Getting the timing right is his clearest route to playing center for real minutes."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The strongest evidence for Broome is still his college body of work. We would try him as a second-unit screener and decision-maker before asking him to space the floor as a power forward. His NBA sample is too small to declare him a stretch shooter or to dismiss the passing that made that Auburn frontcourt hard to guard."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641780/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433569/stats",
+        "https://auburntigers.com/news/2025/03/30/final-four-bound-no-1-auburn-beats-michigan-state-wins-south-region",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433569/stats?seasontype=3"
       ]
     },
     "4433599": {
@@ -8875,13 +8979,31 @@
       "name": "Bones Hyland",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909864.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A GUARD WHO CAN CHANGE WHERE THE SCREEN STARTS",
           "paragraphs": [
-            "Hyland's range extends the pickup point for a defender who would rather pack the paint. Minnesota can use that pressure in short bursts. The deciding read is whether he moves the ball once the second defender steps beyond the arc."
+            "Denver drafted Hyland 26th out of VCU. After time with the Clippers, he found a regular Minnesota role and scored 20 or more six times off its bench in 2025–26. The November version offers a straightforward tactical advantage. A center who wants to sit at the foul line has to account for Hyland shooting before he reaches the screen. In his first 15 appearances, Bones took 4.6 threes in just 13.9 minutes per game and made 39.1 percent."
+          ]
+        },
+        {
+          "title": "WHAT TO DO WITH THE EXTRA DEFENDER",
+          "paragraphs": [
+            "Our favorite pairing for him is Joan Beringer. Put a rolling seven-footer behind two defenders worried about Hyland’s pull-up, and a scoring guard has a simple first pass. The more difficult read comes when the weak-side wing tags Beringer before the pass arrives. Hyland can hit the opposite shooter early or drag both defenders another step away before releasing the ball. Waiting until he has picked up his dribble gives up both options. His 2.9 assists against one turnover per game make a case for testing these reads with a consistent partner."
+          ]
+        },
+        {
+          "title": "THE SWITCH OPPONENTS WILL ASK FOR",
+          "paragraphs": [
+            "At 169 pounds, he is an obvious screening target for a bigger ball handler. If Minnesota automatically switches, it can leave Bones trying to deny a deep catch. If he and the wing exchange assignments before the screen arrives, the Wolves can keep a larger defender in that action. Communication has to come early. A second late and the adjustment becomes two defenders pointing at the same man."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Hyland played 11.6 minutes per game in ten playoff appearances last spring. We see the case for a defined postseason shift when the opponent’s second unit plays a deep drop. We would extend that shift when the passes to the roller arrive on time and shorten it when Minnesota has to rearrange the entire defense to keep him on the floor."
           ]
         },
         {
@@ -8903,6 +9025,11 @@
             "Inside the arc: 1-for-3. From three: 3-for-6. Defensive rebounds: 2. Steals: 2. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630538/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592492/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592492/stats?seasontype=3"
       ]
     },
     "4592691": {
@@ -9090,13 +9217,31 @@
       "name": "Zyon Pullin",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909999.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT TEN NBA MINUTES CAN’T TELL US",
           "paragraphs": [
-            "Pullin's test comes when the screen creates a half step but no clear path to the rim. We want to see him hold the defender on his back and find the roller. That would give Minnesota another way to organize a bench possession."
+            "Pullin averaged 4.9 assists and earned first-team All-SEC honors in his season at Florida after four years at UC Riverside. With Iowa last season, he had 23.0 points and 5.8 assists per game in 11 G League starts. Through three Minnesota appearances this fall he averaged 3.3 minutes. We would start a scouting conversation with the first two samples. The third tells us how little time Minnesota has actually given him to show whether his pick-and-roll decisions hold up at NBA speed."
+          ]
+        },
+        {
+          "title": "FINDING A JOB BEHIND BALL",
+          "paragraphs": [
+            "A reserve point guard on this roster does not need to duplicate LaMelo’s passing range. We would ask Pullin to get the first action organized early enough to run a second one. If Beringer rolls and the corner defender tags him, the first pass to the wing lets the next man attack before the defense is set. One extra escape dribble can undo that advantage. His 44.9 percent from three at Florida is a reason to test the catch-and-shoot game alongside Dosunmu. It is college evidence, and defenders at this level get back to shooters sooner."
+          ]
+        },
+        {
+          "title": "USING HIS SIZE BEFORE THE SCREEN",
+          "paragraphs": [
+            "At 6-foot-4 and 206 pounds, Pullin has the build to pick up a reserve guard early. The detail we would look for is whether he can influence which side of the floor the opponent uses. Steering a guard toward the waiting help saves the center a hard recovery. Getting caught square on a screen leaves that center on his own. A few end-of-game possessions cannot give a reliable grade on either outcome."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Memphis gave him his first three NBA appearances. Minnesota gave him five last season. The next informative step would be a planned shift alongside a roller and a scorer, with enough time to see what he does the second time the defense takes away his preferred read. Until then, we see an organizer worth evaluating and an NBA rotation job still to be earned."
           ]
         },
         {
@@ -9106,6 +9251,10 @@
             "Inside the arc: 0-for-1. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642389/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592979/stats"
       ]
     },
     "4593016": {
@@ -11781,13 +11930,31 @@
       "name": "Cody Williams",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909999.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A TOP-TEN PICK WHO HAS ALREADY STARTED 62 TIMES",
           "paragraphs": [
-            "Williams can make a wing defender pay for turning his head by cutting into the vacated lane. We would test whether he still gets to his spot through contact. Defensively, containing the first step gives his length a chance to influence the second."
+            "Utah started Williams 21 times as a rookie and 41 times in his second season. He averaged 8.8 points, three rebounds and two assists in 24.3 minutes in that second year. His first nine appearances with Minnesota yielded five minutes a night and no points. Those two sets of facts can coexist. Utah gave a young wing a long runway. Minnesota already has McDaniels and Kuminga competing for the minutes in which a 6-foot-7 forward can learn by doing."
+          ]
+        },
+        {
+          "title": "AN ENTRY PASS TO THE OFFENSE",
+          "paragraphs": [
+            "We would simplify the first assignment. Start Williams in the weak-side corner with Ball handling and Beringer screening. If the low defender stays home, Williams has created room for the lob by staying put. If the defender tags the roll, Williams has to shoot the return pass or drive the closeout immediately. He had two assists per game with Utah last season, enough to justify giving him a passing option after that drive. Asking him to manufacture an isolation from a dead stop puts the hardest part of the job first."
+          ]
+        },
+        {
+          "title": "THE LIGHTER WING’S MATCHUP",
+          "paragraphs": [
+            "At a listed 190 pounds, Williams gives up considerable mass to power wings. We would try him against a longer perimeter shooter before asking him to switch onto a center. Staying close through an off-ball screen uses his reach and asks less of his base. The development test is whether he can make contact on a box-out after that chase. A good closeout loses its value when the shooter follows his miss untouched."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The Colorado prospect selected tenth in 2024 has real NBA starts behind him and very little evidence in this Wolves role. The opening is as a wing who can defend a shooter, keep the lane clear and make the next pass. If that role takes, Minnesota can revisit how much creation he should handle. Draft position alone gives the coaching staff no reason to skip that first step."
           ]
         },
         {
@@ -11803,6 +11970,10 @@
             "Inside the arc: 0-for-1. From three: 0-for-2. Defensive rebounds: 1. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642262/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4895758/stats"
       ]
     },
     "4896372": {
@@ -12724,13 +12895,31 @@
       "name": "Isaiah Evans",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909999.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHY THE WOLVES CAN LIVE WITH THE EARLY MISSES",
           "paragraphs": [
-            "Evans' shot can give Minnesota a weak-side target high enough to release over smaller guards. The question comes when a physical defender crowds his route. A well-timed back cut would give the passer a counter before the possession stalls."
+            "Evans shot 38 percent from three over 74 games at Duke and started all 38 games of his second season. Minnesota’s rookie wing opened his NBA career with seven appearances averaging 3.3 minutes. A coach evaluating that shot has a much stronger sample from Durham than from a handful of NBA shifts. The adjustment we want to see is how quickly he can get his feet set after relocating when the first passing lane closes."
+          ]
+        },
+        {
+          "title": "TWO STEPS CAN OPEN THE CORNER",
+          "paragraphs": [
+            "Ball can throw to a spot before the receiver arrives. That creates an opportunity for Evans if he can move while his defender is watching McDaniels cut or Gobert roll. Sliding along the baseline keeps the passing angle open without bringing an extra defender to the ball. The harder counter comes when an opponent runs him off the line. One dribble into an open passing lane keeps the advantage. Dribbling toward a set center invites a contest a 175-pound wing has little reason to take."
+          ]
+        },
+        {
+          "title": "WHAT THE OPPONENT WILL TRY FIRST",
+          "paragraphs": [
+            "A bigger wing can screen for the point guard and try to leave Evans switched onto the ball. We would initially keep him on an off-ball shooter and see whether he can chase, communicate the switch early when necessary, and find his assignment again after help. His listed 6-foot-6 frame gives him reach. Holding his line through contact is the part summer-league scoring and college shooting percentages cannot answer."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Our first milestone for the 33rd pick is a repeatable shift with one of the primary creators. Does the defense stay attached when he moves? Can he make the next pass when it does? Can Minnesota get through the other end without sending a second defender to rescue his matchup? Three yeses would make him useful on a night when he makes only one basket."
           ]
         },
         {
@@ -12740,6 +12929,10 @@
             "Inside the arc: 0-for-1. From three: 0-for-2. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642912/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5061585/stats"
       ]
     },
     "5061589": {
@@ -14581,13 +14774,31 @@
       "name": "Rocco Zikarsky",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909947.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THREE LEVELS OF EVIDENCE FOR A SEVEN-FOOT-THREE CENTER",
           "paragraphs": [
-            "Zikarsky's size gives Minnesota a target above the defense, but the guard needs a passing angle first. The development priority is a screen that changes the defender's path before the roll. At the other end his drop must leave room to recover to the big."
+            "Zikarsky played professional basketball with Brisbane before Minnesota acquired him on draft night in 2025. He averaged 12.6 points, seven rebounds and 1.9 blocks in 14 appearances with Iowa last season. For the NBA team he totaled 14 points and 14 boards in five appearances that year. The distinction matters. The Iowa line shows what he can produce with a shift long enough to find his bearings. The NBA line shows how little evidence there is that he can maintain it against bigger, quicker opposition."
+          ]
+        },
+        {
+          "title": "THE SPACE BETWEEN THE SCREEN AND THE RIM",
+          "paragraphs": [
+            "At 7-foot-3 he presents a target most guards would love to throw to. The pass is available only if he gets out of the screen cleanly and puts a defender behind him. Leave too early and the on-ball defender can stay with Hyland. Hold too long and the low man has time to stand between Zikarsky and the basket. We would give him repeated reps with the same handler to learn that timing, then add a short catch and outlet for the possessions where the lob is covered."
+          ]
+        },
+        {
+          "title": "DEFENDING IN TWO DIRECTIONS",
+          "paragraphs": [
+            "The size is easy to see. How far he can step up against a pull-up guard and still get back to the roller is the open question. At a listed 227 pounds he also has to establish rebounding position before a stronger center makes contact. The milestones we would use are a forced miss without a foul and a clean rebound after the contest. A highlight block into the stands answers only part of that question."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Gobert and Beringer give the Wolves time to develop Zikarsky without making him responsible for anchoring an NBA bench tonight. His first appearance this season lasted two minutes. The next meaningful evidence will come from repeated screens, coverages and box-outs against the same opponent over a real shift. That is where his unusual reach can start becoming a dependable basketball skill."
           ]
         },
         {
@@ -14597,6 +14808,10 @@
             "Inside the arc: 0-for-0. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642911/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5157587/stats"
       ]
     },
     "5159925": {
@@ -15543,13 +15758,31 @@
       "name": "Joan Beringer",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909999.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "KEEPING A SECOND UNIT ALIVE ON THE GLASS",
           "paragraphs": [
-            "Beringer's defensive audition begins with drop depth against a live dribble. Too deep concedes the short pull-up; too high opens the lob. Minnesota can simplify his offensive task to a clean screen and a direct dive while that timing develops."
+            "Beringer came from Cedevita Olimpija and was selected 17th in 2025. As a rookie he pulled down five offensive rebounds in a game at San Antonio. That night matters more now because there is a larger sample behind it. Through 15 games of his second season he averaged 2.8 offensive boards in 17.1 minutes. A missed jumper with Beringer near the rim gives Minnesota a real chance to run another action against defenders who have already lost their assignments."
+          ]
+        },
+        {
+          "title": "SCREENING FOR TWO DIFFERENT GUARDS",
+          "paragraphs": [
+            "With Bones Hyland, we would screen high and roll early. A defender stepping up to contest Bones can leave a direct line to the rim. With LaMelo Ball, holding the screen an instant longer can give the passer a better angle for the lob. The common development point is catching a pass below shoulder height. If Beringer gathers twice before going up, the smaller defender who tagged him can recover and strip the ball. A quick pass out is a good outcome when the defense has already collapsed."
+          ]
+        },
+        {
+          "title": "THE DIFFERENCE BETWEEN A BLOCK AND A STOP",
+          "paragraphs": [
+            "His 1.1 blocks per game give the bench a source of rim protection. A seven-footer can also create a free putback by chasing a block from the wrong side of the lane. Playing behind Rudy Gobert gives him a practical coverage to learn. Hold the space between the ball and the roller until the trailing guard recovers, then find a body before following the shot. We would grade the defensive rebound after a forced miss as part of the same assignment."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Beringer played only 4.6 minutes per appearance in five games last postseason. The path to a dependable playoff shift is already visible. Keep giving the Wolves second chances, make the simple pass when the lob disappears, and finish possessions defensively. That combination could let Minnesota rest Gobert without changing what the team asks its perimeter defenders to do."
           ]
         },
         {
@@ -15571,6 +15804,11 @@
             "Inside the arc: 1-for-3. From three: 0-for-0. Defensive rebounds: 7. Steals: 1. Blocks: 4."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642866/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5279133/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5279133/stats?seasontype=3"
       ]
     },
     "5281370": {
@@ -16380,9 +16618,20 @@
       "4431671",
       "3032976",
       "4433247",
+      "3934673",
+      "4432847",
+      "4432247",
+      "4592492",
+      "5279133",
+      "4592979",
+      "4895758",
+      "4433569",
+      "5061585",
+      "3136196",
+      "5157587",
       "5037871"
     ],
-    "remainingForDeepReview": 437,
+    "remainingForDeepReview": 426,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
