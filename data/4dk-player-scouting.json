@@ -12240,29 +12240,48 @@
     "5037871": {
       "name": "Dylan Harper",
       "status": "published",
-      "editorialType": "4DK returning-player evaluation",
-      "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE SPURS' SECOND CREATOR",
+          "title": "THE STARTING JOB CHANGED THE QUESTION",
           "paragraphs": [
-            "Harper's early production gives San Antonio another ball-handling dimension alongside its established core. The intriguing part of his profile is the blend of scoring and playmaking: he can contribute to the scoreboard while also being asked to organize possessions. Our evaluation centers on whether he recognizes the moment to attack and the moment to involve a teammate."
+            "Four starts in 69 regular-season appearances as a first-year guard. Fifteen starts in his first 15 games of year two. That is the part of Dylan Harper’s scoring jump we would put on the board first. San Antonio already knew the second pick out of Rutgers could get buckets against NBA players. It had 23 playoff games to judge him by, including 14.1 points and 5.6 rebounds a night in that run. What the Spurs are finding out now is whether Harper can give a starting group its shape against an opponent’s first five, then take a different job when De’Aaron Fox or Victor Wembanyama has the better matchup."
           ]
         },
         {
-          "title": "EFFICIENCY AND CONTROL",
+          "title": "THE SPACE BETWEEN FOX AND WEMBY",
           "paragraphs": [
-            "His early field-goal percentage is encouraging, but efficiency becomes more meaningful when we examine the types of looks he creates and the defenses he faces. We also want to track his ball security, pace changes and reads in traffic. An assist average captures only part of a lead guard's decision-making."
+            "Through the November 17 game, Harper was averaging 18.4 points, 5.4 rebounds and 4.5 assists. We like the change underneath those numbers. His shot attempts rose from 9.5 per game last season to 14.1, his field-goal percentage held at 50.5, and his turnovers stayed at 1.4 a game. Those are three reasons to keep giving him decisions. For a 6-foot-5 guard, getting a smaller defender on his hip can buy the extra beat to see whether the opposing center will step up. Wembanyama gives that read real stakes. Retreat and Harper has room to finish. Step forward too early and the pass can go over the top.",
+            "Fox changes the equation. When he has already beaten the first defender, Harper’s best contribution might be catching on the second side and driving before the paint fills again. The catch is that an opponent can shrink that lane by playing off him. Harper shot 31.5 percent from three over those first 15 games. The shot we would prioritize in development is the feet-set three after Fox draws help. Raising the cost of that particular rotation could be worth more to this group than adding a difficult pull-up."
           ]
         },
         {
-          "title": "4DK DEVELOPMENT WATCH",
+          "title": "WHO TAKES THE FIRST ASSIGNMENT?",
           "paragraphs": [
-            "Availability and health must be handled through separately verified injury reporting, not assumed from a statistical snapshot. On the floor, Harper's next step is to maintain his offensive composure while improving his point-of-attack defense and off-ball awareness. If those pieces grow together, San Antonio has a versatile backcourt building block."
+            "Stephon Castle gives San Antonio a credible option against a powerful ball handler. Our question for Harper is what happens when the opponent sends Harper’s man up to screen for Castle’s assignment. A clean switch can preserve the matchup size San Antonio put on the floor. A late call leaves two guards following the ball and asks Wembanyama to pick between the roller and the rim. At Harper’s size we would grade those exchanges and his ability to finish a stop with a rebound well before we graded his steals. That is a scouting priority. The season box score cannot settle it."
+          ]
+        },
+        {
+          "title": "WHAT SAN ANTONIO KNEW ON NOVEMBER 18",
+          "paragraphs": [
+            "Harper slipped in the final minute of the 105–93 loss to Detroit that ended San Antonio’s 12-game winning streak. He left with assistance. The initial postgame reporting described tests pending. There was no confirmed return date in that report. If he misses time, Fox can absorb possessions. The harder thing to replace is the freedom to stagger the two guards and still have a downhill creator when Fox sits."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would keep Harper in the starting group when available and give him stretches without Fox by design. Those minutes answer two different questions. With Fox, can Harper make defenders pay for leaving him? With the second group, can he create a good shot for somebody else after a defense takes away his first drive? A second-year guard who answers both gives the Spurs two ways to close the same playoff game. His postseason résumé earns him the opportunity. The jumper and the reads will decide how far it goes."
           ]
         }
       ],
-      "playerClass": "non-rookie"
+      "playerClass": "non-rookie",
+      "reviewSources": [
+        "https://www.nba.com/player/1642844/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5037871/stats",
+        "https://www.reuters.com/sports/spurs-awaiting-tests-after-dylan-harpers-slip-fall--flm-2026-11-18/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5037871/stats?seasontype=3"
+      ]
     },
     "5037873": {
       "name": "Drake Powell",
@@ -16262,9 +16281,10 @@
       "4702972",
       "5113969",
       "4433599",
-      "4278580"
+      "4278580",
+      "5037871"
     ],
-    "remainingForDeepReview": 442,
+    "remainingForDeepReview": 441,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
