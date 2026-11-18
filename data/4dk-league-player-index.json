@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "season": "2026-27",
+  "checkedUtc": "2026-11-17 17:02 UTC",
+  "coverage": "Existing player profiles and verified-statistics dataset only. Not a complete current NBA roster.",
+  "players": [
+    {
+      "id": "victor-wembanyama",
+      "name": "Victor Wembanyama",
+      "team": "San Antonio Spurs",
+      "profile": "4dk-player-victor-wembanyama.html",
+      "editorial": true
+    },
+    {
+      "id": "luka-doncic",
+      "name": "Luka Doncic",
+      "team": "Los Angeles Lakers",
+      "profile": "4dk-player-luka-doncic.html",
+      "editorial": true
+    },
+    {
+      "id": "shai-gilgeous-alexander",
+      "name": "Shai Gilgeous-Alexander",
+      "team": "Oklahoma City Thunder",
+      "profile": "4dk-player-shai-gilgeous-alexander.html",
+      "editorial": true
+    },
+    {
+      "id": "nikola-jokic",
+      "name": "Nikola Jokic",
+      "team": null,
+      "profile": "4dk-player-nikola-jokic.html",
+      "editorial": true
+    },
+    {
+      "id": "giannis-antetokounmpo",
+      "name": "Giannis Antetokounmpo",
+      "team": null,
+      "profile": "4dk-player-giannis-antetokounmpo.html",
+      "editorial": true
+    },
+    {
+      "id": "jayson-tatum",
+      "name": "Jayson Tatum",
+      "team": null,
+      "profile": "4dk-player-jayson-tatum.html",
+      "editorial": true
+    },
+    {
+      "id": "cade-cunningham",
+      "name": "Cade Cunningham",
+      "team": "Detroit Pistons",
+      "profile": "4dk-player-cade-cunningham.html",
+      "editorial": true
+    },
+    {
+      "id": "jalen-brunson",
+      "name": "Jalen Brunson",
+      "team": null,
+      "profile": "4dk-player-jalen-brunson.html",
+      "editorial": true
+    },
+    {
+      "id": "anthony-edwards",
+      "name": "Anthony Edwards",
+      "team": "Minnesota Timberwolves",
+      "profile": "4dk-player-anthony-edwards.html",
+      "editorial": true
+    },
+    {
+      "id": "tyrese-maxey",
+      "name": "Tyrese Maxey",
+      "team": null,
+      "profile": "4dk-player-tyrese-maxey.html",
+      "editorial": true
+    },
+    {
+      "id": "jaylen-brown",
+      "name": "Jaylen Brown",
+      "team": null,
+      "profile": "4dk-player-jaylen-brown.html",
+      "editorial": true
+    },
+    {
+      "id": "stephen-curry",
+      "name": "Stephen Curry",
+      "team": null,
+      "profile": "4dk-player-stephen-curry.html",
+      "editorial": true
+    },
+    {
+      "id": "donovan-mitchell",
+      "name": "Donovan Mitchell",
+      "team": null,
+      "profile": "4dk-player-donovan-mitchell.html",
+      "editorial": true
+    },
+    {
+      "id": "kevin-durant",
+      "name": "Kevin Durant",
+      "team": null,
+      "profile": "4dk-player-kevin-durant.html",
+      "editorial": true
+    },
+    {
+      "id": "jalen-johnson",
+      "name": "Jalen Johnson",
+      "team": null,
+      "profile": "4dk-player-jalen-johnson.html",
+      "editorial": true
+    },
+    {
+      "id": "scottie-barnes",
+      "name": "Scottie Barnes",
+      "team": null,
+      "profile": "4dk-player-scottie-barnes.html",
+      "editorial": true
+    },
+    {
+      "id": "kawhi-leonard",
+      "name": "Kawhi Leonard",
+      "team": null,
+      "profile": "4dk-player-kawhi-leonard.html",
+      "editorial": true
+    },
+    {
+      "id": "karl-anthony-towns",
+      "name": "Karl-Anthony Towns",
+      "team": null,
+      "profile": "4dk-player-karl-anthony-towns.html",
+      "editorial": true
+    },
+    {
+      "id": "alperen-sengun",
+      "name": "Alperen Sengun",
+      "team": null,
+      "profile": "4dk-player-alperen-sengun.html",
+      "editorial": true
+    },
+    {
+      "id": "jamal-murray",
+      "name": "Jamal Murray",
+      "team": null,
+      "profile": "4dk-player-jamal-murray.html",
+      "editorial": true
+    },
+    {
+      "id": "devin-booker",
+      "name": "Devin Booker",
+      "team": null,
+      "profile": "4dk-player-devin-booker.html",
+      "editorial": true
+    },
+    {
+      "id": "anthony-davis",
+      "name": "Anthony Davis",
+      "team": null,
+      "profile": "4dk-player-anthony-davis.html",
+      "editorial": true
+    },
+    {
+      "id": "lebron-james",
+      "name": "LeBron James",
+      "team": null,
+      "profile": "4dk-player-lebron-james.html",
+      "editorial": true
+    },
+    {
+      "id": "evan-mobley",
+      "name": "Evan Mobley",
+      "team": null,
+      "profile": "4dk-player-evan-mobley.html",
+      "editorial": true
+    },
+    {
+      "id": "bam-adebayo",
+      "name": "Bam Adebayo",
+      "team": null,
+      "profile": "4dk-player-bam-adebayo.html",
+      "editorial": true
+    },
+    {
+      "id": "deni-avdija",
+      "name": "Deni Avdija",
+      "team": null,
+      "profile": "4dk-player-deni-avdija.html",
+      "editorial": true
+    },
+    {
+      "id": "paolo-banchero",
+      "name": "Paolo Banchero",
+      "team": null,
+      "profile": "4dk-player-paolo-banchero.html",
+      "editorial": true
+    },
+    {
+      "id": "joel-embiid",
+      "name": "Joel Embiid",
+      "team": null,
+      "profile": "4dk-player-joel-embiid.html",
+      "editorial": true
+    },
+    {
+      "id": "tyrese-haliburton",
+      "name": "Tyrese Haliburton",
+      "team": null,
+      "profile": "4dk-player-tyrese-haliburton.html",
+      "editorial": true
+    },
+    {
+      "id": "cooper-flagg",
+      "name": "Cooper Flagg",
+      "team": null,
+      "profile": "4dk-player-cooper-flagg.html",
+      "editorial": true
+    },
+    {
+      "id": "trae-young",
+      "name": "Trae Young",
+      "team": null,
+      "profile": "4dk-player-trae-young.html",
+      "editorial": true
+    },
+    {
+      "id": "lamelo-ball",
+      "name": "LaMelo Ball",
+      "team": null,
+      "profile": "4dk-player-lamelo-ball.html",
+      "editorial": true
+    },
+    {
+      "id": "chet-holmgren",
+      "name": "Chet Holmgren",
+      "team": null,
+      "profile": "4dk-player-chet-holmgren.html",
+      "editorial": true
+    },
+    {
+      "id": "franz-wagner",
+      "name": "Franz Wagner",
+      "team": null,
+      "profile": "4dk-player-franz-wagner.html",
+      "editorial": true
+    },
+    {
+      "id": "pascal-siakam",
+      "name": "Pascal Siakam",
+      "team": null,
+      "profile": "4dk-player-pascal-siakam.html",
+      "editorial": true
+    },
+    {
+      "id": "austin-reaves",
+      "name": "Austin Reaves",
+      "team": null,
+      "profile": "4dk-player-austin-reaves.html",
+      "editorial": true
+    },
+    {
+      "id": "zion-williamson",
+      "name": "Zion Williamson",
+      "team": null,
+      "profile": "4dk-player-zion-williamson.html",
+      "editorial": true
+    },
+    {
+      "id": "stephon-castle",
+      "name": "Stephon Castle",
+      "team": null,
+      "profile": "4dk-player-stephon-castle.html",
+      "editorial": true
+    },
+    {
+      "id": "domantas-sabonis",
+      "name": "Domantas Sabonis",
+      "team": null,
+      "profile": "4dk-player-domantas-sabonis.html",
+      "editorial": true
+    },
+    {
+      "id": "jalen-duren",
+      "name": "Jalen Duren",
+      "team": null,
+      "profile": "4dk-player-jalen-duren.html",
+      "editorial": true
+    },
+    {
+      "id": "amen-thompson",
+      "name": "Amen Thompson",
+      "team": null,
+      "profile": "4dk-player-amen-thompson.html",
+      "editorial": true
+    },
+    {
+      "id": "og-anunoby",
+      "name": "OG Anunoby",
+      "team": null,
+      "profile": "4dk-player-og-anunoby.html",
+      "editorial": true
+    },
+    {
+      "id": "de-aaron-fox",
+      "name": "De'Aaron Fox",
+      "team": null,
+      "profile": "4dk-player-deaaron-fox.html",
+      "editorial": true
+    },
+    {
+      "id": "dylan-harper",
+      "name": "Dylan Harper",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "julius-randle",
+      "name": "Julius Randle",
+      "team": null,
+      "profile": "4dk-player-julius-randle.html",
+      "editorial": true
+    },
+    {
+      "id": "kyrie-irving",
+      "name": "Kyrie Irving",
+      "team": null,
+      "profile": "4dk-player-kyrie-irving.html",
+      "editorial": true
+    },
+    {
+      "id": "ty-jerome",
+      "name": "Ty Jerome",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "paul-george",
+      "name": "Paul George",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "nickeil-alexander-walker",
+      "name": "Nickeil Alexander-Walker",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "jaden-mcdaniels",
+      "name": "Jaden McDaniels",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "james-harden",
+      "name": "James Harden",
+      "team": null,
+      "profile": "4dk-player-james-harden.html",
+      "editorial": true
+    },
+    {
+      "id": "derrick-white",
+      "name": "Derrick White",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "walker-kessler",
+      "name": "Walker Kessler",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "caleb-wilson",
+      "name": "Caleb Wilson",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "damian-lillard",
+      "name": "Damian Lillard",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "cam-boozer",
+      "name": "Cam Boozer",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "yaxel-lendeborg",
+      "name": "Yaxel Lendeborg",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "ja-morant",
+      "name": "Ja Morant",
+      "team": null,
+      "profile": "4dk-player-ja-morant.html",
+      "editorial": true
+    },
+    {
+      "id": "jarrett-allen",
+      "name": "Jarrett Allen",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "rj-barrett",
+      "name": "RJ Barrett",
+      "team": null,
+      "profile": null,
+      "editorial": false
+    },
+    {
+      "id": "darius-garland",
+      "name": "Darius Garland",
+      "team": null,
+      "profile": "4dk-player-darius-garland.html",
+      "editorial": true
+    },
+    {
+      "id": "jalen-williams",
+      "name": "Jalen Williams",
+      "team": null,
+      "profile": "4dk-player-jalen-williams.html",
+      "editorial": true
+    },
+    {
+      "id": "josh-giddey",
+      "name": "Josh Giddey",
+      "team": null,
+      "profile": "4dk-player-josh-giddey.html",
+      "editorial": true
+    }
+  ]
+}
