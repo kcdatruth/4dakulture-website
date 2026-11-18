@@ -1,0 +1,49 @@
+name: November 17 NFL rankings browser check
+on:
+  push:
+    paths:
+      - 'nfl-rankings-week11-2026.html'
+      - '.github/workflows/nfl-nov17-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-edition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix "$RUNNER_TEMP/rankings-check" playwright@1.56.1
+      - run: '"$RUNNER_TEMP/rankings-check/node_modules/.bin/playwright" install --with-deps chromium'
+      - name: Check article, board navigation and responsive layouts
+        env:
+          NODE_PATH: ${{ runner.temp }}/rankings-check/node_modules
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/rankings-server.log 2>&1 &
+          node <<'JS'
+          const assert = require('node:assert/strict')
+          const { chromium } = require('playwright')
+          ;(async () => {
+            const browser = await chromium.launch()
+            try {
+              const page = await browser.newPage()
+              for (const width of [360, 390, 768, 1280]) {
+                await page.setViewportSize({ width, height: 820 })
+                await page.goto('http://127.0.0.1:8765/nfl-rankings-week11-2026.html', { waitUntil: 'domcontentloaded' })
+                assert.equal(await page.locator('.entry, .award').count(), 52)
+                assert.equal(await page.locator('#standings table').count(), 8)
+                assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth))
+                await page.getByRole('link', { name: '03 CIN' }).click()
+                assert.ok(page.url().endsWith('#team-cin'))
+                await page.locator('.tabs').getByRole('link', { name: 'ROOKIE WATCH' }).click()
+                assert.match(await page.locator('.award').nth(2).innerText(), /David Bailey/i)
+                assert.match(await page.locator('.award').nth(2).innerText(), /Nov 10 #1 · ▼ 2/i)
+                console.log('Passed at', width, 'pixels')
+              }
+            } finally {
+              await browser.close()
+            }
+          })().catch(error => { console.error(error); process.exitCode = 1 })
+          JS

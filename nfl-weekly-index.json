@@ -1,9 +1,17 @@
 {
   "version": 1,
   "season": 2026,
-  "current_week": 10,
-  "updated": "2026-11-16",
+  "current_week": 11,
+  "updated": "2026-11-17",
   "articles": [
+    {
+      "type": "RANKINGS",
+      "week": 11,
+      "date": "2026-11-17",
+      "title": "NFL Rankings HQ Deluxe — The Week 10 reset",
+      "url": "nfl-rankings-week11-2026.html",
+      "summary": "Cincinnati climbs six. The complete Power 32, MVP and Rookie Watches, eight divisions and both playoff races."
+    },
     {
       "type": "INJURY",
       "week": 10,
