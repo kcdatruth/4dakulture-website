@@ -15,11 +15,12 @@ const format=v=>typeof v==='number'&&Number.isFinite(v)?v.toFixed(1):'—';
 if(!team||!name||!/^[0-9]+$/.test(team)){title.textContent='Select a player from NBA Rosters';status.textContent='No roster player selected';return}
 title.textContent=name;
 try{
- const [rosterResponse,indexResponse,statsResponse,coverageResponse]=await Promise.all([
+ const [rosterResponse,indexResponse,statsResponse,coverageResponse,scoutingResponse]=await Promise.all([
   fetch('data/4dk-nba-rosters-verified.json',{cache:'no-store'}),
   fetch('data/4dk-league-player-index.json',{cache:'no-store'}),
   fetch('data/4dk-nba-league-stats-2026-27.json',{cache:'no-store'}),
-  fetch('data/4dk-player-coverage.json',{cache:'no-store'})
+  fetch('data/4dk-player-coverage.json',{cache:'no-store'}),
+  fetch('data/4dk-player-scouting.json',{cache:'no-store'})
  ]);
  if(!rosterResponse.ok)throw Error('Verified roster snapshot unavailable');
  const data=await rosterResponse.json();
@@ -45,16 +46,12 @@ try{
  const story=node('section');story.className='pf-story';story.append(node('h2','THE 4DK SCOUTING FILE'));
  if(editorial?.profile){story.append(node('p','Original 4 Da Kulture scouting analysis, preserved in its published edition.'));
  addLink(story,'Read full original 4DK scouting report →',editorial.profile)}
- else if(String(player.id)==='5041935'){
-  story.append(node('h3','CAMERON BOOZER / 4DK SCOUTING REPORT'));
-  story.append(node('h3','OFFENSIVE GAME & DECISION-MAKING'));
-  story.append(node('p','Boozer’s early NBA profile is built around a compelling combination of scoring, rebounding and passing. The season snapshot gives us a foundation for evaluation, but the more interesting question is how his decisions shape Memphis possessions: whether he creates a quality look for himself, draws help and moves the ball, or keeps the offense flowing with quick reads.'));
-  story.append(node('h3','REBOUNDING & PLAYMAKING'));
-  story.append(node('p','His rebounding production gives Memphis another way to finish defensive possessions and begin the next attack. The playmaking numbers are especially worth tracking for a forward: they suggest a role that can extend beyond simply finishing plays, although assists alone cannot establish the quality of every read.'));
-  story.append(node('h3','DEVELOPMENT PRIORITIES'));
-  story.append(node('p','The swing skill is scoring efficiency. His current shooting percentages should be read alongside shot difficulty, defensive attention and the quality of his opportunities, not treated as a final verdict on his jumper or long-term ceiling. Defensively, we want to evaluate positioning, physicality, rotations and whether he can hold up across different matchups—not just steals and blocks.'));
-  story.append(node('h3','4DK OUTLOOK'));
-  story.append(node('p','The ceiling is tied to becoming a dependable two-way offensive hub rather than just a productive young scorer. Continued improvement as a shooter and defender would raise that ceiling; consistency and decision-making will determine how quickly he gets there. This is an original 4DK evaluation, not a claim that each trait has been independently measured.'));
+ else if(scoutingResponse.ok){
+  const scouting=await scoutingResponse.json();const report=scouting.reports?.[String(player.id)];
+  if(report?.status==='published'&&norm(report.name)===norm(player.name)&&Array.isArray(report.sections)&&report.sections.length){
+   story.append(node('h3',player.name.toUpperCase()+' / 4DK SCOUTING REPORT'));
+   for(const section of report.sections){if(typeof section.title!=='string'||!Array.isArray(section.paragraphs))continue;story.append(node('h3',section.title));for(const paragraph of section.paragraphs){if(typeof paragraph==='string'&&paragraph.trim())story.append(node('p',paragraph))}}
+  }else story.append(node('p','Original 4DK scouting analysis is being developed for this player. Verified roster and statistical details appear below.'));
  }
  else story.append(node('p','Original 4DK scouting analysis is being developed for this player. Verified roster and statistical details appear below.'));
  if(coverageResponse.ok){const coverage=await coverageResponse.json();const articles=coverage.coverage?.[editorial?.id];if(Array.isArray(articles)){const heading=node('h3','RELATED 4DK COVERAGE');story.append(heading);for(const [label,url] of articles){if(typeof url==='string'&&url.endsWith('.html')&&!url.includes('/')&&!url.includes('..'))addLink(story,label+' →',url)}}}
