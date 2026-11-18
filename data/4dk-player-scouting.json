@@ -7,8 +7,8 @@
       "name": "Mike Conley",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK Deep Scouting Draft — pending factual review",
-      "basis": "Original 4DK career-context scouting analysis. Current-season fit and performance are hypotheses pending independently verified film and lineup data. Existing dated game logs are supporting evidence.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "4DK original individual scouting assessment, editorial and factual review November 18, 2026. Boston roster and dated game log cross-checked against NBA.com: https://www.nba.com/team/1610612738/roster and https://www.nba.com/player/201144/mike_conley . Offensive and defensive traits are career-based scouting interpretation; current lineup impact is explicitly unverified.",
       "sections": [
         {
           "title": "THE 4DK THESIS — THE POINT GUARD WHO CONTROLS THE TEMPO",
@@ -41,7 +41,7 @@
         {
           "title": "CURRENT FIT — THE VALUE OF A SECOND ORGANIZER",
           "paragraphs": [
-            "The current 4DK roster file lists Conley with Boston. In a lineup with established scorers and other ball handlers, the plausible value is composure: initiating an action cleanly, protecting the ball and making the extra pass instead of forcing an individual finish.",
+            "Boston's official NBA roster confirms Conley as a Celtics guard in 2026–27. Alongside Derrick White and Payton Pritchard, his plausible value is a second organizing voice: initiating an action cleanly, protecting the ball and making the extra pass instead of forcing an individual finish.",
             "But that fit is an editorial projection, not proof of chemistry. It should be tested against actual lineup combinations, defensive assignments and whether Conley's minutes improve possession quality. The previous file's November 8 ten-minute outing is too small a sample to establish the answer."
           ]
         },
@@ -55,8 +55,8 @@
         {
           "title": "EVIDENCE AND LIMITS",
           "paragraphs": [
-            "The repository records three points, three rebounds and one assist in ten minutes against Milwaukee on November 8, plus a November 2 defensive sequence against Houston. These examples are retained as dated observations, not season-long proof.",
-            "Career-role analysis is an original 4DK interpretation. Current Boston lineup chemistry, assignments and season-level efficiency have not yet passed independent possession-by-possession review."
+            "NBA.com's November 8, 2026 Boston–Milwaukee box score confirms Conley recorded three points, three rebounds and one assist in ten minutes. NBA.com's November 2 game log also records one block against Houston. These are dated examples, not season-long proof.",
+            "The NBA player page currently lists 3.0 points, 0.8 rebounds and 0.5 assists per game; these are a small early-season sample. Career-role and defensive analysis is explicitly interpretation, not a claim of independent full-game film review. Present Boston lineup chemistry and on-ball matchup success are not yet established."
           ]
         }
       ]
