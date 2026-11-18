@@ -391,10 +391,14 @@
     },
     {
       "id": "cam-boozer",
-      "name": "Cam Boozer",
+      "name": "Cameron Boozer",
       "team": null,
       "profile": null,
-      "editorial": false
+      "editorial": false,
+      "athleteId": "5041935",
+      "aliases": [
+        "Cam Boozer"
+      ]
     },
     {
       "id": "yaxel-lendeborg",

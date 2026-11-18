@@ -9,9 +9,14 @@ try{
  const index=await a.json(),stats=await b.json();
  if(stats.status!=='verified'||stats.season!==index.season)throw Error('Unverified statistics');
  const known=new Map(index.players.map(p=>[norm(p.name),p]));
+ const knownById=new Map(index.players.filter(p=>p.athleteId).map(p=>[String(p.athleteId).replace(/\.0$/,''),p]));
+ const aliasMap=new Map();
+ for(const p of index.players){for(const alias of p.aliases||[]){const key=norm(alias);if(aliasMap.has(key)&&aliasMap.get(key)!==p)throw Error('Ambiguous editorial alias');aliasMap.set(key,p)}}
+ const canonical=p=>norm(p.name);
+ const statsId=p=>String(p.athlete_id??'').replace(/\.0$/,'');
  const players=new Map();
- for(const entry of Object.values(stats.players||{})){const key=norm(entry.name);if(!key)continue;const editorial=known.get(key);players.set(key,{name:editorial?.name||entry.name,profile:editorial?.profile||null,team:editorial?.team||null,editorial:!!editorial?.profile,stats:entry})}
- for(const p of index.players){const key=norm(p.name);if(!players.has(key))players.set(key,{name:p.name,profile:p.profile,team:p.team,editorial:!!p.profile,stats:null})}
+ for(const entry of Object.values(stats.players||{})){const key=norm(entry.name);if(!key)continue;const editorial=knownById.get(statsId(entry))||known.get(key)||aliasMap.get(key);const canonicalKey=editorial?canonical(editorial):key;players.set(canonicalKey,{name:editorial?.name||entry.name,profile:editorial?.profile||null,team:editorial?.team||null,editorial:!!editorial?.profile,stats:entry})}
+ for(const p of index.players){const key=canonical(p);if(!players.has(key))players.set(key,{name:p.name,profile:p.profile,team:p.team,editorial:!!p.profile,stats:null,athleteId:p.athleteId||null})}
  const all=[...players.values()].sort((a,b)=>a.name.localeCompare(b.name));
  // Use a complete, server-published 30-team snapshot instead of 30 mobile requests.
  // Team identity must match a stable athlete ID; names alone are never sufficient.
@@ -30,7 +35,7 @@ try{
    rosterComplete=true;
    const rosterById=snapshot.players;
    for(const p of all){
-    const pid=idKey(p.stats?.athlete_id);
+    const pid=idKey(p.stats?.athlete_id||p.athleteId);
     const match=pid&&rosterById[pid];
     p.team=match?.team||null;
     p.teamId=match?.teamId||null;
@@ -42,7 +47,7 @@ try{
 
  const render=()=>{
   grid.replaceChildren();const q=norm(search.value),type=filter.value;
-  const list=all.filter(p=>norm(p.name).includes(q)&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
+  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
   count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc+(rosterComplete?' · teams checked '+rosterTimestamp:' · team verification temporarily unavailable');
   const fragment=document.createDocumentFragment();
   for(const p of list){
