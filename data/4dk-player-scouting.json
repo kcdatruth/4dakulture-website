@@ -17116,10 +17116,11 @@
       "5061585",
       "3136196",
       "5157587",
-      "5037871"
+      "5037871",
+      "3195"
     ],
-    "remainingForDeepReview": 420,
-    "reviewStatus": "In progress",
+    "remainingForDeepReview": 419,
+    "reviewStatus": "In progress; current approvals reflected in data/4dk-deep-scouting-review.json",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
     "reportTracker": "data/4dk-deep-scouting-review.json"
