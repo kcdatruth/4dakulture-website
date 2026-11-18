@@ -1568,13 +1568,31 @@
       "name": "Josh Hart",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910002. ESPN play-by-play 401909910.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE REBOUND IS ALSO THE OUTLET",
           "paragraphs": [
-            "Hart is a guard who can end a defensive possession and start the fast break in one motion. When teams ignore him outside, the Knicks can send him to screen and cut. That forces his defender to guard an action instead of standing in Brunson's driving lane."
+            "Hart’s distinctive contribution shows up between two entries in the box score. He takes the defensive rebound himself and can start the break without waiting for an outlet pass. In 19 playoff starts last spring he averaged 8.9 rebounds and 4.6 assists. For a player sharing the floor with Brunson, those numbers describe a way to create possessions on which the point guard can get ahead of the ball and catch with a defense already retreating. His path from the Lakers through New Orleans and Portland to New York makes sense through that lens. The scoring options around him can change while the possession he creates remains valuable."
+          ]
+        },
+        {
+          "title": "WHAT IF HIS MAN WON’T FOLLOW HIM?",
+          "paragraphs": [
+            "Hart shot 32.6 percent from three in that postseason and 28.6 percent through his first 11 games this season. A defender stationed near the lane can make a Brunson–Towns screen feel like two Knicks attacking three opponents. Standing in the corner leaves the choice with the defense. We would bring Hart up to screen for Brunson. If the defense switches, Brunson can choose his matchup. If both defenders follow the ball, Hart can catch moving toward the basket with a passing angle to Towns. The timing has to be precise or Hart simply brings another body into Brunson’s path."
+          ]
+        },
+        {
+          "title": "THE TRADEOFF ON THE GLASS",
+          "paragraphs": [
+            "Hart can go after a rebound that most guards concede. The team still needs somebody between the ball and its own basket if he misses. Alongside Bridges, we like one crashing from the weak side and the other getting back as soon as the shot goes up. The assignment should follow where the miss is likely to go. A drive that leaves Hart under the rim calls for a different decision than a corner three with Hart above the break."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "A five-point night can still be a good Hart night. The tougher question is whether New York can punish the opponent for ignoring him when the game slows down. We would judge his closing shift by the early offense he creates, the extra possession he secures and what happens the first time his defender leaves him to load up on Brunson."
           ]
         },
         {
@@ -1596,6 +1614,11 @@
             "Inside the arc: 1-for-1. From three: 1-for-4. Defensive rebounds: 4. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1628404/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3062679/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3062679/stats?seasontype=3"
       ]
     },
     "3064290": {
@@ -2438,13 +2461,31 @@
       "name": "Mikal Bridges",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910002. ESPN play-by-play 401909990.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT THE TORONTO GAME GAVE NEW YORK BACK",
           "paragraphs": [
-            "Bridges' 17 in Toronto gave New York a credible second scoring option while Brunson handled the finish. We like him catching on the move, where a short pull-up can punish the chase. His length still has to cover the opponent's hardest perimeter route."
+            "Jalen Brunson’s four-point play broke the tie in Toronto on November 17. Bridges had done something earlier that the Knicks badly needed. He got 17 points out of 11 shots, giving the offense a profitable place to go when the first action ended without a Brunson look. Through 14 starts Bridges was averaging 7.5 points on 40.2 percent shooting. One efficient night matters to a team trying to win a close game. The larger sample matters when deciding which shots to call for him again."
+          ]
+        },
+        {
+          "title": "PHOENIX, BROOKLYN AND THE JOB IN BETWEEN",
+          "paragraphs": [
+            "Bridges played in the 2021 Finals with Phoenix before taking on a larger scoring role in Brooklyn. In New York’s 19 playoff games last spring he started every game and scored 13.5 a night on 55.9 percent from the field. That history argues for giving him the ball after Brunson or Karl-Anthony Towns has forced a rotation. If a defender runs him off the wing, he has room to reach a short pull-up. If the big steps out to challenge, a pass to Towns can punish the help. Feeding him the ball late in the clock against an organized defense asks him to do the Brooklyn job without Brooklyn’s touches or rhythm."
+          ]
+        },
+        {
+          "title": "HOW HE MAKES BRUNSON’S JOB SMALLER",
+          "paragraphs": [
+            "The defensive benefit is the matchup Bridges can take off Brunson’s plate. Give Mikal the longer scoring guard and he can contest a pull-up without sending a second man. The risk comes against strong screeners. Getting pushed underneath a pick can give the shooter all the separation his length usually takes away. We would study how often he reconnects before the opposing guard reaches Towns. That determines whether New York can keep its center near the basket."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would keep a couple of early touches in the script for Bridges, including one cut behind a defender leaning toward Brunson. The goal is to make that defender look over his shoulder the next time the Knicks need Brunson to finish a game. Toronto offered evidence that the offense still has that option. Consistently taking it when the defense offers it is the next step."
           ]
         },
         {
@@ -2466,6 +2507,12 @@
             "Inside the arc: 5-for-6. From three: 2-for-5. Defensive rebounds: 5. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1628969/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3147657/stats",
+        "https://statsdmz.nba.com/pdfs/20261117/20261117_NYKTOR.pdf",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3147657/stats?seasontype=3"
       ]
     },
     "3150844": {
@@ -7019,13 +7066,31 @@
       "name": "Miles McBride",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909296. ESPN play-by-play 401909296.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE BACKUP GUARD WHO CAN CLOSE BESIDE THE STARTER",
           "paragraphs": [
-            "McBride can pressure the ball and give Brunson an off-ball shooting partner. The next layer is creating when the closeout takes away the three. We would track the quality of the first shot New York gets after he drives that rotation."
+            "McBride came out of West Virginia as the 36th pick in 2021. His best argument for playing with Brunson is what opponents must account for while Brunson has the ball. In 19 postseason games last spring he shot 37.5 percent from three on 4.2 attempts a night in 17.6 minutes. Through his first 14 games this fall he was taking 4.5 and making 44.4 percent. The reliable part of that comparison is his willingness to shoot frequently in a short shift. The exact percentage will move."
+          ]
+        },
+        {
+          "title": "ONE DRIBBLE AFTER THE CLOSEOUT",
+          "paragraphs": [
+            "We would position McBride one pass away on the side where Brunson expects pressure. The first catch should lead to a three if the defender has both feet in the lane. The next time that same defender flies at him, a straight-line drive makes the opposing center choose. McBride’s development priority is the pass after that first dribble, especially the ball back to Towns if the big steps forward. His early 1.1 assists and 0.4 turnovers per game describe a compact role. They leave open how well he could organize an entire second unit against a defense set for him."
+          ]
+        },
+        {
+          "title": "WHAT HAPPENS WHEN THEY SCREEN DEUCE?",
+          "paragraphs": [
+            "If McBride takes the quickest guard, Brunson can begin on a less demanding assignment. An opponent can try to undo that arrangement by bringing Brunson’s man up to screen. We would first ask McBride to fight over and recover while Brunson briefly shows, then see whether the ball handler can still turn the corner. A successful recovery can save the Knicks from switching twice and can keep Bridges attached to the wing scorer. That defensive sequence is where a two-point McBride shift can still swing the game."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We see two separate decisions for the coaching staff. A team trapping Brunson gives McBride a clear closing role as an outlet shooter and point-of-attack defender. A night without Brunson requires someone to create the opening in the first place. Tyler Kolek can compete for those organizing possessions while McBride still gets the more difficult defensive assignment."
           ]
         },
         {
@@ -7047,6 +7112,11 @@
             "Inside the arc: 0-for-1. From three: 3-for-7. Defensive rebounds: 1. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630540/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431823/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431823/stats?seasontype=3"
       ]
     },
     "4431893": {
@@ -16598,6 +16668,9 @@
       "4433076",
       "4592829",
       "4065731",
+      "3147657",
+      "3062679",
+      "4431823",
       "4397014",
       "4433136",
       "3155535",
@@ -16631,7 +16704,7 @@
       "5157587",
       "5037871"
     ],
-    "remainingForDeepReview": 426,
+    "remainingForDeepReview": 423,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
