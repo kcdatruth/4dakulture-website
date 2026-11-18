@@ -8,6 +8,9 @@ const numericId=value=>String(value??'').replace(/\.0$/,'');
 const logoCodes={'1':'atl','2':'bos','17':'bkn','30':'cha','4':'chi','5':'cle','6':'dal','7':'den','8':'det','9':'gs','10':'hou','11':'ind','12':'lac','13':'lal','29':'mem','14':'mia','15':'mil','16':'min','3':'no','18':'ny','25':'okc','19':'orl','20':'phi','21':'phx','22':'por','23':'sac','24':'sa','28':'tor','26':'utah','27':'wsh'};
 const ageAt=(birth,now=new Date())=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(birth||''))return null;const d=new Date(birth+'T00:00:00Z');if(Number.isNaN(d.getTime())||d>now)return null;let age=now.getUTCFullYear()-d.getUTCFullYear();if(now.getUTCMonth()<d.getUTCMonth()||(now.getUTCMonth()===d.getUTCMonth()&&now.getUTCDate()<d.getUTCDate()))age--;return age>=15&&age<=65?age:null};
 const prettyTime=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?s:new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit',timeZone:'UTC',timeZoneName:'short'}).format(d)};
+const prettyDate=s=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(s||''))return s;const d=new Date(s+'T00:00:00Z');return Number.isNaN(d.getTime())?s:new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(d)};
+const heightText=v=>{if(v==null||v==='')return null;if(typeof v==='number'||/^\d+(?:\.\d+)?$/.test(String(v).trim())){const n=Number(v);if(n>=55&&n<=95){const inches=Math.round(n);return Math.floor(inches/12)+"'"+(inches%12)+'"'}}return String(v)};
+const weightText=v=>{if(v==null||v==='')return null;const value=String(v).trim();return /^\d+(?:\.\d+)?$/.test(value)?value+' lbs':value};
 const format=v=>typeof v==='number'&&Number.isFinite(v)?v.toFixed(1):'—';
 if(!team||!name||!/^[0-9]+$/.test(team)){title.textContent='Select a player from NBA Rosters';status.textContent='No roster player selected';return}
 title.textContent=name;
@@ -33,7 +36,7 @@ try{
  hero.append(details);root.append(hero);
  const facts=node('div');facts.className='pf-facts';
  const age=ageAt(player.dateOfBirth);
- for(const [label,value] of [['Age',age==null?'Not yet verified':age],['Birth date',player.dateOfBirth||null],['Position',player.position],['Height',player.height],['Weight',player.weight],['Experience',player.experience===0?'Rookie':player.experience!=null?player.experience+' years':null],['College',player.college]]){
+ for(const [label,value] of [['Age',age==null?'Not yet verified':age],['Birth date',prettyDate(player.dateOfBirth)||null],['Position',player.position],['Height',heightText(player.height)],['Weight',weightText(player.weight)],['Experience',player.experience===0?'Rookie':player.experience!=null?player.experience+' years':null],['College',player.college]]){
   if(value==null||value==='')continue;
   const item=node('div');item.append(node('strong',label),node('span',value));facts.append(item)
  }if(facts.childElementCount)root.append(facts);
@@ -52,7 +55,6 @@ try{
  else story.append(node('p','Original 4DK scouting analysis is being developed for this player. Verified roster and statistical details appear below.'));
  if(coverageResponse.ok){const coverage=await coverageResponse.json();const articles=coverage.coverage?.[editorial?.id];if(Array.isArray(articles)){const heading=node('h3','RELATED 4DK COVERAGE');story.append(heading);for(const [label,url] of articles){if(typeof url==='string'&&url.endsWith('.html')&&!url.includes('/')&&!url.includes('..'))addLink(story,label+' →',url)}}}
  root.append(story);
- const nav=node('nav');nav.className='pf-player-nav';nav.setAttribute('aria-label','Player navigation');addLink(nav,'← Player Index','4dk-league-player-directory.html');addLink(nav,'All NBA rosters','nba-rosters.html');const teammates=Object.values(data.players).filter(p=>p.teamId===player.teamId&&p.id!==player.id).sort((a,b)=>a.name.localeCompare(b.name));if(teammates.length){const select=node('select');select.setAttribute('aria-label','Open a teammate Player File');const placeholder=node('option','Browse teammates…');placeholder.value='';select.append(placeholder);for(const mate of teammates){const option=node('option',mate.name);option.value='4dk-nba-player-file.html?team='+encodeURIComponent(mate.teamId)+'&id='+encodeURIComponent(mate.id)+'&name='+encodeURIComponent(mate.name);select.append(option)}select.addEventListener('change',()=>{if(select.value)location.href=select.value});nav.append(select)}root.append(nav);
  if(statsResponse.ok){
   const stats=await statsResponse.json();
   if(stats.status==='verified'&&stats.season==='2026-27'){
@@ -72,6 +74,7 @@ try{
    root.append(box)
   }
  }
+ const nav=node('nav');nav.className='pf-player-nav';nav.setAttribute('aria-label','Player navigation');addLink(nav,'← Player Index','4dk-league-player-directory.html');addLink(nav,'All NBA rosters','nba-rosters.html');const teammates=Object.values(data.players).filter(p=>p.teamId===player.teamId&&p.id!==player.id).sort((a,b)=>a.name.localeCompare(b.name));if(teammates.length){const select=node('select');select.setAttribute('aria-label','Open a teammate Player File');const placeholder=node('option','Browse teammates…');placeholder.value='';select.append(placeholder);for(const mate of teammates){const option=node('option',mate.name);option.value='4dk-nba-player-file.html?team='+encodeURIComponent(mate.teamId)+'&id='+encodeURIComponent(mate.id)+'&name='+encodeURIComponent(mate.name);select.append(option)}select.addEventListener('change',()=>{if(select.value)location.href=select.value});nav.append(select)}root.append(nav);
  const note=node('p','Team assignment comes from the dated 30-team roster snapshot; season averages are a separately updated snapshot, not live box scores.');note.className='muted';root.append(note);
 }catch(e){status.textContent='Unable to verify this player against the published roster snapshot. Return to the Player Index and try again.'}
 })();
