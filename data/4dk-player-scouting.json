@@ -6,7 +6,7 @@
     "5037871": {
       "name": "Dylan Harper",
       "status": "published",
-      "editorialType": "4DK early-season evaluation",
+      "editorialType": "4DK returning-player evaluation",
       "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
       "sections": [
         {
@@ -27,7 +27,8 @@
             "Availability and health must be handled through separately verified injury reporting, not assumed from a statistical snapshot. On the floor, Harper's next step is to maintain his offensive composure while improving his point-of-attack defense and off-ball awareness. If those pieces grow together, San Antonio has a versatile backcourt building block."
           ]
         }
-      ]
+      ],
+      "playerClass": "non-rookie"
     },
     "5041935": {
       "name": "Cameron Boozer",
@@ -57,7 +58,8 @@
             "The ceiling is tied to becoming a dependable two-way offensive hub rather than just a productive young scorer. Continued improvement as a shooter and defender would raise that ceiling; consistency and decision-making will determine how quickly he gets there. This is an original 4DK evaluation, not a claim that each trait has been independently measured."
           ]
         }
-      ]
+      ],
+      "playerClass": "rookie"
     },
     "5095151": {
       "name": "Caleb Wilson",
@@ -83,7 +85,8 @@
             "The next step is consistency. We want to see the same physical engagement on the glass and defensive end when the scoring comes harder. If Wilson can provide useful offense while making Chicago sturdier defensively, he has a path to becoming an impact two-way forward rather than simply a high-volume rookie."
           ]
         }
-      ]
+      ],
+      "playerClass": "rookie"
     },
     "5142718": {
       "name": "AJ Dybantsa",
@@ -109,7 +112,8 @@
             "Rebounding and defensive activity provide additional avenues to help Washington. We want to see stronger decision-making, physical consistency and defensive awareness as his role evolves. The long-term upside is compelling, but the responsible rookie evaluation separates flashes from skills he can reproduce every night."
           ]
         }
-      ]
+      ],
+      "playerClass": "rookie"
     },
     "5175737": {
       "name": "Yaxel Lendeborg",
@@ -135,7 +139,8 @@
             "The ceiling depends on defensive versatility and repeatable decisions. Can he hold his ground across matchups, contribute on the glass and remain productive when opponents take away his first option? Those answers will determine whether his strong start becomes a durable two-way role for Golden State."
           ]
         }
-      ]
+      ],
+      "playerClass": "rookie"
     }
   },
   "editorialSpotlights": {
