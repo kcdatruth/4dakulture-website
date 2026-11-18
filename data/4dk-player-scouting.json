@@ -427,19 +427,56 @@
       "name": "Jimmy Butler III",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting Draft — pending final review",
+      "basis": "Original 4DK scouting analysis using historical NBA reporting, official 2026-27 roster context and existing dated repository notes; current injury and lineup claims require rechecking. No independent full-game film certification.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE 4DK THESIS — CONTROL WITHOUT SPEED",
           "paragraphs": [
-            "Butler can bring the game down to the pace of a single mismatch. A shoulder into the defender can open a foul, a short finish or a pass to a cutter. Golden State needs shooting around that work and benefits from his anticipation at the other end."
+            "Jimmy Butler's best offensive skill has never been running past every defender. It is getting an opponent to play at his pace. He probes the lane, leans into contact, holds the ball long enough to reveal the help and then chooses between a short finish, a foul-drawing move and a pass. That makes him a different kind of creator from Stephen Curry, whose movement can stretch a defense before he even touches the ball.",
+            "The central 2026–27 question is availability, not a hypothetical new scoring move. Butler tore his right ACL in January 2026, and the November 18 injury report still lists him out. Any claim that he is currently generating offense alongside Curry would be premature. The right analysis separates what his healthy game has historically offered from what he has actually shown since the injury."
           ]
         },
         {
-          "title": "BEFORE THIS SEASON",
+          "title": "OFFENSE — THE FOUL LINE, THE PAUSE AND THE READ",
           "paragraphs": [
-            "In the 2025–26 NBA season, Jimmy Butler III averaged 20.0 points, 5.6 rebounds and 4.9 assists across 38 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
+            "Butler can create a useful half-court possession without a high volume of threes. His footwork and strength let him challenge a defender's balance near the elbows and lane lines. When help arrives, he has a history of finding a cutter or a shooter rather than insisting on finishing over two bodies. This is why his scoring and passing have often worked together in playoff settings.",
+            "There is a trade-off. If opponents do not respect his outside jumper, they can load the paint and make the first step more difficult. His deliberate possessions can also conflict with an offense that thrives on rapid movement if teammates stop cutting and watch. Golden State's challenge is to preserve Curry's motion while giving Butler room to punish a switch or stabilize a broken play."
+          ]
+        },
+        {
+          "title": "DEFENSE — ANTICIPATION WITH PHYSICAL CONSEQUENCES",
+          "paragraphs": [
+            "At his best, Butler has used strong hands, anticipation and physical positioning to challenge wings and jump predictable passing lanes. He can contribute to a team defense without needing to chase every assignment at full speed. Those instincts are part of why he has historically mattered beyond his scoring.",
+            "An ACL recovery makes the present defensive projection particularly uncertain. The question is not whether he once defended at a high level; it is whether he can regain the lateral confidence and repeated-effort mobility required for difficult assignments. A credible 4DK assessment must wait for actual post-return possessions before assigning a current defensive grade."
+          ]
+        },
+        {
+          "title": "CAREER CONTEXT — PLAYOFF JIMMY IS EVIDENCE, NOT A GUARANTEE",
+          "paragraphs": [
+            "Butler's postseason runs with Miami, including NBA Finals appearances in 2020 and 2023, established his capacity to elevate the intensity and responsibility of his game against elite competition. Those stretches help explain why teams value his decision-making and willingness to attack difficult matchups.",
+            "They do not guarantee that a player returning from major knee surgery will reproduce the same workload. The historical ceiling and the current medical uncertainty belong in the same report, without treating one as proof of the other."
+          ]
+        },
+        {
+          "title": "THE WARRIORS FIT — CURRY'S MOVEMENT, BUTLER'S PATIENCE",
+          "paragraphs": [
+            "The fit makes basketball sense on paper because Curry forces defenders to chase movement while Butler prefers to manipulate a set defender. A Curry relocation could punish the help sent toward Butler; a Butler drive could create an open catch for a shooter. Draymond Green's passing adds another layer of decisions around them.",
+            "But the fit remains a projection. Golden State's own 2026–27 preview anticipated Butler's midseason return, and the November injury report still lists him out. We should not invent successful lineups or on-court chemistry that has not yet occurred."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT — THE RETURN IS THE STORY",
+          "paragraphs": [
+            "4DK sees Butler as a proven, physically intelligent playoff creator whose value is rooted in controlling matchups, getting to the line and making purposeful reads. His potential partnership with Curry is compelling precisely because the two attack a defense in different ways.",
+            "The risk is equally clear: health, rhythm, shooting limitations and the challenge of fitting deliberate creation into Golden State's movement offense. Until he returns and plays meaningful minutes, the honest scouting conclusion is conditional rather than triumphant."
+          ]
+        },
+        {
+          "title": "EVIDENCE AND REVIEW LIMITS",
+          "paragraphs": [
+            "The existing 4DK file records a 2025–26 baseline of 20.0 points, 5.6 rebounds and 4.9 assists in 38 games. Golden State's October 2026 roster and season preview list Butler, and its November 18 injury report lists him out with a torn right ACL.",
+            "This is an original career-based evaluation and forward-looking fit analysis, not a film review of Butler playing in 2026–27. Current injury status should be rechecked before publication approval."
           ]
         }
       ]
@@ -469,32 +506,57 @@
       "name": "Klay Thompson",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909963. ESPN play-by-play 401909963.",
+      "editorialType": "4DK Deep Scouting Draft — pending final review",
+      "basis": "Original 4DK scouting analysis using historical NBA reporting, official 2026-27 roster context and existing dated repository notes; current injury and lineup claims require rechecking. No independent full-game film certification.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE 4DK THESIS — THE SHOT THAT MOVES A DEFENSE BEFORE IT EXISTS",
           "paragraphs": [
-            "The threat of Thompson coming off a screen can create a slip for the screener before he touches the ball. Miami should make defenders chase more than once. The defensive matchup needs care when opponents try to make him change direction repeatedly in space."
+            "Klay Thompson's defining basketball weapon is not simply that he can make a three. It is that defenders often have to react to the possibility of his shot before he has the ball. A hard cut around a screen can pull two defenders toward him, create a slip for the screener and open a driving lane on the opposite side. That is a rare kind of offensive gravity, even when his scoring totals are modest.",
+            "Miami signed Thompson in August 2026 after his Dallas buyout, adding a veteran shooter to a team built around Giannis Antetokounmpo and Bam Adebayo. The key question is whether the Heat can use the threat of his movement to open the paint while keeping him involved enough to remain dangerous."
           ]
         },
         {
-          "title": "PASSING CONNECTIONS THROUGH NOV. 17",
+          "title": "OFFENSE — FOOTWORK, TIMING AND THE SECOND SCREEN",
           "paragraphs": [
-            "Davion Mitchell set up 22 baskets for Klay Thompson, including 18 three-pointers. Klay Thompson found Giannis Antetokounmpo for 8 baskets (1 from three)."
+            "Thompson's greatest shooting stretches were built on preparation: arriving balanced, squaring his shoulders quickly and releasing before a closeout could fully arrive. He has historically been dangerous from catch-and-shoot actions and after changing direction through screens, which makes his offense less dependent on extended dribbling than that of many perimeter stars.",
+            "Miami should not treat him as a stationary corner decoration. A defender who trails Thompson through one screen may still be vulnerable to a second cut or a re-screen. That movement can create a layup for somebody else even if Thompson never shoots. The challenge is whether the current version of Klay can sustain the conditioning and sharp changes of direction that made those actions so punishing.",
+            "The earlier 4DK file records a November 10 game against Utah with two makes in ten three-point attempts. That is evidence of one cold shooting night, not a reason to dismiss his shooting history or to claim the Heat's spacing has failed."
           ]
         },
         {
-          "title": "A DEFENSIVE POSSESSION",
+          "title": "THE GIANNIS AND BAM FIT — SHOOTING WITH A PURPOSE",
           "paragraphs": [
-            "Against the Utah Jazz on Nov 10, Klay Thompson blocked a shot by Josh Green with 1:05 left in the fourth quarter. Davion Mitchell collected the defensive rebound to finish the stop."
+            "Giannis forces defenses to make urgent decisions around the rim. Thompson's presence can punish a defender who collapses too far toward that pressure. Bam's screening and ability to operate as a handoff hub offer another way to deliver Thompson the ball on the move rather than asking him to manufacture separation off the dribble.",
+            "There is a meaningful distinction between theoretical fit and demonstrated chemistry. The repository's passing notes connect Thompson with Davion Mitchell and Giannis, but those counts alone do not show the quality of the attempts or how defenses adjusted. The best 4DK evaluation will test whether his movement actually increases the room available to Giannis and Bam."
           ]
         },
         {
-          "title": "FROM THE GAME LOG",
+          "title": "DEFENSE — THE COST OF THE OFFENSIVE GRAVITY",
           "paragraphs": [
-            "Nov 10 against the Utah Jazz: 11 points, 1 rebound and 2 assists in 30 minutes.",
-            "Inside the arc: 1-for-3. From three: 2-for-10. Defensive rebounds: 1. Steals: 1. Blocks: 2."
+            "Thompson was an important wing defender during Golden State's championship years, but two major leg injuries and the passage of time change the present assessment. Miami cannot assume he will consistently mirror the quickest guards or absorb every difficult perimeter matchup just because he once did.",
+            "His size, positioning and experience can still help in selected matchups. The key is how the Heat assign responsibilities around him, particularly when opponents try to make him change direction repeatedly or involve him in screening actions. Defensive effectiveness must be judged from current possessions, not championship nostalgia."
+          ]
+        },
+        {
+          "title": "CAREER CONTEXT — THE SPLASH BROTHER AFTER THE SPLASH BROTHERS",
+          "paragraphs": [
+            "Four titles with Golden State established Thompson as one of the defining shooters of his generation. His move to Dallas in 2024 and then to Miami in 2026 marked a transition from being a foundational member of a dynasty to finding ways to help a new contender. NBA reporting at his Miami signing identified him as fourth on the all-time made-three list.",
+            "That history gives his shooting threat credibility, but it also creates a temptation to compare every performance with his prime. The more useful question is what version of that skill still travels: quick release, relocation, screening gravity and the willingness to shoot without needing to dominate the ball."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT — GRAVITY MUST STILL BE EARNED",
+          "paragraphs": [
+            "4DK views Thompson as a specialist with an unusually rich basketball résumé. His best remaining value is not creating 25 points off the dribble; it is forcing defenders to stay connected to him while Miami's interior threats do their damage.",
+            "The fit succeeds if his movement and shotmaking create real spacing and the Heat can manage his defensive matchups. It becomes harder if opponents stop respecting the jumper or can repeatedly target him in space. The challenge is to evaluate today's Klay without forgetting—or blindly assuming—the impact of the player who helped define a dynasty."
+          ]
+        },
+        {
+          "title": "EVIDENCE AND REVIEW LIMITS",
+          "paragraphs": [
+            "The August 2026 Miami signing is documented by NBA.com and the Associated Press. The November 10 game example and passing connections are retained from the dated 4DK dataset.",
+            "This is an original editorial evaluation. Current lineup efficiency, defensive matchup performance and shooting trend require further verification before final approval."
           ]
         }
       ]
@@ -649,32 +711,63 @@
       "name": "Draymond Green",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909974. ESPN play-by-play 401909942.",
+      "editorialType": "4DK Deep Scouting Draft — pending final review",
+      "basis": "Original 4DK scouting analysis using historical NBA reporting, official 2026-27 roster context and existing dated repository notes; current injury and lineup claims require rechecking. No independent full-game film certification.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE 4DK THESIS — THE PLAYER WHO CALLS THE GAME FROM INSIDE IT",
           "paragraphs": [
-            "Green's short-roll catch can turn pressure on the ball into a four-on-three. The decisive detail is often the pass he holds until the low defender commits. Defensively he gives Golden State license to switch late because he can organize the exchange himself."
+            "Draymond Green's value has always been difficult to explain with a traditional scoring line. He can direct a defensive coverage before a screen arrives, recognize the weak-side rotation before the pass and turn a four-on-three into a layup with one short-roll read. His most important skill is the ability to process the whole floor while participating in the possession.",
+            "That is why his fit with Stephen Curry has been so distinctive. Curry's off-ball threat creates panic; Green's passing often gives that panic a direction. The question in 2026–27 is how much defensive mobility and offensive decision-making Green can still supply as Golden State tries to sustain its veteran core."
           ]
         },
         {
-          "title": "PASSING CONNECTIONS THROUGH NOV. 17",
+          "title": "OFFENSE — THE SHORT ROLL IS A DECISION TREE",
           "paragraphs": [
-            "Stephen Curry set up 3 baskets for Draymond Green, all inside the arc. Draymond Green found Stephen Curry for 29 baskets (19 from three)."
+            "When Curry draws two defenders above the arc, Green can receive the ball with a temporary numerical advantage. His job is not always to score. It is to read the low defender: a lob if the rim is abandoned, a pass to the corner if the wing helps, or a drive if the lane opens. The skill is choosing quickly enough that the defense cannot recover.",
+            "There is a cost to Green's limited individual scoring threat. When defenders can sag away from him, the Warriors must use his screens, handoffs and passing to keep him relevant. If the ball sticks or the defense refuses to overreact, his lack of shot creation can constrict the floor. His offensive evaluation should measure the quality of the actions he organizes, not simply count assists."
           ]
         },
         {
-          "title": "A DEFENSIVE POSSESSION",
+          "title": "DEFENSE — A COVERAGE ORGANIZER, NOT JUST A MATCHUP",
           "paragraphs": [
-            "Against the Orlando Magic on Nov 7, Draymond Green blocked a shot by Franz Wagner with 4:53 left in the fourth quarter. Yaxel Lendeborg collected the defensive rebound to finish the stop."
+            "Green's defensive strength is the combination of physical versatility and anticipation. He can communicate a switch, show help at the nail, recover toward a roller and make a smaller lineup function against bigger opponents. His understanding of timing allows him to affect possessions even when somebody else records the rebound or block.",
+            "The limitation is that anticipation has to be paired with enough movement to close the gap. Against a fast guard or a large finisher, a late rotation can still be punished. Foul discipline and emotional control are also part of the scouting equation because a defensive leader cannot help his team from the bench."
           ]
         },
         {
-          "title": "FROM THE GAME LOG",
+          "title": "CAREER CONTEXT — THE DYNASTY'S CONNECTIVE TISSUE",
           "paragraphs": [
-            "Nov 11 against the Houston Rockets: 7 points, 5 rebounds and 7 assists in 27 minutes.",
-            "Inside the arc: 2-for-4. From three: 1-for-1. Defensive rebounds: 2. Steals: 0. Blocks: 1."
+            "Golden State's four championships with Curry, Thompson and Green were not built on shooting alone. Green's playmaking and defensive coordination gave the team a way to use unconventional lineups without abandoning organization. His 2016 All-NBA season, when he averaged 7.4 assists and 9.5 rebounds, is one historical illustration of how much responsibility he could carry without being the primary scorer.",
+            "That history matters because it establishes the role's ceiling. It does not prove that the 2026–27 version of Green can defend every matchup or play the same minutes as he did a decade earlier."
+          ]
+        },
+        {
+          "title": "CURRENT WARRIORS FIT — STEPH, YAXEL AND THE NEXT GENERATION",
+          "paragraphs": [
+            "The official Warriors opening-night roster includes Curry, Green and rookie Yaxel Lendeborg. Green's ability to direct actions can help a developing frontcourt player understand where to screen, when to cut and how to rotate defensively. That potential teaching value is a basketball inference, not proof of a particular mentoring relationship.",
+            "The existing 4DK dataset records Green setting up 29 Curry baskets through November 17, including 19 threes. Those connections illustrate the centrality of their partnership, but they should be evaluated alongside possessions where defenses take away the first option and force Green to score or find a different read."
+          ]
+        },
+        {
+          "title": "THE 2026–27 QUESTION — HOW MUCH OF THE DEFENSE CAN HE STILL HOLD TOGETHER?",
+          "paragraphs": [
+            "The November 18 injury report lists Green as questionable with right elbow soreness. Availability is part of the evaluation, particularly when a veteran is asked to organize both the defense and the offense. The Warriors also face injuries elsewhere in the rotation, increasing the importance of accurate lineup context.",
+            "A serious scouting grade needs to distinguish Green's ability to diagnose a possession from his capacity to execute the recovery at NBA speed. Those are related but not identical skills, and the difference becomes more important as a player ages."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT — THE INTELLIGENCE IS THE WEAPON",
+          "paragraphs": [
+            "4DK sees Green as an organizer whose best contributions can be invisible in a conventional box score: the early call, the screening angle, the pass that creates the next pass and the timely rotation that forces a difficult shot. He remains an unusually valuable kind of player when those reads are paired with sufficient physical execution.",
+            "The weakness is also structural. If his scoring is ignored and his defensive recovery slows, opponents can make his presence less valuable. The honest 2026–27 question is not whether Green understands winning basketball; his career has answered that. It is how consistently his body and decision-making still turn that understanding into winning possessions."
+          ]
+        },
+        {
+          "title": "EVIDENCE AND REVIEW LIMITS",
+          "paragraphs": [
+            "Golden State's official 2026–27 roster lists Green and Lendeborg, and the November 18 injury report identifies Green as questionable. The November 11 Houston game and Curry passing connections are from the existing 4DK snapshot.",
+            "This is original role-based scouting, not a full verified film study. Current lineup efficiency, individual defensive matchups and season-long statistical claims remain subject to final review."
           ]
         }
       ]
