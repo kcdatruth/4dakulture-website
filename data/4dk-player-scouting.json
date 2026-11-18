@@ -3,6 +3,33 @@
   "season": "2026-27",
   "editorialPolicy": "Original 4DK analysis is human-reviewed and independent of the statistical and roster feeds. Do not auto-generate scouting claims from season averages.",
   "reports": {
+    "4848625": {
+      "name": "Dailyn Swain",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots plus 2026 NBA draft background; original 4DK interpretation, not independent film review",
+      "sections": [
+        {
+          "title": "A SMALL SAMPLE IN CHICAGO",
+          "paragraphs": [
+            "Swain's opening NBA sample is too limited for sweeping conclusions. The better starting point is the versatile wing profile he developed in college: downhill pressure, physical finishing and secondary playmaking. Chicago's task is identifying which of those skills can help immediately without asking him to carry an oversized offensive role."
+          ]
+        },
+        {
+          "title": "THE WING SKILL TEST",
+          "paragraphs": [
+            "We want to see whether Swain can attack a rotating defense, make the quick pass and provide useful movement when the ball is elsewhere. Shooting consistency will influence how tightly opponents guard him, but his value can also come from cutting, transition decisions and using his frame to generate contact."
+          ]
+        },
+        {
+          "title": "4DK OUTLOOK",
+          "paragraphs": [
+            "A young wing earns trust through defensive assignments and repeatable effort. Swain needs to stay connected through screens, make rotations on time and contribute on the glass. With only a few NBA appearances in the current snapshot, this is a developmental watch—not a declaration about his ceiling."
+          ]
+        }
+      ]
+    },
     "4873153": {
       "name": "Morez Johnson Jr.",
       "status": "published",
@@ -304,6 +331,33 @@
         }
       ]
     },
+    "5164559": {
+      "name": "Nate Ament",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots plus 2026 NBA draft background; original 4DK interpretation, not independent film review",
+      "sections": [
+        {
+          "title": "THE LONG FORWARD EXPERIMENT",
+          "paragraphs": [
+            "Ament gives Milwaukee a different developmental profile: a tall forward who can handle the ball and see passing angles that smaller wings may not. His early scoring totals do not capture the entire assignment. The 4DK question is how effectively he turns that size and skill into useful possessions without overdribbling or slowing the offense."
+          ]
+        },
+        {
+          "title": "WHERE THE OFFENSE GROWS",
+          "paragraphs": [
+            "His college foundation included face-up attacks and drawing fouls, but the NBA test is quicker closeouts and less room to operate. We want to see cleaner catch-and-shoot decisions, purposeful drives and passes made before the defense fully commits. Ament's development is about making his versatile tools dependable, not simply adding more attempts."
+          ]
+        },
+        {
+          "title": "4DK OUTLOOK",
+          "paragraphs": [
+            "For Milwaukee, defensive engagement and physical rebounding can earn him minutes while his scoring game matures. We will watch how he handles stronger forwards, rotates on time and keeps his offensive choices simple when the game speeds up. The ceiling is interesting; the immediate goal is trustworthy two-way impact."
+          ]
+        }
+      ]
+    },
     "5174983": {
       "name": "Aday Mara",
       "status": "published",
@@ -381,6 +435,33 @@
           "title": "EARNING TRUST IN LOS ANGELES",
           "paragraphs": [
             "The Clippers' rotation will demand more than isolated scoring flashes. Wagler's development depends on ball security, positional defense and maintaining offensive rhythm when he plays off the ball. The next step is proving he can make sound decisions across different lineup combinations, not just when the offense is built around his touches."
+          ]
+        }
+      ]
+    },
+    "5281370": {
+      "name": "Hannes Steinbach",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots plus 2026 NBA draft background; original 4DK interpretation, not independent film review",
+      "sections": [
+        {
+          "title": "CHARLOTTE'S REBOUNDING PROJECT",
+          "paragraphs": [
+            "Steinbach arrives with a college résumé built around rebounding and interior production. In Charlotte, the early NBA sample is still small, so 4DK is watching his habits rather than treating a handful of games as a verdict. Does he establish position early, secure contested boards and help finish possessions without needing plays designed for him?"
+          ]
+        },
+        {
+          "title": "THE OFFENSIVE CONNECTIONS",
+          "paragraphs": [
+            "A skilled big can help an offense through screens, seals and quick decisions even when his scoring numbers are quiet. We want to see Steinbach create useful angles for ball handlers, finish efficiently around the rim and make the next pass when help collapses. His ability to operate in different frontcourt combinations will matter as much as his individual touches."
+          ]
+        },
+        {
+          "title": "4DK OUTLOOK",
+          "paragraphs": [
+            "The defensive adjustment is the key. Opponents will test his lateral movement, coverages and discipline away from the basket. If he can hold his ground, rebound and keep the offense connected, Charlotte has a realistic path to a useful rotation big."
           ]
         }
       ]
