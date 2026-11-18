@@ -3,6 +3,33 @@
   "season": "2026-27",
   "editorialPolicy": "Original 4DK analysis is human-reviewed and independent of the statistical and roster feeds. Do not auto-generate scouting claims from season averages.",
   "reports": {
+    "4873153": {
+      "name": "Morez Johnson Jr.",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots with original interpretive analysis; no independently reviewed game film claimed",
+      "sections": [
+        {
+          "title": "DALLAS NEEDS THE INTERIOR WORK",
+          "paragraphs": [
+            "Johnson's early contributions are better understood through his frontcourt responsibilities than through a points average. We want to see how consistently he establishes position, contests without fouling and helps Dallas finish defensive possessions. For a young big, dependable fundamentals can create value before the offense runs a single play for him."
+          ]
+        },
+        {
+          "title": "FINISHING AND CONNECTING",
+          "paragraphs": [
+            "His offensive development starts with screening, timely cuts, offensive rebounding and making simple passes when the defense collapses. The goal is not to manufacture a high-volume scoring role; it is to become a reliable target who turns teammates' advantages into efficient possessions."
+          ]
+        },
+        {
+          "title": "THE 4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "Johnson's rotation future depends on defensive positioning, rebounding consistency and surviving different matchup demands. We will track whether he can stay connected when opponents pull him away from the basket, while continuing to provide the physical interior work Dallas needs."
+          ]
+        }
+      ]
+    },
     "5037871": {
       "name": "Dylan Harper",
       "status": "published",
@@ -115,6 +142,33 @@
         }
       ]
     },
+    "5082206": {
+      "name": "Brayden Burries",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots with original interpretive analysis; no independently reviewed game film claimed",
+      "sections": [
+        {
+          "title": "THE MILWAUKEE ROLE",
+          "paragraphs": [
+            "Burries enters a roster where his value will be measured by how well he complements established offensive options. His early rebounding from the guard position gives us something to track beyond scoring. We want to see whether he can close possessions, run the floor and make a decisive play when the defense is already tilted."
+          ]
+        },
+        {
+          "title": "SHOT SELECTION AND SECONDARY CREATION",
+          "paragraphs": [
+            "His early scoring and assist totals point toward a developing complementary role. The key is recognizing when to attack a closeout and when to keep the ball moving. Milwaukee will benefit more from efficient decisions than from a rookie forcing difficult shots to prove he can score."
+          ]
+        },
+        {
+          "title": "THE 4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "Burries can build trust through point-of-attack effort, physical rebounding and offensive consistency. The next step is demonstrating those habits across matchups and lineup combinations, particularly on nights when his jumper is not falling."
+          ]
+        }
+      ]
+    },
     "5095151": {
       "name": "Caleb Wilson",
       "status": "published",
@@ -222,6 +276,33 @@
         }
       ],
       "playerClass": "rookie"
+    },
+    "5149077": {
+      "name": "Kingston Flemings",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 roster and box-score snapshots with original interpretive analysis; no independently reviewed game film claimed",
+      "sections": [
+        {
+          "title": "ATLANTA'S PLAYMAKING QUESTION",
+          "paragraphs": [
+            "Flemings' early assist production is a useful sign for a rookie guard, but the deeper question is how he directs possessions. Atlanta needs him to recognize the help defense, move the ball before an advantage disappears and resist turning every opportunity into a difficult individual attempt."
+          ]
+        },
+        {
+          "title": "SCORING WITHIN THE FLOW",
+          "paragraphs": [
+            "His modest scoring output does not automatically limit his value. We are watching whether he can get into the paint, punish defenders who sag off and make the quick decision when the ball finds him late in the clock. The most meaningful progress will come from creating better looks for himself and teammates without forcing the issue."
+          ]
+        },
+        {
+          "title": "THE 4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "Defensive discipline, ball security and consistency against physical guards will determine his rotation ceiling. The objective is a reliable organizer whose presence improves the quality of Atlanta's possessions, not simply a rookie chasing a higher points average."
+          ]
+        }
+      ]
     },
     "5174983": {
       "name": "Aday Mara",
