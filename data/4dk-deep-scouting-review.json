@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile or, for Oscar Tshiebwe, the official Houston roster. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 56,
+  "approvedCount": 57,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -80,7 +80,7 @@
       "teamId": "12",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -94,7 +94,12 @@
         "sha256": "6364e4c0b5a6f758cec66407e3378e055b5711c2b680c206e7a6d04403e84eb3",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 38
+      "ageAsOfReview": 38,
+      "editorialReview": "Reviewed 2026-11-18: Clippers roster, 13-game season snapshot and November 13/17 box scores checked. Structural scouting interpretations are qualified; no film certification.",
+      "sourceUrls": [
+        "https://www.nba.com/player/201572/undefined",
+        "https://www.basketball-reference.com/players/l/lopezbr01.html"
+      ]
     },
     "3978": {
       "name": "DeMar DeRozan",
