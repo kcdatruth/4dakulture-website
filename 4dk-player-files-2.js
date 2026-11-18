@@ -15,7 +15,7 @@ try{
  const meta=el('p','pf2-meta',p.team+' · Original published Top 50: #'+p.originalTop50Rank);section.append(meta);
  const status=el('p','pf2-status','2026–27 statistics currently unavailable or unverified');section.append(status);
  if(sRes.ok){const stats=await sRes.json();if(stats.status==='verified'&&stats.season===catalog.season&&stats.players){
- const normalize=s=>safe(s).normalize('NFKD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+ const normalize=s=>safe(s).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
  const match=Object.entries(stats.players).find(([name])=>normalize(name)===normalize(p.name));
  const s=match&&match[1];
  if(s&&Number.isFinite(s.games)&&s.games>0){
