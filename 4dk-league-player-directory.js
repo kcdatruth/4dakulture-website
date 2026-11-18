@@ -17,6 +17,8 @@ try{
  // Team identity must match a stable athlete ID; names alone are never sufficient.
  const idKey=x=>String(x??'').replace(/\.0$/,'');
  let rosterTimestamp=null,rosterComplete=false;
+ const logoCodes={'1':'atl','2':'bos','17':'bkn','30':'cha','4':'chi','5':'cle','6':'dal','7':'den','8':'det','9':'gs','10':'hou','11':'ind','12':'lac','13':'lal','29':'mem','14':'mia','15':'mil','16':'min','3':'no','18':'ny','25':'okc','19':'orl','20':'phi','21':'phx','22':'por','23':'sac','24':'sa','28':'tor','26':'utah','27':'wsh'};
+ const playerFile=p=>p.teamId&&p.rosterId?'4dk-nba-player-file.html?team='+encodeURIComponent(p.teamId)+'&id='+encodeURIComponent(p.rosterId)+'&name='+encodeURIComponent(p.name):null;
  const loadTeams=async()=>{
   try{
    const response=await fetch('data/4dk-nba-rosters-verified.json',{cache:'no-store'});
@@ -32,6 +34,7 @@ try{
     const match=pid&&rosterById[pid];
     p.team=match?.team||null;
     p.teamId=match?.teamId||null;
+    p.rosterId=match?.id||null;
    }
   }catch(e){rosterComplete=false;/* Never substitute a guessed team. */}
   render();
@@ -44,16 +47,25 @@ try{
   const fragment=document.createDocumentFragment();
   for(const p of list){
    const card=mk('article');card.className='player';
+   const identity=mk('div');identity.className='player-identity';
+   const portrait=mk('div');portrait.className='player-portrait';
+   if(p.rosterId){const img=mk('img');img.src='https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(p.rosterId)+'.png';img.alt=p.name+' player headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.remove();portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('')},{once:true});portrait.append(img)}else portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('');
+   identity.append(portrait);
+   const identityText=mk('div');identityText.className='player-identity-text';
    const heading=mk('h2');
-   if(p.profile){const link=mk('a',p.name);link.href=p.profile;heading.append(link)}else heading.textContent=p.name;
-   card.append(heading);
-   const sub=mk('p',p.team||'Team not verified on current 30-team snapshot');sub.className='player-team';card.append(sub);
+   const fileUrl=playerFile(p);
+   if(fileUrl||p.profile){const link=mk('a',p.name);link.href=fileUrl||p.profile;heading.append(link)}else heading.textContent=p.name;
+   identityText.append(heading);
+   const sub=mk('p',p.team||'Team not verified on current 30-team snapshot');sub.className='player-team';
+   if(p.teamId&&logoCodes[p.teamId]){const logo=mk('img');logo.className='team-logo';logo.src='https://a.espncdn.com/i/teamlogos/nba/500/'+logoCodes[p.teamId]+'.png';logo.alt=p.team+' logo';logo.loading='lazy';logo.addEventListener('error',()=>logo.remove(),{once:true});sub.prepend(logo)}
+   identityText.append(sub);identity.append(identityText);card.append(identity);
    if(p.stats){const row=mk('div');row.className='player-stats';
     for(const [field,label] of [['ppg','PPG'],['rpg','RPG'],['apg','APG'],['spg','SPG'],['bpg','BPG'],['fg_pct','FG%'],['fg3_pct','3PT%'],['ft_pct','FT%']]){const item=mk('div');item.append(mk('strong',format(p.stats[field])),mk('span',label));row.append(item)}
     card.append(mk('p',p.stats.games+' games played · 2026–27'),row);
    }else card.append(mk('p','No verified 2026–27 season averages yet'));
+   if(fileUrl){const link=mk('a','Open full 4DK Player File →');link.href=fileUrl;link.className='player-editorial';card.append(link)}
    if(p.editorial){const link=mk('a','Read original 4DK scouting report →');link.href=p.profile;link.className='player-editorial';card.append(link)}
-   else{const link=mk('a',p.teamId?'View verified team roster →':'Explore NBA team rosters →');link.href=p.teamId?'nba-rosters.html?team='+encodeURIComponent(p.teamId):'nba-rosters.html';link.className='player-editorial';card.append(link)}
+   if(!fileUrl){const link=mk('a','Explore NBA team rosters →');link.href='nba-rosters.html';link.className='player-editorial';card.append(link)}
    fragment.append(card);
   }grid.append(fragment);
  };
