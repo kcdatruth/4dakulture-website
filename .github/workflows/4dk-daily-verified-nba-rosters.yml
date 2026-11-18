@@ -1,0 +1,46 @@
+name: 4DK Daily Verified NBA Rosters
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 14 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/refresh_4dk_nba_rosters.py'
+      - '.github/workflows/4dk-daily-verified-nba-rosters.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: 4dk-daily-verified-nba-rosters
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh and validate all 30 NBA rosters
+        run: python scripts/refresh_4dk_nba_rosters.py
+      - name: Check Player Index JavaScript
+        run: node --check 4dk-league-player-directory.js
+      - name: Publish complete roster snapshot
+        run: |
+          git add data/4dk-nba-rosters-verified.json
+          if ! git diff --cached --quiet; then
+            git config user.name "4DK Roster Bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Refresh verified 30-team NBA roster snapshot"
+            for attempt in 1 2 3 4 5; do
+              if git push; then exit 0; fi
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep $((attempt * 2))
+            done
+            exit 1
+          fi

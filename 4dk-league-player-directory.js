@@ -13,53 +13,41 @@ try{
  for(const entry of Object.values(stats.players||{})){const key=norm(entry.name);if(!key)continue;const editorial=known.get(key);players.set(key,{name:editorial?.name||entry.name,profile:editorial?.profile||null,team:editorial?.team||null,editorial:!!editorial?.profile,stats:entry})}
  for(const p of index.players){const key=norm(p.name);if(!players.has(key))players.set(key,{name:p.name,profile:p.profile,team:p.team,editorial:!!p.profile,stats:null})}
  const all=[...players.values()].sort((a,b)=>a.name.localeCompare(b.name));
- // Verify current team against the same live ESPN-backed roster service as NBA Rosters.
- // Never infer current team from a historical scouting profile or stats box score.
- const teams=[['1','Atlanta Hawks'],['2','Boston Celtics'],['17','Brooklyn Nets'],['30','Charlotte Hornets'],['4','Chicago Bulls'],['5','Cleveland Cavaliers'],['6','Dallas Mavericks'],['7','Denver Nuggets'],['8','Detroit Pistons'],['9','Golden State Warriors'],['10','Houston Rockets'],['11','Indiana Pacers'],['12','LA Clippers'],['13','Los Angeles Lakers'],['29','Memphis Grizzlies'],['14','Miami Heat'],['15','Milwaukee Bucks'],['16','Minnesota Timberwolves'],['3','New Orleans Pelicans'],['18','New York Knicks'],['25','Oklahoma City Thunder'],['19','Orlando Magic'],['20','Philadelphia 76ers'],['21','Phoenix Suns'],['22','Portland Trail Blazers'],['23','Sacramento Kings'],['24','San Antonio Spurs'],['28','Toronto Raptors'],['26','Utah Jazz'],['27','Washington Wizards']];
- const verifiedById=new Map(),verifiedByName=new Map(),conflicts=new Set();
- const idKey=x=>String(x??'').replace(/\.0$/,'');
- let verifiedTeams=0;
- const verifyTeam=async([teamId,teamName])=>{
-  try{
-   const response=await fetch('/api/roster?league=nba&team='+encodeURIComponent(teamId),{cache:'default'});
-   if(!response.ok)return;
-   const data=await response.json();
-   if(!Array.isArray(data.players)||data.players.length<5)return;
-   verifiedTeams++;
-   for(const p of data.players){
-    const key=norm(p.name),pid=idKey(p.id);
-    if(pid){if(verifiedById.has(pid)&&verifiedById.get(pid).teamId!==teamId)conflicts.add(pid);else verifiedById.set(pid,{teamId,teamName})}
-    if(key){if(verifiedByName.has(key)&&verifiedByName.get(key).teamId!==teamId)conflicts.add(key);else verifiedByName.set(key,{teamId,teamName})}
-   }
-  }catch(e){/* Unavailable roster feed must never produce a guessed assignment. */}
- };
- const applyTeams=()=>{
-  for(const p of all){
-   const pid=idKey(p.stats?.athlete_id),key=norm(p.name);
-   const verified=pid&&!conflicts.has(pid)?verifiedById.get(pid):null;
-   const byName=!conflicts.has(key)?verifiedByName.get(key):null;
-   const match=verified||byName;
-   p.team=match?.teamName||null;
-   p.teamId=match?.teamId||null;
-  }
-  render();
- };
- // Bounded batches avoid flooding the site's roster endpoint on mobile.
+ // Use a complete, server-published 30-team snapshot instead of 30 mobile requests.
+ // Team identity must match a stable athlete ID; names alone are never sufficient.
+ const idKey=x=>String(x??'').replace(/\\.0$/,'');
+ let rosterTimestamp=null,rosterComplete=false;
  const loadTeams=async()=>{
-  for(let i=0;i<teams.length;i+=5){await Promise.all(teams.slice(i,i+5).map(verifyTeam));applyTeams()}
+  try{
+   const response=await fetch('data/4dk-nba-rosters-verified.json',{cache:'no-store'});
+   if(!response.ok)throw Error('Roster snapshot unavailable');
+   const snapshot=await response.json();
+   if(snapshot.schemaVersion!==1||snapshot.teamCount!==30||snapshot.playerCount<300||
+      !snapshot.players||Object.keys(snapshot.players).length!==snapshot.playerCount)throw Error('Incomplete roster snapshot');
+   rosterTimestamp=snapshot.checked_utc;
+   rosterComplete=true;
+   const rosterById=snapshot.players;
+   for(const p of all){
+    const pid=idKey(p.stats?.athlete_id);
+    const match=pid&&rosterById[pid];
+    p.team=match?.team||null;
+    p.teamId=match?.teamId||null;
+   }
+  }catch(e){rosterComplete=false;/* Never substitute a guessed team. */}
+  render();
  };
 
  const render=()=>{
   grid.replaceChildren();const q=norm(search.value),type=filter.value;
   const list=all.filter(p=>norm(p.name).includes(q)&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
-  count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc;
+  count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc+(rosterComplete?' · teams checked '+rosterTimestamp:' · team verification temporarily unavailable');
   const fragment=document.createDocumentFragment();
   for(const p of list){
    const card=mk('article');card.className='player';
    const heading=mk('h2');
    if(p.profile){const link=mk('a',p.name);link.href=p.profile;heading.append(link)}else heading.textContent=p.name;
    card.append(heading);
-   const sub=mk('p',p.team||'Team verification pending / unavailable');sub.className='player-team';card.append(sub);
+   const sub=mk('p',p.team||'Team not verified on current 30-team snapshot');sub.className='player-team';card.append(sub);
    if(p.stats){const row=mk('div');row.className='player-stats';
     for(const [field,label] of [['ppg','PPG'],['rpg','RPG'],['apg','APG'],['spg','SPG'],['bpg','BPG'],['fg_pct','FG%'],['fg3_pct','3PT%'],['ft_pct','FT%']]){const item=mk('div');item.append(mk('strong',format(p.stats[field])),mk('span',label));row.append(item)}
     card.append(mk('p',p.stats.games+' games played · 2026–27'),row);
