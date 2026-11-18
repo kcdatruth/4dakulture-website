@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "season": "2026-27",
-  "checked_utc": "2026-11-18 09:04 UTC",
+  "checked_utc": "2026-11-18 16:42 UTC",
   "source": "https://github.com/sportsdataverse/sportsdataverse-data/releases/download/espn_nba_player_boxscores/player_box_2027.parquet",
   "status": "verified",
   "matched": 471,
@@ -9,7 +9,7 @@
   "players": {
     "aarongordon": {
       "name": "Aaron Gordon",
-      "athlete_id": "3064290.0",
+      "athlete_id": "3064290",
       "games": 12,
       "ppg": 11.0,
       "rpg": 4.7,
@@ -22,7 +22,7 @@
     },
     "aaronnesmith": {
       "name": "Aaron Nesmith",
-      "athlete_id": "4396909.0",
+      "athlete_id": "4396909",
       "games": 12,
       "ppg": 12.2,
       "rpg": 2.8,
@@ -35,7 +35,7 @@
     },
     "aaronwiggins": {
       "name": "Aaron Wiggins",
-      "athlete_id": "4397183.0",
+      "athlete_id": "4397183",
       "games": 14,
       "ppg": 13.9,
       "rpg": 3.6,
@@ -48,7 +48,7 @@
     },
     "acebailey": {
       "name": "Ace Bailey",
-      "athlete_id": "4873138.0",
+      "athlete_id": "4873138",
       "games": 15,
       "ppg": 12.9,
       "rpg": 6.1,
@@ -61,7 +61,7 @@
     },
     "adaymara": {
       "name": "Aday Mara",
-      "athlete_id": "5174983.0",
+      "athlete_id": "5174983",
       "games": 14,
       "ppg": 9.1,
       "rpg": 6.5,
@@ -74,7 +74,7 @@
     },
     "adembona": {
       "name": "Adem Bona",
-      "athlete_id": "5105637.0",
+      "athlete_id": "5105637",
       "games": 9,
       "ppg": 2.1,
       "rpg": 3.9,
@@ -87,7 +87,7 @@
     },
     "adouthiero": {
       "name": "Adou Thiero",
-      "athlete_id": "5060631.0",
+      "athlete_id": "5060631",
       "games": 5,
       "ppg": 2.0,
       "rpg": 2.0,
@@ -100,7 +100,7 @@
     },
     "ajaymitchell": {
       "name": "Ajay Mitchell",
-      "athlete_id": "4900671.0",
+      "athlete_id": "4900671",
       "games": 12,
       "ppg": 18.1,
       "rpg": 3.6,
@@ -113,7 +113,7 @@
     },
     "ajdybantsa": {
       "name": "AJ Dybantsa",
-      "athlete_id": "5142718.0",
+      "athlete_id": "5142718",
       "games": 11,
       "ppg": 15.6,
       "rpg": 6.1,
@@ -126,7 +126,7 @@
     },
     "ajgreen": {
       "name": "AJ Green",
-      "athlete_id": "4397475.0",
+      "athlete_id": "4397475",
       "games": 14,
       "ppg": 5.6,
       "rpg": 1.4,
@@ -139,7 +139,7 @@
     },
     "ajjohnson": {
       "name": "AJ Johnson",
-      "athlete_id": "5170947.0",
+      "athlete_id": "5170947",
       "games": 6,
       "ppg": 1.2,
       "rpg": 0.5,
@@ -152,7 +152,7 @@
     },
     "alexcaruso": {
       "name": "Alex Caruso",
-      "athlete_id": "2991350.0",
+      "athlete_id": "2991350",
       "games": 11,
       "ppg": 7.6,
       "rpg": 4.0,
@@ -165,7 +165,7 @@
     },
     "alexkaraban": {
       "name": "Alex Karaban",
-      "athlete_id": "4917149.0",
+      "athlete_id": "4917149",
       "games": 6,
       "ppg": 1.2,
       "rpg": 1.5,
@@ -178,7 +178,7 @@
     },
     "alexmorales": {
       "name": "Alex Morales",
-      "athlete_id": "4593034.0",
+      "athlete_id": "4593034",
       "games": 8,
       "ppg": 2.1,
       "rpg": 2.4,
@@ -191,7 +191,7 @@
     },
     "alexsarr": {
       "name": "Alex Sarr",
-      "athlete_id": "5160992.0",
+      "athlete_id": "5160992",
       "games": 14,
       "ppg": 11.8,
       "rpg": 7.3,
@@ -204,7 +204,7 @@
     },
     "alhorford": {
       "name": "Al Horford",
-      "athlete_id": "3213.0",
+      "athlete_id": "3213",
       "games": 12,
       "ppg": 3.9,
       "rpg": 3.8,
@@ -217,7 +217,7 @@
     },
     "alijahmartin": {
       "name": "Alijah Martin",
-      "athlete_id": "4702656.0",
+      "athlete_id": "4702656",
       "games": 13,
       "ppg": 5.6,
       "rpg": 1.9,
@@ -230,7 +230,7 @@
     },
     "allengraves": {
       "name": "Allen Graves",
-      "athlete_id": "5149115.0",
+      "athlete_id": "5149115",
       "games": 14,
       "ppg": 4.3,
       "rpg": 2.7,
@@ -243,7 +243,7 @@
     },
     "alperensengun": {
       "name": "Alperen Sengun",
-      "athlete_id": "4871144.0",
+      "athlete_id": "4871144",
       "games": 13,
       "ppg": 22.8,
       "rpg": 9.3,
@@ -256,7 +256,7 @@
     },
     "alphadiallo": {
       "name": "Alpha Diallo",
-      "athlete_id": "4065813.0",
+      "athlete_id": "4065813",
       "games": 4,
       "ppg": 1.0,
       "rpg": 0.8,
@@ -269,7 +269,7 @@
     },
     "amenthompson": {
       "name": "Amen Thompson",
-      "athlete_id": "4684740.0",
+      "athlete_id": "4684740",
       "games": 14,
       "ppg": 15.8,
       "rpg": 7.0,
@@ -282,7 +282,7 @@
     },
     "andredrummond": {
       "name": "Andre Drummond",
-      "athlete_id": "6585.0",
+      "athlete_id": "6585",
       "games": 14,
       "ppg": 3.6,
       "rpg": 7.5,
@@ -295,7 +295,7 @@
     },
     "andrewnembhard": {
       "name": "Andrew Nembhard",
-      "athlete_id": "4395712.0",
+      "athlete_id": "4395712",
       "games": 11,
       "ppg": 16.6,
       "rpg": 2.3,
@@ -308,7 +308,7 @@
     },
     "andrewwiggins": {
       "name": "Andrew Wiggins",
-      "athlete_id": "3059319.0",
+      "athlete_id": "3059319",
       "games": 14,
       "ppg": 9.4,
       "rpg": 2.9,
@@ -321,7 +321,7 @@
     },
     "anferneesimons": {
       "name": "Anfernee Simons",
-      "athlete_id": "4351851.0",
+      "athlete_id": "4351851",
       "games": 15,
       "ppg": 10.3,
       "rpg": 2.0,
@@ -334,7 +334,7 @@
     },
     "anthonyblack": {
       "name": "Anthony Black",
-      "athlete_id": "4712849.0",
+      "athlete_id": "4712849",
       "games": 10,
       "ppg": 16.7,
       "rpg": 5.2,
@@ -347,7 +347,7 @@
     },
     "anthonydavis": {
       "name": "Anthony Davis",
-      "athlete_id": "6583.0",
+      "athlete_id": "6583",
       "games": 13,
       "ppg": 24.5,
       "rpg": 9.8,
@@ -360,7 +360,7 @@
     },
     "anthonyedwards": {
       "name": "Anthony Edwards",
-      "athlete_id": "4594268.0",
+      "athlete_id": "4594268",
       "games": 4,
       "ppg": 33.2,
       "rpg": 4.8,
@@ -373,7 +373,7 @@
     },
     "anthonygill": {
       "name": "Anthony Gill",
-      "athlete_id": "2581184.0",
+      "athlete_id": "2581184",
       "games": 5,
       "ppg": 1.6,
       "rpg": 0.8,
@@ -386,7 +386,7 @@
     },
     "asanewell": {
       "name": "Asa Newell",
-      "athlete_id": "4873201.0",
+      "athlete_id": "4873201",
       "games": 5,
       "ppg": 3.6,
       "rpg": 2.6,
@@ -399,7 +399,7 @@
     },
     "ausarthompson": {
       "name": "Ausar Thompson",
-      "athlete_id": "4684742.0",
+      "athlete_id": "4684742",
       "games": 12,
       "ppg": 10.4,
       "rpg": 8.7,
@@ -412,7 +412,7 @@
     },
     "austinreaves": {
       "name": "Austin Reaves",
-      "athlete_id": "4066457.0",
+      "athlete_id": "4066457",
       "games": 12,
       "ppg": 24.7,
       "rpg": 3.3,
@@ -425,7 +425,7 @@
     },
     "ayodosunmu": {
       "name": "Ayo Dosunmu",
-      "athlete_id": "4397002.0",
+      "athlete_id": "4397002",
       "games": 15,
       "ppg": 18.6,
       "rpg": 4.6,
@@ -438,7 +438,7 @@
     },
     "babamiller": {
       "name": "Baba Miller",
-      "athlete_id": "5075626.0",
+      "athlete_id": "5075626",
       "games": 11,
       "ppg": 4.2,
       "rpg": 2.2,
@@ -451,7 +451,7 @@
     },
     "bamadebayo": {
       "name": "Bam Adebayo",
-      "athlete_id": "4066261.0",
+      "athlete_id": "4066261",
       "games": 14,
       "ppg": 18.4,
       "rpg": 8.0,
@@ -464,7 +464,7 @@
     },
     "baylorscheierman": {
       "name": "Baylor Scheierman",
-      "athlete_id": "4593841.0",
+      "athlete_id": "4593841",
       "games": 14,
       "ppg": 6.1,
       "rpg": 3.9,
@@ -477,7 +477,7 @@
     },
     "bennedictmathurin": {
       "name": "Bennedict Mathurin",
-      "athlete_id": "4683634.0",
+      "athlete_id": "4683634",
       "games": 12,
       "ppg": 5.5,
       "rpg": 1.8,
@@ -490,7 +490,7 @@
     },
     "bennettstirtz": {
       "name": "Bennett Stirtz",
-      "athlete_id": "5241364.0",
+      "athlete_id": "5241364",
       "games": 14,
       "ppg": 7.1,
       "rpg": 1.1,
@@ -503,7 +503,7 @@
     },
     "bensaraf": {
       "name": "Ben Saraf",
-      "athlete_id": "5242502.0",
+      "athlete_id": "5242502",
       "games": 1,
       "ppg": 2.0,
       "rpg": 1.0,
@@ -516,7 +516,7 @@
     },
     "bensheppard": {
       "name": "Ben Sheppard",
-      "athlete_id": "4433076.0",
+      "athlete_id": "4433076",
       "games": 1,
       "ppg": 3.0,
       "rpg": 1.0,
@@ -529,7 +529,7 @@
     },
     "bilalcoulibaly": {
       "name": "Bilal Coulibaly",
-      "athlete_id": "5104155.0",
+      "athlete_id": "5104155",
       "games": 14,
       "ppg": 7.2,
       "rpg": 4.1,
@@ -542,7 +542,7 @@
     },
     "blakewesley": {
       "name": "Blake Wesley",
-      "athlete_id": "4683935.0",
+      "athlete_id": "4683935",
       "games": 2,
       "ppg": 1.0,
       "rpg": 2.0,
@@ -555,7 +555,7 @@
     },
     "bobbyportis": {
       "name": "Bobby Portis",
-      "athlete_id": "3064482.0",
+      "athlete_id": "3064482",
       "games": 14,
       "ppg": 7.4,
       "rpg": 5.5,
@@ -568,7 +568,7 @@
     },
     "bogdanbogdanovic": {
       "name": "Bogdan Bogdanovic",
-      "athlete_id": "3037789.0",
+      "athlete_id": "3037789",
       "games": 15,
       "ppg": 5.8,
       "rpg": 1.2,
@@ -581,7 +581,7 @@
     },
     "bogoljubmarkovic": {
       "name": "Bogoljub Markovic",
-      "athlete_id": "5214989.0",
+      "athlete_id": "5214989",
       "games": 3,
       "ppg": 0.7,
       "rpg": 1.0,
@@ -594,7 +594,7 @@
     },
     "boneshyland": {
       "name": "Bones Hyland",
-      "athlete_id": "4592492.0",
+      "athlete_id": "4592492",
       "games": 15,
       "ppg": 9.9,
       "rpg": 1.4,
@@ -607,7 +607,7 @@
     },
     "bradensmith": {
       "name": "Braden Smith",
-      "athlete_id": "5105854.0",
+      "athlete_id": "5105854",
       "games": 8,
       "ppg": 3.8,
       "rpg": 0.6,
@@ -620,7 +620,7 @@
     },
     "brandencarlson": {
       "name": "Branden Carlson",
-      "athlete_id": "4592435.0",
+      "athlete_id": "4592435",
       "games": 9,
       "ppg": 2.9,
       "rpg": 2.6,
@@ -633,7 +633,7 @@
     },
     "brandinpodziemski": {
       "name": "Brandin Podziemski",
-      "athlete_id": "4709138.0",
+      "athlete_id": "4709138",
       "games": 12,
       "ppg": 16.3,
       "rpg": 5.0,
@@ -646,7 +646,7 @@
     },
     "brandonmiller": {
       "name": "Brandon Miller",
-      "athlete_id": "4433287.0",
+      "athlete_id": "4433287",
       "games": 12,
       "ppg": 19.9,
       "rpg": 4.5,
@@ -659,7 +659,7 @@
     },
     "brandonwilliams": {
       "name": "Brandon Williams",
-      "athlete_id": "4397040.0",
+      "athlete_id": "4397040",
       "games": 10,
       "ppg": 10.4,
       "rpg": 2.1,
@@ -672,7 +672,7 @@
     },
     "braydenburries": {
       "name": "Brayden Burries",
-      "athlete_id": "5082206.0",
+      "athlete_id": "5082206",
       "games": 14,
       "ppg": 9.4,
       "rpg": 5.4,
@@ -685,7 +685,7 @@
     },
     "bricesensabaugh": {
       "name": "Brice Sensabaugh",
-      "athlete_id": "5105839.0",
+      "athlete_id": "5105839",
       "games": 15,
       "ppg": 10.5,
       "rpg": 3.7,
@@ -698,7 +698,7 @@
     },
     "bronnyjames": {
       "name": "Bronny James",
-      "athlete_id": "4683774.0",
+      "athlete_id": "4683774",
       "games": 6,
       "ppg": 1.3,
       "rpg": 0.0,
@@ -711,7 +711,7 @@
     },
     "brooklopez": {
       "name": "Brook Lopez",
-      "athlete_id": "3448.0",
+      "athlete_id": "3448",
       "games": 13,
       "ppg": 14.8,
       "rpg": 5.4,
@@ -724,7 +724,7 @@
     },
     "brooksbarnhizer": {
       "name": "Brooks Barnhizer",
-      "athlete_id": "4684208.0",
+      "athlete_id": "4684208",
       "games": 9,
       "ppg": 1.1,
       "rpg": 1.0,
@@ -737,7 +737,7 @@
     },
     "brucethornton": {
       "name": "Bruce Thornton",
-      "athlete_id": "5105837.0",
+      "athlete_id": "5105837",
       "games": 10,
       "ppg": 2.1,
       "rpg": 0.1,
@@ -750,7 +750,7 @@
     },
     "brycehopkins": {
       "name": "Bryce Hopkins",
-      "athlete_id": "4565698.0",
+      "athlete_id": "4565698",
       "games": 8,
       "ppg": 4.8,
       "rpg": 1.9,
@@ -763,7 +763,7 @@
     },
     "brycemcgowens": {
       "name": "Bryce McGowens",
-      "athlete_id": "4576086.0",
+      "athlete_id": "4576086",
       "games": 7,
       "ppg": 3.7,
       "rpg": 0.7,
@@ -776,7 +776,7 @@
     },
     "bubcarrington": {
       "name": "Bub Carrington",
-      "athlete_id": "4845374.0",
+      "athlete_id": "4845374",
       "games": 15,
       "ppg": 4.9,
       "rpg": 1.4,
@@ -789,7 +789,7 @@
     },
     "buddyhield": {
       "name": "Buddy Hield",
-      "athlete_id": "2990984.0",
+      "athlete_id": "2990984",
       "games": 11,
       "ppg": 7.2,
       "rpg": 2.3,
@@ -802,7 +802,7 @@
     },
     "cadecunningham": {
       "name": "Cade Cunningham",
-      "athlete_id": "4432166.0",
+      "athlete_id": "4432166",
       "games": 13,
       "ppg": 25.8,
       "rpg": 5.2,
@@ -815,7 +815,7 @@
     },
     "caleblove": {
       "name": "Caleb Love",
-      "athlete_id": "4433144.0",
+      "athlete_id": "4433144",
       "games": 2,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -828,7 +828,7 @@
     },
     "calebmartin": {
       "name": "Caleb Martin",
-      "athlete_id": "3138160.0",
+      "athlete_id": "3138160",
       "games": 10,
       "ppg": 5.9,
       "rpg": 3.1,
@@ -841,7 +841,7 @@
     },
     "calebwilson": {
       "name": "Caleb Wilson",
-      "athlete_id": "5095151.0",
+      "athlete_id": "5095151",
       "games": 10,
       "ppg": 18.9,
       "rpg": 6.2,
@@ -854,7 +854,7 @@
     },
     "camchristie": {
       "name": "Cam Christie",
-      "athlete_id": "4845363.0",
+      "athlete_id": "4845363",
       "games": 6,
       "ppg": 1.7,
       "rpg": 0.3,
@@ -867,7 +867,7 @@
     },
     "cameronboozer": {
       "name": "Cameron Boozer",
-      "athlete_id": "5041935.0",
+      "athlete_id": "5041935",
       "games": 14,
       "ppg": 16.5,
       "rpg": 9.5,
@@ -880,7 +880,7 @@
     },
     "cameroncarr": {
       "name": "Cameron Carr",
-      "athlete_id": "5113969.0",
+      "athlete_id": "5113969",
       "games": 5,
       "ppg": 0.4,
       "rpg": 1.0,
@@ -893,7 +893,7 @@
     },
     "cameronjohnson": {
       "name": "Cameron Johnson",
-      "athlete_id": "3138196.0",
+      "athlete_id": "3138196",
       "games": 9,
       "ppg": 11.8,
       "rpg": 3.6,
@@ -906,7 +906,7 @@
     },
     "camspencer": {
       "name": "Cam Spencer",
-      "athlete_id": "4433083.0",
+      "athlete_id": "4433083",
       "games": 14,
       "ppg": 10.4,
       "rpg": 3.2,
@@ -919,7 +919,7 @@
     },
     "camwhitmore": {
       "name": "Cam Whitmore",
-      "athlete_id": "5105592.0",
+      "athlete_id": "5105592",
       "games": 2,
       "ppg": 4.0,
       "rpg": 1.0,
@@ -932,7 +932,7 @@
     },
     "carsoncooper": {
       "name": "Carson Cooper",
-      "athlete_id": "5105817.0",
+      "athlete_id": "5105817",
       "games": 2,
       "ppg": 2.0,
       "rpg": 3.0,
@@ -945,7 +945,7 @@
     },
     "carterbryant": {
       "name": "Carter Bryant",
-      "athlete_id": "5061568.0",
+      "athlete_id": "5061568",
       "games": 14,
       "ppg": 3.5,
       "rpg": 0.9,
@@ -958,7 +958,7 @@
     },
     "casonwallace": {
       "name": "Cason Wallace",
-      "athlete_id": "4683692.0",
+      "athlete_id": "4683692",
       "games": 3,
       "ppg": 6.3,
       "rpg": 2.7,
@@ -971,7 +971,7 @@
     },
     "cedriccoward": {
       "name": "Cedric Coward",
-      "athlete_id": "4903027.0",
+      "athlete_id": "4903027",
       "games": 13,
       "ppg": 14.1,
       "rpg": 8.8,
@@ -984,7 +984,7 @@
     },
     "chaneyjohnson": {
       "name": "Chaney Johnson",
-      "athlete_id": "5174655.0",
+      "athlete_id": "5174655",
       "games": 13,
       "ppg": 4.1,
       "rpg": 2.5,
@@ -997,7 +997,7 @@
     },
     "charlesbassey": {
       "name": "Charles Bassey",
-      "athlete_id": "4397886.0",
+      "athlete_id": "4397886",
       "games": 12,
       "ppg": 7.6,
       "rpg": 5.2,
@@ -1010,7 +1010,7 @@
     },
     "chazlanier": {
       "name": "Chaz Lanier",
-      "athlete_id": "4700852.0",
+      "athlete_id": "4700852",
       "games": 5,
       "ppg": 3.2,
       "rpg": 0.6,
@@ -1023,7 +1023,7 @@
     },
     "chetholmgren": {
       "name": "Chet Holmgren",
-      "athlete_id": "4433255.0",
+      "athlete_id": "4433255",
       "games": 3,
       "ppg": 12.0,
       "rpg": 9.3,
@@ -1036,7 +1036,7 @@
     },
     "chriscenacjr": {
       "name": "Chris Cenac Jr.",
-      "athlete_id": "5142621.0",
+      "athlete_id": "5142621",
       "games": 5,
       "ppg": 3.6,
       "rpg": 1.6,
@@ -1049,7 +1049,7 @@
     },
     "chrismanon": {
       "name": "Chris Manon",
-      "athlete_id": "4702972.0",
+      "athlete_id": "4702972",
       "games": 2,
       "ppg": 1.0,
       "rpg": 0.5,
@@ -1062,7 +1062,7 @@
     },
     "christiananderson": {
       "name": "Christian Anderson",
-      "athlete_id": "5060701.0",
+      "athlete_id": "5060701",
       "games": 13,
       "ppg": 5.2,
       "rpg": 1.5,
@@ -1075,7 +1075,7 @@
     },
     "christianbraun": {
       "name": "Christian Braun",
-      "athlete_id": "4431767.0",
+      "athlete_id": "4431767",
       "games": 12,
       "ppg": 12.6,
       "rpg": 4.2,
@@ -1088,7 +1088,7 @@
     },
     "chrisyoungblood": {
       "name": "Chris Youngblood",
-      "athlete_id": "4706557.0",
+      "athlete_id": "4706557",
       "games": 6,
       "ppg": 6.0,
       "rpg": 1.3,
@@ -1101,7 +1101,7 @@
     },
     "cjmccollum": {
       "name": "CJ McCollum",
-      "athlete_id": "2490149.0",
+      "athlete_id": "2490149",
       "games": 14,
       "ppg": 14.5,
       "rpg": 3.1,
@@ -1114,7 +1114,7 @@
     },
     "clintcapela": {
       "name": "Clint Capela",
-      "athlete_id": "3102529.0",
+      "athlete_id": "3102529",
       "games": 6,
       "ppg": 3.2,
       "rpg": 5.2,
@@ -1127,7 +1127,7 @@
     },
     "cobywhite": {
       "name": "Coby White",
-      "athlete_id": "4395651.0",
+      "athlete_id": "4395651",
       "games": 7,
       "ppg": 12.7,
       "rpg": 2.0,
@@ -1140,7 +1140,7 @@
     },
     "codywilliams": {
       "name": "Cody Williams",
-      "athlete_id": "4895758.0",
+      "athlete_id": "4895758",
       "games": 9,
       "ppg": 0.0,
       "rpg": 0.4,
@@ -1153,7 +1153,7 @@
     },
     "colincastleton": {
       "name": "Colin Castleton",
-      "athlete_id": "4397204.0",
+      "athlete_id": "4397204",
       "games": 4,
       "ppg": 2.2,
       "rpg": 1.0,
@@ -1166,7 +1166,7 @@
     },
     "collingillespie": {
       "name": "Collin Gillespie",
-      "athlete_id": "4278585.0",
+      "athlete_id": "4278585",
       "games": 13,
       "ppg": 9.3,
       "rpg": 2.4,
@@ -1179,7 +1179,7 @@
     },
     "collinmurrayboyles": {
       "name": "Collin Murray-Boyles",
-      "athlete_id": "5093267.0",
+      "athlete_id": "5093267",
       "games": 13,
       "ppg": 9.9,
       "rpg": 4.8,
@@ -1192,7 +1192,7 @@
     },
     "collinsexton": {
       "name": "Collin Sexton",
-      "athlete_id": "4277811.0",
+      "athlete_id": "4277811",
       "games": 14,
       "ppg": 10.6,
       "rpg": 1.9,
@@ -1205,7 +1205,7 @@
     },
     "cooperflagg": {
       "name": "Cooper Flagg",
-      "athlete_id": "5041939.0",
+      "athlete_id": "5041939",
       "games": 13,
       "ppg": 23.5,
       "rpg": 6.7,
@@ -1218,7 +1218,7 @@
     },
     "coreykispert": {
       "name": "Corey Kispert",
-      "athlete_id": "4280151.0",
+      "athlete_id": "4280151",
       "games": 7,
       "ppg": 8.6,
       "rpg": 1.0,
@@ -1231,7 +1231,7 @@
     },
     "craigporterjr": {
       "name": "Craig Porter Jr.",
-      "athlete_id": "4701233.0",
+      "athlete_id": "4701233",
       "games": 12,
       "ppg": 2.1,
       "rpg": 2.2,
@@ -1244,7 +1244,7 @@
     },
     "daeqwonplowden": {
       "name": "Daeqwon Plowden",
-      "athlete_id": "4279318.0",
+      "athlete_id": "4279318",
       "games": 10,
       "ppg": 3.4,
       "rpg": 1.0,
@@ -1257,7 +1257,7 @@
     },
     "dailynswain": {
       "name": "Dailyn Swain",
-      "athlete_id": "4848625.0",
+      "athlete_id": "4848625",
       "games": 3,
       "ppg": 1.7,
       "rpg": 1.3,
@@ -1270,7 +1270,7 @@
     },
     "dalenterry": {
       "name": "Dalen Terry",
-      "athlete_id": "4433159.0",
+      "athlete_id": "4433159",
       "games": 2,
       "ppg": 1.0,
       "rpg": 3.0,
@@ -1283,7 +1283,7 @@
     },
     "daltonknecht": {
       "name": "Dalton Knecht",
-      "athlete_id": "4897943.0",
+      "athlete_id": "4897943",
       "games": 3,
       "ppg": 4.3,
       "rpg": 2.3,
@@ -1296,7 +1296,7 @@
     },
     "damianlillard": {
       "name": "Damian Lillard",
-      "athlete_id": "6606.0",
+      "athlete_id": "6606",
       "games": 14,
       "ppg": 20.1,
       "rpg": 3.0,
@@ -1309,7 +1309,7 @@
     },
     "danielgafford": {
       "name": "Daniel Gafford",
-      "athlete_id": "4278049.0",
+      "athlete_id": "4278049",
       "games": 14,
       "ppg": 8.7,
       "rpg": 5.1,
@@ -1322,7 +1322,7 @@
     },
     "danissjenkins": {
       "name": "Daniss Jenkins",
-      "athlete_id": "5107199.0",
+      "athlete_id": "5107199",
       "games": 13,
       "ppg": 14.1,
       "rpg": 3.7,
@@ -1335,7 +1335,7 @@
     },
     "dannywolf": {
       "name": "Danny Wolf",
-      "athlete_id": "5107173.0",
+      "athlete_id": "5107173",
       "games": 8,
       "ppg": 9.5,
       "rpg": 5.6,
@@ -1348,7 +1348,7 @@
     },
     "dariusacuffjr": {
       "name": "Darius Acuff Jr.",
-      "athlete_id": "5142620.0",
+      "athlete_id": "5142620",
       "games": 13,
       "ppg": 25.5,
       "rpg": 3.5,
@@ -1361,7 +1361,7 @@
     },
     "dariusgarland": {
       "name": "Darius Garland",
-      "athlete_id": "4396907.0",
+      "athlete_id": "4396907",
       "games": 13,
       "ppg": 21.2,
       "rpg": 2.4,
@@ -1374,7 +1374,7 @@
     },
     "daronholmesii": {
       "name": "DaRon Holmes II",
-      "athlete_id": "4433607.0",
+      "athlete_id": "4433607",
       "games": 4,
       "ppg": 0.8,
       "rpg": 0.2,
@@ -1387,7 +1387,7 @@
     },
     "darrynpeterson": {
       "name": "Darryn Peterson",
-      "athlete_id": "5041955.0",
+      "athlete_id": "5041955",
       "games": 15,
       "ppg": 16.9,
       "rpg": 4.3,
@@ -1400,7 +1400,7 @@
     },
     "davidjonesgarcia": {
       "name": "David Jones Garcia",
-      "athlete_id": "4713010.0",
+      "athlete_id": "4713010",
       "games": 4,
       "ppg": 1.0,
       "rpg": 0.0,
@@ -1413,7 +1413,7 @@
     },
     "davionmitchell": {
       "name": "Davion Mitchell",
-      "athlete_id": "4278053.0",
+      "athlete_id": "4278053",
       "games": 14,
       "ppg": 16.7,
       "rpg": 2.4,
@@ -1426,7 +1426,7 @@
     },
     "dayronsharpe": {
       "name": "Day'Ron Sharpe",
-      "athlete_id": "4432194.0",
+      "athlete_id": "4432194",
       "games": 13,
       "ppg": 8.6,
       "rpg": 7.3,
@@ -1439,7 +1439,7 @@
     },
     "deaaronfox": {
       "name": "De'Aaron Fox",
-      "athlete_id": "4066259.0",
+      "athlete_id": "4066259",
       "games": 14,
       "ppg": 13.1,
       "rpg": 4.2,
@@ -1452,7 +1452,7 @@
     },
     "deandreayton": {
       "name": "Deandre Ayton",
-      "athlete_id": "4278129.0",
+      "athlete_id": "4278129",
       "games": 15,
       "ppg": 4.3,
       "rpg": 4.2,
@@ -1465,7 +1465,7 @@
     },
     "deandrehunter": {
       "name": "De'Andre Hunter",
-      "athlete_id": "4065732.0",
+      "athlete_id": "4065732",
       "games": 11,
       "ppg": 14.3,
       "rpg": 4.5,
@@ -1478,7 +1478,7 @@
     },
     "deandrejordan": {
       "name": "DeAndre Jordan",
-      "athlete_id": "3442.0",
+      "athlete_id": "3442",
       "games": 4,
       "ppg": 4.5,
       "rpg": 6.0,
@@ -1491,7 +1491,7 @@
     },
     "deanthonymelton": {
       "name": "De'Anthony Melton",
-      "athlete_id": "4066436.0",
+      "athlete_id": "4066436",
       "games": 14,
       "ppg": 9.8,
       "rpg": 4.1,
@@ -1504,7 +1504,7 @@
     },
     "deanwade": {
       "name": "Dean Wade",
-      "athlete_id": "3912848.0",
+      "athlete_id": "3912848",
       "games": 13,
       "ppg": 4.8,
       "rpg": 4.6,
@@ -1517,7 +1517,7 @@
     },
     "dejountemurray": {
       "name": "Dejounte Murray",
-      "athlete_id": "3907497.0",
+      "athlete_id": "3907497",
       "games": 9,
       "ppg": 13.4,
       "rpg": 4.6,
@@ -1530,7 +1530,7 @@
     },
     "demarderozan": {
       "name": "DeMar DeRozan",
-      "athlete_id": "3978.0",
+      "athlete_id": "3978",
       "games": 11,
       "ppg": 9.2,
       "rpg": 2.0,
@@ -1543,7 +1543,7 @@
     },
     "deniavdija": {
       "name": "Deni Avdija",
-      "athlete_id": "4683021.0",
+      "athlete_id": "4683021",
       "games": 13,
       "ppg": 24.2,
       "rpg": 6.2,
@@ -1556,7 +1556,7 @@
     },
     "dennisschroder": {
       "name": "Dennis Schroder",
-      "athlete_id": "3032979.0",
+      "athlete_id": "3032979",
       "games": 9,
       "ppg": 10.2,
       "rpg": 3.6,
@@ -1569,7 +1569,7 @@
     },
     "derikqueen": {
       "name": "Derik Queen",
-      "athlete_id": "4869780.0",
+      "athlete_id": "4869780",
       "games": 15,
       "ppg": 12.2,
       "rpg": 6.5,
@@ -1582,7 +1582,7 @@
     },
     "derrickjonesjr": {
       "name": "Derrick Jones Jr.",
-      "athlete_id": "3936099.0",
+      "athlete_id": "3936099",
       "games": 12,
       "ppg": 11.0,
       "rpg": 4.5,
@@ -1595,7 +1595,7 @@
     },
     "derrickwhite": {
       "name": "Derrick White",
-      "athlete_id": "3078576.0",
+      "athlete_id": "3078576",
       "games": 14,
       "ppg": 12.7,
       "rpg": 3.0,
@@ -1608,7 +1608,7 @@
     },
     "desmondbane": {
       "name": "Desmond Bane",
-      "athlete_id": "4066320.0",
+      "athlete_id": "4066320",
       "games": 12,
       "ppg": 18.8,
       "rpg": 4.4,
@@ -1621,7 +1621,7 @@
     },
     "devinbooker": {
       "name": "Devin Booker",
-      "athlete_id": "3136193.0",
+      "athlete_id": "3136193",
       "games": 13,
       "ppg": 24.5,
       "rpg": 2.8,
@@ -1634,7 +1634,7 @@
     },
     "devincarter": {
       "name": "Devin Carter",
-      "athlete_id": "4433188.0",
+      "athlete_id": "4433188",
       "games": 1,
       "ppg": 0.0,
       "rpg": 2.0,
@@ -1647,7 +1647,7 @@
     },
     "devinvassell": {
       "name": "Devin Vassell",
-      "athlete_id": "4395630.0",
+      "athlete_id": "4395630",
       "games": 13,
       "ppg": 11.1,
       "rpg": 3.9,
@@ -1660,7 +1660,7 @@
     },
     "dillonbrooks": {
       "name": "Dillon Brooks",
-      "athlete_id": "3155526.0",
+      "athlete_id": "3155526",
       "games": 13,
       "ppg": 13.8,
       "rpg": 3.7,
@@ -1673,7 +1673,7 @@
     },
     "dillonmitchell": {
       "name": "Dillon Mitchell",
-      "athlete_id": "5106283.0",
+      "athlete_id": "5106283",
       "games": 1,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -1686,7 +1686,7 @@
     },
     "domantassabonis": {
       "name": "Domantas Sabonis",
-      "athlete_id": "3155942.0",
+      "athlete_id": "3155942",
       "games": 12,
       "ppg": 14.2,
       "rpg": 13.2,
@@ -1699,7 +1699,7 @@
     },
     "donovanclingan": {
       "name": "Donovan Clingan",
-      "athlete_id": "5105565.0",
+      "athlete_id": "5105565",
       "games": 14,
       "ppg": 11.0,
       "rpg": 10.6,
@@ -1712,7 +1712,7 @@
     },
     "donovanmitchell": {
       "name": "Donovan Mitchell",
-      "athlete_id": "3908809.0",
+      "athlete_id": "3908809",
       "games": 14,
       "ppg": 24.1,
       "rpg": 4.9,
@@ -1725,7 +1725,7 @@
     },
     "dorianfinneysmith": {
       "name": "Dorian Finney-Smith",
-      "athlete_id": "2578185.0",
+      "athlete_id": "2578185",
       "games": 3,
       "ppg": 1.0,
       "rpg": 0.7,
@@ -1738,7 +1738,7 @@
     },
     "drakepowell": {
       "name": "Drake Powell",
-      "athlete_id": "5037873.0",
+      "athlete_id": "5037873",
       "games": 5,
       "ppg": 2.0,
       "rpg": 0.8,
@@ -1751,7 +1751,7 @@
     },
     "draymondgreen": {
       "name": "Draymond Green",
-      "athlete_id": "6589.0",
+      "athlete_id": "6589",
       "games": 12,
       "ppg": 3.2,
       "rpg": 5.0,
@@ -1764,7 +1764,7 @@
     },
     "drusmith": {
       "name": "Dru Smith",
-      "athlete_id": "4066993.0",
+      "athlete_id": "4066993",
       "games": 7,
       "ppg": 2.1,
       "rpg": 0.9,
@@ -1777,7 +1777,7 @@
     },
     "duncanrobinson": {
       "name": "Duncan Robinson",
-      "athlete_id": "3157465.0",
+      "athlete_id": "3157465",
       "games": 12,
       "ppg": 17.4,
       "rpg": 1.8,
@@ -1790,7 +1790,7 @@
     },
     "duopreath": {
       "name": "Duop Reath",
-      "athlete_id": "4066268.0",
+      "athlete_id": "4066268",
       "games": 6,
       "ppg": 3.2,
       "rpg": 1.0,
@@ -1803,7 +1803,7 @@
     },
     "dylancardwell": {
       "name": "Dylan Cardwell",
-      "athlete_id": "4433174.0",
+      "athlete_id": "4433174",
       "games": 6,
       "ppg": 5.7,
       "rpg": 6.2,
@@ -1816,7 +1816,7 @@
     },
     "dylanharper": {
       "name": "Dylan Harper",
-      "athlete_id": "5037871.0",
+      "athlete_id": "5037871",
       "games": 15,
       "ppg": 18.4,
       "rpg": 5.4,
@@ -1829,7 +1829,7 @@
     },
     "dysondaniels": {
       "name": "Dyson Daniels",
-      "athlete_id": "4869342.0",
+      "athlete_id": "4869342",
       "games": 14,
       "ppg": 9.5,
       "rpg": 7.4,
@@ -1842,7 +1842,7 @@
     },
     "ebukaokorie": {
       "name": "Ebuka Okorie",
-      "athlete_id": "5258459.0",
+      "athlete_id": "5258459",
       "games": 5,
       "ppg": 2.2,
       "rpg": 0.4,
@@ -1855,7 +1855,7 @@
     },
     "egordemin": {
       "name": "Egor Demin",
-      "athlete_id": "5175643.0",
+      "athlete_id": "5175643",
       "games": 7,
       "ppg": 10.4,
       "rpg": 2.0,
@@ -1868,7 +1868,7 @@
     },
     "elijahharkless": {
       "name": "Elijah Harkless",
-      "athlete_id": "4397449.0",
+      "athlete_id": "4397449",
       "games": 3,
       "ppg": 0.7,
       "rpg": 0.3,
@@ -1881,7 +1881,7 @@
     },
     "emanuelsharp": {
       "name": "Emanuel Sharp",
-      "athlete_id": "5106058.0",
+      "athlete_id": "5106058",
       "games": 13,
       "ppg": 4.9,
       "rpg": 1.2,
@@ -1894,7 +1894,7 @@
     },
     "evanmobley": {
       "name": "Evan Mobley",
-      "athlete_id": "4432158.0",
+      "athlete_id": "4432158",
       "games": 12,
       "ppg": 16.9,
       "rpg": 7.3,
@@ -1907,7 +1907,7 @@
     },
     "felixokpara": {
       "name": "Felix Okpara",
-      "athlete_id": "5105841.0",
+      "athlete_id": "5105841",
       "games": 3,
       "ppg": 1.0,
       "rpg": 0.7,
@@ -1920,7 +1920,7 @@
     },
     "franzwagner": {
       "name": "Franz Wagner",
-      "athlete_id": "4566434.0",
+      "athlete_id": "4566434",
       "games": 13,
       "ppg": 24.2,
       "rpg": 6.8,
@@ -1933,7 +1933,7 @@
     },
     "fredvanvleet": {
       "name": "Fred VanVleet",
-      "athlete_id": "2991230.0",
+      "athlete_id": "2991230",
       "games": 12,
       "ppg": 13.5,
       "rpg": 3.1,
@@ -1946,7 +1946,7 @@
     },
     "garypaytonii": {
       "name": "Gary Payton II",
-      "athlete_id": "3134903.0",
+      "athlete_id": "3134903",
       "games": 12,
       "ppg": 4.5,
       "rpg": 1.5,
@@ -1959,7 +1959,7 @@
     },
     "garytrentjr": {
       "name": "Gary Trent Jr.",
-      "athlete_id": "4277843.0",
+      "athlete_id": "4277843",
       "games": 6,
       "ppg": 6.0,
       "rpg": 0.7,
@@ -1972,7 +1972,7 @@
     },
     "georgesniang": {
       "name": "Georges Niang",
-      "athlete_id": "2990969.0",
+      "athlete_id": "2990969",
       "games": 14,
       "ppg": 7.2,
       "rpg": 3.1,
@@ -1985,7 +1985,7 @@
     },
     "ggjackson": {
       "name": "GG Jackson",
-      "athlete_id": "5105550.0",
+      "athlete_id": "5105550",
       "games": 12,
       "ppg": 6.7,
       "rpg": 3.0,
@@ -1998,7 +1998,7 @@
     },
     "giannisantetokounmpo": {
       "name": "Giannis Antetokounmpo",
-      "athlete_id": "3032977.0",
+      "athlete_id": "3032977",
       "games": 14,
       "ppg": 28.3,
       "rpg": 12.5,
@@ -2011,7 +2011,7 @@
     },
     "gogabitadze": {
       "name": "Goga Bitadze",
-      "athlete_id": "4348700.0",
+      "athlete_id": "4348700",
       "games": 11,
       "ppg": 4.9,
       "rpg": 3.9,
@@ -2024,7 +2024,7 @@
     },
     "gradeydick": {
       "name": "Gradey Dick",
-      "athlete_id": "5106258.0",
+      "athlete_id": "5106258",
       "games": 13,
       "ppg": 7.5,
       "rpg": 2.7,
@@ -2037,7 +2037,7 @@
     },
     "grahamike": {
       "name": "Graham Ike",
-      "athlete_id": "4703396.0",
+      "athlete_id": "4703396",
       "games": 11,
       "ppg": 4.6,
       "rpg": 2.6,
@@ -2050,7 +2050,7 @@
     },
     "grantwilliams": {
       "name": "Grant Williams",
-      "athlete_id": "4066218.0",
+      "athlete_id": "4066218",
       "games": 3,
       "ppg": 11.3,
       "rpg": 2.7,
@@ -2063,7 +2063,7 @@
     },
     "graysonallen": {
       "name": "Grayson Allen",
-      "athlete_id": "3135045.0",
+      "athlete_id": "3135045",
       "games": 13,
       "ppg": 14.9,
       "rpg": 3.1,
@@ -2076,7 +2076,7 @@
     },
     "guisantos": {
       "name": "Gui Santos",
-      "athlete_id": "4997536.0",
+      "athlete_id": "4997536",
       "games": 11,
       "ppg": 6.2,
       "rpg": 4.2,
@@ -2089,7 +2089,7 @@
     },
     "hannessteinbach": {
       "name": "Hannes Steinbach",
-      "athlete_id": "5281370.0",
+      "athlete_id": "5281370",
       "games": 5,
       "ppg": 2.8,
       "rpg": 4.2,
@@ -2102,7 +2102,7 @@
     },
     "harrisonbarnes": {
       "name": "Harrison Barnes",
-      "athlete_id": "6578.0",
+      "athlete_id": "6578",
       "games": 13,
       "ppg": 5.1,
       "rpg": 1.0,
@@ -2115,7 +2115,7 @@
     },
     "herbertjones": {
       "name": "Herbert Jones",
-      "athlete_id": "4277813.0",
+      "athlete_id": "4277813",
       "games": 15,
       "ppg": 6.3,
       "rpg": 2.8,
@@ -2128,7 +2128,7 @@
     },
     "hugogonzalez": {
       "name": "Hugo Gonzalez",
-      "athlete_id": "5175647.0",
+      "athlete_id": "5175647",
       "games": 14,
       "ppg": 4.1,
       "rpg": 2.3,
@@ -2141,7 +2141,7 @@
     },
     "immanuelquickley": {
       "name": "Immanuel Quickley",
-      "athlete_id": "4395724.0",
+      "athlete_id": "4395724",
       "games": 12,
       "ppg": 17.2,
       "rpg": 3.6,
@@ -2154,7 +2154,7 @@
     },
     "isaacjones": {
       "name": "Isaac Jones",
-      "athlete_id": "5107818.0",
+      "athlete_id": "5107818",
       "games": 5,
       "ppg": 0.4,
       "rpg": 1.2,
@@ -2167,7 +2167,7 @@
     },
     "isaacokoro": {
       "name": "Isaac Okoro",
-      "athlete_id": "4432822.0",
+      "athlete_id": "4432822",
       "games": 13,
       "ppg": 6.8,
       "rpg": 2.3,
@@ -2180,7 +2180,7 @@
     },
     "isaiahcollier": {
       "name": "Isaiah Collier",
-      "athlete_id": "4683766.0",
+      "athlete_id": "4683766",
       "games": 13,
       "ppg": 6.8,
       "rpg": 3.4,
@@ -2193,7 +2193,7 @@
     },
     "isaiahcrawford": {
       "name": "Isaiah Crawford",
-      "athlete_id": "4592857.0",
+      "athlete_id": "4592857",
       "games": 10,
       "ppg": 2.9,
       "rpg": 1.3,
@@ -2206,7 +2206,7 @@
     },
     "isaiahevans": {
       "name": "Isaiah Evans",
-      "athlete_id": "5061585.0",
+      "athlete_id": "5061585",
       "games": 7,
       "ppg": 0.3,
       "rpg": 0.3,
@@ -2219,7 +2219,7 @@
     },
     "isaiahhartenstein": {
       "name": "Isaiah Hartenstein",
-      "athlete_id": "4222252.0",
+      "athlete_id": "4222252",
       "games": 14,
       "ppg": 8.6,
       "rpg": 10.6,
@@ -2232,7 +2232,7 @@
     },
     "isaiahjackson": {
       "name": "Isaiah Jackson",
-      "athlete_id": "4432170.0",
+      "athlete_id": "4432170",
       "games": 12,
       "ppg": 8.2,
       "rpg": 5.2,
@@ -2245,7 +2245,7 @@
     },
     "isaiahjoe": {
       "name": "Isaiah Joe",
-      "athlete_id": "4395702.0",
+      "athlete_id": "4395702",
       "games": 3,
       "ppg": 7.3,
       "rpg": 1.7,
@@ -2258,7 +2258,7 @@
     },
     "isaiahstewart": {
       "name": "Isaiah Stewart",
-      "athlete_id": "4432810.0",
+      "athlete_id": "4432810",
       "games": 10,
       "ppg": 10.9,
       "rpg": 3.3,
@@ -2271,7 +2271,7 @@
     },
     "ivicazubac": {
       "name": "Ivica Zubac",
-      "athlete_id": "4017837.0",
+      "athlete_id": "4017837",
       "games": 9,
       "ppg": 10.4,
       "rpg": 8.4,
@@ -2284,7 +2284,7 @@
     },
     "jabarismithjr": {
       "name": "Jabari Smith Jr.",
-      "athlete_id": "4432639.0",
+      "athlete_id": "4432639",
       "games": 15,
       "ppg": 15.2,
       "rpg": 6.5,
@@ -2297,7 +2297,7 @@
     },
     "jabariwalker": {
       "name": "Jabari Walker",
-      "athlete_id": "4432446.0",
+      "athlete_id": "4432446",
       "games": 11,
       "ppg": 6.5,
       "rpg": 4.5,
@@ -2310,7 +2310,7 @@
     },
     "jadenakins": {
       "name": "Jaden Akins",
-      "athlete_id": "4683730.0",
+      "athlete_id": "4683730",
       "games": 2,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -2323,7 +2323,7 @@
     },
     "jadenbradley": {
       "name": "Jaden Bradley",
-      "athlete_id": "4432737.0",
+      "athlete_id": "4432737",
       "games": 9,
       "ppg": 1.7,
       "rpg": 0.6,
@@ -2336,7 +2336,7 @@
     },
     "jadenhardy": {
       "name": "Jaden Hardy",
-      "athlete_id": "4868423.0",
+      "athlete_id": "4868423",
       "games": 7,
       "ppg": 1.6,
       "rpg": 0.6,
@@ -2349,7 +2349,7 @@
     },
     "jadenmcdaniels": {
       "name": "Jaden McDaniels",
-      "athlete_id": "4431671.0",
+      "athlete_id": "4431671",
       "games": 15,
       "ppg": 17.1,
       "rpg": 6.1,
@@ -2362,7 +2362,7 @@
     },
     "jaeseantate": {
       "name": "Jae'Sean Tate",
-      "athlete_id": "3136777.0",
+      "athlete_id": "3136777",
       "games": 9,
       "ppg": 0.8,
       "rpg": 1.1,
@@ -2375,7 +2375,7 @@
     },
     "jahmaimashack": {
       "name": "Jahmai Mashack",
-      "athlete_id": "4683934.0",
+      "athlete_id": "4683934",
       "games": 5,
       "ppg": 0.4,
       "rpg": 0.0,
@@ -2388,7 +2388,7 @@
     },
     "jaimejaquezjr": {
       "name": "Jaime Jaquez Jr.",
-      "athlete_id": "4432848.0",
+      "athlete_id": "4432848",
       "games": 14,
       "ppg": 15.8,
       "rpg": 5.6,
@@ -2401,7 +2401,7 @@
     },
     "jakelaravia": {
       "name": "Jake LaRavia",
-      "athlete_id": "4592691.0",
+      "athlete_id": "4592691",
       "games": 14,
       "ppg": 5.9,
       "rpg": 4.0,
@@ -2414,7 +2414,7 @@
     },
     "jakobewalter": {
       "name": "Ja'Kobe Walter",
-      "athlete_id": "4684272.0",
+      "athlete_id": "4684272",
       "games": 14,
       "ppg": 11.8,
       "rpg": 3.8,
@@ -2427,7 +2427,7 @@
     },
     "jakobigillespie": {
       "name": "Ja'Kobi Gillespie",
-      "athlete_id": "5107968.0",
+      "athlete_id": "5107968",
       "games": 2,
       "ppg": 2.5,
       "rpg": 0.0,
@@ -2440,7 +2440,7 @@
     },
     "jakobpoeltl": {
       "name": "Jakob Poeltl",
-      "athlete_id": "3134908.0",
+      "athlete_id": "3134908",
       "games": 12,
       "ppg": 8.1,
       "rpg": 6.4,
@@ -2453,7 +2453,7 @@
     },
     "jalenbrunson": {
       "name": "Jalen Brunson",
-      "athlete_id": "3934672.0",
+      "athlete_id": "3934672",
       "games": 14,
       "ppg": 27.0,
       "rpg": 2.9,
@@ -2466,7 +2466,7 @@
     },
     "jalenduren": {
       "name": "Jalen Duren",
-      "athlete_id": "4433621.0",
+      "athlete_id": "4433621",
       "games": 2,
       "ppg": 13.0,
       "rpg": 7.5,
@@ -2479,7 +2479,7 @@
     },
     "jalengreen": {
       "name": "Jalen Green",
-      "athlete_id": "4437244.0",
+      "athlete_id": "4437244",
       "games": 13,
       "ppg": 11.9,
       "rpg": 3.4,
@@ -2492,7 +2492,7 @@
     },
     "jalenjohnson": {
       "name": "Jalen Johnson",
-      "athlete_id": "4701230.0",
+      "athlete_id": "4701230",
       "games": 11,
       "ppg": 19.5,
       "rpg": 9.0,
@@ -2505,7 +2505,7 @@
     },
     "jalenpickett": {
       "name": "Jalen Pickett",
-      "athlete_id": "4398390.0",
+      "athlete_id": "4398390",
       "games": 5,
       "ppg": 2.0,
       "rpg": 0.8,
@@ -2518,7 +2518,7 @@
     },
     "jalenslawson": {
       "name": "Jalen Slawson",
-      "athlete_id": "4398207.0",
+      "athlete_id": "4398207",
       "games": 12,
       "ppg": 3.8,
       "rpg": 3.3,
@@ -2531,7 +2531,7 @@
     },
     "jalensmith": {
       "name": "Jalen Smith",
-      "athlete_id": "4397189.0",
+      "athlete_id": "4397189",
       "games": 12,
       "ppg": 13.3,
       "rpg": 8.1,
@@ -2544,7 +2544,7 @@
     },
     "jalensuggs": {
       "name": "Jalen Suggs",
-      "athlete_id": "4432165.0",
+      "athlete_id": "4432165",
       "games": 5,
       "ppg": 7.8,
       "rpg": 4.6,
@@ -2557,7 +2557,7 @@
     },
     "jalenwilliams": {
       "name": "Jalen Williams",
-      "athlete_id": "4593803.0",
+      "athlete_id": "4593803",
       "games": 3,
       "ppg": 13.7,
       "rpg": 4.7,
@@ -2570,7 +2570,7 @@
     },
     "jamalcain": {
       "name": "Jamal Cain",
-      "athlete_id": "4278572.0",
+      "athlete_id": "4278572",
       "games": 12,
       "ppg": 6.0,
       "rpg": 3.3,
@@ -2583,7 +2583,7 @@
     },
     "jamalmurray": {
       "name": "Jamal Murray",
-      "athlete_id": "3936299.0",
+      "athlete_id": "3936299",
       "games": 12,
       "ppg": 26.1,
       "rpg": 5.1,
@@ -2596,7 +2596,7 @@
     },
     "jamalshead": {
       "name": "Jamal Shead",
-      "athlete_id": "4432241.0",
+      "athlete_id": "4432241",
       "games": 14,
       "ppg": 7.7,
       "rpg": 2.0,
@@ -2609,7 +2609,7 @@
     },
     "jamareebouyea": {
       "name": "Jamaree Bouyea",
-      "athlete_id": "4280245.0",
+      "athlete_id": "4280245",
       "games": 6,
       "ppg": 3.2,
       "rpg": 0.3,
@@ -2622,7 +2622,7 @@
     },
     "jamesharden": {
       "name": "James Harden",
-      "athlete_id": "3992.0",
+      "athlete_id": "3992",
       "games": 14,
       "ppg": 16.4,
       "rpg": 4.6,
@@ -2635,7 +2635,7 @@
     },
     "jameswiseman": {
       "name": "James Wiseman",
-      "athlete_id": "4432808.0",
+      "athlete_id": "4432808",
       "games": 6,
       "ppg": 1.3,
       "rpg": 2.5,
@@ -2648,7 +2648,7 @@
     },
     "jamisonbattle": {
       "name": "Jamison Battle",
-      "athlete_id": "4431893.0",
+      "athlete_id": "4431893",
       "games": 14,
       "ppg": 8.3,
       "rpg": 1.6,
@@ -2661,7 +2661,7 @@
     },
     "jamorant": {
       "name": "Ja Morant",
-      "athlete_id": "4279888.0",
+      "athlete_id": "4279888",
       "games": 4,
       "ppg": 15.8,
       "rpg": 2.5,
@@ -2674,7 +2674,7 @@
     },
     "jaracewalker": {
       "name": "Jarace Walker",
-      "athlete_id": "5106060.0",
+      "athlete_id": "5106060",
       "games": 13,
       "ppg": 6.5,
       "rpg": 5.3,
@@ -2687,7 +2687,7 @@
     },
     "jaredmccain": {
       "name": "Jared McCain",
-      "athlete_id": "4683778.0",
+      "athlete_id": "4683778",
       "games": 14,
       "ppg": 13.4,
       "rpg": 3.4,
@@ -2700,7 +2700,7 @@
     },
     "jarenjacksonjr": {
       "name": "Jaren Jackson Jr.",
-      "athlete_id": "4277961.0",
+      "athlete_id": "4277961",
       "games": 4,
       "ppg": 16.2,
       "rpg": 5.0,
@@ -2713,7 +2713,7 @@
     },
     "jaronpierrejr": {
       "name": "Jaron Pierre Jr.",
-      "athlete_id": "4703115.0",
+      "athlete_id": "4703115",
       "games": 4,
       "ppg": 6.8,
       "rpg": 2.5,
@@ -2726,7 +2726,7 @@
     },
     "jarredvanderbilt": {
       "name": "Jarred Vanderbilt",
-      "athlete_id": "4278077.0",
+      "athlete_id": "4278077",
       "games": 10,
       "ppg": 2.2,
       "rpg": 4.1,
@@ -2739,7 +2739,7 @@
     },
     "jarrettallen": {
       "name": "Jarrett Allen",
-      "athlete_id": "4066328.0",
+      "athlete_id": "4066328",
       "games": 12,
       "ppg": 12.6,
       "rpg": 8.8,
@@ -2752,7 +2752,7 @@
     },
     "jaserichardson": {
       "name": "Jase Richardson",
-      "athlete_id": "5239561.0",
+      "athlete_id": "5239561",
       "games": 11,
       "ppg": 5.9,
       "rpg": 1.9,
@@ -2765,7 +2765,7 @@
     },
     "javonsmall": {
       "name": "Javon Small",
-      "athlete_id": "4781746.0",
+      "athlete_id": "4781746",
       "games": 7,
       "ppg": 10.0,
       "rpg": 2.4,
@@ -2778,7 +2778,7 @@
     },
     "javontegreen": {
       "name": "Javonte Green",
-      "athlete_id": "2596112.0",
+      "athlete_id": "2596112",
       "games": 13,
       "ppg": 6.0,
       "rpg": 2.5,
@@ -2791,7 +2791,7 @@
     },
     "jaxsonhayes": {
       "name": "Jaxson Hayes",
-      "athlete_id": "4397077.0",
+      "athlete_id": "4397077",
       "games": 12,
       "ppg": 8.8,
       "rpg": 6.0,
@@ -2804,7 +2804,7 @@
     },
     "jayhuff": {
       "name": "Jay Huff",
-      "athlete_id": "4065731.0",
+      "athlete_id": "4065731",
       "games": 12,
       "ppg": 7.4,
       "rpg": 3.2,
@@ -2817,7 +2817,7 @@
     },
     "jaylenbrown": {
       "name": "Jaylen Brown",
-      "athlete_id": "3917376.0",
+      "athlete_id": "3917376",
       "games": 14,
       "ppg": 22.6,
       "rpg": 6.6,
@@ -2830,7 +2830,7 @@
     },
     "jaylenclark": {
       "name": "Jaylen Clark",
-      "athlete_id": "4432247.0",
+      "athlete_id": "4432247",
       "games": 12,
       "ppg": 4.5,
       "rpg": 2.1,
@@ -2843,7 +2843,7 @@
     },
     "jaylenwells": {
       "name": "Jaylen Wells",
-      "athlete_id": "5112087.0",
+      "athlete_id": "5112087",
       "games": 14,
       "ppg": 11.1,
       "rpg": 2.9,
@@ -2856,7 +2856,7 @@
     },
     "jaylinsellers": {
       "name": "Jaylin Sellers",
-      "athlete_id": "4898010.0",
+      "athlete_id": "4898010",
       "games": 6,
       "ppg": 4.3,
       "rpg": 0.7,
@@ -2869,7 +2869,7 @@
     },
     "jaylinwilliams": {
       "name": "Jaylin Williams",
-      "athlete_id": "4432823.0",
+      "athlete_id": "4432823",
       "games": 7,
       "ppg": 2.9,
       "rpg": 4.0,
@@ -2882,7 +2882,7 @@
     },
     "jaylontyson": {
       "name": "Jaylon Tyson",
-      "athlete_id": "4683747.0",
+      "athlete_id": "4683747",
       "games": 8,
       "ppg": 9.5,
       "rpg": 3.1,
@@ -2895,7 +2895,7 @@
     },
     "jaysonkent": {
       "name": "Jayson Kent",
-      "athlete_id": "4703889.0",
+      "athlete_id": "4703889",
       "games": 5,
       "ppg": 4.6,
       "rpg": 1.2,
@@ -2908,7 +2908,7 @@
     },
     "jaysontatum": {
       "name": "Jayson Tatum",
-      "athlete_id": "4065648.0",
+      "athlete_id": "4065648",
       "games": 13,
       "ppg": 26.5,
       "rpg": 6.5,
@@ -2921,7 +2921,7 @@
     },
     "jeramigrant": {
       "name": "Jerami Grant",
-      "athlete_id": "2991070.0",
+      "athlete_id": "2991070",
       "games": 13,
       "ppg": 11.4,
       "rpg": 2.0,
@@ -2934,7 +2934,7 @@
     },
     "jeremiahfears": {
       "name": "Jeremiah Fears",
-      "athlete_id": "5144091.0",
+      "athlete_id": "5144091",
       "games": 15,
       "ppg": 15.5,
       "rpg": 4.9,
@@ -2947,7 +2947,7 @@
     },
     "jerichosims": {
       "name": "Jericho Sims",
-      "athlete_id": "4277922.0",
+      "athlete_id": "4277922",
       "games": 9,
       "ppg": 0.9,
       "rpg": 1.2,
@@ -2960,7 +2960,7 @@
     },
     "jetthoward": {
       "name": "Jett Howard",
-      "athlete_id": "5105806.0",
+      "athlete_id": "5105806",
       "games": 7,
       "ppg": 2.1,
       "rpg": 0.1,
@@ -2973,7 +2973,7 @@
     },
     "jevoncarter": {
       "name": "Jevon Carter",
-      "athlete_id": "3133635.0",
+      "athlete_id": "3133635",
       "games": 9,
       "ppg": 4.3,
       "rpg": 1.1,
@@ -2986,7 +2986,7 @@
     },
     "joanberinger": {
       "name": "Joan Beringer",
-      "athlete_id": "5279133.0",
+      "athlete_id": "5279133",
       "games": 15,
       "ppg": 5.3,
       "rpg": 6.6,
@@ -2999,7 +2999,7 @@
     },
     "jocklandale": {
       "name": "Jock Landale",
-      "athlete_id": "3146557.0",
+      "athlete_id": "3146557",
       "games": 9,
       "ppg": 6.8,
       "rpg": 4.9,
@@ -3012,7 +3012,7 @@
     },
     "joelembiid": {
       "name": "Joel Embiid",
-      "athlete_id": "3059318.0",
+      "athlete_id": "3059318",
       "games": 12,
       "ppg": 19.5,
       "rpg": 8.5,
@@ -3025,7 +3025,7 @@
     },
     "johncollins": {
       "name": "John Collins",
-      "athlete_id": "3908845.0",
+      "athlete_id": "3908845",
       "games": 13,
       "ppg": 10.5,
       "rpg": 5.6,
@@ -3038,7 +3038,7 @@
     },
     "johntonje": {
       "name": "John Tonje",
-      "athlete_id": "4593043.0",
+      "athlete_id": "4593043",
       "games": 2,
       "ppg": 6.0,
       "rpg": 2.0,
@@ -3051,7 +3051,7 @@
     },
     "jonathankuminga": {
       "name": "Jonathan Kuminga",
-      "athlete_id": "4433247.0",
+      "athlete_id": "4433247",
       "games": 14,
       "ppg": 12.4,
       "rpg": 5.7,
@@ -3064,7 +3064,7 @@
     },
     "jonathanmogbo": {
       "name": "Jonathan Mogbo",
-      "athlete_id": "5107897.0",
+      "athlete_id": "5107897",
       "games": 5,
       "ppg": 3.0,
       "rpg": 2.2,
@@ -3077,7 +3077,7 @@
     },
     "jordanclarkson": {
       "name": "Jordan Clarkson",
-      "athlete_id": "2528426.0",
+      "athlete_id": "2528426",
       "games": 12,
       "ppg": 4.9,
       "rpg": 1.6,
@@ -3090,7 +3090,7 @@
     },
     "jordangoodwin": {
       "name": "Jordan Goodwin",
-      "athlete_id": "4278402.0",
+      "athlete_id": "4278402",
       "games": 9,
       "ppg": 9.8,
       "rpg": 4.2,
@@ -3103,7 +3103,7 @@
     },
     "jordanhawkins": {
       "name": "Jordan Hawkins",
-      "athlete_id": "4683750.0",
+      "athlete_id": "4683750",
       "games": 7,
       "ppg": 3.4,
       "rpg": 0.9,
@@ -3116,7 +3116,7 @@
     },
     "jordanmclaughlin": {
       "name": "Jordan McLaughlin",
-      "athlete_id": "3134916.0",
+      "athlete_id": "3134916",
       "games": 9,
       "ppg": 3.0,
       "rpg": 1.7,
@@ -3129,7 +3129,7 @@
     },
     "jordanpoole": {
       "name": "Jordan Poole",
-      "athlete_id": "4277956.0",
+      "athlete_id": "4277956",
       "games": 9,
       "ppg": 9.2,
       "rpg": 1.9,
@@ -3142,7 +3142,7 @@
     },
     "jordanwalsh": {
       "name": "Jordan Walsh",
-      "athlete_id": "4683689.0",
+      "athlete_id": "4683689",
       "games": 14,
       "ppg": 5.1,
       "rpg": 3.1,
@@ -3155,7 +3155,7 @@
     },
     "josealvarado": {
       "name": "Jose Alvarado",
-      "athlete_id": "4277869.0",
+      "athlete_id": "4277869",
       "games": 7,
       "ppg": 1.7,
       "rpg": 0.9,
@@ -3168,7 +3168,7 @@
     },
     "joshdix": {
       "name": "Josh Dix",
-      "athlete_id": "5105800.0",
+      "athlete_id": "5105800",
       "games": 8,
       "ppg": 2.0,
       "rpg": 1.4,
@@ -3181,7 +3181,7 @@
     },
     "joshgiddey": {
       "name": "Josh Giddey",
-      "athlete_id": "4871145.0",
+      "athlete_id": "4871145",
       "games": 13,
       "ppg": 9.9,
       "rpg": 5.2,
@@ -3194,7 +3194,7 @@
     },
     "joshgreen": {
       "name": "Josh Green",
-      "athlete_id": "4432811.0",
+      "athlete_id": "4432811",
       "games": 13,
       "ppg": 4.1,
       "rpg": 1.5,
@@ -3207,7 +3207,7 @@
     },
     "joshhart": {
       "name": "Josh Hart",
-      "athlete_id": "3062679.0",
+      "athlete_id": "3062679",
       "games": 11,
       "ppg": 6.5,
       "rpg": 6.3,
@@ -3220,7 +3220,7 @@
     },
     "joshminott": {
       "name": "Josh Minott",
-      "athlete_id": "4687718.0",
+      "athlete_id": "4687718",
       "games": 9,
       "ppg": 3.4,
       "rpg": 1.7,
@@ -3233,7 +3233,7 @@
     },
     "joshokogie": {
       "name": "Josh Okogie",
-      "athlete_id": "4065663.0",
+      "athlete_id": "4065663",
       "games": 14,
       "ppg": 4.8,
       "rpg": 3.3,
@@ -3246,7 +3246,7 @@
     },
     "joshuajefferson": {
       "name": "Joshua Jefferson",
-      "athlete_id": "4870564.0",
+      "athlete_id": "4870564",
       "games": 1,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -3259,7 +3259,7 @@
     },
     "jrueholiday": {
       "name": "Jrue Holiday",
-      "athlete_id": "3995.0",
+      "athlete_id": "3995",
       "games": 14,
       "ppg": 13.3,
       "rpg": 3.6,
@@ -3272,7 +3272,7 @@
     },
     "julianchampagnie": {
       "name": "Julian Champagnie",
-      "athlete_id": "4592479.0",
+      "athlete_id": "4592479",
       "games": 15,
       "ppg": 9.9,
       "rpg": 4.2,
@@ -3285,7 +3285,7 @@
     },
     "julianreese": {
       "name": "Julian Reese",
-      "athlete_id": "4683742.0",
+      "athlete_id": "4683742",
       "games": 6,
       "ppg": 1.0,
       "rpg": 1.0,
@@ -3298,7 +3298,7 @@
     },
     "juliusrandle": {
       "name": "Julius Randle",
-      "athlete_id": "3064514.0",
+      "athlete_id": "3064514",
       "games": 13,
       "ppg": 20.9,
       "rpg": 6.2,
@@ -3311,7 +3311,7 @@
     },
     "justinchampagnie": {
       "name": "Justin Champagnie",
-      "athlete_id": "4432907.0",
+      "athlete_id": "4432907",
       "games": 4,
       "ppg": 7.2,
       "rpg": 7.5,
@@ -3324,7 +3324,7 @@
     },
     "justinedwards": {
       "name": "Justin Edwards",
-      "athlete_id": "4711297.0",
+      "athlete_id": "4711297",
       "games": 6,
       "ppg": 0.8,
       "rpg": 0.7,
@@ -3337,7 +3337,7 @@
     },
     "karimlopez": {
       "name": "Karim Lopez",
-      "athlete_id": "5231919.0",
+      "athlete_id": "5231919",
       "games": 5,
       "ppg": 0.8,
       "rpg": 0.8,
@@ -3350,7 +3350,7 @@
     },
     "karlanthonytowns": {
       "name": "Karl-Anthony Towns",
-      "athlete_id": "3136195.0",
+      "athlete_id": "3136195",
       "games": 14,
       "ppg": 21.2,
       "rpg": 14.1,
@@ -3363,7 +3363,7 @@
     },
     "karlomatkovic": {
       "name": "Karlo Matkovic",
-      "athlete_id": "4997538.0",
+      "athlete_id": "4997538",
       "games": 14,
       "ppg": 7.4,
       "rpg": 3.9,
@@ -3376,7 +3376,7 @@
     },
     "kasparasjakucionis": {
       "name": "Kasparas Jakucionis",
-      "athlete_id": "5214640.0",
+      "athlete_id": "5214640",
       "games": 13,
       "ppg": 8.0,
       "rpg": 2.5,
@@ -3389,7 +3389,7 @@
     },
     "kawhileonard": {
       "name": "Kawhi Leonard",
-      "athlete_id": "6450.0",
+      "athlete_id": "6450",
       "games": 2,
       "ppg": 19.5,
       "rpg": 7.5,
@@ -3402,7 +3402,7 @@
     },
     "keatonwagler": {
       "name": "Keaton Wagler",
-      "athlete_id": "5254165.0",
+      "athlete_id": "5254165",
       "games": 13,
       "ppg": 12.5,
       "rpg": 3.3,
@@ -3415,7 +3415,7 @@
     },
     "keeganmurray": {
       "name": "Keegan Murray",
-      "athlete_id": "4594327.0",
+      "athlete_id": "4594327",
       "games": 6,
       "ppg": 9.5,
       "rpg": 2.8,
@@ -3428,7 +3428,7 @@
     },
     "keldonjohnson": {
       "name": "Keldon Johnson",
-      "athlete_id": "4395723.0",
+      "athlete_id": "4395723",
       "games": 15,
       "ppg": 8.6,
       "rpg": 5.6,
@@ -3441,7 +3441,7 @@
     },
     "kelelware": {
       "name": "Kel'el Ware",
-      "athlete_id": "5105623.0",
+      "athlete_id": "5105623",
       "games": 14,
       "ppg": 8.6,
       "rpg": 6.8,
@@ -3454,7 +3454,7 @@
     },
     "kellyoubrejr": {
       "name": "Kelly Oubre Jr.",
-      "athlete_id": "3133603.0",
+      "athlete_id": "3133603",
       "games": 12,
       "ppg": 10.7,
       "rpg": 3.0,
@@ -3467,7 +3467,7 @@
     },
     "kenrichwilliams": {
       "name": "Kenrich Williams",
-      "athlete_id": "3133626.0",
+      "athlete_id": "3133626",
       "games": 14,
       "ppg": 7.1,
       "rpg": 3.6,
@@ -3480,7 +3480,7 @@
     },
     "kentaviouscaldwellpope": {
       "name": "Kentavious Caldwell-Pope",
-      "athlete_id": "2581018.0",
+      "athlete_id": "2581018",
       "games": 15,
       "ppg": 5.5,
       "rpg": 2.7,
@@ -3493,7 +3493,7 @@
     },
     "keonellis": {
       "name": "Keon Ellis",
-      "athlete_id": "4702177.0",
+      "athlete_id": "4702177",
       "games": 12,
       "ppg": 4.8,
       "rpg": 1.8,
@@ -3506,7 +3506,7 @@
     },
     "keshadjohnson": {
       "name": "Keshad Johnson",
-      "athlete_id": "4431786.0",
+      "athlete_id": "4431786",
       "games": 2,
       "ppg": 0.0,
       "rpg": 1.0,
@@ -3519,7 +3519,7 @@
     },
     "kevindurant": {
       "name": "Kevin Durant",
-      "athlete_id": "3202.0",
+      "athlete_id": "3202",
       "games": 15,
       "ppg": 21.3,
       "rpg": 5.5,
@@ -3532,7 +3532,7 @@
     },
     "kevinhuerter": {
       "name": "Kevin Huerter",
-      "athlete_id": "4066372.0",
+      "athlete_id": "4066372",
       "games": 13,
       "ppg": 9.8,
       "rpg": 2.8,
@@ -3545,7 +3545,7 @@
     },
     "kevonlooney": {
       "name": "Kevon Looney",
-      "athlete_id": "3155535.0",
+      "athlete_id": "3155535",
       "games": 7,
       "ppg": 1.7,
       "rpg": 2.6,
@@ -3558,7 +3558,7 @@
     },
     "keyontegeorge": {
       "name": "Keyonte George",
-      "athlete_id": "4433627.0",
+      "athlete_id": "4433627",
       "games": 14,
       "ppg": 21.0,
       "rpg": 4.3,
@@ -3571,7 +3571,7 @@
     },
     "khamanmaluach": {
       "name": "Khaman Maluach",
-      "athlete_id": "5203685.0",
+      "athlete_id": "5203685",
       "games": 13,
       "ppg": 7.4,
       "rpg": 5.8,
@@ -3584,7 +3584,7 @@
     },
     "khrismiddleton": {
       "name": "Khris Middleton",
-      "athlete_id": "6609.0",
+      "athlete_id": "6609",
       "games": 7,
       "ppg": 4.1,
       "rpg": 1.6,
@@ -3597,7 +3597,7 @@
     },
     "kingstonflemings": {
       "name": "Kingston Flemings",
-      "athlete_id": "5149077.0",
+      "athlete_id": "5149077",
       "games": 12,
       "ppg": 7.8,
       "rpg": 2.5,
@@ -3610,7 +3610,7 @@
     },
     "klaythompson": {
       "name": "Klay Thompson",
-      "athlete_id": "6475.0",
+      "athlete_id": "6475",
       "games": 13,
       "ppg": 15.5,
       "rpg": 1.4,
@@ -3623,7 +3623,7 @@
     },
     "koapeat": {
       "name": "Koa Peat",
-      "athlete_id": "5041953.0",
+      "athlete_id": "5041953",
       "games": 8,
       "ppg": 3.1,
       "rpg": 0.9,
@@ -3636,7 +3636,7 @@
     },
     "kobebrown": {
       "name": "Kobe Brown",
-      "athlete_id": "4431752.0",
+      "athlete_id": "4431752",
       "games": 7,
       "ppg": 4.0,
       "rpg": 2.0,
@@ -3649,7 +3649,7 @@
     },
     "kobesanders": {
       "name": "Kobe Sanders",
-      "athlete_id": "4702352.0",
+      "athlete_id": "4702352",
       "games": 13,
       "ppg": 8.5,
       "rpg": 2.8,
@@ -3662,7 +3662,7 @@
     },
     "konknueppel": {
       "name": "Kon Knueppel",
-      "athlete_id": "5061575.0",
+      "athlete_id": "5061575",
       "games": 1,
       "ppg": 3.0,
       "rpg": 0.0,
@@ -3675,7 +3675,7 @@
     },
     "krisdunn": {
       "name": "Kris Dunn",
-      "athlete_id": "2991139.0",
+      "athlete_id": "2991139",
       "games": 13,
       "ppg": 7.4,
       "rpg": 3.9,
@@ -3688,7 +3688,7 @@
     },
     "krismurray": {
       "name": "Kris Murray",
-      "athlete_id": "4594326.0",
+      "athlete_id": "4594326",
       "games": 10,
       "ppg": 1.2,
       "rpg": 1.6,
@@ -3701,7 +3701,7 @@
     },
     "kyleanderson": {
       "name": "Kyle Anderson",
-      "athlete_id": "2993874.0",
+      "athlete_id": "2993874",
       "games": 9,
       "ppg": 1.6,
       "rpg": 1.2,
@@ -3714,7 +3714,7 @@
     },
     "kylefilipowski": {
       "name": "Kyle Filipowski",
-      "athlete_id": "4684793.0",
+      "athlete_id": "4684793",
       "games": 9,
       "ppg": 3.0,
       "rpg": 1.6,
@@ -3727,7 +3727,7 @@
     },
     "kylekuzma": {
       "name": "Kyle Kuzma",
-      "athlete_id": "3134907.0",
+      "athlete_id": "3134907",
       "games": 14,
       "ppg": 11.3,
       "rpg": 5.3,
@@ -3740,7 +3740,7 @@
     },
     "kyrieirving": {
       "name": "Kyrie Irving",
-      "athlete_id": "6442.0",
+      "athlete_id": "6442",
       "games": 11,
       "ppg": 22.7,
       "rpg": 3.5,
@@ -3753,7 +3753,7 @@
     },
     "kyshawngeorge": {
       "name": "Kyshawn George",
-      "athlete_id": "5174563.0",
+      "athlete_id": "5174563",
       "games": 15,
       "ppg": 17.7,
       "rpg": 4.4,
@@ -3766,7 +3766,7 @@
     },
     "labaronphilonjr": {
       "name": "Labaron Philon Jr.",
-      "athlete_id": "4873090.0",
+      "athlete_id": "4873090",
       "games": 10,
       "ppg": 2.0,
       "rpg": 0.8,
@@ -3779,7 +3779,7 @@
     },
     "lameloball": {
       "name": "LaMelo Ball",
-      "athlete_id": "4432816.0",
+      "athlete_id": "4432816",
       "games": 15,
       "ppg": 17.7,
       "rpg": 4.1,
@@ -3792,7 +3792,7 @@
     },
     "landryshamet": {
       "name": "Landry Shamet",
-      "athlete_id": "3914044.0",
+      "athlete_id": "3914044",
       "games": 14,
       "ppg": 10.4,
       "rpg": 1.7,
@@ -3805,7 +3805,7 @@
     },
     "larrynancejr": {
       "name": "Larry Nance Jr.",
-      "athlete_id": "2580365.0",
+      "athlete_id": "2580365",
       "games": 13,
       "ppg": 4.4,
       "rpg": 2.5,
@@ -3818,7 +3818,7 @@
     },
     "laurimarkkanen": {
       "name": "Lauri Markkanen",
-      "athlete_id": "4066336.0",
+      "athlete_id": "4066336",
       "games": 8,
       "ppg": 18.0,
       "rpg": 6.8,
@@ -3831,7 +3831,7 @@
     },
     "lawsonlovering": {
       "name": "Lawson Lovering",
-      "athlete_id": "4596528.0",
+      "athlete_id": "4596528",
       "games": 2,
       "ppg": 0.0,
       "rpg": 0.5,
@@ -3844,7 +3844,7 @@
     },
     "leakyblack": {
       "name": "Leaky Black",
-      "athlete_id": "4395650.0",
+      "athlete_id": "4395650",
       "games": 9,
       "ppg": 5.2,
       "rpg": 3.3,
@@ -3857,7 +3857,7 @@
     },
     "lebronjames": {
       "name": "LeBron James",
-      "athlete_id": "1966.0",
+      "athlete_id": "1966",
       "games": 11,
       "ppg": 15.1,
       "rpg": 7.2,
@@ -3870,7 +3870,7 @@
     },
     "leonardmiller": {
       "name": "Leonard Miller",
-      "athlete_id": "5044385.0",
+      "athlete_id": "5044385",
       "games": 11,
       "ppg": 5.5,
       "rpg": 3.3,
@@ -3883,7 +3883,7 @@
     },
     "liammcneeley": {
       "name": "Liam McNeeley",
-      "athlete_id": "5239590.0",
+      "athlete_id": "5239590",
       "games": 8,
       "ppg": 2.9,
       "rpg": 1.2,
@@ -3896,7 +3896,7 @@
     },
     "ljcryer": {
       "name": "LJ Cryer",
-      "athlete_id": "4433149.0",
+      "athlete_id": "4433149",
       "games": 11,
       "ppg": 6.2,
       "rpg": 0.5,
@@ -3909,7 +3909,7 @@
     },
     "luguentzdort": {
       "name": "Luguentz Dort",
-      "athlete_id": "4397020.0",
+      "athlete_id": "4397020",
       "games": 14,
       "ppg": 8.9,
       "rpg": 3.1,
@@ -3922,7 +3922,7 @@
     },
     "lukadoncic": {
       "name": "Luka Doncic",
-      "athlete_id": "3945274.0",
+      "athlete_id": "3945274",
       "games": 13,
       "ppg": 38.8,
       "rpg": 7.1,
@@ -3935,7 +3935,7 @@
     },
     "lukagarza": {
       "name": "Luka Garza",
-      "athlete_id": "4277951.0",
+      "athlete_id": "4277951",
       "games": 14,
       "ppg": 5.9,
       "rpg": 3.0,
@@ -3948,7 +3948,7 @@
     },
     "lukekennard": {
       "name": "Luke Kennard",
-      "athlete_id": "3913174.0",
+      "athlete_id": "3913174",
       "games": 12,
       "ppg": 9.4,
       "rpg": 1.8,
@@ -3961,7 +3961,7 @@
     },
     "lukekornet": {
       "name": "Luke Kornet",
-      "athlete_id": "3064560.0",
+      "athlete_id": "3064560",
       "games": 15,
       "ppg": 3.4,
       "rpg": 4.1,
@@ -3974,7 +3974,7 @@
     },
     "malachismith": {
       "name": "Malachi Smith",
-      "athlete_id": "4397784.0",
+      "athlete_id": "4397784",
       "games": 2,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -3987,7 +3987,7 @@
     },
     "malevyleons": {
       "name": "Malevy Leons",
-      "athlete_id": "4897449.0",
+      "athlete_id": "4897449",
       "games": 9,
       "ppg": 1.0,
       "rpg": 1.1,
@@ -4000,7 +4000,7 @@
     },
     "malikdia": {
       "name": "Malik Dia",
-      "athlete_id": "4712862.0",
+      "athlete_id": "4712862",
       "games": 2,
       "ppg": 2.0,
       "rpg": 0.5,
@@ -4013,7 +4013,7 @@
     },
     "malikmonk": {
       "name": "Malik Monk",
-      "athlete_id": "4066262.0",
+      "athlete_id": "4066262",
       "games": 12,
       "ppg": 8.2,
       "rpg": 1.3,
@@ -4026,7 +4026,7 @@
     },
     "maliqbrown": {
       "name": "Maliq Brown",
-      "athlete_id": "5105337.0",
+      "athlete_id": "5105337",
       "games": 1,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -4039,7 +4039,7 @@
     },
     "marcussasser": {
       "name": "Marcus Sasser",
-      "athlete_id": "4432107.0",
+      "athlete_id": "4432107",
       "games": 11,
       "ppg": 5.5,
       "rpg": 1.1,
@@ -4052,7 +4052,7 @@
     },
     "marcussmart": {
       "name": "Marcus Smart",
-      "athlete_id": "2990992.0",
+      "athlete_id": "2990992",
       "games": 9,
       "ppg": 8.3,
       "rpg": 2.6,
@@ -4065,7 +4065,7 @@
     },
     "mariohezonja": {
       "name": "Mario Hezonja",
-      "athlete_id": "2995706.0",
+      "athlete_id": "2995706",
       "games": 15,
       "ppg": 8.6,
       "rpg": 5.3,
@@ -4078,7 +4078,7 @@
     },
     "marvinbagleyiii": {
       "name": "Marvin Bagley III",
-      "athlete_id": "4277848.0",
+      "athlete_id": "4277848",
       "games": 12,
       "ppg": 5.8,
       "rpg": 3.5,
@@ -4091,7 +4091,7 @@
     },
     "masonplumlee": {
       "name": "Mason Plumlee",
-      "athlete_id": "2488653.0",
+      "athlete_id": "2488653",
       "games": 1,
       "ppg": 2.0,
       "rpg": 0.0,
@@ -4104,7 +4104,7 @@
     },
     "matasbuzelis": {
       "name": "Matas Buzelis",
-      "athlete_id": "4711294.0",
+      "athlete_id": "4711294",
       "games": 13,
       "ppg": 14.4,
       "rpg": 4.7,
@@ -4117,7 +4117,7 @@
     },
     "matissethybulle": {
       "name": "Matisse Thybulle",
-      "athlete_id": "3907498.0",
+      "athlete_id": "3907498",
       "games": 15,
       "ppg": 7.4,
       "rpg": 2.5,
@@ -4130,7 +4130,7 @@
     },
     "maxchristie": {
       "name": "Max Christie",
-      "athlete_id": "4432582.0",
+      "athlete_id": "4432582",
       "games": 11,
       "ppg": 5.3,
       "rpg": 2.9,
@@ -4143,7 +4143,7 @@
     },
     "maxstrus": {
       "name": "Max Strus",
-      "athlete_id": "4065778.0",
+      "athlete_id": "4065778",
       "games": 7,
       "ppg": 8.4,
       "rpg": 3.3,
@@ -4156,7 +4156,7 @@
     },
     "meleekthomas": {
       "name": "Meleek Thomas",
-      "athlete_id": "5041951.0",
+      "athlete_id": "5041951",
       "games": 12,
       "ppg": 13.3,
       "rpg": 2.9,
@@ -4169,7 +4169,7 @@
     },
     "micahpeavy": {
       "name": "Micah Peavy",
-      "athlete_id": "4432185.0",
+      "athlete_id": "4432185",
       "games": 9,
       "ppg": 3.4,
       "rpg": 3.3,
@@ -4182,7 +4182,7 @@
     },
     "micahpotter": {
       "name": "Micah Potter",
-      "athlete_id": "4066399.0",
+      "athlete_id": "4066399",
       "games": 8,
       "ppg": 2.5,
       "rpg": 2.1,
@@ -4195,7 +4195,7 @@
     },
     "michaelporterjr": {
       "name": "Michael Porter Jr.",
-      "athlete_id": "4278104.0",
+      "athlete_id": "4278104",
       "games": 12,
       "ppg": 21.8,
       "rpg": 7.4,
@@ -4208,7 +4208,7 @@
     },
     "mikalbridges": {
       "name": "Mikal Bridges",
-      "athlete_id": "3147657.0",
+      "athlete_id": "3147657",
       "games": 14,
       "ppg": 7.5,
       "rpg": 3.6,
@@ -4221,7 +4221,7 @@
     },
     "mikeconley": {
       "name": "Mike Conley",
-      "athlete_id": "3195.0",
+      "athlete_id": "3195",
       "games": 4,
       "ppg": 3.0,
       "rpg": 0.8,
@@ -4234,7 +4234,7 @@
     },
     "mikelbrownjr": {
       "name": "Mikel Brown Jr.",
-      "athlete_id": "5101761.0",
+      "athlete_id": "5101761",
       "games": 9,
       "ppg": 11.0,
       "rpg": 1.9,
@@ -4247,7 +4247,7 @@
     },
     "milesbridges": {
       "name": "Miles Bridges",
-      "athlete_id": "4066383.0",
+      "athlete_id": "4066383",
       "games": 13,
       "ppg": 14.7,
       "rpg": 7.0,
@@ -4260,7 +4260,7 @@
     },
     "milesmcbride": {
       "name": "Miles McBride",
-      "athlete_id": "4431823.0",
+      "athlete_id": "4431823",
       "games": 14,
       "ppg": 7.3,
       "rpg": 1.4,
@@ -4273,7 +4273,7 @@
     },
     "mitchellrobinson": {
       "name": "Mitchell Robinson",
-      "athlete_id": "4351852.0",
+      "athlete_id": "4351852",
       "games": 13,
       "ppg": 5.1,
       "rpg": 5.5,
@@ -4286,7 +4286,7 @@
     },
     "mobamba": {
       "name": "Mo Bamba",
-      "athlete_id": "4277919.0",
+      "athlete_id": "4277919",
       "games": 11,
       "ppg": 9.8,
       "rpg": 6.2,
@@ -4299,7 +4299,7 @@
     },
     "mohameddiawara": {
       "name": "Mohamed Diawara",
-      "athlete_id": "5289900.0",
+      "athlete_id": "5289900",
       "games": 6,
       "ppg": 2.8,
       "rpg": 2.2,
@@ -4312,7 +4312,7 @@
     },
     "morezjohnsonjr": {
       "name": "Morez Johnson Jr.",
-      "athlete_id": "4873153.0",
+      "athlete_id": "4873153",
       "games": 13,
       "ppg": 6.3,
       "rpg": 4.7,
@@ -4325,7 +4325,7 @@
     },
     "moritzwagner": {
       "name": "Moritz Wagner",
-      "athlete_id": "3150844.0",
+      "athlete_id": "3150844",
       "games": 13,
       "ppg": 10.3,
       "rpg": 3.5,
@@ -4338,7 +4338,7 @@
     },
     "moussacisse": {
       "name": "Moussa Cisse",
-      "athlete_id": "4701208.0",
+      "athlete_id": "4701208",
       "games": 9,
       "ppg": 1.4,
       "rpg": 0.8,
@@ -4351,7 +4351,7 @@
     },
     "moussadiabate": {
       "name": "Moussa Diabate",
-      "athlete_id": "4433249.0",
+      "athlete_id": "4433249",
       "games": 12,
       "ppg": 8.7,
       "rpg": 10.2,
@@ -4364,7 +4364,7 @@
     },
     "mylesturner": {
       "name": "Myles Turner",
-      "athlete_id": "3133628.0",
+      "athlete_id": "3133628",
       "games": 13,
       "ppg": 7.4,
       "rpg": 6.1,
@@ -4377,7 +4377,7 @@
     },
     "myrongardner": {
       "name": "Myron Gardner",
-      "athlete_id": "4431772.0",
+      "athlete_id": "4431772",
       "games": 9,
       "ppg": 3.0,
       "rpg": 2.3,
@@ -4390,7 +4390,7 @@
     },
     "najimarshall": {
       "name": "Naji Marshall",
-      "athlete_id": "4278594.0",
+      "athlete_id": "4278594",
       "games": 11,
       "ppg": 11.5,
       "rpg": 2.7,
@@ -4403,7 +4403,7 @@
     },
     "nateament": {
       "name": "Nate Ament",
-      "athlete_id": "5164559.0",
+      "athlete_id": "5164559",
       "games": 12,
       "ppg": 7.3,
       "rpg": 2.6,
@@ -4416,7 +4416,7 @@
     },
     "nazreid": {
       "name": "Naz Reid",
-      "athlete_id": "4396971.0",
+      "athlete_id": "4396971",
       "games": 14,
       "ppg": 17.6,
       "rpg": 8.4,
@@ -4429,7 +4429,7 @@
     },
     "neemiasqueta": {
       "name": "Neemias Queta",
-      "athlete_id": "4397424.0",
+      "athlete_id": "4397424",
       "games": 13,
       "ppg": 9.1,
       "rpg": 6.6,
@@ -4442,7 +4442,7 @@
     },
     "nicclaxton": {
       "name": "Nic Claxton",
-      "athlete_id": "4278067.0",
+      "athlete_id": "4278067",
       "games": 4,
       "ppg": 7.8,
       "rpg": 4.5,
@@ -4455,7 +4455,7 @@
     },
     "nickeilalexanderwalker": {
       "name": "Nickeil Alexander-Walker",
-      "athlete_id": "4278039.0",
+      "athlete_id": "4278039",
       "games": 14,
       "ppg": 21.4,
       "rpg": 3.6,
@@ -4468,7 +4468,7 @@
     },
     "nickmartinelli": {
       "name": "Nick Martinelli",
-      "athlete_id": "5105832.0",
+      "athlete_id": "5105832",
       "games": 6,
       "ppg": 2.8,
       "rpg": 1.3,
@@ -4481,7 +4481,7 @@
     },
     "nickrichards": {
       "name": "Nick Richards",
-      "athlete_id": "4278076.0",
+      "athlete_id": "4278076",
       "games": 6,
       "ppg": 1.2,
       "rpg": 0.3,
@@ -4494,7 +4494,7 @@
     },
     "nikolajokic": {
       "name": "Nikola Jokic",
-      "athlete_id": "3112335.0",
+      "athlete_id": "3112335",
       "games": 12,
       "ppg": 24.1,
       "rpg": 10.9,
@@ -4507,7 +4507,7 @@
     },
     "nikolajovic": {
       "name": "Nikola Jovic",
-      "athlete_id": "4997528.0",
+      "athlete_id": "4997528",
       "games": 8,
       "ppg": 2.4,
       "rpg": 2.4,
@@ -4520,7 +4520,7 @@
     },
     "nikolatopic": {
       "name": "Nikola Topic",
-      "athlete_id": "5159925.0",
+      "athlete_id": "5159925",
       "games": 2,
       "ppg": 4.0,
       "rpg": 2.0,
@@ -4533,7 +4533,7 @@
     },
     "nikolavucevic": {
       "name": "Nikola Vucevic",
-      "athlete_id": "6478.0",
+      "athlete_id": "6478",
       "games": 12,
       "ppg": 2.7,
       "rpg": 2.8,
@@ -4546,7 +4546,7 @@
     },
     "niqueclifford": {
       "name": "Nique Clifford",
-      "athlete_id": "4702384.0",
+      "athlete_id": "4702384",
       "games": 12,
       "ppg": 2.6,
       "rpg": 1.4,
@@ -4559,7 +4559,7 @@
     },
     "noaessengue": {
       "name": "Noa Essengue",
-      "athlete_id": "5242496.0",
+      "athlete_id": "5242496",
       "games": 12,
       "ppg": 4.7,
       "rpg": 3.0,
@@ -4572,7 +4572,7 @@
     },
     "noahclowney": {
       "name": "Noah Clowney",
-      "athlete_id": "4712896.0",
+      "athlete_id": "4712896",
       "games": 13,
       "ppg": 6.9,
       "rpg": 4.5,
@@ -4585,7 +4585,7 @@
     },
     "nolantraore": {
       "name": "Nolan Traore",
-      "athlete_id": "5279130.0",
+      "athlete_id": "5279130",
       "games": 12,
       "ppg": 13.6,
       "rpg": 1.8,
@@ -4598,7 +4598,7 @@
     },
     "norchadomier": {
       "name": "Norchad Omier",
-      "athlete_id": "4702134.0",
+      "athlete_id": "4702134",
       "games": 4,
       "ppg": 4.2,
       "rpg": 4.8,
@@ -4611,12 +4611,12 @@
     },
     "normanpowell": {
       "name": "Norman Powell",
-      "athlete_id": "2595516.0",
+      "athlete_id": "2595516",
       "games": 11,
       "ppg": 21.6,
       "rpg": 2.9,
       "apg": 2.2,
-      "spg": 1.5,
+      "spg": 1.4,
       "bpg": 0.2,
       "fg_pct": 45.9,
       "fg3_pct": 32.4,
@@ -4624,7 +4624,7 @@
     },
     "obitoppin": {
       "name": "Obi Toppin",
-      "athlete_id": "4278355.0",
+      "athlete_id": "4278355",
       "games": 11,
       "ppg": 11.7,
       "rpg": 4.4,
@@ -4637,7 +4637,7 @@
     },
     "oganunoby": {
       "name": "OG Anunoby",
-      "athlete_id": "3934719.0",
+      "athlete_id": "3934719",
       "games": 14,
       "ppg": 16.4,
       "rpg": 5.3,
@@ -4650,7 +4650,7 @@
     },
     "oliviermaxenceprosper": {
       "name": "Olivier-Maxence Prosper",
-      "athlete_id": "4595400.0",
+      "athlete_id": "4595400",
       "games": 8,
       "ppg": 5.1,
       "rpg": 1.5,
@@ -4663,7 +4663,7 @@
     },
     "onyekaokongwu": {
       "name": "Onyeka Okongwu",
-      "athlete_id": "4431680.0",
+      "athlete_id": "4431680",
       "games": 14,
       "ppg": 14.1,
       "rpg": 8.1,
@@ -4676,7 +4676,7 @@
     },
     "oscartshiebwe": {
       "name": "Oscar Tshiebwe",
-      "athlete_id": "4432827.0",
+      "athlete_id": "4432827",
       "games": 10,
       "ppg": 2.7,
       "rpg": 3.2,
@@ -4689,7 +4689,7 @@
     },
     "osoighodaro": {
       "name": "Oso Ighodaro",
-      "athlete_id": "4601023.0",
+      "athlete_id": "4601023",
       "games": 11,
       "ppg": 6.0,
       "rpg": 5.4,
@@ -4702,7 +4702,7 @@
     },
     "ousmanedieng": {
       "name": "Ousmane Dieng",
-      "athlete_id": "4997526.0",
+      "athlete_id": "4997526",
       "games": 10,
       "ppg": 3.9,
       "rpg": 1.2,
@@ -4715,7 +4715,7 @@
     },
     "pacomedadiet": {
       "name": "Pacome Dadiet",
-      "athlete_id": "5211983.0",
+      "athlete_id": "5211983",
       "games": 5,
       "ppg": 2.4,
       "rpg": 0.6,
@@ -4728,7 +4728,7 @@
     },
     "paolobanchero": {
       "name": "Paolo Banchero",
-      "athlete_id": "4432573.0",
+      "athlete_id": "4432573",
       "games": 2,
       "ppg": 24.5,
       "rpg": 6.5,
@@ -4741,7 +4741,7 @@
     },
     "pascalsiakam": {
       "name": "Pascal Siakam",
-      "athlete_id": "3149673.0",
+      "athlete_id": "3149673",
       "games": 13,
       "ppg": 23.1,
       "rpg": 6.2,
@@ -4754,7 +4754,7 @@
     },
     "patrickwilliams": {
       "name": "Patrick Williams",
-      "athlete_id": "4431687.0",
+      "athlete_id": "4431687",
       "games": 6,
       "ppg": 7.8,
       "rpg": 3.2,
@@ -4767,7 +4767,7 @@
     },
     "patspencer": {
       "name": "Pat Spencer",
-      "athlete_id": "4592714.0",
+      "athlete_id": "4592714",
       "games": 4,
       "ppg": 1.2,
       "rpg": 1.2,
@@ -4780,7 +4780,7 @@
     },
     "paulgeorge": {
       "name": "Paul George",
-      "athlete_id": "4251.0",
+      "athlete_id": "4251",
       "games": 12,
       "ppg": 20.8,
       "rpg": 5.6,
@@ -4793,7 +4793,7 @@
     },
     "paulreed": {
       "name": "Paul Reed",
-      "athlete_id": "4278562.0",
+      "athlete_id": "4278562",
       "games": 13,
       "ppg": 11.2,
       "rpg": 7.7,
@@ -4806,7 +4806,7 @@
     },
     "paytonpritchard": {
       "name": "Payton Pritchard",
-      "athlete_id": "4066354.0",
+      "athlete_id": "4066354",
       "games": 14,
       "ppg": 13.6,
       "rpg": 3.2,
@@ -4819,7 +4819,7 @@
     },
     "pellelarsson": {
       "name": "Pelle Larsson",
-      "athlete_id": "4601025.0",
+      "athlete_id": "4601025",
       "games": 11,
       "ppg": 11.4,
       "rpg": 3.5,
@@ -4832,7 +4832,7 @@
     },
     "petenance": {
       "name": "Pete Nance",
-      "athlete_id": "4397233.0",
+      "athlete_id": "4397233",
       "games": 1,
       "ppg": 3.0,
       "rpg": 1.0,
@@ -4845,7 +4845,7 @@
     },
     "peytonwatson": {
       "name": "Peyton Watson",
-      "athlete_id": "4576087.0",
+      "athlete_id": "4576087",
       "games": 12,
       "ppg": 10.7,
       "rpg": 4.5,
@@ -4858,7 +4858,7 @@
     },
     "pjhall": {
       "name": "PJ Hall",
-      "athlete_id": "4701225.0",
+      "athlete_id": "4701225",
       "games": 2,
       "ppg": 0.0,
       "rpg": 1.0,
@@ -4871,7 +4871,7 @@
     },
     "pjwashington": {
       "name": "P.J. Washington",
-      "athlete_id": "4278078.0",
+      "athlete_id": "4278078",
       "games": 14,
       "ppg": 13.5,
       "rpg": 6.8,
@@ -4884,7 +4884,7 @@
     },
     "preciousachiuwa": {
       "name": "Precious Achiuwa",
-      "athlete_id": "4431679.0",
+      "athlete_id": "4431679",
       "games": 11,
       "ppg": 10.4,
       "rpg": 6.4,
@@ -4897,7 +4897,7 @@
     },
     "quentingrimes": {
       "name": "Quentin Grimes",
-      "athlete_id": "4397014.0",
+      "athlete_id": "4397014",
       "games": 13,
       "ppg": 12.1,
       "rpg": 3.1,
@@ -4910,7 +4910,7 @@
     },
     "quentonjackson": {
       "name": "Quenton Jackson",
-      "athlete_id": "4592829.0",
+      "athlete_id": "4592829",
       "games": 14,
       "ppg": 9.4,
       "rpg": 3.8,
@@ -4923,7 +4923,7 @@
     },
     "quintenpost": {
       "name": "Quinten Post",
-      "athlete_id": "4593016.0",
+      "athlete_id": "4593016",
       "games": 9,
       "ppg": 5.0,
       "rpg": 2.2,
@@ -4936,7 +4936,7 @@
     },
     "rasheerfleming": {
       "name": "Rasheer Fleming",
-      "athlete_id": "5105977.0",
+      "athlete_id": "5105977",
       "games": 4,
       "ppg": 1.8,
       "rpg": 1.5,
@@ -4949,7 +4949,7 @@
     },
     "rayanrupert": {
       "name": "Rayan Rupert",
-      "athlete_id": "5099752.0",
+      "athlete_id": "5099752",
       "games": 3,
       "ppg": 0.7,
       "rpg": 1.0,
@@ -4962,7 +4962,7 @@
     },
     "rayjdennis": {
       "name": "RayJ Dennis",
-      "athlete_id": "4431941.0",
+      "athlete_id": "4431941",
       "games": 2,
       "ppg": 5.0,
       "rpg": 1.5,
@@ -4975,7 +4975,7 @@
     },
     "reecebeekman": {
       "name": "Reece Beekman",
-      "athlete_id": "4432187.0",
+      "athlete_id": "4432187",
       "games": 1,
       "ppg": 0.0,
       "rpg": 0.0,
@@ -4988,7 +4988,7 @@
     },
     "reedsheppard": {
       "name": "Reed Sheppard",
-      "athlete_id": "4711272.0",
+      "athlete_id": "4711272",
       "games": 12,
       "ppg": 8.9,
       "rpg": 1.5,
@@ -5001,7 +5001,7 @@
     },
     "rileyminix": {
       "name": "Riley Minix",
-      "athlete_id": "5177362.0",
+      "athlete_id": "5177362",
       "games": 4,
       "ppg": 3.0,
       "rpg": 2.0,
@@ -5014,7 +5014,7 @@
     },
     "rjbarrett": {
       "name": "RJ Barrett",
-      "athlete_id": "4395625.0",
+      "athlete_id": "4395625",
       "games": 14,
       "ppg": 20.9,
       "rpg": 6.4,
@@ -5027,7 +5027,7 @@
     },
     "robertwilliamsiii": {
       "name": "Robert Williams III",
-      "athlete_id": "4066211.0",
+      "athlete_id": "4066211",
       "games": 12,
       "ppg": 6.5,
       "rpg": 6.6,
@@ -5040,7 +5040,7 @@
     },
     "roccozikarsky": {
       "name": "Rocco Zikarsky",
-      "athlete_id": "5157587.0",
+      "athlete_id": "5157587",
       "games": 1,
       "ppg": 0.0,
       "rpg": 1.0,
@@ -5053,7 +5053,7 @@
     },
     "ronaldhollandii": {
       "name": "Ronald Holland II",
-      "athlete_id": "4683771.0",
+      "athlete_id": "4683771",
       "games": 12,
       "ppg": 4.9,
       "rpg": 3.8,
@@ -5066,7 +5066,7 @@
     },
     "ronharperjr": {
       "name": "Ron Harper Jr.",
-      "athlete_id": "4397251.0",
+      "athlete_id": "4397251",
       "games": 7,
       "ppg": 2.6,
       "rpg": 0.6,
@@ -5079,7 +5079,7 @@
     },
     "royceoneale": {
       "name": "Royce O'Neale",
-      "athlete_id": "2583632.0",
+      "athlete_id": "2583632",
       "games": 14,
       "ppg": 5.7,
       "rpg": 3.2,
@@ -5092,7 +5092,7 @@
     },
     "rudygobert": {
       "name": "Rudy Gobert",
-      "athlete_id": "3032976.0",
+      "athlete_id": "3032976",
       "games": 14,
       "ppg": 7.6,
       "rpg": 11.1,
@@ -5105,7 +5105,7 @@
     },
     "ruihachimura": {
       "name": "Rui Hachimura",
-      "athlete_id": "4066648.0",
+      "athlete_id": "4066648",
       "games": 11,
       "ppg": 13.3,
       "rpg": 5.9,
@@ -5118,7 +5118,7 @@
     },
     "ryanconwell": {
       "name": "Ryan Conwell",
-      "athlete_id": "5107157.0",
+      "athlete_id": "5107157",
       "games": 12,
       "ppg": 6.8,
       "rpg": 1.8,
@@ -5131,7 +5131,7 @@
     },
     "ryandunn": {
       "name": "Ryan Dunn",
-      "athlete_id": "4888725.0",
+      "athlete_id": "4888725",
       "games": 13,
       "ppg": 5.1,
       "rpg": 3.9,
@@ -5144,7 +5144,7 @@
     },
     "ryankalkbrenner": {
       "name": "Ryan Kalkbrenner",
-      "athlete_id": "4576060.0",
+      "athlete_id": "4576060",
       "games": 14,
       "ppg": 4.7,
       "rpg": 5.2,
@@ -5157,7 +5157,7 @@
     },
     "ryannembhard": {
       "name": "Ryan Nembhard",
-      "athlete_id": "4433629.0",
+      "athlete_id": "4433629",
       "games": 3,
       "ppg": 3.0,
       "rpg": 0.3,
@@ -5170,7 +5170,7 @@
     },
     "ryanrollins": {
       "name": "Ryan Rollins",
-      "athlete_id": "4591725.0",
+      "athlete_id": "4591725",
       "games": 13,
       "ppg": 10.5,
       "rpg": 5.0,
@@ -5183,7 +5183,7 @@
     },
     "saddiqbey": {
       "name": "Saddiq Bey",
-      "athlete_id": "4397136.0",
+      "athlete_id": "4397136",
       "games": 15,
       "ppg": 16.9,
       "rpg": 4.2,
@@ -5196,7 +5196,7 @@
     },
     "samhauser": {
       "name": "Sam Hauser",
-      "athlete_id": "4065804.0",
+      "athlete_id": "4065804",
       "games": 14,
       "ppg": 8.4,
       "rpg": 3.1,
@@ -5209,7 +5209,7 @@
     },
     "sammerrill": {
       "name": "Sam Merrill",
-      "athlete_id": "4066757.0",
+      "athlete_id": "4066757",
       "games": 9,
       "ppg": 7.7,
       "rpg": 3.4,
@@ -5222,7 +5222,7 @@
     },
     "sandromamukelashvili": {
       "name": "Sandro Mamukelashvili",
-      "athlete_id": "4278580.0",
+      "athlete_id": "4278580",
       "games": 15,
       "ppg": 9.9,
       "rpg": 4.2,
@@ -5235,7 +5235,7 @@
     },
     "santialdama": {
       "name": "Santi Aldama",
-      "athlete_id": "4593125.0",
+      "athlete_id": "4593125",
       "games": 5,
       "ppg": 8.0,
       "rpg": 3.6,
@@ -5248,7 +5248,7 @@
     },
     "scoothenderson": {
       "name": "Scoot Henderson",
-      "athlete_id": "4683678.0",
+      "athlete_id": "4683678",
       "games": 14,
       "ppg": 8.7,
       "rpg": 1.8,
@@ -5261,7 +5261,7 @@
     },
     "scottiebarnes": {
       "name": "Scottie Barnes",
-      "athlete_id": "4433134.0",
+      "athlete_id": "4433134",
       "games": 10,
       "ppg": 23.8,
       "rpg": 7.4,
@@ -5274,7 +5274,7 @@
     },
     "scottypippenjr": {
       "name": "Scotty Pippen Jr.",
-      "athlete_id": "4431785.0",
+      "athlete_id": "4431785",
       "games": 5,
       "ppg": 6.4,
       "rpg": 2.2,
@@ -5287,7 +5287,7 @@
     },
     "sergiodelarrea": {
       "name": "Sergio de Larrea",
-      "athlete_id": "5279129.0",
+      "athlete_id": "5279129",
       "games": 4,
       "ppg": 5.2,
       "rpg": 2.0,
@@ -5300,7 +5300,7 @@
     },
     "shaigilgeousalexander": {
       "name": "Shai Gilgeous-Alexander",
-      "athlete_id": "4278073.0",
+      "athlete_id": "4278073",
       "games": 14,
       "ppg": 30.9,
       "rpg": 4.1,
@@ -5313,7 +5313,7 @@
     },
     "sidycissoko": {
       "name": "Sidy Cissoko",
-      "athlete_id": "5081727.0",
+      "athlete_id": "5081727",
       "games": 14,
       "ppg": 7.5,
       "rpg": 3.7,
@@ -5326,7 +5326,7 @@
     },
     "simonefontecchio": {
       "name": "Simone Fontecchio",
-      "athlete_id": "3899664.0",
+      "athlete_id": "3899664",
       "games": 8,
       "ppg": 2.9,
       "rpg": 1.6,
@@ -5339,7 +5339,7 @@
     },
     "sionjames": {
       "name": "Sion James",
-      "athlete_id": "4602025.0",
+      "athlete_id": "4602025",
       "games": 14,
       "ppg": 5.6,
       "rpg": 4.0,
@@ -5352,7 +5352,7 @@
     },
     "spencerjones": {
       "name": "Spencer Jones",
-      "athlete_id": "4592427.0",
+      "athlete_id": "4592427",
       "games": 5,
       "ppg": 4.8,
       "rpg": 2.4,
@@ -5365,7 +5365,7 @@
     },
     "stephencurry": {
       "name": "Stephen Curry",
-      "athlete_id": "3975.0",
+      "athlete_id": "3975",
       "games": 10,
       "ppg": 27.8,
       "rpg": 3.7,
@@ -5378,7 +5378,7 @@
     },
     "stephoncastle": {
       "name": "Stephon Castle",
-      "athlete_id": "4845367.0",
+      "athlete_id": "4845367",
       "games": 15,
       "ppg": 15.3,
       "rpg": 5.2,
@@ -5391,7 +5391,7 @@
     },
     "stevenadams": {
       "name": "Steven Adams",
-      "athlete_id": "2991235.0",
+      "athlete_id": "2991235",
       "games": 2,
       "ppg": 5.0,
       "rpg": 4.5,
@@ -5404,7 +5404,7 @@
     },
     "svimykhailiuk": {
       "name": "Svi Mykhailiuk",
-      "athlete_id": "3133602.0",
+      "athlete_id": "3133602",
       "games": 15,
       "ppg": 3.8,
       "rpg": 1.9,
@@ -5417,7 +5417,7 @@
     },
     "tackofall": {
       "name": "Tacko Fall",
-      "athlete_id": "3904625.0",
+      "athlete_id": "3904625",
       "games": 4,
       "ppg": 0.0,
       "rpg": 1.0,
@@ -5430,7 +5430,7 @@
     },
     "tarieason": {
       "name": "Tari Eason",
-      "athlete_id": "4433192.0",
+      "athlete_id": "4433192",
       "games": 15,
       "ppg": 10.5,
       "rpg": 6.3,
@@ -5443,7 +5443,7 @@
     },
     "tarrisreedjr": {
       "name": "Tarris Reed Jr.",
-      "athlete_id": "5105809.0",
+      "athlete_id": "5105809",
       "games": 9,
       "ppg": 2.0,
       "rpg": 2.9,
@@ -5456,7 +5456,7 @@
     },
     "taureanprince": {
       "name": "Taurean Prince",
-      "athlete_id": "2990962.0",
+      "athlete_id": "2990962",
       "games": 3,
       "ppg": 2.0,
       "rpg": 0.7,
@@ -5469,7 +5469,7 @@
     },
     "taylorhendricks": {
       "name": "Taylor Hendricks",
-      "athlete_id": "4684806.0",
+      "athlete_id": "4684806",
       "games": 9,
       "ppg": 7.4,
       "rpg": 3.3,
@@ -5482,7 +5482,7 @@
     },
     "terancemann": {
       "name": "Terance Mann",
-      "athlete_id": "3907823.0",
+      "athlete_id": "3907823",
       "games": 7,
       "ppg": 1.4,
       "rpg": 1.1,
@@ -5495,7 +5495,7 @@
     },
     "terrenceshannonjr": {
       "name": "Terrence Shannon Jr.",
-      "athlete_id": "4432847.0",
+      "athlete_id": "4432847",
       "games": 12,
       "ppg": 12.9,
       "rpg": 3.3,
@@ -5508,7 +5508,7 @@
     },
     "thomasbryant": {
       "name": "Thomas Bryant",
-      "athlete_id": "3934723.0",
+      "athlete_id": "3934723",
       "games": 9,
       "ppg": 9.9,
       "rpg": 3.3,
@@ -5521,7 +5521,7 @@
     },
     "tidjanesalaun": {
       "name": "Tidjane Salaun",
-      "athlete_id": "5211176.0",
+      "athlete_id": "5211176",
       "games": 13,
       "ppg": 5.5,
       "rpg": 3.2,
@@ -5534,7 +5534,7 @@
     },
     "timhardawayjr": {
       "name": "Tim Hardaway Jr.",
-      "athlete_id": "2528210.0",
+      "athlete_id": "2528210",
       "games": 11,
       "ppg": 4.5,
       "rpg": 1.5,
@@ -5547,7 +5547,7 @@
     },
     "tjmcconnell": {
       "name": "T.J. McConnell",
-      "athlete_id": "2530530.0",
+      "athlete_id": "2530530",
       "games": 5,
       "ppg": 6.6,
       "rpg": 2.6,
@@ -5560,12 +5560,12 @@
     },
     "tobeawaka": {
       "name": "Tobe Awaka",
-      "athlete_id": "5105555.0",
+      "athlete_id": "5105555",
       "games": 4,
       "ppg": 2.0,
       "rpg": 5.2,
       "apg": 0.8,
-      "spg": 0.2,
+      "spg": 0.5,
       "bpg": 0.8,
       "fg_pct": 75.0,
       "fg3_pct": null,
@@ -5573,7 +5573,7 @@
     },
     "tobilawal": {
       "name": "Tobi Lawal",
-      "athlete_id": "5106040.0",
+      "athlete_id": "5106040",
       "games": 8,
       "ppg": 1.4,
       "rpg": 1.1,
@@ -5586,7 +5586,7 @@
     },
     "tolusmith": {
       "name": "Tolu Smith",
-      "athlete_id": "4397882.0",
+      "athlete_id": "4397882",
       "games": 8,
       "ppg": 1.1,
       "rpg": 1.6,
@@ -5599,7 +5599,7 @@
     },
     "tonybradley": {
       "name": "Tony Bradley",
-      "athlete_id": "4065673.0",
+      "athlete_id": "4065673",
       "games": 8,
       "ppg": 2.1,
       "rpg": 3.1,
@@ -5612,7 +5612,7 @@
     },
     "toumanicamara": {
       "name": "Toumani Camara",
-      "athlete_id": "4431736.0",
+      "athlete_id": "4431736",
       "games": 14,
       "ppg": 12.2,
       "rpg": 3.4,
@@ -5625,7 +5625,7 @@
     },
     "traeyoung": {
       "name": "Trae Young",
-      "athlete_id": "4277905.0",
+      "athlete_id": "4277905",
       "games": 15,
       "ppg": 17.9,
       "rpg": 2.9,
@@ -5638,7 +5638,7 @@
     },
     "traycejacksondavis": {
       "name": "Trayce Jackson-Davis",
-      "athlete_id": "4431684.0",
+      "athlete_id": "4431684",
       "games": 9,
       "ppg": 3.1,
       "rpg": 2.7,
@@ -5651,7 +5651,7 @@
     },
     "tredonaldson": {
       "name": "Tre Donaldson",
-      "athlete_id": "4837356.0",
+      "athlete_id": "4837356",
       "games": 2,
       "ppg": 1.0,
       "rpg": 0.0,
@@ -5664,7 +5664,7 @@
     },
     "trejohnson": {
       "name": "Tre Johnson",
-      "athlete_id": "5238230.0",
+      "athlete_id": "5238230",
       "games": 13,
       "ppg": 9.6,
       "rpg": 2.0,
@@ -5677,7 +5677,7 @@
     },
     "trejones": {
       "name": "Tre Jones",
-      "athlete_id": "4395626.0",
+      "athlete_id": "4395626",
       "games": 13,
       "ppg": 10.9,
       "rpg": 2.2,
@@ -5690,7 +5690,7 @@
     },
     "tremann": {
       "name": "Tre Mann",
-      "athlete_id": "4432819.0",
+      "athlete_id": "4432819",
       "games": 7,
       "ppg": 1.4,
       "rpg": 0.1,
@@ -5703,7 +5703,7 @@
     },
     "trendonwatford": {
       "name": "Trendon Watford",
-      "athlete_id": "4431675.0",
+      "athlete_id": "4431675",
       "games": 6,
       "ppg": 7.2,
       "rpg": 3.5,
@@ -5716,7 +5716,7 @@
     },
     "trevonbrazile": {
       "name": "Trevon Brazile",
-      "athlete_id": "4698719.0",
+      "athlete_id": "4698719",
       "games": 12,
       "ppg": 7.1,
       "rpg": 5.2,
@@ -5729,7 +5729,7 @@
     },
     "treylyles": {
       "name": "Trey Lyles",
-      "athlete_id": "3136196.0",
+      "athlete_id": "3136196",
       "games": 15,
       "ppg": 6.3,
       "rpg": 3.9,
@@ -5742,7 +5742,7 @@
     },
     "treymurphyiii": {
       "name": "Trey Murphy III",
-      "athlete_id": "4397688.0",
+      "athlete_id": "4397688",
       "games": 9,
       "ppg": 15.6,
       "rpg": 4.8,
@@ -5755,7 +5755,7 @@
     },
     "tristandasilva": {
       "name": "Tristan da Silva",
-      "athlete_id": "4702382.0",
+      "athlete_id": "4702382",
       "games": 11,
       "ppg": 14.6,
       "rpg": 4.1,
@@ -5768,7 +5768,7 @@
     },
     "tristanenaruna": {
       "name": "Tristan Enaruna",
-      "athlete_id": "4431734.0",
+      "athlete_id": "4431734",
       "games": 3,
       "ppg": 2.3,
       "rpg": 1.7,
@@ -5781,7 +5781,7 @@
     },
     "tyjerome": {
       "name": "Ty Jerome",
-      "athlete_id": "4065733.0",
+      "athlete_id": "4065733",
       "games": 11,
       "ppg": 25.4,
       "rpg": 3.4,
@@ -5794,7 +5794,7 @@
     },
     "tylerherro": {
       "name": "Tyler Herro",
-      "athlete_id": "4395725.0",
+      "athlete_id": "4395725",
       "games": 13,
       "ppg": 20.3,
       "rpg": 4.2,
@@ -5807,7 +5807,7 @@
     },
     "tylerkolek": {
       "name": "Tyler Kolek",
-      "athlete_id": "4433225.0",
+      "athlete_id": "4433225",
       "games": 12,
       "ppg": 3.3,
       "rpg": 1.9,
@@ -5820,7 +5820,7 @@
     },
     "tyresehaliburton": {
       "name": "Tyrese Haliburton",
-      "athlete_id": "4396993.0",
+      "athlete_id": "4396993",
       "games": 4,
       "ppg": 21.8,
       "rpg": 4.5,
@@ -5833,7 +5833,7 @@
     },
     "tyresemaxey": {
       "name": "Tyrese Maxey",
-      "athlete_id": "4431678.0",
+      "athlete_id": "4431678",
       "games": 15,
       "ppg": 26.5,
       "rpg": 3.3,
@@ -5846,7 +5846,7 @@
     },
     "tyreseproctor": {
       "name": "Tyrese Proctor",
-      "athlete_id": "5023693.0",
+      "athlete_id": "5023693",
       "games": 14,
       "ppg": 9.9,
       "rpg": 3.5,
@@ -5859,7 +5859,7 @@
     },
     "tyusjones": {
       "name": "Tyus Jones",
-      "athlete_id": "3135046.0",
+      "athlete_id": "3135046",
       "games": 12,
       "ppg": 2.2,
       "rpg": 0.6,
@@ -5872,7 +5872,7 @@
     },
     "victorwembanyama": {
       "name": "Victor Wembanyama",
-      "athlete_id": "5104157.0",
+      "athlete_id": "5104157",
       "games": 15,
       "ppg": 28.4,
       "rpg": 12.0,
@@ -5885,7 +5885,7 @@
     },
     "vitkrejci": {
       "name": "Vit Krejci",
-      "athlete_id": "4578893.0",
+      "athlete_id": "4578893",
       "games": 7,
       "ppg": 2.7,
       "rpg": 1.6,
@@ -5898,7 +5898,7 @@
     },
     "vjedgecombe": {
       "name": "VJ Edgecombe",
-      "athlete_id": "5124612.0",
+      "athlete_id": "5124612",
       "games": 14,
       "ppg": 12.9,
       "rpg": 6.4,
@@ -5911,7 +5911,7 @@
     },
     "walkerkessler": {
       "name": "Walker Kessler",
-      "athlete_id": "4433136.0",
+      "athlete_id": "4433136",
       "games": 14,
       "ppg": 14.5,
       "rpg": 10.9,
@@ -5924,7 +5924,7 @@
     },
     "walterclaytonjr": {
       "name": "Walter Clayton Jr.",
-      "athlete_id": "4896372.0",
+      "athlete_id": "4896372",
       "games": 13,
       "ppg": 7.1,
       "rpg": 3.0,
@@ -5937,7 +5937,7 @@
     },
     "wendellcarterjr": {
       "name": "Wendell Carter Jr.",
-      "athlete_id": "4277847.0",
+      "athlete_id": "4277847",
       "games": 13,
       "ppg": 13.2,
       "rpg": 8.8,
@@ -5950,7 +5950,7 @@
     },
     "willrichard": {
       "name": "Will Richard",
-      "athlete_id": "4897262.0",
+      "athlete_id": "4897262",
       "games": 13,
       "ppg": 6.0,
       "rpg": 2.2,
@@ -5963,7 +5963,7 @@
     },
     "willriley": {
       "name": "Will Riley",
-      "athlete_id": "5144126.0",
+      "athlete_id": "5144126",
       "games": 12,
       "ppg": 2.9,
       "rpg": 0.5,
@@ -5976,7 +5976,7 @@
     },
     "yanghansen": {
       "name": "Yang Hansen",
-      "athlete_id": "5217746.0",
+      "athlete_id": "5217746",
       "games": 8,
       "ppg": 3.5,
       "rpg": 2.8,
@@ -5989,7 +5989,7 @@
     },
     "yaxellendeborg": {
       "name": "Yaxel Lendeborg",
-      "athlete_id": "5175737.0",
+      "athlete_id": "5175737",
       "games": 14,
       "ppg": 20.8,
       "rpg": 7.4,
@@ -6002,7 +6002,7 @@
     },
     "yvesmissi": {
       "name": "Yves Missi",
-      "athlete_id": "5061589.0",
+      "athlete_id": "5061589",
       "games": 4,
       "ppg": 7.0,
       "rpg": 9.2,
@@ -6015,7 +6015,7 @@
     },
     "zaccharierisacher": {
       "name": "Zaccharie Risacher",
-      "athlete_id": "5211175.0",
+      "athlete_id": "5211175",
       "games": 14,
       "ppg": 8.8,
       "rpg": 4.8,
@@ -6028,7 +6028,7 @@
     },
     "zachcollins": {
       "name": "Zach Collins",
-      "athlete_id": "4066650.0",
+      "athlete_id": "4066650",
       "games": 8,
       "ppg": 2.4,
       "rpg": 2.8,
@@ -6041,7 +6041,7 @@
     },
     "zachedey": {
       "name": "Zach Edey",
-      "athlete_id": "4600663.0",
+      "athlete_id": "4600663",
       "games": 11,
       "ppg": 9.0,
       "rpg": 7.9,
@@ -6054,7 +6054,7 @@
     },
     "zachlavine": {
       "name": "Zach LaVine",
-      "athlete_id": "3064440.0",
+      "athlete_id": "3064440",
       "games": 12,
       "ppg": 21.4,
       "rpg": 3.2,
@@ -6067,7 +6067,7 @@
     },
     "zekennaji": {
       "name": "Zeke Nnaji",
-      "athlete_id": "4431690.0",
+      "athlete_id": "4431690",
       "games": 2,
       "ppg": 3.5,
       "rpg": 0.5,
@@ -6080,7 +6080,7 @@
     },
     "ziairewilliams": {
       "name": "Ziaire Williams",
-      "athlete_id": "4433137.0",
+      "athlete_id": "4433137",
       "games": 12,
       "ppg": 9.7,
       "rpg": 2.4,
@@ -6093,7 +6093,7 @@
     },
     "zionwilliamson": {
       "name": "Zion Williamson",
-      "athlete_id": "4395628.0",
+      "athlete_id": "4395628",
       "games": 14,
       "ppg": 21.5,
       "rpg": 5.3,
@@ -6106,7 +6106,7 @@
     },
     "zubyejiofor": {
       "name": "Zuby Ejiofor",
-      "athlete_id": "5106262.0",
+      "athlete_id": "5106262",
       "games": 8,
       "ppg": 4.8,
       "rpg": 3.0,
@@ -6119,7 +6119,7 @@
     },
     "zyonpullin": {
       "name": "Zyon Pullin",
-      "athlete_id": "4592979.0",
+      "athlete_id": "4592979",
       "games": 3,
       "ppg": 1.3,
       "rpg": 0.7,
