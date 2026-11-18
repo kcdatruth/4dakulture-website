@@ -17,7 +17,7 @@ try{
  // Never infer current team from a historical scouting profile or stats box score.
  const teams=[['1','Atlanta Hawks'],['2','Boston Celtics'],['17','Brooklyn Nets'],['30','Charlotte Hornets'],['4','Chicago Bulls'],['5','Cleveland Cavaliers'],['6','Dallas Mavericks'],['7','Denver Nuggets'],['8','Detroit Pistons'],['9','Golden State Warriors'],['10','Houston Rockets'],['11','Indiana Pacers'],['12','LA Clippers'],['13','Los Angeles Lakers'],['29','Memphis Grizzlies'],['14','Miami Heat'],['15','Milwaukee Bucks'],['16','Minnesota Timberwolves'],['3','New Orleans Pelicans'],['18','New York Knicks'],['25','Oklahoma City Thunder'],['19','Orlando Magic'],['20','Philadelphia 76ers'],['21','Phoenix Suns'],['22','Portland Trail Blazers'],['23','Sacramento Kings'],['24','San Antonio Spurs'],['28','Toronto Raptors'],['26','Utah Jazz'],['27','Washington Wizards']];
  const verifiedById=new Map(),verifiedByName=new Map(),conflicts=new Set();
- const idKey=x=>String(x??'').replace(/\\.0$/,'');
+ const idKey=x=>String(x??'').replace(/\.0$/,'');
  let verifiedTeams=0;
  const verifyTeam=async([teamId,teamName])=>{
   try{
