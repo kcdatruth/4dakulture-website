@@ -51,6 +51,25 @@ def main():
             if pid in players and players[pid]["teamId"] != tid:
                 raise ValueError(f"Conflicting roster assignment for ESPN athlete {pid}")
             players[pid] = {"id":pid,"name":name,"teamId":tid,"team":team}
+            # Birth date is source-provided only; never infer age from a class or rookie status.
+            dob = athlete.get("dateOfBirth")
+            if isinstance(dob, str) and len(dob) >= 10:
+                try:
+                    parsed = dt.date.fromisoformat(dob[:10])
+                    if dt.date(1940, 1, 1) <= parsed <= dt.date.today():
+                        players[pid]["dateOfBirth"] = parsed.isoformat()
+                except ValueError:
+                    pass
+            for field in ("position", "jersey", "height", "weight", "college", "experience"):
+                value = athlete.get(field)
+                if field == "position" and isinstance(value, dict):
+                    value = value.get("abbreviation") or value.get("displayName")
+                if field == "college" and isinstance(value, dict):
+                    value = value.get("name") or value.get("displayName")
+                if field == "experience" and isinstance(value, dict):
+                    value = value.get("years")
+                if isinstance(value, (str, int, float)) and value != "":
+                    players[pid][field] = value
     if len(team_counts) != 30 or len(players) < 300:
         raise ValueError("Incomplete leaguewide roster snapshot")
     payload = {
