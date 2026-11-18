@@ -47,7 +47,7 @@ try{
 
  const render=()=>{
   grid.replaceChildren();const q=norm(search.value),type=filter.value;
-  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
+  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
   count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc+(rosterComplete?' · teams checked '+rosterTimestamp:' · team verification temporarily unavailable');
   const fragment=document.createDocumentFragment();
   for(const p of list){
