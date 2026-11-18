@@ -44,8 +44,18 @@ try{
  let editorial=null;
  if(indexResponse.ok){const index=await indexResponse.json();editorial=(index.players||[]).find(p=>String(p.athleteId||'')===String(player.id)||norm(p.name)===norm(player.name))}
  const story=node('section');story.className='pf-story';story.append(node('h2','THE 4DK SCOUTING FILE'));
- if(editorial?.profile){story.append(node('p','Original 4 Da Kulture scouting analysis, preserved in its published edition.'));
- addLink(story,'Read full original 4DK scouting report →',editorial.profile)}
+ if(editorial?.profile){
+  story.append(node('p','Original 4 Da Kulture scouting analysis, preserved in its published edition.'));
+  if(scoutingResponse.ok){
+   const scouting=await scoutingResponse.json();const spotlight=scouting.editorialSpotlights?.[editorial.id];
+   if(spotlight&&Array.isArray(spotlight.sections)){
+    story.append(node('h3',spotlight.title||'4DK SCOUTING SPOTLIGHT'));
+    for(const section of spotlight.sections){if(typeof section.title!=='string'||!Array.isArray(section.paragraphs))continue;story.append(node('h3',section.title));for(const paragraph of section.paragraphs){if(typeof paragraph==='string'&&paragraph.trim())story.append(node('p',paragraph))}}
+    story.append(node('p','Selected excerpts from the original published 4DK report; not a new film-study update.'));
+   }
+  }
+  addLink(story,'Read full original 4DK scouting report →',editorial.profile)
+ }
  else if(scoutingResponse.ok){
   const scouting=await scoutingResponse.json();const report=scouting.reports?.[String(player.id)];
   if(report?.status==='published'&&norm(report.name)===norm(player.name)&&Array.isArray(report.sections)&&report.sections.length){
