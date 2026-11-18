@@ -315,7 +315,7 @@
             ${college}
             ${salary}
           </div>
-          ${player.profile ? `<a class="player-profile" href="${esc(player.profile)}" target="_blank" rel="noopener">Player profile ↗</a>` : ''}
+          ${league === 'nba' ? `<a class="player-profile" href="4dk-nba-player-file.html?team=${encodeURIComponent(activeTeam?.id || '')}&id=${encodeURIComponent(player.id || '')}&name=${encodeURIComponent(player.name)}">4DK Player File →</a>` : (player.profile ? `<a class="player-profile" href="${esc(player.profile)}" target="_blank" rel="noopener">Player profile ↗</a>` : '')}
         </div>
       </article>
     `;
