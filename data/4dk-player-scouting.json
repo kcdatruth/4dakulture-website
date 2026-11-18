@@ -3,6 +3,32 @@
   "season": "2026-27",
   "editorialPolicy": "Original 4DK analysis is human-reviewed and independent of the statistical and roster feeds. Do not auto-generate scouting claims from season averages.",
   "reports": {
+    "5037871": {
+      "name": "Dylan Harper",
+      "status": "published",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
+      "sections": [
+        {
+          "title": "THE SPURS' SECOND CREATOR",
+          "paragraphs": [
+            "Harper's early production gives San Antonio another ball-handling dimension alongside its established core. The intriguing part of his profile is the blend of scoring and playmaking: he can contribute to the scoreboard while also being asked to organize possessions. Our evaluation centers on whether he recognizes the moment to attack and the moment to involve a teammate."
+          ]
+        },
+        {
+          "title": "EFFICIENCY AND CONTROL",
+          "paragraphs": [
+            "His early field-goal percentage is encouraging, but efficiency becomes more meaningful when we examine the types of looks he creates and the defenses he faces. We also want to track his ball security, pace changes and reads in traffic. An assist average captures only part of a lead guard's decision-making."
+          ]
+        },
+        {
+          "title": "4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "Availability and health must be handled through separately verified injury reporting, not assumed from a statistical snapshot. On the floor, Harper's next step is to maintain his offensive composure while improving his point-of-attack defense and off-ball awareness. If those pieces grow together, San Antonio has a versatile backcourt building block."
+          ]
+        }
+      ]
+    },
     "5041935": {
       "name": "Cameron Boozer",
       "status": "published",
@@ -29,6 +55,84 @@
           "title": "4DK OUTLOOK",
           "paragraphs": [
             "The ceiling is tied to becoming a dependable two-way offensive hub rather than just a productive young scorer. Continued improvement as a shooter and defender would raise that ceiling; consistency and decision-making will determine how quickly he gets there. This is an original 4DK evaluation, not a claim that each trait has been independently measured."
+          ]
+        }
+      ]
+    },
+    "5095151": {
+      "name": "Caleb Wilson",
+      "status": "published",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
+      "sections": [
+        {
+          "title": "THE TWO-WAY ROOKIE CASE",
+          "paragraphs": [
+            "Wilson's early Chicago production makes him more than a name on the rookie board. Scoring and rebounding give the Bulls a starting point, but his defensive activity is what makes the profile interesting: the question is whether he can turn disruptive plays into dependable possession-by-possession defense. Steals and blocks are clues, not a substitute for studying positioning, discipline and assignments."
+          ]
+        },
+        {
+          "title": "SCORING WITHOUT SHORTCUTS",
+          "paragraphs": [
+            "At this stage, we are watching how Wilson gets his points as much as how many he scores. Can he finish through contact, find clean opportunities without stopping the offense and punish defenders who give him space? His shooting percentages remain an early-season snapshot, not a permanent label on his jumper."
+          ]
+        },
+        {
+          "title": "4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "The next step is consistency. We want to see the same physical engagement on the glass and defensive end when the scoring comes harder. If Wilson can provide useful offense while making Chicago sturdier defensively, he has a path to becoming an impact two-way forward rather than simply a high-volume rookie."
+          ]
+        }
+      ]
+    },
+    "5142718": {
+      "name": "AJ Dybantsa",
+      "status": "published",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
+      "sections": [
+        {
+          "title": "THE WASHINGTON OPPORTUNITY",
+          "paragraphs": [
+            "Dybantsa's early Washington numbers suggest a young forward already carrying meaningful offensive responsibility. For 4DK, the story is not simply his scoring average; it is whether he can build a reliable possession-by-possession process as the defense learns his preferences. Shot selection, passing out of pressure and movement without the ball matter as much as the headline total."
+          ]
+        },
+        {
+          "title": "THE SHOT-MAKING QUESTION",
+          "paragraphs": [
+            "His early shooting percentages show room for growth, especially beyond the arc. We are not treating a small November sample as a final judgment. The useful evaluation is where the attempts come from, how often he gets to comfortable spots and whether he can keep generating good offense when the jumper is not falling."
+          ]
+        },
+        {
+          "title": "4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "Rebounding and defensive activity provide additional avenues to help Washington. We want to see stronger decision-making, physical consistency and defensive awareness as his role evolves. The long-term upside is compelling, but the responsible rookie evaluation separates flashes from skills he can reproduce every night."
+          ]
+        }
+      ]
+    },
+    "5175737": {
+      "name": "Yaxel Lendeborg",
+      "status": "published",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "Dated 2026-27 verified roster and box-score snapshots; interpretive questions, not independently verified film-study findings",
+      "sections": [
+        {
+          "title": "THE GOLDEN STATE FIT",
+          "paragraphs": [
+            "Lendeborg gives Golden State an intriguing frontcourt evaluation: a forward producing as a scorer, rebounder and secondary passer. The 4DK question is how those contributions fit together within the Warriors' possessions. His value grows when he can make a quick read, keep the ball moving and still threaten to finish the play himself."
+          ]
+        },
+        {
+          "title": "SPACING AND DECISIONS",
+          "paragraphs": [
+            "His early three-point percentage makes the perimeter component worth watching, but a percentage alone cannot tell us how defenses guard him. We want to track shot quality, volume and whether opponents actually adjust their coverages. The same applies to his passing: assists point toward creation, while film is needed to separate routine ball movement from difficult reads."
+          ]
+        },
+        {
+          "title": "4DK DEVELOPMENT WATCH",
+          "paragraphs": [
+            "The ceiling depends on defensive versatility and repeatable decisions. Can he hold his ground across matchups, contribute on the glass and remain productive when opponents take away his first option? Those answers will determine whether his strong start becomes a durable two-way role for Golden State."
           ]
         }
       ]
