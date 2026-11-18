@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/refresh_sdv_nba_stats.py'
+      - 'scripts/validate_4dk_league_stats.py'
+      - '4dk-nba-player-file.js'
       - '.github/workflows/4dk-free-nba-averages.yml'
   schedule:
     - cron: '35 13 * * *'
@@ -33,6 +35,13 @@ jobs:
 
       - name: Refresh and validate NBA averages
         run: python scripts/refresh_sdv_nba_stats.py --publish
+
+      - name: Validate leaguewide dataset and Player Files JavaScript
+        run: |
+          python scripts/validate_4dk_league_stats.py
+          node --check 4dk-nba-player-file.js
+          node --check 4dk-player-files-2.js
+          node --check 4dk-league-player-directory.js
 
       - name: Commit verified dataset only
         run: |
