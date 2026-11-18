@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "season": "2026-27",
+  "note": "Original ranking positions are historical, not a new ranking release.",
+  "players": [
+    {
+      "id": "victor-wembanyama",
+      "name": "Victor Wembanyama",
+      "team": "San Antonio Spurs",
+      "originalTop50Rank": 1,
+      "profile": "4dk-player-victor-wembanyama.html",
+      "portrait": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png"
+    },
+    {
+      "id": "luka-doncic",
+      "name": "Luka Dončić",
+      "team": "Los Angeles Lakers",
+      "originalTop50Rank": 3,
+      "profile": "4dk-player-luka-doncic.html",
+      "portrait": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629029.png"
+    },
+    {
+      "id": "cade-cunningham",
+      "name": "Cade Cunningham",
+      "team": "Detroit Pistons",
+      "originalTop50Rank": 8,
+      "profile": "4dk-player-cade-cunningham.html",
+      "portrait": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630595.png"
+    },
+    {
+      "id": "shai-gilgeous-alexander",
+      "name": "Shai Gilgeous-Alexander",
+      "team": "Oklahoma City Thunder",
+      "originalTop50Rank": 2,
+      "profile": "4dk-player-shai-gilgeous-alexander.html",
+      "portrait": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png"
+    },
+    {
+      "id": "anthony-edwards",
+      "name": "Anthony Edwards",
+      "team": "Minnesota Timberwolves",
+      "originalTop50Rank": 7,
+      "profile": "4dk-player-anthony-edwards.html",
+      "portrait": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630162.png"
+    }
+  ]
+}
