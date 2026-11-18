@@ -1409,13 +1409,31 @@
       "name": "Rudy Gobert",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909999. ESPN play-by-play 401909999.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT ELEVEN BOARDS BUY LAMELO",
           "paragraphs": [
-            "Gobert can take away the direct lane without registering a block. Minnesota should judge that alongside completed defensive rebounds. Offensively the screen must connect early enough for the guard to draw help before the lob window closes."
+            "There is an offensive reason to care about Gobert’s defensive rebounding. LaMelo Ball is most dangerous when he can look up before all five opponents have turned around. A clean Gobert rebound lets the wings leave the paint and gives Ball that look. A tip that Minnesota has to chase uses up the same advantage. Through Rudy’s first 14 appearances he averaged 11.1 boards against 7.6 points. We would watch where the first pass goes after his catch before deciding the lower scoring number means he has become a peripheral player."
+          ]
+        },
+        {
+          "title": "THE ROLL HAS TO FINISH SOMEWHERE",
+          "paragraphs": [
+            "During his Utah years Gobert established the screen and hard roll as a source of offense without needing post touches. In Minnesota, a clean lane for Ayo Dosunmu may be as valuable as a lob to the screener. The weak link is the possession where both defenders follow Ayo, Gobert catches away from the basket and the corner defender steps across. Finishing through that defender, delivering a quick corner pass, or holding the ball until the defense resets are three very different outcomes. His early 44.4 percent at the line gives opponents another reason to make him finish in traffic. Catching on balance and getting the ball back out on time deserve as much attention as dunk totals."
+          ]
+        },
+        {
+          "title": "THE FOUR-TIME WINNER AND THE EMPTY CORNER",
+          "paragraphs": [
+            "Four Defensive Player of the Year awards explain why opponents plan for Gobert. They also explain why a coach would start by trying to move him. Empty the corner, send a shooter up to screen and make Rudy decide how far to follow. McDaniels recovering to the ball handler can buy him a step back toward the rim. A late recovery leaves him responsible for a pull-up and a lob at the same time. His 31 minutes a game across Minnesota’s 12 playoff games last season tell us that these decisions remained central to its postseason defense."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would close with Gobert when the Wolves can keep pressure on the ball and need somebody to end a possession cleanly. The question against five shooters is whether Minnesota can recover on the perimeter fast enough to get him back into the play. Framing every open three as a referendum on the center misses the first screen and often the reason the shot was open."
           ]
         },
         {
@@ -1437,6 +1455,11 @@
             "Inside the arc: 5-for-10. From three: 0-for-0. Defensive rebounds: 10. Steals: 0. Blocks: 2."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/203497/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032976/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3032976/stats?seasontype=3"
       ]
     },
     "3032979": {
@@ -5693,13 +5716,31 @@
       "name": "Ayo Dosunmu",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909947.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHO GETS THE SHOT WHEN ANT IS OUT?",
           "paragraphs": [
-            "Dosunmu's 30 against Portland included the three that cut the lead to one inside the final minute. With Edwards out, his downhill threat gives LaMelo another player who can finish an advantage. When Ant returns, we want staggered minutes that still let Ayo initiate."
+            "Chicago took Dosunmu 38th out of Illinois in 2021. In his first postseason he scored four points a game in five appearances for the Bulls. Last spring he gave Minnesota 15.6 in ten playoff games. That history matters when we look at the opportunity Anthony Edwards’ absence opened up. Ayo had already shown he could stay on the floor and score against a team preparing for him every other night. What Minnesota needed to learn this November was whether he could keep doing it once opposing coaches started putting his name near the top of the board."
+          ]
+        },
+        {
+          "title": "WHY THE PORTLAND THREE MATTERED",
+          "paragraphs": [
+            "Dosunmu hit seven threes and scored 30 on November 17. The most revealing one came with 50 seconds left and Portland up four. Minnesota could still play for one stop after that make. Through 15 games he was shooting 46.4 percent from outside and 52.2 percent overall. We would expect the first number to fluctuate. What can survive a cold week is the bind it creates alongside LaMelo Ball. Put a defender in the lane early to discourage Ball’s pass to Rudy Gobert and Ayo gets a clean catch. Send that defender sprinting back out and Dosunmu can put the ball on the floor against a man moving the wrong way. His development opportunity is the pass after that drive, particularly when the next defender leaves Jaden McDaniels along the baseline."
+          ]
+        },
+        {
+          "title": "THE ASSIGNMENT THAT MAKES THE BACKCOURT WORK",
+          "paragraphs": [
+            "Playing Ball and Dosunmu together raises a question at the other end. Who fights over the first screen when the opposing point guard can shoot off the bounce? We would give Ayo that assignment and let McDaniels take the bigger wing. Getting screened out entirely would force Gobert to step forward and expose the space behind him. For Ayo, getting back to the ball handler’s hip in time to contest from behind can preserve three other matchups. Steals alone cannot tell us how often he gets that job done."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would keep Ayo involved late when Ant returns. An Edwards drive with Dosunmu waiting on the weak side asks a harder question than an Edwards drive with four spectators. And on a night when Ant sits, Ayo has earned the chance to take a shot that decides the game. Those are different jobs. The Wolves’ ceiling rises if they can get both from the same guard."
           ]
         },
         {
@@ -5721,6 +5762,12 @@
             "Inside the arc: 4-for-8. From three: 7-for-11. Defensive rebounds: 4. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630245/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/stats",
+        "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397002/stats?seasontype=3"
       ]
     },
     "4397014": {
@@ -6425,13 +6472,31 @@
       "name": "Jaden McDaniels",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910003. ESPN play-by-play 401909984.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE FINISHER HAD TO BE IN THE RIGHT PLACE",
           "paragraphs": [
-            "McDaniels' go-ahead layup with 2.6 seconds left against Portland rewarded a defender who turned disruption into a finish. Minnesota needs his length on the toughest wing. A dependable straight-line drive lets him punish opponents for treating him as a defensive specialist."
+            "LaMelo Ball got the steal. McDaniels finished the layup with 2.6 seconds left. In Minnesota’s 106–105 win over Portland, it took both players to turn a dead-ball situation into the winning basket. We like the sequence as an introduction to McDaniels because his offense has spent years being judged by what happens when somebody hands him the ball in the corner. Here his decision to run gave the passer a target before Portland could recover. His 22 points that night also mattered long before the last two."
+          ]
+        },
+        {
+          "title": "A THIRD OPTION WITH TWO DIFFERENT JOBS",
+          "paragraphs": [
+            "Minnesota’s 2020 first-round wing averaged 14.7 points in 15 playoff games in 2025 and 16.3 in 12 the following postseason. That is a substantial record of finding offense against prepared opponents. In his first 15 games this season he added 3.7 assists per game while shooting 31.3 percent from three. We would use him as a cutter when Ball has a live dribble and put the ball in his hands against a rotating defense when Dosunmu draws two. A stalled possession that asks him to beat a set defender from 25 feet wastes the head start those guards can give him. His next offensive gain would be forcing the low defender to commit, then finding Gobert under the rim before the passing window closes."
+          ]
+        },
+        {
+          "title": "THE COST OF ONE EARLY FOUL",
+          "paragraphs": [
+            "McDaniels has an All-Defensive selection on his résumé. At 6-foot-9 he gives Minnesota the option to contest a wing jumper without committing a second defender. The price of that flexibility goes up when he picks up early fouls. He averaged 3.4 fouls over those 15 games. If he has to slide off a primary scorer before halftime, Dosunmu may draw the larger assignment and Gobert may see more help requests at the rim. We would judge his defense partly by which matchups his teammates get to keep."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "With Edwards healthy, McDaniels can close a game without Minnesota calling a play for him. Without Edwards, we would call a few, particularly catches near the elbow where he can see both the rim and the baseline cut. The playoff evidence justifies the touches. The test for a bigger role is whether he can create that same clean look for the next man when a defense takes his finish away."
           ]
         },
         {
@@ -6453,6 +6518,12 @@
             "Inside the arc: 8-for-11. From three: 2-for-5. Defensive rebounds: 3. Steals: 3. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630183/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431671/stats",
+        "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431671/stats?seasontype=3"
       ]
     },
     "4431675": {
@@ -8176,13 +8247,31 @@
       "name": "Jonathan Kuminga",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909984. ESPN play-by-play 401909864.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A DIFFERENT JOB AT HIS THIRD NBA STOP",
           "paragraphs": [
-            "Kuminga with a runway is a different assignment from Kuminga facing a packed lane. Minnesota should get him the ball off a cut or early seal. His defensive versatility becomes more valuable when he follows the switch by finding a body on the glass."
+            "Golden State drafted Kuminga seventh from G League Ignite. He averaged 15.3 points in eight playoff appearances for the Warriors in 2025, then 13.7 in six for Atlanta the following postseason. Minnesota is getting a forward who has already scored against playoff defenses in two different settings. Its decision is where to position him before he catches. Give him a stationary defender and a crowded lane and the possession asks for difficult shot creation. Give him a step on that same man and the opposing center has a decision to make."
+          ]
+        },
+        {
+          "title": "WHICH SHOOTING NUMBER DOES THE DEFENSE BELIEVE?",
+          "paragraphs": [
+            "Over his first 14 Wolves games, all starts, Kuminga hit 39.3 percent of his threes and 58.7 percent of his free throws. Those samples point in different directions. We would keep the catch-and-shoot three available, particularly in Rudy Gobert lineups where an extra body in the paint can choke off the roll. Alongside Ball, our first choice is still a cut behind the defender who turns his head to locate the ball. The next read is the hard one. If Gobert’s man steps up, can Kuminga drop off the pass without gathering for a shot first? The 2.8 assists against 1.2 turnovers per game give Minnesota a reason to develop that decision."
+          ]
+        },
+        {
+          "title": "THE FORWARD NEXT TO MCDANIELS",
+          "paragraphs": [
+            "At 225 pounds Kuminga offers a different matchup from the lighter McDaniels. We would start with Kuminga on the stronger forward and let Jaden chase the more dangerous perimeter scorer. That arrangement holds only if Kuminga can box out after switching away from the paint. A switch that stops the first shot still costs two points if his original man gets the rebound. We would review those exchanges before expanding his responsibilities as a small-ball center."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "A good Minnesota night for Kuminga can include only ten shots. If the threat of the corner three opens a drive for Dosunmu, and Kuminga can defend up a position without conceding the glass, his minutes solve two lineup problems. The opportunity to close games rests on making those contributions when he goes several trips without a touch."
           ]
         },
         {
@@ -8204,6 +8293,11 @@
             "Inside the arc: 3-for-8. From three: 0-for-2. Defensive rebounds: 3. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630228/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433247/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433247/stats?seasontype=3"
       ]
     },
     "4433249": {
@@ -16282,9 +16376,13 @@
       "5113969",
       "4433599",
       "4278580",
+      "4397002",
+      "4431671",
+      "3032976",
+      "4433247",
       "5037871"
     ],
-    "remainingForDeepReview": 441,
+    "remainingForDeepReview": 437,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
