@@ -15,7 +15,7 @@ try{
  const all=[...players.values()].sort((a,b)=>a.name.localeCompare(b.name));
  // Use a complete, server-published 30-team snapshot instead of 30 mobile requests.
  // Team identity must match a stable athlete ID; names alone are never sufficient.
- const idKey=x=>String(x??'').replace(/\\.0$/,'');
+ const idKey=x=>String(x??'').replace(/\.0$/,'');
  let rosterTimestamp=null,rosterComplete=false;
  const loadTeams=async()=>{
   try{
