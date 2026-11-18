@@ -146,7 +146,7 @@ def main(publish):
             checked_utc=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
             source=URL,status='verified',matched=len(league_players),
             identity_column=identity_column,players=league_players)
-        league_path.write_text(json.dumps(league_payload,indent=2,ensure_ascii=False)+'\\n')
+        league_path.write_text(json.dumps(league_payload,indent=2,ensure_ascii=False)+'\n')
         print('WROTE:',league_path.relative_to(ROOT),'players:',len(league_players))
     elif not publish:
         print('LEAGUEWIDE DRY RUN:',len(league_players),'players; no files changed')
