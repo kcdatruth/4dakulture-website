@@ -13,7 +13,7 @@ def norm(value):
     value = unicodedata.normalize("NFKD", str(value or ""))
     return re.sub(r"[^a-z0-9]", "", "".join(c for c in value if not unicodedata.combining(c)).lower())
 def player_id(value):
-    return re.sub(r"\\.0$", "", str(value or ""))
+    return re.sub(r"\.0$", "", str(value or ""))
 def unique(records, label, field):
     seen = {}
     for p in records:
