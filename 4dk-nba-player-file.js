@@ -42,6 +42,13 @@ try{
  const story=node('section');story.className='pf-story';story.append(node('h2','THE 4DK SCOUTING FILE'));
  if(editorial?.profile){story.append(node('p','Original 4 Da Kulture scouting analysis, preserved in its published edition.'));
  addLink(story,'Read full original 4DK scouting report →',editorial.profile)}
+ else if(String(player.id)==='5041935'){
+  story.append(node('p','4DK SCOUTING REPORT / CAMERON BOOZER'));
+  story.append(node('p','Boozer’s early NBA profile is built around a compelling combination of scoring, rebounding and passing. The season snapshot gives us a foundation for evaluation, but the more interesting question is how his decisions shape Memphis possessions: whether he creates a quality look for himself, draws help and moves the ball, or keeps the offense flowing with quick reads.'));
+  story.append(node('p','His rebounding production gives Memphis another way to finish defensive possessions and begin the next attack. The playmaking numbers are especially worth tracking for a forward: they suggest a role that can extend beyond simply finishing plays, although assists alone cannot establish the quality of every read.'));
+  story.append(node('p','The swing skill is scoring efficiency. His current shooting percentages should be read alongside shot difficulty, defensive attention and the quality of his opportunities, not treated as a final verdict on his jumper or long-term ceiling. Defensively, we want to evaluate positioning, physicality, rotations and whether he can hold up across different matchups—not just steals and blocks.'));
+  story.append(node('p','4DK OUTLOOK: The ceiling is tied to becoming a dependable two-way offensive hub rather than just a productive young scorer. Continued improvement as a shooter and defender would raise that ceiling; consistency and decision-making will determine how quickly he gets there. This is an original 4DK evaluation, not a claim that each trait has been independently measured.'));
+ }
  else story.append(node('p','Original 4DK scouting analysis is being developed for this player. Verified roster and statistical details appear below.'));
  if(coverageResponse.ok){const coverage=await coverageResponse.json();const articles=coverage.coverage?.[editorial?.id];if(Array.isArray(articles)){const heading=node('h3','RELATED 4DK COVERAGE');story.append(heading);for(const [label,url] of articles){if(typeof url==='string'&&url.endsWith('.html')&&!url.includes('/')&&!url.includes('..'))addLink(story,label+' →',url)}}}
  root.append(story);
