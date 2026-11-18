@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile or, for Oscar Tshiebwe, the official Houston roster. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 52,
+  "approvedCount": 55,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -295,7 +295,7 @@
       "teamId": "18",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -2687,7 +2687,7 @@
       "teamId": "18",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -5237,7 +5237,7 @@
       "teamId": "18",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",

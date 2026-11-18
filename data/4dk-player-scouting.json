@@ -459,13 +459,31 @@
       "name": "Andre Drummond",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909296. ESPN play-by-play 401909296.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT A BACKUP CENTER CAN DO IN THIRTEEN MINUTES",
           "paragraphs": [
-            "Drummond can turn an opponent's good initial defense into another Knicks shot by winning the rebound. The matchup changes if the opponent spaces its center outside. We would chart whether New York wins enough extra possessions to pay for those longer closeouts."
+            "Drummond was a franchise big in Detroit. In New York his job is smaller and the numbers are strikingly clear. Across his first 14 appearances he averaged 7.5 rebounds in 12.9 minutes, including 2.6 at the offensive end. A Knicks reserve who misses a jumper with Andre inside can still get a second shot against a defense scrambling to find its assignments. The value is that extra shot. There is no requirement that Drummond be the one to take it."
+          ]
+        },
+        {
+          "title": "THE DECISION AFTER THE BOARD",
+          "paragraphs": [
+            "His early field-goal percentage was 42.3. That is a reason to distinguish grabbing a contested rebound from having a clean putback. We would ask him to power up against a guard and kick back out when two bigs have him under the backboard. McBride waiting above the break gives him a simple target. With Kolek on the floor, the ball can come back inside on a second action after Drummond has established deeper position. Neither guard gets that chance if Andre forces the first finish."
+          ]
+        },
+        {
+          "title": "THE DEFENSE CHANGES WHEN TOWNS SITS",
+          "paragraphs": [
+            "A bigger body can absorb a post-up and keep a second defender home. A spread floor asks a different question. How far can Drummond step toward the ball before the lob behind him becomes available? Against a guard pulling up off a high screen, we would pair him with a defender who can get back into the play quickly. His 11 playoff appearances for Philadelphia last season averaged the same 12.9 minutes as his early Knicks shifts. That recent history gives a realistic sense of the size of the assignment."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would use Drummond when a game is turning on extra possessions or when an opposing reserve center is moving a smaller lineup off its spots. The minute to reconsider is when the opponent spreads all five men outside and stops sending anyone to the offensive glass. The best use of a veteran specialist is recognizing both ends of his matchup window."
           ]
         },
         {
@@ -487,6 +505,11 @@
             "Inside the arc: 0-for-1. From three: 0-for-0. Defensive rebounds: 6. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/203083/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6585/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6585/stats?seasontype=3"
       ]
     },
     "6589": {
@@ -4280,13 +4303,31 @@
       "name": "Jose Alvarado",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909926. ESPN play-by-play 401909089.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE CLOCK IS PART OF HIS DEFENSE",
           "paragraphs": [
-            "Alvarado can turn the first inbound or outlet into a contested decision. The Knicks should keep a safety behind that pressure. Offensively, his best way to beat size is often an early pocket pass before the lane becomes crowded."
+            "The appeal of Alvarado goes beyond stealing the ball. If a point guard has to turn twice before crossing half court, the opponent may have time for only one action. That is an advantage New York can keep even if Alvarado never touches the ball. The undrafted Georgia Tech guard established himself in New Orleans and played in 18 playoff games for the Knicks last spring. At 9.4 minutes per appearance, the job was specific. Come in, change the terms of a handful of possessions, then get out before the other team can spend an entire quarter hunting the matchup."
+          ]
+        },
+        {
+          "title": "WHEN TO PICK HIM OVER THE OTHER GUARDS",
+          "paragraphs": [
+            "We would use Alvarado against a reserve ball handler who takes time to call a set. McBride can pick up a scorer and stay in a shooting lineup. Kolek can organize a second unit. Alvarado’s distinct value is forcing that opposing guard to work before the play starts. The gamble goes wrong when a reach leaves New York defending four against five. With Andre Drummond protecting the middle, recovering from behind and steering the ball toward help gives the defense more of a chance than trying to win it back immediately."
+          ]
+        },
+        {
+          "title": "TAKING THE RETURN PASS",
+          "paragraphs": [
+            "An attacking guard has to give Brunson space when they play together. Alvarado hit 35.3 percent from three in that 18-game postseason, then started this season at 22.2 percent through seven appearances. We would avoid building a judgment on the smaller sample. The development target is knowing where his next touch comes from. After moving the ball, relocate to give the driver a clean return pass. If a defender sells out on that catch, hit the slipping big before taking an extra dribble."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Alvarado’s best shift might be six minutes against one particular guard. We would grade those minutes by how late the opponent gets into its offense and how cleanly New York attacks after a stop. A steal that leads to a layup is a bonus. Five trips where the opponent cannot run its second option can be worth the substitution by themselves."
           ]
         },
         {
@@ -4308,6 +4349,11 @@
             "Inside the arc: 0-for-2. From three: 0-for-2. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630631/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277869/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277869/stats?seasontype=3"
       ]
     },
     "4277919": {
@@ -8369,13 +8415,31 @@
       "name": "Tyler Kolek",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909990. ESPN play-by-play 401909967.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "FOURTEEN MINUTES WITHOUT BRUNSON",
           "paragraphs": [
-            "Kolek can hold the big in place with his eyes before sending the roll pass. The Knicks need to see whether he can preserve that read under pressure from a longer guard. A reliable pull-up would discourage defenders from ducking under."
+            "There is a basketball reason to make room for Kolek even when Miles McBride is shooting well. McBride can finish the possession that Brunson creates. Kolek’s case starts one pass earlier. Through 12 games this season the former Marquette guard averaged 4.7 assists and 0.6 turnovers in 13.6 minutes. If he can consistently get a Knicks reserve the ball where that player scores, New York can rest Brunson without asking somebody else to impersonate him."
+          ]
+        },
+        {
+          "title": "WHY A DEFENDER WOULD GO UNDER",
+          "paragraphs": [
+            "Kolek made 26.1 percent of his threes in that opening stretch. An opposing guard has a reason to duck underneath a screen and stay between the ball and the roll man. That is a tougher coverage for a pass-first guard than a blitz. Two defenders chasing him would create an obvious free teammate. A defense waiting for him to shoot can cover all five Knicks. We would pair him with Towns for some of those possessions. If both defenders wait below the screen, Towns can pop into open space. If they switch, the next pass can go inside before the help gets set. Kolek’s own pull-up is the long-term counter that would let the same action work with a rim-running center."
+          ]
+        },
+        {
+          "title": "THE OTHER TEAM GETS TO PICK A MATCHUP TOO",
+          "paragraphs": [
+            "A lineup with Kolek and Brunson gives the opponent two guards to involve in screening actions. We would start his evaluation alongside McBride instead. Deuce takes the quickest ball handler and Kolek starts on the lower-usage guard. Can Kolek stay connected when his assignment cuts behind him, then box out when the shot goes up? Those off-ball responsibilities may decide his minutes before anyone asks how well he defends an isolation."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The 34th pick in 2024 appeared in eight playoff games last spring for 6.6 minutes a night. His current passing production earns him a chance to extend that shift. We would trust him first when the second unit needs organization. The stronger postseason case comes when a defense invites him to score and he makes it change its mind."
           ]
         },
         {
@@ -8397,6 +8461,11 @@
             "Inside the arc: 0-for-1. From three: 0-for-2. Defensive rebounds: 0. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642278/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433225/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433225/stats?seasontype=3"
       ]
     },
     "4433247": {
@@ -16671,6 +16740,9 @@
       "3147657",
       "3062679",
       "4431823",
+      "4433225",
+      "4277869",
+      "6585",
       "4397014",
       "4433136",
       "3155535",
@@ -16704,7 +16776,7 @@
       "5157587",
       "5037871"
     ],
-    "remainingForDeepReview": 423,
+    "remainingForDeepReview": 420,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
