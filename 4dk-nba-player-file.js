@@ -10,30 +10,31 @@ if(!team||!name||!/^[0-9]+$/.test(team)){title.textContent='Select a player from
 title.textContent=name;
 try{
  const [rosterResponse,indexResponse,statsResponse,coverageResponse]=await Promise.all([
-  fetch('/api/roster?league=nba&team='+encodeURIComponent(team),{cache:'no-store'}),
+  fetch('data/4dk-nba-rosters-verified.json',{cache:'no-store'}),
   fetch('data/4dk-league-player-index.json',{cache:'no-store'}),
   fetch('data/4dk-nba-league-stats-2026-27.json',{cache:'no-store'}),
   fetch('data/4dk-player-coverage.json',{cache:'no-store'})
  ]);
- if(!rosterResponse.ok)throw Error('Roster feed unavailable');
- const data=await rosterResponse.json(),players=Array.isArray(data.players)?data.players:[];
- const player=players.find(p=>id&&numericId(p.id)===numericId(id))||players.find(p=>norm(p.name)===norm(name));
- if(!player)throw Error('Player not found on roster');
+ if(!rosterResponse.ok)throw Error('Verified roster snapshot unavailable');
+ const data=await rosterResponse.json();
+ if(data.teamCount!==30||!data.players||!data.checked_utc)throw Error('Incomplete roster snapshot');
+ const player=id?data.players[numericId(id)]:null;
+ if(!player||String(player.teamId)!==String(team)||norm(player.name)!==norm(name))throw Error('Player identity/team mismatch');
  title.textContent=player.name;
- status.textContent='Team roster snapshot · '+(data.updatedAt||'update time unavailable');
+ status.textContent='Verified 30-team roster snapshot · '+data.checked_utc;
  const hero=node('section');hero.className='pf-hero';hero.setAttribute('aria-label','Player overview');
- if(player.headshot&&/^https:\/\//i.test(player.headshot)){const img=node('img');img.src=player.headshot;img.alt=player.name+' headshot';img.loading='lazy';img.decoding='async';hero.append(img)}
+ {const img=node('img');img.src='https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(player.id)+'.png';img.alt=player.name+' headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>img.remove(),{once:true});hero.append(img)}
  const details=node('div');details.append(node('div','4DK PLAYER FILES / 2026–27'));details.lastChild.className='pf-kicker';
- details.append(node('h2',data.team?.displayName||data.team?.name||'NBA roster'));
- details.append(node('p',[player.position,player.jersey?'#'+player.jersey:'',player.status].filter(Boolean).join(' · ')));
+ details.append(node('h2',player.team));
+ details.append(node('p','Current team assignment verified by athlete ID'));
  hero.append(details);root.append(hero);
  const facts=node('div');facts.className='pf-facts';
- for(const [label,value] of [['Position',player.position],['Height',player.height],['Weight',player.weight],['Experience',player.experience===0?'Rookie':player.experience!=null?player.experience+' years':null],['College',player.college]]){
+ for(const [label,value] of [['Team',player.team],['Roster athlete ID',player.id]]){
   if(value==null||value==='')continue;
   const item=node('div');item.append(node('strong',label),node('span',value));facts.append(item)
  }if(facts.childElementCount)root.append(facts);
  let editorial=null;
- if(indexResponse.ok){const index=await indexResponse.json();editorial=(index.players||[]).find(p=>norm(p.name)===norm(player.name))}
+ if(indexResponse.ok){const index=await indexResponse.json();editorial=(index.players||[]).find(p=>String(p.athleteId||'')===String(player.id)||norm(p.name)===norm(player.name))}
  const story=node('section');story.className='pf-story';story.append(node('h2','THE 4DK SCOUTING FILE'));
  if(editorial?.profile){story.append(node('p','Original 4 Da Kulture scouting analysis, preserved in its published edition.'));
  addLink(story,'Read full original 4DK scouting report →',editorial.profile)}
@@ -59,6 +60,6 @@ try{
    root.append(box)
   }
  }
- const note=node('p','Roster details come from the team roster feed; season averages are a separately updated snapshot, not live box scores.');note.className='muted';root.append(note);
-}catch(e){status.textContent='Unable to verify this player against the current roster feed. Return to NBA Rosters and try again.'}
+ const note=node('p','Team assignment comes from the dated 30-team roster snapshot; season averages are a separately updated snapshot, not live box scores.');note.className='muted';root.append(note);
+}catch(e){status.textContent='Unable to verify this player against the published roster snapshot. Return to the Player Index and try again.'}
 })();
