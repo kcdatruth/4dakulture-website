@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "ESPN team roster endpoints",
-  "checked_utc": "2026-11-18 09:46 UTC",
+  "checked_utc": "2026-11-18 10:00 UTC",
   "teamCount": 30,
   "playerCount": 527,
   "teamCounts": {
@@ -41,3163 +41,6784 @@
       "id": "4278039",
       "name": "Nickeil Alexander-Walker",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1998-09-02",
+      "position": "G",
+      "jersey": "7",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Virginia Tech",
+      "experience": 8
     },
     "4684443": {
       "id": "4684443",
       "name": "Rafael Castro",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2003-03-30",
+      "position": "F",
+      "height": 81.0,
+      "weight": 224.0,
+      "college": "George Washington",
+      "experience": 0
     },
     "4869342": {
       "id": "4869342",
       "name": "Dyson Daniels",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2003-03-17",
+      "position": "G",
+      "jersey": "5",
+      "height": 79.0,
+      "weight": 199.0,
+      "experience": 5
     },
     "4431941": {
       "id": "4431941",
       "name": "RayJ Dennis",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2001-03-30",
+      "position": "G",
+      "jersey": "10",
+      "height": 74.0,
+      "weight": 180.0,
+      "college": "Baylor",
+      "experience": 3
     },
     "4397020": {
       "id": "4397020",
       "name": "Luguentz Dort",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1999-04-19",
+      "position": "G",
+      "jersey": "0",
+      "height": 76.0,
+      "weight": 220.0,
+      "college": "Arizona State",
+      "experience": 8
     },
     "5106262": {
       "id": "5106262",
       "name": "Zuby Ejiofor",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2004-04-20",
+      "position": "F",
+      "jersey": "20",
+      "height": 80.0,
+      "weight": 245.0,
+      "college": "St. John's",
+      "experience": 0
     },
     "2578185": {
       "id": "2578185",
       "name": "Dorian Finney-Smith",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1993-05-04",
+      "position": "F",
+      "jersey": "8",
+      "height": 79.0,
+      "weight": 220.0,
+      "college": "Florida",
+      "experience": 11
     },
     "5149077": {
       "id": "5149077",
       "name": "Kingston Flemings",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2007-01-03",
+      "position": "G",
+      "jersey": "4",
+      "height": 75.0,
+      "weight": 183.0,
+      "college": "Houston",
+      "experience": 0
     },
     "4712863": {
       "id": "4712863",
       "name": "Mouhamed Gueye",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2002-11-09",
+      "position": "F",
+      "jersey": "18",
+      "height": 83.0,
+      "weight": 210.0,
+      "college": "Washington State",
+      "experience": 4
     },
     "4701230": {
       "id": "4701230",
       "name": "Jalen Johnson",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2001-12-18",
+      "position": "F",
+      "jersey": "1",
+      "height": 80.0,
+      "weight": 219.0,
+      "college": "Duke",
+      "experience": 6
     },
     "4280151": {
       "id": "4280151",
       "name": "Corey Kispert",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1999-03-03",
+      "position": "F",
+      "jersey": "24",
+      "height": 78.0,
+      "weight": 224.0,
+      "college": "Gonzaga",
+      "experience": 6
     },
     "3146557": {
       "id": "3146557",
       "name": "Jock Landale",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1995-10-25",
+      "position": "C",
+      "jersey": "31",
+      "height": 83.0,
+      "weight": 255.0,
+      "college": "Saint Mary's",
+      "experience": 6
     },
     "2490149": {
       "id": "2490149",
       "name": "CJ McCollum",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1991-09-19",
+      "position": "G",
+      "jersey": "3",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Lehigh",
+      "experience": 14
     },
     "4873201": {
       "id": "4873201",
       "name": "Asa Newell",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2005-10-05",
+      "position": "F",
+      "jersey": "14",
+      "height": 83.0,
+      "weight": 224.0,
+      "college": "Georgia",
+      "experience": 2
     },
     "4431680": {
       "id": "4431680",
       "name": "Onyeka Okongwu",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2000-12-11",
+      "position": "F",
+      "jersey": "17",
+      "height": 82.0,
+      "weight": 240.0,
+      "college": "USC",
+      "experience": 7
     },
     "5105571": {
       "id": "5105571",
       "name": "Henri Veesaar",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2004-03-28",
+      "position": "C",
+      "jersey": "13",
+      "height": 84.0,
+      "weight": 227.0,
+      "college": "North Carolina",
+      "experience": 0
     },
     "4397183": {
       "id": "4397183",
       "name": "Aaron Wiggins",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "1999-01-02",
+      "position": "G",
+      "jersey": "2",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "Maryland",
+      "experience": 6
     },
     "4431714": {
       "id": "4431714",
       "name": "Jalen Wilson",
       "teamId": "1",
-      "team": "Atlanta Hawks"
+      "team": "Atlanta Hawks",
+      "dateOfBirth": "2000-11-04",
+      "position": "F",
+      "jersey": "22",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "Kansas",
+      "experience": 4
     },
     "4433188": {
       "id": "4433188",
       "name": "Devin Carter",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2002-03-18",
+      "position": "G",
+      "jersey": "99",
+      "height": 74.0,
+      "weight": 188.0,
+      "college": "Providence",
+      "experience": 3
     },
     "5142621": {
       "id": "5142621",
       "name": "Chris Cenac Jr.",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2007-02-01",
+      "position": "F",
+      "jersey": "12",
+      "height": 83.0,
+      "weight": 240.0,
+      "college": "Houston",
+      "experience": 0
     },
     "3195": {
       "id": "3195",
       "name": "Mike Conley",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1987-10-11",
+      "position": "G",
+      "jersey": "45",
+      "height": 73.0,
+      "weight": 175.0,
+      "college": "Ohio State",
+      "experience": 20
     },
     "4277951": {
       "id": "4277951",
       "name": "Luka Garza",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1998-12-27",
+      "position": "C",
+      "jersey": "52",
+      "height": 82.0,
+      "weight": 243.0,
+      "college": "Iowa",
+      "experience": 6
     },
     "4251": {
       "id": "4251",
       "name": "Paul George",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1990-05-02",
+      "position": "F",
+      "jersey": "13",
+      "height": 80.0,
+      "weight": 221.0,
+      "college": "Fresno State",
+      "experience": 17
     },
     "5175647": {
       "id": "5175647",
       "name": "Hugo Gonzalez",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2006-02-05",
+      "position": "G",
+      "jersey": "28",
+      "height": 78.0,
+      "weight": 205.0,
+      "experience": 2
     },
     "4397251": {
       "id": "4397251",
       "name": "Ron Harper Jr.",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2000-04-12",
+      "position": "G",
+      "jersey": "8",
+      "height": 77.0,
+      "weight": 233.0,
+      "college": "Rutgers",
+      "experience": 5
     },
     "4065804": {
       "id": "4065804",
       "name": "Sam Hauser",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1997-12-08",
+      "position": "F",
+      "jersey": "30",
+      "height": 80.0,
+      "weight": 221.0,
+      "college": "Virginia",
+      "experience": 6
     },
     "5106283": {
       "id": "5106283",
       "name": "Dillon Mitchell",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2003-10-03",
+      "position": "F",
+      "jersey": "20",
+      "height": 80.0,
+      "weight": 210.0,
+      "college": "St. John's",
+      "experience": 0
     },
     "4066354": {
       "id": "4066354",
       "name": "Payton Pritchard",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1998-01-28",
+      "position": "G",
+      "jersey": "11",
+      "height": 74.0,
+      "weight": 211.0,
+      "college": "Oregon",
+      "experience": 7
     },
     "4397424": {
       "id": "4397424",
       "name": "Neemias Queta",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1999-07-13",
+      "position": "C",
+      "jersey": "88",
+      "height": 84.0,
+      "weight": 260.0,
+      "college": "Utah State",
+      "experience": 6
     },
     "4351852": {
       "id": "4351852",
       "name": "Mitchell Robinson",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1998-04-01",
+      "position": "C",
+      "jersey": "4",
+      "height": 84.0,
+      "weight": 240.0,
+      "experience": 9
     },
     "4593841": {
       "id": "4593841",
       "name": "Baylor Scheierman",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2000-09-26",
+      "position": "G",
+      "jersey": "55",
+      "height": 78.0,
+      "weight": 213.0,
+      "college": "Creighton",
+      "experience": 3
     },
     "4065648": {
       "id": "4065648",
       "name": "Jayson Tatum",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1998-03-03",
+      "position": "F",
+      "jersey": "0",
+      "height": 80.0,
+      "weight": 224.0,
+      "college": "Duke",
+      "experience": 10
     },
     "4683689": {
       "id": "4683689",
       "name": "Jordan Walsh",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2004-03-03",
+      "position": "G",
+      "jersey": "27",
+      "height": 79.0,
+      "weight": 208.0,
+      "college": "Arkansas",
+      "experience": 4
     },
     "3078576": {
       "id": "3078576",
       "name": "Derrick White",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "1994-07-02",
+      "position": "G",
+      "jersey": "9",
+      "height": 76.0,
+      "weight": 200.0,
+      "college": "Colorado",
+      "experience": 10
     },
     "4702745": {
       "id": "4702745",
       "name": "Amari Williams",
       "teamId": "2",
-      "team": "Boston Celtics"
+      "team": "Boston Celtics",
+      "dateOfBirth": "2002-01-28",
+      "position": "F",
+      "jersey": "77",
+      "height": 84.0,
+      "weight": 262.0,
+      "college": "Kentucky",
+      "experience": 2
     },
     "5105626": {
       "id": "5105626",
       "name": "Tyler Bilodeau",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2004-04-17",
+      "position": "F",
+      "jersey": "34",
+      "height": 80.0,
+      "weight": 228.0,
+      "college": "UCLA",
+      "experience": 0
     },
     "5101761": {
       "id": "5101761",
       "name": "Mikel Brown Jr.",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2006-04-03",
+      "position": "G",
+      "jersey": "0",
+      "height": 77.0,
+      "weight": 180.0,
+      "college": "Louisville",
+      "experience": 0
     },
     "4712896": {
       "id": "4712896",
       "name": "Noah Clowney",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2004-07-14",
+      "position": "F",
+      "jersey": "21",
+      "height": 82.0,
+      "weight": 210.0,
+      "college": "Alabama",
+      "experience": 4
     },
     "5175643": {
       "id": "5175643",
       "name": "Egor Demin",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2006-03-03",
+      "position": "G",
+      "jersey": "8",
+      "height": 80.0,
+      "weight": 200.0,
+      "college": "BYU",
+      "experience": 2
     },
     "4702177": {
       "id": "4702177",
       "name": "Keon Ellis",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2000-01-08",
+      "position": "G",
+      "jersey": "1",
+      "height": 76.0,
+      "weight": 175.0,
+      "college": "Alabama",
+      "experience": 5
     },
     "4870564": {
       "id": "4870564",
       "name": "Joshua Jefferson",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2003-11-21",
+      "position": "F",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 246.0,
+      "college": "Iowa State",
+      "experience": 0
     },
     "5174655": {
       "id": "5174655",
       "name": "Chaney Johnson",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2002-06-20",
+      "position": "F",
+      "jersey": "31",
+      "height": 80.0,
+      "weight": 225.0,
+      "college": "Auburn",
+      "experience": 2
     },
     "3907823": {
       "id": "3907823",
       "name": "Terance Mann",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "1996-10-18",
+      "position": "G",
+      "jersey": "14",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Florida State",
+      "experience": 8
     },
     "4687718": {
       "id": "4687718",
       "name": "Josh Minott",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2002-11-25",
+      "position": "F",
+      "jersey": "00",
+      "height": 80.0,
+      "weight": 205.0,
+      "college": "Memphis",
+      "experience": 5
     },
     "4702670": {
       "id": "4702670",
       "name": "Grant Nelson",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2002-03-18",
+      "position": "F",
+      "jersey": "16",
+      "height": 83.0,
+      "weight": 230.0,
+      "college": "Alabama",
+      "experience": 2
     },
     "4278104": {
       "id": "4278104",
       "name": "Michael Porter Jr.",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "1998-06-29",
+      "position": "F",
+      "jersey": "17",
+      "height": 82.0,
+      "weight": 218.0,
+      "college": "Missouri",
+      "experience": 8
     },
     "5037873": {
       "id": "5037873",
       "name": "Drake Powell",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2005-09-08",
+      "position": "G",
+      "jersey": "4",
+      "height": 77.0,
+      "weight": 195.0,
+      "college": "North Carolina",
+      "experience": 2
     },
     "3064514": {
       "id": "3064514",
       "name": "Julius Randle",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "1994-11-29",
+      "position": "F",
+      "jersey": "30",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Kentucky",
+      "experience": 13
     },
     "5242502": {
       "id": "5242502",
       "name": "Ben Saraf",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2006-04-14",
+      "position": "G",
+      "jersey": "77",
+      "height": 78.0,
+      "weight": 200.0,
+      "experience": 2
     },
     "4432194": {
       "id": "4432194",
       "name": "Day'Ron Sharpe",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2001-11-06",
+      "position": "C",
+      "jersey": "20",
+      "height": 82.0,
+      "weight": 265.0,
+      "college": "North Carolina",
+      "experience": 6
     },
     "5279130": {
       "id": "5279130",
       "name": "Nolan Traore",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2006-05-28",
+      "position": "G",
+      "jersey": "10",
+      "height": 75.0,
+      "weight": 185.0,
+      "experience": 2
     },
     "3150844": {
       "id": "3150844",
       "name": "Moritz Wagner",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "1997-04-26",
+      "position": "C",
+      "jersey": "13",
+      "height": 83.0,
+      "weight": 245.0,
+      "college": "Michigan",
+      "experience": 9
     },
     "5107173": {
       "id": "5107173",
       "name": "Danny Wolf",
       "teamId": "17",
-      "team": "Brooklyn Nets"
+      "team": "Brooklyn Nets",
+      "dateOfBirth": "2004-05-05",
+      "position": "F",
+      "jersey": "2",
+      "height": 83.0,
+      "weight": 250.0,
+      "college": "Michigan",
+      "experience": 2
     },
     "5176517": {
       "id": "5176517",
       "name": "Michael Ajayi",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2003-05-23",
+      "position": "F",
+      "jersey": "10",
+      "height": 79.0,
+      "weight": 228.0,
+      "college": "Butler",
+      "experience": 0
     },
     "3135045": {
       "id": "3135045",
       "name": "Grayson Allen",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "1995-10-08",
+      "position": "G",
+      "jersey": "8",
+      "height": 75.0,
+      "weight": 198.0,
+      "college": "Duke",
+      "experience": 9
     },
     "5060701": {
       "id": "5060701",
       "name": "Christian Anderson",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2006-04-02",
+      "position": "G",
+      "jersey": "5",
+      "height": 73.0,
+      "weight": 180.0,
+      "college": "Texas Tech",
+      "experience": 0
     },
     "4684269": {
       "id": "4684269",
       "name": "Kylan Boswell",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2005-04-18",
+      "position": "G",
+      "jersey": "18",
+      "height": 73.0,
+      "weight": 226.0,
+      "college": "Illinois",
+      "experience": 0
     },
     "4433249": {
       "id": "4433249",
       "name": "Moussa Diabate",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2002-01-21",
+      "position": "F",
+      "jersey": "14",
+      "height": 82.0,
+      "weight": 210.0,
+      "college": "Michigan",
+      "experience": 5
     },
     "4701225": {
       "id": "4701225",
       "name": "PJ Hall",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2002-02-21",
+      "position": "C",
+      "jersey": "16",
+      "height": 80.0,
+      "weight": 245.0,
+      "college": "Clemson",
+      "experience": 3
     },
     "4602025": {
       "id": "4602025",
       "name": "Sion James",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2002-12-04",
+      "position": "G",
+      "jersey": "4",
+      "height": 77.0,
+      "weight": 220.0,
+      "college": "Duke",
+      "experience": 2
     },
     "4576060": {
       "id": "4576060",
       "name": "Ryan Kalkbrenner",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2002-01-17",
+      "position": "C",
+      "jersey": "11",
+      "height": 85.0,
+      "weight": 256.0,
+      "college": "Creighton",
+      "experience": 2
     },
     "5061575": {
       "id": "5061575",
       "name": "Kon Knueppel",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2005-08-03",
+      "position": "G",
+      "jersey": "7",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Duke",
+      "experience": 2
     },
     "5239590": {
       "id": "5239590",
       "name": "Liam McNeeley",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2005-10-10",
+      "position": "G",
+      "jersey": "33",
+      "height": 79.0,
+      "weight": 210.0,
+      "college": "UConn",
+      "experience": 2
     },
     "4433287": {
       "id": "4433287",
       "name": "Brandon Miller",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2002-11-22",
+      "position": "F",
+      "jersey": "24",
+      "height": 79.0,
+      "weight": 200.0,
+      "college": "Alabama",
+      "experience": 4
     },
     "2583632": {
       "id": "2583632",
       "name": "Royce O'Neale",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "1993-06-05",
+      "position": "F",
+      "jersey": "00",
+      "height": 78.0,
+      "weight": 226.0,
+      "college": "Baylor",
+      "experience": 10
     },
     "4396971": {
       "id": "4396971",
       "name": "Naz Reid",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "1999-08-26",
+      "position": "C",
+      "jersey": "0",
+      "height": 81.0,
+      "weight": 264.0,
+      "college": "LSU",
+      "experience": 8
     },
     "5211176": {
       "id": "5211176",
       "name": "Tidjane Salaun",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2005-08-10",
+      "position": "F",
+      "jersey": "31",
+      "height": 82.0,
+      "weight": 207.0,
+      "experience": 3
     },
     "3032979": {
       "id": "3032979",
       "name": "Dennis Schroder",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "1993-09-15",
+      "position": "G",
+      "jersey": "17",
+      "height": 73.0,
+      "weight": 175.0,
+      "experience": 14
     },
     "5281370": {
       "id": "5281370",
       "name": "Hannes Steinbach",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2006-05-01",
+      "position": "F",
+      "jersey": "22",
+      "height": 82.0,
+      "weight": 248.0,
+      "college": "Washington",
+      "experience": 0
     },
     "4395651": {
       "id": "4395651",
       "name": "Coby White",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "2000-02-16",
+      "position": "G",
+      "jersey": "3",
+      "height": 76.0,
+      "weight": 195.0,
+      "college": "North Carolina",
+      "experience": 8
     },
     "4066218": {
       "id": "4066218",
       "name": "Grant Williams",
       "teamId": "30",
-      "team": "Charlotte Hornets"
+      "team": "Charlotte Hornets",
+      "dateOfBirth": "1998-11-30",
+      "position": "F",
+      "jersey": "2",
+      "height": 79.0,
+      "weight": 236.0,
+      "college": "Tennessee",
+      "experience": 8
     },
     "5105555": {
       "id": "5105555",
       "name": "Tobe Awaka",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2004-01-30",
+      "position": "F",
+      "jersey": "19",
+      "height": 80.0,
+      "weight": 255.0,
+      "college": "Arizona",
+      "experience": 0
     },
     "4711294": {
       "id": "4711294",
       "name": "Matas Buzelis",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2004-10-13",
+      "position": "F",
+      "jersey": "14",
+      "height": 80.0,
+      "weight": 209.0,
+      "experience": 3
     },
     "4278067": {
       "id": "4278067",
       "name": "Nic Claxton",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "1999-04-17",
+      "position": "C",
+      "jersey": "9",
+      "height": 83.0,
+      "weight": 215.0,
+      "college": "Georgia",
+      "experience": 8
     },
     "4066650": {
       "id": "4066650",
       "name": "Zach Collins",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "1997-11-19",
+      "position": "F",
+      "jersey": "12",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Gonzaga",
+      "experience": 10
     },
     "5242496": {
       "id": "5242496",
       "name": "Noa Essengue",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2006-12-18",
+      "position": "F",
+      "jersey": "2",
+      "height": 83.0,
+      "weight": 206.0,
+      "experience": 2
     },
     "4871145": {
       "id": "4871145",
       "name": "Josh Giddey",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2002-10-10",
+      "position": "G",
+      "jersey": "3",
+      "height": 79.0,
+      "weight": 216.0,
+      "experience": 6
     },
     "4683750": {
       "id": "4683750",
       "name": "Jordan Hawkins",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2002-04-29",
+      "position": "G",
+      "jersey": "15",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "UConn",
+      "experience": 4
     },
     "2990984": {
       "id": "2990984",
       "name": "Buddy Hield",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "1992-12-17",
+      "position": "G",
+      "jersey": "7",
+      "height": 76.0,
+      "weight": 220.0,
+      "college": "Oklahoma",
+      "experience": 11
     },
     "4395626": {
       "id": "4395626",
       "name": "Tre Jones",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2000-01-08",
+      "position": "G",
+      "jersey": "30",
+      "height": 73.0,
+      "weight": 185.0,
+      "college": "Duke",
+      "experience": 7
     },
     "5044385": {
       "id": "5044385",
       "name": "Leonard Miller",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2003-11-26",
+      "position": "F",
+      "jersey": "11",
+      "height": 82.0,
+      "weight": 220.0,
+      "experience": 4
     },
     "4432822": {
       "id": "4432822",
       "name": "Isaac Okoro",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2001-01-26",
+      "position": "F",
+      "jersey": "35",
+      "height": 76.0,
+      "weight": 225.0,
+      "college": "Auburn",
+      "experience": 7
     },
     "2595516": {
       "id": "2595516",
       "name": "Norman Powell",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "1993-05-25",
+      "position": "G",
+      "jersey": "24",
+      "height": 76.0,
+      "weight": 215.0,
+      "college": "UCLA",
+      "experience": 12
     },
     "4593049": {
       "id": "4593049",
       "name": "Orlando Robinson",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2000-07-10",
+      "position": "C",
+      "jersey": "00",
+      "height": 82.0,
+      "weight": 235.0,
+      "college": "Fresno State",
+      "experience": 3
     },
     "4898010": {
       "id": "4898010",
       "name": "Jaylin Sellers",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2003-06-03",
+      "position": "G",
+      "jersey": "22",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Providence",
+      "experience": 0
     },
     "4397189": {
       "id": "4397189",
       "name": "Jalen Smith",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2000-03-16",
+      "position": "F",
+      "jersey": "25",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "Maryland",
+      "experience": 7
     },
     "4848625": {
       "id": "4848625",
       "name": "Dailyn Swain",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2005-07-15",
+      "position": "G",
+      "jersey": "5",
+      "height": 79.0,
+      "weight": 211.0,
+      "college": "Texas",
+      "experience": 0
     },
     "4431687": {
       "id": "4431687",
       "name": "Patrick Williams",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2001-08-26",
+      "position": "F",
+      "jersey": "44",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Florida State",
+      "experience": 7
     },
     "5095151": {
       "id": "5095151",
       "name": "Caleb Wilson",
       "teamId": "4",
-      "team": "Chicago Bulls"
+      "team": "Chicago Bulls",
+      "dateOfBirth": "2006-07-18",
+      "position": "F",
+      "jersey": "8",
+      "height": 81.0,
+      "weight": 211.0,
+      "college": "North Carolina",
+      "experience": 0
     },
     "4066328": {
       "id": "4066328",
       "name": "Jarrett Allen",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1998-04-21",
+      "position": "C",
+      "jersey": "31",
+      "height": 81.0,
+      "weight": 243.0,
+      "college": "Texas",
+      "experience": 10
     },
     "3934723": {
       "id": "3934723",
       "name": "Thomas Bryant",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1997-07-31",
+      "position": "C",
+      "jersey": "3",
+      "height": 81.0,
+      "weight": 248.0,
+      "college": "Indiana",
+      "experience": 10
     },
     "4997530": {
       "id": "4997530",
       "name": "Khalifa Diop",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2002-01-15",
+      "position": "C",
+      "jersey": "18",
+      "height": 83.0,
+      "weight": 231.0,
+      "experience": 0
     },
     "3992": {
       "id": "3992",
       "name": "James Harden",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1989-08-26",
+      "position": "G",
+      "jersey": "1",
+      "height": 77.0,
+      "weight": 220.0,
+      "college": "Arizona State",
+      "experience": 18
     },
     "2995706": {
       "id": "2995706",
       "name": "Mario Hezonja",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1995-02-25",
+      "position": "F",
+      "jersey": "33",
+      "height": 80.0,
+      "weight": 220.0,
+      "experience": 6
     },
     "4066757": {
       "id": "4066757",
       "name": "Sam Merrill",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1996-05-15",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 205.0,
+      "college": "Utah State",
+      "experience": 7
     },
     "5177362": {
       "id": "5177362",
       "name": "Riley Minix",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2000-09-22",
+      "position": "F",
+      "jersey": "12",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Morehead State",
+      "experience": 3
     },
     "3908809": {
       "id": "3908809",
       "name": "Donovan Mitchell",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "1996-09-07",
+      "position": "G",
+      "jersey": "45",
+      "height": 74.0,
+      "weight": 215.0,
+      "college": "Louisville",
+      "experience": 10
     },
     "4432158": {
       "id": "4432158",
       "name": "Evan Mobley",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2001-06-18",
+      "position": "C",
+      "jersey": "4",
+      "height": 83.0,
+      "weight": 215.0,
+      "college": "USC",
+      "experience": 6
     },
     "4702134": {
       "id": "4702134",
       "name": "Norchad Omier",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2001-08-28",
+      "position": "C",
+      "jersey": "77",
+      "height": 79.0,
+      "weight": 248.0,
+      "college": "Baylor",
+      "experience": 0
     },
     "4701233": {
       "id": "4701233",
       "name": "Craig Porter Jr.",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2000-02-26",
+      "position": "G",
+      "jersey": "9",
+      "height": 73.0,
+      "weight": 180.0,
+      "college": "Wichita State",
+      "experience": 4
     },
     "5023693": {
       "id": "5023693",
       "name": "Tyrese Proctor",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2004-04-01",
+      "position": "G",
+      "jersey": "24",
+      "height": 76.0,
+      "weight": 185.0,
+      "college": "Duke",
+      "experience": 2
     },
     "5041951": {
       "id": "5041951",
       "name": "Meleek Thomas",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2006-08-06",
+      "position": "G",
+      "jersey": "15",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Arkansas",
+      "experience": 0
     },
     "5106268": {
       "id": "5106268",
       "name": "Nae'Qwan Tomlin",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2000-12-19",
+      "position": "F",
+      "jersey": "35",
+      "height": 80.0,
+      "weight": 210.0,
+      "college": "Memphis",
+      "experience": 3
     },
     "4683747": {
       "id": "4683747",
       "name": "Jaylon Tyson",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2002-12-02",
+      "position": "G",
+      "jersey": "20",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "California",
+      "experience": 3
     },
     "5106261": {
       "id": "5106261",
       "name": "Ernest Udeh Jr.",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2004-01-08",
+      "position": "C",
+      "jersey": "88",
+      "height": 81.0,
+      "weight": 266.0,
+      "college": "Miami",
+      "experience": 0
     },
     "4576087": {
       "id": "4576087",
       "name": "Peyton Watson",
       "teamId": "5",
-      "team": "Cleveland Cavaliers"
+      "team": "Cleveland Cavaliers",
+      "dateOfBirth": "2002-09-11",
+      "position": "G",
+      "jersey": "8",
+      "height": 80.0,
+      "weight": 200.0,
+      "college": "UCLA",
+      "experience": 5
     },
     "4593125": {
       "id": "4593125",
       "name": "Santi Aldama",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2001-01-10",
+      "position": "F",
+      "jersey": "34",
+      "height": 84.0,
+      "weight": 215.0,
+      "college": "Loyola Maryland",
+      "experience": 6
     },
     "5148538": {
       "id": "5148538",
       "name": "Tarik Biberovic",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2001-01-28",
+      "position": "F",
+      "jersey": "13",
+      "height": 79.0,
+      "weight": 218.0,
+      "experience": 0
     },
     "4432582": {
       "id": "4432582",
       "name": "Max Christie",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2003-02-10",
+      "position": "G",
+      "jersey": "0",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "Michigan State",
+      "experience": 5
     },
     "4701208": {
       "id": "4701208",
       "name": "Moussa Cisse",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2002-09-10",
+      "position": "C",
+      "jersey": "30",
+      "height": 83.0,
+      "weight": 220.0,
+      "college": "Memphis",
+      "experience": 2
     },
     "4896372": {
       "id": "4896372",
       "name": "Walter Clayton Jr.",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2003-03-06",
+      "position": "G",
+      "jersey": "1",
+      "height": 76.0,
+      "weight": 195.0,
+      "college": "Florida",
+      "experience": 2
     },
     "5279129": {
       "id": "5279129",
       "name": "Sergio de Larrea",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2005-12-04",
+      "position": "F",
+      "jersey": "55",
+      "height": 79.0,
+      "weight": 202.0,
+      "experience": 0
     },
     "5041939": {
       "id": "5041939",
       "name": "Cooper Flagg",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2006-12-21",
+      "position": "F",
+      "jersey": "32",
+      "height": 81.0,
+      "weight": 205.0,
+      "college": "Duke",
+      "experience": 2
     },
     "4278049": {
       "id": "4278049",
       "name": "Daniel Gafford",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "1998-10-01",
+      "position": "F",
+      "jersey": "21",
+      "height": 82.0,
+      "weight": 265.0,
+      "college": "Arkansas",
+      "experience": 8
     },
     "5105806": {
       "id": "5105806",
       "name": "Jett Howard",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2003-09-14",
+      "position": "G",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "Michigan",
+      "experience": 4
     },
     "6442": {
       "id": "6442",
       "name": "Kyrie Irving",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "1992-03-23",
+      "position": "G",
+      "jersey": "11",
+      "height": 74.0,
+      "weight": 195.0,
+      "college": "Duke",
+      "experience": 15
     },
     "4873153": {
       "id": "4873153",
       "name": "Morez Johnson Jr.",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2006-01-25",
+      "position": "F",
+      "jersey": "14",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Michigan",
+      "experience": 0
     },
     "5106040": {
       "id": "5106040",
       "name": "Tobi Lawal",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2003-05-01",
+      "position": "F",
+      "jersey": "33",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "Virginia Tech",
+      "experience": 0
     },
     "4683688": {
       "id": "4683688",
       "name": "Dereck Lively II",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2004-02-12",
+      "position": "C",
+      "jersey": "2",
+      "height": 85.0,
+      "weight": 230.0,
+      "college": "Duke",
+      "experience": 4
     },
     "4278594": {
       "id": "4278594",
       "name": "Naji Marshall",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "1998-01-24",
+      "position": "F",
+      "jersey": "3",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "Xavier",
+      "experience": 7
     },
     "3138160": {
       "id": "3138160",
       "name": "Caleb Martin",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "1995-09-28",
+      "position": "F",
+      "jersey": "16",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Nevada",
+      "experience": 8
     },
     "5211175": {
       "id": "5211175",
       "name": "Zaccharie Risacher",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2005-04-08",
+      "position": "F",
+      "jersey": "10",
+      "height": 80.0,
+      "weight": 200.0,
+      "experience": 3
     },
     "4432107": {
       "id": "4432107",
       "name": "Marcus Sasser",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "2000-09-21",
+      "position": "G",
+      "jersey": "8",
+      "height": 73.0,
+      "weight": 195.0,
+      "college": "Houston",
+      "experience": 4
     },
     "4278078": {
       "id": "4278078",
       "name": "P.J. Washington",
       "teamId": "6",
-      "team": "Dallas Mavericks"
+      "team": "Dallas Mavericks",
+      "dateOfBirth": "1998-08-23",
+      "position": "F",
+      "jersey": "25",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Kentucky",
+      "experience": 8
     },
     "4277848": {
       "id": "4277848",
       "name": "Marvin Bagley III",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1999-03-14",
+      "position": "F",
+      "jersey": "3",
+      "height": 82.0,
+      "weight": 235.0,
+      "college": "Duke",
+      "experience": 9
     },
     "4431767": {
       "id": "4431767",
       "name": "Christian Braun",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2001-04-17",
+      "position": "G",
+      "jersey": "0",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "Kansas",
+      "experience": 5
     },
     "4698719": {
       "id": "4698719",
       "name": "Trevon Brazile",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2003-01-07",
+      "position": "F",
+      "jersey": "7",
+      "height": 82.0,
+      "weight": 220.0,
+      "college": "Arkansas",
+      "experience": 0
     },
     "3978": {
       "id": "3978",
       "name": "DeMar DeRozan",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1989-08-07",
+      "position": "G",
+      "jersey": "10",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "USC",
+      "experience": 18
     },
     "4065813": {
       "id": "4065813",
       "name": "Alpha Diallo",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1997-06-29",
+      "position": "F",
+      "jersey": "11",
+      "height": 79.0,
+      "weight": 210.0,
+      "college": "Providence",
+      "experience": 0
     },
     "3064290": {
       "id": "3064290",
       "name": "Aaron Gordon",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1995-09-16",
+      "position": "F",
+      "jersey": "32",
+      "height": 80.0,
+      "weight": 235.0,
+      "college": "Arizona",
+      "experience": 13
     },
     "4433607": {
       "id": "4433607",
       "name": "DaRon Holmes II",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2002-08-15",
+      "position": "F",
+      "jersey": "14",
+      "height": 81.0,
+      "weight": 225.0,
+      "college": "Dayton",
+      "experience": 2
     },
     "4565698": {
       "id": "4565698",
       "name": "Bryce Hopkins",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2002-09-07",
+      "position": "F",
+      "jersey": "13",
+      "height": 79.0,
+      "weight": 220.0,
+      "college": "St. John's",
+      "experience": 0
     },
     "3138196": {
       "id": "3138196",
       "name": "Cameron Johnson",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1996-03-03",
+      "position": "F",
+      "jersey": "23",
+      "height": 80.0,
+      "weight": 210.0,
+      "college": "North Carolina",
+      "experience": 8
     },
     "3112335": {
       "id": "3112335",
       "name": "Nikola Jokic",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1995-02-19",
+      "position": "C",
+      "jersey": "15",
+      "height": 83.0,
+      "weight": 284.0,
+      "experience": 12
     },
     "4592427": {
       "id": "4592427",
       "name": "Spencer Jones",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2001-06-14",
+      "position": "F",
+      "jersey": "21",
+      "height": 79.0,
+      "weight": 225.0,
+      "college": "Stanford",
+      "experience": 3
     },
     "3135046": {
       "id": "3135046",
       "name": "Tyus Jones",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1996-05-10",
+      "position": "G",
+      "jersey": "5",
+      "height": 72.0,
+      "weight": 196.0,
+      "college": "Duke",
+      "experience": 12
     },
     "3936299": {
       "id": "3936299",
       "name": "Jamal Murray",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "1997-02-23",
+      "position": "G",
+      "jersey": "27",
+      "height": 76.0,
+      "weight": 215.0,
+      "college": "Kentucky",
+      "experience": 10
     },
     "4433629": {
       "id": "4433629",
       "name": "Ryan Nembhard",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2003-03-10",
+      "position": "G",
+      "jersey": "9",
+      "height": 71.0,
+      "weight": 180.0,
+      "college": "Gonzaga",
+      "experience": 2
     },
     "4431690": {
       "id": "4431690",
       "name": "Zeke Nnaji",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2001-01-09",
+      "position": "F",
+      "jersey": "22",
+      "height": 82.0,
+      "weight": 240.0,
+      "college": "Arizona",
+      "experience": 7
     },
     "4432181": {
       "id": "4432181",
       "name": "Julian Strawther",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2002-04-18",
+      "position": "G",
+      "jersey": "1",
+      "height": 78.0,
+      "weight": 205.0,
+      "college": "Gonzaga",
+      "experience": 4
     },
     "5105592": {
       "id": "5105592",
       "name": "Cam Whitmore",
       "teamId": "7",
-      "team": "Denver Nuggets"
+      "team": "Denver Nuggets",
+      "dateOfBirth": "2004-07-08",
+      "position": "F",
+      "jersey": "00",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "Villanova",
+      "experience": 4
     },
     "3908845": {
       "id": "3908845",
       "name": "John Collins",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1997-09-23",
+      "position": "F",
+      "jersey": "20",
+      "height": 81.0,
+      "weight": 226.0,
+      "college": "Wake Forest",
+      "experience": 10
     },
     "4432166": {
       "id": "4432166",
       "name": "Cade Cunningham",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2001-09-25",
+      "position": "G",
+      "jersey": "2",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "Oklahoma State",
+      "experience": 6
     },
     "4433621": {
       "id": "4433621",
       "name": "Jalen Duren",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2003-11-18",
+      "position": "C",
+      "jersey": "0",
+      "height": 82.0,
+      "weight": 250.0,
+      "college": "Memphis",
+      "experience": 5
     },
     "2596112": {
       "id": "2596112",
       "name": "Javonte Green",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1993-07-23",
+      "position": "G",
+      "jersey": "31",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Radford",
+      "experience": 8
     },
     "4397449": {
       "id": "4397449",
       "name": "Elijah Harkless",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2000-02-03",
+      "position": "G",
+      "jersey": "94",
+      "height": 75.0,
+      "weight": 195.0,
+      "college": "UNLV",
+      "experience": 3
     },
     "4683771": {
       "id": "4683771",
       "name": "Ronald Holland II",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2005-07-07",
+      "position": "F",
+      "jersey": "5",
+      "height": 80.0,
+      "weight": 206.0,
+      "experience": 3
     },
     "4066372": {
       "id": "4066372",
       "name": "Kevin Huerter",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1998-08-27",
+      "position": "G",
+      "jersey": "27",
+      "height": 78.0,
+      "weight": 198.0,
+      "college": "Maryland",
+      "experience": 9
     },
     "5107199": {
       "id": "5107199",
       "name": "Daniss Jenkins",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2001-08-17",
+      "position": "G",
+      "jersey": "24",
+      "height": 76.0,
+      "weight": 165.0,
+      "college": "St. John's",
+      "experience": 3
     },
     "4395702": {
       "id": "4395702",
       "name": "Isaiah Joe",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1999-07-02",
+      "position": "G",
+      "jersey": "17",
+      "height": 76.0,
+      "weight": 165.0,
+      "college": "Arkansas",
+      "experience": 7
     },
     "5107818": {
       "id": "5107818",
       "name": "Isaac Jones",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2000-07-11",
+      "position": "C",
+      "jersey": "13",
+      "height": 80.0,
+      "weight": 245.0,
+      "college": "Washington State",
+      "experience": 3
     },
     "4700852": {
       "id": "4700852",
       "name": "Chaz Lanier",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2001-12-19",
+      "position": "G",
+      "jersey": "8",
+      "height": 75.0,
+      "weight": 206.0,
+      "college": "Tennessee",
+      "experience": 2
     },
     "5258459": {
       "id": "5258459",
       "name": "Ebuka Okorie",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2007-04-10",
+      "position": "G",
+      "jersey": "23",
+      "height": 74.0,
+      "weight": 186.0,
+      "college": "Stanford",
+      "experience": 0
     },
     "5037878": {
       "id": "5037878",
       "name": "Ugonna Onyenso",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2004-09-25",
+      "position": "C",
+      "jersey": "34",
+      "height": 84.0,
+      "weight": 236.0,
+      "college": "Virginia",
+      "experience": 0
     },
     "2990962": {
       "id": "2990962",
       "name": "Taurean Prince",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1994-03-22",
+      "position": "F",
+      "jersey": "12",
+      "height": 78.0,
+      "weight": 218.0,
+      "college": "Baylor",
+      "experience": 11
     },
     "4278562": {
       "id": "4278562",
       "name": "Paul Reed",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1999-06-14",
+      "position": "F",
+      "jersey": "7",
+      "height": 81.0,
+      "weight": 210.0,
+      "college": "DePaul",
+      "experience": 7
     },
     "3157465": {
       "id": "3157465",
       "name": "Duncan Robinson",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "1994-04-22",
+      "position": "F",
+      "jersey": "55",
+      "height": 79.0,
+      "weight": 215.0,
+      "college": "Michigan",
+      "experience": 9
     },
     "4397882": {
       "id": "4397882",
       "name": "Tolu Smith",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2000-07-26",
+      "position": "F",
+      "jersey": "35",
+      "height": 83.0,
+      "weight": 250.0,
+      "college": "Mississippi State",
+      "experience": 3
     },
     "4684742": {
       "id": "4684742",
       "name": "Ausar Thompson",
       "teamId": "8",
-      "team": "Detroit Pistons"
+      "team": "Detroit Pistons",
+      "dateOfBirth": "2003-01-30",
+      "position": "G",
+      "jersey": "9",
+      "height": 79.0,
+      "weight": 205.0,
+      "experience": 4
     },
     "4397886": {
       "id": "4397886",
       "name": "Charles Bassey",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2000-10-28",
+      "position": "C",
+      "jersey": "28",
+      "height": 82.0,
+      "weight": 230.0,
+      "college": "Western Kentucky",
+      "experience": 6
     },
     "6430": {
       "id": "6430",
       "name": "Jimmy Butler III",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1989-09-14",
+      "position": "F",
+      "jersey": "10",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "Marquette",
+      "experience": 16
     },
     "4433149": {
       "id": "4433149",
       "name": "LJ Cryer",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2001-10-09",
+      "position": "G",
+      "jersey": "18",
+      "height": 72.0,
+      "weight": 200.0,
+      "college": "Houston",
+      "experience": 2
     },
     "3975": {
       "id": "3975",
       "name": "Stephen Curry",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1988-03-14",
+      "position": "G",
+      "jersey": "30",
+      "height": 74.0,
+      "weight": 185.0,
+      "college": "Davidson",
+      "experience": 18
     },
     "6589": {
       "id": "6589",
       "name": "Draymond Green",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1990-03-04",
+      "position": "F",
+      "jersey": "23",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "Michigan State",
+      "experience": 15
     },
     "3213": {
       "id": "3213",
       "name": "Al Horford",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1986-06-03",
+      "position": "C",
+      "jersey": "20",
+      "height": 80.0,
+      "weight": 240.0,
+      "college": "Florida",
+      "experience": 20
     },
     "4703396": {
       "id": "4703396",
       "name": "Graham Ike",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2002-08-03",
+      "position": "F",
+      "jersey": "45",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Gonzaga",
+      "experience": 0
     },
     "5175737": {
       "id": "5175737",
       "name": "Yaxel Lendeborg",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2002-09-30",
+      "position": "F",
+      "jersey": "1",
+      "height": 81.0,
+      "weight": 241.0,
+      "college": "Michigan",
+      "experience": 0
     },
     "4897449": {
       "id": "4897449",
       "name": "Malevy Leons",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1999-09-23",
+      "position": "F",
+      "jersey": "33",
+      "height": 81.0,
+      "weight": 203.0,
+      "college": "Bradley",
+      "experience": 3
     },
     "4066436": {
       "id": "4066436",
       "name": "De'Anthony Melton",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1998-05-28",
+      "position": "G",
+      "jersey": "8",
+      "height": 74.0,
+      "weight": 200.0,
+      "college": "USC",
+      "experience": 9
     },
     "4432171": {
       "id": "4432171",
       "name": "Moses Moody",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2002-05-31",
+      "position": "G",
+      "jersey": "4",
+      "height": 77.0,
+      "weight": 211.0,
+      "college": "Arkansas",
+      "experience": 6
     },
     "2990969": {
       "id": "2990969",
       "name": "Georges Niang",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1993-06-17",
+      "position": "F",
+      "jersey": "32",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "Iowa State",
+      "experience": 11
     },
     "3134903": {
       "id": "3134903",
       "name": "Gary Payton II",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1992-12-01",
+      "position": "G",
+      "jersey": "0",
+      "height": 74.0,
+      "weight": 195.0,
+      "college": "Oregon State",
+      "experience": 11
     },
     "4709138": {
       "id": "4709138",
       "name": "Brandin Podziemski",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2003-02-25",
+      "position": "G",
+      "jersey": "2",
+      "height": 76.0,
+      "weight": 205.0,
+      "college": "Santa Clara",
+      "experience": 4
     },
     "3102531": {
       "id": "3102531",
       "name": "Kristaps Porzingis",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1995-08-02",
+      "position": "C",
+      "jersey": "7",
+      "height": 86.0,
+      "weight": 240.0,
+      "experience": 12
     },
     "4897262": {
       "id": "4897262",
       "name": "Will Richard",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2002-12-24",
+      "position": "G",
+      "jersey": "3",
+      "height": 75.0,
+      "weight": 206.0,
+      "college": "Florida",
+      "experience": 2
     },
     "4997536": {
       "id": "4997536",
       "name": "Gui Santos",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "2002-06-22",
+      "position": "F",
+      "jersey": "15",
+      "height": 79.0,
+      "weight": 185.0,
+      "experience": 4
     },
     "4397040": {
       "id": "4397040",
       "name": "Brandon Williams",
       "teamId": "9",
-      "team": "Golden State Warriors"
+      "team": "Golden State Warriors",
+      "dateOfBirth": "1999-11-22",
+      "position": "G",
+      "jersey": "12",
+      "height": 73.0,
+      "weight": 190.0,
+      "college": "Arizona",
+      "experience": 5
     },
     "2991235": {
       "id": "2991235",
       "name": "Steven Adams",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1993-07-20",
+      "position": "C",
+      "jersey": "12",
+      "height": 83.0,
+      "weight": 265.0,
+      "college": "Pittsburgh",
+      "experience": 14
     },
     "3037789": {
       "id": "3037789",
       "name": "Bogdan Bogdanovic",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1992-08-18",
+      "position": "G",
+      "jersey": "31",
+      "height": 77.0,
+      "weight": 225.0,
+      "experience": 10
     },
     "3102529": {
       "id": "3102529",
       "name": "Clint Capela",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1994-05-18",
+      "position": "C",
+      "jersey": "30",
+      "height": 82.0,
+      "weight": 256.0,
+      "experience": 13
     },
     "4683860": {
       "id": "4683860",
       "name": "Quadir Copeland",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2003-09-01",
+      "position": "G",
+      "jersey": "25",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "NC State",
+      "experience": 0
     },
     "4592857": {
       "id": "4592857",
       "name": "Isaiah Crawford",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2001-11-01",
+      "position": "F",
+      "jersey": "27",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "Louisiana Tech",
+      "experience": 3
     },
     "3202": {
       "id": "3202",
       "name": "Kevin Durant",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1988-09-29",
+      "position": "F",
+      "jersey": "7",
+      "height": 83.0,
+      "weight": 240.0,
+      "college": "Texas",
+      "experience": 20
     },
     "4433192": {
       "id": "4433192",
       "name": "Tari Eason",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2001-05-10",
+      "position": "F",
+      "jersey": "17",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "LSU",
+      "experience": 5
     },
     "5105553": {
       "id": "5105553",
       "name": "Julian Phillips",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2003-11-05",
+      "position": "F",
+      "jersey": "3",
+      "height": 78.0,
+      "weight": 198.0,
+      "college": "Tennessee",
+      "experience": 4
     },
     "4871144": {
       "id": "4871144",
       "name": "Alperen Sengun",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2002-07-25",
+      "position": "C",
+      "jersey": "28",
+      "height": 83.0,
+      "weight": 243.0,
+      "experience": 6
     },
     "4711272": {
       "id": "4711272",
       "name": "Reed Sheppard",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2004-06-24",
+      "position": "G",
+      "jersey": "15",
+      "height": 74.0,
+      "weight": 185.0,
+      "college": "Kentucky",
+      "experience": 3
     },
     "2990992": {
       "id": "2990992",
       "name": "Marcus Smart",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1994-03-06",
+      "position": "G",
+      "jersey": "36",
+      "height": 75.0,
+      "weight": 220.0,
+      "college": "Oklahoma State",
+      "experience": 13
     },
     "4432639": {
       "id": "4432639",
       "name": "Jabari Smith Jr.",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2003-05-13",
+      "position": "F",
+      "jersey": "10",
+      "height": 83.0,
+      "weight": 220.0,
+      "college": "Auburn",
+      "experience": 5
     },
     "3136777": {
       "id": "3136777",
       "name": "Jae'Sean Tate",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1995-10-28",
+      "position": "F",
+      "jersey": "8",
+      "height": 76.0,
+      "weight": 230.0,
+      "college": "Ohio State",
+      "experience": 7
     },
     "4684740": {
       "id": "4684740",
       "name": "Amen Thompson",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2003-01-30",
+      "position": "G",
+      "jersey": "1",
+      "height": 79.0,
+      "weight": 200.0,
+      "experience": 4
     },
     "5105837": {
       "id": "5105837",
       "name": "Bruce Thornton",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "2003-09-14",
+      "position": "G",
+      "jersey": "2",
+      "height": 72.0,
+      "weight": 229.0,
+      "college": "Ohio State",
+      "experience": 0
     },
     "4432827": {
       "id": "4432827",
       "name": "Oscar Tshiebwe",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1999-11-27",
+      "position": "C",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 255.0,
+      "college": "Kentucky",
+      "experience": 4
     },
     "2991230": {
       "id": "2991230",
       "name": "Fred VanVleet",
       "teamId": "10",
-      "team": "Houston Rockets"
+      "team": "Houston Rockets",
+      "dateOfBirth": "1994-02-25",
+      "position": "G",
+      "jersey": "5",
+      "height": 72.0,
+      "weight": 197.0,
+      "college": "Wichita State",
+      "experience": 11
     },
     "4431752": {
       "id": "4431752",
       "name": "Kobe Brown",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2000-01-01",
+      "position": "G",
+      "jersey": "24",
+      "height": 79.0,
+      "weight": 250.0,
+      "college": "Missouri",
+      "experience": 4
     },
     "5157066": {
       "id": "5157066",
       "name": "Johnny Furphy",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2004-12-07",
+      "position": "G",
+      "jersey": "12",
+      "height": 80.0,
+      "weight": 200.0,
+      "college": "Kansas",
+      "experience": 3
     },
     "4396993": {
       "id": "4396993",
       "name": "Tyrese Haliburton",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2000-02-29",
+      "position": "G",
+      "jersey": "0",
+      "height": 77.0,
+      "weight": 185.0,
+      "college": "Iowa State",
+      "experience": 7
     },
     "4065731": {
       "id": "4065731",
       "name": "Jay Huff",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1997-08-25",
+      "position": "C",
+      "jersey": "32",
+      "height": 85.0,
+      "weight": 240.0,
+      "college": "Virginia",
+      "experience": 6
     },
     "4592829": {
       "id": "4592829",
       "name": "Quenton Jackson",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1998-09-15",
+      "position": "G",
+      "jersey": "29",
+      "height": 76.0,
+      "weight": 173.0,
+      "college": "Texas A&M",
+      "experience": 5
     },
     "2530530": {
       "id": "2530530",
       "name": "T.J. McConnell",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1992-03-25",
+      "position": "G",
+      "jersey": "9",
+      "height": 73.0,
+      "weight": 190.0,
+      "college": "Arizona",
+      "experience": 12
     },
     "2580365": {
       "id": "2580365",
       "name": "Larry Nance Jr.",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1993-01-01",
+      "position": "F",
+      "jersey": "22",
+      "height": 78.0,
+      "weight": 245.0,
+      "college": "Wyoming",
+      "experience": 12
     },
     "4395712": {
       "id": "4395712",
       "name": "Andrew Nembhard",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2000-01-16",
+      "position": "G",
+      "jersey": "2",
+      "height": 76.0,
+      "weight": 191.0,
+      "college": "Gonzaga",
+      "experience": 5
     },
     "4396909": {
       "id": "4396909",
       "name": "Aaron Nesmith",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1999-10-16",
+      "position": "G",
+      "jersey": "23",
+      "height": 77.0,
+      "weight": 215.0,
+      "college": "Vanderbilt",
+      "experience": 7
     },
     "3133603": {
       "id": "3133603",
       "name": "Kelly Oubre Jr.",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1995-12-09",
+      "position": "G",
+      "jersey": "10",
+      "height": 80.0,
+      "weight": 203.0,
+      "college": "Kansas",
+      "experience": 12
     },
     "4433076": {
       "id": "4433076",
       "name": "Ben Sheppard",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2001-07-16",
+      "position": "G",
+      "jersey": "26",
+      "height": 78.0,
+      "weight": 190.0,
+      "college": "Belmont",
+      "experience": 4
     },
     "3149673": {
       "id": "3149673",
       "name": "Pascal Siakam",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1994-04-02",
+      "position": "F",
+      "jersey": "43",
+      "height": 80.0,
+      "weight": 245.0,
+      "college": "New Mexico State",
+      "experience": 11
     },
     "4398207": {
       "id": "4398207",
       "name": "Jalen Slawson",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1999-10-22",
+      "position": "F",
+      "jersey": "18",
+      "height": 79.0,
+      "weight": 215.0,
+      "college": "Furman",
+      "experience": 3
     },
     "5105854": {
       "id": "5105854",
       "name": "Braden Smith",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2003-07-25",
+      "position": "G",
+      "jersey": "3",
+      "height": 70.0,
+      "weight": 167.0,
+      "college": "Purdue",
+      "experience": 0
     },
     "4278355": {
       "id": "4278355",
       "name": "Obi Toppin",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1998-03-04",
+      "position": "F",
+      "jersey": "1",
+      "height": 81.0,
+      "weight": 220.0,
+      "college": "Dayton",
+      "experience": 7
     },
     "5106060": {
       "id": "5106060",
       "name": "Jarace Walker",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "2003-09-04",
+      "position": "F",
+      "jersey": "5",
+      "height": 79.0,
+      "weight": 235.0,
+      "college": "Houston",
+      "experience": 4
     },
     "4017837": {
       "id": "4017837",
       "name": "Ivica Zubac",
       "teamId": "11",
-      "team": "Indiana Pacers"
+      "team": "Indiana Pacers",
+      "dateOfBirth": "1997-03-18",
+      "position": "C",
+      "jersey": "40",
+      "height": 84.0,
+      "weight": 240.0,
+      "experience": 11
     },
     "6580": {
       "id": "6580",
       "name": "Bradley Beal",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1993-06-28",
+      "position": "G",
+      "jersey": "3",
+      "height": 76.0,
+      "weight": 207.0,
+      "college": "Florida",
+      "experience": 15
     },
     "4845363": {
       "id": "4845363",
       "name": "Cam Christie",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2005-07-24",
+      "position": "G",
+      "jersey": "24",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "Minnesota",
+      "experience": 3
     },
     "5106258": {
       "id": "5106258",
       "name": "Gradey Dick",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2003-11-20",
+      "position": "G",
+      "jersey": "9",
+      "height": 79.0,
+      "weight": 200.0,
+      "college": "Kansas",
+      "experience": 4
     },
     "2991139": {
       "id": "2991139",
       "name": "Kris Dunn",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1994-03-18",
+      "position": "G",
+      "jersey": "8",
+      "height": 75.0,
+      "weight": 205.0,
+      "college": "Providence",
+      "experience": 11
     },
     "4396907": {
       "id": "4396907",
       "name": "Darius Garland",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2000-01-26",
+      "position": "G",
+      "jersey": "10",
+      "height": 73.0,
+      "weight": 192.0,
+      "college": "Vanderbilt",
+      "experience": 8
     },
     "4066648": {
       "id": "4066648",
       "name": "Rui Hachimura",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1998-02-08",
+      "position": "F",
+      "jersey": "28",
+      "height": 80.0,
+      "weight": 230.0,
+      "college": "Gonzaga",
+      "experience": 8
     },
     "3913176": {
       "id": "3913176",
       "name": "Brandon Ingram",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1997-09-02",
+      "position": "F",
+      "jersey": "7",
+      "height": 80.0,
+      "weight": 190.0,
+      "college": "Duke",
+      "experience": 11
     },
     "4432170": {
       "id": "4432170",
       "name": "Isaiah Jackson",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2002-01-10",
+      "position": "F",
+      "jersey": "23",
+      "height": 80.0,
+      "weight": 205.0,
+      "college": "Kentucky",
+      "experience": 6
     },
     "3936099": {
       "id": "3936099",
       "name": "Derrick Jones Jr.",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1997-02-15",
+      "position": "F",
+      "jersey": "5",
+      "height": 78.0,
+      "weight": 210.0,
+      "college": "UNLV",
+      "experience": 11
     },
     "3448": {
       "id": "3448",
       "name": "Brook Lopez",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1988-04-01",
+      "position": "C",
+      "jersey": "11",
+      "height": 85.0,
+      "weight": 282.0,
+      "college": "Stanford",
+      "experience": 19
     },
     "5105832": {
       "id": "5105832",
       "name": "Nick Martinelli",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2004-04-20",
+      "position": "F",
+      "jersey": "12",
+      "height": 79.0,
+      "weight": 224.0,
+      "college": "Northwestern",
+      "experience": 0
     },
     "5075626": {
       "id": "5075626",
       "name": "Baba Miller",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2004-02-07",
+      "position": "F",
+      "jersey": "18",
+      "height": 83.0,
+      "weight": 208.0,
+      "college": "Cincinnati",
+      "experience": 0
     },
     "4396818": {
       "id": "4396818",
       "name": "Jordan Miller",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2000-01-23",
+      "position": "G",
+      "jersey": "22",
+      "height": 77.0,
+      "weight": 194.0,
+      "college": "Miami",
+      "experience": 4
     },
     "5108024": {
       "id": "5108024",
       "name": "Yanic Konan Niederhauser",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2003-03-14",
+      "position": "C",
+      "jersey": "14",
+      "height": 83.0,
+      "weight": 242.0,
+      "college": "Penn State",
+      "experience": 2
     },
     "4398390": {
       "id": "4398390",
       "name": "Jalen Pickett",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1999-10-22",
+      "position": "G",
+      "jersey": "21",
+      "height": 74.0,
+      "weight": 202.0,
+      "college": "Penn State",
+      "experience": 4
     },
     "4702352": {
       "id": "4702352",
       "name": "Kobe Sanders",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2002-05-30",
+      "position": "G",
+      "jersey": "4",
+      "height": 80.0,
+      "weight": 207.0,
+      "college": "Nevada",
+      "experience": 2
     },
     "4065778": {
       "id": "4065778",
       "name": "Max Strus",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "1996-03-28",
+      "position": "G",
+      "jersey": "31",
+      "height": 77.0,
+      "weight": 215.0,
+      "college": "DePaul",
+      "experience": 8
     },
     "5254165": {
       "id": "5254165",
       "name": "Keaton Wagler",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2007-02-03",
+      "position": "G",
+      "jersey": "1",
+      "height": 77.0,
+      "weight": 188.0,
+      "college": "Illinois",
+      "experience": 0
     },
     "4683935": {
       "id": "4683935",
       "name": "Blake Wesley",
       "teamId": "12",
-      "team": "LA Clippers"
+      "team": "LA Clippers",
+      "dateOfBirth": "2003-03-16",
+      "position": "G",
+      "jersey": "20",
+      "height": 76.0,
+      "weight": 190.0,
+      "college": "Notre Dame",
+      "experience": 5
     },
     "5113969": {
       "id": "5113969",
       "name": "Cameron Carr",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2004-11-21",
+      "position": "G",
+      "jersey": "43",
+      "height": 77.0,
+      "weight": 184.0,
+      "college": "Baylor",
+      "experience": 0
     },
     "5105817": {
       "id": "5105817",
       "name": "Carson Cooper",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2004-04-09",
+      "position": "C",
+      "height": 83.0,
+      "weight": 245.0,
+      "college": "Michigan State",
+      "experience": 0
     },
     "3945274": {
       "id": "3945274",
       "name": "Luka Doncic",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1999-02-28",
+      "position": "G",
+      "jersey": "77",
+      "height": 80.0,
+      "weight": 230.0,
+      "experience": 9
     },
     "4397014": {
       "id": "4397014",
       "name": "Quentin Grimes",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2000-05-08",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 210.0,
+      "college": "Houston",
+      "experience": 6
     },
     "4868423": {
       "id": "4868423",
       "name": "Jaden Hardy",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2002-07-05",
+      "position": "G",
+      "jersey": "7",
+      "height": 75.0,
+      "weight": 198.0,
+      "experience": 5
     },
     "4683774": {
       "id": "4683774",
       "name": "Bronny James",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2004-10-06",
+      "position": "G",
+      "jersey": "9",
+      "height": 74.0,
+      "weight": 210.0,
+      "college": "USC",
+      "experience": 3
     },
     "4433599": {
       "id": "4433599",
       "name": "Arthur Kaluma",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2002-03-01",
+      "position": "F",
+      "jersey": "47",
+      "height": 78.0,
+      "weight": 223.0,
+      "college": "Texas",
+      "experience": 2
     },
     "4433136": {
       "id": "4433136",
       "name": "Walker Kessler",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2001-07-26",
+      "position": "C",
+      "jersey": "14",
+      "height": 86.0,
+      "weight": 245.0,
+      "college": "Auburn",
+      "experience": 5
     },
     "4592691": {
       "id": "4592691",
       "name": "Jake LaRavia",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2001-11-03",
+      "position": "F",
+      "jersey": "12",
+      "height": 79.0,
+      "weight": 235.0,
+      "college": "Wake Forest",
+      "experience": 5
     },
     "3155535": {
       "id": "3155535",
       "name": "Kevon Looney",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1996-02-06",
+      "position": "F",
+      "jersey": "55",
+      "height": 81.0,
+      "weight": 222.0,
+      "college": "UCLA",
+      "experience": 12
     },
     "4278580": {
       "id": "4278580",
       "name": "Sandro Mamukelashvili",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1999-05-23",
+      "position": "F",
+      "jersey": "54",
+      "height": 81.0,
+      "weight": 240.0,
+      "college": "Seton Hall",
+      "experience": 6
     },
     "4702972": {
       "id": "4702972",
       "name": "Chris Manon",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2001-12-09",
+      "position": "G",
+      "jersey": "30",
+      "height": 76.0,
+      "weight": 209.0,
+      "college": "Vanderbilt",
+      "experience": 2
     },
     "5114350": {
       "id": "5114350",
       "name": "AK Okereke",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2003-07-02",
+      "position": "F",
+      "jersey": "31",
+      "height": 79.0,
+      "weight": 244.0,
+      "college": "Vanderbilt",
+      "experience": 0
     },
     "4066457": {
       "id": "4066457",
       "name": "Austin Reaves",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1998-05-29",
+      "position": "G",
+      "jersey": "15",
+      "height": 77.0,
+      "weight": 197.0,
+      "college": "Oklahoma",
+      "experience": 6
     },
     "4277811": {
       "id": "4277811",
       "name": "Collin Sexton",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1999-01-04",
+      "position": "G",
+      "jersey": "10",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Alabama",
+      "experience": 9
     },
     "5060631": {
       "id": "5060631",
       "name": "Adou Thiero",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2004-05-08",
+      "position": "F",
+      "jersey": "1",
+      "height": 80.0,
+      "weight": 220.0,
+      "college": "Arkansas",
+      "experience": 2
     },
     "3907498": {
       "id": "3907498",
       "name": "Matisse Thybulle",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1997-03-04",
+      "position": "G",
+      "jersey": "4",
+      "height": 77.0,
+      "weight": 202.0,
+      "college": "Washington",
+      "experience": 8
     },
     "4278077": {
       "id": "4278077",
       "name": "Jarred Vanderbilt",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "1999-04-03",
+      "position": "F",
+      "jersey": "2",
+      "height": 80.0,
+      "weight": 214.0,
+      "college": "Kentucky",
+      "experience": 9
     },
     "4433137": {
       "id": "4433137",
       "name": "Ziaire Williams",
       "teamId": "13",
-      "team": "Los Angeles Lakers"
+      "team": "Los Angeles Lakers",
+      "dateOfBirth": "2001-09-12",
+      "position": "F",
+      "jersey": "11",
+      "height": 81.0,
+      "weight": 185.0,
+      "college": "Stanford",
+      "experience": 6
     },
     "5041935": {
       "id": "5041935",
       "name": "Cameron Boozer",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2007-07-18",
+      "position": "F",
+      "jersey": "27",
+      "height": 80.0,
+      "weight": 253.0,
+      "college": "Duke",
+      "experience": 0
     },
     "4903027": {
       "id": "4903027",
       "name": "Cedric Coward",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2003-09-11",
+      "position": "F",
+      "jersey": "23",
+      "height": 77.0,
+      "weight": 206.0,
+      "college": "Washington State",
+      "experience": 2
     },
     "4600663": {
       "id": "4600663",
       "name": "Zach Edey",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2002-03-14",
+      "position": "C",
+      "jersey": "14",
+      "height": 87.0,
+      "weight": 305.0,
+      "college": "Purdue",
+      "experience": 3
     },
     "2991070": {
       "id": "2991070",
       "name": "Jerami Grant",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "1994-03-12",
+      "position": "F",
+      "jersey": "3",
+      "height": 79.0,
+      "weight": 213.0,
+      "college": "Syracuse",
+      "experience": 13
     },
     "4684806": {
       "id": "4684806",
       "name": "Taylor Hendricks",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2003-11-22",
+      "position": "F",
+      "jersey": "22",
+      "height": 81.0,
+      "weight": 215.0,
+      "college": "UCF",
+      "experience": 4
     },
     "5105550": {
       "id": "5105550",
       "name": "GG Jackson",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2004-12-17",
+      "position": "F",
+      "jersey": "45",
+      "height": 81.0,
+      "weight": 210.0,
+      "college": "South Carolina",
+      "experience": 4
     },
     "4065733": {
       "id": "4065733",
       "name": "Ty Jerome",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "1997-07-08",
+      "position": "G",
+      "jersey": "2",
+      "height": 77.0,
+      "weight": 195.0,
+      "college": "Virginia",
+      "experience": 8
     },
     "5231919": {
       "id": "5231919",
       "name": "Karim Lopez",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2007-04-12",
+      "position": "F",
+      "jersey": "35",
+      "height": 80.0,
+      "weight": 222.0,
+      "experience": 0
     },
     "4683934": {
       "id": "4683934",
       "name": "Jahmai Mashack",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2002-11-10",
+      "position": "G",
+      "jersey": "21",
+      "height": 75.0,
+      "weight": 197.0,
+      "college": "Tennessee",
+      "experience": 2
     },
     "4594326": {
       "id": "4594326",
       "name": "Kris Murray",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2000-08-19",
+      "position": "F",
+      "jersey": "17",
+      "height": 80.0,
+      "weight": 218.0,
+      "college": "Iowa",
+      "experience": 4
     },
     "4431785": {
       "id": "4431785",
       "name": "Scotty Pippen Jr.",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2000-11-10",
+      "position": "G",
+      "jersey": "1",
+      "height": 74.0,
+      "weight": 170.0,
+      "college": "Vanderbilt",
+      "experience": 5
     },
     "4593016": {
       "id": "4593016",
       "name": "Quinten Post",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2000-03-21",
+      "position": "C",
+      "jersey": "41",
+      "height": 84.0,
+      "weight": 238.0,
+      "college": "Boston College",
+      "experience": 3
     },
     "4595400": {
       "id": "4595400",
       "name": "Olivier-Maxence Prosper",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2002-07-03",
+      "position": "F",
+      "jersey": "18",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Marquette",
+      "experience": 4
     },
     "5105462": {
       "id": "5105462",
       "name": "Richie Saunders",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2001-09-19",
+      "position": "G",
+      "jersey": "5",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "BYU",
+      "experience": 0
     },
     "4781746": {
       "id": "4781746",
       "name": "Javon Small",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2002-12-19",
+      "position": "G",
+      "jersey": "10",
+      "height": 73.0,
+      "weight": 190.0,
+      "college": "West Virginia",
+      "experience": 2
     },
     "4433083": {
       "id": "4433083",
       "name": "Cam Spencer",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2000-04-06",
+      "position": "G",
+      "jersey": "24",
+      "height": 75.0,
+      "weight": 205.0,
+      "college": "UConn",
+      "experience": 3
     },
     "4432810": {
       "id": "4432810",
       "name": "Isaiah Stewart",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2001-05-22",
+      "position": "C",
+      "jersey": "28",
+      "height": 80.0,
+      "weight": 250.0,
+      "college": "Washington",
+      "experience": 7
     },
     "5112087": {
       "id": "5112087",
       "name": "Jaylen Wells",
       "teamId": "29",
-      "team": "Memphis Grizzlies"
+      "team": "Memphis Grizzlies",
+      "dateOfBirth": "2003-08-26",
+      "position": "F",
+      "jersey": "0",
+      "height": 79.0,
+      "weight": 206.0,
+      "college": "Washington State",
+      "experience": 3
     },
     "4066261": {
       "id": "4066261",
       "name": "Bam Adebayo",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1997-07-18",
+      "position": "C",
+      "jersey": "13",
+      "height": 81.0,
+      "weight": 260.0,
+      "college": "Kentucky",
+      "experience": 10
     },
     "3032977": {
       "id": "3032977",
       "name": "Giannis Antetokounmpo",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1994-12-06",
+      "position": "F",
+      "jersey": "7",
+      "height": 83.0,
+      "weight": 243.0,
+      "experience": 14
     },
     "5107157": {
       "id": "5107157",
       "name": "Ryan Conwell",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2004-06-15",
+      "position": "G",
+      "jersey": "4",
+      "height": 75.0,
+      "weight": 220.0,
+      "college": "Louisville",
+      "experience": 0
     },
     "4837356": {
       "id": "4837356",
       "name": "Tre Donaldson",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2003-12-11",
+      "position": "G",
+      "jersey": "24",
+      "height": 74.0,
+      "weight": 210.0,
+      "college": "Miami",
+      "experience": 0
     },
     "3899664": {
       "id": "3899664",
       "name": "Simone Fontecchio",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1995-12-09",
+      "position": "F",
+      "jersey": "0",
+      "height": 79.0,
+      "weight": 220.0,
+      "experience": 5
     },
     "4431772": {
       "id": "4431772",
       "name": "Myron Gardner",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2001-05-21",
+      "position": "F",
+      "jersey": "15",
+      "height": 77.0,
+      "weight": 225.0,
+      "college": "Little Rock",
+      "experience": 2
     },
     "4700818": {
       "id": "4700818",
       "name": "Vladislav Goldin",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2001-05-12",
+      "position": "C",
+      "jersey": "50",
+      "height": 84.0,
+      "weight": 255.0,
+      "college": "Michigan",
+      "experience": 2
     },
     "2528210": {
       "id": "2528210",
       "name": "Tim Hardaway Jr.",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1992-03-16",
+      "position": "G",
+      "jersey": "10",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Michigan",
+      "experience": 14
     },
     "4431786": {
       "id": "4431786",
       "name": "Keshad Johnson",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2001-06-23",
+      "position": "F",
+      "jersey": "16",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "Arizona",
+      "experience": 3
     },
     "4997528": {
       "id": "4997528",
       "name": "Nikola Jovic",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2003-06-09",
+      "position": "F",
+      "jersey": "5",
+      "height": 82.0,
+      "weight": 240.0,
+      "experience": 5
     },
     "4601025": {
       "id": "4601025",
       "name": "Pelle Larsson",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "2001-02-23",
+      "position": "G",
+      "jersey": "9",
+      "height": 77.0,
+      "weight": 215.0,
+      "college": "Arizona",
+      "experience": 3
     },
     "4278053": {
       "id": "4278053",
       "name": "Davion Mitchell",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1998-09-05",
+      "position": "G",
+      "jersey": "2",
+      "height": 72.0,
+      "weight": 210.0,
+      "college": "Baylor",
+      "experience": 6
     },
     "3064482": {
       "id": "3064482",
       "name": "Bobby Portis",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1995-02-10",
+      "position": "F",
+      "jersey": "95",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Arkansas",
+      "experience": 12
     },
     "4278076": {
       "id": "4278076",
       "name": "Nick Richards",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1997-11-29",
+      "position": "C",
+      "jersey": "8",
+      "height": 83.0,
+      "weight": 245.0,
+      "college": "Kentucky",
+      "experience": 7
     },
     "4066993": {
       "id": "4066993",
       "name": "Dru Smith",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1997-12-30",
+      "position": "G",
+      "jersey": "12",
+      "height": 74.0,
+      "weight": 200.0,
+      "college": "Missouri",
+      "experience": 5
     },
     "6475": {
       "id": "6475",
       "name": "Klay Thompson",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1990-02-08",
+      "position": "G",
+      "jersey": "11",
+      "height": 77.0,
+      "weight": 220.0,
+      "college": "Washington State",
+      "experience": 16
     },
     "3059319": {
       "id": "3059319",
       "name": "Andrew Wiggins",
       "teamId": "14",
-      "team": "Miami Heat"
+      "team": "Miami Heat",
+      "dateOfBirth": "1995-02-23",
+      "position": "F",
+      "jersey": "22",
+      "height": 79.0,
+      "weight": 210.0,
+      "college": "Kansas",
+      "experience": 13
     },
     "5164559": {
       "id": "5164559",
       "name": "Nate Ament",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2006-12-10",
+      "position": "F",
+      "jersey": "15",
+      "height": 82.0,
+      "weight": 211.0,
+      "college": "Tennessee",
+      "experience": 0
     },
     "5082206": {
       "id": "5082206",
       "name": "Brayden Burries",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2005-09-18",
+      "position": "G",
+      "jersey": "0",
+      "height": 76.0,
+      "weight": 215.0,
+      "college": "Arizona",
+      "experience": 0
     },
     "4997526": {
       "id": "4997526",
       "name": "Ousmane Dieng",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2003-05-21",
+      "position": "F",
+      "jersey": "21",
+      "height": 81.0,
+      "weight": 185.0,
+      "experience": 5
     },
     "4397475": {
       "id": "4397475",
       "name": "AJ Green",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1999-09-27",
+      "position": "G",
+      "jersey": "20",
+      "height": 76.0,
+      "weight": 190.0,
+      "college": "Northern Iowa",
+      "experience": 5
     },
     "4395725": {
       "id": "4395725",
       "name": "Tyler Herro",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2000-01-20",
+      "position": "G",
+      "jersey": "11",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Kentucky",
+      "experience": 8
     },
     "5214640": {
       "id": "5214640",
       "name": "Kasparas Jakucionis",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2006-05-29",
+      "position": "G",
+      "jersey": "25",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Illinois",
+      "experience": 2
     },
     "4432848": {
       "id": "4432848",
       "name": "Jaime Jaquez Jr.",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2001-02-18",
+      "position": "F",
+      "jersey": "24",
+      "height": 78.0,
+      "weight": 230.0,
+      "college": "UCLA",
+      "experience": 4
     },
     "4697268": {
       "id": "4697268",
       "name": "Kam Jones",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2002-02-25",
+      "position": "G",
+      "jersey": "19",
+      "height": 76.0,
+      "weight": 200.0,
+      "college": "Marquette",
+      "experience": 2
     },
     "3134907": {
       "id": "3134907",
       "name": "Kyle Kuzma",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1995-07-24",
+      "position": "F",
+      "jersey": "18",
+      "height": 80.0,
+      "weight": 221.0,
+      "college": "Utah",
+      "experience": 10
     },
     "2991043": {
       "id": "2991043",
       "name": "Caris LeVert",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1994-08-25",
+      "position": "G",
+      "jersey": "12",
+      "height": 79.0,
+      "weight": 205.0,
+      "college": "Michigan",
+      "experience": 11
     },
     "5214989": {
       "id": "5214989",
       "name": "Bogoljub Markovic",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2005-07-12",
+      "position": "F",
+      "jersey": "23",
+      "height": 83.0,
+      "weight": 210.0,
+      "experience": 0
     },
     "4397233": {
       "id": "4397233",
       "name": "Pete Nance",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2000-02-19",
+      "position": "F",
+      "jersey": "35",
+      "height": 81.0,
+      "weight": 225.0,
+      "college": "North Carolina",
+      "experience": 4
     },
     "4591725": {
       "id": "4591725",
       "name": "Ryan Rollins",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2002-07-03",
+      "position": "G",
+      "jersey": "13",
+      "height": 75.0,
+      "weight": 180.0,
+      "college": "Toledo",
+      "experience": 5
     },
     "4397114": {
       "id": "4397114",
       "name": "Cormac Ryan",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1998-10-26",
+      "position": "G",
+      "jersey": "30",
+      "height": 77.0,
+      "weight": 195.0,
+      "college": "North Carolina",
+      "experience": 2
     },
     "4277922": {
       "id": "4277922",
       "name": "Jericho Sims",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1998-10-20",
+      "position": "C",
+      "jersey": "00",
+      "height": 82.0,
+      "weight": 250.0,
+      "college": "Texas",
+      "experience": 6
     },
     "4277843": {
       "id": "4277843",
       "name": "Gary Trent Jr.",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1999-01-18",
+      "position": "G",
+      "jersey": "5",
+      "height": 77.0,
+      "weight": 204.0,
+      "college": "Duke",
+      "experience": 9
     },
     "3133628": {
       "id": "3133628",
       "name": "Myles Turner",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "1996-03-24",
+      "position": "C",
+      "jersey": "3",
+      "height": 83.0,
+      "weight": 250.0,
+      "college": "Texas",
+      "experience": 12
     },
     "5105623": {
       "id": "5105623",
       "name": "Kel'el Ware",
       "teamId": "15",
-      "team": "Milwaukee Bucks"
+      "team": "Milwaukee Bucks",
+      "dateOfBirth": "2004-04-20",
+      "position": "C",
+      "jersey": "9",
+      "height": 84.0,
+      "weight": 250.0,
+      "college": "Indiana",
+      "experience": 3
     },
     "4432816": {
       "id": "4432816",
       "name": "LaMelo Ball",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2001-08-22",
+      "position": "G",
+      "jersey": "1",
+      "height": 79.0,
+      "weight": 180.0,
+      "experience": 7
     },
     "5279133": {
       "id": "5279133",
       "name": "Joan Beringer",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2006-11-11",
+      "position": "F",
+      "jersey": "19",
+      "height": 83.0,
+      "weight": 230.0,
+      "experience": 2
     },
     "4433569": {
       "id": "4433569",
       "name": "Johni Broome",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2002-07-19",
+      "position": "F",
+      "jersey": "22",
+      "height": 82.0,
+      "weight": 235.0,
+      "college": "Auburn"
     },
     "4432247": {
       "id": "4432247",
       "name": "Jaylen Clark",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2001-10-13",
+      "position": "G",
+      "jersey": "7",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "UCLA",
+      "experience": 3
     },
     "3934673": {
       "id": "3934673",
       "name": "Donte DiVincenzo",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "1997-01-31",
+      "position": "G",
+      "jersey": "0",
+      "height": 76.0,
+      "weight": 203.0,
+      "college": "Villanova",
+      "experience": 9
     },
     "4397002": {
       "id": "4397002",
       "name": "Ayo Dosunmu",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2000-01-17",
+      "position": "G",
+      "jersey": "13",
+      "height": 76.0,
+      "weight": 200.0,
+      "college": "Illinois",
+      "experience": 6
     },
     "4594268": {
       "id": "4594268",
       "name": "Anthony Edwards",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2001-08-05",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 225.0,
+      "college": "Georgia",
+      "experience": 7
     },
     "5061585": {
       "id": "5061585",
       "name": "Isaiah Evans",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2005-12-06",
+      "position": "F",
+      "jersey": "33",
+      "height": 78.0,
+      "weight": 186.0,
+      "college": "Duke",
+      "experience": 0
     },
     "3032976": {
       "id": "3032976",
       "name": "Rudy Gobert",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "1992-06-26",
+      "position": "C",
+      "jersey": "27",
+      "height": 85.0,
+      "weight": 258.0,
+      "experience": 14
     },
     "4592492": {
       "id": "4592492",
       "name": "Bones Hyland",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2000-09-14",
+      "position": "G",
+      "jersey": "8",
+      "height": 74.0,
+      "weight": 169.0,
+      "college": "VCU",
+      "experience": 6
     },
     "4433247": {
       "id": "4433247",
       "name": "Jonathan Kuminga",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2002-10-06",
+      "position": "F",
+      "jersey": "24",
+      "height": 79.0,
+      "weight": 225.0,
+      "experience": 6
     },
     "3136196": {
       "id": "3136196",
       "name": "Trey Lyles",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "1995-11-05",
+      "position": "F",
+      "jersey": "41",
+      "height": 81.0,
+      "weight": 234.0,
+      "college": "Kentucky",
+      "experience": 11
     },
     "4431671": {
       "id": "4431671",
       "name": "Jaden McDaniels",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2000-09-29",
+      "position": "F",
+      "jersey": "3",
+      "height": 81.0,
+      "weight": 185.0,
+      "college": "Washington",
+      "experience": 7
     },
     "4592979": {
       "id": "4592979",
       "name": "Zyon Pullin",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2001-03-03",
+      "position": "G",
+      "jersey": "15",
+      "height": 76.0,
+      "weight": 206.0,
+      "college": "Florida",
+      "experience": 3
     },
     "4432847": {
       "id": "4432847",
       "name": "Terrence Shannon Jr.",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2000-07-30",
+      "position": "G",
+      "jersey": "4",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Illinois",
+      "experience": 3
     },
     "4895758": {
       "id": "4895758",
       "name": "Cody Williams",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2004-11-20",
+      "position": "F",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 190.0,
+      "college": "Colorado",
+      "experience": 3
     },
     "5157587": {
       "id": "5157587",
       "name": "Rocco Zikarsky",
       "teamId": "16",
-      "team": "Minnesota Timberwolves"
+      "team": "Minnesota Timberwolves",
+      "dateOfBirth": "2006-07-11",
+      "position": "C",
+      "jersey": "44",
+      "height": 87.0,
+      "weight": 254.0,
+      "experience": 2
     },
     "4397136": {
       "id": "4397136",
       "name": "Saddiq Bey",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "1999-04-09",
+      "position": "F",
+      "jersey": "41",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "Villanova",
+      "experience": 6
     },
     "4712862": {
       "id": "4712862",
       "name": "Malik Dia",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2004-02-04",
+      "position": "F",
+      "jersey": "8",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Ole Miss",
+      "experience": 0
     },
     "5144091": {
       "id": "5144091",
       "name": "Jeremiah Fears",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2006-10-14",
+      "position": "G",
+      "jersey": "0",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Oklahoma",
+      "experience": 2
     },
     "5170947": {
       "id": "5170947",
       "name": "AJ Johnson",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2004-12-01",
+      "position": "G",
+      "jersey": "14",
+      "height": 77.0,
+      "weight": 160.0,
+      "experience": 3
     },
     "4277813": {
       "id": "4277813",
       "name": "Herbert Jones",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "1998-10-06",
+      "position": "F",
+      "jersey": "2",
+      "height": 79.0,
+      "weight": 206.0,
+      "college": "Alabama",
+      "experience": 6
     },
     "3442": {
       "id": "3442",
       "name": "DeAndre Jordan",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "1988-07-21",
+      "position": "C",
+      "jersey": "6",
+      "height": 83.0,
+      "weight": 265.0,
+      "college": "Texas A&M",
+      "experience": 19
     },
     "4683634": {
       "id": "4683634",
       "name": "Bennedict Mathurin",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2002-06-19",
+      "position": "G",
+      "jersey": "24",
+      "height": 77.0,
+      "weight": 210.0,
+      "college": "Arizona",
+      "experience": 5
     },
     "4997538": {
       "id": "4997538",
       "name": "Karlo Matkovic",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2001-03-30",
+      "position": "F",
+      "jersey": "17",
+      "height": 82.0,
+      "weight": 231.0,
+      "experience": 3
     },
     "4576086": {
       "id": "4576086",
       "name": "Bryce McGowens",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2002-11-08",
+      "position": "G",
+      "jersey": "11",
+      "height": 78.0,
+      "weight": 190.0,
+      "college": "Nebraska",
+      "experience": 5
     },
     "5061589": {
       "id": "5061589",
       "name": "Yves Missi",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2004-05-14",
+      "position": "C",
+      "jersey": "21",
+      "height": 83.0,
+      "weight": 235.0,
+      "college": "Baylor",
+      "experience": 3
     },
     "4397688": {
       "id": "4397688",
       "name": "Trey Murphy III",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2000-06-18",
+      "position": "F",
+      "jersey": "25",
+      "height": 80.0,
+      "weight": 206.0,
+      "college": "Virginia",
+      "experience": 6
     },
     "3907497": {
       "id": "3907497",
       "name": "Dejounte Murray",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "1996-09-19",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 180.0,
+      "college": "Washington",
+      "experience": 10
     },
     "4703115": {
       "id": "4703115",
       "name": "Jaron Pierre Jr.",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2002-07-12",
+      "position": "G",
+      "jersey": "10",
+      "height": 78.0,
+      "weight": 210.0,
+      "college": "SMU",
+      "experience": 0
     },
     "4277956": {
       "id": "4277956",
       "name": "Jordan Poole",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "1999-06-19",
+      "position": "G",
+      "jersey": "3",
+      "height": 76.0,
+      "weight": 194.0,
+      "college": "Michigan",
+      "experience": 8
     },
     "4869780": {
       "id": "4869780",
       "name": "Derik Queen",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2004-12-27",
+      "position": "C",
+      "jersey": "22",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Maryland",
+      "experience": 2
     },
     "4683742": {
       "id": "4683742",
       "name": "Julian Reese",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2003-06-30",
+      "position": "F",
+      "jersey": "13",
+      "height": 81.0,
+      "weight": 252.0,
+      "college": "Maryland",
+      "experience": 2
     },
     "4431675": {
       "id": "4431675",
       "name": "Trendon Watford",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2000-11-09",
+      "position": "F",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 237.0,
+      "college": "LSU",
+      "experience": 6
     },
     "4395628": {
       "id": "4395628",
       "name": "Zion Williamson",
       "teamId": "3",
-      "team": "New Orleans Pelicans"
+      "team": "New Orleans Pelicans",
+      "dateOfBirth": "2000-07-06",
+      "position": "F",
+      "jersey": "1",
+      "height": 78.0,
+      "weight": 284.0,
+      "college": "Duke",
+      "experience": 7
     },
     "4683730": {
       "id": "4683730",
       "name": "Jaden Akins",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2003-02-25",
+      "position": "G",
+      "jersey": "14",
+      "height": 76.0,
+      "weight": 195.0,
+      "college": "Michigan State",
+      "experience": 0
     },
     "4277869": {
       "id": "4277869",
       "name": "Jose Alvarado",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1998-04-12",
+      "position": "G",
+      "jersey": "5",
+      "height": 72.0,
+      "weight": 179.0,
+      "college": "Georgia Tech",
+      "experience": 6
     },
     "3934719": {
       "id": "3934719",
       "name": "OG Anunoby",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1997-07-17",
+      "position": "F",
+      "jersey": "8",
+      "height": 79.0,
+      "weight": 240.0,
+      "college": "Indiana",
+      "experience": 10
     },
     "3147657": {
       "id": "3147657",
       "name": "Mikal Bridges",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1996-08-30",
+      "position": "G",
+      "jersey": "25",
+      "height": 78.0,
+      "weight": 209.0,
+      "college": "Villanova",
+      "experience": 9
     },
     "3934672": {
       "id": "3934672",
       "name": "Jalen Brunson",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1996-08-31",
+      "position": "G",
+      "jersey": "11",
+      "height": 74.0,
+      "weight": 190.0,
+      "college": "Villanova",
+      "experience": 9
     },
     "2528426": {
       "id": "2528426",
       "name": "Jordan Clarkson",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1992-06-07",
+      "position": "G",
+      "jersey": "00",
+      "height": 77.0,
+      "weight": 194.0,
+      "college": "Missouri",
+      "experience": 13
     },
     "5211983": {
       "id": "5211983",
       "name": "Pacome Dadiet",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2005-07-27",
+      "position": "F",
+      "jersey": "4",
+      "height": 81.0,
+      "weight": 210.0,
+      "experience": 3
     },
     "5289900": {
       "id": "5289900",
       "name": "Mohamed Diawara",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2005-04-29",
+      "position": "F",
+      "jersey": "51",
+      "height": 81.0,
+      "weight": 225.0,
+      "experience": 2
     },
     "6585": {
       "id": "6585",
       "name": "Andre Drummond",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1993-08-10",
+      "position": "C",
+      "jersey": "0",
+      "height": 83.0,
+      "weight": 279.0,
+      "college": "UConn",
+      "experience": 15
     },
     "3062679": {
       "id": "3062679",
       "name": "Josh Hart",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1995-03-06",
+      "position": "G",
+      "jersey": "3",
+      "height": 77.0,
+      "weight": 215.0,
+      "college": "Villanova",
+      "experience": 10
     },
     "4897943": {
       "id": "4897943",
       "name": "Dalton Knecht",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2001-04-19",
+      "position": "F",
+      "jersey": "1",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Tennessee",
+      "experience": 3
     },
     "4433225": {
       "id": "4433225",
       "name": "Tyler Kolek",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2001-03-27",
+      "position": "G",
+      "jersey": "13",
+      "height": 74.0,
+      "weight": 195.0,
+      "college": "Marquette",
+      "experience": 3
     },
     "4431823": {
       "id": "4431823",
       "name": "Miles McBride",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2000-09-08",
+      "position": "G",
+      "jersey": "2",
+      "height": 74.0,
+      "weight": 195.0,
+      "college": "West Virginia",
+      "experience": 6
     },
     "4838721": {
       "id": "4838721",
       "name": "Tyler Nickel",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2003-09-05",
+      "position": "F",
+      "jersey": "55",
+      "height": 80.0,
+      "weight": 217.0,
+      "college": "Vanderbilt",
+      "experience": 0
     },
     "3914044": {
       "id": "3914044",
       "name": "Landry Shamet",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1997-03-13",
+      "position": "G",
+      "jersey": "44",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "Wichita State",
+      "experience": 9
     },
     "3136195": {
       "id": "3136195",
       "name": "Karl-Anthony Towns",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "1995-11-15",
+      "position": "C",
+      "jersey": "32",
+      "height": 84.0,
+      "weight": 248.0,
+      "college": "Kentucky",
+      "experience": 12
     },
     "4432808": {
       "id": "4432808",
       "name": "James Wiseman",
       "teamId": "18",
-      "team": "New York Knicks"
+      "team": "New York Knicks",
+      "dateOfBirth": "2001-03-31",
+      "position": "C",
+      "jersey": "35",
+      "height": 83.0,
+      "weight": 240.0,
+      "college": "Memphis",
+      "experience": 7
     },
     "4684208": {
       "id": "4684208",
       "name": "Brooks Barnhizer",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2002-03-02",
+      "position": "F",
+      "jersey": "23",
+      "height": 78.0,
+      "weight": 226.0,
+      "college": "Northwestern",
+      "experience": 2
     },
     "2991350": {
       "id": "2991350",
       "name": "Alex Caruso",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "1994-02-28",
+      "position": "G",
+      "jersey": "9",
+      "height": 77.0,
+      "weight": 186.0,
+      "college": "Texas A&M",
+      "experience": 10
     },
     "4702384": {
       "id": "4702384",
       "name": "Nique Clifford",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2002-02-09",
+      "position": "G",
+      "height": 77.0,
+      "weight": 175.0,
+      "college": "Colorado State",
+      "experience": 2
     },
     "5105800": {
       "id": "5105800",
       "name": "Josh Dix",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2004-06-29",
+      "position": "G",
+      "jersey": "21",
+      "height": 77.0,
+      "weight": 206.0,
+      "college": "Creighton",
+      "experience": 0
     },
     "4278073": {
       "id": "4278073",
       "name": "Shai Gilgeous-Alexander",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "1998-07-12",
+      "position": "G",
+      "jersey": "2",
+      "height": 78.0,
+      "weight": 195.0,
+      "college": "Kentucky",
+      "experience": 9
     },
     "4222252": {
       "id": "4222252",
       "name": "Isaiah Hartenstein",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "1998-05-05",
+      "position": "C",
+      "jersey": "55",
+      "height": 84.0,
+      "weight": 250.0,
+      "experience": 9
     },
     "4433255": {
       "id": "4433255",
       "name": "Chet Holmgren",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2002-05-01",
+      "position": "C",
+      "jersey": "7",
+      "height": 85.0,
+      "weight": 208.0,
+      "college": "Gonzaga",
+      "experience": 4
     },
     "5174983": {
       "id": "5174983",
       "name": "Aday Mara",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2005-04-07",
+      "position": "C",
+      "jersey": "15",
+      "height": 87.0,
+      "weight": 262.0,
+      "college": "Michigan",
+      "experience": 0
     },
     "4683778": {
       "id": "4683778",
       "name": "Jared McCain",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2004-02-20",
+      "position": "G",
+      "jersey": "3",
+      "height": 75.0,
+      "weight": 195.0,
+      "college": "Duke",
+      "experience": 3
     },
     "4900671": {
       "id": "4900671",
       "name": "Ajay Mitchell",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2002-06-25",
+      "position": "G",
+      "jersey": "25",
+      "height": 76.0,
+      "weight": 190.0,
+      "college": "UC Santa Barbara",
+      "experience": 3
     },
     "4432185": {
       "id": "4432185",
       "name": "Micah Peavy",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2001-07-16",
+      "position": "G",
+      "height": 79.0,
+      "weight": 220.0,
+      "college": "Georgetown",
+      "experience": 2
     },
     "5061603": {
       "id": "5061603",
       "name": "Thomas Sorber",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2005-12-25",
+      "position": "C",
+      "jersey": "12",
+      "height": 81.0,
+      "weight": 250.0,
+      "college": "Georgetown",
+      "experience": 0
     },
     "5241364": {
       "id": "5241364",
       "name": "Bennett Stirtz",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2003-10-03",
+      "position": "G",
+      "jersey": "14",
+      "height": 76.0,
+      "weight": 190.0,
+      "college": "Iowa",
+      "experience": 0
     },
     "5159925": {
       "id": "5159925",
       "name": "Nikola Topic",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2005-08-10",
+      "position": "G",
+      "jersey": "44",
+      "height": 78.0,
+      "weight": 200.0,
+      "experience": 2
     },
     "4683692": {
       "id": "4683692",
       "name": "Cason Wallace",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2003-11-07",
+      "position": "G",
+      "jersey": "22",
+      "height": 75.0,
+      "weight": 195.0,
+      "college": "Kentucky",
+      "experience": 4
     },
     "4593803": {
       "id": "4593803",
       "name": "Jalen Williams",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2001-04-14",
+      "position": "G",
+      "jersey": "8",
+      "height": 77.0,
+      "weight": 211.0,
+      "college": "Santa Clara",
+      "experience": 5
     },
     "4432823": {
       "id": "4432823",
       "name": "Jaylin Williams",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "2002-06-29",
+      "position": "F",
+      "jersey": "6",
+      "height": 81.0,
+      "weight": 240.0,
+      "college": "Arkansas",
+      "experience": 5
     },
     "3133626": {
       "id": "3133626",
       "name": "Kenrich Williams",
       "teamId": "25",
-      "team": "Oklahoma City Thunder"
+      "team": "Oklahoma City Thunder",
+      "dateOfBirth": "1994-12-02",
+      "position": "G",
+      "jersey": "34",
+      "height": 79.0,
+      "weight": 210.0,
+      "college": "TCU",
+      "experience": 9
     },
     "4432573": {
       "id": "4432573",
       "name": "Paolo Banchero",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2002-11-12",
+      "position": "F",
+      "jersey": "5",
+      "height": 82.0,
+      "weight": 250.0,
+      "college": "Duke",
+      "experience": 5
     },
     "4066320": {
       "id": "4066320",
       "name": "Desmond Bane",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1998-06-25",
+      "position": "G",
+      "jersey": "3",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "TCU",
+      "experience": 7
     },
     "4348700": {
       "id": "4348700",
       "name": "Goga Bitadze",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1999-07-20",
+      "position": "C",
+      "jersey": "35",
+      "height": 83.0,
+      "weight": 250.0,
+      "experience": 8
     },
     "4712849": {
       "id": "4712849",
       "name": "Anthony Black",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2004-01-20",
+      "position": "G",
+      "jersey": "0",
+      "height": 79.0,
+      "weight": 200.0,
+      "college": "Arkansas",
+      "experience": 4
     },
     "4278572": {
       "id": "4278572",
       "name": "Jamal Cain",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1999-03-20",
+      "position": "F",
+      "jersey": "8",
+      "height": 79.0,
+      "weight": 191.0,
+      "college": "Oakland",
+      "experience": 5
     },
     "3133635": {
       "id": "3133635",
       "name": "Jevon Carter",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1995-09-14",
+      "position": "G",
+      "jersey": "2",
+      "height": 72.0,
+      "weight": 200.0,
+      "college": "West Virginia",
+      "experience": 9
     },
     "4277847": {
       "id": "4277847",
       "name": "Wendell Carter Jr.",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1999-04-16",
+      "position": "C",
+      "jersey": "34",
+      "height": 82.0,
+      "weight": 270.0,
+      "college": "Duke",
+      "experience": 9
     },
     "4397204": {
       "id": "4397204",
       "name": "Colin Castleton",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2000-05-25",
+      "position": "C",
+      "jersey": "14",
+      "height": 82.0,
+      "weight": 250.0,
+      "college": "Florida",
+      "experience": 4
     },
     "4702382": {
       "id": "4702382",
       "name": "Tristan da Silva",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2001-05-15",
+      "position": "F",
+      "jersey": "23",
+      "height": 80.0,
+      "weight": 217.0,
+      "college": "Colorado",
+      "experience": 3
     },
     "4065654": {
       "id": "4065654",
       "name": "Jonathan Isaac",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1997-10-03",
+      "position": "F",
+      "jersey": "1",
+      "height": 82.0,
+      "weight": 230.0,
+      "college": "Florida State",
+      "experience": 10
     },
     "4593034": {
       "id": "4593034",
       "name": "Alex Morales",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1997-11-21",
+      "position": "G",
+      "jersey": "30",
+      "height": 78.0,
+      "weight": 180.0,
+      "college": "Wagner",
+      "experience": 2
     },
     "5107251": {
       "id": "5107251",
       "name": "Izaiyah Nelson",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2003-10-01",
+      "position": "F",
+      "jersey": "25",
+      "height": 80.0,
+      "weight": 219.0,
+      "college": "South Florida",
+      "experience": 0
     },
     "5214637": {
       "id": "5214637",
       "name": "Noah Penda",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2005-01-07",
+      "position": "F",
+      "jersey": "93",
+      "height": 79.0,
+      "weight": 215.0,
+      "experience": 2
     },
     "5239561": {
       "id": "5239561",
       "name": "Jase Richardson",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2005-10-16",
+      "position": "G",
+      "jersey": "11",
+      "height": 73.0,
+      "weight": 180.0,
+      "college": "Michigan State",
+      "experience": 2
     },
     "4432165": {
       "id": "4432165",
       "name": "Jalen Suggs",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2001-06-03",
+      "position": "G",
+      "jersey": "4",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Gonzaga",
+      "experience": 6
     },
     "6478": {
       "id": "6478",
       "name": "Nikola Vucevic",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "1990-10-24",
+      "position": "C",
+      "jersey": "9",
+      "height": 81.0,
+      "weight": 260.0,
+      "college": "USC",
+      "experience": 16
     },
     "4566434": {
       "id": "4566434",
       "name": "Franz Wagner",
       "teamId": "19",
-      "team": "Orlando Magic"
+      "team": "Orlando Magic",
+      "dateOfBirth": "2001-08-27",
+      "position": "F",
+      "jersey": "22",
+      "height": 82.0,
+      "weight": 220.0,
+      "college": "Michigan",
+      "experience": 6
     },
     "4870562": {
       "id": "4870562",
       "name": "Dominick Barlow",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2003-05-26",
+      "position": "F",
+      "jersey": "25",
+      "height": 81.0,
+      "weight": 238.0,
+      "experience": 5
     },
     "5105637": {
       "id": "5105637",
       "name": "Adem Bona",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2003-03-28",
+      "position": "C",
+      "jersey": "30",
+      "height": 82.0,
+      "weight": 239.0,
+      "college": "UCLA",
+      "experience": 3
     },
     "3917376": {
       "id": "3917376",
       "name": "Jaylen Brown",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1996-10-24",
+      "position": "G",
+      "jersey": "7",
+      "height": 78.0,
+      "weight": 223.0,
+      "college": "California",
+      "experience": 11
     },
     "2581018": {
       "id": "2581018",
       "name": "Kentavious Caldwell-Pope",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1993-02-18",
+      "position": "G",
+      "jersey": "1",
+      "height": 77.0,
+      "weight": 213.0,
+      "college": "Georgia",
+      "experience": 14
     },
     "5124612": {
       "id": "5124612",
       "name": "VJ Edgecombe",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2005-07-30",
+      "position": "G",
+      "jersey": "77",
+      "height": 77.0,
+      "weight": 180.0,
+      "college": "Baylor",
+      "experience": 2
     },
     "4711297": {
       "id": "4711297",
       "name": "Justin Edwards",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2003-12-16",
+      "position": "F",
+      "jersey": "11",
+      "height": 79.0,
+      "weight": 222.0,
+      "college": "Kentucky",
+      "experience": 3
     },
     "3059318": {
       "id": "3059318",
       "name": "Joel Embiid",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1994-03-16",
+      "position": "C",
+      "jersey": "21",
+      "height": 84.0,
+      "weight": 270.0,
+      "college": "Kansas",
+      "experience": 11
     },
     "3904625": {
       "id": "3904625",
       "name": "Tacko Fall",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1995-12-10",
+      "position": "C",
+      "jersey": "99",
+      "height": 90.0,
+      "weight": 299.0,
+      "college": "UCF",
+      "experience": 4
     },
     "4871141": {
       "id": "4871141",
       "name": "Ariel Hukporti",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2002-04-12",
+      "position": "C",
+      "jersey": "55",
+      "height": 84.0,
+      "weight": 258.0,
+      "experience": 3
     },
     "1966": {
       "id": "1966",
       "name": "LeBron James",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1984-12-30",
+      "position": "F",
+      "jersey": "23",
+      "height": 81.0,
+      "weight": 250.0,
+      "experience": 24
     },
     "4433144": {
       "id": "4433144",
       "name": "Caleb Love",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2001-09-27",
+      "position": "G",
+      "jersey": "8",
+      "height": 75.0,
+      "weight": 214.0,
+      "college": "Arizona",
+      "experience": 2
     },
     "4431678": {
       "id": "4431678",
       "name": "Tyrese Maxey",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2000-11-04",
+      "position": "G",
+      "jersey": "0",
+      "height": 74.0,
+      "weight": 204.0,
+      "college": "Kentucky",
+      "experience": 7
     },
     "4873090": {
       "id": "4873090",
       "name": "Labaron Philon Jr.",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2005-11-24",
+      "position": "G",
+      "jersey": "00",
+      "height": 75.0,
+      "weight": 179.0,
+      "college": "Alabama",
+      "experience": 0
     },
     "5099752": {
       "id": "5099752",
       "name": "Rayan Rupert",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2004-05-31",
+      "position": "G",
+      "jersey": "12",
+      "height": 79.0,
+      "weight": 207.0,
+      "experience": 4
     },
     "4351851": {
       "id": "4351851",
       "name": "Anfernee Simons",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1999-06-08",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 206.0,
+      "experience": 9
     },
     "3912848": {
       "id": "3912848",
       "name": "Dean Wade",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "1996-11-20",
+      "position": "F",
+      "jersey": "45",
+      "height": 81.0,
+      "weight": 223.0,
+      "college": "Kansas State",
+      "experience": 8
     },
     "4432446": {
       "id": "4432446",
       "name": "Jabari Walker",
       "teamId": "20",
-      "team": "Philadelphia 76ers"
+      "team": "Philadelphia 76ers",
+      "dateOfBirth": "2002-07-30",
+      "position": "F",
+      "jersey": "33",
+      "height": 79.0,
+      "weight": 240.0,
+      "college": "Colorado",
+      "experience": 5
     },
     "3136193": {
       "id": "3136193",
       "name": "Devin Booker",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1996-10-30",
+      "position": "G",
+      "jersey": "15",
+      "height": 77.0,
+      "weight": 206.0,
+      "college": "Kentucky",
+      "experience": 12
     },
     "4280245": {
       "id": "4280245",
       "name": "Jamaree Bouyea",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1999-06-27",
+      "position": "G",
+      "jersey": "17",
+      "height": 74.0,
+      "weight": 180.0,
+      "college": "San Francisco",
+      "experience": 5
     },
     "4066383": {
       "id": "4066383",
       "name": "Miles Bridges",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1998-03-21",
+      "position": "F",
+      "jersey": "22",
+      "height": 79.0,
+      "weight": 225.0,
+      "college": "Michigan State",
+      "experience": 8
     },
     "3155526": {
       "id": "3155526",
       "name": "Dillon Brooks",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1996-01-22",
+      "position": "F",
+      "jersey": "3",
+      "height": 79.0,
+      "weight": 225.0,
+      "college": "Oregon",
+      "experience": 10
     },
     "4888725": {
       "id": "4888725",
       "name": "Ryan Dunn",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2003-01-07",
+      "position": "F",
+      "jersey": "0",
+      "height": 79.0,
+      "weight": 216.0,
+      "college": "Virginia",
+      "experience": 3
     },
     "5105977": {
       "id": "5105977",
       "name": "Rasheer Fleming",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2004-07-10",
+      "position": "F",
+      "jersey": "20",
+      "height": 81.0,
+      "weight": 240.0,
+      "college": "Saint Joseph's",
+      "experience": 2
     },
     "4278585": {
       "id": "4278585",
       "name": "Collin Gillespie",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1999-06-25",
+      "position": "G",
+      "jersey": "12",
+      "height": 73.0,
+      "weight": 195.0,
+      "college": "Villanova",
+      "experience": 4
     },
     "4278402": {
       "id": "4278402",
       "name": "Jordan Goodwin",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1998-10-23",
+      "position": "G",
+      "jersey": "23",
+      "height": 75.0,
+      "weight": 215.0,
+      "college": "Saint Louis",
+      "experience": 6
     },
     "4437244": {
       "id": "4437244",
       "name": "Jalen Green",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2002-02-09",
+      "position": "G",
+      "jersey": "4",
+      "height": 76.0,
+      "weight": 186.0,
+      "experience": 6
     },
     "4601023": {
       "id": "4601023",
       "name": "Oso Ighodaro",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2002-07-14",
+      "position": "F",
+      "jersey": "11",
+      "height": 83.0,
+      "weight": 235.0,
+      "college": "Marquette",
+      "experience": 3
     },
     "3913174": {
       "id": "3913174",
       "name": "Luke Kennard",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1996-06-24",
+      "position": "G",
+      "jersey": "8",
+      "height": 77.0,
+      "weight": 206.0,
+      "college": "Duke",
+      "experience": 10
     },
     "5203685": {
       "id": "5203685",
       "name": "Khaman Maluach",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2006-09-14",
+      "position": "C",
+      "jersey": "10",
+      "height": 86.0,
+      "weight": 250.0,
+      "college": "Duke",
+      "experience": 2
     },
     "5041953": {
       "id": "5041953",
       "name": "Koa Peat",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2007-01-20",
+      "position": "F",
+      "jersey": "18",
+      "height": 80.0,
+      "weight": 245.0,
+      "college": "Arizona",
+      "experience": 0
     },
     "4066268": {
       "id": "4066268",
       "name": "Duop Reath",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1996-06-26",
+      "position": "C",
+      "jersey": "26",
+      "height": 81.0,
+      "weight": 245.0,
+      "college": "LSU",
+      "experience": 4
     },
     "4592714": {
       "id": "4592714",
       "name": "Pat Spencer",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "1996-07-04",
+      "position": "G",
+      "jersey": "61",
+      "height": 74.0,
+      "weight": 205.0,
+      "college": "Northwestern",
+      "experience": 4
     },
     "4431695": {
       "id": "4431695",
       "name": "Drew Timme",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2000-09-09",
+      "position": "F",
+      "jersey": "2",
+      "height": 82.0,
+      "weight": 235.0,
+      "college": "Gonzaga",
+      "experience": 2
     },
     "4701232": {
       "id": "4701232",
       "name": "Mark Williams",
       "teamId": "21",
-      "team": "Phoenix Suns"
+      "team": "Phoenix Suns",
+      "dateOfBirth": "2001-12-16",
+      "position": "C",
+      "jersey": "25",
+      "height": 85.0,
+      "weight": 240.0,
+      "college": "Duke",
+      "experience": 5
     },
     "4683021": {
       "id": "4683021",
       "name": "Deni Avdija",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2001-01-03",
+      "position": "F",
+      "jersey": "8",
+      "height": 80.0,
+      "weight": 228.0,
+      "experience": 7
     },
     "4431736": {
       "id": "4431736",
       "name": "Toumani Camara",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2000-05-08",
+      "position": "F",
+      "jersey": "33",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Dayton",
+      "experience": 4
     },
     "4592435": {
       "id": "4592435",
       "name": "Branden Carlson",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1999-06-14",
+      "position": "C",
+      "jersey": "10",
+      "height": 84.0,
+      "weight": 220.0,
+      "college": "Utah",
+      "experience": 3
     },
     "5081727": {
       "id": "5081727",
       "name": "Sidy Cissoko",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2004-04-02",
+      "position": "G",
+      "jersey": "91",
+      "height": 78.0,
+      "weight": 220.0,
+      "experience": 4
     },
     "5105565": {
       "id": "5105565",
       "name": "Donovan Clingan",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2004-02-23",
+      "position": "C",
+      "jersey": "23",
+      "height": 86.0,
+      "weight": 280.0,
+      "college": "UConn",
+      "experience": 3
     },
     "5217746": {
       "id": "5217746",
       "name": "Yang Hansen",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2005-06-26",
+      "position": "C",
+      "jersey": "16",
+      "height": 85.0,
+      "weight": 270.0,
+      "experience": 2
     },
     "4683678": {
       "id": "4683678",
       "name": "Scoot Henderson",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2004-02-03",
+      "position": "G",
+      "jersey": "00",
+      "height": 75.0,
+      "weight": 207.0,
+      "experience": 4
     },
     "3995": {
       "id": "3995",
       "name": "Jrue Holiday",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1990-06-12",
+      "position": "G",
+      "jersey": "5",
+      "height": 76.0,
+      "weight": 220.0,
+      "college": "UCLA",
+      "experience": 18
     },
     "4703889": {
       "id": "4703889",
       "name": "Jayson Kent",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2002-02-03",
+      "position": "G",
+      "jersey": "29",
+      "height": 80.0,
+      "weight": 215.0,
+      "college": "Texas",
+      "experience": 2
     },
     "4578893": {
       "id": "4578893",
       "name": "Vit Krejci",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2000-06-19",
+      "position": "G",
+      "jersey": "27",
+      "height": 80.0,
+      "weight": 195.0,
+      "experience": 6
     },
     "6606": {
       "id": "6606",
       "name": "Damian Lillard",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1990-07-15",
+      "position": "G",
+      "jersey": "0",
+      "height": 74.0,
+      "weight": 200.0,
+      "college": "Weber State",
+      "experience": 15
     },
     "4279888": {
       "id": "4279888",
       "name": "Ja Morant",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1999-08-10",
+      "position": "G",
+      "jersey": "1",
+      "height": 74.0,
+      "weight": 174.0,
+      "college": "Murray State",
+      "experience": 8
     },
     "4066399": {
       "id": "4066399",
       "name": "Micah Potter",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1998-04-06",
+      "position": "C",
+      "jersey": "9",
+      "height": 81.0,
+      "weight": 248.0,
+      "college": "Wisconsin",
+      "experience": 6
     },
     "4914336": {
       "id": "4914336",
       "name": "Shaedon Sharpe",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2003-05-30",
+      "position": "G",
+      "jersey": "17",
+      "height": 77.0,
+      "weight": 210.0,
+      "college": "Kentucky",
+      "experience": 5
     },
     "4593043": {
       "id": "4593043",
       "name": "John Tonje",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2001-04-23",
+      "position": "F",
+      "jersey": "2",
+      "height": 77.0,
+      "weight": 225.0,
+      "college": "Wisconsin",
+      "experience": 2
     },
     "4066211": {
       "id": "4066211",
       "name": "Robert Williams III",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "1997-10-17",
+      "position": "C",
+      "jersey": "35",
+      "height": 81.0,
+      "weight": 249.0,
+      "college": "Texas A&M",
+      "experience": 9
     },
     "4706557": {
       "id": "4706557",
       "name": "Chris Youngblood",
       "teamId": "22",
-      "team": "Portland Trail Blazers"
+      "team": "Portland Trail Blazers",
+      "dateOfBirth": "2002-02-09",
+      "position": "G",
+      "jersey": "11",
+      "height": 76.0,
+      "weight": 221.0,
+      "college": "Alabama",
+      "experience": 2
     },
     "4431679": {
       "id": "4431679",
       "name": "Precious Achiuwa",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1999-09-19",
+      "position": "F",
+      "jersey": "9",
+      "height": 80.0,
+      "weight": 243.0,
+      "college": "Memphis",
+      "experience": 7
     },
     "5142620": {
       "id": "5142620",
       "name": "Darius Acuff Jr.",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2006-11-16",
+      "position": "G",
+      "jersey": "5",
+      "height": 74.0,
+      "weight": 186.0,
+      "college": "Arkansas",
+      "experience": 0
     },
     "4395650": {
       "id": "4395650",
       "name": "Leaky Black",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1999-06-14",
+      "position": "F",
+      "jersey": "19",
+      "height": 78.0,
+      "weight": 209.0,
+      "college": "North Carolina",
+      "experience": 3
     },
     "4433174": {
       "id": "4433174",
       "name": "Dylan Cardwell",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2001-12-16",
+      "position": "C",
+      "jersey": "32",
+      "height": 82.0,
+      "weight": 255.0,
+      "college": "Auburn",
+      "experience": 2
     },
     "4065732": {
       "id": "4065732",
       "name": "De'Andre Hunter",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1997-12-02",
+      "position": "F",
+      "jersey": "15",
+      "height": 79.0,
+      "weight": 221.0,
+      "college": "Virginia",
+      "experience": 8
     },
     "4917149": {
       "id": "4917149",
       "name": "Alex Karaban",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2002-11-11",
+      "position": "F",
+      "jersey": "33",
+      "height": 79.0,
+      "weight": 225.0,
+      "college": "UConn",
+      "experience": 0
     },
     "3064440": {
       "id": "3064440",
       "name": "Zach LaVine",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1995-03-10",
+      "position": "G",
+      "jersey": "8",
+      "height": 77.0,
+      "weight": 200.0,
+      "college": "UCLA",
+      "experience": 13
     },
     "5107897": {
       "id": "5107897",
       "name": "Jonathan Mogbo",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2001-10-29",
+      "position": "F",
+      "jersey": "22",
+      "height": 81.0,
+      "weight": 225.0,
+      "college": "San Francisco",
+      "experience": 3
     },
     "4066262": {
       "id": "4066262",
       "name": "Malik Monk",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1998-02-04",
+      "position": "G",
+      "jersey": "0",
+      "height": 75.0,
+      "weight": 200.0,
+      "college": "Kentucky",
+      "experience": 10
     },
     "4594327": {
       "id": "4594327",
       "name": "Keegan Murray",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2000-08-19",
+      "position": "F",
+      "jersey": "13",
+      "height": 80.0,
+      "weight": 225.0,
+      "college": "Iowa",
+      "experience": 5
     },
     "4709131": {
       "id": "4709131",
       "name": "Sean Pedulla",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2002-10-10",
+      "position": "G",
+      "jersey": "3",
+      "height": 73.0,
+      "weight": 195.0,
+      "college": "Ole Miss",
+      "experience": 2
     },
     "4279318": {
       "id": "4279318",
       "name": "Daeqwon Plowden",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1998-08-29",
+      "position": "G",
+      "jersey": "29",
+      "height": 78.0,
+      "weight": 216.0,
+      "college": "Bowling Green",
+      "experience": 3
     },
     "2488653": {
       "id": "2488653",
       "name": "Mason Plumlee",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1990-03-05",
+      "position": "C",
+      "jersey": "24",
+      "height": 84.0,
+      "weight": 254.0,
+      "college": "Duke",
+      "experience": 13
     },
     "4898371": {
       "id": "4898371",
       "name": "Maxime Raynaud",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2003-04-07",
+      "position": "C",
+      "jersey": "42",
+      "height": 85.0,
+      "weight": 250.0,
+      "college": "Stanford",
+      "experience": 2
     },
     "3155942": {
       "id": "3155942",
       "name": "Domantas Sabonis",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1996-05-03",
+      "position": "F",
+      "jersey": "11",
+      "height": 82.0,
+      "weight": 240.0,
+      "college": "Gonzaga",
+      "experience": 11
     },
     "5106058": {
       "id": "5106058",
       "name": "Emanuel Sharp",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "2004-03-07",
+      "position": "G",
+      "jersey": "34",
+      "height": 75.0,
+      "weight": 208.0,
+      "college": "Houston",
+      "experience": 0
     },
     "3907387": {
       "id": "3907387",
       "name": "Ben Simmons",
       "teamId": "23",
-      "team": "Sacramento Kings"
+      "team": "Sacramento Kings",
+      "dateOfBirth": "1996-07-20",
+      "position": "G",
+      "jersey": "25",
+      "height": 82.0,
+      "weight": 240.0,
+      "college": "LSU",
+      "experience": 10
     },
     "6578": {
       "id": "6578",
       "name": "Harrison Barnes",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1992-05-30",
+      "position": "F",
+      "jersey": "40",
+      "height": 80.0,
+      "weight": 225.0,
+      "college": "North Carolina",
+      "experience": 15
     },
     "5105337": {
       "id": "5105337",
       "name": "Maliq Brown",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2003-11-15",
+      "position": "F",
+      "jersey": "15",
+      "height": 81.0,
+      "weight": 235.0,
+      "college": "Duke",
+      "experience": 0
     },
     "5061568": {
       "id": "5061568",
       "name": "Carter Bryant",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2005-11-26",
+      "position": "F",
+      "jersey": "11",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Arizona",
+      "experience": 2
     },
     "4845367": {
       "id": "4845367",
       "name": "Stephon Castle",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2004-11-01",
+      "position": "G",
+      "jersey": "5",
+      "height": 78.0,
+      "weight": 220.0,
+      "college": "UConn",
+      "experience": 3
     },
     "4592479": {
       "id": "4592479",
       "name": "Julian Champagnie",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2001-06-29",
+      "position": "F",
+      "jersey": "30",
+      "height": 79.0,
+      "weight": 215.0,
+      "college": "St. John's",
+      "experience": 5
     },
     "4066259": {
       "id": "4066259",
       "name": "De'Aaron Fox",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1997-12-20",
+      "position": "G",
+      "jersey": "4",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Kentucky",
+      "experience": 10
     },
     "5107968": {
       "id": "5107968",
       "name": "Ja'Kobi Gillespie",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2004-03-10",
+      "position": "G",
+      "jersey": "17",
+      "height": 73.0,
+      "weight": 180.0,
+      "college": "Tennessee",
+      "experience": 0
     },
     "5037871": {
       "id": "5037871",
       "name": "Dylan Harper",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2006-03-02",
+      "position": "G",
+      "jersey": "2",
+      "height": 77.0,
+      "weight": 220.0,
+      "college": "Rutgers",
+      "experience": 2
     },
     "6440": {
       "id": "6440",
       "name": "Tobias Harris",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1992-07-15",
+      "position": "F",
+      "jersey": "23",
+      "height": 80.0,
+      "weight": 230.0,
+      "college": "Tennessee",
+      "experience": 16
     },
     "4395723": {
       "id": "4395723",
       "name": "Keldon Johnson",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1999-10-11",
+      "position": "F",
+      "jersey": "3",
+      "height": 78.0,
+      "weight": 215.0,
+      "college": "Kentucky",
+      "experience": 8
     },
     "4713010": {
       "id": "4713010",
       "name": "David Jones Garcia",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2001-11-24",
+      "position": "F",
+      "jersey": "25",
+      "height": 76.0,
+      "weight": 215.0,
+      "college": "Memphis",
+      "experience": 2
     },
     "3064560": {
       "id": "3064560",
       "name": "Luke Kornet",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1995-07-15",
+      "position": "C",
+      "jersey": "7",
+      "height": 85.0,
+      "weight": 270.0,
+      "college": "Vanderbilt",
+      "experience": 10
     },
     "3134916": {
       "id": "3134916",
       "name": "Jordan McLaughlin",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "1996-04-09",
+      "position": "G",
+      "jersey": "0",
+      "height": 72.0,
+      "weight": 180.0,
+      "college": "USC",
+      "experience": 8
     },
     "5101845": {
       "id": "5101845",
       "name": "Jayden Quaintance",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2007-07-11",
+      "position": "F",
+      "jersey": "22",
+      "height": 82.0,
+      "weight": 255.0,
+      "college": "Kentucky",
+      "experience": 0
     },
     "5105809": {
       "id": "5105809",
       "name": "Tarris Reed Jr.",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2003-08-05",
+      "position": "C",
+      "jersey": "10",
+      "height": 82.0,
+      "weight": 270.0,
+      "college": "UConn",
+      "experience": 0
     },
     "4395630": {
       "id": "4395630",
       "name": "Devin Vassell",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2000-08-23",
+      "position": "G",
+      "jersey": "24",
+      "height": 77.0,
+      "weight": 205.0,
+      "college": "Florida State",
+      "experience": 7
     },
     "5104157": {
       "id": "5104157",
       "name": "Victor Wembanyama",
       "teamId": "24",
-      "team": "San Antonio Spurs"
+      "team": "San Antonio Spurs",
+      "dateOfBirth": "2004-01-04",
+      "position": "F",
+      "jersey": "1",
+      "height": 88.0,
+      "weight": 240.0,
+      "experience": 4
     },
     "2993874": {
       "id": "2993874",
       "name": "Kyle Anderson",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "1993-09-20",
+      "position": "F",
+      "jersey": "12",
+      "height": 80.0,
+      "weight": 230.0,
+      "college": "UCLA",
+      "experience": 13
     },
     "4433134": {
       "id": "4433134",
       "name": "Scottie Barnes",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2001-08-01",
+      "position": "F",
+      "jersey": "4",
+      "height": 80.0,
+      "weight": 237.0,
+      "college": "Florida State",
+      "experience": 6
     },
     "4395625": {
       "id": "4395625",
       "name": "RJ Barrett",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2000-06-14",
+      "position": "F",
+      "jersey": "9",
+      "height": 78.0,
+      "weight": 214.0,
+      "college": "Duke",
+      "experience": 8
     },
     "4431893": {
       "id": "4431893",
       "name": "Jamison Battle",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2001-05-10",
+      "position": "F",
+      "jersey": "77",
+      "height": 79.0,
+      "weight": 220.0,
+      "college": "Ohio State",
+      "experience": 3
     },
     "4432586": {
       "id": "4432586",
       "name": "Nate Bittle",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2003-06-03",
+      "position": "C",
+      "jersey": "12",
+      "height": 84.0,
+      "weight": 250.0,
+      "college": "Oregon",
+      "experience": 0
     },
     "4432737": {
       "id": "4432737",
       "name": "Jaden Bradley",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2003-09-14",
+      "position": "G",
+      "jersey": "8",
+      "height": 75.0,
+      "weight": 205.0,
+      "college": "Arizona",
+      "experience": 0
     },
     "5149115": {
       "id": "5149115",
       "name": "Allen Graves",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2006-07-28",
+      "position": "F",
+      "jersey": "22",
+      "height": 80.0,
+      "weight": 225.0,
+      "college": "Santa Clara",
+      "experience": 0
     },
     "4431684": {
       "id": "4431684",
       "name": "Trayce Jackson-Davis",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2000-02-22",
+      "position": "F",
+      "jersey": "32",
+      "height": 81.0,
+      "weight": 245.0,
+      "college": "Indiana",
+      "experience": 4
     },
     "6450": {
       "id": "6450",
       "name": "Kawhi Leonard",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "1991-06-29",
+      "position": "F",
+      "jersey": "2",
+      "height": 78.0,
+      "weight": 225.0,
+      "college": "San Diego State",
+      "experience": 16
     },
     "4702656": {
       "id": "4702656",
       "name": "Alijah Martin",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2001-12-26",
+      "position": "G",
+      "jersey": "55",
+      "height": 74.0,
+      "weight": 212.0,
+      "college": "Florida",
+      "experience": 2
     },
     "4411057": {
       "id": "4411057",
       "name": "Kevin McCullar Jr.",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2001-03-15",
+      "position": "G",
+      "jersey": "9",
+      "height": 78.0,
+      "weight": 210.0,
+      "college": "Kansas",
+      "experience": 2
     },
     "5093267": {
       "id": "5093267",
       "name": "Collin Murray-Boyles",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2005-06-10",
+      "position": "F",
+      "jersey": "30",
+      "height": 79.0,
+      "weight": 245.0,
+      "college": "South Carolina",
+      "experience": 2
     },
     "3134908": {
       "id": "3134908",
       "name": "Jakob Poeltl",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "1995-10-15",
+      "position": "C",
+      "jersey": "19",
+      "height": 84.0,
+      "weight": 253.0,
+      "college": "Utah",
+      "experience": 11
     },
     "4395724": {
       "id": "4395724",
       "name": "Immanuel Quickley",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "1999-06-17",
+      "position": "G",
+      "jersey": "5",
+      "height": 74.0,
+      "weight": 190.0,
+      "college": "Kentucky",
+      "experience": 7
     },
     "4432241": {
       "id": "4432241",
       "name": "Jamal Shead",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2002-07-24",
+      "position": "G",
+      "jersey": "23",
+      "height": 73.0,
+      "weight": 200.0,
+      "college": "Houston",
+      "experience": 3
     },
     "4397784": {
       "id": "4397784",
       "name": "Malachi Smith",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "1999-12-06",
+      "position": "G",
+      "jersey": "18",
+      "height": 76.0,
+      "weight": 205.0,
+      "college": "Gonzaga",
+      "experience": 2
     },
     "4684272": {
       "id": "4684272",
       "name": "Ja'Kobe Walter",
       "teamId": "28",
-      "team": "Toronto Raptors"
+      "team": "Toronto Raptors",
+      "dateOfBirth": "2004-09-04",
+      "position": "G",
+      "jersey": "14",
+      "height": 76.0,
+      "weight": 180.0,
+      "college": "Baylor",
+      "experience": 3
     },
     "4684682": {
       "id": "4684682",
       "name": "Jonas Aidoo",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2002-12-10",
+      "position": "C",
+      "jersey": "13",
+      "height": 83.0,
+      "weight": 240.0,
+      "college": "Arkansas",
+      "experience": 0
     },
     "4873138": {
       "id": "4873138",
       "name": "Ace Bailey",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2006-08-13",
+      "position": "G",
+      "jersey": "19",
+      "height": 81.0,
+      "weight": 200.0,
+      "college": "Rutgers",
+      "experience": 2
     },
     "4277919": {
       "id": "4277919",
       "name": "Mo Bamba",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1998-05-12",
+      "position": "C",
+      "jersey": "44",
+      "height": 84.0,
+      "weight": 231.0,
+      "college": "Texas",
+      "experience": 9
     },
     "4065673": {
       "id": "4065673",
       "name": "Tony Bradley",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1998-01-08",
+      "position": "C",
+      "jersey": "13",
+      "height": 82.0,
+      "weight": 248.0,
+      "college": "North Carolina",
+      "experience": 9
     },
     "4683736": {
       "id": "4683736",
       "name": "Kobe Bufkin",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2003-09-21",
+      "position": "G",
+      "jersey": "0",
+      "height": 76.0,
+      "weight": 195.0,
+      "college": "Michigan",
+      "experience": 4
     },
     "4683766": {
       "id": "4683766",
       "name": "Isaiah Collier",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2004-10-08",
+      "position": "G",
+      "jersey": "8",
+      "height": 76.0,
+      "weight": 210.0,
+      "college": "USC",
+      "experience": 3
     },
     "4684793": {
       "id": "4684793",
       "name": "Kyle Filipowski",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2003-11-07",
+      "position": "F",
+      "jersey": "2",
+      "height": 83.0,
+      "weight": 250.0,
+      "college": "Duke",
+      "experience": 3
     },
     "4433627": {
       "id": "4433627",
       "name": "Keyonte George",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2003-11-08",
+      "position": "G",
+      "jersey": "3",
+      "height": 76.0,
+      "weight": 185.0,
+      "college": "Baylor",
+      "experience": 4
     },
     "4432811": {
       "id": "4432811",
       "name": "Josh Green",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2000-11-16",
+      "position": "G",
+      "jersey": "5",
+      "height": 78.0,
+      "weight": 200.0,
+      "college": "Arizona",
+      "experience": 7
     },
     "4397077": {
       "id": "4397077",
       "name": "Jaxson Hayes",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2000-05-23",
+      "position": "C",
+      "jersey": "11",
+      "height": 84.0,
+      "weight": 220.0,
+      "college": "Texas",
+      "experience": 8
     },
     "4433618": {
       "id": "4433618",
       "name": "Harrison Ingram",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2002-11-27",
+      "position": "F",
+      "jersey": "00",
+      "height": 77.0,
+      "weight": 230.0,
+      "college": "North Carolina",
+      "experience": 3
     },
     "4277961": {
       "id": "4277961",
       "name": "Jaren Jackson Jr.",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1999-09-15",
+      "position": "F",
+      "jersey": "20",
+      "height": 82.0,
+      "weight": 242.0,
+      "college": "Michigan State",
+      "experience": 9
     },
     "4066336": {
       "id": "4066336",
       "name": "Lauri Markkanen",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1997-05-22",
+      "position": "F",
+      "jersey": "23",
+      "height": 85.0,
+      "weight": 240.0,
+      "college": "Arizona",
+      "experience": 10
     },
     "3133602": {
       "id": "3133602",
       "name": "Svi Mykhailiuk",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1997-06-10",
+      "position": "G",
+      "jersey": "10",
+      "height": 79.0,
+      "weight": 205.0,
+      "college": "Kansas",
+      "experience": 9
     },
     "3102530": {
       "id": "3102530",
       "name": "Jusuf Nurkic",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1994-08-23",
+      "position": "C",
+      "jersey": "30",
+      "height": 83.0,
+      "weight": 290.0,
+      "experience": 13
     },
     "4065663": {
       "id": "4065663",
       "name": "Josh Okogie",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "1998-09-01",
+      "position": "G",
+      "jersey": "21",
+      "height": 76.0,
+      "weight": 213.0,
+      "college": "Georgia Tech",
+      "experience": 9
     },
     "5041955": {
       "id": "5041955",
       "name": "Darryn Peterson",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2007-01-17",
+      "position": "G",
+      "jersey": "22",
+      "height": 77.0,
+      "weight": 199.0,
+      "college": "Kansas",
+      "experience": 0
     },
     "5105839": {
       "id": "5105839",
       "name": "Brice Sensabaugh",
       "teamId": "26",
-      "team": "Utah Jazz"
+      "team": "Utah Jazz",
+      "dateOfBirth": "2003-10-30",
+      "position": "F",
+      "jersey": "28",
+      "height": 78.0,
+      "weight": 235.0,
+      "college": "Ohio State",
+      "experience": 4
     },
     "4278129": {
       "id": "4278129",
       "name": "Deandre Ayton",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "1998-07-23",
+      "position": "C",
+      "jersey": "8",
+      "height": 84.0,
+      "weight": 252.0,
+      "college": "Arizona",
+      "experience": 9
     },
     "4432187": {
       "id": "4432187",
       "name": "Reece Beekman",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2001-10-08",
+      "position": "G",
+      "jersey": "26",
+      "height": 75.0,
+      "weight": 190.0,
+      "college": "Virginia",
+      "experience": 2
     },
     "4845374": {
       "id": "4845374",
       "name": "Bub Carrington",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2005-07-21",
+      "position": "G",
+      "jersey": "7",
+      "height": 76.0,
+      "weight": 190.0,
+      "college": "Pittsburgh",
+      "experience": 3
     },
     "4432907": {
       "id": "4432907",
       "name": "Justin Champagnie",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2001-06-29",
+      "position": "F",
+      "jersey": "9",
+      "height": 78.0,
+      "weight": 206.0,
+      "college": "Pittsburgh",
+      "experience": 6
     },
     "5104155": {
       "id": "5104155",
       "name": "Bilal Coulibaly",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2004-07-26",
+      "position": "G",
+      "jersey": "0",
+      "height": 79.0,
+      "weight": 195.0,
+      "experience": 4
     },
     "6583": {
       "id": "6583",
       "name": "Anthony Davis",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "1993-03-11",
+      "position": "F",
+      "jersey": "23",
+      "height": 82.0,
+      "weight": 253.0,
+      "college": "Kentucky",
+      "experience": 15
     },
     "5142718": {
       "id": "5142718",
       "name": "AJ Dybantsa",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2007-01-29",
+      "position": "F",
+      "jersey": "4",
+      "height": 81.0,
+      "weight": 217.0,
+      "college": "BYU",
+      "experience": 0
     },
     "5174563": {
       "id": "5174563",
       "name": "Kyshawn George",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2003-12-12",
+      "position": "F",
+      "jersey": "18",
+      "height": 80.0,
+      "weight": 200.0,
+      "college": "Miami",
+      "experience": 3
     },
     "2581184": {
       "id": "2581184",
       "name": "Anthony Gill",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "1992-10-17",
+      "position": "F",
+      "jersey": "16",
+      "height": 79.0,
+      "weight": 230.0,
+      "college": "Virginia",
+      "experience": 7
     },
     "5238230": {
       "id": "5238230",
       "name": "Tre Johnson",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2006-03-07",
+      "position": "G",
+      "jersey": "12",
+      "height": 77.0,
+      "weight": 190.0,
+      "college": "Texas",
+      "experience": 2
     },
     "4432819": {
       "id": "4432819",
       "name": "Tre Mann",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2001-02-03",
+      "position": "G",
+      "jersey": "1",
+      "height": 76.0,
+      "weight": 178.0,
+      "college": "Florida",
+      "experience": 6
     },
     "6609": {
       "id": "6609",
       "name": "Khris Middleton",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "1991-08-12",
+      "position": "F",
+      "jersey": "22",
+      "height": 79.0,
+      "weight": 222.0,
+      "college": "Texas A&M",
+      "experience": 15
     },
     "5105841": {
       "id": "5105841",
       "name": "Felix Okpara",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2004-04-20",
+      "position": "F",
+      "jersey": "34",
+      "height": 83.0,
+      "weight": 237.0,
+      "college": "Tennessee",
+      "experience": 0
     },
     "5144126": {
       "id": "5144126",
       "name": "Will Riley",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2006-02-10",
+      "position": "G",
+      "jersey": "27",
+      "height": 81.0,
+      "weight": 180.0,
+      "college": "Illinois",
+      "experience": 2
     },
     "5160992": {
       "id": "5160992",
       "name": "Alex Sarr",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2005-04-26",
+      "position": "C",
+      "jersey": "20",
+      "height": 84.0,
+      "weight": 205.0,
+      "experience": 3
     },
     "4997537": {
       "id": "4997537",
       "name": "Tristan Vukcevic",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2003-03-11",
+      "position": "F",
+      "jersey": "00",
+      "height": 84.0,
+      "weight": 220.0,
+      "experience": 4
     },
     "4606840": {
       "id": "4606840",
       "name": "Jamir Watkins",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "2001-07-06",
+      "position": "G",
+      "jersey": "5",
+      "height": 78.0,
+      "weight": 210.0,
+      "college": "Florida State",
+      "experience": 2
     },
     "4277905": {
       "id": "4277905",
       "name": "Trae Young",
       "teamId": "27",
-      "team": "Washington Wizards"
+      "team": "Washington Wizards",
+      "dateOfBirth": "1998-09-19",
+      "position": "G",
+      "jersey": "3",
+      "height": 74.0,
+      "weight": 164.0,
+      "college": "Oklahoma",
+      "experience": 9
     }
   }
 }
