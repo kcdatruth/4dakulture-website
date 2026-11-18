@@ -22,3 +22,25 @@
   if(footer)footer.prepend(credit);else document.body.append(credit);
  }
 })();
+
+
+// Link the archived Top 50 edition to the current roster file.
+(async () => {
+ const rankingLink = document.querySelector('.hero a[href*="#rank-"]');
+ if (!rankingLink || !/\/4dk-player-[a-z0-9-]+(?:\.html)?$/.test(location.pathname)) return;
+ try {
+  const response = await fetch('data/4dk-nba-rosters-verified.json');
+  if (!response.ok) return;
+  const roster = await response.json();
+  const normalize = name => name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const title = document.querySelector('h1').textContent.trim();
+  const matches = Object.values(roster.players).filter(p => normalize(p.name) === normalize(title));
+  if (matches.length !== 1) return;
+  const p = matches[0];
+  const link = document.createElement('a');
+  link.className = 'button';
+  link.href = '4dk-nba-player-file.html?' + new URLSearchParams({team:p.teamId,id:p.id,name:p.name});
+  link.textContent = 'Current 4DK Player File →';
+  rankingLink.after(document.createTextNode(' '), link);
+ } catch { /* The original article remains readable if the roster is offline. */ }
+})();

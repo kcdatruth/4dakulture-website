@@ -37,7 +37,7 @@ try{
  hero.append(details);root.append(hero);
  const facts=node('div');facts.className='pf-facts';
  const age=ageAt(player.dateOfBirth);
- for(const [label,value] of [['Age',age==null?'Not yet verified':age],['Birth date',prettyDate(player.dateOfBirth)||null],['Position',player.position],['Height',heightText(player.height)],['Weight',weightText(player.weight)],['Experience',player.experience===0?'Rookie':player.experience!=null?player.experience+' years':null],['College',player.college]]){
+ for(const [label,value] of [['Age',age==null?'Not yet verified':age],['Birth date',prettyDate(player.dateOfBirth)||null],['Position',player.position],['Height',heightText(player.height)],['Weight',weightText(player.weight)],['Experience',player.experience===0?'Rookie':player.experience!=null?player.experience+(player.experience===1?' year':' years'):null],['College',player.college]]){
   if(value==null||value==='')continue;
   const item=node('div');item.append(node('strong',label),node('span',value));facts.append(item)
  }if(facts.childElementCount)root.append(facts);
@@ -80,7 +80,7 @@ try{
     for(const [field,label] of [['ppg','PPG'],['rpg','RPG'],['apg','APG'],['spg','SPG'],['bpg','BPG'],['fg_pct','FG%'],['fg3_pct','3PT%'],['ft_pct','FT%']]){
      const cell=node('div');cell.className='pf2-stat';cell.append(node('strong',format(entry[field])),node('span',label));grid.append(cell)
     }box.append(grid)
-   }else box.append(node('p','No verified regular-season averages available for this player. This does not imply zero games played.'));
+   }else box.append(node('p','No verified 2026–27 regular-season line in the box scores checked '+(stats.checked_utc||'to date')+'.'));
    root.append(box)
   }
  }
