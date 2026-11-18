@@ -1,0 +1,3872 @@
+{
+  "asOf": "2026-11-18",
+  "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
+  "approvedCount": 17,
+  "reports": {
+    "3195": {
+      "name": "Mike Conley",
+      "nbaId": 201144,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3213": {
+      "name": "Al Horford",
+      "nbaId": 201143,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "3442": {
+      "name": "DeAndre Jordan",
+      "nbaId": 201599,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3448": {
+      "name": "Brook Lopez",
+      "nbaId": 201572,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3978": {
+      "name": "DeMar DeRozan",
+      "nbaId": 201942,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3995": {
+      "name": "Jrue Holiday",
+      "nbaId": 201950,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4251": {
+      "name": "Paul George",
+      "nbaId": 202331,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6430": {
+      "name": "Jimmy Butler III",
+      "nbaId": 202710,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6440": {
+      "name": "Tobias Harris",
+      "nbaId": 202699,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6475": {
+      "name": "Klay Thompson",
+      "nbaId": 202691,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6478": {
+      "name": "Nikola Vucevic",
+      "nbaId": 202696,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6578": {
+      "name": "Harrison Barnes",
+      "nbaId": 203084,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6580": {
+      "name": "Bradley Beal",
+      "nbaId": 203078,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6585": {
+      "name": "Andre Drummond",
+      "nbaId": 203083,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6589": {
+      "name": "Draymond Green",
+      "nbaId": 203110,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6606": {
+      "name": "Damian Lillard",
+      "nbaId": 203081,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "6609": {
+      "name": "Khris Middleton",
+      "nbaId": 203114,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2488653": {
+      "name": "Mason Plumlee",
+      "nbaId": 203486,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2490149": {
+      "name": "CJ McCollum",
+      "nbaId": 203468,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2528210": {
+      "name": "Tim Hardaway Jr.",
+      "nbaId": 203501,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2528426": {
+      "name": "Jordan Clarkson",
+      "nbaId": 203903,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2530530": {
+      "name": "T.J. McConnell",
+      "nbaId": 204456,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "2578185": {
+      "name": "Dorian Finney-Smith",
+      "nbaId": 1627827,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2580365": {
+      "name": "Larry Nance Jr.",
+      "nbaId": 1626204,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "2581018": {
+      "name": "Kentavious Caldwell-Pope",
+      "nbaId": 203484,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2581184": {
+      "name": "Anthony Gill",
+      "nbaId": 1630264,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2583632": {
+      "name": "Royce O'Neale",
+      "nbaId": 1626220,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2595516": {
+      "name": "Norman Powell",
+      "nbaId": 1626181,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2596112": {
+      "name": "Javonte Green",
+      "nbaId": 1629750,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2990962": {
+      "name": "Taurean Prince",
+      "nbaId": 1627752,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2990969": {
+      "name": "Georges Niang",
+      "nbaId": 1627777,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2990984": {
+      "name": "Buddy Hield",
+      "nbaId": 1627741,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2990992": {
+      "name": "Marcus Smart",
+      "nbaId": 203935,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991043": {
+      "name": "Caris LeVert",
+      "nbaId": 1627747,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991070": {
+      "name": "Jerami Grant",
+      "nbaId": 203924,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991139": {
+      "name": "Kris Dunn",
+      "nbaId": 1627739,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991230": {
+      "name": "Fred VanVleet",
+      "nbaId": 1627832,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991235": {
+      "name": "Steven Adams",
+      "nbaId": 203500,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2991350": {
+      "name": "Alex Caruso",
+      "nbaId": 1627936,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2993874": {
+      "name": "Kyle Anderson",
+      "nbaId": 203937,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "2995706": {
+      "name": "Mario Hezonja",
+      "nbaId": 1626209,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3032976": {
+      "name": "Rudy Gobert",
+      "nbaId": 203497,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3032979": {
+      "name": "Dennis Schroder",
+      "nbaId": 203471,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3037789": {
+      "name": "Bogdan Bogdanovic",
+      "nbaId": 203992,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3059319": {
+      "name": "Andrew Wiggins",
+      "nbaId": 203952,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3062679": {
+      "name": "Josh Hart",
+      "nbaId": 1628404,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3064290": {
+      "name": "Aaron Gordon",
+      "nbaId": 203932,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3064440": {
+      "name": "Zach LaVine",
+      "nbaId": 203897,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "3064482": {
+      "name": "Bobby Portis",
+      "nbaId": 1626171,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3064560": {
+      "name": "Luke Kornet",
+      "nbaId": 1628436,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3078576": {
+      "name": "Derrick White",
+      "nbaId": 1628401,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3102529": {
+      "name": "Clint Capela",
+      "nbaId": 203991,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3102530": {
+      "name": "Jusuf Nurkic",
+      "nbaId": 203994,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3102531": {
+      "name": "Kristaps Porzingis",
+      "nbaId": 204001,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3133602": {
+      "name": "Svi Mykhailiuk",
+      "nbaId": 1629004,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3133603": {
+      "name": "Kelly Oubre Jr.",
+      "nbaId": 1626162,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "3133626": {
+      "name": "Kenrich Williams",
+      "nbaId": 1629026,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3133628": {
+      "name": "Myles Turner",
+      "nbaId": 1626167,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3133635": {
+      "name": "Jevon Carter",
+      "nbaId": 1628975,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3134903": {
+      "name": "Gary Payton II",
+      "nbaId": 1627780,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3134907": {
+      "name": "Kyle Kuzma",
+      "nbaId": 1628398,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3134908": {
+      "name": "Jakob Poeltl",
+      "nbaId": 1627751,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3134916": {
+      "name": "Jordan McLaughlin",
+      "nbaId": 1629162,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3135045": {
+      "name": "Grayson Allen",
+      "nbaId": 1628960,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3135046": {
+      "name": "Tyus Jones",
+      "nbaId": 1626145,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "3136196": {
+      "name": "Trey Lyles",
+      "nbaId": 1626168,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3136777": {
+      "name": "Jae'Sean Tate",
+      "nbaId": 1630256,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3138160": {
+      "name": "Caleb Martin",
+      "nbaId": 1628997,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3138196": {
+      "name": "Cameron Johnson",
+      "nbaId": 1629661,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3146557": {
+      "name": "Jock Landale",
+      "nbaId": 1629111,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3147657": {
+      "name": "Mikal Bridges",
+      "nbaId": 1628969,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3150844": {
+      "name": "Moritz Wagner",
+      "nbaId": 1629021,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3155526": {
+      "name": "Dillon Brooks",
+      "nbaId": 1628415,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3155535": {
+      "name": "Kevon Looney",
+      "nbaId": 1626172,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3157465": {
+      "name": "Duncan Robinson",
+      "nbaId": 1629130,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3899664": {
+      "name": "Simone Fontecchio",
+      "nbaId": 1631323,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3904625": {
+      "name": "Tacko Fall",
+      "nbaId": 1629605,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3907387": {
+      "name": "Ben Simmons",
+      "nbaId": 1627732,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3907497": {
+      "name": "Dejounte Murray",
+      "nbaId": 1627749,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3907498": {
+      "name": "Matisse Thybulle",
+      "nbaId": 1629680,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3907823": {
+      "name": "Terance Mann",
+      "nbaId": 1629611,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3908845": {
+      "name": "John Collins",
+      "nbaId": 1628381,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3912848": {
+      "name": "Dean Wade",
+      "nbaId": 1629731,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3913174": {
+      "name": "Luke Kennard",
+      "nbaId": 1628379,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3913176": {
+      "name": "Brandon Ingram",
+      "nbaId": 1627742,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3914044": {
+      "name": "Landry Shamet",
+      "nbaId": 1629013,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3934673": {
+      "name": "Donte DiVincenzo",
+      "nbaId": 1628978,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3934723": {
+      "name": "Thomas Bryant",
+      "nbaId": 1628418,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "3936099": {
+      "name": "Derrick Jones Jr.",
+      "nbaId": 1627884,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4017837": {
+      "name": "Ivica Zubac",
+      "nbaId": 1627826,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4065654": {
+      "name": "Jonathan Isaac",
+      "nbaId": 1628371,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065663": {
+      "name": "Josh Okogie",
+      "nbaId": 1629006,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065673": {
+      "name": "Tony Bradley",
+      "nbaId": 1628396,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4065731": {
+      "name": "Jay Huff",
+      "nbaId": 1630643,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "approved"
+    },
+    "4065732": {
+      "name": "De'Andre Hunter",
+      "nbaId": 1629631,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065733": {
+      "name": "Ty Jerome",
+      "nbaId": 1629660,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065778": {
+      "name": "Max Strus",
+      "nbaId": 1629622,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065804": {
+      "name": "Sam Hauser",
+      "nbaId": 1630573,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4065813": {
+      "name": "Alpha Diallo",
+      "nbaId": 1643813,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066211": {
+      "name": "Robert Williams III",
+      "nbaId": 1629057,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4066218": {
+      "name": "Grant Williams",
+      "nbaId": 1629684,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066262": {
+      "name": "Malik Monk",
+      "nbaId": 1628370,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "4066268": {
+      "name": "Duop Reath",
+      "nbaId": 1641871,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066320": {
+      "name": "Desmond Bane",
+      "nbaId": 1630217,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066328": {
+      "name": "Jarrett Allen",
+      "nbaId": 1628386,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066336": {
+      "name": "Lauri Markkanen",
+      "nbaId": 1628374,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066354": {
+      "name": "Payton Pritchard",
+      "nbaId": 1630202,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066372": {
+      "name": "Kevin Huerter",
+      "nbaId": 1628989,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066383": {
+      "name": "Miles Bridges",
+      "nbaId": 1628970,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066399": {
+      "name": "Micah Potter",
+      "nbaId": 1630695,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4066436": {
+      "name": "De'Anthony Melton",
+      "nbaId": 1629001,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066648": {
+      "name": "Rui Hachimura",
+      "nbaId": 1629060,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066650": {
+      "name": "Zach Collins",
+      "nbaId": 1628380,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066757": {
+      "name": "Sam Merrill",
+      "nbaId": 1630241,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4066993": {
+      "name": "Dru Smith",
+      "nbaId": 1630696,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4222252": {
+      "name": "Isaiah Hartenstein",
+      "nbaId": 1628392,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277811": {
+      "name": "Collin Sexton",
+      "nbaId": 1629012,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277813": {
+      "name": "Herbert Jones",
+      "nbaId": 1630529,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277843": {
+      "name": "Gary Trent Jr.",
+      "nbaId": 1629018,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277847": {
+      "name": "Wendell Carter Jr.",
+      "nbaId": 1628976,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277848": {
+      "name": "Marvin Bagley III",
+      "nbaId": 1628963,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277869": {
+      "name": "Jose Alvarado",
+      "nbaId": 1630631,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277919": {
+      "name": "Mo Bamba",
+      "nbaId": 1628964,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277922": {
+      "name": "Jericho Sims",
+      "nbaId": 1630579,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277951": {
+      "name": "Luka Garza",
+      "nbaId": 1630568,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277956": {
+      "name": "Jordan Poole",
+      "nbaId": 1629673,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4277961": {
+      "name": "Jaren Jackson Jr.",
+      "nbaId": 1628991,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "4278039": {
+      "name": "Nickeil Alexander-Walker",
+      "nbaId": 1629638,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278049": {
+      "name": "Daniel Gafford",
+      "nbaId": 1629655,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278053": {
+      "name": "Davion Mitchell",
+      "nbaId": 1630558,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278067": {
+      "name": "Nic Claxton",
+      "nbaId": 1629651,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278076": {
+      "name": "Nick Richards",
+      "nbaId": 1630208,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278077": {
+      "name": "Jarred Vanderbilt",
+      "nbaId": 1629020,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278078": {
+      "name": "P.J. Washington",
+      "nbaId": 1629023,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278104": {
+      "name": "Michael Porter Jr.",
+      "nbaId": 1629008,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278129": {
+      "name": "Deandre Ayton",
+      "nbaId": 1629028,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278355": {
+      "name": "Obi Toppin",
+      "nbaId": 1630167,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4278402": {
+      "name": "Jordan Goodwin",
+      "nbaId": 1630692,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278562": {
+      "name": "Paul Reed",
+      "nbaId": 1630194,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278572": {
+      "name": "Jamal Cain",
+      "nbaId": 1631288,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278580": {
+      "name": "Sandro Mamukelashvili",
+      "nbaId": 1630572,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278585": {
+      "name": "Collin Gillespie",
+      "nbaId": 1631221,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4278594": {
+      "name": "Naji Marshall",
+      "nbaId": 1630230,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4279318": {
+      "name": "Daeqwon Plowden",
+      "nbaId": 1631342,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4280151": {
+      "name": "Corey Kispert",
+      "nbaId": 1630557,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4280245": {
+      "name": "Jamaree Bouyea",
+      "nbaId": 1631123,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4348700": {
+      "name": "Goga Bitadze",
+      "nbaId": 1629048,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4351851": {
+      "name": "Anfernee Simons",
+      "nbaId": 1629014,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4351852": {
+      "name": "Mitchell Robinson",
+      "nbaId": 1629011,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395625": {
+      "name": "RJ Barrett",
+      "nbaId": 1629628,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395626": {
+      "name": "Tre Jones",
+      "nbaId": 1630200,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395630": {
+      "name": "Devin Vassell",
+      "nbaId": 1630170,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395650": {
+      "name": "Leaky Black",
+      "nbaId": 1641778,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395651": {
+      "name": "Coby White",
+      "nbaId": 1629632,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395702": {
+      "name": "Isaiah Joe",
+      "nbaId": 1630198,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395712": {
+      "name": "Andrew Nembhard",
+      "nbaId": 1629614,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4395723": {
+      "name": "Keldon Johnson",
+      "nbaId": 1629640,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4395724": {
+      "name": "Immanuel Quickley",
+      "nbaId": 1630193,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "4395725": {
+      "name": "Tyler Herro",
+      "nbaId": 1629639,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4396818": {
+      "name": "Jordan Miller",
+      "nbaId": 1641757,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4396909": {
+      "name": "Aaron Nesmith",
+      "nbaId": 1630174,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "approved"
+    },
+    "4396971": {
+      "name": "Naz Reid",
+      "nbaId": 1629675,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397002": {
+      "name": "Ayo Dosunmu",
+      "nbaId": 1630245,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397014": {
+      "name": "Quentin Grimes",
+      "nbaId": 1629656,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397020": {
+      "name": "Luguentz Dort",
+      "nbaId": 1629652,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397040": {
+      "name": "Brandon Williams",
+      "nbaId": 1630314,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397077": {
+      "name": "Jaxson Hayes",
+      "nbaId": 1629637,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397114": {
+      "name": "Cormac Ryan",
+      "nbaId": 1642504,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397136": {
+      "name": "Saddiq Bey",
+      "nbaId": 1630180,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397183": {
+      "name": "Aaron Wiggins",
+      "nbaId": 1630598,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397189": {
+      "name": "Jalen Smith",
+      "nbaId": 1630188,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397204": {
+      "name": "Colin Castleton",
+      "nbaId": 1630658,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "4397233": {
+      "name": "Pete Nance",
+      "nbaId": 1631250,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397251": {
+      "name": "Ron Harper Jr.",
+      "nbaId": 1631199,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397424": {
+      "name": "Neemias Queta",
+      "nbaId": 1629674,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397449": {
+      "name": "Elijah Harkless",
+      "nbaId": 1641989,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397475": {
+      "name": "AJ Green",
+      "nbaId": 1631260,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397688": {
+      "name": "Trey Murphy III",
+      "nbaId": 1630530,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397784": {
+      "name": "Malachi Smith",
+      "nbaId": 1641869,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397882": {
+      "name": "Tolu Smith",
+      "nbaId": 1642449,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4397886": {
+      "name": "Charles Bassey",
+      "nbaId": 1629646,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4398207": {
+      "name": "Jalen Slawson",
+      "nbaId": 1641771,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4398390": {
+      "name": "Jalen Pickett",
+      "nbaId": 1629618,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4411057": {
+      "name": "Kevin McCullar Jr.",
+      "nbaId": 1641755,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431671": {
+      "name": "Jaden McDaniels",
+      "nbaId": 1630183,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431675": {
+      "name": "Trendon Watford",
+      "nbaId": 1630570,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431679": {
+      "name": "Precious Achiuwa",
+      "nbaId": 1630173,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431680": {
+      "name": "Onyeka Okongwu",
+      "nbaId": 1630168,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431684": {
+      "name": "Trayce Jackson-Davis",
+      "nbaId": 1631218,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431687": {
+      "name": "Patrick Williams",
+      "nbaId": 1630172,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431690": {
+      "name": "Zeke Nnaji",
+      "nbaId": 1630192,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431695": {
+      "name": "Drew Timme",
+      "nbaId": 1631166,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431714": {
+      "name": "Jalen Wilson",
+      "nbaId": 1630592,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431736": {
+      "name": "Toumani Camara",
+      "nbaId": 1641739,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431752": {
+      "name": "Kobe Brown",
+      "nbaId": 1641738,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4431767": {
+      "name": "Christian Braun",
+      "nbaId": 1631128,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4431772": {
+      "name": "Myron Gardner",
+      "nbaId": 1642066,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431785": {
+      "name": "Scotty Pippen Jr.",
+      "nbaId": 1630590,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431786": {
+      "name": "Keshad Johnson",
+      "nbaId": 1642352,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431823": {
+      "name": "Miles McBride",
+      "nbaId": 1630540,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431893": {
+      "name": "Jamison Battle",
+      "nbaId": 1642419,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4431941": {
+      "name": "RayJ Dennis",
+      "nbaId": 1642484,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432107": {
+      "name": "Marcus Sasser",
+      "nbaId": 1631204,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432165": {
+      "name": "Jalen Suggs",
+      "nbaId": 1630591,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432170": {
+      "name": "Isaiah Jackson",
+      "nbaId": 1630543,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg",
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4432171": {
+      "name": "Moses Moody",
+      "nbaId": 1630541,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432181": {
+      "name": "Julian Strawther",
+      "nbaId": 1631124,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432185": {
+      "name": "Micah Peavy",
+      "nbaId": 1642877,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432187": {
+      "name": "Reece Beekman",
+      "nbaId": 1641736,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432194": {
+      "name": "Day'Ron Sharpe",
+      "nbaId": 1630549,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432241": {
+      "name": "Jamal Shead",
+      "nbaId": 1642347,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432247": {
+      "name": "Jaylen Clark",
+      "nbaId": 1641740,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432446": {
+      "name": "Jabari Walker",
+      "nbaId": 1631133,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432582": {
+      "name": "Max Christie",
+      "nbaId": 1631108,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432586": {
+      "name": "Nate Bittle",
+      "nbaId": 1642927,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432639": {
+      "name": "Jabari Smith Jr.",
+      "nbaId": 1631095,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432737": {
+      "name": "Jaden Bradley",
+      "nbaId": 1643558,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432808": {
+      "name": "James Wiseman",
+      "nbaId": 1630164,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432810": {
+      "name": "Isaiah Stewart",
+      "nbaId": 1630191,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432811": {
+      "name": "Josh Green",
+      "nbaId": 1630182,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432819": {
+      "name": "Tre Mann",
+      "nbaId": 1630544,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432822": {
+      "name": "Isaac Okoro",
+      "nbaId": 1630171,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432823": {
+      "name": "Jaylin Williams",
+      "nbaId": 1631119,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432827": {
+      "name": "Oscar Tshiebwe",
+      "nbaId": 1631131,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432847": {
+      "name": "Terrence Shannon Jr.",
+      "nbaId": 1630545,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432848": {
+      "name": "Jaime Jaquez Jr.",
+      "nbaId": 1631170,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4432907": {
+      "name": "Justin Champagnie",
+      "nbaId": 1630551,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg",
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4433076": {
+      "name": "Ben Sheppard",
+      "nbaId": 1641767,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4433083": {
+      "name": "Cam Spencer",
+      "nbaId": 1642285,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433136": {
+      "name": "Walker Kessler",
+      "nbaId": 1631117,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433137": {
+      "name": "Ziaire Williams",
+      "nbaId": 1630533,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433144": {
+      "name": "Caleb Love",
+      "nbaId": 1631126,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433149": {
+      "name": "LJ Cryer",
+      "nbaId": 1643018,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433174": {
+      "name": "Dylan Cardwell",
+      "nbaId": 1642928,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433188": {
+      "name": "Devin Carter",
+      "nbaId": 1642269,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433192": {
+      "name": "Tari Eason",
+      "nbaId": 1631106,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433225": {
+      "name": "Tyler Kolek",
+      "nbaId": 1642278,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433247": {
+      "name": "Jonathan Kuminga",
+      "nbaId": 1630228,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433249": {
+      "name": "Moussa Diabate",
+      "nbaId": 1631217,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4433287": {
+      "name": "Brandon Miller",
+      "nbaId": 1641706,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433569": {
+      "name": "Johni Broome",
+      "nbaId": 1641780,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433599": {
+      "name": "Arthur Kaluma",
+      "nbaId": 1641751,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433607": {
+      "name": "DaRon Holmes II",
+      "nbaId": 1641747,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4433618": {
+      "name": "Harrison Ingram",
+      "nbaId": 1631127,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433627": {
+      "name": "Keyonte George",
+      "nbaId": 1641718,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4433629": {
+      "name": "Ryan Nembhard",
+      "nbaId": 1642948,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4437244": {
+      "name": "Jalen Green",
+      "nbaId": 1630224,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4565698": {
+      "name": "Bryce Hopkins",
+      "nbaId": 1643624,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4576060": {
+      "name": "Ryan Kalkbrenner",
+      "nbaId": 1641750,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4576086": {
+      "name": "Bryce McGowens",
+      "nbaId": 1631121,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4576087": {
+      "name": "Peyton Watson",
+      "nbaId": 1631212,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4578893": {
+      "name": "Vit Krejci",
+      "nbaId": 1630249,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4591725": {
+      "name": "Ryan Rollins",
+      "nbaId": 1631157,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592427": {
+      "name": "Spencer Jones",
+      "nbaId": 1642461,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592435": {
+      "name": "Branden Carlson",
+      "nbaId": 1642382,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592479": {
+      "name": "Julian Champagnie",
+      "nbaId": 1630577,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592492": {
+      "name": "Bones Hyland",
+      "nbaId": 1630538,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592691": {
+      "name": "Jake LaRavia",
+      "nbaId": 1631222,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592714": {
+      "name": "Pat Spencer",
+      "nbaId": 1630311,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg",
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4592829": {
+      "name": "Quenton Jackson",
+      "nbaId": 1631245,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "4592857": {
+      "name": "Isaiah Crawford",
+      "nbaId": 1642384,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4592979": {
+      "name": "Zyon Pullin",
+      "nbaId": 1642389,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593016": {
+      "name": "Quinten Post",
+      "nbaId": 1642366,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593034": {
+      "name": "Alex Morales",
+      "nbaId": 1631457,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593043": {
+      "name": "John Tonje",
+      "nbaId": 1642910,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593049": {
+      "name": "Orlando Robinson",
+      "nbaId": 1631115,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593125": {
+      "name": "Santi Aldama",
+      "nbaId": 1630583,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4593841": {
+      "name": "Baylor Scheierman",
+      "nbaId": 1631248,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4594326": {
+      "name": "Kris Murray",
+      "nbaId": 1631200,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4594327": {
+      "name": "Keegan Murray",
+      "nbaId": 1631099,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4595400": {
+      "name": "Olivier-Maxence Prosper",
+      "nbaId": 1641765,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4600663": {
+      "name": "Zach Edey",
+      "nbaId": 1641744,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4601023": {
+      "name": "Oso Ighodaro",
+      "nbaId": 1642345,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4601025": {
+      "name": "Pelle Larsson",
+      "nbaId": 1641796,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4602025": {
+      "name": "Sion James",
+      "nbaId": 1642883,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4606840": {
+      "name": "Jamir Watkins",
+      "nbaId": 1642364,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683634": {
+      "name": "Bennedict Mathurin",
+      "nbaId": 1631097,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683678": {
+      "name": "Scoot Henderson",
+      "nbaId": 1630703,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683688": {
+      "name": "Dereck Lively II",
+      "nbaId": 1641726,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683689": {
+      "name": "Jordan Walsh",
+      "nbaId": 1641775,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683692": {
+      "name": "Cason Wallace",
+      "nbaId": 1641717,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683730": {
+      "name": "Jaden Akins",
+      "nbaId": 1643022,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683736": {
+      "name": "Kobe Bufkin",
+      "nbaId": 1641723,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683742": {
+      "name": "Julian Reese",
+      "nbaId": 1642882,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683747": {
+      "name": "Jaylon Tyson",
+      "nbaId": 1642281,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683750": {
+      "name": "Jordan Hawkins",
+      "nbaId": 1641722,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683766": {
+      "name": "Isaiah Collier",
+      "nbaId": 1642268,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683771": {
+      "name": "Ronald Holland II",
+      "nbaId": 1641842,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683774": {
+      "name": "Bronny James",
+      "nbaId": 1642355,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683778": {
+      "name": "Jared McCain",
+      "nbaId": 1642272,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683860": {
+      "name": "Quadir Copeland",
+      "nbaId": 1643595,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4683934": {
+      "name": "Jahmai Mashack",
+      "nbaId": 1642942,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684208": {
+      "name": "Brooks Barnhizer",
+      "nbaId": 1642964,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684269": {
+      "name": "Kylan Boswell",
+      "nbaId": 1643573,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684272": {
+      "name": "Ja'Kobe Walter",
+      "nbaId": 1642266,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684443": {
+      "name": "Rafael Castro",
+      "nbaId": 1643572,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684682": {
+      "name": "Jonas Aidoo",
+      "nbaId": 1643265,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684742": {
+      "name": "Ausar Thompson",
+      "nbaId": 1641709,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684793": {
+      "name": "Kyle Filipowski",
+      "nbaId": 1642271,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4684806": {
+      "name": "Taylor Hendricks",
+      "nbaId": 1641707,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4687718": {
+      "name": "Josh Minott",
+      "nbaId": 1631169,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4697268": {
+      "name": "Kam Jones",
+      "nbaId": 1642880,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4698719": {
+      "name": "Trevon Brazile",
+      "nbaId": 1642350,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4700818": {
+      "name": "Vladislav Goldin",
+      "nbaId": 1642884,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4700852": {
+      "name": "Chaz Lanier",
+      "nbaId": 1642404,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4701208": {
+      "name": "Moussa Cisse",
+      "nbaId": 1630619,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4701225": {
+      "name": "PJ Hall",
+      "nbaId": 1641790,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4701232": {
+      "name": "Mark Williams",
+      "nbaId": 1631109,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4701233": {
+      "name": "Craig Porter Jr.",
+      "nbaId": 1641854,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4702134": {
+      "name": "Norchad Omier",
+      "nbaId": 1641807,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg"
+      ],
+      "review": "pending"
+    },
+    "4702177": {
+      "name": "Keon Ellis",
+      "nbaId": 1631165,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702352": {
+      "name": "Kobe Sanders",
+      "nbaId": 1642920,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702382": {
+      "name": "Tristan da Silva",
+      "nbaId": 1641783,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702384": {
+      "name": "Nique Clifford",
+      "nbaId": 1642363,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702656": {
+      "name": "Alijah Martin",
+      "nbaId": 1642918,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702670": {
+      "name": "Grant Nelson",
+      "nbaId": 1641761,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702745": {
+      "name": "Amari Williams",
+      "nbaId": 1642873,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4702972": {
+      "name": "Chris Manon",
+      "nbaId": 1643024,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4703115": {
+      "name": "Jaron Pierre Jr.",
+      "nbaId": 1643555,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "4703396": {
+      "name": "Graham Ike",
+      "nbaId": 1643633,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4703889": {
+      "name": "Jayson Kent",
+      "nbaId": 1643257,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4706557": {
+      "name": "Chris Youngblood",
+      "nbaId": 1642959,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4709131": {
+      "name": "Sean Pedulla",
+      "nbaId": 1642951,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4709138": {
+      "name": "Brandin Podziemski",
+      "nbaId": 1641764,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4711272": {
+      "name": "Reed Sheppard",
+      "nbaId": 1642263,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4711294": {
+      "name": "Matas Buzelis",
+      "nbaId": 1641824,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4711297": {
+      "name": "Justin Edwards",
+      "nbaId": 1642348,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4712849": {
+      "name": "Anthony Black",
+      "nbaId": 1641710,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4712862": {
+      "name": "Malik Dia",
+      "nbaId": 1643738,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "4712863": {
+      "name": "Mouhamed Gueye",
+      "nbaId": 1631243,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4712896": {
+      "name": "Noah Clowney",
+      "nbaId": 1641730,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4713010": {
+      "name": "David Jones Garcia",
+      "nbaId": 1642357,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4781746": {
+      "name": "Javon Small",
+      "nbaId": 1642914,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4837356": {
+      "name": "Tre Donaldson",
+      "nbaId": 1643621,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4838721": {
+      "name": "Tyler Nickel",
+      "nbaId": 1643589,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4845363": {
+      "name": "Cam Christie",
+      "nbaId": 1642353,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4845374": {
+      "name": "Bub Carrington",
+      "nbaId": 1642267,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4848625": {
+      "name": "Dailyn Swain",
+      "nbaId": 1643517,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4868423": {
+      "name": "Jaden Hardy",
+      "nbaId": 1630702,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4869342": {
+      "name": "Dyson Daniels",
+      "nbaId": 1630700,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4869780": {
+      "name": "Derik Queen",
+      "nbaId": 1642852,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4870562": {
+      "name": "Dominick Barlow",
+      "nbaId": 1631230,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4870564": {
+      "name": "Joshua Jefferson",
+      "nbaId": 1643538,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4871141": {
+      "name": "Ariel Hukporti",
+      "nbaId": 1630574,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4873090": {
+      "name": "Labaron Philon Jr.",
+      "nbaId": 1642889,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4873138": {
+      "name": "Ace Bailey",
+      "nbaId": 1642846,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4873153": {
+      "name": "Morez Johnson Jr.",
+      "nbaId": 1643516,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4873201": {
+      "name": "Asa Newell",
+      "nbaId": 1642854,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4888725": {
+      "name": "Ryan Dunn",
+      "nbaId": 1642346,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4895758": {
+      "name": "Cody Williams",
+      "nbaId": 1642262,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4896372": {
+      "name": "Walter Clayton Jr.",
+      "nbaId": 1642383,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4897262": {
+      "name": "Will Richard",
+      "nbaId": 1642954,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4897449": {
+      "name": "Malevy Leons",
+      "nbaId": 1642502,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4897943": {
+      "name": "Dalton Knecht",
+      "nbaId": 1642261,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4898010": {
+      "name": "Jaylin Sellers",
+      "nbaId": 1643637,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4898371": {
+      "name": "Maxime Raynaud",
+      "nbaId": 1642875,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4900671": {
+      "name": "Ajay Mitchell",
+      "nbaId": 1642349,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4903027": {
+      "name": "Cedric Coward",
+      "nbaId": 1642907,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4914336": {
+      "name": "Shaedon Sharpe",
+      "nbaId": 1631101,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4917149": {
+      "name": "Alex Karaban",
+      "nbaId": 1642284,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997526": {
+      "name": "Ousmane Dieng",
+      "nbaId": 1631172,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997528": {
+      "name": "Nikola Jovic",
+      "nbaId": 1631107,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997530": {
+      "name": "Khalifa Diop",
+      "nbaId": 1631215,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997536": {
+      "name": "Gui Santos",
+      "nbaId": 1630611,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997537": {
+      "name": "Tristan Vukcevic",
+      "nbaId": 1641774,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "4997538": {
+      "name": "Karlo Matkovic",
+      "nbaId": 1631255,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5023693": {
+      "name": "Tyrese Proctor",
+      "nbaId": 1642878,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5037871": {
+      "name": "Dylan Harper",
+      "nbaId": 1642844,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5037873": {
+      "name": "Drake Powell",
+      "nbaId": 1642962,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5037878": {
+      "name": "Ugonna Onyenso",
+      "nbaId": 1642391,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5041935": {
+      "name": "Cameron Boozer",
+      "nbaId": 1643409,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5041951": {
+      "name": "Meleek Thomas",
+      "nbaId": 1643509,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5041953": {
+      "name": "Koa Peat",
+      "nbaId": 1643520,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5041955": {
+      "name": "Darryn Peterson",
+      "nbaId": 1643408,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5044385": {
+      "name": "Leonard Miller",
+      "nbaId": 1631159,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5060631": {
+      "name": "Adou Thiero",
+      "nbaId": 1642876,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5060701": {
+      "name": "Christian Anderson",
+      "nbaId": 1643515,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5061568": {
+      "name": "Carter Bryant",
+      "nbaId": 1642868,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5061575": {
+      "name": "Kon Knueppel",
+      "nbaId": 1642851,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5061585": {
+      "name": "Isaiah Evans",
+      "nbaId": 1642912,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5061589": {
+      "name": "Yves Missi",
+      "nbaId": 1642274,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "5061603": {
+      "name": "Thomas Sorber",
+      "nbaId": 1642850,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5075626": {
+      "name": "Baba Miller",
+      "nbaId": 1642394,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5081727": {
+      "name": "Sidy Cissoko",
+      "nbaId": 1631321,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5082206": {
+      "name": "Brayden Burries",
+      "nbaId": 1643415,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5093267": {
+      "name": "Collin Murray-Boyles",
+      "nbaId": 1642867,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5095151": {
+      "name": "Caleb Wilson",
+      "nbaId": 1643410,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5099752": {
+      "name": "Rayan Rupert",
+      "nbaId": 1641712,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5101761": {
+      "name": "Mikel Brown Jr.",
+      "nbaId": 1643414,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5101845": {
+      "name": "Jayden Quaintance",
+      "nbaId": 1643519,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5104155": {
+      "name": "Bilal Coulibaly",
+      "nbaId": 1641731,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105337": {
+      "name": "Maliq Brown",
+      "nbaId": 1643576,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105462": {
+      "name": "Richie Saunders",
+      "nbaId": 1643563,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105550": {
+      "name": "GG Jackson",
+      "nbaId": 1641713,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105553": {
+      "name": "Julian Phillips",
+      "nbaId": 1641763,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105555": {
+      "name": "Tobe Awaka",
+      "nbaId": 1643591,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "5105565": {
+      "name": "Donovan Clingan",
+      "nbaId": 1642270,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105571": {
+      "name": "Henri Veesaar",
+      "nbaId": 1643539,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105592": {
+      "name": "Cam Whitmore",
+      "nbaId": 1641715,
+      "teamId": "7",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105623": {
+      "name": "Kel'el Ware",
+      "nbaId": 1642276,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105626": {
+      "name": "Tyler Bilodeau",
+      "nbaId": 1643548,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105637": {
+      "name": "Adem Bona",
+      "nbaId": 1641737,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105800": {
+      "name": "Josh Dix",
+      "nbaId": 1643717,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105806": {
+      "name": "Jett Howard",
+      "nbaId": 1641724,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105809": {
+      "name": "Tarris Reed Jr.",
+      "nbaId": 1643542,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105817": {
+      "name": "Carson Cooper",
+      "nbaId": 1643721,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105832": {
+      "name": "Nick Martinelli",
+      "nbaId": 1643568,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105837": {
+      "name": "Bruce Thornton",
+      "nbaId": 1643570,
+      "teamId": "10",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105839": {
+      "name": "Brice Sensabaugh",
+      "nbaId": 1641729,
+      "teamId": "26",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105841": {
+      "name": "Felix Okpara",
+      "nbaId": 1643590,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5105854": {
+      "name": "Braden Smith",
+      "nbaId": 1643552,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "5105977": {
+      "name": "Rasheer Fleming",
+      "nbaId": 1642853,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106040": {
+      "name": "Tobi Lawal",
+      "nbaId": 1643588,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106058": {
+      "name": "Emanuel Sharp",
+      "nbaId": 1643567,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106060": {
+      "name": "Jarace Walker",
+      "nbaId": 1641716,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "5106258": {
+      "name": "Gradey Dick",
+      "nbaId": 1641711,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106261": {
+      "name": "Ernest Udeh Jr.",
+      "nbaId": 1643640,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106262": {
+      "name": "Zuby Ejiofor",
+      "nbaId": 1643544,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106268": {
+      "name": "Nae'Qwan Tomlin",
+      "nbaId": 1641772,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5106283": {
+      "name": "Dillon Mitchell",
+      "nbaId": 1641759,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107157": {
+      "name": "Ryan Conwell",
+      "nbaId": 1643553,
+      "teamId": "14",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107173": {
+      "name": "Danny Wolf",
+      "nbaId": 1642874,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107199": {
+      "name": "Daniss Jenkins",
+      "nbaId": 1642450,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107251": {
+      "name": "Izaiyah Nelson",
+      "nbaId": 1643593,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107818": {
+      "name": "Isaac Jones",
+      "nbaId": 1642403,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107897": {
+      "name": "Jonathan Mogbo",
+      "nbaId": 1642367,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5107968": {
+      "name": "Ja'Kobi Gillespie",
+      "nbaId": 1643551,
+      "teamId": "24",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5108024": {
+      "name": "Yanic Konan Niederhauser",
+      "nbaId": 1642949,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5112087": {
+      "name": "Jaylen Wells",
+      "nbaId": 1642377,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5113969": {
+      "name": "Cameron Carr",
+      "nbaId": 1643418,
+      "teamId": "13",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5124612": {
+      "name": "VJ Edgecombe",
+      "nbaId": 1642845,
+      "teamId": "20",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5142620": {
+      "name": "Darius Acuff Jr.",
+      "nbaId": 1643411,
+      "teamId": "23",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5142621": {
+      "name": "Chris Cenac Jr.",
+      "nbaId": 1643416,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5142718": {
+      "name": "AJ Dybantsa",
+      "nbaId": 1643407,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5144091": {
+      "name": "Jeremiah Fears",
+      "nbaId": 1642847,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5144126": {
+      "name": "Will Riley",
+      "nbaId": 1642860,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "5148538": {
+      "name": "Tarik Biberovic",
+      "nbaId": 1641844,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5149077": {
+      "name": "Kingston Flemings",
+      "nbaId": 1643412,
+      "teamId": "1",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5149115": {
+      "name": "Allen Graves",
+      "nbaId": 1643512,
+      "teamId": "28",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5157066": {
+      "name": "Johnny Furphy",
+      "nbaId": 1642277,
+      "teamId": "11",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "approved"
+    },
+    "5157587": {
+      "name": "Rocco Zikarsky",
+      "nbaId": 1642911,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5159925": {
+      "name": "Nikola Topic",
+      "nbaId": 1642260,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5160992": {
+      "name": "Alex Sarr",
+      "nbaId": 1642259,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5164559": {
+      "name": "Nate Ament",
+      "nbaId": 1643417,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5170947": {
+      "name": "AJ Johnson",
+      "nbaId": 1642358,
+      "teamId": "3",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "5174563": {
+      "name": "Kyshawn George",
+      "nbaId": 1642273,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5174655": {
+      "name": "Chaney Johnson",
+      "nbaId": 1643052,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5174983": {
+      "name": "Aday Mara",
+      "nbaId": 1643530,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5175643": {
+      "name": "Egor Demin",
+      "nbaId": 1642856,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5175647": {
+      "name": "Hugo Gonzalez",
+      "nbaId": 1642864,
+      "teamId": "2",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5175737": {
+      "name": "Yaxel Lendeborg",
+      "nbaId": 1642865,
+      "teamId": "9",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5176517": {
+      "name": "Michael Ajayi",
+      "nbaId": 1642369,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5177362": {
+      "name": "Riley Minix",
+      "nbaId": 1642434,
+      "teamId": "5",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5203685": {
+      "name": "Khaman Maluach",
+      "nbaId": 1642863,
+      "teamId": "21",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5211175": {
+      "name": "Zaccharie Risacher",
+      "nbaId": 1642258,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5211176": {
+      "name": "Tidjane Salaun",
+      "nbaId": 1642275,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5211983": {
+      "name": "Pacome Dadiet",
+      "nbaId": 1642359,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg",
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "5214637": {
+      "name": "Noah Penda",
+      "nbaId": 1642869,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5214640": {
+      "name": "Kasparas Jakucionis",
+      "nbaId": 1642857,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5214989": {
+      "name": "Bogoljub Markovic",
+      "nbaId": 1642881,
+      "teamId": "15",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5217746": {
+      "name": "Yang Hansen",
+      "nbaId": 1642905,
+      "teamId": "22",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5231919": {
+      "name": "Karim Lopez",
+      "nbaId": 1643510,
+      "teamId": "29",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5238230": {
+      "name": "Tre Johnson",
+      "nbaId": 1642848,
+      "teamId": "27",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5239561": {
+      "name": "Jase Richardson",
+      "nbaId": 1642859,
+      "teamId": "19",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5239590": {
+      "name": "Liam McNeeley",
+      "nbaId": 1642862,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "rpg"
+      ],
+      "review": "pending"
+    },
+    "5241364": {
+      "name": "Bennett Stirtz",
+      "nbaId": 1642892,
+      "teamId": "25",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5242496": {
+      "name": "Noa Essengue",
+      "nbaId": 1642855,
+      "teamId": "4",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5242502": {
+      "name": "Ben Saraf",
+      "nbaId": 1642879,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5254165": {
+      "name": "Keaton Wagler",
+      "nbaId": 1643413,
+      "teamId": "12",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5258459": {
+      "name": "Ebuka Okorie",
+      "nbaId": 1643536,
+      "teamId": "8",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5279129": {
+      "name": "Sergio de Larrea",
+      "nbaId": 1643547,
+      "teamId": "6",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [
+        "ppg",
+        "apg"
+      ],
+      "review": "pending"
+    },
+    "5279130": {
+      "name": "Nolan Traore",
+      "nbaId": 1642849,
+      "teamId": "17",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5279133": {
+      "name": "Joan Beringer",
+      "nbaId": 1642866,
+      "teamId": "16",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5281370": {
+      "name": "Hannes Steinbach",
+      "nbaId": 1643419,
+      "teamId": "30",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    },
+    "5289900": {
+      "name": "Mohamed Diawara",
+      "nbaId": 1642885,
+      "teamId": "18",
+      "officialIdentityAndTeamMatch": true,
+      "seasonSnapshotDifferences": [],
+      "review": "pending"
+    }
+  }
+}

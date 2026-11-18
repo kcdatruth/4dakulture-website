@@ -725,13 +725,37 @@
       "name": "T.J. McConnell",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909985. ESPN play-by-play 401909966.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A point guard who works below the defense",
           "paragraphs": [
-            "McConnell can keep his dribble underneath the basket until a cutter shows him the exit. That patience is useful for Indiana's bench. His ball pressure also turns an ordinary inbound into work, provided the next defender is ready behind him."
+            "Most reserve guards try to create separation before they reach the screen. McConnell can create indecision after he passes it. Keep the dribble under the basket and three players have to turn their heads: the big protecting the rim, the guard recovering from behind and the weak-side defender trying to see his own man. That is the pocket of the floor where we want him making decisions. It gives Indiana’s bench a different means of scoring when the first pass upcourt produces nothing."
+          ]
+        },
+        {
+          "title": "From Philadelphia to a Finals rotation",
+          "paragraphs": [
+            "McConnell went undrafted out of Arizona. Four seasons with Philadelphia preceded his signing with Indiana in 2019. In Game 3 of the 2025 Finals, the Pacers’ reserves outscored Oklahoma City’s 49–18. In Game 6 he contributed 12 points, nine rebounds, six assists and four steals. The nine boards matter to the scouting argument. Every one he controls puts the ball in a point guard’s hands immediately. That can be more valuable to a pace team than getting a second guard downcourt first."
+          ]
+        },
+        {
+          "title": "What makes the dribble useful",
+          "paragraphs": [
+            "Through five games this season he averaged 4.6 assists. We like him beside a shooter who knows to move when McConnell disappears below the rim. Ben Sheppard lifting from the corner gives him a target on the way out. Toppin diving behind the big gives him a target before he gets there. The risk is turning a clever dribble into a tour of the baseline with the shot clock slipping away. Against a deep drop, taking the short jumper early can keep that defender honest the next time."
+          ]
+        },
+        {
+          "title": "Pressure with a teammate behind it",
+          "paragraphs": [
+            "McConnell can make the inbound and the first turn upcourt into real work for the opponent. At his size he gains much less from allowing the guard to walk into a screen and dictate a switch. Pressure has to be coordinated, though. If the ball gets past him before the big is set, Indiana has traded a few seconds of disruption for a four-on-three. How often the defense resets behind his pressure is a better evaluation than counting his swipes at the ball."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We would keep McConnell’s freedom to probe and choose the spacing around it deliberately. Pairing him with a second player the opponent can ignore outside shrinks his operating room. Give him one reliable outlet, a runner and an organized back line, and he gives the Pacers something difficult to buy from a backup: a recognizable offensive identity the instant he enters."
           ]
         },
         {
@@ -753,6 +777,12 @@
             "Inside the arc: 6-for-9. From three: 0-for-1. Defensive rebounds: 4. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/204456/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/2530530/stats",
+        "https://www.nba.com/pacers/news/mathurin-and-mcconnell-anchor-dominant-pacers-bench-performance-in-game-3",
+        "https://www.nba.com/news/thunder-pacers-takeaways-game-6-2025-nba-finals"
       ]
     },
     "2578185": {
@@ -781,13 +811,31 @@
       "name": "Larry Nance Jr.",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909296. ESPN play-by-play 401909296.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A reserve five who can give the ball back with interest",
           "paragraphs": [
-            "Nance can screen, take the short pass and find the opposite corner before help recovers. That gives Indiana a passing big without slowing the action. We would protect that advantage by matching his minutes against centers he can keep off the glass."
+            "Nance has played NBA minutes for both Los Angeles and Cleveland, reached the postseason with New Orleans and later returned to Cleveland. That route matters because his job in Indiana depends on adapting to different frontcourt partners. A backup who requires the starting center’s touches can make an entire second unit change its offense. Nance offers the possibility of a different return from the same screen: get the guard free and be available to make one more pass."
+          ]
+        },
+        {
+          "title": "The decision after the trap",
+          "paragraphs": [
+            "Set the screen for Haliburton above the arc and the first defender through the middle may be a wing covering two Pacers. Nance can hit the cutter before the help turns its head, but he also needs to take the open lane if the help never comes. Beside a non-shooting big there is less room for that catch. In that pairing we would start him away from the ball, then use the second screen to change the angle instead of asking two centers to roll together."
+          ]
+        },
+        {
+          "title": "Why the defensive boards set the limit",
+          "paragraphs": [
+            "In four 2024 playoff games for New Orleans, Nance averaged 21 minutes. That is evidence of a real matchup role in one series. In two Cleveland playoff appearances in 2026 he averaged 2.5. Playoff experience has value, but these two samples also tell us that a veteran’s minutes are conditional. A bigger center can get underneath the shot if Nance has switched out to meet the ball. Somebody must bump that center before the rebound comes down."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Through 13 games in Indiana he averaged 4.4 points and 2.5 rebounds. We would assess him by what a smaller unit can keep doing when the starting five sits. If it can still screen effectively, make the short pass and end the stop with possession, Nance gives Indiana a legitimate tactical change. The priority is choosing the switches he can finish, not collecting a larger share of the offense."
           ]
         },
         {
@@ -809,6 +857,11 @@
             "Inside the arc: 1-for-1. From three: 0-for-1. Defensive rebounds: 1. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1626204/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/2580365/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/2580365/stats?seasontype=3"
       ]
     },
     "2581018": {
@@ -1806,13 +1859,31 @@
       "name": "Kelly Oubre Jr.",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909985. ESPN play-by-play 401909985.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A cutter has to know whose lane it is",
           "paragraphs": [
-            "Oubre can attack the rim off a wing catch before the low man has both feet set. Indiana should track the drives he turns into passes when that window closes. His length on the next defensive possession is more useful when he retreats promptly."
+            "Oubre gives Indiana a wing with the inclination to finish a play himself. That can be exactly what a passing team needs. A defender turning his head toward Haliburton offers Oubre a step to the basket before the pass is even thrown. The complication comes when Siakam has already beaten his man toward that same spot. A cut then brings another defender to the scorer. We would evaluate Oubre as closely on the cuts he declines as the ones that finish above the rim."
+          ]
+        },
+        {
+          "title": "How the assignment has changed",
+          "paragraphs": [
+            "Philadelphia used Oubre for 37.3 minutes a game across six playoff appearances in 2024. He averaged 14.1 points in 50 regular-season games there in 2025–26. He is playing for Indiana now, where the opening 12 games yielded 10.7 points and 3.0 rebounds per game. That history establishes experience with a substantial wing workload. It does not require Indiana to reproduce Philadelphia’s shot distribution. An early rim run from Oubre can make a defense retreat and leave a trailer free even when the wing never touches the ball."
+          ]
+        },
+        {
+          "title": "Pressure from the wing",
+          "paragraphs": [
+            "We would try Oubre against a bigger scorer who wants a comfortable catch on one side. Make the entry a step farther out, then send help from the side the staff has chosen. His reach can turn a loose pass into a break, but reaching from the wrong side can give up the baseline and force a center to leave his own matchup. The same timing issue appears on offensive rebounds. A crash from the weak side can win an extra attempt. A crash from the top leaves somebody else responsible for the ball in transition."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Oubre’s ability to play through contact gives Indiana a more direct option when all the movement produces another pass around the perimeter. His opening 23.4% from three makes it especially important that he find useful work when the defender sags. We like a screen for Nesmith followed by a hard slip. That puts the sagging defender in a decision and gives Oubre a moving catch. The development is reading the traffic early enough to finish or clear the lane with equal conviction."
           ]
         },
         {
@@ -1834,6 +1905,11 @@
             "Inside the arc: 4-for-6. From three: 2-for-5. Defensive rebounds: 4. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1626162/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3133603/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3133603/stats?seasontype=3"
       ]
     },
     "3133626": {
@@ -2899,13 +2975,37 @@
       "name": "Ivica Zubac",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909296. ESPN play-by-play 401909966.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The adjustment Indiana has to make for a true five",
           "paragraphs": [
-            "Zubac gives Indiana a deep seal, a firm screen and a defensive rebound to start the break. The spacing changes when he stays inside. Shooters lifting from the corners can turn his gravity near the rim into clean catch-and-shoot looks."
+            "With Zubac, the question for Indiana is where the opposing center has to stand. Myles Turner could take that defender outside. Zubac can put him directly under the rim and keep him occupied there. Both can create space, but they create it in different places. If Siakam wants the same deep catch as Zubac at the same moment, the help has an easy job. Let Zubac screen high as Siakam cuts across the lane and the center has to defend two different depths."
+          ]
+        },
+        {
+          "title": "What travels from Los Angeles",
+          "paragraphs": [
+            "A 2016 second-round pick, Zubac played for both Los Angeles teams before Indiana. In the Clippers’ seven 2025 playoff games, he averaged 17.4 points in 36.6 minutes. That is a substantial workload for a center an opponent can try to draw into space. It gives us a reason to take his closing-lineup case seriously. It does not settle how Indiana should defend a five-out opponent with a different group of perimeter defenders."
+          ]
+        },
+        {
+          "title": "The screen is a scoring touch",
+          "paragraphs": [
+            "Through nine games for the Pacers, he averaged 10.4 points and 8.4 boards. Nembhard getting his shoulder inside a trailing guard is one of the looks we would try to manufacture. If the opposing big steps up, there is a pass over him. If the defense switches, the entry to Zubac needs to come while he has the smaller player behind him. Wait for the weak-side defender to dig and what began as an easy finish becomes a contested catch with bodies at his feet."
+          ]
+        },
+        {
+          "title": "Setting the back line",
+          "paragraphs": [
+            "Our defensive preference is to let him protect a corridor from the foul line to the rim. A guard who recovers over the screen makes that possible. Against a pull-up threat, Zubac sometimes needs to meet the ball higher. The development is collective as much as individual: Nesmith or the low wing must tag the roll early enough to allow Zubac to recover, then get back out without losing the shooter. The rebound matters especially here because a clean stop is the first pass of Indiana’s break."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We see a plausible playoff anchor with real lineup requirements. Put speed around his screen and size around his first defensive rotation, and the same player can help Indiana win the half court and get into transition. If the guards give up the pull-up and the forwards stand next to him in the lane, Indiana will be asking him to solve problems the lineup created."
           ]
         },
         {
@@ -2927,6 +3027,11 @@
             "Inside the arc: 6-for-12. From three: 0-for-0. Defensive rebounds: 4. Steals: 0. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1627826/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4017837/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4017837/stats?seasontype=3"
       ]
     },
     "4065654": {
@@ -3022,13 +3127,31 @@
       "name": "Jay Huff",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909985. ESPN play-by-play 401909909.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Change the geometry when Zubac sits",
           "paragraphs": [
-            "Huff's pop can move the opposing center away from Indiana's cutters. The other side of the pairing is whether he can meet a driver at the rim and recover to the glass. A block alone only answers the first question."
+            "Huff went undrafted out of Virginia and logged NBA time with the Lakers, Wizards, Nuggets and Grizzlies before Indiana. His two playoff appearances with Memphis in 2025 total a very different kind of evidence from the 82 regular-season games he played for Indiana in 2025–26. The latter establishes availability and a sustained role in that season. The former gives us little basis to claim a specific playoff matchup is solved."
+          ]
+        },
+        {
+          "title": "Why the pop can create a layup",
+          "paragraphs": [
+            "With Zubac rolling, Indiana can put a large target behind the opposing center. With Huff popping, the Pacers can ask whether that center will leave the paint at all. Let Nembhard turn the corner as Huff fades above the break. Stay with the ball and Huff has the return pass. Step to Huff early and Siakam can cut across the space the big just vacated. His value in that action depends on the release being quick enough that one defender cannot cover the drive and recover to the shot."
+          ]
+        },
+        {
+          "title": "A shooting center still has a center’s job",
+          "paragraphs": [
+            "Through 12 appearances Huff averaged 7.4 points. The more demanding question concerns the other end. When the guard gets over the screen, Huff can defend with length close to the basket. If the opponent pulls him up to the foul line, the low wing must tag the roll and Huff must find a body after recovering. We would pay particular attention to stops that last through the rebound. A contested layup and an uncontested putback add up to a successful opponent possession."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "The Pacers can use Huff to make opponents defend their backup unit differently from their starters. We want to see the counter when opponents switch a smaller player onto his pop. Sealing promptly or screening again gives the offense another route if the three never opens. Make that read and hold the glass, and the shooting becomes a lineup skill rather than an occasional change of pace."
           ]
         },
         {
@@ -3050,6 +3173,11 @@
             "Inside the arc: 1-for-2. From three: 3-for-3. Defensive rebounds: 0. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630643/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065731/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065731/stats?seasontype=3"
       ]
     },
     "4065732": {
@@ -4472,13 +4600,37 @@
       "name": "Obi Toppin",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909938. ESPN play-by-play 401909844.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The fast break starts with the other center",
           "paragraphs": [
-            "Toppin can force a defender to sprint back before Indiana has even secured the rebound. In the half court the lob requires more precise timing. We would use his screen-and-slip game to create that runway when transition opportunities dry up."
+            "Obi Toppin’s greatest leverage can arrive before anyone throws him a pass. A big sprinting to the front of the rim forces an opponent to decide who picks him up. Send a wing and Indiana can have a size mismatch. Send the center and a trailing shooter may have the top of the floor. A healthy Haliburton is such an appealing partner because he can make that decision count from the backcourt. Toppin doesn’t need to win a post-up to have helped create the shot."
+          ]
+        },
+        {
+          "title": "Why Indiana changed the equation",
+          "paragraphs": [
+            "New York took Toppin eighth out of Dayton in 2020. His Pacers career supplied a better test of his particular talent than asking whether he could command the ball like a conventional lottery scorer. He played all 23 games of the 2025 playoff run, averaging 9.4 points in 19.1 minutes. Toppin and Myles Turner helped swing the fourth quarter of Finals Game 3 against Oklahoma City. A transition finisher finding ways to matter late in a Finals game is material evidence when assessing what can survive a slower series."
+          ]
+        },
+        {
+          "title": "With the ball above the break",
+          "paragraphs": [
+            "Through 11 games this season, Toppin averaged 11.7 points and 4.4 rebounds. Next to Zubac, we would often have him trail the play rather than sending both bigs to the same spot. If the defense gives up the catch outside, shoot it in rhythm. If the closeout comes from the lane, cut past its outside shoulder and make the low man choose between him and Zubac. The hard part is resisting the cut when the pass cannot arrive. Two bigs waiting underneath make Haliburton’s job easier to defend."
+          ]
+        },
+        {
+          "title": "The bill for playing small",
+          "paragraphs": [
+            "Putting Toppin at center solves the congestion but moves the cost to the defensive end. Who takes the first hit from a rolling five? Who finds that center if Toppin rotates to the ball? For us the useful development is winning position early enough that his quick second jump becomes an asset. Jumping after losing the box-out is a much less reliable plan. We would compare his defensive rebounding opportunities at four and five before treating either job as settled."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Toppin gives Indiana a way to change the speed of a series from the bench. His ceiling in a closing group depends on two much quieter skills than the dunk: making the open trail three and giving the guards a rebound they can actually run with. If those skills travel from one matchup to the next, his pace becomes a choice Indiana controls."
           ]
         },
         {
@@ -4500,6 +4652,12 @@
             "Inside the arc: 2-for-3. From three: 2-for-8. Defensive rebounds: 6. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630167/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278355/stats",
+        "https://www.nba.com/news/nba-finals-game-3-turning-point",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278355/stats?seasontype=3"
       ]
     },
     "4278402": {
@@ -5112,13 +5270,37 @@
       "name": "Andrew Nembhard",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909296. ESPN play-by-play 401909927.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The guard Indiana can give two jobs",
           "paragraphs": [
-            "Nembhard can keep Indiana organized when the first creator gives up the ball. We like his pull-up when a big retreats, and his patience waiting for a cutter when the big steps up. Defending a lead guard adds value independent of the scoring line."
+            "The most interesting thing about Andrew Nembhard’s 16.6 points and 7.6 assists through 11 games is how little those numbers say about his hardest assignment. Indiana can hand him the ball when a possession needs organizing, then ask him to take the opposing initiator on the trip back. That makes a difference to Tyrese Haliburton. A second guard who can only shoot leaves Haliburton responsible for creating the advantage. Nembhard can create it, give the ball back and let Haliburton attack a defense that has already had to move."
+          ]
+        },
+        {
+          "title": "A second screen can be the better shot",
+          "paragraphs": [
+            "Picture Nembhard using an Ivica Zubac screen. If the defender trails and the center retreats toward the roll, Nembhard has room to stop for a jumper. Taking it early can be exactly right. The weakness in living off that shot is the math when the big never has to leave the lane. Turning back for a second screen changes the angle and gives Zubac time to seal the smaller defender. It also gives Pascal Siakam a chance to cut behind the help. We would judge Nembhard’s control by whether Indiana still has all three options when he gathers the ball."
+          ]
+        },
+        {
+          "title": "What the 2025 run established",
+          "paragraphs": [
+            "The Pacers selected him 31st out of Gonzaga in 2022. By the 2025 postseason he was averaging 33.4 minutes across all 23 games of a Finals run. Indiana’s own season review singled out both his perimeter defense and his offensive versatility. That history is especially relevant when considering his future next to Haliburton. There is already evidence that a contender could play the two together deep into May and June. The bigger scoring and passing responsibility since then adds another possibility for the minutes when they play apart."
+          ]
+        },
+        {
+          "title": "Guarding the action before the switch",
+          "paragraphs": [
+            "Our preferred assignment is the opponent’s first ballhandler. If Nembhard can cross the screen close enough to threaten the jumper from behind, Zubac can stay near the basket and Nesmith can stay with the shooter one pass away. The failure mode is specific. Get pinned on the screener’s hip and a good pull-up guard gets a practice shot or forces the big forward, opening the lob. A steal total cannot distinguish between those possessions."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We would trust Nembhard with a closing possession even when Haliburton is available. The reason is the option to reverse their jobs mid-play. The development test is whether Nembhard can make the defense commit to his own scoring early enough to leave time for the second action. That is the difference between sharing ballhandling duties and giving Indiana two chances to break down a playoff defense."
           ]
         },
         {
@@ -5140,6 +5322,12 @@
             "Inside the arc: 3-for-8. From three: 1-for-6. Defensive rebounds: 3. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629614/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395712/stats",
+        "https://www.nba.com/pacers/news/player-review-2025-andrew-nembhard",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395712/stats?seasontype=3"
       ]
     },
     "4395723": {
@@ -5982,13 +6170,31 @@
       "name": "Jalen Slawson",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909985. ESPN play-by-play 401909966.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A passing forward needs a defender to pass around",
           "paragraphs": [
-            "Slawson is worth testing as a passing forward in the middle of the floor. Can he turn an elbow catch into a cutter's layup before the defense switches? Defensively we would start with forwards and track which smaller matchups he can also contain."
+            "Slawson went 54th in 2023 out of Furman and began his NBA career with Sacramento. His 13 Indiana appearances in 2025–26 produced 2.8 assists per game. Through 12 appearances this season that figure was 1.1 in 14.3 minutes per game. The difference makes role an important part of the evaluation. An assist made on a short roll and an entry pass made to start a set represent different jobs even if both lead to a basket."
+          ]
+        },
+        {
+          "title": "The catch we would design for him",
+          "paragraphs": [
+            "Start with Slawson screening for Nembhard high on the left and Nesmith spaced on the opposite side. If two defenders take Nembhard, Slawson can catch facing the rim. The low wing has to decide whether to take him. Our question is whether Slawson can finish well enough to force the choice. Picking up the dribble and searching for a spectacular pass before the defender moves turns a promising four-on-three into a possession the opponent can survive."
+          ]
+        },
+        {
+          "title": "The matchup that pays for it",
+          "paragraphs": [
+            "Indiana has other players who can make that pass. Slawson’s way to distinguish himself is taking a forward whom Indiana would otherwise have to guard with a bulkier lineup. After a switch, we would watch whether he can keep the smaller player in front without surrendering the inside to the big he just released. That takes communication with the back line. A steal or block is possible on the play, but a shot taken late in the clock with no open roll man can be an equally useful result."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "His path is a second unit that needs someone to make the next two teammates better: give the guard a clean exit and the shooter a clean catch. The development target is finishing when the defense chooses to stay home. If the finish becomes credible and he completes the defensive rebound, Indiana can use him in the middle with a purpose deeper than giving the starters a rest."
           ]
         },
         {
@@ -6010,6 +6216,10 @@
             "Inside the arc: 2-for-2. From three: 1-for-1. Defensive rebounds: 0. Steals: 0. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641771/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4398207/stats"
       ]
     },
     "4398390": {
@@ -6373,13 +6583,31 @@
       "name": "Kobe Brown",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909927. ESPN play-by-play 401909909.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Can a forward punish the small switch quickly enough?",
           "paragraphs": [
-            "Brown can give Indiana a forward who handles the ball after a switch. We would try him as the short-roll passer with a shooter lifting behind him. His defensive rebounding decides whether that smaller frontcourt can stay together."
+            "Brown was the 30th pick in 2023 out of Missouri. He saw the playoffs in two seasons with the Clippers, appearing three times in each at fewer than six minutes a game. He split 2025–26 between Los Angeles and Indiana. That is enough history to describe a player working for a stable job, and too little playoff responsibility to promise a closing role. We think the most revealing Indiana possession begins with a much smaller guard unexpectedly responsible for Brown."
+          ]
+        },
+        {
+          "title": "A seal before the help arrives",
+          "paragraphs": [
+            "Have Brown screen for McConnell and make contact. If the defense switches, Brown can seal while the ball is still on the same side. A pass that arrives immediately gives him one defender to beat. Wait for a formal post entry and the defense can front with a guard and bring a bigger player over the top. Against two on the ball, his best response changes: cut short, catch in the middle and find the shooter whose defender has come to meet him."
+          ]
+        },
+        {
+          "title": "Earning the forward minutes",
+          "paragraphs": [
+            "The question on defense is whether Brown can take the kind of sturdy forward that would otherwise wear down a lighter wing. Make the scorer catch a step farther from the block and Indiana can keep help on its own side of the floor. A late reach or a soft box-out gives that gain straight back. We would track how often Indiana has to send a second defender on his matchup and whether the group comes away with the miss."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Brown’s first seven games this season yielded 4.0 points and 2.0 rebounds per game. That sample leaves room for a useful player to be overlooked and for a favorable matchup to be overvalued. Our test would be a defined stretch with a creator and two shooters. If Brown can turn the switch into a shot before help arrives and handle the stronger forward coming back, he gives that lineup a reason to exist."
           ]
         },
         {
@@ -6401,6 +6629,11 @@
             "Inside the arc: 0-for-0. From three: 0-for-2. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641738/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431752/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4431752/stats?seasontype=3"
       ]
     },
     "4431767": {
@@ -7426,13 +7659,31 @@
       "name": "Ben Sheppard",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909839.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A wing who has already had to find work in May",
           "paragraphs": [
-            "Sheppard can stay useful through a whole possession by relocating after the first reversal. The reward is often a more open shot for the next Pacer. A clean pursuit around the opponent's screen is his best argument for extended two-way minutes."
+            "Indiana took Sheppard 26th out of Belmont in 2023. He then played 17 postseason games as a rookie and 21 during the 2025 run to the Finals. His minutes declined from 19.7 to 14.0 per playoff game across those runs. The point is the range of assignments a reserve must survive. A coach can give a wing fewer touches and still require the same sharp screen navigation and immediate decision on the catch."
+          ]
+        },
+        {
+          "title": "Make the second pass available",
+          "paragraphs": [
+            "In a Haliburton lineup, a shooter lifting too early from the corner can bring his defender into the driving lane. We want Sheppard moving as the driver gets below that defender. Now the pass can travel behind the help. Next to McConnell, the timing changes. His guard may keep the dribble underneath the basket and need a new outlet on the way back out. Standing still after the first reversal leaves that possession with one fewer option."
+          ]
+        },
+        {
+          "title": "The screen on the other end",
+          "paragraphs": [
+            "We would start the defensive evaluation with the chase around a pin-down. Let the scorer curl uncontested and Indiana’s big has to take a step away from the rim. Get on the shooter’s shoulder early enough and the pass may never come. That is one way a wing with a quiet box score can help the back line. The weakness to investigate is how those chases hold up after contact, especially against a larger scorer who can stop and shoot before Sheppard recovers."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Sheppard had one verified appearance in the current snapshot. His three points in that game cannot tell us whether his shooting or defense has advanced. The 65 regular-season appearances he made the previous year provide a much broader baseline. We would judge his next stretch by whether Indiana can put its lead guard on an easier assignment and still generate a quality catch on the other side. That combination is the case for his minutes."
           ]
         },
         {
@@ -7442,6 +7693,11 @@
             "Inside the arc: 0-for-1. From three: 1-for-2. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641767/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433076/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433076/stats?seasontype=3"
       ]
     },
     "4433083": {
@@ -8421,13 +8677,31 @@
       "name": "Quenton Jackson",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909985. ESPN play-by-play 401909909.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "From emergency guard to a decision about the rotation",
           "paragraphs": [
-            "Jackson can put pressure on the rim before a second defender is ready. Indiana should test his finish when the help does arrive, particularly whether he can fire the baseline pass without jumping first."
+            "Jackson went undrafted out of Texas A&M, reached the league with Washington and found a larger sample in Indiana. In 2025–26 he played 49 games at 18.3 minutes per game. His first 14 this season brought 9.4 points, 3.8 rebounds and 3.1 assists in 22.1 minutes. For a guard trying to earn trust, the minutes are the interesting change. More time means opponents can test his second decision after taking his first drive away."
+          ]
+        },
+        {
+          "title": "Give him the side the defense has already left",
+          "paragraphs": [
+            "Nembhard can pull two defenders toward a screen on one side, then swing it to Jackson against a defender running out from the lane. Jackson should have a clear advantage before the first dribble. Drive the defender’s high foot and Zubac’s man has to decide whether to leave the rim. The passing test is delivering the ball before gathering to finish. Once airborne, Jackson gives a long defender the chance to cover both outcomes."
+          ]
+        },
+        {
+          "title": "Rebounding as a guard changes the next assignment",
+          "paragraphs": [
+            "A defensive board in Jackson’s hands can start the break without an outlet pass. Indiana still needs somebody stopping the ball when he goes after a long rebound and misses. The same balance applies to his pressure defense. We like him turning a guard away from the middle early, provided he reconnects after the screen instead of reaching from behind and leaving the big to defend two players. We would review failed gambles along with the live-ball takeaways."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Jackson has a case for regular time even when another Pacer initiates the offense. His strongest argument would be the ability to attack a moving defense, give the ball up and still contribute on the defensive glass. His development priority is finishing the drive with a choice that survives NBA size. That is what separates a useful burst of speed from a guard Indiana can play for a full shift."
           ]
         },
         {
@@ -8449,6 +8723,10 @@
             "Inside the arc: 5-for-7. From three: 1-for-5. Defensive rebounds: 6. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1631245/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592829/stats"
       ]
     },
     "4592857": {
@@ -12891,13 +13169,31 @@
       "name": "Braden Smith",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909938. ESPN play-by-play 401909927.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Does the second defender have to move?",
           "paragraphs": [
-            "Smith can interrogate a ball screen by changing speed and keeping the roller available. Indiana needs to see those reads survive when a longer guard crowds him. Getting the ball out early and relocating can give him a better second touch."
+            "Smith came from Purdue as the 38th pick in 2026. He arrived in almost the best possible classroom for a small point guard and one of the hardest places to win those minutes. Haliburton, Nembhard and McConnell can all organize a group. Smith needs to give Indiana a reason to put the ball in his hands when at least one of those three could be doing the same job. Through eight NBA appearances he averaged 2.4 assists in 13.3 minutes. We see a case for a closer look at his reads. Eight games cannot answer who should close."
+          ]
+        },
+        {
+          "title": "The choice inside a high screen",
+          "paragraphs": [
+            "Our first partner for him would be Zubac. A big target simplifies the delivery without simplifying the decision. If the on-ball defender ducks under, a pass to a rolling center who is still covered does nothing. Smith can stop, come back for the screen at a sharper angle or advance into a pull-up. The productive choice is the one that forces the center to step up. Once that happens, delivering early keeps the pass out of the reach of the taller guard recovering behind him."
+          ]
+        },
+        {
+          "title": "The other team gets to call a play too",
+          "paragraphs": [
+            "At a listed 5-foot-11, Smith will meet possessions where the opponent screens specifically to leave him on a forward. Indiana can exchange assignments before the entry or send help once the catch is made. Both solutions spend a teammate’s attention. Smith earns that investment by getting through the first screen and being difficult to dislodge before the catch. Counting steals tells us little about either job. The revealing clips would include the stops where the opponent gives up trying to force the switch."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "The useful comparison with McConnell is the problem each solves against length. McConnell can keep a dribble alive underneath the hoop. Smith has an opportunity to make the pass earlier, before the traffic forms. We would give him a shooter on the weak side as well as the roller and grade how often a teammate gets an advantage on the first catch. A possession has to improve after Smith organizes it for the role to become his."
           ]
         },
         {
@@ -12919,6 +13215,10 @@
             "Inside the arc: 0-for-3. From three: 0-for-1. Defensive rebounds: 0. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643552/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5105854/stats"
       ]
     },
     "5105977": {
@@ -13021,13 +13321,31 @@
       "name": "Jarace Walker",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909938. ESPN play-by-play 401909985.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A forward whose next pass depends on the threat of a shot",
           "paragraphs": [
-            "Walker can use a forward's size to see over the short roll and deliver a pass to the corner. Indiana should watch how aggressively he takes the finish when the pass is covered. Defensive versatility means more if he can make that choice quickly."
+            "Walker can offer Indiana a second decision-maker at the four. The catch comes with a condition. If the low defender sees no reason to step toward him, Walker is passing against five defenders who are already where they want to be. The eighth pick in 2023 out of Houston went from 11.6 points in 76 games last season to 6.5 through his first 13 this season. He still averaged 5.3 rebounds in the latter sample. The argument for him cannot rest on recovering a particular scoring average. It rests on how he makes that first defender move."
+          ]
+        },
+        {
+          "title": "Where we would put him",
+          "paragraphs": [
+            "Use Walker to screen for Nembhard with a shooter behind the action. On a switch he can seal the guard while Nembhard has a slower defender outside. Against two defenders on the ball he gets a short catch facing the basket. Our development priority is the first stride toward the rim before the pass. It gives a corner defender a reason to tag. Making the correct-looking skip pass without drawing anyone can leave the shooter with an immediate closeout and no advantage."
+          ]
+        },
+        {
+          "title": "The defensive assignment changes the offensive lineup",
+          "paragraphs": [
+            "At four beside Zubac, Walker can stunt at the ball, recover to a forward and leave the center to finish the rebound. Playing smaller shifts responsibility for that rebound onto Walker, often after he has already helped outside his area. We would track those two assignments separately. If the smaller group cannot secure misses, it never gets the transition chances that justified adding another mobile forward in the first place."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Indiana’s 2025 Finals run offers a useful boundary. Walker appeared in 12 playoff games at 9.8 minutes per game. He was part of that roster, but those minutes cannot establish that a contender will trust him with an entire closing shift. Our bet is on a defined job with one hard decision at each end: commit the low man on the catch, then finish the defensive rotation with the ball. Consistently doing both would change the lineup conversation."
           ]
         },
         {
@@ -13049,6 +13367,11 @@
             "Inside the arc: 2-for-2. From three: 1-for-5. Defensive rebounds: 5. Steals: 0. Blocks: 2."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641716/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5106060/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5106060/stats?seasontype=3"
       ]
     },
     "5106258": {
@@ -13743,21 +14066,38 @@
       "name": "Johnny Furphy",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The gap between reaching June and earning June minutes",
           "paragraphs": [
-            "Furphy's timing on a wing sprint can earn an open three before Indiana has to run a set. Against a set defense the back cut becomes more important. Adding strength would help him keep the same route when the defender initiates contact."
+            "Furphy already has a Finals run on his résumé. The context matters to the evaluation. He appeared in 11 games in the 2025 playoffs and averaged 3.2 minutes. By the following regular season he averaged 5.1 points and 4.4 rebounds in 35 appearances. The second line is a better starting point for discussing a rotation role. The verified 2026–27 snapshot through November 17 contains no game line for him. We cannot infer the cause or his present defensive level from that absence."
           ]
         },
         {
-          "title": "BEFORE THIS SEASON",
+          "title": "What a passer needs from the far wing",
           "paragraphs": [
-            "In the 2025–26 NBA season, Johnny Furphy averaged 5.1 points, 4.4 rebounds and 1.2 assists across 35 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
+            "The Kansas wing’s best audition beside Haliburton would start on the opposite sideline. Stay wide in transition and the defender has to choose between protecting the rim and conceding the advance pass. In a set possession, watch the defender’s chest. If he faces the ball with his back to Furphy, a cut becomes available. If he is already standing in the driving lane, cutting toward him only makes Indiana smaller. Holding the corner or screening for a second shooter would be the better response."
+          ]
+        },
+        {
+          "title": "Contact on the way to the catch",
+          "paragraphs": [
+            "We would assess his strength by a basketball outcome. Can he arrive at the intended spot when a defender leans into his route? Half a step of displacement can turn a clean catch into a reach behind the body and give the chaser time to recover. At the other end the same question shows up in the box-out. It is one thing to gather an uncontested long miss; it is another to hold off the forward attacking from behind and let a guard collect it."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Furphy could make a good fast team harder to match up with. First we need a current NBA sample, then a look at what survives once both teams are set. We would put his cuts, catches through contact and defensive rebounds on the same evaluation sheet. Those three actions tell us whether Indiana can trust the full trip up and down the floor."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642277/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5157066/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5157066/stats?seasontype=3"
       ]
     },
     "5157587": {
@@ -15528,11 +15868,26 @@
     "deepReviewCompletedIds": [
       "4396909",
       "3213",
-      "3995"
+      "3995",
+      "4395712",
+      "4278355",
+      "2530530",
+      "4017837",
+      "5105854",
+      "5106060",
+      "3133603",
+      "5157066",
+      "4398207",
+      "2580365",
+      "4431752",
+      "4433076",
+      "4592829",
+      "4065731"
     ],
-    "remainingForDeepReview": 472,
-    "reviewStatus": "In progress. Deep-review status does not certify all historical or 2026-27 claims as independently verified.",
+    "remainingForDeepReview": 458,
+    "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
-    "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview."
+    "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
+    "reportTracker": "data/4dk-deep-scouting-review.json"
   }
 }
