@@ -29,7 +29,7 @@ try{
  }}
  const nav=el('div','pf2-links');
  for(const [label,url] of [['NBA TOP 50','top-50-nba-players-2026-27.html'],['PLAYER DIRECTORY','4dk-nba-player-directory.html'],['NIGHTCAP ARCHIVE','nba-nightcap-archive.html']]){const a=el('a','',label);a.href=url;nav.append(a)}section.append(nav);
- try{const cr=await fetch('data/4dk-player-coverage.json',{cache:'no-store'});if(cr.ok){const index=await cr.json();const articles=index.coverage&&index.coverage[id];if(Array.isArray(articles)&&articles.length){const related=el('div','pf2-related');related.append(el('h3','','RELATED 4DK COVERAGE'));for(const [label,url] of articles){if(typeof url!=='string'||!/^[-a-z0-9]+\\.html$/.test(url))continue;const a=el('a','',label);a.href=url;related.append(a)}section.append(related)}}}catch(e){/* Related stories are optional. */}
+ try{const cr=await fetch('data/4dk-player-coverage.json',{cache:'no-store'});if(cr.ok){const index=await cr.json();const articles=index.coverage&&index.coverage[id];if(Array.isArray(articles)&&articles.length){const related=el('div','pf2-related');related.append(el('h3','','RELATED 4DK COVERAGE'));for(const [label,url] of articles){if(typeof url!=='string'||!url.endsWith('.html')||url.includes('/')||url.includes('..'))continue;const a=el('a','',label);a.href=url;related.append(a)}section.append(related)}}}catch(e){/* Related stories are optional. */}
  root.prepend(section);
 }catch(e){/* Preserve original profile if data cannot load. */}
 })();
