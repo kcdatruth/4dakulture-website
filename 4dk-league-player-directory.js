@@ -1,5 +1,5 @@
 (async()=>{'use strict';
-const grid=document.getElementById('players'),search=document.getElementById('search'),filter=document.getElementById('filter'),count=document.getElementById('count');
+const grid=document.getElementById('players'),search=document.getElementById('search'),filter=document.getElementById('filter'),teamFilter=document.getElementById('team-filter'),count=document.getElementById('count');
 const norm=x=>String(x||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
 const mk=(tag,txt)=>{const e=document.createElement(tag);if(txt!==undefined)e.textContent=String(txt);return e};
 const format=n=>typeof n==='number'&&Number.isFinite(n)?n.toFixed(1):'—';
@@ -42,12 +42,13 @@ try{
     p.rosterId=match?.id||null;
    }
   }catch(e){rosterComplete=false;/* Never substitute a guessed team. */}
+  if(rosterComplete&&teamFilter){const teams=[...new Map(all.filter(p=>p.teamId).map(p=>[String(p.teamId),p.team])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));teamFilter.replaceChildren();const opt=mk('option','All 30 NBA teams');opt.value='all';teamFilter.append(opt);for(const [id,name] of teams){const option=mk('option',name);option.value=id;teamFilter.append(option)}}
   render();
  };
 
  const render=()=>{
   grid.replaceChildren();const q=norm(search.value),type=filter.value;
-  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats)));
+  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats))&&(!teamFilter||teamFilter.value==='all'||String(p.teamId)===teamFilter.value));
   count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc+(rosterComplete?' · teams checked '+rosterTimestamp:' · team verification temporarily unavailable');
   const fragment=document.createDocumentFragment();
   for(const p of list){
@@ -74,6 +75,6 @@ try{
    fragment.append(card);
   }grid.append(fragment);
  };
- search.addEventListener('input',render);filter.addEventListener('change',render);render();loadTeams();
+ search.addEventListener('input',render);filter.addEventListener('change',render);if(teamFilter)teamFilter.addEventListener('change',render);render();loadTeams();
 }catch(e){count.textContent='Player statistics temporarily unavailable. Please try again later.'}
 })();
