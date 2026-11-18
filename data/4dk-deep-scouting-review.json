@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile or, for Oscar Tshiebwe, the official Houston roster. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 55,
+  "approvedCount": 56,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -9,7 +9,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -23,7 +23,12 @@
         "sha256": "76e26d72a8c818820adae40e45e9c68ddf68cd46ee6a8703d49edc9e1a500a97",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 39
+      "ageAsOfReview": 39,
+      "editorialReview": "Originality, career context, and qualified present-day analysis reviewed 2026-11-18. Current roster and November 8/November 2 game log checked against NBA.com; no full-film or current-lineup claims certified.",
+      "sourceUrls": [
+        "https://www.nba.com/team/1610612738/roster",
+        "https://www.nba.com/player/201144/mike_conley"
+      ]
     },
     "3213": {
       "name": "Al Horford",
