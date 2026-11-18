@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --prefix "$RUNNER_TEMP/rankings-check" playwright@1.56.1
-      - run: '"$RUNNER_TEMP/rankings-check/node_modules/.bin/playwright" install --with-deps chromium'
       - name: Check article, board navigation and responsive layouts
         env:
           NODE_PATH: ${{ runner.temp }}/rankings-check/node_modules
@@ -26,7 +25,7 @@ jobs:
           const assert = require('node:assert/strict')
           const { chromium } = require('playwright')
           ;(async () => {
-            const browser = await chromium.launch()
+            const browser = await chromium.launch({ channel: 'chrome' })
             try {
               const page = await browser.newPage()
               for (const width of [360, 390, 768, 1280]) {
