@@ -34,12 +34,19 @@ try{
    rosterTimestamp=snapshot.checked_utc;
    rosterComplete=true;
    const rosterById=snapshot.players;
-   for(const p of all){
-    const pid=idKey(p.stats?.athlete_id||p.athleteId);
-    const match=pid&&rosterById[pid];
-    p.team=match?.team||null;
-    p.teamId=match?.teamId||null;
-    p.rosterId=match?.id||null;
+   const previous = new Map(all.map(p => [idKey(p.stats?.athlete_id || p.athleteId), p]));
+   all.length = 0;
+   for(const athlete of Object.values(rosterById)){
+    const prior = previous.get(String(athlete.id));
+    const p = prior && norm(prior.name)===norm(athlete.name) ? prior : {};
+    all.push({...p, name:athlete.name, team:athlete.team, teamId:athlete.teamId,
+              rosterId:athlete.id, headshot:athlete.headshot, hasReport:!!p.editorial});
+   }
+   all.sort((a,b)=>a.name.localeCompare(b.name));
+   const scoutingResponse = await fetch('data/4dk-player-scouting.json');
+   if(scoutingResponse.ok){
+    const scouting = await scoutingResponse.json();
+    for(const p of all)p.hasReport ||= scouting.reports?.[p.rosterId]?.status==='published';
    }
   }catch(e){rosterComplete=false;/* Never substitute a guessed team. */}
   if(rosterComplete&&teamFilter){const teams=[...new Map(all.filter(p=>p.teamId).map(p=>[String(p.teamId),p.team])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));teamFilter.replaceChildren();const opt=mk('option','All 30 NBA teams');opt.value='all';teamFilter.append(opt);for(const [id,name] of teams){const option=mk('option',name);option.value=id;teamFilter.append(option)}}
@@ -48,14 +55,14 @@ try{
 
  const render=()=>{
   grid.replaceChildren();const q=norm(search.value),type=filter.value;
-  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.editorial)||(type==='stats'&&p.stats))&&(!teamFilter||teamFilter.value==='all'||String(p.teamId)===teamFilter.value));
+  const list=all.filter(p=>(norm(p.name).includes(q)||(q&&aliasMap.has(q)&&canonical(aliasMap.get(q))===norm(p.name)))&&(type==='all'||(type==='editorial'&&p.hasReport)||(type==='stats'&&p.stats))&&(!teamFilter||teamFilter.value==='all'||String(p.teamId)===teamFilter.value));
   count.textContent=list.length+' of '+all.length+' indexed players · '+Object.keys(stats.players).length+' verified statistical records · checked '+stats.checked_utc+(rosterComplete?' · teams checked '+rosterTimestamp:' · team verification temporarily unavailable');
   const fragment=document.createDocumentFragment();
   for(const p of list){
    const card=mk('article');card.className='player';
    const identity=mk('div');identity.className='player-identity';
    const portrait=mk('div');portrait.className='player-portrait';
-   if(p.rosterId){const img=mk('img');img.src='https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(p.rosterId)+'.png';img.alt=p.name+' player headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.remove();portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('')},{once:true});portrait.append(img)}else portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('');
+   if(p.headshot){const img=mk('img');img.src=p.headshot;img.alt=p.name+' player headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>{img.remove();portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('')},{once:true});portrait.append(img)}else portrait.textContent=p.name.split(' ').map(x=>x[0]).slice(0,2).join('');
    identity.append(portrait);
    const identityText=mk('div');identityText.className='player-identity-text';
    const heading=mk('h2');

@@ -3,6 +3,7 @@
 import datetime as dt
 import json
 import pathlib
+from official_nba_rosters import official_rows, reconcile
 import time
 import urllib.request
 
@@ -51,6 +52,9 @@ def main():
             if pid in players and players[pid]["teamId"] != tid:
                 raise ValueError(f"Conflicting roster assignment for ESPN athlete {pid}")
             players[pid] = {"id":pid,"name":name,"teamId":tid,"team":team}
+            portrait = athlete.get("headshot", {})
+            if portrait.get("href", "").endswith("/" + pid + ".png"):
+                players[pid]["headshot"] = portrait["href"]
             # Birth date is source-provided only; never infer age from a class or rookie status.
             dob = athlete.get("dateOfBirth")
             if isinstance(dob, str) and len(dob) >= 10:
@@ -72,8 +76,9 @@ def main():
                     players[pid][field] = value
     if len(team_counts) != 30 or len(players) < 300:
         raise ValueError("Incomplete leaguewide roster snapshot")
+    players, team_counts = reconcile(players, official_rows())
     payload = {
-        "schemaVersion":1,"source":"ESPN team roster endpoints",
+        "schemaVersion":1,"source":"NBA.com official team rosters; ESPN athlete IDs, portraits and supplemental bios",
         "checked_utc":dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "teamCount":len(team_counts),"playerCount":len(players),
         "teamCounts":team_counts,"players":players

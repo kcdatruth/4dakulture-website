@@ -30,7 +30,7 @@ try{
  title.textContent=player.name;
  status.textContent='Team roster verified · '+prettyTime(data.checked_utc);
  const hero=node('section');hero.className='pf-hero';hero.setAttribute('aria-label','Player overview');
- {const img=node('img');img.src='https://a.espncdn.com/i/headshots/nba/players/full/'+encodeURIComponent(player.id)+'.png';img.alt=player.name+' headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>img.remove(),{once:true});hero.append(img)}
+ {const img=node('img');img.src=player.headshot;img.alt=player.name+' headshot';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>img.remove(),{once:true});hero.append(img)}
  const details=node('div');details.append(node('div','4DK PLAYER FILES / 2026–27'));details.lastChild.className='pf-kicker';
  const teamHeading=node('h2');if(logoCodes[player.teamId]){const logo=node('img');logo.className='pf-team-logo';logo.src='https://a.espncdn.com/i/teamlogos/nba/500/'+logoCodes[player.teamId]+'.png';logo.alt=player.team+' logo';logo.addEventListener('error',()=>logo.remove(),{once:true});teamHeading.append(logo)}teamHeading.append(document.createTextNode(player.team));details.append(teamHeading);
  details.append(node('p',[player.position,player.jersey?'#'+player.jersey:'',player.experience===0?'Rookie':null].filter(Boolean).join(' · ')||'Current team assignment verified by athlete ID'));
@@ -71,8 +71,7 @@ try{
   if(stats.status==='verified'&&stats.season==='2026-27'){
    const all=Object.values(stats.players||{});
    const byId=all.find(p=>p.athlete_id&&numericId(p.athlete_id)===numericId(player.id));
-   const byName=all.filter(p=>norm(p.name)===norm(player.name));
-   const entry=byId||(byName.length===1?byName[0]:null);
+   const entry=byId&&norm(byId.name)===norm(player.name)?byId:null;
    const box=node('section');box.className='pf2-panel';box.append(node('div','2026–27 / REGULAR SEASON'));box.lastChild.className='pf2-eyebrow';
    box.append(node('h2','Season averages'));
    if(entry){

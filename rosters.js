@@ -404,14 +404,29 @@
       let data;
       let source = '4DK live feed';
 
-      try{
-        data = await getWorkerRoster(team);
-      }catch(workerError){
-        console.warn('4DK Worker roster failed, trying direct feed:', workerError);
-        data = await getDirectRoster(team);
-        source = 'live fallback feed';
+      if(league === 'nba'){
+        const [snapshotResponse, live] = await Promise.all([
+          fetch('data/4dk-nba-rosters-verified.json', {cache:'no-store'}),
+          getWorkerRoster(team).catch(()=>getDirectRoster(team)).catch(()=>null)
+        ]);
+        if(!snapshotResponse.ok)throw Error('Roster snapshot unavailable');
+        const snapshot = await snapshotResponse.json();
+        const liveById = new Map((live?.players || []).map(p=>[String(p.id),p]));
+        const players = Object.values(snapshot.players).filter(p=>String(p.teamId)===String(team.id)).map(p=>{
+          const detail = liveById.get(p.id) || {};
+          return {...detail, ...p, height:Math.floor(p.height/12)+"′ "+p.height%12+"″", weight:p.weight+' lbs'};
+        });
+        data = {...live, players};
+        source = 'NBA roster checked '+snapshot.checked_utc;
+      }else{
+        try{
+          data = await getWorkerRoster(team);
+        }catch(workerError){
+          data = await getDirectRoster(team);
+          source = 'live fallback feed';
+        }
       }
-
+      if(activeTeam?.id !== team.id)return;
       roster = Array.isArray(data.players) ? data.players : [];
       teamCount.textContent = `${roster.length} PLAYERS`;
 
