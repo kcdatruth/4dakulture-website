@@ -33,5 +33,93 @@
         }
       ]
     }
-  }
+  },
+  "editorialSpotlights": {
+    "victor-wembanyama": {
+      "title": "THE TWO-WAY GEOMETRY",
+      "sections": [
+        {
+          "title": "DEFENSIVE GRAVITY",
+          "paragraphs": [
+            "Defensively, there is nobody else in the league who changes shot selection the same way. Drivers can beat the first defender and still pull the ball back because Wemby is standing near the rim. Guards who normally love floaters release them earlier. Centers rush hooks. Shooters hesitate on pull-ups because his recovery range erases space that exists against every other big."
+          ]
+        },
+        {
+          "title": "THE NEXT OFFENSIVE LEAP",
+          "paragraphs": [
+            "The next step is not adding another trick. It is making the existing package more efficient: fewer loose possessions, better reads against doubles and more consistent dominance inside when teams try to guard him with size."
+          ]
+        }
+      ]
+    },
+    "luka-doncic": {
+      "title": "THE POSSESSION CONTROLLER",
+      "sections": [
+        {
+          "title": "CREATION & TEMPO",
+          "paragraphs": [
+            "He controls possessions at a pace almost nobody else can match, forces switches until he finds the matchup he wants and punishes every coverage with either scoring or passing."
+          ]
+        },
+        {
+          "title": "THE CHAMPIONSHIP TEST",
+          "paragraphs": [
+            "The argument against him at No. 1 is still defense and conditioning. Luka does not need to become an All-Defensive guard, but the effort level has to hold when playoff opponents force him into repeated actions."
+          ]
+        }
+      ]
+    },
+    "cade-cunningham": {
+      "title": "DETROIT'S OFFENSIVE ENGINE",
+      "sections": [
+        {
+          "title": "READING THE FLOOR",
+          "paragraphs": [
+            "He can see over traps, manipulate the low man and use his size to keep smaller guards on his hip until a passing lane opens."
+          ]
+        },
+        {
+          "title": "THE NEXT STEP",
+          "paragraphs": [
+            "His next step is proving that the huge playmaking volume can remain efficient when teams scheme specifically to take away his first read."
+          ]
+        }
+      ]
+    },
+    "shai-gilgeous-alexander": {
+      "title": "THE ART OF EFFICIENCY",
+      "sections": [
+        {
+          "title": "SCORING WITHOUT WASTE",
+          "paragraphs": [
+            "He lives in the paint without relying on overpowering athleticism, gets to the line, changes pace and rarely gives a defender the same rhythm twice."
+          ]
+        },
+        {
+          "title": "TWO-WAY VALUE",
+          "paragraphs": [
+            "On the other end, his length and anticipation make him a real contributor rather than someone the Thunder need to hide."
+          ]
+        }
+      ]
+    },
+    "anthony-edwards": {
+      "title": "FROM SCORER TO COMMANDER",
+      "sections": [
+        {
+          "title": "SHOT-MAKING",
+          "paragraphs": [
+            "The next step is control. The best players in the league do not only score 30; they dictate what the defense is allowed to do."
+          ]
+        },
+        {
+          "title": "THE TWO-WAY CHALLENGE",
+          "paragraphs": [
+            "Defensively, Edwards has the tools to be a high-impact stopper when engaged. The question is whether he can sustain that effort while carrying an enormous scoring load."
+          ]
+        }
+      ]
+    }
+  },
+  "editorialSpotlightPolicy": "Selected verbatim excerpts from existing published 4DK Top 50 scouting reports. Original full reports remain canonical at their existing URLs. These excerpts are not fresh game-film evaluations."
 }
