@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'data/4dk-league-player-index.json'
+      - 'data/4dk-player-scouting.json'
       - 'data/4dk-nba-league-stats-2026-27.json'
       - 'data/4dk-nba-rosters-verified.json'
       - '4dk-league-player-directory.js'
@@ -30,3 +31,22 @@ jobs:
         run: |
           node --check 4dk-league-player-directory.js
           node --check 4dk-nba-player-file.js
+      - name: Validate 4DK editorial scouting dataset
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/4dk-player-scouting.json').read_text())
+          assert data['schemaVersion'] == 1
+          assert data['season'] == '2026-27'
+          for athlete_id, report in data['reports'].items():
+              assert athlete_id.isdigit()
+              assert report['name'].strip()
+              assert report['status'] in ('published', 'draft')
+              assert report['sections']
+              for section in report['sections']:
+                  assert section['title'].strip()
+                  assert section['paragraphs']
+                  assert all(isinstance(p, str) and p.strip() for p in section['paragraphs'])
+          print(f"Validated {len(data['reports'])} editorial scouting reports")
+          PY
