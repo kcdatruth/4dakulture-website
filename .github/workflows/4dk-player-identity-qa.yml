@@ -1,0 +1,29 @@
+name: 4DK Player Identity QA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/4dk-league-player-index.json'
+      - 'data/4dk-nba-league-stats-2026-27.json'
+      - 'data/4dk-nba-rosters-verified.json'
+      - '4dk-league-player-directory.js'
+      - 'scripts/validate_4dk_player_identities.py'
+      - '.github/workflows/4dk-player-identity-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate player IDs, names, aliases and editorial matches
+        run: python scripts/validate_4dk_player_identities.py
+      - name: Check Player Index JavaScript syntax
+        run: node --check 4dk-league-player-directory.js
