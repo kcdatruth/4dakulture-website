@@ -2494,13 +2494,31 @@
       "name": "Kevon Looney",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Why a missed shot can be part of a good possession",
           "paragraphs": [
-            "Looney can free the ballhandler with the first screen and rescue the shot with inside position on the miss. Those are two separate chances to create offense. The Lakers should watch the pace of the matchup when asking him to defend away from the rim."
+            "Golden State drafted Looney 30th out of UCLA in 2015. He played on three Warriors championship teams, and his 274 offensive rebounds led the league in 2022–23. The latter tells us something specific about his trade. A center who knows where the miss might land can help a motion offense twice: get the shooter separation with the screen, then take inside position while the defense is still following the shooter. The Lakers have different creators. That sequence still makes sense."
+          ]
+        },
+        {
+          "title": "Screening for a guard who likes to wait",
+          "paragraphs": [
+            "Dončić can keep a dribble alive long after a defender expects the ball to leave his hands. Looney’s job in that pairing would often be to stay available instead of diving immediately. Turn the screen into a second screen if the guard recovers, or pin the smaller man who has switched onto the roll. Grimes relocating along the arc gives the defense another direction to watch. A rim run that takes the screener straight into Luka’s driving lane wastes that patience."
+          ]
+        },
+        {
+          "title": "Which opponent earns him the minutes?",
+          "paragraphs": [
+            "Looney averaged 25.0 minutes over 13 playoff appearances in 2023 and 10.0 across 12 in 2025. It would be a mistake to translate his rings into a fixed job against every opponent. A physical center who wants a deep catch gives Looney an opportunity to win position before the pass. A five who picks and pops above the break demands longer recoveries. If Looney is still running back to his man when the next drive begins, the Lakers need a different coverage or center."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "After a season with New Orleans, his first seven Lakers games yielded 2.6 rebounds per game. We would judge his reserve role by the percentage of contested misses the group secures and the quality of the shots after his re-screens. That gives a veteran real credit for the things he can still control while leaving the closing decision open to the matchup."
           ]
         },
         {
@@ -2510,6 +2528,11 @@
             "Inside the arc: 2-for-3. From three: 0-for-0. Defensive rebounds: 3. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1626172/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3155535/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3155535/stats?seasontype=3"
       ]
     },
     "3157465": {
@@ -2661,13 +2684,31 @@
       "name": "Matisse Thybulle",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401909971.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The defender who changes the pass",
           "paragraphs": [
-            "Thybulle can disrupt a pass from behind the play and turn a routine reversal into transition. The gamble needs a teammate protecting the space he vacates. The Lakers can keep his defender occupied on offense by using him as a screener for a shooter."
+            "Thybulle’s two All-Defensive selections give the Lakers a body of work to draw on. His rare value is that a ballhandler can appear to have beaten him and still have to protect the ball. He can contest from behind or reach a pass a more conventional defender would concede. That freedom is a team decision. The center must know when Thybulle is pursuing the ball from the rear and when he has actually taken himself out of the play."
+          ]
+        },
+        {
+          "title": "What to do with the defender who helps off him",
+          "paragraphs": [
+            "Leave him in the corner by default and an opponent can shade toward Luka without ever making contact with Thybulle. Put him into the action as a screener for Grimes and now the same defender must decide whether to switch, show or give a shooter room. On a switch, Thybulle can cut against a guard who was chasing outside. On a double, his next pass from the middle needs to arrive before the opposite wing closes. That is an offensive job with a purpose even when he takes few shots."
+          ]
+        },
+        {
+          "title": "How a series tests the fit",
+          "paragraphs": [
+            "Thybulle played playoff minutes for Philadelphia and later Portland. In four 2026 postseason appearances for Portland he averaged 13.3 minutes. Through his first 15 games as a Laker, he averaged 7.4 points. The regular-season scoring is encouraging; the playoff question is whether Los Angeles can keep him involved when the opponent is prepared to repeat the same help tactic on every possession. Playing him alongside two other paint-bound players makes the answer harder."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We want Thybulle closing when there is a specific opposing creator worth disrupting and an offensive action for the player guarding him. His best skill changes what the opponent dares to throw. His development priority is making an equally decisive play after the Lakers throw him the ball."
           ]
         },
         {
@@ -2689,6 +2730,11 @@
             "Inside the arc: 0-for-0. From three: 2-for-6. Defensive rebounds: 6. Steals: 3. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629680/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3907498/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3907498/stats?seasontype=3"
       ]
     },
     "3907823": {
@@ -3932,13 +3978,31 @@
       "name": "Collin Sexton",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401909952.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The value of changing the speed after Luka gives it up",
           "paragraphs": [
-            "Sexton's burst can get a defense retreating before the second screen is required. The next gain is recognizing the corner shooter as soon as the low man steps in. That pass makes opponents pay for loading up on his finish."
+            "Sexton turns an ordinary swing pass into a threat to the rim because his first intent can be forward. That makes an interesting contrast with Luka, who often gets an advantage by waiting. A defense that has spent ten seconds tracking a slow-developing screen can suddenly have to defend a sprint at its weakest spot. We would give Sexton that moving start before asking him to dribble into five set defenders."
+          ]
+        },
+        {
+          "title": "The career behind the change of role",
+          "paragraphs": [
+            "Cleveland took the Alabama guard eighth in 2018. He played in Utah and split 2025–26 between Charlotte and Chicago, averaging 15.4 points across 68 games. His first 14 Lakers appearances brought 10.6 points and 2.6 assists per game. The important change to examine is who creates the first opening. A lower scoring average need not imply a weaker offensive contribution if the new job produces earlier rim attempts and forces a low defender to leave a shooter."
+          ]
+        },
+        {
+          "title": "The final dribble and the first defensive contact",
+          "paragraphs": [
+            "The ball should leave before Sexton is directly underneath the shot blocker if the weak corner is open. A drive that draws two and ends in a contested scoop gives the defense the matchup it wanted. On defense we would pair him with a bigger perimeter player who can handle an early cross-match. If a forward screens to take Sexton onto the block, fighting the entry before the catch is much cheaper than doubling after the ball arrives."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "Sexton is a genuine contrast in a Lakers backcourt built around manipulation. We like him beside a patient creator and a big who runs directly to the rim. His development is choosing the instant when his own speed has finished its job and the pass can exploit the damage."
           ]
         },
         {
@@ -3960,6 +4024,10 @@
             "Inside the arc: 2-for-5. From three: 1-for-7. Defensive rebounds: 3. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629012/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277811/stats"
       ]
     },
     "4277813": {
@@ -4464,13 +4532,31 @@
       "name": "Jarred Vanderbilt",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401909986.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A defensive specialist whose offensive assignment belongs to the coach too",
           "paragraphs": [
-            "Vanderbilt can take the matchup that lets a creator conserve energy. The offensive puzzle is spacing when his defender ignores the corner. Screening, slipping and pursuing a miss force that defender to make an active choice."
+            "Vanderbilt can take a forward who would otherwise spend the game making a Lakers creator fight through contact. That assignment has tangible value. So does the possession on the other end when his own defender abandons him to wait in Luka’s lane. Evaluating only the defensive matchup overstates the fit. Leaving Vanderbilt in the corner without giving him a job makes the offensive cost look inevitable when part of it is a lineup choice."
+          ]
+        },
+        {
+          "title": "Spend the help defender’s attention",
+          "paragraphs": [
+            "Try Vanderbilt screening for Reaves while Luka holds the ball. If Vanderbilt’s defender stays near the basket, Reaves can open toward the pass. If he comes out early, Vanderbilt can slip behind him. The next decision comes on the miss. Crash from the baseline when there is a body to dislodge; retreat when he is the highest Laker on the floor. Selling out on an unlikely rebound can hand back the defensive advantage the lineup was built to provide."
+          ]
+        },
+        {
+          "title": "His career supplies the stress test",
+          "paragraphs": [
+            "The former Kentucky forward played in Denver, Minnesota and Utah before the Lakers. In the 2025 playoffs his five appearances averaged 12.0 minutes. In seven playoff appearances in 2026 he averaged 10.7. Those are genuine postseason jobs, but short ones. We would want matchup and lineup evidence before arguing the low minutes meant that his defense failed. A team can value the stopper while finding the spacing difficult against one particular coverage."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "His first ten games of 2026–27 produced 4.1 rebounds and 2.2 points per game. We would choose Vanderbilt if his defense frees a star from the opponent’s highest-cost assignment and the Lakers have a plan for the defender he brings to the paint. Improving the timing of his screens and exits could do more for those minutes than adding a post move he would rarely get to use."
           ]
         },
         {
@@ -4492,6 +4578,11 @@
             "Inside the arc: 2-for-3. From three: 0-for-0. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629020/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278077/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278077/stats?seasontype=3"
       ]
     },
     "4278078": {
@@ -4766,13 +4857,31 @@
       "name": "Sandro Mamukelashvili",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401909880.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A frontcourt release valve for pressure on Luka",
           "paragraphs": [
-            "Mamukelashvili can catch above the break and move the ball like a forward. Pairing that passing with a baseline runner gives the Lakers two sides to the action. The defensive concern is rebounding position when he has to rotate into the lane."
+            "Milwaukee and San Antonio gave Mamukelashvili early NBA opportunities after he went 54th in 2021 out of Seton Hall. Toronto later played him in 80 games in 2025–26, and he averaged 5.0 points in seven playoff appearances that spring. He now gives Los Angeles a very different potential solution from a straight rim-running five. When two defenders go to the ball, the pass out can go to a big who faces the basket with the next pass in view."
+          ]
+        },
+        {
+          "title": "Where the pass starts to carry weight",
+          "paragraphs": [
+            "The short roll works only if the middle defender has a reason to step up. Catch, turn and threaten the rim first; that forces the low wing to decide who guards the cutter behind him. If Mamukelashvili looks away from the basket too early, the defender can cover the cut and concede a contested jumper. A pick-and-pop changes that geometry. Pair him with a diving wing and the center has to choose between following the pop and protecting the lane."
+          ]
+        },
+        {
+          "title": "The trade at the defensive end",
+          "paragraphs": [
+            "Through 15 games he averaged 9.9 points and 4.2 rebounds. We would compare his minutes at the five with shifts beside Kessler. At five he has more room to pass but must take the initial hit from a rolling center, often after showing high. Next to Kessler that interior task eases, while the distance he must cover to a perimeter shooter grows. The same rebound average can hide two very different defensive assignments."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "His value lies in giving Los Angeles a different answer when opponents take away the lob. For that passing to hold up in a series, he needs a dependable finish against a defender who stays home and a defensive matchup the Lakers can complete with a rebound. That is where we would judge the next stage of his role."
           ]
         },
         {
@@ -4794,6 +4903,11 @@
             "Inside the arc: 1-for-4. From three: 0-for-4. Defensive rebounds: 2. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630572/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278580/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278580/stats?seasontype=3"
       ]
     },
     "4278585": {
@@ -5613,13 +5727,37 @@
       "name": "Quentin Grimes",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401910005.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A shooter who changed which Laker Charlotte had to guard",
           "paragraphs": [
-            "Grimes' ten threes against Charlotte changed how far the defense had to extend, and his tying shot with 1.7 seconds left saved the streak. Our follow-up is what happens when teams deny the catch. A back cut or early swing lets Luka punish that attention too."
+            "Grimes scored 47 against Charlotte on November 17, made ten of his 14 threes and hit the tying shot in the closing seconds. Luka Dončić supplied the pass. That last detail gets closer to the basketball story than the career high does on its own. A defense trying to control Luka still had to respect a teammate enough to follow him away from the ball. The shot that forced overtime was the most expensive example of getting that decision wrong."
+          ]
+        },
+        {
+          "title": "What survives when the jumper cools",
+          "paragraphs": [
+            "Los Angeles does not need Grimes to take 14 threes every night. We want to know whether his defender will leave an extra step of space for the roller because he fears those threes. If the defender top-locks the route to a handoff, the counter is a back cut. If he chases over and the big stays with Grimes, the screener should get the return pass. Each decision keeps his shooting in the possession even if somebody else finishes it."
+          ]
+        },
+        {
+          "title": "The road from a playoff role to a bigger night",
+          "paragraphs": [
+            "Grimes averaged 26.9 minutes over nine playoff games for New York in 2023. He later played for Detroit, Dallas and Philadelphia. With the Sixers in 2025–26, he averaged 13.4 points in 75 regular-season appearances and 6.7 over 11 playoff games. Those different workloads help explain our Lakers projection. A player can be qualified to defend a starter, finish a play for a star and carry a stretch of offense without being the best option to initiate every trip."
+          ]
+        },
+        {
+          "title": "Who takes the first screen?",
+          "paragraphs": [
+            "Grimes earns extra chances beside Luka if he can follow an opponent’s scoring guard over the screen and keep the center near the basket. The weakness we would test is getting pinned behind a strong screener, then chasing a shot the help has already covered. That leaves the roller free. Switch the assignment cleanly or get back into it early; forcing two Lakers to guard the same man costs more than the occasionally spectacular recovery is worth."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "The best outcome from the Charlotte game is a new set of choices for the offense. Teams chasing Grimes harder give Austin Reaves and Luka room to operate. Teams that help early have to live with the kickout. The next step for Grimes is reading the hard closeout quickly enough to make a third player dangerous. That would last much longer than a hot fourth quarter."
           ]
         },
         {
@@ -5641,6 +5779,12 @@
             "Inside the arc: 6-for-10. From three: 10-for-14. Defensive rebounds: 4. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629656/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397014/stats",
+        "https://statsdmz.nba.com/pdfs/20261117/20261117_CHALAL_book.pdf",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397014/stats?seasontype=3"
       ]
     },
     "4397020": {
@@ -7738,13 +7882,31 @@
       "name": "Walker Kessler",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909986. ESPN play-by-play 401909986.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A center who can move the defense without a post touch",
           "paragraphs": [
-            "Kessler's reach changes the finish even when he never touches the shot. The Lakers can use his rolls to occupy the rim protector on the other end. Pull-up shooting against his drop is the coverage question to solve with the guard chasing over."
+            "Kessler’s first 14 Lakers appearances produced 14.5 points and 10.9 rebounds a game. The temptation is to start with the finishes. We would start with the opposing low defender. If he steps into the lane before Luka has actually committed to the drive, Kessler’s roll has created a pass to the corner. If he stays with the shooter, Luka can deliver the ball over the top. Size is valuable here because it changes when the defense has to make its choice."
+          ]
+        },
+        {
+          "title": "From Utah’s paint to Luka’s passing angles",
+          "paragraphs": [
+            "The former Auburn center went 22nd in 2022 and made an All-Rookie team in Utah. His 2025–26 regular-season line covers only five appearances. It is a poor baseline for guessing what his Lakers workload should be. Our preferred test uses a guard who can keep the defender on his back after the screen. Kessler needs to delay his dive just enough to avoid bringing the defense straight to the dribbler, then present his hands while the pass can still travel above the help."
+          ]
+        },
+        {
+          "title": "What a good drop costs",
+          "paragraphs": [
+            "A center can stand near the rim and still give up good shots all night if the opposing guard has a clean pull-up. With Grimes or Thybulle navigating the screen, Kessler can stay closer to the basket. If the guard gets knocked out of the play, the center has to advance. Now somebody behind him must hit the roller before the rebound. Counting Kessler’s blocks misses both the jumpers the coverage concedes and the drives an opponent abandons."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We would build a Lakers defensive unit around Kessler’s reach, then give it a second coverage against playoff pull-up guards. Show high often enough to disturb the rhythm, recover under control and let the guards know when to chase. The question about his ceiling is how much of that adjustment the same five players can make without losing their rebounding advantage."
           ]
         },
         {
@@ -7766,19 +7928,42 @@
             "Inside the arc: 4-for-5. From three: 0-for-0. Defensive rebounds: 6. Steals: 1. Blocks: 2."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1631117/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433136/stats?seasontype=3"
       ]
     },
     "4433137": {
       "name": "Ziaire Williams",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005. ESPN play-by-play 401909971.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "What ten playoff games in Memphis tell us about a Lakers wing",
           "paragraphs": [
-            "Williams has the stride to turn a long outlet into a rim attempt. The half-court test is finding those same seams on a timed cut. We would track whether he can absorb contact from bigger wings without giving up his defensive angle."
+            "Williams was a top-ten selection out of Stanford in 2021. He averaged 16.8 minutes across ten playoff appearances for Memphis in 2022, then 3.0 minutes over four the following postseason. Brooklyn later gave him a broader regular-season role. Those are different tests of a wing. Getting onto the floor early in a career establishes opportunity. Staying there when one opponent has time to prepare takes a repeatable offensive job and a matchup the coach trusts."
+          ]
+        },
+        {
+          "title": "Finding the receiving end of Luka’s pass",
+          "paragraphs": [
+            "Through 12 Lakers games Williams averaged 9.7 points and 2.0 assists. We like the wing sprint when the first defender back is looking at the ball. In the half court the same run has to be timed more carefully. Go behind the wing defender as he takes a step toward Luka and the pass can travel diagonally across the lane. Go before the help has committed and Williams has simply carried another tall defender toward the intended finish."
+          ]
+        },
+        {
+          "title": "Length has to survive the screen",
+          "paragraphs": [
+            "Williams looks like a sensible option to chase a shooter, but length at the release point cannot recover every step lost to contact. We would judge his defense by the route between the catch and the shot. Can he get a shoulder past the screen, close without flying by and stay square on the next drive? The back line can protect a beaten defender occasionally. Doing it on every action takes Kessler away from his man and exposes the glass."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We would bet on Williams as the recipient of an advantage and occasionally the player who passes it on. The next improvement is holding his line when a physical opponent leans into his cut. That would let him bring the same threat to a late half-court possession that he already offers the Lakers on a runway."
           ]
         },
         {
@@ -7800,6 +7985,11 @@
             "Inside the arc: 0-for-0. From three: 0-for-1. Defensive rebounds: 1. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630533/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433137/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433137/stats?seasontype=3"
       ]
     },
     "4433144": {
@@ -8109,21 +8299,37 @@
       "name": "Arthur Kaluma",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The mismatch must last long enough to use",
           "paragraphs": [
-            "Kaluma's strength can create a mismatch when a smaller guard switches onto him. We would try the early seal before calling a post-up. A useful defensive test is whether he can contain that same guard above the break without surrendering a straight line."
+            "Kaluma is an undrafted forward out of Texas on the official Lakers roster. The verified NBA regular-season dataset through November 17 has no current line for him. We would not use an older competition or a guessed minutes total to fill that space. There is a basketball question worth testing anyway: can Los Angeles use him to punish a small switch without having to call a post-up and stop the offense?"
           ]
         },
         {
-          "title": "BEFORE THIS SEASON",
+          "title": "Make the seal part of the original action",
           "paragraphs": [
-            "In the 2024-25 college season, Arthur Kaluma averaged 12.3 points, 7.5 rebounds and 1.8 assists across 33 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
+            "A screen for Reaves can put a smaller guard on Kaluma. If Kaluma seals while Reaves still has a live dribble and faces the basket, a simple entry could give him a close finish. If the guard has already passed out and the offense has to reverse twice, help has time to front the seal. The same matchup on paper has lost its value. Keeping the weak-side shooter in view provides a release when a bigger defender comes down early."
+          ]
+        },
+        {
+          "title": "Does the matchup hold going back?",
+          "paragraphs": [
+            "Switching opponents will ask the reciprocal question immediately. Can Kaluma defend the smaller guard high enough to bother a pull-up and still slide through the first change of direction? Helping too early turns his individual test into a team scramble. A clean defensive rebound after the switch would show that the smaller group can survive the part of the possession after the initial stop."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We see a specific trial for a forward, not enough NBA evidence for a settled grade. A hard screen, early seal and controlled switch would give the Lakers a reason to keep him on the floor while the shooting and secondary creation are tested. The next meaningful update needs actual NBA minutes in those situations."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641751/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433599/stats"
       ]
     },
     "4433607": {
@@ -8609,13 +8815,31 @@
       "name": "Jake LaRavia",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909986. ESPN play-by-play 401910005.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The forward who can keep the second side alive",
           "paragraphs": [
-            "LaRavia can make a defense pay for ball-watching with a cut or a quick extra pass. In a Lakers lineup with two creators, that connective work can matter more than a called play. He still needs to take the clean catch-and-shoot chance."
+            "The first pass out of a Luka double often looks like the winning play. The defender between the receiver and the rim still has a vote. LaRavia’s case for minutes is that he can make that last defender wrong. A catch beside the lane can become a finish, a pass across the baseline or a kick back to a relocating guard. His value depends on arriving there while those three choices are still open."
+          ]
+        },
+        {
+          "title": "What his Lakers history actually proves",
+          "paragraphs": [
+            "A 2022 first-round pick from Wake Forest, LaRavia spent time in Memphis and Sacramento before playing all 82 regular-season games for Los Angeles in 2025–26. In eight playoff appearances that followed he averaged 14.3 minutes. That is a useful distinction between being consistently available and being indispensable to a specific matchup. His opening 14 games this year produced 4.0 rebounds and 2.2 assists per game. We would look at the opportunities that led to those touches before assigning him more of them."
+          ]
+        },
+        {
+          "title": "The danger of doing the helpful thing too early",
+          "paragraphs": [
+            "A cut can relieve pressure or bring another defender straight to the roller. We would use Kessler’s position as LaRavia’s cue. If the center has already sealed inside, stay wide and let the ball come back. If Kessler steps up to screen and the baseline opens, cut hard behind the tag. On defense, the same discipline means showing at the lane early enough to help and leaving early enough to contest the return pass. Recovering late forces the next teammate into a scramble."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "LaRavia can help the Lakers close with size without adding another player who needs to initiate. The deciding weakness to test is a defense that stays off his catch and covers his passing targets. Taking the clean jumper promptly would give all the subtler parts of his game more room."
           ]
         },
         {
@@ -8637,6 +8861,11 @@
             "Inside the arc: 2-for-4. From three: 2-for-6. Defensive rebounds: 3. Steals: 1. Blocks: 3."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1631222/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592691/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592691/stats?seasontype=3"
       ]
     },
     "4592714": {
@@ -9597,13 +9826,31 @@
       "name": "Bronny James",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909971. ESPN play-by-play 401909921.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Evaluate the guard assignment first",
           "paragraphs": [
-            "James can pressure the ball and chase a guard while a bigger creator handles the offensive workload. We would chart his catches when defenders leave him in the corner. Shooting promptly or moving it on keeps the offense from having to start again."
+            "The Lakers selected James 55th out of USC in 2024. He played 42 regular-season games in 2025–26 and appeared in eight playoff games at 5.3 minutes a night. That is enough to distinguish getting called into a game from carrying a rotation. His opening six appearances this season yielded 1.3 points per game. The productive question is what Los Angeles can ask a guard to do in limited touches, especially on a team that already has several players who need the ball."
+          ]
+        },
+        {
+          "title": "One catch next to a creator",
+          "paragraphs": [
+            "Put James in the weak corner as Reaves turns the corner on a screen. If his man helps, the defense is betting it can concede a catch and recover before a useful shot or pass. A prepared release makes that bet harder. A straight-line drive works if the defender arrives off balance. A slow reset dribble is costly because it allows all five opponents to find their matchups again. We would start his offensive evaluation with those possessions before giving him a new package of ball screens."
+          ]
+        },
+        {
+          "title": "Make pressure last beyond half court",
+          "paragraphs": [
+            "The attraction defensively is a guard who can pick up early while the lead creators conserve energy. The tougher work begins when the screen arrives. James has to stay connected without pushing the ballhandler toward the middle, call the coverage and recover to a useful assignment if the big steps up. A steal at half court is visible; keeping the center at home for an entire defensive trip is often the more sustainable payoff."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We want a small, specific job he can win on both ends. Become the player trusted to annoy the opposing guard and then take the catch that guard gives away trying to help on Luka. Doing those things consecutively will say more about his future than an isolated scoring night."
           ]
         },
         {
@@ -9619,6 +9866,11 @@
             "Inside the arc: 0-for-0. From three: 0-for-1. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642355/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4683774/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4683774/stats?seasontype=3"
       ]
     },
     "4683778": {
@@ -10448,13 +10700,31 @@
       "name": "Chris Manon",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909092.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A small sample asks for a narrow, honest question",
           "paragraphs": [
-            "Manon's first Lakers assignment should exploit a wing defender turning toward the ball: cut hard, offer a target, clear the lane if the pass never comes. At the other end we would test whether ball pressure survives contact with a screener."
+            "Mañon went undrafted after Vanderbilt. He played nine NBA games for the Lakers in 2025–26 and had two appearances in the early 2026–27 season history. Those are real minutes but an extremely thin basis for calling him a dependable NBA shooter, stopper or creator. The question we would put to Los Angeles is more specific. Is there a perimeter assignment he can handle that allows one of the established scorers to defend an easier player?"
+          ]
+        },
+        {
+          "title": "The action away from the ball",
+          "paragraphs": [
+            "A good place to test that proposition offensively is alongside a shooter the defense must chase. Screen for Grimes on the weak side. The defender guarding Mañon can either step out to cover the release or leave Grimes room. If both defenders follow the shooter, cut immediately and show Luka a target. The vulnerability is being caught halfway between screen and cut. Now there is neither contact to free the shooter nor a passing angle to the rim."
+          ]
+        },
+        {
+          "title": "What to examine on defense",
+          "paragraphs": [
+            "Ball pressure is useful only for as long as the other four Lakers can keep their shape behind it. We would grade whether Mañon guides a guard toward the intended help and gets back into the play after contact. Guess wrong on a passing lane and somebody else has to absorb the resulting drive. Stay attached through the screen and a center may never have to leave the roller."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "His development should be judged on a full sequence: make the opposing guard use time, secure the stop and reach a useful spot without demanding the first offensive touch. If those actions repeat against NBA rotation players, the next evaluation can ask how much more he can create. The current record does not answer it."
           ]
         },
         {
@@ -10464,6 +10734,10 @@
             "Inside the arc: 1-for-2. From three: 0-for-1. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643024/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4702972/stats"
       ]
     },
     "4703115": {
@@ -11062,13 +11336,31 @@
       "name": "Jaden Hardy",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909971. ESPN play-by-play 401909934.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The scoring touch that still has to earn the next touch",
           "paragraphs": [
-            "Hardy can get to his own jumper when the first action breaks down. The Lakers need him to distinguish those bailout possessions from ones where the first pass is still available. Shot creation goes further when defenders also have to honor the roller."
+            "Hardy entered the league through G League Ignite and was selected 37th in 2022. In Dallas’s 2024 Finals run he played 19 games at 6.8 minutes a night. That history establishes that a team could use a brief change of scoring pace deep in a series. It leaves open whether a coach can extend the shift once the defense has anticipated the first move. That is the question we would carry into his Lakers minutes."
+          ]
+        },
+        {
+          "title": "The shot clock changes the read",
+          "paragraphs": [
+            "With five seconds left, a guard who can separate for a jumper has solved an important problem. With 17 left, the identical jumper can be a concession to the defense. We would put Hardy on the second side opposite Luka and ask him to recognize which possession he has inherited. If the closeout is already coming, one hard dribble can create a pass to Kessler before the defense sets its feet. Holding for an isolation throws away an advantage somebody else paid for."
+          ]
+        },
+        {
+          "title": "Keeping a scoring unit playable",
+          "paragraphs": [
+            "Hardy split 2025–26 between Dallas and Washington and averaged 9.2 points over 57 games. He averaged 1.6 in his first seven Lakers appearances. A short scoring sample tells us little about whether he can defend enough for an extended shift. We would watch the first screen against him. Can he stay attached without making the center step into the guard’s path? If help is needed, does he recover to the open shooter or chase the man the big is already guarding?"
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "The development target is knowing when his handle is the best remaining option. A Lakers bench scorer who saves a broken possession and improves a good one with a pass will get more time than a scorer who treats both possessions alike."
           ]
         },
         {
@@ -11090,6 +11382,10 @@
             "Inside the arc: 0-for-0. From three: 1-for-3. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630702/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4868423/stats"
       ]
     },
     "4869342": {
@@ -12168,13 +12464,31 @@
       "name": "Adou Thiero",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909971. ESPN play-by-play 401909971.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "Turning forward strength into a passing window",
           "paragraphs": [
-            "Thiero can pressure the rim without starting the possession on the ball. A hard baseline cut is especially valuable beside a passer who sees the defense from above. On defense we want the same force applied with enough balance to recover after a closeout."
+            "Thiero went 36th in 2025 after playing at Arkansas. He made 25 regular-season appearances as a Laker in 2025–26, then six playoff appearances at 5.7 minutes a game. That brief postseason use gives his development a practical target. A young forward can get onto the floor for energy; he stays there if he knows where to spend it when a veteran defense has already taken transition away."
+          ]
+        },
+        {
+          "title": "The baseline is a timing problem",
+          "paragraphs": [
+            "We would test Thiero on the baseline opposite Dončić. Leave the corner the moment the ball crosses half court and his defender can retreat with him. Wait until that defender turns to tag Kessler and the same cut opens a pass behind the tag. Through his first five games this year, Thiero averaged two points and two rebounds. Those totals cannot tell us how often the cut occupied a defender and opened the lob for somebody else. The necessary evidence is the entire action."
+          ]
+        },
+        {
+          "title": "Where physicality becomes discipline",
+          "paragraphs": [
+            "A forward who can take an initial hit is valuable to a guard-heavy Lakers lineup. The challenge is keeping his base when he closes from the paint to a shooter. Too much momentum gives up the drive; too little concedes a shot. We would first try him against a strong wing who wants to establish an early position, then test him against a shooter who uses screens. Success against the first player does not automatically transfer to the second."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "His first real niche could be as the cutter who makes loading up on Luka physically expensive. The next steps go together: maintain balance through the catch, see the pass when the finish disappears and get back in time to take the demanding matchup. That is a full possession’s worth of value the coaching staff can call for again."
           ]
         },
         {
@@ -12196,6 +12510,11 @@
             "Inside the arc: 0-for-2. From three: 0-for-1. Defensive rebounds: 0. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642876/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5060631/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5060631/stats?seasontype=3"
       ]
     },
     "5060701": {
@@ -13029,13 +13348,31 @@
       "name": "Carson Cooper",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910005.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The reserve center’s first obligation is to the guard",
           "paragraphs": [
-            "Cooper can give the Lakers a simple target by screening firmly and rolling straight to the front of the rim. The more difficult test comes when the pass is late. Can he hold position without fouling and still sprint back to protect the other end?"
+            "Cooper went undrafted out of Michigan State. His first two NBA appearances this season were split between Memphis and Los Angeles. The Lakers game produced three points, four rebounds and two assists in 18 minutes. The career and team samples are therefore different, and neither is remotely large enough to establish a reliable scoring rate. What they give us is a concrete role to investigate."
+          ]
+        },
+        {
+          "title": "A useful screen can end without a shot",
+          "paragraphs": [
+            "If Cooper screens for Luka, our first question is whether the pursuing guard has to change direction. Slipping too early can give both defenders a clear view of the ball. Contact followed by a direct roll gives Luka the chance to read a smaller defender coming across. If the pass arrives late, Cooper has to keep his hands available without standing so deep that the backboard takes away the angle. The pass out of a crowded catch can be as important as the finish."
+          ]
+        },
+        {
+          "title": "What earns a second stint",
+          "paragraphs": [
+            "A reserve big is often asked to defend a difficult stretch while a starter rests. In a drop, Cooper must keep the ballhandler and roller within the same field of vision. Get too close to the ball and he gives up the lob. Stay too deep against an unpressured shooter and he concedes a clean pull-up. Once the shot goes up, the box-out has to come before chasing the rebound, particularly if the Lakers have a smaller forward on the floor."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "We would give him a repeatable assignment next to the same guard and see whether the next possessions get simpler for both players. A clean screen, a catch through contact and a completed defensive rebound would be far more informative than projecting his first Lakers box score across a season."
           ]
         },
         {
@@ -13045,6 +13382,10 @@
             "Inside the arc: 0-for-1. From three: 0-for-0. Defensive rebounds: 2. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643721/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5105817/stats"
       ]
     },
     "5105832": {
@@ -13772,13 +14113,31 @@
       "name": "Cameron Carr",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909971.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Independently checked November 18, 2026 against the NBA player biography and ESPN season histories. Lineup scenarios and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "The open catch is only the end of the audition",
           "paragraphs": [
-            "Carr's length can help him get a wing jumper off on a tight catch. The Lakers should separate that shot from the one he takes after a reset dribble. A quicker decision gives the next creator more clock when the shot isn't there."
+            "The Lakers selected Carr 24th in 2026 out of Baylor. His first five NBA appearances averaged 4.8 minutes. A shooting percentage from that little time is a poor way to decide whether a young wing belongs beside Luka. We would begin one action earlier. Does Carr get into the passer’s line of sight with his feet ready while the defender is still helping? A late arrival can make an otherwise good shooter look unavailable."
+          ]
+        },
+        {
+          "title": "How we would use the weak side",
+          "paragraphs": [
+            "Have Carr start low as Luka works with a center above the break. If the defender reaches in from the corner, slide a step toward the wing to shorten the kickout. If the defender takes that route away entirely, a cut behind him may be open. The counter requires watching where the roller is going. Sending two players into the same lane can erase the advantage the primary creator just earned."
+          ]
+        },
+        {
+          "title": "The defender’s version of the same problem",
+          "paragraphs": [
+            "On the other end Carr may be the player asked to tag the roller and recover to a shooter. Length can shorten the closeout, but the angle matters more than a dramatic contest. Run past the outside shoulder and the shooter drives middle, forcing another help rotation. Our development priority is changing speed on the last step and staying in the possession after taking away the first shot."
+          ]
+        },
+        {
+          "title": "The 4DK verdict",
+          "paragraphs": [
+            "There is a credible path to minutes for a wing who can make both sides of that corner decision. We would wait for a meaningful run against rotation competition before assigning Carr a playoff role or an efficiency ceiling. The near-term test is earning the same pass twice because the first decision was clean."
           ]
         },
         {
@@ -13788,6 +14147,11 @@
             "Inside the arc: 0-for-0. From three: 0-for-3. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643418/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5113969/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5113969/stats?seasontype=3"
       ]
     },
     "5124612": {
@@ -15882,9 +16246,25 @@
       "4431752",
       "4433076",
       "4592829",
-      "4065731"
+      "4065731",
+      "4397014",
+      "4433136",
+      "3155535",
+      "3907498",
+      "4278077",
+      "4868423",
+      "4277811",
+      "4592691",
+      "4433137",
+      "4683774",
+      "5060631",
+      "5105817",
+      "4702972",
+      "5113969",
+      "4433599",
+      "4278580"
     ],
-    "remainingForDeepReview": 458,
+    "remainingForDeepReview": 442,
     "reviewStatus": "In progress",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",

@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 17,
+  "approvedCount": 33,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -597,7 +597,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "3157465": {
       "name": "Duncan Robinson",
@@ -645,7 +645,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "3907823": {
       "name": "Terance Mann",
@@ -953,7 +953,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4277813": {
       "name": "Herbert Jones",
@@ -1083,7 +1083,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4278078": {
       "name": "P.J. Washington",
@@ -1147,7 +1147,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4278585": {
       "name": "Collin Gillespie",
@@ -1335,7 +1335,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4397020": {
       "name": "Luguentz Dort",
@@ -1873,7 +1873,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4433137": {
       "name": "Ziaire Williams",
@@ -1881,7 +1881,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4433144": {
       "name": "Caleb Love",
@@ -1971,7 +1971,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4433607": {
       "name": "DaRon Holmes II",
@@ -2101,7 +2101,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4592714": {
       "name": "Pat Spencer",
@@ -2352,7 +2352,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4683778": {
       "name": "Jared McCain",
@@ -2590,7 +2590,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4703115": {
       "name": "Jaron Pierre Jr.",
@@ -2762,7 +2762,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "4869342": {
       "name": "Dyson Daniels",
@@ -3058,7 +3058,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5060701": {
       "name": "Christian Anderson",
@@ -3302,7 +3302,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5105832": {
       "name": "Nick Martinelli",
@@ -3494,7 +3494,7 @@
       "teamId": "13",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending"
+      "review": "approved"
     },
     "5124612": {
       "name": "VJ Edgecombe",
