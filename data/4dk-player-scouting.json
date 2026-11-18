@@ -157,8 +157,8 @@
       "name": "Brook Lopez",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK Deep Scouting Draft — pending factual review",
-      "basis": "Original 4DK career-context scouting analysis. Current-season fit and performance are hypotheses pending independently verified film and lineup data. Existing dated game logs are supporting evidence.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "4DK original career-context scouting analysis, reviewed November 18, 2026. Current team and 2026-27 statistics checked against NBA.com player profile and Basketball-Reference game log: https://www.nba.com/player/201572/undefined ; https://www.basketball-reference.com/players/l/lopezbr01.html . Film-specific and lineup impact claims remain qualified.",
       "sections": [
         {
           "title": "THE 4DK THESIS — THE CENTER WHO REINVENTED HIS RANGE",
@@ -191,8 +191,8 @@
         {
           "title": "CURRENT FIT — HOW TO USE THE SKILL SET",
           "paragraphs": [
-            "The current 4DK dataset assigns Lopez to a new roster context. The best basketball fit would pair his outside shooting with teammates who attack the paint and pair his rim protection with perimeter defenders capable of containing the first move.",
-            "That is a conditional fit analysis, not a verified claim about present lineup performance. The key questions are whether opponents still respect his jumper, whether the team can keep him near the basket defensively and how his minutes are managed against small lineups."
+            "Lopez is currently a Clippers center. His shooting can pull a rim protector away from the basket, giving perimeter teammates more room to attack, while his own size provides a potential interior defensive anchor. That is a structural fit hypothesis rather than a measured on/off claim.",
+            "Through November 17, 2026, Lopez is averaging 14.8 points, 5.4 rebounds and 1.8 assists across 13 games, shooting 41.2% from three. His recent scoring includes 26 points against Oklahoma City on November 13 and 23 against Utah on November 17. Those performances show that the shooting threat is active this season; they do not independently establish his defensive impact or playoff viability."
           ]
         },
         {
@@ -205,8 +205,8 @@
         {
           "title": "EVIDENCE AND LIMITS",
           "paragraphs": [
-            "The previous 4DK file contains dated passing, defensive and game-log notes. Those remain useful examples but are not sufficient to certify season-long trends or current team chemistry.",
-            "This original editorial report distinguishes historical NBA career context from present-day projections. It is pending independent verification of 2026–27 assignments, performance and film evidence."
+            "NBA.com's player profile confirms Lopez with the LA Clippers, age 38, and lists his 2026–27 scoring and rebounding averages. Basketball-Reference's November 17 snapshot records 13 games, 14.8 points, 5.4 rebounds, 1.8 assists and 41.2% three-point shooting. The November 13 and November 17 game logs were checked against that source.",
+            "His 2021 championship and All-Defensive history are established career context. Analysis of rim protection, screen coverage and offensive spacing describes mechanisms and hypotheses, not an independently certified possession-by-possession film or lineup review."
           ]
         }
       ]
@@ -17117,9 +17117,10 @@
       "3136196",
       "5157587",
       "5037871",
-      "3195"
+      "3195",
+      "3448"
     ],
-    "remainingForDeepReview": 419,
+    "remainingForDeepReview": 418,
     "reviewStatus": "In progress; current approvals reflected in data/4dk-deep-scouting-review.json",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",
