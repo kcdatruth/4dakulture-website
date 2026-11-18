@@ -61,6 +61,33 @@
       ],
       "playerClass": "rookie"
     },
+    "5041951": {
+      "name": "Meleek Thomas",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "2026-27 dated roster and box-score snapshots, with original 4DK interpretation; not a claim of independently reviewed film",
+      "sections": [
+        {
+          "title": "CLEVELAND'S SECOND-ROUND SCORING FIND",
+          "paragraphs": [
+            "The Cavaliers have an interesting developmental weapon in Thomas: a second-round guard whose early scoring has made him worth discussing beyond his draft slot. The 4DK question is whether his offense can remain useful when opponents start preparing for him. Cleveland does not need every possession to run through him; it needs a young guard who can recognize a clean opening and punish it without disrupting the veterans around him."
+          ]
+        },
+        {
+          "title": "THE PERIMETER THREAT",
+          "paragraphs": [
+            "His early three-point accuracy gives defenders a reason to respect the arc, but we want to separate spot-up looks from shots he manufactures under pressure. Can he relocate when the ball moves, stay balanced off the catch and make a quick pass when a closeout takes away the jumper? Those details determine whether a hot start becomes a dependable spacing role."
+          ]
+        },
+        {
+          "title": "THE TWO-WAY ASSIGNMENT",
+          "paragraphs": [
+            "The next challenge is contributing when he is not scoring. Thomas has to navigate screens, contain his matchup and make the correct rotation in a system with playoff expectations. If he can defend well enough to stay on the floor, his shooting becomes a more valuable piece of Cleveland's rotation."
+          ]
+        }
+      ]
+    },
     "5041955": {
       "name": "Darryn Peterson",
       "status": "published",
@@ -114,6 +141,33 @@
         }
       ],
       "playerClass": "rookie"
+    },
+    "5101761": {
+      "name": "Mikel Brown Jr.",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "2026-27 dated roster and box-score snapshots, with original 4DK interpretation; not a claim of independently reviewed film",
+      "sections": [
+        {
+          "title": "BROOKLYN'S POINT-GUARD DEVELOPMENT TRACK",
+          "paragraphs": [
+            "Brown's early NBA role is a genuine lead-guard learning assignment. The assist production hints at playmaking responsibility, but the 4DK evaluation goes deeper: does he recognize the weak side, keep the offense organized when the first action fails and create an advantage without needing to dominate the ball for the entire possession?"
+          ]
+        },
+        {
+          "title": "CREATION VERSUS CONVERSION",
+          "paragraphs": [
+            "His early field-goal numbers make efficiency an obvious area to monitor. We want to distinguish missed good looks from rushed attempts and see whether he can get downhill, use changes of pace and create easier shots for himself. His jumper matters, but so does his ability to finish a possession with the correct read when the jumper is unavailable."
+          ]
+        },
+        {
+          "title": "THE LONG GAME",
+          "paragraphs": [
+            "For Brooklyn, the meaningful question is how Brown grows as an organizer. Defensive positioning, strength against physical guards and consistency in decision-making will all affect his minutes. The early numbers are a snapshot, not a ceiling; the goal is a point guard who can balance scoring pressure with making everyone around him more effective."
+          ]
+        }
+      ]
     },
     "5142620": {
       "name": "Darius Acuff Jr.",
@@ -222,6 +276,33 @@
         }
       ],
       "playerClass": "rookie"
+    },
+    "5254165": {
+      "name": "Keaton Wagler",
+      "status": "published",
+      "playerClass": "rookie",
+      "editorialType": "4DK early-season evaluation",
+      "basis": "2026-27 dated roster and box-score snapshots, with original 4DK interpretation; not a claim of independently reviewed film",
+      "sections": [
+        {
+          "title": "A COMPOSED CLIPPERS GUARD",
+          "paragraphs": [
+            "Wagler gives the Clippers a young perimeter player with an intriguing blend of scoring and passing. The early scoring output is a starting point, but we are evaluating how he chooses his opportunities: whether he attacks a tilted defense, finds a teammate when help arrives and avoids forcing a difficult look simply because he can create one."
+          ]
+        },
+        {
+          "title": "THE EFFICIENCY GAP",
+          "paragraphs": [
+            "His opening shooting percentages show why shot quality matters. A respectable perimeter percentage does not erase a tougher overall field-goal mark, and the answer is not necessarily to shoot less. We want to see better access to the paint, stronger finishing decisions and cleaner separation between shots he should take and shots the offense can improve."
+          ]
+        },
+        {
+          "title": "EARNING TRUST IN LOS ANGELES",
+          "paragraphs": [
+            "The Clippers' rotation will demand more than isolated scoring flashes. Wagler's development depends on ball security, positional defense and maintaining offensive rhythm when he plays off the ball. The next step is proving he can make sound decisions across different lineup combinations, not just when the offense is built around his touches."
+          ]
+        }
+      ]
     }
   },
   "editorialSpotlights": {
