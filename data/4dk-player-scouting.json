@@ -584,13 +584,31 @@
       "name": "Harrison Barnes",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909988. ESPN play-by-play 401909944.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE VETERAN WITH TWO DIFFERENT CLOSING JOBS ON HIS RÉSUMÉ",
           "paragraphs": [
-            "Barnes can punish a guard switched onto him with an early seal and give a driver a stable corner outlet. San Antonio should look for those touches before help arrives. Holding a bigger forward off the glass completes the value of that small lineup."
+            "Golden State used Barnes in championship lineups in 2015. Dallas and Sacramento gave him different offensive responsibilities. By the Spurs’ 2026 playoff run he was averaging 9.2 minutes across 20 appearances. Those versions of the same forward matter when evaluating his present role. He has experience punishing a mismatch, yet San Antonio usually has a better first option for a designed touch. We would ask him to recognize which possession actually calls for the veteran to take it."
+          ]
+        },
+        {
+          "title": "THREE THREES ONE NIGHT, FOUR ASSISTS ON ANOTHER",
+          "paragraphs": [
+            "Barnes made three threes against Golden State on November 13. Against Detroit on November 17 he went scoreless but collected three boards and four assists in ten minutes. Through 13 games he was averaging 5.1 points. Those two nights suggest complementary uses. Spot him up beside Wembanyama when the opposing power forward is desperate to help inside. When a smaller defender switches onto Barnes, allow an early seal and a quick decision. If help comes, Barnes has already drawn a second man without Fox having to beat one off the dribble."
+          ]
+        },
+        {
+          "title": "WHAT BUILT THE MISMATCH CAN ALSO EXPOSE IT",
+          "paragraphs": [
+            "At 225 pounds Barnes gives San Antonio size on the perimeter and a player who can absorb a bump before a catch. We would assign him a stronger forward before asking him to trail a movement shooter through consecutive screens. The decision to help is different next to Luke Kornet than in a small unit. Alongside a center, Barnes can stay attached to his assignment a beat longer. If Barnes is the last big back himself, covering the ball and getting a body on the roller become competing obligations."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "A short playoff shift can still be decisive if the coach knows precisely which matchup to use it against. We would lean on Barnes when an opponent hides a small guard on the weak side or leaves a power forward free to double. The challenge is to keep the ball moving after the mismatch has done its work. His four assists against Detroit are a reminder that the payoff can belong to somebody else."
           ]
         },
         {
@@ -612,6 +630,13 @@
             "Inside the arc: 0-for-0. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/203084/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6578/stats",
+        "https://www.nba.com/game/0022600255/box-score",
+        "https://www.nba.com/game/0022600040/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/6578/stats?seasontype=3"
       ]
     },
     "6580": {
@@ -2010,13 +2035,31 @@
       "name": "Luke Kornet",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910004. ESPN play-by-play 401909090.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE CENTER WHO HAS TO FOLLOW WEMBANYAMA",
           "paragraphs": [
-            "Kornet can screen and deliver a soft finish above the rim, or turn a short catch into a quick pass. San Antonio should judge the action by the shot it creates for all five. Defensively he needs to keep the guard and the roller in view together."
+            "When Kornet replaces Victor Wembanyama, San Antonio loses a scorer who can pull a center out to the arc. Calling the same pick-and-pop and expecting the same response would ask the backup to erase that difference himself. Through 15 appearances Kornet averaged 3.4 points, 4.1 rebounds and two offensive boards in 14.8 minutes without attempting a three. Give the 7-foot-1 center a job he can actually do: set contact early enough to free the guard, then make the opposing big decide whether to stop the ball or turn and put a body on the roller."
+          ]
+        },
+        {
+          "title": "BOSTON’S LESSON STILL APPLIES",
+          "paragraphs": [
+            "Kornet went undrafted out of Vanderbilt and played in New York and Chicago before finding substantial postseason work in Boston. He played 16.4 minutes per game for the Celtics in the 2025 playoffs, then 12.9 across all 23 of San Antonio’s playoff games last spring. Coaches facing radically different guard matchups have already found a use for him over a series. Beside De’Aaron Fox we would use a high screen and let Fox’s speed stretch out the recovery. Kornet’s next read is easy to describe and hard to execute: take one balanced step to finish if a guard is under him, and pass to the shooter if the weak-side forward gets there first."
+          ]
+        },
+        {
+          "title": "COUNT THE POSSESSION AFTER THE MISS",
+          "paragraphs": [
+            "Kornet had four offensive rebounds against Chicago on November 11 and four more against Golden State on November 13. That is a genuine counter to a defense sending its center to the ball. At the other end, a deep drop gives Kornet some control over the lob and the glass but can give up a pull-up jumper. We would pair him with Castle when a guard can shoot over that coverage. Castle recovering over the screen gives Kornet time to retreat to the basket. An uncontested pull-up every trip is the signal to change the coverage or the matchup."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The Spurs can live with a reserve scoring three or four points if his screens buy Fox a lane and his work after a miss buys the bench another shot. What they need to see against five shooters is how far Kornet can come up and still get back to the rim. That distance, much more than a call for post touches, sets the practical limits of his playoff role."
           ]
         },
         {
@@ -2038,19 +2081,44 @@
             "Inside the arc: 1-for-2. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 2."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1628436/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3064560/stats",
+        "https://www.nba.com/game/0022600040/box-score",
+        "https://www.nba.com/game/0022600220/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3064560/stats?seasontype=3"
       ]
     },
     "3078576": {
       "name": "Derrick White",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994. ESPN play-by-play 401909989.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE GUARD WHO CAN CALL THE SECOND PLAY",
           "paragraphs": [
-            "White can contest at the rim from a guard's starting point, recover to the perimeter and still organize the next trip. Boston gets special lineup freedom from that combination. Offensively his fastest read is often the extra pass after the defense has already chased him off the arc."
+            "Suppose Paul George draws two defenders, moves the ball to Derrick White and the defense recovers to its original matchups. What has Boston won? With most outlets it has burned clock. With White it still has a guard who can call Neemias Queta up for a screen and run a second action before Jayson Tatum has to come back for the ball. Over Boston’s first 14 games, White’s 4.8 assists a night tell us how often he finishes a passing sequence. They undersell his value on the trips where all he does is move a defender and hand the decision back to Tatum."
+          ]
+        },
+        {
+          "title": "THE SHOT THAT KEEPS THE PASS ALIVE",
+          "paragraphs": [
+            "White took 5.6 threes per game in that stretch and made a third of them. In the November 16 Orlando loss he went one for six from outside. We would want him taking the open return pass after a Tatum drive even on that night. Turn it down and the defender who helped on Tatum gets to cover two players. The adjustment we would make is to the next catch against a hard closeout. A short pull-up or a pass to the rolling center makes the chaser pay for racing him off the line. Dribbling all the way back to the perimeter merely gives the defense another chance to load up."
+          ]
+        },
+        {
+          "title": "WHY A GUARD’S RECOVERY CAN SAVE A CENTER",
+          "paragraphs": [
+            "San Antonio drafted White 29th in 2017. In Game 2 of the 2024 Finals for Boston he chased down P.J. Washington’s transition attempt in the closing minute, when a finish would have cut the lead to three. Nobody should build a defensive scheme around a guard reproducing that block. What travels is the willingness to get back into a play once somebody gets past him. If White can reconnect from the side after a ball screen, Robinson can defend the roll for one beat longer. If White trails too far behind, the center has to step forward and the lob opens."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "White averaged 18.8 points across 11 playoff games in 2025 and 11.1 across seven in 2026. His job in a closing lineup can survive that kind of scoring swing. We want the stars to know they can give the ball up with eight seconds left and still get a well-organized shot. A quick catch, an immediate read and a defender who has to respect both explain why White is the guard we would trust with that possession."
           ]
         },
         {
@@ -2072,6 +2140,14 @@
             "Inside the arc: 3-for-6. From three: 1-for-6. Defensive rebounds: 3. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1628401/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3078576/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3078576/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/celtics/news/gamerecap-keys-20240609-dalbos"
       ]
     },
     "3102529": {
@@ -2495,13 +2571,31 @@
       "name": "Jordan McLaughlin",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909988. ESPN play-by-play 401909302.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE THIRD GUARD WHO CAN GET TO THE SECOND ACTION",
           "paragraphs": [
-            "McLaughlin can advance the ball before the defense sets its matchups and get San Antonio into its first action early. The test against size is preserving the pocket pass when the big steps up. Avoiding a dead dribble keeps the next option available."
+            "McLaughlin started 127 of 128 games at USC, then went undrafted and spent five NBA seasons with Minnesota. In San Antonio he appeared in ten playoff games last spring at 4.6 minutes a night. His case for a shift is organization. Give a 5-foot-11 reserve the ball against a defense already set to take away his first option and physical size becomes a problem quickly. Get him the ball early and he has time to reject a screen, move it to a wing and put the offense into its next action."
+          ]
+        },
+        {
+          "title": "WHAT THE UTAH GAME ADDS",
+          "paragraphs": [
+            "He scored ten points on four of five shooting with two assists in 19 minutes at Utah on November 15. Two of the makes came behind the arc. Through his first nine appearances he was averaging three points and 1.3 assists. We would treat Utah as a glimpse of a useful counter. If the defender goes under a Luke Kornet screen, a willing pull-up can keep him from simply waiting in the lane. When the defender chases over, McLaughlin can use Kornet’s roll to free Harrison Barnes on the weak side. The pass has to leave before he gathers the ball under the center. His height makes the window much smaller once the big raises both arms."
+          ]
+        },
+        {
+          "title": "THE DEFENSIVE ASSIGNMENT HAS A CLOCK",
+          "paragraphs": [
+            "We would ask him to hurry a reserve guard over half court and influence which side the first screen comes from. San Antonio needs to decide what happens when a wing comes up specifically to switch onto him. A quick show from his teammate and immediate recovery give McLaughlin a chance to stay with the smaller man. If the switch sticks and the opponent can post him up before help arrives, the Spurs will spend the rest of the trip rotating."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "A place in this rotation need not mean a fixed number of shots or a nightly substitution at the same minute. McLaughlin makes particular sense when a reserve unit is wasting the first ten seconds of possessions. We would keep him in when the ball moves early and he can still recover to his matchup. Those are clearer tests of his value than whether he repeats the scoring night in Utah."
           ]
         },
         {
@@ -2523,6 +2617,12 @@
             "Inside the arc: 2-for-2. From three: 2-for-3. Defensive rebounds: 1. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629162/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3134916/stats",
+        "https://www.nba.com/game/0022600239/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/3134916/stats?seasontype=3"
       ]
     },
     "3135045": {
@@ -3802,13 +3902,31 @@
       "name": "Sam Hauser",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994. ESPN play-by-play 401909288.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE CELTIC WHO CAN OCCUPY TWO MEN WITH SIX SHOTS",
           "paragraphs": [
-            "Watch how rarely a defender wants to leave Hauser to tag a roller. His shot does work before he releases it. Playoff opponents will test the other half of the exchange by pulling him into screen after screen; surviving the first switch preserves Boston's spacing lineup."
+            "All six of Hauser’s attempts against Orlando on November 16 came from three. He hit four. It is easy to describe his 12 points as efficient and miss the interesting part. Who helps when Jayson Tatum drives if the nearest defender has to stay within reach of a shooter who opened the season at 46.5 percent from three? In Boston’s first 14 games, Hauser averaged 5.1 attempts from deep in 20.6 minutes. The defense has to answer that question even when the next shot goes to somebody else."
+          ]
+        },
+        {
+          "title": "THE SEPARATION COMES BEFORE THE CATCH",
+          "paragraphs": [
+            "Boston gave the undrafted Virginia product a role he has sustained through several postseason rotations. He made 197 threes in the 2023–24 regular season on the way to the title. His most productive partnership with Tatum need not involve Tatum passing to him. Have Hauser screen for the star. A switch can give Tatum the matchup he wants. A defender who stays to help can leave Hauser open as he slips to the arc. We would work on the counter when the defense top-locks him, taking the high side to deny the pass. One sharp cut to the rim can make that same defender hesitate on the next trip."
+          ]
+        },
+        {
+          "title": "THE MATCHUP THAT DETERMINES HIS MINUTES",
+          "paragraphs": [
+            "A playoff opponent can make a shooter defend its best creator simply by bringing his man to screen. We would judge Hauser by how much help Boston has to send after the switch. Forcing a guarded pull-up lets White stay with a shooter and keeps Queta available for the rebound. Opening his hips too early and allowing a direct path to the rim involves both teammates. A possession that ends in a difficult make can still be the correct coverage."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Hauser averaged 13.5 minutes in his eight postseason appearances in 2025 and 23.4 across seven last spring. That range is the real assignment. His shot earns an opponent’s attention every night. Whether Boston can leave him alone for two defensive dribbles decides how long it can take advantage of that attention. We would keep him in a closing group as long as the other team has to work harder to attack him than it does to guard the space he creates."
           ]
         },
         {
@@ -3830,6 +3948,12 @@
             "Inside the arc: 0-for-0. From three: 4-for-6. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630573/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065804/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4065804/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score"
       ]
     },
     "4065813": {
@@ -4108,13 +4232,31 @@
       "name": "Payton Pritchard",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994. ESPN play-by-play 401909961.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A RESERVE WHO SETS THE PICKUP POINT",
           "paragraphs": [
-            "Pritchard's range changes where the big must meet a screen. The deeper pickup opens a pocket pass before he takes a shot. Size at the other end makes early communication essential, especially when opponents try to bury him on a late switch."
+            "In Game 2 of the 2024 Finals, Pritchard’s only basket was a banked shot from near half court to close the third. The more important career marker came the next year when he won Sixth Man of the Year. The Oregon guard had turned willingness to shoot from distance into an everyday job. In his first 14 appearances of 2026–27, all off the bench, he averaged 13.6 points in 27.1 minutes. The pressure he puts on an opposing coach comes earlier than the release. How far from the basket must the backup guard pick him up?"
+          ]
+        },
+        {
+          "title": "WHAT HAPPENS IF THEY SEND TWO?",
+          "paragraphs": [
+            "Against Orlando on November 16 he took 11 threes, made four and handed out five assists without a turnover. We would put Queta on the ball screen when Pritchard is drawing pressure that high. A trap then leaves a rolling seven-footer a long runway and the weak-side wing a choice between tagging him and staying with Hauser. Pritchard’s development priority is passing before the trap closes. The pocket pass has value even when the center swings it straight to the corner and gets the assist himself. If the big hangs back, Pritchard already has permission to shoot."
+          ]
+        },
+        {
+          "title": "DEFENDING SIX INCHES UP",
+          "paragraphs": [
+            "At 6-foot-1, the difficult job is often getting out of a mismatch before the bigger player receives the ball. We would ask Boston’s wings to exchange assignments early when an opponent brings Pritchard’s man up to screen for a forward. Once the ball is already in the post, a late double risks giving away an open three. There is still a defensive task he can control if the switch happens. Get under the receiver on the initial cut, make the entry pass travel farther, and give the help time to choose a side."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Pritchard played 33 minutes per appearance in Boston’s seven playoff games last spring. That gives us a better scale for his importance than the word reserve. We would pair him with White when the Celtics need another handler to beat pressure and leave him with the second unit when it needs a player willing to manufacture a shot. His ability to make the correct early pass is what can keep both arrangements playable after opponents have scouted the pull-up."
           ]
         },
         {
@@ -4136,6 +4278,15 @@
             "Inside the arc: 3-for-5. From three: 4-for-11. Defensive rebounds: 2. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630202/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066354/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4066354/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600212/box-score",
+        "https://www.nba.com/news/kia-nba-sixth-man-2024-25-payton-pritchard",
+        "https://www.nba.com/celtics/news/gamerecap-keys-20240609-dalbos"
       ]
     },
     "4066372": {
@@ -4781,13 +4932,31 @@
       "name": "Luka Garza",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994. ESPN play-by-play 401909989.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE IOWA SCORER WHO CAN CHANGE A CELTICS SCREEN",
           "paragraphs": [
-            "A deep seal gives Garza a real scoring touch without requiring him to beat a set defense off the bounce. Watch the next possession just as closely. Opponents can bring him away from the basket and force Boston to choose between protecting the rim and the pull-up."
+            "Garza gives Boston a different answer to a basic question: where does the center go after screening for White? Robinson wants a path to the basket. Garza can stop outside and bring his defender away from it. Across his first 14 games this season, Garza made 41.7 percent of his threes on 2.6 tries in just 12.8 minutes per game. He earned his reputation as a scorer at Iowa and came through Detroit and Minnesota before Boston. His ticket to meaningful Celtics minutes is choosing where his scoring threat helps somebody else."
+          ]
+        },
+        {
+          "title": "WHEN THE POP BECOMES A PASS",
+          "paragraphs": [
+            "The November 16 Orlando line is almost a teaching exercise. Garza scored three points, hit one of five from outside and still recorded four assists without a turnover. The box cannot tell us where all four reads came from. It does tell us the offense got production through his hands even on a poor shooting night. Pair him with Pritchard. If the guard’s defender goes over the screen and the big steps up, Garza can catch beyond the arc. A wing rushing from the corner to stop his shot opens a second pass. We would train the quick decision there and save the back-to-the-basket touches for a clean switch against a guard."
+          ]
+        },
+        {
+          "title": "WHAT A STRETCH FIVE GIVES BACK",
+          "paragraphs": [
+            "A center stationed outside on offense still has to protect the rim once the floor changes ends. Against a downhill guard, a high show gives Garza a long recovery to the paint. A deep drop lets the guard pull up. We would use White’s screen navigation to narrow that choice, then look at whether Garza finds a rebounder while the shot is in the air. Against Orlando he had no rebounds in 18 minutes. The first defensive job in that matchup is securing the ball Boston just forced the other team to miss."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Garza played all seven games of Boston’s 2026 postseason but averaged 8.4 minutes. We see a role with a clear ceiling and a clear use. When an opponent camps its center in the lane, change the shot it has to guard. When opponents can pull Boston’s center out and finish over the help, reassess. The more quickly Garza can pass after drawing that first rotation, the longer the offensive trade can work in his favor."
           ]
         },
         {
@@ -4809,6 +4978,13 @@
             "Inside the arc: 0-for-1. From three: 1-for-5. Defensive rebounds: 0. Steals: 1. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630568/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277951/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4277951/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600240/box-score"
       ]
     },
     "4277956": {
@@ -5661,13 +5837,31 @@
       "name": "Mitchell Robinson",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994. ESPN play-by-play 401909989.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE KNICK WHO MADE BOSTON FOUL ON PURPOSE",
           "paragraphs": [
-            "Robinson can turn a missed jumper into a better shot than the original one. Boston can send him toward the glass while its wings retreat. Free throws and spacing demand attention late, when opponents have more control over which Celtic finishes a possession."
+            "Boston saw both sides of the Robinson equation in the 2025 conference semifinals. Playing for New York, he made enough of a difference at the rim and on the offensive boards that Boston resorted to intentional fouls. Now the Celtics have signed him themselves, and the same tradeoff belongs to their bench. Over his first 13 Boston appearances he averaged 2.4 offensive rebounds in 17.6 minutes and hit 30 percent of his free throws. The former Knicks second-round pick can give a team an extra possession. In the wrong late-game situation the opponent can choose exactly how that possession ends."
+          ]
+        },
+        {
+          "title": "A GOOD MISS CAN BE AN ENTRY PASS",
+          "paragraphs": [
+            "With Tatum and George occupying perimeter defenders, Robinson can arrive at the rim as the ball comes off it. The key detail for us is who he brings with him. A screen that forces a big to step up against White can leave a much smaller defender responsible for the box-out. That is a profitable time to crash. Standing next to another non-shooting center and waiting for a miss gives two bigs the opportunity to hit him first. We would separate his minutes from Queta’s and give Robinson one side of the lane to own. Once he gets the rebound, a pass back out against two bodies may buy a cleaner shot than an immediate second jump."
+          ]
+        },
+        {
+          "title": "COUNT THE FOULS ALONGSIDE THE BLOCKS",
+          "paragraphs": [
+            "The Orlando game on November 16 brought five rebounds and two assists but also five fouls in 18 minutes. We would look first at where Boston is asking him to meet the ball. The farther he steps away from the rim, the longer the recovery to his own man and the greater the chance of a late contest. Against a guard whose pull-up Boston can live with, keeping Robinson deeper would let him secure the miss. Against an elite shooter, the guard chasing over the screen has to do more of the work."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Robinson has already helped eliminate a team that tried to play him off the floor. That history earns him a specific postseason job, especially against small frontcourts that leak offensive rebounds. It also tells Boston to plan its late substitutions in advance. When opponents can foul and the Celtics need a clean two-point possession, better foul shooting would change the calculation more than a new post move."
           ]
         },
         {
@@ -5689,6 +5883,15 @@
             "Inside the arc: 2-for-3. From three: 0-for-0. Defensive rebounds: 4. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629011/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4351852/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4351852/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/news/celtics-knicks-takeaways-game-6-2025-nba-playoffs",
+        "https://www.nba.com/gamenotes/celtics.pdf"
       ]
     },
     "4395625": {
@@ -5763,13 +5966,31 @@
       "name": "Devin Vassell",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910004. ESPN play-by-play 401909879.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE JUMPER THE STARS CANNOT TAKE FOR HIM",
           "paragraphs": [
-            "Vassell can rise over a wing defender on a catch and punish a hard closeout with a short pull-up. San Antonio gets more when that threat opens the entry to Wembanyama. We want him relocating immediately for the pass back out."
+            "In 2020 San Antonio used the 11th pick on Vassell out of Florida State. The roster around him now has multiple guards who can get two feet into the paint and a center who draws attention above the break. That produces an exacting job for a wing scorer. If Fox beats his defender and Vassell’s man leaves the corner, the shot is available immediately. One settling dribble can turn a clean look into a contested one and leave Fox starting over against five defenders."
+          ]
+        },
+        {
+          "title": "FROM A SECONDARY SCORER TO A SECONDARY CREATOR",
+          "paragraphs": [
+            "Vassell averaged 13 points and 34.8 minutes over 23 playoff games last spring. Through 13 appearances this year he was at 11.1 points, 3.9 boards and 2.9 assists. A player can lose scoring volume in this group and still make the offense harder to guard. Against Detroit on November 17 he scored 12 with four assists and five rebounds in 36 minutes. We would use him on the second side of a Wembanyama action, where the defender closing out has already taken two steps toward the paint. His counter to that closeout should include a pass to the big who sealed early. Settling for a contested pull-up there would let the defense off for sending help."
+          ]
+        },
+        {
+          "title": "WHICH WING TAKES THE CHASER?",
+          "paragraphs": [
+            "Castle can take the primary ball handler. Vassell can then chase a shooter through off-ball screens, using his length to bother the catch. The danger is staring at the ball when his man screens for somebody else. Helping on the first cut and losing the shooter on the return pass is a costly trade. We would judge him on those second efforts and how quickly he can exchange assignments with Champagnie when two wings cross."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "For this version of San Antonio, the optimal Vassell game might have fewer difficult makes than his old role required. We want him aggressive on the first clean three and decisive about finding a teammate when that window shuts. His playoff minutes already establish the coaching trust. The growth opportunity is making a defense pay twice for leaving him, once with the shot and again with the pass it opens the next time."
           ]
         },
         {
@@ -5791,6 +6012,12 @@
             "Inside the arc: 2-for-4. From three: 2-for-6. Defensive rebounds: 4. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630170/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395630/stats",
+        "https://www.nba.com/game/0022600255/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395630/stats?seasontype=3"
       ]
     },
     "4395650": {
@@ -5963,13 +6190,31 @@
       "name": "Keldon Johnson",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909988. ESPN play-by-play 401909944.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A SIXTH MAN WITH FEWER SHOTS",
           "paragraphs": [
-            "Johnson can put force into a straight-line drive and make a retreating defender absorb it. The ceiling of that attack depends on the pass when the low man is already set. San Antonio can also get him downhill from a baseline cut."
+            "San Antonio drafted Johnson 29th in 2019, before Victor Wembanyama, Stephon Castle or Dylan Harper arrived. Last spring the league voted him Sixth Man of the Year after he played all 82 games and averaged 13.2 points. His first 15 games this season produced 8.6 points and 5.6 boards in just under 24 minutes per game. We see a more interesting question than where the missing shots went. Can a player who used to finish possessions for the Spurs help their younger creators get a second possession when the first one breaks down?"
+          ]
+        },
+        {
+          "title": "A SHOT THAT MOVES THE DEFENSE TWICE",
+          "paragraphs": [
+            "Johnson had 18 points and four assists against Golden State on November 13. Two nights later he grabbed three offensive boards in an 11-point, 10-rebound win at Utah. Put him on the weak side of a Fox–Wembanyama screen and those two ways of influencing the game meet. If the defense sends a wing across the lane, Johnson can cut behind that man. If the first shot goes up, he can attack the space the helper vacated. The weakness in that arrangement shows up if his defender stays in the paint. Johnson made 21.7 percent of his threes over the opening 15 games. Our first adjustment would be bringing him up to screen for Fox and sending him downhill after the exchange. That makes the parked defender move."
+          ]
+        },
+        {
+          "title": "WHEN THE SPURS GO SMALL",
+          "paragraphs": [
+            "At 220 pounds Johnson has a case for defending the stronger forward so Castle can stay with the lead guard. A taller shooter can still see over him. Meeting the catch farther from the basket matters more than trying to erase the height difference after the catch. There is also a cost to crashing from the wing. When Julian Champagnie is already under the rim and Johnson comes from the opposite side, somebody has to account for the first runner going the other way."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Johnson averaged 17.9 minutes across 23 playoff games last spring. The award established his regular-season value. Getting a longer closing shift requires a way to stay involved after defenses load up on the stars. We would keep feeding the cuts, screens and offensive rebounds. We would also watch whether he takes the first clean perimeter shot a defense offers. That willingness affects the next drive even on a night he gets only six attempts."
           ]
         },
         {
@@ -5991,6 +6236,13 @@
             "Inside the arc: 3-for-3. From three: 1-for-2. Defensive rebounds: 7. Steals: 2. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629640/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395723/stats",
+        "https://pr.nba.com/keldon-johnson-2025-26-kia-nba-sixth-man-of-the-year/",
+        "https://www.nba.com/game/0022600040/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4395723/stats?seasontype=3"
       ]
     },
     "4395724": {
@@ -6633,13 +6885,31 @@
       "name": "Ron Harper Jr.",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909989. ESPN play-by-play 401909870.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "HOW TO MAKE A TWELVE-MINUTE SHIFT MATTER",
           "paragraphs": [
-            "Harper's case in a switch-heavy group begins with holding ground against forwards. On offense we would station him one pass from the action and watch his first decision. A quick reversal can matter more to the possession than beating a set defender himself."
+            "The Rutgers wing came through Toronto and Detroit before Boston put him on an Exhibit 10 deal, a two-way and finally a standard contract during 2025–26. A multiyear contract followed in July. That progression tells us Boston had a long look at him. It also explains why we would judge his early 2.6 points in 6.7 minutes with some care. For a reserve wing who played six brief shifts in last spring’s playoffs, the useful question is whether he can do a complete job when the minutes come all at once."
+          ]
+        },
+        {
+          "title": "WHY THE DALLAS LINE IS WORTH SAVING",
+          "paragraphs": [
+            "On November 15, Harper scored ten points in 12 minutes. He made both of his two-point tries and two of four threes, with no turnovers. That is a credible example of converting the touches on offer. Beside George, our preference is for Harper to fill the corner, then work into a seal if a smaller guard switches onto him. At a listed 231 pounds he has a way to threaten the defense that does not require another dribbler calling for a screen. If the defense collapses, the important skill is seeing the opposite wing early enough to keep that player’s shot clean."
+          ]
+        },
+        {
+          "title": "STRENGTH DOESN’T COVER THE WHOLE FLOOR",
+          "paragraphs": [
+            "The body that makes him interesting against a physical wing also raises a tactical question. What happens when a quick guard uses that wing as a screener and pulls Harper into space? We would start him on opponents who want to receive a pass with their back to the basket. An early bump can move that catch out a step. Against a guard lifting from the corner, he has to trade contact for anticipation and take the shorter route over the screen. Dallas gave us one productive offensive appearance. It did not settle either defensive matchup."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Boston does not need Harper to take a shot away from Tatum to establish his value. It needs the reserve who can make a corner three, seal a mismatch and guard a sturdier opponent while a starter rests. We would test those three tasks in the same shift. If his man can screen him out of the defensive action every time, the ten-point burst stays a pleasant one-night return. If Harper solves the exchange, the Celtics have a wing they can use on purpose."
           ]
         },
         {
@@ -6661,19 +6931,44 @@
             "Inside the arc: 2-for-2. From three: 2-for-4. Defensive rebounds: 1. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1631199/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397251/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397251/stats?seasontype=3",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/celtics/news/press-release-20260706-celtics-sign-ron-harper-jr"
       ]
     },
     "4397424": {
       "name": "Neemias Queta",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909968. ESPN play-by-play 401909968.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE CENTER BOSTON CAN START AND STILL USE WITH THE BENCH",
           "paragraphs": [
-            "Queta gives the passer a target over a fronting defender. His best backup minutes should combine those finishes with a second effort on the glass. We would watch the fouls when he reaches across a driver instead of meeting him vertically."
+            "Queta played 21.7 minutes per game in all seven of Boston’s playoff games last spring. In his first 13 appearances this fall he made eight starts and averaged 22 minutes. That continuity matters for a player who entered the league with Sacramento and once had to fight just to get a regular shift. Boston can have a different wing take the first shot every night and still give its guards a familiar screen and its defense a seven-foot target behind the ball."
+          ]
+        },
+        {
+          "title": "WHERE THE ROLL SHOULD END",
+          "paragraphs": [
+            "Queta averaged 9.1 points, 6.6 rebounds and 1.8 assists in those opening appearances. We would run him with Pritchard when a second unit wants to pressure the ball. Pritchard’s range can draw both defenders above the screen. The first read for Queta is how far the low defender has come over. If that man is still guarding the corner, run to the rim. If he has both feet inside the paint, stop short and put the pass outside before he recovers. The three Queta made against Dallas on November 15 gives the defense something new to consider. One make that night and a handful of attempts for the season give Boston little reason to trade all those rolls for pick-and-pops."
+          ]
+        },
+        {
+          "title": "ANCHORING THE FIRST SHOT AND THE LAST",
+          "paragraphs": [
+            "Against Toronto on November 11 he collected 13 rebounds and blocked three shots. The pairing of those numbers matters more than either alone. A center can chase a spectacular block from the weak side and leave a free putback for the man he just abandoned. We would evaluate Queta on his ability to stay between the ball and that second threat until a guard can recover. Against a five-out opponent, Boston may have to move him higher. The priority then becomes recovering early enough to make contact with a rebounder before turning to look for the ball."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "At Utah State and then on the margins of an NBA rotation, Queta had to demonstrate that his interior production would travel. A 76-game Boston season averaging 10.2 points and 8.4 rebounds in 2025–26 settled a good deal of that question. The next step is making the short-roll pass soon enough that opponents stop sending two at Pritchard. That would make Queta valuable on possessions that never end with his name in the box score."
           ]
         },
         {
@@ -6695,6 +6990,13 @@
             "Inside the arc: 1-for-3. From three: 1-for-1. Defensive rebounds: 10. Steals: 1. Blocks: 3."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1629674/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397424/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4397424/stats?seasontype=3",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/game/0022600219/box-score"
       ]
     },
     "4397449": {
@@ -8838,13 +9140,31 @@
       "name": "Devin Carter",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909989.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A LOT OF EVALUATION FOR TWELVE MINUTES",
           "paragraphs": [
-            "Carter can change a guard matchup with physical pressure and rebounding from the perimeter. For Boston the offensive question is what follows a swing pass to him. A made spot-up shot carries value, but so does immediately driving a defender already running at him."
+            "Sacramento selected Carter 13th in 2024 after his college career at South Carolina and Providence. His second Kings season included 38 games at 8.9 points, 3.3 rebounds and 2.7 assists per appearance. Boston has him on a two-way deal. There are two quite different reference points here. The Sacramento year tells us he has handled regular NBA possessions. His Boston debut against Dallas on November 15 tells us the Celtics are still figuring out what kind they want to give him."
+          ]
+        },
+        {
+          "title": "A REBOUNDING GUARD HAS AN EXTRA WAY INTO THE OFFENSE",
+          "paragraphs": [
+            "At Providence, Carter averaged 6.8 rebounds across two seasons. In a lineup with George or Tatum ahead of the ball, a guard who wins a long rebound can start the break himself and give the wing a catch before the defense finds him. In a slower game White can run the first action, leaving Carter to attack a closeout. His Boston line against Dallas included two defensive boards and one assist but also two turnovers and two misses. We would simplify his early reads: advance a clean defensive rebound immediately, and on the wing catch give the ball up as soon as the helper commits. Forcing a second drive when the original gap has closed puts the ball at risk."
+          ]
+        },
+        {
+          "title": "DEFENSIVE PRESSURE HAS A PRICE",
+          "paragraphs": [
+            "Carter also picked up three fouls in those 12 minutes. The kind of physical guard who gets inside a ball handler’s space can disrupt the timing of a screen. A reach after the ball handler clears his hip instead gives the offense a whistle. Give Carter the opponent’s quick guard alongside White, then examine whether Boston can leave a big near the rim. If Carter can recover without reaching, White stays free to disrupt passes from the weak side. If he cannot, his pressure moves the problem to the next defender."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "There is a route to Boston minutes that his draft position alone cannot open. Earn the rebound, make the early pass, and take the guard matchup that would otherwise wear White down. We would evaluate several full shifts against rotation players before drawing a conclusion about the jumper or the fit. Sacramento’s sample justifies the trial. One November Celtics game gives us the development questions, not their answers."
           ]
         },
         {
@@ -8854,6 +9174,12 @@
             "Inside the arc: 0-for-1. From three: 0-for-1. Defensive rebounds: 2. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642269/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4433188/stats",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/gamenotes/celtics.pdf"
       ]
     },
     "4433192": {
@@ -9563,13 +9889,31 @@
       "name": "Julian Champagnie",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401910004. ESPN play-by-play 401909858.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "HOW AN UNDRAFTED WING ENDS UP PLAYING THIRTY MINUTES IN MAY",
           "paragraphs": [
-            "Champagnie has an important job when San Antonio's big draws two: stay visible to the passer while stretching the closing defender. The cut behind an overplay is the companion read. His defensive size lets the Spurs keep that spacing against bigger wings."
+            "Champagnie went undrafted out of St. John’s, appeared for Philadelphia and found his place in San Antonio. The scale of that place is easy to overlook. He played all 82 regular-season games in 2025–26 and averaged 30.7 minutes and 11.2 points in 23 playoff appearances. That is a substantial trial against teams with time to prepare for the Spurs. His value comes into focus when Wembanyama has the ball and the other team wants its last help defender standing halfway between the lane and a shooter."
+          ]
+        },
+        {
+          "title": "FOUR MAKES THAT EXPLAIN THE ASSIGNMENT",
+          "paragraphs": [
+            "Champagnie scored 14 against Detroit on November 17, with four of his makes from three. He also brought down six rebounds. Through 15 games he averaged 9.9 points and 4.2 boards. Put him in the opposite corner when Fox turns the first defender. The attention he can command there opens a lane for a lob. If the pass comes and a defender is already flying at his shooting hand, one controlled dribble and a pass back to the wing can keep the defense in motion. Repeatedly driving all the way to a waiting center would turn a favorable catch into the least favorable finish on the floor."
+          ]
+        },
+        {
+          "title": "THE LESS VISIBLE HALF OF THE JOB",
+          "paragraphs": [
+            "A 6-foot-7 wing can take a bigger perimeter assignment so Harper can begin on a guard. That flexibility has particular value when the other team screens with its wing and tries to get Harper onto a stronger scorer. Champagnie’s first call matters. Change assignments early enough and both players can stay attached. Call it late and Wembanyama has to choose between leaving the rim and giving up a clean jumper. We would also track his defensive rebounds after those switches, when his original assignment may already have inside position."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "The next layer for Champagnie is what happens on the possessions when the defense succeeds in taking his three away. An immediate extra pass and a well-timed cut can turn that attention into somebody else’s basket. San Antonio already has the playoff evidence to trust him as a shooter and a rotation wing. More reliable decisions on the closeout would let the Spurs finish games with him against a wider range of opponents."
           ]
         },
         {
@@ -9591,6 +9935,12 @@
             "Inside the arc: 1-for-1. From three: 4-for-9. Defensive rebounds: 4. Steals: 0. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1630577/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592479/stats",
+        "https://www.nba.com/game/0022600255/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4592479/stats?seasontype=3"
       ]
     },
     "4592492": {
@@ -10030,13 +10380,31 @@
       "name": "Baylor Scheierman",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909968. ESPN play-by-play 401909968.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A SHOOTER WHO CAN END THE OPPONENT’S POSSESSION",
           "paragraphs": [
-            "Scheierman's interesting read is the second pass after a closeout. Boston already has players who can draw help; a wing who sees the next opening keeps the chain alive. We would pair that test with his ability to stay in front after switching onto a guard."
+            "Scheierman finished his college career at Creighton after South Dakota State. He cleared 2,000 points, 1,000 rebounds and 500 assists in college. That combination helps explain why Boston used the last pick of the 2024 first round on a wing who can do more than stand behind the line. If the Celtics play Pritchard and one center, somebody has to come back and rebound so the guard can get out and run. Scheierman opened 2026–27 averaging 3.9 boards and 1.5 assists in just under 20 minutes."
+          ]
+        },
+        {
+          "title": "A SECOND READER NEXT TO TATUM",
+          "paragraphs": [
+            "Through 14 games he made 44.2 percent from outside on 3.1 attempts per game. Against Toronto on November 11, he had nine points on three made threes, seven boards and three assists. We would keep a second action ready once defenders decide they can no longer leave him. Let Tatum turn the corner, then bring Scheierman up behind the drive. If the defender flies past the catch, Baylor has the whole floor in front of him. A bounce pass to Queta before the low defender recovers is worth more than an extra dribble into the same crowded paint."
+          ]
+        },
+        {
+          "title": "THE ORLANDO CONTRADICTION",
+          "paragraphs": [
+            "Three steals in 11 minutes against Orlando look like a case for a longer defensive assignment. Four fouls in those same minutes make it harder to keep him on the floor. The totals cannot tell us which risks were worthwhile. We would want him one pass away from help, where reading the ball can produce a deflection without giving up the basket if he guesses wrong. On the weak side, his job changes. Connect with a rebounder first so the stop produces an actual change of possession."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Boston gave Scheierman 14.1 minutes a night across seven playoff games in 2026. That is enough of a foothold to ask for more. He can earn it by making a pass that beats the closeout and finishing the next defensive possession with two hands on the rebound. When he does both, Boston can keep the size of a wing without sacrificing the decisions it usually gets from a second guard."
           ]
         },
         {
@@ -10058,6 +10426,14 @@
             "Inside the arc: 0-for-0. From three: 3-for-5. Defensive rebounds: 5. Steals: 2. Blocks: 1."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1631248/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4593841/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4593841/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600219/box-score",
+        "https://gocreighton.com/news/2024/6/26/mens-basketball-scheierman-selected-in-nba-draft"
       ]
     },
     "4594326": {
@@ -10412,13 +10788,31 @@
       "name": "Jordan Walsh",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909989. ESPN play-by-play 401909870.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A STARTER WHOSE MOST IMPORTANT SHOT MAY BE THE FIRST ONE",
           "paragraphs": [
-            "Give Walsh the long wing assignment and watch his feet after the first fake. Length only helps if he stays in the play. Offensively the clearest path is making the open corner or using a defender's head turn to cut straight to the rim."
+            "Walsh played nine NBA games as a rookie after Boston acquired the Arkansas forward in the 2023 draft. Last season he played 68 and appeared in all seven playoff games. Through the first 14 games of this season he had started nine times while averaging only 5.1 points and 16.5 minutes. That combination makes sense for a wing who can take a demanding matchup early and leave the featured touches to George and Tatum. The question is what his assignment does when Boston has the ball."
+          ]
+        },
+        {
+          "title": "THE DISTANCE BETWEEN WALSH AND THE BALL",
+          "paragraphs": [
+            "Against Orlando on November 16 all five of his tries were threes. He hit two. Over the opening 14 games he was at 30 percent from outside. The pressure point comes when his defender decides to take two steps toward Tatum and concede the kickout. We would have Walsh take the first open one promptly. On a later catch, a defender sprinting at him presents a different opportunity. One dribble toward the baseline can draw the center out of position for Robinson, but a second gather in traffic is time for the help to get back. Being ready for both catches matters more than setting an arbitrary number of shots."
+          ]
+        },
+        {
+          "title": "MAKING THE MATCHUP LAST",
+          "paragraphs": [
+            "At 6-foot-6 and 210 pounds, we would try Walsh against a wing who wants a running start into the lane. The aim is to make that first catch farther from the basket, then stay attached through contact so the big does not have to step up early. Walsh averaged 2.2 fouls in his early 16.5 minutes. That is a meaningful constraint on his value as a matchup defender. One foul while contesting a real shot may be an acceptable cost. A reach against a player retreating to restart the action lets the opponent escape all the work Boston just made it do."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Walsh already has a regular-season starting assignment on his résumé. To keep a closing assignment, he has to persuade opponents that helping off him has a cost. We would first measure that by what his defender does the next time Tatum turns the corner. If the defender stays wider and Walsh can still take the toughest wing on the other end, Boston can win the exchange before Walsh gets another shot."
           ]
         },
         {
@@ -10440,6 +10834,13 @@
             "Inside the arc: 2-for-4. From three: 2-for-5. Defensive rebounds: 0. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641775/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4683689/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4683689/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600240/box-score"
       ]
     },
     "4683692": {
@@ -11566,13 +11967,31 @@
       "name": "Amari Williams",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE BIG MAN WHO WOULD LIKE THE BALL AT THE ELBOW",
           "paragraphs": [
-            "We would give Williams an elbow touch with cutters moving on both sides. Can he deliver before the opening closes? A center who can connect those actions earns a different kind of offensive role, provided his positioning keeps a defensive rebound within reach."
+            "Williams recorded a triple-double for Kentucky at Mississippi in February 2025, evidence that a college offense could put decisions in this center’s hands. Boston selected him in the second round that June. His rookie NBA line was 1.4 points, 1.8 rebounds and half an assist in 22 appearances averaging 6.6 minutes. We would keep both pieces of information. The first explains the appeal of giving him a touch outside the restricted area. The second sets the scale of what opponents have actually had to guard in the NBA."
+          ]
+        },
+        {
+          "title": "HOW HIS PASSING COULD GET HAUSER A SHOT",
+          "paragraphs": [
+            "Put Williams at the elbow and send Hauser around him with a defender on his back. If that defender trails, the handoff gives Hauser a shot at a three and Williams a head start on the roll. If the defender jumps the exchange, Williams can keep the ball and look for Hauser cutting behind him. The counter requires the center to face the floor early. Turning after the cutter has already passed him makes the window vanish. His two assists in 13 minutes in the October 16 preseason game at Philadelphia make a worthwhile starting point for review. They belong to an exhibition game. The season record checked through November 17 contains no verified regular-season appearance for him."
+          ]
+        },
+        {
+          "title": "DEFENDING ENOUGH SPACE TO PLAY THE NEXT MINUTE",
+          "paragraphs": [
+            "At 269 pounds Williams brings mass to a box-out. A shift against an opponent that keeps its center under the basket would give Boston a straightforward look at that strength. Against a guard who can pull up, the harder task is meeting the ball high enough to bother the shot, then turning quickly enough to take the roller. His half-block per appearance as a rookie suggests some capacity to contest. It does not establish the amount of floor he can cover. We would assess his second effort after the initial contest against a big who keeps moving."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "The November 18 league availability report listed a G League two-way assignment for Williams. Those minutes have a purpose for a second-year player with only a two-minute NBA playoff appearance. Let him make the backdoor read repeatedly, defend a ball screen at different heights and finish the rebound himself. If those skills hold together, Boston could eventually use a passing center for a bench group built around movement shooters. The projection needs regular-season NBA possessions to graduate into a role."
           ]
         },
         {
@@ -11581,6 +12000,14 @@
             "In the 2025–26 NBA season, Amari Williams averaged 1.4 points, 1.8 rebounds and 0.5 assists across 22 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642873/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4702745/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4702745/stats?seasontype=3",
+        "https://www.nba.com/game/0012600018/box-score",
+        "https://ukathletics.com/news/2025/02/04/williams-triple-double-not-enough-as-kentucky-falls-at-ole-miss/",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-18_01_45PM.pdf"
       ]
     },
     "4702972": {
@@ -12051,13 +12478,31 @@
       "name": "David Jones Garcia",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909958. ESPN play-by-play 401909958.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "REDUCING THE SHOT COUNT CHANGES THE JOB",
           "paragraphs": [
-            "Jones Garcia can use a strong wing catch to attack a defender closing from the paint. We would track when that drive ends in a pass across the lane. For the Spurs, a reliable second decision matters more than asking him to manufacture a difficult first shot."
+            "In 2024–25 Jones Garcia averaged 24.5 points and 7.5 rebounds over 31 G League games split between Salt Lake City and Mexico City. He followed that with 21.6 points per game in five Las Vegas Summer League appearances for the Spurs, who signed him to a two-way contract in July 2025. His November NBA file looks very different: four appearances, four total points. The challenge for a scorer who has earned touches everywhere else is finding an offensive identity on possessions where Fox, Harper and Wembanyama all have a stronger claim to the first shot."
+          ]
+        },
+        {
+          "title": "A SCORER WHO CAN ATTACK THE SECOND ADVANTAGE",
+          "paragraphs": [
+            "The former Memphis guard does not have to create the initial opening to make use of his scoring background. We would station him one pass away from a Castle drive. Against a late closeout he can attack with the defender already off balance. If the lane is occupied by a roller, reversing the ball or relocating for the return pass preserves the advantage. Stopping to size up the defender lets the big get back into position. Shot selection is a different skill when a five-minute shift contains only one opportunity."
+          ]
+        },
+        {
+          "title": "WHAT THE PHOENIX BOX SCORE CAN TELL US",
+          "paragraphs": [
+            "At Phoenix on November 9, Jones Garcia had two steals and two points in eight minutes. That gives the staff possessions to examine. Did he disrupt an action while staying responsible for his own matchup, and could the same choice hold up against a team sending a cutter behind him? His listed 210 pounds makes a stronger wing a plausible assignment, provided he can hold ground on a screen. The small November sample cannot establish that he is already a dependable stopper."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would give Jones Garcia a trial beside a primary creator and evaluate three decisions: the first catch after penetration, the first time his man screens away from the ball and the first shot he declines because a teammate has a better one. His development-league scoring gives him a credible attacking counter. Making those decisions repeatedly is how he earns the minutes to use it in San Antonio."
           ]
         },
         {
@@ -12073,6 +12518,12 @@
             "Inside the arc: 1-for-4. From three: 0-for-1. Defensive rebounds: 0. Steals: 2. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642357/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4713010/stats",
+        "https://gleague.nba.com/news/spurs-sign-david-jones-garcia-to-two-way-contract",
+        "https://www.nba.com/game/0022600209/box-score"
       ]
     },
     "4781746": {
@@ -13600,13 +14051,31 @@
       "name": "Carter Bryant",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909302. ESPN play-by-play 401909969.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A LOTTERY PICK COMPETING FOR A VERY PARTICULAR SHIFT",
           "paragraphs": [
-            "Bryant can bring length to a wing assignment without demanding a play on offense. His test is the catch after his man helps on Wembanyama. A quick jumper or straight-line attack would punish that choice before the defense gets organized again."
+            "Bryant came out of Arizona after one season in which he started five of 37 games and shot 37.1 percent from three. San Antonio picked him 14th in 2025. He then played 71 regular-season games and made 22 postseason appearances as a rookie, although the playoff minutes averaged only 8.5. That is an unusual training ground for a young wing. The Spurs can judge his decisions against opponents who have scouted him closely. They have considerably less evidence about whether he can make those decisions over a full starter’s shift."
+          ]
+        },
+        {
+          "title": "THE DANGER IN WAITING FOR A SECOND INVITATION",
+          "paragraphs": [
+            "Through 14 appearances in year two Bryant averaged 3.5 points and took 2.5 threes in 10.4 minutes per game. At Chicago on November 11 he made two threes and scored ten; two nights later he hit two more against Golden State. In a group with Castle and Wembanyama, the invitation often comes as the defense tags the big. If Bryant passes up the corner three, the defender can return and the same lane stays closed on the next drive. We would give him a simple counter when a defender gets there early: attack the baseline just far enough to draw the low man, then find the cutter behind him."
+          ]
+        },
+        {
+          "title": "THE MATCHUP THAT EARNS THE NEXT SHIFT",
+          "paragraphs": [
+            "At 6-foot-6 and 220 pounds, Bryant can give Fox a break from guarding a strong wing. We would first test him on an opponent who likes to screen and slip toward the basket. Can he disrupt the screen, recognize the slip and still make contact on the rebound? A spectacular contest on the first attempt counts for less if the same player gets a layup off the miss. His early 0.9 boards per appearance are a reason to investigate which rebounding assignments he gets, not enough on their own to grade his effort."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Champagnie has already shown he can fill the floor-spacing wing role for thirty playoff minutes. Bryant needs a reason to play alongside him or in a different matchup. We see one in his strength against larger perimeter players. Pair dependable defense there with a corner shot the opponent has to respect, and the Spurs can put two wing defenders on the floor without asking either to handle like a guard."
           ]
         },
         {
@@ -13628,6 +14097,13 @@
             "Inside the arc: 1-for-4. From three: 2-for-6. Defensive rebounds: 2. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642868/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5061568/stats",
+        "https://www.sports-reference.com/cbb/players/carter-bryant-1.html",
+        "https://www.nba.com/game/0022600220/box-score",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5061568/stats?seasontype=3"
       ]
     },
     "5061575": {
@@ -13966,13 +14442,31 @@
       "name": "Jayden Quaintance",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN athlete season history.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE SCOUTING CASE STARTS IN TEMPE",
           "paragraphs": [
-            "Quaintance can test his recovery range as a help defender beside a bigger center. The harder part is choosing the rotation early enough to stay balanced. On offense, a direct roll after real screen contact will reveal how much vertical pressure he creates."
+            "Quaintance started 24 games at Arizona State, averaging 9.4 points, 7.9 rebounds and 2.6 blocks. He made the Big 12 All-Defensive team as a freshman. His next college season lasted four appearances at Kentucky, including ten points, eight boards and two blocks in 17 minutes against St. John’s. San Antonio picked him 20th in 2026. The league’s November 13 injury report listed him out following right knee surgery, and there was no regular-season NBA appearance to evaluate through November 17. The college defense deserves attention on its own terms; projecting a date or a level of movement after surgery would go beyond the evidence."
+          ]
+        },
+        {
+          "title": "TWO POSSIBLE FRONTCOURT PARTNERSHIPS",
+          "paragraphs": [
+            "At 6-foot-9 and 255 pounds, Quaintance gives the Spurs an intriguing future choice when available. Play him beside Wembanyama and let the rookie occupy the dunker spot while the opposing center has to respect Victor’s range. Play him as the lone big with Fox and his screen can open a direct path to the rim. The two jobs ask for different reads. The first requires clearing the baseline when Wembanyama drives. The second requires catching in traffic and finding a corner shooter if help arrives early. We would start with one job at a time."
+          ]
+        },
+        {
+          "title": "A COLLEGE BLOCK IS AN INVITATION TO LOOK CLOSER",
+          "paragraphs": [
+            "The Arizona State record supports his potential to protect the basket. The NBA question is what happens immediately before and after the contest. A weak-side rotation makes sense alongside a seven-footer who can rebound behind him. As the only big, chasing the same block can leave nobody between the roller and the rim. We would examine whether he can call the coverage, stay on the floor as a guard changes pace, then secure the miss himself. None of those reads can be graded from the injury report."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Our first professional evaluation would focus on a sequence he can repeat: screen, find the right lane, get back, defend one action and finish the rebound. The skill worth investing in is how many jobs his size and timing could eventually let him handle. Availability and an actual NBA sample have to come before a closing-lineup projection."
           ]
         },
         {
@@ -13981,6 +14475,12 @@
             "In the 2025-26 college season, Jayden Quaintance averaged 5.0 points, 5.0 rebounds and 0.5 assists across 4 games. We’re using that earlier sample as background while we wait for a verified 2026–27 NBA appearance."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643519/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5101845/stats",
+        "https://ukathletics.com/sports/mbball/roster/player/jayden-quaintance/",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-13_11_30PM.pdf"
       ]
     },
     "5104155": {
@@ -14021,13 +14521,31 @@
       "name": "Maliq Brown",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909090.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT ONE NBA MINUTE LEAVES OPEN",
           "paragraphs": [
-            "Brown's anticipation can disrupt a pass into the middle without a full double-team. San Antonio must keep the space behind him covered when he reaches. Offensively we would test him as a quick passer after screening rather than as a stationary spacer."
+            "Brown recorded one assist and no field-goal attempts in his lone regular-season appearance through November 17, the October 20 game against Oklahoma City. The 44th pick arrived from Duke after two seasons there and two at Syracuse. In his second Syracuse season he averaged 9.5 points, 7.2 rebounds and 2.2 steals. There is a real history behind San Antonio’s interest in his defensive decisions. One NBA minute cannot tell us whether the same gambles survive against bigger finishers and faster passers."
+          ]
+        },
+        {
+          "title": "THE EXTRA PASS IS A JOB",
+          "paragraphs": [
+            "At 6-foot-8 and 225 pounds, Brown can give the Spurs a forward who receives the ball inside the arc without needing to finish the possession himself. We would use a dribble handoff to Vassell as a starting point. If both defenders follow the shooter, Brown can slip toward the middle and look for a cutter. If they switch, the smaller defender has to keep him off the glass. The difficulty comes when the opponent ducks under and simply waits for Brown to shoot. A pass delivered on time can create space, but a forward who never threatens to score eventually loses his passing angles."
+          ]
+        },
+        {
+          "title": "THE STEAL HAS TO BE WORTH THE STEP",
+          "paragraphs": [
+            "In a lineup beside Wembanyama, Brown can show at the ball and try to recover to a forward. Beside a smaller frontcourt partner the same decision might expose the rim. We would measure his development by which passing lanes he elects to leave alone. Staying attached and making the opponent try a difficult overhead pass can be as valuable as going for the steal. When he does step away, finding his original man in time to box out completes the assignment."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would begin with a defined defensive matchup and a live handoff on offense. See whether Brown can make a scorer uncomfortable while still giving the other four Spurs room to operate. The Syracuse production gives a credible reason to try it. The current professional evidence leaves the shooting, matchup range and eventual rotation size open."
           ]
         },
         {
@@ -14037,6 +14555,12 @@
             "Inside the arc: 0-for-0. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643576/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5105337/stats",
+        "https://goduke.com/documents/download/2025/3/29/NCAAT_RegionFinal__03-29-25_.pdf",
+        "https://www.nba.com/game/0022600003/box-score"
       ]
     },
     "5105462": {
@@ -14387,13 +14911,31 @@
       "name": "Tarris Reed Jr.",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909302. ESPN play-by-play 401909917.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "FROM A 27-REBOUND TOURNAMENT GAME TO SIX-MINUTE SHIFTS",
           "paragraphs": [
-            "Reed's cleanest path is claiming space before the ball arrives, whether on the roll or the offensive board. We would test his outlet when the double comes from the baseline. At the other end, holding that same space can prevent a second shot."
+            "Reed put up 31 points and 27 rebounds for Connecticut against Furman in the first round of the 2026 NCAA tournament. San Antonio selected him 26th that June. It would be easy to look at that box score, see a 6-foot-10, 265-pound rookie and assume the rebounding job is settled. His first nine NBA appearances offer a better development question. He averaged 2.9 rebounds, including 1.2 offensive, in six minutes, but also 1.8 fouls. Can he get the inside space that earned him those opportunities while leaving himself enough fouls to play a second shift?"
+          ]
+        },
+        {
+          "title": "WHY THE SCREEN COMES BEFORE THE POST-UP",
+          "paragraphs": [
+            "Next to Fox we would use Reed to create the first advantage with contact, then roll into space while Fox has the opposing big’s attention. Asking for a post entry before the defense moves lets an NBA center set his feet and a second defender dig at the ball. The roll gives Reed a smaller helper to seal and a much shorter pass to make if the double comes. His two points, four rebounds, two steals and one assist in 11 minutes against Golden State on November 13 show the range of contributions possible without running a possession through him."
+          ]
+        },
+        {
+          "title": "THE TEST THAT UCONN COULD NOT GIVE HIM",
+          "paragraphs": [
+            "The key defensive question is how he handles movement away from the basket. Against an NBA handler with pull-up range, backing up to the restricted area concedes an uncontested jumper. Stepping out too early can leave the roller behind him. We would review his first two steps after the screen and whether the guard gets back in front before Reed commits. His size helps once he has position. It costs him when the ball changes direction and he has to recover by reaching."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "Kornet’s established reserve role gives the Spurs time to pursue something more specific than a generic third center. Reed can be the answer when the second unit needs force on the offensive glass. Our first milestone is a productive shift against a spaced floor in which he reaches the defensive rebound without fouling at the screen. That would tell us more about his next ten minutes than another dominant college total."
           ]
         },
         {
@@ -14409,6 +14951,12 @@
             "Inside the arc: 1-for-2. From three: 0-for-0. Defensive rebounds: 2. Steals: 2. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643542/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5105809/stats",
+        "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/uconnhuskies.com/documents/2026/8/24/FINAL.pdf?timestamp=20260824033119",
+        "https://www.nba.com/game/0022600040/box-score"
       ]
     },
     "5105817": {
@@ -14896,13 +15444,31 @@
       "name": "Dillon Mitchell",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909916.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "TWO MINUTES IN HOUSTON AND A MUCH LONGER COLLEGE RECORD",
           "paragraphs": [
-            "Mitchell's route to useful touches is above the rim or behind a watching defender. Boston needs to see whether he can create that opening when the transition game disappears. Defending a second position would buy more chances to answer it."
+            "Dillon Mitchell took no shot in his two-minute NBA appearance at Houston on November 2. There is no serious way to grade his offensive ceiling from that line. Before Boston took him 40th in 2026, Mitchell had played at Texas, Cincinnati and St. John’s. Entering his final Big East tournament, the Red Storm listed him at 6.9 rebounds and 3.1 assists a game. Those figures come from a college forward with a real role. They point to two skills worth testing against NBA players: winning a rebound outside the center’s area and immediately doing something productive with it."
+          ]
+        },
+        {
+          "title": "A FORWARD WHO COULD SCREEN FOR A FORWARD",
+          "paragraphs": [
+            "The easiest offensive fit for Mitchell may be giving George an advantage without asking for the ball. Set a screen for him away from the basket and read the defender. On a hard switch, a slip can put Mitchell behind a smaller guard. When the help rotates, the useful next skill is finding the corner while he is still moving toward the rim. That is where the college passing matters. Alongside Garza the lane can be open for the slip. Alongside Robinson another Celtic already occupies that space, making the shot from outside a much more important question."
+          ]
+        },
+        {
+          "title": "THE BETWEEN-POSITIONS TEST",
+          "paragraphs": [
+            "Boston lists Mitchell at 6-foot-6 and 200 pounds. As a college rebounder he could win inside against some opponents. NBA power forwards can move him before the ball arrives. We would start with pursuit against a wing, then see whether he can hold his ground after a switch long enough for the Celtics to exchange assignments. Reaching for a steal to escape the mismatch is a poor trade if it concedes the rim. Fronting the entry pass and letting a teammate recover is an outcome worth developing even though no statistic rewards it."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "We want to see Mitchell give a group a better possession without an isolation called for him. Screen for George, slip into space, hit an open shooter, then return to make the first box-out on the other end. The college record justifies trying that sequence. A two-minute NBA sample settles none of it. A regular shift with a spacing center would give the Celtics a fair first test."
           ]
         },
         {
@@ -14912,6 +15478,13 @@
             "Inside the arc: 0-for-0. From three: 0-for-0. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1641759/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5106283/stats",
+        "https://www.nba.com/game/0022600167/box-score",
+        "https://redstormsports.com/news/2026/6/24/mens-basketball-dillon-mitchell-selected-in-second-round-of-the-2026-nba-draft",
+        "https://redstormsports.com/documents/download/2026/3/11/BIG_EAST_Tournament_Media_Guide-_DIGITAL.pdf"
       ]
     },
     "5107157": {
@@ -15103,13 +15676,31 @@
       "name": "Ja'Kobi Gillespie",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909858.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "Reviewed November 18, 2026. The NBA roster, player profile, season histories and dated game logs support the factual record. Proposed matchups, coverage choices and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "THE PASS AFTER THE PULL-UP",
           "paragraphs": [
-            "Gillespie can pressure the point of attack and use a quick change of direction to turn a screen. We would watch his pass against the second defender, especially when size closes the window to the rim. That read can steady a reserve offense."
+            "Tennessee got 29 points, nine assists and three steals from Gillespie in its March 2026 NCAA tournament win over Miami of Ohio. He made six threes. What interests us most for the Spurs is that a guard scoring at that rate still created nine teammate baskets. San Antonio picked him 42nd. Through November 17 he had played two regular-season games, scored five points total and yet to record an assist. Those appearances lasted one and three minutes. They cannot settle whether the playmaking will translate."
+          ]
+        },
+        {
+          "title": "USE THE THREAT BEFORE ADDING THE DIFFICULTY",
+          "paragraphs": [
+            "The 6-foot rookie made a three in his October 24 appearance at Dallas. We would start him alongside a longer guard and let him come off a Luke Kornet screen. A defender going under offers the clean pull-up that made his college game dangerous. A trap offers an early pass to Kornet and a chance to relocate while the defense is still scrambling. The difficult coverage is a long defender pursuing from behind while the center stays in the lane. Against that shape, Gillespie has to keep his dribble alive long enough to find the far-side shooter without getting caught under the big."
+          ]
+        },
+        {
+          "title": "A SMALL GUARD’S FIRST FIVE SECONDS",
+          "paragraphs": [
+            "With Fox, Castle and Harper already on the roster, Gillespie needs minutes that do something different. Ball pressure on a reserve handler might give him a lever. Force the opponent to change direction early, get over the screen and let Kornet wait near the basket. The risk is what happens after a switch. A taller wing can shoot over him without drawing help, so exchanging back before the entry pass matters more than reaching for the ball once the mismatch is established."
+          ]
+        },
+        {
+          "title": "4DK VERDICT",
+          "paragraphs": [
+            "We would develop him as a shooting threat who can run a second action after giving up the ball. Calling him an NBA scoring specialist now would discard the best playmaking evidence from Tennessee. Handing him the backup offense on that evidence alone would skip the hardest test: reading the same NBA coverage several possessions in a row after the defense adjusts to his jumper."
           ]
         },
         {
@@ -15119,6 +15710,12 @@
             "Inside the arc: 0-for-0. From three: 1-for-2. Defensive rebounds: 0. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643551/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5107968/stats",
+        "https://utsports.com/sports/mens-basketball/roster/gillespie-jakobi/22158",
+        "https://www.nba.com/game/0022600109/box-score"
       ]
     },
     "5108024": {
@@ -15286,13 +15883,31 @@
       "name": "Chris Cenac Jr.",
       "status": "published",
       "playerClass": "rookie",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909994.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "WHAT BOSTON BOUGHT AT PICK TWENTY-SEVEN",
           "paragraphs": [
-            "Boston can learn about Cenac by varying the coverage behind the same screen. Can he retreat under control in drop, then contain two dribbles when asked to switch? On offense a clean screen and timely dive give his guards a fair test of that pairing."
+            "Chris Cenac Jr. started 36 of 37 games at Houston, averaging 9.5 points and 7.9 rebounds on a Sweet 16 team. Boston’s rookie frontcourt already had veterans who could rebound and roll. The intriguing part of this choice is the possibility of getting size, a credible outside shot and a second defensive coverage from one player. Houston supplies evidence for the rebounding. Boston’s first five appearances, averaging 5.8 minutes, leave the other parts of that proposition open."
+          ]
+        },
+        {
+          "title": "THE SECOND PASS IN A PICK-AND-POP",
+          "paragraphs": [
+            "At Houston, Cenac made at least two threes in nine games. We would use a Pritchard screen to test how defenders treat the shot at NBA distance. When Pritchard draws the opposing big, Cenac can trail to the arc. A clean look deserves a shot. If a wing rotates before the catch, the first useful result may be a pass to the corner rather than a scoring attempt. Against Orlando on November 16 he made both his twos, missed his lone three, and recorded an assist and two turnovers in 12 minutes. That line leaves room for a coaching decision. Put one obvious outlet on his side of the floor while he learns the speed of the second rotation."
+          ]
+        },
+        {
+          "title": "WHAT THE COUGARS’ REBOUNDS DO AND DON’T SETTLE",
+          "paragraphs": [
+            "At a listed 6-foot-11 and 240 pounds he is big enough for Boston to try him as the deepest defender on a ball screen. The test is whether he can give ground without surrendering the lob, then stop going backward early enough to box out. A switch asks something quite different: contain the guard briefly, then exchange back to the opposing big before the entry pass. We would teach those coverages separately and chart the rebound after each. A clean contest is much less useful if a switch leaves a Celtic guard pinned under the rim."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "Cenac’s most interesting possible role is a center who can change the geometry of an offense while still securing a defensive board. The Celtics have time to find out because Queta, Robinson and Garza offer established alternatives. Give Cenac planned stretches with the same ball handler, then change the coverage opponents show him. The repeatable read after the catch will tell us more about his readiness than five scattered early appearances."
           ]
         },
         {
@@ -15308,6 +15923,13 @@
             "Inside the arc: 2-for-2. From three: 0-for-1. Defensive rebounds: 2. Steals: 0. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1643416/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5142621/stats",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/draft/2026/prospects/chris-cenac-jr",
+        "https://uhcougars.com/news/2026/6/23/mens-basketball-flemings-cenac-selected-in-2026-nba-draft-first-round"
       ]
     },
     "5142718": {
@@ -15831,13 +16453,31 @@
       "name": "Hugo Gonzalez",
       "status": "published",
       "playerClass": "returning",
-      "editorialType": "4DK roster scouting report",
-      "basis": "4DK editorial evaluation and official NBA roster, November 18, 2026. ESPN final box score 401909989. ESPN play-by-play 401909961.",
+      "editorialType": "4DK Deep Scouting File",
+      "basis": "NBA and ESPN records checked for the November 17, 2026 regular-season cutoff. Dated historical and postseason evidence is identified separately. Proposed roles, team fit and development priorities are 4DK evaluations.",
       "sections": [
         {
-          "title": "THE 4DK READ",
+          "title": "A CUTTER’S CHOICE ON A CROWDED BASELINE",
           "paragraphs": [
-            "Gonzalez can turn an ignored corner into an open baseline cut. For Boston the important detail is whether he times it while the ballhandler can still deliver the pass. Earning the same trust at the other end means staying attached when his man screens away."
+            "Gonzalez had played for Real Madrid’s senior team in the EuroLeague before Boston chose him 28th in 2025. As a Celtic he got 74 regular-season appearances in year one but only four short playoff appearances. The difference is instructive. A regular opponent has to prepare for everybody overnight. A playoff opponent can decide in advance which Celtic it is willing to leave. Through 14 games of his second season, Gonzalez was making 25.9 percent from outside. Our evaluation starts with what he can do to the defender who has already turned away from him."
+          ]
+        },
+        {
+          "title": "WHY THE CENTER CHANGES HIS CUT",
+          "paragraphs": [
+            "With Garza above the break, an empty baseline gives Gonzalez room to dart behind a defender who is watching Tatum. Robinson rolling to the rim changes the answer. The same cut could put two Celtics and a help defender in the lob’s path. In that group we would keep Hugo wider until the roller pulls the big toward the basket. On November 15 against Dallas he produced nine points, five rebounds and two assists in 18 minutes, including two made threes. The next game against Orlando he played only four minutes. The one good game offers an example of the offense he can supply. It does not guarantee a defender will follow him out of the lane."
+          ]
+        },
+        {
+          "title": "THE PLAYER WHO CAN TURN A STOP INTO A RUN",
+          "paragraphs": [
+            "The dated Philadelphia play-by-play pairs a late Gonzalez steal with a basket for him on the next play. A quick score is a natural reward for a wing who can be first up the floor. There is a cost if he leaves early: a teammate may have to defend the glass alone. We would use Hugo against wings who like to receive the ball moving, and give him responsibility for making contact as they cut. If he stays between that man and the ball, a deflection or a secured rebound becomes a chance to run without gambling an entire defensive possession."
+          ]
+        },
+        {
+          "title": "THE 4DK VERDICT",
+          "paragraphs": [
+            "We would pair Gonzalez with at least one frontcourt shooter while he develops the corner three. That is a fairer test of his cutting and of the game he brought from Madrid. The larger opportunity comes when he can help lineups that already have a non-shooter. An opponent that must respect his first catch and still account for his second cut has a much harder time keeping him outside a playoff rotation."
           ]
         },
         {
@@ -15859,6 +16499,15 @@
             "Inside the arc: 1-for-2. From three: 2-for-4. Defensive rebounds: 1. Steals: 1. Blocks: 0."
           ]
         }
+      ],
+      "reviewSources": [
+        "https://www.nba.com/player/1642864/",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5175647/stats",
+        "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/5175647/stats?seasontype=3",
+        "https://www.nba.com/game/0022600245/box-score",
+        "https://www.nba.com/game/0022600240/box-score",
+        "https://www.nba.com/game/0022600212/box-score",
+        "https://www.nba.com/draft/2025/prospects/hugo-gonzalez"
       ]
     },
     "5175737": {
@@ -17471,30 +18120,56 @@
       "6440",
       "6475",
       "6478",
+      "6578",
       "6589",
       "6606",
       "6609",
       "2528426",
+      "3064560",
+      "3078576",
       "3102531",
       "3134903",
+      "3134916",
       "3914044",
+      "4065804",
+      "4066354",
       "4066436",
+      "4277951",
+      "4351852",
+      "4395630",
+      "4395723",
       "4397040",
+      "4397251",
+      "4397424",
       "4397886",
       "4432171",
       "4432808",
       "4433149",
+      "4433188",
+      "4592479",
+      "4593841",
+      "4683689",
       "4683730",
+      "4702745",
       "4709138",
+      "4713010",
       "4838721",
       "4897262",
       "4897943",
       "4997536",
+      "5061568",
+      "5101845",
+      "5105337",
+      "5105809",
+      "5106283",
+      "5107968",
+      "5142621",
+      "5175647",
       "5175737",
       "5211983",
       "5289900"
     ],
-    "remainingForDeepReview": 390,
+    "remainingForDeepReview": 364,
     "reviewStatus": "In progress; current approvals reflected in data/4dk-deep-scouting-review.json",
     "policy": "Do not mark reports as deep-reviewed based on word count or templated expansion; independently verify dated claims before final sign-off.",
     "lastSourceCorrection": "2026-11-18: corrected Nesmith's Haliburton context; 2025-26 absence is historical, 2026-27 return noted in NBA season preview.",

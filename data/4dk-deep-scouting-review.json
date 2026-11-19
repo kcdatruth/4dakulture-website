@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-18",
   "scope": "475 roster reports. NBA ID and current team checked against the official NBA profile or, for Oscar Tshiebwe, the official Houston roster. Snapshot differences flag PPG, RPG or APG values that differ between the NBA profile and the dated site dataset. Pending means the complete narrative still requires individual editorial and fact review.",
-  "approvedCount": 85,
+  "approvedCount": 111,
   "reports": {
     "3195": {
       "name": "Mike Conley",
@@ -261,7 +261,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -1069,7 +1069,95 @@
         "sha256": "a8f6d390617174d2649a9ce51b9e79754af68577388b736cd5a9c5493434b4fb",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 31
+      "ageAsOfReview": 31,
+      "seasonSnapshotResolution": {
+        "nbaId": 203897,
+        "name": "Zach LaVine",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 3.2,
+            "verified": 3.3,
+            "numerator": 39,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600093",
+            "pts": 28,
+            "reb": 4,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600103",
+            "pts": 22,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600118",
+            "pts": 37,
+            "reb": 2,
+            "ast": 5
+          },
+          {
+            "gameId": "0022600130",
+            "pts": 22,
+            "reb": 3,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600145",
+            "pts": 21,
+            "reb": 3,
+            "ast": 5
+          },
+          {
+            "gameId": "0022600150",
+            "pts": 11,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600164",
+            "pts": 23,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600185",
+            "pts": 21,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600033",
+            "pts": 14,
+            "reb": 4,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600202",
+            "pts": 15,
+            "reb": 4,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600215",
+            "pts": 31,
+            "reb": 3,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600041",
+            "pts": 12,
+            "reb": 3,
+            "ast": 6
+          }
+        ]
+      }
     },
     "3064482": {
       "name": "Bobby Portis",
@@ -1099,7 +1187,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -1121,7 +1209,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -1385,7 +1473,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -1445,7 +1533,95 @@
         "sha256": "19603d6694aaa1c0f1ee762019a80bbaf79211fc8571ab9527f2e367005917a2",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 30
+      "ageAsOfReview": 30,
+      "seasonSnapshotResolution": {
+        "nbaId": 1626145,
+        "name": "Tyus Jones",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 2.2,
+            "verified": 2.3,
+            "numerator": 27,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600007",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600110",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600127",
+            "pts": 0,
+            "reb": 0,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600140",
+            "pts": 5,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600024",
+            "pts": 3,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600169",
+            "pts": 2,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600182",
+            "pts": 6,
+            "reb": 1,
+            "ast": 8
+          },
+          {
+            "gameId": "0022600189",
+            "pts": 3,
+            "reb": 4,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600208",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600221",
+            "pts": 0,
+            "reb": 1,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600231",
+            "pts": 2,
+            "reb": 0,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600252",
+            "pts": 0,
+            "reb": 1,
+            "ast": 2
+          }
+        ]
+      }
     },
     "3136196": {
       "name": "Trey Lyles",
@@ -1975,7 +2151,95 @@
         "sha256": "74afc343ad3a813f1ca9a6f49436050a0e2096d629050d0fb0a13df40cea1690",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 29
+      "ageAsOfReview": 29,
+      "seasonSnapshotResolution": {
+        "nbaId": 1627884,
+        "name": "Derrick Jones Jr.",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "apg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 15,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600093",
+            "pts": 8,
+            "reb": 6,
+            "ast": 5
+          },
+          {
+            "gameId": "0022600102",
+            "pts": 16,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600116",
+            "pts": 11,
+            "reb": 6,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600143",
+            "pts": 15,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600022",
+            "pts": 10,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600156",
+            "pts": 9,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600186",
+            "pts": 12,
+            "reb": 8,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600201",
+            "pts": 8,
+            "reb": 4,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600213",
+            "pts": 11,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600042",
+            "pts": 14,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600238",
+            "pts": 13,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600257",
+            "pts": 5,
+            "reb": 1,
+            "ast": 1
+          }
+        ]
+      }
     },
     "4017837": {
       "name": "Ivica Zubac",
@@ -2065,7 +2329,71 @@
         "sha256": "534cc60f47814e796b69944941f590309579e9bdc67fd3f4c1f8b89fafa55277",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 28
+      "ageAsOfReview": 28,
+      "seasonSnapshotResolution": {
+        "nbaId": 1628396,
+        "name": "Tony Bradley",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "apg": {
+            "previous": 0.2,
+            "verified": 0.3,
+            "numerator": 2,
+            "gamesPlayed": 8
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600126",
+            "pts": 2,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600168",
+            "pts": 2,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600028",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600198",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600214",
+            "pts": 4,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600039",
+            "pts": 0,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600239",
+            "pts": 6,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600257",
+            "pts": 3,
+            "reb": 7,
+            "ast": 1
+          }
+        ]
+      }
     },
     "4065731": {
       "name": "Jay Huff",
@@ -2089,7 +2417,95 @@
         "sha256": "247bfc9e1193500c7a5fba9d68fdfaec47210861a7f4c9ceba952bd8fb4502b4",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 29
+      "ageAsOfReview": 29,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630643,
+        "name": "Jay Huff",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 3.2,
+            "verified": 3.3,
+            "numerator": 39,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600095",
+            "pts": 0,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600113",
+            "pts": 14,
+            "reb": 2,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600123",
+            "pts": 6,
+            "reb": 6,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600135",
+            "pts": 3,
+            "reb": 6,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600020",
+            "pts": 13,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600155",
+            "pts": 0,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600160",
+            "pts": 22,
+            "reb": 8,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600178",
+            "pts": 6,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600189",
+            "pts": 0,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600217",
+            "pts": 6,
+            "reb": 4,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600034",
+            "pts": 8,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600236",
+            "pts": 11,
+            "reb": 0,
+            "ast": 2
+          }
+        ]
+      }
     },
     "4065732": {
       "name": "De'Andre Hunter",
@@ -2163,7 +2579,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -2223,7 +2639,95 @@
         "sha256": "f3ebaa32d357e113e1e7d6486570e9179b68868fd5af06d27898baa6997b88ba",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 29
+      "ageAsOfReview": 29,
+      "seasonSnapshotResolution": {
+        "nbaId": 1629057,
+        "name": "Robert Williams III",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "apg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 15,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600092",
+            "pts": 2,
+            "reb": 10,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600103",
+            "pts": 13,
+            "reb": 6,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600131",
+            "pts": 14,
+            "reb": 10,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600147",
+            "pts": 3,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600169",
+            "pts": 2,
+            "reb": 6,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600183",
+            "pts": 9,
+            "reb": 8,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600032",
+            "pts": 9,
+            "reb": 5,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600216",
+            "pts": 6,
+            "reb": 4,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600226",
+            "pts": 10,
+            "reb": 7,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600041",
+            "pts": 2,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600250",
+            "pts": 2,
+            "reb": 5,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600254",
+            "pts": 6,
+            "reb": 8,
+            "ast": 4
+          }
+        ]
+      }
     },
     "4066218": {
       "name": "Grant Williams",
@@ -2269,7 +2773,95 @@
         "sha256": "4144b94aa352d7ea12ea4811d1f7d493277c2970b376f619ad440ae41fb2ce2d",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 28
+      "ageAsOfReview": 28,
+      "seasonSnapshotResolution": {
+        "nbaId": 1628370,
+        "name": "Malik Monk",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 8.2,
+            "verified": 8.3,
+            "numerator": 99,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600103",
+            "pts": 0,
+            "reb": 1,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600118",
+            "pts": 6,
+            "reb": 2,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600130",
+            "pts": 3,
+            "reb": 2,
+            "ast": 6
+          },
+          {
+            "gameId": "0022600145",
+            "pts": 2,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600150",
+            "pts": 8,
+            "reb": 0,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600164",
+            "pts": 24,
+            "reb": 1,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600185",
+            "pts": 13,
+            "reb": 2,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600033",
+            "pts": 12,
+            "reb": 0,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600202",
+            "pts": 9,
+            "reb": 2,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600215",
+            "pts": 1,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600041",
+            "pts": 7,
+            "reb": 4,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600244",
+            "pts": 14,
+            "reb": 1,
+            "ast": 10
+          }
+        ]
+      }
     },
     "4066268": {
       "name": "Duop Reath",
@@ -2365,7 +2957,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -2447,7 +3039,71 @@
         "sha256": "dfe42f61c047dca05b0d72e942135471798121471df4a4ee79a83d10418b0372",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 28
+      "ageAsOfReview": 28,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630695,
+        "name": "Micah Potter",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "apg": {
+            "previous": 0.2,
+            "verified": 0.3,
+            "numerator": 2,
+            "gamesPlayed": 8
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600092",
+            "pts": 4,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600146",
+            "pts": 1,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600147",
+            "pts": 2,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600183",
+            "pts": 4,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600195",
+            "pts": 7,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600216",
+            "pts": 0,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600250",
+            "pts": 2,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600254",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4066436": {
       "name": "De'Anthony Melton",
@@ -2763,7 +3419,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -2823,7 +3479,47 @@
         "sha256": "27003fd83152cb277d0cd27af624d15516e6b7c3615df175d9c087075b136987",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 27
+      "ageAsOfReview": 27,
+      "seasonSnapshotResolution": {
+        "nbaId": 1628991,
+        "name": "Jaren Jackson Jr.",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 16.2,
+            "verified": 16.3,
+            "numerator": 65,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600089",
+            "pts": 15,
+            "reb": 5,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600100",
+            "pts": 24,
+            "reb": 10,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600112",
+            "pts": 20,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600126",
+            "pts": 6,
+            "reb": 3,
+            "ast": 2
+          }
+        ]
+      }
     },
     "4278039": {
       "name": "Nickeil Alexander-Walker",
@@ -3293,7 +3989,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -3359,7 +4055,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -3469,7 +4165,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -3507,7 +4203,95 @@
         "sha256": "87ca2e410b5dc533a6f2c82328483b40cee3e6bfb6cc639492fa562f40f5ed88",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 27
+      "ageAsOfReview": 27,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630193,
+        "name": "Immanuel Quickley",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 17.2,
+            "verified": 17.3,
+            "numerator": 207,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600088",
+            "pts": 23,
+            "reb": 4,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600097",
+            "pts": 12,
+            "reb": 1,
+            "ast": 6
+          },
+          {
+            "gameId": "0022600115",
+            "pts": 19,
+            "reb": 3,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600136",
+            "pts": 16,
+            "reb": 3,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600019",
+            "pts": 17,
+            "reb": 6,
+            "ast": 8
+          },
+          {
+            "gameId": "0022600157",
+            "pts": 12,
+            "reb": 6,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600171",
+            "pts": 27,
+            "reb": 4,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600182",
+            "pts": 13,
+            "reb": 1,
+            "ast": 7
+          },
+          {
+            "gameId": "0022600219",
+            "pts": 11,
+            "reb": 4,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600227",
+            "pts": 26,
+            "reb": 4,
+            "ast": 6
+          },
+          {
+            "gameId": "0022600241",
+            "pts": 17,
+            "reb": 6,
+            "ast": 6
+          },
+          {
+            "gameId": "0022600253",
+            "pts": 14,
+            "reb": 1,
+            "ast": 7
+          }
+        ]
+      }
     },
     "4395725": {
       "name": "Tyler Herro",
@@ -3575,7 +4359,95 @@
         "sha256": "3a24ec3bc92a20ffbb8eb57b7526d37be583477e70a3d0524cd6df6f0e6b376f",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 27
+      "ageAsOfReview": 27,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630174,
+        "name": "Aaron Nesmith",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 12.2,
+            "verified": 12.3,
+            "numerator": 147,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600095",
+            "pts": 9,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600113",
+            "pts": 13,
+            "reb": 1,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600123",
+            "pts": 13,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600135",
+            "pts": 18,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600020",
+            "pts": 9,
+            "reb": 3,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600155",
+            "pts": 11,
+            "reb": 3,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600178",
+            "pts": 16,
+            "reb": 1,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600189",
+            "pts": 8,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600207",
+            "pts": 18,
+            "reb": 2,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600217",
+            "pts": 2,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600034",
+            "pts": 18,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600236",
+            "pts": 12,
+            "reb": 4,
+            "ast": 4
+          }
+        ]
+      }
     },
     "4396971": {
       "name": "Naz Reid",
@@ -3819,7 +4691,47 @@
         "sha256": "d51ec28e68fc208ea89ff1574bb93b736f9bd50c888681d40b7f2136fab1d055",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 26
+      "ageAsOfReview": 26,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630658,
+        "name": "Colin Castleton",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 2.2,
+            "verified": 2.3,
+            "numerator": 9,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600096",
+            "pts": 7,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600136",
+            "pts": 2,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600187",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600224",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4397233": {
       "name": "Pete Nance",
@@ -3849,7 +4761,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -3871,7 +4783,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -4351,7 +5263,95 @@
         "sha256": "9649869e6932c1ca1a32d3a33eac10f91c3b97b213e584be0ac26a6a8c410539",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 25
+      "ageAsOfReview": 25,
+      "seasonSnapshotResolution": {
+        "nbaId": 1631128,
+        "name": "Christian Braun",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 4.2,
+            "verified": 4.3,
+            "numerator": 51,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600007",
+            "pts": 7,
+            "reb": 6,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600110",
+            "pts": 15,
+            "reb": 8,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600127",
+            "pts": 9,
+            "reb": 4,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600140",
+            "pts": 15,
+            "reb": 0,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600024",
+            "pts": 31,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600169",
+            "pts": 14,
+            "reb": 3,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600182",
+            "pts": 11,
+            "reb": 3,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600189",
+            "pts": 6,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600208",
+            "pts": 4,
+            "reb": 5,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600221",
+            "pts": 12,
+            "reb": 5,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600231",
+            "pts": 17,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600252",
+            "pts": 10,
+            "reb": 3,
+            "ast": 3
+          }
+        ]
+      }
     },
     "4431772": {
       "name": "Myron Gardner",
@@ -4552,7 +5552,101 @@
         "sha256": "fa6b7b857ef770cf77dc1862add4d6c1d288e904ab184c56dcf7a1b98267cd0c",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 24
+      "ageAsOfReview": 24,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630543,
+        "name": "Isaiah Jackson",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 8.2,
+            "verified": 8.3,
+            "numerator": 99,
+            "gamesPlayed": 12
+          },
+          "rpg": {
+            "previous": 5.2,
+            "verified": 5.3,
+            "numerator": 63,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600093",
+            "pts": 13,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600102",
+            "pts": 6,
+            "reb": 6,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600116",
+            "pts": 10,
+            "reb": 6,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600143",
+            "pts": 4,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600022",
+            "pts": 10,
+            "reb": 7,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600156",
+            "pts": 5,
+            "reb": 8,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600171",
+            "pts": 19,
+            "reb": 8,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600186",
+            "pts": 2,
+            "reb": 4,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600213",
+            "pts": 4,
+            "reb": 4,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600042",
+            "pts": 5,
+            "reb": 3,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600238",
+            "pts": 13,
+            "reb": 2,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600257",
+            "pts": 8,
+            "reb": 5,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4432171": {
       "name": "Moses Moody",
@@ -5041,7 +6135,53 @@
         "sha256": "d3272b6c355e6e19691dc704860c23b599bd50a9faf018cdcc877ab83e247164",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 25
+      "ageAsOfReview": 25,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630551,
+        "name": "Justin Champagnie",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 7.2,
+            "verified": 7.3,
+            "numerator": 29,
+            "gamesPlayed": 4
+          },
+          "apg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 5,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600086",
+            "pts": 8,
+            "reb": 8,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600097",
+            "pts": 8,
+            "reb": 6,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600108",
+            "pts": 11,
+            "reb": 14,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600119",
+            "pts": 2,
+            "reb": 2,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4433076": {
       "name": "Ben Sheppard",
@@ -5203,7 +6343,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -5307,7 +6447,95 @@
         "sha256": "82bc314a767a4942e316bc26e9046864f844d37e0b280e9d725f577cdddac91d",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 24
+      "ageAsOfReview": 24,
+      "seasonSnapshotResolution": {
+        "nbaId": 1631217,
+        "name": "Moussa Diabate",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 10.2,
+            "verified": 10.3,
+            "numerator": 123,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600087",
+            "pts": 17,
+            "reb": 8,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600094",
+            "pts": 5,
+            "reb": 8,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600104",
+            "pts": 4,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600119",
+            "pts": 11,
+            "reb": 17,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600134",
+            "pts": 9,
+            "reb": 9,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600015",
+            "pts": 10,
+            "reb": 12,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600148",
+            "pts": 10,
+            "reb": 8,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600159",
+            "pts": 7,
+            "reb": 9,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600176",
+            "pts": 7,
+            "reb": 6,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600230",
+            "pts": 7,
+            "reb": 13,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600238",
+            "pts": 12,
+            "reb": 12,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600256",
+            "pts": 5,
+            "reb": 16,
+            "ast": 2
+          }
+        ]
+      }
     },
     "4433287": {
       "name": "Brandon Miller",
@@ -5397,7 +6625,47 @@
         "sha256": "97366b5fd5b426ee75488dee2a9396c4e16285d3f13e1942398e7f6b11234f61",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 24
+      "ageAsOfReview": 24,
+      "seasonSnapshotResolution": {
+        "nbaId": 1641747,
+        "name": "DaRon Holmes II",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 0.2,
+            "verified": 0.3,
+            "numerator": 1,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600007",
+            "pts": 3,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600127",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600182",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600208",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4433618": {
       "name": "Harrison Ingram",
@@ -5669,7 +6937,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -5752,7 +7020,53 @@
         "sha256": "362d657e1d4432e2dc98d66ecb5d1a6a6c88826e257f15be70b42479f37c6f57",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 30
+      "ageAsOfReview": 30,
+      "seasonSnapshotResolution": {
+        "nbaId": 1630311,
+        "name": "Pat Spencer",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 5,
+            "gamesPlayed": 4
+          },
+          "rpg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 5,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600092",
+            "pts": 3,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600183",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600187",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600209",
+            "pts": 2,
+            "reb": 2,
+            "ast": 2
+          }
+        ]
+      }
     },
     "4592829": {
       "name": "Quenton Jackson",
@@ -5936,7 +7250,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -6200,7 +7514,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -6722,7 +8036,95 @@
         "sha256": "5b39808f78f7c4e7bddda1771bed2de3d2ccf781851ef0389ffaba43e7df93d4",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 23
+      "ageAsOfReview": 23,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642350,
+        "name": "Trevon Brazile",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 5.2,
+            "verified": 5.3,
+            "numerator": 63,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600007",
+            "pts": 4,
+            "reb": 12,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600110",
+            "pts": 17,
+            "reb": 9,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600127",
+            "pts": 6,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600140",
+            "pts": 11,
+            "reb": 8,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600024",
+            "pts": 6,
+            "reb": 3,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600169",
+            "pts": 6,
+            "reb": 5,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600182",
+            "pts": 6,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600189",
+            "pts": 3,
+            "reb": 4,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600208",
+            "pts": 5,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600221",
+            "pts": 7,
+            "reb": 5,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600231",
+            "pts": 5,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600252",
+            "pts": 9,
+            "reb": 4,
+            "ast": 0
+          }
+        ]
+      }
     },
     "4700818": {
       "name": "Vladislav Goldin",
@@ -6856,7 +8258,95 @@
         "sha256": "ee4443a30cbbb3c0763393362a27139c8c7d877c1bd176b5916435299796a9fa",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 26
+      "ageAsOfReview": 26,
+      "seasonSnapshotResolution": {
+        "nbaId": 1641854,
+        "name": "Craig Porter Jr.",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 2.2,
+            "verified": 2.3,
+            "numerator": 27,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600006",
+            "pts": 0,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600105",
+            "pts": 3,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600144",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600151",
+            "pts": 2,
+            "reb": 2,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600158",
+            "pts": 0,
+            "reb": 4,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600180",
+            "pts": 0,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600027",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600191",
+            "pts": 0,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600204",
+            "pts": 9,
+            "reb": 2,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600036",
+            "pts": 0,
+            "reb": 2,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600232",
+            "pts": 9,
+            "reb": 9,
+            "ast": 6
+          },
+          {
+            "gameId": "0022600246",
+            "pts": 2,
+            "reb": 1,
+            "ast": 3
+          }
+        ]
+      }
     },
     "4702134": {
       "name": "Norchad Omier",
@@ -6880,7 +8370,47 @@
         "sha256": "53c7459f9279e6579422920a5893753199c6f4d7efacc62e6bf4b6e5a2a45c61",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 25
+      "ageAsOfReview": 25,
+      "seasonSnapshotResolution": {
+        "nbaId": 1641807,
+        "name": "Norchad Omier",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 4.2,
+            "verified": 4.3,
+            "numerator": 17,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600027",
+            "pts": 0,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600204",
+            "pts": 0,
+            "reb": 3,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600232",
+            "pts": 13,
+            "reb": 8,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600246",
+            "pts": 4,
+            "reb": 6,
+            "ast": 2
+          }
+        ]
+      }
     },
     "4702177": {
       "name": "Keon Ellis",
@@ -7020,7 +8550,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -7080,7 +8610,55 @@
         "sha256": "18a6acb3bb64fea9a38b03ad5602ae0714f183e6c6ec6e3dbb4573882347edf2",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 24
+      "ageAsOfReview": 24,
+      "seasonSnapshotResolution": {
+        "nbaId": 1643555,
+        "name": "Jaron Pierre Jr.",
+        "through": "2026-11-17",
+        "resolution": "official box-score correction",
+        "fields": {
+          "rpg": {
+            "previous": 2.5,
+            "verified": 2.3,
+            "numerator": 9,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600223",
+            "pts": 4,
+            "reb": 4,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600038",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600231",
+            "pts": 13,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600251",
+            "pts": 10,
+            "reb": 3,
+            "ast": 0
+          }
+        ],
+        "upstreamDifference": {
+          "date": "2026-11-16",
+          "officialBox": "https://www.nba.com/game/gsw-vs-nop-0022600251/box-score",
+          "espnGameId": "401910000",
+          "field": "REB",
+          "upstream": 4,
+          "official": 3
+        }
+      }
     },
     "4703396": {
       "name": "Graham Ike",
@@ -7302,7 +8880,43 @@
         "sha256": "70791f0ae09edc28cdd8103e11da60a3183656c3b79254d07f2f04299b1cefa5",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 22
+      "ageAsOfReview": 22,
+      "seasonSnapshotResolution": {
+        "nbaId": 1643738,
+        "name": "Malik Dia",
+        "through": "2026-11-17",
+        "resolution": "official box-score correction",
+        "fields": {
+          "apg": {
+            "previous": 1.0,
+            "verified": 0.5,
+            "numerator": 1,
+            "gamesPlayed": 2
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600038",
+            "pts": 2,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600251",
+            "pts": 2,
+            "reb": 1,
+            "ast": 0
+          }
+        ],
+        "upstreamDifference": {
+          "date": "2026-11-16",
+          "officialBox": "https://www.nba.com/game/gsw-vs-nop-0022600251/box-score",
+          "espnGameId": "401910000",
+          "field": "AST",
+          "upstream": 1,
+          "official": 0
+        }
+      }
     },
     "4712863": {
       "name": "Mouhamed Gueye",
@@ -7354,7 +8968,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -8366,7 +9980,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -8448,7 +10062,47 @@
         "sha256": "51b0583aea000fe7672c395d057d430a3f4003e72c90b02f958f1231a458821f",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 22
+      "ageAsOfReview": 22,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642274,
+        "name": "Yves Missi",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 9.2,
+            "verified": 9.3,
+            "numerator": 37,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600090",
+            "pts": 13,
+            "reb": 14,
+            "ast": 5
+          },
+          {
+            "gameId": "0022600100",
+            "pts": 6,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600231",
+            "pts": 3,
+            "reb": 8,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600251",
+            "pts": 6,
+            "reb": 14,
+            "ast": 1
+          }
+        ]
+      }
     },
     "5061603": {
       "name": "Thomas Sorber",
@@ -8632,7 +10286,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -8676,7 +10330,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -8780,7 +10434,47 @@
         "sha256": "fb6476683f03f00c0c655f8446501556f190e93885515d989821e9a2d3cc1bce",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 22
+      "ageAsOfReview": 22,
+      "seasonSnapshotResolution": {
+        "nbaId": 1643591,
+        "name": "Tobe Awaka",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 5.2,
+            "verified": 5.3,
+            "numerator": 21,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600088",
+            "pts": 2,
+            "reb": 7,
+            "ast": 2
+          },
+          {
+            "gameId": "0022600121",
+            "pts": 4,
+            "reb": 6,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600016",
+            "pts": 2,
+            "reb": 7,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600163",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          }
+        ]
+      }
     },
     "5105565": {
       "name": "Donovan Clingan",
@@ -8964,7 +10658,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -9294,7 +10988,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -9448,7 +11142,7 @@
       "teamId": "24",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -9581,7 +11275,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -9663,7 +11357,95 @@
         "sha256": "7b49d1df91fb1e1321a72d2157bf13dac59c440790d0c5011f015ec27095a20b",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 20
+      "ageAsOfReview": 20,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642860,
+        "name": "Will Riley",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "apg": {
+            "previous": 0.2,
+            "verified": 0.3,
+            "numerator": 3,
+            "gamesPlayed": 12
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600097",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600108",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600119",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600015",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600162",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600174",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600025",
+            "pts": 7,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600192",
+            "pts": 5,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600205",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600228",
+            "pts": 3,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600242",
+            "pts": 14,
+            "reb": 3,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600247",
+            "pts": 2,
+            "reb": 1,
+            "ast": 0
+          }
+        ]
+      }
     },
     "5148538": {
       "name": "Tarik Biberovic",
@@ -9863,7 +11645,67 @@
         "sha256": "61dc07b2789c87d054c6d0ff905208cd87703579771c19a818c125449e9e87bf",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 21
+      "ageAsOfReview": 21,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642358,
+        "name": "AJ Johnson",
+        "through": "2026-11-17",
+        "resolution": "official box-score correction",
+        "fields": {
+          "apg": {
+            "previous": 0.5,
+            "verified": 0.7,
+            "numerator": 4,
+            "gamesPlayed": 6
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600149",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600201",
+            "pts": 2,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600210",
+            "pts": 2,
+            "reb": 2,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600223",
+            "pts": 2,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600038",
+            "pts": 1,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600251",
+            "pts": 0,
+            "reb": 0,
+            "ast": 1
+          }
+        ],
+        "upstreamDifference": {
+          "date": "2026-11-16",
+          "officialBox": "https://www.nba.com/game/gsw-vs-nop-0022600251/box-score",
+          "espnGameId": "401910000",
+          "field": "AST",
+          "upstream": 0,
+          "official": 1
+        }
+      }
     },
     "5174563": {
       "name": "Kyshawn George",
@@ -9959,7 +11801,7 @@
       "teamId": "2",
       "officialIdentityAndTeamMatch": true,
       "seasonSnapshotDifferences": [],
-      "review": "pending",
+      "review": "approved",
       "biographyComparison": {
         "dateOfBirth": "match",
         "height": "match",
@@ -10130,7 +11972,61 @@
         "sha256": "83f62210a631945f5ac9a28c90890f4bbed7d3582528813c3ececb8425f0c6aa",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 21
+      "ageAsOfReview": 21,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642359,
+        "name": "Pacome Dadiet",
+        "through": "2026-11-17",
+        "resolution": "official box-score correction",
+        "fields": {
+          "ppg": {
+            "previous": 2.4,
+            "verified": 3.0,
+            "numerator": 12,
+            "gamesPlayed": 4
+          },
+          "rpg": {
+            "previous": 0.6,
+            "verified": 0.8,
+            "numerator": 3,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600129",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600177",
+            "pts": 4,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600211",
+            "pts": 8,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600034",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          }
+        ],
+        "upstreamDifference": {
+          "date": "2026-10-23",
+          "officialBox": "https://www.nba.com/game/nyk-vs-bos-0022600008/box-score",
+          "espnGameId": "401909095",
+          "field": "appearance",
+          "upstream": true,
+          "official": false
+        }
+      }
     },
     "5214637": {
       "name": "Noah Penda",
@@ -10308,7 +12204,73 @@
         "sha256": "99ba3caace6643521c3f35856c9dac0bf0c9015f7d2a61a5dcbe97b1f446feb7",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 21
+      "ageAsOfReview": 21,
+      "seasonSnapshotResolution": {
+        "nbaId": 1642862,
+        "name": "Liam McNeeley",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "rpg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 10,
+            "gamesPlayed": 8
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600087",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600094",
+            "pts": 4,
+            "reb": 4,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600015",
+            "pts": 0,
+            "reb": 2,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600159",
+            "pts": 3,
+            "reb": 0,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600026",
+            "pts": 8,
+            "reb": 2,
+            "ast": 3
+          },
+          {
+            "gameId": "0022600204",
+            "pts": 8,
+            "reb": 1,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600238",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600256",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          }
+        ],
+        "supplementalSource": "https://statsdmz.nba.com/pdfs/20261021/20261021_CHABKN_book.pdf",
+        "participationNote": "October 21 final scorer report confirms 3:18 played and one rebound; the web box also supplied a contradictory DNP comment alongside those minutes."
+      }
     },
     "5241364": {
       "name": "Bennett Stirtz",
@@ -10443,7 +12405,53 @@
         "sha256": "20ab81600d85849aae38dbe0d45cc57b2aad79a75d05cf0cfbc9718a48e44827",
         "status": "distinct PNG"
       },
-      "ageAsOfReview": 20
+      "ageAsOfReview": 20,
+      "seasonSnapshotResolution": {
+        "nbaId": 1643547,
+        "name": "Sergio de Larrea",
+        "through": "2026-11-17",
+        "resolution": "decimal midpoint rounding",
+        "fields": {
+          "ppg": {
+            "previous": 5.2,
+            "verified": 5.3,
+            "numerator": 21,
+            "gamesPlayed": 4
+          },
+          "apg": {
+            "previous": 1.2,
+            "verified": 1.3,
+            "numerator": 5,
+            "gamesPlayed": 4
+          }
+        },
+        "officialGameLines": [
+          {
+            "gameId": "0022600091",
+            "pts": 0,
+            "reb": 2,
+            "ast": 1
+          },
+          {
+            "gameId": "0022600095",
+            "pts": 0,
+            "reb": 0,
+            "ast": 0
+          },
+          {
+            "gameId": "0022600109",
+            "pts": 21,
+            "reb": 5,
+            "ast": 4
+          },
+          {
+            "gameId": "0022600122",
+            "pts": 0,
+            "reb": 1,
+            "ast": 0
+          }
+        ]
+      }
     },
     "5279130": {
       "name": "Nolan Traore",
@@ -10535,6 +12543,8 @@
     }
   },
   "headshotMethod": "November 18, 2026. Tested the roster image URL, embedded athlete ID, PNG header, dimensions and SHA-256 uniqueness across the 475 files. A distinct image still requires visual identity review.",
+  "statAuditMethod": "Recomputed points, rebounds and assists from 210 final NBA regular-season box scores for October 20–November 17. Matched NBA person ID, counted appearances with a minutes-and-seconds entry, and rounded the total divided by games to one decimal, using round-half-up. The officialBoxes index links each contributing game ID to its verified final box. Compared against the dated site dataset and the official NBA player season profile. For the four non-rounding cases, also checked individual player rows in the SportsDataverse ESPN 2026–27 parquet file.",
+  "statAuditThrough": "2026-11-17",
   "resumeCheckpoint": {
     "date": "2026-11-19",
     "startingCommit": "d1b23bff542067876dd54e53fbc6f04967e1066f",
@@ -10570,14 +12580,45 @@
           "4397040",
           "4997536",
           "4433149"
+        ],
+        "commit": "cabb51ae2e3a0a0d88681a24cfc347c536af6752"
+      },
+      {
+        "name": "Boston and San Antonio",
+        "playerIds": [
+          "3078576",
+          "4066354",
+          "4065804",
+          "4351852",
+          "4397424",
+          "4277951",
+          "4397251",
+          "4433188",
+          "4593841",
+          "4683689",
+          "5175647",
+          "5142621",
+          "4702745",
+          "5106283",
+          "4395723",
+          "3064560",
+          "3134916",
+          "4395630",
+          "4592479",
+          "6578",
+          "5061568",
+          "5105809",
+          "5105337",
+          "5107968",
+          "5101845",
+          "4713010"
         ]
       }
     ],
-    "approvedCount": 85,
-    "remainingCount": 390,
+    "approvedCount": 111,
+    "remainingCount": 364,
     "remainingPlayerIds": [
       "3442",
-      "6578",
       "6580",
       "2488653",
       "2490149",
@@ -10606,8 +12647,6 @@
       "3064290",
       "3064440",
       "3064482",
-      "3064560",
-      "3078576",
       "3102529",
       "3102530",
       "3133602",
@@ -10616,7 +12655,6 @@
       "3133635",
       "3134907",
       "3134908",
-      "3134916",
       "3135045",
       "3135046",
       "3136777",
@@ -10643,7 +12681,6 @@
       "4065732",
       "4065733",
       "4065778",
-      "4065804",
       "4065813",
       "4066211",
       "4066218",
@@ -10652,7 +12689,6 @@
       "4066320",
       "4066328",
       "4066336",
-      "4066354",
       "4066372",
       "4066383",
       "4066399",
@@ -10667,7 +12703,6 @@
       "4277848",
       "4277919",
       "4277922",
-      "4277951",
       "4277956",
       "4277961",
       "4278039",
@@ -10688,14 +12723,11 @@
       "4280245",
       "4348700",
       "4351851",
-      "4351852",
       "4395625",
       "4395626",
-      "4395630",
       "4395650",
       "4395651",
       "4395702",
-      "4395723",
       "4395724",
       "4395725",
       "4396818",
@@ -10708,8 +12740,6 @@
       "4397189",
       "4397204",
       "4397233",
-      "4397251",
-      "4397424",
       "4397449",
       "4397475",
       "4397688",
@@ -10756,7 +12786,6 @@
       "4433083",
       "4433144",
       "4433174",
-      "4433188",
       "4433192",
       "4433249",
       "4433287",
@@ -10773,7 +12802,6 @@
       "4591725",
       "4592427",
       "4592435",
-      "4592479",
       "4592714",
       "4592857",
       "4593016",
@@ -10781,7 +12809,6 @@
       "4593043",
       "4593049",
       "4593125",
-      "4593841",
       "4594326",
       "4594327",
       "4595400",
@@ -10793,7 +12820,6 @@
       "4683634",
       "4683678",
       "4683688",
-      "4683689",
       "4683692",
       "4683736",
       "4683742",
@@ -10828,7 +12854,6 @@
       "4702384",
       "4702656",
       "4702670",
-      "4702745",
       "4703115",
       "4703396",
       "4703889",
@@ -10841,7 +12866,6 @@
       "4712862",
       "4712863",
       "4712896",
-      "4713010",
       "4781746",
       "4837356",
       "4845363",
@@ -10879,7 +12903,6 @@
       "5041955",
       "5044385",
       "5060701",
-      "5061568",
       "5061575",
       "5061589",
       "5061603",
@@ -10890,9 +12913,7 @@
       "5095151",
       "5099752",
       "5101761",
-      "5101845",
       "5104155",
-      "5105337",
       "5105462",
       "5105550",
       "5105553",
@@ -10905,7 +12926,6 @@
       "5105637",
       "5105800",
       "5105806",
-      "5105809",
       "5105832",
       "5105837",
       "5105839",
@@ -10917,19 +12937,16 @@
       "5106261",
       "5106262",
       "5106268",
-      "5106283",
       "5107157",
       "5107173",
       "5107199",
       "5107251",
       "5107818",
       "5107897",
-      "5107968",
       "5108024",
       "5112087",
       "5124612",
       "5142620",
-      "5142621",
       "5142718",
       "5144091",
       "5144126",
@@ -10944,7 +12961,6 @@
       "5174655",
       "5174983",
       "5175643",
-      "5175647",
       "5176517",
       "5177362",
       "5203685",
@@ -10967,38 +12983,7 @@
       "5279130",
       "5281370"
     ],
-    "remainingStatReviewIds": [
-      "3064440",
-      "3135046",
-      "3936099",
-      "4065673",
-      "4065731",
-      "4066211",
-      "4066262",
-      "4066399",
-      "4277961",
-      "4395724",
-      "4396909",
-      "4397204",
-      "4431767",
-      "4432170",
-      "4432907",
-      "4433249",
-      "4433607",
-      "4592714",
-      "4698719",
-      "4701233",
-      "4702134",
-      "4703115",
-      "4712862",
-      "5061589",
-      "5105555",
-      "5144126",
-      "5170947",
-      "5211983",
-      "5239590",
-      "5279129"
-    ],
+    "remainingStatReviewIds": [],
     "remainingVisualIdentityIds": [
       "3195",
       "3213",
