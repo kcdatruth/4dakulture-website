@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """4DK verified NBA averages: published rankings are the authoritative roster."""
 import argparse, datetime, io, json, pathlib, re, sys, unicodedata
+from decimal import Decimal, ROUND_HALF_UP
 import pandas as pd
 import requests
 from espn_live_fallback import append_recent_missing_games
@@ -28,6 +29,33 @@ def warn_if_unchanged(checked_utc):
     print(f'4DK UPSTREAM FRESHNESS: last published update {checked_utc}; age {age_hours:.1f} hours')
     if age_hours >= 12:
         print(f'::warning title=4DK NBA stats source has not advanced::No new player-game records detected for {age_hours:.1f} hours. Workflow succeeded but stats did NOT refresh. Check upstream SportsDataverse/ESPN feed; existing verified averages preserved.')
+
+def official_league_rows(frame):
+    """Apply verified final NBA corrections to the matching ESPN player-game rows."""
+    # November 16, 2026, Golden State at New Orleans
+    # https://www.nba.com/game/gsw-vs-nop-0022600251/box-score
+    # October 23, 2026, New York at Boston
+    # https://www.nba.com/game/nyk-vs-bos-0022600008/box-score
+    if 'athlete_id' not in frame.columns:
+        return frame
+    games = pd.to_numeric(frame['game_id'], errors='coerce')
+    athletes = pd.to_numeric(frame['athlete_id'], errors='coerce')
+    league_rows = frame.copy()
+    for athlete, field, old, corrected in (
+        (4703115, 'rebounds', 4, 3),
+        (4712862, 'assists', 1, 0),
+        (5170947, 'assists', 0, 1),
+    ):
+        row = (games == 401910000) & (athletes == athlete) & (league_rows[field] == old)
+        league_rows.loc[row, field] = corrected
+    did_not_play = (games == 401909095) & (athletes == 5211983)
+    return league_rows.loc[~did_not_play]
+
+
+def official_average(total, games):
+    """NBA displays positive decimal midpoints rounded up at one decimal."""
+    return float((Decimal(int(total)) / Decimal(games)).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP))
+
 
 def main(publish):
     previous = json.loads(PATH.read_text())
@@ -103,7 +131,7 @@ def main(publish):
     league_path = ROOT / 'data/4dk-nba-league-stats-2026-27.json'
     league_players = {}
     identity_column = next((c for c in ('athlete_id','athlete_uid','athleteId') if c in df.columns), None)
-    for player_key, rows in df.groupby('key', sort=True):
+    for player_key, rows in official_league_rows(df).groupby('key', sort=True):
         names_in_group = sorted(set(str(v).strip() for v in rows['athlete_display_name'] if str(v).strip()))
         if not player_key or not names_in_group:
             continue
@@ -123,7 +151,7 @@ def main(publish):
             if (rows[made] > rows[attempted]).any():
                 fail('Leaguewide made exceeds attempted for '+names_in_group[0])
         totals = rows[FIELDS].sum()
-        def average(field): return round(float(totals[field])/gp, 1)
+        def average(field): return official_average(totals[field], gp)
         def percentage(made, attempted):
             return round(float(totals[made])*100/float(totals[attempted]),1) if totals[attempted] else None
         name = names_in_group[0]
