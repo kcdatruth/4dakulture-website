@@ -1,7 +1,7 @@
 {
   "league": "NFL",
   "season": "2026",
-  "updated_utc": "2026-11-17 17:44 UTC",
+  "updated_utc": "2026-11-20 17:05 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/football/nfl/standings",
   "status": "verified",
   "teams": [
@@ -215,6 +215,17 @@
       "group": "overall"
     },
     {
+      "id": "34",
+      "name": "Houston Texans",
+      "abbreviation": "HOU",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0,
+      "pct": 0.4,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+      "group": "overall"
+    },
+    {
       "id": "13",
       "name": "Las Vegas Raiders",
       "abbreviation": "LV",
@@ -234,17 +245,6 @@
       "ties": 1,
       "pct": 0.389,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
-      "group": "overall"
-    },
-    {
-      "id": "34",
-      "name": "Houston Texans",
-      "abbreviation": "HOU",
-      "wins": 3,
-      "losses": 6,
-      "ties": 0,
-      "pct": 0.333,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
       "group": "overall"
     },
     {
@@ -296,9 +296,9 @@
       "name": "Indianapolis Colts",
       "abbreviation": "IND",
       "wins": 3,
-      "losses": 7,
+      "losses": 8,
       "ties": 0,
-      "pct": 0.3,
+      "pct": 0.273,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
       "group": "overall"
     },
