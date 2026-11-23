@@ -8,7 +8,7 @@ const page = 'staging/phase1-homepage-concept.html';
 const errors = [];
 const warn = [];
 const html = readFileSync(resolve(root,page),'utf8');
-const links = [...html.matchAll(/\bhref=["']([^"'#]+)(?:#[^"']*)?["']/g)].map(m=>m[1]);
+const links = [...html.matchAll(/<a\b[^>]*\bhref=["']([^"'#]+)(?:#[^"']*)?["']/gi)].map(m=>m[1]);
 const local = [...new Set(links.filter(s=>!s.startsWith('https:')&&!s.startsWith('http:')&&!s.startsWith('mailto:')))];
 for(const link of local){
  const target=resolve(root,dirname(page),decodeURIComponent(link.split('?')[0]));
