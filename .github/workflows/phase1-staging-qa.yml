@@ -36,8 +36,8 @@ jobs:
           test -s staging/qa-previews/integration-mobile-390.png
           test -s staging/qa-previews/integration-desktop-1440.png
           # Taller captures expose lower editorial sections, including the new music-led rail.
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-long.png --window-size=390,2400 file://"$PWD"/.phase1-integration-preview.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-long.png --window-size=1440,2400 file://"$PWD"/.phase1-integration-preview.html
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-long.png --window-size=390,6500 file://"$PWD"/.phase1-integration-preview.html
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-long.png --window-size=1440,6500 file://"$PWD"/.phase1-integration-preview.html
           test -s staging/qa-previews/integration-mobile-long.png
           test -s staging/qa-previews/integration-desktop-long.png
           rm .phase1-integration-preview.html
