@@ -30,10 +30,12 @@ jobs:
           chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/desktop-1440.png --window-size=1440,1000 file://"$PWD"/staging/phase1-homepage-concept.html
           test -s staging/qa-previews/mobile-390.png
           test -s staging/qa-previews/desktop-1440.png
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-390.png --window-size=390,844 file://"$PWD"/staging/phase1-production-integration-candidate.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-1440.png --window-size=1440,1000 file://"$PWD"/staging/phase1-production-integration-candidate.html
+          cp staging/phase1-production-integration-candidate.html .phase1-integration-preview.html
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-390.png --window-size=390,844 file://"$PWD"/.phase1-integration-preview.html
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-1440.png --window-size=1440,1000 file://"$PWD"/.phase1-integration-preview.html
           test -s staging/qa-previews/integration-mobile-390.png
           test -s staging/qa-previews/integration-desktop-1440.png
+          rm .phase1-integration-preview.html
       - name: Upload visual review screenshots
         uses: actions/upload-artifact@v4
         with:
