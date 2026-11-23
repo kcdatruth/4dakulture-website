@@ -2,7 +2,7 @@
   "version": 1,
   "season": 2026,
   "current_week": 11,
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "articles": [
     {
       "type": "TNF",
@@ -11,6 +11,13 @@
       "title": "Houston Makes a Statement — Texans 26, Colts 3",
       "url": "nfl-thursday-recap-week11-2026.html",
       "summary": "Stroud throws three scores, Anderson delivers a safety and Montgomery powers Houston's 26–3 Thursday night win."
+    },
+    {
+      "type": "SUNDAY",
+      "week": 11,
+      "date": "2026-11-22",
+      "title": "What We Learned Sunday | NFL Week 11 Deluxe",
+      "url": "nfl-sunday-recap-week11-2026.html"
     },
     {
       "type": "RANKINGS",
