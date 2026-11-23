@@ -19,3 +19,16 @@ jobs:
           node-version: '22'
       - name: Validate staging homepage links and latest Nightcap
         run: node scripts/qa_phase1_homepage.mjs
+      - name: Capture mobile and desktop homepage previews
+        run: |
+          mkdir -p staging/qa-previews
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/mobile-390.png --window-size=390,844 file://"$PWD"/staging/phase1-homepage-concept.html
+          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/desktop-1440.png --window-size=1440,1000 file://"$PWD"/staging/phase1-homepage-concept.html
+          test -s staging/qa-previews/mobile-390.png
+          test -s staging/qa-previews/desktop-1440.png
+      - name: Upload visual review screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase1-homepage-previews
+          path: staging/qa-previews/*.png
+          if-no-files-found: error
