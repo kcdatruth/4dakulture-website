@@ -40,3 +40,20 @@ Branch: 4dk-master-upgrade-phase1-2026-11-22
 
 ## Current status
 Verified sampled inventory only. No live homepage or data feed files modified. No content removed.
+
+
+## Editorial image inventory — GitHub Actions run #7 (2026-11-23)
+
+The staging workflow enumerated **504 image files**: 323 .jpg, 59 .jpeg, 60 .png, and 62 .webp. This is an existence-only inventory and includes staging screenshot assets; it does **not** establish image ownership, licensing, accessibility, or editorial suitability.
+
+Candidate existing asset groups for manual review:
+- NBA Nightcaps: `assets/nightcaps/2026-11-19/`, `assets/nightcaps/2026-11-18/`, earlier dated Nightcap folders, and `4dk-nba-2026-opening-five-cover.webp`.
+- NFL: `assets/images/nfl/week11-tnf-cj-stroud.webp`, `assets/images/nfl/week11-tnf-texans-defense.webp`, and existing week-specific assets.
+- Music: `4dk-album-files-vol3-collection.png`, `album-files-volume-iv-cover.jpg`, `4dk-album-files-volume-one-cover.png`.
+- Film Room: `assets/film-room/knicks-2026/`, `assets/film-room/dallas-2026/`, and `assets/film-room/portland-2026/`.
+
+**Rights gate:** do not add a photographic image or album artwork to the new homepage solely because it exists in the repository. Confirm ownership, permission, or a defensible licensing basis, and attribution requirements, before any new placement. Reuse of already-published images also requires this review. Prefer original 4DK-designed typographic treatments until cleared.
+
+**Freshness gate:** the observed `nightcap-latest.json` still references November 21 at the time of this audit; confirm the latest published Nightcap before deployment. Avoid presenting stale static NFL or NBA labels as current.
+
+**Preservation:** this inventory is advisory and staging-only. No image assets or existing articles were changed.
