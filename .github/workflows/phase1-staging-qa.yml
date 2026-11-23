@@ -32,3 +32,28 @@ jobs:
           name: phase1-homepage-previews
           path: staging/qa-previews/*.png
           if-no-files-found: error
+      - name: Inventory existing editorial images without modifying assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from collections import Counter
+          root=Path('.')
+          extensions={'.jpg','.jpeg','.png','.webp','.avif','.gif'}
+          images=sorted(str(p) for p in root.rglob('*') if p.is_file() and p.suffix.lower() in extensions and '.git' not in p.parts)
+          Path('staging/qa-previews').mkdir(parents=True,exist_ok=True)
+          out=Path('staging/qa-previews/editorial-image-inventory.txt')
+          counts=Counter(Path(p).suffix.lower() for p in images)
+          with out.open('w') as file:
+              file.write('4DK staging image inventory — existence only; rights NOT verified\\n')
+              file.write(f'Total images: {len(images)}\\n')
+              for ext,count in sorted(counts.items()): file.write(f'{ext}: {count}\\n')
+              file.write('\\nCandidate assets (paths only):\\n')
+              for p in images: file.write(p+'\\n')
+          print(f'Found {len(images)} image files; inventory saved')
+          PY
+      - name: Upload read-only image inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase1-editorial-image-inventory
+          path: staging/qa-previews/editorial-image-inventory.txt
+          if-no-files-found: error
