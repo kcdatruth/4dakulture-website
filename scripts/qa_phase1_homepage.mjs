@@ -2,7 +2,7 @@
 // 4DK staging homepage preservation/link audit. Read-only, no external packages.
 // Run from repository root: node scripts/qa_phase1_homepage.mjs
 import { readFileSync, existsSync } from 'node:fs';
-import { resolve, dirname, relative, sep } from 'node:path';
+import { resolve, dirname, sep } from 'node:path';
 const root = process.cwd();
 const page = 'staging/phase1-homepage-concept.html';
 const errors = [];
