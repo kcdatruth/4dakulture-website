@@ -1,7 +1,7 @@
 {
   "league": "NFL",
   "season": "2026",
-  "updated_utc": "2026-11-23 20:26 UTC",
+  "updated_utc": "2026-11-24 19:37 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/football/nfl/standings",
   "status": "verified",
   "teams": [
@@ -76,9 +76,9 @@
       "name": "Cincinnati Bengals",
       "abbreviation": "CIN",
       "wins": 7,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pct": 0.778,
+      "pct": 0.7,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
       "group": "overall"
     },
@@ -204,6 +204,17 @@
       "group": "overall"
     },
     {
+      "id": "28",
+      "name": "Washington Commanders",
+      "abbreviation": "WSH",
+      "wins": 4,
+      "losses": 5,
+      "ties": 1,
+      "pct": 0.45,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+      "group": "overall"
+    },
+    {
       "id": "34",
       "name": "Houston Texans",
       "abbreviation": "HOU",
@@ -212,17 +223,6 @@
       "ties": 0,
       "pct": 0.4,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
-      "group": "overall"
-    },
-    {
-      "id": "28",
-      "name": "Washington Commanders",
-      "abbreviation": "WSH",
-      "wins": 3,
-      "losses": 5,
-      "ties": 1,
-      "pct": 0.389,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
       "group": "overall"
     },
     {
