@@ -586,3 +586,12 @@ a:hover {
   color:#fff4d9;
   border-bottom-color:#e8bc72;
 }
+
+/* Restore the established 4DK logo and give the footer a stronger editorial sign-off. */
+.footer-identity {min-width:0}
+.footer-logo-link {display:inline-block;max-width:100%;line-height:0}
+.footer-logo {display:block;width:min(100%,320px);height:auto;object-fit:contain}
+.footer-identity p {max-width:38ch;line-height:1.6}
+.footer-signoff {color:var(--gold);font:800 .76rem/1.4 system-ui,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.footer-logo-link:focus-visible {outline:3px solid var(--gold);outline-offset:5px}
+@media(max-width:640px){.footer-logo{width:min(78vw,280px)}.footer-identity p{margin:12px 0}}

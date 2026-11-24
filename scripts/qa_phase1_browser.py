@@ -37,6 +37,9 @@ with sync_playwright() as pw:
         expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_contain_text('Jayden Daniels')
         assert page.locator('[data-nfl-list] .nfl-feature-summary').count() == 1
         expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
+        expect(page.locator('footer .footer-logo')).to_have_attribute('src','4dk-footer-logo.png')
+        assert page.locator('footer .footer-logo').evaluate('(img) => img.complete && img.naturalWidth > 0')
+        expect(page.locator('footer .footer-signoff')).to_contain_text('OUR PERSPECTIVE')
         assert page.locator('main').count() == page.locator('h1').count() == 1
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         page.keyboard.press('Tab')
