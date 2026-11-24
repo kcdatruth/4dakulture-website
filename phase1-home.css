@@ -556,3 +556,16 @@ a:hover {
   .rail-side {gap:10px}
   .rail-tile {padding:14px}
 }
+
+/* Feature excerpt remains visually attached to the dynamic lead NFL story. */
+.desk [data-nfl-list] .nfl-feature-summary {
+  margin:-12px 0 14px;
+  padding:0 clamp(17px,2.5vw,26px) 22px;
+  background:#25241f;
+  color:#e3d7c2;
+  font:400 clamp(.98rem,1.45vw,1.12rem)/1.6 system-ui,Arial,sans-serif;
+  border-bottom:1px solid #66523b;
+}
+@media(max-width:640px){
+  .desk [data-nfl-list] .nfl-feature-summary{margin:-9px 0 12px;padding:0 17px 18px;font-size:.97rem;line-height:1.5}
+}
