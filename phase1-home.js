@@ -145,7 +145,13 @@ readFeed('/nfl-weekly-index.json', data => {
     updateLink(link, item);
     return link;
   });
-  document.querySelector('[data-nfl-list]').replaceChildren(...links);
+  const list = document.querySelector('[data-nfl-list]');
+  list.replaceChildren(...links);
+  const featured = articles[0];
+  const summary = document.createElement('p');
+  summary.className = 'nfl-feature-summary';
+  summary.textContent = featured.summary || '';
+  if (featured.summary) links[0].after(summary);
 });
 readFeed('/4dk-culture-headlines.json', data => {
   for (const category of ['music','tv']) {
