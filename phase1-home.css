@@ -569,3 +569,20 @@ a:hover {
 @media(max-width:640px){
   .desk [data-nfl-list] .nfl-feature-summary{margin:-9px 0 12px;padding:0 17px 18px;font-size:.97rem;line-height:1.5}
 }
+
+/* A compact editorial call-to-action inside the featured recap. */
+.desk [data-nfl-list] .nfl-feature-summary .nfl-feature-cta {
+  display:table;
+  margin-top:18px;
+  padding:9px 0 3px;
+  color:#e8bc72;
+  font:800 .75rem/1.4 system-ui,Arial,sans-serif;
+  letter-spacing:.095em;
+  text-decoration:none;
+  border-bottom:2px solid #b94137;
+}
+.desk [data-nfl-list] .nfl-feature-summary .nfl-feature-cta:hover,
+.desk [data-nfl-list] .nfl-feature-summary .nfl-feature-cta:focus-visible {
+  color:#fff4d9;
+  border-bottom-color:#e8bc72;
+}

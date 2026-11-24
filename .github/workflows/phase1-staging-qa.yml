@@ -35,7 +35,7 @@ jobs:
           git show "${BASE_SHA}:homepage-classic.html" | cmp - homepage-classic.html
           git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json
           git show "${BASE_SHA}:nfl-weekly-index.json" | jq -S '.articles |= sort_by(.url)' > "$RUNNER_TEMP/base-nfl.json"
-          jq -S '(.articles[] | select(.url == "nfl-mnf-bengals-commanders-week11-2026.html")) |= del(.summary) | .articles |= sort_by(.url)' nfl-weekly-index.json | cmp - "$RUNNER_TEMP/base-nfl.json"
+          jq -S '.articles |= sort_by(.url)' nfl-weekly-index.json | cmp - "$RUNNER_TEMP/base-nfl.json"
       - name: Install browser checks
         run: |
           python -m pip install playwright==1.56.0
