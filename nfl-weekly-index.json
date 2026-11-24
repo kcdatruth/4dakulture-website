@@ -2,7 +2,7 @@
   "version": 1,
   "season": 2026,
   "current_week": 11,
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "articles": [
     {
       "type": "TNF",
@@ -18,6 +18,13 @@
       "date": "2026-11-22",
       "title": "What We Learned Sunday | NFL Week 11 Deluxe",
       "url": "nfl-sunday-recap-week11-2026.html"
+    },
+    {
+      "type": "MNF",
+      "week": 11,
+      "date": "2026-11-23",
+      "title": "Commanders 22, Bengals 20",
+      "url": "nfl-mnf-bengals-commanders-week11-2026.html"
     },
     {
       "type": "RANKINGS",
