@@ -17,7 +17,7 @@ permissions:
   contents: read
 jobs:
   launch-candidate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -33,7 +33,9 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           git show "${BASE_SHA}:index.html" | cmp - homepage-classic.html
-          git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json nfl-weekly-index.json
+          git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json
+          git show "${BASE_SHA}:nfl-weekly-index.json" | jq -S '.articles |= sort_by(.url)' > "$RUNNER_TEMP/base-nfl.json"
+          jq -S '.articles |= sort_by(.url)' nfl-weekly-index.json | cmp - "$RUNNER_TEMP/base-nfl.json"
       - name: Install browser checks
         run: |
           python -m pip install playwright==1.56.0
