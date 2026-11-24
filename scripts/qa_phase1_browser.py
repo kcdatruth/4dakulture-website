@@ -35,7 +35,9 @@ with sync_playwright() as pw:
         page.reload(wait_until='domcontentloaded')
         expect(page.locator('#night-title')).to_have_text(latest['headline'])
         expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_contain_text('Jayden Daniels')
+    expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
         assert page.locator('[data-nfl-list] .nfl-feature-summary').count() == 1
+        expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
         assert page.locator('main').count() == page.locator('h1').count() == 1
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         page.keyboard.press('Tab')
@@ -76,7 +78,8 @@ with sync_playwright() as pw:
     expect(page.locator('#night-title')).to_have_text('Updated Nightcap')
     expect(page.locator('[data-nightcap-previous]')).to_have_attribute('href',latest['url'])
     expect(page.locator('[data-headline-nfl]')).to_contain_text('New football edition')
-    expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_have_text('A fresh 4DK football analysis for the next edition.')
+    expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_contain_text('A fresh 4DK football analysis for the next edition.')
+    expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl.html')
     expect(page.locator('[data-music]')).to_have_text('New Album File')
     page.route('**/*.json',lambda r:r.abort())
     page.reload(wait_until='domcontentloaded')
