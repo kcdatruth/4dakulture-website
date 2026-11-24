@@ -35,7 +35,6 @@ with sync_playwright() as pw:
         page.reload(wait_until='domcontentloaded')
         expect(page.locator('#night-title')).to_have_text(latest['headline'])
         expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_contain_text('Jayden Daniels')
-    expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
         assert page.locator('[data-nfl-list] .nfl-feature-summary').count() == 1
         expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
         assert page.locator('main').count() == page.locator('h1').count() == 1
@@ -86,6 +85,7 @@ with sync_playwright() as pw:
     expect(page.locator('[data-nightcap-link]')).to_have_attribute('href',latest['url'])
     expect(page.locator('[data-nfl-list] a').first).to_be_visible()
     expect(page.locator('[data-nfl-list] .nfl-feature-summary')).to_contain_text('Jayden Daniels')
+    expect(page.locator('.nfl-feature-cta')).to_have_attribute('href','nfl-mnf-bengals-commanders-week11-2026.html')
     installed = browser.new_context(viewport={'width':390,'height':844})
     installed.add_init_script("Object.defineProperty(navigator, 'standalone', {value:true})")
     app = installed.new_page()
