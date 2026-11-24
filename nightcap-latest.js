@@ -21,6 +21,12 @@
     setText('[data-nightcap-headline]',d.headline);
     setText('[data-nightcap-summary]',d.summary);
     setHref('[data-nightcap-link]',d.url);
+    const ticker=document.querySelector('[data-headline-nba]');
+    if(ticker && typeof d.headline==='string'){
+      ticker.href=d.url;
+      ticker.textContent='NBA · '+d.headline;
+    }
+    if(d.archiveUrl==='nba-nightcap-archive.html')setHref('[data-nightcap-archive]',d.archiveUrl);
     const previous=root.querySelector('[data-nightcap-previous]');
     if(previous){
       previous.href=d.previousUrl;

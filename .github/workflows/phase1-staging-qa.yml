@@ -1,0 +1,51 @@
+name: 4DK Phase 1 Staging QA
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'phase1-home.*'
+      - 'scripts/qa_phase1*'
+      - 'staging/phase1-*.html'
+      - 'nightcap-latest.*'
+      - 'nfl-weekly-index.json'
+      - '4dk-culture-headlines.json'
+      - 'service-worker.js'
+      - 'pwa-install.js'
+      - '.github/workflows/phase1-staging-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  launch-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check local links, feeds and homepage modules
+        run: |
+          node scripts/qa_phase1_homepage.mjs
+          node scripts/qa_phase1_integration.mjs
+      - name: Compare archived homepage and protected files to PR base
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git show "${BASE_SHA}:index.html" | cmp - homepage-classic.html
+          git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json
+          git show "${BASE_SHA}:nfl-weekly-index.json" | jq -S '.articles |= sort_by(.url)' > "$RUNNER_TEMP/base-nfl.json"
+          jq -S '.articles |= sort_by(.url)' nfl-weekly-index.json | cmp - "$RUNNER_TEMP/base-nfl.json"
+      - name: Install browser checks
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+          npm install --prefix "$RUNNER_TEMP/4dk-qa" axe-core@4.10.3
+      - name: Test mobile, tablet and desktop
+        run: AXE_PATH="$RUNNER_TEMP/4dk-qa/node_modules/axe-core/axe.min.js" python scripts/qa_phase1_browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase1-full-page-previews
+          path: staging/qa-previews/*.png
+          if-no-files-found: warn
