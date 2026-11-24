@@ -600,3 +600,14 @@ a:hover {
 .footer-logo {width:160px;max-width:100%;height:auto}
 .footer-logo-link {margin-bottom:4px}
 @media(max-width:640px){.footer-logo{width:120px;max-width:100%}.footer-identity p{margin:10px 0}}
+
+/* Phase 2: bring classic 4DK visual energy into the cleaner editorial rail. */
+.rail-editorial-intro{max-width:66ch;margin:0 0 22px;color:#534a40;font:1.05rem/1.55 Georgia,serif}
+.rail-editorial-intro strong{color:#982e22;font-weight:700}
+.rail-tile-screen{overflow:hidden}
+.rail-screen-art{display:block;overflow:hidden;margin:calc(-1 * clamp(20px,3vw,34px)) calc(-1 * clamp(20px,3vw,34px)) 14px;aspect-ratio:16/9;background:#191714}
+.rail-screen-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .25s ease}
+.rail-screen-art:hover img{transform:scale(1.035)}
+.rail-screen-art:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+@media(max-width:640px){.rail-editorial-intro{font-size:.96rem;margin-bottom:15px}.rail-screen-art{margin:-14px -14px 12px}}
+@media(prefers-reduced-motion:reduce){.rail-screen-art img{transition:none}.rail-screen-art:hover img{transform:none}}
