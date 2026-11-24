@@ -2,73 +2,48 @@ name: 4DK Phase 1 Staging QA
 on:
   pull_request:
     paths:
-      - 'staging/phase1-homepage-concept.html'
-      - 'scripts/qa_phase1_homepage.mjs'
-      - 'scripts/qa_phase1_integration.mjs'
-      - 'staging/phase1-production-integration-candidate.html'
-      - 'nightcap-latest.json'
+      - 'index.html'
+      - 'phase1-home.*'
+      - 'scripts/qa_phase1*'
+      - 'staging/phase1-*.html'
+      - 'nightcap-latest.*'
+      - 'nfl-weekly-index.json'
+      - '4dk-culture-headlines.json'
+      - 'service-worker.js'
+      - 'pwa-install.js'
       - '.github/workflows/phase1-staging-qa.yml'
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
-  preservation-links:
+  launch-candidate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - name: Validate staging homepage links and latest Nightcap
-        run: node scripts/qa_phase1_homepage.mjs
-      - name: Verify production integration candidate preserves key modules
-        run: node scripts/qa_phase1_integration.mjs
-      - name: Capture mobile and desktop homepage previews
+          fetch-depth: 0
+      - name: Check local links, feeds and homepage modules
         run: |
-          mkdir -p staging/qa-previews
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/mobile-390.png --window-size=390,844 file://"$PWD"/staging/phase1-homepage-concept.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/desktop-1440.png --window-size=1440,1000 file://"$PWD"/staging/phase1-homepage-concept.html
-          test -s staging/qa-previews/mobile-390.png
-          test -s staging/qa-previews/desktop-1440.png
-          cp staging/phase1-production-integration-candidate.html .phase1-integration-preview.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-390.png --window-size=390,844 file://"$PWD"/.phase1-integration-preview.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-1440.png --window-size=1440,1000 file://"$PWD"/.phase1-integration-preview.html
-          test -s staging/qa-previews/integration-mobile-390.png
-          test -s staging/qa-previews/integration-desktop-1440.png
-          # Taller captures expose lower editorial sections, including the new music-led rail.
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-mobile-long.png --window-size=390,6500 file://"$PWD"/.phase1-integration-preview.html
-          chromium --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot=staging/qa-previews/integration-desktop-long.png --window-size=1440,6500 file://"$PWD"/.phase1-integration-preview.html
-          test -s staging/qa-previews/integration-mobile-long.png
-          test -s staging/qa-previews/integration-desktop-long.png
-          rm .phase1-integration-preview.html
-      - name: Upload visual review screenshots
-        uses: actions/upload-artifact@v4
+          node scripts/qa_phase1_homepage.mjs
+          node scripts/qa_phase1_integration.mjs
+      - name: Compare archived homepage and protected files to PR base
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git show "${BASE_SHA}:index.html" | cmp - homepage-classic.html
+          git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json nfl-weekly-index.json
+      - name: Install browser checks
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+          npm install --prefix "$RUNNER_TEMP/4dk-qa" axe-core@4.10.3
+      - name: Test mobile, tablet and desktop
+        run: AXE_PATH="$RUNNER_TEMP/4dk-qa/node_modules/axe-core/axe.min.js" python scripts/qa_phase1_browser.py
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: phase1-homepage-previews
+          name: phase1-full-page-previews
           path: staging/qa-previews/*.png
-          if-no-files-found: error
-      - name: Inventory existing editorial images without modifying assets
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          from collections import Counter
-          root=Path('.')
-          extensions={'.jpg','.jpeg','.png','.webp','.avif','.gif'}
-          images=sorted(str(p) for p in root.rglob('*') if p.is_file() and p.suffix.lower() in extensions and '.git' not in p.parts)
-          Path('staging/qa-previews').mkdir(parents=True,exist_ok=True)
-          out=Path('staging/qa-previews/editorial-image-inventory.txt')
-          counts=Counter(Path(p).suffix.lower() for p in images)
-          with out.open('w') as file:
-              file.write('4DK staging image inventory — existence only; rights NOT verified\\n')
-              file.write(f'Total images: {len(images)}\\n')
-              for ext,count in sorted(counts.items()): file.write(f'{ext}: {count}\\n')
-              file.write('\\nCandidate assets (paths only):\\n')
-              for p in images: file.write(p+'\\n')
-          print(f'Found {len(images)} image files; inventory saved')
-          PY
-      - name: Upload read-only image inventory
-        uses: actions/upload-artifact@v4
-        with:
-          name: phase1-editorial-image-inventory
-          path: staging/qa-previews/editorial-image-inventory.txt
-          if-no-files-found: error
+          if-no-files-found: warn

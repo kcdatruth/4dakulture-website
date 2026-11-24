@@ -27,10 +27,10 @@ for (const field of ['previousUrl','archiveUrl']) {
 }
 if(!html.includes('href="../nba-nightcap-archive.html"')) errors.push('Nightcap archive link missing from staging homepage');
 if(!html.includes('name="viewport"')) errors.push('Mobile viewport metadata missing');
-const ids=[...html.matchAll(/\\bid=["']([^"']+)["']/g)].map(m=>m[1]);
+const ids=[...html.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1]);
 const duplicateIds=[...new Set(ids.filter((id,i)=>ids.indexOf(id)!==i))];
 if(duplicateIds.length) errors.push('Duplicate HTML IDs: '+duplicateIds.join(', '));
-for(const tag of html.match(/<img\\b[^>]*>/gi)||[]) if(!/\\balt=["'][^"']*["']/i.test(tag)) errors.push('Image missing alt attribute: '+tag.slice(0,100));
+for(const tag of html.match(/<img\b[^>]*>/gi)||[]) if(!/\balt=["'][^"']*["']/i.test(tag)) errors.push('Image missing alt attribute: '+tag.slice(0,100));
 if(!html.includes('data-feed-headline')||!html.includes('data-feed-link')) errors.push('Missing dynamic Nightcap placeholders');
 if(!html.includes('noindex,nofollow')) warn.push('Staging page lacks noindex directive');
 if(!html.includes('STAGING CONCEPT ONLY')) warn.push('Staging-only notice missing');

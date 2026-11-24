@@ -1,7 +1,7 @@
 {
   "league": "NFL",
   "season": "2026",
-  "updated_utc": "2026-11-22 22:41 UTC",
+  "updated_utc": "2026-11-23 20:26 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/football/nfl/standings",
   "status": "verified",
   "teams": [
@@ -20,10 +20,10 @@
       "id": "25",
       "name": "San Francisco 49ers",
       "abbreviation": "SF",
-      "wins": 8,
+      "wins": 9,
       "losses": 1,
       "ties": 0,
-      "pct": 0.889,
+      "pct": 0.9,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
       "group": "overall"
     },
@@ -36,6 +36,17 @@
       "ties": 0,
       "pct": 0.8,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+      "group": "overall"
+    },
+    {
+      "id": "7",
+      "name": "Denver Broncos",
+      "abbreviation": "DEN",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0,
+      "pct": 0.8,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
       "group": "overall"
     },
     {
@@ -72,24 +83,13 @@
       "group": "overall"
     },
     {
-      "id": "7",
-      "name": "Denver Broncos",
-      "abbreviation": "DEN",
-      "wins": 7,
-      "losses": 2,
-      "ties": 0,
-      "pct": 0.778,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
-      "group": "overall"
-    },
-    {
       "id": "30",
       "name": "Jacksonville Jaguars",
       "abbreviation": "JAX",
       "wins": 7,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pct": 0.778,
+      "pct": 0.7,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
       "group": "overall"
     },
@@ -98,9 +98,9 @@
       "name": "Minnesota Vikings",
       "abbreviation": "MIN",
       "wins": 7,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
-      "pct": 0.778,
+      "pct": 0.7,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
       "group": "overall"
     },
@@ -108,10 +108,10 @@
       "id": "19",
       "name": "New York Giants",
       "abbreviation": "NYG",
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
       "ties": 1,
-      "pct": 0.611,
+      "pct": 0.65,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
       "group": "overall"
     },
@@ -215,17 +215,6 @@
       "group": "overall"
     },
     {
-      "id": "13",
-      "name": "Las Vegas Raiders",
-      "abbreviation": "LV",
-      "wins": 4,
-      "losses": 6,
-      "ties": 0,
-      "pct": 0.4,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
-      "group": "overall"
-    },
-    {
       "id": "28",
       "name": "Washington Commanders",
       "abbreviation": "WSH",
@@ -245,6 +234,17 @@
       "ties": 0,
       "pct": 0.364,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+      "group": "overall"
+    },
+    {
+      "id": "13",
+      "name": "Las Vegas Raiders",
+      "abbreviation": "LV",
+      "wins": 4,
+      "losses": 7,
+      "ties": 0,
+      "pct": 0.364,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
       "group": "overall"
     },
     {
@@ -317,10 +317,10 @@
       "id": "20",
       "name": "New York Jets",
       "abbreviation": "NYJ",
-      "wins": 2,
+      "wins": 3,
       "losses": 8,
       "ties": 0,
-      "pct": 0.2,
+      "pct": 0.273,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
       "group": "overall"
     },
@@ -329,9 +329,9 @@
       "name": "Los Angeles Chargers",
       "abbreviation": "LAC",
       "wins": 1,
-      "losses": 8,
+      "losses": 9,
       "ties": 0,
-      "pct": 0.111,
+      "pct": 0.1,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
       "group": "overall"
     },
