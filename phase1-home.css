@@ -595,3 +595,8 @@ a:hover {
 .footer-signoff {color:var(--gold);font:800 .76rem/1.4 system-ui,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 .footer-logo-link:focus-visible {outline:3px solid var(--gold);outline-offset:5px}
 @media(max-width:640px){.footer-logo{width:min(78vw,280px)}.footer-identity p{margin:12px 0}}
+
+/* Keep the official footer mark as a signature, not a full-width hero. */
+.footer-logo {width:160px;max-width:100%;height:auto}
+.footer-logo-link {margin-bottom:4px}
+@media(max-width:640px){.footer-logo{width:120px;max-width:100%}.footer-identity p{margin:10px 0}}
