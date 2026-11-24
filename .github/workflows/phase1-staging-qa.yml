@@ -32,7 +32,7 @@ jobs:
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          git show "${BASE_SHA}:index.html" | cmp - homepage-classic.html
+          git show "${BASE_SHA}:homepage-classic.html" | cmp - homepage-classic.html
           git diff --exit-code "$BASE_SHA" HEAD -- ':(glob)**/*.html' ':(glob)*.html' ':(exclude)index.html' ':(exclude)homepage-classic.html' ':(exclude)staging/**' data nightcap-latest.json
           git show "${BASE_SHA}:nfl-weekly-index.json" | jq -S '.articles |= sort_by(.url)' > "$RUNNER_TEMP/base-nfl.json"
           jq -S '.articles |= sort_by(.url)' nfl-weekly-index.json | cmp - "$RUNNER_TEMP/base-nfl.json"
