@@ -151,7 +151,14 @@ readFeed('/nfl-weekly-index.json', data => {
   const summary = document.createElement('p');
   summary.className = 'nfl-feature-summary';
   summary.textContent = featured.summary || '';
-  if (featured.summary) links[0].after(summary);
+  if (featured.summary) {
+    const readMore = document.createElement('a');
+    readMore.className = 'nfl-feature-cta';
+    readMore.href = featured.url;
+    readMore.textContent = 'READ FULL 4DK BREAKDOWN →';
+    summary.append(readMore);
+    links[0].after(summary);
+  }
 });
 readFeed('/4dk-culture-headlines.json', data => {
   for (const category of ['music','tv']) {
