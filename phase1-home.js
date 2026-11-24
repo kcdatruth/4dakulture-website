@@ -61,7 +61,7 @@ function renderSearchResults(){
   const q=siteSearchInput.value.trim();
   if(!q){
     siteSearchResults.hidden=true;
-    siteSearchInput.setAttribute('aria-expanded','false');
+
     return;
   }
   const hits=search4DK(q);
@@ -80,7 +80,7 @@ function renderSearchResults(){
     siteSearchResults.append(link);
   }
   siteSearchResults.hidden=false;
-  siteSearchInput.setAttribute('aria-expanded','true');
+
 }
 
 siteSearchInput?.addEventListener('input',renderSearchResults);
@@ -94,13 +94,13 @@ siteSearch?.addEventListener('submit',e=>{
 document.addEventListener('click',e=>{
   if(siteSearchResults && siteSearch && !siteSearch.contains(e.target) && !siteSearchResults.contains(e.target)){
     siteSearchResults.hidden=true;
-    siteSearchInput?.setAttribute('aria-expanded','false');
+
   }
 });
 siteSearchInput?.addEventListener('keydown',e=>{
   if(e.key==='Escape'){
     siteSearchResults.hidden=true;
-    siteSearchInput.setAttribute('aria-expanded','false');
+
     siteSearchInput.blur();
   }
 });

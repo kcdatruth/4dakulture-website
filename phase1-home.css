@@ -497,3 +497,7 @@ a:hover {
     overflow-x:auto;
   }
 }
+
+.score-ticker:focus-within .score-ticker-track {
+  animation-play-state: paused;
+}
