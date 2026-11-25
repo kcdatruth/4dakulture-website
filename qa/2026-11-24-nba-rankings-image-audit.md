@@ -23,3 +23,14 @@ Status: STAGING ONLY. Do not merge/publish until unresolved identities and right
 6. Verify image loading and mobile rendering after any replacements.
 
 This is a factual QA log, not a claim that all image checks or publication have been completed.
+
+
+## Follow-up image-reference and repository audit — November 24, 2026
+
+- All 50 ranking cards contain a featured image reference: Power 30 (30), MVP Watch (10), Rookie Watch (10).
+- All 31 distinct locally hosted image files referenced by featured cards were fetched successfully from the staging branch (30 original Power 30 JPEGs and one Towns WEBP).
+- Five distinct NBA-hosted player headshot URLs remain external dependencies: `https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png`; `https://cdn.nba.com/headshots/nba/latest/1040x760/1643509.png`; `https://cdn.nba.com/headshots/nba/latest/1040x760/1643530.png`; `https://cdn.nba.com/headshots/nba/latest/1040x760/1643415.png`; `https://cdn.nba.com/headshots/nba/latest/1040x760/1643414.png`.
+- Visual identity check confirmed that `4dk-power-17-warriors.jpeg` depicts Stephen Curry, **not** Yaxel Lendeborg. The original is preserved, but the Yaxel Rookie Watch card still needs a correctly identified Yaxel photo.
+- Visual identity check confirmed that `4dk-power-29-bucks.jpeg` depicts Milwaukee No. 13 driving against Golden State, **not** Giannis Antetokounmpo. The original remains preserved and the alt text has been corrected.
+- NBA.com's July 13, 2026 Terms of Use prohibit reuse or public display of its photos and other basketball content outside permitted uses without written permission. Reference: https://www.nba.com/termsofuse . The existence of NBA-hosted image URLs does **not** prove republication rights.
+- These are **repository/file-reference checks only**, not full browser loading tests or complete photographic rights clearance. Do not mark release-ready or merge until identity, rights, and mobile-browser checks are resolved.
