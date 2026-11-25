@@ -81,3 +81,10 @@ Static source inspection of `nba-weekly-boards-2026-11-24.html` on the reconcile
 The 4 Da Kulture publisher explicitly answered **yes** when asked whether they have permission or a license to republish the NBA-hosted player headshots and other featured basketball photographs on 4 Da Kulture. Record this as **publisher-attested permission**, not independently inspected license documentation. Scope, term, sublicensing conditions and attribution obligations were not supplied and have not been independently verified.
 
 Remaining technical release gates: browser image loading, responsive layout inspection, visual identity review, and final page/navigation QA. Keep the PR in draft until these are checked. Do not replace original photographs or alter any of the 50 approved editorial analyses.
+
+
+## Movement-indicator audit — November 24, 2026
+
+Verified the ranking line on every one of the 50 cards. **48 cards** have numeric current and previous positions; their movement classes and displayed movement counts agree with the arithmetic (`previous rank - current rank`). **2 cards** (MVP #10 and Rookie #10) correctly show `★ NEW` with previous position `Outside 10`, rather than an invented numeric movement. No movement corrections were required. This check does not independently validate the underlying November 17 published ranks.
+
+A separate external fetch of the production November 24 URL did not yield an accessible page in the available web tool, so live browser and image-load QA remain **unverified**. Do not treat the static checks as a completed browser test.
