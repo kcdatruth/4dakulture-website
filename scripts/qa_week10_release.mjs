@@ -4,6 +4,11 @@ import http from 'node:http';
 import path from 'node:path';
 import {chromium} from 'playwright';
 const d=JSON.parse(readFileSync('data/nfl-rankings-current.json','utf8'));
+// Keep the original rollout checks for Week 10 and validate later editions against their own archive.
+if (d.edition !== '2026 Week 10') {
+  await import('./qa_nfl_current_release.mjs');
+  process.exit(0);
+}
 assert.equal(d.edition,'2026 Week 10');
 assert.equal(d.teams.length,32);assert.equal(d.mvp.length,10);assert.equal(d.rookies.length,10);
 assert.deepEqual(d,JSON.parse(readFileSync('data/nfl-rankings-2026-week10.json','utf8')));
