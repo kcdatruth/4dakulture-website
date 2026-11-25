@@ -1,0 +1,2755 @@
+{
+  "edition": "2026 Week 12 / November 24",
+  "as_of": "2026-11-24",
+  "through": "2026-11-23 MNF final",
+  "status": "published",
+  "movement_baseline": "November 17",
+  "source_notes": "Scores and cumulative player totals through the Week 11 Monday final from ESPN game books. Playoff seeds checked against NFL.com on November 24. Movement compares the dated November 17 edition.",
+  "teams": [
+    {
+      "rank": 1,
+      "name": "San Francisco 49ers",
+      "previous_rank": 2,
+      "movement": 1,
+      "record": "9-1",
+      "code": "SF",
+      "division": "NFC West",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 9,
+      "l": 1,
+      "t": 0,
+      "pct": 0.9,
+      "pf": 316,
+      "pa": 206,
+      "diff": 110,
+      "conference_rank": 1,
+      "last5": "4-1-0",
+      "last_five_results": [
+        "W6 W 23–17 vs. WAS",
+        "W7 L 20–29 at ATL",
+        "W9 W 38–17 vs. LV",
+        "W10 W 46–40 at DAL",
+        "W11 W 35–10 vs. MIN"
+      ],
+      "streak": "W3",
+      "latest_result": "W11 W 35–10 vs. MIN",
+      "analysis": [
+        "Beat Minnesota 35–10; a top-tier defense was overwhelmed in Mexico City.",
+        "A complete win against a strong opponent warrants the throne; maintaining offensive balance against more varied coverages is the next test.",
+        "San Francisco's win over Minnesota was a statement against a seven-win opponent, not merely a routine victory. Brock Purdy threw for 255 yards, and the 49ers limited the Vikings to ten points. The final margin reflects control across phases, which is the central reason we moved San Francisco ahead of Buffalo despite both teams sitting at 9–1. The test of a No. 1 team is not whether it can beat inferior opposition but whether its plan holds against credible playoff competition. San Francisco answered that question emphatically this week. Seattle is next, bringing a disciplined defense and a receiver capable of punishing even brief coverage mistakes."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Seattle Seahawks",
+        "time": "Sun Nov 29 · 4:25 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Brock Purdy",
+          "value": 2624.0
+        },
+        "rushing": {
+          "player": "Christian McCaffrey",
+          "value": 568.0
+        },
+        "receiving": {
+          "player": "George Kittle",
+          "value": 591.0
+        },
+        "sacks": {
+          "player": "Keion White",
+          "value": 3.5
+        }
+      },
+      "leaders": "Passing Brock Purdy 2,624 · Rushing Christian McCaffrey 568 · Receiving George Kittle 591 · Sacks Keion White 3.5"
+    },
+    {
+      "rank": 2,
+      "name": "Buffalo Bills",
+      "previous_rank": 1,
+      "movement": -1,
+      "record": "9-1",
+      "code": "BUF",
+      "division": "AFC East",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 9,
+      "l": 1,
+      "t": 0,
+      "pct": 0.9,
+      "pf": 313,
+      "pa": 208,
+      "diff": 105,
+      "conference_rank": 1,
+      "last5": "5-0-0",
+      "last_five_results": [
+        "W6 W 33–30 at LV",
+        "W8 W 36–10 vs. BAL",
+        "W9 W 23–6 at MIN",
+        "W10 W 31–12 at NYJ",
+        "W11 W 26–9 vs. MIA"
+      ],
+      "streak": "W6",
+      "latest_result": "W11 W 26–9 vs. MIA",
+      "analysis": [
+        "Beat Miami 26–9; defensive control keeps the Bills among the elite.",
+        "Allen's dual-threat value is unquestioned, but sustaining drives against top defenses remains important.",
+        "Josh Allen threw for 304 yards, and James Cook added 89 rushing yards. That balance is what makes the Bills difficult to defend: loading the box against Allen's mobility leaves space for the passing game, while dropping extra defenders invites Cook to stay ahead of the chains. Miami managed only nine points, giving Buffalo a victory in which the defense carried its share of the burden. We moved the Bills down one spot despite a 9–1 record because San Francisco's decisive win over Minnesota supplied a stronger statement against a quality opponent this week. The Thanksgiving meeting with Kansas City is the ideal opportunity to reclaim No. 1."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Kansas City Chiefs",
+        "time": "Thu Nov 26 · 8:20 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Josh Allen",
+          "value": 2527.0
+        },
+        "rushing": {
+          "player": "James Cook III",
+          "value": 1060.0
+        },
+        "receiving": {
+          "player": "Khalil Shakir",
+          "value": 539.0
+        },
+        "sacks": {
+          "player": "Greg Rousseau",
+          "value": 10.0
+        }
+      },
+      "leaders": "Passing Josh Allen 2,527 · Rushing James Cook III 1,060 · Receiving Khalil Shakir 539 · Sacks Greg Rousseau 10"
+    },
+    {
+      "rank": 3,
+      "name": "Detroit Lions",
+      "previous_rank": 4,
+      "movement": 1,
+      "record": "8-2",
+      "code": "DET",
+      "division": "NFC North",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 8,
+      "l": 2,
+      "t": 0,
+      "pct": 0.8,
+      "pf": 288,
+      "pa": 220,
+      "diff": 68,
+      "conference_rank": 2,
+      "last5": "5-0-0",
+      "last_five_results": [
+        "W7 W 20–17 vs. GB",
+        "W8 W 19–15 vs. MIN",
+        "W9 W 19–9 at MIA",
+        "W10 W 35–10 vs. NE",
+        "W11 W 31–21 vs. TB"
+      ],
+      "streak": "W6",
+      "latest_result": "W11 W 31–21 vs. TB",
+      "analysis": [
+        "Beat Tampa Bay 31–21; the Goff–Gibbs attack remains a multidimensional threat.",
+        "The offense can attack with Goff's timing and Gibbs' explosiveness; the Thanksgiving clash with Chicago is a real measuring stick.",
+        "Detroit's offense did not need to rely on a single star to win. Jared Goff passed for 279 yards, while Jahmyr Gibbs ran for 98 and scored twice in the fourth quarter. Those late rushing touchdowns matter because they show how Detroit can finish with physicality after forcing a defense to respect the passing game for three quarters. Goff's touchdown connections with Amon-Ra St. Brown and Jameson Williams demonstrated two different stress points: timing and space underneath, plus the threat of vertical speed. Tampa Bay did not turn the ball over, so this was not a game the Lions simply stole through giveaways. Detroit generated four sacks of Baker Mayfield and turned sustained pressure into a ten-point victory. The 4DK question entering the Bears matchup is whether the Lions can keep their pass protection and run-game efficiency together against a defense capable of taking away the first read."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Chicago Bears",
+        "time": "Thu Nov 26 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Jared Goff",
+          "value": 2716.0
+        },
+        "rushing": {
+          "player": "Jahmyr Gibbs",
+          "value": 1098.0
+        },
+        "receiving": {
+          "player": "Amon-Ra St. Brown",
+          "value": 792.0
+        },
+        "sacks": {
+          "player": "DJ Wonnum",
+          "value": 7.0
+        }
+      },
+      "leaders": "Passing Jared Goff 2,716 · Rushing Jahmyr Gibbs 1,098 · Receiving Amon-Ra St. Brown 792 · Sacks DJ Wonnum 7"
+    },
+    {
+      "rank": 4,
+      "name": "Kansas City Chiefs",
+      "previous_rank": 5,
+      "movement": 1,
+      "record": "8-2",
+      "code": "KC",
+      "division": "AFC West",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 8,
+      "l": 2,
+      "t": 0,
+      "pct": 0.8,
+      "pf": 271,
+      "pa": 163,
+      "diff": 108,
+      "conference_rank": 5,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W7 L 3–20 at SEA",
+        "W8 L 24–28 at DEN",
+        "W9 W 35–12 vs. NYJ",
+        "W10 W 35–13 at ATL",
+        "W11 W 34–7 vs. ARI"
+      ],
+      "streak": "W3",
+      "latest_result": "W11 W 34–7 vs. ARI",
+      "analysis": [
+        "Beat Arizona 34–7; Mahomes threw for 324 yards and three touchdowns.",
+        "The next matchup with Buffalo will test how the Chiefs handle an elite offense and a quarterback who can create off-script.",
+        "Patrick Mahomes' 324 passing yards against Arizona made this more than a routine win over a struggling opponent. Kansas City established command early and gave its defense a margin that changed Arizona's play-calling. The Chiefs' 34–7 result also reinforces why their record belongs near the top of the AFC, but the quality of opponent still matters in our ballot. The real test comes in Buffalo: against the Bills, Mahomes will need to sustain that production without counting on repeated short fields or an opponent forced into obvious passing situations. Kansas City rises to fourth, one spot behind Detroit, because our ranking measures both ceiling and the total résumé rather than automatically placing a quarterback's team above everyone else."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Buffalo Bills",
+        "time": "Thu Nov 26 · 8:20 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Patrick Mahomes",
+          "value": 2709.0
+        },
+        "rushing": {
+          "player": "Kenneth Walker III",
+          "value": 872.0
+        },
+        "receiving": {
+          "player": "Travis Kelce",
+          "value": 586.0
+        },
+        "sacks": {
+          "player": "George Karlaftis",
+          "value": 8.0
+        }
+      },
+      "leaders": "Passing Patrick Mahomes 2,709 · Rushing Kenneth Walker III 872 · Receiving Travis Kelce 586 · Sacks George Karlaftis 8"
+    },
+    {
+      "rank": 5,
+      "name": "Denver Broncos",
+      "previous_rank": 8,
+      "movement": 3,
+      "record": "8-2",
+      "code": "DEN",
+      "division": "AFC West",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 8,
+      "l": 2,
+      "t": 0,
+      "pct": 0.8,
+      "pf": 236,
+      "pa": 210,
+      "diff": 26,
+      "conference_rank": 2,
+      "last5": "5-0-0",
+      "last_five_results": [
+        "W6 W 17–14 vs. SEA",
+        "W7 W 30–16 at ARI",
+        "W8 W 28–24 vs. KC",
+        "W9 W 26–21 at CAR",
+        "W11 W 38–24 vs. LV"
+      ],
+      "streak": "W6",
+      "latest_result": "W11 W 38–24 vs. LV",
+      "analysis": [
+        "Beat Las Vegas 38–24; Denver continues to combine explosive offense with an 8–2 record.",
+        "A strong record and a clear identity justify the climb; closing games against better teams will determine the ceiling.",
+        "Denver's 38 points against Las Vegas were supported by 111 rushing yards from Jonah Coleman, the game's leading rusher. The Broncos' 8–2 record is now impossible to dismiss as a short-lived surge. What matters for the next step is whether their offensive balance survives when opponents can tackle in space and prevent easy gains on early downs. The Raiders still put up 24 points, so Denver cannot confuse a comfortable final margin with a flawless defensive afternoon. Pittsburgh offers a more meaningful test of how the Broncos handle physical play and high-leverage possessions. Their rise to fifth rewards results while leaving room to evaluate how sustainable the formula really is."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Pittsburgh Steelers",
+        "time": "Fri Nov 27 · 3:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Bo Nix",
+          "value": 1955.0
+        },
+        "rushing": {
+          "player": "J.K. Dobbins",
+          "value": 324.0
+        },
+        "receiving": {
+          "player": "Jaylen Waddle",
+          "value": 398.0
+        },
+        "sacks": {
+          "player": "Malcolm Roach / Nik Bonitto / Zach Allen",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Bo Nix 1,955 · Rushing J.K. Dobbins 324 · Receiving Jaylen Waddle 398 · Sacks Malcolm Roach / Nik Bonitto / Zach Allen 5"
+    },
+    {
+      "rank": 6,
+      "name": "Chicago Bears",
+      "previous_rank": 9,
+      "movement": 3,
+      "record": "8-2",
+      "code": "CHI",
+      "division": "NFC North",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 8,
+      "l": 2,
+      "t": 0,
+      "pct": 0.8,
+      "pf": 262,
+      "pa": 197,
+      "diff": 65,
+      "conference_rank": 5,
+      "last5": "5-0-0",
+      "last_five_results": [
+        "W6 W 31–23 at ATL",
+        "W7 W 30–24 vs. NE",
+        "W8 W 34–17 at SEA",
+        "W9 W 27–24 vs. TB",
+        "W11 W 21–13 vs. NO"
+      ],
+      "streak": "W5",
+      "latest_result": "W11 W 21–13 vs. NO",
+      "analysis": [
+        "Beat New Orleans 21–13; situational execution mattered more than passing volume.",
+        "The Bears must generate more reliable passing efficiency when defenses force long third downs.",
+        "Chicago's eight wins are no longer a novelty. The Bears beat New Orleans 21–13 without needing a shootout, an important counterpoint to the idea that their rise is entirely about Caleb Williams producing highlight throws. The offense scored enough to control the game while the defense kept New Orleans to 13. That is a meaningful blueprint for winning in late November. Still, the Saints entered with a losing record, so the result reinforces Chicago's consistency rather than proving it has already overtaken the NFC's elite. Thanksgiving at Detroit is the clearest measuring stick on the schedule: a direct comparison of two 8–2 rivals and a test of whether Chicago can keep the Lions from dictating tempo."
+      ],
+      "injuries": "Roschon Johnson suffered an ankle injury against New Orleans. His Thanksgiving availability was uncertain at the November 24 cutoff.",
+      "next_game": {
+        "opponent": "at Detroit Lions",
+        "time": "Thu Nov 26 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Caleb Williams",
+          "value": 1727.0
+        },
+        "rushing": {
+          "player": "D'Andre Swift",
+          "value": 627.0
+        },
+        "receiving": {
+          "player": "Luther Burden III",
+          "value": 654.0
+        },
+        "sacks": {
+          "player": "Austin Booker / Jeffery Simmons",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Caleb Williams 1,727 · Rushing D'Andre Swift 627 · Receiving Luther Burden III 654 · Sacks Austin Booker / Jeffery Simmons 5"
+    },
+    {
+      "rank": 7,
+      "name": "Cincinnati Bengals",
+      "previous_rank": 3,
+      "movement": -4,
+      "record": "7-3",
+      "code": "CIN",
+      "division": "AFC North",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 7,
+      "l": 3,
+      "t": 0,
+      "pct": 0.7,
+      "pf": 298,
+      "pa": 215,
+      "diff": 83,
+      "conference_rank": 4,
+      "last5": "4-1-0",
+      "last_five_results": [
+        "W7 W 35–13 at BAL",
+        "W8 W 43–36 vs. TEN",
+        "W9 W 34–17 at ATL",
+        "W10 W 38–18 vs. PIT",
+        "W11 L 20–22 at WAS"
+      ],
+      "streak": "L1",
+      "latest_result": "W11 L 20–22 at WAS",
+      "analysis": [
+        "Lost 22–20 to Washington despite 300 passing yards and two touchdowns from Burrow; late defense is the question.",
+        "The individual brilliance of Burrow cannot erase a late defensive failure; finishing games is the contender standard.",
+        "Cincinnati led 20–19 with 46 seconds left after Evan McPherson hit a 56-yard field goal, yet still lost on Washington's final possession. Joe Burrow completed 28 of 40 passes for 300 yards and two touchdowns; the Bengals' passing game moved the ball even while Ja'Marr Chase and Tee Higgins were held to modest receiving totals. Tight end Mike Gesicki led Cincinnati with five catches for 77 yards. Boye Mafe's three first-half sacks showed that the defense could disrupt Washington, but that pressure did not translate into a final stop. Falling four spots is a response to the loss and the fragility of the closing sequence, not a dismissal of Burrow's MVP-level season. Cincinnati must become a team that finishes the game as well as its quarterback creates chances to win it."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. New Orleans Saints",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Joe Burrow",
+          "value": 3095.0
+        },
+        "rushing": {
+          "player": "Chase Brown",
+          "value": 447.0
+        },
+        "receiving": {
+          "player": "Ja'Marr Chase",
+          "value": 909.0
+        },
+        "sacks": {
+          "player": "Boye Mafe",
+          "value": 9.5
+        }
+      },
+      "leaders": "Passing Joe Burrow 3,095 · Rushing Chase Brown 447 · Receiving Ja'Marr Chase 909 · Sacks Boye Mafe 9.5"
+    },
+    {
+      "rank": 8,
+      "name": "Jacksonville Jaguars",
+      "previous_rank": 6,
+      "movement": -2,
+      "record": "7-3",
+      "code": "JAX",
+      "division": "AFC South",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 7,
+      "l": 3,
+      "t": 0,
+      "pct": 0.7,
+      "pf": 287,
+      "pa": 167,
+      "diff": 120,
+      "conference_rank": 3,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 L 31–34 vs. HOU",
+        "W8 W 42–7 vs. IND",
+        "W9 W 33–10 at BAL",
+        "W10 W 40–23 at TEN",
+        "W11 L 18–23 at NYG"
+      ],
+      "streak": "L1",
+      "latest_result": "W11 L 18–23 at NYG",
+      "analysis": [
+        "Lost 23–18 to the Giants; the offense failed to convert enough opportunities into points.",
+        "Lawrence's arm gives Jacksonville upside, but scoring efficiency against good defenses is the difference between top-five and top-ten status.",
+        "The Jaguars' 7–3 record still commands respect, but the 23–18 loss to New York exposed the difference between gaining yards and producing points. Trevor Lawrence threw for 301 yards, and Jacksonville's receivers had opportunities to move the chains, yet Jacksonville could not consistently finish drives against a Giants defense that affected the quarterback. The offense needs cleaner situational football when opponents create negative plays. We keep Jacksonville in the top eight because its larger body of work remains stronger than that of most teams beneath it, but this was a reminder that playoff defenses will not allow every promising possession to become a touchdown."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Tennessee Titans",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Trevor Lawrence",
+          "value": 2585.0
+        },
+        "rushing": {
+          "player": "Bhayshul Tuten",
+          "value": 642.0
+        },
+        "receiving": {
+          "player": "Parker Washington",
+          "value": 748.0
+        },
+        "sacks": {
+          "player": "Josh Hines-Allen / Travon Walker",
+          "value": 3.0
+        }
+      },
+      "leaders": "Passing Trevor Lawrence 2,585 · Rushing Bhayshul Tuten 642 · Receiving Parker Washington 748 · Sacks Josh Hines-Allen / Travon Walker 3"
+    },
+    {
+      "rank": 9,
+      "name": "Minnesota Vikings",
+      "previous_rank": 7,
+      "movement": -2,
+      "record": "7-3",
+      "code": "MIN",
+      "division": "NFC North",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 7,
+      "l": 3,
+      "t": 0,
+      "pct": 0.7,
+      "pf": 186,
+      "pa": 161,
+      "diff": 25,
+      "conference_rank": 6,
+      "last5": "2-3-0",
+      "last_five_results": [
+        "W7 W 16–10 vs. IND",
+        "W8 L 15–19 at DET",
+        "W9 L 6–23 vs. BUF",
+        "W10 W 30–10 at GB",
+        "W11 L 10–35 at SF"
+      ],
+      "streak": "L1",
+      "latest_result": "W11 L 10–35 at SF",
+      "analysis": [
+        "Lost 35–10 to San Francisco; a harsh test of how the offense responds when trailing.",
+        "A strong season still counts, but a 25-point loss to the top-ranked team demands offensive answers.",
+        "Minnesota entered the Mexico City matchup at 7–2 and left with a 25-point defeat that changes the conversation around its ceiling. The Vikings managed only ten points against San Francisco, and their defense could not stop Brock Purdy from controlling the passing game. One loss does not erase the season, especially against our new No. 1 team, but the margin matters. A contender must have a reliable adjustment when the opponent wins early downs and removes its preferred offensive rhythm. Minnesota drops two places because the performance revealed more unanswered questions than a close road loss would have. The upcoming Atlanta matchup is a chance to show that this was a bad night, not a broader offensive limitation."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Atlanta Falcons",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Kyler Murray",
+          "value": 1022.0
+        },
+        "rushing": {
+          "player": "Aaron Jones Sr.",
+          "value": 551.0
+        },
+        "receiving": {
+          "player": "Justin Jefferson",
+          "value": 553.0
+        },
+        "sacks": {
+          "player": "Andrew Van Ginkel",
+          "value": 8.5
+        }
+      },
+      "leaders": "Passing Kyler Murray 1,022 · Rushing Aaron Jones Sr. 551 · Receiving Justin Jefferson 553 · Sacks Andrew Van Ginkel 8.5"
+    },
+    {
+      "rank": 10,
+      "name": "Los Angeles Rams",
+      "previous_rank": 10,
+      "movement": 0,
+      "record": "6-4",
+      "code": "LAR",
+      "division": "NFC West",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 4,
+      "t": 0,
+      "pct": 0.6,
+      "pf": 248,
+      "pa": 187,
+      "diff": 61,
+      "conference_rank": 9,
+      "last5": "4-1-0",
+      "last_five_results": [
+        "W6 L 16–18 vs. ARI",
+        "W7 W 35–21 at LV",
+        "W8 W 24–9 vs. LAC",
+        "W9 W 20–13 at WAS",
+        "W10 W 34–6 at ARI"
+      ],
+      "streak": "W4",
+      "latest_result": "W10 W 34–6 at ARI",
+      "analysis": [
+        "Bye week; the coming Green Bay game will test Stafford's passing offense.",
+        "The bye preserves their place; they must translate passing talent into more consistent wins.",
+        "The Rams held at No. 10 through their Week 11 bye. Their 6–4 record places them within striking distance in the NFC West, but the division is led by a 9–1 San Francisco team and also includes a 6–4 Seattle squad. That context makes every remaining divisional opportunity important. Los Angeles' path is to combine a reliable passing structure with enough rushing efficiency to avoid asking its quarterback to convert every difficult down. Coming off the bye, the Wednesday matchup with Green Bay is a test of preparation as much as talent: protection calls, red-zone finishing and defensive tackling can decide a game when both teams have had extra time to study each other. The Rams are firmly in the playoff conversation, but not yet in the conference's top tier."
+      ],
+      "injuries": "The Rams ruled out linemen Steve Avila and Coleman Shelton (hamstrings) and tight end Terrance Ferguson (ankle/hamstring) for Wednesday.",
+      "next_game": {
+        "opponent": "vs. Green Bay Packers",
+        "time": "Wed Nov 25 · 8:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Matthew Stafford",
+          "value": 2623.0
+        },
+        "rushing": {
+          "player": "Kyren Williams",
+          "value": 616.0
+        },
+        "receiving": {
+          "player": "Puka Nacua",
+          "value": 715.0
+        },
+        "sacks": {
+          "player": "Byron Young",
+          "value": 5.5
+        }
+      },
+      "leaders": "Passing Matthew Stafford 2,623 · Rushing Kyren Williams 616 · Receiving Puka Nacua 715 · Sacks Byron Young 5.5"
+    },
+    {
+      "rank": 11,
+      "name": "Seattle Seahawks",
+      "previous_rank": 12,
+      "movement": 1,
+      "record": "6-4",
+      "code": "SEA",
+      "division": "NFC West",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 4,
+      "t": 0,
+      "pct": 0.6,
+      "pf": 223,
+      "pa": 175,
+      "diff": 48,
+      "conference_rank": 8,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 L 14–17 at DEN",
+        "W7 W 20–3 vs. KC",
+        "W8 L 17–34 vs. CHI",
+        "W9 W 17–3 vs. ARI",
+        "W10 W 21–13 at LV"
+      ],
+      "streak": "W2",
+      "latest_result": "W10 W 21–13 at LV",
+      "analysis": [
+        "Bye week; Jaxon Smith-Njigba remains the offense's defining weapon.",
+        "Seattle needs a second offensive answer when opponents concentrate coverage on JSN.",
+        "Seattle entered its bye at 6–4 and returns with a direct shot at San Francisco, the new No. 1 team in our Power 32. Jaxon Smith-Njigba's value is more than his receiving totals: as the focal point of the passing game, he influences coverage shells and the space available to complementary targets. The Seahawks' challenge is converting that defensive attention into consistent offense without becoming predictable. Defensively, Seattle must limit explosive plays and force Brock Purdy to hold the ball longer than he prefers. A win over the 9–1 49ers would materially strengthen Seattle's résumé; a loss would leave it chasing both San Francisco and valuable wild-card positioning. We keep the Seahawks at No. 11 until they produce that statement."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at San Francisco 49ers",
+        "time": "Sun Nov 29 · 4:25 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Sam Darnold",
+          "value": 1478.0
+        },
+        "rushing": {
+          "player": "Emanuel Wilson",
+          "value": 403.0
+        },
+        "receiving": {
+          "player": "Jaxon Smith-Njigba",
+          "value": 1207.0
+        },
+        "sacks": {
+          "player": "Byron Murphy II",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Sam Darnold 1,478 · Rushing Emanuel Wilson 403 · Receiving Jaxon Smith-Njigba 1,207 · Sacks Byron Murphy II 5"
+    },
+    {
+      "rank": 12,
+      "name": "New York Giants",
+      "previous_rank": 15,
+      "movement": 3,
+      "record": "6-3-1",
+      "code": "NYG",
+      "division": "NFC East",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 3,
+      "t": 1,
+      "pct": 0.65,
+      "pf": 226,
+      "pa": 214,
+      "diff": 12,
+      "conference_rank": 3,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 L 27–34 vs. NO",
+        "W7 W 27–21 at HOU",
+        "W9 W 19–11 at PHI",
+        "W10 L 21–24 vs. WAS",
+        "W11 W 23–18 vs. JAX"
+      ],
+      "streak": "W1",
+      "latest_result": "W11 W 23–18 vs. JAX",
+      "analysis": [
+        "Beat Jacksonville 23–18; a meaningful victory over a winning opponent.",
+        "The Giants' close win is evidence of growth; repeating it against other contenders is the challenge.",
+        "Jacksonville produced 354 net yards to New York's 238, but the Giants turned two Trevor Lawrence interceptions and three sacks into a disruptive afternoon. The contrast matters: a defense can concede movement between the twenties while denying the finishing plays that decide the scoreboard. Lawrence completed 25 of 47 passes for 301 gross passing yards, one touchdown and two interceptions. The Jaguars' passing volume was substantial; their efficiency in the red zone was not.",
+        "The Giants' Abdul Carter recorded two sacks, giving New York a way to affect Lawrence without relying on a constant stream of blitzes. That disruption changed Jacksonville's down-and-distance math. The Jaguars were only five of fifteen on third down and committed thirteen penalties for 107 yards, the kind of self-inflicted damage that converts promising drives into field-goal attempts or stalled possessions.",
+        "New York's offense was hardly flawless. J.J. McCarthy finished 18 of 38 for 173 yards and a touchdown, while the team ran for 77 yards. Yet the Giants carried a 20–6 halftime lead and protected the ball well enough to survive Jacksonville's fourth-quarter push. The winning identity was defense, timely points and an ability to close the final possession, not offensive dominance.",
+        "4DK verdict: The Giants' climb to No. 12 is earned by beating a division leader, but their offensive efficiency still limits how high we can place them. Jacksonville stays No. 8 because the season résumé matters, yet this loss exposed an urgent problem: talent and yardage do not replace red-zone execution and disciplined football. These are two teams with real playoff stakes and very different questions to answer next week."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Indianapolis Colts",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "J.J. McCarthy",
+          "value": 1088.0
+        },
+        "rushing": {
+          "player": "Cam Skattebo",
+          "value": 530.0
+        },
+        "receiving": {
+          "player": "Malik Nabers",
+          "value": 747.0
+        },
+        "sacks": {
+          "player": "Arvell Reese",
+          "value": 4.5
+        }
+      },
+      "leaders": "Passing J.J. McCarthy 1,088 · Rushing Cam Skattebo 530 · Receiving Malik Nabers 747 · Sacks Arvell Reese 4.5"
+    },
+    {
+      "rank": 13,
+      "name": "Green Bay Packers",
+      "previous_rank": 13,
+      "movement": 0,
+      "record": "6-4",
+      "code": "GB",
+      "division": "NFC North",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 4,
+      "t": 0,
+      "pct": 0.6,
+      "pf": 226,
+      "pa": 221,
+      "diff": 5,
+      "conference_rank": 7,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 W 23–13 vs. DAL",
+        "W7 L 17–20 at DET",
+        "W8 W 27–19 vs. CAR",
+        "W9 W 45–27 at NE",
+        "W10 L 10–30 vs. MIN"
+      ],
+      "streak": "L1",
+      "latest_result": "W10 L 10–30 vs. MIN",
+      "analysis": [
+        "Bye week; Jordan Love's passing attack faces the Rams next.",
+        "Love's upside remains; complementary rushing production could reduce pressure on the passing game.",
+        "Green Bay did not play in Week 11, which means the Packers' No. 13 position must be evaluated against the full body of work rather than a manufactured weekly result. At 6–4, Jordan Love's offense has enough passing talent to threaten quality opponents, but its ceiling depends on early-down efficiency and avoiding obvious passing situations. A bye offers a chance to address protection communication and the run-pass balance that keeps defenses from teeing off on Love. The immediate challenge is Wednesday's game against the Rams: Los Angeles can turn long-yardage downs into pressure opportunities, so Green Bay needs a plan that produces manageable third downs. Our verdict is cautious: the Packers remain a plausible playoff team, but their offensive consistency has not yet justified a climb."
+      ],
+      "injuries": "Josh Jacobs (finger) and Micah Parsons (knee) were among eight Packers listed as questionable on November 24.",
+      "next_game": {
+        "opponent": "at Los Angeles Rams",
+        "time": "Wed Nov 25 · 8:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Jordan Love",
+          "value": 2838.0
+        },
+        "rushing": {
+          "player": "Kaleb Johnson",
+          "value": 214.0
+        },
+        "receiving": {
+          "player": "Christian Watson",
+          "value": 916.0
+        },
+        "sacks": {
+          "player": "Lukas Van Ness",
+          "value": 6.0
+        }
+      },
+      "leaders": "Passing Jordan Love 2,838 · Rushing Kaleb Johnson 214 · Receiving Christian Watson 916 · Sacks Lukas Van Ness 6"
+    },
+    {
+      "rank": 14,
+      "name": "Cleveland Browns",
+      "previous_rank": 14,
+      "movement": 0,
+      "record": "6-4",
+      "code": "CLE",
+      "division": "AFC North",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 4,
+      "t": 0,
+      "pct": 0.6,
+      "pf": 188,
+      "pa": 220,
+      "diff": -32,
+      "conference_rank": 6,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 W 13–10 vs. BAL",
+        "W7 W 27–24 at TEN",
+        "W8 L 6–27 at PIT",
+        "W9 L 22–23 at NO",
+        "W10 W 27–24 vs. HOU"
+      ],
+      "streak": "W1",
+      "latest_result": "W10 W 27–24 vs. HOU",
+      "analysis": [
+        "Bye week; the offense must complement the defense more consistently.",
+        "The defense can carry stretches, but the offense must avoid relying on short fields.",
+        "Cleveland remained 6–4 after its bye and holds No. 14 in our rankings. The Browns have enough defensive talent to make opponents uncomfortable, but a playoff-level team also needs to translate those stops into favorable field position and efficient scoring. Myles Garrett's ability to affect the pocket is an advantage that can reshape an opposing game plan; the question is whether Cleveland's offense consistently capitalizes on the resulting opportunities. Las Vegas arrives with rookie Fernando Mendoza, creating an obvious pressure-versus-protection storyline. The Browns should be favored to control the tempo if they avoid turnovers and do not allow the Raiders' passing game to turn short possessions into quick points. This is a team with top-half potential but a narrow margin for offensive inconsistency."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Las Vegas Raiders",
+        "time": "Sun Nov 29 · 8:20 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Deshaun Watson",
+          "value": 2118.0
+        },
+        "rushing": {
+          "player": "Quinshon Judkins",
+          "value": 423.0
+        },
+        "receiving": {
+          "player": "Harold Fannin Jr.",
+          "value": 544.0
+        },
+        "sacks": {
+          "player": "Isaiah McGuire / Mason Graham",
+          "value": 4.0
+        }
+      },
+      "leaders": "Passing Deshaun Watson 2,118 · Rushing Quinshon Judkins 423 · Receiving Harold Fannin Jr. 544 · Sacks Isaiah McGuire / Mason Graham 4"
+    },
+    {
+      "rank": 15,
+      "name": "Pittsburgh Steelers",
+      "previous_rank": 11,
+      "movement": -4,
+      "record": "6-4",
+      "code": "PIT",
+      "division": "AFC North",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 6,
+      "l": 4,
+      "t": 0,
+      "pct": 0.6,
+      "pf": 214,
+      "pa": 201,
+      "diff": 13,
+      "conference_rank": 7,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 W 26–19 at TB",
+        "W7 W 16–10 at NO",
+        "W8 W 27–6 vs. CLE",
+        "W10 L 18–38 at CIN",
+        "W11 L 16–19 at PHI"
+      ],
+      "streak": "L2",
+      "latest_result": "W11 L 16–19 at PHI",
+      "analysis": [
+        "Lost 19–16 to Philadelphia; a costly failure against a lower-ranked opponent.",
+        "Pittsburgh's identity should travel against weaker opponents; losing to Philadelphia demands accountability.",
+        "Pittsburgh's 19–16 defeat to Philadelphia is damaging because the opponent entered the week with only two wins. Aaron Rodgers led the game with 227 passing yards, but the Steelers could not convert that production into enough scoring. The defense allowed just 19 points, a total that should normally give a well-rounded team a strong chance to win. That is the tension in Pittsburgh's profile: defensive competitiveness without sufficient offensive finishing. The four-place drop reflects both the loss and the narrowing margin for error in a crowded AFC North. Denver arrives next with an 8–2 record, making the response more important than the setback itself."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Denver Broncos",
+        "time": "Fri Nov 27 · 3:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Aaron Rodgers",
+          "value": 2241.0
+        },
+        "rushing": {
+          "player": "Jaylen Warren",
+          "value": 747.0
+        },
+        "receiving": {
+          "player": "DK Metcalf",
+          "value": 434.0
+        },
+        "sacks": {
+          "player": "T.J. Watt",
+          "value": 7.5
+        }
+      },
+      "leaders": "Passing Aaron Rodgers 2,241 · Rushing Jaylen Warren 747 · Receiving DK Metcalf 434 · Sacks T.J. Watt 7.5"
+    },
+    {
+      "rank": 16,
+      "name": "Dallas Cowboys",
+      "previous_rank": 17,
+      "movement": 1,
+      "record": "5-6",
+      "code": "DAL",
+      "division": "NFC East",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 5,
+      "l": 6,
+      "t": 0,
+      "pct": 0.45454545454545453,
+      "pf": 337,
+      "pa": 312,
+      "diff": 25,
+      "conference_rank": 10,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W7 W 38–21 at PHI",
+        "W8 L 30–33 vs. ARI",
+        "W9 W 27–23 at IND",
+        "W10 L 40–46 vs. SF",
+        "W11 W 51–30 vs. TEN"
+      ],
+      "streak": "W1",
+      "latest_result": "W11 W 51–30 vs. TEN",
+      "analysis": [
+        "Beat Tennessee 51–30; Prescott and his receivers displayed their scoring ceiling.",
+        "Scoring 51 is impressive, but beating a one-win team is only a first step toward a real playoff push.",
+        "Dallas produced 51 points, and Dak Prescott's 325 passing yards and CeeDee Lamb's 132 receiving yards explain much of the offensive explosion. The Cowboys showed the high-end passing-game potential that has been missing too often from their overall résumé. Still, conceding 30 points to a one-win Tennessee team should prevent anyone from treating this as a complete transformation. Dallas rises because the offensive ceiling is real; it remains in the middle of our rankings because its defense has not yet demonstrated the consistency required of a contender. Philadelphia's upset of Pittsburgh sets up a divisional game that will reveal whether Dallas can pair explosive scoring with better control."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Philadelphia Eagles",
+        "time": "Thu Nov 26 · 4:30 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Dak Prescott",
+          "value": 3049.0
+        },
+        "rushing": {
+          "player": "Javonte Williams",
+          "value": 759.0
+        },
+        "receiving": {
+          "player": "CeeDee Lamb",
+          "value": 1108.0
+        },
+        "sacks": {
+          "player": "Quinnen Williams",
+          "value": 8.0
+        }
+      },
+      "leaders": "Passing Dak Prescott 3,049 · Rushing Javonte Williams 759 · Receiving CeeDee Lamb 1,108 · Sacks Quinnen Williams 8"
+    },
+    {
+      "rank": 17,
+      "name": "New England Patriots",
+      "previous_rank": 16,
+      "movement": -1,
+      "record": "5-5",
+      "code": "NE",
+      "division": "AFC East",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 5,
+      "l": 5,
+      "t": 0,
+      "pct": 0.5,
+      "pf": 221,
+      "pa": 242,
+      "diff": -21,
+      "conference_rank": 8,
+      "last5": "2-3-0",
+      "last_five_results": [
+        "W6 W 26–19 vs. NYJ",
+        "W7 L 24–30 at CHI",
+        "W8 W 24–19 at MIA",
+        "W9 L 27–45 vs. GB",
+        "W10 L 10–35 at DET"
+      ],
+      "streak": "L2",
+      "latest_result": "W10 L 10–35 at DET",
+      "analysis": [
+        "Bye week; consistency and offensive support remain the next tests.",
+        "A bye-week slide is relative movement; the Patriots can answer it with more consistent quarterback support.",
+        "New England's 5–5 record captures a season still searching for separation from the middle of the AFC. The Week 11 bye provided a chance to reset rather than another game to judge. The Patriots need complementary football: an offense that can stay on schedule, a defense that prevents easy explosives, and special teams that protect field position. At .500, a good two-week stretch could change the playoff discussion, but the same is true in the opposite direction. The Chargers matchup is an opportunity against a one-win opponent, yet New England cannot treat that as an automatic victory. A convincing performance should feature sustained drives and defensive control, not just a narrow escape. No. 17 reflects an unresolved identity, not a closed door."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Los Angeles Chargers",
+        "time": "Sun Nov 29 · 4:05 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Drake Maye",
+          "value": 2330.0
+        },
+        "rushing": {
+          "player": "Rhamondre Stevenson",
+          "value": 403.0
+        },
+        "receiving": {
+          "player": "DeMario Douglas",
+          "value": 438.0
+        },
+        "sacks": {
+          "player": "Elijah Ponder",
+          "value": 7.5
+        }
+      },
+      "leaders": "Passing Drake Maye 2,330 · Rushing Rhamondre Stevenson 403 · Receiving DeMario Douglas 438 · Sacks Elijah Ponder 7.5"
+    },
+    {
+      "rank": 18,
+      "name": "Carolina Panthers",
+      "previous_rank": 19,
+      "movement": 1,
+      "record": "5-5",
+      "code": "CAR",
+      "division": "NFC South",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 5,
+      "l": 5,
+      "t": 0,
+      "pct": 0.5,
+      "pf": 254,
+      "pa": 269,
+      "diff": -15,
+      "conference_rank": 4,
+      "last5": "2-3-0",
+      "last_five_results": [
+        "W7 L 13–43 vs. TB",
+        "W8 L 19–27 at GB",
+        "W9 L 21–26 vs. DEN",
+        "W10 W 20–17 at NO",
+        "W11 W 35–33 vs. BAL"
+      ],
+      "streak": "W2",
+      "latest_result": "W11 W 35–33 vs. BAL",
+      "analysis": [
+        "Beat Baltimore 35–33; Chuba Hubbard's production helped Carolina survive a shootout.",
+        "Carolina now has the opportunity to create separation in a wide-open NFC South.",
+        "Carolina's two-point win over Baltimore was one of Week 11's most consequential results for the playoff picture. Chuba Hubbard led the game's rushers with 120 yards, providing a stabilizing element in a contest that otherwise invited both offenses to trade scores. The Panthers are now 5–5 and lead a struggling NFC South, which makes their trajectory more significant than the raw record suggests. Their ability to win a close game matters, but allowing 33 points also underlines how thin the margin remains. The 4DK test is whether Carolina can build a repeatable identity around its run game and situational execution rather than needing another shootout to survive."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Tampa Bay Buccaneers",
+        "time": "Mon Nov 30 · 8:15 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Bryce Young",
+          "value": 2651.0
+        },
+        "rushing": {
+          "player": "Chuba Hubbard",
+          "value": 831.0
+        },
+        "receiving": {
+          "player": "Tetairoa McMillan",
+          "value": 731.0
+        },
+        "sacks": {
+          "player": "Princely Umanmielen",
+          "value": 4.5
+        }
+      },
+      "leaders": "Passing Bryce Young 2,651 · Rushing Chuba Hubbard 831 · Receiving Tetairoa McMillan 731 · Sacks Princely Umanmielen 4.5"
+    },
+    {
+      "rank": 19,
+      "name": "Washington Commanders",
+      "previous_rank": 21,
+      "movement": 2,
+      "record": "4-5-1",
+      "code": "WAS",
+      "division": "NFC East",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 4,
+      "l": 5,
+      "t": 1,
+      "pct": 0.45,
+      "pf": 218,
+      "pa": 243,
+      "diff": -25,
+      "conference_rank": 11,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 L 17–23 at SF",
+        "W8 W 27–10 vs. PHI",
+        "W9 L 13–20 vs. LAR",
+        "W10 W 24–21 at NYG",
+        "W11 W 22–20 vs. CIN"
+      ],
+      "streak": "W2",
+      "latest_result": "W11 W 22–20 vs. CIN",
+      "analysis": [
+        "Beat Cincinnati 22–20; rookie Antonio Williams' late catches set up the winning field goal.",
+        "Daniels and Williams delivered under pressure; the next task is turning a breakthrough into a pattern.",
+        "Washington's win over Cincinnati carried more weight than the final two-point margin. Joe Burrow passed for 300 yards, yet the Commanders still found the late possessions necessary to finish the upset. Rookie Antonio Williams' 122 receiving yards were the most in the game, and his late gains helped create the winning field-goal opportunity. This is why Washington rises two spots: it beat a high-ranked opponent with its season at a crossroads. The concern is that allowing Burrow to move the ball so effectively can be costly against another efficient quarterback. The opportunity is that Washington may have found an additional explosive receiving option capable of changing its late-game playbook."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Arizona Cardinals",
+        "time": "Sun Nov 29 · 4:25 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Jayden Daniels",
+          "value": 1788.0
+        },
+        "rushing": {
+          "player": "Jayden Daniels",
+          "value": 335.0
+        },
+        "receiving": {
+          "player": "Antonio Williams",
+          "value": 448.0
+        },
+        "sacks": {
+          "player": "Odafe Oweh",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Jayden Daniels 1,788 · Rushing Jayden Daniels 335 · Receiving Antonio Williams 448 · Sacks Odafe Oweh 5"
+    },
+    {
+      "rank": 20,
+      "name": "Houston Texans",
+      "previous_rank": 20,
+      "movement": 0,
+      "record": "4-6",
+      "code": "HOU",
+      "division": "AFC South",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 4,
+      "l": 6,
+      "t": 0,
+      "pct": 0.4,
+      "pf": 259,
+      "pa": 222,
+      "diff": 37,
+      "conference_rank": 9,
+      "last5": "3-2-0",
+      "last_five_results": [
+        "W6 W 34–31 at JAX",
+        "W7 L 21–27 vs. NYG",
+        "W9 W 44–22 at LAC",
+        "W10 L 24–27 at CLE",
+        "W11 W 26–3 vs. IND"
+      ],
+      "streak": "W1",
+      "latest_result": "W11 W 26–3 vs. IND",
+      "analysis": [
+        "Beat Indianapolis 26–3; the defense dominated a division opponent.",
+        "The 26–3 win is a defensive statement; the offense still needs to prove itself against stronger competition.",
+        "Houston's Thursday-night win was built on defensive control. Indianapolis scored only three points, while David Montgomery gave the Texans 107 rushing yards and C.J. Stroud added 194 through the air. The formula matters because it reduces the pressure on Stroud to manufacture explosive plays on every possession. At 4–6, Houston still has ground to make up in the AFC South, and a single dominant performance against a struggling opponent cannot erase the season's unevenness. But this was a credible model for how the Texans can compete: stay ahead of schedule on the ground, avoid offensive desperation and force opponents to sustain long drives against their defense."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Baltimore Ravens",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "C.J. Stroud",
+          "value": 2656.0
+        },
+        "rushing": {
+          "player": "Woody Marks",
+          "value": 391.0
+        },
+        "receiving": {
+          "player": "Nico Collins",
+          "value": 536.0
+        },
+        "sacks": {
+          "player": "Will Anderson Jr.",
+          "value": 11.5
+        }
+      },
+      "leaders": "Passing C.J. Stroud 2,656 · Rushing Woody Marks 391 · Receiving Nico Collins 536 · Sacks Will Anderson Jr. 11.5"
+    },
+    {
+      "rank": 21,
+      "name": "Las Vegas Raiders",
+      "previous_rank": 18,
+      "movement": -3,
+      "record": "4-7",
+      "code": "LV",
+      "division": "AFC West",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 4,
+      "l": 7,
+      "t": 0,
+      "pct": 0.36363636363636365,
+      "pf": 275,
+      "pa": 327,
+      "diff": -52,
+      "conference_rank": 10,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W7 L 21–35 vs. LAR",
+        "W8 W 38–33 at NYJ",
+        "W9 L 17–38 at SF",
+        "W10 L 13–21 vs. SEA",
+        "W11 L 24–38 at DEN"
+      ],
+      "streak": "L3",
+      "latest_result": "W11 L 24–38 at DEN",
+      "analysis": [
+        "Lost 38–24 to Denver; defensive concessions undermined offensive flashes.",
+        "The Raiders cannot ask their offense to compensate for 38 points allowed.",
+        "The Raiders lost 38–24 in Denver despite 267 passing yards from rookie quarterback Fernando Mendoza. The offense demonstrated it could create meaningful gains, and Ashton Jeanty led the game's receivers with 90 yards, but the defense could not keep Denver from reaching 38 points. At 4–7, Las Vegas needs a more complementary identity: productive quarterback development means less if the defense forces the offense into constant catch-up mode. The three-place drop is a judgment on team performance, not a dismissal of Mendoza's potential. A matchup with Cleveland offers a useful opportunity to evaluate how the rookie handles a defense capable of affecting the pocket."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Cleveland Browns",
+        "time": "Sun Nov 29 · 8:20 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Kirk Cousins",
+          "value": 2340.0
+        },
+        "rushing": {
+          "player": "Ashton Jeanty",
+          "value": 459.0
+        },
+        "receiving": {
+          "player": "Brock Bowers",
+          "value": 676.0
+        },
+        "sacks": {
+          "player": "Maxx Crosby",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Kirk Cousins 2,340 · Rushing Ashton Jeanty 459 · Receiving Brock Bowers 676 · Sacks Maxx Crosby 5"
+    },
+    {
+      "rank": 22,
+      "name": "Tampa Bay Buccaneers",
+      "previous_rank": 22,
+      "movement": 0,
+      "record": "3-7",
+      "code": "TB",
+      "division": "NFC South",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 7,
+      "t": 0,
+      "pct": 0.3,
+      "pf": 223,
+      "pa": 209,
+      "diff": 14,
+      "conference_rank": 12,
+      "last5": "2-3-0",
+      "last_five_results": [
+        "W6 L 19–26 vs. PIT",
+        "W7 W 43–13 at CAR",
+        "W8 W 16–0 vs. ATL",
+        "W9 L 24–27 at CHI",
+        "W11 L 21–31 at DET"
+      ],
+      "streak": "L2",
+      "latest_result": "W11 L 21–31 at DET",
+      "analysis": [
+        "Lost 31–21 to Detroit; negative plays continue to undercut the skill-position talent.",
+        "The NFC South remains accessible, but execution has to improve immediately.",
+        "Tampa Bay scored 21 in Detroit but could not keep pace with the Lions' late-game rushing production. The loss dropped the Buccaneers to 3–7, an especially damaging result because Carolina leads the NFC South at just 5–5. The division is still mathematically accessible, yet that cannot disguise Tampa Bay's inability to string together complete performances. Baker Mayfield's offense needs to produce enough efficient possessions to protect the defense from repeated short turnarounds; the defense, meanwhile, must be more reliable when opponents shift from passing to closing out games on the ground. The next matchup with Carolina is effectively a divisional measuring stick. Tampa Bay's No. 22 placement reflects both the remaining opportunity and the substantial evidence that the team has not earned more."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Carolina Panthers",
+        "time": "Mon Nov 30 · 8:15 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Baker Mayfield",
+          "value": 1109.0
+        },
+        "rushing": {
+          "player": "Bucky Irving",
+          "value": 893.0
+        },
+        "receiving": {
+          "player": "Emeka Egbuka",
+          "value": 296.0
+        },
+        "sacks": {
+          "player": "David Walker",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Baker Mayfield 1,109 · Rushing Bucky Irving 893 · Receiving Emeka Egbuka 296 · Sacks David Walker 5"
+    },
+    {
+      "rank": 23,
+      "name": "New Orleans Saints",
+      "previous_rank": 23,
+      "movement": 0,
+      "record": "3-7",
+      "code": "NO",
+      "division": "NFC South",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 7,
+      "t": 0,
+      "pct": 0.3,
+      "pf": 215,
+      "pa": 257,
+      "diff": -42,
+      "conference_rank": 14,
+      "last5": "2-3-0",
+      "last_five_results": [
+        "W6 W 34–27 at NYG",
+        "W7 L 10–16 vs. PIT",
+        "W9 W 23–22 vs. CLE",
+        "W10 L 17–20 vs. CAR",
+        "W11 L 13–21 at CHI"
+      ],
+      "streak": "L2",
+      "latest_result": "W11 L 13–21 at CHI",
+      "analysis": [
+        "Lost 21–13 to Chicago; Olave produced but the offense failed to finish.",
+        "The Saints must reduce turnovers and turn receiving production into touchdowns.",
+        "New Orleans stayed competitive in Chicago but managed only 13 points against a Bears team now 8–2. That defensive resistance is useful, yet the offense cannot rely on keeping every opponent below three touchdowns. The Saints fell to 3–7 and remain behind Carolina in a division where a sustained run could still change the standings. Their challenge is generating more early-down success, reducing the burden of third-and-long and finishing drives with touchdowns instead of hoping for field-position wins. Cincinnati is next, and the Bengals' quarterback can punish even brief coverage breakdowns. New Orleans needs an offensive plan capable of controlling time of possession and keeping Joe Burrow on the sideline. No. 23 rewards competitiveness only to the extent it translates into wins."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Cincinnati Bengals",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Tyler Shough",
+          "value": 2395.0
+        },
+        "rushing": {
+          "player": "Tyler Shough",
+          "value": 221.0
+        },
+        "receiving": {
+          "player": "Chris Olave",
+          "value": 866.0
+        },
+        "sacks": {
+          "player": "Carl Granderson",
+          "value": 8.5
+        }
+      },
+      "leaders": "Passing Tyler Shough 2,395 · Rushing Tyler Shough 221 · Receiving Chris Olave 866 · Sacks Carl Granderson 8.5"
+    },
+    {
+      "rank": 24,
+      "name": "Baltimore Ravens",
+      "previous_rank": 24,
+      "movement": 0,
+      "record": "4-7",
+      "code": "BAL",
+      "division": "AFC North",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 4,
+      "l": 7,
+      "t": 0,
+      "pct": 0.36363636363636365,
+      "pf": 242,
+      "pa": 294,
+      "diff": -52,
+      "conference_rank": 11,
+      "last5": "0-5-0",
+      "last_five_results": [
+        "W7 L 13–35 vs. CIN",
+        "W8 L 10–36 at BUF",
+        "W9 L 10–33 vs. JAX",
+        "W10 L 20–23 vs. LAC",
+        "W11 L 33–35 at CAR"
+      ],
+      "streak": "L6",
+      "latest_result": "W11 L 33–35 at CAR",
+      "analysis": [
+        "Lost 35–33 to Carolina; 33 points were not enough because of defensive lapses.",
+        "A talented offense deserves better defensive support and ball security.",
+        "Baltimore scored 33 points and still lost to Carolina. Jacoby Brissett threw for 276 yards, while Zay Flowers led the game's receivers with 97, evidence that the offense created opportunities. The problem is that allowing 35 points to a .500 opponent leaves almost no margin for mistakes. The Ravens are 4–7 and need to build defensive consistency before the playoff conversation can become serious. This is not simply a quarterback story: when an offense scores 33 and loses, the team must examine its coverage, tackling and late-game execution. Houston is next, and a defensive response matters more than another attractive passing stat line."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Houston Texans",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Lamar Jackson",
+          "value": 967.0
+        },
+        "rushing": {
+          "player": "Derrick Henry",
+          "value": 793.0
+        },
+        "receiving": {
+          "player": "Zay Flowers",
+          "value": 785.0
+        },
+        "sacks": {
+          "player": "Mike Green",
+          "value": 7.5
+        }
+      },
+      "leaders": "Passing Lamar Jackson 967 · Rushing Derrick Henry 793 · Receiving Zay Flowers 785 · Sacks Mike Green 7.5"
+    },
+    {
+      "rank": 25,
+      "name": "Indianapolis Colts",
+      "previous_rank": 25,
+      "movement": 0,
+      "record": "3-8",
+      "code": "IND",
+      "division": "AFC South",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 8,
+      "t": 0,
+      "pct": 0.2727272727272727,
+      "pf": 211,
+      "pa": 297,
+      "diff": -86,
+      "conference_rank": 13,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W7 L 10–16 at MIN",
+        "W8 L 7–42 at JAX",
+        "W9 L 23–27 vs. DAL",
+        "W10 W 24–22 vs. MIA",
+        "W11 L 3–26 at HOU"
+      ],
+      "streak": "L1",
+      "latest_result": "W11 L 3–26 at HOU",
+      "analysis": [
+        "Lost 26–3 to Houston; the offense failed to establish any sustainable rhythm.",
+        "The Texans loss raises urgent questions about protection, early-down success and offensive direction.",
+        "The Colts' 26–3 loss in Houston was the kind of performance that forces a wider evaluation than one bad offensive afternoon. Indianapolis managed only a field goal and never created enough pressure on the scoreboard to change the Texans' approach. At 3–8, the Colts cannot afford to confuse isolated promising possessions with a functioning offensive identity. Protection, early-down play design and third-down conversion must improve together; otherwise opponents can sit on predictable passing situations. The defense also needs more support from the offense so that field position and fatigue do not compound. The Giants are next, bringing a defense that just disrupted Jacksonville. Indianapolis needs a response that begins with competence and discipline before it can talk seriously about an upset."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. New York Giants",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Daniel Jones",
+          "value": 1974.0
+        },
+        "rushing": {
+          "player": "Jonathan Taylor",
+          "value": 760.0
+        },
+        "receiving": {
+          "player": "Josh Downs",
+          "value": 354.0
+        },
+        "sacks": {
+          "player": "Adetomiwa Adebawore",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Daniel Jones 1,974 · Rushing Jonathan Taylor 760 · Receiving Josh Downs 354 · Sacks Adetomiwa Adebawore 5"
+    },
+    {
+      "rank": 26,
+      "name": "Atlanta Falcons",
+      "previous_rank": 27,
+      "movement": 1,
+      "record": "3-7",
+      "code": "ATL",
+      "division": "NFC South",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 7,
+      "t": 0,
+      "pct": 0.3,
+      "pf": 201,
+      "pa": 258,
+      "diff": -57,
+      "conference_rank": 13,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W6 L 23–31 vs. CHI",
+        "W7 W 29–20 vs. SF",
+        "W8 L 0–16 at TB",
+        "W9 L 17–34 vs. CIN",
+        "W10 L 13–35 vs. KC"
+      ],
+      "streak": "L3",
+      "latest_result": "W10 L 13–35 vs. KC",
+      "analysis": [
+        "Bye week; needs more efficient use of Bijan Robinson and Drake London.",
+        "The bye creates a chance to adjust the offense before a difficult Minnesota matchup.",
+        "Atlanta did not play in Week 11 and remains 3–7. That matters because the Falcons cannot claim momentum from a week in which other NFC South teams continued to define the division. The offense needs to become more efficient at converting drives into points, while the defense must reduce the number of situations where it is asked to survive repeated short fields. A bye is useful for installing adjustments, but those changes have to show up against Minnesota. The Vikings are coming off a heavy defeat to San Francisco and will be looking for a response; Atlanta has an opportunity to exploit that urgency if it can avoid early mistakes. No. 26 reflects a poor overall résumé with a chance to reset, not evidence that the reset has already worked."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Minnesota Vikings",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Michael Penix Jr.",
+          "value": 1730.0
+        },
+        "rushing": {
+          "player": "Bijan Robinson",
+          "value": 951.0
+        },
+        "receiving": {
+          "player": "Drake London",
+          "value": 801.0
+        },
+        "sacks": {
+          "player": "Za'Darius Smith",
+          "value": 4.5
+        }
+      },
+      "leaders": "Passing Michael Penix Jr. 1,730 · Rushing Bijan Robinson 951 · Receiving Drake London 801 · Sacks Za'Darius Smith 4.5"
+    },
+    {
+      "rank": 27,
+      "name": "Philadelphia Eagles",
+      "previous_rank": 31,
+      "movement": 4,
+      "record": "3-7",
+      "code": "PHI",
+      "division": "NFC East",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 7,
+      "t": 0,
+      "pct": 0.3,
+      "pf": 167,
+      "pa": 237,
+      "diff": -70,
+      "conference_rank": 15,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W6 L 14–25 vs. CAR",
+        "W7 L 21–38 vs. DAL",
+        "W8 L 10–27 at WAS",
+        "W9 L 11–19 vs. NYG",
+        "W11 W 19–16 vs. PIT"
+      ],
+      "streak": "W1",
+      "latest_result": "W11 W 19–16 vs. PIT",
+      "analysis": [
+        "Beat Pittsburgh 19–16; a significant upset that rewards a four-spot rise.",
+        "One quality upset does not erase the broader season, but it does demonstrate the ability to close a tight game.",
+        "Philadelphia's win over Pittsburgh was not an offensive showcase; it was a needed proof of competitive resilience. Saquon Barkley led the game with 75 rushing yards, and the Eagles held a Steelers team led by Aaron Rodgers to 16 points. A three-point win does not suddenly fix a season that began with repeated losses, but beating a team above .500 changes the conversation. The Eagles rise four places because they finally delivered a result that can anchor a credible turnaround argument. The next challenge is Dallas, whose passing game just exploded for 51 points. Philadelphia needs another disciplined defensive performance and a more consistent offensive rhythm before we can consider a larger leap."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Dallas Cowboys",
+        "time": "Thu Nov 26 · 4:30 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Jalen Hurts",
+          "value": 933.0
+        },
+        "rushing": {
+          "player": "Saquon Barkley",
+          "value": 371.0
+        },
+        "receiving": {
+          "player": "DeVonta Smith",
+          "value": 351.0
+        },
+        "sacks": {
+          "player": "Nolan Smith Jr.",
+          "value": 6.0
+        }
+      },
+      "leaders": "Passing Jalen Hurts 933 · Rushing Saquon Barkley 371 · Receiving DeVonta Smith 351 · Sacks Nolan Smith Jr. 6"
+    },
+    {
+      "rank": 28,
+      "name": "Arizona Cardinals",
+      "previous_rank": 26,
+      "movement": -2,
+      "record": "3-8",
+      "code": "ARI",
+      "division": "NFC West",
+      "conference": "NFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 8,
+      "t": 0,
+      "pct": 0.2727272727272727,
+      "pf": 191,
+      "pa": 323,
+      "diff": -132,
+      "conference_rank": 16,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W7 L 16–30 vs. DEN",
+        "W8 W 33–30 at DAL",
+        "W9 L 3–17 at SEA",
+        "W10 L 6–34 vs. LAR",
+        "W11 L 7–34 at KC"
+      ],
+      "streak": "L3",
+      "latest_result": "W11 L 7–34 at KC",
+      "analysis": [
+        "Lost 34–7 to Kansas City; offense could not sustain drives.",
+        "The Cardinals need protection, offensive rhythm and fewer explosive plays allowed.",
+        "Arizona's 34–7 defeat in Kansas City exposed how far the Cardinals are from the league's upper tier. Scoring seven points leaves almost no path to victory against Patrick Mahomes, particularly when the defense allows 34. The Cardinals fell to 3–8, and the concern is not simply losing to a strong opponent but failing to make the game competitive for long enough to test that opponent. Offensive execution must improve in protection and finishing drives, while the defense needs to prevent early scoring runs from forcing the offense into desperation. Washington is next, coming off a last-second win over Cincinnati. Arizona must control tempo and eliminate giveaways if it hopes to avoid another game dictated entirely by the opposition."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. Washington Commanders",
+        "time": "Sun Nov 29 · 4:25 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Jacoby Brissett",
+          "value": 1719.0
+        },
+        "rushing": {
+          "player": "Tyler Allgeier",
+          "value": 406.0
+        },
+        "receiving": {
+          "player": "Trey McBride",
+          "value": 689.0
+        },
+        "sacks": {
+          "player": "Budda Baker",
+          "value": 3.5
+        }
+      },
+      "leaders": "Passing Jacoby Brissett 1,719 · Rushing Tyler Allgeier 406 · Receiving Trey McBride 689 · Sacks Budda Baker 3.5"
+    },
+    {
+      "rank": 29,
+      "name": "New York Jets",
+      "previous_rank": 28,
+      "movement": -1,
+      "record": "3-8",
+      "code": "NYJ",
+      "division": "AFC East",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 3,
+      "l": 8,
+      "t": 0,
+      "pct": 0.2727272727272727,
+      "pf": 221,
+      "pa": 278,
+      "diff": -57,
+      "conference_rank": 12,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W7 L 25–28 vs. MIA",
+        "W8 L 33–38 vs. LV",
+        "W9 L 12–35 at KC",
+        "W10 L 12–31 vs. BUF",
+        "W11 W 27–24 at LAC"
+      ],
+      "streak": "W1",
+      "latest_result": "W11 W 27–24 at LAC",
+      "analysis": [
+        "Beat the Chargers 27–24; a win, but narrow against a struggling opponent.",
+        "The result is progress, but the narrow margin against the Chargers limits the reward.",
+        "The Jets earned a road win over the Chargers, with Geno Smith throwing for 176 yards and the team doing enough to secure a three-point result. That matters for a club with a 3–8 record, but the opponent entered the matchup with only one win. We are not turning a narrow victory into a sweeping endorsement. The positive is that New York found a way to finish a close game. The concern is that 27 points against a struggling defense do not resolve the season-long questions about offensive consistency. Miami is next, giving the Jets an opportunity to build consecutive results rather than another isolated upset."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Miami Dolphins",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Geno Smith",
+          "value": 2402.0
+        },
+        "rushing": {
+          "player": "Braelon Allen",
+          "value": 713.0
+        },
+        "receiving": {
+          "player": "Garrett Wilson",
+          "value": 672.0
+        },
+        "sacks": {
+          "player": "David Bailey",
+          "value": 9.5
+        }
+      },
+      "leaders": "Passing Geno Smith 2,402 · Rushing Braelon Allen 713 · Receiving Garrett Wilson 672 · Sacks David Bailey 9.5"
+    },
+    {
+      "rank": 30,
+      "name": "Miami Dolphins",
+      "previous_rank": 32,
+      "movement": 2,
+      "record": "1-9",
+      "code": "MIA",
+      "division": "AFC East",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 1,
+      "l": 9,
+      "t": 0,
+      "pct": 0.1,
+      "pf": 157,
+      "pa": 250,
+      "diff": -93,
+      "conference_rank": 15,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W7 W 28–25 at NYJ",
+        "W8 L 19–24 vs. NE",
+        "W9 L 9–19 vs. DET",
+        "W10 L 22–24 at IND",
+        "W11 L 9–26 at BUF"
+      ],
+      "streak": "L4",
+      "latest_result": "W11 L 9–26 at BUF",
+      "analysis": [
+        "Lost 26–9 to Buffalo; the offense was shut out of the end zone.",
+        "Movement reflects the lower-tier reshuffle, not an endorsement of the Buffalo performance.",
+        "Miami's 26–9 loss to Buffalo reinforced the difference between flashes of offensive talent and sustainable scoring. The Dolphins managed only nine points against a division rival and fell to 1–9. Against elite opponents, speed matters only if the offense can stay ahead of the chains and avoid obvious passing situations. The defense also needs more complementary support; repeatedly defending short fields or returning to the field after quick punts makes the job harder. A home matchup with the Jets provides a more realistic chance to show improvement, but Miami cannot treat that game as a cure-all. No. 30 reflects a season-long failure to convert potential into wins. The first goal is a coherent four-quarter performance."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "vs. New York Jets",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Malik Willis",
+          "value": 1396.0
+        },
+        "rushing": {
+          "player": "Ollie Gordon II",
+          "value": 608.0
+        },
+        "receiving": {
+          "player": "Malik Washington",
+          "value": 430.0
+        },
+        "sacks": {
+          "player": "Chop Robinson",
+          "value": 5.0
+        }
+      },
+      "leaders": "Passing Malik Willis 1,396 · Rushing Ollie Gordon II 608 · Receiving Malik Washington 430 · Sacks Chop Robinson 5"
+    },
+    {
+      "rank": 31,
+      "name": "Los Angeles Chargers",
+      "previous_rank": 29,
+      "movement": -2,
+      "record": "1-9",
+      "code": "LAC",
+      "division": "AFC West",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 1,
+      "l": 9,
+      "t": 0,
+      "pct": 0.1,
+      "pf": 168,
+      "pa": 266,
+      "diff": -98,
+      "conference_rank": 14,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W6 L 6–22 at KC",
+        "W8 L 9–24 at LAR",
+        "W9 L 22–44 vs. HOU",
+        "W10 W 23–20 at BAL",
+        "W11 L 24–27 vs. NYJ"
+      ],
+      "streak": "L1",
+      "latest_result": "W11 L 24–27 vs. NYJ",
+      "analysis": [
+        "Lost 27–24 to the Jets; another close game that failed to become a win.",
+        "Herbert's talent cannot cover for the team's repeated inability to finish.",
+        "Los Angeles fell to 1–9 after losing at home to the Jets. Omarion Hampton led the game's rushers with 89 yards, showing the run game can provide some stability, but the team still could not close a winnable matchup. The concern goes beyond one result: the Chargers have not translated individual production into reliable complementary football. Jim Harbaugh confirmed Monday that Justin Herbert entered concussion protocol. His status for New England remained unsettled at our cutoff. New England is next. For a team this far down the standings, the immediate standard is fewer self-inflicted mistakes and proof that the offensive plan can hold for four quarters."
+      ],
+      "injuries": "Justin Herbert entered concussion protocol on November 23. His Week 12 availability remained unresolved at the cutoff.",
+      "next_game": {
+        "opponent": "vs. New England Patriots",
+        "time": "Sun Nov 29 · 4:05 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Justin Herbert",
+          "value": 1851.0
+        },
+        "rushing": {
+          "player": "Omarion Hampton",
+          "value": 563.0
+        },
+        "receiving": {
+          "player": "Tre' Harris",
+          "value": 376.0
+        },
+        "sacks": {
+          "player": "Khalil Mack / Tuli Tuipulotu",
+          "value": 3.0
+        }
+      },
+      "leaders": "Passing Justin Herbert 1,851 · Rushing Omarion Hampton 563 · Receiving Tre' Harris 376 · Sacks Khalil Mack / Tuli Tuipulotu 3"
+    },
+    {
+      "rank": 32,
+      "name": "Tennessee Titans",
+      "previous_rank": 30,
+      "movement": -2,
+      "record": "1-9",
+      "code": "TEN",
+      "division": "AFC South",
+      "conference": "AFC",
+      "movement_baseline": "November 17",
+      "w": 1,
+      "l": 9,
+      "t": 0,
+      "pct": 0.1,
+      "pf": 197,
+      "pa": 290,
+      "diff": -93,
+      "conference_rank": 16,
+      "last5": "1-4-0",
+      "last_five_results": [
+        "W6 W 26–20 at IND",
+        "W7 L 24–27 vs. CLE",
+        "W8 L 36–43 at CIN",
+        "W10 L 23–40 vs. JAX",
+        "W11 L 30–51 at DAL"
+      ],
+      "streak": "L4",
+      "latest_result": "W11 L 30–51 at DAL",
+      "analysis": [
+        "Lost 51–30 to Dallas; the defensive collapse overwhelmed offensive progress.",
+        "Scoring 30 while allowing 51 shows how far the defensive baseline must rise.",
+        "Tennessee scored 30 points in Dallas and still lost by 21. Tony Pollard led the game's rushers with 110 yards, but the Titans could not slow a Cowboys offense that reached 51 points. That defensive collapse is why the result cannot be framed as progress simply because the offense found the end zone. At 1–9, Tennessee needs structural improvement in coverage, pass rush and situational discipline; a productive rushing afternoon cannot offset repeated scoring drives on the other side. Jacksonville is next, and the Titans need to show they can make an opponent work for every point rather than chase another high-scoring loss."
+      ],
+      "injuries": "",
+      "next_game": {
+        "opponent": "at Jacksonville Jaguars",
+        "time": "Sun Nov 29 · 1:00 PM ET"
+      },
+      "stat_leaders": {
+        "source": "ESPN game books, Weeks 1–11",
+        "passing": {
+          "player": "Cam Ward",
+          "value": 1962.0
+        },
+        "rushing": {
+          "player": "Tony Pollard",
+          "value": 738.0
+        },
+        "receiving": {
+          "player": "Carnell Tate",
+          "value": 471.0
+        },
+        "sacks": {
+          "player": "Jacob Martin",
+          "value": 7.5
+        }
+      },
+      "leaders": "Passing Cam Ward 1,962 · Rushing Tony Pollard 738 · Receiving Carnell Tate 471 · Sacks Jacob Martin 7.5"
+    }
+  ],
+  "mvp": [
+    {
+      "rank": 1,
+      "name": "Joe Burrow",
+      "previous_rank": 1,
+      "movement": 0,
+      "team": "Cincinnati Bengals",
+      "code": "CIN",
+      "stats": "3,095 pass yds · 29 pass TD · 6 INT · 84 rush yds · 3 rush TD",
+      "latest_stats": "Week 11 · 300 pass yds · 2 pass TD · 0 INT · -1 rush yds · 0 rush TD",
+      "analysis": [
+        "Cincinnati's 22–20 loss to Washington complicates the team argument, not the individual one. Burrow threw for 300 yards and two touchdowns, yet the Bengals could not protect a late lead. His case at No. 1 rests on the responsibility he carries for sustaining Cincinnati's offense when the defense offers little margin. We are evaluating quarterback value, not simply rewarding the highest-ranked team. His next step is to make the decisive possessions impossible to waste, while recognizing that a quarterback cannot defend the final drive.",
+        "Washington held Cincinnati to 31 rushing yards on 14 attempts. That left Burrow working without much of a second route to first downs. The Bengals converted four of 12 third downs, which gives us a reason to keep Purdy close even with Burrow six passing touchdowns ahead."
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Brock Purdy",
+      "previous_rank": 2,
+      "movement": 0,
+      "team": "San Francisco 49ers",
+      "code": "SF",
+      "stats": "2,624 pass yds · 23 pass TD · 5 INT · 222 rush yds · 2 rush TD",
+      "latest_stats": "Week 11 · 255 pass yds · 3 pass TD · 0 INT · 0 rush yds · 0 rush TD",
+      "analysis": [
+        "San Francisco's 35–10 dismantling of Minnesota is a strong counterargument to keeping Purdy second. He delivered 255 passing yards and three touchdowns in a game where the 49ers dictated the pace against a seven-win opponent. Purdy's timing, accuracy and ability to exploit spacing are central to that efficiency. The unresolved question is whether he can create enough when an elite defense disrupts the first structure of the play. For now, Burrow's larger offensive burden keeps this race razor-close.",
+        "Purdy threw three touchdowns in 27 attempts against Minnesota. Keeping the offense out of obvious passing downs matters against Seattle, but there is a difference between enjoying a clean first read and cashing it in. Purdy keeps doing the latter without giving defenses many possessions back."
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Patrick Mahomes",
+      "previous_rank": 6,
+      "movement": 3,
+      "team": "Kansas City Chiefs",
+      "code": "KC",
+      "stats": "2,709 pass yds · 22 pass TD · 4 INT · 100 rush yds · 1 rush TD",
+      "latest_stats": "Week 11 · 324 pass yds · 3 pass TD · 0 INT · 0 rush yds · 0 rush TD",
+      "analysis": [
+        "Mahomes' 324-yard, three-touchdown performance in Kansas City's 34–7 win over Arizona moves him into third. The Chiefs did not merely survive; they controlled the game through the passing attack. Mahomes remains dangerous because his creativity changes what defenses must prepare for, but the MVP case strengthens most when that improvisation is paired with efficient, on-schedule production. Buffalo is the next measuring stick for this rise.",
+        "The gap between 22 touchdown passes and four interceptions matters in Buffalo. Against a Bills offense that can shorten a game with James Cook, an empty possession is expensive. Kansas City can afford to punt after a deep shot more readily than it can afford to give Allen a short field."
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Jared Goff",
+      "previous_rank": 4,
+      "movement": 0,
+      "team": "Detroit Lions",
+      "code": "DET",
+      "stats": "2,716 pass yds · 20 pass TD · 4 INT · 35 rush yds · 1 rush TD",
+      "latest_stats": "Week 11 · 279 pass yds · 2 pass TD · 0 INT · 12 rush yds · 0 rush TD",
+      "analysis": [
+        "Detroit's 31–21 victory over Tampa Bay keeps Goff fourth. His case is built on repeatable execution: quick identification of leverage, timing with his receivers and a willingness to distribute rather than force spectacular throws. Jahmyr Gibbs' rushing threat creates favorable looks, but Goff still must deliver the correct answer when the defense closes the easy windows. Chicago on Thanksgiving will test that relationship between quarterback command and supporting cast.",
+        "Goff has thrown five touchdowns for every interception. Gibbs scoring twice in the fourth quarter against Tampa is precisely what makes Goff difficult to evaluate in isolation. Detroit can make a defense pay for defending the pass even when Goff never attempts the finishing throw."
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Josh Allen",
+      "previous_rank": 3,
+      "movement": -2,
+      "team": "Buffalo Bills",
+      "code": "BUF",
+      "stats": "2,527 pass yds · 14 pass TD · 9 INT · 290 rush yds · 11 rush TD",
+      "latest_stats": "Week 11 · 304 pass yds · 1 pass TD · 2 INT · 0 rush yds · 0 rush TD",
+      "analysis": [
+        "Allen's Bills improved to 9–1 with a 26–9 win over Miami. His MVP case combines creation as a runner, arm talent and the ability to rescue broken plays. Sliding to fifth is a reflection of the extraordinary production around him in this week's ballot, not an indictment of Buffalo. The standard for climbing back is sharper passing efficiency and sustained scoring against top competition.",
+        "Two interceptions against Miami are the opening for the four players ahead of him. His 11 rushing scores are the answer. They let Buffalo carry a second short-yardage threat into the Kansas City game without changing personnel or taking Cook out of the formation."
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Jaxon Smith-Njigba",
+      "previous_rank": 5,
+      "movement": -1,
+      "team": "Seattle Seahawks",
+      "code": "SEA",
+      "stats": "79 catches · 109 targets · 1,207 rec yds · 10 rec TD",
+      "latest_stats": "Week 10 · 8 catches · 10 targets · 171 rec yds · 1 rec TD",
+      "analysis": [
+        "Seattle's bye does not erase the receiver's impact. Smith-Njigba is the passing game's central gravity: defenses must account for him before the snap, and the Seahawks need to punish the coverage compromises that creates. As a non-quarterback MVP candidate, he faces a higher burden of proof because his opportunities depend on protection and quarterback delivery. The 4DK argument is that changing the geometry of the defense is itself a form of value.",
+        "His last game before the bye produced 171 yards on eight catches. At over 15 yards per reception for the season, these are expensive completions to concede. San Francisco can live with a high catch count more easily than it can survive another afternoon at that rate."
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Jahmyr Gibbs",
+      "previous_rank": 8,
+      "movement": 1,
+      "team": "Detroit Lions",
+      "code": "DET",
+      "stats": "222 carries · 1,098 rush yds · 13 rush TD · 404 rec yds · 2 rec TD",
+      "latest_stats": "Week 11 · 23 carries · 98 rush yds · 2 rush TD · 20 rec yds · 0 rec TD",
+      "analysis": [
+        "Gibbs rises to seventh because Detroit's offense changes when his speed forces defenders to widen their fits and hesitate before committing to coverage. He is not merely a runner accumulating yards; he helps create space for Goff's timing throws and forces opponents to defend multiple threats with the same personnel. The MVP ceiling depends on how often Detroit turns those mismatches into decisive production against playoff-level fronts.",
+        "Gibbs has already cleared 1,500 yards from scrimmage. Against Chicago the question is which defender gets assigned to him when he releases from the backfield. Using a defensive back there can lighten the box for the very run that Detroit used to close out Tampa Bay."
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Trevor Lawrence",
+      "previous_rank": 7,
+      "movement": -1,
+      "team": "Jacksonville Jaguars",
+      "code": "JAX",
+      "stats": "2,585 pass yds · 22 pass TD · 7 INT · 113 rush yds · 0 rush TD",
+      "latest_stats": "Week 11 · 301 pass yds · 1 pass TD · 2 INT · 7 rush yds · 0 rush TD",
+      "analysis": [
+        "Jacksonville's 23–18 loss to the Giants weakens the immediate case for Lawrence despite a strong season record. His arm talent allows the Jaguars to threaten deep and outside the numbers, but quarterback value also shows up in red-zone decisions, third downs and the ability to recover when the initial plan fails. No. 8 acknowledges his central role while demanding more efficient scoring against defenses that can tighten coverage.",
+        "The Giants allowed Jacksonville into the red zone six times and gave up a touchdown on just one of those trips. That is a sharper explanation for the drop than the 301 passing yards. Against Tennessee a short completion that keeps the second-down menu open has more value than another difficult third-down rescue."
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Jordan Love",
+      "previous_rank": 9,
+      "movement": 0,
+      "team": "Green Bay Packers",
+      "code": "GB",
+      "stats": "2,838 pass yds · 20 pass TD · 7 INT · 23 rush yds · 2 rush TD",
+      "latest_stats": "Week 10 · 220 pass yds · 1 pass TD · 1 INT · 0 rush yds · 0 rush TD",
+      "analysis": [
+        "Green Bay did not play in Week 11, so Love remains ninth on the strength of the established résumé. His arm talent lets the Packers challenge tight windows and attack vertically, but the next level requires fewer possessions derailed by pressure or inconsistent early-down gains. The Rams game is a useful test of whether Green Bay can make the offense less dependent on high-difficulty throws.",
+        "Love came into the bye with 2,838 yards and 20 passing scores. With Josh Jacobs listed as questionable for Wednesday, Green Bay may have fewer ways to keep the Rams from rushing on their terms. A quick completion against that pressure would tell us as much as another deep strike."
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "James Cook",
+      "previous_rank": 10,
+      "movement": 0,
+      "team": "Buffalo Bills",
+      "code": "BUF",
+      "stats": "209 carries · 1,060 rush yds · 10 rush TD · 113 rec yds · 0 rec TD",
+      "latest_stats": "Week 11 · 22 carries · 89 rush yds · 1 rush TD · 3 rec yds · 0 rec TD",
+      "analysis": [
+        "Cook stays tenth because his rushing threat changes Buffalo's offensive math. Defenses that devote resources to Allen cannot ignore a back capable of turning a small crease into a field-position swing. His case differs from the quarterbacks above him: it is about efficiency, explosive gains and the leverage created for the rest of the offense. The challenge is demonstrating the same influence when opponents specifically design to remove the run.",
+        "Cook carried 22 times against Miami while Allen finished without a rushing yard. That division of labor is valuable in its own right. Buffalo could win comfortably without spending its quarterback on the ground, then take both running threats into the Thanksgiving game."
+      ]
+    }
+  ],
+  "rookies": [
+    {
+      "rank": 1,
+      "name": "David Bailey",
+      "previous_rank": 3,
+      "movement": 2,
+      "team": "New York Jets",
+      "code": "NYJ",
+      "stats": "50 tackles · 9.5 sacks · 12 TFL · 4 passes defended · 0 INT",
+      "latest_stats": "Week 11 · 5 tackles · 2 sacks · 2 TFL · 1 pass defended · 0 INT",
+      "analysis": [
+        "Bailey takes No. 1 after sitting third last week. We give extra weight to disruption that costs an offense a down and forces it out of its preferred personnel.",
+        "Two sacks in a three-point road win over the Chargers bring Bailey to 9½. Los Angeles converted eight of 12 third downs, so those disruptions mattered on a day the Jets struggled to end drives. Bailey gives a 3–8 team a way to win a passing down even when the offense has put the defense back on the field."
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Sonny Styles",
+      "previous_rank": 1,
+      "movement": -1,
+      "team": "Washington Commanders",
+      "code": "WAS",
+      "stats": "85 tackles · 1 sack · 5 TFL · 4 passes defended · 1 INT",
+      "latest_stats": "Week 11 · 5 tackles · 0 sacks · 0 TFL · 0 passes defended · 0 INT",
+      "analysis": [
+        "Styles drops one place without losing his standing as an impact rookie. His evaluation should focus on how reliably he processes run/pass conflict, closes space and finishes tackles, rather than treating a single box-score statistic as the complete measure of linebacker play.",
+        "Washington held Cincinnati to one rushing first down even as Burrow piled up 300 passing yards. Styles’ five tackles belong in that context. With 85 on the season, his value is how often the next defender gets to play second-and-long. Bailey moves ahead on backfield disruption, while Styles still has the stronger volume of finishes."
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Arvell Reese",
+      "previous_rank": 2,
+      "movement": -1,
+      "team": "New York Giants",
+      "code": "NYG",
+      "stats": "88 tackles · 4.5 sacks · 9 TFL · 4 passes defended · 1 INT",
+      "latest_stats": "Week 11 · 7 tackles · 0 sacks · 1 TFL · 0 passes defended · 0 INT",
+      "analysis": [
+        "Reese remains in the top three because of the defensive upside in his athletic profile and disruptive role. The key scouting question is whether his pressure and pursuit translate into disciplined, repeatable assignments when offenses change tempo and formation.",
+        "Reese had seven tackles and one for loss against Jacksonville. New York needed that work because the Jaguars ran 68 plays and reached the red zone six times. The combination of 88 tackles and 4½ sacks gives Reese a credible case on both early downs and passing downs for an NFC East leader."
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Jacob Rodriguez",
+      "previous_rank": 4,
+      "movement": 0,
+      "team": "Miami Dolphins",
+      "code": "MIA",
+      "stats": "93 tackles · 1 sack · 4 TFL · 2 passes defended · 2 INT",
+      "latest_stats": "Week 11 · 13 tackles · 0 sacks · 0 TFL · 1 pass defended · 1 INT",
+      "analysis": [
+        "Rodriguez holds fourth. His case depends on recognition, pursuit angles and the ability to remain assignment-sound when opponents stress the middle of the field. We give him credit for both the steady tackling workload and the possessions he ends himself.",
+        "Thirteen tackles and an interception against Buffalo give Rodriguez the strongest argument for moving into the top three. The limit is visible in the same game. Miami conceded 304 passing yards to Allen, so tackle volume alone cannot establish that a defense controlled the middle. Two season interceptions give us a second measure of his influence."
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Mansoor Delane",
+      "previous_rank": 7,
+      "movement": 2,
+      "team": "Kansas City Chiefs",
+      "code": "KC",
+      "stats": "31 tackles · 0 sacks · 3 TFL · 7 passes defended · 1 INT",
+      "latest_stats": "Week 11 · 1 tackle · 0 sacks · 0 TFL · 0 passes defended · 0 INT",
+      "analysis": [
+        "Delane rises two places. Cornerback evaluation demands more than interceptions: coverage responsibility, target difficulty, tackling support and the ability to recover after losing leverage all matter. His next assignment against Buffalo puts that balance under pressure.",
+        "One tackle against Arizona is a poor measure of a cornerback’s workload. His seven passes defended over the season offer firmer evidence that he has affected throws at the catch point. Against Buffalo, tackling the receiver on a short completion may be as important as breaking up a deep attempt if it keeps Allen facing third down."
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Caleb Downs",
+      "previous_rank": 6,
+      "movement": 0,
+      "team": "Dallas Cowboys",
+      "code": "DAL",
+      "stats": "73 tackles · 2 sacks · 2 TFL · 3 passes defended · 1 INT",
+      "latest_stats": "Week 11 · 7 tackles · 0 sacks · 1 TFL · 0 passes defended · 0 INT",
+      "analysis": [
+        "Downs holds sixth. The defining question for a versatile defensive back is how much freedom his range and recognition give the coordinator. We value the flexibility to play the run and still recover depth when the offense changes the picture.",
+        "Downs had seven tackles and a tackle for loss against Tennessee. Dallas also gave up 30 points. We credit his ability to finish plays near the line while keeping open the question of how effectively the whole secondary limits explosives. The Philadelphia game gives Dallas a very different problem in run support."
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Denzel Boston",
+      "previous_rank": 5,
+      "movement": -2,
+      "team": "Cleveland Browns",
+      "code": "CLE",
+      "stats": "33 catches · 63 targets · 523 rec yds · 3 rec TD",
+      "latest_stats": "Week 10 · 1 catch · 2 targets · 16 rec yds · 0 rec TD",
+      "analysis": [
+        "Boston slips two positions but remains in the top ten. For a rookie receiver, we want to separate target volume from the ability to win independently: releases, route pacing, contested-catch reliability and run-after-catch decisions all shape the verdict.",
+        "Cleveland’s bye leaves his last game at one catch for 16 yards. Over the season, Boston and teammate KC Concepcion drew 63 targets apiece, yet Boston produced 65 more yards and two more receiving scores. He stays higher because his catches have changed field position more often, even with fewer completions."
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Carnell Tate",
+      "previous_rank": 9,
+      "movement": 1,
+      "team": "Tennessee Titans",
+      "code": "TEN",
+      "stats": "36 catches · 56 targets · 471 rec yds · 2 rec TD",
+      "latest_stats": "Week 11 · 2 catches · 5 targets · 58 rec yds · 1 rec TD",
+      "analysis": [
+        "Tate rises one spot. The receiving evaluation should examine how consistently he creates separation, wins at the catch point and fits into his team's passing structure. A single splash play is not enough; repeatable down-to-down value is the 4DK standard.",
+        "Two catches on five targets in Dallas yielded 58 yards and a touchdown. That combination captures both sides of his ballot. Tennessee can get a scoring drive out of very few Tate touches, but an offense playing from behind also needs receptions that keep ordinary drives alive. Jacksonville is the next test."
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Antonio Williams",
+      "previous_rank": null,
+      "movement": null,
+      "team": "Washington Commanders",
+      "code": "WAS",
+      "stats": "37 catches · 52 targets · 448 rec yds · 2 rec TD",
+      "latest_stats": "Week 11 · 9 catches · 11 targets · 122 rec yds · 0 rec TD",
+      "analysis": [
+        "Williams enters the ballot after a nine-catch, 122-yard performance for Washington against Cincinnati. His 22- and 42-yard receptions on the final drive positioned the winning field goal, making the production directly consequential. That is strong evidence for his breakthrough, but a lasting top-ten case requires examining his route variety, separation against different coverages and how he contributes when the offense is not chasing a game.",
+        "Those final two catches accounted for 64 of his 122 yards. More revealing for his long-term case are the other seven catches for 58. Washington could use him to sustain possessions before it needed him to steal one at the end. His 37 season receptions give that final drive a foundation."
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "KC Concepcion",
+      "previous_rank": 8,
+      "movement": -2,
+      "team": "Cleveland Browns",
+      "code": "CLE",
+      "stats": "40 catches · 63 targets · 458 rec yds · 1 rec TD",
+      "latest_stats": "Week 10 · 3 catches · 8 targets · 21 rec yds · 0 rec TD",
+      "analysis": [
+        "Concepcion rounds out the top ten after sitting eighth. His evaluation should weigh how his acceleration and movement skills affect defensive spacing against the demands of reliable route execution. The unanswered question is whether he can give his quarterback an easy completion when the first design breaks down.",
+        "Concepcion caught three of eight targets for 21 yards in Cleveland’s last game before the bye. He still has more catches than Boston on the same number of season targets. His route to climbing again runs through first downs after the catch, especially against Las Vegas when Cleveland can protect its defense by extending drives."
+      ]
+    }
+  ],
+  "standings": {
+    "AFC East": [
+      [
+        "BUF",
+        "Buffalo Bills",
+        9,
+        1,
+        0,
+        "2-1-0",
+        "W6",
+        313,
+        208
+      ],
+      [
+        "NE",
+        "New England Patriots",
+        5,
+        5,
+        0,
+        "3-0-0",
+        "L2",
+        221,
+        242
+      ],
+      [
+        "NYJ",
+        "New York Jets",
+        3,
+        8,
+        0,
+        "0-3-0",
+        "W1",
+        221,
+        278
+      ],
+      [
+        "MIA",
+        "Miami Dolphins",
+        1,
+        9,
+        0,
+        "1-2-0",
+        "L4",
+        157,
+        250
+      ]
+    ],
+    "AFC North": [
+      [
+        "CIN",
+        "Cincinnati Bengals",
+        7,
+        3,
+        0,
+        "2-1-0",
+        "L1",
+        298,
+        215
+      ],
+      [
+        "CLE",
+        "Cleveland Browns",
+        6,
+        4,
+        0,
+        "2-1-0",
+        "W1",
+        188,
+        220
+      ],
+      [
+        "PIT",
+        "Pittsburgh Steelers",
+        6,
+        4,
+        0,
+        "2-2-0",
+        "L2",
+        214,
+        201
+      ],
+      [
+        "BAL",
+        "Baltimore Ravens",
+        4,
+        7,
+        0,
+        "0-2-0",
+        "L6",
+        242,
+        294
+      ]
+    ],
+    "AFC South": [
+      [
+        "JAX",
+        "Jacksonville Jaguars",
+        7,
+        3,
+        0,
+        "2-1-0",
+        "L1",
+        287,
+        167
+      ],
+      [
+        "HOU",
+        "Houston Texans",
+        4,
+        6,
+        0,
+        "3-1-0",
+        "W1",
+        259,
+        222
+      ],
+      [
+        "IND",
+        "Indianapolis Colts",
+        3,
+        8,
+        0,
+        "1-3-0",
+        "L1",
+        211,
+        297
+      ],
+      [
+        "TEN",
+        "Tennessee Titans",
+        1,
+        9,
+        0,
+        "1-2-0",
+        "L4",
+        197,
+        290
+      ]
+    ],
+    "AFC West": [
+      [
+        "DEN",
+        "Denver Broncos",
+        8,
+        2,
+        0,
+        "3-1-0",
+        "W6",
+        236,
+        210
+      ],
+      [
+        "KC",
+        "Kansas City Chiefs",
+        8,
+        2,
+        0,
+        "3-1-0",
+        "W3",
+        271,
+        163
+      ],
+      [
+        "LV",
+        "Las Vegas Raiders",
+        4,
+        7,
+        0,
+        "1-2-0",
+        "L3",
+        275,
+        327
+      ],
+      [
+        "LAC",
+        "Los Angeles Chargers",
+        1,
+        9,
+        0,
+        "0-3-0",
+        "L1",
+        168,
+        266
+      ]
+    ],
+    "NFC East": [
+      [
+        "NYG",
+        "New York Giants",
+        6,
+        3,
+        1,
+        "2-1-1",
+        "W1",
+        226,
+        214
+      ],
+      [
+        "DAL",
+        "Dallas Cowboys",
+        5,
+        6,
+        0,
+        "2-1-0",
+        "W1",
+        337,
+        312
+      ],
+      [
+        "WAS",
+        "Washington Commanders",
+        4,
+        5,
+        1,
+        "2-2-1",
+        "W2",
+        218,
+        243
+      ],
+      [
+        "PHI",
+        "Philadelphia Eagles",
+        3,
+        7,
+        0,
+        "1-3-0",
+        "W1",
+        167,
+        237
+      ]
+    ],
+    "NFC North": [
+      [
+        "DET",
+        "Detroit Lions",
+        8,
+        2,
+        0,
+        "2-0-0",
+        "W6",
+        288,
+        220
+      ],
+      [
+        "CHI",
+        "Chicago Bears",
+        8,
+        2,
+        0,
+        "0-2-0",
+        "W5",
+        262,
+        197
+      ],
+      [
+        "MIN",
+        "Minnesota Vikings",
+        7,
+        3,
+        0,
+        "3-1-0",
+        "L1",
+        186,
+        161
+      ],
+      [
+        "GB",
+        "Green Bay Packers",
+        6,
+        4,
+        0,
+        "1-3-0",
+        "L1",
+        226,
+        221
+      ]
+    ],
+    "NFC South": [
+      [
+        "CAR",
+        "Carolina Panthers",
+        5,
+        5,
+        0,
+        "2-1-0",
+        "W2",
+        254,
+        269
+      ],
+      [
+        "TB",
+        "Tampa Bay Buccaneers",
+        3,
+        7,
+        0,
+        "2-0-0",
+        "L2",
+        223,
+        209
+      ],
+      [
+        "ATL",
+        "Atlanta Falcons",
+        3,
+        7,
+        0,
+        "1-2-0",
+        "L3",
+        201,
+        258
+      ],
+      [
+        "NO",
+        "New Orleans Saints",
+        3,
+        7,
+        0,
+        "0-2-0",
+        "L2",
+        215,
+        257
+      ]
+    ],
+    "NFC West": [
+      [
+        "SF",
+        "San Francisco 49ers",
+        9,
+        1,
+        0,
+        "3-0-0",
+        "W3",
+        316,
+        206
+      ],
+      [
+        "SEA",
+        "Seattle Seahawks",
+        6,
+        4,
+        0,
+        "2-1-0",
+        "W2",
+        223,
+        175
+      ],
+      [
+        "LAR",
+        "Los Angeles Rams",
+        6,
+        4,
+        0,
+        "1-2-0",
+        "W4",
+        248,
+        187
+      ],
+      [
+        "ARI",
+        "Arizona Cardinals",
+        3,
+        8,
+        0,
+        "1-4-0",
+        "L3",
+        191,
+        323
+      ]
+    ]
+  },
+  "playoff_snapshot": {
+    "label": "Current field after Week 11",
+    "AFC": [
+      "BUF",
+      "DEN",
+      "JAX",
+      "CIN",
+      "KC",
+      "CLE",
+      "PIT"
+    ],
+    "NFC": [
+      "SF",
+      "DET",
+      "NYG",
+      "CAR",
+      "CHI",
+      "MIN",
+      "GB"
+    ]
+  },
+  "tiebreakers": [
+    "Denver leads Kansas City on common games. Jacksonville holds the head-to-head advantage over Cincinnati. Cleveland leads Pittsburgh on division record.",
+    "Detroit leads Chicago on division record. Seattle clears the Rams on division record before Green Bay wins the final wild-card comparison with Seattle on conference record."
+  ],
+  "week11_finals": [
+    [
+      "HOU",
+      "IND",
+      26,
+      3
+    ],
+    [
+      "BUF",
+      "MIA",
+      26,
+      9
+    ],
+    [
+      "CHI",
+      "NO",
+      21,
+      13
+    ],
+    [
+      "DAL",
+      "TEN",
+      51,
+      30
+    ],
+    [
+      "DET",
+      "TB",
+      31,
+      21
+    ],
+    [
+      "KC",
+      "ARI",
+      34,
+      7
+    ],
+    [
+      "PHI",
+      "PIT",
+      19,
+      16
+    ],
+    [
+      "CAR",
+      "BAL",
+      35,
+      33
+    ],
+    [
+      "NYJ",
+      "LAC",
+      27,
+      24
+    ],
+    [
+      "DEN",
+      "LV",
+      38,
+      24
+    ],
+    [
+      "NYG",
+      "JAX",
+      23,
+      18
+    ],
+    [
+      "SF",
+      "MIN",
+      35,
+      10
+    ],
+    [
+      "WAS",
+      "CIN",
+      22,
+      20
+    ]
+  ],
+  "week11_byes": [
+    "ATL",
+    "CLE",
+    "GB",
+    "LAR",
+    "NE",
+    "SEA"
+  ],
+  "week12_schedule": [
+    [
+      "Wed Nov 25 · 8:00 PM ET",
+      "GB",
+      "LAR"
+    ],
+    [
+      "Thu Nov 26 · 1:00 PM ET",
+      "CHI",
+      "DET"
+    ],
+    [
+      "Thu Nov 26 · 4:30 PM ET",
+      "PHI",
+      "DAL"
+    ],
+    [
+      "Thu Nov 26 · 8:20 PM ET",
+      "KC",
+      "BUF"
+    ],
+    [
+      "Fri Nov 27 · 3:00 PM ET",
+      "DEN",
+      "PIT"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "NO",
+      "CIN"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "NYG",
+      "IND"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "NYJ",
+      "MIA"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "ATL",
+      "MIN"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "TEN",
+      "JAX"
+    ],
+    [
+      "Sun Nov 29 · 1:00 PM ET",
+      "BAL",
+      "HOU"
+    ],
+    [
+      "Sun Nov 29 · 4:05 PM ET",
+      "NE",
+      "LAC"
+    ],
+    [
+      "Sun Nov 29 · 4:25 PM ET",
+      "WAS",
+      "ARI"
+    ],
+    [
+      "Sun Nov 29 · 4:25 PM ET",
+      "SEA",
+      "SF"
+    ],
+    [
+      "Sun Nov 29 · 8:20 PM ET",
+      "LV",
+      "CLE"
+    ],
+    [
+      "Mon Nov 30 · 8:15 PM ET",
+      "CAR",
+      "TB"
+    ]
+  ],
+  "highlights": {
+    "team_of_week": "San Francisco 49ers · 35–10 over Minnesota in Mexico City",
+    "biggest_risers": "Philadelphia Eagles · 4 spots",
+    "biggest_fallers": "Cincinnati Bengals, Pittsburgh Steelers · 4 spots"
+  }
+}

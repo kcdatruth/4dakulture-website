@@ -1,0 +1,456 @@
+{
+  "edition": "2026 Week 12 / November 24",
+  "as_of": "2026-11-24",
+  "through": "2026-11-23 MNF final",
+  "status": "editorial-approved; research and publication pending",
+  "power32": [
+    {
+      "rank": 1,
+      "name": "SF",
+      "previous_rank": 2,
+      "movement": 1,
+      "record": "9-1"
+    },
+    {
+      "rank": 2,
+      "name": "BUF",
+      "previous_rank": 1,
+      "movement": -1,
+      "record": "9-1"
+    },
+    {
+      "rank": 3,
+      "name": "DET",
+      "previous_rank": 4,
+      "movement": 1,
+      "record": "8-2"
+    },
+    {
+      "rank": 4,
+      "name": "KC",
+      "previous_rank": 5,
+      "movement": 1,
+      "record": "8-2"
+    },
+    {
+      "rank": 5,
+      "name": "DEN",
+      "previous_rank": 8,
+      "movement": 3,
+      "record": "8-2"
+    },
+    {
+      "rank": 6,
+      "name": "CHI",
+      "previous_rank": 9,
+      "movement": 3,
+      "record": "8-2"
+    },
+    {
+      "rank": 7,
+      "name": "CIN",
+      "previous_rank": 3,
+      "movement": -4,
+      "record": "7-3"
+    },
+    {
+      "rank": 8,
+      "name": "JAX",
+      "previous_rank": 6,
+      "movement": -2,
+      "record": "7-3"
+    },
+    {
+      "rank": 9,
+      "name": "MIN",
+      "previous_rank": 7,
+      "movement": -2,
+      "record": "7-3"
+    },
+    {
+      "rank": 10,
+      "name": "LAR",
+      "previous_rank": 10,
+      "movement": 0,
+      "record": "6-4"
+    },
+    {
+      "rank": 11,
+      "name": "SEA",
+      "previous_rank": 12,
+      "movement": 1,
+      "record": "6-4"
+    },
+    {
+      "rank": 12,
+      "name": "NYG",
+      "previous_rank": 15,
+      "movement": 3,
+      "record": "6-3-1"
+    },
+    {
+      "rank": 13,
+      "name": "GB",
+      "previous_rank": 13,
+      "movement": 0,
+      "record": "6-4"
+    },
+    {
+      "rank": 14,
+      "name": "CLE",
+      "previous_rank": 14,
+      "movement": 0,
+      "record": "6-4"
+    },
+    {
+      "rank": 15,
+      "name": "PIT",
+      "previous_rank": 11,
+      "movement": -4,
+      "record": "6-4"
+    },
+    {
+      "rank": 16,
+      "name": "DAL",
+      "previous_rank": 17,
+      "movement": 1,
+      "record": "5-6"
+    },
+    {
+      "rank": 17,
+      "name": "NE",
+      "previous_rank": 16,
+      "movement": -1,
+      "record": "5-5"
+    },
+    {
+      "rank": 18,
+      "name": "CAR",
+      "previous_rank": 19,
+      "movement": 1,
+      "record": "5-5"
+    },
+    {
+      "rank": 19,
+      "name": "WAS",
+      "previous_rank": 21,
+      "movement": 2,
+      "record": "4-5-1"
+    },
+    {
+      "rank": 20,
+      "name": "HOU",
+      "previous_rank": 20,
+      "movement": 0,
+      "record": "4-6"
+    },
+    {
+      "rank": 21,
+      "name": "LV",
+      "previous_rank": 18,
+      "movement": -3,
+      "record": "4-7"
+    },
+    {
+      "rank": 22,
+      "name": "TB",
+      "previous_rank": 22,
+      "movement": 0,
+      "record": "3-7"
+    },
+    {
+      "rank": 23,
+      "name": "NO",
+      "previous_rank": 23,
+      "movement": 0,
+      "record": "3-7"
+    },
+    {
+      "rank": 24,
+      "name": "BAL",
+      "previous_rank": 24,
+      "movement": 0,
+      "record": "4-7"
+    },
+    {
+      "rank": 25,
+      "name": "IND",
+      "previous_rank": 25,
+      "movement": 0,
+      "record": "3-8"
+    },
+    {
+      "rank": 26,
+      "name": "ATL",
+      "previous_rank": 27,
+      "movement": 1,
+      "record": "3-7"
+    },
+    {
+      "rank": 27,
+      "name": "PHI",
+      "previous_rank": 31,
+      "movement": 4,
+      "record": "3-7"
+    },
+    {
+      "rank": 28,
+      "name": "ARI",
+      "previous_rank": 26,
+      "movement": -2,
+      "record": "3-8"
+    },
+    {
+      "rank": 29,
+      "name": "NYJ",
+      "previous_rank": 28,
+      "movement": -1,
+      "record": "3-8"
+    },
+    {
+      "rank": 30,
+      "name": "MIA",
+      "previous_rank": 32,
+      "movement": 2,
+      "record": "1-9"
+    },
+    {
+      "rank": 31,
+      "name": "LAC",
+      "previous_rank": 29,
+      "movement": -2,
+      "record": "1-9"
+    },
+    {
+      "rank": 32,
+      "name": "TEN",
+      "previous_rank": 30,
+      "movement": -2,
+      "record": "1-9"
+    }
+  ],
+  "mvp_watch": [
+    {
+      "rank": 1,
+      "name": "Joe Burrow",
+      "previous_rank": 1,
+      "movement": 0
+    },
+    {
+      "rank": 2,
+      "name": "Brock Purdy",
+      "previous_rank": 2,
+      "movement": 0
+    },
+    {
+      "rank": 3,
+      "name": "Patrick Mahomes",
+      "previous_rank": 6,
+      "movement": 3
+    },
+    {
+      "rank": 4,
+      "name": "Jared Goff",
+      "previous_rank": 4,
+      "movement": 0
+    },
+    {
+      "rank": 5,
+      "name": "Josh Allen",
+      "previous_rank": 3,
+      "movement": -2
+    },
+    {
+      "rank": 6,
+      "name": "Jaxon Smith-Njigba",
+      "previous_rank": 5,
+      "movement": -1
+    },
+    {
+      "rank": 7,
+      "name": "Jahmyr Gibbs",
+      "previous_rank": 8,
+      "movement": 1
+    },
+    {
+      "rank": 8,
+      "name": "Trevor Lawrence",
+      "previous_rank": 7,
+      "movement": -1
+    },
+    {
+      "rank": 9,
+      "name": "Jordan Love",
+      "previous_rank": 9,
+      "movement": 0
+    },
+    {
+      "rank": 10,
+      "name": "James Cook",
+      "previous_rank": 10,
+      "movement": 0
+    }
+  ],
+  "rookie_watch": [
+    {
+      "rank": 1,
+      "name": "David Bailey",
+      "previous_rank": 3,
+      "movement": 2
+    },
+    {
+      "rank": 2,
+      "name": "Sonny Styles",
+      "previous_rank": 1,
+      "movement": -1
+    },
+    {
+      "rank": 3,
+      "name": "Arvell Reese",
+      "previous_rank": 2,
+      "movement": -1
+    },
+    {
+      "rank": 4,
+      "name": "Jacob Rodriguez",
+      "previous_rank": 4,
+      "movement": 0
+    },
+    {
+      "rank": 5,
+      "name": "Mansoor Delane",
+      "previous_rank": 7,
+      "movement": 2
+    },
+    {
+      "rank": 6,
+      "name": "Caleb Downs",
+      "previous_rank": 6,
+      "movement": 0
+    },
+    {
+      "rank": 7,
+      "name": "Denzel Boston",
+      "previous_rank": 5,
+      "movement": -2
+    },
+    {
+      "rank": 8,
+      "name": "Carnell Tate",
+      "previous_rank": 9,
+      "movement": 1
+    },
+    {
+      "rank": 9,
+      "name": "Antonio Williams",
+      "previous_rank": null,
+      "movement": null
+    },
+    {
+      "rank": 10,
+      "name": "KC Concepcion",
+      "previous_rank": 8,
+      "movement": -2
+    }
+  ],
+  "verification_required": [
+    "Antonio Williams identity, team and NFL rookie eligibility",
+    "2026 records, last five, injuries, player statistics and next opponents",
+    "full original 32-team analysis and individual award scouting"
+  ],
+  "notes": "User-approved rankings only. Do not publish or replace November 17 until full QA.",
+  "verified_week11_results": [
+    [
+      "HOU",
+      "IND",
+      26,
+      3
+    ],
+    [
+      "KC",
+      "ARI",
+      34,
+      7
+    ],
+    [
+      "CAR",
+      "BAL",
+      35,
+      33
+    ],
+    [
+      "BUF",
+      "MIA",
+      26,
+      9
+    ],
+    [
+      "CHI",
+      "NO",
+      21,
+      13
+    ],
+    [
+      "DET",
+      "TB",
+      31,
+      21
+    ],
+    [
+      "DAL",
+      "TEN",
+      51,
+      30
+    ],
+    [
+      "PHI",
+      "PIT",
+      19,
+      16
+    ],
+    [
+      "NYJ",
+      "LAC",
+      27,
+      24
+    ],
+    [
+      "NYG",
+      "JAX",
+      23,
+      18
+    ],
+    [
+      "DEN",
+      "LV",
+      38,
+      24
+    ],
+    [
+      "SF",
+      "MIN",
+      35,
+      10
+    ],
+    [
+      "WAS",
+      "CIN",
+      22,
+      20
+    ]
+  ],
+  "week11_byes": [
+    "ATL",
+    "CLE",
+    "GB",
+    "LAR",
+    "NE",
+    "SEA"
+  ],
+  "verification_log": {
+    "date": "2026-11-24",
+    "records_and_scores": "Checked against NFL.com Week 11 schedule and final results",
+    "rookie_antonio_williams": "Washington Commanders rookie wide receiver; 9 catches 122 yards vs Cincinnati; Associated Press Nov 24",
+    "remaining": "Current season player totals, injury statuses, last five, divisional standings, playoff snapshot, individual film review"
+  }
+}
