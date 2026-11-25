@@ -101,3 +101,19 @@ Visual review showed that some original November 17 **team** images reused in Ro
 - Caleb Wilson — `1643410.png`
 
 All five original Power 30 team images remain unchanged in their respective team cards. There are now **11 NBA-hosted player headshot references**, each with a graceful load-error fallback. This corrects the earlier audit's count of six headshot dependencies. **Actual URL response/loading and headshot identity have not been verified in a browser**, and the publisher's permission attestation is recorded above. No editorial text or ranking positions were changed.
+
+
+## Original MVP photo visual inspection — November 24, 2026
+
+Visually opened the original staging JPEGs used by eight MVP Watch cards and checked the depicted uniforms/visible names/numbers against the captioned MVP candidate:
+
+- Wembanyama — `4dk-power-03-spurs.jpeg`: Spurs No. 1, matches
+- Luka Dončić — `4dk-power-11-lakers.jpeg`: Lakers No. 77, matches
+- Giannis Antetokounmpo — `4dk-power-06-heat.jpeg`: Heat No. 7, matches
+- Nikola Jokić — `4dk-power-09-nuggets.jpeg`: Denver No. 15, matches
+- Shai Gilgeous-Alexander — `4dk-power-01-okc.jpeg`: Oklahoma City No. 2, matches
+- Alperen Şengün — `4dk-power-07-rockets.jpeg`: Houston No. 28, back of jersey reads SENGUN, matches; Kevin Durant also visible in the same photograph
+- Cade Cunningham — `4dk-power-10-pistons.jpeg`: Detroit No. 2, matches; another Detroit player also visible
+- Jayson Tatum — `4dk-power-13-celtics.jpeg`: Boston No. 0, matches; another Boston player also visible
+
+The other two MVP photos are Tyrese Maxey's external NBA headshot and the locally stored Towns image; they were **not included** in this visual batch. These checks establish visible subject/team alignment for eight cards, not photo provenance, licensing or browser loading. No image substitutions or changes to the approved editorial analyses were made.
