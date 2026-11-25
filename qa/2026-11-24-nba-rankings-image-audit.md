@@ -34,3 +34,12 @@ This is a factual QA log, not a claim that all image checks or publication have 
 - Visual identity check confirmed that `4dk-power-29-bucks.jpeg` depicts Milwaukee No. 13 driving against Golden State, **not** Giannis Antetokounmpo. The original remains preserved and the alt text has been corrected.
 - NBA.com's July 13, 2026 Terms of Use prohibit reuse or public display of its photos and other basketball content outside permitted uses without written permission. Reference: https://www.nba.com/termsofuse . The existence of NBA-hosted image URLs does **not** prove republication rights.
 - These are **repository/file-reference checks only**, not full browser loading tests or complete photographic rights clearance. Do not mark release-ready or merge until identity, rights, and mobile-browser checks are resolved.
+
+
+## Follow-up correction — original Yaxel image restored
+
+- Rookie Watch #2 now references the exact original November 17 Yaxel Lendeborg headshot URL `https://cdn.nba.com/headshots/nba/latest/1040x760/1642865.png`, restored in commit `81e1697e98e2409cc4395e8f48eca20d7488211e`.
+- The original `4dk-power-17-warriors.jpeg` photograph (Stephen Curry) remains preserved in the Warriors Power 30 card, **not** the Yaxel Rookie Watch card.
+- Previous audit wording that Yaxel's card *still* uses Curry is superseded by this correction.
+- The edition now has six distinct NBA-hosted headshot dependencies, not five. Their loading and public-republication rights are **not yet verified**. NBA terms: https://www.nba.com/termsofuse
+- Publication remains blocked pending a browser/mobile image-load check, remaining photo identity review, and image-rights review. This audit is not a rights grant.
