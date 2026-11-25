@@ -117,3 +117,8 @@ Visually opened the original staging JPEGs used by eight MVP Watch cards and che
 - Jayson Tatum — `4dk-power-13-celtics.jpeg`: Boston No. 0, matches; another Boston player also visible
 
 The other two MVP photos are Tyrese Maxey's external NBA headshot and the locally stored Towns image; they were **not included** in this visual batch. These checks establish visible subject/team alignment for eight cards, not photo provenance, licensing or browser loading. No image substitutions or changes to the approved editorial analyses were made.
+
+
+## Karl-Anthony Towns local photo visual check — November 24, 2026
+
+Opened `assets/rankings/2026-11-24/towns-knicks-finals.webp` from the reconciled staging branch and visually inspected the image. The photograph depicts a Knicks player wearing No. 32 in a Finals-branded arena scene, matching the Karl-Anthony Towns MVP Watch caption. The photo shows an opposing defender and does not establish the game date or image rights by itself. The separate Tyrese Maxey NBA-hosted headshot remains **unverified by direct visual inspection**, although its URL was recovered from the November 17 edition. This is a visual-content check, not a live-browser image-load test.
