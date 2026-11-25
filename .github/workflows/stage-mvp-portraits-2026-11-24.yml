@@ -1,0 +1,29 @@
+name: Stage MVP portrait candidates (manual QA)
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - nba-rankings-deluxe-2026-11-24-reconciled
+    paths:
+      - scripts/stage_mvp_portraits_2026_11_24.py
+      - .github/workflows/stage-mvp-portraits-2026-11-24.yml
+jobs:
+  stage-portraits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download and validate candidate PNGs
+        run: python3 scripts/stage_mvp_portraits_2026_11_24.py
+      - name: Upload candidates for manual visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvp-portrait-candidates-2026-11-24
+          path: assets/rankings/2026-11-24/mvp-portrait-candidates/*.png
+          if-no-files-found: warn
+          retention-days: 14
