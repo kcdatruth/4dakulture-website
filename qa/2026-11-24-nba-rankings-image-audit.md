@@ -122,3 +122,10 @@ The other two MVP photos are Tyrese Maxey's external NBA headshot and the locall
 ## Karl-Anthony Towns local photo visual check — November 24, 2026
 
 Opened `assets/rankings/2026-11-24/towns-knicks-finals.webp` from the reconciled staging branch and visually inspected the image. The photograph depicts a Knicks player wearing No. 32 in a Finals-branded arena scene, matching the Karl-Anthony Towns MVP Watch caption. The photo shows an opposing defender and does not establish the game date or image rights by itself. The separate Tyrese Maxey NBA-hosted headshot remains **unverified by direct visual inspection**, although its URL was recovered from the November 17 edition. This is a visual-content check, not a live-browser image-load test.
+
+
+## Additional Power 30 photo visual audit — November 24, 2026
+
+Opened and visually inspected these **eight original November 17 team JPEGs** on the reconciled staging branch: `4dk-power-05-timberwolves.jpeg` (two players in Wolves jerseys); `4dk-power-04-sixers.jpeg` (Philadelphia group portrait); `4dk-power-02-knicks.jpeg` (Knicks No. 11 action photo); `4dk-power-18-blazers.jpeg` (Portland three-player team portrait); `4dk-power-16-hawks.jpeg` (Atlanta No. 1 action); `4dk-power-20-suns.jpeg` (Phoenix No. 15 portrait); `4dk-power-19-mavericks.jpeg` (Dallas No. 32 dunk); and `4dk-power-08-cavaliers.jpeg` (Cleveland No. 45 action). **All eight show the intended team's uniform** and are suitable as team-level features; these observations do not prove player identity for other cards or browser loading. The files were preserved without substitution.
+
+Attempted to fetch the NBA-hosted Maxey headshot (`https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png`) for direct visual verification, but the available external retrieval methods failed. **Maxey's direct visual check remains unverified**; do not mark it as passed merely because the URL is present in HTML. No editorial copy or rankings were changed.
