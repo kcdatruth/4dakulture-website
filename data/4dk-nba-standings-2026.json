@@ -1,7 +1,7 @@
 {
   "league": "NBA",
   "season": "2026-27",
-  "updated_utc": "2026-11-24 19:37 UTC",
+  "updated_utc": "2026-11-25 18:44 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/basketball/nba/standings",
   "status": "verified",
   "teams": [
@@ -72,14 +72,14 @@
       "group": "overall"
     },
     {
-      "id": "7",
-      "name": "Denver Nuggets",
-      "abbreviation": "DEN",
-      "wins": 10,
-      "losses": 5,
+      "id": "2",
+      "name": "Boston Celtics",
+      "abbreviation": "BOS",
+      "wins": 12,
+      "losses": 6,
       "ties": null,
       "pct": 0.667,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
       "group": "overall"
     },
     {
@@ -94,14 +94,14 @@
       "group": "overall"
     },
     {
-      "id": "2",
-      "name": "Boston Celtics",
-      "abbreviation": "BOS",
+      "id": "8",
+      "name": "Detroit Pistons",
+      "abbreviation": "DET",
       "wins": 11,
       "losses": 6,
       "ties": null,
       "pct": 0.647,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
       "group": "overall"
     },
     {
@@ -127,14 +127,14 @@
       "group": "overall"
     },
     {
-      "id": "8",
-      "name": "Detroit Pistons",
-      "abbreviation": "DET",
+      "id": "7",
+      "name": "Denver Nuggets",
+      "abbreviation": "DEN",
       "wins": 10,
       "losses": 6,
       "ties": null,
       "pct": 0.625,
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
       "group": "overall"
     },
     {
@@ -152,10 +152,10 @@
       "id": "6",
       "name": "Dallas Mavericks",
       "abbreviation": "DAL",
-      "wins": 10,
+      "wins": 11,
       "losses": 7,
       "ties": null,
-      "pct": 0.588,
+      "pct": 0.611,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
       "group": "overall"
     },
@@ -208,9 +208,9 @@
       "name": "Orlando Magic",
       "abbreviation": "ORL",
       "wins": 7,
-      "losses": 9,
+      "losses": 10,
       "ties": null,
-      "pct": 0.438,
+      "pct": 0.412,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
       "group": "overall"
     },
@@ -219,9 +219,9 @@
       "name": "Washington Wizards",
       "abbreviation": "WSH",
       "wins": 7,
-      "losses": 11,
+      "losses": 12,
       "ties": null,
-      "pct": 0.389,
+      "pct": 0.368,
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/wsh.png",
       "group": "overall"
     },
