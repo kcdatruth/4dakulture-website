@@ -61,3 +61,16 @@ Direct inspection of `nba-weekly-boards-2026-11-24.html` on both branches confir
 The branch comparison reports `staging` **12 commits ahead and 1 behind** `main`. The one extra main commit is merge PR #84 (`8066b65c46bec31d957648efaa8146615e96bbf2`). The comparison from staging to main reports **no changed files** in that one main-only commit; staging nevertheless has additional edits to the Rankings HQ and this QA report.
 
 **Safe reconciliation requirement:** preserve staging HTML and QA report, reconcile the merge ancestry without force-pushing or overwriting `main`, then recheck PR #85. Do not merge or mark ready while image rights and browser/mobile checks remain incomplete.
+
+
+## Structural HTML checks — November 24, 2026
+
+Static source inspection of `nba-weekly-boards-2026-11-24.html` on the reconciled staging branch confirms:
+
+- 50 ranking-card sections with 50 unique `aria-labelledby` targets.
+- 50 featured images; all 50 have nonempty `alt` text.
+- No duplicate HTML `id` values found.
+- All 7 in-page `href="#..."` anchors resolve to existing IDs.
+- All 6 NBA-hosted headshot image references include the previously added load-error handlers.
+
+**Scope limitation:** These checks inspect markup, not rendered pages, network loading, visual player identities, content accuracy, or licenses. A passing static check is not permission to merge or publish. The NBA's official Terms of Use state that Basketball Content, including photos and images, may not be reused or publicly displayed outside permitted uses without written permission: https://www.nba.com/termsofuse .
