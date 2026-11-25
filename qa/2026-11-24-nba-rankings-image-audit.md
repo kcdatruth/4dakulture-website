@@ -88,3 +88,16 @@ Remaining technical release gates: browser image loading, responsive layout insp
 Verified the ranking line on every one of the 50 cards. **48 cards** have numeric current and previous positions; their movement classes and displayed movement counts agree with the arithmetic (`previous rank - current rank`). **2 cards** (MVP #10 and Rookie #10) correctly show `★ NEW` with previous position `Outside 10`, rather than an invented numeric movement. No movement corrections were required. This check does not independently validate the underlying November 17 published ranks.
 
 A separate external fetch of the production November 24 URL did not yield an accessible page in the available web tool, so live browser and image-load QA remain **unverified**. Do not treat the static checks as a completed browser test.
+
+
+## Rookie Watch individual-photo restoration — November 24, 2026
+
+Visual review showed that some original November 17 **team** images reused in Rookie Watch were not player-specific (e.g. Washington Wizards team photo, Utah Jazz No. 22). Five Rookie Watch cards now use the exact player-specific headshot URLs from the November 17 Rankings HQ, as restored in commit `dcc57c60c22d4287af9ef844416b766da8ee01ae`:
+
+- Cameron Boozer — `1643409.png`
+- Darius Acuff Jr. — `1643411.png`
+- AJ Dybantsa — `1643407.png`
+- Darryn Peterson — `1643408.png`
+- Caleb Wilson — `1643410.png`
+
+All five original Power 30 team images remain unchanged in their respective team cards. There are now **11 NBA-hosted player headshot references**, each with a graceful load-error fallback. This corrects the earlier audit's count of six headshot dependencies. **Actual URL response/loading and headshot identity have not been verified in a browser**, and the publisher's permission attestation is recorded above. No editorial text or ranking positions were changed.
