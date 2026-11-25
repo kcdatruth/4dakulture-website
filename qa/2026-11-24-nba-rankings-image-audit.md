@@ -74,3 +74,10 @@ Static source inspection of `nba-weekly-boards-2026-11-24.html` on the reconcile
 - All 6 NBA-hosted headshot image references include the previously added load-error handlers.
 
 **Scope limitation:** These checks inspect markup, not rendered pages, network loading, visual player identities, content accuracy, or licenses. A passing static check is not permission to merge or publish. The NBA's official Terms of Use state that Basketball Content, including photos and images, may not be reused or publicly displayed outside permitted uses without written permission: https://www.nba.com/termsofuse .
+
+
+## Rights confirmation from publisher — November 24, 2026
+
+The 4 Da Kulture publisher explicitly answered **yes** when asked whether they have permission or a license to republish the NBA-hosted player headshots and other featured basketball photographs on 4 Da Kulture. Record this as **publisher-attested permission**, not independently inspected license documentation. Scope, term, sublicensing conditions and attribution obligations were not supplied and have not been independently verified.
+
+Remaining technical release gates: browser image loading, responsive layout inspection, visual identity review, and final page/navigation QA. Keep the PR in draft until these are checked. Do not replace original photographs or alter any of the 50 approved editorial analyses.
