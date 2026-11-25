@@ -43,3 +43,21 @@ This is a factual QA log, not a claim that all image checks or publication have 
 - Previous audit wording that Yaxel's card *still* uses Curry is superseded by this correction.
 - The edition now has six distinct NBA-hosted headshot dependencies, not five. Their loading and public-republication rights are **not yet verified**. NBA terms: https://www.nba.com/termsofuse
 - Publication remains blocked pending a browser/mobile image-load check, remaining photo identity review, and image-rights review. This audit is not a rights grant.
+
+
+## Main-versus-staging verification — November 24, 2026
+
+Direct inspection of `nba-weekly-boards-2026-11-24.html` on both branches confirms:
+
+| Check | `main` | staging |
+|---|---:|---:|
+| Ranking cards | 50 | 50 |
+| Featured image references | 48 | 50 |
+| Image-loading fallback handlers | 0 | 6 |
+| Restored Yaxel Lendeborg headshot | No | Yes |
+
+`main` file blob: `18f448f382eb43ba1cffdcc411c00f705598d984`. Staging file blob: `36b51cc95bf8092d92c60c3a2dd853802e40d821`.
+
+The branch comparison reports `staging` **12 commits ahead and 1 behind** `main`. The one extra main commit is merge PR #84 (`8066b65c46bec31d957648efaa8146615e96bbf2`). The comparison from staging to main reports **no changed files** in that one main-only commit; staging nevertheless has additional edits to the Rankings HQ and this QA report.
+
+**Safe reconciliation requirement:** preserve staging HTML and QA report, reconcile the merge ancestry without force-pushing or overwriting `main`, then recheck PR #85. Do not merge or mark ready while image rights and browser/mobile checks remain incomplete.
