@@ -1,7 +1,7 @@
 {
   "league": "NFL",
   "season": "2026",
-  "updated_utc": "2026-11-27 01:06 UTC",
+  "updated_utc": "2026-11-27 18:20 UTC",
   "source": "https://site.api.espn.com/apis/v2/sports/football/nfl/standings",
   "status": "verified",
   "teams": [
@@ -9,10 +9,10 @@
       "id": "2",
       "name": "Buffalo Bills",
       "abbreviation": "BUF",
-      "wins": 9,
+      "wins": 10,
       "losses": 1,
       "ties": 0,
-      "pct": 0.9,
+      "pct": 0.909,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
       "group": "overall"
     },
@@ -50,17 +50,6 @@
       "group": "overall"
     },
     {
-      "id": "12",
-      "name": "Kansas City Chiefs",
-      "abbreviation": "KC",
-      "wins": 8,
-      "losses": 2,
-      "ties": 0,
-      "pct": 0.8,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
-      "group": "overall"
-    },
-    {
       "id": "8",
       "name": "Detroit Lions",
       "abbreviation": "DET",
@@ -69,6 +58,17 @@
       "ties": 0,
       "pct": 0.727,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+      "group": "overall"
+    },
+    {
+      "id": "12",
+      "name": "Kansas City Chiefs",
+      "abbreviation": "KC",
+      "wins": 8,
+      "losses": 3,
+      "ties": 0,
+      "pct": 0.727,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "group": "overall"
     },
     {
@@ -193,17 +193,6 @@
       "group": "overall"
     },
     {
-      "id": "6",
-      "name": "Dallas Cowboys",
-      "abbreviation": "DAL",
-      "wins": 5,
-      "losses": 6,
-      "ties": 0,
-      "pct": 0.455,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-      "group": "overall"
-    },
-    {
       "id": "28",
       "name": "Washington Commanders",
       "abbreviation": "WSH",
@@ -212,6 +201,17 @@
       "ties": 1,
       "pct": 0.45,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+      "group": "overall"
+    },
+    {
+      "id": "6",
+      "name": "Dallas Cowboys",
+      "abbreviation": "DAL",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0,
+      "pct": 0.417,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
       "group": "overall"
     },
     {
@@ -248,6 +248,17 @@
       "group": "overall"
     },
     {
+      "id": "21",
+      "name": "Philadelphia Eagles",
+      "abbreviation": "PHI",
+      "wins": 4,
+      "losses": 7,
+      "ties": 0,
+      "pct": 0.364,
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+      "group": "overall"
+    },
+    {
       "id": "1",
       "name": "Atlanta Falcons",
       "abbreviation": "ATL",
@@ -267,17 +278,6 @@
       "ties": 0,
       "pct": 0.3,
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
-      "group": "overall"
-    },
-    {
-      "id": "21",
-      "name": "Philadelphia Eagles",
-      "abbreviation": "PHI",
-      "wins": 3,
-      "losses": 7,
-      "ties": 0,
-      "pct": 0.3,
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
       "group": "overall"
     },
     {
