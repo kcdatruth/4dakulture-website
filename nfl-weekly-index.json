@@ -1,9 +1,17 @@
 {
   "version": 1,
   "season": 2026,
-  "current_week": 11,
-  "updated": "2026-11-25",
+  "current_week": 12,
+  "updated": "2026-11-27",
   "articles": [
+    {
+      "type": "TNF",
+      "week": 12,
+      "date": "2026-11-26",
+      "title": "Thanksgiving TNF Edition",
+      "url": "nfl-thanksgiving-tnf-2026.html",
+      "summary": "Corum powers a fifth straight Rams win, Caleb Williams takes first place, Milton rallies Philadelphia from 21 down, and Buffalo wins on a 57-yard kick."
+    },
     {
       "type": "TNF",
       "week": 11,
